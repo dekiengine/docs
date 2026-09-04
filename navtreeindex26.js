@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"class_deki_editor_1_1_asset_type_registry.html#ae8bda6c76a5fb4430a12a6b6f1b7bee0":[27,0,2,15,7],
+"class_deki_editor_1_1_asset_type_registry.html#ae8bda6c76a5fb4430a12a6b6f1b7bee0":[28,0,1,11,7],
 "class_deki_editor_1_1_asset_type_registry.html#ae9f0c04953dc605e7c0ebef1cc8ac3db":[27,0,2,15,11],
 "class_deki_editor_1_1_asset_type_registry.html#ae9f0c04953dc605e7c0ebef1cc8ac3db":[28,0,1,11,11],
 "class_deki_editor_1_1_asset_type_registry.html#aef680554c6189a5654e297c89d72480e":[27,0,2,15,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "class_deki_editor_1_1_editor_assets.html#aedfec9d573ad1cd41b5217a3fbf45013":[27,0,2,28,13],
 "class_deki_editor_1_1_editor_assets.html#aedfec9d573ad1cd41b5217a3fbf45013":[28,0,1,24,13],
 "class_deki_editor_1_1_editor_assets.html#af0d760c17309b14de65fba7b2202009a":[27,0,2,28,0],
-"class_deki_editor_1_1_editor_assets.html#af0d760c17309b14de65fba7b2202009a":[28,0,1,24,0],
-"class_deki_editor_1_1_editor_assets.html#af54310be3f20c4530402878f65ebd4d1":[27,0,2,28,23],
-"class_deki_editor_1_1_editor_assets.html#af54310be3f20c4530402878f65ebd4d1":[28,0,1,24,23]
+"class_deki_editor_1_1_editor_assets.html#af0d760c17309b14de65fba7b2202009a":[28,0,1,24,0]
 };

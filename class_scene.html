@@ -172,6 +172,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a33b46f797f9eee1292ce4e6e59048a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys found in a scene file that no component's current metadata recognises, as {component type name, key}.  <br /></td></tr>
 <tr class="memitem:a0b69cbe816a2b5e33f00a9cd22a31f61" id="r_a0b69cbe816a2b5e33f00a9cd22a31f61"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0b69cbe816a2b5e33f00a9cd22a31f61">ClearUnknownProperties</a> ()</td></tr>
 <tr class="memdesc:a0b69cbe816a2b5e33f00a9cd22a31f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forget everything collected so far, so a check can scope itself to the scenes it is about to load.  <br /></td></tr>
+<tr class="memitem:a9c8b187b49b2c02ca74e28eaca73d338" id="r_a9c8b187b49b2c02ca74e28eaca73d338"><td class="memItemLeft">static std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9c8b187b49b2c02ca74e28eaca73d338">CollectLegacyProperties</a> ()</td></tr>
+<tr class="memdesc:a9c8b187b49b2c02ca74e28eaca73d338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}: the file still carries the name from before a rename.  <br /></td></tr>
 <tr class="memitem:a361ff1c9d3aa1f1957e5703c6c703ad6" id="r_a361ff1c9d3aa1f1957e5703c6c703ad6"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a361ff1c9d3aa1f1957e5703c6c703ad6">ComponentPropertiesToJson</a> (const <a class="el" href="class_deki_component.html">DekiComponent</a> *comp, const <a class="el" href="struct_deki_component_meta.html">DekiComponentMeta</a> &amp;meta)</td></tr>
 <tr class="memdesc:a361ff1c9d3aa1f1957e5703c6c703ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">comp</span> — its base class's first, then its own — as the JSON a scene file holds for it, keyed by reflected name.  <br /></td></tr>
 <tr class="memitem:a6a1436729257eb1da885a72e8d7d70d7" id="r_a6a1436729257eb1da885a72e8d7d70d7"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a6a1436729257eb1da885a72e8d7d70d7">ComponentDefaultsToJson</a> (const <a class="el" href="struct_deki_component_meta.html">DekiComponentMeta</a> &amp;meta)</td></tr>
@@ -866,6 +868,35 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Forget everything collected so far, so a check can scope itself to the scenes it is about to load. </p>
+<p>Clears the legacy list too. </p>
+
+</div>
+</div>
+<a id="a9c8b187b49b2c02ca74e28eaca73d338" name="a9c8b187b49b2c02ca74e28eaca73d338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8b187b49b2c02ca74e28eaca73d338">&#9670;&#160;</a></span>CollectLegacyProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; Scene::CollectLegacyProperties </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}: the file still carries the name from before a rename. </p>
+<p>A save writes the current name, so this is a warning ("re-save to migrate"), not an error. </p>
 
 </div>
 </div>

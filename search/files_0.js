@@ -10,5 +10,6 @@ var searchData=
   ['assetpickertypes_2eh_7',['AssetPickerTypes.h',['../_asset_picker_types_8h.html',1,'']]],
   ['assetpipeline_2eh_8',['AssetPipeline.h',['../_asset_pipeline_8h.html',1,'']]],
   ['assetref_2eh_9',['AssetRef.h',['../_asset_ref_8h.html',1,'']]],
-  ['assettyperegistry_2eh_10',['AssetTypeRegistry.h',['../_asset_type_registry_8h.html',1,'']]]
+  ['assettyperegistry_2eh_10',['AssetTypeRegistry.h',['../_asset_type_registry_8h.html',1,'']]],
+  ['authoredformat_2eh_11',['AuthoredFormat.h',['../_authored_format_8h.html',1,'']]]
 ];

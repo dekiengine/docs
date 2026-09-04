@@ -1,5 +1,13 @@
 var NAVTREEINDEX36 =
 {
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a67506978d11a013375e26c709b34a630":[28,0,1,28,2,4],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a6f261dd6ddc2ec006d1e76d2ac5a4ec5":[27,0,2,32,2,3],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a6f261dd6ddc2ec006d1e76d2ac5a4ec5":[28,0,1,28,2,3],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a98960c9e6e6e826a9eaf471d40a0a713":[27,0,2,32,2,0],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a98960c9e6e6e826a9eaf471d40a0a713":[28,0,1,28,2,0],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#ab013f3dba3ba9f1079d262b15154c141":[27,0,2,32,2,1],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#ab013f3dba3ba9f1079d262b15154c141":[28,0,1,28,2,1],
+"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#ad879e0eff23499757282e75a4d61762f":[27,0,2,32,2,2],
 "struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#ad879e0eff23499757282e75a4d61762f":[28,0,1,28,2,2],
 "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html":[27,0,2,32,6],
 "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html":[28,0,1,28,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX36 =
 "struct_deki_editor_1_1_node_canvas_palette.html#a8450334017d0c1b8fcb8f7b94ad2df39":[28,0,1,40,5],
 "struct_deki_editor_1_1_node_canvas_palette.html#a8f15ca5a6a85d2019d742af36792bd91":[27,0,2,44,0],
 "struct_deki_editor_1_1_node_canvas_palette.html#a8f15ca5a6a85d2019d742af36792bd91":[28,0,1,40,0],
-"struct_deki_editor_1_1_node_canvas_palette.html#a9a9263afb4c0680c7c4147e916fa0a5d":[27,0,2,44,1],
-"struct_deki_editor_1_1_node_canvas_palette.html#a9a9263afb4c0680c7c4147e916fa0a5d":[28,0,1,40,1],
-"struct_deki_editor_1_1_node_canvas_palette.html#a9fc4476af04c2ec9c414251e84ffad33":[27,0,2,44,7],
-"struct_deki_editor_1_1_node_canvas_palette.html#a9fc4476af04c2ec9c414251e84ffad33":[28,0,1,40,7],
-"struct_deki_editor_1_1_node_canvas_palette.html#af7efacd59cf1525fdcb9f4714b408a4d":[27,0,2,44,2],
-"struct_deki_editor_1_1_node_canvas_palette.html#af7efacd59cf1525fdcb9f4714b408a4d":[28,0,1,40,2],
-"struct_deki_editor_1_1_picker_item.html":[27,0,2,45],
-"struct_deki_editor_1_1_picker_item.html":[28,0,1,41],
-"struct_deki_editor_1_1_picker_item.html#a1070a469bd64c8fc48e847bb10aa9a03":[27,0,2,45,1]
+"struct_deki_editor_1_1_node_canvas_palette.html#a9a9263afb4c0680c7c4147e916fa0a5d":[27,0,2,44,1]
 };

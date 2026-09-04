@@ -31,6 +31,7 @@ var class_scene =
     [ "CollectOverrides", "class_scene.html#a816511a457405e5610b813bb21aebf3e", null ],
     [ "CollectUnknownProperties", "class_scene.html#a33b46f797f9eee1292ce4e6e59048a5c", null ],
     [ "ClearUnknownProperties", "class_scene.html#a0b69cbe816a2b5e33f00a9cd22a31f61", null ],
+    [ "CollectLegacyProperties", "class_scene.html#a9c8b187b49b2c02ca74e28eaca73d338", null ],
     [ "ComponentPropertiesToJson", "class_scene.html#a361ff1c9d3aa1f1957e5703c6c703ad6", null ],
     [ "ComponentDefaultsToJson", "class_scene.html#a6a1436729257eb1da885a72e8d7d70d7", null ],
     [ "SetOnObjectsAboutToBeDestroyed", "class_scene.html#a2cd23bf3ed7c225d37bce2b7da8eb708", null ],

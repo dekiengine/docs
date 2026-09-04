@@ -1,5 +1,14 @@
 var NAVTREEINDEX38 =
 {
+"struct_deki_vector3.html#a17688ba9da03e4d0986b637377ba8e1c":[28,0,30,17],
+"struct_deki_vector3.html#a20e38196dac6b0deb9947413155e7163":[28,0,30,0],
+"struct_deki_vector3.html#a229e4f10bc16ff61005768d75a0ee0af":[28,0,30,28],
+"struct_deki_vector3.html#a2b02fbfb6e1c0dd9a39912d1f2ad1bc6":[28,0,30,23],
+"struct_deki_vector3.html#a2c9f78fecdc481108d651b83b971b90d":[28,0,30,15],
+"struct_deki_vector3.html#a2ff7260e9c718eeef83dd627c7c9bb23":[28,0,30,11],
+"struct_deki_vector3.html#a32fe0b3ffbfaf9b11b1fd0547224fae3":[28,0,30,9],
+"struct_deki_vector3.html#a3f53f86c290c03fad75e18d45a4944e9":[28,0,30,6],
+"struct_deki_vector3.html#a3ff95374e1986f8fb08be724e60a26d6":[28,0,30,24],
 "struct_deki_vector3.html#a410c87beb0b29d53c2d541d21bb899cc":[28,0,30,13],
 "struct_deki_vector3.html#a421db35a8ee71f1dc968420b49efc2ed":[28,0,30,19],
 "struct_deki_vector3.html#a435ac21f0972f5bd739870e2e0245aaf":[28,0,30,8],

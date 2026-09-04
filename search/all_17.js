@@ -12,9 +12,10 @@ var searchData=
   ['version_9',['VERSION',['../namespace_project_settings.html#a869136cd22ce93d88dc0a9bbc510ffa3',1,'ProjectSettings::VERSION'],['../namespace_scene_format_1_1_fields.html#a529d8bd270237d60ec16dc2f76bb3c69',1,'SceneFormat::Fields::VERSION']]],
   ['version_10',['Version',['../namespace_component_interface_adapters.html#a85eaaf171816abe98fb5180139777cc1',1,'ComponentInterfaceAdapters']]],
   ['version_11',['version',['../struct_deki_1_1_d_pack_header.html#a4772858e34bc72df6df156ce1da17a53',1,'Deki::DPackHeader::version'],['../struct_deki_reflection_abi.html#ae7a8923ed8c5b2858b849183d1bed8be',1,'DekiReflectionAbi::version'],['../struct_project_settings_1_1_file_header.html#a1656d2a740d9fbf9fc2cb9d62c21911b',1,'ProjectSettings::FileHeader::version'],['../struct_deki_editor_1_1_tex_header.html#a9888605a470e6ff6eab803cc4b421dbe',1,'DekiEditor::TexHeader::version']]],
-  ['visibilitymask_12',['visibilityMask',['../struct_deki_property_info.html#a8b21345612dccf771c1ca6a848a42b8c',1,'DekiPropertyInfo']]],
-  ['visibilityminvalue_13',['visibilityMinValue',['../struct_deki_property_info.html#a7051ee3ad3a101a93d9ebd25788d10f6',1,'DekiPropertyInfo']]],
-  ['visibilityproperty_14',['visibilityProperty',['../struct_deki_property_info.html#a26665ca0a4ea2f82303aaedfaa5b21ee',1,'DekiPropertyInfo']]],
-  ['visitactivesubtree_15',['VisitActiveSubtree',['../_deki_object_8h.html#a8c3bfad8cf739baf9fbfdf91ec20d140',1,'DekiObject.h']]],
-  ['visitsubtree_16',['VisitSubtree',['../_deki_object_8h.html#a50cb34991749f9e3b293dd8635e97ce6',1,'DekiObject.h']]]
+  ['versionkey_12',['VersionKey',['../namespace_deki_1_1_authored_format.html#ad9348b2be161b3138569bd08a0db6025',1,'Deki::AuthoredFormat']]],
+  ['visibilitymask_13',['visibilityMask',['../struct_deki_property_info.html#a8b21345612dccf771c1ca6a848a42b8c',1,'DekiPropertyInfo']]],
+  ['visibilityminvalue_14',['visibilityMinValue',['../struct_deki_property_info.html#a7051ee3ad3a101a93d9ebd25788d10f6',1,'DekiPropertyInfo']]],
+  ['visibilityproperty_15',['visibilityProperty',['../struct_deki_property_info.html#a26665ca0a4ea2f82303aaedfaa5b21ee',1,'DekiPropertyInfo']]],
+  ['visitactivesubtree_16',['VisitActiveSubtree',['../_deki_object_8h.html#a8c3bfad8cf739baf9fbfdf91ec20d140',1,'DekiObject.h']]],
+  ['visitsubtree_17',['VisitSubtree',['../_deki_object_8h.html#a50cb34991749f9e3b293dd8635e97ce6',1,'DekiObject.h']]]
 ];

@@ -7,6 +7,7 @@ var dir_6c4279dfd8de50e8eb3498b898c6c009 =
     [ "providers", "dir_0d59a257168f2294f91e8c3d6a9d60f0.html", "dir_0d59a257168f2294f91e8c3d6a9d60f0" ],
     [ "reflection", "dir_485bb38b1ab549b9f1946650d7f9dd10.html", "dir_485bb38b1ab549b9f1946650d7f9dd10" ],
     [ "settings", "dir_8d61f5e437fba9f9ce3f0a0e0391bf79.html", "dir_8d61f5e437fba9f9ce3f0a0e0391bf79" ],
+    [ "AuthoredFormat.h", "_authored_format_8h.html", "_authored_format_8h" ],
     [ "Color.h", "_color_8h.html", "_color_8h" ],
     [ "ComponentInterfaceAdapters.h", "_component_interface_adapters_8h.html", "_component_interface_adapters_8h" ],
     [ "DekiBehaviour.h", "_deki_behaviour_8h.html", "_deki_behaviour_8h" ],

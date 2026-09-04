@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"class_scene.html#aea6331488b48a1a13e32f0d7bf51f519":[28,0,58,3],
+"class_scene.html#aebd8d5a26f13ac1dea9a63336a218a88":[28,0,58,6],
+"class_scene_format_1_1_component_factory.html":[27,0,8,1],
 "class_scene_format_1_1_component_factory.html":[28,0,4,0],
 "class_scene_format_1_1_component_factory.html#a010d8a7635dc837085a45f776f016d56":[27,0,8,1,3],
 "class_scene_format_1_1_component_factory.html#a010d8a7635dc837085a45f776f016d56":[28,0,4,0,3],
@@ -245,9 +248,6 @@ var NAVTREEINDEX32 =
 "namespace_component_interface_adapters.html#a85eaaf171816abe98fb5180139777cc1":[27,0,0,3],
 "namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888":[27,0,0,0],
 "namespace_deki.html":[27,0,1],
-"namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a":[27,0,1,11],
-"namespace_deki.html#a377dacebea5d8d5a7f243ac6bd1e83b8":[27,0,1,14],
-"namespace_deki.html#a842fa2a17af886ab760e861d44444ba2":[27,0,1,12],
-"namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45":[27,0,1,10],
-"namespace_deki.html#ae0c36ae179fba6c3d8f94ea490c44847":[27,0,1,13]
+"namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a":[27,0,1,12],
+"namespace_deki.html#a377dacebea5d8d5a7f243ac6bd1e83b8":[27,0,1,15]
 };

@@ -1,5 +1,11 @@
 var namespace_deki =
 [
+    [ "AuthoredFormat", "namespace_deki_1_1_authored_format.html", [
+      [ "VersionKey", "namespace_deki_1_1_authored_format.html#ad9348b2be161b3138569bd08a0db6025", null ],
+      [ "SceneVersion", "namespace_deki_1_1_authored_format.html#a4a697f4a2b45d861dabf9479379ff835", null ],
+      [ "AssetVersion", "namespace_deki_1_1_authored_format.html#a5f82c7b5cc13067c8d2eb9c24d9b73a3", null ],
+      [ "AssetDataVersion", "namespace_deki_1_1_authored_format.html#a4928fb0861096d6e8fe73862e368c141", null ]
+    ] ],
     [ "AssetLookupTable", "class_deki_1_1_asset_lookup_table.html", "class_deki_1_1_asset_lookup_table" ],
     [ "AssetManager", "class_deki_1_1_asset_manager.html", "class_deki_1_1_asset_manager" ],
     [ "AssetPackReader", "class_deki_1_1_asset_pack_reader.html", "class_deki_1_1_asset_pack_reader" ],

@@ -15,6 +15,7 @@ var _deki_property_8h =
     [ "DEKI_OBJECT_NAME", "_deki_property_8h.html#a9bc2c1d411756e73259197b7cf522d28", null ],
     [ "DEKI_VALUE_OF", "_deki_property_8h.html#a8d9c17c03b2dc42b7809a7d931aedb94", null ],
     [ "DEKI_UNIT", "_deki_property_8h.html#a5c1b50b3c63c105d9892d82fcf0135a4", null ],
+    [ "DEKI_RENAMED_FROM", "_deki_property_8h.html#ab9745616043a0026dced1e3cdca98acf", null ],
     [ "DEKI_PROJECT_SETTINGS_SECTION", "_deki_property_8h.html#a00428012866ac8a2069b42e4a119f679", null ],
     [ "DEKI_SERIALIZABLE", "_deki_property_8h.html#a1cdd8239616781da452f2f4251a25e0c", null ],
     [ "DEKI_NO_SERIALIZE", "_deki_property_8h.html#adf5eed9a62923c7ea28329e2269843c2", null ],

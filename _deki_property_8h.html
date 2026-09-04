@@ -139,6 +139,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a9bc2c1d411756e73259197b7cf522d28" id="r_a9bc2c1d411756e73259197b7cf522d28"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9bc2c1d411756e73259197b7cf522d28">DEKI_OBJECT_NAME</a>(...)</td></tr>
 <tr class="memitem:a8d9c17c03b2dc42b7809a7d931aedb94" id="r_a8d9c17c03b2dc42b7809a7d931aedb94"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8d9c17c03b2dc42b7809a7d931aedb94">DEKI_VALUE_OF</a>(prop)</td></tr>
 <tr class="memitem:a5c1b50b3c63c105d9892d82fcf0135a4" id="r_a5c1b50b3c63c105d9892d82fcf0135a4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5c1b50b3c63c105d9892d82fcf0135a4">DEKI_UNIT</a>(unit)</td></tr>
+<tr class="memitem:ab9745616043a0026dced1e3cdca98acf" id="r_ab9745616043a0026dced1e3cdca98acf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab9745616043a0026dced1e3cdca98acf">DEKI_RENAMED_FROM</a>(oldName)</td></tr>
 <tr class="memitem:a00428012866ac8a2069b42e4a119f679" id="r_a00428012866ac8a2069b42e4a119f679"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a00428012866ac8a2069b42e4a119f679">DEKI_PROJECT_SETTINGS_SECTION</a>(SectionName)</td></tr>
 <tr class="memitem:a1cdd8239616781da452f2f4251a25e0c" id="r_a1cdd8239616781da452f2f4251a25e0c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1cdd8239616781da452f2f4251a25e0c">DEKI_SERIALIZABLE</a></td></tr>
 <tr class="memitem:adf5eed9a62923c7ea28329e2269843c2" id="r_adf5eed9a62923c7ea28329e2269843c2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adf5eed9a62923c7ea28329e2269843c2">DEKI_NO_SERIALIZE</a></td></tr>
@@ -439,6 +440,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab9745616043a0026dced1e3cdca98acf" name="ab9745616043a0026dced1e3cdca98acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9745616043a0026dced1e3cdca98acf">&#9670;&#160;</a></span>DEKI_RENAMED_FROM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEKI_RENAMED_FROM</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>oldName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a00428012866ac8a2069b42e4a119f679" name="a00428012866ac8a2069b42e4a119f679"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00428012866ac8a2069b42e4a119f679">&#9670;&#160;</a></span>DEKI_PROJECT_SETTINGS_SECTION</h2>
 
@@ -536,8 +554,8 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct_deki_property_info.html">DekiPropertyInfo</a>* GetProperties(); \</div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> GetPropertyCount(); \</div>
 <div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct_deki_component_meta.html">DekiComponentMeta</a>&amp; GetComponentMeta();</div>
-<div class="ttc" id="astruct_deki_component_meta_html"><div class="ttname"><a href="struct_deki_component_meta.html">DekiComponentMeta</a></div><div class="ttdoc">Component metadata for runtime reflection.</div><div class="ttdef"><b>Definition</b> DekiProperty.h:316</div></div>
-<div class="ttc" id="astruct_deki_property_info_html"><div class="ttname"><a href="struct_deki_property_info.html">DekiPropertyInfo</a></div><div class="ttdoc">Property metadata (stored per-component-type, not per-instance).</div><div class="ttdef"><b>Definition</b> DekiProperty.h:252</div></div>
+<div class="ttc" id="astruct_deki_component_meta_html"><div class="ttname"><a href="struct_deki_component_meta.html">DekiComponentMeta</a></div><div class="ttdoc">Component metadata for runtime reflection.</div><div class="ttdef"><b>Definition</b> DekiProperty.h:336</div></div>
+<div class="ttc" id="astruct_deki_property_info_html"><div class="ttname"><a href="struct_deki_property_info.html">DekiPropertyInfo</a></div><div class="ttdoc">Property metadata (stored per-component-type, not per-instance).</div><div class="ttdef"><b>Definition</b> DekiProperty.h:266</div></div>
 </div><!-- fragment -->
 </div>
 </div>

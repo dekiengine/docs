@@ -1,5 +1,13 @@
 var NAVTREEINDEX37 =
 {
+"struct_deki_editor_1_1_node_canvas_palette.html#a9a9263afb4c0680c7c4147e916fa0a5d":[28,0,1,40,1],
+"struct_deki_editor_1_1_node_canvas_palette.html#a9fc4476af04c2ec9c414251e84ffad33":[27,0,2,44,7],
+"struct_deki_editor_1_1_node_canvas_palette.html#a9fc4476af04c2ec9c414251e84ffad33":[28,0,1,40,7],
+"struct_deki_editor_1_1_node_canvas_palette.html#af7efacd59cf1525fdcb9f4714b408a4d":[27,0,2,44,2],
+"struct_deki_editor_1_1_node_canvas_palette.html#af7efacd59cf1525fdcb9f4714b408a4d":[28,0,1,40,2],
+"struct_deki_editor_1_1_picker_item.html":[27,0,2,45],
+"struct_deki_editor_1_1_picker_item.html":[28,0,1,41],
+"struct_deki_editor_1_1_picker_item.html#a1070a469bd64c8fc48e847bb10aa9a03":[27,0,2,45,1],
 "struct_deki_editor_1_1_picker_item.html#a1070a469bd64c8fc48e847bb10aa9a03":[28,0,1,41,1],
 "struct_deki_editor_1_1_picker_item.html#a280a40926a0078c70bc941fd46057748":[27,0,2,45,0],
 "struct_deki_editor_1_1_picker_item.html#a280a40926a0078c70bc941fd46057748":[28,0,1,41,0],
@@ -174,6 +182,7 @@ var NAVTREEINDEX37 =
 "struct_deki_property_info.html#a84fc3954280199e4801eb862d7544343":[28,0,21,9],
 "struct_deki_property_info.html#a8b21345612dccf771c1ca6a848a42b8c":[28,0,21,15],
 "struct_deki_property_info.html#a8fc4bfbe2dc0c776b0322b42d92bc53e":[28,0,21,17],
+"struct_deki_property_info.html#a969bdf009300075f5b557ae0bd0c3bfe":[28,0,21,25],
 "struct_deki_property_info.html#aa58eb4f48099c2d75bd85d14d93c4f98":[28,0,21,8],
 "struct_deki_property_info.html#abcbc98db9bb0688703d277a183a08030":[28,0,21,10],
 "struct_deki_property_info.html#ac412b0c3a35c6cfa26791820387bb78a":[28,0,21,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX37 =
 "struct_deki_vector2.html#af1bc8d8c008f7e8012ff38a2fbd248cf":[28,0,29,6],
 "struct_deki_vector2.html#af6a62fe9e580b30cbb186533b5ffcc66":[28,0,29,24],
 "struct_deki_vector3.html":[28,0,30],
-"struct_deki_vector3.html#a00936da20e46e78aa3cfcdd7ee5e57df":[28,0,30,25],
-"struct_deki_vector3.html#a17688ba9da03e4d0986b637377ba8e1c":[28,0,30,17],
-"struct_deki_vector3.html#a20e38196dac6b0deb9947413155e7163":[28,0,30,0],
-"struct_deki_vector3.html#a229e4f10bc16ff61005768d75a0ee0af":[28,0,30,28],
-"struct_deki_vector3.html#a2b02fbfb6e1c0dd9a39912d1f2ad1bc6":[28,0,30,23],
-"struct_deki_vector3.html#a2c9f78fecdc481108d651b83b971b90d":[28,0,30,15],
-"struct_deki_vector3.html#a2ff7260e9c718eeef83dd627c7c9bb23":[28,0,30,11],
-"struct_deki_vector3.html#a32fe0b3ffbfaf9b11b1fd0547224fae3":[28,0,30,9],
-"struct_deki_vector3.html#a3f53f86c290c03fad75e18d45a4944e9":[28,0,30,6],
-"struct_deki_vector3.html#a3ff95374e1986f8fb08be724e60a26d6":[28,0,30,24]
+"struct_deki_vector3.html#a00936da20e46e78aa3cfcdd7ee5e57df":[28,0,30,25]
 };

@@ -24,5 +24,6 @@ var struct_deki_property_info =
     [ "group", "struct_deki_property_info.html#a22c37a7150c4019bf2bad5cd9aba7b9d", null ],
     [ "togglesObjectOf", "struct_deki_property_info.html#a64c9b7c324d4981c167d66afe60e118c", null ],
     [ "physicalUnit", "struct_deki_property_info.html#a6bb5d90fbe5230a5fdecb740f6a80e0c", null ],
-    [ "valueOfProperty", "struct_deki_property_info.html#a503bd0afdc00a147de05c3939f400885", null ]
+    [ "valueOfProperty", "struct_deki_property_info.html#a503bd0afdc00a147de05c3939f400885", null ],
+    [ "renamedFrom", "struct_deki_property_info.html#a969bdf009300075f5b557ae0bd0c3bfe", null ]
 ];
