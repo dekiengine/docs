@@ -1,0 +1,25 @@
+var _project_settings_8h =
+[
+    [ "ProjectSettings::FileHeader", "struct_project_settings_1_1_file_header.html", "struct_project_settings_1_1_file_header" ],
+    [ "ProjectSettings::DisplaySettings", "struct_project_settings_1_1_display_settings.html", "struct_project_settings_1_1_display_settings" ],
+    [ "ProjectSettings::RuntimeSettings", "struct_project_settings_1_1_runtime_settings.html", "struct_project_settings_1_1_runtime_settings" ],
+    [ "ProjectSettings::PipelineConfig", "struct_project_settings_1_1_pipeline_config.html", "struct_project_settings_1_1_pipeline_config" ],
+    [ "ProjectSettings::Load", "namespace_project_settings.html#a70028a7a21e749bc1b57a1c002e6b263", null ],
+    [ "ProjectSettings::GetTargetFPS", "namespace_project_settings.html#a0a4cc4b68b4159a4cc6dbe6820bce0c2", null ],
+    [ "ProjectSettings::GetStartupScene", "namespace_project_settings.html#a944b79f0783a64bcc866fedf1fcecbad", null ],
+    [ "ProjectSettings::GetRenderPipeline", "namespace_project_settings.html#a05e96578be56a105435619d7677b2103", null ],
+    [ "ProjectSettings::GetPassCount", "namespace_project_settings.html#adea57fac77bd7df863c07fbe713bf23c", null ],
+    [ "ProjectSettings::GetPassName", "namespace_project_settings.html#afb21a91e59223b6e756743bf657b66b8", null ],
+    [ "ProjectSettings::LoadFromFile", "namespace_project_settings.html#a6fb299862d4812aa259b83ee63cf431d", null ],
+    [ "ProjectSettings::ReadPackageSettingBool", "namespace_project_settings.html#a6b94666cb296f5a01f3f59a6c127fa5a", null ],
+    [ "ProjectSettings::ReadPackageSettingInt32", "namespace_project_settings.html#a7be45100ca16f60a9bdfa349713d4076", null ],
+    [ "ProjectSettings::ReadPackageSettingFloat", "namespace_project_settings.html#a25d7a04a0d9e4e09df0a75ece789153d", null ],
+    [ "ProjectSettings::Write", "namespace_project_settings.html#ac069380642663cb107139844cf740c6c", null ],
+    [ "ProjectSettings::FILENAME", "namespace_project_settings.html#a3271149b1697b253b41fced30c313219", null ],
+    [ "ProjectSettings::EXPORT_FILENAME", "namespace_project_settings.html#a3bdb24c6e1d729d24868c9458c631b87", null ],
+    [ "ProjectSettings::MAGIC", "namespace_project_settings.html#a61f4c9640253c34b2a52ae12ada9fb64", null ],
+    [ "ProjectSettings::VERSION", "namespace_project_settings.html#a869136cd22ce93d88dc0a9bbc510ffa3", null ],
+    [ "ProjectSettings::MAX_FILE_SIZE", "namespace_project_settings.html#afda69955876b292e6d66d95ac2d95d16", null ],
+    [ "ProjectSettings::MAX_PIPELINE_NAME", "namespace_project_settings.html#a75d156c681ad48305f4af5ed560bb4db", null ],
+    [ "ProjectSettings::MAX_PASSES", "namespace_project_settings.html#a4f7887e758ec68faa04ed4f6ffb5e7f6", null ]
+];

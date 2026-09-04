@@ -1,0 +1,27 @@
+var struct_deki_editor_1_1_node_canvas_events =
+[
+    [ "nodeClicked", "struct_deki_editor_1_1_node_canvas_events.html#aaa8de5ec6b880eb0ffdbee0200fa534b", null ],
+    [ "node", "struct_deki_editor_1_1_node_canvas_events.html#a16c1fc8fa3bb2df2dd6dec9caf8ca1f9", null ],
+    [ "nodeActivated", "struct_deki_editor_1_1_node_canvas_events.html#a71790a4412d1c83919e76970b980b302", null ],
+    [ "activatedNode", "struct_deki_editor_1_1_node_canvas_events.html#aab8bfacef801d2fe9c9c3651a4178129", null ],
+    [ "linkClicked", "struct_deki_editor_1_1_node_canvas_events.html#a74cdd29f6f6b8a6e77f42f2ed34a7e85", null ],
+    [ "linkIndex", "struct_deki_editor_1_1_node_canvas_events.html#a35e505f038b54fe7a7b9d83796172eba", null ],
+    [ "backgroundClicked", "struct_deki_editor_1_1_node_canvas_events.html#a5d5ca1599c57ab6c15ad55b5ae7f11c5", null ],
+    [ "nodeMoving", "struct_deki_editor_1_1_node_canvas_events.html#aa4b5c006a3c66cb9b426b0a7209c53e3", null ],
+    [ "movedNode", "struct_deki_editor_1_1_node_canvas_events.html#a38ca24f70aed04a1fad91c6b2c53786e", null ],
+    [ "newX", "struct_deki_editor_1_1_node_canvas_events.html#a41a40625ca2c37e735e3b8c7f5f81a3b", null ],
+    [ "newY", "struct_deki_editor_1_1_node_canvas_events.html#a3da2e6aba3995c7df5c4b2f164165e13", null ],
+    [ "nodeMoveEnded", "struct_deki_editor_1_1_node_canvas_events.html#a9a9cc746f26e8810d4e8d85a1f4f2a87", null ],
+    [ "moveEndedNode", "struct_deki_editor_1_1_node_canvas_events.html#a2b256b043fa2c62877995e9a2722cb7f", null ],
+    [ "startX", "struct_deki_editor_1_1_node_canvas_events.html#a54c00254b2def94f83348bf21a86036d", null ],
+    [ "startY", "struct_deki_editor_1_1_node_canvas_events.html#a180b4a64b50bc97146c62cb772431ee3", null ],
+    [ "linkCreated", "struct_deki_editor_1_1_node_canvas_events.html#af196a7bc143bdf31a9dcae34720c743b", null ],
+    [ "fromNode", "struct_deki_editor_1_1_node_canvas_events.html#afc6305aef12e55d51a3fbaca33446acf", null ],
+    [ "fromPin", "struct_deki_editor_1_1_node_canvas_events.html#aafcbbab122567b2dc25435fc2a00540f", null ],
+    [ "toNode", "struct_deki_editor_1_1_node_canvas_events.html#abca5907b6ada133b3eba98b76c36f987", null ],
+    [ "toPin", "struct_deki_editor_1_1_node_canvas_events.html#a148215e284018af6ef7d38cd94745c2a", null ],
+    [ "contextMenu", "struct_deki_editor_1_1_node_canvas_events.html#aa3454398f380af23d11f13c66cc76e4c", null ],
+    [ "graphX", "struct_deki_editor_1_1_node_canvas_events.html#af040c79e37fe981cd9dd36e35ae121fa", null ],
+    [ "graphY", "struct_deki_editor_1_1_node_canvas_events.html#a57d5910b3e04db12845f3a5f2b659fe0", null ],
+    [ "deleteRequested", "struct_deki_editor_1_1_node_canvas_events.html#aa264f73fbf981bbc2e63f2cff33588cf", null ]
+];

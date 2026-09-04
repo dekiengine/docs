@@ -1,0 +1,28 @@
+var struct_deki_property_info =
+[
+    [ "name", "struct_deki_property_info.html#a00941012cac0604f1d22e59a27670646", null ],
+    [ "displayName", "struct_deki_property_info.html#ac412b0c3a35c6cfa26791820387bb78a", null ],
+    [ "type", "struct_deki_property_info.html#ac50e60f27e43cf7ea1824fd993d561db", null ],
+    [ "offset", "struct_deki_property_info.html#a101cd88d6d28e9c723ef5cc1dae63556", null ],
+    [ "tooltip", "struct_deki_property_info.html#af17912c17adda32bfd9980f55640a05d", null ],
+    [ "minValue", "struct_deki_property_info.html#ae88d2d5643bc2e47f7c386ac68d155f8", null ],
+    [ "maxValue", "struct_deki_property_info.html#a4bd11705189ab8bb28384dd33765c2df", null ],
+    [ "hasRange", "struct_deki_property_info.html#ac854be6f14a5a239098e74fe4833625d", null ],
+    [ "assetType", "struct_deki_property_info.html#aa58eb4f48099c2d75bd85d14d93c4f98", null ],
+    [ "enumValues", "struct_deki_property_info.html#a84fc3954280199e4801eb862d7544343", null ],
+    [ "enumCount", "struct_deki_property_info.html#abcbc98db9bb0688703d277a183a08030", null ],
+    [ "enumSize", "struct_deki_property_info.html#a451acbd656cfa4cebe2acac76dd974ea", null ],
+    [ "elementType", "struct_deki_property_info.html#a58577898d133af061256919c19ef81cf", null ],
+    [ "visibilityProperty", "struct_deki_property_info.html#a26665ca0a4ea2f82303aaedfaa5b21ee", null ],
+    [ "visibilityMinValue", "struct_deki_property_info.html#a7051ee3ad3a101a93d9ebd25788d10f6", null ],
+    [ "visibilityMask", "struct_deki_property_info.html#a8b21345612dccf771c1ca6a848a42b8c", null ],
+    [ "componentRefType", "struct_deki_property_info.html#a0734ef4030a23c2c4b291c531f5c3512", null ],
+    [ "isMultiline", "struct_deki_property_info.html#a8fc4bfbe2dc0c776b0322b42d92bc53e", null ],
+    [ "triggersAssetRegen", "struct_deki_property_info.html#ac66c777f5efac334c78f4f8cfcec2100", null ],
+    [ "assetRegenType", "struct_deki_property_info.html#a476ee2de126bc68e671bbfc8cdd825b6", null ],
+    [ "useSlider", "struct_deki_property_info.html#acdaf7c57fd9aafd52f2b6221baa79b7d", null ],
+    [ "group", "struct_deki_property_info.html#a22c37a7150c4019bf2bad5cd9aba7b9d", null ],
+    [ "togglesObjectOf", "struct_deki_property_info.html#a64c9b7c324d4981c167d66afe60e118c", null ],
+    [ "physicalUnit", "struct_deki_property_info.html#a6bb5d90fbe5230a5fdecb740f6a80e0c", null ],
+    [ "valueOfProperty", "struct_deki_property_info.html#a503bd0afdc00a147de05c3939f400885", null ]
+];
