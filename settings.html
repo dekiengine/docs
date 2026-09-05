@@ -121,14 +121,16 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('settings.html'
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Section  </th><th class="markdownTableHeadNone">Defined by  </th><th class="markdownTableHeadNone">Properties  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Core  </td><td class="markdownTableBodyNone"><a class="el" href="engine-core.html#md_build_2docs_2md_2engine" title="build/docs/md/engine.md">engine</a>  </td><td class="markdownTableBodyNone">2  </td></tr>
+<td class="markdownTableBodyNone">Core  </td><td class="markdownTableBodyNone"><a href="engine-core.html">engine</a>  </td><td class="markdownTableBodyNone">2  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Framebuffer  </td><td class="markdownTableBodyNone"><a class="el" href="engine-core.html#md_build_2docs_2md_2engine" title="build/docs/md/engine.md">engine</a>  </td><td class="markdownTableBodyNone">3  </td></tr>
+<td class="markdownTableBodyNone">Framebuffer  </td><td class="markdownTableBodyNone"><a href="engine-core.html">engine</a>  </td><td class="markdownTableBodyNone">3  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Units  </td><td class="markdownTableBodyNone"><a class="el" href="engine-core.html#md_build_2docs_2md_2engine" title="build/docs/md/engine.md">engine</a>  </td><td class="markdownTableBodyNone">2  </td></tr>
+<td class="markdownTableBodyNone">Units  </td><td class="markdownTableBodyNone"><a href="engine-core.html">engine</a>  </td><td class="markdownTableBodyNone">2  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Rendering  </td><td class="markdownTableBodyNone"><a class="el" href="pkg-deki-rendering.html#md_build_2docs_2md_2packages_2deki-rendering" title="build/docs/md/packages/deki-rendering.md">deki-rendering</a>  </td><td class="markdownTableBodyNone">4  </td></tr>
+<td class="markdownTableBodyNone">Rendering  </td><td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/">deki-rendering</a>  </td><td class="markdownTableBodyNone">4  </td></tr>
 </table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Engine sections</h1>
 <h2 class="doxsection"><a class="anchor" id="settings-core-settings"></a>
 Core settings</h2>
 <p>Project settings section <span class="tt">Core</span> (<a class="el" href="class_core_project_settings.html" title="Engine-core project settings that are not tied to a specific subsystem.">CoreProjectSettings</a>).</p>
@@ -167,22 +169,7 @@ Units settings</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">pixelsPerMeter</span>  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"><span class="tt">16</span>  </td><td class="markdownTableBodyNone">World scale: how many framebuffer pixels render one meter of world space. Drives inspector px&lt;-&gt;m conversion and the default zoom of new cameras (CameraComponent::pixelsPerMeter sentinel). Range 1 to 1024  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="settings-rendering-settings"></a>
-Rendering settings</h2>
-<p>Project settings section <span class="tt">Rendering</span> (RenderingProjectSettings).</p>
-<p>Category: Settings · Type GUID: <span class="tt">f8a3c891-9b4d-4e2a-9f81-3c5b2d8e4a17</span></p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">halfWidthFramebuffer</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"><span class="tt">false</span>  </td><td class="markdownTableBodyNone">Render at half horizontal resolution and double-up at present time. Halves blit cost and framebuffer memory but pixel art looks 2:1-stretched horizontally.  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">interlaced60hz</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"><span class="tt">false</span>  </td><td class="markdownTableBodyNone">Render odd scanlines one frame, even the next, at 60Hz. Halves per-frame work but produces visible combing on vertical motion.  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">dirtyTileTracking</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"><span class="tt">false</span>  </td><td class="markdownTableBodyNone">Dirty-rect tracking: record the rectangles each frame draws, clear only those next frame and push only what changed (this frame's and last frame's rectangles) to the display. Big win for mostly-static scenes; small bookkeeping cost for fully-animating ones. Displays that cannot present partial frames still receive whole frames.  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">dirtyTileSize</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">32</span>  </td><td class="markdownTableBodyNone">Alignment of dirty rectangles in pixels: each rectangle is rounded out to multiples of this. Larger = fewer, bigger pushes and a small movement reuses the same rectangle; smaller = tighter rectangles. Range 1 to 256 Shown when <span class="tt">dirtyTileTracking</span> allows it  </td></tr>
-</table>
+<p>Sections defined by packages are documented on each package's own site (linked above). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -116,68 +116,68 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
-<p>A modular C++ 2D engine for embedded displays and desktop, with a visual editor. This reference is generated from the engine's own reflection metadata and headers (engine 1.3.0).</p>
+<p>A modular C++ 2D engine for embedded displays and desktop, with a visual editor. This site documents the engine core and its C++ API; every package documents itself on its own site, linked below. All of it is generated from the code (engine 1.3.0).</p>
 <ul>
-<li><a class="el" href="#packages" title="Packages">Packages</a>: every package, its components and their properties</li>
-<li><a class="el" href="engine-core.html#md_build_2docs_2md_2engine" title="build/docs/md/engine.md">Engine core</a>: components and settings the engine provides itself</li>
-<li><a class="el" href="settings.html#md_build_2docs_2md_2settings" title="build/docs/md/settings.md">Project settings</a>: every settings section, by owner</li>
+<li><a href="engine-core.html">Engine core</a>: components and settings the engine provides itself</li>
+<li><a href="settings.html">Project settings</a>: every settings section, by owner</li>
 <li><a href="annotated.html">API reference</a>: the C++ classes of the engine and the editor DLL</li>
+<li><a href="https://github.com/dekiengine/deki-editor">Editor repository</a>: setup, contributing, compatibility policy</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="packages"></a>
 Packages</h1>
+<p>Each package is its own repository under <a href="https://github.com/dekiengine">github.com/dekiengine</a> and is installed with <span class="tt"><a class="el" href="namespace_deki_editor.html">DekiEditor</a> --packages-add &lt;id&gt; &lt;project&gt;</span> or the Package Manager.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Package  </th><th class="markdownTableHeadNone">Components  </th><th class="markdownTableHeadNone">Summary  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-2d.html#md_build_2docs_2md_2packages_2deki-2d" title="build/docs/md/packages/deki-2d.md">deki-2d</a>  </td><td class="markdownTableBodyNone">11  </td><td class="markdownTableBodyNone">Sprites, text, animations, gradients, buttons, scrolling  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-2d/">deki-2d</a>  </td><td class="markdownTableBodyNone">11  </td><td class="markdownTableBodyNone">Sprites, text, animations, gradients, buttons, scrolling  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-audio.html#md_build_2docs_2md_2packages_2deki-audio" title="build/docs/md/packages/deki-audio.md">deki-audio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Audio playback peripheral interface with MAX98357 (I²S) backend  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-audio/">deki-audio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Audio playback peripheral interface with MAX98357 (I²S) backend  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-ble.html#md_build_2docs_2md_2packages_2deki-ble" title="build/docs/md/packages/deki-ble.md">deki-ble</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Bluetooth Low Energy interface: scanning, advertising, GATT server, connections  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-ble/">deki-ble</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Bluetooth Low Energy interface: scanning, advertising, GATT server, connections  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-desktop-integration.html#md_build_2docs_2md_2packages_2deki-desktop-integration" title="build/docs/md/packages/deki-desktop-integration.md">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Desktop platform memory and filesystem providers  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-desktop-integration/">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Desktop platform memory and filesystem providers  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-esp32-integration.html#md_build_2docs_2md_2packages_2deki-esp32-integration" title="build/docs/md/packages/deki-esp32-integration.md">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">ESP32 memory, filesystem, serial, and SD card providers  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-esp32-integration/">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">ESP32 memory, filesystem, serial, and SD card providers  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-fsm.html#md_build_2docs_2md_2packages_2deki-fsm" title="build/docs/md/packages/deki-fsm.md">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Visual state machines with per-state action stacks and event-wired transitions  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-fsm/">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Visual state machines with per-state action stacks and event-wired transitions  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-gps.html#md_build_2docs_2md_2packages_2deki-gps" title="build/docs/md/packages/deki-gps.md">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS peripheral interface and NMEA-over-UART backend  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gps/">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS peripheral interface and NMEA-over-UART backend  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-http.html#md_build_2docs_2md_2packages_2deki-http" title="build/docs/md/packages/deki-http.md">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP client facade with WinHTTP and curl backends  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-http/">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP client facade with WinHTTP and curl backends  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-i2c.html#md_build_2docs_2md_2packages_2deki-i2c" title="build/docs/md/packages/deki-i2c.md">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C bus peripheral interface with an editor-configurable bus component  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2c/">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C bus peripheral interface with an editor-configurable bus component  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-i2s.html#md_build_2docs_2md_2packages_2deki-i2s" title="build/docs/md/packages/deki-i2s.md">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">I²S audio bus peripheral interface  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2s/">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">I²S audio bus peripheral interface  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-imu.html#md_build_2docs_2md_2packages_2deki-imu" title="build/docs/md/packages/deki-imu.md">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Accelerometer + gyroscope peripheral interface with LSM6DS3 backend (hardware pedometer)  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-imu/">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Accelerometer + gyroscope peripheral interface with LSM6DS3 backend (hardware pedometer)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-input.html#md_build_2docs_2md_2packages_2deki-input" title="build/docs/md/packages/deki-input.md">deki-input</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Input handling and collision detection  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-input/">deki-input</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Input handling and collision detection  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-json.html#md_build_2docs_2md_2packages_2deki-json" title="build/docs/md/packages/deki-json.md">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">JSON parsing and serialization backed by cJSON  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-json/">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">JSON parsing and serialization backed by cJSON  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-lovyangfx-integration.html#md_build_2docs_2md_2packages_2deki-lovyangfx-integration" title="build/docs/md/packages/deki-lovyangfx-integration.md">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">LovyanGFX display and touch panel integration  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">LovyanGFX display and touch panel integration  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-nodegraph.html#md_build_2docs_2md_2packages_2deki-nodegraph" title="build/docs/md/packages/deki-nodegraph.md">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Generic node graph editor: canvas view, domains, undo, and node registration  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Generic node graph editor: canvas view, domains, undo, and node registration  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-particles.html#md_build_2docs_2md_2packages_2deki-particles" title="build/docs/md/packages/deki-particles.md">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Modular particle emitter (gravity, drag, velocity, lifetime modifiers)  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Modular particle emitter (gravity, drag, velocity, lifetime modifiers)  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-rendering.html#md_build_2docs_2md_2packages_2deki-rendering" title="build/docs/md/packages/deki-rendering.md">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Core rendering system with camera and renderer components  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Core rendering system with camera and renderer components  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-rtc.html#md_build_2docs_2md_2packages_2deki-rtc" title="build/docs/md/packages/deki-rtc.md">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Real-time clock peripheral interface and DS3231 (I²C) backend  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Real-time clock peripheral interface and DS3231 (I²C) backend  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-sdcard.html#md_build_2docs_2md_2packages_2deki-sdcard" title="build/docs/md/packages/deki-sdcard.md">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD card interface: mount, card state, capacity, and filesystem access  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD card interface: mount, card state, capacity, and filesystem access  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-sdl3-integration.html#md_build_2docs_2md_2packages_2deki-sdl3-integration" title="build/docs/md/packages/deki-sdl3-integration.md">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">SDL3 display, input, and filesystem integration  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">SDL3 display, input, and filesystem integration  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-tiledmapeditor-integration.html#md_build_2docs_2md_2packages_2deki-tiledmapeditor-integration" title="build/docs/md/packages/deki-tiledmapeditor-integration.md">deki-tiledmapeditor-integration</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Loads and renders maps authored in Tiled (.tmj) with chunk streaming  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tiledmapeditor-integration/">deki-tiledmapeditor-integration</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Loads and renders maps authored in Tiled (.tmj) with chunk streaming  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-tween.html#md_build_2docs_2md_2packages_2deki-tween" title="build/docs/md/packages/deki-tween.md">deki-tween</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Animation tweening with 30+ easing functions  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tween/">deki-tween</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Animation tweening with 30+ easing functions  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-uart.html#md_build_2docs_2md_2packages_2deki-uart" title="build/docs/md/packages/deki-uart.md">deki-uart</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">UART serial peripheral interface  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-uart/">deki-uart</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">UART serial peripheral interface  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a class="el" href="pkg-deki-wifi.html#md_build_2docs_2md_2packages_2deki-wifi" title="build/docs/md/packages/deki-wifi.md">deki-wifi</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">WiFi interface: connect, disconnect, state, and access point scanning  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-wifi/">deki-wifi</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">WiFi interface: connect, disconnect, state, and access point scanning  </td></tr>
 </table>
-<p>Reflected property names are the keys scene files use. A rename is a file-format change; see the editor repository's COMPATIBILITY.md. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['6m_20gps_0',['NEO6MGPSComponent (NEO-6M GPS)',['../pkg-deki-gps.html#pkg-deki-gps-neo6mgpscomponent',1,'']]]
+  ['deki_0',['Deki',['../index.html',1,'']]],
+  ['display_20project_20settings_1',['DisplayProjectSettings (Display Project Settings)',['../engine-core.html#engine-displayprojectsettings',1,'']]],
+  ['displayprojectsettings_20display_20project_20settings_2',['DisplayProjectSettings (Display Project Settings)',['../engine-core.html#engine-displayprojectsettings',1,'']]]
 ];

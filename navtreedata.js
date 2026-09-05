@@ -41,150 +41,13 @@ var NAVTREE =
         [ "Units settings", "engine-core.html#engine-units-settings", null ]
       ] ]
     ] ],
-    [ "deki-2d", "pkg-deki-2d.html", [
-      [ "Components", "pkg-deki-2d.html#autotoc_md2", null ],
-      [ "Feature flags", "pkg-deki-2d.html#autotoc_md3", null ],
-      [ "Component reference", "pkg-deki-2d.html#autotoc_md4", [
-        [ "AnimationComponent (Animation Component)", "pkg-deki-2d.html#pkg-deki-2d-animationcomponent", null ],
-        [ "ButtonComponent (Button Component)", "pkg-deki-2d.html#pkg-deki-2d-buttoncomponent", null ],
-        [ "ButtonStyleComponent (Button Style Component)", "pkg-deki-2d.html#pkg-deki-2d-buttonstylecomponent", null ],
-        [ "ClipComponent (Clip Component)", "pkg-deki-2d.html#pkg-deki-2d-clipcomponent", null ],
-        [ "GradientComponent (Gradient Component)", "pkg-deki-2d.html#pkg-deki-2d-gradientcomponent", null ],
-        [ "RollerComponent (Roller Component)", "pkg-deki-2d.html#pkg-deki-2d-rollercomponent", null ],
-        [ "ScrollComponent (Scroll Component)", "pkg-deki-2d.html#pkg-deki-2d-scrollcomponent", null ],
-        [ "ScrollElement (Scroll Element)", "pkg-deki-2d.html#pkg-deki-2d-scrollelement", null ],
-        [ "SortingGroupComponent (Sorting Group Component)", "pkg-deki-2d.html#pkg-deki-2d-sortinggroupcomponent", null ],
-        [ "SpriteComponent (Sprite Component)", "pkg-deki-2d.html#pkg-deki-2d-spritecomponent", null ],
-        [ "TextComponent (Text Component)", "pkg-deki-2d.html#pkg-deki-2d-textcomponent", null ]
+    [ "Project settings", "settings.html", [
+      [ "Engine sections", "settings.html#autotoc_md2", [
+        [ "Core settings", "settings.html#settings-core-settings", null ],
+        [ "Framebuffer settings", "settings.html#settings-framebuffer-settings", null ],
+        [ "Units settings", "settings.html#settings-units-settings", null ]
       ] ]
     ] ],
-    [ "deki-audio", "pkg-deki-audio.html", [
-      [ "Components", "pkg-deki-audio.html#autotoc_md5", null ],
-      [ "Feature flags", "pkg-deki-audio.html#autotoc_md6", null ],
-      [ "Component reference", "pkg-deki-audio.html#autotoc_md7", [
-        [ "MAX98357AudioComponent (MAX98357A Audio)", "pkg-deki-audio.html#pkg-deki-audio-max98357audiocomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-ble", "pkg-deki-ble.html", null ],
-    [ "deki-desktop-integration", "pkg-deki-desktop-integration.html", null ],
-    [ "deki-esp32-integration", "pkg-deki-esp32-integration.html", [
-      [ "Components", "pkg-deki-esp32-integration.html#autotoc_md8", null ],
-      [ "Feature flags", "pkg-deki-esp32-integration.html#autotoc_md9", null ],
-      [ "Component reference", "pkg-deki-esp32-integration.html#autotoc_md10", [
-        [ "ESP32SerialSetup (ESP32 Serial Setup)", "pkg-deki-esp32-integration.html#pkg-deki-esp32-integration-esp32serialsetup", null ]
-      ] ]
-    ] ],
-    [ "deki-fsm", "pkg-deki-fsm.html", [
-      [ "Components", "pkg-deki-fsm.html#autotoc_md11", null ],
-      [ "Feature flags", "pkg-deki-fsm.html#autotoc_md12", null ],
-      [ "Component reference", "pkg-deki-fsm.html#autotoc_md13", [
-        [ "FsmComponent (Fsm Component)", "pkg-deki-fsm.html#pkg-deki-fsm-fsmcomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-gps", "pkg-deki-gps.html", [
-      [ "Components", "pkg-deki-gps.html#autotoc_md14", null ],
-      [ "Feature flags", "pkg-deki-gps.html#autotoc_md15", null ],
-      [ "Component reference", "pkg-deki-gps.html#autotoc_md16", [
-        [ "DesktopGPSComponent (Desktop GPS)", "pkg-deki-gps.html#pkg-deki-gps-desktopgpscomponent", null ],
-        [ "NEO6MGPSComponent (NEO-6M GPS)", "pkg-deki-gps.html#pkg-deki-gps-neo6mgpscomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-http", "pkg-deki-http.html", [
-      [ "Components", "pkg-deki-http.html#autotoc_md17", null ],
-      [ "Component reference", "pkg-deki-http.html#autotoc_md18", [
-        [ "CurlHttpClientComponent (curl HTTP Client)", "pkg-deki-http.html#pkg-deki-http-curlhttpclientcomponent", null ],
-        [ "WinHttpClientComponent (WinHTTP Client)", "pkg-deki-http.html#pkg-deki-http-winhttpclientcomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-i2c", "pkg-deki-i2c.html", [
-      [ "Components", "pkg-deki-i2c.html#autotoc_md19", null ],
-      [ "Component reference", "pkg-deki-i2c.html#autotoc_md20", [
-        [ "I2CBusComponent (I2C Bus Component)", "pkg-deki-i2c.html#pkg-deki-i2c-i2cbuscomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-i2s", "pkg-deki-i2s.html", null ],
-    [ "deki-imu", "pkg-deki-imu.html", [
-      [ "Components", "pkg-deki-imu.html#autotoc_md21", null ],
-      [ "Feature flags", "pkg-deki-imu.html#autotoc_md22", null ],
-      [ "Component reference", "pkg-deki-imu.html#autotoc_md23", [
-        [ "LSM6DS3IMUComponent (LSM6DS3 IMU)", "pkg-deki-imu.html#pkg-deki-imu-lsm6ds3imucomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-input", "pkg-deki-input.html", [
-      [ "Components", "pkg-deki-input.html#autotoc_md24", null ],
-      [ "Feature flags", "pkg-deki-input.html#autotoc_md25", null ],
-      [ "Component reference", "pkg-deki-input.html#autotoc_md26", [
-        [ "InputCollider (Input Collider)", "pkg-deki-input.html#pkg-deki-input-inputcollider", null ]
-      ] ]
-    ] ],
-    [ "deki-json", "pkg-deki-json.html", null ],
-    [ "deki-lovyangfx-integration", "pkg-deki-lovyangfx-integration.html", [
-      [ "Components", "pkg-deki-lovyangfx-integration.html#autotoc_md27", null ],
-      [ "Feature flags", "pkg-deki-lovyangfx-integration.html#autotoc_md28", null ],
-      [ "Component reference", "pkg-deki-lovyangfx-integration.html#autotoc_md29", [
-        [ "LGFXDisplayPanel (LGFX Display Panel)", "pkg-deki-lovyangfx-integration.html#pkg-deki-lovyangfx-integration-lgfxdisplaypanel", null ],
-        [ "LGFXTouchPanel (LGFX Touch Panel)", "pkg-deki-lovyangfx-integration.html#pkg-deki-lovyangfx-integration-lgfxtouchpanel", null ]
-      ] ]
-    ] ],
-    [ "deki-nodegraph", "pkg-deki-nodegraph.html", null ],
-    [ "deki-particles", "pkg-deki-particles.html", [
-      [ "Components", "pkg-deki-particles.html#autotoc_md30", null ],
-      [ "Feature flags", "pkg-deki-particles.html#autotoc_md31", null ],
-      [ "Component reference", "pkg-deki-particles.html#autotoc_md32", [
-        [ "ParticleEmitterComponent (Particle Emitter Component)", "pkg-deki-particles.html#pkg-deki-particles-particleemittercomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-rendering", "pkg-deki-rendering.html", [
-      [ "Components", "pkg-deki-rendering.html#autotoc_md33", null ],
-      [ "Component reference", "pkg-deki-rendering.html#autotoc_md34", [
-        [ "CameraComponent (Camera Component)", "pkg-deki-rendering.html#pkg-deki-rendering-cameracomponent", null ],
-        [ "RenderingProjectSettings (Rendering Project Settings)", "pkg-deki-rendering.html#pkg-deki-rendering-renderingprojectsettings", null ]
-      ] ],
-      [ "Project settings", "pkg-deki-rendering.html#autotoc_md35", [
-        [ "Rendering settings", "pkg-deki-rendering.html#pkg-deki-rendering-rendering-settings", null ]
-      ] ]
-    ] ],
-    [ "deki-rtc", "pkg-deki-rtc.html", [
-      [ "Components", "pkg-deki-rtc.html#autotoc_md36", null ],
-      [ "Feature flags", "pkg-deki-rtc.html#autotoc_md37", null ],
-      [ "Component reference", "pkg-deki-rtc.html#autotoc_md38", [
-        [ "DS3231RTCComponent (DS3231 RTC)", "pkg-deki-rtc.html#pkg-deki-rtc-ds3231rtccomponent", null ],
-        [ "SystemClockRTCComponent (System Clock RTC)", "pkg-deki-rtc.html#pkg-deki-rtc-systemclockrtccomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-sdcard", "pkg-deki-sdcard.html", [
-      [ "Components", "pkg-deki-sdcard.html#autotoc_md39", null ],
-      [ "Component reference", "pkg-deki-sdcard.html#autotoc_md40", [
-        [ "SDCardComponent (SD Card Component)", "pkg-deki-sdcard.html#pkg-deki-sdcard-sdcardcomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-sdl3-integration", "pkg-deki-sdl3-integration.html", [
-      [ "Components", "pkg-deki-sdl3-integration.html#autotoc_md41", null ],
-      [ "Feature flags", "pkg-deki-sdl3-integration.html#autotoc_md42", null ],
-      [ "Component reference", "pkg-deki-sdl3-integration.html#autotoc_md43", [
-        [ "SDL3DisplaySetup (SDL3 Display Setup)", "pkg-deki-sdl3-integration.html#pkg-deki-sdl3-integration-sdl3displaysetup", null ],
-        [ "SDL3InputSetup (SDL3 Input Setup)", "pkg-deki-sdl3-integration.html#pkg-deki-sdl3-integration-sdl3inputsetup", null ]
-      ] ]
-    ] ],
-    [ "deki-tiledmapeditor-integration", "pkg-deki-tiledmapeditor-integration.html", [
-      [ "Components", "pkg-deki-tiledmapeditor-integration.html#autotoc_md44", null ],
-      [ "Feature flags", "pkg-deki-tiledmapeditor-integration.html#autotoc_md45", null ],
-      [ "Component reference", "pkg-deki-tiledmapeditor-integration.html#autotoc_md46", [
-        [ "TilemapColliderComponent (Tilemap Collider Component)", "pkg-deki-tiledmapeditor-integration.html#pkg-deki-tiledmapeditor-integration-tilemapcollidercomponent", null ],
-        [ "TilemapComponent (Tilemap Component)", "pkg-deki-tiledmapeditor-integration.html#pkg-deki-tiledmapeditor-integration-tilemapcomponent", null ],
-        [ "TilemapObjectSpawner (Tilemap Object Spawner)", "pkg-deki-tiledmapeditor-integration.html#pkg-deki-tiledmapeditor-integration-tilemapobjectspawner", null ]
-      ] ]
-    ] ],
-    [ "deki-tween", "pkg-deki-tween.html", [
-      [ "Components", "pkg-deki-tween.html#autotoc_md47", null ],
-      [ "Feature flags", "pkg-deki-tween.html#autotoc_md48", null ],
-      [ "Component reference", "pkg-deki-tween.html#autotoc_md49", [
-        [ "TweenComponent (Tween Component)", "pkg-deki-tween.html#pkg-deki-tween-tweencomponent", null ]
-      ] ]
-    ] ],
-    [ "deki-uart", "pkg-deki-uart.html", null ],
-    [ "deki-wifi", "pkg-deki-wifi.html", null ],
-    [ "Project settings", "settings.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -258,12 +121,12 @@ var NAVTREEINDEX =
 "class_deki_editor_1_1_texture_importer.html#a695a796a14cd7d8b44956f54574963de",
 "class_desktop_file_system.html#a351a69da559593d863a5c3429ac5ddaf",
 "class_scene.html#aea6331488b48a1a13e32f0d7bf51f519",
-"namespace_deki.html#a842fa2a17af886ab760e861d44444ba2",
-"namespace_project_settings.html#a75d156c681ad48305f4af5ed560bb4db",
-"struct_deki_1_1_d_pack_entry.html#a82a4b12460bd49399f3e1a2d8e2b13b0",
-"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a67506978d11a013375e26c709b34a630",
-"struct_deki_editor_1_1_node_canvas_palette.html#a9a9263afb4c0680c7c4147e916fa0a5d",
-"struct_deki_vector3.html#a17688ba9da03e4d0986b637377ba8e1c"
+"namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45",
+"namespace_project_settings.html#a7be45100ca16f60a9bdfa349713d4076",
+"struct_deki_editor_1_1_asset_info.html#ad1f577c01f000278620939def699201c",
+"struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#abea617267502574c1bf9e611ec39185b",
+"struct_deki_editor_1_1_tex_data.html#aab2c72b2d08df1539133e7c0e2647f37",
+"struct_project_settings_1_1_pipeline_config.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['element_0',['ScrollElement (Scroll Element)',['../pkg-deki-2d.html#pkg-deki-2d-scrollelement',1,'']]],
-  ['emitter_20component_1',['ParticleEmitterComponent (Particle Emitter Component)',['../pkg-deki-particles.html#pkg-deki-particles-particleemittercomponent',1,'']]],
-  ['engine_20core_2',['Engine core',['../engine-core.html',1,'']]],
-  ['esp32_20integration_3',['deki-esp32-integration',['../pkg-deki-esp32-integration.html',1,'']]],
-  ['esp32_20serial_20setup_4',['ESP32SerialSetup (ESP32 Serial Setup)',['../pkg-deki-esp32-integration.html#pkg-deki-esp32-integration-esp32serialsetup',1,'']]],
-  ['esp32serialsetup_20esp32_20serial_20setup_5',['ESP32SerialSetup (ESP32 Serial Setup)',['../pkg-deki-esp32-integration.html#pkg-deki-esp32-integration-esp32serialsetup',1,'']]]
+  ['sections_0',['Engine sections',['../settings.html#autotoc_md2',1,'']]],
+  ['settings_1',['Settings',['../engine-core.html#engine-coreprojectsettings',1,'CoreProjectSettings (Core Project Settings)'],['../engine-core.html#engine-displayprojectsettings',1,'DisplayProjectSettings (Display Project Settings)'],['../engine-core.html#engine-unitprojectsettings',1,'UnitProjectSettings (Unit Project Settings)']]],
+  ['settings_2',['settings',['../engine-core.html#engine-core-settings',1,'Core settings'],['../settings.html#settings-core-settings',1,'Core settings'],['../engine-core.html#engine-framebuffer-settings',1,'Framebuffer settings'],['../settings.html#settings-framebuffer-settings',1,'Framebuffer settings'],['../settings.html',1,'Project settings'],['../engine-core.html#autotoc_md1',1,'Project settings'],['../engine-core.html#engine-units-settings',1,'Units settings'],['../settings.html#settings-units-settings',1,'Units settings']]],
+  ['setup_20component_3',['Setup Component',['../engine-core.html#engine-platformsetupcomponent',1,'PlatformSetupComponent (Platform Setup Component)'],['../engine-core.html#engine-setupcomponent',1,'SetupComponent (Setup Component)']]],
+  ['setupcomponent_20setup_20component_4',['SetupComponent (Setup Component)',['../engine-core.html#engine-setupcomponent',1,'']]]
 ];
