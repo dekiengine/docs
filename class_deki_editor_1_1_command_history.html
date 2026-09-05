@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -635,7 +635,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Discard history that can no longer be safely replayed because the objects it points at are being freed. </p>
-<p>Hook this to <a class="el" href="class_scene.html" title="Represents a scene containing objects and components.">Scene</a>'s on_objects_about_to_be_destroyed. <span class="tt">dead</span> must contain the dying objects and all of their components.</p>
+<p>Hook this to Scene's on_objects_about_to_be_destroyed. <span class="tt">dead</span> must contain the dying objects and all of their components.</p>
 <p>Truncation, not surgical removal: undo walks the stack newest-to-oldest, so a dead command at index k makes everything at or below k unreachable without stepping through it. Those entries are dropped and the remaining suffix stays consistent. </p>
 
 </div>

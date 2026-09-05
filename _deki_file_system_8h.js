@@ -1,4 +1,4 @@
 var _deki_file_system_8h =
 [
-    [ "DekiFileSystem", "class_deki_file_system.html", "class_deki_file_system" ]
+    [ "Deki::FileSystem", "class_deki_1_1_file_system.html", "class_deki_1_1_file_system" ]
 ];

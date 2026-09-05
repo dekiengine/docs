@@ -1,4 +1,4 @@
 var _node_ref_8h =
 [
-    [ "NodeRef", "struct_node_ref.html", "struct_node_ref" ]
+    [ "Deki::NodeRef", "struct_deki_1_1_node_ref.html", "struct_deki_1_1_node_ref" ]
 ];

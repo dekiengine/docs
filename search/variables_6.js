@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g_0',['G',['../namespace_input_keys.html#a1f77e497f21451a245e444930fcb4f72',1,'InputKeys']]],
+  ['g_0',['G',['../namespace_deki_1_1_input_keys.html#af6476285b8751780c555b7aee13bae8a',1,'Deki::InputKeys']]],
   ['g_1',['g',['../class_deki_1_1_color.html#a8e479c93087c3b7b27d7c9b1da11a88c',1,'Deki::Color::g'],['../struct_deki_editor_1_1_chroma_key_settings.html#a8ca28e2a7019af407c58922f7afcb1ff',1,'DekiEditor::ChromaKeySettings::g']]],
   ['g_5ffontdisplay_2',['g_FontDisplay',['../namespace_deki_editor.html#ae17f27d7625f2b0a890d3f0e09f0fd7d',1,'DekiEditor']]],
   ['g_5ffontdisplaysmall_3',['g_FontDisplaySmall',['../namespace_deki_editor.html#ab3a9b61187a791764db3ae792967845d',1,'DekiEditor']]],
@@ -18,6 +18,6 @@ var searchData=
   ['gray_15',['Gray',['../class_deki_1_1_color.html#a2d9109af7c676cc3860f60276d3cbcc6',1,'Deki::Color']]],
   ['green_16',['Green',['../class_deki_1_1_color.html#a7a7d2043caa09f667a76af4b57cb2233',1,'Deki::Color::Green'],['../namespace_deki_editor_1_1_palette.html#a8bea5a79dfada4030bd918fbdbd74b5c',1,'DekiEditor::Palette::Green']]],
   ['grid_17',['grid',['../struct_deki_editor_1_1_node_canvas_palette.html#a9a9263afb4c0680c7c4147e916fa0a5d',1,'DekiEditor::NodeCanvasPalette']]],
-  ['group_18',['group',['../struct_deki_property_info.html#a22c37a7150c4019bf2bad5cd9aba7b9d',1,'DekiPropertyInfo']]],
+  ['group_18',['group',['../struct_deki_1_1_property_info.html#a59c23a8c8c9dab3027b4b0f09e517069',1,'Deki::PropertyInfo']]],
   ['guid_19',['guid',['../struct_deki_1_1_d_pack_entry.html#a82a4b12460bd49399f3e1a2d8e2b13b0',1,'Deki::DPackEntry::guid'],['../struct_deki_1_1_pack_index_entry.html#a3205b80794bdbaa257a252a5cd6575bf',1,'Deki::PackIndexEntry::guid'],['../struct_deki_1_1_asset_ref_base.html#aad269364aa81b16baae3a42c8ec0ff76',1,'Deki::AssetRefBase::guid'],['../struct_deki_editor_1_1_asset_data.html#aa35e701d27561a180fc5caeda2434140',1,'DekiEditor::AssetData::guid'],['../struct_deki_editor_1_1_asset_picker_entry.html#ac3628f569622a69e15e70689d9eade00',1,'DekiEditor::AssetPickerEntry::guid'],['../struct_deki_editor_1_1_asset_cache_context.html#a7b83f0fba9f56785db1361d8d1d6929d',1,'DekiEditor::AssetCacheContext::guid'],['../struct_deki_editor_1_1_asset_info.html#ad1f577c01f000278620939def699201c',1,'DekiEditor::AssetInfo::guid'],['../struct_deki_editor_1_1_sub_asset_info.html#a49a28ad78bed2f92a9d8d86d22e66b5b',1,'DekiEditor::SubAssetInfo::guid']]]
 ];

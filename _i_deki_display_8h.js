@@ -1,4 +1,4 @@
 var _i_deki_display_8h =
 [
-    [ "IDekiDisplay", "class_i_deki_display.html", "class_i_deki_display" ]
+    [ "Deki::IDisplay", "class_deki_1_1_i_display.html", "class_deki_1_1_i_display" ]
 ];

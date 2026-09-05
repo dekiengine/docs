@@ -1,4 +1,4 @@
 var _i_deki_input_system_8h =
 [
-    [ "IDekiInputSystem", "class_i_deki_input_system.html", "class_i_deki_input_system" ]
+    [ "Deki::IInputSystem", "class_deki_1_1_i_input_system.html", "class_deki_1_1_i_input_system" ]
 ];

@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['editor_0',['Editor',['../struct_deki_engine_host.html#a4ab4dd4379fee9209941f89cb01685b9',1,'DekiEngineHost']]],
-  ['editorautosetupregistrar_1',['EditorAutoSetupRegistrar',['../struct_editor_auto_setup_registrar.html#a31d5cee52dd79edc8b6003954e276566',1,'EditorAutoSetupRegistrar']]],
-  ['editordisplay_2',['EditorDisplay',['../class_editor_display.html#a272d4b3b3cf88772155adcf629e84e82',1,'EditorDisplay']]],
+  ['editor_0',['Editor',['../struct_deki_1_1_engine_host.html#a0c8695d439cb25d81031be0048bf32e0',1,'Deki::EngineHost']]],
+  ['editorautosetupregistrar_1',['EditorAutoSetupRegistrar',['../struct_deki_1_1_editor_auto_setup_registrar.html#a8b427b826b6127fef23171cde8d1f00c',1,'Deki::EditorAutoSetupRegistrar']]],
+  ['editordisplay_2',['EditorDisplay',['../class_deki_1_1_editor_display.html#aa388092ab78d5b5cf90d27d0fbd13434',1,'Deki::EditorDisplay']]],
   ['editorregistrar_3',['EditorRegistrar',['../struct_deki_editor_internal_1_1_editor_registrar.html#a0353eb96849f07195d67c0fc774a79a4',1,'DekiEditorInternal::EditorRegistrar']]],
-  ['empty_4',['Empty',['../struct_deki_rect.html#a645dc9a2f39b5239bdf9e76e45add8c3',1,'DekiRect::Empty()'],['../class_deki_editor_1_1_dead_memory.html#a49d8fb0a5d7dafd7470706f4dca84788',1,'DekiEditor::DeadMemory::Empty()']]],
+  ['empty_4',['Empty',['../struct_deki_1_1_rect.html#a0eeb7e23760ea335488abe172edeb5d7',1,'Deki::Rect::Empty()'],['../class_deki_editor_1_1_dead_memory.html#a49d8fb0a5d7dafd7470706f4dca84788',1,'DekiEditor::DeadMemory::Empty()']]],
   ['end_5',['End',['../class_deki_editor_1_1_editor_u_i.html#a1e324d41f96692bc6bcc1ef899e05fa5',1,'DekiEditor::EditorUI']]],
   ['endchild_6',['EndChild',['../class_deki_editor_1_1_editor_u_i.html#a91fd0754c62fee7df706440639d5f459',1,'DekiEditor::EditorUI']]],
   ['endcombo_7',['EndCombo',['../class_deki_editor_1_1_editor_u_i.html#ab47d5653c480fc21817910911c5418c0',1,'DekiEditor::EditorUI']]],
   ['endcomponent_8',['EndComponent',['../class_deki_editor_1_1_editor_u_i.html#a9b3bc5fbf3e1c02934d3db505b168b84',1,'DekiEditor::EditorUI']]],
   ['enddisabled_9',['EndDisabled',['../class_deki_editor_1_1_editor_u_i.html#aa96087c3ab98928d717862b22d4b530b',1,'DekiEditor::EditorUI']]],
-  ['endframe_10',['EndFrame',['../class_deki_f_p_s_counter.html#a4e476d3adb998da156ca8780f54d499c',1,'DekiFPSCounter']]],
+  ['endframe_10',['EndFrame',['../class_deki_1_1_f_p_s_counter.html#a455293cd34e4ebe68d0baf534f797de8',1,'Deki::FPSCounter']]],
   ['endgroup_11',['EndGroup',['../class_deki_editor_1_1_editor_u_i.html#a686fe02504a78fef07cb9b1561ffbdb1',1,'DekiEditor::EditorUI']]],
   ['endlistclipper_12',['EndListClipper',['../class_deki_editor_1_1_editor_u_i.html#af9a35f829a8da5af21807a4423321dc6',1,'DekiEditor::EditorUI']]],
   ['endmenu_13',['EndMenu',['../class_deki_editor_1_1_editor_u_i.html#a4e123289d04a44d231e0840e794e32cd',1,'DekiEditor::EditorUI']]],
@@ -26,6 +26,6 @@ var searchData=
   ['enumfield_23',['EnumField',['../class_deki_editor_1_1_editor_u_i.html#af423eb5897197bce8ec4b6d47f7a72a0',1,'DekiEditor::EditorUI::EnumField(const char *label, int *index, const char *const items[], int count, const EnumCallbacks &amp;cb={})'],['../class_deki_editor_1_1_editor_u_i.html#a4a1e87bbbbc0911153e97e279bff9b58',1,'DekiEditor::EditorUI::EnumField(const char *label, int *index, const char *itemsZeroSep, const EnumCallbacks &amp;cb={})']]],
   ['execute_24',['Execute',['../class_deki_editor_1_1_command.html#a837c6ad7e5d9e854c5c0c00d733a0199',1,'DekiEditor::Command::Execute()'],['../class_deki_editor_1_1_compound_command.html#a949dc7a5377c8f021eef85e0e766e324',1,'DekiEditor::CompoundCommand::Execute()'],['../class_deki_editor_1_1_command_history.html#a754a0816ed2e3daa19b1dfa27382a19f',1,'DekiEditor::CommandHistory::Execute(std::unique_ptr&lt; Command &gt; command)']]],
   ['executenomerge_25',['ExecuteNoMerge',['../class_deki_editor_1_1_command_history.html#acd864b47df891e81febf529d8d853ee2',1,'DekiEditor::CommandHistory']]],
-  ['expandinstance_26',['ExpandInstance',['../class_scene.html#a7e4488a3c03caae18411001bbc484457',1,'Scene']]],
+  ['expandinstance_26',['ExpandInstance',['../class_deki_1_1_scene.html#a1ceedd59f14245b19cb2c961a1e32776',1,'Deki::Scene']]],
   ['extractzip_27',['ExtractZip',['../class_deki_editor_1_1_editor_http_utils.html#aa708a9e4a5aeb466a561c2aeea029e18',1,'DekiEditor::EditorHttpUtils']]]
 ];

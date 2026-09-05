@@ -268,8 +268,8 @@ var class_deki_editor_1_1_editor_u_i =
     [ "Vector3Field", "class_deki_editor_1_1_editor_u_i.html#a3101a52cf69e8e601cd4ae9e722b16f5", null ],
     [ "SetWidgetBackend", "class_deki_editor_1_1_editor_u_i.html#abe6370fb6c6b1eb587b3af0ef7059653", null ],
     [ "SetExtraWindowFlagsProvider", "class_deki_editor_1_1_editor_u_i.html#af4e74a6ca78cd5982de8d23539f9865a", null ],
-    [ "GetCurrentComponent", "class_deki_editor_1_1_editor_u_i.html#a6b9400198fde3597c77704a0858ca842", null ],
-    [ "GetCurrentMeta", "class_deki_editor_1_1_editor_u_i.html#a9f6da6356cb9f3c5769d0f512bdb3a47", null ],
-    [ "BeginComponent", "class_deki_editor_1_1_editor_u_i.html#a3d2ab84b7d6bf60314e58043539b1d85", null ],
+    [ "GetCurrentComponent", "class_deki_editor_1_1_editor_u_i.html#a2e1f96efee2282ed6ee999bd5ce880e2", null ],
+    [ "GetCurrentMeta", "class_deki_editor_1_1_editor_u_i.html#ab3902823f70f0da9fbb00714eb026933", null ],
+    [ "BeginComponent", "class_deki_editor_1_1_editor_u_i.html#a780085eb41be1715255aa597fd9649d8", null ],
     [ "EndComponent", "class_deki_editor_1_1_editor_u_i.html#a9b3bc5fbf3e1c02934d3db505b168b84", null ]
 ];

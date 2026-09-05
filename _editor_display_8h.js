@@ -1,4 +1,4 @@
 var _editor_display_8h =
 [
-    [ "EditorDisplay", "class_editor_display.html", "class_editor_display" ]
+    [ "Deki::EditorDisplay", "class_deki_1_1_editor_display.html", "class_deki_1_1_editor_display" ]
 ];

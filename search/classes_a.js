@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['objectref_0',['ObjectRef',['../struct_object_ref.html',1,'']]],
-  ['objectrefbase_1',['ObjectRefBase',['../struct_object_ref_base.html',1,'']]]
+  ['nodecanvas_0',['NodeCanvas',['../class_deki_editor_1_1_node_canvas.html',1,'DekiEditor']]],
+  ['nodecanvasevents_1',['NodeCanvasEvents',['../struct_deki_editor_1_1_node_canvas_events.html',1,'DekiEditor']]],
+  ['nodecanvaslink_2',['NodeCanvasLink',['../struct_deki_editor_1_1_node_canvas_link.html',1,'DekiEditor']]],
+  ['nodecanvasnode_3',['NodeCanvasNode',['../struct_deki_editor_1_1_node_canvas_node.html',1,'DekiEditor']]],
+  ['nodecanvaspalette_4',['NodeCanvasPalette',['../struct_deki_editor_1_1_node_canvas_palette.html',1,'DekiEditor']]],
+  ['noderef_5',['NodeRef',['../struct_deki_1_1_node_ref.html',1,'Deki']]]
 ];

@@ -1,4 +1,4 @@
 var _deki_behaviour_8h =
 [
-    [ "DekiBehaviour", "class_deki_behaviour.html", "class_deki_behaviour" ]
+    [ "Deki::Behaviour", "class_deki_1_1_behaviour.html", "class_deki_1_1_behaviour" ]
 ];

@@ -1,8 +1,8 @@
 var _component_interface_adapters_8h =
 [
-    [ "InterfaceAdapter", "_component_interface_adapters_8h.html#a4ee4b560aa040bb05c313125992f1377", null ],
-    [ "ComponentInterfaceAdapters::Register", "namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888", null ],
-    [ "ComponentInterfaceAdapters::Query", "namespace_component_interface_adapters.html#a556ffc609d6392baca3c4e8730bfcc0f", null ],
-    [ "ComponentInterfaceAdapters::Find", "namespace_component_interface_adapters.html#a7e45c88ac53fe7be04cfada088d5db99", null ],
-    [ "ComponentInterfaceAdapters::Version", "namespace_component_interface_adapters.html#a85eaaf171816abe98fb5180139777cc1", null ]
+    [ "Deki::InterfaceAdapter", "namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d", null ],
+    [ "Deki::ComponentInterfaceAdapters::Register", "namespace_deki_1_1_component_interface_adapters.html#aa903de95127a189186deafaab3fc9d48", null ],
+    [ "Deki::ComponentInterfaceAdapters::Query", "namespace_deki_1_1_component_interface_adapters.html#ae5923b30d6906703d9835d61ec94ef8a", null ],
+    [ "Deki::ComponentInterfaceAdapters::Find", "namespace_deki_1_1_component_interface_adapters.html#aff827d6f5054f5619657940288d08827", null ],
+    [ "Deki::ComponentInterfaceAdapters::Version", "namespace_deki_1_1_component_interface_adapters.html#ae3712da8c54149d949dbeb01cd8398bb", null ]
 ];

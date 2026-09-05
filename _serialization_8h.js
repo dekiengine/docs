@@ -1,5 +1,5 @@
 var _serialization_8h =
 [
-    [ "Serialize", "_serialization_8h.html#a549ee0a279b36559b1d96080727bdfe8", null ],
-    [ "Deserialize", "_serialization_8h.html#a919c51d8cdd9222853406b50ec674f15", null ]
+    [ "Deki::Serialize", "namespace_deki.html#a797e40e5960acce21da40512527a5aab", null ],
+    [ "Deki::Deserialize", "namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514", null ]
 ];

@@ -1,4 +1,4 @@
 var _scene_8h =
 [
-    [ "Scene", "class_scene.html", "class_scene" ]
+    [ "Deki::Scene", "class_deki_1_1_scene.html", "class_deki_1_1_scene" ]
 ];

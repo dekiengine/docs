@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['editorautofactory_0',['EditorAutoFactory',['../class_setup_component.html#a1171aba2a12fe4b8de7c642a98d188af',1,'SetupComponent']]]
+  ['editorautofactory_0',['EditorAutoFactory',['../class_deki_1_1_setup_component.html#a85a7c956f3edbf1d2ea8f12d5a00fdf8',1,'Deki::SetupComponent']]]
 ];

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -133,22 +133,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af5a9072ebc5e50290ea7a833fb259757" id="r_af5a9072ebc5e50290ea7a833fb259757"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#af5a9072ebc5e50290ea7a833fb259757">GetName</a> () const override</td></tr>
 <tr class="memitem:a6b10312659483e34a1cfae52d1960a15" id="r_a6b10312659483e34a1cfae52d1960a15"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="#a6b10312659483e34a1cfae52d1960a15">GetComponentName</a> () const =0</td></tr>
 <tr class="memdesc:a6b10312659483e34a1cfae52d1960a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the component this editor handles.  <br /></td></tr>
-<tr class="memitem:a9cc679ea6c215a6ae3e88c69edac1b0f" id="r_a9cc679ea6c215a6ae3e88c69edac1b0f"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a9cc679ea6c215a6ae3e88c69edac1b0f">WantsInspectorOverride</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
-<tr class="memdesc:a9cc679ea6c215a6ae3e88c69edac1b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this editor wants to override the inspector.  <br /></td></tr>
-<tr class="memitem:a4b53bd92776e025e307802bbd94feb93" id="r_a4b53bd92776e025e307802bbd94feb93"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a4b53bd92776e025e307802bbd94feb93">OnInspectorGUI</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
-<tr class="memdesc:a4b53bd92776e025e307802bbd94feb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw custom inspector GUI.  <br /></td></tr>
-<tr class="memitem:a68d63a9eb39dac895ccdfdb17e2b21b2" id="r_a68d63a9eb39dac895ccdfdb17e2b21b2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a68d63a9eb39dac895ccdfdb17e2b21b2">OnEditorUpdate</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
-<tr class="memdesc:a68d63a9eb39dac895ccdfdb17e2b21b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame before rendering for all components with editors.  <br /></td></tr>
-<tr class="memitem:a37962279ba977dc0cddb8f46e6214853" id="r_a37962279ba977dc0cddb8f46e6214853"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a37962279ba977dc0cddb8f46e6214853">GetDisplaySize</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp, float &amp;outWidth, float &amp;outHeight)</td></tr>
-<tr class="memdesc:a37962279ba977dc0cddb8f46e6214853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get display size for the component.  <br /></td></tr>
-<tr class="memitem:a05ab8b33d1a537344707f87164b29c5d" id="r_a05ab8b33d1a537344707f87164b29c5d"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a05ab8b33d1a537344707f87164b29c5d">HitTest</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp, float localX, float localY, float width, float height)</td></tr>
-<tr class="memdesc:a05ab8b33d1a537344707f87164b29c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hit test a point against the component.  <br /></td></tr>
-<tr class="memitem:afdab3eb629db3e66354ef6589f6f9474" id="r_afdab3eb629db3e66354ef6589f6f9474"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="#afdab3eb629db3e66354ef6589f6f9474">GetTextureAssetGuid</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
-<tr class="memdesc:afdab3eb629db3e66354ef6589f6f9474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the texture asset GUID for this component (if any).  <br /></td></tr>
-<tr class="memitem:a579b2ba12c40592c7284a1567678c3d2" id="r_a579b2ba12c40592c7284a1567678c3d2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a579b2ba12c40592c7284a1567678c3d2">GetResizeTarget</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp, int32_t **outWidth, int32_t **outHeight)</td></tr>
-<tr class="memdesc:a579b2ba12c40592c7284a1567678c3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get resize target pointers.  <br /></td></tr>
-<tr class="memitem:a13e5cfcbc624b50ef503b4ef33cb2362" id="r_a13e5cfcbc624b50ef503b4ef33cb2362"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a13e5cfcbc624b50ef503b4ef33cb2362">OnDrawGizmos</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
-<tr class="memitem:a75bbb7cc49a4c27bdb7fb5f26bcb63f5" id="r_a75bbb7cc49a4c27bdb7fb5f26bcb63f5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a75bbb7cc49a4c27bdb7fb5f26bcb63f5">OnDrawGizmosSelected</a> (<a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
+<tr class="memitem:aa8f5970d868a97e56455be7ed979c592" id="r_aa8f5970d868a97e56455be7ed979c592"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#aa8f5970d868a97e56455be7ed979c592">WantsInspectorOverride</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp)</td></tr>
+<tr class="memdesc:aa8f5970d868a97e56455be7ed979c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this editor wants to override the inspector.  <br /></td></tr>
+<tr class="memitem:ac475ab73033e9ecbd684517f96b129ae" id="r_ac475ab73033e9ecbd684517f96b129ae"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac475ab73033e9ecbd684517f96b129ae">OnInspectorGUI</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp)</td></tr>
+<tr class="memdesc:ac475ab73033e9ecbd684517f96b129ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw custom inspector GUI.  <br /></td></tr>
+<tr class="memitem:af9ac25b13a9f205b69c58cad0df3d198" id="r_af9ac25b13a9f205b69c58cad0df3d198"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af9ac25b13a9f205b69c58cad0df3d198">OnEditorUpdate</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp)</td></tr>
+<tr class="memdesc:af9ac25b13a9f205b69c58cad0df3d198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame before rendering for all components with editors.  <br /></td></tr>
+<tr class="memitem:a32cd5d8e727627ae69794a8db47564a9" id="r_a32cd5d8e727627ae69794a8db47564a9"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a32cd5d8e727627ae69794a8db47564a9">GetDisplaySize</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp, float &amp;outWidth, float &amp;outHeight)</td></tr>
+<tr class="memdesc:a32cd5d8e727627ae69794a8db47564a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get display size for the component.  <br /></td></tr>
+<tr class="memitem:abb9ba421c7950ac4393f01a8ae43f64e" id="r_abb9ba421c7950ac4393f01a8ae43f64e"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#abb9ba421c7950ac4393f01a8ae43f64e">HitTest</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp, float localX, float localY, float width, float height)</td></tr>
+<tr class="memdesc:abb9ba421c7950ac4393f01a8ae43f64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hit test a point against the component.  <br /></td></tr>
+<tr class="memitem:ac20d69d2f5ea875a3df51e210a9f4b32" id="r_ac20d69d2f5ea875a3df51e210a9f4b32"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="#ac20d69d2f5ea875a3df51e210a9f4b32">GetTextureAssetGuid</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp)</td></tr>
+<tr class="memdesc:ac20d69d2f5ea875a3df51e210a9f4b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the texture asset GUID for this component (if any).  <br /></td></tr>
+<tr class="memitem:ab0e33d45161b755534bd96bf4ae36036" id="r_ab0e33d45161b755534bd96bf4ae36036"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab0e33d45161b755534bd96bf4ae36036">GetResizeTarget</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp, int32_t **outWidth, int32_t **outHeight)</td></tr>
+<tr class="memdesc:ab0e33d45161b755534bd96bf4ae36036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get resize target pointers.  <br /></td></tr>
+<tr class="memitem:a800a0a95f11c4408822b835c7b6a62e4" id="r_a800a0a95f11c4408822b835c7b6a62e4"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a800a0a95f11c4408822b835c7b6a62e4">OnDrawGizmos</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp)</td></tr>
+<tr class="memitem:a8564c0d5e860ebb2c648eac451b410e7" id="r_a8564c0d5e860ebb2c648eac451b410e7"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a8564c0d5e860ebb2c648eac451b410e7">OnDrawGizmosSelected</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp)</td></tr>
 <tr class="inherit_header pub_methods_class_deki_editor_1_1_editor_extension"><td colspan="2">Public Member Functions inherited from <a class="el" href="class_deki_editor_1_1_editor_extension.html">DekiEditor::EditorExtension</a></td></tr>
 <tr class="memitem:a8451e714f963d0ffcd0288c164a453eb pub_methods_class_deki_editor_1_1_editor_extension" id="r_a8451e714f963d0ffcd0288c164a453eb"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_extension.html#a8451e714f963d0ffcd0288c164a453eb">~EditorExtension</a> ()=default</td></tr>
 </table>
@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="#a6b10312659483e34a1cfae52d1960a15">GetComponentName</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;SpriteComponent&quot;</span>; }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="#a37962279ba977dc0cddb8f46e6214853">GetDisplaySize</a>(<a class="code hl_class" href="class_deki_component.html">DekiComponent</a>* comp, <span class="keywordtype">float</span>&amp; outWidth, <span class="keywordtype">float</span>&amp; outHeight)<span class="keyword"> override</span></div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="#a32cd5d8e727627ae69794a8db47564a9">GetDisplaySize</a>(<a class="code hl_class" href="class_deki_1_1_component.html">Deki::Component</a>* comp, <span class="keywordtype">float</span>&amp; outWidth, <span class="keywordtype">float</span>&amp; outHeight)<span class="keyword"> override</span></div>
 <div class="line"><span class="keyword">    </span>{</div>
 <div class="line">        <span class="keyword">auto</span>* sprite = <span class="keyword">static_cast&lt;</span>SpriteComponent*<span class="keyword">&gt;</span>(comp);</div>
 <div class="line">        outWidth = sprite-&gt;width;</div>
@@ -172,9 +172,9 @@ Public Member Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><a class="code hl_define" href="_editor_registry_8h.html#a0796a87ad5d8d73631ad31b7d6c8bf07">REGISTER_EDITOR</a>(SpriteCustomEditor)</div>
 <div class="ttc" id="a_editor_registry_8h_html_a0796a87ad5d8d73631ad31b7d6c8bf07"><div class="ttname"><a href="_editor_registry_8h.html#a0796a87ad5d8d73631ad31b7d6c8bf07">REGISTER_EDITOR</a></div><div class="ttdeci">#define REGISTER_EDITOR(EditorClass)</div><div class="ttdoc">Macro for auto-registering editor extensions.</div><div class="ttdef"><b>Definition</b> EditorRegistry.h:133</div></div>
-<div class="ttc" id="aclass_deki_component_html"><div class="ttname"><a href="class_deki_component.html">DekiComponent</a></div><div class="ttdoc">Base class for all components (data-only).</div><div class="ttdef"><b>Definition</b> DekiComponent.h:51</div></div>
+<div class="ttc" id="aclass_deki_1_1_component_html"><div class="ttname"><a href="class_deki_1_1_component.html">Deki::Component</a></div><div class="ttdoc">Base class for all components (data-only).</div><div class="ttdef"><b>Definition</b> DekiComponent.h:56</div></div>
 <div class="ttc" id="aclass_deki_editor_1_1_custom_editor_html"><div class="ttname"><a href="class_deki_editor_1_1_custom_editor.html">DekiEditor::CustomEditor</a></div><div class="ttdoc">Custom editor for a specific component type.</div><div class="ttdef"><b>Definition</b> CustomEditor.h:47</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_custom_editor_html_a37962279ba977dc0cddb8f46e6214853"><div class="ttname"><a href="#a37962279ba977dc0cddb8f46e6214853">DekiEditor::CustomEditor::GetDisplaySize</a></div><div class="ttdeci">virtual bool GetDisplaySize(DekiComponent *comp, float &amp;outWidth, float &amp;outHeight)</div><div class="ttdoc">Get display size for the component.</div><div class="ttdef"><b>Definition</b> CustomEditor.h:116</div></div>
+<div class="ttc" id="aclass_deki_editor_1_1_custom_editor_html_a32cd5d8e727627ae69794a8db47564a9"><div class="ttname"><a href="#a32cd5d8e727627ae69794a8db47564a9">DekiEditor::CustomEditor::GetDisplaySize</a></div><div class="ttdeci">virtual bool GetDisplaySize(Deki::Component *comp, float &amp;outWidth, float &amp;outHeight)</div><div class="ttdoc">Get display size for the component.</div><div class="ttdef"><b>Definition</b> CustomEditor.h:116</div></div>
 <div class="ttc" id="aclass_deki_editor_1_1_custom_editor_html_a6b10312659483e34a1cfae52d1960a15"><div class="ttname"><a href="#a6b10312659483e34a1cfae52d1960a15">DekiEditor::CustomEditor::GetComponentName</a></div><div class="ttdeci">virtual const char * GetComponentName() const =0</div><div class="ttdoc">Get the name of the component this editor handles.</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae974afa2de5b92df30bd78bfa141c4f2" name="ae974afa2de5b92df30bd78bfa141c4f2"></a>
@@ -285,8 +285,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9cc679ea6c215a6ae3e88c69edac1b0f" name="a9cc679ea6c215a6ae3e88c69edac1b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc679ea6c215a6ae3e88c69edac1b0f">&#9670;&#160;</a></span>WantsInspectorOverride()</h2>
+<a id="aa8f5970d868a97e56455be7ed979c592" name="aa8f5970d868a97e56455be7ed979c592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f5970d868a97e56455be7ed979c592">&#9670;&#160;</a></span>WantsInspectorOverride()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +297,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool DekiEditor::CustomEditor::WantsInspectorOverride </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -319,8 +319,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b53bd92776e025e307802bbd94feb93" name="a4b53bd92776e025e307802bbd94feb93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b53bd92776e025e307802bbd94feb93">&#9670;&#160;</a></span>OnInspectorGUI()</h2>
+<a id="ac475ab73033e9ecbd684517f96b129ae" name="ac475ab73033e9ecbd684517f96b129ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac475ab73033e9ecbd684517f96b129ae">&#9670;&#160;</a></span>OnInspectorGUI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +331,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DekiEditor::CustomEditor::OnInspectorGUI </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -349,7 +349,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Only called if <a class="el" href="#a9cc679ea6c215a6ae3e88c69edac1b0f" title="Check if this editor wants to override the inspector.">WantsInspectorOverride()</a> returns true.</p>
+<p>Only called if <a class="el" href="#aa8f5970d868a97e56455be7ed979c592" title="Check if this editor wants to override the inspector.">WantsInspectorOverride()</a> returns true.</p>
 <p>Use <a class="el" href="class_deki_editor_1_1_editor_u_i.html#af95523851f0173e158fa78c1d2571c83" title="Get singleton instance.">EditorUI::Get()</a> to access:</p><ul>
 <li>DrawDefaultInspector() - draw all properties</li>
 <li>PropertyField(name) - draw specific property</li>
@@ -358,8 +358,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a68d63a9eb39dac895ccdfdb17e2b21b2" name="a68d63a9eb39dac895ccdfdb17e2b21b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68d63a9eb39dac895ccdfdb17e2b21b2">&#9670;&#160;</a></span>OnEditorUpdate()</h2>
+<a id="af9ac25b13a9f205b69c58cad0df3d198" name="af9ac25b13a9f205b69c58cad0df3d198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ac25b13a9f205b69c58cad0df3d198">&#9670;&#160;</a></span>OnEditorUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +370,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DekiEditor::CustomEditor::OnEditorUpdate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -392,8 +392,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a37962279ba977dc0cddb8f46e6214853" name="a37962279ba977dc0cddb8f46e6214853"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37962279ba977dc0cddb8f46e6214853">&#9670;&#160;</a></span>GetDisplaySize()</h2>
+<a id="a32cd5d8e727627ae69794a8db47564a9" name="a32cd5d8e727627ae69794a8db47564a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32cd5d8e727627ae69794a8db47564a9">&#9670;&#160;</a></span>GetDisplaySize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +404,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool DekiEditor::CustomEditor::GetDisplaySize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -437,8 +437,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a05ab8b33d1a537344707f87164b29c5d" name="a05ab8b33d1a537344707f87164b29c5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ab8b33d1a537344707f87164b29c5d">&#9670;&#160;</a></span>HitTest()</h2>
+<a id="abb9ba421c7950ac4393f01a8ae43f64e" name="abb9ba421c7950ac4393f01a8ae43f64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9ba421c7950ac4393f01a8ae43f64e">&#9670;&#160;</a></span>HitTest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +449,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool DekiEditor::CustomEditor::HitTest </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -494,8 +494,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afdab3eb629db3e66354ef6589f6f9474" name="afdab3eb629db3e66354ef6589f6f9474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdab3eb629db3e66354ef6589f6f9474">&#9670;&#160;</a></span>GetTextureAssetGuid()</h2>
+<a id="ac20d69d2f5ea875a3df51e210a9f4b32" name="ac20d69d2f5ea875a3df51e210a9f4b32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20d69d2f5ea875a3df51e210a9f4b32">&#9670;&#160;</a></span>GetTextureAssetGuid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +506,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual std::string DekiEditor::CustomEditor::GetTextureAssetGuid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -528,8 +528,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a579b2ba12c40592c7284a1567678c3d2" name="a579b2ba12c40592c7284a1567678c3d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a579b2ba12c40592c7284a1567678c3d2">&#9670;&#160;</a></span>GetResizeTarget()</h2>
+<a id="ab0e33d45161b755534bd96bf4ae36036" name="ab0e33d45161b755534bd96bf4ae36036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e33d45161b755534bd96bf4ae36036">&#9670;&#160;</a></span>GetResizeTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -540,7 +540,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DekiEditor::CustomEditor::GetResizeTarget </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -572,8 +572,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a13e5cfcbc624b50ef503b4ef33cb2362" name="a13e5cfcbc624b50ef503b4ef33cb2362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e5cfcbc624b50ef503b4ef33cb2362">&#9670;&#160;</a></span>OnDrawGizmos()</h2>
+<a id="a800a0a95f11c4408822b835c7b6a62e4" name="a800a0a95f11c4408822b835c7b6a62e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800a0a95f11c4408822b835c7b6a62e4">&#9670;&#160;</a></span>OnDrawGizmos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,7 +584,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DekiEditor::CustomEditor::OnDrawGizmos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -597,8 +597,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a75bbb7cc49a4c27bdb7fb5f26bcb63f5" name="a75bbb7cc49a4c27bdb7fb5f26bcb63f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75bbb7cc49a4c27bdb7fb5f26bcb63f5">&#9670;&#160;</a></span>OnDrawGizmosSelected()</h2>
+<a id="a8564c0d5e860ebb2c648eac451b410e7" name="a8564c0d5e860ebb2c648eac451b410e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8564c0d5e860ebb2c648eac451b410e7">&#9670;&#160;</a></span>OnDrawGizmosSelected()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +609,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void DekiEditor::CustomEditor::OnDrawGizmosSelected </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_component.html">DekiComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

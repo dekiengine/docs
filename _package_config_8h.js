@@ -1,4 +1,4 @@
 var _package_config_8h =
 [
-    [ "PackageConfig", "struct_package_config.html", "struct_package_config" ]
+    [ "Deki::PackageConfig", "struct_deki_1_1_package_config.html", "struct_deki_1_1_package_config" ]
 ];

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -368,7 +368,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Report whether this command holds a raw pointer to anything in <span class="tt">dead</span>. </p>
 <p><a class="el" href="class_deki_editor_1_1_command_history.html" title="Manages undo/redo command history with support for command merging.">CommandHistory</a> calls this when the scene is about to free objects, and discards any command that answers true — running <a class="el" href="#ae00767978a551edb5105481f45f8d4c4" title="Undo the command.">Undo()</a>/Redo() on a command whose target has been freed is a use-after-free.</p>
-<p>The default is false, which is correct for commands that address their target by value or by id. Any command storing a DekiObject*, DekiComponent*, or Scene* MUST override this; see the implementations in src/core/commands/ for the pattern. </p>
+<p>The default is false, which is correct for commands that address their target by value or by id. Any command storing a <a class="el" href="class_deki_1_1_object.html">Deki::Object</a>*, <a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Deki::Component</a>*, or Scene* MUST override this; see the implementations in src/core/commands/ for the pattern. </p>
 
 <p>Reimplemented in <a class="el" href="class_deki_editor_1_1_compound_command.html#a22d78b7d2fc0e3ec05e4b5ecfb4aa18d">DekiEditor::CompoundCommand</a>.</p>
 

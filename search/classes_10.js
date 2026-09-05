@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['veccallbacks_0',['VecCallbacks',['../struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html',1,'DekiEditor::EditorUI']]]
+  ['unitprojectsettings_0',['UnitProjectSettings',['../class_deki_1_1_unit_project_settings.html',1,'Deki']]]
 ];

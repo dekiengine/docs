@@ -1,0 +1,25 @@
+var namespace_deki_1_1_project_settings =
+[
+    [ "FileHeader", "struct_deki_1_1_project_settings_1_1_file_header.html", "struct_deki_1_1_project_settings_1_1_file_header" ],
+    [ "DisplaySettings", "struct_deki_1_1_project_settings_1_1_display_settings.html", "struct_deki_1_1_project_settings_1_1_display_settings" ],
+    [ "RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", "struct_deki_1_1_project_settings_1_1_runtime_settings" ],
+    [ "PipelineConfig", "struct_deki_1_1_project_settings_1_1_pipeline_config.html", "struct_deki_1_1_project_settings_1_1_pipeline_config" ],
+    [ "Load", "namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92", null ],
+    [ "GetTargetFPS", "namespace_deki_1_1_project_settings.html#aa3a74675706af66cae659f467f493e1d", null ],
+    [ "GetStartupScene", "namespace_deki_1_1_project_settings.html#a3ede2597091ba3cbec425d5fbdd4899d", null ],
+    [ "GetRenderPipeline", "namespace_deki_1_1_project_settings.html#a2567174a33b1829969a67f85a855fe8b", null ],
+    [ "GetPassCount", "namespace_deki_1_1_project_settings.html#af40d68695cc65e961d3cc2616d202aa1", null ],
+    [ "GetPassName", "namespace_deki_1_1_project_settings.html#ad64bb5928fb4b3bfb71516c82fa04edd", null ],
+    [ "LoadFromFile", "namespace_deki_1_1_project_settings.html#a9b8fd73b7762fa6abb6f083aaa0a0c50", null ],
+    [ "ReadPackageSettingBool", "namespace_deki_1_1_project_settings.html#a888af89782768d83693cf5c8fd3b8041", null ],
+    [ "ReadPackageSettingInt32", "namespace_deki_1_1_project_settings.html#af0e60e7c6f701d39e142589bac712755", null ],
+    [ "ReadPackageSettingFloat", "namespace_deki_1_1_project_settings.html#a176b5cfa6939b893dc28d08b305fbb0f", null ],
+    [ "Write", "namespace_deki_1_1_project_settings.html#aa980522f7fb2d282b82360c7ee2f7f0b", null ],
+    [ "FILENAME", "namespace_deki_1_1_project_settings.html#ae16a7f24210eb71828b4cc0123728edc", null ],
+    [ "EXPORT_FILENAME", "namespace_deki_1_1_project_settings.html#ae0a9489872d1d6fee5221152f6cb59d7", null ],
+    [ "MAGIC", "namespace_deki_1_1_project_settings.html#aa27a7a0a5e4ff20ff12a6779817f749f", null ],
+    [ "VERSION", "namespace_deki_1_1_project_settings.html#a59f6a993741fb5a7f56c3a7dda9d5121", null ],
+    [ "MAX_FILE_SIZE", "namespace_deki_1_1_project_settings.html#a62b4f8fa6722ea85ea883bed2cfe9aab", null ],
+    [ "MAX_PIPELINE_NAME", "namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05", null ],
+    [ "MAX_PASSES", "namespace_deki_1_1_project_settings.html#a23f126a424212856344ad15c38ee9aa8", null ]
+];

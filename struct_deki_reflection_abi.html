@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -135,7 +135,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Layout fingerprint of the reflection structs that cross DLL boundaries. </p>
-<p>A package DLL builds its own property tables as static arrays and hands the editor a pointer plus a count. The editor then walks them with ITS compiled sizeof, so the two sides must agree on the layout exactly. They usually do, because everything is rebuilt together, and when they don't the failure is vicious: appending a field to <a class="el" href="struct_deki_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">DekiPropertyInfo</a> changes the array STRIDE, so element 0 reads fine and every element after it lands mid-struct. A <span class="tt">const
+<p>A package DLL builds its own property tables as static arrays and hands the editor a pointer plus a count. The editor then walks them with ITS compiled sizeof, so the two sides must agree on the layout exactly. They usually do, because everything is rebuilt together, and when they don't the failure is vicious: appending a field to <a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">Deki::PropertyInfo</a> changes the array STRIDE, so element 0 reads fine and every element after it lands mid-struct. A <span class="tt">const
 char*</span> read out of the middle of a struct is non-null garbage, so it sails past null checks and faults far away (seen as a crash inside strlen, several frames deep in JSON key lookup, during scene compilation).</p>
 <p>The append-only rule the metadata structs document protects a SINGLE struct read through a pointer: a stale reader finds the fields it knows at the right offsets and ignores the rest. It does not protect an ARRAY, because the stride changes. So arrays of these structs need a real handshake, which is this.</p>
 <p>Every package DLL exports its compiled values (DekiPackageAbi.cpp, linked into each package by BuildFileGenerator) and the loader refuses a package that disagrees, naming it and saying to rebuild. Loudly wrong beats silently corrupt.</p>

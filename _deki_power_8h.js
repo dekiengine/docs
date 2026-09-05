@@ -1,4 +1,4 @@
 var _deki_power_8h =
 [
-    [ "DekiPower", "class_deki_power.html", "class_deki_power" ]
+    [ "Deki::Power", "class_deki_1_1_power.html", "class_deki_1_1_power" ]
 ];

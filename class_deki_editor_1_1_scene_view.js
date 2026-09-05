@@ -14,7 +14,7 @@ var class_deki_editor_1_1_scene_view =
     [ "GetDisplayWidth", "class_deki_editor_1_1_scene_view.html#a68af14007b3a497ee9f06cbd92f6dea4", null ],
     [ "GetDisplayHeight", "class_deki_editor_1_1_scene_view.html#ae4ffebba4d890ebda05b563980b5e205", null ],
     [ "IsCurrentObjectSelected", "class_deki_editor_1_1_scene_view.html#a61ad684fb0b14d043c31726ad47e242e", null ],
-    [ "GetCurrentObject", "class_deki_editor_1_1_scene_view.html#a96b8f15340509027f40ed0431cf759ad", null ],
+    [ "GetCurrentObject", "class_deki_editor_1_1_scene_view.html#a3ae55cb91862261b11cab5affcbae0fe", null ],
     [ "GetTargetWidth", "class_deki_editor_1_1_scene_view.html#abc61f3792ede010be2dec1061a6e06c5", null ],
     [ "GetTargetHeight", "class_deki_editor_1_1_scene_view.html#a1834c6ece2c709bcfdeee9f954215292", null ],
     [ "SetTargetSize", "class_deki_editor_1_1_scene_view.html#ae768ff226e1b374fc2804c4e43a960e5", null ],

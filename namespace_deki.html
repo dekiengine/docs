@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -115,15 +115,26 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Deki Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for components with lifecycle methods.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:AuthoredFormat" id="r_AuthoredFormat"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_authored_format.html">AuthoredFormat</a></td></tr>
+<tr class="memitem:ComponentInterfaceAdapters" id="r_ComponentInterfaceAdapters"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html">ComponentInterfaceAdapters</a></td></tr>
+<tr class="memitem:InputKeys" id="r_InputKeys"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_input_keys.html">InputKeys</a></td></tr>
+<tr class="memitem:Math" id="r_Math"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_math.html">Math</a></td></tr>
+<tr class="memitem:ProjectSettings" id="r_ProjectSettings"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html">ProjectSettings</a></td></tr>
+<tr class="memitem:SceneFormat" id="r_SceneFormat"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_scene_format.html">SceneFormat</a></td></tr>
+<tr class="memitem:Storage" id="r_Storage"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_storage.html">Storage</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -134,17 +145,256 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-safe asset reference wrapper.  <a href="struct_deki_1_1_asset_ref.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AssetRefBase" id="r_AssetRefBase"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_asset_ref_base.html">AssetRefBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for type-erased access to <a class="el" href="struct_deki_1_1_asset_ref.html" title="Type-safe asset reference wrapper.">AssetRef</a>.  <a href="struct_deki_1_1_asset_ref_base.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Behaviour" id="r_Behaviour"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_behaviour.html">Behaviour</a></td></tr>
 <tr class="memitem:Color" id="r_Color"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_color.html">Color</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGBA colour with packed-format conversions (RGB565, RGBA8888).  <a href="class_deki_1_1_color.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Component" id="r_Component"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_component.html">Component</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all components (data-only).  <a href="class_deki_1_1_component.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ComponentFactory" id="r_ComponentFactory"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_component_factory.html">ComponentFactory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates components by type id (see the file comment above).  <a href="class_deki_1_1_component_factory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ComponentMeta" id="r_ComponentMeta"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> metadata for runtime reflection.  <a href="struct_deki_1_1_component_meta.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ComponentRegistry" id="r_ComponentRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_component_registry.html">ComponentRegistry</a></td></tr>
+<tr class="memitem:CoreProjectSettings" id="r_CoreProjectSettings"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_core_project_settings.html">CoreProjectSettings</a></td></tr>
+<tr class="memitem:DesktopFileSystem" id="r_DesktopFileSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_desktop_file_system.html">DesktopFileSystem</a></td></tr>
+<tr class="memitem:DesktopMemoryProvider" id="r_DesktopMemoryProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_desktop_memory_provider.html">DesktopMemoryProvider</a></td></tr>
+<tr class="memitem:DisplayProjectSettings" id="r_DisplayProjectSettings"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_display_project_settings.html">DisplayProjectSettings</a></td></tr>
 <tr class="memitem:DPackEntry" id="r_DPackEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_d_pack_entry.html">DPackEntry</a></td></tr>
 <tr class="memitem:DPackHeader" id="r_DPackHeader"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_d_pack_header.html">DPackHeader</a></td></tr>
+<tr class="memitem:EditorAutoSetupRegistrar" id="r_EditorAutoSetupRegistrar"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_editor_auto_setup_registrar.html">EditorAutoSetupRegistrar</a></td></tr>
+<tr class="memitem:EditorDisplay" id="r_EditorDisplay"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_editor_display.html">EditorDisplay</a></td></tr>
+<tr class="memitem:Engine" id="r_Engine"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_engine.html">Engine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> singleton: owns the scene system, lifecycle and frame loop.  <a href="class_deki_1_1_engine.html#details">More...</a><br /></td></tr>
+<tr class="memitem:EngineHost" id="r_EngineHost"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_engine_host.html">EngineHost</a></td></tr>
+<tr class="memitem:EngineSettings" id="r_EngineSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a></td></tr>
+<tr class="memitem:FieldRef" id="r_FieldRef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compact field descriptor — the ONE piece of reflection that exists on every platform, embedded included.  <a href="struct_deki_1_1_field_ref.html#details">More...</a><br /></td></tr>
+<tr class="memitem:FileSystem" id="r_FileSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_file_system.html">FileSystem</a></td></tr>
+<tr class="memitem:FPSCounter" id="r_FPSCounter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_f_p_s_counter.html">FPSCounter</a></td></tr>
+<tr class="memitem:ICamera" id="r_ICamera"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_camera.html">ICamera</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera interface for coordinate conversion.  <a href="class_deki_1_1_i_camera.html#details">More...</a><br /></td></tr>
+<tr class="memitem:IClipProvider" id="r_IClipProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_clip_provider.html">IClipProvider</a></td></tr>
+<tr class="memitem:IDisplay" id="r_IDisplay"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a></td></tr>
+<tr class="memitem:IFileSystem" id="r_IFileSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_file_system.html">IFileSystem</a></td></tr>
+<tr class="memitem:IInputSystem" id="r_IInputSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for the input dispatch system.  <a href="class_deki_1_1_i_input_system.html#details">More...</a><br /></td></tr>
+<tr class="memitem:IMemoryProvider" id="r_IMemoryProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_memory_provider.html">IMemoryProvider</a></td></tr>
+<tr class="memitem:IPackage" id="r_IPackage"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_package.html">IPackage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for hardware peripheral packages.  <a href="class_deki_1_1_i_package.html#details">More...</a><br /></td></tr>
+<tr class="memitem:IPower" id="r_IPower"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_power.html">IPower</a></td></tr>
+<tr class="memitem:IRenderSystem" id="r_IRenderSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for the rendering system.  <a href="class_deki_1_1_i_render_system.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ISortableProvider" id="r_ISortableProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_sortable_provider.html">ISortableProvider</a></td></tr>
+<tr class="memitem:ITimeProvider" id="r_ITimeProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_time_provider.html">ITimeProvider</a></td></tr>
+<tr class="memitem:LifecycleManager" id="r_LifecycleManager"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_lifecycle_manager.html">LifecycleManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages <a class="el" href="class_deki_1_1_behaviour.html">Behaviour</a> lifecycle (InternalAwake, Awake, Start, Update).  <a href="class_deki_1_1_lifecycle_manager.html#details">More...</a><br /></td></tr>
 <tr class="memitem:LoadedPack" id="r_LoadedPack"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_loaded_pack.html">LoadedPack</a></td></tr>
+<tr class="memitem:LogSystem" id="r_LogSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_log_system.html">LogSystem</a></td></tr>
+<tr class="memitem:Mat4" id="r_Mat4"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_mat4.html">Mat4</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x4 column-major matrix used as the OpenGL/GLSL FFI bridge.  <a href="struct_deki_1_1_mat4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Memory" id="r_Memory"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_memory.html">Memory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>.  <a href="class_deki_1_1_memory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:MemoryStats" id="r_MemoryStats"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_memory_stats.html">MemoryStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> statistics structure.  <a href="struct_deki_1_1_memory_stats.html#details">More...</a><br /></td></tr>
+<tr class="memitem:MissingComponent" id="r_MissingComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_missing_component.html">MissingComponent</a></td></tr>
+<tr class="memitem:NodeRef" id="r_NodeRef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_node_ref.html">NodeRef</a></td></tr>
+<tr class="memitem:Object" id="r_Object"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:ObjectRef" id="r_ObjectRef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_object_ref.html">ObjectRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_object.html">Object</a> reference wrapper for editor-assignable object IDs.  <a href="struct_deki_1_1_object_ref.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ObjectRefBase" id="r_ObjectRefBase"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_object_ref_base.html">ObjectRefBase</a></td></tr>
+<tr class="memitem:PackageConfig" id="r_PackageConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_package_config.html">PackageConfig</a></td></tr>
 <tr class="memitem:PackIndexEntry" id="r_PackIndexEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_pack_index_entry.html">PackIndexEntry</a></td></tr>
+<tr class="memitem:PlatformSetupComponent" id="r_PlatformSetupComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_platform_setup_component.html">PlatformSetupComponent</a></td></tr>
+<tr class="memitem:Power" id="r_Power"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_power.html">Power</a></td></tr>
+<tr class="memitem:PropertyBinding" id="r_PropertyBinding"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A resolved <a class="el" href="struct_deki_1_1_property_ref.html" title="A picked &quot;field of a component on an object&quot;.">PropertyRef</a>: where the field lives and what it is.  <a href="struct_deki_1_1_property_binding.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PropertyInfo" id="r_PropertyInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property metadata (stored per-component-type, not per-instance).  <a href="struct_deki_1_1_property_info.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PropertyRef" id="r_PropertyRef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_property_ref.html">PropertyRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A picked "field of a component on an object".  <a href="struct_deki_1_1_property_ref.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ProviderRegistry" id="r_ProviderRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_provider_registry.html">ProviderRegistry</a></td></tr>
+<tr class="memitem:ProviderRegistryBase" id="r_ProviderRegistryBase"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_provider_registry_base.html">ProviderRegistryBase</a></td></tr>
+<tr class="memitem:Rect" id="r_Rect"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_rect.html">Rect</a></td></tr>
+<tr class="memitem:Scene" id="r_Scene"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_scene.html">Scene</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a scene containing objects and components.  <a href="class_deki_1_1_scene.html#details">More...</a><br /></td></tr>
+<tr class="memitem:SceneSystem" id="r_SceneSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a> class for managing the root scene.  <a href="class_deki_1_1_scene_system.html#details">More...</a><br /></td></tr>
+<tr class="memitem:SettingsRegistry" id="r_SettingsRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_settings_registry.html">SettingsRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry for package-extensible project-settings types.  <a href="class_deki_1_1_settings_registry.html#details">More...</a><br /></td></tr>
+<tr class="memitem:SettingsTypeInfo" id="r_SettingsTypeInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_settings_type_info.html">SettingsTypeInfo</a></td></tr>
+<tr class="memitem:SetupComponent" id="r_SetupComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_setup_component.html">SetupComponent</a></td></tr>
+<tr class="memitem:Time" id="r_Time"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_time.html">Time</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> timing system.  <a href="class_deki_1_1_time.html#details">More...</a><br /></td></tr>
+<tr class="memitem:UnitProjectSettings" id="r_UnitProjectSettings"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_unit_project_settings.html">UnitProjectSettings</a></td></tr>
+<tr class="memitem:Vector2" id="r_Vector2"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_vector2.html">Vector2</a></td></tr>
+<tr class="memitem:Vector3" id="r_Vector3"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_vector3.html">Vector3</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D vector for positions, directions, scales, and rotations.  <a href="struct_deki_1_1_vector3.html#details">More...</a><br /></td></tr>
+<tr class="memitem:WorldTransform" id="r_WorldTransform"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_world_transform.html">WorldTransform</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ac1a8930b53b509439baac5ea7b71948d" id="r_ac1a8930b53b509439baac5ea7b71948d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ac1a8930b53b509439baac5ea7b71948d">InterfaceAdapter</a> = void* (*)(<a class="el" href="class_deki_1_1_component.html">Component</a>*)</td></tr>
+<tr class="memitem:af0f99afe0b878e72e45ae4c27acc282d" id="r_af0f99afe0b878e72e45ae4c27acc282d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af0f99afe0b878e72e45ae4c27acc282d">ComponentType</a> = uint32_t</td></tr>
+<tr class="memitem:a587eed65587c28fcaa1cc6ca2d15a5dd" id="r_a587eed65587c28fcaa1cc6ca2d15a5dd"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a587eed65587c28fcaa1cc6ca2d15a5dd">UpdateCallback</a> = std::function&lt;void(uint32_t deltaTime)&gt;</td></tr>
+<tr class="memitem:a103f7cb2b6266861a3487322e84d2e7a" id="r_a103f7cb2b6266861a3487322e84d2e7a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a103f7cb2b6266861a3487322e84d2e7a">GameUpdateCallback</a> = std::function&lt;void()&gt;</td></tr>
+<tr class="memitem:abea9386d083c93ac96ed8da00fb1a5a3" id="r_abea9386d083c93ac96ed8da00fb1a5a3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#abea9386d083c93ac96ed8da00fb1a5a3">LogCallback</a></td></tr>
+<tr class="memitem:a7f72ad35d446c9ee2d4748b13b2181f5" id="r_a7f72ad35d446c9ee2d4748b13b2181f5"><td class="memItemLeft">typedef void(*)&#160;</td><td class="memItemRight"><a class="el" href="#a7f72ad35d446c9ee2d4748b13b2181f5">LifecycleProfileBeginCallback</a>(const char *name)</td></tr>
+<tr class="memitem:ac7c5e0eb21b9a1940227d04dc0d72653" id="r_ac7c5e0eb21b9a1940227d04dc0d72653"><td class="memItemLeft">typedef void(*)&#160;</td><td class="memItemRight"><a class="el" href="#ac7c5e0eb21b9a1940227d04dc0d72653">LifecycleProfileEndCallback</a>()</td></tr>
+<tr class="memitem:a857157168165bc1860b4fcf81a781d77" id="r_a857157168165bc1860b4fcf81a781d77"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a857157168165bc1860b4fcf81a781d77">ComponentCreator</a> = <a class="el" href="class_deki_1_1_component.html">Component</a>* (*)()</td></tr>
+<tr class="memdesc:a857157168165bc1860b4fcf81a781d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for component creators.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adf997e436efe620d60266910d8f63061" id="r_adf997e436efe620d60266910d8f63061"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#adf997e436efe620d60266910d8f63061">ColorFormat</a> { <a class="el" href="#adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a">RGB565</a> = 0
+, <a class="el" href="#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0">RGB888</a> = 1
+, <a class="el" href="#adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251">ARGB8888</a> = 2
+, <a class="el" href="#adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def">RGB565A8</a> = 3
+ }</td></tr>
+<tr class="memitem:a1a59810902377e4b9a664acb09b02eb7" id="r_a1a59810902377e4b9a664acb09b02eb7"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a1a59810902377e4b9a664acb09b02eb7">LogLevel</a> { <br />
+&#160;&#160;<a class="el" href="#a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257">Editor</a>
+, <a class="el" href="#a1a59810902377e4b9a664acb09b02eb7aafbf0897a5a83fdd873dfb032ec695d3">Internal</a>
+, <a class="el" href="#a1a59810902377e4b9a664acb09b02eb7aa603905470e2a5b8c13e96b579ef0dba">Debug</a>
+, <a class="el" href="#a1a59810902377e4b9a664acb09b02eb7a4059b0251f66a18cb56f544728796875">Info</a>
+, <br />
+&#160;&#160;<a class="el" href="#a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa">Warning</a>
+, <a class="el" href="#a1a59810902377e4b9a664acb09b02eb7a902b0d55fddef6f8d651fe1035b7d4bd">Error</a>
+<br />
+ }</td></tr>
+<tr class="memitem:aa4a9a8c9f8aa8578ec1cac2acc9ef603" id="r_aa4a9a8c9f8aa8578ec1cac2acc9ef603"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#aa4a9a8c9f8aa8578ec1cac2acc9ef603">ProjectionMode</a> : uint8_t { <a class="el" href="#aa4a9a8c9f8aa8578ec1cac2acc9ef603a03424250432f2aa71de95579d2c0eaeb">Orthographic</a> = 0
+, <a class="el" href="#aa4a9a8c9f8aa8578ec1cac2acc9ef603aa80420eef88d11f77532f1b9cb467fa3">Perspective</a> = 1
+ }</td></tr>
+<tr class="memitem:a916098f39eb516cdab1aab85d4c07ca3" id="r_a916098f39eb516cdab1aab85d4c07ca3"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a916098f39eb516cdab1aab85d4c07ca3">UnitMode</a> : uint8_t { <a class="el" href="#a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1">Pixels</a> = 0
+, <a class="el" href="#a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469">Meters</a> = 1
+ }</td></tr>
+<tr class="memdesc:a916098f39eb516cdab1aab85d4c07ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inspector display unit preference.  <a href="#a916098f39eb516cdab1aab85d4c07ca3">More...</a><br /></td></tr>
+<tr class="memitem:a48e4f41b4eda811c9555c773fccb673a" id="r_a48e4f41b4eda811c9555c773fccb673a"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a48e4f41b4eda811c9555c773fccb673a">MemorySubsystem</a> : uint8_t { <a class="el" href="#a48e4f41b4eda811c9555c773fccb673aab61773b9b3968a9988d765d728985862">GENERAL</a> = 0
+ }</td></tr>
+<tr class="memdesc:a48e4f41b4eda811c9555c773fccb673a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> subsystem types - simplified (kept for compatibility).  <a href="#a48e4f41b4eda811c9555c773fccb673a">More...</a><br /></td></tr>
+<tr class="memitem:ace9c0fee5b0c655878f4657ecdf1244d" id="r_ace9c0fee5b0c655878f4657ecdf1244d"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244d">PackageState</a> { <br />
+&#160;&#160;<a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244daf704f57ea420275ad51bf55b7dec2c96">Uninitialized</a>
+, <a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244da59d87a4758a9d35fbaf6b204341bb399">Initialized</a>
+, <a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09">Running</a>
+, <a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244da902b0d55fddef6f8d651fe1035b7d4bd">Error</a>
+, <br />
+&#160;&#160;<a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244dab9f5c797ebbf55adccdd8539a65a0241">Disabled</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ace9c0fee5b0c655878f4657ecdf1244d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Package lifecycle states.  <a href="#ace9c0fee5b0c655878f4657ecdf1244d">More...</a><br /></td></tr>
+<tr class="memitem:a39ae59dff82c19018ec967d5186a7270" id="r_a39ae59dff82c19018ec967d5186a7270"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a39ae59dff82c19018ec967d5186a7270">PhysicalUnit</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="#a39ae59dff82c19018ec967d5186a7270a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+, <a class="el" href="#a39ae59dff82c19018ec967d5186a7270a0aa6f4210bf373c95eda00232e93cd98">Distance</a>
+, <a class="el" href="#a39ae59dff82c19018ec967d5186a7270a88156d46910a2d733443c339a9231d12">Velocity</a>
+, <a class="el" href="#a39ae59dff82c19018ec967d5186a7270a3b926d163371fd620b09b63219b12f52">Acceleration</a>
+, <br />
+&#160;&#160;<a class="el" href="#a39ae59dff82c19018ec967d5186a7270a45f4ce6c3306644b1efe333f4f8d6929">Angle</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a39ae59dff82c19018ec967d5186a7270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical unit for float/Vector2 properties.  <a href="#a39ae59dff82c19018ec967d5186a7270">More...</a><br /></td></tr>
+<tr class="memitem:a12d52725300eb20f76a0597fc3e32df4" id="r_a12d52725300eb20f76a0597fc3e32df4"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a7d839b2c12bfd40ac121b4cc9e81c539">Int8</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a39bc2ae44b184207f560ff8619823208">Int16</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4ac06129f6e6e15c09328365e553f1dc31">Int32</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4afbde23b11d7e59af7828e81144c8b487">Int64</a>
+, <br />
+&#160;&#160;<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4ab31df9c476d20e85ff898121efe11b5a">UInt8</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a8bd950a9d7779b83f5c30046c9aaf1cf">UInt16</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4ae7956ed7be1c5025a27ed3cb42a396bd">UInt32</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4aaf71234725f0470ccf993e263a8b820a">UInt64</a>
+, <br />
+&#160;&#160;<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a22ae0e2b89e5e3d477f988cc36d3272b">Float</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4ad909d38d705ce75386dd86e611a82f5b">Double</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4ac26f15e86e3de4c398a8273272aba034">Bool</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a27118326006d3829667a400ad23d5d98">String</a>
+, <br />
+&#160;&#160;<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4acb5feb1b7314637725a2e73bdc9f7295">Color</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a1bebc5ae2822f8e361fb0ce57b5e09e2">Vector2</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a02b4dab58bbc49e0851fb3fd8df520cc">Vector3</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a26e9054be7f40079575582b7ad3f7363">Asset</a>
+, <br />
+&#160;&#160;<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4acf20423ed48998082c20099488a0917c">Enum</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a771d51735305d4fccf5380814a764c3d">ObjectRef</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a4410ec34d9e6c1a68100ca0ce033fb17">Array</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a675714e2978e42bb70d853ddbd95fb9e">AssetRef</a>
+, <br />
+&#160;&#160;<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a94ee90aa44bec25a05943e647ce5652b">NodeRef</a>
+, <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99">PropertyRef</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a12d52725300eb20f76a0597fc3e32df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property types for runtime reflection.  <a href="#a12d52725300eb20f76a0597fc3e32df4">More...</a><br /></td></tr>
+<tr class="memitem:aaab68b255b70d4b9aa5b682d1a46bf64" id="r_aaab68b255b70d4b9aa5b682d1a46bf64"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64">TransformField</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+, <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a02129bb861061d1a052c592e2dc6b383">X</a>
+, <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a57cec4137b614c87cb4e24a3d003a3e0">Y</a>
+, <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a52f5e0bc3859bc5f5e25130b6c7e8881">Position</a>
+, <br />
+&#160;&#160;<a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64af1a42bd417390fc63b030a519624607a">Rotation</a>
+, <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64ab5e0c179725e7f282ffb8e6a96797b49">ScaleX</a>
+, <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a3475b72c6483a5c871d245e2567c96c7">ScaleY</a>
+, <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a85a7cd587d6142dbfc1a4de05af7b75d">Scale</a>
+, <br />
+&#160;&#160;<a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64a4d3d769b812b6faa6b76e1a8abaece2d">Active</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:aaab68b255b70d4b9aa5b682d1a46bf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object's own transform, addressable like a component.  <a href="#aaab68b255b70d4b9aa5b682d1a46bf64">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a83e2a8e59b9ade12ac092ce334e4bb50" id="r_a83e2a8e59b9ade12ac092ce334e4bb50"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a83e2a8e59b9ade12ac092ce334e4bb50">HashString</a> (const char *str, uint32_t hash=2166136261u)</td></tr>
+<tr class="memdesc:a83e2a8e59b9ade12ac092ce334e4bb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-time string hash for consistent type IDs across translation units.  <br /></td></tr>
+<tr class="memitem:a693b81cbcc3e331d8b8695e6d9959971" id="r_a693b81cbcc3e331d8b8695e6d9959971"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a693b81cbcc3e331d8b8695e6d9959971">HashStringLen</a> (const char *str, uint16_t length)</td></tr>
+<tr class="memdesc:a693b81cbcc3e331d8b8695e6d9959971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime string hash with length (for msgpack strings without null terminator).  <br /></td></tr>
+<tr class="memitem:a8b1b03df6f6dd63de4995534963b8fc0" id="r_a8b1b03df6f6dd63de4995534963b8fc0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8b1b03df6f6dd63de4995534963b8fc0">DekiMain</a> ()</td></tr>
+<tr class="memitem:a22ea94289b214746512305d8bc075c4d" id="r_a22ea94289b214746512305d8bc075c4d"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
+<tr class="memitem:a22ea94289b214746512305d8bc075c4d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a22ea94289b214746512305d8bc075c4d">VisitSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:a22ea94289b214746512305d8bc075c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-order visit of <span class="tt">root</span> and every descendant. <span class="tt">fn(Object*)</span>.  <br /></td></tr>
+<tr class="memitem:afec29a46b7bda27dc3f20b41794551ff" id="r_afec29a46b7bda27dc3f20b41794551ff"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
+<tr class="memitem:afec29a46b7bda27dc3f20b41794551ff template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afec29a46b7bda27dc3f20b41794551ff">VisitActiveSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:afec29a46b7bda27dc3f20b41794551ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like VisitSubtree, but does not enter inactive objects (nor visit them).  <br /></td></tr>
+<tr class="memitem:a812910f374e004e5d124fa69293e6e2b" id="r_a812910f374e004e5d124fa69293e6e2b"><td class="memTemplParams" colspan="2">template&lt;typename Pred&gt; </td></tr>
+<tr class="memitem:a812910f374e004e5d124fa69293e6e2b template"><td class="memItemLeft"><a class="el" href="class_deki_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a812910f374e004e5d124fa69293e6e2b">FindInSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Pred &amp;&amp;pred)</td></tr>
+<tr class="memdesc:a812910f374e004e5d124fa69293e6e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">First object in pre-order for which <span class="tt">pred(Object*)</span> is true, or null.  <br /></td></tr>
+<tr class="memitem:a3246873f72896f3ffee887e1733bffbf" id="r_a3246873f72896f3ffee887e1733bffbf"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3246873f72896f3ffee887e1733bffbf">operator*</a> (float s, const <a class="el" href="struct_deki_1_1_vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr class="memitem:aa6f1be1b762c93604b37edc421c4d81b" id="r_aa6f1be1b762c93604b37edc421c4d81b"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa6f1be1b762c93604b37edc421c4d81b">operator*</a> (float s, const <a class="el" href="struct_deki_1_1_vector3.html">Vector3</a> &amp;v)</td></tr>
 <tr class="memitem:ab9b3908bce3bf5cd611d24c82b907d45" id="r_ab9b3908bce3bf5cd611d24c82b907d45"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab9b3908bce3bf5cd611d24c82b907d45">GenerateDeterministicGuid</a> (const std::string &amp;seed)</td></tr>
 <tr class="memdesc:ab9b3908bce3bf5cd611d24c82b907d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a deterministic GUID from a seed string.  <br /></td></tr>
+<tr class="memitem:ab2db578a37de2fc62dd9e4e740e861c1" id="r_ab2db578a37de2fc62dd9e4e740e861c1"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ab2db578a37de2fc62dd9e4e740e861c1 template"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab2db578a37de2fc62dd9e4e740e861c1">GetPropertyRef</a> (<a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop)</td></tr>
+<tr class="memitem:a3fa6aaff29f2822152add80eb3608a8d" id="r_a3fa6aaff29f2822152add80eb3608a8d"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a3fa6aaff29f2822152add80eb3608a8d template"><td class="memItemLeft">const T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3fa6aaff29f2822152add80eb3608a8d">GetPropertyRef</a> (const <a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop)</td></tr>
+<tr class="memitem:abbe9d8bcb5d306a8eb2bc2c54410d9ef" id="r_abbe9d8bcb5d306a8eb2bc2c54410d9ef"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:abbe9d8bcb5d306a8eb2bc2c54410d9ef template"><td class="memItemLeft">T&#160;</td><td class="memItemRight"><a class="el" href="#abbe9d8bcb5d306a8eb2bc2c54410d9ef">GetPropertyValue</a> (const <a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop)</td></tr>
+<tr class="memitem:a8a96d4eb7699c21436cb97c84165a7ff" id="r_a8a96d4eb7699c21436cb97c84165a7ff"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a8a96d4eb7699c21436cb97c84165a7ff template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8a96d4eb7699c21436cb97c84165a7ff">SetPropertyValue</a> (<a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop, const T &amp;value)</td></tr>
+<tr class="memitem:ad6aaef028fc14afac69c3294f9da6c76" id="r_ad6aaef028fc14afac69c3294f9da6c76"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ad6aaef028fc14afac69c3294f9da6c76 template"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad6aaef028fc14afac69c3294f9da6c76">GetNodePropertyRef</a> (void *base, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop)</td></tr>
+<tr class="memitem:a2730682285fdf63f9933682d2cc8ecf9" id="r_a2730682285fdf63f9933682d2cc8ecf9"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a2730682285fdf63f9933682d2cc8ecf9 template"><td class="memItemLeft">const T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2730682285fdf63f9933682d2cc8ecf9">GetNodePropertyRef</a> (const void *base, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop)</td></tr>
+<tr class="memitem:a70726b336ad4225d680c9ecad81b9a6c" id="r_a70726b336ad4225d680c9ecad81b9a6c"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a70726b336ad4225d680c9ecad81b9a6c">DekiVariableFieldRef</a> (<a class="el" href="#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a> type)</td></tr>
+<tr class="memdesc:a70726b336ad4225d680c9ecad81b9a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A field descriptor for a standalone value of <span class="tt">type</span>, at offset 0.  <br /></td></tr>
+<tr class="memitem:a186e1c5bc7660b81c99c3dcdfa4ebcb2" id="r_a186e1c5bc7660b81c99c3dcdfa4ebcb2"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a186e1c5bc7660b81c99c3dcdfa4ebcb2">TransformFields</a> (int &amp;outCount)</td></tr>
+<tr class="memdesc:a186e1c5bc7660b81c99c3dcdfa4ebcb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transform's field table, for pickers and binding.  <br /></td></tr>
+<tr class="memitem:aae775802987db1312e287587e7bf54cd" id="r_aae775802987db1312e287587e7bf54cd"><td class="memItemLeft">const char *const *&#160;</td><td class="memItemRight"><a class="el" href="#aae775802987db1312e287587e7bf54cd">TransformFieldNames</a> (int &amp;outCount)</td></tr>
+<tr class="memdesc:aae775802987db1312e287587e7bf54cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform field names, index-aligned with TransformFields.  <br /></td></tr>
+<tr class="memitem:a52c12dac3cca66d1f6a511fa5a05a4b1" id="r_a52c12dac3cca66d1f6a511fa5a05a4b1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a52c12dac3cca66d1f6a511fa5a05a4b1">BindPropertyRef</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *object, const <a class="el" href="struct_deki_1_1_property_ref.html">PropertyRef</a> &amp;ref, <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;out, const char **outError=nullptr)</td></tr>
+<tr class="memdesc:a52c12dac3cca66d1f6a511fa5a05a4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve <span class="tt">ref</span> against <span class="tt">object</span> (already found by name by the caller).  <br /></td></tr>
+<tr class="memitem:a1061c4955314ade075cee1b2539ab6ea" id="r_a1061c4955314ade075cee1b2539ab6ea"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1061c4955314ade075cee1b2539ab6ea">ParsePropertyLiteral</a> (const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> &amp;info, const char *text, double &amp;out, double &amp;out2)</td></tr>
+<tr class="memdesc:a1061c4955314ade075cee1b2539ab6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an authored literal per the bound field's type.  <br /></td></tr>
+<tr class="memitem:accd2015e657d1f51a8f90173ffaedd70" id="r_accd2015e657d1f51a8f90173ffaedd70"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#accd2015e657d1f51a8f90173ffaedd70">ParsePropertyLiteral</a> (const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> &amp;info, const char *text, double &amp;out)</td></tr>
+<tr class="memdesc:accd2015e657d1f51a8f90173ffaedd70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-value overload for targets that are not Vector2-typed.  <br /></td></tr>
+<tr class="memitem:ac71f6a0a04342195f29156e09527c445" id="r_ac71f6a0a04342195f29156e09527c445"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ac71f6a0a04342195f29156e09527c445">ReadBoundProperty</a> (const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;binding)</td></tr>
+<tr class="memdesc:ac71f6a0a04342195f29156e09527c445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bound target's live value (first axis for <a class="el" href="struct_deki_1_1_vector2.html">Vector2</a>).  <br /></td></tr>
+<tr class="memitem:a6b461fcf650d430f0fbeffd24b1e6205" id="r_a6b461fcf650d430f0fbeffd24b1e6205"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a6b461fcf650d430f0fbeffd24b1e6205">ReadBoundProperty2</a> (const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;binding)</td></tr>
+<tr class="memdesc:a6b461fcf650d430f0fbeffd24b1e6205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bound target's second axis (<a class="el" href="struct_deki_1_1_vector2.html">Vector2</a> targets only, else 0).  <br /></td></tr>
+<tr class="memitem:a4f2bdda636d292108b0ff5194ac30881" id="r_a4f2bdda636d292108b0ff5194ac30881"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4f2bdda636d292108b0ff5194ac30881">WriteBoundNumbers</a> (const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;binding, double v, double v2)</td></tr>
+<tr class="memdesc:a4f2bdda636d292108b0ff5194ac30881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write raw numbers to the bound target, bypassing the parsed literal.  <br /></td></tr>
+<tr class="memitem:ad008be6af01fc7dbb33e9a1f8731800c" id="r_ad008be6af01fc7dbb33e9a1f8731800c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad008be6af01fc7dbb33e9a1f8731800c">WriteBoundProperty</a> (const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;binding, const std::string &amp;text)</td></tr>
+<tr class="memdesc:ad008be6af01fc7dbb33e9a1f8731800c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the bound literal (or <span class="tt">text</span> for String fields) into the field.  <br /></td></tr>
+<tr class="memitem:af0f5e2fdb1bd009edf4a00679b7a4f91" id="r_af0f5e2fdb1bd009edf4a00679b7a4f91"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af0f5e2fdb1bd009edf4a00679b7a4f91">CompareBoundProperty</a> (const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;binding, const std::string &amp;text)</td></tr>
+<tr class="memdesc:af0f5e2fdb1bd009edf4a00679b7a4f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare the field's live value against the bound literal.  <br /></td></tr>
+<tr class="memitem:a797e40e5960acce21da40512527a5aab" id="r_a797e40e5960acce21da40512527a5aab"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a797e40e5960acce21da40512527a5aab template"><td class="memItemLeft">nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a797e40e5960acce21da40512527a5aab">Serialize</a> (const T &amp;obj)</td></tr>
+<tr class="memitem:aaf6aa6292ce6944fa8065a141d8d8514" id="r_aaf6aa6292ce6944fa8065a141d8d8514"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aaf6aa6292ce6944fa8065a141d8d8514 template"><td class="memItemLeft">T&#160;</td><td class="memItemRight"><a class="el" href="#aaf6aa6292ce6944fa8065a141d8d8514">Deserialize</a> (const nlohmann::json &amp;j)</td></tr>
 <tr class="memitem:a12ce8cb6a612dad11412b474ae3ca82a" id="r_a12ce8cb6a612dad11412b474ae3ca82a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12ce8cb6a612dad11412b474ae3ca82a">SetImGuiContext</a> (void *context)</td></tr>
 <tr class="memdesc:a12ce8cb6a612dad11412b474ae3ca82a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ImGui context for DLL boundary crossing.  <br /></td></tr>
 <tr class="memitem:a842fa2a17af886ab760e861d44444ba2" id="r_a842fa2a17af886ab760e861d44444ba2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a842fa2a17af886ab760e861d44444ba2">SetImGuiAllocators</a> (void *(*allocFunc)(size_t sz, void *userData), void(*freeFunc)(void *ptr, void *userData), void *userData)</td></tr>
@@ -154,8 +404,754 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ae0c36ae179fba6c3d8f94ea490c44847" id="r_ae0c36ae179fba6c3d8f94ea490c44847"><td class="memItemLeft">static constexpr char&#160;</td><td class="memItemRight"><a class="el" href="#ae0c36ae179fba6c3d8f94ea490c44847">DPACK_MAGIC</a> [4] = { 'D', 'P', 'A', 'K' }</td></tr>
 <tr class="memitem:a377dacebea5d8d5a7f243ac6bd1e83b8" id="r_a377dacebea5d8d5a7f243ac6bd1e83b8"><td class="memItemLeft">static constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a377dacebea5d8d5a7f243ac6bd1e83b8">DPACK_VERSION</a> = 1</td></tr>
+<tr class="memitem:aa88aafaeabf5ad00e9ff8a3721514f0c" id="r_aa88aafaeabf5ad00e9ff8a3721514f0c"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa88aafaeabf5ad00e9ff8a3721514f0c">kTransformRefComponent</a> = &quot;Transform&quot;</td></tr>
+<tr class="memdesc:aa88aafaeabf5ad00e9ff8a3721514f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component name a reference stores to mean "the object's transform".  <br /></td></tr>
+<tr class="memitem:a5cf24745dd885deb3b83037a873e9938" id="r_a5cf24745dd885deb3b83037a873e9938"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a5cf24745dd885deb3b83037a873e9938">kVariableRefComponent</a> = &quot;Variable&quot;</td></tr>
+<tr class="memdesc:a5cf24745dd885deb3b83037a873e9938"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component name a reference stores to mean "a variable of this graph".  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for components with lifecycle methods. </p>
+<p>Base class for components that need async setup during boot.</p>
+<p>Project-wide unit settings (inspector display preference, world scale).</p>
+<p>The framebuffer contract: logical render resolution and color format.</p>
+<p>Engine-core project settings that are not tied to a specific subsystem.</p>
+<p>One registered project-settings type plus its live instance.</p>
+<p>Base class for type-erased <a class="el" href="struct_deki_1_1_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef</a> access (used by engine).</p>
+<p>Registry for component metadata.</p>
+<p>Abstract interface for platform-specific time provider.</p>
+<p>Abstract interface for device power management (sleep / wake).</p>
+<p>Abstract interface for filesystem package operations.</p>
+<p>Abstract interface for display package operations.</p>
+<p>A pixel rectangle, half-open: [left, right) x [top, bottom).</p>
+<p>Per-category provider registry that lives in deki-engine-core.dll.</p>
+<p>Header-only typed wrapper around <a class="el" href="class_deki_1_1_provider_registry_base.html">ProviderRegistryBase</a>.</p>
+<p>Active-driver registry and facade for power management.</p>
+<p>File System Provider for handling different platform filesystem implementations.</p>
+<p>Runtime project settings loaded from dproject.bin.</p>
+<p>Orchestrates sequential platform initialization of SetupComponents.</p>
+<p>Editor implementation of display interface.</p>
+<p>Desktop file system implementation using standard C file operations.</p>
+<p>Configuration for a hardware package instance.</p>
+<p>Placeholder for components whose type no longer exists.</p>
+<p>Generic input key constants These constants provide a framework-independent way to reference common keys.</p>
+<p>Camera projection mode (forward-compat hook).</p>
+<p>2D vector for positions, directions, and scales.</p>
+<p>Entity class - a container for components.</p>
+<p>FPS counter for tracking and displaying frame rate.</p>
+<p>Type alias for component type identification.</p>
+<p><a class="el" href="class_deki_1_1_behaviour.html">Behaviour</a> extends <a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> with:</p><ul>
+<li>Lifecycle methods: Awake(), Start(), Update()</li>
+<li>Update() is only called on behaviours that DECLARE it (DeclaresUpdate(), generated by the reflection codegen) and have not opted out with SetNeedsUpdate(false).</li>
+</ul>
+<p>Lifecycle order:</p><ol type="1">
+<li>InternalAwake (engine) - Resolves AssetRefs and ObjectRefs</li>
+<li>Awake() - <a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> initialization, called once after refs are resolved</li>
+<li>Start() - Called once before first Update, after ALL Awake calls complete</li>
+<li>Update() - Called every frame</li>
+<li>Render (handled by RendererComponent)</li>
+</ol>
+<p>Use <a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> for data-only components. Use <a class="el" href="class_deki_1_1_behaviour.html">Behaviour</a> for components that need engine processing.</p>
+<p>This utility measures actual FPS achieved by the engine including all packages (rendering, input processing, etc.)</p>
+<p>A <a class="el" href="class_deki_1_1_object.html">Object</a>'s world-space transform, read in one go (see <a class="el" href="class_deki_1_1_object.html#a1c25a7e33972ec8709001e6394d1d00b" title="All five world-transform values with one dirty check.">Object::GetWorldTransform</a>).</p>
+<p>Orthographic is the only path used by the 2D software renderer today; Perspective is reserved for future 3D / external renderers. Standard2DRenderer does NOT consume the projection matrix — it calls <a class="el" href="class_deki_1_1_i_camera.html#ad6648b2e940241dfa0a47fdf7bb69c06">ICamera::WorldToScreen</a> directly. The enum + GetProjectionMatrix() exist only so that future 3D code, debug tools, or third-party renderers can ask the camera for a matrix without us having to retrofit the API later.</p>
+<p>When a scene references a component type that isn't registered (e.g., deleted package, missing plugin), a <a class="el" href="class_deki_1_1_missing_component.html">MissingComponent</a> is created instead. It preserves the raw serialized data so saving the scene doesn't permanently lose the component data.</p>
+<p>Contains the runtime configuration for a hardware package, including:</p><ul>
+<li>Pin assignments (GPIO numbers)</li>
+<li>Package-specific settings (strings)</li>
+</ul>
+<p>This is the runtime representation loaded from the platform JSON. The editor uses PackageConfigEntry (in PlatformConfig.h) which is serialized to/from JSON.</p>
+<p>Note: this struct is unrelated to the installable-package system (the deki-* DLLs listed in deki-packages.json). It exists at the engine src/ root rather than under src/packages/ to make that distinction clear.</p>
+<p>This implementation maps virtual paths to the local filesystem and uses standard C library functions for file operations. It's suitable for desktop platforms (Windows, Linux, macOS) for both editor and simulator builds.</p>
+<p>This display renders to an OpenGL texture that can be displayed in ImGui. It doesn't create its own window - the editor manages the window.</p>
+<p>Add this component to a boot scene along with SetupComponents (like SDCardComponent). It will call Setup() on each component in order, waiting for each to complete before proceeding to the next. After all setup completes successfully, it loads the startup scene.</p>
+<p>If any setup fails, the platform setup stops and the startup scene is not loaded.</p>
+<p>Usage in boot scene: BootRoot ├── <a class="el" href="class_deki_1_1_platform_setup_component.html">PlatformSetupComponent</a> │ └── setupComponents: [→SDCardComponent] └── SDCardObj └── SDCardComponent</p>
+<p>This file is exported by the editor alongside scenes and contains project-wide settings that affect engine behavior at runtime.</p>
+<p>Holds the process-wide filesystem. Platform integration packages install a concrete implementation via SetFileSystem(); there is no build-time platform enum — which one you get is decided by which package is loaded.</p>
+<p>The platform integration package (e.g. deki-esp32-integration) registers its <a class="el" href="class_deki_1_1_i_power.html">IPower</a> driver via SetCurrent() at init. <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> and app code reach the active driver via GetCurrent(). Returns nullptr on platforms without a registered driver — callers must null-check (the engine main loop treats nullptr as "no power management, always awake").</p>
+<p>Each multi-provider package aliases this template to expose its registry with two access methods only:</p>
+<p>namespace <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> { using Location = <a class="el" href="class_deki_1_1_provider_registry.html">ProviderRegistry&lt;IDekiLocationProvider&gt;</a>; }</p>
+<p>auto* p = Deki::Location::GetProvider&lt;BeaconDBLocationProvider&gt;(); // typed auto* d = Deki::Location::GetDefault(); // first registered</p>
+<p>No GetProviderById(const char*) is exposed — selection is always either compile-time-checked (typed) or convention-driven (default). String-keyed runtime lookups invite the "if A fails, try B" fallback pattern that the project's NEVER USE FALLBACKS rule forbids.</p>
+<p>Interface contract:</p><ul>
+<li>Interface must derive from <a class="el" href="class_deki_1_1_i_package.html" title="Abstract interface for hardware peripheral packages.">IPackage</a>.</li>
+<li>Interface must define <span class="tt">static constexpr const char* Category</span> matching the category string used by ForCategory().</li>
+<li>Each concrete provider T must define <span class="tt">static constexpr const char* ProviderId</span>.</li>
+</ul>
+<p>RTTI: not used. Lookups go through string comparison on ProviderId, and the static_cast to T* is safe because the (category, ProviderId) pair is owned by exactly one type. Builds cleanly under -fno-rtti.</p>
+<p>One instance per category string (e.g. "location", "weather"). Package DLLs register their concrete providers here at DekiPlugin_RegisterComponents time.</p>
+<p>The base stores IPackage* pointers and is interface-agnostic on purpose: the typed wrapper (<a class="el" href="class_deki_1_1_provider_registry.html">ProviderRegistry&lt;Interface&gt;</a>) downcasts via static_cast. Safe because each (category, providerId) pair is owned by exactly one type.</p>
+<p>Same DLL-boundary pattern as <a class="el" href="class_deki_1_1_settings_registry.html" title="Registry for package-extensible project-settings types.">SettingsRegistry</a> — singleton symbol is exported from deki-engine-core.dll so every package DLL sees the same instance via dllimport. Plugin-aware ClearPlugin path lets PackageLoader drop providers before FreeLibrary without dangling vtables.</p>
+<p>Shared vocabulary between the render system (which pixels a frame changed, <a class="el" href="class_deki_1_1_i_render_system.html#a5389605e99a36c3aec4484080760d007" title="The rectangles the last Render() left needing presentation.">IRenderSystem::GetPresentRects</a>) and displays (which pixels to push, <a class="el" href="class_deki_1_1_i_display.html#a6afad67dd3f89c828e182be2b5b5b0a9" title="Present only rects of the framebuffer.">IDisplay::PresentRegions</a>).</p>
+<p>This interface defines the contract that display packages must implement to work with the <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> engine. It abstracts display initialization, buffer management, and rendering operations.</p>
+<p>Whichever platform integration package is loaded at runtime registers its concrete display via Engine::SetDisplay(this, name). Engine-core owns no concrete display logic — only the IDisplay* pointer and the lifecycle coordination around it.</p>
+<p>This interface defines the contract that filesystem packages must implement to work with the <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> engine. It abstracts file operations, path handling, and storage management.</p>
+<p>Engine-core consumes this through the <a class="el" href="class_deki_1_1_power.html">Power</a> facade. Whichever platform integration package is loaded at runtime registers its concrete driver via <a class="el" href="class_deki_1_1_power.html#ad5bbcd657ca6b297a81e2cb159509cc6">Power::SetCurrent</a> at init.</p>
+<p>Sleep modes are exposed as a platform-agnostic tier (Light / Deep) so the same API serves ESP32, nRF52 etc. Each implementation maps the tiers to native modes: ESP32: Light -&gt; esp_light_sleep, Deep -&gt; esp_deep_sleep nRF52: Light -&gt; System ON idle, Deep -&gt; System OFF</p>
+<p>The engine main loop calls Tick() once per iteration. Tick() may either block (real light sleep: function returns when wake fires) or set state to Sleeping for soft / simulated sleep on platforms without HW support; the loop checks GetState() after Tick() and skips Update / Render when sleeping.</p>
+<p>Boot is treated as an OnScreenOn event so app code that needs to run on every wake can hook a single callback and have it cover the cold-boot path.</p>
+<p>Platforms implement this to provide millisecond-resolution timing. Implementations:</p><ul>
+<li>SDL3: SDL_GetTicks()</li>
+<li>ESP32: esp_timer_get_time() / 1000</li>
+</ul>
+<p>On ESP32-S3: Minimal implementation - just provides metadata lookup by type. In Editor: Full implementation with name-based lookup and enumeration.</p>
+<p>Registered under the "Core" section. Frame pacing lives here rather than with the framebuffer: <span class="tt">targetWidth</span>/<span class="tt">targetHeight</span>/<span class="tt">colorFormat</span> are the contract handed to <span class="tt"><a class="el" href="class_deki_1_1_i_render_system.html#a61f0712314547f0ff3047830c4decfdb">IRenderSystem::Setup()</a></span> and are dictated by the target hardware, while capping is a property of the engine's frame loop. Nothing passes these to a renderer, and they still apply with no rendering package installed at all.</p>
+<p>Registered under the "Framebuffer" section — this is exactly the triple passed to IRenderSystem::Setup(width, height, format), so it is renderer-agnostic and dictated by the target hardware rather than chosen by a renderer. The editor's Project Settings panel renders these fields via reflection; persistence goes through Project::Save/Load (deki.json) and <a class="el" href="namespace_deki_1_1_project_settings.html#aa980522f7fb2d282b82360c7ee2f7f0b" title="Serialize project settings to a dproject.bin image (editor only).">ProjectSettings::Write</a>/Load (dproject.bin) for the runtime device.</p>
+<p>targetWidth / targetHeight is the <b>logical resolution</b> — what the engine renders into. On embedded the panel size matches this exactly. On desktop preview, SDL3 handles the integer-multiple upscale via SDL_SetRenderLogicalPresentation with nearest-neighbor sampling.</p>
+<p>Registered with <a class="el" href="class_deki_1_1_settings_registry.html" title="Registry for package-extensible project-settings types.">SettingsRegistry</a> under the "Units" section. Internal storage is always meters; this struct only configures inspector display conversion and seeds default camera zoom.</p>
+<p>Hot paths (inspector, scene view, cameras) read these values from a per-frame cache, <a class="el" href="struct_deki_1_1_engine_settings.html#a630d5ae6e1076de42447e4d1f690de64">EngineSettings::Global()</a>. Call ApplyToGlobalCache() after Project::Load and after any Project Settings edit so the cache picks up the new values without a project reopen.</p>
+<p>Similar pattern to RendererComponent - inherit from this to participate in the boot sequence. BootSequenceComponent uses <a class="el" href="struct_deki_1_1_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef&lt;SetupComponent&gt;</a> to reference setup components.</p>
+<p>Usage: class MyHardwareComponent : public <a class="el" href="class_deki_1_1_setup_component.html">SetupComponent</a> { DEKI_COMPONENT(MyHardwareComponent, <a class="el" href="class_deki_1_1_setup_component.html">SetupComponent</a>, "System", "your-guid-here", "DEKI_FEATURE_MY_HARDWARE")</p>
+<p>void Setup(SetupCallback onComplete) override { bool success = InitializeHardware(); onComplete(success); }</p>
+<p>const char* GetSetupName() const override { return "My Hardware"; } }; </p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="ac1a8930b53b509439baac5ea7b71948d" name="ac1a8930b53b509439baac5ea7b71948d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a8930b53b509439baac5ea7b71948d">&#9670;&#160;</a></span>InterfaceAdapter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ac1a8930b53b509439baac5ea7b71948d">Deki::InterfaceAdapter</a> = void* (*)(<a class="el" href="class_deki_1_1_component.html">Component</a>*)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0f99afe0b878e72e45ae4c27acc282d" name="af0f99afe0b878e72e45ae4c27acc282d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f99afe0b878e72e45ae4c27acc282d">&#9670;&#160;</a></span>ComponentType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af0f99afe0b878e72e45ae4c27acc282d">Deki::ComponentType</a> = uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a587eed65587c28fcaa1cc6ca2d15a5dd" name="a587eed65587c28fcaa1cc6ca2d15a5dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587eed65587c28fcaa1cc6ca2d15a5dd">&#9670;&#160;</a></span>UpdateCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a587eed65587c28fcaa1cc6ca2d15a5dd">Deki::UpdateCallback</a> = std::function&lt;void(uint32_t deltaTime)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a103f7cb2b6266861a3487322e84d2e7a" name="a103f7cb2b6266861a3487322e84d2e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103f7cb2b6266861a3487322e84d2e7a">&#9670;&#160;</a></span>GameUpdateCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a103f7cb2b6266861a3487322e84d2e7a">Deki::GameUpdateCallback</a> = std::function&lt;void()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abea9386d083c93ac96ed8da00fb1a5a3" name="abea9386d083c93ac96ed8da00fb1a5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea9386d083c93ac96ed8da00fb1a5a3">&#9670;&#160;</a></span>LogCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#abea9386d083c93ac96ed8da00fb1a5a3">Deki::LogCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">std::function&lt;void(<a class="code hl_enumeration" href="#a1a59810902377e4b9a664acb09b02eb7">LogLevel</a> level, <span class="keyword">const</span> std::string&amp; message,</div>
+<div class="line">                                      <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line)&gt;</div>
+<div class="ttc" id="anamespace_deki_html_a1a59810902377e4b9a664acb09b02eb7"><div class="ttname"><a href="#a1a59810902377e4b9a664acb09b02eb7">Deki::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdef"><b>Definition</b> DekiLogSystem.h:30</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7f72ad35d446c9ee2d4748b13b2181f5" name="a7f72ad35d446c9ee2d4748b13b2181f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f72ad35d446c9ee2d4748b13b2181f5">&#9670;&#160;</a></span>LifecycleProfileBeginCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*) Deki::LifecycleProfileBeginCallback(const char *name)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7c5e0eb21b9a1940227d04dc0d72653" name="ac7c5e0eb21b9a1940227d04dc0d72653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c5e0eb21b9a1940227d04dc0d72653">&#9670;&#160;</a></span>LifecycleProfileEndCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*) Deki::LifecycleProfileEndCallback()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a857157168165bc1860b4fcf81a781d77" name="a857157168165bc1860b4fcf81a781d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857157168165bc1860b4fcf81a781d77">&#9670;&#160;</a></span>ComponentCreator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a857157168165bc1860b4fcf81a781d77">Deki::ComponentCreator</a> = <a class="el" href="class_deki_1_1_component.html">Component</a>* (*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer type for component creators. </p>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="adf997e436efe620d60266910d8f63061" name="adf997e436efe620d60266910d8f63061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf997e436efe620d60266910d8f63061">&#9670;&#160;</a></span>ColorFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#adf997e436efe620d60266910d8f63061">Deki::ColorFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a" name="adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a"></a>RGB565&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0" name="adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0"></a>RGB888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251" name="adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251"></a>ARGB8888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def" name="adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def"></a>RGB565A8&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1a59810902377e4b9a664acb09b02eb7" name="a1a59810902377e4b9a664acb09b02eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a59810902377e4b9a664acb09b02eb7">&#9670;&#160;</a></span>LogLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a1a59810902377e4b9a664acb09b02eb7">Deki::LogLevel</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257" name="a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257"></a>Editor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a59810902377e4b9a664acb09b02eb7aafbf0897a5a83fdd873dfb032ec695d3" name="a1a59810902377e4b9a664acb09b02eb7aafbf0897a5a83fdd873dfb032ec695d3"></a>Internal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a59810902377e4b9a664acb09b02eb7aa603905470e2a5b8c13e96b579ef0dba" name="a1a59810902377e4b9a664acb09b02eb7aa603905470e2a5b8c13e96b579ef0dba"></a>Debug&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a59810902377e4b9a664acb09b02eb7a4059b0251f66a18cb56f544728796875" name="a1a59810902377e4b9a664acb09b02eb7a4059b0251f66a18cb56f544728796875"></a>Info&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa" name="a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa"></a>Warning&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a59810902377e4b9a664acb09b02eb7a902b0d55fddef6f8d651fe1035b7d4bd" name="a1a59810902377e4b9a664acb09b02eb7a902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa4a9a8c9f8aa8578ec1cac2acc9ef603" name="aa4a9a8c9f8aa8578ec1cac2acc9ef603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a9a8c9f8aa8578ec1cac2acc9ef603">&#9670;&#160;</a></span>ProjectionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aa4a9a8c9f8aa8578ec1cac2acc9ef603">Deki::ProjectionMode</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa4a9a8c9f8aa8578ec1cac2acc9ef603a03424250432f2aa71de95579d2c0eaeb" name="aa4a9a8c9f8aa8578ec1cac2acc9ef603a03424250432f2aa71de95579d2c0eaeb"></a>Orthographic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4a9a8c9f8aa8578ec1cac2acc9ef603aa80420eef88d11f77532f1b9cb467fa3" name="aa4a9a8c9f8aa8578ec1cac2acc9ef603aa80420eef88d11f77532f1b9cb467fa3"></a>Perspective&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a916098f39eb516cdab1aab85d4c07ca3" name="a916098f39eb516cdab1aab85d4c07ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916098f39eb516cdab1aab85d4c07ca3">&#9670;&#160;</a></span>UnitMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a916098f39eb516cdab1aab85d4c07ca3">Deki::UnitMode</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inspector display unit preference. </p>
+<p>This is purely a UI concern. Internal storage, serialization, runtime math and physics are always in meters. The inspector multiplies stored values by the project's pixelsPerMeter when displaying physical-unit fields (DEKI_UNIT(Distance|Velocity|Acceleration)) under Pixels mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1" name="a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1"></a>Pixels&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469" name="a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469"></a>Meters&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a48e4f41b4eda811c9555c773fccb673a" name="a48e4f41b4eda811c9555c773fccb673a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e4f41b4eda811c9555c773fccb673a">&#9670;&#160;</a></span>MemorySubsystem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a48e4f41b4eda811c9555c773fccb673a">Deki::MemorySubsystem</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> subsystem types - simplified (kept for compatibility). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a48e4f41b4eda811c9555c773fccb673aab61773b9b3968a9988d765d728985862" name="a48e4f41b4eda811c9555c773fccb673aab61773b9b3968a9988d765d728985862"></a>GENERAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ace9c0fee5b0c655878f4657ecdf1244d" name="ace9c0fee5b0c655878f4657ecdf1244d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9c0fee5b0c655878f4657ecdf1244d">&#9670;&#160;</a></span>PackageState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ace9c0fee5b0c655878f4657ecdf1244d">Deki::PackageState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Package lifecycle states. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ace9c0fee5b0c655878f4657ecdf1244daf704f57ea420275ad51bf55b7dec2c96" name="ace9c0fee5b0c655878f4657ecdf1244daf704f57ea420275ad51bf55b7dec2c96"></a>Uninitialized&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace9c0fee5b0c655878f4657ecdf1244da59d87a4758a9d35fbaf6b204341bb399" name="ace9c0fee5b0c655878f4657ecdf1244da59d87a4758a9d35fbaf6b204341bb399"></a>Initialized&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09" name="ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09"></a>Running&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace9c0fee5b0c655878f4657ecdf1244da902b0d55fddef6f8d651fe1035b7d4bd" name="ace9c0fee5b0c655878f4657ecdf1244da902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace9c0fee5b0c655878f4657ecdf1244dab9f5c797ebbf55adccdd8539a65a0241" name="ace9c0fee5b0c655878f4657ecdf1244dab9f5c797ebbf55adccdd8539a65a0241"></a>Disabled&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a39ae59dff82c19018ec967d5186a7270" name="a39ae59dff82c19018ec967d5186a7270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ae59dff82c19018ec967d5186a7270">&#9670;&#160;</a></span>PhysicalUnit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a39ae59dff82c19018ec967d5186a7270">Deki::PhysicalUnit</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Physical unit for float/Vector2 properties. </p>
+<p>Internal storage is always meters. Inspector applies a display conversion based on the project's inspectorUnit setting:</p><ul>
+<li>inspectorUnit == Meters: display value == stored value (suffix m / m/s / m/s²).</li>
+<li>inspectorUnit == Pixels: displayed value = stored * pixelsPerMeter (suffix px / px/s / px/s²).</li>
+</ul>
+<p>Only meaningful on Float and <a class="el" href="struct_deki_1_1_vector2.html">Vector2</a> property types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a39ae59dff82c19018ec967d5186a7270a6adf97f83acf6453d4a6a4b1070f3754" name="a39ae59dff82c19018ec967d5186a7270a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39ae59dff82c19018ec967d5186a7270a0aa6f4210bf373c95eda00232e93cd98" name="a39ae59dff82c19018ec967d5186a7270a0aa6f4210bf373c95eda00232e93cd98"></a>Distance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39ae59dff82c19018ec967d5186a7270a88156d46910a2d733443c339a9231d12" name="a39ae59dff82c19018ec967d5186a7270a88156d46910a2d733443c339a9231d12"></a>Velocity&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39ae59dff82c19018ec967d5186a7270a3b926d163371fd620b09b63219b12f52" name="a39ae59dff82c19018ec967d5186a7270a3b926d163371fd620b09b63219b12f52"></a>Acceleration&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39ae59dff82c19018ec967d5186a7270a45f4ce6c3306644b1efe333f4f8d6929" name="a39ae59dff82c19018ec967d5186a7270a45f4ce6c3306644b1efe333f4f8d6929"></a>Angle&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a12d52725300eb20f76a0597fc3e32df4" name="a12d52725300eb20f76a0597fc3e32df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d52725300eb20f76a0597fc3e32df4">&#9670;&#160;</a></span>PropertyType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a12d52725300eb20f76a0597fc3e32df4">Deki::PropertyType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Property types for runtime reflection. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a7d839b2c12bfd40ac121b4cc9e81c539" name="a12d52725300eb20f76a0597fc3e32df4a7d839b2c12bfd40ac121b4cc9e81c539"></a>Int8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a39bc2ae44b184207f560ff8619823208" name="a12d52725300eb20f76a0597fc3e32df4a39bc2ae44b184207f560ff8619823208"></a>Int16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4ac06129f6e6e15c09328365e553f1dc31" name="a12d52725300eb20f76a0597fc3e32df4ac06129f6e6e15c09328365e553f1dc31"></a>Int32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4afbde23b11d7e59af7828e81144c8b487" name="a12d52725300eb20f76a0597fc3e32df4afbde23b11d7e59af7828e81144c8b487"></a>Int64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4ab31df9c476d20e85ff898121efe11b5a" name="a12d52725300eb20f76a0597fc3e32df4ab31df9c476d20e85ff898121efe11b5a"></a>UInt8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a8bd950a9d7779b83f5c30046c9aaf1cf" name="a12d52725300eb20f76a0597fc3e32df4a8bd950a9d7779b83f5c30046c9aaf1cf"></a>UInt16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4ae7956ed7be1c5025a27ed3cb42a396bd" name="a12d52725300eb20f76a0597fc3e32df4ae7956ed7be1c5025a27ed3cb42a396bd"></a>UInt32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4aaf71234725f0470ccf993e263a8b820a" name="a12d52725300eb20f76a0597fc3e32df4aaf71234725f0470ccf993e263a8b820a"></a>UInt64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a22ae0e2b89e5e3d477f988cc36d3272b" name="a12d52725300eb20f76a0597fc3e32df4a22ae0e2b89e5e3d477f988cc36d3272b"></a>Float&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4ad909d38d705ce75386dd86e611a82f5b" name="a12d52725300eb20f76a0597fc3e32df4ad909d38d705ce75386dd86e611a82f5b"></a>Double&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4ac26f15e86e3de4c398a8273272aba034" name="a12d52725300eb20f76a0597fc3e32df4ac26f15e86e3de4c398a8273272aba034"></a>Bool&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a27118326006d3829667a400ad23d5d98" name="a12d52725300eb20f76a0597fc3e32df4a27118326006d3829667a400ad23d5d98"></a>String&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4acb5feb1b7314637725a2e73bdc9f7295" name="a12d52725300eb20f76a0597fc3e32df4acb5feb1b7314637725a2e73bdc9f7295"></a>Color&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a1bebc5ae2822f8e361fb0ce57b5e09e2" name="a12d52725300eb20f76a0597fc3e32df4a1bebc5ae2822f8e361fb0ce57b5e09e2"></a>Vector2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a02b4dab58bbc49e0851fb3fd8df520cc" name="a12d52725300eb20f76a0597fc3e32df4a02b4dab58bbc49e0851fb3fd8df520cc"></a>Vector3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a26e9054be7f40079575582b7ad3f7363" name="a12d52725300eb20f76a0597fc3e32df4a26e9054be7f40079575582b7ad3f7363"></a>Asset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4acf20423ed48998082c20099488a0917c" name="a12d52725300eb20f76a0597fc3e32df4acf20423ed48998082c20099488a0917c"></a>Enum&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a771d51735305d4fccf5380814a764c3d" name="a12d52725300eb20f76a0597fc3e32df4a771d51735305d4fccf5380814a764c3d"></a>ObjectRef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a4410ec34d9e6c1a68100ca0ce033fb17" name="a12d52725300eb20f76a0597fc3e32df4a4410ec34d9e6c1a68100ca0ce033fb17"></a>Array&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a675714e2978e42bb70d853ddbd95fb9e" name="a12d52725300eb20f76a0597fc3e32df4a675714e2978e42bb70d853ddbd95fb9e"></a>AssetRef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a94ee90aa44bec25a05943e647ce5652b" name="a12d52725300eb20f76a0597fc3e32df4a94ee90aa44bec25a05943e647ce5652b"></a>NodeRef&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99" name="a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99"></a>PropertyRef&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aaab68b255b70d4b9aa5b682d1a46bf64" name="aaab68b255b70d4b9aa5b682d1a46bf64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab68b255b70d4b9aa5b682d1a46bf64">&#9670;&#160;</a></span>TransformField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64">Deki::TransformField</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The object's own transform, addressable like a component. </p>
+<p>The transform is not a component: it lives on <a class="el" href="class_deki_1_1_object.html">Object</a> with private fields and setters that invalidate the cached world transform of the object and all its descendants. So a Transform-targeted reference is DISPATCHED by id rather than written through an offset, and every write goes through the real setter.</p>
+<p>Position and Scale address both axes at once (a Vector2-typed target), which is what makes "move this object to (x, y)" a single generic action instead of two that would run one after the other. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a6adf97f83acf6453d4a6a4b1070f3754" name="aaab68b255b70d4b9aa5b682d1a46bf64a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a02129bb861061d1a052c592e2dc6b383" name="aaab68b255b70d4b9aa5b682d1a46bf64a02129bb861061d1a052c592e2dc6b383"></a>X&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a57cec4137b614c87cb4e24a3d003a3e0" name="aaab68b255b70d4b9aa5b682d1a46bf64a57cec4137b614c87cb4e24a3d003a3e0"></a>Y&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a52f5e0bc3859bc5f5e25130b6c7e8881" name="aaab68b255b70d4b9aa5b682d1a46bf64a52f5e0bc3859bc5f5e25130b6c7e8881"></a>Position&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64af1a42bd417390fc63b030a519624607a" name="aaab68b255b70d4b9aa5b682d1a46bf64af1a42bd417390fc63b030a519624607a"></a>Rotation&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64ab5e0c179725e7f282ffb8e6a96797b49" name="aaab68b255b70d4b9aa5b682d1a46bf64ab5e0c179725e7f282ffb8e6a96797b49"></a>ScaleX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a3475b72c6483a5c871d245e2567c96c7" name="aaab68b255b70d4b9aa5b682d1a46bf64a3475b72c6483a5c871d245e2567c96c7"></a>ScaleY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a85a7cd587d6142dbfc1a4de05af7b75d" name="aaab68b255b70d4b9aa5b682d1a46bf64a85a7cd587d6142dbfc1a4de05af7b75d"></a>Scale&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaab68b255b70d4b9aa5b682d1a46bf64a4d3d769b812b6faa6b76e1a8abaece2d" name="aaab68b255b70d4b9aa5b682d1a46bf64a4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a83e2a8e59b9ade12ac092ce334e4bb50" name="a83e2a8e59b9ade12ac092ce334e4bb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e2a8e59b9ade12ac092ce334e4bb50">&#9670;&#160;</a></span>HashString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::HashString </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>hash</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2166136261u</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compile-time string hash for consistent type IDs across translation units. </p>
+
+</div>
+</div>
+<a id="a693b81cbcc3e331d8b8695e6d9959971" name="a693b81cbcc3e331d8b8695e6d9959971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693b81cbcc3e331d8b8695e6d9959971">&#9670;&#160;</a></span>HashStringLen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::HashStringLen </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runtime string hash with length (for msgpack strings without null terminator). </p>
+
+</div>
+</div>
+<a id="a8b1b03df6f6dd63de4995534963b8fc0" name="a8b1b03df6f6dd63de4995534963b8fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1b03df6f6dd63de4995534963b8fc0">&#9670;&#160;</a></span>DekiMain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Deki::DekiMain </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22ea94289b214746512305d8bc075c4d" name="a22ea94289b214746512305d8bc075c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ea94289b214746512305d8bc075c4d">&#9670;&#160;</a></span>VisitSubtree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Fn&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::VisitSubtree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Fn &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>fn</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pre-order visit of <span class="tt">root</span> and every descendant. <span class="tt">fn(Object*)</span>. </p>
+
+</div>
+</div>
+<a id="afec29a46b7bda27dc3f20b41794551ff" name="afec29a46b7bda27dc3f20b41794551ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec29a46b7bda27dc3f20b41794551ff">&#9670;&#160;</a></span>VisitActiveSubtree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Fn&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::VisitActiveSubtree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Fn &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>fn</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Like VisitSubtree, but does not enter inactive objects (nor visit them). </p>
+
+</div>
+</div>
+<a id="a812910f374e004e5d124fa69293e6e2b" name="a812910f374e004e5d124fa69293e6e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812910f374e004e5d124fa69293e6e2b">&#9670;&#160;</a></span>FindInSubtree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Pred&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_object.html">Object</a> * Deki::FindInSubtree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Pred &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>pred</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>First object in pre-order for which <span class="tt">pred(Object*)</span> is true, or null. </p>
+
+</div>
+</div>
+<a id="a3246873f72896f3ffee887e1733bffbf" name="a3246873f72896f3ffee887e1733bffbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3246873f72896f3ffee887e1733bffbf">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_vector2.html">Vector2</a> Deki::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_vector2.html">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6f1be1b762c93604b37edc421c4d81b" name="aa6f1be1b762c93604b37edc421c4d81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f1be1b762c93604b37edc421c4d81b">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_vector3.html">Vector3</a> Deki::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_vector3.html">Vector3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab9b3908bce3bf5cd611d24c82b907d45" name="ab9b3908bce3bf5cd611d24c82b907d45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9b3908bce3bf5cd611d24c82b907d45">&#9670;&#160;</a></span>GenerateDeterministicGuid()</h2>
 
@@ -180,6 +1176,504 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A UUID-formatted string (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) </dd></dl>
+
+</div>
+</div>
+<a id="ab2db578a37de2fc62dd9e4e740e861c1" name="ab2db578a37de2fc62dd9e4e740e861c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2db578a37de2fc62dd9e4e740e861c1">&#9670;&#160;</a></span>GetPropertyRef() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; Deki::GetPropertyRef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fa6aaff29f2822152add80eb3608a8d" name="a3fa6aaff29f2822152add80eb3608a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa6aaff29f2822152add80eb3608a8d">&#9670;&#160;</a></span>GetPropertyRef() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; Deki::GetPropertyRef </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbe9d8bcb5d306a8eb2bc2c54410d9ef" name="abbe9d8bcb5d306a8eb2bc2c54410d9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe9d8bcb5d306a8eb2bc2c54410d9ef">&#9670;&#160;</a></span>GetPropertyValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T Deki::GetPropertyValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a96d4eb7699c21436cb97c84165a7ff" name="a8a96d4eb7699c21436cb97c84165a7ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a96d4eb7699c21436cb97c84165a7ff">&#9670;&#160;</a></span>SetPropertyValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::SetPropertyValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6aaef028fc14afac69c3294f9da6c76" name="ad6aaef028fc14afac69c3294f9da6c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6aaef028fc14afac69c3294f9da6c76">&#9670;&#160;</a></span>GetNodePropertyRef() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; Deki::GetNodePropertyRef </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>base</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2730682285fdf63f9933682d2cc8ecf9" name="a2730682285fdf63f9933682d2cc8ecf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2730682285fdf63f9933682d2cc8ecf9">&#9670;&#160;</a></span>GetNodePropertyRef() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; Deki::GetNodePropertyRef </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>base</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70726b336ad4225d680c9ecad81b9a6c" name="a70726b336ad4225d680c9ecad81b9a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70726b336ad4225d680c9ecad81b9a6c">&#9670;&#160;</a></span>DekiVariableFieldRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> * Deki::DekiVariableFieldRef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A field descriptor for a standalone value of <span class="tt">type</span>, at offset 0. </p>
+<p>For runners binding their own storage (graph variables): point <a class="el" href="struct_deki_1_1_property_binding.html#ab37f69308a8a2fa15b9fdc6c5f267ed1">PropertyBinding::field</a> at the value and its <span class="tt">info</span> at this, and every Read/Write/Compare helper below works on it unchanged. Returns nullptr for a type that has no literal form. </p>
+
+</div>
+</div>
+<a id="a186e1c5bc7660b81c99c3dcdfa4ebcb2" name="a186e1c5bc7660b81c99c3dcdfa4ebcb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a186e1c5bc7660b81c99c3dcdfa4ebcb2">&#9670;&#160;</a></span>TransformFields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> * Deki::TransformFields </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>outCount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The transform's field table, for pickers and binding. </p>
+<p>NOTE: in THIS table only, <a class="el" href="struct_deki_1_1_field_ref.html#ae42739790ebf1e4eae95e80e3d444410">FieldRef::offset</a> carries a <a class="el" href="#aaab68b255b70d4b9aa5b682d1a46bf64" title="The object&#39;s own transform, addressable like a component.">TransformField</a> id, not a byte offset (the fields are private and dispatched, see above). Nothing outside BindPropertyRef should read it as an offset. </p>
+
+</div>
+</div>
+<a id="aae775802987db1312e287587e7bf54cd" name="aae775802987db1312e287587e7bf54cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae775802987db1312e287587e7bf54cd">&#9670;&#160;</a></span>TransformFieldNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char *const  * Deki::TransformFieldNames </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>outCount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transform field names, index-aligned with TransformFields. </p>
+<p><a class="el" href="struct_deki_1_1_field_ref.html" title="Compact field descriptor — the ONE piece of reflection that exists on every platform,...">FieldRef</a> stores only a name hash (that is the point: 8 bytes per field), so the names live here for the editor's pickers and for error messages. </p>
+
+</div>
+</div>
+<a id="a52c12dac3cca66d1f6a511fa5a05a4b1" name="a52c12dac3cca66d1f6a511fa5a05a4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c12dac3cca66d1f6a511fa5a05a4b1">&#9670;&#160;</a></span>BindPropertyRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::BindPropertyRef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_ref.html">PropertyRef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **</td>          <td class="paramname"><span class="paramname"><em>outError</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolve <span class="tt">ref</span> against <span class="tt">object</span> (already found by name by the caller). </p>
+<p>Fills out.field / out.info. Returns false when the object carries no such component or the component has no such field; <span class="tt">outError</span> (optional, may be null) then receives a short human-readable reason for the caller to log. Does not touch out.number. </p>
+
+</div>
+</div>
+<a id="a1061c4955314ade075cee1b2539ab6ea" name="a1061c4955314ade075cee1b2539ab6ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1061c4955314ade075cee1b2539ab6ea">&#9670;&#160;</a></span>ParsePropertyLiteral() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::ParsePropertyLiteral </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;</td>          <td class="paramname"><span class="paramname"><em>out2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse an authored literal per the bound field's type. </p>
+<p>Numbers, bools ("true"/"1") and enums (stored as their index — the editor resolves value names, the device never needs the name table) land in <span class="tt">out</span>. Vector2-typed targets read "x, y" and fill <span class="tt">out2</span> as well. String fields need no parsing and return true with both untouched. Returns false when the text is not a number for a numeric field. </p>
+
+</div>
+</div>
+<a id="accd2015e657d1f51a8f90173ffaedd70" name="accd2015e657d1f51a8f90173ffaedd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd2015e657d1f51a8f90173ffaedd70">&#9670;&#160;</a></span>ParsePropertyLiteral() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::ParsePropertyLiteral </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_field_ref.html">FieldRef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Single-value overload for targets that are not Vector2-typed. </p>
+
+</div>
+</div>
+<a id="ac71f6a0a04342195f29156e09527c445" name="ac71f6a0a04342195f29156e09527c445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71f6a0a04342195f29156e09527c445">&#9670;&#160;</a></span>ReadBoundProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Deki::ReadBoundProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the bound target's live value (first axis for <a class="el" href="struct_deki_1_1_vector2.html">Vector2</a>). </p>
+
+</div>
+</div>
+<a id="a6b461fcf650d430f0fbeffd24b1e6205" name="a6b461fcf650d430f0fbeffd24b1e6205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b461fcf650d430f0fbeffd24b1e6205">&#9670;&#160;</a></span>ReadBoundProperty2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Deki::ReadBoundProperty2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the bound target's second axis (<a class="el" href="struct_deki_1_1_vector2.html">Vector2</a> targets only, else 0). </p>
+
+</div>
+</div>
+<a id="a4f2bdda636d292108b0ff5194ac30881" name="a4f2bdda636d292108b0ff5194ac30881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2bdda636d292108b0ff5194ac30881">&#9670;&#160;</a></span>WriteBoundNumbers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::WriteBoundNumbers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write raw numbers to the bound target, bypassing the parsed literal. </p>
+
+</div>
+</div>
+<a id="ad008be6af01fc7dbb33e9a1f8731800c" name="ad008be6af01fc7dbb33e9a1f8731800c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad008be6af01fc7dbb33e9a1f8731800c">&#9670;&#160;</a></span>WriteBoundProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::WriteBoundProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the bound literal (or <span class="tt">text</span> for String fields) into the field. </p>
+
+</div>
+</div>
+<a id="af0f5e2fdb1bd009edf4a00679b7a4f91" name="af0f5e2fdb1bd009edf4a00679b7a4f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f5e2fdb1bd009edf4a00679b7a4f91">&#9670;&#160;</a></span>CompareBoundProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Deki::CompareBoundProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_binding.html">PropertyBinding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare the field's live value against the bound literal. </p>
+<dl class="section return"><dt>Returns</dt><dd>&lt;0, 0 or &gt;0 like strcmp. String fields compare against <span class="tt">text</span>. </dd></dl>
+
+</div>
+</div>
+<a id="a797e40e5960acce21da40512527a5aab" name="a797e40e5960acce21da40512527a5aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797e40e5960acce21da40512527a5aab">&#9670;&#160;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::json Deki::Serialize </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf6aa6292ce6944fa8065a141d8d8514" name="aaf6aa6292ce6944fa8065a141d8d8514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6aa6292ce6944fa8065a141d8d8514">&#9670;&#160;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T Deki::Deserialize </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>j</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -275,6 +1769,55 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa88aafaeabf5ad00e9ff8a3721514f0c" name="aa88aafaeabf5ad00e9ff8a3721514f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88aafaeabf5ad00e9ff8a3721514f0c">&#9670;&#160;</a></span>kTransformRefComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::kTransformRefComponent = &quot;Transform&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The component name a reference stores to mean "the object's transform". </p>
+
+</div>
+</div>
+<a id="a5cf24745dd885deb3b83037a873e9938" name="a5cf24745dd885deb3b83037a873e9938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf24745dd885deb3b83037a873e9938">&#9670;&#160;</a></span>kVariableRefComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::kVariableRefComponent = &quot;Variable&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The component name a reference stores to mean "a variable of this graph". </p>
+<p>Variables are declared by a node carrying DEKI_NODE_VARIABLES and live in storage the graph's RUNNER allocates per instance, so the engine cannot resolve them: BindPropertyRef leaves these alone and the runner binds them itself with DekiVariableFieldRef. Field = the variable's name. </p>
 
 </div>
 </div>

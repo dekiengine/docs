@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['fileheader_0',['FileHeader',['../struct_project_settings_1_1_file_header.html',1,'ProjectSettings']]],
-  ['fileinspector_1',['FileInspector',['../class_deki_editor_1_1_file_inspector.html',1,'DekiEditor']]],
-  ['fileinspectorregistry_2',['FileInspectorRegistry',['../class_deki_editor_1_1_file_inspector_registry.html',1,'DekiEditor']]],
-  ['floatcallbacks_3',['FloatCallbacks',['../struct_deki_editor_1_1_editor_u_i_1_1_float_callbacks.html',1,'DekiEditor::EditorUI']]]
+  ['editcallbacksbytes_0',['EditCallbacksBytes',['../struct_deki_editor_1_1_editor_u_i_1_1_edit_callbacks_bytes.html',1,'DekiEditor::EditorUI']]],
+  ['editorapplication_1',['EditorApplication',['../class_deki_editor_1_1_editor_application.html',1,'DekiEditor']]],
+  ['editorassets_2',['EditorAssets',['../class_deki_editor_1_1_editor_assets.html',1,'DekiEditor']]],
+  ['editorautosetupregistrar_3',['EditorAutoSetupRegistrar',['../struct_deki_1_1_editor_auto_setup_registrar.html',1,'Deki']]],
+  ['editordisplay_4',['EditorDisplay',['../class_deki_1_1_editor_display.html',1,'Deki']]],
+  ['editorextension_5',['EditorExtension',['../class_deki_editor_1_1_editor_extension.html',1,'DekiEditor']]],
+  ['editorfactoryinfo_6',['EditorFactoryInfo',['../struct_deki_editor_internal_1_1_editor_factory_info.html',1,'DekiEditorInternal']]],
+  ['editorhttputils_7',['EditorHttpUtils',['../class_deki_editor_1_1_editor_http_utils.html',1,'DekiEditor']]],
+  ['editorpaths_8',['EditorPaths',['../class_deki_editor_1_1_editor_paths.html',1,'DekiEditor']]],
+  ['editorregistrar_9',['EditorRegistrar',['../struct_deki_editor_internal_1_1_editor_registrar.html',1,'DekiEditorInternal']]],
+  ['editorregistry_10',['EditorRegistry',['../class_deki_editor_internal_1_1_editor_registry.html',1,'DekiEditorInternal']]],
+  ['editorui_11',['EditorUI',['../class_deki_editor_1_1_editor_u_i.html',1,'DekiEditor']]],
+  ['editorwindow_12',['EditorWindow',['../class_deki_editor_1_1_editor_window.html',1,'DekiEditor']]],
+  ['editorwindowmeta_13',['EditorWindowMeta',['../struct_deki_editor_1_1_editor_window_meta.html',1,'DekiEditor']]],
+  ['engine_14',['Engine',['../class_deki_1_1_engine.html',1,'Deki']]],
+  ['enginehost_15',['EngineHost',['../struct_deki_1_1_engine_host.html',1,'Deki']]],
+  ['enginesettings_16',['EngineSettings',['../struct_deki_1_1_engine_settings.html',1,'Deki']]],
+  ['enumcallbacks_17',['EnumCallbacks',['../struct_deki_editor_1_1_editor_u_i_1_1_enum_callbacks.html',1,'DekiEditor::EditorUI']]],
+  ['event_18',['Event',['../struct_deki_editor_1_1_asset_file_watcher_1_1_event.html',1,'DekiEditor::AssetFileWatcher']]]
 ];

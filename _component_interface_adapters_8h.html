@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -125,56 +125,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_component_int
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:ComponentInterfaceAdapters" id="r_ComponentInterfaceAdapters"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_component_interface_adapters.html">ComponentInterfaceAdapters</a></td></tr>
+<tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memitem:Deki_3A_3AComponentInterfaceAdapters" id="r_Deki_3A_3AComponentInterfaceAdapters"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html">Deki::ComponentInterfaceAdapters</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4ee4b560aa040bb05c313125992f1377" id="r_a4ee4b560aa040bb05c313125992f1377"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a4ee4b560aa040bb05c313125992f1377">InterfaceAdapter</a> = void* (*)(<a class="el" href="class_deki_component.html">DekiComponent</a>*)</td></tr>
+<tr class="memitem:ac1a8930b53b509439baac5ea7b71948d" id="r_ac1a8930b53b509439baac5ea7b71948d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d">Deki::InterfaceAdapter</a> = void* (*)(<a class="el" href="class_deki_1_1_component.html">Component</a>*)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a975d042329c44e4eedb27a286b524888" id="r_a975d042329c44e4eedb27a286b524888"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888">ComponentInterfaceAdapters::Register</a> (uint32_t interfaceId, <a class="el" href="_deki_component_8h.html#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> componentType, <a class="el" href="#a4ee4b560aa040bb05c313125992f1377">InterfaceAdapter</a> adapter)</td></tr>
-<tr class="memitem:a556ffc609d6392baca3c4e8730bfcc0f" id="r_a556ffc609d6392baca3c4e8730bfcc0f"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="namespace_component_interface_adapters.html#a556ffc609d6392baca3c4e8730bfcc0f">ComponentInterfaceAdapters::Query</a> (uint32_t interfaceId, <a class="el" href="class_deki_component.html">DekiComponent</a> *comp)</td></tr>
-<tr class="memitem:a7e45c88ac53fe7be04cfada088d5db99" id="r_a7e45c88ac53fe7be04cfada088d5db99"><td class="memItemLeft"><a class="el" href="#a4ee4b560aa040bb05c313125992f1377">InterfaceAdapter</a>&#160;</td><td class="memItemRight"><a class="el" href="namespace_component_interface_adapters.html#a7e45c88ac53fe7be04cfada088d5db99">ComponentInterfaceAdapters::Find</a> (uint32_t interfaceId, <a class="el" href="_deki_component_8h.html#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> componentType, <a class="el" href="_deki_component_8h.html#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> baseType)</td></tr>
-<tr class="memdesc:a7e45c88ac53fe7be04cfada088d5db99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The adapter Query would call for a component of this type (exact type first, then its base type), or nullptr.  <br /></td></tr>
-<tr class="memitem:a85eaaf171816abe98fb5180139777cc1" id="r_a85eaaf171816abe98fb5180139777cc1"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_component_interface_adapters.html#a85eaaf171816abe98fb5180139777cc1">ComponentInterfaceAdapters::Version</a> ()</td></tr>
-<tr class="memdesc:a85eaaf171816abe98fb5180139777cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bumped by every Register.  <br /></td></tr>
+<tr class="memitem:aa903de95127a189186deafaab3fc9d48" id="r_aa903de95127a189186deafaab3fc9d48"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html#aa903de95127a189186deafaab3fc9d48">Deki::ComponentInterfaceAdapters::Register</a> (uint32_t interfaceId, <a class="el" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">ComponentType</a> componentType, <a class="el" href="namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d">InterfaceAdapter</a> adapter)</td></tr>
+<tr class="memitem:ae5923b30d6906703d9835d61ec94ef8a" id="r_ae5923b30d6906703d9835d61ec94ef8a"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html#ae5923b30d6906703d9835d61ec94ef8a">Deki::ComponentInterfaceAdapters::Query</a> (uint32_t interfaceId, <a class="el" href="class_deki_1_1_component.html">Component</a> *comp)</td></tr>
+<tr class="memitem:aff827d6f5054f5619657940288d08827" id="r_aff827d6f5054f5619657940288d08827"><td class="memItemLeft"><a class="el" href="namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d">InterfaceAdapter</a>&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html#aff827d6f5054f5619657940288d08827">Deki::ComponentInterfaceAdapters::Find</a> (uint32_t interfaceId, <a class="el" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">ComponentType</a> componentType, <a class="el" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">ComponentType</a> baseType)</td></tr>
+<tr class="memdesc:aff827d6f5054f5619657940288d08827"><td class="mdescLeft">&#160;</td><td class="mdescRight">The adapter Query would call for a component of this type (exact type first, then its base type), or nullptr.  <br /></td></tr>
+<tr class="memitem:ae3712da8c54149d949dbeb01cd8398bb" id="r_ae3712da8c54149d949dbeb01cd8398bb"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html#ae3712da8c54149d949dbeb01cd8398bb">Deki::ComponentInterfaceAdapters::Version</a> ()</td></tr>
+<tr class="memdesc:ae3712da8c54149d949dbeb01cd8398bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bumped by every Register.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Registry for extracting interfaces from components without RTTI or vtable changes. </p>
-<p>Packages register adapter functions that convert a DekiComponent* to an interface pointer based on the component's StaticType. The renderer queries this to find <a class="el" href="class_i_clip_provider.html">IClipProvider</a>, <a class="el" href="class_i_sortable_provider.html">ISortableProvider</a>, etc. without knowing the concrete component class.</p>
+<p>Packages register adapter functions that convert a Component* to an interface pointer based on the component's StaticType. The renderer queries this to find IClipProvider, ISortableProvider, etc. without knowing the concrete component class.</p>
 <p>Usage: </p><div class="fragment"><div class="line"><span class="comment">// In your component .cpp:</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_component_interface_adapters_8h.html">ComponentInterfaceAdapters.h</a>&quot;</span></div>
 <div class="line"><span class="keyword">static</span> <span class="keyword">struct </span>MyAdapterRegistrar {</div>
 <div class="line">    MyAdapterRegistrar() {</div>
-<div class="line">        <a class="code hl_function" href="namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888">ComponentInterfaceAdapters::Register</a>(</div>
-<div class="line">            <a class="code hl_variable" href="class_i_clip_provider.html#a20a8a5f34258912fe71b3f1418b27e1f">IClipProvider::InterfaceID</a>, MyComponent::StaticType,</div>
-<div class="line">            [](<a class="code hl_class" href="class_deki_component.html">DekiComponent</a>* c) -&gt; <span class="keywordtype">void</span>* {</div>
-<div class="line">                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_i_clip_provider.html">IClipProvider</a>*<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>MyComponent*<span class="keyword">&gt;</span>(c));</div>
+<div class="line">        ComponentInterfaceAdapters::Register(</div>
+<div class="line">            IClipProvider::InterfaceID, MyComponent::StaticType,</div>
+<div class="line">            [](Component* c) -&gt; <span class="keywordtype">void</span>* {</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>IClipProvider*<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>MyComponent*<span class="keyword">&gt;</span>(c));</div>
 <div class="line">            });</div>
 <div class="line">    }</div>
 <div class="line">} s_reg;</div>
 <div class="ttc" id="a_component_interface_adapters_8h_html"><div class="ttname"><a href="_component_interface_adapters_8h.html">ComponentInterfaceAdapters.h</a></div><div class="ttdoc">Registry for extracting interfaces from components without RTTI or vtable changes.</div></div>
-<div class="ttc" id="aclass_deki_component_html"><div class="ttname"><a href="class_deki_component.html">DekiComponent</a></div><div class="ttdoc">Base class for all components (data-only).</div><div class="ttdef"><b>Definition</b> DekiComponent.h:51</div></div>
-<div class="ttc" id="aclass_i_clip_provider_html"><div class="ttname"><a href="class_i_clip_provider.html">IClipProvider</a></div><div class="ttdef"><b>Definition</b> IClipProvider.h:36</div></div>
-<div class="ttc" id="aclass_i_clip_provider_html_a20a8a5f34258912fe71b3f1418b27e1f"><div class="ttname"><a href="class_i_clip_provider.html#a20a8a5f34258912fe71b3f1418b27e1f">IClipProvider::InterfaceID</a></div><div class="ttdeci">static constexpr uint32_t InterfaceID</div><div class="ttdef"><b>Definition</b> IClipProvider.h:38</div></div>
-<div class="ttc" id="anamespace_component_interface_adapters_html_a975d042329c44e4eedb27a286b524888"><div class="ttname"><a href="namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888">ComponentInterfaceAdapters::Register</a></div><div class="ttdeci">void Register(uint32_t interfaceId, ComponentType componentType, InterfaceAdapter adapter)</div></div>
-</div><!-- fragment --> </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
-<a id="a4ee4b560aa040bb05c313125992f1377" name="a4ee4b560aa040bb05c313125992f1377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ee4b560aa040bb05c313125992f1377">&#9670;&#160;</a></span>InterfaceAdapter</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#a4ee4b560aa040bb05c313125992f1377">InterfaceAdapter</a> = void* (*)(<a class="el" href="class_deki_component.html">DekiComponent</a>*)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->

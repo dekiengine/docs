@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_deki_object_8
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">DekiObject.h File Reference</div></div>
 </div><!--header-->
@@ -121,122 +122,26 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_deki_object_8
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:DekiWorldTransform" id="r_DekiWorldTransform"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_world_transform.html">DekiWorldTransform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity class - a container for components.  <a href="struct_deki_world_transform.html#details">More...</a><br /></td></tr>
-<tr class="memitem:DekiObject" id="r_DekiObject"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_object.html">DekiObject</a></td></tr>
+<tr class="memitem:Deki_3A_3AWorldTransform" id="r_Deki_3A_3AWorldTransform"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_world_transform.html">Deki::WorldTransform</a></td></tr>
+<tr class="memitem:Deki_3A_3AObject" id="r_Deki_3A_3AObject"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_object.html">Deki::Object</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a50cb34991749f9e3b293dd8635e97ce6" id="r_a50cb34991749f9e3b293dd8635e97ce6"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
-<tr class="memitem:a50cb34991749f9e3b293dd8635e97ce6 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50cb34991749f9e3b293dd8635e97ce6">VisitSubtree</a> (<a class="el" href="class_deki_object.html">DekiObject</a> *root, Fn &amp;&amp;fn)</td></tr>
-<tr class="memdesc:a50cb34991749f9e3b293dd8635e97ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-order visit of <span class="tt">root</span> and every descendant. <span class="tt">fn(DekiObject*)</span>.  <br /></td></tr>
-<tr class="memitem:a8c3bfad8cf739baf9fbfdf91ec20d140" id="r_a8c3bfad8cf739baf9fbfdf91ec20d140"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
-<tr class="memitem:a8c3bfad8cf739baf9fbfdf91ec20d140 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8c3bfad8cf739baf9fbfdf91ec20d140">VisitActiveSubtree</a> (<a class="el" href="class_deki_object.html">DekiObject</a> *root, Fn &amp;&amp;fn)</td></tr>
-<tr class="memdesc:a8c3bfad8cf739baf9fbfdf91ec20d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like VisitSubtree, but does not enter inactive objects (nor visit them).  <br /></td></tr>
-<tr class="memitem:a10449f846dd3991d55ea2d05e5814c26" id="r_a10449f846dd3991d55ea2d05e5814c26"><td class="memTemplParams" colspan="2">template&lt;typename Pred&gt; </td></tr>
-<tr class="memitem:a10449f846dd3991d55ea2d05e5814c26 template"><td class="memItemLeft"><a class="el" href="class_deki_object.html">DekiObject</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a10449f846dd3991d55ea2d05e5814c26">FindInSubtree</a> (<a class="el" href="class_deki_object.html">DekiObject</a> *root, Pred &amp;&amp;pred)</td></tr>
-<tr class="memdesc:a10449f846dd3991d55ea2d05e5814c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">First object in pre-order for which <span class="tt">pred(DekiObject*)</span> is true, or null.  <br /></td></tr>
+<tr class="memitem:a22ea94289b214746512305d8bc075c4d" id="r_a22ea94289b214746512305d8bc075c4d"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
+<tr class="memitem:a22ea94289b214746512305d8bc075c4d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a22ea94289b214746512305d8bc075c4d">Deki::VisitSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:a22ea94289b214746512305d8bc075c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-order visit of <span class="tt">root</span> and every descendant. <span class="tt">fn(Object*)</span>.  <br /></td></tr>
+<tr class="memitem:afec29a46b7bda27dc3f20b41794551ff" id="r_afec29a46b7bda27dc3f20b41794551ff"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
+<tr class="memitem:afec29a46b7bda27dc3f20b41794551ff template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff">Deki::VisitActiveSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:afec29a46b7bda27dc3f20b41794551ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like VisitSubtree, but does not enter inactive objects (nor visit them).  <br /></td></tr>
+<tr class="memitem:a812910f374e004e5d124fa69293e6e2b" id="r_a812910f374e004e5d124fa69293e6e2b"><td class="memTemplParams" colspan="2">template&lt;typename Pred&gt; </td></tr>
+<tr class="memitem:a812910f374e004e5d124fa69293e6e2b template"><td class="memItemLeft"><a class="el" href="class_deki_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a812910f374e004e5d124fa69293e6e2b">Deki::FindInSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Pred &amp;&amp;pred)</td></tr>
+<tr class="memdesc:a812910f374e004e5d124fa69293e6e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">First object in pre-order for which <span class="tt">pred(Object*)</span> is true, or null.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a50cb34991749f9e3b293dd8635e97ce6" name="a50cb34991749f9e3b293dd8635e97ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50cb34991749f9e3b293dd8635e97ce6">&#9670;&#160;</a></span>VisitSubtree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Fn&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VisitSubtree </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_object.html">DekiObject</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Fn &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>fn</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pre-order visit of <span class="tt">root</span> and every descendant. <span class="tt">fn(DekiObject*)</span>. </p>
-
-</div>
-</div>
-<a id="a8c3bfad8cf739baf9fbfdf91ec20d140" name="a8c3bfad8cf739baf9fbfdf91ec20d140"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c3bfad8cf739baf9fbfdf91ec20d140">&#9670;&#160;</a></span>VisitActiveSubtree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Fn&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VisitActiveSubtree </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_object.html">DekiObject</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Fn &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>fn</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Like VisitSubtree, but does not enter inactive objects (nor visit them). </p>
-
-</div>
-</div>
-<a id="a10449f846dd3991d55ea2d05e5814c26" name="a10449f846dd3991d55ea2d05e5814c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10449f846dd3991d55ea2d05e5814c26">&#9670;&#160;</a></span>FindInSubtree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Pred&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_object.html">DekiObject</a> * FindInSubtree </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_object.html">DekiObject</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Pred &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>pred</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>First object in pre-order for which <span class="tt">pred(DekiObject*)</span> is true, or null. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

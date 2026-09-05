@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -113,7 +113,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_i_sortable_pr
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">ISortableProvider.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -123,26 +124,27 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_i_sortable_pr
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:ISortableProvider" id="r_ISortableProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_i_sortable_provider.html">ISortableProvider</a></td></tr>
+<tr class="memitem:Deki_3A_3AISortableProvider" id="r_Deki_3A_3AISortableProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_sortable_provider.html">Deki::ISortableProvider</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for components that provide sorting order. </p>
 <p>Implement this interface on any component to have Standard2DRenderer automatically include the object in sorting. No callback registration needed.</p>
-<p>Implementing the interface is not enough on its own: the renderer discovers it through <a class="el" href="namespace_component_interface_adapters.html">ComponentInterfaceAdapters</a>, so each component must also register an adapter from its StaticType to this interface. Do that once, from the package's registration path:</p>
+<p>Implementing the interface is not enough on its own: the renderer discovers it through ComponentInterfaceAdapters, so each component must also register an adapter from its StaticType to this interface. Do that once, from the package's registration path:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_component_interface_adapters_8h.html">ComponentInterfaceAdapters.h</a>&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888">ComponentInterfaceAdapters::Register</a>(</div>
-<div class="line">    <a class="code hl_variable" href="class_i_sortable_provider.html#a771e90b9ba693a4e74fd549631621838">ISortableProvider::InterfaceID</a>,</div>
+<div class="line">ComponentInterfaceAdapters::Register(</div>
+<div class="line">    ISortableProvider::InterfaceID,</div>
 <div class="line">    MyComponent::StaticType,</div>
-<div class="line">    [](<a class="code hl_class" href="class_deki_component.html">DekiComponent</a>* c) -&gt; <span class="keywordtype">void</span>* {</div>
-<div class="line">        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_i_sortable_provider.html">ISortableProvider</a>*<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>MyComponent*<span class="keyword">&gt;</span>(c));</div>
+<div class="line">    [](Component* c) -&gt; <span class="keywordtype">void</span>* {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ISortableProvider*<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>MyComponent*<span class="keyword">&gt;</span>(c));</div>
 <div class="line">    });</div>
 <div class="ttc" id="a_component_interface_adapters_8h_html"><div class="ttname"><a href="_component_interface_adapters_8h.html">ComponentInterfaceAdapters.h</a></div><div class="ttdoc">Registry for extracting interfaces from components without RTTI or vtable changes.</div></div>
-<div class="ttc" id="aclass_deki_component_html"><div class="ttname"><a href="class_deki_component.html">DekiComponent</a></div><div class="ttdoc">Base class for all components (data-only).</div><div class="ttdef"><b>Definition</b> DekiComponent.h:51</div></div>
-<div class="ttc" id="aclass_i_sortable_provider_html"><div class="ttname"><a href="class_i_sortable_provider.html">ISortableProvider</a></div><div class="ttdef"><b>Definition</b> ISortableProvider.h:36</div></div>
-<div class="ttc" id="aclass_i_sortable_provider_html_a771e90b9ba693a4e74fd549631621838"><div class="ttname"><a href="class_i_sortable_provider.html#a771e90b9ba693a4e74fd549631621838">ISortableProvider::InterfaceID</a></div><div class="ttdeci">static constexpr uint32_t InterfaceID</div><div class="ttdef"><b>Definition</b> ISortableProvider.h:38</div></div>
-<div class="ttc" id="anamespace_component_interface_adapters_html_a975d042329c44e4eedb27a286b524888"><div class="ttname"><a href="namespace_component_interface_adapters.html#a975d042329c44e4eedb27a286b524888">ComponentInterfaceAdapters::Register</a></div><div class="ttdeci">void Register(uint32_t interfaceId, ComponentType componentType, InterfaceAdapter adapter)</div></div>
-</div><!-- fragment --><p>This block used to show a <span class="tt">QueryInterface</span> override calling <span class="tt">DekiComponent::QueryInterface(id)</span>. <a class="el" href="class_deki_component.html" title="Base class for all components (data-only).">DekiComponent</a> has no such method and never has — following the example produced a compile error on the first custom implementation. The adapter registry exists precisely so <a class="el" href="class_deki_component.html" title="Base class for all components (data-only).">DekiComponent</a> needs no virtual for this. </p>
+</div><!-- fragment --><p>This block used to show a <span class="tt">QueryInterface</span> override calling <span class="tt">Component::QueryInterface(id)</span>. Component has no such method and never has — following the example produced a compile error on the first custom implementation. The adapter registry exists precisely so Component needs no virtual for this. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

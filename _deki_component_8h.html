@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -124,12 +124,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_deki_componen
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:DekiComponent" id="r_DekiComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_component.html">DekiComponent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all components (data-only).  <a href="class_deki_component.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Deki_3A_3AComponent" id="r_Deki_3A_3AComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all components (data-only).  <a href="class_deki_1_1_component.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:SceneFormat" id="r_SceneFormat"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_scene_format.html">SceneFormat</a></td></tr>
+<tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memitem:Deki_3A_3ASceneFormat" id="r_Deki_3A_3ASceneFormat"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_scene_format.html">Deki::SceneFormat</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -138,15 +140,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aeffe9357f6bc244e965d2dd85b03c551" id="r_aeffe9357f6bc244e965d2dd85b03c551"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> = uint32_t</td></tr>
-<tr class="memdesc:aeffe9357f6bc244e965d2dd85b03c551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for component type identification.  <br /></td></tr>
+<tr class="memitem:af0f99afe0b878e72e45ae4c27acc282d" id="r_af0f99afe0b878e72e45ae4c27acc282d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">Deki::ComponentType</a> = uint32_t</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8ff725c58d50aa3a675c83b28ee841fa" id="r_a8ff725c58d50aa3a675c83b28ee841fa"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a8ff725c58d50aa3a675c83b28ee841fa">DekiHashString</a> (const char *str, uint32_t hash=2166136261u)</td></tr>
-<tr class="memdesc:a8ff725c58d50aa3a675c83b28ee841fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-time string hash for consistent type IDs across translation units.  <br /></td></tr>
-<tr class="memitem:a88a16e3be50792f717f17d18ef6a5d5a" id="r_a88a16e3be50792f717f17d18ef6a5d5a"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a88a16e3be50792f717f17d18ef6a5d5a">DekiHashStringLen</a> (const char *str, uint16_t length)</td></tr>
-<tr class="memdesc:a88a16e3be50792f717f17d18ef6a5d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime string hash with length (for msgpack strings without null terminator).  <br /></td></tr>
+<tr class="memitem:a83e2a8e59b9ade12ac092ce334e4bb50" id="r_a83e2a8e59b9ade12ac092ce334e4bb50"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50">Deki::HashString</a> (const char *str, uint32_t hash=2166136261u)</td></tr>
+<tr class="memdesc:a83e2a8e59b9ade12ac092ce334e4bb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-time string hash for consistent type IDs across translation units.  <br /></td></tr>
+<tr class="memitem:a693b81cbcc3e331d8b8695e6d9959971" id="r_a693b81cbcc3e331d8b8695e6d9959971"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a693b81cbcc3e331d8b8695e6d9959971">Deki::HashStringLen</a> (const char *str, uint16_t length)</td></tr>
+<tr class="memdesc:a693b81cbcc3e331d8b8695e6d9959971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime string hash with length (for msgpack strings without null terminator).  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a61fd36a6c0be23d8d6f0022ad4ee63f4" name="a61fd36a6c0be23d8d6f0022ad4ee63f4"></a>
@@ -167,101 +168,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> StaticType = <a class="code hl_function" href="#a8ff725c58d50aa3a675c83b28ee841fa">DekiHashString</a>(#TypeName);    \</div>
-<div class="line"><span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> BaseStaticType = BaseTypeName::StaticType; \</div>
-<div class="line"><a class="code hl_typedef" href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> GetType() const override                                    \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> constexpr ::Deki::ComponentType StaticType = <a class="code hl_function" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50">::Deki::HashString</a>(#TypeName);    \</div>
+<div class="line"><span class="keyword">static</span> constexpr ::Deki::ComponentType BaseStaticType = BaseTypeName::StaticType; \</div>
+<div class="line"><a class="code hl_typedef" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">::Deki::ComponentType</a> GetType() const override                                    \</div>
 <div class="line">{                                                                         \</div>
 <div class="line">    <span class="keywordflow">return</span> StaticType;                                                    \</div>
 <div class="line">}                                                                         \</div>
-<div class="line"><a class="code hl_typedef" href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> GetBaseType() const override                                \</div>
+<div class="line"><a class="code hl_typedef" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">::Deki::ComponentType</a> GetBaseType() const override                                \</div>
 <div class="line">{                                                                         \</div>
 <div class="line">    <span class="keywordflow">return</span> BaseStaticType;                                                \</div>
 <div class="line">}</div>
-<div class="ttc" id="a_deki_component_8h_html_a8ff725c58d50aa3a675c83b28ee841fa"><div class="ttname"><a href="#a8ff725c58d50aa3a675c83b28ee841fa">DekiHashString</a></div><div class="ttdeci">constexpr uint32_t DekiHashString(const char *str, uint32_t hash=2166136261u)</div><div class="ttdoc">Compile-time string hash for consistent type IDs across translation units.</div><div class="ttdef"><b>Definition</b> DekiComponent.h:22</div></div>
-<div class="ttc" id="a_deki_component_8h_html_aeffe9357f6bc244e965d2dd85b03c551"><div class="ttname"><a href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a></div><div class="ttdeci">uint32_t ComponentType</div><div class="ttdoc">Type alias for component type identification.</div><div class="ttdef"><b>Definition</b> DekiComponent.h:9</div></div>
+<div class="ttc" id="anamespace_deki_html_a83e2a8e59b9ade12ac092ce334e4bb50"><div class="ttname"><a href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50">Deki::HashString</a></div><div class="ttdeci">constexpr uint32_t HashString(const char *str, uint32_t hash=2166136261u)</div><div class="ttdoc">Compile-time string hash for consistent type IDs across translation units.</div><div class="ttdef"><b>Definition</b> DekiComponent.h:27</div></div>
+<div class="ttc" id="anamespace_deki_html_af0f99afe0b878e72e45ae4c27acc282d"><div class="ttname"><a href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">Deki::ComponentType</a></div><div class="ttdeci">uint32_t ComponentType</div><div class="ttdef"><b>Definition</b> DekiComponent.h:13</div></div>
 </div><!-- fragment -->
 <p>Declare component type with consistent type ID across translation units. </p>
 <p>Uses FNV-1a hash of the type name to generate a unique, stable type ID. This ensures the same type ID is generated regardless of which .cpp file includes the header. </p>
-
-</div>
-</div>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
-<a id="aeffe9357f6bc244e965d2dd85b03c551" name="aeffe9357f6bc244e965d2dd85b03c551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeffe9357f6bc244e965d2dd85b03c551">&#9670;&#160;</a></span>ComponentType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#aeffe9357f6bc244e965d2dd85b03c551">ComponentType</a> = uint32_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type alias for component type identification. </p>
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a8ff725c58d50aa3a675c83b28ee841fa" name="a8ff725c58d50aa3a675c83b28ee841fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ff725c58d50aa3a675c83b28ee841fa">&#9670;&#160;</a></span>DekiHashString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t DekiHashString </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>hash</em></span><span class="paramdefsep"> = </span><span class="paramdefval">2166136261u</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compile-time string hash for consistent type IDs across translation units. </p>
-
-</div>
-</div>
-<a id="a88a16e3be50792f717f17d18ef6a5d5a" name="a88a16e3be50792f717f17d18ef6a5d5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88a16e3be50792f717f17d18ef6a5d5a">&#9670;&#160;</a></span>DekiHashStringLen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t DekiHashStringLen </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Runtime string hash with length (for msgpack strings without null terminator). </p>
 
 </div>
 </div>

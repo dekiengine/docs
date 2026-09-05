@@ -1,13 +1,13 @@
 var _deki_math_8h =
 [
-    [ "DekiMath::Clamp", "namespace_deki_math.html#af9fe9d8c5b7324b71c07fa5727455bcc", null ],
-    [ "DekiMath::Min", "namespace_deki_math.html#a03b67003c3520518a73b38e0e4b62acd", null ],
-    [ "DekiMath::Max", "namespace_deki_math.html#a7c6ca4edc1b9f6fe9d500a4c6b0126ed", null ],
-    [ "DekiMath::Abs", "namespace_deki_math.html#aebadf0678332ea2a20b34ef04097bb15", null ],
-    [ "DekiMath::Lerp", "namespace_deki_math.html#aaa7f4653121b04619e41848dea8054f4", null ],
-    [ "DekiMath::kPi", "namespace_deki_math.html#a09f0fcaa63728b7e7b2aad9bbd5a91c9", null ],
-    [ "DekiMath::kTwoPi", "namespace_deki_math.html#afa657c1a32664493719721afbd720bee", null ],
-    [ "DekiMath::kHalfPi", "namespace_deki_math.html#a00e09eba3d3c3db6bc1ea17815590979", null ],
-    [ "DekiMath::kDegToRad", "namespace_deki_math.html#a7ec808bdf15ecfc5d6f9dd17678988d8", null ],
-    [ "DekiMath::kRadToDeg", "namespace_deki_math.html#a1769a2a228ef416a1259eef37275e11f", null ]
+    [ "Deki::Math::Clamp", "namespace_deki_1_1_math.html#a3a108faf1dd62ed7ddfdb980fff84611", null ],
+    [ "Deki::Math::Min", "namespace_deki_1_1_math.html#a51165cdc75563c7fc6930010a00db3ec", null ],
+    [ "Deki::Math::Max", "namespace_deki_1_1_math.html#a048add4b58587dcd44bae6f3e98e5b2e", null ],
+    [ "Deki::Math::Abs", "namespace_deki_1_1_math.html#a9f638a63027349a40dcef04e295c8444", null ],
+    [ "Deki::Math::Lerp", "namespace_deki_1_1_math.html#af23e654fa439af666ef7ae5f278a2e0b", null ],
+    [ "Deki::Math::kPi", "namespace_deki_1_1_math.html#abd066c028b500c30da6608274a148b73", null ],
+    [ "Deki::Math::kTwoPi", "namespace_deki_1_1_math.html#a68cf017f699f443f4e697b292d81be24", null ],
+    [ "Deki::Math::kHalfPi", "namespace_deki_1_1_math.html#ad3a95f2c391927e563d762364bf9e6b9", null ],
+    [ "Deki::Math::kDegToRad", "namespace_deki_1_1_math.html#a75dcffbbf423789010d23aefe0d5b536", null ],
+    [ "Deki::Math::kRadToDeg", "namespace_deki_1_1_math.html#afd43af21462594ff66ece182437f0c18", null ]
 ];

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;1.3.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_settings_regi
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">SettingsRegistry.h File Reference</div></div>
 </div><!--header-->
@@ -121,10 +122,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_settings_regi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:DekiSettingsTypeInfo" id="r_DekiSettingsTypeInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_settings_type_info.html">DekiSettingsTypeInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One registered project-settings type plus its live instance.  <a href="struct_deki_settings_type_info.html#details">More...</a><br /></td></tr>
-<tr class="memitem:DekiSettingsRegistry" id="r_DekiSettingsRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_settings_registry.html">DekiSettingsRegistry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry for package-extensible project-settings types.  <a href="class_deki_settings_registry.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Deki_3A_3ASettingsTypeInfo" id="r_Deki_3A_3ASettingsTypeInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_settings_type_info.html">Deki::SettingsTypeInfo</a></td></tr>
+<tr class="memitem:Deki_3A_3ASettingsRegistry" id="r_Deki_3A_3ASettingsRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_settings_registry.html">Deki::SettingsRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry for package-extensible project-settings types.  <a href="class_deki_1_1_settings_registry.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -165,7 +170,7 @@ Macros</h2></td></tr>
 <div class="line">{                                                  \</div>
 <div class="line">    ClassName##_SettingsRegistrar()                \</div>
 <div class="line">    {                                              \</div>
-<div class="line">        DekiSettingsRegistry::Instance().Register( \</div>
+<div class="line">        ::Deki::SettingsRegistry::Instance().Register( \</div>
 <div class="line">            ClassName::StaticSettingsSection,      \</div>
 <div class="line">            &amp;ClassName::GetComponentMeta());       \</div>
 <div class="line">    }                                              \</div>
@@ -191,7 +196,7 @@ Macros</h2></td></tr>
 <div class="line">{                                                        \</div>
 <div class="line">    ClassName##_SettingsRegistrar()                      \</div>
 <div class="line">    {                                                    \</div>
-<div class="line">        DekiSettingsRegistry::Instance().RegisterPlugin( \</div>
+<div class="line">        ::Deki::SettingsRegistry::Instance().RegisterPlugin( \</div>
 <div class="line">            ClassName::StaticSettingsSection,            \</div>
 <div class="line">            &amp;ClassName::GetComponentMeta());             \</div>
 <div class="line">    }                                                    \</div>
