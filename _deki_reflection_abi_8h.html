@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -276,7 +276,7 @@ Variables</h2></td></tr>
 <p>4: dropped the deprecated getType()/getBaseType() forwarders. The struct is unchanged and every sizeof still matches, so nothing else here would catch a package built against v3 &ndash; it would reference a spelling that no longer exists. This is exactly the layout-compatible but semantically incompatible case this counter exists for: bump it so such a package is refused at load rather than failing in a confusing way later.</p>
 <p>5: added the <a class="el" href="class_deki_1_1_component.html#aee7cbe852376e10c7384d3d920aba982" title="Does this class (or a reflected base) declare Update()?">Deki::Component::DeclaresUpdate()</a> virtual. Every sizeof is unchanged, but a slot was inserted in the middle of the component vtable, so a package built against v4 calls the wrong function through every virtual after it (seen as an integer divide by zero deep inside a stale plugin while compiling a scene). The vtable is part of the ABI even though nothing here can measure it: any new virtual on <a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Deki::Component</a> or <a class="el" href="class_deki_1_1_behaviour.html">Deki::Behaviour</a> needs a bump.</p>
 <p>(no bump) <a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">Deki::PropertyInfo</a> grew <span class="tt">renamedFrom</span> (DEKI_RENAMED_FROM). The struct's size changed, which sizeofPropertyInfo catches on its own: a package built before it is refused and rebuilt.</p>
-<p>6: engine 2.0 moved every engine type into namespace <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> (<a class="el" href="class_deki_1_1_object.html">Deki::Object</a> -&gt; <a class="el" href="class_deki_1_1_object.html">Deki::Object</a>, ...). Every sizeof is unchanged, but the symbol mangling of every exported engine function changed, so a 1.x package DLL would fail to load with unresolved imports; the bump turns that into the loader's "built against another engine, rebuilding" path instead. </p>
+<p>6: engine 0.10 (the namespace release) moved every engine type into namespace <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> (<a class="el" href="class_deki_1_1_object.html">Deki::Object</a> -&gt; <a class="el" href="class_deki_1_1_object.html">Deki::Object</a>, ...). Every sizeof is unchanged, but the symbol mangling of every exported engine function changed, so a 1.x package DLL would fail to load with unresolved imports; the bump turns that into the loader's "built against another engine, rebuilding" path instead. </p>
 
 </div>
 </div>
