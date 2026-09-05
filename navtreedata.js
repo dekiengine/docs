@@ -27,22 +27,20 @@ var NAVTREE =
   [ "Deki", "index.html", [
     [ "Packages", "index.html#packages", null ],
     [ "Engine core", "engine-core.html", [
-      [ "Components", "engine-core.html#autotoc_md0", [
-        [ "CoreProjectSettings (Core Project Settings)", "engine-core.html#engine-coreprojectsettings", null ],
-        [ "DisplayProjectSettings (Display Project Settings)", "engine-core.html#engine-displayprojectsettings", null ],
-        [ "PlatformSetupComponent (Platform Setup Component)", "engine-core.html#engine-platformsetupcomponent", null ],
-        [ "RendererComponent (Renderer Component)", "engine-core.html#engine-renderercomponent", null ],
-        [ "SetupComponent (Setup Component)", "engine-core.html#engine-setupcomponent", null ],
-        [ "UnitProjectSettings (Unit Project Settings)", "engine-core.html#engine-unitprojectsettings", null ]
+      [ "Components", "engine-core.html#autotoc_md0", null ],
+      [ "Component reference", "engine-core.html#autotoc_md1", [
+        [ "PlatformSetupComponent", "engine-core.html#engine-platformsetupcomponent", null ],
+        [ "RendererComponent", "engine-core.html#engine-renderercomponent", null ],
+        [ "SetupComponent", "engine-core.html#engine-setupcomponent", null ]
       ] ],
-      [ "Project settings", "engine-core.html#autotoc_md1", [
+      [ "Project settings", "engine-core.html#autotoc_md2", [
         [ "Core settings", "engine-core.html#engine-core-settings", null ],
         [ "Framebuffer settings", "engine-core.html#engine-framebuffer-settings", null ],
         [ "Units settings", "engine-core.html#engine-units-settings", null ]
       ] ]
     ] ],
     [ "Project settings", "settings.html", [
-      [ "Engine sections", "settings.html#autotoc_md2", [
+      [ "Engine sections", "settings.html#autotoc_md3", [
         [ "Core settings", "settings.html#settings-core-settings", null ],
         [ "Framebuffer settings", "settings.html#settings-framebuffer-settings", null ],
         [ "Units settings", "settings.html#settings-units-settings", null ]
@@ -121,12 +119,12 @@ var NAVTREEINDEX =
 "class_deki_editor_1_1_texture_importer.html#a695a796a14cd7d8b44956f54574963de",
 "class_desktop_file_system.html#a351a69da559593d863a5c3429ac5ddaf",
 "class_scene.html#aea6331488b48a1a13e32f0d7bf51f519",
-"namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45",
-"namespace_project_settings.html#a7be45100ca16f60a9bdfa349713d4076",
-"struct_deki_editor_1_1_asset_info.html#ad1f577c01f000278620939def699201c",
-"struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#abea617267502574c1bf9e611ec39185b",
-"struct_deki_editor_1_1_tex_data.html#aab2c72b2d08df1539133e7c0e2647f37",
-"struct_project_settings_1_1_pipeline_config.html"
+"namespace_deki_1_1_authored_format.html",
+"namespace_project_settings.html#a944b79f0783a64bcc866fedf1fcecbad",
+"struct_deki_editor_1_1_asset_picker_entry.html",
+"struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ac2bde91b11f044b294e6241077d8e931",
+"struct_deki_editor_1_1_tex_data.html#abc192988020469467f245f7b2fadad1f",
+"struct_project_settings_1_1_pipeline_config.html#a0e3644695c28169b59a94b7dcb23ad02"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

@@ -1,7 +1,5 @@
 var NAVTREEINDEX33 =
 {
-"namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45":[3,0,1,11],
-"namespace_deki.html#ae0c36ae179fba6c3d8f94ea490c44847":[3,0,1,14],
 "namespace_deki_1_1_authored_format.html":[3,0,1,0],
 "namespace_deki_1_1_authored_format.html#a4928fb0861096d6e8fe73862e368c141":[3,0,1,0,3],
 "namespace_deki_1_1_authored_format.html#a4a697f4a2b45d861dabf9479379ff835":[3,0,1,0,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX33 =
 "namespace_project_settings.html#a6b94666cb296f5a01f3f59a6c127fa5a":[3,0,7,11],
 "namespace_project_settings.html#a6fb299862d4812aa259b83ee63cf431d":[3,0,7,10],
 "namespace_project_settings.html#a70028a7a21e749bc1b57a1c002e6b263":[3,0,7,4],
-"namespace_project_settings.html#a75d156c681ad48305f4af5ed560bb4db":[3,0,7,20]
+"namespace_project_settings.html#a75d156c681ad48305f4af5ed560bb4db":[3,0,7,20],
+"namespace_project_settings.html#a7be45100ca16f60a9bdfa349713d4076":[3,0,7,12],
+"namespace_project_settings.html#a869136cd22ce93d88dc0a9bbc510ffa3":[3,0,7,18]
 };

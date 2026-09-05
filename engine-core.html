@@ -119,71 +119,48 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('engine-core.ht
 <p>Components and settings sections the engine itself provides, available in every project without any package.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 Components</h1>
-<h2 class="doxsection"><a class="anchor" id="engine-coreprojectsettings"></a>
-CoreProjectSettings (Core Project Settings)</h2>
-<p>Category: Settings · Type GUID: <span class="tt">6b2f4d17-8c93-4a5e-b0d6-27e91fa3c845</span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
+<th class="markdownTableHeadNone">Component  </th><th class="markdownTableHeadNone">Category  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">capFps</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"><span class="tt">true</span>  </td><td class="markdownTableBodyNone">Cap play-mode FPS at the target frame rate below. Disable to let the game run at the editor's refresh rate (typically 60 Hz with vsync).  </td></tr>
+<td class="markdownTableBodyNone"><a class="el" href="#engine-platformsetupcomponent" title="PlatformSetupComponent">PlatformSetupComponent</a>  </td><td class="markdownTableBodyNone">System  </td><td class="markdownTableBodyNone">Runs each Setup Component in order at boot, then loads the startup scene.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">targetFps</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">60</span>  </td><td class="markdownTableBodyNone">Target frame rate (FPS) when capping is enabled. The game tries to hit this rate; if the hardware can't keep up it runs slower. Ignored when 'Cap FPS' is off. Range 1 to 240  </td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="engine-displayprojectsettings"></a>
-DisplayProjectSettings (Display Project Settings)</h2>
-<p>Category: Settings · Type GUID: <span class="tt">1c8e7f24-3a9b-4d52-8e6c-f1a40b2d9e83</span></p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
+<td class="markdownTableBodyNone"><a class="el" href="#engine-renderercomponent" title="RendererComponent">RendererComponent</a>  </td><td class="markdownTableBodyNone">Core  </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">targetWidth</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">320</span>  </td><td class="markdownTableBodyNone">Logical render width in pixels. The engine renders into this resolution; the device or desktop preview upscales to the actual display. Range 1 to 4096  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">targetHeight</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">240</span>  </td><td class="markdownTableBodyNone">Logical render height in pixels. The engine renders into this resolution; the device or desktop preview upscales to the actual display. Range 1 to 4096  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">RGB565</span>  </td><td class="markdownTableBodyNone">Framebuffer pixel format. RGB565 (default) is the smallest and fastest — typical for embedded displays. RGB888 gives full 8-bit color but uses 50% more memory. ARGB8888 adds an alpha channel and uses 100% more memory. Values: <span class="tt">RGB565</span>, <span class="tt">RGB888</span>, <span class="tt">ARGB8888</span>, <span class="tt">RGB565A8</span>  </td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="engine-platformsetupcomponent"></a>
-PlatformSetupComponent (Platform Setup Component)</h2>
-<p>Runs each Setup Component in order at boot, then loads the startup scene.</p>
-<p>Category: System · Type GUID: <span class="tt">e1b3c909-aaa1-49f4-8d62-04145f79f2a0</span> · Flags: boot scene only</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">setupComponents</span>  </td><td class="markdownTableBodyNone">Array&lt;ObjectRef&gt;  </td><td class="markdownTableBodyNone"><span class="tt">[]</span>  </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="engine-renderercomponent"></a>
-RendererComponent (Renderer Component)</h2>
-<p>Category: Core · Type GUID: <span class="tt">9604fa26-8be9-428a-9c29-e67c2d52c913</span> · Flags: abstract</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">sortingOrder</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">ignoreClip</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">pixelSnap</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">alphaMode</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">How partial-alpha pixels are rendered. Blend = smooth alpha blend (slower, no artifacts). OrderedDither = stippling pattern (much faster, visible dither — best for fades and retro pixel art). Values: <span class="tt">Blend</span>, <span class="tt">OrderedDither</span>  </td></tr>
-</table>
-<h2 class="doxsection"><a class="anchor" id="engine-setupcomponent"></a>
-SetupComponent (Setup Component)</h2>
-<p>Category: System · Type GUID: <span class="tt">f2c936db-c42a-47f3-bf97-931cab7e44df</span> · Flags: abstract</p>
-<p>No reflected properties.</p>
-<h2 class="doxsection"><a class="anchor" id="engine-unitprojectsettings"></a>
-UnitProjectSettings (Unit Project Settings)</h2>
-<p>Category: Settings · Type GUID: <span class="tt">3eaf9b46-5c1d-4f74-af8e-132d6f4abca5</span></p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">inspectorUnit</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">Pixels</span>  </td><td class="markdownTableBodyNone">Inspector display preference. Pixels: physical-quantity fields show as px / px/s / px/s². Meters: same fields show as m / m/s / m/s². Internal storage is always meters either way. Values: <span class="tt">Pixels</span>, <span class="tt">Meters</span>  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">pixelsPerMeter</span>  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"><span class="tt">16</span>  </td><td class="markdownTableBodyNone">World scale: how many framebuffer pixels render one meter of world space. Drives inspector px&lt;-&gt;m conversion and the default zoom of new cameras (CameraComponent::pixelsPerMeter sentinel). Range 1 to 1024  </td></tr>
+<td class="markdownTableBodyNone"><a class="el" href="#engine-setupcomponent" title="SetupComponent">SetupComponent</a>  </td><td class="markdownTableBodyNone">System  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Component reference</h1>
+<h2 class="doxsection"><a class="anchor" id="engine-platformsetupcomponent"></a>
+PlatformSetupComponent</h2>
+<p>Runs each Setup Component in order at boot, then loads the startup scene.</p>
+<p>Inspector name: Platform Setup Component · Category: System · Type GUID: <span class="tt">e1b3c909-aaa1-49f4-8d62-04145f79f2a0</span> · Flags: boot scene only</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">setupComponents</span>  </td><td class="markdownTableBodyNone">Array&lt;<a class="el" href="struct_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef</a>&gt;  </td><td class="markdownTableBodyNone"><span class="tt">[]</span>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="engine-renderercomponent"></a>
+RendererComponent</h2>
+<p>Inspector name: Renderer Component · Category: Core · Type GUID: <span class="tt">9604fa26-8be9-428a-9c29-e67c2d52c913</span> · Flags: abstract</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">sortingOrder</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ignoreClip</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">pixelSnap</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">alphaMode</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><span class="tt">Blend</span>, <span class="tt">OrderedDither</span>  </td><td class="markdownTableBodyNone">How partial-alpha pixels are rendered. Blend = smooth alpha blend (slower, no artifacts). OrderedDither = stippling pattern (much faster, visible dither — best for fades and retro pixel art).  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="engine-setupcomponent"></a>
+SetupComponent</h2>
+<p>Inspector name: Setup Component · Category: System · Type GUID: <span class="tt">f2c936db-c42a-47f3-bf97-931cab7e44df</span> · Flags: abstract</p>
+<p>No reflected properties.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 Project settings</h1>
 <h2 class="doxsection"><a class="anchor" id="engine-core-settings"></a>
 Core settings</h2>
@@ -191,11 +168,11 @@ Core settings</h2>
 <p>Category: Settings · Type GUID: <span class="tt">6b2f4d17-8c93-4a5e-b0d6-27e91fa3c845</span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
+<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">capFps</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"><span class="tt">true</span>  </td><td class="markdownTableBodyNone">Cap play-mode FPS at the target frame rate below. Disable to let the game run at the editor's refresh rate (typically 60 Hz with vsync).  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">capFps</span>  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone"><span class="tt">true</span>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Cap play-mode FPS at the target frame rate below. Disable to let the game run at the editor's refresh rate (typically 60 Hz with vsync).  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">targetFps</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">60</span>  </td><td class="markdownTableBodyNone">Target frame rate (FPS) when capping is enabled. The game tries to hit this rate; if the hardware can't keep up it runs slower. Ignored when 'Cap FPS' is off. Range 1 to 240  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">targetFps</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">60</span>  </td><td class="markdownTableBodyNone">1 to 240  </td><td class="markdownTableBodyNone">Target frame rate (FPS) when capping is enabled. The game tries to hit this rate; if the hardware can't keep up it runs slower. Ignored when 'Cap FPS' is off.  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="engine-framebuffer-settings"></a>
 Framebuffer settings</h2>
@@ -203,13 +180,13 @@ Framebuffer settings</h2>
 <p>Category: Settings · Type GUID: <span class="tt">1c8e7f24-3a9b-4d52-8e6c-f1a40b2d9e83</span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
+<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">targetWidth</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">320</span>  </td><td class="markdownTableBodyNone">Logical render width in pixels. The engine renders into this resolution; the device or desktop preview upscales to the actual display. Range 1 to 4096  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">targetWidth</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">320</span>  </td><td class="markdownTableBodyNone">1 to 4096  </td><td class="markdownTableBodyNone">Logical render width in pixels. The engine renders into this resolution; the device or desktop preview upscales to the actual display.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">targetHeight</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">240</span>  </td><td class="markdownTableBodyNone">Logical render height in pixels. The engine renders into this resolution; the device or desktop preview upscales to the actual display. Range 1 to 4096  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">targetHeight</span>  </td><td class="markdownTableBodyNone">int32  </td><td class="markdownTableBodyNone"><span class="tt">240</span>  </td><td class="markdownTableBodyNone">1 to 4096  </td><td class="markdownTableBodyNone">Logical render height in pixels. The engine renders into this resolution; the device or desktop preview upscales to the actual display.  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">RGB565</span>  </td><td class="markdownTableBodyNone">Framebuffer pixel format. RGB565 (default) is the smallest and fastest — typical for embedded displays. RGB888 gives full 8-bit color but uses 50% more memory. ARGB8888 adds an alpha channel and uses 100% more memory. Values: <span class="tt">RGB565</span>, <span class="tt">RGB888</span>, <span class="tt">ARGB8888</span>, <span class="tt">RGB565A8</span>  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">RGB565</span>  </td><td class="markdownTableBodyNone"><span class="tt">RGB565</span>, <span class="tt">RGB888</span>, <span class="tt">ARGB8888</span>, <span class="tt">RGB565A8</span>  </td><td class="markdownTableBodyNone">Framebuffer pixel format. RGB565 (default) is the smallest and fastest — typical for embedded displays. RGB888 gives full 8-bit color but uses 50% more memory. ARGB8888 adds an alpha channel and uses 100% more memory.  </td></tr>
 </table>
 <h2 class="doxsection"><a class="anchor" id="engine-units-settings"></a>
 Units settings</h2>
@@ -217,22 +194,15 @@ Units settings</h2>
 <p>Category: Settings · Type GUID: <span class="tt">3eaf9b46-5c1d-4f74-af8e-132d6f4abca5</span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Notes  </th></tr>
+<th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">inspectorUnit</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">Pixels</span>  </td><td class="markdownTableBodyNone">Inspector display preference. Pixels: physical-quantity fields show as px / px/s / px/s². Meters: same fields show as m / m/s / m/s². Internal storage is always meters either way. Values: <span class="tt">Pixels</span>, <span class="tt">Meters</span>  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">inspectorUnit</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">Pixels</span>  </td><td class="markdownTableBodyNone"><span class="tt">Pixels</span>, <span class="tt">Meters</span>  </td><td class="markdownTableBodyNone">Inspector display preference. Pixels: physical-quantity fields show as px / px/s / px/s². Meters: same fields show as m / m/s / m/s². Internal storage is always meters either way.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">pixelsPerMeter</span>  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"><span class="tt">16</span>  </td><td class="markdownTableBodyNone">World scale: how many framebuffer pixels render one meter of world space. Drives inspector px&lt;-&gt;m conversion and the default zoom of new cameras (CameraComponent::pixelsPerMeter sentinel). Range 1 to 1024  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">pixelsPerMeter</span>  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"><span class="tt">16</span>  </td><td class="markdownTableBodyNone">1 to 1024  </td><td class="markdownTableBodyNone">World scale: how many framebuffer pixels render one meter of world space. Drives inspector px&lt;-&gt;m conversion and the default zoom of new cameras (CameraComponent::pixelsPerMeter sentinel).  </td></tr>
 </table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div id="page-nav" class="page-nav-panel">
-<div id="page-nav-resize-handle"></div>
-<div id="page-nav-tree">
-<div id="page-nav-contents">
-</div><!-- page-nav-contents -->
-</div><!-- page-nav-tree -->
-</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
