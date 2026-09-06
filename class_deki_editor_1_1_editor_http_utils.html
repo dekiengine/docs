@@ -128,11 +128,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a30d91876fc08b640e499e608d6d93a1d" id="r_a30d91876fc08b640e499e608d6d93a1d"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a30d91876fc08b640e499e608d6d93a1d">FetchUrl</a> (const std::string &amp;url)</td></tr>
+<tr class="memitem:a78f3d3d2c73f8bb68d01c16bfbb2215f" id="r_a78f3d3d2c73f8bb68d01c16bfbb2215f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a78f3d3d2c73f8bb68d01c16bfbb2215f">IsAllowedUrl</a> (const std::string &amp;url, std::string &amp;reason)</td></tr>
 <tr class="memitem:a01cd3dcfcc472a6fbe36fa3ceae7b145" id="r_a01cd3dcfcc472a6fbe36fa3ceae7b145"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a01cd3dcfcc472a6fbe36fa3ceae7b145">DownloadFile</a> (const std::string &amp;url, const std::string &amp;localPath, std::atomic&lt; bool &gt; *cancelFlag=nullptr, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr)</td></tr>
-<tr class="memitem:a1ced333a19d0677de68610716bfd6b59" id="r_a1ced333a19d0677de68610716bfd6b59"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a1ced333a19d0677de68610716bfd6b59">DownloadFileVerified</a> (const std::string &amp;url, const std::string &amp;localPath, const std::string &amp;expectedSha256, std::atomic&lt; bool &gt; *cancelFlag=nullptr, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr)</td></tr>
+<tr class="memitem:a2eec68dfc739768ca54eae45ad041f52" id="r_a2eec68dfc739768ca54eae45ad041f52"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2eec68dfc739768ca54eae45ad041f52">DownloadFileVerified</a> (const std::string &amp;url, const std::string &amp;localPath, const std::string &amp;expectedSha256, std::atomic&lt; bool &gt; *cancelFlag=nullptr, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr, bool allowUnpinned=false)</td></tr>
 <tr class="memitem:a34e32f118132156bc2e89e79ef5352b1" id="r_a34e32f118132156bc2e89e79ef5352b1"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a34e32f118132156bc2e89e79ef5352b1">Sha256File</a> (const std::string &amp;path)</td></tr>
 <tr class="memitem:aa708a9e4a5aeb466a561c2aeea029e18" id="r_aa708a9e4a5aeb466a561c2aeea029e18"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa708a9e4a5aeb466a561c2aeea029e18">ExtractZip</a> (const std::string &amp;zipPath, const std::string &amp;destDir, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr)</td></tr>
-<tr class="memitem:a5dcfeeaa5856fb8d933a551b6f5f9488" id="r_a5dcfeeaa5856fb8d933a551b6f5f9488"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a5dcfeeaa5856fb8d933a551b6f5f9488">ParseGitHubRelease</a> (const std::string &amp;json, const std::string &amp;assetPattern, std::string &amp;outVersion, std::string &amp;outDownloadUrl)</td></tr>
+<tr class="memitem:a28d5e7cd3eee6e05833efe1aecda9127" id="r_a28d5e7cd3eee6e05833efe1aecda9127"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a28d5e7cd3eee6e05833efe1aecda9127">ZipEntriesAreSafe</a> (const std::string &amp;zipPath, std::string &amp;reason)</td></tr>
+<tr class="memitem:ad940f73df12865e36ef0c11460d0e46c" id="r_ad940f73df12865e36ef0c11460d0e46c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad940f73df12865e36ef0c11460d0e46c">IsSafeArchiveEntry</a> (const std::string &amp;entry)</td></tr>
+<tr class="memitem:aee0366f48c696ec15c6a187ef1e070ff" id="r_aee0366f48c696ec15c6a187ef1e070ff"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aee0366f48c696ec15c6a187ef1e070ff">ParseGitHubRelease</a> (const std::string &amp;json, const std::string &amp;assetPattern, const std::string &amp;repo, std::string &amp;outVersion, std::string &amp;outDownloadUrl)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -156,6 +159,35 @@ Static Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>url</em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78f3d3d2c73f8bb68d01c16bfbb2215f" name="a78f3d3d2c73f8bb68d01c16bfbb2215f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f3d3d2c73f8bb68d01c16bfbb2215f">&#9670;&#160;</a></span>IsAllowedUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorHttpUtils::IsAllowedUrl </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>url</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -206,8 +238,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ced333a19d0677de68610716bfd6b59" name="a1ced333a19d0677de68610716bfd6b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ced333a19d0677de68610716bfd6b59">&#9670;&#160;</a></span>DownloadFileVerified()</h2>
+<a id="a2eec68dfc739768ca54eae45ad041f52" name="a2eec68dfc739768ca54eae45ad041f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eec68dfc739768ca54eae45ad041f52">&#9670;&#160;</a></span>DownloadFileVerified()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +270,12 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allowUnpinned</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -309,8 +346,62 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5dcfeeaa5856fb8d933a551b6f5f9488" name="a5dcfeeaa5856fb8d933a551b6f5f9488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dcfeeaa5856fb8d933a551b6f5f9488">&#9670;&#160;</a></span>ParseGitHubRelease()</h2>
+<a id="a28d5e7cd3eee6e05833efe1aecda9127" name="a28d5e7cd3eee6e05833efe1aecda9127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d5e7cd3eee6e05833efe1aecda9127">&#9670;&#160;</a></span>ZipEntriesAreSafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorHttpUtils::ZipEntriesAreSafe </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>zipPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad940f73df12865e36ef0c11460d0e46c" name="ad940f73df12865e36ef0c11460d0e46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad940f73df12865e36ef0c11460d0e46c">&#9670;&#160;</a></span>IsSafeArchiveEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorHttpUtils::IsSafeArchiveEntry </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>entry</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee0366f48c696ec15c6a187ef1e070ff" name="aee0366f48c696ec15c6a187ef1e070ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0366f48c696ec15c6a187ef1e070ff">&#9670;&#160;</a></span>ParseGitHubRelease()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,6 +418,11 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>assetPattern</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>repo</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

@@ -1,5 +1,11 @@
 var NAVTREEINDEX36 =
 {
+"struct_deki_1_1_asset_ref.html#adb023d8ef8871d91953cf52648240dd3":[3,0,0,8,10],
+"struct_deki_1_1_asset_ref.html#adb023d8ef8871d91953cf52648240dd3":[4,0,0,5,10],
+"struct_deki_1_1_asset_ref.html#af1a90fe3529a4de34043ac410a5f0d4a":[3,0,0,8,5],
+"struct_deki_1_1_asset_ref.html#af1a90fe3529a4de34043ac410a5f0d4a":[4,0,0,5,5],
+"struct_deki_1_1_asset_ref_base.html":[3,0,0,9],
+"struct_deki_1_1_asset_ref_base.html":[4,0,0,6],
 "struct_deki_1_1_asset_ref_base.html#a03b7bb93fbd1eae16e28b1b4f5d5874c":[3,0,0,9,6],
 "struct_deki_1_1_asset_ref_base.html#a03b7bb93fbd1eae16e28b1b4f5d5874c":[4,0,0,6,6],
 "struct_deki_1_1_asset_ref_base.html#a188218c22b8885dc7fe39828fa3e1741":[3,0,0,9,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX36 =
 "struct_deki_1_1_project_settings_1_1_file_header.html#a01286b4c04f29d33a0bef722aacd7f43":[3,0,0,2,0,1],
 "struct_deki_1_1_project_settings_1_1_file_header.html#a01286b4c04f29d33a0bef722aacd7f43":[4,0,0,0,0,1],
 "struct_deki_1_1_project_settings_1_1_file_header.html#a0985063bcd758c4521193ec186d6ef1b":[3,0,0,2,0,0],
-"struct_deki_1_1_project_settings_1_1_file_header.html#a0985063bcd758c4521193ec186d6ef1b":[4,0,0,0,0,0],
-"struct_deki_1_1_project_settings_1_1_file_header.html#a74d50f7762080433bcf4d5cd4ba5010d":[3,0,0,2,0,2],
-"struct_deki_1_1_project_settings_1_1_file_header.html#a74d50f7762080433bcf4d5cd4ba5010d":[4,0,0,0,0,2],
-"struct_deki_1_1_project_settings_1_1_pipeline_config.html":[3,0,0,2,3],
-"struct_deki_1_1_project_settings_1_1_pipeline_config.html":[4,0,0,0,3],
-"struct_deki_1_1_project_settings_1_1_pipeline_config.html#a06f380a4758f77977e89e955c3d1824e":[3,0,0,2,3,0],
-"struct_deki_1_1_project_settings_1_1_pipeline_config.html#a06f380a4758f77977e89e955c3d1824e":[4,0,0,0,3,0]
+"struct_deki_1_1_project_settings_1_1_file_header.html#a0985063bcd758c4521193ec186d6ef1b":[4,0,0,0,0,0]
 };

@@ -116,16 +116,16 @@ var NAVTREEINDEX =
 "class_deki_1_1_scene.html#a9ec70d7ad698cded416a6761da1c96f9",
 "class_deki_editor_1_1_asset_picker.html#ab96d74e36fb5986fd4ea02418fac7e55",
 "class_deki_editor_1_1_custom_editor.html#a6b10312659483e34a1cfae52d1960a15",
-"class_deki_editor_1_1_editor_u_i.html#a0c57c6cd1a890b8f88f2da4c47e50bb9",
-"class_deki_editor_1_1_editor_u_i.html#a8d59083817e6ec305256ce3fb6651038a3d53ca4deee33f45422d3ba300b44cfc",
-"class_deki_editor_1_1_file_inspector.html#abe1a3fd16c2c44781daf2e1ce4ddfaf2",
-"functions_p.html",
-"namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3bac26c9cfab7c0dabebc9c8bfa822fec9a",
-"struct_deki_1_1_asset_ref_base.html#a03b7bb93fbd1eae16e28b1b4f5d5874c",
-"struct_deki_1_1_project_settings_1_1_pipeline_config.html#a26b1b7503e145ff3bb904382aae5ca52",
-"struct_deki_1_1_vector3.html#aa528db06fceefbd94d8fe73408f618b4",
-"struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a29400a5284195f765c979a878ce88278",
-"struct_deki_editor_1_1_scene_view_context.html#a5c0c4381ee5affdb36d3de0bf46bd667"
+"class_deki_editor_1_1_editor_u_i.html#a0bfd15212067fa4bb1da724e8da04547ae35104e7912b1cc445c76a666ce27ce2",
+"class_deki_editor_1_1_editor_u_i.html#a8d59083817e6ec305256ce3fb6651038",
+"class_deki_editor_1_1_file_inspector.html#a26cc355951a68c2e047742961c85ec5d",
+"functions_i.html",
+"namespace_deki_1_1_scene_format_1_1_fields.html#ad0adba3250e86d6c878f26924f12f188",
+"struct_deki_1_1_asset_ref.html#adb023d8ef8871d91953cf52648240dd3",
+"struct_deki_1_1_project_settings_1_1_file_header.html#a74d50f7762080433bcf4d5cd4ba5010d",
+"struct_deki_1_1_vector3.html#a984dbedf3590728ea6fb5450a3626bb7",
+"struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a1cc6e637cb8f17b60b9983ff0e572070",
+"struct_deki_editor_1_1_scene_view_context.html#a260b79b089dbd0569124217e107eb0c9"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

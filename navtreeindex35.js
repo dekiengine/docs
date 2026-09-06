@@ -1,5 +1,11 @@
 var NAVTREEINDEX35 =
 {
+"namespace_deki_1_1_scene_format_1_1_fields.html#ad0adba3250e86d6c878f26924f12f188":[3,0,0,3,0,18],
+"namespace_deki_1_1_scene_format_1_1_fields.html#ad756bd396dca7894ea5a715e05e14da1":[3,0,0,3,0,3],
+"namespace_deki_1_1_scene_format_1_1_fields.html#aead550824657c854f55b926de0c7423a":[3,0,0,3,0,17],
+"namespace_deki_1_1_scene_format_1_1_fields.html#afd5b25b6c93e1e7d06cc061fc6b20d77":[3,0,0,3,0,21],
+"namespace_deki_1_1_storage.html":[3,0,0,4],
+"namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b":[3,0,0,4,0],
 "namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3bac26c9cfab7c0dabebc9c8bfa822fec9a":[3,0,0,4,0,1],
 "namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3baea8ceced7b0f39b8552935c485f907f4":[3,0,0,4,0,2],
 "namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3bafbc4386ada7b9339ab8d24bb0e7eedfa":[3,0,0,4,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX35 =
 "struct_deki_1_1_asset_ref.html#aca3ca73e217e65aac464232023eeae51":[3,0,0,8,11],
 "struct_deki_1_1_asset_ref.html#aca3ca73e217e65aac464232023eeae51":[4,0,0,5,11],
 "struct_deki_1_1_asset_ref.html#ad607d0f2933af45e1fe554fcf7b58313":[3,0,0,8,7],
-"struct_deki_1_1_asset_ref.html#ad607d0f2933af45e1fe554fcf7b58313":[4,0,0,5,7],
-"struct_deki_1_1_asset_ref.html#adb023d8ef8871d91953cf52648240dd3":[3,0,0,8,10],
-"struct_deki_1_1_asset_ref.html#adb023d8ef8871d91953cf52648240dd3":[4,0,0,5,10],
-"struct_deki_1_1_asset_ref.html#af1a90fe3529a4de34043ac410a5f0d4a":[3,0,0,8,5],
-"struct_deki_1_1_asset_ref.html#af1a90fe3529a4de34043ac410a5f0d4a":[4,0,0,5,5],
-"struct_deki_1_1_asset_ref_base.html":[3,0,0,9],
-"struct_deki_1_1_asset_ref_base.html":[4,0,0,6]
+"struct_deki_1_1_asset_ref.html#ad607d0f2933af45e1fe554fcf7b58313":[4,0,0,5,7]
 };

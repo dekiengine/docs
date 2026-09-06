@@ -1,5 +1,11 @@
 var NAVTREEINDEX40 =
 {
+"struct_deki_editor_1_1_scene_view_context.html#a260b79b089dbd0569124217e107eb0c9":[3,0,1,47,6],
+"struct_deki_editor_1_1_scene_view_context.html#a260b79b089dbd0569124217e107eb0c9":[4,0,1,43,6],
+"struct_deki_editor_1_1_scene_view_context.html#a26233c42897e560a02de08a704425da0":[3,0,1,47,11],
+"struct_deki_editor_1_1_scene_view_context.html#a26233c42897e560a02de08a704425da0":[4,0,1,43,11],
+"struct_deki_editor_1_1_scene_view_context.html#a38a22312ed4c1b80fbbfb8b3ba597823":[3,0,1,47,5],
+"struct_deki_editor_1_1_scene_view_context.html#a38a22312ed4c1b80fbbfb8b3ba597823":[4,0,1,43,5],
 "struct_deki_editor_1_1_scene_view_context.html#a5c0c4381ee5affdb36d3de0bf46bd667":[3,0,1,47,10],
 "struct_deki_editor_1_1_scene_view_context.html#a5c0c4381ee5affdb36d3de0bf46bd667":[4,0,1,43,10],
 "struct_deki_editor_1_1_scene_view_context.html#a5ec1991bacbad0b7719b177a6ac798d3":[3,0,1,47,8],
