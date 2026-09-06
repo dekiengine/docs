@@ -8,7 +8,5 @@ var searchData=
   ['power_5',['Power',['../class_deki_1_1_power.html',1,'Deki']]],
   ['propertybinding_6',['PropertyBinding',['../struct_deki_1_1_property_binding.html',1,'Deki']]],
   ['propertyinfo_7',['PropertyInfo',['../struct_deki_1_1_property_info.html',1,'Deki']]],
-  ['propertyref_8',['PropertyRef',['../struct_deki_1_1_property_ref.html',1,'Deki']]],
-  ['providerregistry_9',['ProviderRegistry',['../class_deki_1_1_provider_registry.html',1,'Deki']]],
-  ['providerregistrybase_10',['ProviderRegistryBase',['../class_deki_1_1_provider_registry_base.html',1,'Deki']]]
+  ['propertyref_8',['PropertyRef',['../struct_deki_1_1_property_ref.html',1,'Deki']]]
 ];

@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['w_0',['W',['../namespace_deki_1_1_input_keys.html#ab436d56738758b2c1eaf73d47f5f120f',1,'Deki::InputKeys']]],
-  ['white_1',['White',['../class_deki_1_1_color.html#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4',1,'Deki::Color']]],
-  ['width_2',['WIDTH',['../namespace_deki_1_1_scene_format_1_1_fields.html#ab17fb89520916a5be489bf68cb0f5e4e',1,'Deki::SceneFormat::Fields']]],
-  ['width_3',['width',['../struct_deki_editor_1_1_tex_header.html#a14fe6969e50527242330f036c5d22c07',1,'DekiEditor::TexHeader::width'],['../struct_deki_editor_1_1_decoded_image.html#a5caa2ee3e38202fb0e124d80bae101ac',1,'DekiEditor::DecodedImage::width'],['../struct_deki_editor_1_1_atlas_frame.html#ad80a110179db245d6450d6ba7259de73',1,'DekiEditor::AtlasFrame::width'],['../struct_deki_editor_1_1_sprite_frame_data.html#a251ead6162e47f38923d20673ca3ffeb',1,'DekiEditor::SpriteFrameData::width']]],
-  ['worldx_4',['worldX',['../struct_deki_editor_1_1_scene_view_context.html#ac060527e6fac5c189bad9b54479eeccf',1,'DekiEditor::SceneViewContext']]],
-  ['worldy_5',['worldY',['../struct_deki_editor_1_1_scene_view_context.html#a38a22312ed4c1b80fbbfb8b3ba597823',1,'DekiEditor::SceneViewContext']]]
+  ['y_0',['y',['../struct_deki_1_1_world_transform.html#af30b2f21545e88efaa7802c97e9639c8',1,'Deki::WorldTransform::y'],['../struct_deki_1_1_vector2.html#a3a7cc6c4c0021ed7cd9064ec57f4b018',1,'Deki::Vector2::y'],['../struct_deki_1_1_vector3.html#a722c924b569446fd66c9f1f0311c3bb5',1,'Deki::Vector3::y'],['../struct_deki_editor_1_1_node_canvas_node.html#a318edccb2b6fed769f9a71d0964e7a7d',1,'DekiEditor::NodeCanvasNode::y'],['../struct_deki_editor_1_1_atlas_frame.html#aeab9101d4f232c09153c22390e59937e',1,'DekiEditor::AtlasFrame::y'],['../struct_deki_editor_1_1_sprite_frame_data.html#a4ffae5c0761310068a42da6504241aa3',1,'DekiEditor::SpriteFrameData::y']]],
+  ['yellow_1',['Yellow',['../class_deki_1_1_color.html#a68962b586deb54cfefb8bbf57c9fb181',1,'Deki::Color']]]
 ];

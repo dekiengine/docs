@@ -119,9 +119,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;IDekiDisplay.h&gt;</code></p>
-
-<p>Inherited by <a class="el" href="class_deki_1_1_editor_display.html">Deki::EditorDisplay</a>.</p>
+<p><code>#include &lt;deki/providers/IDisplay.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -211,8 +209,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Initialize the platform display. </p>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#aacbd003fa3c240547f49c87d7d3a5583">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a4a55efde692e971b27ed4ca192372c81" name="a4a55efde692e971b27ed4ca192372c81"></a>
@@ -239,8 +235,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shutdown the display and cleanup resources. </p>
-
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a2020a72af4db97de53d3de39aab910a9">Deki::EditorDisplay</a>.</p>
 
 </div>
 </div>
@@ -289,8 +283,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a1fa7702870494ec3f8aaa18fd53187a2">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a4992939c99125ae6db1f367d4263d20e" name="a4992939c99125ae6db1f367d4263d20e"></a>
@@ -318,8 +310,6 @@ Public Member Functions</h2></td></tr>
 
 <p>True when <a class="el" href="#a6afad67dd3f89c828e182be2b5b5b0a9" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given. </p>
 <p>The default display presents whole frames, and the engine then never calls PresentRegions. A display that can address a sub-rectangle of its panel or texture returns true and implements PresentRegions. </p>
-
-<p>Reimplemented in <a class="el" href="class_deki_1_1_editor_display.html#aa3a461fc2214cf999d1d603b6007694a">Deki::EditorDisplay</a>.</p>
 
 </div>
 </div>
@@ -373,8 +363,6 @@ Public Member Functions</h2></td></tr>
 <p>Present only <span class="tt">rects</span> of the framebuffer. </p>
 <p>Rectangles are framebuffer pixels, half-open, already clipped to the buffer; they may overlap. <span class="tt">count</span> 0 means nothing changed since the last present: a windowed display still redraws its window from the texture it holds, an LCD does nothing. The default pushes the whole frame, so a display that does not override this behaves exactly as before. </p>
 
-<p>Reimplemented in <a class="el" href="class_deki_1_1_editor_display.html#af24983158a2b8d9e46ab2e2290a77b8f">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a22561fd38eee67d10e4b79ec7d16e080" name="a22561fd38eee67d10e4b79ec7d16e080"></a>
@@ -406,8 +394,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the display dimensions. </p>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a751391fcdfb25fa95fe8b65ea7fd8beb">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="aeb236ab0c5867bc5545efb5bd9bbf96f" name="aeb236ab0c5867bc5545efb5bd9bbf96f"></a>
@@ -435,8 +421,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Check if the display is initialized. </p>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a04a87404db4ce84499cf61adab2c1107">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a93392c7d59e1e577d1a79ad5d9e8d4e8" name="a93392c7d59e1e577d1a79ad5d9e8d4e8"></a>
@@ -463,8 +447,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Request a full display refresh. </p>
-
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#af3361be29894911c39efb17e3ae0522c">Deki::EditorDisplay</a>.</p>
 
 </div>
 </div>
@@ -494,8 +476,6 @@ Public Member Functions</h2></td></tr>
 <p>Process platform events (window close, resize, etc.). </p>
 <dl class="section return"><dt>Returns</dt><dd>true if application should continue running, false to exit </dd></dl>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#ae633a86bc480522511fca30fb0cc1948">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a00ac0f8939bf8d1d7d4f195820021866" name="a00ac0f8939bf8d1d7d4f195820021866"></a>
@@ -524,8 +504,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a8694520acd6f29a96bfc3a8c206b4e4a">Deki::EditorDisplay</a>.</p>
 
 </div>
 </div>
@@ -576,8 +554,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#af98bd580ff9ecaec692dfaaf8827d5a1">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a7441986c905175862de943e0740af259" name="a7441986c905175862de943e0740af259"></a>
@@ -627,8 +603,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#ac154abf1d5d7457dd5bda505c33482ff">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a2476207c3440689e8be668ae21e971d3" name="a2476207c3440689e8be668ae21e971d3"></a>
@@ -653,8 +627,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a2a32caab5795fb9037a17ccaec28f6f1">Deki::EditorDisplay</a>.</p>
 
 </div>
 </div>
@@ -681,8 +653,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a23c26c6cc8f11fa0e252c588fb3b4c38">Deki::EditorDisplay</a>.</p>
-
 </div>
 </div>
 <a id="a77e6b359312a0c6fc2e7d2bd4a37222a" name="a77e6b359312a0c6fc2e7d2bd4a37222a"></a>
@@ -707,8 +677,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_deki_1_1_editor_display.html#a6f52129390bb17d4dbeea4c82d76386a">Deki::EditorDisplay</a>.</p>
 
 </div>
 </div>
@@ -773,7 +741,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>deki-engine/src/providers/<a class="el" href="_i_deki_display_8h.html">IDekiDisplay.h</a></li>
+<li>deki-engine/include/deki/providers/<a class="el" href="_i_display_8h.html">IDisplay.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

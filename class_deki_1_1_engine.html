@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 <p><a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> singleton: owns the scene system, lifecycle and frame loop.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;DekiEngine.h&gt;</code></p>
+<p><code>#include &lt;deki/Engine.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0c0282b5c9f63892c2f16575cb73fab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the renderer instance.  <br /></td></tr>
 <tr class="memitem:ac4a6702a2e457370a8a04c499588db0e" id="r_ac4a6702a2e457370a8a04c499588db0e"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac4a6702a2e457370a8a04c499588db0e">GetSceneSystem</a> () const</td></tr>
 <tr class="memdesc:ac4a6702a2e457370a8a04c499588db0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scene system instance.  <br /></td></tr>
-<tr class="memitem:afb485efe31d0e4421a86b51f8f425b36" id="r_afb485efe31d0e4421a86b51f8f425b36"><td class="memItemLeft"><a class="el" href="class_deki_1_1_lifecycle_manager.html">LifecycleManager</a> *&#160;</td><td class="memItemRight"><a class="el" href="#afb485efe31d0e4421a86b51f8f425b36">GetLifecycleManager</a> () const</td></tr>
+<tr class="memitem:afb485efe31d0e4421a86b51f8f425b36" id="r_afb485efe31d0e4421a86b51f8f425b36"><td class="memItemLeft">LifecycleManager *&#160;</td><td class="memItemRight"><a class="el" href="#afb485efe31d0e4421a86b51f8f425b36">GetLifecycleManager</a> () const</td></tr>
 <tr class="memdesc:afb485efe31d0e4421a86b51f8f425b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lifecycle manager instance.  <br /></td></tr>
 <tr class="memitem:a1fef725b08eabb29fe8964c923ebcbee" id="r_a1fef725b08eabb29fe8964c923ebcbee"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1fef725b08eabb29fe8964c923ebcbee">GetRenderSystem</a> () const</td></tr>
 <tr class="memdesc:a1fef725b08eabb29fe8964c923ebcbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render system instance.  <br /></td></tr>
@@ -169,7 +169,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accb0a91ea26debde81aec24438e49103" id="r_accb0a91ea26debde81aec24438e49103"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *&#160;</td><td class="memItemRight"><a class="el" href="#accb0a91ea26debde81aec24438e49103">GetDisplay</a> () const</td></tr>
 <tr class="memdesc:accb0a91ea26debde81aec24438e49103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the active display.  <br /></td></tr>
 <tr class="memitem:ad279c4f1cc4adbd134b1cf2481a9dc97" id="r_ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97">SetDisplay</a> (<a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *display, const std::string &amp;name=&quot;&quot;)</td></tr>
-<tr class="memdesc:ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the active display (called by SDL3Display, LovyanGFXDisplay, <a class="el" href="class_deki_1_1_editor_display.html">EditorDisplay</a>, etc.  <br /></td></tr>
+<tr class="memdesc:ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the active display (called by SDL3Display, LovyanGFXDisplay, EditorDisplay, etc.  <br /></td></tr>
 <tr class="memitem:a2a52f35697745b4c24f4e0404883ffa6" id="r_a2a52f35697745b4c24f4e0404883ffa6"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2a52f35697745b4c24f4e0404883ffa6">GetDisplayName</a> () const</td></tr>
 <tr class="memdesc:a2a52f35697745b4c24f4e0404883ffa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name set by the registering package (e.g.  <br /></td></tr>
 <tr class="memitem:a1464e6ac6f4e71e4eca3a5db08a077ba" id="r_a1464e6ac6f4e71e4eca3a5db08a077ba"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1464e6ac6f4e71e4eca3a5db08a077ba">IsDisplayInitialized</a> () const</td></tr>
@@ -213,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> singleton: owns the scene system, lifecycle and frame loop. </p>
-<p>Holds the active scene graph via <a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a>, drives the <a class="el" href="class_deki_1_1_behaviour.html">Behaviour</a> lifecycle (PreRender, Start, Update) through <a class="el" href="class_deki_1_1_lifecycle_manager.html" title="Manages Behaviour lifecycle (InternalAwake, Awake, Start, Update).">LifecycleManager</a>, and dispatches to whichever render, input and display providers a package has installed — all four are optional, so a headless or editor-hosted engine is the same class with null providers. </p>
+<p>Holds the active scene graph via <a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a>, drives the <a class="el" href="class_deki_1_1_behaviour.html">Behaviour</a> lifecycle (PreRender, Start, Update) through LifecycleManager, and dispatches to whichever render, input and display providers a package has installed — all four are optional, so a headless or editor-hosted engine is the same class with null providers. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a40915f4a293d3b18e9d4fc98b88f206b" name="a40915f4a293d3b18e9d4fc98b88f206b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40915f4a293d3b18e9d4fc98b88f206b">&#9670;&#160;</a></span>GetInstance()</h2>
@@ -659,7 +659,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_lifecycle_manager.html">LifecycleManager</a> * Deki::Engine::GetLifecycleManager </td>
+          <td class="memname">LifecycleManager * Deki::Engine::GetLifecycleManager </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -673,7 +673,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the lifecycle manager instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_deki_1_1_lifecycle_manager.html" title="Manages Behaviour lifecycle (InternalAwake, Awake, Start, Update).">LifecycleManager</a> instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the LifecycleManager instance </dd></dl>
 
 </div>
 </div>
@@ -846,7 +846,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register the active display (called by SDL3Display, LovyanGFXDisplay, <a class="el" href="class_deki_1_1_editor_display.html">EditorDisplay</a>, etc. </p>
+<p>Register the active display (called by SDL3Display, LovyanGFXDisplay, EditorDisplay, etc. </p>
 <p>at package load).</p>
 <p>The package owns the display instance's lifetime. Engine-core only stores the pointer + a name (for diagnostics) and re-runs the render system's Setup() so it can pick up a display-owned DMA buffer if available. </p>
 
@@ -1283,7 +1283,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>deki-engine/src/<a class="el" href="_deki_engine_8h.html">DekiEngine.h</a></li>
+<li>deki-engine/include/deki/<a class="el" href="_engine_8h.html">Engine.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,52 +1,10 @@
 var namespace_deki =
 [
-    [ "AuthoredFormat", "namespace_deki_1_1_authored_format.html", [
-      [ "VersionKey", "namespace_deki_1_1_authored_format.html#ad9348b2be161b3138569bd08a0db6025", null ],
-      [ "SceneVersion", "namespace_deki_1_1_authored_format.html#a4a697f4a2b45d861dabf9479379ff835", null ],
-      [ "AssetVersion", "namespace_deki_1_1_authored_format.html#a5f82c7b5cc13067c8d2eb9c24d9b73a3", null ],
-      [ "AssetDataVersion", "namespace_deki_1_1_authored_format.html#a4928fb0861096d6e8fe73862e368c141", null ]
-    ] ],
     [ "ComponentInterfaceAdapters", "namespace_deki_1_1_component_interface_adapters.html", [
       [ "Register", "namespace_deki_1_1_component_interface_adapters.html#aa903de95127a189186deafaab3fc9d48", null ],
       [ "Query", "namespace_deki_1_1_component_interface_adapters.html#ae5923b30d6906703d9835d61ec94ef8a", null ],
       [ "Find", "namespace_deki_1_1_component_interface_adapters.html#aff827d6f5054f5619657940288d08827", null ],
       [ "Version", "namespace_deki_1_1_component_interface_adapters.html#ae3712da8c54149d949dbeb01cd8398bb", null ]
-    ] ],
-    [ "InputKeys", "namespace_deki_1_1_input_keys.html", [
-      [ "SPACE", "namespace_deki_1_1_input_keys.html#ae40208aad3402fdce49fe2723379554d", null ],
-      [ "ENTER", "namespace_deki_1_1_input_keys.html#afc2508be42f4096c2369fc3795cdfe4f", null ],
-      [ "ESC", "namespace_deki_1_1_input_keys.html#aa524fb8802f0cef8cec589b43830a824", null ],
-      [ "BACKSPACE", "namespace_deki_1_1_input_keys.html#ac9a2ab4004c5e621a3df629cc9a25abf", null ],
-      [ "UP", "namespace_deki_1_1_input_keys.html#a0f99bb0c84ffc05e5634afffda6443f0", null ],
-      [ "DOWN", "namespace_deki_1_1_input_keys.html#a180e05eb45a5cfceb46249bc786480ea", null ],
-      [ "LEFT", "namespace_deki_1_1_input_keys.html#a5a5a121e4637bfe0731c6232d112916c", null ],
-      [ "RIGHT", "namespace_deki_1_1_input_keys.html#ab2b6750ac008923b2747ad6ef9be19f0", null ],
-      [ "A", "namespace_deki_1_1_input_keys.html#abbd583ef658fe8af03c473ec6de38f6c", null ],
-      [ "B", "namespace_deki_1_1_input_keys.html#a58aefdafa4868ea112184e4c60529e2a", null ],
-      [ "C", "namespace_deki_1_1_input_keys.html#ab91817c8afdf540e4f9347dd2f2b8611", null ],
-      [ "D", "namespace_deki_1_1_input_keys.html#a362279bdfd56606c792f67df0af0f730", null ],
-      [ "E", "namespace_deki_1_1_input_keys.html#a1d50ce74367b5235d797c0ed57f11906", null ],
-      [ "F", "namespace_deki_1_1_input_keys.html#a7f7fe5d9bd1b7b5099f5f9c09ab3783d", null ],
-      [ "G", "namespace_deki_1_1_input_keys.html#af6476285b8751780c555b7aee13bae8a", null ],
-      [ "H", "namespace_deki_1_1_input_keys.html#a873e8c06bb2bc7032dd4b16f456c3f08", null ],
-      [ "I", "namespace_deki_1_1_input_keys.html#a8c6fb672dbca3875adc9834deb3260e9", null ],
-      [ "J", "namespace_deki_1_1_input_keys.html#aa9c6a2908eb431822484340c8b22ad62", null ],
-      [ "K", "namespace_deki_1_1_input_keys.html#addd764dd23485f811badca438b8f7d8f", null ],
-      [ "L", "namespace_deki_1_1_input_keys.html#ab647c635f24df0172247cf27d8e7911a", null ],
-      [ "M", "namespace_deki_1_1_input_keys.html#aeaf02ddb91577dd0a71e00cef6ce96b2", null ],
-      [ "N", "namespace_deki_1_1_input_keys.html#a09f78442362099e3e55950aa2664d141", null ],
-      [ "O", "namespace_deki_1_1_input_keys.html#aedc972a2918b73a6947a3c64193ed90b", null ],
-      [ "P", "namespace_deki_1_1_input_keys.html#a2baab7ae41ae36b5c1a2c4ab7bdb46a0", null ],
-      [ "Q", "namespace_deki_1_1_input_keys.html#a1d89c7ed58d9edf1d555b8929ebbd150", null ],
-      [ "R", "namespace_deki_1_1_input_keys.html#aa55ab5fb619facb640c19b464bf79e2c", null ],
-      [ "S", "namespace_deki_1_1_input_keys.html#aacd10883170ef3b502af902449cbaaa7", null ],
-      [ "T", "namespace_deki_1_1_input_keys.html#a8feed8aa7936b4796e103fb5abeadc78", null ],
-      [ "U", "namespace_deki_1_1_input_keys.html#a3d57ba30338841d29a66e4359b1375c3", null ],
-      [ "V", "namespace_deki_1_1_input_keys.html#a1fef6542f693daed26d14ad6325f2c3d", null ],
-      [ "W", "namespace_deki_1_1_input_keys.html#ab436d56738758b2c1eaf73d47f5f120f", null ],
-      [ "X", "namespace_deki_1_1_input_keys.html#ad36ef35dc45cb284c91f62cec221026a", null ],
-      [ "Y", "namespace_deki_1_1_input_keys.html#a3869c2093e253d03f8b0d8f414577b58", null ],
-      [ "Z", "namespace_deki_1_1_input_keys.html#a8cb025af817660134d6950a033cf9ad1", null ]
     ] ],
     [ "Math", "namespace_deki_1_1_math.html", [
       [ "Clamp", "namespace_deki_1_1_math.html#a3a108faf1dd62ed7ddfdb980fff84611", null ],
@@ -89,7 +47,6 @@ var namespace_deki =
     [ "DPackEntry", "struct_deki_1_1_d_pack_entry.html", "struct_deki_1_1_d_pack_entry" ],
     [ "DPackHeader", "struct_deki_1_1_d_pack_header.html", "struct_deki_1_1_d_pack_header" ],
     [ "EditorAutoSetupRegistrar", "struct_deki_1_1_editor_auto_setup_registrar.html", "struct_deki_1_1_editor_auto_setup_registrar" ],
-    [ "EditorDisplay", "class_deki_1_1_editor_display.html", "class_deki_1_1_editor_display" ],
     [ "Engine", "class_deki_1_1_engine.html", "class_deki_1_1_engine" ],
     [ "EngineHost", "struct_deki_1_1_engine_host.html", "struct_deki_1_1_engine_host" ],
     [ "EngineSettings", "struct_deki_1_1_engine_settings.html", "struct_deki_1_1_engine_settings" ],
@@ -107,13 +64,11 @@ var namespace_deki =
     [ "IRenderSystem", "class_deki_1_1_i_render_system.html", "class_deki_1_1_i_render_system" ],
     [ "ISortableProvider", "class_deki_1_1_i_sortable_provider.html", "class_deki_1_1_i_sortable_provider" ],
     [ "ITimeProvider", "class_deki_1_1_i_time_provider.html", "class_deki_1_1_i_time_provider" ],
-    [ "LifecycleManager", "class_deki_1_1_lifecycle_manager.html", "class_deki_1_1_lifecycle_manager" ],
     [ "LoadedPack", "struct_deki_1_1_loaded_pack.html", "struct_deki_1_1_loaded_pack" ],
     [ "LogSystem", "class_deki_1_1_log_system.html", "class_deki_1_1_log_system" ],
     [ "Mat4", "struct_deki_1_1_mat4.html", "struct_deki_1_1_mat4" ],
     [ "Memory", "class_deki_1_1_memory.html", "class_deki_1_1_memory" ],
     [ "MemoryStats", "struct_deki_1_1_memory_stats.html", "struct_deki_1_1_memory_stats" ],
-    [ "MissingComponent", "class_deki_1_1_missing_component.html", "class_deki_1_1_missing_component" ],
     [ "NodeRef", "struct_deki_1_1_node_ref.html", "struct_deki_1_1_node_ref" ],
     [ "Object", "class_deki_1_1_object.html", "class_deki_1_1_object" ],
     [ "ObjectRef", "struct_deki_1_1_object_ref.html", "struct_deki_1_1_object_ref" ],
@@ -125,8 +80,6 @@ var namespace_deki =
     [ "PropertyBinding", "struct_deki_1_1_property_binding.html", "struct_deki_1_1_property_binding" ],
     [ "PropertyInfo", "struct_deki_1_1_property_info.html", "struct_deki_1_1_property_info" ],
     [ "PropertyRef", "struct_deki_1_1_property_ref.html", "struct_deki_1_1_property_ref" ],
-    [ "ProviderRegistry", "class_deki_1_1_provider_registry.html", "class_deki_1_1_provider_registry" ],
-    [ "ProviderRegistryBase", "class_deki_1_1_provider_registry_base.html", "class_deki_1_1_provider_registry_base" ],
     [ "Rect", "struct_deki_1_1_rect.html", "struct_deki_1_1_rect" ],
     [ "Scene", "class_deki_1_1_scene.html", "class_deki_1_1_scene" ],
     [ "SceneSystem", "class_deki_1_1_scene_system.html", "class_deki_1_1_scene_system" ],
@@ -138,27 +91,17 @@ var namespace_deki =
     [ "Vector2", "struct_deki_1_1_vector2.html", "struct_deki_1_1_vector2" ],
     [ "Vector3", "struct_deki_1_1_vector3.html", "struct_deki_1_1_vector3" ],
     [ "WorldTransform", "struct_deki_1_1_world_transform.html", "struct_deki_1_1_world_transform" ],
-    [ "InterfaceAdapter", "namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d", null ],
     [ "ComponentType", "namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d", null ],
+    [ "InterfaceAdapter", "namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d", null ],
     [ "UpdateCallback", "namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd", null ],
     [ "GameUpdateCallback", "namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a", null ],
     [ "LogCallback", "namespace_deki.html#abea9386d083c93ac96ed8da00fb1a5a3", null ],
-    [ "LifecycleProfileBeginCallback", "namespace_deki.html#a7f72ad35d446c9ee2d4748b13b2181f5", null ],
-    [ "LifecycleProfileEndCallback", "namespace_deki.html#ac7c5e0eb21b9a1940227d04dc0d72653", null ],
     [ "ComponentCreator", "namespace_deki.html#a857157168165bc1860b4fcf81a781d77", null ],
     [ "ColorFormat", "namespace_deki.html#adf997e436efe620d60266910d8f63061", [
       [ "RGB565", "namespace_deki.html#adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a", null ],
       [ "RGB888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0", null ],
       [ "ARGB8888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251", null ],
       [ "RGB565A8", "namespace_deki.html#adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def", null ]
-    ] ],
-    [ "LogLevel", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7", [
-      [ "Editor", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257", null ],
-      [ "Internal", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7aafbf0897a5a83fdd873dfb032ec695d3", null ],
-      [ "Debug", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7aa603905470e2a5b8c13e96b579ef0dba", null ],
-      [ "Info", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a4059b0251f66a18cb56f544728796875", null ],
-      [ "Warning", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa", null ],
-      [ "Error", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a902b0d55fddef6f8d651fe1035b7d4bd", null ]
     ] ],
     [ "ProjectionMode", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603", [
       [ "Orthographic", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603a03424250432f2aa71de95579d2c0eaeb", null ],
@@ -168,8 +111,13 @@ var namespace_deki =
       [ "Pixels", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1", null ],
       [ "Meters", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469", null ]
     ] ],
-    [ "MemorySubsystem", "namespace_deki.html#a48e4f41b4eda811c9555c773fccb673a", [
-      [ "GENERAL", "namespace_deki.html#a48e4f41b4eda811c9555c773fccb673aab61773b9b3968a9988d765d728985862", null ]
+    [ "LogLevel", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7", [
+      [ "Editor", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257", null ],
+      [ "Internal", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7aafbf0897a5a83fdd873dfb032ec695d3", null ],
+      [ "Debug", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7aa603905470e2a5b8c13e96b579ef0dba", null ],
+      [ "Info", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a4059b0251f66a18cb56f544728796875", null ],
+      [ "Warning", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa", null ],
+      [ "Error", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a902b0d55fddef6f8d651fe1035b7d4bd", null ]
     ] ],
     [ "PackageState", "namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244d", [
       [ "Uninitialized", "namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244daf704f57ea420275ad51bf55b7dec2c96", null ],
@@ -177,6 +125,9 @@ var namespace_deki =
       [ "Running", "namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09", null ],
       [ "Error", "namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244da902b0d55fddef6f8d651fe1035b7d4bd", null ],
       [ "Disabled", "namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244dab9f5c797ebbf55adccdd8539a65a0241", null ]
+    ] ],
+    [ "MemorySubsystem", "namespace_deki.html#a48e4f41b4eda811c9555c773fccb673a", [
+      [ "GENERAL", "namespace_deki.html#a48e4f41b4eda811c9555c773fccb673aab61773b9b3968a9988d765d728985862", null ]
     ] ],
     [ "PhysicalUnit", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270", [
       [ "None", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a6adf97f83acf6453d4a6a4b1070f3754", null ],
@@ -222,13 +173,11 @@ var namespace_deki =
     ] ],
     [ "HashString", "namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50", null ],
     [ "HashStringLen", "namespace_deki.html#a693b81cbcc3e331d8b8695e6d9959971", null ],
+    [ "GenerateDeterministicGuid", "namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45", null ],
     [ "DekiMain", "namespace_deki.html#a8b1b03df6f6dd63de4995534963b8fc0", null ],
     [ "VisitSubtree", "namespace_deki.html#a22ea94289b214746512305d8bc075c4d", null ],
     [ "VisitActiveSubtree", "namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff", null ],
     [ "FindInSubtree", "namespace_deki.html#a812910f374e004e5d124fa69293e6e2b", null ],
-    [ "operator*", "namespace_deki.html#a3246873f72896f3ffee887e1733bffbf", null ],
-    [ "operator*", "namespace_deki.html#aa6f1be1b762c93604b37edc421c4d81b", null ],
-    [ "GenerateDeterministicGuid", "namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45", null ],
     [ "GetPropertyRef", "namespace_deki.html#ab2db578a37de2fc62dd9e4e740e861c1", null ],
     [ "GetPropertyRef", "namespace_deki.html#a3fa6aaff29f2822152add80eb3608a8d", null ],
     [ "GetPropertyValue", "namespace_deki.html#abbe9d8bcb5d306a8eb2bc2c54410d9ef", null ],
@@ -248,6 +197,8 @@ var namespace_deki =
     [ "CompareBoundProperty", "namespace_deki.html#af0f5e2fdb1bd009edf4a00679b7a4f91", null ],
     [ "Serialize", "namespace_deki.html#a797e40e5960acce21da40512527a5aab", null ],
     [ "Deserialize", "namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514", null ],
+    [ "operator*", "namespace_deki.html#a3246873f72896f3ffee887e1733bffbf", null ],
+    [ "operator*", "namespace_deki.html#aa6f1be1b762c93604b37edc421c4d81b", null ],
     [ "SetImGuiContext", "namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a", null ],
     [ "SetImGuiAllocators", "namespace_deki.html#a842fa2a17af886ab760e861d44444ba2", null ],
     [ "DPACK_MAGIC", "namespace_deki.html#ae0c36ae179fba6c3d8f94ea490c44847", null ],

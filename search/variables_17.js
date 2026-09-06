@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x_0',['X',['../namespace_deki_1_1_input_keys.html#ad36ef35dc45cb284c91f62cec221026a',1,'Deki::InputKeys']]],
-  ['x_1',['x',['../struct_deki_1_1_world_transform.html#af025fb8300886228e5c2f4932199d5af',1,'Deki::WorldTransform::x'],['../struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed',1,'Deki::Vector2::x'],['../struct_deki_1_1_vector3.html#a2df631e15bcc99be032e883cf0b276e4',1,'Deki::Vector3::x'],['../struct_deki_editor_1_1_node_canvas_node.html#ab011ade95174a1d313aa5b0415b55646',1,'DekiEditor::NodeCanvasNode::x'],['../struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7',1,'DekiEditor::AtlasFrame::x'],['../struct_deki_editor_1_1_sprite_frame_data.html#aa55e2c7bb104650d63af43eced961993',1,'DekiEditor::SpriteFrameData::x']]]
+  ['z_0',['z',['../struct_deki_1_1_vector3.html#ad129890b2fdc7bec10770858ad139f3e',1,'Deki::Vector3']]],
+  ['zoom_1',['zoom',['../struct_deki_editor_1_1_scene_view_context.html#ac0895f3bec95e84a8c8cb6a608b6c1ba',1,'DekiEditor::SceneViewContext']]]
 ];

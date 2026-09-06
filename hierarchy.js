@@ -32,7 +32,6 @@ var hierarchy =
       ] ],
       [ "Deki::CoreProjectSettings", "class_deki_1_1_core_project_settings.html", null ],
       [ "Deki::DisplayProjectSettings", "class_deki_1_1_display_project_settings.html", null ],
-      [ "Deki::MissingComponent", "class_deki_1_1_missing_component.html", null ],
       [ "Deki::UnitProjectSettings", "class_deki_1_1_unit_project_settings.html", null ]
     ] ],
     [ "Deki::ComponentFactory", "class_deki_1_1_component_factory.html", null ],
@@ -81,9 +80,7 @@ var hierarchy =
     ] ],
     [ "Deki::ICamera", "class_deki_1_1_i_camera.html", null ],
     [ "Deki::IClipProvider", "class_deki_1_1_i_clip_provider.html", null ],
-    [ "Deki::IDisplay", "class_deki_1_1_i_display.html", [
-      [ "Deki::EditorDisplay", "class_deki_1_1_editor_display.html", null ]
-    ] ],
+    [ "Deki::IDisplay", "class_deki_1_1_i_display.html", null ],
     [ "Deki::IFileSystem", "class_deki_1_1_i_file_system.html", [
       [ "Deki::DesktopFileSystem", "class_deki_1_1_desktop_file_system.html", null ]
     ] ],
@@ -98,7 +95,6 @@ var hierarchy =
     [ "Deki::IRenderSystem", "class_deki_1_1_i_render_system.html", null ],
     [ "Deki::ISortableProvider", "class_deki_1_1_i_sortable_provider.html", null ],
     [ "Deki::ITimeProvider", "class_deki_1_1_i_time_provider.html", null ],
-    [ "Deki::LifecycleManager", "class_deki_1_1_lifecycle_manager.html", null ],
     [ "Deki::LoadedPack", "struct_deki_1_1_loaded_pack.html", null ],
     [ "Deki::LogSystem", "class_deki_1_1_log_system.html", null ],
     [ "Deki::Mat4", "struct_deki_1_1_mat4.html", null ],
@@ -122,8 +118,6 @@ var hierarchy =
     [ "Deki::PropertyBinding", "struct_deki_1_1_property_binding.html", null ],
     [ "Deki::PropertyInfo", "struct_deki_1_1_property_info.html", null ],
     [ "Deki::PropertyRef", "struct_deki_1_1_property_ref.html", null ],
-    [ "Deki::ProviderRegistry&lt; Interface &gt;", "class_deki_1_1_provider_registry.html", null ],
-    [ "Deki::ProviderRegistryBase", "class_deki_1_1_provider_registry_base.html", null ],
     [ "Deki::Rect", "struct_deki_1_1_rect.html", null ],
     [ "Deki::ProjectSettings::RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", null ],
     [ "Deki::Scene", "class_deki_1_1_scene.html", null ],

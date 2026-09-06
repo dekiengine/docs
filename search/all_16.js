@@ -1,31 +1,5 @@
 var searchData=
 [
-  ['w_0',['W',['../namespace_deki_1_1_input_keys.html#ab436d56738758b2c1eaf73d47f5f120f',1,'Deki::InputKeys']]],
-  ['wantsinspectoroverride_1',['WantsInspectorOverride',['../class_deki_editor_1_1_custom_editor.html#aa8f5970d868a97e56455be7ed979c592',1,'DekiEditor::CustomEditor']]],
-  ['warning_2',['Warning',['../namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'Deki']]],
-  ['white_3',['White',['../class_deki_1_1_color.html#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4',1,'Deki::Color']]],
-  ['widgetbackend_4',['WidgetBackend',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html',1,'DekiEditor::EditorUI']]],
-  ['width_5',['WIDTH',['../namespace_deki_1_1_scene_format_1_1_fields.html#ab17fb89520916a5be489bf68cb0f5e4e',1,'Deki::SceneFormat::Fields']]],
-  ['width_6',['Width',['../struct_deki_1_1_rect.html#ae5e1e2511500ba1e1b82ccaa52e1d34a',1,'Deki::Rect']]],
-  ['width_7',['width',['../struct_deki_editor_1_1_tex_header.html#a14fe6969e50527242330f036c5d22c07',1,'DekiEditor::TexHeader::width'],['../struct_deki_editor_1_1_decoded_image.html#a5caa2ee3e38202fb0e124d80bae101ac',1,'DekiEditor::DecodedImage::width'],['../struct_deki_editor_1_1_atlas_frame.html#ad80a110179db245d6450d6ba7259de73',1,'DekiEditor::AtlasFrame::width'],['../struct_deki_editor_1_1_sprite_frame_data.html#a251ead6162e47f38923d20673ca3ffeb',1,'DekiEditor::SpriteFrameData::width']]],
-  ['winalwaysautoresize_8',['WinAlwaysAutoResize',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0adfe5c74f98dbfaba1ecac8186661d806',1,'DekiEditor::EditorUI']]],
-  ['windowpadding_9',['WindowPadding',['../class_deki_editor_1_1_editor_u_i.html#a22a60cd7097470c8654864a3d41fa759ab2900a30f6dbe42ec4470bbf66be6c8d',1,'DekiEditor::EditorUI']]],
-  ['winflags_10',['WinFlags',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0',1,'DekiEditor::EditorUI']]],
-  ['winnocollapse_11',['WinNoCollapse',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0af7095b2514d50c7f2035978056c7fd96',1,'DekiEditor::EditorUI']]],
-  ['winnone_12',['WinNone',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0a0e6ccc11d9aa3cab20d83779aba9aa62',1,'DekiEditor::EditorUI']]],
-  ['winnosavedsettings_13',['WinNoSavedSettings',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0a113cfc39a9487c1f2f905903181886a8',1,'DekiEditor::EditorUI']]],
-  ['winnoscrollbar_14',['WinNoScrollbar',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0a4fdee9d6e4dde6b97e1753f569fabe66',1,'DekiEditor::EditorUI']]],
-  ['withalpha_15',['WithAlpha',['../class_deki_1_1_color.html#af403cd8f5455b673306fbe79a0e5bfee',1,'Deki::Color']]],
-  ['worldtoscreen_16',['WorldToScreen',['../class_deki_1_1_i_camera.html#ad6648b2e940241dfa0a47fdf7bb69c06',1,'Deki::ICamera']]],
-  ['worldtransform_17',['WorldTransform',['../struct_deki_1_1_world_transform.html',1,'Deki']]],
-  ['worldx_18',['worldX',['../struct_deki_editor_1_1_scene_view_context.html#ac060527e6fac5c189bad9b54479eeccf',1,'DekiEditor::SceneViewContext']]],
-  ['worldy_19',['worldY',['../struct_deki_editor_1_1_scene_view_context.html#a38a22312ed4c1b80fbbfb8b3ba597823',1,'DekiEditor::SceneViewContext']]],
-  ['write_20',['Write',['../namespace_deki_1_1_project_settings.html#aa980522f7fb2d282b82360c7ee2f7f0b',1,'Deki::ProjectSettings']]],
-  ['write_5fbinary_21',['WRITE_BINARY',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aab7c82c62e26c2043f55dca2a21a4045f',1,'Deki::IFileSystem']]],
-  ['write_5ftext_22',['WRITE_TEXT',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa407a6e340be304c7d40ff9d90858931d',1,'Deki::IFileSystem']]],
-  ['writeboundnumbers_23',['WriteBoundNumbers',['../namespace_deki.html#a4f2bdda636d292108b0ff5194ac30881',1,'Deki']]],
-  ['writeboundproperty_24',['WriteBoundProperty',['../namespace_deki.html#ad008be6af01fc7dbb33e9a1f8731800c',1,'Deki']]],
-  ['writefile_25',['WriteFile',['../class_deki_1_1_desktop_file_system.html#a9166afe6c4c12fa7ff2da7e492b2dc0d',1,'Deki::DesktopFileSystem::WriteFile()'],['../class_deki_1_1_i_file_system.html#ab7d6b2386ab5c1ca8b9c1034b1683139',1,'Deki::IFileSystem::WriteFile()']]],
-  ['writescene_26',['WriteScene',['../class_deki_1_1_scene_format_1_1_scene_msg_pack_writer.html#a945dfc2eb394b5c07a1281fd51dea6a5',1,'Deki::SceneFormat::SceneMsgPackWriter']]],
-  ['writetexfile_27',['WriteTexFile',['../class_deki_editor_1_1_texture_importer.html#a4a86f428b77b7884f6fb651c41eb6d09',1,'DekiEditor::TextureImporter']]]
+  ['x_0',['X',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a02129bb861061d1a052c592e2dc6b383',1,'Deki']]],
+  ['x_1',['x',['../struct_deki_1_1_world_transform.html#af025fb8300886228e5c2f4932199d5af',1,'Deki::WorldTransform::x'],['../struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed',1,'Deki::Vector2::x'],['../struct_deki_1_1_vector3.html#a2df631e15bcc99be032e883cf0b276e4',1,'Deki::Vector3::x'],['../struct_deki_editor_1_1_node_canvas_node.html#ab011ade95174a1d313aa5b0415b55646',1,'DekiEditor::NodeCanvasNode::x'],['../struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7',1,'DekiEditor::AtlasFrame::x'],['../struct_deki_editor_1_1_sprite_frame_data.html#aa55e2c7bb104650d63af43eced961993',1,'DekiEditor::SpriteFrameData::x']]]
 ];

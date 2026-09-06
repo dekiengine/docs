@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;AssetManager.h&gt;</code></p>
+<p><code>#include &lt;deki/assets/AssetManager.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a87b16cb241e74f744e0075d68fde83b5 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#a87b16cb241e74f744e0075d68fde83b5">Load</a> (const char *path, bool cache=false)</td></tr>
 <tr class="memdesc:a87b16cb241e74f744e0075d68fde83b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an asset by path (unified API).  <br /></td></tr>
 <tr class="memitem:adb7fc13362c90d10c6f7f0dd293f820a" id="r_adb7fc13362c90d10c6f7f0dd293f820a"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#adb7fc13362c90d10c6f7f0dd293f820a">LoadByGuidAndType</a> (const std::string &amp;guid, const char *assetType, bool cache=false)</td></tr>
-<tr class="memdesc:adb7fc13362c90d10c6f7f0dd293f820a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load asset by GUID and type name (for <a class="el" href="class_deki_1_1_lifecycle_manager.html" title="Manages Behaviour lifecycle (InternalAwake, Awake, Start, Update).">LifecycleManager</a>).  <br /></td></tr>
+<tr class="memdesc:adb7fc13362c90d10c6f7f0dd293f820a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load asset by GUID and type name (for LifecycleManager).  <br /></td></tr>
 <tr class="memitem:aafc831afc1ce169f4950e3e257d3fa32" id="r_aafc831afc1ce169f4950e3e257d3fa32"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#aafc831afc1ce169f4950e3e257d3fa32">LoadFromMemory</a> (const std::string &amp;guid, const char *assetType, const uint8_t *data, size_t size)</td></tr>
 <tr class="memdesc:aafc831afc1ce169f4950e3e257d3fa32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an asset from raw memory data (for pack file support).  <br /></td></tr>
 <tr class="memitem:a9f444ddb2a0ce4f9e3bff1eabaf5f334" id="r_a9f444ddb2a0ce4f9e3bff1eabaf5f334"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334">UnloadAll</a> ()</td></tr>
@@ -274,7 +274,7 @@ template&lt;typename T&gt; </div>
 <div class="line"><span class="keyword">auto</span>* scene = <a class="code hl_function" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">AssetManager::Get</a>()-&gt;<a class="code hl_function" href="#a87b16cb241e74f744e0075d68fde83b5">Load</a>&lt;<a class="code hl_class" href="class_deki_1_1_scene.html">Scene</a>&gt;(<span class="stringliteral">&quot;scenes/Demo&quot;</span>, <span class="keyword">true</span>);    <span class="comment">// fresh from cached bytes</span></div>
 <div class="ttc" id="aclass_deki_1_1_asset_manager_html_a0a7f01a791c9ff3f7ff78cfc05c1a855"><div class="ttname"><a href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Deki::AssetManager::Get</a></div><div class="ttdeci">static AssetManager * Get()</div><div class="ttdoc">Get the singleton instance.</div></div>
 <div class="ttc" id="aclass_deki_1_1_asset_manager_html_a87b16cb241e74f744e0075d68fde83b5"><div class="ttname"><a href="#a87b16cb241e74f744e0075d68fde83b5">Deki::AssetManager::Load</a></div><div class="ttdeci">T * Load(const char *path, bool cache=false)</div><div class="ttdoc">Load an asset by path (unified API).</div><div class="ttdef"><b>Definition</b> AssetManager.h:336</div></div>
-<div class="ttc" id="aclass_deki_1_1_scene_html"><div class="ttname"><a href="class_deki_1_1_scene.html">Deki::Scene</a></div><div class="ttdoc">Represents a scene containing objects and components.</div><div class="ttdef"><b>Definition</b> Scene.h:36</div></div>
+<div class="ttc" id="aclass_deki_1_1_scene_html"><div class="ttname"><a href="class_deki_1_1_scene.html">Deki::Scene</a></div><div class="ttdoc">Represents a scene containing objects and components.</div><div class="ttdef"><b>Definition</b> Scene.h:41</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -386,7 +386,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Load asset by GUID and type name (for <a class="el" href="class_deki_1_1_lifecycle_manager.html" title="Manages Behaviour lifecycle (InternalAwake, Awake, Start, Update).">LifecycleManager</a>). </p>
+<p>Load asset by GUID and type name (for LifecycleManager). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guid</td><td>The asset GUID </td></tr>
@@ -915,7 +915,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>deki-engine/src/assets/<a class="el" href="_asset_manager_8h.html">AssetManager.h</a></li>
+<li>deki-engine/include/deki/assets/<a class="el" href="_asset_manager_8h.html">AssetManager.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
