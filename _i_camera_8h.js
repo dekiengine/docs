@@ -8,5 +8,9 @@ var _i_camera_8h =
     [ "Deki::UnitMode", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3", [
       [ "Deki::UnitMode::Pixels", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1", null ],
       [ "Deki::UnitMode::Meters", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469", null ]
+    ] ],
+    [ "Deki::TemperatureUnit", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0d", [
+      [ "Deki::TemperatureUnit::Celsius", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0da1ef292971cad34ecb884283503bf86c1", null ],
+      [ "Deki::TemperatureUnit::Fahrenheit", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0dad119045e099e65e84e69e73b620a52e3", null ]
     ] ]
 ];

@@ -8,10 +8,11 @@ var searchData=
   ['componentfactory_5',['ComponentFactory',['../class_deki_1_1_component_factory.html',1,'Deki']]],
   ['componentmeta_6',['ComponentMeta',['../struct_deki_1_1_component_meta.html',1,'Deki']]],
   ['componentregistry_7',['ComponentRegistry',['../class_deki_1_1_component_registry.html',1,'Deki']]],
-  ['compoundcommand_8',['CompoundCommand',['../class_deki_editor_1_1_compound_command.html',1,'DekiEditor']]],
-  ['coreprojectsettings_9',['CoreProjectSettings',['../class_deki_1_1_core_project_settings.html',1,'Deki']]],
-  ['createmenuentry_10',['CreateMenuEntry',['../struct_deki_editor_1_1_create_menu_entry.html',1,'DekiEditor']]],
-  ['createmenuregistry_11',['CreateMenuRegistry',['../class_deki_editor_1_1_create_menu_registry.html',1,'DekiEditor']]],
-  ['customeditor_12',['CustomEditor',['../class_deki_editor_1_1_custom_editor.html',1,'DekiEditor']]],
-  ['customeditorregistry_13',['CustomEditorRegistry',['../class_deki_editor_1_1_custom_editor_registry.html',1,'DekiEditor']]]
+  ['componenttypeinfo_8',['ComponentTypeInfo',['../struct_deki_1_1_component_type_info.html',1,'Deki']]],
+  ['compoundcommand_9',['CompoundCommand',['../class_deki_editor_1_1_compound_command.html',1,'DekiEditor']]],
+  ['coreprojectsettings_10',['CoreProjectSettings',['../class_deki_1_1_core_project_settings.html',1,'Deki']]],
+  ['createmenuentry_11',['CreateMenuEntry',['../struct_deki_editor_1_1_create_menu_entry.html',1,'DekiEditor']]],
+  ['createmenuregistry_12',['CreateMenuRegistry',['../class_deki_editor_1_1_create_menu_registry.html',1,'DekiEditor']]],
+  ['customeditor_13',['CustomEditor',['../class_deki_editor_1_1_custom_editor.html',1,'DekiEditor']]],
+  ['customeditorregistry_14',['CustomEditorRegistry',['../class_deki_editor_1_1_custom_editor_registry.html',1,'DekiEditor']]]
 ];

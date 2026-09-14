@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -127,13 +127,11 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ae8a8fa88f887a6d7871141914eb6aa7c" id="r_ae8a8fa88f887a6d7871141914eb6aa7c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae8a8fa88f887a6d7871141914eb6aa7c">COMPONENT_REGISTRY_API</a></td></tr>
-<tr class="memitem:aea9567fc6aee3cea344324cae5db261a" id="r_aea9567fc6aee3cea344324cae5db261a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aea9567fc6aee3cea344324cae5db261a">REGISTER_COMPONENT</a>(ClassName)</td></tr>
-<tr class="memdesc:aea9567fc6aee3cea344324cae5db261a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically register a component at static initialization.  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="ae8a8fa88f887a6d7871141914eb6aa7c" name="ae8a8fa88f887a6d7871141914eb6aa7c"></a>
@@ -147,38 +145,6 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="aea9567fc6aee3cea344324cae5db261a" name="aea9567fc6aee3cea344324cae5db261a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea9567fc6aee3cea344324cae5db261a">&#9670;&#160;</a></span>REGISTER_COMPONENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REGISTER_COMPONENT</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ClassName</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">struct </span>ClassName##_Registrar                                             \</div>
-<div class="line">{                                                                               \</div>
-<div class="line">    ClassName##_Registrar()                                                     \</div>
-<div class="line">    {                                                                           \</div>
-<div class="line">        ::Deki::ComponentRegistry::Instance().Register(&amp;ClassName::GetComponentMeta()); \</div>
-<div class="line">    }                                                                           \</div>
-<div class="line">} s_##ClassName##_Registrar</div>
-</div><!-- fragment -->
-<p>Automatically register a component at static initialization. </p>
-<p>Uses GetComponentMeta() which returns a reference to a function-local static, ensuring the metadata is initialized before first use (avoids SIOF).</p>
-<p>On embedded platforms, this macro is a no-op since:</p><ul>
-<li>GetComponentMeta() is not declared (guarded by DEKI_EDITOR)</li>
-<li>ComponentRegistry is not needed for runtime scene loading</li>
-</ul>
-<p>Usage in .cpp file: <a class="el" href="#aea9567fc6aee3cea344324cae5db261a" title="Automatically register a component at static initialization.">REGISTER_COMPONENT(MyComponent)</a> </p>
 
 </div>
 </div>

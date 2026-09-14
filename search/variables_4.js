@@ -13,5 +13,6 @@ var searchData=
   ['errormessage_10',['errorMessage',['../struct_deki_editor_1_1_import_result.html#ae76ddd1788988abe4fead13565f637db',1,'DekiEditor::ImportResult']]],
   ['export_5ffilename_11',['EXPORT_FILENAME',['../namespace_deki_1_1_project_settings.html#ae0a9489872d1d6fee5221152f6cb59d7',1,'Deki::ProjectSettings']]],
   ['extension_12',['extension',['../struct_deki_editor_1_1_asset_cache_context.html#a1b93f106f3eff9a237c6b743acae55fc',1,'DekiEditor::AssetCacheContext']]],
-  ['extensions_13',['extensions',['../struct_deki_editor_1_1_asset_type_handler.html#a3ce6e0bfd38a57f65699d3d567583609',1,'DekiEditor::AssetTypeHandler']]]
+  ['extensions_13',['extensions',['../struct_deki_editor_1_1_asset_type_handler.html#a3ce6e0bfd38a57f65699d3d567583609',1,'DekiEditor::AssetTypeHandler']]],
+  ['external_14',['External',['../class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee',1,'Deki::Memory']]]
 ];

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -128,12 +128,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display/rendering settings.  <a href="struct_deki_1_1_project_settings_1_1_display_settings.html#details">More...</a><br /></td></tr>
 <tr class="memitem:RuntimeSettings" id="r_RuntimeSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_runtime_settings.html">RuntimeSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime settings (version 3+).  <a href="struct_deki_1_1_project_settings_1_1_runtime_settings.html#details">More...</a><br /></td></tr>
-<tr class="memitem:PipelineConfig" id="r_PipelineConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_pipeline_config.html">PipelineConfig</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afe0de3076b39d760eed2c6968ad6bc92" id="r_afe0de3076b39d760eed2c6968ad6bc92"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92">Load</a> (const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load project settings from binary file.  <br /></td></tr>
+<tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render pipeline configuration (version 4+).  <br /></td></tr>
 <tr class="memitem:aa3a74675706af66cae659f467f493e1d" id="r_aa3a74675706af66cae659f467f493e1d"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa3a74675706af66cae659f467f493e1d">GetTargetFPS</a> ()</td></tr>
 <tr class="memdesc:aa3a74675706af66cae659f467f493e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target FPS from loaded project settings.  <br /></td></tr>
 <tr class="memitem:a3ede2597091ba3cbec425d5fbdd4899d" id="r_a3ede2597091ba3cbec425d5fbdd4899d"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a3ede2597091ba3cbec425d5fbdd4899d">GetStartupScene</a> ()</td></tr>
@@ -147,7 +146,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a9b8fd73b7762fa6abb6f083aaa0a0c50" id="r_a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9b8fd73b7762fa6abb6f083aaa0a0c50">LoadFromFile</a> (const char *path=nullptr)</td></tr>
 <tr class="memdesc:a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load project settings from filesystem.  <br /></td></tr>
 <tr class="memitem:a888af89782768d83693cf5c8fd3b8041" id="r_a888af89782768d83693cf5c8fd3b8041"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a888af89782768d83693cf5c8fd3b8041">ReadPackageSettingBool</a> (const char *section, const char *key, bool &amp;out)</td></tr>
-<tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime lookup of one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Load project settings from binary file.">Load()</a>.  <br /></td></tr>
+<tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime lookup of one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a>.  <br /></td></tr>
 <tr class="memitem:af0e60e7c6f701d39e142589bac712755" id="r_af0e60e7c6f701d39e142589bac712755"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af0e60e7c6f701d39e142589bac712755">ReadPackageSettingInt32</a> (const char *section, const char *key, int32_t &amp;out)</td></tr>
 <tr class="memitem:a176b5cfa6939b893dc28d08b305fbb0f" id="r_a176b5cfa6939b893dc28d08b305fbb0f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a176b5cfa6939b893dc28d08b305fbb0f">ReadPackageSettingFloat</a> (const char *section, const char *key, float &amp;out)</td></tr>
 <tr class="memitem:aa980522f7fb2d282b82360c7ee2f7f0b" id="r_aa980522f7fb2d282b82360c7ee2f7f0b"><td class="memItemLeft">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa980522f7fb2d282b82360c7ee2f7f0b">Write</a> (int32_t displayWidth, int32_t displayHeight, uint8_t colorFormat, int32_t targetFPS=0, const char *startupScene=nullptr, const char *rendererName=nullptr, const char *const *passNames=nullptr, int passCount=0)</td></tr>
@@ -160,9 +159,6 @@ Variables</h2></td></tr>
 <tr class="memitem:aa27a7a0a5e4ff20ff12a6779817f749f" id="r_aa27a7a0a5e4ff20ff12a6779817f749f"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa27a7a0a5e4ff20ff12a6779817f749f">MAGIC</a> = 0x444B5052</td></tr>
 <tr class="memitem:a59f6a993741fb5a7f56c3a7dda9d5121" id="r_a59f6a993741fb5a7f56c3a7dda9d5121"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a59f6a993741fb5a7f56c3a7dda9d5121">VERSION</a> = 5</td></tr>
 <tr class="memitem:a62b4f8fa6722ea85ea883bed2cfe9aab" id="r_a62b4f8fa6722ea85ea883bed2cfe9aab"><td class="memItemLeft">constexpr size_t&#160;</td><td class="memItemRight"><a class="el" href="#a62b4f8fa6722ea85ea883bed2cfe9aab">MAX_FILE_SIZE</a> = 16384</td></tr>
-<tr class="memitem:ade750b777b58fdd2a82668789ac70c05" id="r_ade750b777b58fdd2a82668789ac70c05"><td class="memItemLeft">static constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#ade750b777b58fdd2a82668789ac70c05">MAX_PIPELINE_NAME</a> = 32</td></tr>
-<tr class="memdesc:ade750b777b58fdd2a82668789ac70c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render pipeline configuration (version 4+).  <br /></td></tr>
-<tr class="memitem:a23f126a424212856344ad15c38ee9aa8" id="r_a23f126a424212856344ad15c38ee9aa8"><td class="memItemLeft">static constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#a23f126a424212856344ad15c38ee9aa8">MAX_PASSES</a> = 8</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="afe0de3076b39d760eed2c6968ad6bc92" name="afe0de3076b39d760eed2c6968ad6bc92"></a>
@@ -184,8 +180,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load project settings from binary file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Render pipeline configuration (version 4+). </p>
+<p>Baked from the .rpipeline asset at export time: which renderer to activate and which passes to run, read back through <a class="el" href="#a2567174a33b1829969a67f85a855fe8b" title="Get the render pipeline renderer name (version 4+).">GetRenderPipeline()</a>, <a class="el" href="#af40d68695cc65e961d3cc2616d202aa1" title="Get the number of render passes in the pipeline (version 4+).">GetPassCount()</a> and <a class="el" href="#ad64bb5928fb4b3bfb71516c82fa04edd" title="Get the name of a render pass by index (version 4+).">GetPassName()</a>. Both the renderer name and each pass name are stored as a length followed by bytes, so neither the count nor the length of a name is capped by this format. The one ceiling is the pass count's own width, one byte.</p>
+<p>Load project settings from binary file </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to file data </td></tr>
     <tr><td class="paramname">size</td><td>Size of file data </td></tr>
@@ -352,8 +349,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runtime lookup of one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Load project settings from binary file.">Load()</a>. </p>
-<p><span class="tt">section</span> is the DEKI_PROJECT_SETTINGS_SECTION name (e.g. "Rendering"), <span class="tt">key</span> the reflected field name. Works without the settings registry, which device builds do not have (the generic hydration in <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Load project settings from binary file.">Load()</a> needs the registry's metadata); editor builds should read the registry instance. Returns false when no file is loaded, the section or key is absent, or the stored type is not the one asked for. </p>
+<p>Runtime lookup of one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a>. </p>
+<p><span class="tt">section</span> is the DEKI_PROJECT_SETTINGS_SECTION name (e.g. "Rendering"), <span class="tt">key</span> the reflected field name. Works without the settings registry, which device builds do not have (the generic hydration in <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a> needs the registry's metadata); editor builds should read the registry instance. Returns false when no file is loaded, the section or key is absent, or the stored type is not the one asked for. </p>
 
 </div>
 </div>
@@ -579,53 +576,6 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade750b777b58fdd2a82668789ac70c05" name="ade750b777b58fdd2a82668789ac70c05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade750b777b58fdd2a82668789ac70c05">&#9670;&#160;</a></span>MAX_PIPELINE_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Deki::ProjectSettings::MAX_PIPELINE_NAME = 32</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Render pipeline configuration (version 4+). </p>
-<p>Baked from .rpipeline asset at export time. Specifies which renderer and render passes to activate. </p>
-
-</div>
-</div>
-<a id="a23f126a424212856344ad15c38ee9aa8" name="a23f126a424212856344ad15c38ee9aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f126a424212856344ad15c38ee9aa8">&#9670;&#160;</a></span>MAX_PASSES</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Deki::ProjectSettings::MAX_PASSES = 8</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

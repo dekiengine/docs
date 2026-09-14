@@ -1,27 +1,33 @@
 var annotated_dup =
 [
     [ "Deki", "namespace_deki.html", [
+      [ "detail", "namespace_deki_1_1detail.html", [
+        [ "TypeNameProbe", "struct_deki_1_1detail_1_1_type_name_probe.html", "struct_deki_1_1detail_1_1_type_name_probe" ],
+        [ "TypeNameStorage", "struct_deki_1_1detail_1_1_type_name_storage.html", null ],
+        [ "TypeShortNameStorage", "struct_deki_1_1detail_1_1_type_short_name_storage.html", null ]
+      ] ],
       [ "ProjectSettings", "namespace_deki_1_1_project_settings.html", [
         [ "FileHeader", "struct_deki_1_1_project_settings_1_1_file_header.html", "struct_deki_1_1_project_settings_1_1_file_header" ],
         [ "DisplaySettings", "struct_deki_1_1_project_settings_1_1_display_settings.html", "struct_deki_1_1_project_settings_1_1_display_settings" ],
-        [ "RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", "struct_deki_1_1_project_settings_1_1_runtime_settings" ],
-        [ "PipelineConfig", "struct_deki_1_1_project_settings_1_1_pipeline_config.html", "struct_deki_1_1_project_settings_1_1_pipeline_config" ]
+        [ "RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", "struct_deki_1_1_project_settings_1_1_runtime_settings" ]
       ] ],
       [ "SceneFormat", "namespace_deki_1_1_scene_format.html", [
         [ "SceneMsgPackParser", "class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html", "class_deki_1_1_scene_format_1_1_scene_msg_pack_parser" ],
         [ "SceneMsgPackWriter", "class_deki_1_1_scene_format_1_1_scene_msg_pack_writer.html", "class_deki_1_1_scene_format_1_1_scene_msg_pack_writer" ]
       ] ],
+      [ "AllocContext", "struct_deki_1_1_alloc_context.html", "struct_deki_1_1_alloc_context" ],
       [ "AssetLookupTable", "class_deki_1_1_asset_lookup_table.html", "class_deki_1_1_asset_lookup_table" ],
       [ "AssetManager", "class_deki_1_1_asset_manager.html", "class_deki_1_1_asset_manager" ],
       [ "AssetPackReader", "class_deki_1_1_asset_pack_reader.html", "class_deki_1_1_asset_pack_reader" ],
       [ "AssetRef", "struct_deki_1_1_asset_ref.html", "struct_deki_1_1_asset_ref" ],
       [ "AssetRefBase", "struct_deki_1_1_asset_ref_base.html", "struct_deki_1_1_asset_ref_base" ],
-      [ "Behaviour", "class_deki_1_1_behaviour.html", "class_deki_1_1_behaviour" ],
+      [ "Buffer", "class_deki_1_1_buffer.html", "class_deki_1_1_buffer" ],
       [ "Color", "class_deki_1_1_color.html", "class_deki_1_1_color" ],
       [ "Component", "class_deki_1_1_component.html", "class_deki_1_1_component" ],
       [ "ComponentFactory", "class_deki_1_1_component_factory.html", "class_deki_1_1_component_factory" ],
       [ "ComponentMeta", "struct_deki_1_1_component_meta.html", "struct_deki_1_1_component_meta" ],
       [ "ComponentRegistry", "class_deki_1_1_component_registry.html", "class_deki_1_1_component_registry" ],
+      [ "ComponentTypeInfo", "struct_deki_1_1_component_type_info.html", "struct_deki_1_1_component_type_info" ],
       [ "CoreProjectSettings", "class_deki_1_1_core_project_settings.html", "class_deki_1_1_core_project_settings" ],
       [ "DesktopFileSystem", "class_deki_1_1_desktop_file_system.html", "class_deki_1_1_desktop_file_system" ],
       [ "DesktopMemoryProvider", "class_deki_1_1_desktop_memory_provider.html", "class_deki_1_1_desktop_memory_provider" ],
@@ -68,11 +74,12 @@ var annotated_dup =
       [ "SettingsRegistry", "class_deki_1_1_settings_registry.html", "class_deki_1_1_settings_registry" ],
       [ "SettingsTypeInfo", "struct_deki_1_1_settings_type_info.html", "struct_deki_1_1_settings_type_info" ],
       [ "SetupComponent", "class_deki_1_1_setup_component.html", "class_deki_1_1_setup_component" ],
+      [ "Texture2D", "class_deki_1_1_texture2_d.html", "class_deki_1_1_texture2_d" ],
       [ "Time", "class_deki_1_1_time.html", "class_deki_1_1_time" ],
       [ "UnitProjectSettings", "class_deki_1_1_unit_project_settings.html", "class_deki_1_1_unit_project_settings" ],
+      [ "Vector", "class_deki_1_1_vector.html", "class_deki_1_1_vector" ],
       [ "Vector2", "struct_deki_1_1_vector2.html", "struct_deki_1_1_vector2" ],
-      [ "Vector3", "struct_deki_1_1_vector3.html", "struct_deki_1_1_vector3" ],
-      [ "WorldTransform", "struct_deki_1_1_world_transform.html", "struct_deki_1_1_world_transform" ]
+      [ "Vector3", "struct_deki_1_1_vector3.html", "struct_deki_1_1_vector3" ]
     ] ],
     [ "DekiEditor", "namespace_deki_editor.html", [
       [ "AssetCacheContext", "struct_deki_editor_1_1_asset_cache_context.html", "struct_deki_editor_1_1_asset_cache_context" ],

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -131,7 +131,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -197,8 +197,9 @@ Typedefs</h2></td></tr>
 <div class="line">            [](<span class="keywordtype">void</span>* a) { <span class="keyword">delete</span> <span class="keyword">static_cast&lt;</span>TypeName*<span class="keyword">&gt;</span>(a); }); \</div>
 <div class="line">    }                                                           \</div>
 <div class="line">};                                                              \</div>
-<div class="line"><span class="keyword">static</span> _AssetTypeReg_##TypeName _assetReg_##TypeName;           \</div>
+<div class="line"><span class="keyword">static</span> _AssetTypeReg_##<a class="code hl_function" href="namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e">TypeName</a> _assetReg_##<a class="code hl_function" href="namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e">TypeName</a>;           \</div>
 <div class="line">}</div>
+<div class="ttc" id="anamespace_deki_html_a2888277aacc64b2b8fb8aa20f1e6719e"><div class="ttname"><a href="namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e">Deki::TypeName</a></div><div class="ttdeci">constexpr const char * TypeName()</div><div class="ttdoc">The fully qualified name of T as a null-terminated string with static storage.</div><div class="ttdef"><b>Definition</b> TypeId.h:161</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,7 +239,7 @@ Typedefs</h2></td></tr>
 <div class="line">            [](<span class="keyword">const</span> uint8_t* d, <span class="keywordtype">size_t</span> s) -&gt; <span class="keywordtype">void</span>* { <span class="keywordflow">return</span> MemLoadFunc(d, s); }); \</div>
 <div class="line">    }                                                                               \</div>
 <div class="line">};                                                                                  \</div>
-<div class="line"><span class="keyword">static</span> _AssetTypeReg_##TypeName _assetReg_##TypeName;                               \</div>
+<div class="line"><span class="keyword">static</span> _AssetTypeReg_##<a class="code hl_function" href="namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e">TypeName</a> _assetReg_##<a class="code hl_function" href="namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e">TypeName</a>;                               \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

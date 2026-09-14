@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -159,7 +159,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Registry for package-extensible project-settings types. </p>
-<p>Packages declare settings types as ordinary DekiComponents tagged with DEKI_PROJECT_SETTINGS_SECTION("..."), then call DEKI_REGISTER_PROJECT_SETTINGS (engine-core) or DEKI_REGISTER_PROJECT_SETTINGS_PLUGIN (package DLL) at static init. The editor's Project Settings panel iterates the registry and renders each type's properties via the existing PropertyEditorFactory machinery — tooltips, ranges, visibility conditions all work out of the box.</p>
+<p>Packages declare settings types as ordinary components with a DEKI_SETTINGS_SECTION("...") marker above the class; the reflection codegen registers them here from the package's registration function. The editor's Project Settings panel iterates the registry and renders each type's properties via the existing PropertyEditorFactory machinery — tooltips, ranges, visibility conditions all work out of the box.</p>
 <p>The registry <b>owns</b> the live instance (one per registered type), unlike <a class="el" href="class_deki_1_1_component_registry.html">ComponentRegistry</a> which only owns metadata. Plugin instances are deleted before FreeLibrary via ClearPluginSettings to avoid dangling vtables. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="afcae4469932a58ebdc8b0b5413c6dc14" name="afcae4469932a58ebdc8b0b5413c6dc14"></a>
@@ -210,7 +210,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sectionName</td><td>UI section header &amp; lookup key (e.g. "Rendering") </td></tr>
-    <tr><td class="paramname">meta</td><td><a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> metadata; must contain a working createFunc. </td></tr>
+    <tr><td class="paramname">meta</td><td><a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a> metadata; must contain a working createFunc. </td></tr>
   </table>
   </dd>
 </dl>

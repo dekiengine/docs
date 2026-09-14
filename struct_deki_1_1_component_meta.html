@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_1_
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> metadata for runtime reflection.  
+<p><a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a> metadata for runtime reflection.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/reflection/Property.h&gt;</code></p>
@@ -148,9 +148,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a39f3022f73a0365467320d3fe0c662d8" id="r_a39f3022f73a0365467320d3fe0c662d8"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a39f3022f73a0365467320d3fe0c662d8">displayNameBuffer</a> [64]</td></tr>
 <tr class="memitem:a403d77a5f678dd060d19a36223034910" id="r_a403d77a5f678dd060d19a36223034910"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a403d77a5f678dd060d19a36223034910">displayNameGenerated</a></td></tr>
 <tr class="memitem:a88146e8c33121de0c8460a3f5fce74a3" id="r_a88146e8c33121de0c8460a3f5fce74a3"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a88146e8c33121de0c8460a3f5fce74a3">displayNameOverride</a> = nullptr</td></tr>
+<tr class="memitem:a80e5fc5c69b79fe85d878e96ea4f722a" id="r_a80e5fc5c69b79fe85d878e96ea4f722a"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a80e5fc5c69b79fe85d878e96ea4f722a">settingsSection</a> = nullptr</td></tr>
+<tr class="memitem:a227d410684ba44b3051aec689c5e87ff" id="r_a227d410684ba44b3051aec689c5e87ff"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a227d410684ba44b3051aec689c5e87ff">typeInfo</a> = nullptr</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> metadata for runtime reflection. </p>
+<div class="textblock"><p><a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a> metadata for runtime reflection. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a07a093fa1f0892a5a754085472e6cfa3" name="a07a093fa1f0892a5a754085472e6cfa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07a093fa1f0892a5a754085472e6cfa3">&#9670;&#160;</a></span>GetDisplayName()</h2>
@@ -426,6 +428,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const char* Deki::ComponentMeta::displayNameOverride = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80e5fc5c69b79fe85d878e96ea4f722a" name="a80e5fc5c69b79fe85d878e96ea4f722a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e5fc5c69b79fe85d878e96ea4f722a">&#9670;&#160;</a></span>settingsSection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::ComponentMeta::settingsSection = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a227d410684ba44b3051aec689c5e87ff" name="a227d410684ba44b3051aec689c5e87ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227d410684ba44b3051aec689c5e87ff">&#9670;&#160;</a></span>typeInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a>* Deki::ComponentMeta::typeInfo = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

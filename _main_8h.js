@@ -1,4 +1,4 @@
 var _main_8h =
 [
-    [ "Deki::DekiMain", "namespace_deki.html#a8b1b03df6f6dd63de4995534963b8fc0", null ]
+    [ "Deki::Main", "namespace_deki.html#af64b4d9477b213c321f2be937b2f892f", null ]
 ];

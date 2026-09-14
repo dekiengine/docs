@@ -2,7 +2,7 @@ var searchData=
 [
   ['_7eassetfilewatcher_0',['~AssetFileWatcher',['../class_deki_editor_1_1_asset_file_watcher.html#a1a0ee98333e2e440b860748b43df4c85',1,'DekiEditor::AssetFileWatcher']]],
   ['_7eassetpipeline_1',['~AssetPipeline',['../class_deki_editor_1_1_asset_pipeline.html#a8d40d98931313225eedab051fad69161',1,'DekiEditor::AssetPipeline']]],
-  ['_7ebehaviour_2',['~Behaviour',['../class_deki_1_1_behaviour.html#a81d7fd39475b5f4bc411276f8dc8f969',1,'Deki::Behaviour']]],
+  ['_7ebuffer_2',['~Buffer',['../class_deki_1_1_buffer.html#ae66b92c2256d8861742424c5e97d4b4c',1,'Deki::Buffer']]],
   ['_7ecommand_3',['~Command',['../class_deki_editor_1_1_command.html#ad0db63d029d1bb57b7c0ca3c5ce01a21',1,'DekiEditor::Command']]],
   ['_7ecomponent_4',['~Component',['../class_deki_1_1_component.html#ae82533ccf668b24699357c439e5fb90d',1,'Deki::Component']]],
   ['_7ecustomeditor_5',['~CustomEditor',['../class_deki_editor_1_1_custom_editor.html#ae974afa2de5b92df30bd78bfa141c4f2',1,'DekiEditor::CustomEditor']]],
@@ -28,5 +28,7 @@ var searchData=
   ['_7eplatformsetupcomponent_25',['~PlatformSetupComponent',['../class_deki_1_1_platform_setup_component.html#a6a462f5ac38306e9c6e6aba8cb29397e',1,'Deki::PlatformSetupComponent']]],
   ['_7escene_26',['~Scene',['../class_deki_1_1_scene.html#a9ec70d7ad698cded416a6761da1c96f9',1,'Deki::Scene']]],
   ['_7escenesystem_27',['~SceneSystem',['../class_deki_1_1_scene_system.html#a6fbe523e7a55c6d03bf624c60a74966b',1,'Deki::SceneSystem']]],
-  ['_7esetupcomponent_28',['~SetupComponent',['../class_deki_1_1_setup_component.html#ac1c3ea4ebc1fe1f6f129347f38231660',1,'Deki::SetupComponent']]]
+  ['_7esetupcomponent_28',['~SetupComponent',['../class_deki_1_1_setup_component.html#ac1c3ea4ebc1fe1f6f129347f38231660',1,'Deki::SetupComponent']]],
+  ['_7etexture2d_29',['~Texture2D',['../class_deki_1_1_texture2_d.html#a562c35115a63e2ac0842b3f34cb1f28c',1,'Deki::Texture2D']]],
+  ['_7evector_30',['~Vector',['../class_deki_1_1_vector.html#ae63ed49891434f8c5c3da3b85b2a05c7',1,'Deki::Vector']]]
 ];

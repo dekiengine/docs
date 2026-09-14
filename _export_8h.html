@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -139,7 +139,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DLL export/import annotation for engine-core symbols. </p>
-<p>Split out of DekiEngine.h so that headers needing only the annotation — <a class="el" href="_scene_8h.html">Scene.h</a>, for one — do not have to include DekiEngine.h, which includes <a class="el" href="_scene_8h.html">Scene.h</a> right back. That cycle survived only on #pragma once and made the two headers order-dependent.</p>
+<p>Split out of <a class="el" href="_engine_8h.html">Engine.h</a> so that headers needing only the annotation — <a class="el" href="_scene_8h.html">Scene.h</a>, for one — do not have to include <a class="el" href="_engine_8h.html">Engine.h</a>, which includes <a class="el" href="_scene_8h.html">Scene.h</a> right back. That cycle survived only on #pragma once and made the two headers order-dependent.</p>
 <p>Expands to nothing outside the editor build: runtime and embedded targets link the engine statically, so there is no import library to annotate. </p>
 
 </div>

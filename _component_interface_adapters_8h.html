@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_component_int
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 <tr class="memitem:Deki_3A_3AComponentInterfaceAdapters" id="r_Deki_3A_3AComponentInterfaceAdapters"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_component_interface_adapters.html">Deki::ComponentInterfaceAdapters</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -150,13 +150,14 @@ Functions</h2></td></tr>
 <div class="line"><span class="keyword">static</span> <span class="keyword">struct </span>MyAdapterRegistrar {</div>
 <div class="line">    MyAdapterRegistrar() {</div>
 <div class="line">        ComponentInterfaceAdapters::Register(</div>
-<div class="line">            IClipProvider::InterfaceID, MyComponent::StaticType,</div>
+<div class="line">            IClipProvider::InterfaceID, <a class="code hl_function" href="namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240">::Deki::TypeId&lt;MyComponent&gt;</a>(),</div>
 <div class="line">            [](Component* c) -&gt; <span class="keywordtype">void</span>* {</div>
 <div class="line">                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>IClipProvider*<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>MyComponent*<span class="keyword">&gt;</span>(c));</div>
 <div class="line">            });</div>
 <div class="line">    }</div>
 <div class="line">} s_reg;</div>
 <div class="ttc" id="a_component_interface_adapters_8h_html"><div class="ttname"><a href="_component_interface_adapters_8h.html">ComponentInterfaceAdapters.h</a></div><div class="ttdoc">Registry for extracting interfaces from components without RTTI or vtable changes.</div></div>
+<div class="ttc" id="anamespace_deki_html_ab5bdec23918eba2d71e607be5fb33240"><div class="ttname"><a href="namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240">Deki::TypeId</a></div><div class="ttdeci">constexpr ComponentType TypeId()</div><div class="ttdoc">The component type id of T: HashString of its fully qualified name.</div><div class="ttdef"><b>Definition</b> TypeId.h:131</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

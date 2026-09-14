@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -115,29 +115,56 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_memory_8h.htm
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Memory.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:Deki_3A_3AAllocContext" id="r_Deki_3A_3AAllocContext"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_alloc_context.html">Deki::AllocContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Who asked for an allocation.  <a href="struct_deki_1_1_alloc_context.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Deki_3A_3AMemoryStats" id="r_Deki_3A_3AMemoryStats"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_memory_stats.html">Deki::MemoryStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> statistics structure.  <a href="struct_deki_1_1_memory_stats.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Deki_3A_3AMemory" id="r_Deki_3A_3AMemory"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_memory.html">Deki::Memory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>.  <a href="class_deki_1_1_memory.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base texture class for V-Engine.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>.  <a href="class_deki_1_1_memory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Deki_3A_3AMemory_3A_3ARegion" id="r_Deki_3A_3AMemory_3A_3ARegion"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Deki::Memory::Region</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where an allocation lives.  <a href="struct_deki_1_1_memory_1_1_region.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
+<tr class="memitem:Deki_3A_3Adetail" id="r_Deki_3A_3Adetail"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1detail.html">Deki::detail</a></td></tr>
+<tr class="memdesc:namespace_deki_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class entry for a component the codegen never saw (a test double, a type defined in a .cpp). <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a48e4f41b4eda811c9555c773fccb673a" id="r_a48e4f41b4eda811c9555c773fccb673a"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a48e4f41b4eda811c9555c773fccb673a">Deki::MemorySubsystem</a> : uint8_t { <a class="el" href="namespace_deki.html#a48e4f41b4eda811c9555c773fccb673aab61773b9b3968a9988d765d728985862">Deki::GENERAL</a> = 0
- }</td></tr>
-<tr class="memdesc:a48e4f41b4eda811c9555c773fccb673a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> subsystem types - simplified (kept for compatibility).  <a href="namespace_deki.html#a48e4f41b4eda811c9555c773fccb673a">More...</a><br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aeba50fe3924abf257cbc1fe610d589f8" id="r_aeba50fe3924abf257cbc1fe610d589f8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeba50fe3924abf257cbc1fe610d589f8">DEKI_ALLOC_CONTEXT_CAPTURE</a>&#160;&#160;&#160;1</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a90da7e8bb5d951e80042366b76e2e46e" id="r_a90da7e8bb5d951e80042366b76e2e46e"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1detail.html#a90da7e8bb5d951e80042366b76e2e46e">Deki::detail::RawAllocate</a> (size_t size)</td></tr>
+<tr class="memitem:aeb6f9b417c20e4c5d6475492e0fb68e4" id="r_aeb6f9b417c20e4c5d6475492e0fb68e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1detail.html#aeb6f9b417c20e4c5d6475492e0fb68e4">Deki::detail::RawFree</a> (void *ptr)</td></tr>
+<tr class="memitem:a25ae7b8519675964d4d185d32755d5b4" id="r_a25ae7b8519675964d4d185d32755d5b4"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a25ae7b8519675964d4d185d32755d5b4">Deki::HashName</a> (const char *s)</td></tr>
+<tr class="memdesc:a25ae7b8519675964d4d185d32755d5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">FNV-1a over a name, at compile time.  <br /></td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="aeba50fe3924abf257cbc1fe610d589f8" name="aeba50fe3924abf257cbc1fe610d589f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba50fe3924abf257cbc1fe610d589f8">&#9670;&#160;</a></span>DEKI_ALLOC_CONTEXT_CAPTURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEKI_ALLOC_CONTEXT_CAPTURE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

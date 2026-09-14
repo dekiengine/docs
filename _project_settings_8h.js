@@ -3,7 +3,6 @@ var _project_settings_8h =
     [ "Deki::ProjectSettings::FileHeader", "struct_deki_1_1_project_settings_1_1_file_header.html", "struct_deki_1_1_project_settings_1_1_file_header" ],
     [ "Deki::ProjectSettings::DisplaySettings", "struct_deki_1_1_project_settings_1_1_display_settings.html", "struct_deki_1_1_project_settings_1_1_display_settings" ],
     [ "Deki::ProjectSettings::RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", "struct_deki_1_1_project_settings_1_1_runtime_settings" ],
-    [ "Deki::ProjectSettings::PipelineConfig", "struct_deki_1_1_project_settings_1_1_pipeline_config.html", "struct_deki_1_1_project_settings_1_1_pipeline_config" ],
     [ "Deki::ProjectSettings::Load", "namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92", null ],
     [ "Deki::ProjectSettings::GetTargetFPS", "namespace_deki_1_1_project_settings.html#aa3a74675706af66cae659f467f493e1d", null ],
     [ "Deki::ProjectSettings::GetStartupScene", "namespace_deki_1_1_project_settings.html#a3ede2597091ba3cbec425d5fbdd4899d", null ],
@@ -19,7 +18,5 @@ var _project_settings_8h =
     [ "Deki::ProjectSettings::EXPORT_FILENAME", "namespace_deki_1_1_project_settings.html#ae0a9489872d1d6fee5221152f6cb59d7", null ],
     [ "Deki::ProjectSettings::MAGIC", "namespace_deki_1_1_project_settings.html#aa27a7a0a5e4ff20ff12a6779817f749f", null ],
     [ "Deki::ProjectSettings::VERSION", "namespace_deki_1_1_project_settings.html#a59f6a993741fb5a7f56c3a7dda9d5121", null ],
-    [ "Deki::ProjectSettings::MAX_FILE_SIZE", "namespace_deki_1_1_project_settings.html#a62b4f8fa6722ea85ea883bed2cfe9aab", null ],
-    [ "Deki::ProjectSettings::MAX_PIPELINE_NAME", "namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05", null ],
-    [ "Deki::ProjectSettings::MAX_PASSES", "namespace_deki_1_1_project_settings.html#a23f126a424212856344ad15c38ee9aa8", null ]
+    [ "Deki::ProjectSettings::MAX_FILE_SIZE", "namespace_deki_1_1_project_settings.html#a62b4f8fa6722ea85ea883bed2cfe9aab", null ]
 ];

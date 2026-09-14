@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -130,24 +130,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a76b25b5dcfb5044924c2a21799a2ea36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the memory backend.  <br /></td></tr>
 <tr class="memitem:adbb44f4b25eaac6d59afb1207e56840a" id="r_adbb44f4b25eaac6d59afb1207e56840a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#adbb44f4b25eaac6d59afb1207e56840a">Shutdown</a> ()=0</td></tr>
 <tr class="memdesc:adbb44f4b25eaac6d59afb1207e56840a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the memory backend.  <br /></td></tr>
-<tr class="memitem:ae317db73b1eb0f3a36b07dbf2ab4e97a" id="r_ae317db73b1eb0f3a36b07dbf2ab4e97a"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ae317db73b1eb0f3a36b07dbf2ab4e97a">HasExternalRAM</a> () const =0</td></tr>
-<tr class="memdesc:ae317db73b1eb0f3a36b07dbf2ab4e97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if external RAM (PSRAM, SDRAM, etc.) is available.  <br /></td></tr>
-<tr class="memitem:a2c093f630f4818250959d2b6ecafa1d8" id="r_a2c093f630f4818250959d2b6ecafa1d8"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#a2c093f630f4818250959d2b6ecafa1d8">GetTotalExternalRAM</a> () const =0</td></tr>
-<tr class="memdesc:a2c093f630f4818250959d2b6ecafa1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total external RAM size in bytes.  <br /></td></tr>
-<tr class="memitem:a04bbc2a80895e1cbd6bc7688f7ef34db" id="r_a04bbc2a80895e1cbd6bc7688f7ef34db"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#a04bbc2a80895e1cbd6bc7688f7ef34db">GetAvailableExternalRAM</a> () const =0</td></tr>
-<tr class="memdesc:a04bbc2a80895e1cbd6bc7688f7ef34db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available (free) external RAM size in bytes.  <br /></td></tr>
-<tr class="memitem:a5ec2f3d82a718e0649aaa6a80146edd1" id="r_a5ec2f3d82a718e0649aaa6a80146edd1"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#a5ec2f3d82a718e0649aaa6a80146edd1">AllocateExternal</a> (size_t size)=0</td></tr>
-<tr class="memdesc:a5ec2f3d82a718e0649aaa6a80146edd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory from external RAM.  <br /></td></tr>
-<tr class="memitem:a7bc5e5144867d1a7ac7f51edb9eede32" id="r_a7bc5e5144867d1a7ac7f51edb9eede32"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a7bc5e5144867d1a7ac7f51edb9eede32">FreeExternal</a> (void *ptr)=0</td></tr>
-<tr class="memdesc:a7bc5e5144867d1a7ac7f51edb9eede32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated from external RAM.  <br /></td></tr>
-<tr class="memitem:afad0350165c439f15b1c52150326cb70" id="r_afad0350165c439f15b1c52150326cb70"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#afad0350165c439f15b1c52150326cb70">IsExternalPointer</a> (void *ptr) const =0</td></tr>
-<tr class="memdesc:afad0350165c439f15b1c52150326cb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a pointer is in external RAM address range.  <br /></td></tr>
-<tr class="memitem:a5ff08e32b526a627a979e4e669dba66a" id="r_a5ff08e32b526a627a979e4e669dba66a"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#a5ff08e32b526a627a979e4e669dba66a">AllocateInternal</a> (size_t size)</td></tr>
-<tr class="memdesc:a5ff08e32b526a627a979e4e669dba66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory from internal RAM only (never external).  <br /></td></tr>
-<tr class="memitem:ab43d166220146823f5fc9e2b3b3eb34e" id="r_ab43d166220146823f5fc9e2b3b3eb34e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab43d166220146823f5fc9e2b3b3eb34e">FreeInternal</a> (void *ptr)</td></tr>
-<tr class="memdesc:ab43d166220146823f5fc9e2b3b3eb34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block from AllocateInternal.  <br /></td></tr>
-<tr class="memitem:aa4d842b7eaf9cc7f082eec1f1dea4ce0" id="r_aa4d842b7eaf9cc7f082eec1f1dea4ce0"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#aa4d842b7eaf9cc7f082eec1f1dea4ce0">GetAvailableInternalRAM</a> () const</td></tr>
-<tr class="memdesc:aa4d842b7eaf9cc7f082eec1f1dea4ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available internal RAM size in bytes.  <br /></td></tr>
+<tr class="memitem:a9100a788833bdf32f750f1532da94c24" id="r_a9100a788833bdf32f750f1532da94c24"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a9100a788833bdf32f750f1532da94c24">Serves</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region) const =0</td></tr>
+<tr class="memdesc:a9100a788833bdf32f750f1532da94c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if external RAM (PSRAM, SDRAM, etc.) is available.  <br /></td></tr>
+<tr class="memitem:a89385c115474ccb72142b13d7fa58eca" id="r_a89385c115474ccb72142b13d7fa58eca"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#a89385c115474ccb72142b13d7fa58eca">Allocate</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, size_t bytes, bool needsDma)=0</td></tr>
+<tr class="memdesc:a89385c115474ccb72142b13d7fa58eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate <span class="tt">bytes</span> from <span class="tt">region</span>.  <br /></td></tr>
+<tr class="memitem:adbbe4bef937d261a80120f4021176cfd" id="r_adbbe4bef937d261a80120f4021176cfd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#adbbe4bef937d261a80120f4021176cfd">Free</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, void *ptr)=0</td></tr>
+<tr class="memdesc:adbbe4bef937d261a80120f4021176cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a block obtained from <span class="tt">region</span>.  <br /></td></tr>
+<tr class="memitem:ab7d85a1c69a9d37bbc4a8960a0702cca" id="r_ab7d85a1c69a9d37bbc4a8960a0702cca"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#ab7d85a1c69a9d37bbc4a8960a0702cca">GetAvailable</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region) const =0</td></tr>
+<tr class="memdesc:ab7d85a1c69a9d37bbc4a8960a0702cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes still available in <span class="tt">region</span>, or 0 where the platform cannot say.  <br /></td></tr>
+<tr class="memitem:acb0fb7704e635ba1084529a409293fe8" id="r_acb0fb7704e635ba1084529a409293fe8"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#acb0fb7704e635ba1084529a409293fe8">AllocateRaw</a> (size_t size)</td></tr>
+<tr class="memdesc:acb0fb7704e635ba1084529a409293fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate with natural alignment and no engine bookkeeping.  <br /></td></tr>
+<tr class="memitem:a69dbfc6e6bfed0a3699302c95f538b42" id="r_a69dbfc6e6bfed0a3699302c95f538b42"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a69dbfc6e6bfed0a3699302c95f538b42">FreeRaw</a> (void *ptr)</td></tr>
+<tr class="memdesc:a69dbfc6e6bfed0a3699302c95f538b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block from AllocateRaw. Override both or neither.  <br /></td></tr>
+<tr class="memitem:a807ec8dd4221d87a2154ba710b83d991" id="r_a807ec8dd4221d87a2154ba710b83d991"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#a807ec8dd4221d87a2154ba710b83d991">GetRawBlockSize</a> (void *ptr) const</td></tr>
+<tr class="memdesc:a807ec8dd4221d87a2154ba710b83d991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usable size of a block from AllocateRaw.  <br /></td></tr>
 </table>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8316242526953f0624c210957fe80d87" name="a8316242526953f0624c210957fe80d87"></a>
@@ -235,8 +231,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae317db73b1eb0f3a36b07dbf2ab4e97a" name="ae317db73b1eb0f3a36b07dbf2ab4e97a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae317db73b1eb0f3a36b07dbf2ab4e97a">&#9670;&#160;</a></span>HasExternalRAM()</h2>
+<a id="a9100a788833bdf32f750f1532da94c24" name="a9100a788833bdf32f750f1532da94c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9100a788833bdf32f750f1532da94c24">&#9670;&#160;</a></span>Serves()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,9 +241,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Deki::IMemoryProvider::HasExternalRAM </td>
+          <td class="memname">virtual bool Deki::IMemoryProvider::Serves </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -259,14 +255,17 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if external RAM (PSRAM, SDRAM, etc.) is available. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if external RAM is present and usable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if external RAM is present and usable</dd></dl>
+<p>Does this board have <span class="tt">region</span> as a distinct place to put memory?</p>
+<p>A platform with one heap answers true for the regions it can satisfy and false for the rest — and answering true for "external" when there is no PSRAM is not a lie if every allocation is equally fast, it is a statement that the distinction does not exist here.</p>
+<p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> asks this once at startup to report what the board has. </p>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#aeaa1b91fb37481da742ac09b915dd053">Deki::DesktopMemoryProvider</a>.</p>
+<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#aa0860e6d67336d101d799252204a8241">Deki::DesktopMemoryProvider</a>.</p>
 
 </div>
 </div>
-<a id="a2c093f630f4818250959d2b6ecafa1d8" name="a2c093f630f4818250959d2b6ecafa1d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c093f630f4818250959d2b6ecafa1d8">&#9670;&#160;</a></span>GetTotalExternalRAM()</h2>
+<a id="a89385c115474ccb72142b13d7fa58eca" name="a89385c115474ccb72142b13d7fa58eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89385c115474ccb72142b13d7fa58eca">&#9670;&#160;</a></span>Allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,106 +274,19 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t Deki::IMemoryProvider::GetTotalExternalRAM </td>
+          <td class="memname">virtual void * Deki::IMemoryProvider::Allocate </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get total external RAM size in bytes. </p>
-<dl class="section return"><dt>Returns</dt><dd>Total external RAM size, 0 if none available </dd></dl>
-
-<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#ac8ad8465324206890abe05c43dd76564">Deki::DesktopMemoryProvider</a>.</p>
-
-</div>
-</div>
-<a id="a04bbc2a80895e1cbd6bc7688f7ef34db" name="a04bbc2a80895e1cbd6bc7688f7ef34db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04bbc2a80895e1cbd6bc7688f7ef34db">&#9670;&#160;</a></span>GetAvailableExternalRAM()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">virtual size_t Deki::IMemoryProvider::GetAvailableExternalRAM </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get available (free) external RAM size in bytes. </p>
-<dl class="section return"><dt>Returns</dt><dd>Available external RAM size, 0 if none available </dd></dl>
-
-<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#a6e3253780263e651110c9f634d8b71f0">Deki::DesktopMemoryProvider</a>.</p>
-
-</div>
-</div>
-<a id="a5ec2f3d82a718e0649aaa6a80146edd1" name="a5ec2f3d82a718e0649aaa6a80146edd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ec2f3d82a718e0649aaa6a80146edd1">&#9670;&#160;</a></span>AllocateExternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void * Deki::IMemoryProvider::AllocateExternal </td>
-          <td>(</td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>bytes</em></span>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocate memory from external RAM. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>Number of bytes to allocate </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to allocated memory, nullptr if allocation failed </dd></dl>
-
-<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#acde40ce4106ea6509b01495d480f39fd">Deki::DesktopMemoryProvider</a>.</p>
-
-</div>
-</div>
-<a id="a7bc5e5144867d1a7ac7f51edb9eede32" name="a7bc5e5144867d1a7ac7f51edb9eede32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc5e5144867d1a7ac7f51edb9eede32">&#9670;&#160;</a></span>FreeExternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">virtual void Deki::IMemoryProvider::FreeExternal </td>
-          <td>(</td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>needsDma</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -384,20 +296,22 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Free memory allocated from external RAM. </p>
+<p>Allocate <span class="tt">bytes</span> from <span class="tt">region</span>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ptr</td><td>Pointer to memory to free (must have been allocated via AllocateExternal) </td></tr>
+    <tr><td class="paramname">needsDma</td><td>The caller requires a DMA engine to be able to read it. Orthogonal to the region: a framebuffer must be reachable whether it lives in internal RAM or in PSRAM. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The block, or nullptr — including for a region this board does not serve. There is no substitution.</dd></dl>
+<p>One entry point rather than one virtual per region, because the set of regions is open: a package can define "rtc" without an engine release, and no interface with a method per region could carry that. A provider dispatches on <span class="tt">region.id</span>, which is a compile-time constant, and returns nullptr for anything it does not recognise. </p>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#ae6a83fda68f9677bf5211848c9ab7558">Deki::DesktopMemoryProvider</a>.</p>
+<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#a49510fb94dd014beedded2e0815b2e34">Deki::DesktopMemoryProvider</a>.</p>
 
 </div>
 </div>
-<a id="afad0350165c439f15b1c52150326cb70" name="afad0350165c439f15b1c52150326cb70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad0350165c439f15b1c52150326cb70">&#9670;&#160;</a></span>IsExternalPointer()</h2>
+<a id="adbbe4bef937d261a80120f4021176cfd" name="adbbe4bef937d261a80120f4021176cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbbe4bef937d261a80120f4021176cfd">&#9670;&#160;</a></span>Free()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,9 +320,43 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool Deki::IMemoryProvider::IsExternalPointer </td>
+          <td class="memname">virtual void Deki::IMemoryProvider::Free </td>
           <td>(</td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Release a block obtained from <span class="tt">region</span>. </p>
+<p>The region comes from the allocation's own header, so a caller never has to remember it and cannot get it wrong. </p>
+
+<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#ab4939f9ca448dab8fd82fe3b0f1e73bf">Deki::DesktopMemoryProvider</a>.</p>
+
+</div>
+</div>
+<a id="ab7d85a1c69a9d37bbc4a8960a0702cca" name="ab7d85a1c69a9d37bbc4a8960a0702cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d85a1c69a9d37bbc4a8960a0702cca">&#9670;&#160;</a></span>GetAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t Deki::IMemoryProvider::GetAvailable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -419,21 +367,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if a pointer is in external RAM address range. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ptr</td><td>Pointer to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if pointer is in external RAM </dd></dl>
+<p>Bytes still available in <span class="tt">region</span>, or 0 where the platform cannot say. </p>
+<p>Reported in the startup line and in every out-of-memory message, which is why a provider that cannot measure should say so in a comment rather than let 0 read as "exhausted". </p>
 
-<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#af202c28d56f45f3def38c9bed4f12e17">Deki::DesktopMemoryProvider</a>.</p>
+<p>Implemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#a315b4b77e64a6b8458780b1a854898f7">Deki::DesktopMemoryProvider</a>.</p>
 
 </div>
 </div>
-<a id="a5ff08e32b526a627a979e4e669dba66a" name="a5ff08e32b526a627a979e4e669dba66a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ff08e32b526a627a979e4e669dba66a">&#9670;&#160;</a></span>AllocateInternal()</h2>
+<a id="acb0fb7704e635ba1084529a409293fe8" name="acb0fb7704e635ba1084529a409293fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0fb7704e635ba1084529a409293fe8">&#9670;&#160;</a></span>AllocateRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +384,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void * Deki::IMemoryProvider::AllocateInternal </td>
+          <td class="memname">virtual void * Deki::IMemoryProvider::AllocateRaw </td>
           <td>(</td>
           <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
           <td></td>
@@ -455,19 +397,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allocate memory from internal RAM only (never external). </p>
+<p>Allocate with natural alignment and no engine bookkeeping. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Number of bytes to allocate </td></tr>
+    <tr><td class="paramname">size</td><td>Number of bytes </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to allocated memory, nullptr if allocation failed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer, or nullptr</dd></dl>
+<p>Must be at least as aligned as malloc, since operator new has to satisfy alignof(std::max_align_t). The default IS malloc. </p>
 
 </div>
 </div>
-<a id="ab43d166220146823f5fc9e2b3b3eb34e" name="ab43d166220146823f5fc9e2b3b3eb34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab43d166220146823f5fc9e2b3b3eb34e">&#9670;&#160;</a></span>FreeInternal()</h2>
+<a id="a69dbfc6e6bfed0a3699302c95f538b42" name="a69dbfc6e6bfed0a3699302c95f538b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69dbfc6e6bfed0a3699302c95f538b42">&#9670;&#160;</a></span>FreeRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +419,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Deki::IMemoryProvider::FreeInternal </td>
+          <td class="memname">virtual void Deki::IMemoryProvider::FreeRaw </td>
           <td>(</td>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
           <td></td>
@@ -489,13 +432,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Frees a block from AllocateInternal. </p>
-<p>Must match that allocator: the default pair is malloc/free; a backend that overrides one overrides both. </p>
+<p>Frees a block from AllocateRaw. Override both or neither. </p>
 
 </div>
 </div>
-<a id="aa4d842b7eaf9cc7f082eec1f1dea4ce0" name="aa4d842b7eaf9cc7f082eec1f1dea4ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4d842b7eaf9cc7f082eec1f1dea4ce0">&#9670;&#160;</a></span>GetAvailableInternalRAM()</h2>
+<a id="a807ec8dd4221d87a2154ba710b83d991" name="a807ec8dd4221d87a2154ba710b83d991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807ec8dd4221d87a2154ba710b83d991">&#9670;&#160;</a></span>GetRawBlockSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,9 +446,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t Deki::IMemoryProvider::GetAvailableInternalRAM </td>
+          <td class="memname">virtual size_t Deki::IMemoryProvider::GetRawBlockSize </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -517,8 +459,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get available internal RAM size in bytes. </p>
-<dl class="section return"><dt>Returns</dt><dd>Available internal RAM size, 0 if not supported </dd></dl>
+<p>Usable size of a block from AllocateRaw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>A pointer from AllocateRaw </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Its size in bytes, or 0 where the platform cannot say</dd></dl>
+<p>There is no header to read it from, so the heap is asked instead (heap_caps_get_allocated_size on ESP-IDF, _msize on Windows). Used only to keep the byte total honest on free; returning 0 costs accuracy in <a class="el" href="class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e" title="Log what is allocated and what is left, in one line.">Memory::LogStats</a> and nothing else. </p>
+
+<p>Reimplemented in <a class="el" href="class_deki_1_1_desktop_memory_provider.html#a5dedb80bc10787ed1047da090c94403a">Deki::DesktopMemoryProvider</a>.</p>
 
 </div>
 </div>

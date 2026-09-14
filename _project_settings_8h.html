@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -129,18 +129,17 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display/rendering settings.  <a href="struct_deki_1_1_project_settings_1_1_display_settings.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Deki_3A_3AProjectSettings_3A_3ARuntimeSettings" id="r_Deki_3A_3AProjectSettings_3A_3ARuntimeSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_runtime_settings.html">Deki::ProjectSettings::RuntimeSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime settings (version 3+).  <a href="struct_deki_1_1_project_settings_1_1_runtime_settings.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Deki_3A_3AProjectSettings_3A_3APipelineConfig" id="r_Deki_3A_3AProjectSettings_3A_3APipelineConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_pipeline_config.html">Deki::ProjectSettings::PipelineConfig</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 <tr class="memitem:Deki_3A_3AProjectSettings" id="r_Deki_3A_3AProjectSettings"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html">Deki::ProjectSettings</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afe0de3076b39d760eed2c6968ad6bc92" id="r_afe0de3076b39d760eed2c6968ad6bc92"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92">Deki::ProjectSettings::Load</a> (const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load project settings from binary file.  <br /></td></tr>
+<tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render pipeline configuration (version 4+).  <br /></td></tr>
 <tr class="memitem:aa3a74675706af66cae659f467f493e1d" id="r_aa3a74675706af66cae659f467f493e1d"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#aa3a74675706af66cae659f467f493e1d">Deki::ProjectSettings::GetTargetFPS</a> ()</td></tr>
 <tr class="memdesc:aa3a74675706af66cae659f467f493e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target FPS from loaded project settings.  <br /></td></tr>
 <tr class="memitem:a3ede2597091ba3cbec425d5fbdd4899d" id="r_a3ede2597091ba3cbec425d5fbdd4899d"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a3ede2597091ba3cbec425d5fbdd4899d">Deki::ProjectSettings::GetStartupScene</a> ()</td></tr>
@@ -154,7 +153,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a9b8fd73b7762fa6abb6f083aaa0a0c50" id="r_a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a9b8fd73b7762fa6abb6f083aaa0a0c50">Deki::ProjectSettings::LoadFromFile</a> (const char *path=nullptr)</td></tr>
 <tr class="memdesc:a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load project settings from filesystem.  <br /></td></tr>
 <tr class="memitem:a888af89782768d83693cf5c8fd3b8041" id="r_a888af89782768d83693cf5c8fd3b8041"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a888af89782768d83693cf5c8fd3b8041">Deki::ProjectSettings::ReadPackageSettingBool</a> (const char *section, const char *key, bool &amp;out)</td></tr>
-<tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime lookup of one package setting from the last <a class="el" href="namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92" title="Load project settings from binary file.">Load()</a>.  <br /></td></tr>
+<tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime lookup of one package setting from the last <a class="el" href="namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a>.  <br /></td></tr>
 <tr class="memitem:af0e60e7c6f701d39e142589bac712755" id="r_af0e60e7c6f701d39e142589bac712755"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#af0e60e7c6f701d39e142589bac712755">Deki::ProjectSettings::ReadPackageSettingInt32</a> (const char *section, const char *key, int32_t &amp;out)</td></tr>
 <tr class="memitem:a176b5cfa6939b893dc28d08b305fbb0f" id="r_a176b5cfa6939b893dc28d08b305fbb0f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a176b5cfa6939b893dc28d08b305fbb0f">Deki::ProjectSettings::ReadPackageSettingFloat</a> (const char *section, const char *key, float &amp;out)</td></tr>
 <tr class="memitem:aa980522f7fb2d282b82360c7ee2f7f0b" id="r_aa980522f7fb2d282b82360c7ee2f7f0b"><td class="memItemLeft">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#aa980522f7fb2d282b82360c7ee2f7f0b">Deki::ProjectSettings::Write</a> (int32_t displayWidth, int32_t displayHeight, uint8_t colorFormat, int32_t targetFPS=0, const char *startupScene=nullptr, const char *rendererName=nullptr, const char *const *passNames=nullptr, int passCount=0)</td></tr>
@@ -167,9 +166,6 @@ Variables</h2></td></tr>
 <tr class="memitem:aa27a7a0a5e4ff20ff12a6779817f749f" id="r_aa27a7a0a5e4ff20ff12a6779817f749f"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#aa27a7a0a5e4ff20ff12a6779817f749f">Deki::ProjectSettings::MAGIC</a> = 0x444B5052</td></tr>
 <tr class="memitem:a59f6a993741fb5a7f56c3a7dda9d5121" id="r_a59f6a993741fb5a7f56c3a7dda9d5121"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a59f6a993741fb5a7f56c3a7dda9d5121">Deki::ProjectSettings::VERSION</a> = 5</td></tr>
 <tr class="memitem:a62b4f8fa6722ea85ea883bed2cfe9aab" id="r_a62b4f8fa6722ea85ea883bed2cfe9aab"><td class="memItemLeft">constexpr size_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a62b4f8fa6722ea85ea883bed2cfe9aab">Deki::ProjectSettings::MAX_FILE_SIZE</a> = 16384</td></tr>
-<tr class="memitem:ade750b777b58fdd2a82668789ac70c05" id="r_ade750b777b58fdd2a82668789ac70c05"><td class="memItemLeft">static constexpr int&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05">Deki::ProjectSettings::MAX_PIPELINE_NAME</a> = 32</td></tr>
-<tr class="memdesc:ade750b777b58fdd2a82668789ac70c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render pipeline configuration (version 4+).  <br /></td></tr>
-<tr class="memitem:a23f126a424212856344ad15c38ee9aa8" id="r_a23f126a424212856344ad15c38ee9aa8"><td class="memItemLeft">static constexpr int&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a23f126a424212856344ad15c38ee9aa8">Deki::ProjectSettings::MAX_PASSES</a> = 8</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

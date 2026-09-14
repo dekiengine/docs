@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -128,12 +128,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6fc2d7ae724b41cd1ac212f5e0401888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the platform display.  <br /></td></tr>
 <tr class="memitem:a4a55efde692e971b27ed4ca192372c81" id="r_a4a55efde692e971b27ed4ca192372c81"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a4a55efde692e971b27ed4ca192372c81">Shutdown</a> ()=0</td></tr>
 <tr class="memdesc:a4a55efde692e971b27ed4ca192372c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the display and cleanup resources.  <br /></td></tr>
-<tr class="memitem:a5fdebabe6a0764a36182a3e1366a52ab" id="r_a5fdebabe6a0764a36182a3e1366a52ab"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5fdebabe6a0764a36182a3e1366a52ab">Present</a> (const uint8_t *framebuffer, int width, int height, int format)=0</td></tr>
-<tr class="memdesc:a5fdebabe6a0764a36182a3e1366a52ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the frame buffer to the display.  <br /></td></tr>
+<tr class="memitem:a3d173edc4398d2d2a667c6c08805cdb8" id="r_a3d173edc4398d2d2a667c6c08805cdb8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3d173edc4398d2d2a667c6c08805cdb8">Present</a> (const uint8_t *framebuffer, int width, int height, <a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> format)=0</td></tr>
+<tr class="memdesc:a3d173edc4398d2d2a667c6c08805cdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the frame buffer to the display.  <br /></td></tr>
 <tr class="memitem:a4992939c99125ae6db1f367d4263d20e" id="r_a4992939c99125ae6db1f367d4263d20e"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a4992939c99125ae6db1f367d4263d20e">SupportsPartialPresent</a> () const</td></tr>
-<tr class="memdesc:a4992939c99125ae6db1f367d4263d20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#a6afad67dd3f89c828e182be2b5b5b0a9" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given.  <br /></td></tr>
-<tr class="memitem:a6afad67dd3f89c828e182be2b5b5b0a9" id="r_a6afad67dd3f89c828e182be2b5b5b0a9"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a6afad67dd3f89c828e182be2b5b5b0a9">PresentRegions</a> (const uint8_t *framebuffer, int width, int height, int format, const <a class="el" href="struct_deki_1_1_rect.html">Rect</a> *rects, int32_t count)</td></tr>
-<tr class="memdesc:a6afad67dd3f89c828e182be2b5b5b0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present only <span class="tt">rects</span> of the framebuffer.  <br /></td></tr>
+<tr class="memdesc:a4992939c99125ae6db1f367d4263d20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#abc40d95a208de0c5913178981404a36f" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given.  <br /></td></tr>
+<tr class="memitem:abc40d95a208de0c5913178981404a36f" id="r_abc40d95a208de0c5913178981404a36f"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#abc40d95a208de0c5913178981404a36f">PresentRegions</a> (const uint8_t *framebuffer, int width, int height, <a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> format, const <a class="el" href="struct_deki_1_1_rect.html">Rect</a> *rects, int32_t count)</td></tr>
+<tr class="memdesc:abc40d95a208de0c5913178981404a36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present only <span class="tt">rects</span> of the framebuffer.  <br /></td></tr>
 <tr class="memitem:a22561fd38eee67d10e4b79ec7d16e080" id="r_a22561fd38eee67d10e4b79ec7d16e080"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a22561fd38eee67d10e4b79ec7d16e080">GetDisplaySize</a> (int32_t *width, int32_t *height) const =0</td></tr>
 <tr class="memdesc:a22561fd38eee67d10e4b79ec7d16e080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the display dimensions.  <br /></td></tr>
 <tr class="memitem:aeb236ab0c5867bc5545efb5bd9bbf96f" id="r_aeb236ab0c5867bc5545efb5bd9bbf96f"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#aeb236ab0c5867bc5545efb5bd9bbf96f">IsInitialized</a> () const =0</td></tr>
@@ -238,8 +238,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fdebabe6a0764a36182a3e1366a52ab" name="a5fdebabe6a0764a36182a3e1366a52ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fdebabe6a0764a36182a3e1366a52ab">&#9670;&#160;</a></span>Present()</h2>
+<a id="a3d173edc4398d2d2a667c6c08805cdb8" name="a3d173edc4398d2d2a667c6c08805cdb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d173edc4398d2d2a667c6c08805cdb8">&#9670;&#160;</a></span>Present()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +265,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>format</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -276,12 +276,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Present the frame buffer to the display. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">format</td><td>0=RGB565, 1=RGB888, 2=ARGB8888 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p><span class="tt">format</span> used to be an int, with the enum's numbering repeated in a comment here and as literals in every display package. That comment was already missing RGB565A8, and one package computed bytes-per-pixel from the literals in a way that gave it 2 instead of 3. Passing the enum makes the boundary type-checked and lets a compiler flag a format nobody handles. </p>
 
 </div>
 </div>
@@ -308,13 +303,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>True when <a class="el" href="#a6afad67dd3f89c828e182be2b5b5b0a9" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given. </p>
+<p>True when <a class="el" href="#abc40d95a208de0c5913178981404a36f" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given. </p>
 <p>The default display presents whole frames, and the engine then never calls PresentRegions. A display that can address a sub-rectangle of its panel or texture returns true and implements PresentRegions. </p>
 
 </div>
 </div>
-<a id="a6afad67dd3f89c828e182be2b5b5b0a9" name="a6afad67dd3f89c828e182be2b5b5b0a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6afad67dd3f89c828e182be2b5b5b0a9">&#9670;&#160;</a></span>PresentRegions()</h2>
+<a id="abc40d95a208de0c5913178981404a36f" name="abc40d95a208de0c5913178981404a36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc40d95a208de0c5913178981404a36f">&#9670;&#160;</a></span>PresentRegions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +335,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

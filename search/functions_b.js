@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['needsassetloading_0',['NeedsAssetLoading',['../class_deki_1_1_component.html#abb3d1ec13d98de64016dc2198c094f37',1,'Deki::Component']]],
-  ['needsreimport_1',['NeedsReimport',['../class_deki_editor_1_1_i_asset_importer.html#a8decdb202c99a29fdcec6c06e92bfaeb',1,'DekiEditor::IAssetImporter']]],
-  ['needsruntimeupdate_2',['NeedsRuntimeUpdate',['../class_deki_1_1_component.html#aad7e0cc3f99a1cdb7f8ea0576b5b8aab',1,'Deki::Component']]],
-  ['needsupdate_3',['NeedsUpdate',['../class_deki_1_1_behaviour.html#ad0aa675371407e34ef53be755eb84f7d',1,'Deki::Behaviour']]],
+  ['name_0',['Name',['../struct_deki_1_1_alloc_context.html#a94393003ab24e52cf83e98f114447e3b',1,'Deki::AllocContext']]],
+  ['needsassetloading_1',['NeedsAssetLoading',['../class_deki_1_1_component.html#abb3d1ec13d98de64016dc2198c094f37',1,'Deki::Component']]],
+  ['needsreimport_2',['NeedsReimport',['../class_deki_editor_1_1_i_asset_importer.html#a8decdb202c99a29fdcec6c06e92bfaeb',1,'DekiEditor::IAssetImporter']]],
+  ['needsruntimeupdate_3',['NeedsRuntimeUpdate',['../class_deki_1_1_component.html#aad7e0cc3f99a1cdb7f8ea0576b5b8aab',1,'Deki::Component']]],
   ['nicifyname_4',['NicifyName',['../namespace_deki_editor_1_1_editor_naming.html#adb31f24c1e9e90e45991429d5bd37b7f',1,'DekiEditor::EditorNaming']]],
   ['nodeheight_5',['NodeHeight',['../class_deki_editor_1_1_node_canvas.html#aa4f601db8ae2131aff7ec7fbc26237dd',1,'DekiEditor::NodeCanvas']]],
   ['nodewidth_6',['NodeWidth',['../class_deki_editor_1_1_node_canvas.html#adf48afff5f13661859c0c0a427785842',1,'DekiEditor::NodeCanvas']]],

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -484,7 +484,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The rectangles the last <a class="el" href="#a5ee6a904c8d55ff05ec99e53cac7630e">Render()</a> left needing presentation. </p>
-<p><a class="el" href="class_deki_1_1_engine.html#a822a52de412dea6adacd8d4b4f205b29" title="Present the render system&#39;s framebuffer through the display.">Engine::PresentFrame</a> hands them to <a class="el" href="class_deki_1_1_i_display.html#a6afad67dd3f89c828e182be2b5b5b0a9" title="Present only rects of the framebuffer.">IDisplay::PresentRegions</a> when the display supports partial presents. *count == -1 means present everything (tracking off, or the frame is unknown); 0 means nothing changed; &gt; 0 is the number of rectangles returned, valid until the next <a class="el" href="#a5ee6a904c8d55ff05ec99e53cac7630e">Render()</a>. The default render system reports -1. </p>
+<p><a class="el" href="class_deki_1_1_engine.html#a822a52de412dea6adacd8d4b4f205b29" title="Present the render system&#39;s framebuffer through the display.">Engine::PresentFrame</a> hands them to <a class="el" href="class_deki_1_1_i_display.html#abc40d95a208de0c5913178981404a36f" title="Present only rects of the framebuffer.">IDisplay::PresentRegions</a> when the display supports partial presents. *count == -1 means present everything (tracking off, or the frame is unknown); 0 means nothing changed; &gt; 0 is the number of rectangles returned, valid until the next <a class="el" href="#a5ee6a904c8d55ff05ec99e53cac7630e">Render()</a>. The default render system reports -1. </p>
 
 </div>
 </div>

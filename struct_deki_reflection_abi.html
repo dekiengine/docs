@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -132,13 +132,14 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad2eda63eab71e4be364a33977c9fa44e" id="r_ad2eda63eab71e4be364a33977c9fa44e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ad2eda63eab71e4be364a33977c9fa44e">sizeofFieldRef</a></td></tr>
 <tr class="memitem:a6b02d0ca8ba96370d373ba8323123c9d" id="r_a6b02d0ca8ba96370d373ba8323123c9d"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a6b02d0ca8ba96370d373ba8323123c9d">sizeofDekiObject</a></td></tr>
 <tr class="memitem:a30e736d6242e8b7c230369378e64fb2e" id="r_a30e736d6242e8b7c230369378e64fb2e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a30e736d6242e8b7c230369378e64fb2e">sizeofDekiComponent</a></td></tr>
+<tr class="memitem:a9f798c164ed4971d2b24e450587feec0" id="r_a9f798c164ed4971d2b24e450587feec0"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a9f798c164ed4971d2b24e450587feec0">transformConfig</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Layout fingerprint of the reflection structs that cross DLL boundaries. </p>
 <p>A package DLL builds its own property tables as static arrays and hands the editor a pointer plus a count. The editor then walks them with ITS compiled sizeof, so the two sides must agree on the layout exactly. They usually do, because everything is rebuilt together, and when they don't the failure is vicious: appending a field to <a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">Deki::PropertyInfo</a> changes the array STRIDE, so element 0 reads fine and every element after it lands mid-struct. A <span class="tt">const
 char*</span> read out of the middle of a struct is non-null garbage, so it sails past null checks and faults far away (seen as a crash inside strlen, several frames deep in JSON key lookup, during scene compilation).</p>
 <p>The append-only rule the metadata structs document protects a SINGLE struct read through a pointer: a stale reader finds the fields it knows at the right offsets and ignores the rest. It does not protect an ARRAY, because the stride changes. So arrays of these structs need a real handshake, which is this.</p>
-<p>Every package DLL exports its compiled values (DekiPackageAbi.cpp, linked into each package by BuildFileGenerator) and the loader refuses a package that disagrees, naming it and saying to rebuild. Loudly wrong beats silently corrupt.</p>
+<p>Every package DLL exports its compiled values (ReflectionAbi.cpp, linked into each package by BuildFileGenerator) and the loader refuses a package that disagrees, naming it and saying to rebuild. Loudly wrong beats silently corrupt.</p>
 <p>LIMIT: this catches size changes, not same-size reorderings. Bump kDekiReflectionAbiVersion by hand when you move a field without changing the struct's size, so old packages are still rejected. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="ae7a8923ed8c5b2858b849183d1bed8be" name="ae7a8923ed8c5b2858b849183d1bed8be"></a>
@@ -219,6 +220,20 @@ char*</span> read out of the middle of a struct is non-null garbage, so it sails
       <table class="memname">
         <tr>
           <td class="memname">uint32_t DekiReflectionAbi::sizeofDekiComponent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f798c164ed4971d2b24e450587feec0" name="a9f798c164ed4971d2b24e450587feec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f798c164ed4971d2b24e450587feec0">&#9670;&#160;</a></span>transformConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t DekiReflectionAbi::transformConfig</td>
         </tr>
       </table>
 </div><div class="memdoc">

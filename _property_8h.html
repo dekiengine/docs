@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -129,12 +129,12 @@ Classes</h2></td></tr>
 <tr class="memitem:Deki_3A_3APropertyInfo" id="r_Deki_3A_3APropertyInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_property_info.html">Deki::PropertyInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property metadata (stored per-component-type, not per-instance).  <a href="struct_deki_1_1_property_info.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Deki_3A_3AComponentMeta" id="r_Deki_3A_3AComponentMeta"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_component_meta.html">Deki::ComponentMeta</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_component.html" title="Base class for all components (data-only).">Component</a> metadata for runtime reflection.  <a href="struct_deki_1_1_component_meta.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a> metadata for runtime reflection.  <a href="struct_deki_1_1_component_meta.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -151,16 +151,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a8d9c17c03b2dc42b7809a7d931aedb94" id="r_a8d9c17c03b2dc42b7809a7d931aedb94"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8d9c17c03b2dc42b7809a7d931aedb94">DEKI_VALUE_OF</a>(prop)</td></tr>
 <tr class="memitem:a5c1b50b3c63c105d9892d82fcf0135a4" id="r_a5c1b50b3c63c105d9892d82fcf0135a4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5c1b50b3c63c105d9892d82fcf0135a4">DEKI_UNIT</a>(unit)</td></tr>
 <tr class="memitem:ab9745616043a0026dced1e3cdca98acf" id="r_ab9745616043a0026dced1e3cdca98acf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab9745616043a0026dced1e3cdca98acf">DEKI_RENAMED_FROM</a>(oldName)</td></tr>
-<tr class="memitem:a00428012866ac8a2069b42e4a119f679" id="r_a00428012866ac8a2069b42e4a119f679"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a00428012866ac8a2069b42e4a119f679">DEKI_PROJECT_SETTINGS_SECTION</a>(SectionName)</td></tr>
 <tr class="memitem:a1cdd8239616781da452f2f4251a25e0c" id="r_a1cdd8239616781da452f2f4251a25e0c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1cdd8239616781da452f2f4251a25e0c">DEKI_SERIALIZABLE</a></td></tr>
 <tr class="memitem:adf5eed9a62923c7ea28329e2269843c2" id="r_adf5eed9a62923c7ea28329e2269843c2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adf5eed9a62923c7ea28329e2269843c2">DEKI_NO_SERIALIZE</a></td></tr>
 <tr class="memitem:ad6b67b499274dd9239fe6914c61913ec" id="r_ad6b67b499274dd9239fe6914c61913ec"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad6b67b499274dd9239fe6914c61913ec">DEKI_SERIALIZABLE_NAME</a>(name)</td></tr>
 <tr class="memitem:a2132024fc1f19f9d6cfb32537c6cfc15" id="r_a2132024fc1f19f9d6cfb32537c6cfc15"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2132024fc1f19f9d6cfb32537c6cfc15">DEKI_SERIALIZABLE_DEFAULT_VALUE</a>(val)</td></tr>
-<tr class="memitem:ad1b61e48e2ed48f3f1876895c456d2e7" id="r_ad1b61e48e2ed48f3f1876895c456d2e7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad1b61e48e2ed48f3f1876895c456d2e7">DEKI_REFLECTION_DECLARATIONS</a>()</td></tr>
-<tr class="memitem:ae5f2b1d0abefc531b19f53366a55eb82" id="r_ae5f2b1d0abefc531b19f53366a55eb82"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae5f2b1d0abefc531b19f53366a55eb82">DEKI_COMPONENT_BASE</a>(BaseTypeName,  Category)</td></tr>
-<tr class="memitem:a4c4f1a03026f863432c0789bf4ffa9db" id="r_a4c4f1a03026f863432c0789bf4ffa9db"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4c4f1a03026f863432c0789bf4ffa9db">DEKI_COMPONENT</a>(TypeName,  BaseTypeName,  Category,  TypeGuid,  FeatureDefine)</td></tr>
-<tr class="memitem:a0b4135013bed5c3d21a69764060c6e48" id="r_a0b4135013bed5c3d21a69764060c6e48"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0b4135013bed5c3d21a69764060c6e48">DEKI_DISPLAY_NAME</a>(name)</td></tr>
+<tr class="memitem:a444f6843fb928d729e8a900abd7e187d" id="r_a444f6843fb928d729e8a900abd7e187d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a444f6843fb928d729e8a900abd7e187d">DEKI_CATEGORY</a>(text)</td></tr>
 <tr class="memitem:a43f35439cb2726989f3e76e2c6f10f09" id="r_a43f35439cb2726989f3e76e2c6f10f09"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a43f35439cb2726989f3e76e2c6f10f09">DEKI_DESCRIPTION</a>(text)</td></tr>
+<tr class="memitem:a604acd73a4bc7fd319ce7873cdd4c46f" id="r_a604acd73a4bc7fd319ce7873cdd4c46f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a604acd73a4bc7fd319ce7873cdd4c46f">DEKI_DISPLAY_NAME</a>(text)</td></tr>
+<tr class="memitem:a0213bdd2e530941f936a0ef328b0395a" id="r_a0213bdd2e530941f936a0ef328b0395a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0213bdd2e530941f936a0ef328b0395a">DEKI_SETTINGS_SECTION</a>(text)</td></tr>
 <tr class="memitem:ad28fe697e3ce7dcc3636ac7ba0908e65" id="r_ad28fe697e3ce7dcc3636ac7ba0908e65"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad28fe697e3ce7dcc3636ac7ba0908e65">DEKI_NODE_REFLECTION_DECLARATIONS</a>()</td></tr>
 <tr class="memitem:a8fecbafb59fe747e9a2940eab4b8b82c" id="r_a8fecbafb59fe747e9a2940eab4b8b82c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8fecbafb59fe747e9a2940eab4b8b82c">DEKI_NODE</a>(TypeName,  NodeName,  Category)</td></tr>
 <tr class="memitem:af6e2521d231a3351237f4c079d750d37" id="r_af6e2521d231a3351237f4c079d750d37"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af6e2521d231a3351237f4c079d750d37">DEKI_NODE_INPUTS</a>(...)</td></tr>
@@ -181,6 +179,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a3b926d163371fd620b09b63219b12f52">Deki::Acceleration</a>
 , <br />
 &#160;&#160;<a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a45f4ce6c3306644b1efe333f4f8d6929">Deki::Angle</a>
+, <a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270acfb2d17cc0d6ca7658a8822cbd78565c">Deki::AngularVelocity</a>
+, <a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270aee7a8e262285ed49ea1b4e4ae11525bd">Deki::Temperature</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a39ae59dff82c19018ec967d5186a7270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical unit for float/Vector2 properties.  <a href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270">More...</a><br /></td></tr>
@@ -468,24 +468,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a00428012866ac8a2069b42e4a119f679" name="a00428012866ac8a2069b42e4a119f679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00428012866ac8a2069b42e4a119f679">&#9670;&#160;</a></span>DEKI_PROJECT_SETTINGS_SECTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEKI_PROJECT_SETTINGS_SECTION</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>SectionName</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>: <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* StaticSettingsSection = SectionName;</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a1cdd8239616781da452f2f4251a25e0c" name="a1cdd8239616781da452f2f4251a25e0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cdd8239616781da452f2f4251a25e0c">&#9670;&#160;</a></span>DEKI_SERIALIZABLE</h2>
 
@@ -548,119 +530,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1b61e48e2ed48f3f1876895c456d2e7" name="ad1b61e48e2ed48f3f1876895c456d2e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b61e48e2ed48f3f1876895c456d2e7">&#9670;&#160;</a></span>DEKI_REFLECTION_DECLARATIONS</h2>
+<a id="a444f6843fb928d729e8a900abd7e187d" name="a444f6843fb928d729e8a900abd7e187d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444f6843fb928d729e8a900abd7e187d">&#9670;&#160;</a></span>DEKI_CATEGORY</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEKI_REFLECTION_DECLARATIONS</td>
+          <td class="memname">#define DEKI_CATEGORY</td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> const ::Deki::PropertyInfo* GetProperties(); \</div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> GetPropertyCount(); \</div>
-<div class="line"><span class="keyword">static</span> const ::Deki::ComponentMeta&amp; GetComponentMeta();</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae5f2b1d0abefc531b19f53366a55eb82" name="ae5f2b1d0abefc531b19f53366a55eb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5f2b1d0abefc531b19f53366a55eb82">&#9670;&#160;</a></span>DEKI_COMPONENT_BASE</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEKI_COMPONENT_BASE</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>BaseTypeName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Category</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> constexpr ::Deki::ComponentType BaseStaticType = BaseTypeName::StaticType; \</div>
-<div class="line"><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ComponentCategory = Category; \</div>
-<div class="line"><a class="code hl_typedef" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">::Deki::ComponentType</a> GetType()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> StaticType; } \</div>
-<div class="line"><a class="code hl_typedef" href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">::Deki::ComponentType</a> GetBaseType()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> BaseStaticType; } \</div>
-<div class="line"><span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514">Deserialize</a>(::Deki::SceneFormat::SceneMsgPackParser&amp; parser, uint32_t mapSize) <span class="keyword">override</span>; \</div>
-<div class="line"><span class="keywordtype">void</span> ResolveObjectRefs(::Deki::Scene* scene) <span class="keyword">override</span>; \</div>
-<div class="line"><span class="keywordtype">void</span> RemapObjectRefs(<span class="keyword">const</span> std::unordered_map&lt;uint32_t, uint32_t&gt;&amp; idRemap) <span class="keyword">override</span>; \</div>
-<div class="line"><span class="keywordtype">bool</span> DeclaresUpdate() <span class="keyword">const override</span>; \</div>
-<div class="line"><span class="keyword">static</span> const ::Deki::FieldRef* GetFields(); \</div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> GetFieldCount(); \</div>
-<div class="line">DEKI_REFLECTION_DECLARATIONS()</div>
-<div class="ttc" id="anamespace_deki_html_aaf6aa6292ce6944fa8065a141d8d8514"><div class="ttname"><a href="namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514">Deki::Deserialize</a></div><div class="ttdeci">T Deserialize(const nlohmann::json &amp;j)</div></div>
-<div class="ttc" id="anamespace_deki_html_af0f99afe0b878e72e45ae4c27acc282d"><div class="ttname"><a href="namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d">Deki::ComponentType</a></div><div class="ttdeci">uint32_t ComponentType</div><div class="ttdef"><b>Definition</b> Component.h:13</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4c4f1a03026f863432c0789bf4ffa9db" name="a4c4f1a03026f863432c0789bf4ffa9db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4f1a03026f863432c0789bf4ffa9db">&#9670;&#160;</a></span>DEKI_COMPONENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEKI_COMPONENT</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TypeName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>BaseTypeName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Category</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TypeGuid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>FeatureDefine</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>: \</div>
-<div class="line">    <span class="keyword">static</span> constexpr ::Deki::ComponentType StaticType = <a class="code hl_function" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50">::Deki::HashString</a>(TypeGuid); \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* StaticGuid = TypeGuid; \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* StaticFeatureDefine = FeatureDefine; \</div>
-<div class="line">    DEKI_COMPONENT_BASE(BaseTypeName, Category)</div>
-<div class="ttc" id="anamespace_deki_html_a83e2a8e59b9ade12ac092ce334e4bb50"><div class="ttname"><a href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50">Deki::HashString</a></div><div class="ttdeci">constexpr uint32_t HashString(const char *str, uint32_t hash=2166136261u)</div><div class="ttdoc">Compile-time string hash for consistent type IDs across translation units.</div><div class="ttdef"><b>Definition</b> Component.h:27</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0b4135013bed5c3d21a69764060c6e48" name="a0b4135013bed5c3d21a69764060c6e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b4135013bed5c3d21a69764060c6e48">&#9670;&#160;</a></span>DEKI_DISPLAY_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEKI_DISPLAY_NAME</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>: \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* StaticDisplayName = name;</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a43f35439cb2726989f3e76e2c6f10f09" name="a43f35439cb2726989f3e76e2c6f10f09"></a>
@@ -677,9 +561,41 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>: \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* StaticDescription = text;</div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a604acd73a4bc7fd319ce7873cdd4c46f" name="a604acd73a4bc7fd319ce7873cdd4c46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604acd73a4bc7fd319ce7873cdd4c46f">&#9670;&#160;</a></span>DEKI_DISPLAY_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEKI_DISPLAY_NAME</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0213bdd2e530941f936a0ef328b0395a" name="a0213bdd2e530941f936a0ef328b0395a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0213bdd2e530941f936a0ef328b0395a">&#9670;&#160;</a></span>DEKI_SETTINGS_SECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEKI_SETTINGS_SECTION</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="ad28fe697e3ce7dcc3636ac7ba0908e65" name="ad28fe697e3ce7dcc3636ac7ba0908e65"></a>

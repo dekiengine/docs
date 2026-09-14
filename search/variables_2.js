@@ -24,7 +24,8 @@ var searchData=
   ['componentreftype_21',['componentRefType',['../struct_deki_1_1_property_info.html#a17ff5af0e5552e03fcbe3abc64dabbf4',1,'Deki::PropertyInfo']]],
   ['componenttypeid_22',['componentTypeId',['../struct_deki_1_1_object_ref_base.html#a507df41fab2b360cd70e58c05f4cb5a2',1,'Deki::ObjectRefBase::componentTypeId'],['../struct_deki_1_1_property_ref.html#af93d17747c0113476ea804b84619c270',1,'Deki::PropertyRef::componentTypeId']]],
   ['contextmenu_23',['contextMenu',['../struct_deki_editor_1_1_node_canvas_events.html#aa3454398f380af23d11f13c66cc76e4c',1,'DekiEditor::NodeCanvasEvents']]],
-  ['createfunc_24',['createFunc',['../struct_deki_1_1_component_meta.html#aa1f6bf46443593223c2d9e3f0b9a354a',1,'Deki::ComponentMeta::createFunc'],['../struct_deki_editor_1_1_editor_window_meta.html#a482d2381c27689959a3f1d9763afcca6',1,'DekiEditor::EditorWindowMeta::createFunc']]],
-  ['cursorscreenpos_25',['cursorScreenPos',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a63a821f5d1f52bad125aefee1c0ed3b1',1,'DekiEditor::EditorUI::WidgetBackend']]],
-  ['cyan_26',['Cyan',['../class_deki_1_1_color.html#a1383f80fe0186f808fc0f04c97211409',1,'Deki::Color']]]
+  ['create_24',['create',['../struct_deki_1_1_component_type_info.html#aede1ae2ecc788831f15a584a64292978',1,'Deki::ComponentTypeInfo']]],
+  ['createfunc_25',['createFunc',['../struct_deki_1_1_component_meta.html#aa1f6bf46443593223c2d9e3f0b9a354a',1,'Deki::ComponentMeta::createFunc'],['../struct_deki_editor_1_1_editor_window_meta.html#a482d2381c27689959a3f1d9763afcca6',1,'DekiEditor::EditorWindowMeta::createFunc']]],
+  ['cursorscreenpos_26',['cursorScreenPos',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a63a821f5d1f52bad125aefee1c0ed3b1',1,'DekiEditor::EditorUI::WidgetBackend']]],
+  ['cyan_27',['Cyan',['../class_deki_1_1_color.html#a1383f80fe0186f808fc0f04c97211409',1,'Deki::Color']]]
 ];

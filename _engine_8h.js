@@ -10,5 +10,6 @@ var _engine_8h =
       [ "Deki::ColorFormat::RGB888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0", null ],
       [ "Deki::ColorFormat::ARGB8888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251", null ],
       [ "Deki::ColorFormat::RGB565A8", "namespace_deki.html#adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def", null ]
-    ] ]
+    ] ],
+    [ "Deki::FrameBufferBytes", "namespace_deki.html#a342cf845b27a0d51e29a411e4f285311", null ]
 ];

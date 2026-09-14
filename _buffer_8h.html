@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Deki: Deki::ProjectSettings::PipelineConfig Struct Reference</title>
+<title>Deki: deki-engine/include/deki/providers/Buffer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', codefold.init);
   </div>
 </div>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_1_1_project_settings_1_1_pipeline_config.html','','struct_deki_1_1_project_settings_1_1_pipeline_config-members'); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_buffer_8h.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -113,73 +113,37 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_1_
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_deki_1_1_project_settings_1_1_pipeline_config-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Deki::ProjectSettings::PipelineConfig Struct Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Buffer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;deki/ProjectSettings.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a06f380a4758f77977e89e955c3d1824e" id="r_a06f380a4758f77977e89e955c3d1824e"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a06f380a4758f77977e89e955c3d1824e">rendererName</a> [<a class="el" href="namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05">MAX_PIPELINE_NAME</a>]</td></tr>
-<tr class="memitem:a26b1b7503e145ff3bb904382aae5ca52" id="r_a26b1b7503e145ff3bb904382aae5ca52"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a26b1b7503e145ff3bb904382aae5ca52">passCount</a></td></tr>
-<tr class="memitem:a8fb6d5e6b65bdbeaf30cb51fe5760e94" id="r_a8fb6d5e6b65bdbeaf30cb51fe5760e94"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a8fb6d5e6b65bdbeaf30cb51fe5760e94">passNames</a> [<a class="el" href="namespace_deki_1_1_project_settings.html#a23f126a424212856344ad15c38ee9aa8">MAX_PASSES</a>][<a class="el" href="namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05">MAX_PIPELINE_NAME</a>]</td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Deki_3A_3ABuffer_3C_20T_20_3E" id="r_Deki_3A_3ABuffer_3C_20T_20_3E"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_buffer.html">Deki::Buffer&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owning array of <span class="tt">T</span>, freed when it goes out of scope.  <a href="class_deki_1_1_buffer.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
+<tr class="memitem:Deki_3A_3Adetail" id="r_Deki_3A_3Adetail"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1detail.html">Deki::detail</a></td></tr>
+<tr class="memdesc:namespace_deki_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class entry for a component the codegen never saw (a test double, a type defined in a .cpp). <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3022b1a26a4b85ced0f91b755f54b5d5" id="r_a3022b1a26a4b85ced0f91b755f54b5d5"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1detail.html#a3022b1a26a4b85ced0f91b755f54b5d5">Deki::detail::BufferAllocate</a> (size_t bytes, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx)</td></tr>
+<tr class="memitem:a0199159a464019216f05fa2873ffc242" id="r_a0199159a464019216f05fa2873ffc242"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1detail.html#a0199159a464019216f05fa2873ffc242">Deki::detail::BufferFree</a> (void *ptr)</td></tr>
 </table>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a06f380a4758f77977e89e955c3d1824e" name="a06f380a4758f77977e89e955c3d1824e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f380a4758f77977e89e955c3d1824e">&#9670;&#160;</a></span>rendererName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char Deki::ProjectSettings::PipelineConfig::rendererName[<a class="el" href="namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05">MAX_PIPELINE_NAME</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a26b1b7503e145ff3bb904382aae5ca52" name="a26b1b7503e145ff3bb904382aae5ca52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26b1b7503e145ff3bb904382aae5ca52">&#9670;&#160;</a></span>passCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Deki::ProjectSettings::PipelineConfig::passCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8fb6d5e6b65bdbeaf30cb51fe5760e94" name="a8fb6d5e6b65bdbeaf30cb51fe5760e94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fb6d5e6b65bdbeaf30cb51fe5760e94">&#9670;&#160;</a></span>passNames</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char Deki::ProjectSettings::PipelineConfig::passNames[<a class="el" href="namespace_deki_1_1_project_settings.html#a23f126a424212856344ad15c38ee9aa8">MAX_PASSES</a>][<a class="el" href="namespace_deki_1_1_project_settings.html#ade750b777b58fdd2a82668789ac70c05">MAX_PIPELINE_NAME</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>deki-engine/include/deki/<a class="el" href="_project_settings_8h.html">ProjectSettings.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="namespace_deki.html">Deki</a></li><li class="navelem"><a href="namespace_deki_1_1_project_settings.html">ProjectSettings</a></li><li class="navelem"><a href="struct_deki_1_1_project_settings_1_1_pipeline_config.html">PipelineConfig</a></li>
+    <li class="navelem"><a href="dir_017541dafe640aa4d4dcfbd74b88cb14.html">deki-engine</a></li><li class="navelem"><a href="dir_3af395a2d3359137aecaf170ed932034.html">include</a></li><li class="navelem"><a href="dir_49626dee8e15c7505eec6dc01cafd456.html">deki</a></li><li class="navelem"><a href="dir_f778bda05f3efb133bd9953e50b086b6.html">providers</a></li><li class="navelem"><a href="_buffer_8h.html">Buffer.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>

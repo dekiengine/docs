@@ -161,6 +161,7 @@ var namespace_deki_editor =
     [ "GetOrCreateAssetGuid", "namespace_deki_editor.html#a36901389e12d3c7b6f3eb6c527fc4e4f", null ],
     [ "GenerateDeterministicGuid", "namespace_deki_editor.html#af6662147f2cdebc9885250233c539ea8", null ],
     [ "GenerateGuid", "namespace_deki_editor.html#a8921308616a742b17b7b32282ff5a8c0", null ],
+    [ "AddComponentByName", "namespace_deki_editor.html#ad26c0046658ede6a823f430281b1e5b0", null ],
     [ "SetupEditorTheme", "namespace_deki_editor.html#a4223c0f07da52769789798c2fef0991c", null ],
     [ "Tooltip", "namespace_deki_editor.html#a79876406984e4587dfe00432b559d4e5", null ],
     [ "SchematicPicker", "namespace_deki_editor.html#a68514c40270bceaa9eed747470d9c31d", null ],

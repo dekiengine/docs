@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['declaresupdate_0',['DeclaresUpdate',['../class_deki_1_1_component.html#aee7cbe852376e10c7384d3d920aba982',1,'Deki::Component']]],
-  ['decodeimagefile_1',['DecodeImageFile',['../namespace_deki_editor.html#a43a5c7a5c0fce72dd1dbc67d481ba5db',1,'DekiEditor']]],
-  ['dekicurrentreflectionabi_2',['DekiCurrentReflectionAbi',['../_reflection_abi_8h.html#acbc1c9a3d2b2e394acc18d944e054a72',1,'ReflectionAbi.h']]],
-  ['dekimain_3',['DekiMain',['../namespace_deki.html#a8b1b03df6f6dd63de4995534963b8fc0',1,'Deki']]],
+  ['data_0',['Data',['../class_deki_1_1_buffer.html#af3e6d5021ea6de915366edc5d57b1815',1,'Deki::Buffer::Data()'],['../class_deki_1_1_buffer.html#afe15bffe6831a4d2eb8ed8bfccc2dc27',1,'Deki::Buffer::Data() const'],['../class_deki_1_1_vector.html#a7af86a42c581ed5d09384670d461f661',1,'Deki::Vector::Data()'],['../class_deki_1_1_vector.html#ac4885deaa235efef202b125afc2a1628',1,'Deki::Vector::Data() const']]],
+  ['declaresupdate_1',['DeclaresUpdate',['../class_deki_1_1_component.html#a4e5dcce721781137dce72f1285cce38a',1,'Deki::Component::DeclaresUpdate()'],['../namespace_deki_1_1detail.html#a9d282ebc0956fd992c2666fd5c653cdc',1,'Deki::detail::DeclaresUpdate()']]],
+  ['decodeimagefile_2',['DecodeImageFile',['../namespace_deki_editor.html#a43a5c7a5c0fce72dd1dbc67d481ba5db',1,'DekiEditor']]],
+  ['dekicurrentreflectionabi_3',['DekiCurrentReflectionAbi',['../_reflection_abi_8h.html#acbc1c9a3d2b2e394acc18d944e054a72',1,'ReflectionAbi.h']]],
   ['dekiplugin_5fclearregistries_4',['DekiPlugin_ClearRegistries',['../_plugin_8h.html#a71930a0564703e81ef6b3133c6acfc44',1,'Plugin.h']]],
   ['dekiplugin_5fgetcomponentcount_5',['DekiPlugin_GetComponentCount',['../_plugin_8h.html#ac49205c814cae75402e1d5f3fe45efc4',1,'Plugin.h']]],
   ['dekiplugin_5fgetcomponentmeta_6',['DekiPlugin_GetComponentMeta',['../_plugin_8h.html#a3d96e0e370dda0c4e2ba88736ea0540a',1,'Plugin.h']]],
@@ -20,7 +20,7 @@ var searchData=
   ['dekivariablefieldref_17',['DekiVariableFieldRef',['../namespace_deki.html#a70726b336ad4225d680c9ecad81b9a6c',1,'Deki']]],
   ['delay_18',['Delay',['../class_deki_1_1_time.html#a5058c842d38c254c0aa771cf0976cb2b',1,'Deki::Time']]],
   ['delayms_19',['DelayMs',['../class_deki_1_1_i_time_provider.html#a0e028e260ae6e87f8872a00b5338fc95',1,'Deki::ITimeProvider']]],
-  ['deserialize_20',['Deserialize',['../class_deki_1_1_component.html#ad6d07a7bfc2822f7dd1e3bea504d54b4',1,'Deki::Component::Deserialize()'],['../namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514',1,'Deki::Deserialize()']]],
+  ['deserialize_20',['Deserialize',['../class_deki_1_1_component.html#a28ce26bbe235f2fd1766fb509bf801aa',1,'Deki::Component::Deserialize()'],['../namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514',1,'Deki::Deserialize()']]],
   ['desktopfilesystem_21',['DesktopFileSystem',['../class_deki_1_1_desktop_file_system.html#ac970310369b385dad3b8ce2ccf4366ec',1,'Deki::DesktopFileSystem']]],
   ['desktopmemoryprovider_22',['DesktopMemoryProvider',['../class_deki_1_1_desktop_memory_provider.html#acb8c12a17fdb9e980e2f19509912f77b',1,'Deki::DesktopMemoryProvider']]],
   ['destroydekiobject_23',['DestroyDekiObject',['../class_deki_1_1_scene.html#a529ef7a475e108fa80d50134c04fa556',1,'Deki::Scene']]],

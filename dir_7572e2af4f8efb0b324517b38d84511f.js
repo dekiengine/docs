@@ -12,6 +12,7 @@ var dir_7572e2af4f8efb0b324517b38d84511f =
     [ "CustomEditor.h", "_custom_editor_8h.html", "_custom_editor_8h" ],
     [ "EditorApplication.h", "_editor_application_8h.html", "_editor_application_8h" ],
     [ "EditorAssets.h", "_editor_assets_8h.html", "_editor_assets_8h" ],
+    [ "EditorComponents.h", "_editor_components_8h.html", "_editor_components_8h" ],
     [ "EditorDLL.h", "_editor_d_l_l_8h.html", "_editor_d_l_l_8h" ],
     [ "EditorExport.h", "_editor_export_8h.html", "_editor_export_8h" ],
     [ "EditorExtension.h", "_editor_extension_8h.html", "_editor_extension_8h" ],

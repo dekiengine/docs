@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_deki_1_1_object-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Deki::Object Class Reference</div></div>
 </div><!--header-->
@@ -163,37 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a428255e266f4f0d900da73b14206e55e" id="r_a428255e266f4f0d900da73b14206e55e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a428255e266f4f0d900da73b14206e55e">InsertChildAt</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> *child, size_t index)</td></tr>
 <tr class="memitem:a492a761a9de341977a6faa27a8586f5d" id="r_a492a761a9de341977a6faa27a8586f5d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a492a761a9de341977a6faa27a8586f5d">GetChildIndex</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> *child) const</td></tr>
 <tr class="memitem:a98eb027868cdcc8f7aa1a49be74a6d68" id="r_a98eb027868cdcc8f7aa1a49be74a6d68"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a98eb027868cdcc8f7aa1a49be74a6d68">IsActiveInHierarchy</a> () const</td></tr>
-<tr class="memitem:a0f17ffb8f1dcc1b65f2805cca056b407" id="r_a0f17ffb8f1dcc1b65f2805cca056b407"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f17ffb8f1dcc1b65f2805cca056b407">SetLocalPosition</a> (float newX, float newY)</td></tr>
-<tr class="memitem:a9ffa27e76b5c6093c32875749c473ffe" id="r_a9ffa27e76b5c6093c32875749c473ffe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9ffa27e76b5c6093c32875749c473ffe">SetWorldPosition</a> (float worldX, float worldY)</td></tr>
-<tr class="memitem:a7a254c5b591489b2e1583a02ad4995ca" id="r_a7a254c5b591489b2e1583a02ad4995ca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7a254c5b591489b2e1583a02ad4995ca">SetWorldPositionPx</a> (float pxX, float pxY)</td></tr>
-<tr class="memitem:a021787e62c557f5ace2a92441c411cf0" id="r_a021787e62c557f5ace2a92441c411cf0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a021787e62c557f5ace2a92441c411cf0">SetScale</a> (float scaleX, float scaleY)</td></tr>
-<tr class="memitem:a904dc31c54ac89495496952bd7517119" id="r_a904dc31c54ac89495496952bd7517119"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a904dc31c54ac89495496952bd7517119">SetRotation</a> (float radians)</td></tr>
-<tr class="memdesc:a904dc31c54ac89495496952bd7517119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation setter.  <br /></td></tr>
-<tr class="memitem:a1c25a7e33972ec8709001e6394d1d00b" id="r_a1c25a7e33972ec8709001e6394d1d00b"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_world_transform.html">WorldTransform</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1c25a7e33972ec8709001e6394d1d00b">GetWorldTransform</a> () const</td></tr>
-<tr class="memdesc:a1c25a7e33972ec8709001e6394d1d00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">All five world-transform values with one dirty check.  <br /></td></tr>
-<tr class="memitem:aa5a49cfca03fa192c07e04ba1298a9b3" id="r_aa5a49cfca03fa192c07e04ba1298a9b3"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa5a49cfca03fa192c07e04ba1298a9b3">GetWorldX</a> () const</td></tr>
-<tr class="memitem:a7a2441a5ff3b784e3da1016b12f6de48" id="r_a7a2441a5ff3b784e3da1016b12f6de48"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7a2441a5ff3b784e3da1016b12f6de48">GetWorldY</a> () const</td></tr>
-<tr class="memitem:a78fc8dfe46e2527e7152890a18d76493" id="r_a78fc8dfe46e2527e7152890a18d76493"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a78fc8dfe46e2527e7152890a18d76493">GetWorldRotation</a> () const</td></tr>
-<tr class="memitem:ade17398a0c053dcea59f8c40525e4f77" id="r_ade17398a0c053dcea59f8c40525e4f77"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ade17398a0c053dcea59f8c40525e4f77">GetWorldScaleX</a> () const</td></tr>
-<tr class="memitem:a75876ce600e2134861115c5d2e5536a1" id="r_a75876ce600e2134861115c5d2e5536a1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a75876ce600e2134861115c5d2e5536a1">GetWorldScaleY</a> () const</td></tr>
 <tr class="memitem:a9860971733bf5840e7d83142bea35f5b" id="r_a9860971733bf5840e7d83142bea35f5b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9860971733bf5840e7d83142bea35f5b">MarkWorldTransformDirty</a> ()</td></tr>
-<tr class="memdesc:a9860971733bf5840e7d83142bea35f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark this object's world transform (and all descendants) as needing recalculation.  <br /></td></tr>
-<tr class="memitem:a1c3b118e634e42b82d03e2eb44e0c100" id="r_a1c3b118e634e42b82d03e2eb44e0c100"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1c3b118e634e42b82d03e2eb44e0c100">GetX</a> () const</td></tr>
-<tr class="memitem:ae51f34b181fe7b23d87f319879e11615" id="r_ae51f34b181fe7b23d87f319879e11615"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae51f34b181fe7b23d87f319879e11615">GetY</a> () const</td></tr>
-<tr class="memitem:aaa0be411e5f141917608899a3d04c772" id="r_aaa0be411e5f141917608899a3d04c772"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aaa0be411e5f141917608899a3d04c772">GetLocalRotation</a> () const</td></tr>
-<tr class="memitem:aee3b5250351e149d8bc175fb7ca51132" id="r_aee3b5250351e149d8bc175fb7ca51132"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aee3b5250351e149d8bc175fb7ca51132">GetScaleX</a> () const</td></tr>
-<tr class="memitem:ad95d8cfeffeaca111b660d2db3a548b9" id="r_ad95d8cfeffeaca111b660d2db3a548b9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad95d8cfeffeaca111b660d2db3a548b9">GetScaleY</a> () const</td></tr>
-<tr class="memitem:a64746aa6b8d8624dcf49bba2d1baa9e2" id="r_a64746aa6b8d8624dcf49bba2d1baa9e2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a64746aa6b8d8624dcf49bba2d1baa9e2">SetX</a> (float newX)</td></tr>
-<tr class="memitem:a5860d0ceee9fac5d13ebcab8607712c7" id="r_a5860d0ceee9fac5d13ebcab8607712c7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5860d0ceee9fac5d13ebcab8607712c7">SetY</a> (float newY)</td></tr>
-<tr class="memitem:a2ca2dff52ba309772bfacd1648c61cd4" id="r_a2ca2dff52ba309772bfacd1648c61cd4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2ca2dff52ba309772bfacd1648c61cd4">SetScaleX</a> (float newScaleX)</td></tr>
-<tr class="memitem:a7fdc7d71df47b9e62299a66c0b6577cd" id="r_a7fdc7d71df47b9e62299a66c0b6577cd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7fdc7d71df47b9e62299a66c0b6577cd">SetScaleY</a> (float newScaleY)</td></tr>
 <tr class="memitem:af5fc9dcf728c8990c6ee91d535c56f45" id="r_af5fc9dcf728c8990c6ee91d535c56f45"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Args&gt; </td></tr>
 <tr class="memitem:af5fc9dcf728c8990c6ee91d535c56f45 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#af5fc9dcf728c8990c6ee91d535c56f45">AddComponent</a> (Args &amp;&amp;... args)</td></tr>
-<tr class="memitem:a4a845277fd28544e606d47022c48214d" id="r_a4a845277fd28544e606d47022c48214d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a845277fd28544e606d47022c48214d">AddComponent</a> (<a class="el" href="class_deki_1_1_component.html">Component</a> *component)</td></tr>
-<tr class="memdesc:a4a845277fd28544e606d47022c48214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a pre-created component (runtime scene loading).  <br /></td></tr>
-<tr class="memitem:a593a662e8a0f64e7c988f82d3f41f212" id="r_a593a662e8a0f64e7c988f82d3f41f212"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a593a662e8a0f64e7c988f82d3f41f212">AddComponent</a> (const std::string &amp;typeName)</td></tr>
-<tr class="memdesc:a593a662e8a0f64e7c988f82d3f41f212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a component by type name (editor only).  <br /></td></tr>
-<tr class="memitem:a8ae8f4ec5bd5d0f493c9cf4bbe68587d" id="r_a8ae8f4ec5bd5d0f493c9cf4bbe68587d"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a8ae8f4ec5bd5d0f493c9cf4bbe68587d">AddComponent</a> (const std::string &amp;typeName, const std::string &amp;classHint)</td></tr>
 <tr class="memitem:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3" id="r_ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3">GetComponent</a> ()</td></tr>
 <tr class="memdesc:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get component by type, including derived types Matches both exact type and components that inherit from T.  <br /></td></tr>
@@ -222,6 +195,11 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a70bbf06c8d9890e2b8e181e7c61605f9" id="r_a70bbf06c8d9890e2b8e181e7c61605f9"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a70bbf06c8d9890e2b8e181e7c61605f9">GenerateId</a> ()</td></tr>
 <tr class="memitem:afb44a6f99731c4fad87ea9d7219145bd" id="r_afb44a6f99731c4fad87ea9d7219145bd"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#afb44a6f99731c4fad87ea9d7219145bd">GenerateDeterministicId</a> (uint32_t seed1, uint32_t seed2)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3318220670f0f0f7c585f9916453f521" id="r_a3318220670f0f0f7c585f9916453f521"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3318220670f0f0f7c585f9916453f521">Internal::AttachComponent</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, <a class="el" href="class_deki_1_1_component.html">Component</a> *component)</td></tr>
+<tr class="memitem:a90a855564194fa802c96d741a925b310" id="r_a90a855564194fa802c96d741a925b310"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a90a855564194fa802c96d741a925b310">Internal::AddComponentByName</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, const std::string &amp;typeName, const std::string &amp;classHint)</td></tr>
 </table>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e4b301a92a380889c0ce0b3723758ca" name="a5e4b301a92a380889c0ce0b3723758ca"></a>
@@ -302,7 +280,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Out of line ON PURPOSE. </p>
-<p>It erases this object's row from the editor-only side table in DekiObject.cpp, which the runtime build must not need to see. Defining it <span class="tt">= default</span> in this header would reintroduce exactly the layout dependency this design removes. </p>
+<p>It erases this object's row from the editor-only side table in Object.cpp, which the runtime build must not need to see. Defining it <span class="tt">= default</span> in this header would reintroduce exactly the layout dependency this design removes. </p>
 
 </div>
 </div>
@@ -1048,267 +1026,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f17ffb8f1dcc1b65f2805cca056b407" name="a0f17ffb8f1dcc1b65f2805cca056b407"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f17ffb8f1dcc1b65f2805cca056b407">&#9670;&#160;</a></span>SetLocalPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetLocalPosition </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newY</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ffa27e76b5c6093c32875749c473ffe" name="a9ffa27e76b5c6093c32875749c473ffe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ffa27e76b5c6093c32875749c473ffe">&#9670;&#160;</a></span>SetWorldPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetWorldPosition </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>worldX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>worldY</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7a254c5b591489b2e1583a02ad4995ca" name="a7a254c5b591489b2e1583a02ad4995ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a254c5b591489b2e1583a02ad4995ca">&#9670;&#160;</a></span>SetWorldPositionPx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetWorldPositionPx </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pxX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pxY</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a021787e62c557f5ace2a92441c411cf0" name="a021787e62c557f5ace2a92441c411cf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a021787e62c557f5ace2a92441c411cf0">&#9670;&#160;</a></span>SetScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetScale </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scaleX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scaleY</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a904dc31c54ac89495496952bd7517119" name="a904dc31c54ac89495496952bd7517119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904dc31c54ac89495496952bd7517119">&#9670;&#160;</a></span>SetRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetRotation </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>radians</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Rotation setter. </p>
-<p>Angle is in radians (the inspector displays degrees via <a class="el" href="_property_8h.html#a5c1b50b3c63c105d9892d82fcf0135a4">DEKI_UNIT(Angle)</a>). </p>
-
-</div>
-</div>
-<a id="a1c25a7e33972ec8709001e6394d1d00b" name="a1c25a7e33972ec8709001e6394d1d00b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c25a7e33972ec8709001e6394d1d00b">&#9670;&#160;</a></span>GetWorldTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_deki_1_1_world_transform.html">WorldTransform</a> Deki::Object::GetWorldTransform </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>All five world-transform values with one dirty check. </p>
-
-</div>
-</div>
-<a id="aa5a49cfca03fa192c07e04ba1298a9b3" name="aa5a49cfca03fa192c07e04ba1298a9b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5a49cfca03fa192c07e04ba1298a9b3">&#9670;&#160;</a></span>GetWorldX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetWorldX </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7a2441a5ff3b784e3da1016b12f6de48" name="a7a2441a5ff3b784e3da1016b12f6de48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a2441a5ff3b784e3da1016b12f6de48">&#9670;&#160;</a></span>GetWorldY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetWorldY </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a78fc8dfe46e2527e7152890a18d76493" name="a78fc8dfe46e2527e7152890a18d76493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78fc8dfe46e2527e7152890a18d76493">&#9670;&#160;</a></span>GetWorldRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetWorldRotation </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade17398a0c053dcea59f8c40525e4f77" name="ade17398a0c053dcea59f8c40525e4f77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade17398a0c053dcea59f8c40525e4f77">&#9670;&#160;</a></span>GetWorldScaleX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetWorldScaleX </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a75876ce600e2134861115c5d2e5536a1" name="a75876ce600e2134861115c5d2e5536a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75876ce600e2134861115c5d2e5536a1">&#9670;&#160;</a></span>GetWorldScaleY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetWorldScaleY </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9860971733bf5840e7d83142bea35f5b" name="a9860971733bf5840e7d83142bea35f5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9860971733bf5840e7d83142bea35f5b">&#9670;&#160;</a></span>MarkWorldTransformDirty()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Deki::Object::MarkWorldTransformDirty </td>
@@ -1317,207 +1042,17 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>Mark this object's world transform (and all descendants) as needing recalculation. </p>
-
-</div>
-</div>
-<a id="a1c3b118e634e42b82d03e2eb44e0c100" name="a1c3b118e634e42b82d03e2eb44e0c100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3b118e634e42b82d03e2eb44e0c100">&#9670;&#160;</a></span>GetX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetX </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae51f34b181fe7b23d87f319879e11615" name="ae51f34b181fe7b23d87f319879e11615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae51f34b181fe7b23d87f319879e11615">&#9670;&#160;</a></span>GetY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetY </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa0be411e5f141917608899a3d04c772" name="aaa0be411e5f141917608899a3d04c772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa0be411e5f141917608899a3d04c772">&#9670;&#160;</a></span>GetLocalRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetLocalRotation </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee3b5250351e149d8bc175fb7ca51132" name="aee3b5250351e149d8bc175fb7ca51132"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee3b5250351e149d8bc175fb7ca51132">&#9670;&#160;</a></span>GetScaleX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetScaleX </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad95d8cfeffeaca111b660d2db3a548b9" name="ad95d8cfeffeaca111b660d2db3a548b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad95d8cfeffeaca111b660d2db3a548b9">&#9670;&#160;</a></span>GetScaleY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Object::GetScaleY </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64746aa6b8d8624dcf49bba2d1baa9e2" name="a64746aa6b8d8624dcf49bba2d1baa9e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64746aa6b8d8624dcf49bba2d1baa9e2">&#9670;&#160;</a></span>SetX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetX </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newX</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5860d0ceee9fac5d13ebcab8607712c7" name="a5860d0ceee9fac5d13ebcab8607712c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5860d0ceee9fac5d13ebcab8607712c7">&#9670;&#160;</a></span>SetY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetY </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newY</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ca2dff52ba309772bfacd1648c61cd4" name="a2ca2dff52ba309772bfacd1648c61cd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ca2dff52ba309772bfacd1648c61cd4">&#9670;&#160;</a></span>SetScaleX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetScaleX </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newScaleX</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7fdc7d71df47b9e62299a66c0b6577cd" name="a7fdc7d71df47b9e62299a66c0b6577cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fdc7d71df47b9e62299a66c0b6577cd">&#9670;&#160;</a></span>SetScaleY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::SetScaleY </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newScaleY</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <a id="af5fc9dcf728c8990c6ee91d535c56f45" name="af5fc9dcf728c8990c6ee91d535c56f45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5fc9dcf728c8990c6ee91d535c56f45">&#9670;&#160;</a></span>AddComponent() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fc9dcf728c8990c6ee91d535c56f45">&#9670;&#160;</a></span>AddComponent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1539,86 +1074,6 @@ template&lt;typename T, typename... Args&gt; </div>
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a845277fd28544e606d47022c48214d" name="a4a845277fd28544e606d47022c48214d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a845277fd28544e606d47022c48214d">&#9670;&#160;</a></span>AddComponent() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Object::AddComponent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a pre-created component (runtime scene loading). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">component</td><td>The component to add (takes ownership) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a593a662e8a0f64e7c988f82d3f41f212" name="a593a662e8a0f64e7c988f82d3f41f212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a593a662e8a0f64e7c988f82d3f41f212">&#9670;&#160;</a></span>AddComponent() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_component.html">Component</a> * Deki::Object::AddComponent </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a component by type name (editor only). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">typeName</td><td>The registered component type name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The created component, or nullptr if type not found </dd></dl>
-
-</div>
-</div>
-<a id="a8ae8f4ec5bd5d0f493c9cf4bbe68587d" name="a8ae8f4ec5bd5d0f493c9cf4bbe68587d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ae8f4ec5bd5d0f493c9cf4bbe68587d">&#9670;&#160;</a></span>AddComponent() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_component.html">Component</a> * Deki::Object::AddComponent </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>classHint</em></span>&#160;)</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1905,6 +1360,70 @@ template&lt;typename T&gt; </div>
 
 <p>Find a component implementing a given interface No RTTI needed — uses <a class="el" href="namespace_deki_1_1_component_interface_adapters.html">ComponentInterfaceAdapters</a> registry. </p>
 <p>T must have a static constexpr uint32_t InterfaceID member. </p>
+
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a3318220670f0f0f7c585f9916453f521" name="a3318220670f0f0f7c585f9916453f521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3318220670f0f0f7c585f9916453f521">&#9670;&#160;</a></span>Internal::AttachComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="namespace_deki_1_1_internal.html#af0536223a36e4c9b36f999ce13e19de2">Internal::AttachComponent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90a855564194fa802c96d741a925b310" name="a90a855564194fa802c96d741a925b310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a855564194fa802c96d741a925b310">&#9670;&#160;</a></span>Internal::AddComponentByName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_component.html">Component</a> * <a class="el" href="namespace_deki_1_1_internal.html#a7c8357a556108a8646db7a03ff0aa336">Internal::AddComponentByName</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>classHint</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

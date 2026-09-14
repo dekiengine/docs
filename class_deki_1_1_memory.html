@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -113,17 +113,25 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_deki_1_1_memory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Deki::Memory Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>.  
+<p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base texture class for V-Engine.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/providers/Memory.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Region" id="r_Region"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where an allocation lives.  <a href="struct_deki_1_1_memory_1_1_region.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b9902ccf85077bdb732c87844a62037" id="r_a0b9902ccf85077bdb732c87844a62037"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0b9902ccf85077bdb732c87844a62037">Initialize</a> ()</td></tr>
@@ -134,23 +142,48 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1b059aac05f640f1615b15a2ab475914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the memory provider implementation directly.  <br /></td></tr>
 <tr class="memitem:aea302ebf2abb3f88688c23a9183a9a4f" id="r_aea302ebf2abb3f88688c23a9183a9a4f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aea302ebf2abb3f88688c23a9183a9a4f">IsInitialized</a> ()</td></tr>
 <tr class="memdesc:aea302ebf2abb3f88688c23a9183a9a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the memory backend is initialized.  <br /></td></tr>
-<tr class="memitem:a899969c560843bfe9d5ae26cf6d9e160" id="r_a899969c560843bfe9d5ae26cf6d9e160"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a899969c560843bfe9d5ae26cf6d9e160">Allocate</a> (size_t size, bool prefer_psram=false, const char *context=nullptr)</td></tr>
-<tr class="memdesc:a899969c560843bfe9d5ae26cf6d9e160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory.  <br /></td></tr>
-<tr class="memitem:abafbc5b1ad10a7bb0ea59f8b8af0479a" id="r_abafbc5b1ad10a7bb0ea59f8b8af0479a"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#abafbc5b1ad10a7bb0ea59f8b8af0479a">AllocateInternal</a> (size_t size, const char *context=nullptr)</td></tr>
-<tr class="memdesc:abafbc5b1ad10a7bb0ea59f8b8af0479a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory from internal RAM only (never external/PSRAM).  <br /></td></tr>
+<tr class="memitem:a6d9b509ef3314a6575f5962482b751f1" id="r_a6d9b509ef3314a6575f5962482b751f1"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a6d9b509ef3314a6575f5962482b751f1">Allocate</a> (size_t size, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memdesc:a6d9b509ef3314a6575f5962482b751f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory, the engine choosing where it lives.  <br /></td></tr>
+<tr class="memitem:a274732377abd441bb2e8ff9362645c22" id="r_a274732377abd441bb2e8ff9362645c22"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a274732377abd441bb2e8ff9362645c22">AllocateDma</a> (size_t size, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memdesc:a274732377abd441bb2e8ff9362645c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory a DMA engine can read, from <span class="tt">region</span>.  <br /></td></tr>
+<tr class="memitem:aeea8b39fe1f5c6539ceac71de7c25965" id="r_aeea8b39fe1f5c6539ceac71de7c25965"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#aeea8b39fe1f5c6539ceac71de7c25965">Allocate</a> (size_t size, bool prefer_psram, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memdesc:aeea8b39fe1f5c6539ceac71de7c25965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: name the region instead of choosing PSRAM yourself.  <br /></td></tr>
+<tr class="memitem:a2cf615b85242289254ce34197ccae81f" id="r_a2cf615b85242289254ce34197ccae81f"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a2cf615b85242289254ce34197ccae81f">AllocateInternal</a> (size_t size, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memdesc:a2cf615b85242289254ce34197ccae81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory from internal RAM only (never external/PSRAM).  <br /></td></tr>
 <tr class="memitem:ad445d872ff93cff2894ed58306030f3b" id="r_ad445d872ff93cff2894ed58306030f3b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad445d872ff93cff2894ed58306030f3b">FreeInternal</a> (void *ptr)</td></tr>
 <tr class="memdesc:ad445d872ff93cff2894ed58306030f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated via AllocateInternal.  <br /></td></tr>
-<tr class="memitem:ac0c712dac93eb314f49fac20e74de545" id="r_ac0c712dac93eb314f49fac20e74de545"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ac0c712dac93eb314f49fac20e74de545">Free</a> (void *ptr, const char *context=nullptr)</td></tr>
+<tr class="memitem:abb36646b85053c9d40c49e734bc6c591" id="r_abb36646b85053c9d40c49e734bc6c591"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abb36646b85053c9d40c49e734bc6c591">Free</a> (void *ptr, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memitem:a270edb97db3ff4fdde472c3cc007488b" id="r_a270edb97db3ff4fdde472c3cc007488b"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a270edb97db3ff4fdde472c3cc007488b template"><td class="memItemLeft">static T *&#160;</td><td class="memItemRight"><a class="el" href="#a270edb97db3ff4fdde472c3cc007488b">AllocateArray</a> (size_t count, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memdesc:a270edb97db3ff4fdde472c3cc007488b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate an array of <span class="tt">count</span> T, or return nullptr.  <br /></td></tr>
 <tr class="memitem:abda26939bb2db1ab6774c53f0a102cb1" id="r_abda26939bb2db1ab6774c53f0a102cb1"><td class="memItemLeft">static <a class="el" href="struct_deki_1_1_memory_stats.html">MemoryStats</a>&#160;</td><td class="memItemRight"><a class="el" href="#abda26939bb2db1ab6774c53f0a102cb1">GetStats</a> ()</td></tr>
 <tr class="memdesc:abda26939bb2db1ab6774c53f0a102cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current memory statistics.  <br /></td></tr>
 <tr class="memitem:a4c2e1a150b48ea097726054bf1641e42" id="r_a4c2e1a150b48ea097726054bf1641e42"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#a4c2e1a150b48ea097726054bf1641e42">GetAvailablePSRAM</a> ()</td></tr>
 <tr class="memdesc:a4c2e1a150b48ea097726054bf1641e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available PSRAM size.  <br /></td></tr>
+<tr class="memitem:aaf00ff0e99582d04cd4210289979f3f9" id="r_aaf00ff0e99582d04cd4210289979f3f9"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#aaf00ff0e99582d04cd4210289979f3f9">GetAvailableInternal</a> ()</td></tr>
+<tr class="memdesc:aaf00ff0e99582d04cd4210289979f3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available internal RAM.  <br /></td></tr>
+<tr class="memitem:a02f9bf3184bcd2ad7d819c50d5bfa65c" id="r_a02f9bf3184bcd2ad7d819c50d5bfa65c"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#a02f9bf3184bcd2ad7d819c50d5bfa65c">GetRawAllocated</a> ()</td></tr>
+<tr class="memdesc:a02f9bf3184bcd2ad7d819c50d5bfa65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes currently held by the raw (operator new) path.  <br /></td></tr>
+<tr class="memitem:a6c3dc565d07425f0580f3d2909c8f35e" id="r_a6c3dc565d07425f0580f3d2909c8f35e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a6c3dc565d07425f0580f3d2909c8f35e">LogStats</a> (const char *label=nullptr)</td></tr>
+<tr class="memdesc:a6c3dc565d07425f0580f3d2909c8f35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log what is allocated and what is left, in one line.  <br /></td></tr>
 <tr class="memitem:a05a751ac50ef5d6b607a3dff3de62643" id="r_a05a751ac50ef5d6b607a3dff3de62643"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a05a751ac50ef5d6b607a3dff3de62643">IsPSRAMAvailable</a> ()</td></tr>
 <tr class="memdesc:a05a751ac50ef5d6b607a3dff3de62643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if PSRAM is available.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a585469b9a34a1dbecec8ee0439f45634" id="r_a585469b9a34a1dbecec8ee0439f45634"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a585469b9a34a1dbecec8ee0439f45634">Internal</a> {&quot;internal&quot;}</td></tr>
+<tr class="memdesc:a585469b9a34a1dbecec8ee0439f45634"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM. Fast, and the scarce one — a few hundred KB on an ESP32-S3.  <br /></td></tr>
+<tr class="memitem:a44e1e0894dcca1ef22f5f59cf04c75ee" id="r_a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee">External</a> {&quot;external&quot;}</td></tr>
+<tr class="memdesc:a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">External RAM (PSRAM) where the board has it.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0d590d64847d01b36b6f1bd07ce798cc" id="r_a0d590d64847d01b36b6f1bd07ce798cc"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a0d590d64847d01b36b6f1bd07ce798cc">detail::RawAllocate</a> (size_t size)</td></tr>
+<tr class="memitem:aa3ba5f25e3ceb8e97042c97123783e39" id="r_aa3ba5f25e3ceb8e97042c97123783e39"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa3ba5f25e3ceb8e97042c97123783e39">detail::RawFree</a> (void *ptr)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>. </p>
-<p>Provides centralized memory management with PSRAM support. Handles PSRAM usage and RAM allocation limits for the <a class="el" href="namespace_deki.html" title="Base class for components with lifecycle methods.">Deki</a>. </p>
+<div class="textblock"><p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> Provider for <a class="el" href="namespace_deki.html" title="Base texture class for V-Engine.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>. </p>
+<p>Provides centralized memory management with PSRAM support. Handles PSRAM usage and RAM allocation limits for the <a class="el" href="namespace_deki.html" title="Base texture class for V-Engine.">Deki</a>. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a0b9902ccf85077bdb732c87844a62037" name="a0b9902ccf85077bdb732c87844a62037"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b9902ccf85077bdb732c87844a62037">&#9670;&#160;</a></span>Initialize()</h2>
@@ -268,8 +301,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a899969c560843bfe9d5ae26cf6d9e160" name="a899969c560843bfe9d5ae26cf6d9e160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a899969c560843bfe9d5ae26cf6d9e160">&#9670;&#160;</a></span>Allocate()</h2>
+<a id="a6d9b509ef3314a6575f5962482b751f1" name="a6d9b509ef3314a6575f5962482b751f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9b509ef3314a6575f5962482b751f1">&#9670;&#160;</a></span>Allocate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,12 +318,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>prefer_psram</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>context</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -300,12 +333,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allocate memory. </p>
+<p>Allocate memory, the engine choosing where it lives. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Size in bytes to allocate </td></tr>
-    <tr><td class="paramname">prefer_psram</td><td>Whether to prefer PSRAM for this allocation </td></tr>
-    <tr><td class="paramname">context</td><td>Optional context string for debugging </td></tr>
+    <tr><td class="paramname">size</td><td>Size in bytes </td></tr>
+    <tr><td class="paramname">region</td><td>Where it lives. Resolved once, with no fallback to any other region; a region the board's provider does not serve returns nullptr and is named in the log </td></tr>
+    <tr><td class="paramname">ctx</td><td>Who is asking. Omit it — the compiler fills in the call site </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,8 +346,82 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abafbc5b1ad10a7bb0ea59f8b8af0479a" name="abafbc5b1ad10a7bb0ea59f8b8af0479a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abafbc5b1ad10a7bb0ea59f8b8af0479a">&#9670;&#160;</a></span>AllocateInternal()</h2>
+<a id="a274732377abd441bb2e8ff9362645c22" name="a274732377abd441bb2e8ff9362645c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274732377abd441bb2e8ff9362645c22">&#9670;&#160;</a></span>AllocateDma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * Deki::Memory::AllocateDma </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocate memory a DMA engine can read, from <span class="tt">region</span>. </p>
+<p>Reachability is a constraint, not a place: a framebuffer must be reachable whether the board keeps it in internal RAM or in PSRAM, and saying so with a separate entry point means neither choice can silently drop the requirement. On a platform where every allocation is equally reachable this is the same as Allocate, and the provider says so. </p>
+
+</div>
+</div>
+<a id="aeea8b39fe1f5c6539ceac71de7c25965" name="aeea8b39fe1f5c6539ceac71de7c25965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea8b39fe1f5c6539ceac71de7c25965">&#9670;&#160;</a></span>Allocate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * Deki::Memory::Allocate </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>prefer_psram</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deprecated: name the region instead of choosing PSRAM yourself. </p>
+<p>true maps to <a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee" title="External RAM (PSRAM) where the board has it.">Deki::Memory::External</a> and false to <a class="el" href="#a585469b9a34a1dbecec8ee0439f45634" title="Internal RAM. Fast, and the scarce one — a few hundred KB on an ESP32-S3.">Deki::Memory::Internal</a>. </p>
+
+</div>
+</div>
+<a id="a2cf615b85242289254ce34197ccae81f" name="a2cf615b85242289254ce34197ccae81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf615b85242289254ce34197ccae81f">&#9670;&#160;</a></span>AllocateInternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +437,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>context</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -344,7 +451,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes to allocate </td></tr>
-    <tr><td class="paramname">context</td><td>Optional context string for debugging </td></tr>
+    <tr><td class="paramname">ctx</td><td>Who is asking. Omit it — the compiler fills in the call site </td></tr>
   </table>
   </dd>
 </dl>
@@ -385,8 +492,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0c712dac93eb314f49fac20e74de545" name="ac0c712dac93eb314f49fac20e74de545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0c712dac93eb314f49fac20e74de545">&#9670;&#160;</a></span>Free()</h2>
+<a id="abb36646b85053c9d40c49e734bc6c591" name="abb36646b85053c9d40c49e734bc6c591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb36646b85053c9d40c49e734bc6c591">&#9670;&#160;</a></span>Free()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,7 +509,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>context</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -411,6 +518,48 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a270edb97db3ff4fdde472c3cc007488b" name="a270edb97db3ff4fdde472c3cc007488b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270edb97db3ff4fdde472c3cc007488b">&#9670;&#160;</a></span>AllocateArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * Deki::Memory::AllocateArray </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocate an array of <span class="tt">count</span> T, or return nullptr. </p>
+<p>Use this instead of <span class="tt">new T[count]</span> for anything whose size comes from a file, a scene, or the screen.</p>
+<p><span class="tt">new[]</span> cannot fail gracefully on a device: ESP-IDF builds with exceptions off, so the bad_alloc reaches __cxa_allocate_exception and calls abort(), rebooting the board. <span class="tt">std::nothrow</span> does not help either, because libstdc++ implements it by calling the throwing form inside a try/catch that -fno-exceptions has removed. A caller that checks the result can carry on without the thing it wanted, which is nearly always better than a reboot.</p>
+<p>The multiplication is checked too. A count read from a file is attacker- or corruption-controlled, and <span class="tt">count * sizeof(T)</span> is computed in a 32-bit size_t on the device, so a large count silently wraps to a small one.</p>
+<p>Trivially copyable only: this does not construct anything, matching the raw buffers it replaces. </p>
 
 </div>
 </div>
@@ -470,6 +619,99 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf00ff0e99582d04cd4210289979f3f9" name="aaf00ff0e99582d04cd4210289979f3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf00ff0e99582d04cd4210289979f3f9">&#9670;&#160;</a></span>GetAvailableInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::Memory::GetAvailableInternal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get available internal RAM. </p>
+<dl class="section return"><dt>Returns</dt><dd>Free internal RAM in bytes, or 0 where the platform does not report it (the desktop provider does not — the number is meaningless where the OS pages)</dd></dl>
+<p>The companion to GetAvailablePSRAM, which existed alone: the free internal figure is the one a project is actually sized against, and it was reachable only through a provider a caller does not have. </p>
+
+</div>
+</div>
+<a id="a02f9bf3184bcd2ad7d819c50d5bfa65c" name="a02f9bf3184bcd2ad7d819c50d5bfa65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f9bf3184bcd2ad7d819c50d5bfa65c">&#9670;&#160;</a></span>GetRawAllocated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::Memory::GetRawAllocated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bytes currently held by the raw (operator new) path. </p>
+<dl class="section return"><dt>Returns</dt><dd>Live bytes in std::vector, std::string and scalar <span class="tt">new</span> allocations, or 0 when the build does not count them</dd></dl>
+<p><b>Requires DEKI_MEMORY_TRACK_RAW</b>, and returns 0 without it. Counting needs the block size on free, and with no header the only source is the heap: measured at +35% per allocation (63-71 ns against 47-52 for malloc+free), because on Windows that is _msize calling HeapSize and taking a lock. Routing itself is free, so every build routes and only a build that asks counts. Turn it on while hunting where memory went.</p>
+<p>Approximate even then: allocations made before the memory backend exists (static initialisers) are freed through it afterwards, so the total is clamped at zero rather than allowed to underflow into a nonsense figure. It is a diagnostic, not an invariant. </p>
+
+</div>
+</div>
+<a id="a6c3dc565d07425f0580f3d2909c8f35e" name="a6c3dc565d07425f0580f3d2909c8f35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3dc565d07425f0580f3d2909c8f35e">&#9670;&#160;</a></span>LogStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::LogStats </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>label</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log what is allocated and what is left, in one line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Optional tag for the line ("after level load")</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>For answering "how much memory am I using?" from game code without assembling it from GetStats and a provider. Costs nothing unless called; in debug builds it also reports the live and peak allocation counts. </p>
+
+</div>
+</div>
 <a id="a05a751ac50ef5d6b607a3dff3de62643" name="a05a751ac50ef5d6b607a3dff3de62643"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05a751ac50ef5d6b607a3dff3de62643">&#9670;&#160;</a></span>IsPSRAMAvailable()</h2>
 
@@ -495,6 +737,107 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Check if PSRAM is available. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if PSRAM available </dd></dl>
+
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a0d590d64847d01b36b6f1bd07ce798cc" name="a0d590d64847d01b36b6f1bd07ce798cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d590d64847d01b36b6f1bd07ce798cc">&#9670;&#160;</a></span>detail::RawAllocate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * <a class="el" href="namespace_deki_1_1detail.html#a90da7e8bb5d951e80042366b76e2e46e">detail::RawAllocate</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3ba5f25e3ceb8e97042c97123783e39" name="aa3ba5f25e3ceb8e97042c97123783e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ba5f25e3ceb8e97042c97123783e39">&#9670;&#160;</a></span>detail::RawFree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="namespace_deki_1_1detail.html#aeb6f9b417c20e4c5d6475492e0fb68e4">detail::RawFree</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a585469b9a34a1dbecec8ee0439f45634" name="a585469b9a34a1dbecec8ee0439f45634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585469b9a34a1dbecec8ee0439f45634">&#9670;&#160;</a></span>Internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> Deki::Memory::Internal {&quot;internal&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM. Fast, and the scarce one — a few hundred KB on an ESP32-S3. </p>
+
+</div>
+</div>
+<a id="a44e1e0894dcca1ef22f5f59cf04c75ee" name="a44e1e0894dcca1ef22f5f59cf04c75ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e1e0894dcca1ef22f5f59cf04c75ee">&#9670;&#160;</a></span>External</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> Deki::Memory::External {&quot;external&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>External RAM (PSRAM) where the board has it. </p>
+<p>Megabytes, and markedly slower: it is reached over SPI, so a buffer read every frame does not belong here. Asking for it is a claim that this buffer's latency does not matter. </p>
 
 </div>
 </div>

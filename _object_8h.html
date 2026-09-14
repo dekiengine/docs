@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -122,16 +122,18 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_object_8h.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:Deki_3A_3AWorldTransform" id="r_Deki_3A_3AWorldTransform"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_world_transform.html">Deki::WorldTransform</a></td></tr>
 <tr class="memitem:Deki_3A_3AObject" id="r_Deki_3A_3AObject"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_object.html">Deki::Object</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
+<tr class="memitem:Deki_3A_3AInternal" id="r_Deki_3A_3AInternal"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_internal.html">Deki::Internal</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af0536223a36e4c9b36f999ce13e19de2" id="r_af0536223a36e4c9b36f999ce13e19de2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_internal.html#af0536223a36e4c9b36f999ce13e19de2">Deki::Internal::AttachComponent</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> &amp;object, <a class="el" href="class_deki_1_1_component.html">Component</a> *component)</td></tr>
+<tr class="memitem:a7c8357a556108a8646db7a03ff0aa336" id="r_a7c8357a556108a8646db7a03ff0aa336"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_internal.html#a7c8357a556108a8646db7a03ff0aa336">Deki::Internal::AddComponentByName</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> &amp;object, const std::string &amp;typeName, const std::string &amp;classHint)</td></tr>
 <tr class="memitem:a22ea94289b214746512305d8bc075c4d" id="r_a22ea94289b214746512305d8bc075c4d"><td class="memTemplParams" colspan="2">template&lt;typename Fn&gt; </td></tr>
 <tr class="memitem:a22ea94289b214746512305d8bc075c4d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html#a22ea94289b214746512305d8bc075c4d">Deki::VisitSubtree</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *root, Fn &amp;&amp;fn)</td></tr>
 <tr class="memdesc:a22ea94289b214746512305d8bc075c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-order visit of <span class="tt">root</span> and every descendant. <span class="tt">fn(Object*)</span>.  <br /></td></tr>

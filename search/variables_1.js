@@ -3,7 +3,7 @@ var searchData=
   ['b_0',['b',['../class_deki_1_1_color.html#a88bef092eda301401e9cea1eb1f99323',1,'Deki::Color::b'],['../struct_deki_editor_1_1_chroma_key_settings.html#a5368386c4bbd4f0dea048a8d084ac8af',1,'DekiEditor::ChromaKeySettings::b']]],
   ['background_1',['background',['../struct_deki_editor_1_1_node_canvas_palette.html#a8f15ca5a6a85d2019d742af36792bd91',1,'DekiEditor::NodeCanvasPalette']]],
   ['backgroundclicked_2',['backgroundClicked',['../struct_deki_editor_1_1_node_canvas_events.html#a5d5ca1599c57ab6c15ad55b5ae7f11c5',1,'DekiEditor::NodeCanvasEvents']]],
-  ['basetypeid_3',['baseTypeId',['../struct_deki_1_1_component_meta.html#a9515ce9c1abdcc7bda488a89cd1a0068',1,'Deki::ComponentMeta']]],
+  ['basetypeid_3',['baseTypeId',['../struct_deki_1_1_component_type_info.html#ad04a2491b3d1e9237da8bdcecd43dd77',1,'Deki::ComponentTypeInfo::baseTypeId'],['../struct_deki_1_1_component_meta.html#a9515ce9c1abdcc7bda488a89cd1a0068',1,'Deki::ComponentMeta::baseTypeId']]],
   ['begincombo_4',['beginCombo',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a13dd8b96749337c5b93749c8007f7792',1,'DekiEditor::EditorUI::WidgetBackend']]],
   ['begindisabled_5',['beginDisabled',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a039717bc13bffc60deb9b03686ae1cdd',1,'DekiEditor::EditorUI::WidgetBackend']]],
   ['begintablinks_6',['beginTabLinks',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#aa5b27353a62bea9c0c956fb8070ed24d',1,'DekiEditor::EditorUI::WidgetBackend']]],

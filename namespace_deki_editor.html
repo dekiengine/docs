@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -305,6 +305,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:af6662147f2cdebc9885250233c539ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a deterministic GUID from a seed string (for derived assets like font sizes).  <br /></td></tr>
 <tr class="memitem:a8921308616a742b17b7b32282ff5a8c0" id="r_a8921308616a742b17b7b32282ff5a8c0"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a8921308616a742b17b7b32282ff5a8c0">GenerateGuid</a> ()</td></tr>
 <tr class="memdesc:a8921308616a742b17b7b32282ff5a8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random GUID.  <br /></td></tr>
+<tr class="memitem:ad26c0046658ede6a823f430281b1e5b0" id="r_ad26c0046658ede6a823f430281b1e5b0"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad26c0046658ede6a823f430281b1e5b0">AddComponentByName</a> (<a class="el" href="class_deki_1_1_object.html">Deki::Object</a> *object, const std::string &amp;typeName)</td></tr>
+<tr class="memdesc:ad26c0046658ede6a823f430281b1e5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and attach a component by its qualified class name, for package editor code that builds objects on the user's behalf (a custom editor adding the children a component needs).  <br /></td></tr>
 <tr class="memitem:a4223c0f07da52769789798c2fef0991c" id="r_a4223c0f07da52769789798c2fef0991c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4223c0f07da52769789798c2fef0991c">SetupEditorTheme</a> (float dpiScale)</td></tr>
 <tr class="memitem:a79876406984e4587dfe00432b559d4e5" id="r_a79876406984e4587dfe00432b559d4e5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a79876406984e4587dfe00432b559d4e5">Tooltip</a> (const char *fmt,...) IM_FMTARGS(1)</td></tr>
 <tr class="memitem:a68514c40270bceaa9eed747470d9c31d" id="r_a68514c40270bceaa9eed747470d9c31d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a68514c40270bceaa9eed747470d9c31d">SchematicPicker</a> (const char *id, const char *title, const <a class="el" href="struct_deki_editor_1_1_picker_item.html">PickerItem</a> *items, int itemCount, bool justOpened, float listHeight, const char *itemIcon=nullptr, const char *searchHint=nullptr, const char *emptyText=nullptr)</td></tr>
@@ -386,7 +388,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac55d051f955138b6e6980c63bea282d7" id="r_ac55d051f955138b6e6980c63bea282d7"><td class="memItemLeft">constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#ac55d051f955138b6e6980c63bea282d7">DEKI_CACHE_VERSION</a> = 3</td></tr>
+<tr class="memitem:ac55d051f955138b6e6980c63bea282d7" id="r_ac55d051f955138b6e6980c63bea282d7"><td class="memItemLeft">constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#ac55d051f955138b6e6980c63bea282d7">DEKI_CACHE_VERSION</a> = 4</td></tr>
 <tr class="memitem:af662ee7ea30ac237701a9afd694b5744" id="r_af662ee7ea30ac237701a9afd694b5744"><td class="memItemLeft">ImFont *&#160;</td><td class="memItemRight"><a class="el" href="#af662ee7ea30ac237701a9afd694b5744">g_FontUI</a></td></tr>
 <tr class="memitem:a41c8f980892fdbe39192a896ebb85d0b" id="r_a41c8f980892fdbe39192a896ebb85d0b"><td class="memItemLeft">ImFont *&#160;</td><td class="memItemRight"><a class="el" href="#a41c8f980892fdbe39192a896ebb85d0b">g_FontUISmall</a></td></tr>
 <tr class="memitem:a67f0fc7edc443eb1cbd4d12b89314324" id="r_a67f0fc7edc443eb1cbd4d12b89314324"><td class="memItemLeft">ImFont *&#160;</td><td class="memItemRight"><a class="el" href="#a67f0fc7edc443eb1cbd4d12b89314324">g_FontUIMed</a></td></tr>
@@ -908,6 +910,30 @@ Variables</h2></td></tr>
 
 <p>Generate a random GUID. </p>
 <dl class="section return"><dt>Returns</dt><dd>Random GUID string </dd></dl>
+
+</div>
+</div>
+<a id="ad26c0046658ede6a823f430281b1e5b0" name="ad26c0046658ede6a823f430281b1e5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26c0046658ede6a823f430281b1e5b0">&#9670;&#160;</a></span>AddComponentByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> * DekiEditor::AddComponentByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_object.html">Deki::Object</a> *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create and attach a component by its qualified class name, for package editor code that builds objects on the user's behalf (a custom editor adding the children a component needs). </p>
+<p>Scripts never need this: a script adds a component with <span class="tt">obj-&gt;AddComponent&lt;T&gt;()</span>. This is the editor's own path, the one its commands and panels use, exported so package editor code can reach it. </p><dl class="section return"><dt>Returns</dt><dd>The new component, or nullptr when the class is not registered. </dd></dl>
 
 </div>
 </div>
@@ -2642,7 +2668,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DekiEditor::DEKI_CACHE_VERSION = 3</td>
+          <td class="memname">int DekiEditor::DEKI_CACHE_VERSION = 4</td>
         </tr>
       </table>
   </td>

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -129,7 +129,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for components that provide sorting order. </p>
@@ -139,11 +139,12 @@ Namespaces</h2></td></tr>
 <div class="line"> </div>
 <div class="line">ComponentInterfaceAdapters::Register(</div>
 <div class="line">    ISortableProvider::InterfaceID,</div>
-<div class="line">    MyComponent::StaticType,</div>
+<div class="line">    <a class="code hl_function" href="namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240">::Deki::TypeId&lt;MyComponent&gt;</a>(),</div>
 <div class="line">    [](Component* c) -&gt; <span class="keywordtype">void</span>* {</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ISortableProvider*<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>MyComponent*<span class="keyword">&gt;</span>(c));</div>
 <div class="line">    });</div>
 <div class="ttc" id="a_component_interface_adapters_8h_html"><div class="ttname"><a href="_component_interface_adapters_8h.html">ComponentInterfaceAdapters.h</a></div><div class="ttdoc">Registry for extracting interfaces from components without RTTI or vtable changes.</div></div>
+<div class="ttc" id="anamespace_deki_html_ab5bdec23918eba2d71e607be5fb33240"><div class="ttname"><a href="namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240">Deki::TypeId</a></div><div class="ttdeci">constexpr ComponentType TypeId()</div><div class="ttdoc">The component type id of T: HashString of its fully qualified name.</div><div class="ttdef"><b>Definition</b> TypeId.h:131</div></div>
 </div><!-- fragment --><p>This block used to show a <span class="tt">QueryInterface</span> override calling <span class="tt">Component::QueryInterface(id)</span>. Component has no such method and never has — following the example produced a compile error on the first custom implementation. The adapter registry exists precisely so Component needs no virtual for this. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

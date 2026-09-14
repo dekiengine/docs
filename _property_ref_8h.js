@@ -11,7 +11,11 @@ var _property_ref_8h =
       [ "Deki::TransformField::ScaleX", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64ab5e0c179725e7f282ffb8e6a96797b49", null ],
       [ "Deki::TransformField::ScaleY", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a3475b72c6483a5c871d245e2567c96c7", null ],
       [ "Deki::TransformField::Scale", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a85a7cd587d6142dbfc1a4de05af7b75d", null ],
-      [ "Deki::TransformField::Active", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a4d3d769b812b6faa6b76e1a8abaece2d", null ]
+      [ "Deki::TransformField::Active", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a4d3d769b812b6faa6b76e1a8abaece2d", null ],
+      [ "Deki::TransformField::Z", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a21c2e59531c8710156d34a3c30ac81d5", null ],
+      [ "Deki::TransformField::RotationX", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a14dcec09ce1f4dfaac5955bc70825ebc", null ],
+      [ "Deki::TransformField::RotationY", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a7527ced5a5153f3b21e31c4b177c2ea7", null ],
+      [ "Deki::TransformField::ScaleZ", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a663d4649fab1771d486c47ba85158fe4", null ]
     ] ],
     [ "Deki::DekiVariableFieldRef", "namespace_deki.html#a70726b336ad4225d680c9ecad81b9a6c", null ],
     [ "Deki::TransformFields", "namespace_deki.html#a186e1c5bc7660b81c99c3dcdfa4ebcb2", null ],

@@ -17,5 +17,7 @@ var struct_deki_1_1_component_meta =
     [ "propertyCount", "struct_deki_1_1_component_meta.html#a4eae4e503b787455e689b67476d98719", null ],
     [ "displayNameBuffer", "struct_deki_1_1_component_meta.html#a39f3022f73a0365467320d3fe0c662d8", null ],
     [ "displayNameGenerated", "struct_deki_1_1_component_meta.html#a403d77a5f678dd060d19a36223034910", null ],
-    [ "displayNameOverride", "struct_deki_1_1_component_meta.html#a88146e8c33121de0c8460a3f5fce74a3", null ]
+    [ "displayNameOverride", "struct_deki_1_1_component_meta.html#a88146e8c33121de0c8460a3f5fce74a3", null ],
+    [ "settingsSection", "struct_deki_1_1_component_meta.html#a80e5fc5c69b79fe85d878e96ea4f722a", null ],
+    [ "typeInfo", "struct_deki_1_1_component_meta.html#a227d410684ba44b3051aec689c5e87ff", null ]
 ];

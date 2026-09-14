@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('settings.html'
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Framebuffer  </td><td class="markdownTableBodyNone"><a href="engine-core.html">engine</a>  </td><td class="markdownTableBodyNone">3  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Units  </td><td class="markdownTableBodyNone"><a href="engine-core.html">engine</a>  </td><td class="markdownTableBodyNone">2  </td></tr>
+<td class="markdownTableBodyNone">Units  </td><td class="markdownTableBodyNone"><a href="engine-core.html">engine</a>  </td><td class="markdownTableBodyNone">3  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Rendering  </td><td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/">deki-rendering</a>  </td><td class="markdownTableBodyNone">4  </td></tr>
 </table>
@@ -134,7 +134,7 @@ Engine sections</h1>
 <h2 class="doxsection"><a class="anchor" id="settings-core-settings"></a>
 Core settings</h2>
 <p>Project settings section <span class="tt">Core</span> (CoreProjectSettings).</p>
-<p>Category: Settings · Type GUID: <span class="tt">6b2f4d17-8c93-4a5e-b0d6-27e91fa3c845</span></p>
+<p>Category: Settings · Type: <span class="tt"><a class="el" href="class_deki_1_1_core_project_settings.html">Deki::CoreProjectSettings</a></span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
@@ -146,7 +146,7 @@ Core settings</h2>
 <h2 class="doxsection"><a class="anchor" id="settings-framebuffer-settings"></a>
 Framebuffer settings</h2>
 <p>Project settings section <span class="tt">Framebuffer</span> (DisplayProjectSettings).</p>
-<p>Category: Settings · Type GUID: <span class="tt">1c8e7f24-3a9b-4d52-8e6c-f1a40b2d9e83</span></p>
+<p>Category: Settings · Type: <span class="tt"><a class="el" href="class_deki_1_1_display_project_settings.html">Deki::DisplayProjectSettings</a></span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
@@ -160,7 +160,7 @@ Framebuffer settings</h2>
 <h2 class="doxsection"><a class="anchor" id="settings-units-settings"></a>
 Units settings</h2>
 <p>Project settings section <span class="tt">Units</span> (UnitProjectSettings).</p>
-<p>Category: Settings · Type GUID: <span class="tt">3eaf9b46-5c1d-4f74-af8e-132d6f4abca5</span></p>
+<p>Category: Settings · Type: <span class="tt"><a class="el" href="class_deki_1_1_unit_project_settings.html">Deki::UnitProjectSettings</a></span></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Property  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Constraints  </th><th class="markdownTableHeadNone">Description  </th></tr>
@@ -168,6 +168,8 @@ Units settings</h2>
 <td class="markdownTableBodyNone"><span class="tt">inspectorUnit</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">Pixels</span>  </td><td class="markdownTableBodyNone"><span class="tt">Pixels</span>, <span class="tt">Meters</span>  </td><td class="markdownTableBodyNone">Inspector display preference. Pixels: physical-quantity fields show as px / px/s / px/s². Meters: same fields show as m / m/s / m/s². Internal storage is always meters either way.  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">pixelsPerMeter</span>  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone"><span class="tt">16</span>  </td><td class="markdownTableBodyNone">1 to 1024  </td><td class="markdownTableBodyNone">World scale: how many framebuffer pixels render one meter of world space. Drives inspector px&lt;-&gt;m conversion and the default zoom of new cameras (CameraComponent::pixelsPerMeter sentinel).  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">temperatureUnit</span>  </td><td class="markdownTableBodyNone">enum  </td><td class="markdownTableBodyNone"><span class="tt">Celsius</span>  </td><td class="markdownTableBodyNone"><span class="tt">Celsius</span>, <span class="tt">Fahrenheit</span>  </td><td class="markdownTableBodyNone">Temperature scale shown in the inspector. Storage is always degrees Celsius; this only changes what you read and type.  </td></tr>
 </table>
 <p>Sections defined by packages are documented on each package's own site (linked above). </p>
 </div></div><!-- contents -->

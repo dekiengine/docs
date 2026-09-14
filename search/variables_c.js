@@ -1,7 +1,7 @@
 var searchData=
 [
   ['name_0',['NAME',['../namespace_deki_1_1_scene_format_1_1_fields.html#a0bd6971e9aba9bbb3bd32051b794174a',1,'Deki::SceneFormat::Fields']]],
-  ['name_1',['name',['../struct_deki_1_1_property_info.html#a661935d1c8fcc3dc3e915817f905de19',1,'Deki::PropertyInfo::name'],['../struct_deki_1_1_component_meta.html#aac146eab60a71b60f21ca1d94268d1fd',1,'Deki::ComponentMeta::name'],['../struct_deki_editor_1_1_sub_asset_info.html#a387b188261173e4ac82ca977cf61c67e',1,'DekiEditor::SubAssetInfo::name'],['../struct_deki_editor_1_1_atlas_frame.html#a58074c1910ae1d8ccae3cbd514c992f4',1,'DekiEditor::AtlasFrame::name']]],
+  ['name_1',['name',['../struct_deki_1_1_component_type_info.html#a5fca532b6bc391310e2394547351139f',1,'Deki::ComponentTypeInfo::name'],['../struct_deki_1_1_memory_1_1_region.html#a076fe9b201d35c2622cb0ef1e5357c3b',1,'Deki::Memory::Region::name'],['../struct_deki_1_1_property_info.html#a661935d1c8fcc3dc3e915817f905de19',1,'Deki::PropertyInfo::name'],['../struct_deki_1_1_component_meta.html#aac146eab60a71b60f21ca1d94268d1fd',1,'Deki::ComponentMeta::name'],['../struct_deki_editor_1_1_sub_asset_info.html#a387b188261173e4ac82ca977cf61c67e',1,'DekiEditor::SubAssetInfo::name'],['../struct_deki_editor_1_1_atlas_frame.html#a58074c1910ae1d8ccae3cbd514c992f4',1,'DekiEditor::AtlasFrame::name']]],
   ['namehash_2',['nameHash',['../struct_deki_1_1_field_ref.html#a90b68d79b9408003cac3296e2b4795a2',1,'Deki::FieldRef']]],
   ['newx_3',['newX',['../struct_deki_editor_1_1_node_canvas_events.html#a41a40625ca2c37e735e3b8c7f5f81a3b',1,'DekiEditor::NodeCanvasEvents']]],
   ['newy_4',['newY',['../struct_deki_editor_1_1_node_canvas_events.html#a3da2e6aba3995c7df5c4b2f164165e13',1,'DekiEditor::NodeCanvasEvents']]],

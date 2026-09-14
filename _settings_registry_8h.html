@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -129,13 +129,11 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Deki" id="r_Deki"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki.html">Deki</a></td></tr>
-<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for components with lifecycle methods. <br /></td></tr>
+<tr class="memdesc:namespace_deki"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base texture class for V-Engine. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a802013126cd609dc64027362cabe63a7" id="r_a802013126cd609dc64027362cabe63a7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a802013126cd609dc64027362cabe63a7">SETTINGS_REGISTRY_API</a></td></tr>
-<tr class="memitem:a62f83f4c70ba1bdebd950052d4b18372" id="r_a62f83f4c70ba1bdebd950052d4b18372"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a62f83f4c70ba1bdebd950052d4b18372">DEKI_REGISTER_PROJECT_SETTINGS</a>(ClassName)</td></tr>
-<tr class="memitem:ad8ac7a4ebac6bb95b65e04c2b49051a6" id="r_ad8ac7a4ebac6bb95b65e04c2b49051a6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad8ac7a4ebac6bb95b65e04c2b49051a6">DEKI_REGISTER_PROJECT_SETTINGS_PLUGIN</a>(ClassName)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a802013126cd609dc64027362cabe63a7" name="a802013126cd609dc64027362cabe63a7"></a>
@@ -150,58 +148,6 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a62f83f4c70ba1bdebd950052d4b18372" name="a62f83f4c70ba1bdebd950052d4b18372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f83f4c70ba1bdebd950052d4b18372">&#9670;&#160;</a></span>DEKI_REGISTER_PROJECT_SETTINGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEKI_REGISTER_PROJECT_SETTINGS</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ClassName</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">struct </span>ClassName##_SettingsRegistrar        \</div>
-<div class="line">{                                                  \</div>
-<div class="line">    ClassName##_SettingsRegistrar()                \</div>
-<div class="line">    {                                              \</div>
-<div class="line">        ::Deki::SettingsRegistry::Instance().Register( \</div>
-<div class="line">            ClassName::StaticSettingsSection,      \</div>
-<div class="line">            &amp;ClassName::GetComponentMeta());       \</div>
-<div class="line">    }                                              \</div>
-<div class="line">} s_##ClassName##_SettingsRegistrar;</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad8ac7a4ebac6bb95b65e04c2b49051a6" name="ad8ac7a4ebac6bb95b65e04c2b49051a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8ac7a4ebac6bb95b65e04c2b49051a6">&#9670;&#160;</a></span>DEKI_REGISTER_PROJECT_SETTINGS_PLUGIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEKI_REGISTER_PROJECT_SETTINGS_PLUGIN</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ClassName</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">struct </span>ClassName##_SettingsRegistrar              \</div>
-<div class="line">{                                                        \</div>
-<div class="line">    ClassName##_SettingsRegistrar()                      \</div>
-<div class="line">    {                                                    \</div>
-<div class="line">        ::Deki::SettingsRegistry::Instance().RegisterPlugin( \</div>
-<div class="line">            ClassName::StaticSettingsSection,            \</div>
-<div class="line">            &amp;ClassName::GetComponentMeta());             \</div>
-<div class="line">    }                                                    \</div>
-<div class="line">} s_##ClassName##_SettingsRegistrar;</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

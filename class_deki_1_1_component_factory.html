@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.10.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -120,19 +120,21 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>Creates components by type id (see the file comment above).  
+<p>Creates components by type id and answers "which class is this id".  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/reflection/ComponentFactory.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92a1d5bc8be5f7de377200ec8300ce2d" id="r_a92a1d5bc8be5f7de377200ec8300ce2d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a92a1d5bc8be5f7de377200ec8300ce2d">Register</a> (uint32_t typeId, <a class="el" href="namespace_deki.html#a857157168165bc1860b4fcf81a781d77">ComponentCreator</a> creator)</td></tr>
-<tr class="memdesc:a92a1d5bc8be5f7de377200ec8300ce2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a component type for creation.  <br /></td></tr>
+<tr class="memitem:ae59a7b68a5e2a31fa0462fd0c08fd685" id="r_ae59a7b68a5e2a31fa0462fd0c08fd685"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae59a7b68a5e2a31fa0462fd0c08fd685">Register</a> (const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> *info)</td></tr>
+<tr class="memdesc:ae59a7b68a5e2a31fa0462fd0c08fd685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a component class (idempotent; a re-registration replaces the entry, which is what a hot-reloaded package needs).  <br /></td></tr>
 <tr class="memitem:a56300fd373525d34e537b294c0662ae7" id="r_a56300fd373525d34e537b294c0662ae7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a56300fd373525d34e537b294c0662ae7">Unregister</a> (uint32_t typeId)</td></tr>
-<tr class="memdesc:a56300fd373525d34e537b294c0662ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a component type.  <br /></td></tr>
-<tr class="memitem:a66bf6416e711daa0fc2bba36a4906e92" id="r_a66bf6416e711daa0fc2bba36a4906e92"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a66bf6416e711daa0fc2bba36a4906e92">Create</a> (uint32_t typeId)</td></tr>
-<tr class="memdesc:a66bf6416e711daa0fc2bba36a4906e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a component by type ID.  <br /></td></tr>
+<tr class="memdesc:a56300fd373525d34e537b294c0662ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forget a component class (package unload).  <br /></td></tr>
+<tr class="memitem:a9ece594e7021ac126c46cd1a7385405e" id="r_a9ece594e7021ac126c46cd1a7385405e"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9ece594e7021ac126c46cd1a7385405e">Find</a> (uint32_t typeId) const</td></tr>
+<tr class="memdesc:a9ece594e7021ac126c46cd1a7385405e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class entry for a type id, or nullptr when unknown.  <br /></td></tr>
+<tr class="memitem:a7106751634bbadec3b3b7b3853f0538d" id="r_a7106751634bbadec3b3b7b3853f0538d"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a7106751634bbadec3b3b7b3853f0538d">Create</a> (uint32_t typeId) const</td></tr>
+<tr class="memdesc:a7106751634bbadec3b3b7b3853f0538d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a component by type id.  <br /></td></tr>
 <tr class="memitem:a27c49755a9d0c1de416dacfece671f14" id="r_a27c49755a9d0c1de416dacfece671f14"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a27c49755a9d0c1de416dacfece671f14">IsRegistered</a> (uint32_t typeId) const</td></tr>
 <tr class="memdesc:a27c49755a9d0c1de416dacfece671f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a component type is registered.  <br /></td></tr>
 <tr class="memitem:acdfc5cf5d3d23e0dae8d5ebeeb445c71" id="r_acdfc5cf5d3d23e0dae8d5ebeeb445c71"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#acdfc5cf5d3d23e0dae8d5ebeeb445c71">GetRegisteredCount</a> () const</td></tr>
@@ -146,8 +148,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa35fd69803abb6c44fb2fbfc6f92c6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singleton instance.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates components by type id (see the file comment above). </p>
-<p>O(1) lookup for all components regardless of count. ~48 bytes memory per registered component. </p>
+<div class="textblock"><p>Creates components by type id and answers "which class is this id". </p>
+<p>O(1) lookup for all components regardless of count. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aa35fd69803abb6c44fb2fbfc6f92c6d1" name="aa35fd69803abb6c44fb2fbfc6f92c6d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa35fd69803abb6c44fb2fbfc6f92c6d1">&#9670;&#160;</a></span>Instance()</h2>
@@ -176,8 +178,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a92a1d5bc8be5f7de377200ec8300ce2d" name="a92a1d5bc8be5f7de377200ec8300ce2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92a1d5bc8be5f7de377200ec8300ce2d">&#9670;&#160;</a></span>Register()</h2>
+<a id="ae59a7b68a5e2a31fa0462fd0c08fd685" name="ae59a7b68a5e2a31fa0462fd0c08fd685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59a7b68a5e2a31fa0462fd0c08fd685">&#9670;&#160;</a></span>Register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,12 +190,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Deki::ComponentFactory::Register </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>typeId</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>info</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_deki.html#a857157168165bc1860b4fcf81a781d77">ComponentCreator</a></td>          <td class="paramname"><span class="paramname"><em>creator</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -203,14 +201,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register a component type for creation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">typeId</td><td>Hash of component class name (use ClassName::StaticType) </td></tr>
-    <tr><td class="paramname">creator</td><td>Function that creates a new instance </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Register a component class (idempotent; a re-registration replaces the entry, which is what a hot-reloaded package needs). </p>
 
 </div>
 </div>
@@ -237,18 +228,39 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unregister a component type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">typeId</td><td>Hash of component class name </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Forget a component class (package unload). </p>
 
 </div>
 </div>
-<a id="a66bf6416e711daa0fc2bba36a4906e92" name="a66bf6416e711daa0fc2bba36a4906e92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66bf6416e711daa0fc2bba36a4906e92">&#9670;&#160;</a></span>Create()</h2>
+<a id="a9ece594e7021ac126c46cd1a7385405e" name="a9ece594e7021ac126c46cd1a7385405e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ece594e7021ac126c46cd1a7385405e">&#9670;&#160;</a></span>Find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> * Deki::ComponentFactory::Find </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>typeId</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The class entry for a type id, or nullptr when unknown. </p>
+
+</div>
+</div>
+<a id="a7106751634bbadec3b3b7b3853f0538d" name="a7106751634bbadec3b3b7b3853f0538d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7106751634bbadec3b3b7b3853f0538d">&#9670;&#160;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="class_deki_1_1_component.html">Component</a> * Deki::ComponentFactory::Create </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>typeId</em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -270,14 +282,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create a component by type ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">typeId</td><td>Hash of component class name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>New component instance, or nullptr if type not found </dd></dl>
+<p>Create a component by type id. </p>
+<dl class="section return"><dt>Returns</dt><dd>New instance with its type info attached, or nullptr when the id is unknown or the class is abstract </dd></dl>
 
 </div>
 </div>
@@ -305,13 +311,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if a component type is registered. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">typeId</td><td>Hash of component class name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if type can be created </dd></dl>
 
 </div>
 </div>

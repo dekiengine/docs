@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Deki::AllocContext", "struct_deki_1_1_alloc_context.html", null ],
     [ "DekiEditor::AssetCacheContext", "struct_deki_editor_1_1_asset_cache_context.html", null ],
     [ "DekiEditor::AssetData", "struct_deki_editor_1_1_asset_data.html", null ],
     [ "DekiEditor::AssetDatabase", "class_deki_editor_1_1_asset_database.html", null ],
@@ -19,6 +20,7 @@ var hierarchy =
     [ "DekiEditor::AssetTypeHandler", "struct_deki_editor_1_1_asset_type_handler.html", null ],
     [ "DekiEditor::AssetTypeRegistry", "class_deki_editor_1_1_asset_type_registry.html", null ],
     [ "DekiEditor::AtlasFrame", "struct_deki_editor_1_1_atlas_frame.html", null ],
+    [ "Deki::Buffer&lt; T &gt;", "class_deki_1_1_buffer.html", null ],
     [ "DekiEditor::ChromaKeySettings", "struct_deki_editor_1_1_chroma_key_settings.html", null ],
     [ "Deki::Color", "class_deki_1_1_color.html", null ],
     [ "DekiEditor::Command", "class_deki_editor_1_1_command.html", [
@@ -26,17 +28,16 @@ var hierarchy =
     ] ],
     [ "DekiEditor::CommandHistory", "class_deki_editor_1_1_command_history.html", null ],
     [ "Deki::Component", "class_deki_1_1_component.html", [
-      [ "Deki::Behaviour", "class_deki_1_1_behaviour.html", [
-        [ "Deki::PlatformSetupComponent", "class_deki_1_1_platform_setup_component.html", null ],
-        [ "Deki::SetupComponent", "class_deki_1_1_setup_component.html", null ]
-      ] ],
       [ "Deki::CoreProjectSettings", "class_deki_1_1_core_project_settings.html", null ],
       [ "Deki::DisplayProjectSettings", "class_deki_1_1_display_project_settings.html", null ],
+      [ "Deki::PlatformSetupComponent", "class_deki_1_1_platform_setup_component.html", null ],
+      [ "Deki::SetupComponent", "class_deki_1_1_setup_component.html", null ],
       [ "Deki::UnitProjectSettings", "class_deki_1_1_unit_project_settings.html", null ]
     ] ],
     [ "Deki::ComponentFactory", "class_deki_1_1_component_factory.html", null ],
     [ "Deki::ComponentMeta", "struct_deki_1_1_component_meta.html", null ],
     [ "Deki::ComponentRegistry", "class_deki_1_1_component_registry.html", null ],
+    [ "Deki::ComponentTypeInfo", "struct_deki_1_1_component_type_info.html", null ],
     [ "DekiEditor::CreateMenuEntry", "struct_deki_editor_1_1_create_menu_entry.html", null ],
     [ "DekiEditor::CreateMenuRegistry", "class_deki_editor_1_1_create_menu_registry.html", null ],
     [ "DekiEditor::CustomEditorRegistry", "class_deki_editor_1_1_custom_editor_registry.html", null ],
@@ -75,6 +76,7 @@ var hierarchy =
     [ "DekiEditor::EditorUI::FloatCallbacks", "struct_deki_editor_1_1_editor_u_i_1_1_float_callbacks.html", null ],
     [ "Deki::FPSCounter", "class_deki_1_1_f_p_s_counter.html", null ],
     [ "DekiEditor::GuidCache", "class_deki_editor_1_1_guid_cache.html", null ],
+    [ "Deki::Texture2D::Header", "struct_deki_1_1_texture2_d_1_1_header.html", null ],
     [ "DekiEditor::IAssetImporter", "class_deki_editor_1_1_i_asset_importer.html", [
       [ "DekiEditor::TextureImporter", "class_deki_editor_1_1_texture_importer.html", null ]
     ] ],
@@ -113,12 +115,12 @@ var hierarchy =
     [ "Deki::PackageConfig", "struct_deki_1_1_package_config.html", null ],
     [ "Deki::PackIndexEntry", "struct_deki_1_1_pack_index_entry.html", null ],
     [ "DekiEditor::PickerItem", "struct_deki_editor_1_1_picker_item.html", null ],
-    [ "Deki::ProjectSettings::PipelineConfig", "struct_deki_1_1_project_settings_1_1_pipeline_config.html", null ],
     [ "Deki::Power", "class_deki_1_1_power.html", null ],
     [ "Deki::PropertyBinding", "struct_deki_1_1_property_binding.html", null ],
     [ "Deki::PropertyInfo", "struct_deki_1_1_property_info.html", null ],
     [ "Deki::PropertyRef", "struct_deki_1_1_property_ref.html", null ],
     [ "Deki::Rect", "struct_deki_1_1_rect.html", null ],
+    [ "Deki::Memory::Region", "struct_deki_1_1_memory_1_1_region.html", null ],
     [ "Deki::ProjectSettings::RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", null ],
     [ "Deki::Scene", "class_deki_1_1_scene.html", null ],
     [ "Deki::SceneFormat::SceneMsgPackParser", "class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html", null ],
@@ -135,10 +137,14 @@ var hierarchy =
     [ "DekiEditor::TexData", "struct_deki_editor_1_1_tex_data.html", null ],
     [ "DekiEditor::TexHeader", "struct_deki_editor_1_1_tex_header.html", null ],
     [ "DekiEditor::EditorUI::TextCallbacks", "struct_deki_editor_1_1_editor_u_i_1_1_text_callbacks.html", null ],
+    [ "Deki::Texture2D", "class_deki_1_1_texture2_d.html", null ],
     [ "Deki::Time", "class_deki_1_1_time.html", null ],
+    [ "Deki::detail::TypeNameProbe", "struct_deki_1_1detail_1_1_type_name_probe.html", null ],
+    [ "Deki::detail::TypeNameStorage&lt; T, Seq &gt;", "struct_deki_1_1detail_1_1_type_name_storage.html", null ],
+    [ "Deki::detail::TypeShortNameStorage&lt; T, Seq &gt;", "struct_deki_1_1detail_1_1_type_short_name_storage.html", null ],
     [ "DekiEditor::EditorUI::VecCallbacks", "struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html", null ],
+    [ "Deki::Vector&lt; T &gt;", "class_deki_1_1_vector.html", null ],
     [ "Deki::Vector2", "struct_deki_1_1_vector2.html", null ],
     [ "Deki::Vector3", "struct_deki_1_1_vector3.html", null ],
-    [ "DekiEditor::EditorUI::WidgetBackend", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html", null ],
-    [ "Deki::WorldTransform", "struct_deki_1_1_world_transform.html", null ]
+    [ "DekiEditor::EditorUI::WidgetBackend", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html", null ]
 ];
