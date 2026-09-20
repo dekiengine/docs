@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resolveassetnamefunc_0',['ResolveAssetNameFunc',['../class_deki_editor_1_1_editor_u_i.html#afb67a1c061fea4b4c0b653f4d1b8fe3a',1,'DekiEditor::EditorUI']]]
+  ['onobjectsabouttobedestroyedfn_0',['OnObjectsAboutToBeDestroyedFn',['../class_deki_1_1_scene.html#ab7495b0d38574cfcc0d54df9f3003927',1,'Deki::Scene']]]
 ];

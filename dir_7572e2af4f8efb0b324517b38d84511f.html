@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: deki-editor/include/deki-editor Directory Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -116,6 +138,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('dir_7572e2af4f
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-subdirs" class="groupheader"><a id="subdirs" name="subdirs"></a>
+Directories</h2></td></tr>
+<tr class="memitem:build" id="r_build"><td class="memItemLeft"><span class="iconfolder"><div class="folder-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="dir_90aad1752c48315073e7c25b2069d35d.html">build</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-files" class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:AssetData_2Eh" id="r_AssetData_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_asset_data_8h.html">AssetData.h</a></td></tr>
@@ -125,8 +151,12 @@ Files</h2></td></tr>
 <tr class="memitem:AssetPickerTypes_2Eh" id="r_AssetPickerTypes_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_asset_picker_types_8h.html">AssetPickerTypes.h</a></td></tr>
 <tr class="memitem:AssetPipeline_2Eh" id="r_AssetPipeline_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_asset_pipeline_8h.html">AssetPipeline.h</a></td></tr>
 <tr class="memitem:AssetTypeRegistry_2Eh" id="r_AssetTypeRegistry_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_asset_type_registry_8h.html">AssetTypeRegistry.h</a></td></tr>
+<tr class="memitem:BuildStripSettings_2Eh" id="r_BuildStripSettings_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_build_strip_settings_8h.html">BuildStripSettings.h</a></td></tr>
+<tr class="memitem:CliTool_2Eh" id="r_CliTool_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_cli_tool_8h.html">CliTool.h</a></td></tr>
+<tr class="memitem:CMakeCacheReader_2Eh" id="r_CMakeCacheReader_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_c_make_cache_reader_8h.html">CMakeCacheReader.h</a></td></tr>
 <tr class="memitem:Command_2Eh" id="r_Command_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_command_8h.html">Command.h</a></td></tr>
 <tr class="memitem:CommandHistory_2Eh" id="r_CommandHistory_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_command_history_8h.html">CommandHistory.h</a></td></tr>
+<tr class="memitem:ComponentUsageScan_2Eh" id="r_ComponentUsageScan_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_component_usage_scan_8h.html">ComponentUsageScan.h</a></td></tr>
 <tr class="memitem:CustomEditor_2Eh" id="r_CustomEditor_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_custom_editor_8h.html">CustomEditor.h</a></td></tr>
 <tr class="memitem:EditorApplication_2Eh" id="r_EditorApplication_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_application_8h.html">EditorApplication.h</a></td></tr>
 <tr class="memitem:EditorAssets_2Eh" id="r_EditorAssets_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_assets_8h.html">EditorAssets.h</a></td></tr>
@@ -140,20 +170,30 @@ Files</h2></td></tr>
 <tr class="memdesc:_editor_naming_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflected-identifier to human-label conversion, shared by every inspector-like surface (the app's Inspector panel, package tool windows, asset inspectors). <br /></td></tr>
 <tr class="memitem:EditorPaths_2Eh" id="r_EditorPaths_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_paths_8h.html">EditorPaths.h</a></td></tr>
 <tr class="memitem:EditorRegistry_2Eh" id="r_EditorRegistry_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_registry_8h.html">EditorRegistry.h</a></td></tr>
+<tr class="memitem:EditorSettings_2Eh" id="r_EditorSettings_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_settings_8h.html">EditorSettings.h</a></td></tr>
 <tr class="memitem:EditorTheme_2Eh" id="r_EditorTheme_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_theme_8h.html">EditorTheme.h</a></td></tr>
 <tr class="memitem:EditorUI_2Eh" id="r_EditorUI_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_u_i_8h.html">EditorUI.h</a></td></tr>
 <tr class="memitem:EditorWindow_2Eh" id="r_EditorWindow_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_editor_window_8h.html">EditorWindow.h</a></td></tr>
+<tr class="memitem:FeatureResolver_2Eh" id="r_FeatureResolver_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_feature_resolver_8h.html">FeatureResolver.h</a></td></tr>
 <tr class="memitem:FileIO_2Eh" id="r_FileIO_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_file_i_o_8h.html">FileIO.h</a></td></tr>
 <tr class="memitem:GuidCache_2Eh" id="r_GuidCache_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_guid_cache_8h.html">GuidCache.h</a></td></tr>
 <tr class="memitem:IAssetImporter_2Eh" id="r_IAssetImporter_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_i_asset_importer_8h.html">IAssetImporter.h</a></td></tr>
 <tr class="memitem:IconsTabler_2Eh" id="r_IconsTabler_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_icons_tabler_8h.html">IconsTabler.h</a></td></tr>
 <tr class="memitem:NodeCanvas_2Eh" id="r_NodeCanvas_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_node_canvas_8h.html">NodeCanvas.h</a></td></tr>
 <tr class="memdesc:_node_canvas_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediate-mode node-graph view widget: pan/zoom canvas, nodes with labeled pins, bezier links, link dragging, selection, context-menu and delete events. <br /></td></tr>
+<tr class="memitem:PackageContract_2Eh" id="r_PackageContract_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_package_contract_8h.html">PackageContract.h</a></td></tr>
+<tr class="memitem:PackageInstallerPlugin_2Eh" id="r_PackageInstallerPlugin_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_package_installer_plugin_8h.html">PackageInstallerPlugin.h</a></td></tr>
 <tr class="memitem:Paths_2Eh" id="r_Paths_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_paths_8h.html">Paths.h</a></td></tr>
+<tr class="memitem:ProcessLaunch_2Eh" id="r_ProcessLaunch_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_process_launch_8h.html">ProcessLaunch.h</a></td></tr>
+<tr class="memitem:SafeNames_2Eh" id="r_SafeNames_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_safe_names_8h.html">SafeNames.h</a></td></tr>
+<tr class="memitem:SceneTargetFilter_2Eh" id="r_SceneTargetFilter_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_scene_target_filter_8h.html">SceneTargetFilter.h</a></td></tr>
 <tr class="memitem:SceneView_2Eh" id="r_SceneView_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_scene_view_8h.html">SceneView.h</a></td></tr>
+<tr class="memitem:SerialPorts_2Eh" id="r_SerialPorts_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_serial_ports_8h.html">SerialPorts.h</a></td></tr>
+<tr class="memitem:ShellCommand_2Eh" id="r_ShellCommand_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_shell_command_8h.html">ShellCommand.h</a></td></tr>
 <tr class="memitem:SubAsset_2Eh" id="r_SubAsset_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_sub_asset_8h.html">SubAsset.h</a></td></tr>
 <tr class="memitem:TextureData_2Eh" id="r_TextureData_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_texture_data_8h.html">TextureData.h</a></td></tr>
 <tr class="memitem:TextureImporter_2Eh" id="r_TextureImporter_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_texture_importer_8h.html">TextureImporter.h</a></td></tr>
+<tr class="memitem:VersionCompare_2Eh" id="r_VersionCompare_2Eh"><td class="memItemLeft"><span class="icondoc"><div class="doc-icon"></div></span>&#160;</td><td class="memItemRight"><a class="el" href="_version_compare_8h.html">VersionCompare.h</a></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

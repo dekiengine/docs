@@ -8,6 +8,7 @@ var class_deki_1_1_component_registry =
     [ "GetFields", "class_deki_1_1_component_registry.html#abd6a7ba09d0731ef1ab4d2525246ad51", null ],
     [ "GetMeta", "class_deki_1_1_component_registry.html#a84369b726057d6851ea487029ad18d80", null ],
     [ "GetMetaByClassName", "class_deki_1_1_component_registry.html#abb6dd35247e9f36f6d707ad22a1769ad", null ],
+    [ "GetMetaByFormerTypeId", "class_deki_1_1_component_registry.html#afcc1718489d9108cdc13f097da1ba0eb", null ],
     [ "CreateComponent", "class_deki_1_1_component_registry.html#a92f31e44babf0f2db8632918b455eace", null ],
     [ "CreateComponent", "class_deki_1_1_component_registry.html#ac75a438897fe1756d84300acd7858bd1", null ],
     [ "GetAllComponents", "class_deki_1_1_component_registry.html#a89e728b9b3325ab0be675b24fdb9a189", null ],

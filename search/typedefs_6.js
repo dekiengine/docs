@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['httpstatuscallback_0',['HttpStatusCallback',['../namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50',1,'DekiEditor']]]
+  ['gameupdatecallback_0',['GameUpdateCallback',['../namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a',1,'Deki']]],
+  ['getfontatlasfunc_1',['GetFontAtlasFunc',['../class_deki_editor_1_1_editor_u_i.html#adb7d710d3fa8b970fcc6e26dfcdcdac4',1,'DekiEditor::EditorUI']]]
 ];

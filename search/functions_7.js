@@ -23,5 +23,7 @@ var searchData=
   ['hasstarted_20',['HasStarted',['../class_deki_1_1_component.html#a662c7232274a357d864faad779f3b73f',1,'Deki::Component']]],
   ['hastransparency_21',['hasTransparency',['../struct_deki_editor_1_1_tex_data.html#af902a3c50b2e688e0de4bfa84c3b1a9f',1,'DekiEditor::TexData']]],
   ['height_22',['Height',['../struct_deki_1_1_rect.html#abe28f9f8f1c66c1980934f24243711ae',1,'Deki::Rect']]],
-  ['hittest_23',['HitTest',['../class_deki_editor_1_1_custom_editor.html#abb9ba421c7950ac4393f01a8ae43f64e',1,'DekiEditor::CustomEditor']]]
+  ['highestversion_23',['HighestVersion',['../namespace_deki_editor.html#ab15e77a22e56a8ebec9c5ae81767c199',1,'DekiEditor']]],
+  ['hittest_24',['HitTest',['../class_deki_editor_1_1_custom_editor.html#abb9ba421c7950ac4393f01a8ae43f64e',1,'DekiEditor::CustomEditor']]],
+  ['hostmemoryprovider_25',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider']]]
 ];

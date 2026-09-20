@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Class Members - Variables</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -113,34 +135,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 
 <div class="contents">
 <div class="textblock">Here is a list of all variables with links to the classes they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="functions_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_z.html#index_z">Z</a></div>
+<div class="qindex"><a class="qindex" href="functions_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_z.html#index_z">Z</a></div>
 
 
 <h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>cachedEpoch&#160;:&#160;<a class="el" href="struct_deki_1_1_asset_ref_base.html#ae4fbb5b5b41251d5d117ef79b4d00c49">Deki::AssetRefBase</a></li>
 <li>cacheIsFresh&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_asset_cache_context.html#a38731607159b77143cf84f485912ef03">DekiEditor::AssetCacheContext</a></li>
 <li>cachePath&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_asset_cache_context.html#ac1a2b86e8f68247888942f24e6902a19">DekiEditor::AssetCacheContext</a>, <a class="el" href="struct_deki_editor_1_1_asset_info.html#a079fd65ca134f7a416cd31c79b591557">DekiEditor::AssetInfo</a>, <a class="el" href="struct_deki_editor_1_1_sub_asset_info.html#ad9f0d5e006f545230c525082b46c87eb">DekiEditor::SubAssetInfo</a></li>
+<li>canInstall&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_component_def.html#a86cd44177790154c5c6375f501a7639b">DekiEditor::ComponentDef</a>, <a class="el" href="struct_deki_editor_1_1_toolchain_component.html#ad7660a4f481bcfa5a17c4d2196f6e411">DekiEditor::ToolchainComponent</a></li>
+<li>canSetup&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_component_def.html#aa21cd96412237fc982f444deeb0eeb61">DekiEditor::ComponentDef</a>, <a class="el" href="struct_deki_editor_1_1_toolchain_component.html#a239552827638ddf057979f5d27faae0c">DekiEditor::ToolchainComponent</a></li>
 <li>capFps&#160;:&#160;<a class="el" href="class_deki_1_1_core_project_settings.html#a90bf40c13e81e476eebc34a2b500358f">Deki::CoreProjectSettings</a></li>
 <li>category&#160;:&#160;<a class="el" href="struct_deki_1_1_component_meta.html#ade286f3f560f9de4556cb30cec4e2a25">Deki::ComponentMeta</a>, <a class="el" href="struct_deki_editor_1_1_asset_type_handler.html#a65b77bd8f2b8a4034d945ad6029ed7f5">DekiEditor::AssetTypeHandler</a>, <a class="el" href="struct_deki_editor_1_1_create_menu_entry.html#a10ecccef9232b348b8bfc719d7b7ccda">DekiEditor::CreateMenuEntry</a>, <a class="el" href="struct_deki_editor_1_1_picker_item.html#ae17c69b06ba2bf00eb46a63b1fa81b87">DekiEditor::PickerItem</a></li>
+<li>cFlags&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#a56198b6787f23f05fa55c4fb047d68f7">DekiEditor::PlatformConfig</a></li>
 <li>checkbox&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ab398c14f8b4cd12755096727e5b21cbe">DekiEditor::EditorUI::WidgetBackend</a></li>
+<li>checked&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_toolchain_version_info.html#ad1a5c0e777548a251a84063bc29ba036">DekiEditor::ToolchainVersionInfo</a></li>
+<li>cmakePatchFile&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#aa3b7f136175ff5e3c817137e747ddda2">DekiEditor::EditorSettings::PackageDepInfo</a></li>
+<li>cmakePatchUncomment&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a8d0a25a8a970c4daceb1278c2c35a0a2">DekiEditor::EditorSettings::PackageDepInfo</a></li>
 <li>collapsingHeader&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a1cc6e637cb8f17b60b9983ff0e572070">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>colorEdit3&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a850af0f30aa579065a95118ee9f85b4b">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>colorEdit4&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a686e5e75d334cb70bb129411386ad983">DekiEditor::EditorUI::WidgetBackend</a></li>
-<li>colorFormat&#160;:&#160;<a class="el" href="class_deki_1_1_display_project_settings.html#a29529b5d276e8d34a3633c299722ee4e">Deki::DisplayProjectSettings</a>, <a class="el" href="struct_deki_1_1_project_settings_1_1_display_settings.html#afe1e14ae8a04f215b3fb2a9109353ea7">Deki::ProjectSettings::DisplaySettings</a></li>
+<li>colorFormat&#160;:&#160;<a class="el" href="class_deki_1_1_display_project_settings.html#a29529b5d276e8d34a3633c299722ee4e">Deki::DisplayProjectSettings</a>, <a class="el" href="struct_deki_1_1_project_settings_1_1_display_settings.html#afe1e14ae8a04f215b3fb2a9109353ea7">Deki::ProjectSettings::DisplaySettings</a>, <a class="el" href="struct_deki_editor_1_1_platform_config.html#a47617b2f08ff97be87f5371592f8efe2">DekiEditor::PlatformConfig</a></li>
 <li>combo&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ae4ae033e5323a27033b292378e41d97d">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>comboStr&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ab8e60bdbfc80bf8e2a8d2e13ab16b88f">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>commitEdit&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a407dd19025b756e33e5caa4dc361d8c8">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>compile&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_asset_type_handler.html#a105ab8d35edbee83c8803d4fa0c008a6">DekiEditor::AssetTypeHandler</a></li>
+<li>compilerTag&#160;:&#160;<a class="el" href="struct_deki_builder_abi.html#a817affed68e8030f3256ad0ce69a927d">DekiBuilderAbi</a></li>
 <li>compilesTo&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_asset_type_handler.html#a34280f6732b01d1bf74474674e3cd2d9">DekiEditor::AssetTypeHandler</a></li>
 <li>compileToFile&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_asset_type_handler.html#a32494276eb4c0898f29b2d55cdd031c9">DekiEditor::AssetTypeHandler</a></li>
 <li>component&#160;:&#160;<a class="el" href="struct_deki_1_1_property_ref.html#a81f0bcdef778e07a08d02e9e5c5815e6">Deki::PropertyRef</a></li>
 <li>componentName&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_create_menu_entry.html#a44e3b380b20921352158b7c55437cf71">DekiEditor::CreateMenuEntry</a></li>
 <li>componentRefType&#160;:&#160;<a class="el" href="struct_deki_1_1_property_info.html#a17ff5af0e5552e03fcbe3abc64dabbf4">Deki::PropertyInfo</a></li>
+<li>components&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_builder_definition.html#acb941630f1462a12111169ca787def63">DekiEditor::BuilderDefinition</a></li>
+<li>componentType&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_target_content_conflict.html#af2b3530cf351ad64782172a17b1bccc8">DekiEditor::TargetContentConflict</a></li>
 <li>componentTypeId&#160;:&#160;<a class="el" href="struct_deki_1_1_object_ref_base.html#a507df41fab2b360cd70e58c05f4cb5a2">Deki::ObjectRefBase</a>, <a class="el" href="struct_deki_1_1_property_ref.html#af93d17747c0113476ea804b84619c270">Deki::PropertyRef</a></li>
+<li>componentTypes&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html#a14de8439b05c91654cf639cd3a5ddd4d">DekiEditor::CMakeGen::FeatureEntry</a>, <a class="el" href="struct_deki_editor_1_1_feature_decision.html#ac495c33313384ef4768e9260780a2015">DekiEditor::FeatureDecision</a></li>
 <li>contextMenu&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_node_canvas_events.html#aa3454398f380af23d11f13c66cc76e4c">DekiEditor::NodeCanvasEvents</a></li>
 <li>create&#160;:&#160;<a class="el" href="struct_deki_1_1_component_type_info.html#aede1ae2ecc788831f15a584a64292978">Deki::ComponentTypeInfo</a></li>
 <li>createFunc&#160;:&#160;<a class="el" href="struct_deki_1_1_component_meta.html#aa1f6bf46443593223c2d9e3f0b9a354a">Deki::ComponentMeta</a>, <a class="el" href="struct_deki_editor_1_1_editor_window_meta.html#a482d2381c27689959a3f1d9763afcca6">DekiEditor::EditorWindowMeta</a></li>
 <li>cursorScreenPos&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a63a821f5d1f52bad125aefee1c0ed3b1">DekiEditor::EditorUI::WidgetBackend</a></li>
+<li>cxxFlags&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#af81ddfc5d236575defb0563b1c515e0c">DekiEditor::PlatformConfig</a></li>
 <li>Cyan&#160;:&#160;<a class="el" href="class_deki_1_1_color.html#a1383f80fe0186f808fc0f04c97211409">Deki::Color</a></li>
 </ul>
 </div><!-- contents -->

@@ -25,5 +25,6 @@ var struct_deki_1_1_property_info =
     [ "togglesObjectOf", "struct_deki_1_1_property_info.html#a920692f68318972028bb0a89d176b1f1", null ],
     [ "physicalUnit", "struct_deki_1_1_property_info.html#a03f7af385f93cde5154057c640e5ba5a", null ],
     [ "valueOfProperty", "struct_deki_1_1_property_info.html#a81584e1ea925ac8e91c6c30e0a2df650", null ],
-    [ "renamedFrom", "struct_deki_1_1_property_info.html#aa4309a7d864f50f4a421244de3435cc4", null ]
+    [ "renamedFrom", "struct_deki_1_1_property_info.html#aa4309a7d864f50f4a421244de3435cc4", null ],
+    [ "enumInts", "struct_deki_1_1_property_info.html#a979518e11f5b9a0e9ed71c4ef9010da0", null ]
 ];

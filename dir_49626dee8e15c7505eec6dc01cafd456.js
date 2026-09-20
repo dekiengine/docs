@@ -2,7 +2,6 @@ var dir_49626dee8e15c7505eec6dc01cafd456 =
 [
     [ "assets", "dir_5f109082e182c87eb8a936a0c6e70902.html", "dir_5f109082e182c87eb8a936a0c6e70902" ],
     [ "interop", "dir_1ccdead0cdc9cc2d7d621e00675502e6.html", "dir_1ccdead0cdc9cc2d7d621e00675502e6" ],
-    [ "platforms", "dir_ef4b0553762f0f72edcf832b51127654.html", "dir_ef4b0553762f0f72edcf832b51127654" ],
     [ "profiling", "dir_2a7d5b568dea52f7e08976e1865834bb.html", "dir_2a7d5b568dea52f7e08976e1865834bb" ],
     [ "providers", "dir_f778bda05f3efb133bd9953e50b086b6.html", "dir_f778bda05f3efb133bd9953e50b086b6" ],
     [ "reflection", "dir_e93c20ad6813bbf4d6ca5bf23c256df9.html", "dir_e93c20ad6813bbf4d6ca5bf23c256df9" ],

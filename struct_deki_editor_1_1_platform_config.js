@@ -1,0 +1,28 @@
+var struct_deki_editor_1_1_platform_config =
+[
+    [ "Option", "struct_deki_editor_1_1_platform_config.html#a3067507fa044293626de28bd876803e3", null ],
+    [ "OptionU32", "struct_deki_editor_1_1_platform_config.html#afaa05ae27737519ee36707b45b04e6f5", null ],
+    [ "OptionBool", "struct_deki_editor_1_1_platform_config.html#ab49edf9e8600e153b7633c24105b64b6", null ],
+    [ "OptionList", "struct_deki_editor_1_1_platform_config.html#aec7fa3e22babcdfbb6858891b07a66d8", null ],
+    [ "SetOption", "struct_deki_editor_1_1_platform_config.html#adba1b0a5c9d77c0a5efa0eed0e9b9dc0", null ],
+    [ "SetOptionU32", "struct_deki_editor_1_1_platform_config.html#a114574a233a564d0c85d78f90527a248", null ],
+    [ "SetOptionBool", "struct_deki_editor_1_1_platform_config.html#af053a54998a942d57e8d9be6192de9ca", null ],
+    [ "SetOptionList", "struct_deki_editor_1_1_platform_config.html#a7e9dd4cfd5e03e36989df5a20136519b", null ],
+    [ "Capabilities", "struct_deki_editor_1_1_platform_config.html#a8d8072622c1b94b92f8036053e8ecaf2", null ],
+    [ "id", "struct_deki_editor_1_1_platform_config.html#a7502383dece80caaf8c7a130f50b7945", null ],
+    [ "displayName", "struct_deki_editor_1_1_platform_config.html#a4e01d8756302a0e14536f165ab594d36", null ],
+    [ "family", "struct_deki_editor_1_1_platform_config.html#a0168a81c130c72830baf964de4fe91bf", null ],
+    [ "framework", "struct_deki_editor_1_1_platform_config.html#ace95bf0e70103d5d4cfb1de9f4d73b2a", null ],
+    [ "frameworkOptions", "struct_deki_editor_1_1_platform_config.html#a5f25f9506fd0fbd9f4d314e0e4fdee39", null ],
+    [ "externalMemorySize", "struct_deki_editor_1_1_platform_config.html#a7d4ba9c1ecf48d02584781fd4569dd46", null ],
+    [ "screenWidth", "struct_deki_editor_1_1_platform_config.html#a4e4df648b142acfb5cd7be6dceb7aea8", null ],
+    [ "screenHeight", "struct_deki_editor_1_1_platform_config.html#a3c5141ab0fb8230d65792957136f9c03", null ],
+    [ "colorFormat", "struct_deki_editor_1_1_platform_config.html#a47617b2f08ff97be87f5371592f8efe2", null ],
+    [ "defines", "struct_deki_editor_1_1_platform_config.html#ad3bf5f70cdba61d14edd5eb3d703a092", null ],
+    [ "cFlags", "struct_deki_editor_1_1_platform_config.html#a56198b6787f23f05fa55c4fb047d68f7", null ],
+    [ "cxxFlags", "struct_deki_editor_1_1_platform_config.html#af81ddfc5d236575defb0563b1c515e0c", null ],
+    [ "linkFlags", "struct_deki_editor_1_1_platform_config.html#a5f0788d121f80e905c582f59b6ac31d3", null ],
+    [ "provides", "struct_deki_editor_1_1_platform_config.html#a2924fea541f277660a577e84fc004fb5", null ],
+    [ "requiresPackages", "struct_deki_editor_1_1_platform_config.html#a5b5dd53af819126c932d24a61ea1071a", null ],
+    [ "bootScene", "struct_deki_editor_1_1_platform_config.html#ae58ac00a7a6983b583cd688f3922c9a0", null ]
+];

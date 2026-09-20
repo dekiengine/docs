@@ -18,5 +18,6 @@ var searchData=
   ['assettypeeditorregistry_15',['AssetTypeEditorRegistry',['../class_deki_editor_1_1_asset_type_editor_registry.html',1,'DekiEditor']]],
   ['assettypehandler_16',['AssetTypeHandler',['../struct_deki_editor_1_1_asset_type_handler.html',1,'DekiEditor']]],
   ['assettyperegistry_17',['AssetTypeRegistry',['../class_deki_editor_1_1_asset_type_registry.html',1,'DekiEditor']]],
-  ['atlasframe_18',['AtlasFrame',['../struct_deki_editor_1_1_atlas_frame.html',1,'DekiEditor']]]
+  ['atlasframe_18',['AtlasFrame',['../struct_deki_editor_1_1_atlas_frame.html',1,'DekiEditor']]],
+  ['autosetupregistrar_19',['AutoSetupRegistrar',['../struct_deki_1_1_auto_setup_registrar.html',1,'Deki']]]
 ];

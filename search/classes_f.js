@@ -12,5 +12,7 @@ var searchData=
   ['sleepinfo_9',['SleepInfo',['../struct_deki_1_1_i_power_1_1_sleep_info.html',1,'Deki::IPower']]],
   ['spriteframedata_10',['SpriteFrameData',['../struct_deki_editor_1_1_sprite_frame_data.html',1,'DekiEditor']]],
   ['spritesettings_11',['SpriteSettings',['../struct_deki_editor_1_1_sprite_settings.html',1,'DekiEditor']]],
-  ['subassetinfo_12',['SubAssetInfo',['../struct_deki_editor_1_1_sub_asset_info.html',1,'DekiEditor']]]
+  ['stripplan_12',['StripPlan',['../struct_deki_editor_1_1_strip_plan.html',1,'DekiEditor']]],
+  ['subassetinfo_13',['SubAssetInfo',['../struct_deki_editor_1_1_sub_asset_info.html',1,'DekiEditor']]],
+  ['subcomponentdef_14',['SubComponentDef',['../struct_deki_editor_1_1_sub_component_def.html',1,'DekiEditor']]]
 ];

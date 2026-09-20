@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['object_2eh_0',['Object.h',['../_object_8h.html',1,'']]],
-  ['objectref_2eh_1',['ObjectRef.h',['../_object_ref_8h.html',1,'']]]
+  ['nodecanvas_2eh_0',['NodeCanvas.h',['../_node_canvas_8h.html',1,'']]],
+  ['noderef_2eh_1',['NodeRef.h',['../_node_ref_8h.html',1,'']]]
 ];

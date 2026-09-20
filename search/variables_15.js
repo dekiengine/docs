@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed',1,'Deki::Vector2::x'],['../struct_deki_1_1_vector3.html#a2df631e15bcc99be032e883cf0b276e4',1,'Deki::Vector3::x'],['../struct_deki_editor_1_1_node_canvas_node.html#ab011ade95174a1d313aa5b0415b55646',1,'DekiEditor::NodeCanvasNode::x'],['../struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7',1,'DekiEditor::AtlasFrame::x'],['../struct_deki_editor_1_1_sprite_frame_data.html#aa55e2c7bb104650d63af43eced961993',1,'DekiEditor::SpriteFrameData::x']]]
+  ['where_0',['where',['../struct_deki_editor_1_1_target_content_conflict.html#ad136c1989884c939aa72e4aa1e57e4c2',1,'DekiEditor::TargetContentConflict']]],
+  ['white_1',['White',['../class_deki_1_1_color.html#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4',1,'Deki::Color']]],
+  ['width_2',['WIDTH',['../namespace_deki_1_1_scene_format_1_1_fields.html#ab17fb89520916a5be489bf68cb0f5e4e',1,'Deki::SceneFormat::Fields']]],
+  ['width_3',['width',['../struct_deki_1_1_texture2_d_1_1_header.html#ab00eb8ae4018397f9f2107fda4c47516',1,'Deki::Texture2D::Header::width'],['../class_deki_1_1_texture2_d.html#ace5aadf72fbcb8d7da42873cb2af4374',1,'Deki::Texture2D::width'],['../struct_deki_editor_1_1_tex_header.html#a14fe6969e50527242330f036c5d22c07',1,'DekiEditor::TexHeader::width'],['../struct_deki_editor_1_1_decoded_image.html#a5caa2ee3e38202fb0e124d80bae101ac',1,'DekiEditor::DecodedImage::width'],['../struct_deki_editor_1_1_atlas_frame.html#ad80a110179db245d6450d6ba7259de73',1,'DekiEditor::AtlasFrame::width'],['../struct_deki_editor_1_1_sprite_frame_data.html#a251ead6162e47f38923d20673ca3ffeb',1,'DekiEditor::SpriteFrameData::width']]],
+  ['windows_4',['windows',['../struct_deki_editor_1_1_post_install_def.html#a4af56054173c20673d8bc02affa4e98a',1,'DekiEditor::PostInstallDef']]],
+  ['worldx_5',['worldX',['../struct_deki_editor_1_1_scene_view_context.html#ac060527e6fac5c189bad9b54479eeccf',1,'DekiEditor::SceneViewContext']]],
+  ['worldy_6',['worldY',['../struct_deki_editor_1_1_scene_view_context.html#a38a22312ed4c1b80fbbfb8b3ba597823',1,'DekiEditor::SceneViewContext']]]
 ];

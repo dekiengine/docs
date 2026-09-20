@@ -13,9 +13,14 @@ var searchData=
   ['bg3_10',['Bg3',['../namespace_deki_editor_1_1_palette.html#a49b9934470865b81ca47aa3efc5e89c9',1,'DekiEditor::Palette']]],
   ['black_11',['Black',['../class_deki_1_1_color.html#a2d755b3875c6a30875ab10948fa1262d',1,'Deki::Color']]],
   ['blue_12',['Blue',['../class_deki_1_1_color.html#aa83dc3101d3046f1ec970955305ea0e3',1,'Deki::Color']]],
-  ['bootsceneonly_13',['bootSceneOnly',['../struct_deki_1_1_component_meta.html#ab4df68f24d444597c997bba1f29ce2cf',1,'Deki::ComponentMeta']]],
-  ['bottom_14',['bottom',['../struct_deki_1_1_rect.html#a03110f21a6ddef88ee624216886774c0',1,'Deki::Rect']]],
-  ['brown_15',['Brown',['../class_deki_1_1_color.html#ab963e59ef398b9623bba914c296fc930',1,'Deki::Color']]],
-  ['bullettext_16',['bulletText',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a96a5212f8a003b472db3985bccd83a8e',1,'DekiEditor::EditorUI::WidgetBackend']]],
-  ['button_17',['button',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ace4c15561b7e898a9953fa345acb011d',1,'DekiEditor::EditorUI::WidgetBackend']]]
+  ['bootscene_13',['bootScene',['../struct_deki_editor_1_1_platform_config.html#ae58ac00a7a6983b583cd688f3922c9a0',1,'DekiEditor::PlatformConfig']]],
+  ['bootsceneonly_14',['bootSceneOnly',['../struct_deki_1_1_component_meta.html#ab4df68f24d444597c997bba1f29ce2cf',1,'Deki::ComponentMeta']]],
+  ['bottom_15',['bottom',['../struct_deki_1_1_rect.html#a03110f21a6ddef88ee624216886774c0',1,'Deki::Rect']]],
+  ['brown_16',['Brown',['../class_deki_1_1_color.html#ab963e59ef398b9623bba914c296fc930',1,'Deki::Color']]],
+  ['builddefine_17',['buildDefine',['../struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html#ab4d40b303653a24d2c255f7fecb1e92d',1,'DekiEditor::CMakeGen::FeatureEntry::buildDefine'],['../struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#afa83080f692568957784c7ffb47a4677',1,'DekiEditor::CMakeGen::PackageEntry::buildDefine'],['../struct_deki_editor_1_1_feature_decision.html#a6fc70b6db5363e02951743022b96a8e7',1,'DekiEditor::FeatureDecision::buildDefine']]],
+  ['builddirectory_18',['buildDirectory',['../struct_deki_editor_1_1_builder_definition.html#a8dca6772252dbbd66354f554bcb87400',1,'DekiEditor::BuilderDefinition']]],
+  ['bullettext_19',['bulletText',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a96a5212f8a003b472db3985bccd83a8e',1,'DekiEditor::EditorUI::WidgetBackend']]],
+  ['button_20',['button',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ace4c15561b7e898a9953fa345acb011d',1,'DekiEditor::EditorUI::WidgetBackend']]],
+  ['bytesdownloaded_21',['bytesDownloaded',['../struct_deki_editor_1_1_download_progress.html#a949dfad69feffe1f0038058565d72cef',1,'DekiEditor::DownloadProgress']]],
+  ['bytype_22',['byType',['../struct_deki_editor_1_1_component_usage.html#af8eedf331e7cdbd3047a10b7e850b485',1,'DekiEditor::ComponentUsage']]]
 ];

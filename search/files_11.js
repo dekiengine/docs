@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector_2eh_0',['Vector.h',['../providers_2_vector_8h.html',1,'(Global Namespace)'],['../_vector_8h.html',1,'(Global Namespace)']]]
+  ['unitprojectsettings_2eh_0',['UnitProjectSettings.h',['../_unit_project_settings_8h.html',1,'']]]
 ];

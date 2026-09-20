@@ -17,7 +17,11 @@ var searchData=
   ['measuretextcss_14',['MeasureTextCss',['../class_deki_editor_1_1_editor_u_i.html#a694ddf36b8c562c1c3f0420b63349114',1,'DekiEditor::EditorUI']]],
   ['menuitem_15',['MenuItem',['../class_deki_editor_1_1_editor_u_i.html#a2f9f9cf7042e5a97d2969151b80b332b',1,'DekiEditor::EditorUI']]],
   ['merge_16',['Merge',['../class_deki_editor_1_1_command.html#a629e3a578d5af537830a75cba6f30188',1,'DekiEditor::Command']]],
-  ['min_17',['Min',['../namespace_deki_1_1_math.html#a51165cdc75563c7fc6930010a00db3ec',1,'Deki::Math']]],
-  ['modifyasset_18',['ModifyAsset',['../class_deki_editor_1_1_editor_u_i.html#aeeb4f300257263da987934862772c16f',1,'DekiEditor::EditorUI']]],
-  ['multiply_19',['Multiply',['../class_deki_1_1_color.html#aececf1046c56363c579c79e65e52ab21',1,'Deki::Color']]]
+  ['migrateflattenprojectfolder_17',['MigrateFlattenProjectFolder',['../namespace_deki_editor_1_1_project_paths.html#a51317f95805adb55fe00b46f28be35b1',1,'DekiEditor::ProjectPaths']]],
+  ['migratemodulestopackages_18',['MigrateModulesToPackages',['../namespace_deki_editor_1_1_project_paths.html#acb56fad0a39f6671cc1dfb466233b3be',1,'DekiEditor::ProjectPaths']]],
+  ['migratetogeneratedlayout_19',['MigrateToGeneratedLayout',['../namespace_deki_editor_1_1_project_paths.html#a4dab87b4a04a95970a77f7d4fed57d23',1,'DekiEditor::ProjectPaths']]],
+  ['min_20',['Min',['../namespace_deki_1_1_math.html#a51165cdc75563c7fc6930010a00db3ec',1,'Deki::Math']]],
+  ['missingcapabilities_21',['MissingCapabilities',['../namespace_deki_editor_1_1_c_make_gen.html#a5da71b32db273daf61f2e9392ed31481',1,'DekiEditor::CMakeGen']]],
+  ['modifyasset_22',['ModifyAsset',['../class_deki_editor_1_1_editor_u_i.html#aeeb4f300257263da987934862772c16f',1,'DekiEditor::EditorUI']]],
+  ['multiply_23',['Multiply',['../class_deki_1_1_color.html#aececf1046c56363c579c79e65e52ab21',1,'Deki::Color']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['editortype_0',['EditorType',['../namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350f',1,'DekiEditor']]],
-  ['eventkind_1',['EventKind',['../class_deki_editor_1_1_asset_file_watcher.html#aabf94ab81fe6af33a2c329e348cf59eb',1,'DekiEditor::AssetFileWatcher']]]
+  ['col_0',['Col',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3',1,'DekiEditor::EditorUI']]],
+  ['colorformat_1',['ColorFormat',['../namespace_deki.html#adf997e436efe620d60266910d8f63061',1,'Deki']]]
 ];

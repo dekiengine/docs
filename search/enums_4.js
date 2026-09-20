@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['location_0',['Location',['../namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b',1,'Deki::Storage']]],
-  ['loglevel_1',['LogLevel',['../namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7',1,'Deki']]]
+  ['editortype_0',['EditorType',['../namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350f',1,'DekiEditor']]],
+  ['eventkind_1',['EventKind',['../class_deki_editor_1_1_asset_file_watcher.html#aabf94ab81fe6af33a2c329e348cf59eb',1,'DekiEditor::AssetFileWatcher']]]
 ];

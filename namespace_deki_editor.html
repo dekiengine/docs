@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: DekiEditor Namespace Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -125,10 +147,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:CMakeGen" id="r_CMakeGen"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_c_make_gen.html">CMakeGen</a></td></tr>
 <tr class="memitem:EditorNaming" id="r_EditorNaming"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_editor_naming.html">EditorNaming</a></td></tr>
 <tr class="memitem:Fonts" id="r_Fonts"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_fonts.html">Fonts</a></td></tr>
 <tr class="memitem:Metrics" id="r_Metrics"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_metrics.html">Metrics</a></td></tr>
 <tr class="memitem:Palette" id="r_Palette"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_palette.html">Palette</a></td></tr>
+<tr class="memitem:ProjectPaths" id="r_ProjectPaths"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_project_paths.html">ProjectPaths</a></td></tr>
+<tr class="memdesc:namespace_deki_editor_1_1_project_paths"><td class="mdescLeft">&#160;</td><td class="mdescRight">The one definition of where things live inside a project. <br /></td></tr>
+<tr class="memitem:SafeNames" id="r_SafeNames"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_safe_names.html">SafeNames</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -151,11 +177,23 @@ Classes</h2></td></tr>
 <tr class="memitem:AssetTypeHandler" id="r_AssetTypeHandler"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_asset_type_handler.html">AssetTypeHandler</a></td></tr>
 <tr class="memitem:AssetTypeRegistry" id="r_AssetTypeRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_asset_type_registry.html">AssetTypeRegistry</a></td></tr>
 <tr class="memitem:AtlasFrame" id="r_AtlasFrame"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_atlas_frame.html">AtlasFrame</a></td></tr>
+<tr class="memitem:BuilderDefinition" id="r_BuilderDefinition"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a></td></tr>
+<tr class="memitem:BuilderRegistry" id="r_BuilderRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_builder_registry.html">BuilderRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry that manages available firmware builders.  <a href="class_deki_editor_1_1_builder_registry.html#details">More...</a><br /></td></tr>
+<tr class="memitem:BuildOptions" id="r_BuildOptions"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_build_options.html">BuildOptions</a></td></tr>
+<tr class="memitem:BuildProgress" id="r_BuildProgress"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_build_progress.html">BuildProgress</a></td></tr>
+<tr class="memitem:BuildStripSettings" id="r_BuildStripSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_build_strip_settings.html">BuildStripSettings</a></td></tr>
 <tr class="memitem:ChromaKeySettings" id="r_ChromaKeySettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_chroma_key_settings.html">ChromaKeySettings</a></td></tr>
+<tr class="memitem:CliTool" id="r_CliTool"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_cli_tool.html">CliTool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tool a package adds to the editor's command line and MCP server.  <a href="class_deki_editor_1_1_cli_tool.html#details">More...</a><br /></td></tr>
+<tr class="memitem:CliToolContext" id="r_CliToolContext"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_cli_tool_context.html">CliToolContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a package's CLI tool may use of the running editor.  <a href="struct_deki_editor_1_1_cli_tool_context.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Command" id="r_Command"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_command.html">Command</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base interface for undoable commands.  <a href="class_deki_editor_1_1_command.html#details">More...</a><br /></td></tr>
 <tr class="memitem:CommandHistory" id="r_CommandHistory"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_command_history.html">CommandHistory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages undo/redo command history with support for command merging.  <a href="class_deki_editor_1_1_command_history.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ComponentDef" id="r_ComponentDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_component_def.html">ComponentDef</a></td></tr>
+<tr class="memitem:ComponentUsage" id="r_ComponentUsage"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a></td></tr>
 <tr class="memitem:CompoundCommand" id="r_CompoundCommand"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_compound_command.html">CompoundCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Groups multiple commands into a single undoable operation.  <a href="class_deki_editor_1_1_compound_command.html#details">More...</a><br /></td></tr>
 <tr class="memitem:CreateMenuEntry" id="r_CreateMenuEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_create_menu_entry.html">CreateMenuEntry</a></td></tr>
@@ -167,6 +205,9 @@ Classes</h2></td></tr>
 <tr class="memitem:DeadMemory" id="r_DeadMemory"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_dead_memory.html">DeadMemory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory that is about to be freed, described as byte ranges.  <a href="class_deki_editor_1_1_dead_memory.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DecodedImage" id="r_DecodedImage"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_decoded_image.html">DecodedImage</a></td></tr>
+<tr class="memitem:DeployTarget" id="r_DeployTarget"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_deploy_target.html">DeployTarget</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One thing a build can be deployed to, as the backend enumerates them.  <a href="struct_deki_editor_1_1_deploy_target.html#details">More...</a><br /></td></tr>
+<tr class="memitem:DownloadProgress" id="r_DownloadProgress"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_download_progress.html">DownloadProgress</a></td></tr>
 <tr class="memitem:EditorApplication" id="r_EditorApplication"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_application.html">EditorApplication</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main editor application singleton (facade).  <a href="class_deki_editor_1_1_editor_application.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EditorAssets" id="r_EditorAssets"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_assets.html">EditorAssets</a></td></tr>
@@ -176,17 +217,26 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static HTTP/archive utility functions used across the editor.  <a href="class_deki_editor_1_1_editor_http_utils.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EditorPaths" id="r_EditorPaths"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_paths.html">EditorPaths</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_editor_1_1_editor_paths.html" title="EditorPaths.">EditorPaths</a>.  <a href="class_deki_editor_1_1_editor_paths.html#details">More...</a><br /></td></tr>
+<tr class="memitem:EditorSettings" id="r_EditorSettings"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_settings.html">EditorSettings</a></td></tr>
 <tr class="memitem:EditorUI" id="r_EditorUI"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_u_i.html">EditorUI</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton providing the editor UI controls + inspector drawing.  <a href="class_deki_editor_1_1_editor_u_i.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EditorWindow" id="r_EditorWindow"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_editor_window.html">EditorWindow</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for standalone editor windows.  <a href="class_deki_editor_1_1_editor_window.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EditorWindowMeta" id="r_EditorWindowMeta"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_editor_window_meta.html">EditorWindowMeta</a></td></tr>
+<tr class="memitem:FallbackDef" id="r_FallbackDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_fallback_def.html">FallbackDef</a></td></tr>
+<tr class="memitem:FeatureDecision" id="r_FeatureDecision"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_feature_decision.html">FeatureDecision</a></td></tr>
 <tr class="memitem:FileInspector" id="r_FileInspector"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_file_inspector.html">FileInspector</a></td></tr>
 <tr class="memitem:FileInspectorRegistry" id="r_FileInspectorRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_file_inspector_registry.html">FileInspectorRegistry</a></td></tr>
+<tr class="memitem:FirmwareBuilderBase" id="r_FirmwareBuilderBase"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_firmware_builder_base.html">FirmwareBuilderBase</a></td></tr>
 <tr class="memitem:GuidCache" id="r_GuidCache"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_guid_cache.html">GuidCache</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache for mapping asset paths to GUIDs using .data sidecar files.  <a href="class_deki_editor_1_1_guid_cache.html#details">More...</a><br /></td></tr>
 <tr class="memitem:IAssetImporter" id="r_IAssetImporter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_asset_importer.html">IAssetImporter</a></td></tr>
+<tr class="memitem:IBuildActivitySink" id="r_IBuildActivitySink"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_build_activity_sink.html">IBuildActivitySink</a></td></tr>
 <tr class="memitem:ImportResult" id="r_ImportResult"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_import_result.html">ImportResult</a></td></tr>
+<tr class="memitem:IPlatformEditorUI" id="r_IPlatformEditorUI"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_platform_editor_u_i.html">IPlatformEditorUI</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for builder-specific platform editor UI.  <a href="class_deki_editor_1_1_i_platform_editor_u_i.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ITargetBuilder" id="r_ITargetBuilder"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A build backend: everything the editor knows about one kind of target.  <a href="class_deki_editor_1_1_i_target_builder.html#details">More...</a><br /></td></tr>
 <tr class="memitem:NodeCanvas" id="r_NodeCanvas"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_node_canvas.html">NodeCanvas</a></td></tr>
 <tr class="memitem:NodeCanvasEvents" id="r_NodeCanvasEvents"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_node_canvas_events.html">NodeCanvasEvents</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">What happened this frame.  <a href="struct_deki_editor_1_1_node_canvas_events.html#details">More...</a><br /></td></tr>
@@ -196,7 +246,14 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One node to draw.  <a href="struct_deki_editor_1_1_node_canvas_node.html#details">More...</a><br /></td></tr>
 <tr class="memitem:NodeCanvasPalette" id="r_NodeCanvasPalette"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_node_canvas_palette.html">NodeCanvasPalette</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canvas colors (packed via <a class="el" href="class_deki_editor_1_1_editor_u_i.html#ac757bb132b215f805f40455d96cabf1f" title="Pack an RGBA color (components 0-255) for the Draw* methods.">EditorUI::Rgba</a>: a&lt;&lt;24|b&lt;&lt;16|g&lt;&lt;8|r).  <a href="struct_deki_editor_1_1_node_canvas_palette.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PackageDecision" id="r_PackageDecision"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_package_decision.html">PackageDecision</a></td></tr>
 <tr class="memitem:PickerItem" id="r_PickerItem"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_picker_item.html">PickerItem</a></td></tr>
+<tr class="memitem:PlatformConfig" id="r_PlatformConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the editor knows about a platform.  <a href="struct_deki_editor_1_1_platform_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PlatformRegistry" id="r_PlatformRegistry"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_platform_registry.html">PlatformRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry for available platforms.  <a href="class_deki_editor_1_1_platform_registry.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PlatformTemplate" id="r_PlatformTemplate"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_platform_template.html">PlatformTemplate</a></td></tr>
+<tr class="memitem:PostInstallDef" id="r_PostInstallDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_post_install_def.html">PostInstallDef</a></td></tr>
 <tr class="memitem:SceneView" id="r_SceneView"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_scene_view.html">SceneView</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton providing current render context for scene view.  <a href="class_deki_editor_1_1_scene_view.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SceneViewContext" id="r_SceneViewContext"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_scene_view_context.html">SceneViewContext</a></td></tr>
@@ -204,16 +261,28 @@ Classes</h2></td></tr>
 <tr class="memitem:SpriteFrameData" id="r_SpriteFrameData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sprite_frame_data.html">SpriteFrameData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime sprite frame data (texture coordinates).  <a href="struct_deki_editor_1_1_sprite_frame_data.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SpriteSettings" id="r_SpriteSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sprite_settings.html">SpriteSettings</a></td></tr>
+<tr class="memitem:StripPlan" id="r_StripPlan"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_strip_plan.html">StripPlan</a></td></tr>
 <tr class="memitem:SubAssetInfo" id="r_SubAssetInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sub_asset_info.html">SubAssetInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a sub-asset.  <a href="struct_deki_editor_1_1_sub_asset_info.html#details">More...</a><br /></td></tr>
+<tr class="memitem:SubComponentDef" id="r_SubComponentDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sub_component_def.html">SubComponentDef</a></td></tr>
+<tr class="memitem:TargetContentConflict" id="r_TargetContentConflict"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_target_content_conflict.html">TargetContentConflict</a></td></tr>
 <tr class="memitem:TexData" id="r_TexData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_tex_data.html">TexData</a></td></tr>
 <tr class="memitem:TexHeader" id="r_TexHeader"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_tex_header.html">TexHeader</a></td></tr>
 <tr class="memitem:TextureImporter" id="r_TextureImporter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_texture_importer.html">TextureImporter</a></td></tr>
+<tr class="memitem:ToolchainComponent" id="r_ToolchainComponent"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_toolchain_component.html">ToolchainComponent</a></td></tr>
+<tr class="memitem:ToolchainComponentManager" id="r_ToolchainComponentManager"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_toolchain_component_manager.html">ToolchainComponentManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime toolchain component manager driven by <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> JSON.  <a href="class_deki_editor_1_1_toolchain_component_manager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ToolchainVersionInfo" id="r_ToolchainVersionInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_toolchain_version_info.html">ToolchainVersionInfo</a></td></tr>
+<tr class="memitem:VersionCheckDef" id="r_VersionCheckDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_version_check_def.html">VersionCheckDef</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:acfcbbcee26213394d590a174db83fbb3" id="r_acfcbbcee26213394d590a174db83fbb3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#acfcbbcee26213394d590a174db83fbb3">AssetCacheHandler</a> = std::function&lt;<a class="el" href="#a4209b652941c08ae4d42581f7462c61d">AssetCacheResult</a>(const <a class="el" href="struct_deki_editor_1_1_asset_cache_context.html">AssetCacheContext</a>&amp; ctx)&gt;</td></tr>
 <tr class="memdesc:acfcbbcee26213394d590a174db83fbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset cache handler callback type.  <br /></td></tr>
+<tr class="memitem:af8aa323fd48862ba7ab9aa36155abac7" id="r_af8aa323fd48862ba7ab9aa36155abac7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af8aa323fd48862ba7ab9aa36155abac7">DownloadProgressCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_download_progress.html">DownloadProgress</a>&amp;)&gt;</td></tr>
+<tr class="memitem:a2322b9ebd0b9ae159d225a2b4294465e" id="r_a2322b9ebd0b9ae159d225a2b4294465e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a2322b9ebd0b9ae159d225a2b4294465e">VersionCheckCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_toolchain_version_info.html">ToolchainVersionInfo</a>&amp;)&gt;</td></tr>
+<tr class="memitem:a102fc12c05cce32374d11e0fe46bf847" id="r_a102fc12c05cce32374d11e0fe46bf847"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a102fc12c05cce32374d11e0fe46bf847">BuildOutputCallback</a> = std::function&lt;void(const std::string&amp; line, bool isError)&gt;</td></tr>
+<tr class="memitem:a7793ebb7f1651054d85b46d4072ebcc9" id="r_a7793ebb7f1651054d85b46d4072ebcc9"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_build_progress.html">BuildProgress</a>&amp;)&gt;</td></tr>
 <tr class="memitem:a6b6b790d85c8ae57579a7bbd35b18b50" id="r_a6b6b790d85c8ae57579a7bbd35b18b50"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> = std::function&lt;void(const std::string&amp;)&gt;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -254,6 +323,39 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#ae6db2932853c76e2df52a32010e1c763af6068daa29dbb05a7ead1e3b5a48bbee">Data</a>
 <br />
  }</td></tr>
+<tr class="memitem:a211a93600fdf7acea2e4a27997fc32b5" id="r_a211a93600fdf7acea2e4a27997fc32b5"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5">DownloadStatus</a> { <br />
+&#160;&#160;<a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5ae599161956d626eda4cb0a5ffb85271c">Idle</a>
+, <a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5a8b4046bd9e3f81b2a29c3c09d8266284">CheckingVersion</a>
+, <a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5ac7e71badf20a04f36d11be557ceb7a5b">Downloading</a>
+, <a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5ae0cff7bb5e702e8a43816a12be4c93aa">Extracting</a>
+, <br />
+&#160;&#160;<a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5a07ca5050e697392c9ed47e6453f1453f">Completed</a>
+, <a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5ad7c8c85bf79bbe1b7188497c32c3b0ca">Failed</a>
+<br />
+ }</td></tr>
+<tr class="memitem:ac588badb739acc637ed497ed903d588c" id="r_ac588badb739acc637ed497ed903d588c"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ac588badb739acc637ed497ed903d588c">AdoptPlatformResult</a> { <br />
+&#160;&#160;<a class="el" href="#ac588badb739acc637ed497ed903d588cafcb64e02aede727ef9cfc83522f05d62">AlreadyDefined</a>
+, <a class="el" href="#ac588badb739acc637ed497ed903d588ca7388c21e2e0e65e985cbb16757ad88d0">Adopted</a>
+, <a class="el" href="#ac588badb739acc637ed497ed903d588ca4bcdd9a35c79a6d19f873808aa0f9364">NoTemplate</a>
+, <a class="el" href="#ac588badb739acc637ed497ed903d588ca02266588dfd4e565cc42949d0c73f28c">Ambiguous</a>
+, <br />
+&#160;&#160;<a class="el" href="#ac588badb739acc637ed497ed903d588cad7c8c85bf79bbe1b7188497c32c3b0ca">Failed</a>
+<br />
+ }</td></tr>
+<tr class="memitem:a1b2cfc51db2bed0ffcb1f07e8ad9825d" id="r_a1b2cfc51db2bed0ffcb1f07e8ad9825d"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a1b2cfc51db2bed0ffcb1f07e8ad9825d">ToolchainComponentStatus</a> { <a class="el" href="#a1b2cfc51db2bed0ffcb1f07e8ad9825da98dd43dfae05b11befe1f140e0ec787a">Installed</a>
+, <a class="el" href="#a1b2cfc51db2bed0ffcb1f07e8ad9825da4c2d0402e7f6a5450b1e413abf3e9b1f">NotInstalled</a>
+, <a class="el" href="#a1b2cfc51db2bed0ffcb1f07e8ad9825da4ca50bd5e1da4e7eb295d50a191aa4ec">UpdateAvailable</a>
+, <a class="el" href="#a1b2cfc51db2bed0ffcb1f07e8ad9825da2763f33c904a183bd0ef06f9c4fb4403">Installing</a>
+ }</td></tr>
+<tr class="memitem:a2618f4c022e74277c5532b30f28a1dd7" id="r_a2618f4c022e74277c5532b30f28a1dd7"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7">BuildState</a> { <br />
+&#160;&#160;<a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7ae599161956d626eda4cb0a5ffb85271c">Idle</a>
+, <a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7ac39b56d4489fb2507289e7ae19567b80">Building</a>
+, <a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7a99da218397f313ea17892c90fa6ceefc">Deploying</a>
+, <a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7a07ca5050e697392c9ed47e6453f1453f">Completed</a>
+, <br />
+&#160;&#160;<a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7ad7c8c85bf79bbe1b7188497c32c3b0ca">Failed</a>
+<br />
+ }</td></tr>
 <tr class="memitem:a890eb8b6d87bce87caaa8478df7e00d9" id="r_a890eb8b6d87bce87caaa8478df7e00d9"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a890eb8b6d87bce87caaa8478df7e00d9">SceneEditTool</a> { <a class="el" href="#a890eb8b6d87bce87caaa8478df7e00d9ae0626222614bdee31951d84c64e5e9ff">Select</a>
 , <a class="el" href="#a890eb8b6d87bce87caaa8478df7e00d9a6bc362dbf494c61ea117fe3c71ca48a5">Move</a>
 , <a class="el" href="#a890eb8b6d87bce87caaa8478df7e00d9a69ad58d91eec91b5c152d21ca117dc81">Rect</a>
@@ -261,6 +363,18 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a890eb8b6d87bce87caaa8478df7e00d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scene-view editing tool, requestable from package-DLL editors.  <a href="#a890eb8b6d87bce87caaa8478df7e00d9">More...</a><br /></td></tr>
 <tr class="memitem:a5289679f6a59824537ce2a6d76d0350f" id="r_a5289679f6a59824537ce2a6d76d0350f"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a5289679f6a59824537ce2a6d76d0350f">EditorType</a> { <a class="el" href="#a5289679f6a59824537ce2a6d76d0350fa1563966d105abbfffbb8aecda4cd630b">CustomEditor</a>
 , <a class="el" href="#a5289679f6a59824537ce2a6d76d0350fa550a86e283496737c780a92dd38944b3">AssetTypeEditor</a>
+, <a class="el" href="#a5289679f6a59824537ce2a6d76d0350faf59bc384c5fae5428d71f2e19087f2a8">CliTool</a>
+ }</td></tr>
+<tr class="memitem:aaf7c4d4a830420db63a30d992d937642" id="r_aaf7c4d4a830420db63a30d992d937642"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#aaf7c4d4a830420db63a30d992d937642">FeatureState</a> { <br />
+&#160;&#160;<a class="el" href="#aaf7c4d4a830420db63a30d992d937642ab651efdb98a5d6bd2b3935d0c3f4a5e2">Required</a>
+, <a class="el" href="#aaf7c4d4a830420db63a30d992d937642a3c5e891bff07947cbae2fda89162df9f">Pinned</a>
+, <a class="el" href="#aaf7c4d4a830420db63a30d992d937642a019d1ca7d50cc54b995f60d456435e87">Used</a>
+, <a class="el" href="#aaf7c4d4a830420db63a30d992d937642ab2286379a1def1d4a2c82bc18a70743e">Kept</a>
+, <br />
+&#160;&#160;<a class="el" href="#aaf7c4d4a830420db63a30d992d937642a979ef112f87481c1c53464419070c00b">DefaultOn</a>
+, <a class="el" href="#aaf7c4d4a830420db63a30d992d937642a67fbb19beaab450abf96596704779bd6">ForcedOff</a>
+, <a class="el" href="#aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954">Stripped</a>
+<br />
  }</td></tr>
 <tr class="memitem:a5d253adfc040f7eff5a1cc013014917e" id="r_a5d253adfc040f7eff5a1cc013014917e"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a5d253adfc040f7eff5a1cc013014917e">TexFlags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="#a5d253adfc040f7eff5a1cc013014917ea6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
@@ -305,6 +419,37 @@ Functions</h2></td></tr>
 <tr class="memdesc:af6662147f2cdebc9885250233c539ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a deterministic GUID from a seed string (for derived assets like font sizes).  <br /></td></tr>
 <tr class="memitem:a8921308616a742b17b7b32282ff5a8c0" id="r_a8921308616a742b17b7b32282ff5a8c0"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a8921308616a742b17b7b32282ff5a8c0">GenerateGuid</a> ()</td></tr>
 <tr class="memdesc:a8921308616a742b17b7b32282ff5a8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random GUID.  <br /></td></tr>
+<tr class="memitem:ad630f65c2850ff715ff3e97df6f20694" id="r_ad630f65c2850ff715ff3e97df6f20694"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad630f65c2850ff715ff3e97df6f20694">SetBuildActivitySink</a> (<a class="el" href="class_deki_editor_1_1_i_build_activity_sink.html">IBuildActivitySink</a> *sink)</td></tr>
+<tr class="memdesc:ad630f65c2850ff715ff3e97df6f20694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install the sink, or nullptr to report nowhere.  <br /></td></tr>
+<tr class="memitem:a034e54d9cff732030fa1420dae424bdf" id="r_a034e54d9cff732030fa1420dae424bdf"><td class="memItemLeft"><a class="el" href="class_deki_editor_1_1_i_build_activity_sink.html">IBuildActivitySink</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a034e54d9cff732030fa1420dae424bdf">GetBuildActivitySink</a> ()</td></tr>
+<tr class="memdesc:a034e54d9cff732030fa1420dae424bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The installed sink, or nullptr. Prefer the free functions below.  <br /></td></tr>
+<tr class="memitem:afa2ee0286c60bcd4a733345af46a0989" id="r_afa2ee0286c60bcd4a733345af46a0989"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afa2ee0286c60bcd4a733345af46a0989">BuildActivityLog</a> (const std::string &amp;process, const std::string &amp;message)</td></tr>
+<tr class="memdesc:afa2ee0286c60bcd4a733345af46a0989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report, doing nothing when no sink is installed.  <br /></td></tr>
+<tr class="memitem:a20fdb9f539f617438ffcd1e3ffd921e9" id="r_a20fdb9f539f617438ffcd1e3ffd921e9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20fdb9f539f617438ffcd1e3ffd921e9">BuildActivityComplete</a> (const std::string &amp;process)</td></tr>
+<tr class="memitem:ae44591c5c46a48f5fa9dc1f6329a4bae" id="r_ae44591c5c46a48f5fa9dc1f6329a4bae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae44591c5c46a48f5fa9dc1f6329a4bae">BuildActivityFail</a> (const std::string &amp;process, const std::string &amp;error)</td></tr>
+<tr class="memitem:a8255930a1ae31243e32566703cc676cf" id="r_a8255930a1ae31243e32566703cc676cf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8255930a1ae31243e32566703cc676cf">ParseBuilderDefinition</a> (const std::string &amp;jsonText, <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> &amp;outDef, std::string &amp;outError)</td></tr>
+<tr class="memdesc:a8255930a1ae31243e32566703cc676cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a toolchain definition from JSON text.  <br /></td></tr>
+<tr class="memitem:aff6756db3269d948e462dd9b4c059f05" id="r_aff6756db3269d948e462dd9b4c059f05"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aff6756db3269d948e462dd9b4c059f05">LoadBuilderDefinition</a> (const std::string &amp;jsonPath, <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> &amp;outDef, std::string &amp;outError)</td></tr>
+<tr class="memdesc:aff6756db3269d948e462dd9b4c059f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same, from a file a backend locates itself.  <br /></td></tr>
+<tr class="memitem:a8401dfa502ae14dd9a98c45f66392b1d" id="r_a8401dfa502ae14dd9a98c45f66392b1d"><td class="memItemLeft"><a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a8401dfa502ae14dd9a98c45f66392b1d">SelectBuilder</a> (const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;builders, const std::string &amp;framework)</td></tr>
+<tr class="memdesc:a8401dfa502ae14dd9a98c45f66392b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The builder claiming <span class="tt">framework</span>, or nullptr.  <br /></td></tr>
+<tr class="memitem:aace137306a1c0d81bfa1df8eeb9498b1" id="r_aace137306a1c0d81bfa1df8eeb9498b1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aace137306a1c0d81bfa1df8eeb9498b1">DescribeNoBuilder</a> (const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;builders, const std::string &amp;framework)</td></tr>
+<tr class="memdesc:aace137306a1c0d81bfa1df8eeb9498b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Why no builder matched, for the error the user actually sees: names the framework asked for and lists the ones that are registered.  <br /></td></tr>
+<tr class="memitem:a72f47d14149b3b8eacc846705c5eca64" id="r_a72f47d14149b3b8eacc846705c5eca64"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a72f47d14149b3b8eacc846705c5eca64">DrawStringListEditor</a> (const char *label, std::vector&lt; std::string &gt; &amp;list, char *newItemBuffer, size_t bufSize)</td></tr>
+<tr class="memdesc:a72f47d14149b3b8eacc846705c5eca64"><td class="mdescLeft">&#160;</td><td class="mdescRight">An editable list of strings: one row per entry with a remove button, and a field that appends.  <br /></td></tr>
+<tr class="memitem:a108e930c2d2e29a6e3026f653469cf78" id="r_a108e930c2d2e29a6e3026f653469cf78"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a108e930c2d2e29a6e3026f653469cf78">IsValidCapabilityName</a> (const std::string &amp;name)</td></tr>
+<tr class="memitem:abe34e42f9c70cc013f3e3b1507df0450" id="r_abe34e42f9c70cc013f3e3b1507df0450"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_platform_template.html">PlatformTemplate</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abe34e42f9c70cc013f3e3b1507df0450">FindPlatformTemplates</a> (const std::string &amp;projectPath)</td></tr>
+<tr class="memdesc:abe34e42f9c70cc013f3e3b1507df0450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every template offered by a package installed in the project, sorted by platform id then package id.  <br /></td></tr>
+<tr class="memitem:a3d43decea579881a3d86911197b6b9fe" id="r_a3d43decea579881a3d86911197b6b9fe"><td class="memItemLeft"><a class="el" href="#ac588badb739acc637ed497ed903d588c">AdoptPlatformResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3d43decea579881a3d86911197b6b9fe">AdoptPlatformTemplate</a> (const std::string &amp;projectPath, const std::string &amp;platformId, std::string &amp;detail)</td></tr>
+<tr class="memdesc:a3d43decea579881a3d86911197b6b9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make <span class="tt">platformId</span> the project's own, from a template if it has to be.  <br /></td></tr>
+<tr class="memitem:ad57330e58de928c530ae7ba5f8b436a7" id="r_ad57330e58de928c530ae7ba5f8b436a7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad57330e58de928c530ae7ba5f8b436a7">EnsureProjectPlatform</a> (const std::string &amp;projectPath, const std::string &amp;platformId, std::string &amp;err)</td></tr>
+<tr class="memdesc:ad57330e58de928c530ae7ba5f8b436a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">What every user of a platform calls first - opening a project on it, switching to it, building for it: adopt it if it is only on offer, and load the adopted copy into <a class="el" href="class_deki_editor_1_1_platform_registry.html" title="Registry for available platforms.">PlatformRegistry</a>.  <br /></td></tr>
+<tr class="memitem:a43a62cb3add0f4975c7a6a3606cd13d2" id="r_a43a62cb3add0f4975c7a6a3606cd13d2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a43a62cb3add0f4975c7a6a3606cd13d2">RegisterPlatformTemplates</a> (const std::string &amp;projectPath)</td></tr>
+<tr class="memdesc:a43a62cb3add0f4975c7a6a3606cd13d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register, in <a class="el" href="class_deki_editor_1_1_platform_registry.html" title="Registry for available platforms.">PlatformRegistry</a>, every template the project has NOT adopted, so a package's platforms can be seen and chosen before they are copied in.  <br /></td></tr>
+<tr class="memitem:a8a404fe14df02d696f644372cb1b97c1" id="r_a8a404fe14df02d696f644372cb1b97c1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a8a404fe14df02d696f644372cb1b97c1">ReadCMakeCacheVar</a> (const std::string &amp;buildDir, const std::string &amp;name)</td></tr>
+<tr class="memdesc:a8a404fe14df02d696f644372cb1b97c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of <span class="tt">name</span> in &lt;buildDir&gt;/CMakeCache.txt, i.e.  <br /></td></tr>
+<tr class="memitem:a48d0b2a95471f67515cf862ca149579f" id="r_a48d0b2a95471f67515cf862ca149579f"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="#a48d0b2a95471f67515cf862ca149579f">ScanComponentUsage</a> (const std::string &amp;projectPath, const std::vector&lt; std::string &gt; &amp;knownTypes, const std::vector&lt; std::string &gt; &amp;scanPackageIds, const std::string &amp;targetPlatformId=&quot;&quot;, const std::set&lt; std::string &gt; &amp;targetCapabilities={})</td></tr>
+<tr class="memitem:a65df211554c72cc29d2a44b6de453264" id="r_a65df211554c72cc29d2a44b6de453264"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a65df211554c72cc29d2a44b6de453264">ShortTypeName</a> (const std::string &amp;qualified)</td></tr>
 <tr class="memitem:ad26c0046658ede6a823f430281b1e5b0" id="r_ad26c0046658ede6a823f430281b1e5b0"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad26c0046658ede6a823f430281b1e5b0">AddComponentByName</a> (<a class="el" href="class_deki_1_1_object.html">Deki::Object</a> *object, const std::string &amp;typeName)</td></tr>
 <tr class="memdesc:ad26c0046658ede6a823f430281b1e5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and attach a component by its qualified class name, for package editor code that builds objects on the user's behalf (a custom editor adding the children a component needs).  <br /></td></tr>
 <tr class="memitem:a4223c0f07da52769789798c2fef0991c" id="r_a4223c0f07da52769789798c2fef0991c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4223c0f07da52769789798c2fef0991c">SetupEditorTheme</a> (float dpiScale)</td></tr>
@@ -350,6 +495,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6ccc9f53df8c79c78f438b88106538e1" id="r_a6ccc9f53df8c79c78f438b88106538e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6ccc9f53df8c79c78f438b88106538e1">RegisterEditorWindow</a> (const <a class="el" href="struct_deki_editor_1_1_editor_window_meta.html">EditorWindowMeta</a> &amp;meta)</td></tr>
 <tr class="memitem:ab92d2167c1fa26910c17006bbdaac50b" id="r_ab92d2167c1fa26910c17006bbdaac50b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab92d2167c1fa26910c17006bbdaac50b">ClearRegisteredWindows</a> ()</td></tr>
 <tr class="memitem:a890bda74fc7efbd1038f88c117891485" id="r_a890bda74fc7efbd1038f88c117891485"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a890bda74fc7efbd1038f88c117891485">TrimRegisteredWindows</a> (int keepCount)</td></tr>
+<tr class="memitem:a929fe2e9220453996a8606b20f3c849b" id="r_a929fe2e9220453996a8606b20f3c849b"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a929fe2e9220453996a8606b20f3c849b">FeatureStateName</a> (<a class="el" href="#aaf7c4d4a830420db63a30d992d937642">FeatureState</a> state)</td></tr>
+<tr class="memitem:ae45f86583f4c5377f5caf73fefa2a541" id="r_ae45f86583f4c5377f5caf73fefa2a541"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_strip_plan.html">StripPlan</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae45f86583f4c5377f5caf73fefa2a541">ResolveStripPlan</a> (const std::vector&lt; <a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html">CMakeGen::PackageEntry</a> &gt; &amp;allPackages, const <a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a> &amp;usage, const <a class="el" href="struct_deki_editor_1_1_build_strip_settings.html">BuildStripSettings</a> &amp;settings, const std::string &amp;packagesDir)</td></tr>
+<tr class="memitem:a89d12cf966ece352692df50d66195a1b" id="r_a89d12cf966ece352692df50d66195a1b"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_target_content_conflict.html">TargetContentConflict</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a89d12cf966ece352692df50d66195a1b">FindTargetContentConflicts</a> (const std::string &amp;projectPath, const std::string &amp;targetPlatformId)</td></tr>
+<tr class="memitem:afbeb2ff374ce09c7b04d22d2e460168a" id="r_afbeb2ff374ce09c7b04d22d2e460168a"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_strip_plan.html">StripPlan</a>&#160;</td><td class="memItemRight"><a class="el" href="#afbeb2ff374ce09c7b04d22d2e460168a">ComputeStripPlan</a> (const std::string &amp;projectPath, const std::string &amp;targetPlatformId=&quot;&quot;)</td></tr>
 <tr class="memitem:a62730efaec1b0265ec5aa18ed29414cc" id="r_a62730efaec1b0265ec5aa18ed29414cc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a62730efaec1b0265ec5aa18ed29414cc">ReadFileToString</a> (const std::string &amp;path, std::string &amp;out, std::string &amp;err)</td></tr>
 <tr class="memitem:ad22e70d1204b6c6d209fafabe9b1e04f" id="r_ad22e70d1204b6c6d209fafabe9b1e04f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad22e70d1204b6c6d209fafabe9b1e04f">AtomicWriteFile</a> (const std::string &amp;path, std::string_view content, std::string &amp;err)</td></tr>
 <tr class="memitem:a75bb0870ccd4cfebd8da0f686224413b" id="r_a75bb0870ccd4cfebd8da0f686224413b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a75bb0870ccd4cfebd8da0f686224413b">NormalizeProjectRoot</a> (const std::string &amp;projectPath)</td></tr>
@@ -384,7 +533,27 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4f1c0551195272cfb31fbb7fc53449d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manifest and lock filenames, as written at the project root.  <br /></td></tr>
 <tr class="memitem:ab0f1adaac251c1e2af6b93cd81017ebb" id="r_ab0f1adaac251c1e2af6b93cd81017ebb"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab0f1adaac251c1e2af6b93cd81017ebb">GetPackageLockFileName</a> ()</td></tr>
 <tr class="memitem:a54a4b3e1449f4e8930f88f6e6eef9876" id="r_a54a4b3e1449f4e8930f88f6e6eef9876"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a54a4b3e1449f4e8930f88f6e6eef9876">GetPlatformsDirectoryRelative</a> ()</td></tr>
+<tr class="memitem:acc82e56feb4f1a9685cf2326c54e1450" id="r_acc82e56feb4f1a9685cf2326c54e1450"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acc82e56feb4f1a9685cf2326c54e1450">LaunchDetached</a> (const std::string &amp;program, const std::vector&lt; std::string &gt; &amp;args)</td></tr>
+<tr class="memdesc:acc82e56feb4f1a9685cf2326c54e1450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch <span class="tt">program</span> with <span class="tt">args</span>, detached, without a console window.  <br /></td></tr>
+<tr class="memitem:abee463d2d51a0318132042ff66e996db" id="r_abee463d2d51a0318132042ff66e996db"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abee463d2d51a0318132042ff66e996db">LaunchDetachedInDirectory</a> (const std::string &amp;program, const std::vector&lt; std::string &gt; &amp;args, const std::string &amp;workingDirectory)</td></tr>
+<tr class="memdesc:abee463d2d51a0318132042ff66e996db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch <span class="tt">program</span> from <span class="tt">workingDirectory</span>, detached, keeping its console.  <br /></td></tr>
+<tr class="memitem:a7ac54aa8ccc6b630232c16e269bedec8" id="r_a7ac54aa8ccc6b630232c16e269bedec8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7ac54aa8ccc6b630232c16e269bedec8">OpenInCodeEditor</a> (const std::string &amp;filePath, int line=-1)</td></tr>
+<tr class="memdesc:a7ac54aa8ccc6b630232c16e269bedec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a source file in the user's code editor, optionally at a line.  <br /></td></tr>
+<tr class="memitem:a137e92304ddda1f66b0a1bf3c7163a44" id="r_a137e92304ddda1f66b0a1bf3c7163a44"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a137e92304ddda1f66b0a1bf3c7163a44">RevealInFileManager</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a137e92304ddda1f66b0a1bf3c7163a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reveal a file or directory in the platform's file manager.  <br /></td></tr>
+<tr class="memitem:acec115951da358e7d7f9971818a5ee85" id="r_acec115951da358e7d7f9971818a5ee85"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acec115951da358e7d7f9971818a5ee85">ObjectMissingCapabilities</a> (const nlohmann::json &amp;obj, const std::set&lt; std::string &gt; &amp;capabilities)</td></tr>
+<tr class="memitem:a4216256764a616b5f48a496292c629d2" id="r_a4216256764a616b5f48a496292c629d2"><td class="memItemLeft">nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a4216256764a616b5f48a496292c629d2">FilterSceneForTarget</a> (const nlohmann::json &amp;scene, const std::set&lt; std::string &gt; &amp;capabilities)</td></tr>
+<tr class="memitem:a0406f6f89868cd8d919eed819bddeebe" id="r_a0406f6f89868cd8d919eed819bddeebe"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0406f6f89868cd8d919eed819bddeebe">SceneHasTargetRequirements</a> (const nlohmann::json &amp;scene)</td></tr>
+<tr class="memitem:a6013ce82ec2c232030428377072f6e1a" id="r_a6013ce82ec2c232030428377072f6e1a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6013ce82ec2c232030428377072f6e1a">PreserveTargetRequirements</a> (const std::string &amp;scenePath, const nlohmann::json &amp;before)</td></tr>
+<tr class="memitem:addc894a4baec9bac7ab3066c42655940" id="r_addc894a4baec9bac7ab3066c42655940"><td class="memItemLeft">std::map&lt; int64_t, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#addc894a4baec9bac7ab3066c42655940">CollectTargetRequirements</a> (const nlohmann::json &amp;scene)</td></tr>
+<tr class="memitem:a1f3bff694e056e0f22f904569fcb3027" id="r_a1f3bff694e056e0f22f904569fcb3027"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1f3bff694e056e0f22f904569fcb3027">EnumerateSerialPorts</a> ()</td></tr>
+<tr class="memitem:adf38dfc52dc7be49a3a996d28b67d4d3" id="r_adf38dfc52dc7be49a3a996d28b67d4d3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adf38dfc52dc7be49a3a996d28b67d4d3">RunShellCommand</a> (const std::string &amp;commandLine, const std::string &amp;workingDirectory, const std::function&lt; void(const std::string &amp;line)&gt; &amp;onLine, const std::atomic&lt; bool &gt; *cancel=nullptr)</td></tr>
+<tr class="memdesc:adf38dfc52dc7be49a3a996d28b67d4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <span class="tt">commandLine</span> through the platform shell: <span class="tt">cmd.exe /S /C "&lt;line&gt;"</span> on Windows, <span class="tt">/bin/sh -c</span> elsewhere.  <br /></td></tr>
 <tr class="memitem:a43a5c7a5c0fce72dd1dbc67d481ba5db" id="r_a43a5c7a5c0fce72dd1dbc67d481ba5db"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a43a5c7a5c0fce72dd1dbc67d481ba5db">DecodeImageFile</a> (const std::string &amp;absolutePath, <a class="el" href="struct_deki_editor_1_1_decoded_image.html">DecodedImage</a> &amp;out)</td></tr>
+<tr class="memitem:ab602781dafd57a99fd3a9a3cf6c50795" id="r_ab602781dafd57a99fd3a9a3cf6c50795"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab602781dafd57a99fd3a9a3cf6c50795">CompareVersions</a> (const std::string &amp;a, const std::string &amp;b)</td></tr>
+<tr class="memdesc:ab602781dafd57a99fd3a9a3cf6c50795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two dotted version strings ("3.1.1" vs "3.2.0").  <br /></td></tr>
+<tr class="memitem:ab15e77a22e56a8ebec9c5ae81767c199" id="r_ab15e77a22e56a8ebec9c5ae81767c199"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab15e77a22e56a8ebec9c5ae81767c199">HighestVersion</a> (const std::vector&lt; std::string &gt; &amp;versions)</td></tr>
+<tr class="memdesc:ab15e77a22e56a8ebec9c5ae81767c199"><td class="mdescLeft">&#160;</td><td class="mdescRight">The highest version in <span class="tt">versions</span> by CompareVersions, or "" when empty.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -417,6 +586,62 @@ Variables</h2></td></tr>
 <p>Asset cache handler callback type. </p>
 <p>Called during ProcessAsset for registered extensions. Responsible for generating cache files and registering sub-assets. Returns an <a class="el" href="#a4209b652941c08ae4d42581f7462c61d" title="Result of a cache-handler invocation.">AssetCacheResult</a> describing what happened (see enum above).</p>
 <p>Packages can register handlers via <a class="el" href="class_deki_editor_1_1_asset_pipeline.html#ad928d13fb8824cdd441b457b32faf14b" title="Register a callback to be invoked when a pipeline starts If a pipeline is already active,...">AssetPipeline::OnStarted</a> to override built-in handlers or add support for new file types. </p>
+
+</div>
+</div>
+<a id="af8aa323fd48862ba7ab9aa36155abac7" name="af8aa323fd48862ba7ab9aa36155abac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8aa323fd48862ba7ab9aa36155abac7">&#9670;&#160;</a></span>DownloadProgressCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af8aa323fd48862ba7ab9aa36155abac7">DekiEditor::DownloadProgressCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_download_progress.html">DownloadProgress</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2322b9ebd0b9ae159d225a2b4294465e" name="a2322b9ebd0b9ae159d225a2b4294465e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2322b9ebd0b9ae159d225a2b4294465e">&#9670;&#160;</a></span>VersionCheckCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a2322b9ebd0b9ae159d225a2b4294465e">DekiEditor::VersionCheckCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_toolchain_version_info.html">ToolchainVersionInfo</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a102fc12c05cce32374d11e0fe46bf847" name="a102fc12c05cce32374d11e0fe46bf847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102fc12c05cce32374d11e0fe46bf847">&#9670;&#160;</a></span>BuildOutputCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a102fc12c05cce32374d11e0fe46bf847">DekiEditor::BuildOutputCallback</a> = std::function&lt;void(const std::string&amp; line, bool isError)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7793ebb7f1651054d85b46d4072ebcc9" name="a7793ebb7f1651054d85b46d4072ebcc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7793ebb7f1651054d85b46d4072ebcc9">&#9670;&#160;</a></span>BuildProgressCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a7793ebb7f1651054d85b46d4072ebcc9">DekiEditor::BuildProgressCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_build_progress.html">BuildProgress</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -558,6 +783,122 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a211a93600fdf7acea2e4a27997fc32b5" name="a211a93600fdf7acea2e4a27997fc32b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a211a93600fdf7acea2e4a27997fc32b5">&#9670;&#160;</a></span>DownloadStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a211a93600fdf7acea2e4a27997fc32b5">DekiEditor::DownloadStatus</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a211a93600fdf7acea2e4a27997fc32b5ae599161956d626eda4cb0a5ffb85271c" name="a211a93600fdf7acea2e4a27997fc32b5ae599161956d626eda4cb0a5ffb85271c"></a>Idle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a211a93600fdf7acea2e4a27997fc32b5a8b4046bd9e3f81b2a29c3c09d8266284" name="a211a93600fdf7acea2e4a27997fc32b5a8b4046bd9e3f81b2a29c3c09d8266284"></a>CheckingVersion&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a211a93600fdf7acea2e4a27997fc32b5ac7e71badf20a04f36d11be557ceb7a5b" name="a211a93600fdf7acea2e4a27997fc32b5ac7e71badf20a04f36d11be557ceb7a5b"></a>Downloading&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a211a93600fdf7acea2e4a27997fc32b5ae0cff7bb5e702e8a43816a12be4c93aa" name="a211a93600fdf7acea2e4a27997fc32b5ae0cff7bb5e702e8a43816a12be4c93aa"></a>Extracting&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a211a93600fdf7acea2e4a27997fc32b5a07ca5050e697392c9ed47e6453f1453f" name="a211a93600fdf7acea2e4a27997fc32b5a07ca5050e697392c9ed47e6453f1453f"></a>Completed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a211a93600fdf7acea2e4a27997fc32b5ad7c8c85bf79bbe1b7188497c32c3b0ca" name="a211a93600fdf7acea2e4a27997fc32b5ad7c8c85bf79bbe1b7188497c32c3b0ca"></a>Failed&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac588badb739acc637ed497ed903d588c" name="ac588badb739acc637ed497ed903d588c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac588badb739acc637ed497ed903d588c">&#9670;&#160;</a></span>AdoptPlatformResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ac588badb739acc637ed497ed903d588c">DekiEditor::AdoptPlatformResult</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac588badb739acc637ed497ed903d588cafcb64e02aede727ef9cfc83522f05d62" name="ac588badb739acc637ed497ed903d588cafcb64e02aede727ef9cfc83522f05d62"></a>AlreadyDefined&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac588badb739acc637ed497ed903d588ca7388c21e2e0e65e985cbb16757ad88d0" name="ac588badb739acc637ed497ed903d588ca7388c21e2e0e65e985cbb16757ad88d0"></a>Adopted&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac588badb739acc637ed497ed903d588ca4bcdd9a35c79a6d19f873808aa0f9364" name="ac588badb739acc637ed497ed903d588ca4bcdd9a35c79a6d19f873808aa0f9364"></a>NoTemplate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac588badb739acc637ed497ed903d588ca02266588dfd4e565cc42949d0c73f28c" name="ac588badb739acc637ed497ed903d588ca02266588dfd4e565cc42949d0c73f28c"></a>Ambiguous&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac588badb739acc637ed497ed903d588cad7c8c85bf79bbe1b7188497c32c3b0ca" name="ac588badb739acc637ed497ed903d588cad7c8c85bf79bbe1b7188497c32c3b0ca"></a>Failed&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1b2cfc51db2bed0ffcb1f07e8ad9825d" name="a1b2cfc51db2bed0ffcb1f07e8ad9825d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2cfc51db2bed0ffcb1f07e8ad9825d">&#9670;&#160;</a></span>ToolchainComponentStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a1b2cfc51db2bed0ffcb1f07e8ad9825d">DekiEditor::ToolchainComponentStatus</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b2cfc51db2bed0ffcb1f07e8ad9825da98dd43dfae05b11befe1f140e0ec787a" name="a1b2cfc51db2bed0ffcb1f07e8ad9825da98dd43dfae05b11befe1f140e0ec787a"></a>Installed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1b2cfc51db2bed0ffcb1f07e8ad9825da4c2d0402e7f6a5450b1e413abf3e9b1f" name="a1b2cfc51db2bed0ffcb1f07e8ad9825da4c2d0402e7f6a5450b1e413abf3e9b1f"></a>NotInstalled&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1b2cfc51db2bed0ffcb1f07e8ad9825da4ca50bd5e1da4e7eb295d50a191aa4ec" name="a1b2cfc51db2bed0ffcb1f07e8ad9825da4ca50bd5e1da4e7eb295d50a191aa4ec"></a>UpdateAvailable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1b2cfc51db2bed0ffcb1f07e8ad9825da2763f33c904a183bd0ef06f9c4fb4403" name="a1b2cfc51db2bed0ffcb1f07e8ad9825da2763f33c904a183bd0ef06f9c4fb4403"></a>Installing&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2618f4c022e74277c5532b30f28a1dd7" name="a2618f4c022e74277c5532b30f28a1dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2618f4c022e74277c5532b30f28a1dd7">&#9670;&#160;</a></span>BuildState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a2618f4c022e74277c5532b30f28a1dd7">DekiEditor::BuildState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2618f4c022e74277c5532b30f28a1dd7ae599161956d626eda4cb0a5ffb85271c" name="a2618f4c022e74277c5532b30f28a1dd7ae599161956d626eda4cb0a5ffb85271c"></a>Idle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2618f4c022e74277c5532b30f28a1dd7ac39b56d4489fb2507289e7ae19567b80" name="a2618f4c022e74277c5532b30f28a1dd7ac39b56d4489fb2507289e7ae19567b80"></a>Building&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2618f4c022e74277c5532b30f28a1dd7a99da218397f313ea17892c90fa6ceefc" name="a2618f4c022e74277c5532b30f28a1dd7a99da218397f313ea17892c90fa6ceefc"></a>Deploying&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2618f4c022e74277c5532b30f28a1dd7a07ca5050e697392c9ed47e6453f1453f" name="a2618f4c022e74277c5532b30f28a1dd7a07ca5050e697392c9ed47e6453f1453f"></a>Completed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2618f4c022e74277c5532b30f28a1dd7ad7c8c85bf79bbe1b7188497c32c3b0ca" name="a2618f4c022e74277c5532b30f28a1dd7ad7c8c85bf79bbe1b7188497c32c3b0ca"></a>Failed&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a890eb8b6d87bce87caaa8478df7e00d9" name="a890eb8b6d87bce87caaa8478df7e00d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a890eb8b6d87bce87caaa8478df7e00d9">&#9670;&#160;</a></span>SceneEditTool</h2>
 
@@ -610,6 +951,38 @@ Variables</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5289679f6a59824537ce2a6d76d0350fa1563966d105abbfffbb8aecda4cd630b" name="a5289679f6a59824537ce2a6d76d0350fa1563966d105abbfffbb8aecda4cd630b"></a>CustomEditor&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5289679f6a59824537ce2a6d76d0350fa550a86e283496737c780a92dd38944b3" name="a5289679f6a59824537ce2a6d76d0350fa550a86e283496737c780a92dd38944b3"></a>AssetTypeEditor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5289679f6a59824537ce2a6d76d0350faf59bc384c5fae5428d71f2e19087f2a8" name="a5289679f6a59824537ce2a6d76d0350faf59bc384c5fae5428d71f2e19087f2a8"></a>CliTool&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aaf7c4d4a830420db63a30d992d937642" name="aaf7c4d4a830420db63a30d992d937642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7c4d4a830420db63a30d992d937642">&#9670;&#160;</a></span>FeatureState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aaf7c4d4a830420db63a30d992d937642">DekiEditor::FeatureState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642ab651efdb98a5d6bd2b3935d0c3f4a5e2" name="aaf7c4d4a830420db63a30d992d937642ab651efdb98a5d6bd2b3935d0c3f4a5e2"></a>Required&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a3c5e891bff07947cbae2fda89162df9f" name="aaf7c4d4a830420db63a30d992d937642a3c5e891bff07947cbae2fda89162df9f"></a>Pinned&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a019d1ca7d50cc54b995f60d456435e87" name="aaf7c4d4a830420db63a30d992d937642a019d1ca7d50cc54b995f60d456435e87"></a>Used&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642ab2286379a1def1d4a2c82bc18a70743e" name="aaf7c4d4a830420db63a30d992d937642ab2286379a1def1d4a2c82bc18a70743e"></a>Kept&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a979ef112f87481c1c53464419070c00b" name="aaf7c4d4a830420db63a30d992d937642a979ef112f87481c1c53464419070c00b"></a>DefaultOn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a67fbb19beaab450abf96596704779bd6" name="aaf7c4d4a830420db63a30d992d937642a67fbb19beaab450abf96596704779bd6"></a>ForcedOff&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954" name="aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954"></a>Stripped&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -910,6 +1283,439 @@ Variables</h2></td></tr>
 
 <p>Generate a random GUID. </p>
 <dl class="section return"><dt>Returns</dt><dd>Random GUID string </dd></dl>
+
+</div>
+</div>
+<a id="ad630f65c2850ff715ff3e97df6f20694" name="ad630f65c2850ff715ff3e97df6f20694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad630f65c2850ff715ff3e97df6f20694">&#9670;&#160;</a></span>SetBuildActivitySink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::SetBuildActivitySink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_editor_1_1_i_build_activity_sink.html">IBuildActivitySink</a> *</td>          <td class="paramname"><span class="paramname"><em>sink</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Install the sink, or nullptr to report nowhere. </p>
+<p>Not owned: the editor keeps its sink alive for the session. </p>
+
+</div>
+</div>
+<a id="a034e54d9cff732030fa1420dae424bdf" name="a034e54d9cff732030fa1420dae424bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034e54d9cff732030fa1420dae424bdf">&#9670;&#160;</a></span>GetBuildActivitySink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_editor_1_1_i_build_activity_sink.html">IBuildActivitySink</a> * DekiEditor::GetBuildActivitySink </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The installed sink, or nullptr. Prefer the free functions below. </p>
+
+</div>
+</div>
+<a id="afa2ee0286c60bcd4a733345af46a0989" name="afa2ee0286c60bcd4a733345af46a0989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2ee0286c60bcd4a733345af46a0989">&#9670;&#160;</a></span>BuildActivityLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::BuildActivityLog </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>process</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report, doing nothing when no sink is installed. </p>
+
+</div>
+</div>
+<a id="a20fdb9f539f617438ffcd1e3ffd921e9" name="a20fdb9f539f617438ffcd1e3ffd921e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20fdb9f539f617438ffcd1e3ffd921e9">&#9670;&#160;</a></span>BuildActivityComplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::BuildActivityComplete </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>process</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae44591c5c46a48f5fa9dc1f6329a4bae" name="ae44591c5c46a48f5fa9dc1f6329a4bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44591c5c46a48f5fa9dc1f6329a4bae">&#9670;&#160;</a></span>BuildActivityFail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::BuildActivityFail </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>process</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8255930a1ae31243e32566703cc676cf" name="a8255930a1ae31243e32566703cc676cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8255930a1ae31243e32566703cc676cf">&#9670;&#160;</a></span>ParseBuilderDefinition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::ParseBuilderDefinition </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonText</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outDef</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>outError</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse a toolchain definition from JSON text. </p>
+<p>Text, not a path, is the primary form: a build backend lives in a package, and the package DLL is built into the project's runtime directory, nowhere near its own sources - so a backend carries its definition inside itself rather than hoping a file sits beside the editor. It used to: the ESP-IDF backend read resources/builders/espidf.json next to DekiEditor.exe, which made the editor ship one framework's recipe after the backend had left.</p>
+<p>A failure says why in outError. There is no silent "no toolchain" state. </p>
+
+</div>
+</div>
+<a id="aff6756db3269d948e462dd9b4c059f05" name="aff6756db3269d948e462dd9b4c059f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6756db3269d948e462dd9b4c059f05">&#9670;&#160;</a></span>LoadBuilderDefinition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::LoadBuilderDefinition </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>jsonPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outDef</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>outError</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The same, from a file a backend locates itself. </p>
+
+</div>
+</div>
+<a id="a8401dfa502ae14dd9a98c45f66392b1d" name="a8401dfa502ae14dd9a98c45f66392b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8401dfa502ae14dd9a98c45f66392b1d">&#9670;&#160;</a></span>SelectBuilder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * DekiEditor::SelectBuilder </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>builders</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>framework</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The builder claiming <span class="tt">framework</span>, or nullptr. </p>
+<p>Exposed separately from the registry so it can be tested without loading any real builder. </p>
+
+</div>
+</div>
+<a id="aace137306a1c0d81bfa1df8eeb9498b1" name="aace137306a1c0d81bfa1df8eeb9498b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace137306a1c0d81bfa1df8eeb9498b1">&#9670;&#160;</a></span>DescribeNoBuilder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::DescribeNoBuilder </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>builders</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>framework</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Why no builder matched, for the error the user actually sees: names the framework asked for and lists the ones that are registered. </p>
+
+</div>
+</div>
+<a id="a72f47d14149b3b8eacc846705c5eca64" name="a72f47d14149b3b8eacc846705c5eca64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f47d14149b3b8eacc846705c5eca64">&#9670;&#160;</a></span>DrawStringListEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::DrawStringListEditor </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>newItemBuffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>bufSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An editable list of strings: one row per entry with a remove button, and a field that appends. </p>
+<p>Shared utility: draw an editable string list (defines, flags, etc.).</p>
+<p><span class="tt">newItemBuffer</span> is the caller's scratch for the field. </p>
+
+</div>
+</div>
+<a id="a108e930c2d2e29a6e3026f653469cf78" name="a108e930c2d2e29a6e3026f653469cf78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108e930c2d2e29a6e3026f653469cf78">&#9670;&#160;</a></span>IsValidCapabilityName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::IsValidCapabilityName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe34e42f9c70cc013f3e3b1507df0450" name="abe34e42f9c70cc013f3e3b1507df0450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe34e42f9c70cc013f3e3b1507df0450">&#9670;&#160;</a></span>FindPlatformTemplates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_platform_template.html">PlatformTemplate</a> &gt; DekiEditor::FindPlatformTemplates </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Every template offered by a package installed in the project, sorted by platform id then package id. </p>
+<p>Reads directories only; no package is loaded. </p>
+
+</div>
+</div>
+<a id="a3d43decea579881a3d86911197b6b9fe" name="a3d43decea579881a3d86911197b6b9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d43decea579881a3d86911197b6b9fe">&#9670;&#160;</a></span>AdoptPlatformTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac588badb739acc637ed497ed903d588c">AdoptPlatformResult</a> DekiEditor::AdoptPlatformTemplate </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>platformId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>detail</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make <span class="tt">platformId</span> the project's own, from a template if it has to be. </p>
+<p><span class="tt">detail</span> names the package adopted from, the packages in conflict, or the error. Never overwrites a platform the project already defines. </p>
+
+</div>
+</div>
+<a id="ad57330e58de928c530ae7ba5f8b436a7" name="ad57330e58de928c530ae7ba5f8b436a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57330e58de928c530ae7ba5f8b436a7">&#9670;&#160;</a></span>EnsureProjectPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EnsureProjectPlatform </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>platformId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>err</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>What every user of a platform calls first - opening a project on it, switching to it, building for it: adopt it if it is only on offer, and load the adopted copy into <a class="el" href="class_deki_editor_1_1_platform_registry.html" title="Registry for available platforms.">PlatformRegistry</a>. </p>
+<p>A template's boot scene path is relative to the PROJECT, so a platform that was chosen but never copied in would build without one.</p>
+<p>False, with the reason, only when adopting was needed and could not be done. A platform nobody offers is not this function's error: it may come from a board pack, and if it comes from nowhere the caller's own lookup says so. </p>
+
+</div>
+</div>
+<a id="a43a62cb3add0f4975c7a6a3606cd13d2" name="a43a62cb3add0f4975c7a6a3606cd13d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a62cb3add0f4975c7a6a3606cd13d2">&#9670;&#160;</a></span>RegisterPlatformTemplates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::RegisterPlatformTemplates </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register, in <a class="el" href="class_deki_editor_1_1_platform_registry.html" title="Registry for available platforms.">PlatformRegistry</a>, every template the project has NOT adopted, so a package's platforms can be seen and chosen before they are copied in. </p>
+<p>Call before loading the project's own platforms, which override these. </p>
+
+</div>
+</div>
+<a id="a8a404fe14df02d696f644372cb1b97c1" name="a8a404fe14df02d696f644372cb1b97c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a404fe14df02d696f644372cb1b97c1">&#9670;&#160;</a></span>ReadCMakeCacheVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::ReadCMakeCacheVar </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>buildDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Value of <span class="tt">name</span> in &lt;buildDir&gt;/CMakeCache.txt, i.e. </p>
+<p>the text after '=' on the <span class="tt">name:TYPE=value</span> line. "" when the cache or the entry is missing. </p>
+
+</div>
+</div>
+<a id="a48d0b2a95471f67515cf862ca149579f" name="a48d0b2a95471f67515cf862ca149579f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d0b2a95471f67515cf862ca149579f">&#9670;&#160;</a></span>ScanComponentUsage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a> DekiEditor::ScanComponentUsage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>knownTypes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>scanPackageIds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPlatformId</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>targetCapabilities</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65df211554c72cc29d2a44b6de453264" name="a65df211554c72cc29d2a44b6de453264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65df211554c72cc29d2a44b6de453264">&#9670;&#160;</a></span>ShortTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::ShortTypeName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>qualified</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1995,6 +2801,96 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a929fe2e9220453996a8606b20f3c849b" name="a929fe2e9220453996a8606b20f3c849b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929fe2e9220453996a8606b20f3c849b">&#9670;&#160;</a></span>FeatureStateName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * DekiEditor::FeatureStateName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aaf7c4d4a830420db63a30d992d937642">FeatureState</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae45f86583f4c5377f5caf73fefa2a541" name="ae45f86583f4c5377f5caf73fefa2a541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45f86583f4c5377f5caf73fefa2a541">&#9670;&#160;</a></span>ResolveStripPlan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_editor_1_1_strip_plan.html">StripPlan</a> DekiEditor::ResolveStripPlan </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html">CMakeGen::PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>usage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_editor_1_1_build_strip_settings.html">BuildStripSettings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>settings</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>packagesDir</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89d12cf966ece352692df50d66195a1b" name="a89d12cf966ece352692df50d66195a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d12cf966ece352692df50d66195a1b">&#9670;&#160;</a></span>FindTargetContentConflicts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_target_content_conflict.html">TargetContentConflict</a> &gt; DekiEditor::FindTargetContentConflicts </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPlatformId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbeb2ff374ce09c7b04d22d2e460168a" name="afbeb2ff374ce09c7b04d22d2e460168a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbeb2ff374ce09c7b04d22d2e460168a">&#9670;&#160;</a></span>ComputeStripPlan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_editor_1_1_strip_plan.html">StripPlan</a> DekiEditor::ComputeStripPlan </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetPlatformId</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a62730efaec1b0265ec5aa18ed29414cc" name="a62730efaec1b0265ec5aa18ed29414cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62730efaec1b0265ec5aa18ed29414cc">&#9670;&#160;</a></span>ReadFileToString()</h2>
 
@@ -2636,6 +3532,252 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="acc82e56feb4f1a9685cf2326c54e1450" name="acc82e56feb4f1a9685cf2326c54e1450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc82e56feb4f1a9685cf2326c54e1450">&#9670;&#160;</a></span>LaunchDetached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::LaunchDetached </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Launch <span class="tt">program</span> with <span class="tt">args</span>, detached, without a console window. </p>
+<p>Returns false if the process could not be started (e.g. program not found). Does not wait for it and does not report its exit status. </p>
+
+</div>
+</div>
+<a id="abee463d2d51a0318132042ff66e996db" name="abee463d2d51a0318132042ff66e996db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee463d2d51a0318132042ff66e996db">&#9670;&#160;</a></span>LaunchDetachedInDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::LaunchDetachedInDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>args</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>workingDirectory</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Launch <span class="tt">program</span> from <span class="tt">workingDirectory</span>, detached, keeping its console. </p>
+<p>For running something the user is meant to watch &ndash; the built game, which finds its assets relative to its own directory and writes its log to stdout. LaunchDetached suits the helpers the editor drives on the side, and suppresses both of those. </p>
+
+</div>
+</div>
+<a id="a7ac54aa8ccc6b630232c16e269bedec8" name="a7ac54aa8ccc6b630232c16e269bedec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac54aa8ccc6b630232c16e269bedec8">&#9670;&#160;</a></span>OpenInCodeEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::OpenInCodeEditor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>line</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a source file in the user's code editor, optionally at a line. </p>
+<p>Currently targets VS Code (<span class="tt">code</span>), matching the previous behaviour. </p>
+
+</div>
+</div>
+<a id="a137e92304ddda1f66b0a1bf3c7163a44" name="a137e92304ddda1f66b0a1bf3c7163a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137e92304ddda1f66b0a1bf3c7163a44">&#9670;&#160;</a></span>RevealInFileManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::RevealInFileManager </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reveal a file or directory in the platform's file manager. </p>
+
+</div>
+</div>
+<a id="acec115951da358e7d7f9971818a5ee85" name="acec115951da358e7d7f9971818a5ee85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec115951da358e7d7f9971818a5ee85">&#9670;&#160;</a></span>ObjectMissingCapabilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DekiEditor::ObjectMissingCapabilities </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>capabilities</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4216256764a616b5f48a496292c629d2" name="a4216256764a616b5f48a496292c629d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4216256764a616b5f48a496292c629d2">&#9670;&#160;</a></span>FilterSceneForTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::json DekiEditor::FilterSceneForTarget </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>capabilities</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0406f6f89868cd8d919eed819bddeebe" name="a0406f6f89868cd8d919eed819bddeebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0406f6f89868cd8d919eed819bddeebe">&#9670;&#160;</a></span>SceneHasTargetRequirements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::SceneHasTargetRequirements </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6013ce82ec2c232030428377072f6e1a" name="a6013ce82ec2c232030428377072f6e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6013ce82ec2c232030428377072f6e1a">&#9670;&#160;</a></span>PreserveTargetRequirements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::PreserveTargetRequirements </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>scenePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>before</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addc894a4baec9bac7ab3066c42655940" name="addc894a4baec9bac7ab3066c42655940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc894a4baec9bac7ab3066c42655940">&#9670;&#160;</a></span>CollectTargetRequirements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; int64_t, std::vector&lt; std::string &gt; &gt; DekiEditor::CollectTargetRequirements </td>
+          <td>(</td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f3bff694e056e0f22f904569fcb3027" name="a1f3bff694e056e0f22f904569fcb3027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3bff694e056e0f22f904569fcb3027">&#9670;&#160;</a></span>EnumerateSerialPorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DekiEditor::EnumerateSerialPorts </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf38dfc52dc7be49a3a996d28b67d4d3" name="adf38dfc52dc7be49a3a996d28b67d4d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf38dfc52dc7be49a3a996d28b67d4d3">&#9670;&#160;</a></span>RunShellCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DekiEditor::RunShellCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>commandLine</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>workingDirectory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(const std::string &amp;line)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>onLine</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::atomic&lt; bool &gt; *</td>          <td class="paramname"><span class="paramname"><em>cancel</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run <span class="tt">commandLine</span> through the platform shell: <span class="tt">cmd.exe /S /C "&lt;line&gt;"</span> on Windows, <span class="tt">/bin/sh -c</span> elsewhere. </p>
+<p>stdout and stderr are merged and delivered to <span class="tt">onLine</span> one line at a time (no trailing newline; empty lines skipped), on the calling thread, as they arrive.</p>
+<p><span class="tt">workingDirectory</span> may be empty for the current one. When <span class="tt">cancel</span> becomes true the command is stopped - on Windows the whole process tree, since a build step's work happens in grandchildren (idf.py -&gt; ninja -&gt; compilers) - and the result is -1.</p>
+<p>Returns the command's exit code, or -1 when it could not be started or was cancelled. </p>
+
+</div>
+</div>
 <a id="a43a5c7a5c0fce72dd1dbc67d481ba5db" name="a43a5c7a5c0fce72dd1dbc67d481ba5db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43a5c7a5c0fce72dd1dbc67d481ba5db">&#9670;&#160;</a></span>DecodeImageFile()</h2>
 
@@ -2654,6 +3796,52 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab602781dafd57a99fd3a9a3cf6c50795" name="ab602781dafd57a99fd3a9a3cf6c50795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab602781dafd57a99fd3a9a3cf6c50795">&#9670;&#160;</a></span>CompareVersions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DekiEditor::CompareVersions </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare two dotted version strings ("3.1.1" vs "3.2.0"). </p>
+<p>Returns -1 if a &lt; b, 0 if equal, 1 if a &gt; b.</p>
+<p>Missing trailing segments count as 0, so "1.1" == "1.1.0" and "1.1" &lt; "1.1.2". Segments parse with atoi, so a trailing suffix on a segment is ignored ("1.2.0-rc1" compares equal to "1.2.0"): the package and framework manifests this reads only ever carry numeric versions.</p>
+<p>This lived as two byte-identical <span class="tt">static</span> copies, in the build base class and in an installer, before the engine-version gate needed a third. </p>
+
+</div>
+</div>
+<a id="ab15e77a22e56a8ebec9c5ae81767c199" name="ab15e77a22e56a8ebec9c5ae81767c199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15e77a22e56a8ebec9c5ae81767c199">&#9670;&#160;</a></span>HighestVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::HighestVersion </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>versions</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The highest version in <span class="tt">versions</span> by CompareVersions, or "" when empty. </p>
+<p>Registry and lock files list versions oldest-first, so taking the first entry (which two version choosers did) installed the OLDEST release. </p>
 
 </div>
 </div>

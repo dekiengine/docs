@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['read_5fbinary_0',['READ_BINARY',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aab5a18261f532573ce42ebb1c8a040f3b',1,'Deki::IFileSystem']]],
-  ['read_5ftext_1',['READ_TEXT',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa928e013206055dad084cebe02963b10e',1,'Deki::IFileSystem']]],
-  ['rect_2',['Rect',['../namespace_deki_editor.html#a890eb8b6d87bce87caaa8478df7e00d9a69ad58d91eec91b5c152d21ca117dc81',1,'DekiEditor']]],
-  ['resizeall_3',['ResizeAll',['../class_deki_editor_1_1_editor_u_i.html#a8d59083817e6ec305256ce3fb6651038a8ed948580cad15af6c9215267bcedf82',1,'DekiEditor::EditorUI']]],
-  ['resizeew_4',['ResizeEW',['../class_deki_editor_1_1_editor_u_i.html#a8d59083817e6ec305256ce3fb6651038a1c774820a9997d2322eca68045103c13',1,'DekiEditor::EditorUI']]],
-  ['resizens_5',['ResizeNS',['../class_deki_editor_1_1_editor_u_i.html#a8d59083817e6ec305256ce3fb6651038a3d53ca4deee33f45422d3ba300b44cfc',1,'DekiEditor::EditorUI']]],
-  ['rgb565_6',['RGB565',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a3b73e4d15701467ed72f157ffaff680a',1,'Deki::Texture2D::RGB565'],['../namespace_deki.html#adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a',1,'Deki::RGB565'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca3b73e4d15701467ed72f157ffaff680a',1,'DekiEditor::RGB565']]],
-  ['rgb565a8_7',['RGB565A8',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a689ff49e67fec7456408b89a7eb71def',1,'Deki::Texture2D::RGB565A8'],['../namespace_deki.html#adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def',1,'Deki::RGB565A8'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca689ff49e67fec7456408b89a7eb71def',1,'DekiEditor::RGB565A8']]],
-  ['rgb888_8',['RGB888',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a30ff380a3be74628024063a99fba10f0',1,'Deki::Texture2D::RGB888'],['../namespace_deki.html#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0',1,'Deki::RGB888'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca30ff380a3be74628024063a99fba10f0',1,'DekiEditor::RGB888']]],
-  ['rgba8888_9',['RGBA8888',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a165f06116e7b8d9b2481dfc805db4619',1,'Deki::Texture2D::RGBA8888'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca165f06116e7b8d9b2481dfc805db4619',1,'DekiEditor::RGBA8888']]],
-  ['rotation_10',['Rotation',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64af1a42bd417390fc63b030a519624607a',1,'Deki']]],
-  ['rotationx_11',['RotationX',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a14dcec09ce1f4dfaac5955bc70825ebc',1,'Deki']]],
-  ['rotationy_12',['RotationY',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a7527ced5a5153f3b21e31c4b177c2ea7',1,'Deki']]],
-  ['running_13',['Running',['../namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09',1,'Deki']]]
+  ['perspective_0',['Perspective',['../namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603aa80420eef88d11f77532f1b9cb467fa3',1,'Deki']]],
+  ['pinned_1',['Pinned',['../namespace_deki_editor.html#aaf7c4d4a830420db63a30d992d937642a3c5e891bff07947cbae2fda89162df9f',1,'DekiEditor']]],
+  ['pipeline_2',['Pipeline',['../namespace_deki_editor.html#ae6db2932853c76e2df52a32010e1c763aaeaeaec51b4e6b88122f10ad96a8de72',1,'DekiEditor']]],
+  ['pixels_3',['Pixels',['../namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1',1,'Deki']]],
+  ['playstart_4',['PlayStart',['../class_deki_1_1_setup_component.html#a64750307474c576933262818233686b4ac482a0e951e469d2a2969ad154b52eae',1,'Deki::SetupComponent']]],
+  ['position_5',['Position',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a52f5e0bc3859bc5f5e25130b6c7e8881',1,'Deki']]],
+  ['precached_6',['PreCached',['../namespace_deki_editor.html#a4209b652941c08ae4d42581f7462c61da01da853ba5264e81bd8a7ffac06f5f7b',1,'DekiEditor']]],
+  ['procedural_7',['Procedural',['../namespace_deki_editor.html#ae6db2932853c76e2df52a32010e1c763a4b729261cf45327870528920781485f4',1,'DekiEditor']]],
+  ['propertyref_8',['PropertyRef',['../namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99',1,'Deki']]]
 ];

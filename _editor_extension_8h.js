@@ -11,6 +11,7 @@ var _editor_extension_8h =
     [ "REGISTER_CREATE_MENU_ITEM", "_editor_extension_8h.html#a80d58127428d4d26d8e85011ce41aa62", null ],
     [ "DekiEditor::EditorType", "namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350f", [
       [ "DekiEditor::EditorType::CustomEditor", "namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350fa1563966d105abbfffbb8aecda4cd630b", null ],
-      [ "DekiEditor::EditorType::AssetTypeEditor", "namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350fa550a86e283496737c780a92dd38944b3", null ]
+      [ "DekiEditor::EditorType::AssetTypeEditor", "namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350fa550a86e283496737c780a92dd38944b3", null ],
+      [ "DekiEditor::EditorType::CliTool", "namespace_deki_editor.html#a5289679f6a59824537ce2a6d76d0350faf59bc384c5fae5428d71f2e19087f2a8", null ]
     ] ]
 ];

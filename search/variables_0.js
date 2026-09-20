@@ -9,8 +9,11 @@ var searchData=
   ['alpharowspans_6',['alphaRowSpans',['../class_deki_1_1_texture2_d.html#a472697f834297bd8af566ab578b31b32',1,'Deki::Texture2D']]],
   ['altname_7',['altName',['../struct_deki_editor_1_1_picker_item.html#a1070a469bd64c8fc48e847bb10aa9a03',1,'DekiEditor::PickerItem']]],
   ['amber_8',['Amber',['../namespace_deki_editor_1_1_palette.html#aa41c6e0ec05a97bc6e5dab06d1028338',1,'DekiEditor::Palette']]],
-  ['assetregentype_9',['assetRegenType',['../struct_deki_1_1_property_info.html#a1960b98292797cc42aa9b587905e43cf',1,'Deki::PropertyInfo']]],
-  ['assets_10',['assets',['../struct_deki_1_1_loaded_pack.html#a1d1659befcc0821b2eff9f9243c6ad7f',1,'Deki::LoadedPack']]],
-  ['assettype_11',['assetType',['../struct_deki_1_1_property_info.html#a71a0659a11e0d00f5b204c75be871c50',1,'Deki::PropertyInfo']]],
-  ['assettypename_12',['AssetTypeName',['../class_deki_1_1_scene.html#a5a8619747449f4ca9ed96d66a5b8c7b0',1,'Deki::Scene']]]
+  ['assetpattern_9',['assetPattern',['../struct_deki_editor_1_1_version_check_def.html#a00b5e618a3a6842ba51fb88e068b54ae',1,'DekiEditor::VersionCheckDef']]],
+  ['assetregentype_10',['assetRegenType',['../struct_deki_1_1_property_info.html#a1960b98292797cc42aa9b587905e43cf',1,'Deki::PropertyInfo']]],
+  ['assets_11',['assets',['../struct_deki_1_1_loaded_pack.html#a1d1659befcc0821b2eff9f9243c6ad7f',1,'Deki::LoadedPack']]],
+  ['assettype_12',['assetType',['../struct_deki_1_1_property_info.html#a71a0659a11e0d00f5b204c75be871c50',1,'Deki::PropertyInfo']]],
+  ['assettypename_13',['AssetTypeName',['../class_deki_1_1_scene.html#a5a8619747449f4ca9ed96d66a5b8c7b0',1,'Deki::Scene']]],
+  ['author_14',['author',['../struct_package_entry.html#aab46ea2f67bee7aaa061773816b2e9f7',1,'PackageEntry']]],
+  ['availableversions_15',['availableVersions',['../struct_package_entry.html#af3e0a6606e102d04ccc4840cf48e2557',1,'PackageEntry']]]
 ];

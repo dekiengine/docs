@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Namespace Members</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -117,220 +139,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespacemembe
 <h3 class="doxsection"><a id="index_a" name="index_a"></a>- a -</h3><ul>
 <li>Abs()&#160;:&#160;<a class="el" href="namespace_deki_1_1_math.html#a9f638a63027349a40dcef04e295c8444">Deki::Math</a></li>
 <li>AddComponentByName()&#160;:&#160;<a class="el" href="namespace_deki_1_1_internal.html#a7c8357a556108a8646db7a03ff0aa336">Deki::Internal</a>, <a class="el" href="namespace_deki_editor.html#ad26c0046658ede6a823f430281b1e5b0">DekiEditor</a></li>
+<li>AdoptPlatformTemplate()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a3d43decea579881a3d86911197b6b9fe">DekiEditor</a></li>
 <li>AtomicWriteFile()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ad22e70d1204b6c6d209fafabe9b1e04f">DekiEditor</a></li>
 <li>AttachComponent()&#160;:&#160;<a class="el" href="namespace_deki_1_1_internal.html#af0536223a36e4c9b36f999ce13e19de2">Deki::Internal</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>BeginPropertyContext()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a5771ec91e26ef292ee7cb29e63a53351">DekiEditor</a></li>
-<li>BeginSchematicModal()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ab18427b446beedee7f52f34e55e216ab">DekiEditor</a></li>
-<li>BindPropertyRef()&#160;:&#160;<a class="el" href="namespace_deki.html#a52c12dac3cca66d1f6a511fa5a05a4b1">Deki</a></li>
-<li>BufferAllocate()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#a3022b1a26a4b85ced0f91b755f54b5d5">Deki::detail</a></li>
-<li>BufferFree()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#a0199159a464019216f05fa2873ffc242">Deki::detail</a></li>
-<li>BuildPath()&#160;:&#160;<a class="el" href="namespace_deki_1_1_storage.html#af4f661f23375e1474951dbf9d75d72be">Deki::Storage</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>Clamp()&#160;:&#160;<a class="el" href="namespace_deki_1_1_math.html#a3a108faf1dd62ed7ddfdb980fff84611">Deki::Math</a></li>
-<li>ClearDisplayNameCache()&#160;:&#160;<a class="el" href="namespace_deki_editor_1_1_editor_naming.html#a24446acdad526363be810beb7d9cffa6">DekiEditor::EditorNaming</a></li>
-<li>ClearRegisteredWindows()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ab92d2167c1fa26910c17006bbdaac50b">DekiEditor</a></li>
-<li>CompareBoundProperty()&#160;:&#160;<a class="el" href="namespace_deki.html#af0f5e2fdb1bd009edf4a00679b7a4f91">Deki</a></li>
-<li>CssPx()&#160;:&#160;<a class="el" href="namespace_deki_editor_1_1_fonts.html#a360c255affb248618f4b714f2d5c20d3">DekiEditor::Fonts</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>DeclaresUpdate()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#a9d282ebc0956fd992c2666fd5c653cdc">Deki::detail</a></li>
-<li>DecodeImageFile()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a43a5c7a5c0fce72dd1dbc67d481ba5db">DekiEditor</a></li>
-<li>DekiVariableFieldRef()&#160;:&#160;<a class="el" href="namespace_deki.html#a70726b336ad4225d680c9ecad81b9a6c">Deki</a></li>
-<li>Deserialize()&#160;:&#160;<a class="el" href="namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514">Deki</a></li>
-<li>DrawAllTabTopAccents()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8cbd7564da3153c50276a22fdd2bfa14">DekiEditor</a></li>
-<li>DrawDockSeams()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a2d156872821246271babb438340a789c">DekiEditor</a></li>
-<li>DrawTreeNodeChevronLabel()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ad396d2bd3f0f868786d65d5e1b322521">DekiEditor</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_e" name="index_e"></a>- e -</h3><ul>
-<li>EndPropertyContext()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a36e7cc34694a10c80b1a2f5449aef341">DekiEditor</a></li>
-<li>EndSchematicModal()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#afc8125ed4f1f45104b2125d6fdcbb48d">DekiEditor</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>Find()&#160;:&#160;<a class="el" href="namespace_deki_1_1_component_interface_adapters.html#aff827d6f5054f5619657940288d08827">Deki::ComponentInterfaceAdapters</a></li>
-<li>FindInSubtree()&#160;:&#160;<a class="el" href="namespace_deki.html#a812910f374e004e5d124fa69293e6e2b">Deki</a></li>
-<li>FrameBufferBytes()&#160;:&#160;<a class="el" href="namespace_deki.html#a342cf845b27a0d51e29a411e4f285311">Deki</a></li>
-<li>FullBleedSeparator()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a5001e03f52ced7b9c2da14f1a3606eab">DekiEditor</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>GenerateDeterministicGuid()&#160;:&#160;<a class="el" href="namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45">Deki</a>, <a class="el" href="namespace_deki_editor.html#af6662147f2cdebc9885250233c539ea8">DekiEditor</a></li>
-<li>GenerateGuid()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8921308616a742b17b7b32282ff5a8c0">DekiEditor</a></li>
-<li>GetAssetDataPath()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8e5c2915447e597e1b14c64cdc977821">DekiEditor</a></li>
-<li>GetAssetsDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8718d87d9fa83ff5f51582feaab090d9">DekiEditor</a></li>
-<li>GetAssetsDirectoryRelative()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a7122f4eb27c2d2933c0e068c577cddfa">DekiEditor</a></li>
-<li>GetBuildDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a171b86397f7301096feacd4902329594">DekiEditor</a></li>
-<li>GetCacheDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a4a45a26249094e36ac0a6b0f8918ad25">DekiEditor</a></li>
-<li>GetCacheDirectoryRelative()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aafc935f96d5d8c6d1f2774ae5ba359aa">DekiEditor</a></li>
-<li>GetCachePath()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aeef56a51e7fce8cff3b05c7971e8987f">DekiEditor</a></li>
-<li>GetDisplayName()&#160;:&#160;<a class="el" href="namespace_deki_editor_1_1_editor_naming.html#afd732c4abf876d79a9429fb20e5136d3">DekiEditor::EditorNaming</a></li>
-<li>GetGeneratedDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ae978ea94c1df3f0156f04c5837960730">DekiEditor</a></li>
-<li>GetNodePropertyRef()&#160;:&#160;<a class="el" href="namespace_deki.html#ad6aaef028fc14afac69c3294f9da6c76">Deki</a></li>
-<li>GetOrCreateAssetGuid()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a36901389e12d3c7b6f3eb6c527fc4e4f">DekiEditor</a></li>
-<li>GetPackageLockFile()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ad5ef08b4bf44e583dba2a04bad658686">DekiEditor</a></li>
-<li>GetPackageLockFileName()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ab0f1adaac251c1e2af6b93cd81017ebb">DekiEditor</a></li>
-<li>GetPackageManifestFile()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aa06fc7ed3e13239823cc9a7fd64f4ef6">DekiEditor</a></li>
-<li>GetPackageManifestFileName()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a4f1c0551195272cfb31fbb7fc53449d3">DekiEditor</a></li>
-<li>GetPackagesDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a1fa80b110ef24f377ec18ab64e45e199">DekiEditor</a></li>
-<li>GetPackagesDirectoryRelative()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a924931d19a316249efab9ef529581762">DekiEditor</a></li>
-<li>GetPassCount()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#af40d68695cc65e961d3cc2616d202aa1">Deki::ProjectSettings</a></li>
-<li>GetPassName()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#ad64bb5928fb4b3bfb71516c82fa04edd">Deki::ProjectSettings</a></li>
-<li>GetPlatformsDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a6c87d77ea455de9c7f4729a9d493c8e7">DekiEditor</a></li>
-<li>GetPlatformsDirectoryRelative()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a54a4b3e1449f4e8930f88f6e6eef9876">DekiEditor</a></li>
-<li>GetPrefix()&#160;:&#160;<a class="el" href="namespace_deki_1_1_storage.html#a87d0e40bebfba67d189ed254694e6bed">Deki::Storage</a></li>
-<li>GetPropertyRef()&#160;:&#160;<a class="el" href="namespace_deki.html#ab2db578a37de2fc62dd9e4e740e861c1">Deki</a></li>
-<li>GetPropertyValue()&#160;:&#160;<a class="el" href="namespace_deki.html#abbe9d8bcb5d306a8eb2bc2c54410d9ef">Deki</a></li>
-<li>GetRegisteredWindowCount()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a0634cf34b9e95506d343ac7ed43c16ab">DekiEditor</a></li>
-<li>GetRegisteredWindowMeta()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8406620ef8260fc798ac7b5b08f44d85">DekiEditor</a></li>
-<li>GetRenderPipeline()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#a2567174a33b1829969a67f85a855fe8b">Deki::ProjectSettings</a></li>
-<li>GetRuntimeDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a4bf363aa558678122f7d50dbe1790e20">DekiEditor</a></li>
-<li>GetSettingsDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a18cb267acd050d4785c67cf5b85475bf">DekiEditor</a></li>
-<li>GetShadowDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a89777477400652c2a295cd3c23a11bef">DekiEditor</a></li>
-<li>GetSourceDirectory()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a82041bde257fa25a84e62a72635b0d4a">DekiEditor</a></li>
-<li>GetSourceDirectoryRelative()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a48513253e29905bb9aa0c43e91171933">DekiEditor</a></li>
-<li>GetStartupScene()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#a3ede2597091ba3cbec425d5fbdd4899d">Deki::ProjectSettings</a></li>
-<li>GetTargetFPS()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#aa3a74675706af66cae659f467f493e1d">Deki::ProjectSettings</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_h" name="index_h"></a>- h -</h3><ul>
-<li>HandWrittenBaseId()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#ab8aa4afdb443ee648d1df27158e9c7f9">Deki::detail</a></li>
-<li>HashName()&#160;:&#160;<a class="el" href="namespace_deki.html#a25ae7b8519675964d4d185d32755d5b4">Deki</a></li>
-<li>HashString()&#160;:&#160;<a class="el" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50">Deki</a></li>
-<li>HashStringLen()&#160;:&#160;<a class="el" href="namespace_deki.html#a693b81cbcc3e331d8b8695e6d9959971">Deki</a></li>
-<li>HashStringView()&#160;:&#160;<a class="el" href="namespace_deki.html#adfed7ba4e49294c4ae09279eeec541c7">Deki</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>Lerp()&#160;:&#160;<a class="el" href="namespace_deki_1_1_math.html#af23e654fa439af666ef7ae5f278a2e0b">Deki::Math</a></li>
-<li>Load()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92">Deki::ProjectSettings</a></li>
-<li>LoadAssetData()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ac6b7b960db42b2bfb7d256056d169705">DekiEditor</a></li>
-<li>LoadFromFile()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#a9b8fd73b7762fa6abb6f083aaa0a0c50">Deki::ProjectSettings</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>Main()&#160;:&#160;<a class="el" href="namespace_deki.html#af64b4d9477b213c321f2be937b2f892f">Deki</a></li>
-<li>MakeHandWrittenTypeInfo()&#160;:&#160;<a class="el" href="namespace_deki.html#af8b529d2c587228cd97fbbb5828c8ef9">Deki</a></li>
-<li>Max()&#160;:&#160;<a class="el" href="namespace_deki_1_1_math.html#a048add4b58587dcd44bae6f3e98e5b2e">Deki::Math</a></li>
-<li>Min()&#160;:&#160;<a class="el" href="namespace_deki_1_1_math.html#a51165cdc75563c7fc6930010a00db3ec">Deki::Math</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>NicifyName()&#160;:&#160;<a class="el" href="namespace_deki_editor_1_1_editor_naming.html#adb31f24c1e9e90e45991429d5bd37b7f">DekiEditor::EditorNaming</a></li>
-<li>NormalizeProjectRoot()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a75bb0870ccd4cfebd8da0f686224413b">DekiEditor</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_o" name="index_o"></a>- o -</h3><ul>
-<li>operator*()&#160;:&#160;<a class="el" href="namespace_deki.html#a3246873f72896f3ffee887e1733bffbf">Deki</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>PanelToolbar()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a11d9f8c59aa4345379ca20af0af7aa29">DekiEditor</a></li>
-<li>ParsePropertyLiteral()&#160;:&#160;<a class="el" href="namespace_deki.html#a1061c4955314ade075cee1b2539ab6ea">Deki</a></li>
-<li>PushContextMenuItemStyle()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a14d111814dd268349108e45c269f8732">DekiEditor</a></li>
-<li>PushContextMenuPopupStyle()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#adcf127df2638729f87d1e2e3ba55f60e">DekiEditor</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_q" name="index_q"></a>- q -</h3><ul>
-<li>Query()&#160;:&#160;<a class="el" href="namespace_deki_1_1_component_interface_adapters.html#ae5923b30d6906703d9835d61ec94ef8a">Deki::ComponentInterfaceAdapters</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>RawAllocate()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#a90da7e8bb5d951e80042366b76e2e46e">Deki::detail</a></li>
-<li>RawFree()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#aeb6f9b417c20e4c5d6475492e0fb68e4">Deki::detail</a></li>
-<li>RawTypeSignature()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#ab5d0c40f945cd81fc6983405378e103e">Deki::detail</a></li>
-<li>ReadAssetGuid()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ae89b23a00c473dd97323f90a2eafe260">DekiEditor</a></li>
-<li>ReadBoundProperty()&#160;:&#160;<a class="el" href="namespace_deki.html#ac71f6a0a04342195f29156e09527c445">Deki</a></li>
-<li>ReadBoundProperty2()&#160;:&#160;<a class="el" href="namespace_deki.html#a6b461fcf650d430f0fbeffd24b1e6205">Deki</a></li>
-<li>ReadFileToString()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a62730efaec1b0265ec5aa18ed29414cc">DekiEditor</a></li>
-<li>ReadPackageSettingBool()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#a888af89782768d83693cf5c8fd3b8041">Deki::ProjectSettings</a></li>
-<li>ReadPackageSettingFloat()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#a176b5cfa6939b893dc28d08b305fbb0f">Deki::ProjectSettings</a></li>
-<li>ReadPackageSettingInt32()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#af0e60e7c6f701d39e142589bac712755">Deki::ProjectSettings</a></li>
-<li>Register()&#160;:&#160;<a class="el" href="namespace_deki_1_1_component_interface_adapters.html#aa903de95127a189186deafaab3fc9d48">Deki::ComponentInterfaceAdapters</a></li>
-<li>RegisterEditorWindow()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a6ccc9f53df8c79c78f438b88106538e1">DekiEditor</a></li>
-<li>RegisterTtf()&#160;:&#160;<a class="el" href="namespace_deki_editor_1_1_fonts.html#add4a2b780ab2cca691dbb5c61a917f26">DekiEditor::Fonts</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>SaveAssetData()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aabcfdbc7bad26f9bf600a880be66646f">DekiEditor</a></li>
-<li>SchematicActionLink()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a37079e91080cbb8887e395c5a7c4a7c8">DekiEditor</a></li>
-<li>SchematicAddButton()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a71025c40fc84ab2df50d747ee44d5024">DekiEditor</a></li>
-<li>SchematicBandTitleField()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ae82d5253aeb1cbe332cccc16813fdca7">DekiEditor</a></li>
-<li>SchematicBeginCombo()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a54dafc706a5f627f1118dce0da0d7a50">DekiEditor</a></li>
-<li>SchematicCheckbox()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8b7d6da9c75bffbf28b24aa5730c68a2">DekiEditor</a></li>
-<li>SchematicCollapsingHeader()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a3a58d7642a1bb6dba0e6fd93b5ded0a9">DekiEditor</a></li>
-<li>SchematicColorEdit3()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a3b60c8e93923dcd3195d88ed71fdcbc1">DekiEditor</a></li>
-<li>SchematicColorEdit4()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a5e24266e291b579c214feb04b09947a7">DekiEditor</a></li>
-<li>SchematicCombo()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a4f53155e113e58e5bafde23e22112152">DekiEditor</a></li>
-<li>SchematicDragFloat()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ab05eb73f91f661d464dcf9dc45b7dc8c">DekiEditor</a></li>
-<li>SchematicDragFloat2()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ad868893b41d5c6640f67d745722c8343">DekiEditor</a></li>
-<li>SchematicDragFloat3()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aae5422b9df9bffa0922ffc5558475663">DekiEditor</a></li>
-<li>SchematicDragInt()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aaafb1522d862943c842dd6ae8b24a5d9">DekiEditor</a></li>
-<li>SchematicEndCombo()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ac91a42860c94813169f7b9a0ffdcac29">DekiEditor</a></li>
-<li>SchematicPicker()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a68514c40270bceaa9eed747470d9c31d">DekiEditor</a></li>
-<li>SchematicSectionBand()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a1dc47a38da82c42864667a33a7e72cfa">DekiEditor</a></li>
-<li>SchematicSectionBegin()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ad70c133190c6cd26c7fe585526ab5365">DekiEditor</a></li>
-<li>SchematicSectionEnd()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ab1df898edc671a7fe598c1ef0745e0dc">DekiEditor</a></li>
-<li>SchematicSubHeader()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a0e8ee589036a12b389c28587064db0de">DekiEditor</a></li>
-<li>SchematicToolbarCombo()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a8abd77ed998f3bd8f929ac00b6141572">DekiEditor</a></li>
-<li>SchematicTreeBodyBegin()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#ad94be1fe5a1f22d932f76e426937eaf7">DekiEditor</a></li>
-<li>SchematicTreeBodyEnd()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#aaa8c11b46c40912b9930c912696f0d23">DekiEditor</a></li>
-<li>SearchField()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a626aeef38978fb6f07f2404ad171546f">DekiEditor</a></li>
-<li>Serialize()&#160;:&#160;<a class="el" href="namespace_deki.html#a797e40e5960acce21da40512527a5aab">Deki</a></li>
-<li>SetImGuiAllocators()&#160;:&#160;<a class="el" href="namespace_deki.html#a842fa2a17af886ab760e861d44444ba2">Deki</a></li>
-<li>SetImGuiContext()&#160;:&#160;<a class="el" href="namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a">Deki</a></li>
-<li>SetPropertyValue()&#160;:&#160;<a class="el" href="namespace_deki.html#a8a96d4eb7699c21436cb97c84165a7ff">Deki</a></li>
-<li>SetupEditorTheme()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a4223c0f07da52769789798c2fef0991c">DekiEditor</a></li>
-<li>StartsWith()&#160;:&#160;<a class="el" href="namespace_deki_1_1detail.html#a5ad98c767de13a2ab3ae4ef4253e39d0">Deki::detail</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>Tooltip()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a79876406984e4587dfe00432b559d4e5">DekiEditor</a></li>
-<li>TransformFieldNames()&#160;:&#160;<a class="el" href="namespace_deki.html#aae775802987db1312e287587e7bf54cd">Deki</a></li>
-<li>TransformFields()&#160;:&#160;<a class="el" href="namespace_deki.html#a186e1c5bc7660b81c99c3dcdfa4ebcb2">Deki</a></li>
-<li>TrimRegisteredWindows()&#160;:&#160;<a class="el" href="namespace_deki_editor.html#a890bda74fc7efbd1038f88c117891485">DekiEditor</a></li>
-<li>TypeId()&#160;:&#160;<a class="el" href="namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240">Deki</a></li>
-<li>TypeInfoFor()&#160;:&#160;<a class="el" href="namespace_deki.html#a0ee1a75bd2d63c21ff742cba281378d0">Deki</a></li>
-<li>TypeName()&#160;:&#160;<a class="el" href="namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e">Deki</a></li>
-<li>TypeNameOf()&#160;:&#160;<a class="el" href="namespace_deki.html#ab4ce6a1ab2db25d06057dc286358905c">Deki</a></li>
-<li>TypeShortName()&#160;:&#160;<a class="el" href="namespace_deki.html#a3b4689dd54bc12d6440e12f40ef2147e">Deki</a></li>
-<li>TypeShortNameOf()&#160;:&#160;<a class="el" href="namespace_deki.html#af2156a31e5357cd57b0dd0155297d444">Deki</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_v" name="index_v"></a>- v -</h3><ul>
-<li>Version()&#160;:&#160;<a class="el" href="namespace_deki_1_1_component_interface_adapters.html#ae3712da8c54149d949dbeb01cd8398bb">Deki::ComponentInterfaceAdapters</a></li>
-<li>VisitActiveSubtree()&#160;:&#160;<a class="el" href="namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff">Deki</a></li>
-<li>VisitSubtree()&#160;:&#160;<a class="el" href="namespace_deki.html#a22ea94289b214746512305d8bc075c4d">Deki</a></li>
-</ul>
-
-
-<h3 class="doxsection"><a id="index_w" name="index_w"></a>- w -</h3><ul>
-<li>Write()&#160;:&#160;<a class="el" href="namespace_deki_1_1_project_settings.html#aa980522f7fb2d282b82360c7ee2f7f0b">Deki::ProjectSettings</a></li>
-<li>WriteBoundNumbers()&#160;:&#160;<a class="el" href="namespace_deki.html#a4f2bdda636d292108b0ff5194ac30881">Deki</a></li>
-<li>WriteBoundProperty()&#160;:&#160;<a class="el" href="namespace_deki.html#ad008be6af01fc7dbb33e9a1f8731800c">Deki</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

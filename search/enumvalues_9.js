@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['light_0',['Light',['../class_deki_1_1_i_power.html#a92934cb5d09494f4e0e81409431aa59fa9914a0ce04a7b7b6a8e39bec55064b82',1,'Deki::IPower']]]
+  ['kept_0',['Kept',['../namespace_deki_editor.html#aaf7c4d4a830420db63a30d992d937642ab2286379a1def1d4a2c82bc18a70743e',1,'DekiEditor']]]
 ];

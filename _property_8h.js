@@ -24,6 +24,7 @@ var _property_8h =
     [ "DEKI_DESCRIPTION", "_property_8h.html#a43f35439cb2726989f3e76e2c6f10f09", null ],
     [ "DEKI_DISPLAY_NAME", "_property_8h.html#a604acd73a4bc7fd319ce7873cdd4c46f", null ],
     [ "DEKI_SETTINGS_SECTION", "_property_8h.html#a0213bdd2e530941f936a0ef328b0395a", null ],
+    [ "DEKI_FORMER_NAME", "_property_8h.html#a199fb41600320577f9c6fb8cc88ac00b", null ],
     [ "DEKI_NODE_REFLECTION_DECLARATIONS", "_property_8h.html#ad28fe697e3ce7dcc3636ac7ba0908e65", null ],
     [ "DEKI_NODE", "_property_8h.html#a8fecbafb59fe747e9a2940eab4b8b82c", null ],
     [ "DEKI_NODE_INPUTS", "_property_8h.html#af6e2521d231a3351237f4c079d750d37", null ],
@@ -41,7 +42,9 @@ var _property_8h =
       [ "Deki::PhysicalUnit::Acceleration", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a3b926d163371fd620b09b63219b12f52", null ],
       [ "Deki::PhysicalUnit::Angle", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a45f4ce6c3306644b1efe333f4f8d6929", null ],
       [ "Deki::PhysicalUnit::AngularVelocity", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270acfb2d17cc0d6ca7658a8822cbd78565c", null ],
-      [ "Deki::PhysicalUnit::Temperature", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270aee7a8e262285ed49ea1b4e4ae11525bd", null ]
+      [ "Deki::PhysicalUnit::Temperature", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270aee7a8e262285ed49ea1b4e4ae11525bd", null ],
+      [ "Deki::PhysicalUnit::Frequency", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a7cf395303ce3665a9834721d4b748e4b", null ],
+      [ "Deki::PhysicalUnit::Time", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270aa76d4ef5f3f6a672bbfab2865563e530", null ]
     ] ],
     [ "Deki::PropertyType", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4", [
       [ "Deki::PropertyType::Int8", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a7d839b2c12bfd40ac121b4cc9e81c539", null ],
@@ -67,6 +70,9 @@ var _property_8h =
       [ "Deki::PropertyType::NodeRef", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a94ee90aa44bec25a05943e647ce5652b", null ],
       [ "Deki::PropertyType::PropertyRef", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99", null ]
     ] ],
+    [ "Deki::EnumNameForValue", "namespace_deki.html#afbf29718303fbdf46b25cd50d80aa4ab", null ],
+    [ "Deki::EnumValueForName", "namespace_deki.html#a3dc1b030a7759538fa38b1c92881cd44", null ],
+    [ "Deki::EnumIndexForValue", "namespace_deki.html#aa95bec25813f1604a2f55134af34f8d3", null ],
     [ "Deki::GetPropertyRef", "namespace_deki.html#ab2db578a37de2fc62dd9e4e740e861c1", null ],
     [ "Deki::GetPropertyRef", "namespace_deki.html#a3fa6aaff29f2822152add80eb3608a8d", null ],
     [ "Deki::GetPropertyValue", "namespace_deki.html#abbe9d8bcb5d306a8eb2bc2c54410d9ef", null ],

@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Class Members</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -113,14 +135,16 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_o.ht
 
 <div class="contents">
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="functions.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="functions_z.html#index_z">Z</a><div class="alphasepar"></div><a class="qindex" href="functions_~.html#index_~">~</a></div>
+<div class="qindex"><a class="qindex" href="functions.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="functions_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="functions_z.html#index_z">Z</a><div class="alphasepar"></div><a class="qindex" href="functions_~.html#index_~">~</a></div>
 
 
 <h3 class="doxsection"><a id="index_o" name="index_o"></a>- o -</h3><ul>
 <li>Object()&#160;:&#160;<a class="el" href="class_deki_1_1_object.html#a5e4b301a92a380889c0ce0b3723758ca">Deki::Object</a></li>
 <li>object&#160;:&#160;<a class="el" href="struct_deki_1_1_property_binding.html#a86a5c023da56043a9b9c9711004c76ea">Deki::PropertyBinding</a>, <a class="el" href="struct_deki_1_1_property_ref.html#a18088ecd32be83ca885e891b4ec5741f">Deki::PropertyRef</a>, <a class="el" href="struct_deki_editor_1_1_scene_view_context.html#aa2bf0e5a1eb73081b858435004d17147">DekiEditor::SceneViewContext</a></li>
 <li>objectName&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_create_menu_entry.html#acc09455e52ce21eba0013d86182dbea6">DekiEditor::CreateMenuEntry</a></li>
+<li>offered&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_feature_decision.html#a6e4cbd8046964770985daf744d0f2175">DekiEditor::FeatureDecision</a></li>
 <li>offset&#160;:&#160;<a class="el" href="struct_deki_1_1_d_pack_entry.html#ac361a3358d5af6d88cf619d5e7348fed">Deki::DPackEntry</a>, <a class="el" href="struct_deki_1_1_field_ref.html#ae42739790ebf1e4eae95e80e3d444410">Deki::FieldRef</a>, <a class="el" href="struct_deki_1_1_property_info.html#aa536b425841f24bf02b84d3d45f4fcf1">Deki::PropertyInfo</a></li>
+<li>on&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_feature_decision.html#a2e0146eb861404ec8f8fdce1660b429e">DekiEditor::FeatureDecision</a>, <a class="el" href="struct_deki_editor_1_1_package_decision.html#a3a9950d38a46b49dfebabdabb8b9498f">DekiEditor::PackageDecision</a></li>
 <li>OnAssetChanged&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#adaa0ee448b964b5cf7c32420e6fd437c">DekiEditor::AssetPipeline</a></li>
 <li>OnAssetCreated&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#a0d8a16d2d5321c760eea0ce763f32cdf">DekiEditor::AssetPipeline</a></li>
 <li>OnAssetDeleted&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#a3819e8391f966372072f3393115abc96">DekiEditor::AssetPipeline</a></li>
@@ -149,7 +173,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_o.ht
 <li>onUndo&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_edit_callbacks_bytes.html#afd50338e6ad3280ca2a89f2890132bea">DekiEditor::EditorUI::EditCallbacksBytes</a>, <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_enum_callbacks.html#a859eac02f5c5edcf08c5528c90a12227">DekiEditor::EditorUI::EnumCallbacks</a>, <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_float_callbacks.html#a07a286b0699e2ca8ef60fe48c215fe63">DekiEditor::EditorUI::FloatCallbacks</a>, <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_int_callbacks.html#a61b29ebf2a519158445ce0b46adecaac">DekiEditor::EditorUI::IntCallbacks</a>, <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_text_callbacks.html#a0a05ff5137795744a3984ea36a07212d">DekiEditor::EditorUI::TextCallbacks</a>, <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#ad879e0eff23499757282e75a4d61762f">DekiEditor::EditorUI::VecCallbacks</a></li>
 <li>OnUpdate()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_editor_window.html#a5010d950a29038af9f687d969a61309d">DekiEditor::EditorWindow</a></li>
 <li>Open()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_picker.html#a93249440b846baf0d038461ac4105aed">DekiEditor::AssetPicker</a></li>
-<li>OpenFile()&#160;:&#160;<a class="el" href="class_deki_1_1_desktop_file_system.html#a78c2e0c327f4b875e0428820a5caa672">Deki::DesktopFileSystem</a>, <a class="el" href="class_deki_1_1_i_file_system.html#aaff0192aeaedbdb879bc35933d3e57ec">Deki::IFileSystem</a>, <a class="el" href="class_deki_editor_1_1_editor_window.html#ab4cc2d23c89fd996ecd10fec6718172e">DekiEditor::EditorWindow</a></li>
+<li>OpenFile()&#160;:&#160;<a class="el" href="class_deki_1_1_i_file_system.html#aaff0192aeaedbdb879bc35933d3e57ec">Deki::IFileSystem</a>, <a class="el" href="class_deki_editor_1_1_editor_window.html#ab4cc2d23c89fd996ecd10fec6718172e">DekiEditor::EditorWindow</a></li>
 <li>OpenMode&#160;:&#160;<a class="el" href="class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2a">Deki::IFileSystem</a></li>
 <li>OpenPopup()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_editor_u_i.html#afde0b02a79b56d079e0a6cd7531d6924">DekiEditor::EditorUI</a></li>
 <li>OpenPopupOnItemClick()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_editor_u_i.html#ab3a4ed5b64c2c3e5e097824d92c76ba5">DekiEditor::EditorUI</a></li>
@@ -170,11 +194,16 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_o.ht
 <li>operator=()&#160;:&#160;<a class="el" href="struct_deki_1_1_asset_ref.html#a43ad5f083231e1bd50abeb82456bbc18">Deki::AssetRef&lt; T &gt;</a>, <a class="el" href="class_deki_1_1_buffer.html#a457838554c55dc8848a188a6c9fdd5b5">Deki::Buffer&lt; T &gt;</a>, <a class="el" href="class_deki_1_1_component.html#ac17e58953a8e191634bbe34acb9424d4">Deki::Component</a>, <a class="el" href="class_deki_1_1_object.html#ad242d4021d069aeebd8b8db0f54a2db5">Deki::Object</a>, <a class="el" href="struct_deki_1_1_object_ref.html#a1d01c5c9b2cd279b3e675faf48e636cb">Deki::ObjectRef&lt; T &gt;</a>, <a class="el" href="class_deki_1_1_vector.html#a755332e3b273c4661912665336016e9e">Deki::Vector&lt; T &gt;</a>, <a class="el" href="class_deki_editor_1_1_asset_file_watcher.html#a2beff6062185393516c2e2770051f2f2">DekiEditor::AssetFileWatcher</a>, <a class="el" href="class_deki_editor_1_1_compound_command.html#a1059279dc934b9eb86c35365c74f48c0">DekiEditor::CompoundCommand</a>, <a class="el" href="class_deki_editor_1_1_custom_editor_registry.html#a5bddd2eb611af84eab0403a448815a91">DekiEditor::CustomEditorRegistry</a></li>
 <li>operator==()&#160;:&#160;<a class="el" href="struct_deki_1_1_asset_ref.html#adb023d8ef8871d91953cf52648240dd3">Deki::AssetRef&lt; T &gt;</a>, <a class="el" href="class_deki_1_1_color.html#ab263e4a6e6848dd4c881afaddfa50586">Deki::Color</a>, <a class="el" href="struct_deki_1_1_memory_1_1_region.html#a9ef9a238cc10fb28377e43e4c128408c">Deki::Memory::Region</a>, <a class="el" href="struct_deki_1_1_object_ref.html#aaeca866621b3323e8d0738755612cba0">Deki::ObjectRef&lt; T &gt;</a>, <a class="el" href="struct_deki_1_1_vector2.html#a857bbadd48fc8027468b21e63e770b30">Deki::Vector2</a>, <a class="el" href="struct_deki_1_1_vector3.html#a7aaaba68bfc94021da252bedfcf2f032">Deki::Vector3</a></li>
 <li>operator[]()&#160;:&#160;<a class="el" href="class_deki_1_1_buffer.html#a8e39cb8e73d54d9ae19b56cceb3723fc">Deki::Buffer&lt; T &gt;</a>, <a class="el" href="class_deki_1_1_vector.html#aae23824858e79b36c9137fe6704a34f0">Deki::Vector&lt; T &gt;</a></li>
+<li>Option()&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#a3067507fa044293626de28bd876803e3">DekiEditor::PlatformConfig</a></li>
+<li>OptionBool()&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#ab49edf9e8600e153b7633c24105b64b6">DekiEditor::PlatformConfig</a></li>
+<li>OptionList()&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#aec7fa3e22babcdfbb6858891b07a66d8">DekiEditor::PlatformConfig</a></li>
+<li>OptionU32()&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#afaa05ae27737519ee36707b45b04e6f5">DekiEditor::PlatformConfig</a></li>
 <li>Orange&#160;:&#160;<a class="el" href="class_deki_1_1_color.html#ae8db68120c0d66fc8d0098f9ef132e9b">Deki::Color</a></li>
 <li>Ortho()&#160;:&#160;<a class="el" href="struct_deki_1_1_mat4.html#a1305de0ebedbdc58c85227e8c482d854">Deki::Mat4</a></li>
 <li>outputCount&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_node_canvas_node.html#af48329ac51fd9ca68a7b56f5c7b5f71a">DekiEditor::NodeCanvasNode</a></li>
 <li>outputLabels&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_node_canvas_node.html#ad5937ad6859093996bdc9e92dc0fda68">DekiEditor::NodeCanvasNode</a></li>
 <li>outputPath&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_import_result.html#a8a89a196431c99aa3949fce22c78d402">DekiEditor::ImportResult</a></li>
+<li>Override()&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_build_strip_settings.html#ae32641848841027c4050642c0e1fa0cc">DekiEditor::BuildStripSettings</a></li>
 <li>OverridesCacheStatus()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_file_inspector.html#ac3b949f1b81bf9a5332640ea05fbb7f6">DekiEditor::FileInspector</a></li>
 <li>ownsMainLoop&#160;:&#160;<a class="el" href="struct_deki_1_1_engine_host.html#a1c789876429031998301c14baeb005e1">Deki::EngineHost</a></li>
 </ul>

@@ -2,6 +2,7 @@ var dir_f778bda05f3efb133bd9953e50b086b6 =
 [
     [ "Buffer.h", "_buffer_8h.html", "_buffer_8h" ],
     [ "FileSystem.h", "_file_system_8h.html", "_file_system_8h" ],
+    [ "HostMemoryProvider.h", "_host_memory_provider_8h.html", "_host_memory_provider_8h" ],
     [ "IDisplay.h", "_i_display_8h.html", "_i_display_8h" ],
     [ "IFileSystem.h", "_i_file_system_8h.html", "_i_file_system_8h" ],
     [ "IInputSystem.h", "_i_input_system_8h.html", "_i_input_system_8h" ],

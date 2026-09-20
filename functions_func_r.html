@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Class Members - Functions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -125,7 +147,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func
 <li>ReadByte()&#160;:&#160;<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#a2843232dc945d4fc6a281133e6d1b4e7">Deki::SceneFormat::SceneMsgPackParser</a></li>
 <li>ReadBytes()&#160;:&#160;<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#a6ce417e66c9c12a12f9bcac6b748cdd8">Deki::SceneFormat::SceneMsgPackParser</a></li>
 <li>ReadContainerSize()&#160;:&#160;<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#ad197af75ca283ceb21b7d956579cd488">Deki::SceneFormat::SceneMsgPackParser</a></li>
-<li>ReadFile()&#160;:&#160;<a class="el" href="class_deki_1_1_desktop_file_system.html#a9ee52f1e00cc11693416c8e952d8e71e">Deki::DesktopFileSystem</a>, <a class="el" href="class_deki_1_1_i_file_system.html#a72e2dba96a5299f19526cb6a5c42875d">Deki::IFileSystem</a></li>
+<li>ReadEnginePackageDeps()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_firmware_builder_base.html#ac80674b6ed84fce50ad49d37185b536f">DekiEditor::FirmwareBuilderBase</a></li>
+<li>ReadFile()&#160;:&#160;<a class="el" href="class_deki_1_1_i_file_system.html#a72e2dba96a5299f19526cb6a5c42875d">Deki::IFileSystem</a></li>
 <li>ReadFloat()&#160;:&#160;<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#a62986a1f20a39062e0e072c254fe6828">Deki::SceneFormat::SceneMsgPackParser</a></li>
 <li>ReadInt()&#160;:&#160;<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#a8a2503a5ba40a2c312fa82835701e032">Deki::SceneFormat::SceneMsgPackParser</a></li>
 <li>ReadMapSize()&#160;:&#160;<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#ad9e33ab8f4b2df03532adc54033677b8">Deki::SceneFormat::SceneMsgPackParser</a></li>
@@ -139,10 +162,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func
 <li>RefreshAsset()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#a43f086e78ccc90de58e07994be50f7a3">DekiEditor::AssetPipeline</a></li>
 <li>Region()&#160;:&#160;<a class="el" href="struct_deki_1_1_memory_1_1_region.html#af455525123b0b6c20372d379f7e49825">Deki::Memory::Region</a></li>
 <li>Register()&#160;:&#160;<a class="el" href="class_deki_1_1_component_factory.html#ae59a7b68a5e2a31fa0462fd0c08fd685">Deki::ComponentFactory</a>, <a class="el" href="class_deki_1_1_component_registry.html#aff4f85a4030807967a76e517507cd963">Deki::ComponentRegistry</a>, <a class="el" href="class_deki_1_1_settings_registry.html#afc0df11113e7f1f1a355d0640d75b57e">Deki::SettingsRegistry</a>, <a class="el" href="class_deki_editor_1_1_asset_type_editor_registry.html#a326fec9007a38417f6ba58bf2ebf9805">DekiEditor::AssetTypeEditorRegistry</a>, <a class="el" href="class_deki_editor_1_1_asset_type_registry.html#a6d6c0ba48f728195ef5937ac8e4a1a56">DekiEditor::AssetTypeRegistry</a>, <a class="el" href="class_deki_editor_1_1_create_menu_registry.html#a6dc38de555e71007064c3da4567f6a15">DekiEditor::CreateMenuRegistry</a>, <a class="el" href="class_deki_editor_1_1_custom_editor_registry.html#a60903d8e6df8dc9cc3ed0866202630ff">DekiEditor::CustomEditorRegistry</a>, <a class="el" href="class_deki_editor_1_1_file_inspector_registry.html#a7720de2cb9905f71a7b60dac2f46b7e8">DekiEditor::FileInspectorRegistry</a></li>
+<li>RegisterBuilder()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_builder_registry.html#a65ba8f6d42b53b54e3ae339a8581e919">DekiEditor::BuilderRegistry</a></li>
 <li>RegisterCacheHandler()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#a3d24f13761f8874a814474753e159674">DekiEditor::AssetPipeline</a></li>
 <li>RegisterCacheVariantProvider()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#af56f2c5b3479889bb1b5a2a05714b586">DekiEditor::AssetPipeline</a></li>
 <li>RegisterCategory()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_type_registry.html#ade281950ee4542b306f8cc94dce152a7">DekiEditor::AssetTypeRegistry</a></li>
-<li>RegisterEditorAutoFactory()&#160;:&#160;<a class="el" href="class_deki_1_1_setup_component.html#a4d73b366475d8ea8a25a147b720692cf">Deki::SetupComponent</a></li>
+<li>RegisterEditorAutoFactory()&#160;:&#160;<a class="el" href="class_deki_1_1_setup_component.html#a76f5b12f452db04d263799c75751178e">Deki::SetupComponent</a></li>
 <li>RegisterFactory()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_custom_editor_registry.html#a842b559fc5dbd54db455c99cb3eed4a6">DekiEditor::CustomEditorRegistry</a></li>
 <li>RegisterFields()&#160;:&#160;<a class="el" href="class_deki_1_1_component_registry.html#a300eb882b992c1144bb1f4a989501fd6">Deki::ComponentRegistry</a></li>
 <li>RegisterFileSystem()&#160;:&#160;<a class="el" href="class_deki_1_1_file_system.html#ab8f29d07f002271206afc96cf51e96b0">Deki::FileSystem</a></li>
@@ -153,7 +177,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func
 <li>RegisterLoader()&#160;:&#160;<a class="el" href="class_deki_1_1_asset_manager.html#a53c834504fc4c6d1ee5c2e6c44815361">Deki::AssetManager</a></li>
 <li>RegisterOnBeforeSleep()&#160;:&#160;<a class="el" href="class_deki_1_1_i_power.html#a8b1939eacd08d0af37cc8ae3370723b1">Deki::IPower</a></li>
 <li>RegisterOnScreenOn()&#160;:&#160;<a class="el" href="class_deki_1_1_i_power.html#a9bb3d113c5a5e8b5293dcc7ab30b4408">Deki::IPower</a></li>
+<li>RegisterPlatform()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_platform_registry.html#a56b1825bc914322ef5044ddccbe9681e">DekiEditor::PlatformRegistry</a></li>
 <li>RegisterPlugin()&#160;:&#160;<a class="el" href="class_deki_1_1_settings_registry.html#ac5dded3dec78c2ae1da24b1c3b0c60a2">Deki::SettingsRegistry</a></li>
+<li>RegisterPluginBuilder()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_builder_registry.html#a24000b5e02ea00cdec5d1265484e6ffd">DekiEditor::BuilderRegistry</a></li>
 <li>RegisterPluginComponent()&#160;:&#160;<a class="el" href="class_deki_1_1_component_registry.html#ae0f432c74acfdf2495a25b9ffa9093f5">Deki::ComponentRegistry</a></li>
 <li>RegisterSubAssets()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#ae95c8fbf482cb521ebc97b039f7520fa">DekiEditor::AssetPipeline</a></li>
 <li>RegisterSyncHandler()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#a6b9ce8a8e9c63edfba7d97ffb9692730">DekiEditor::AssetPipeline</a></li>
@@ -162,6 +188,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func
 <li>Release()&#160;:&#160;<a class="el" href="class_deki_1_1_buffer.html#aeb3d752f0dabae88a9a9e1ac54ad73be">Deki::Buffer&lt; T &gt;</a></li>
 <li>ReleaseAssetTracking()&#160;:&#160;<a class="el" href="class_deki_1_1_asset_manager.html#a20d83ca89c03af00d241ca615667b5d3">Deki::AssetManager</a></li>
 <li>RemapObjectRefs()&#160;:&#160;<a class="el" href="class_deki_1_1_component.html#a631af41a70943b17e43b0f970f83c4be">Deki::Component</a></li>
+<li>Remove()&#160;:&#160;<a class="el" href="class_i_package_installer.html#a3870d125552147951ff2022db2cd0d9c">IPackageInstaller</a></li>
 <li>RemoveAsset()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_asset_pipeline.html#a89a527d425a513193c373e3f56ceab3d">DekiEditor::AssetPipeline</a></li>
 <li>RemoveChild()&#160;:&#160;<a class="el" href="class_deki_1_1_object.html#a06403d252e68b2244675691dd16e9eb1">Deki::Object</a></li>
 <li>RemoveComponent()&#160;:&#160;<a class="el" href="class_deki_1_1_object.html#a86a2b953a05985523a67f9d1fc92b856">Deki::Object</a></li>
@@ -189,8 +216,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_func
 <li>Rgba()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_editor_u_i.html#ac757bb132b215f805f40455d96cabf1f">DekiEditor::EditorUI</a>, <a class="el" href="class_deki_editor_1_1_scene_view.html#a8207abd3a5bd48ef1469819440293d6a">DekiEditor::SceneView</a></li>
 <li>Right()&#160;:&#160;<a class="el" href="struct_deki_1_1_vector2.html#a1b17b9436c6e7cd89538ca4794192fcf">Deki::Vector2</a>, <a class="el" href="struct_deki_1_1_vector3.html#a616e860de9c56e5f7e408b1d90f7ee0a">Deki::Vector3</a></li>
 <li>Rotated()&#160;:&#160;<a class="el" href="struct_deki_1_1_vector2.html#a8cb5cd379b7f00f9f2e457f0bcd6faee">Deki::Vector2</a></li>
-<li>RunEditorAutoSetups()&#160;:&#160;<a class="el" href="class_deki_1_1_setup_component.html#afc84c187a0f6502e03365dcc7f8544fa">Deki::SetupComponent</a></li>
+<li>Run()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_cli_tool.html#a6624488fa6c40413348d551427669b8f">DekiEditor::CliTool</a></li>
+<li>RunEditorAutoSetups()&#160;:&#160;<a class="el" href="class_deki_1_1_setup_component.html#a87ffacb1102fc729d9fd713fe629cf2e">Deki::SetupComponent</a></li>
 <li>RunMainLoop()&#160;:&#160;<a class="el" href="class_deki_1_1_engine.html#a77cc93d4f64e7dff9c68fa9f7da20e67">Deki::Engine</a></li>
+<li>RunOnBuildThread()&#160;:&#160;<a class="el" href="class_deki_editor_1_1_firmware_builder_base.html#a9091d61a26b2abfd708c725398acad8b">DekiEditor::FirmwareBuilderBase</a></li>
 <li>RuntimeUpdate()&#160;:&#160;<a class="el" href="class_deki_1_1_component.html#aa838a4adb5eca6dd0b2dcabb6bba01a1">Deki::Component</a></li>
 <li>RunUpdateCallbacks()&#160;:&#160;<a class="el" href="class_deki_1_1_engine.html#ac51f7f84a5c4b04b3c6f3c2fb9b3ba18">Deki::Engine</a></li>
 </ul>

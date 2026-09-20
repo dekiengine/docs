@@ -1,3 +1,7 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Class Members - Variables</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -22,13 +29,28 @@
 <link href="deki.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.15.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -113,7 +135,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 
 <div class="contents">
 <div class="textblock">Here is a list of all variables with links to the classes they belong to:</div><br/>
-<div class="qindex"><a class="qindex" href="functions_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_z.html#index_z">Z</a></div>
+<div class="qindex"><a class="qindex" href="functions_vars.html#index_a">A</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_b.html#index_b">B</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_c.html#index_c">C</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_d.html#index_d">D</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_e.html#index_e">E</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_f.html#index_f">F</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_g.html#index_g">G</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_h.html#index_h">H</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_i.html#index_i">I</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_j.html#index_j">J</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_k.html#index_k">K</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_l.html#index_l">L</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_m.html#index_m">M</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_n.html#index_n">N</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_o.html#index_o">O</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_p.html#index_p">P</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_r.html#index_r">R</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_s.html#index_s">S</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_t.html#index_t">T</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_u.html#index_u">U</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_v.html#index_v">V</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_w.html#index_w">W</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_x.html#index_x">X</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_y.html#index_y">Y</a><div class="alphasepar"></div><a class="qindex" href="functions_vars_z.html#index_z">Z</a></div>
 
 
 <h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
@@ -122,6 +144,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 <li>scaleX&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_scene_view_context.html#a260b79b089dbd0569124217e107eb0c9">DekiEditor::SceneViewContext</a></li>
 <li>scaleY&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_scene_view_context.html#a7208953022f52a83fa77515f8b077a7c">DekiEditor::SceneViewContext</a></li>
 <li>scenePathLen&#160;:&#160;<a class="el" href="struct_deki_1_1_project_settings_1_1_runtime_settings.html#af9e145c7d6e149845311361715b7e4ab">Deki::ProjectSettings::RuntimeSettings</a></li>
+<li>screenHeight&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#a3c5141ab0fb8230d65792957136f9c03">DekiEditor::PlatformConfig</a></li>
+<li>screenWidth&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_platform_config.html#a4e4df648b142acfb5cd7be6dceb7aea8">DekiEditor::PlatformConfig</a></li>
 <li>screenX&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_scene_view_context.html#ac8074b48b9667184ce596ae8022e94f2">DekiEditor::SceneViewContext</a></li>
 <li>screenY&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_scene_view_context.html#a8545ffff2252546b7f776b9c73054e47">DekiEditor::SceneViewContext</a></li>
 <li>sectionHeader&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ad4078abe056c578be2de3d8eaac05cbc">DekiEditor::EditorUI::WidgetBackend</a></li>
@@ -134,6 +158,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 <li>settings&#160;:&#160;<a class="el" href="struct_deki_1_1_package_config.html#a5a34de16508a4ea308b011eb4d445438">Deki::PackageConfig</a>, <a class="el" href="struct_deki_editor_1_1_asset_data.html#ada33be54a9347d6af50d1140fc4b484e">DekiEditor::AssetData</a></li>
 <li>settingsSection&#160;:&#160;<a class="el" href="struct_deki_1_1_component_meta.html#a80e5fc5c69b79fe85d878e96ea4f722a">Deki::ComponentMeta</a></li>
 <li>setupComponents&#160;:&#160;<a class="el" href="class_deki_1_1_platform_setup_component.html#ae8ef99e274e624aceec371ef9aa43639">Deki::PlatformSetupComponent</a></li>
+<li>setupDone&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_toolchain_component.html#a45e9a2ec4e2dcf380aeeab1e2bfb5741">DekiEditor::ToolchainComponent</a></li>
+<li>sha256&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_component_def.html#ad5e9f1ad14e8eda0707b93da204642ea">DekiEditor::ComponentDef</a>, <a class="el" href="struct_deki_editor_1_1_sub_component_def.html#abce498f67c80409db125cb05f2466812">DekiEditor::SubComponentDef</a></li>
 <li>shortName&#160;:&#160;<a class="el" href="struct_deki_1_1_component_type_info.html#a6b3c7f74c5206bad471205f3151d66de">Deki::ComponentTypeInfo</a></li>
 <li>size&#160;:&#160;<a class="el" href="struct_deki_1_1_d_pack_entry.html#aa708b2e62822aa32baa391820bc70adc">Deki::DPackEntry</a>, <a class="el" href="struct_deki_1_1_loaded_pack_1_1_asset_info.html#a34b64f28b158564931f50d2e3c3f950d">Deki::LoadedPack::AssetInfo</a></li>
 <li>sizeofComponentMeta&#160;:&#160;<a class="el" href="struct_deki_reflection_abi.html#a2930622d83c813adedd6049dda8883d7">DekiReflectionAbi</a></li>
@@ -145,14 +171,26 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('functions_vars
 <li>sliderFloat&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a6b388024440271fa666689ab90ece423">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>sliderInt&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a59f7e0995825b217d78d1f92c17f699e">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>smallButton&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ac728b2bc709037bab48904a7b1662576">DekiEditor::EditorUI::WidgetBackend</a></li>
-<li>source&#160;:&#160;<a class="el" href="struct_deki_1_1_asset_ref_base.html#a188218c22b8885dc7fe39828fa3e1741">Deki::AssetRefBase</a></li>
+<li>source&#160;:&#160;<a class="el" href="struct_deki_1_1_asset_ref_base.html#a188218c22b8885dc7fe39828fa3e1741">Deki::AssetRefBase</a>, <a class="el" href="struct_dependency_info.html#aaccd0a62a29ae5a09e74e5858f9f1d9c">DependencyInfo</a>, <a class="el" href="struct_package_entry.html#a1fd37d98a62e692519fa6c93e8566ed4">PackageEntry</a></li>
+<li>sourceStems&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#a472787c16855484131e49b3da3946e95">DekiEditor::CMakeGen::PackageEntry</a></li>
 <li>spacing&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a396f9cfa7cca04fc2e1d5d64d11c56f2">DekiEditor::EditorUI::WidgetBackend</a></li>
 <li>startX&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_node_canvas_events.html#a54c00254b2def94f83348bf21a86036d">DekiEditor::NodeCanvasEvents</a></li>
 <li>startY&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_node_canvas_events.html#a180b4a64b50bc97146c62cb772431ee3">DekiEditor::NodeCanvasEvents</a></li>
+<li>state&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_build_progress.html#ad8f71c58b875234dc31417fd76c1322c">DekiEditor::BuildProgress</a>, <a class="el" href="struct_deki_editor_1_1_feature_decision.html#aa4c78588cbba6e692f1cf6b3f7925a33">DekiEditor::FeatureDecision</a></li>
+<li>status&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_download_progress.html#a6a5b3eecb7e31277add12283d2f1515b">DekiEditor::DownloadProgress</a>, <a class="el" href="struct_deki_editor_1_1_toolchain_component.html#a712f77d89a0774348596a5cfac7ce5d2">DekiEditor::ToolchainComponent</a></li>
+<li>statusText&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_build_progress.html#aff0877e5b609250351155ff162ac0fd0">DekiEditor::BuildProgress</a>, <a class="el" href="struct_deki_editor_1_1_download_progress.html#a44380cfbb92594b0d0d620aef3ceb560">DekiEditor::DownloadProgress</a></li>
+<li>stdStringSize&#160;:&#160;<a class="el" href="struct_deki_builder_abi.html#add6be67ac242861ab016cd23e6127d94">DekiBuilderAbi</a></li>
+<li>stdVectorSize&#160;:&#160;<a class="el" href="struct_deki_builder_abi.html#a6b875360a62f2206ae163eeba8739901">DekiBuilderAbi</a></li>
+<li>stripUnusedComponents&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_build_strip_settings.html#a0093b8233f6a1021ad1f645bde3aa8fd">DekiEditor::BuildStripSettings</a></li>
+<li>stripUnusedPackages&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_build_strip_settings.html#a72a26166fff5ca658cfd38a9f1809254">DekiEditor::BuildStripSettings</a></li>
+<li>structSize&#160;:&#160;<a class="el" href="struct_deki_builder_abi.html#af189e2acf2c48120d9274006df24297f">DekiBuilderAbi</a></li>
 <li>subAssetIndex&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_asset_picker_entry.html#ac818835b150a5fa6bdb7e9232f12842c">DekiEditor::AssetPickerEntry</a>, <a class="el" href="struct_deki_editor_1_1_sub_asset_info.html#a7ebe43582bd778c8eb05ee12e981e13f">DekiEditor::SubAssetInfo</a></li>
+<li>subComponents&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_component_def.html#acfa985bfd055b0074b46a565d29337a0">DekiEditor::ComponentDef</a></li>
 <li>success&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_import_result.html#a3f2b2b3b4b8f0a29d282369df969d5ef">DekiEditor::ImportResult</a></li>
 <li>suffix&#160;:&#160;<a class="el" href="struct_deki_1_1detail_1_1_type_name_probe.html#a3771ad9cbd6b4dab9d9d942d424aeb5f">Deki::detail::TypeNameProbe</a></li>
+<li>summary&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_strip_plan.html#a19ebdb35002ed7a2f3b05eb304a0f515">DekiEditor::StripPlan</a></li>
 <li>SunsetOrange&#160;:&#160;<a class="el" href="class_deki_1_1_color.html#af782cbefc55fe5b1999ac8ee60c4d6e4">Deki::Color</a></li>
+<li>supportedTargets&#160;:&#160;<a class="el" href="struct_deki_editor_1_1_builder_definition.html#aefe4addda3096a94bdde9695bdd45921">DekiEditor::BuilderDefinition</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

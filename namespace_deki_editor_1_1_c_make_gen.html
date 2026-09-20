@@ -1,0 +1,685 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: DekiEditor::CMakeGen Namespace Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   </div>
+   <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki_editor_1_1_c_make_gen.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">DekiEditor::CMakeGen Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:FrameworkDependency" id="r_FrameworkDependency"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html">FrameworkDependency</a></td></tr>
+<tr class="memitem:FeatureEntry" id="r_FeatureEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html">FeatureEntry</a></td></tr>
+<tr class="memitem:PackageEntry" id="r_PackageEntry"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html">PackageEntry</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ad15580c65628d86828d140de60726ca2" id="r_ad15580c65628d86828d140de60726ca2"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a> { <a class="el" href="#ad15580c65628d86828d140de60726ca2a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+, <a class="el" href="#ad15580c65628d86828d140de60726ca2a7fec533aaab2dc4c675964c8ff8a747b">TwoD</a> = 2
+, <a class="el" href="#ad15580c65628d86828d140de60726ca2a31a45a851a6939edcdc88b6533deec13">ThreeD</a> = 3
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5da71b32db273daf61f2e9392ed31481" id="r_a5da71b32db273daf61f2e9392ed31481"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5da71b32db273daf61f2e9392ed31481">MissingCapabilities</a> (const <a class="el" href="struct_package_entry.html">PackageEntry</a> &amp;pkg, const std::set&lt; std::string &gt; &amp;platformCapabilities)</td></tr>
+<tr class="memitem:ab58f7b9a98c6ead0aca489306a4ea9f6" id="r_ab58f7b9a98c6ead0aca489306a4ea9f6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab58f7b9a98c6ead0aca489306a4ea9f6">PackageSupportsPlatform</a> (const <a class="el" href="struct_package_entry.html">PackageEntry</a> &amp;pkg, const std::set&lt; std::string &gt; &amp;platformCapabilities)</td></tr>
+<tr class="memitem:abcb718867b7fdbb26072b3faf49b9616" id="r_abcb718867b7fdbb26072b3faf49b9616"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abcb718867b7fdbb26072b3faf49b9616">ScanPackageManifests</a> (const std::string &amp;projectPath)</td></tr>
+<tr class="memitem:a14a33bb16a49f6a2ef92de2d6aa483d9" id="r_a14a33bb16a49f6a2ef92de2d6aa483d9"><td class="memItemLeft">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a14a33bb16a49f6a2ef92de2d6aa483d9">ResolveActivePackages</a> (const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;allPackages, const std::vector&lt; std::string &gt; &amp;packageDefines, const std::set&lt; std::string &gt; &amp;platformCapabilities={})</td></tr>
+<tr class="memitem:af57732e2f05def1f8975a510500466b0" id="r_af57732e2f05def1f8975a510500466b0"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af57732e2f05def1f8975a510500466b0">ReadProjectTags</a> (const std::string &amp;projectPath)</td></tr>
+<tr class="memitem:a965b84f1b49da3d3337e3c89127bb27c" id="r_a965b84f1b49da3d3337e3c89127bb27c"><td class="memItemLeft"><a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a>&#160;</td><td class="memItemRight"><a class="el" href="#a965b84f1b49da3d3337e3c89127bb27c">ResolveTransformWidth</a> (const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;allPackages, const std::set&lt; std::string &gt; &amp;activeIds, const std::vector&lt; std::string &gt; &amp;projectTags, std::string *why=nullptr)</td></tr>
+<tr class="memitem:a19911fd782e049e6ff774946c3a4b908" id="r_a19911fd782e049e6ff774946c3a4b908"><td class="memItemLeft"><a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a>&#160;</td><td class="memItemRight"><a class="el" href="#a19911fd782e049e6ff774946c3a4b908">ResolveProjectTransformWidth</a> (const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;allPackages, const std::vector&lt; std::string &gt; &amp;projectTags, std::string *why=nullptr)</td></tr>
+<tr class="memitem:ad9e1fa962a19dee94a6a977651e3fa8a" id="r_ad9e1fa962a19dee94a6a977651e3fa8a"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad9e1fa962a19dee94a6a977651e3fa8a">TransformDefines</a> (<a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a> width)</td></tr>
+<tr class="memitem:a2ac839bde82f8b3a9f40107cedf7354c" id="r_a2ac839bde82f8b3a9f40107cedf7354c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2ac839bde82f8b3a9f40107cedf7354c">EmitEngineCoreSourceCollection</a> (std::ostream &amp;out, const std::vector&lt; std::string &gt; &amp;extraExclusions={})</td></tr>
+<tr class="memitem:a060d99f9ed12b7a85ecee185181ceb04" id="r_a060d99f9ed12b7a85ecee185181ceb04"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a060d99f9ed12b7a85ecee185181ceb04">CMakeIdentifier</a> (const std::string &amp;name)</td></tr>
+<tr class="memitem:a6343fba5f78b06bdcf572225308fe9e4" id="r_a6343fba5f78b06bdcf572225308fe9e4"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a6343fba5f78b06bdcf572225308fe9e4">EscapeCppString</a> (const std::string &amp;s)</td></tr>
+<tr class="memitem:ad925751e83ad261d0bf17478ad1dc375" id="r_ad925751e83ad261d0bf17478ad1dc375"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad925751e83ad261d0bf17478ad1dc375">EscapeCMakeString</a> (const std::string &amp;s)</td></tr>
+<tr class="memitem:a193db8ecb5c830094fd8889c943bd0ce" id="r_a193db8ecb5c830094fd8889c943bd0ce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a193db8ecb5c830094fd8889c943bd0ce">EmitActivePackageSources</a> (std::ostream &amp;out, const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;allPackages, const std::set&lt; std::string &gt; &amp;activePackageIds, const std::vector&lt; std::string &gt; &amp;sourceExcludeRegexes={}, bool excludeGenerated=false)</td></tr>
+<tr class="memitem:ac28626e0aa3f4c91fd6c3abac9bee1e2" id="r_ac28626e0aa3f4c91fd6c3abac9bee1e2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac28626e0aa3f4c91fd6c3abac9bee1e2">EmitGeneratedFileSources</a> (std::ostream &amp;out, const std::string &amp;enginePath, const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;allPackages, const std::set&lt; std::string &gt; &amp;activePackageIds)</td></tr>
+<tr class="memitem:add93f4ad4a7558801cdd2970e1fc04eb" id="r_add93f4ad4a7558801cdd2970e1fc04eb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add93f4ad4a7558801cdd2970e1fc04eb">EmitProjectSourceCollection</a> (std::ostream &amp;out, const std::string &amp;relPath=&quot;${DEKI_PROJECT_PATH}/src&quot;, bool excludePluginExports=false)</td></tr>
+<tr class="memitem:ab7ee120d93c2eda07cc5a1102604b627" id="r_ab7ee120d93c2eda07cc5a1102604b627"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab7ee120d93c2eda07cc5a1102604b627">EmitPlatformDefines</a> (std::ostream &amp;out, const std::string &amp;targetName, const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config, const std::vector&lt; std::string &gt; &amp;packageDefines, const std::vector&lt; std::string &gt; &amp;skipDefines={})</td></tr>
+<tr class="memitem:acec07c552fdf9316b468ca144e46b7a0" id="r_acec07c552fdf9316b468ca144e46b7a0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acec07c552fdf9316b468ca144e46b7a0">EmitIncludePaths</a> (std::ostream &amp;out, const std::string &amp;targetName, const std::string &amp;projectSrcRelPath=&quot;${DEKI_PROJECT_PATH}/src&quot;, const std::vector&lt; std::string &gt; &amp;extraPaths={})</td></tr>
+<tr class="memitem:a717eeec3015b5db6e3349b2b5db5749d" id="r_a717eeec3015b5db6e3349b2b5db5749d"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a717eeec3015b5db6e3349b2b5db5749d">GeneratePackageInitFile</a> (const std::filesystem::path &amp;outputDir, const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;allPackages, const std::set&lt; std::string &gt; &amp;activePackageIds, const std::filesystem::path &amp;projectSrcPath=&quot;&quot;, bool engineDefinesSystemInit=false)</td></tr>
+<tr class="memitem:a4f95399a45caf74755beaefe9255cb61" id="r_a4f95399a45caf74755beaefe9255cb61"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4f95399a45caf74755beaefe9255cb61">WriteIfChanged</a> (const std::filesystem::path &amp;filePath, const std::string &amp;content)</td></tr>
+</table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="ad15580c65628d86828d140de60726ca2" name="ad15580c65628d86828d140de60726ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15580c65628d86828d140de60726ca2">&#9670;&#160;</a></span>TransformWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ad15580c65628d86828d140de60726ca2">DekiEditor::CMakeGen::TransformWidth</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad15580c65628d86828d140de60726ca2a6adf97f83acf6453d4a6a4b1070f3754" name="ad15580c65628d86828d140de60726ca2a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad15580c65628d86828d140de60726ca2a7fec533aaab2dc4c675964c8ff8a747b" name="ad15580c65628d86828d140de60726ca2a7fec533aaab2dc4c675964c8ff8a747b"></a>TwoD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad15580c65628d86828d140de60726ca2a31a45a851a6939edcdc88b6533deec13" name="ad15580c65628d86828d140de60726ca2a31a45a851a6939edcdc88b6533deec13"></a>ThreeD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a5da71b32db273daf61f2e9392ed31481" name="a5da71b32db273daf61f2e9392ed31481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da71b32db273daf61f2e9392ed31481">&#9670;&#160;</a></span>MissingCapabilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DekiEditor::CMakeGen::MissingCapabilities </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_package_entry.html">PackageEntry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pkg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>platformCapabilities</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab58f7b9a98c6ead0aca489306a4ea9f6" name="ab58f7b9a98c6ead0aca489306a4ea9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58f7b9a98c6ead0aca489306a4ea9f6">&#9670;&#160;</a></span>PackageSupportsPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::CMakeGen::PackageSupportsPlatform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_package_entry.html">PackageEntry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pkg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>platformCapabilities</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcb718867b7fdbb26072b3faf49b9616" name="abcb718867b7fdbb26072b3faf49b9616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb718867b7fdbb26072b3faf49b9616">&#9670;&#160;</a></span>ScanPackageManifests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; DekiEditor::CMakeGen::ScanPackageManifests </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14a33bb16a49f6a2ef92de2d6aa483d9" name="a14a33bb16a49f6a2ef92de2d6aa483d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a33bb16a49f6a2ef92de2d6aa483d9">&#9670;&#160;</a></span>ResolveActivePackages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; std::string &gt; DekiEditor::CMakeGen::ResolveActivePackages </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>packageDefines</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>platformCapabilities</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af57732e2f05def1f8975a510500466b0" name="af57732e2f05def1f8975a510500466b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57732e2f05def1f8975a510500466b0">&#9670;&#160;</a></span>ReadProjectTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DekiEditor::CMakeGen::ReadProjectTags </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a965b84f1b49da3d3337e3c89127bb27c" name="a965b84f1b49da3d3337e3c89127bb27c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965b84f1b49da3d3337e3c89127bb27c">&#9670;&#160;</a></span>ResolveTransformWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a> DekiEditor::CMakeGen::ResolveTransformWidth </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>activeIds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>projectTags</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>why</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19911fd782e049e6ff774946c3a4b908" name="a19911fd782e049e6ff774946c3a4b908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19911fd782e049e6ff774946c3a4b908">&#9670;&#160;</a></span>ResolveProjectTransformWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a> DekiEditor::CMakeGen::ResolveProjectTransformWidth </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>projectTags</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>why</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9e1fa962a19dee94a6a977651e3fa8a" name="ad9e1fa962a19dee94a6a977651e3fa8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e1fa962a19dee94a6a977651e3fa8a">&#9670;&#160;</a></span>TransformDefines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DekiEditor::CMakeGen::TransformDefines </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad15580c65628d86828d140de60726ca2">TransformWidth</a></td>          <td class="paramname"><span class="paramname"><em>width</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ac839bde82f8b3a9f40107cedf7354c" name="a2ac839bde82f8b3a9f40107cedf7354c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac839bde82f8b3a9f40107cedf7354c">&#9670;&#160;</a></span>EmitEngineCoreSourceCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::CMakeGen::EmitEngineCoreSourceCollection </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>extraExclusions</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a060d99f9ed12b7a85ecee185181ceb04" name="a060d99f9ed12b7a85ecee185181ceb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060d99f9ed12b7a85ecee185181ceb04">&#9670;&#160;</a></span>CMakeIdentifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::CMakeGen::CMakeIdentifier </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6343fba5f78b06bdcf572225308fe9e4" name="a6343fba5f78b06bdcf572225308fe9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6343fba5f78b06bdcf572225308fe9e4">&#9670;&#160;</a></span>EscapeCppString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::CMakeGen::EscapeCppString </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad925751e83ad261d0bf17478ad1dc375" name="ad925751e83ad261d0bf17478ad1dc375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad925751e83ad261d0bf17478ad1dc375">&#9670;&#160;</a></span>EscapeCMakeString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::CMakeGen::EscapeCMakeString </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a193db8ecb5c830094fd8889c943bd0ce" name="a193db8ecb5c830094fd8889c943bd0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193db8ecb5c830094fd8889c943bd0ce">&#9670;&#160;</a></span>EmitActivePackageSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::CMakeGen::EmitActivePackageSources </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>activePackageIds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceExcludeRegexes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>excludeGenerated</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac28626e0aa3f4c91fd6c3abac9bee1e2" name="ac28626e0aa3f4c91fd6c3abac9bee1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28626e0aa3f4c91fd6c3abac9bee1e2">&#9670;&#160;</a></span>EmitGeneratedFileSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::CMakeGen::EmitGeneratedFileSources </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>enginePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>activePackageIds</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add93f4ad4a7558801cdd2970e1fc04eb" name="add93f4ad4a7558801cdd2970e1fc04eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add93f4ad4a7558801cdd2970e1fc04eb">&#9670;&#160;</a></span>EmitProjectSourceCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::CMakeGen::EmitProjectSourceCollection </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>relPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;${DEKI_PROJECT_PATH}/src&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>excludePluginExports</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7ee120d93c2eda07cc5a1102604b627" name="ab7ee120d93c2eda07cc5a1102604b627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7ee120d93c2eda07cc5a1102604b627">&#9670;&#160;</a></span>EmitPlatformDefines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::CMakeGen::EmitPlatformDefines </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>packageDefines</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>skipDefines</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acec07c552fdf9316b468ca144e46b7a0" name="acec07c552fdf9316b468ca144e46b7a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec07c552fdf9316b468ca144e46b7a0">&#9670;&#160;</a></span>EmitIncludePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::CMakeGen::EmitIncludePaths </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>targetName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectSrcRelPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;${DEKI_PROJECT_PATH}/src&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>extraPaths</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a717eeec3015b5db6e3349b2b5db5749d" name="a717eeec3015b5db6e3349b2b5db5749d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717eeec3015b5db6e3349b2b5db5749d">&#9670;&#160;</a></span>GeneratePackageInitFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::CMakeGen::GeneratePackageInitFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::filesystem::path &amp;</td>          <td class="paramname"><span class="paramname"><em>outputDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_package_entry.html">PackageEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allPackages</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>activePackageIds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::filesystem::path &amp;</td>          <td class="paramname"><span class="paramname"><em>projectSrcPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>engineDefinesSystemInit</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f95399a45caf74755beaefe9255cb61" name="a4f95399a45caf74755beaefe9255cb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f95399a45caf74755beaefe9255cb61">&#9670;&#160;</a></span>WriteIfChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::CMakeGen::WriteIfChanged </td>
+          <td>(</td>
+          <td class="paramtype">const std::filesystem::path &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>content</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_deki_editor.html">DekiEditor</a></li><li class="navelem"><a href="namespace_deki_editor_1_1_c_make_gen.html">CMakeGen</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
