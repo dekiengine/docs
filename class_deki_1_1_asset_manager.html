@@ -281,7 +281,7 @@ template&lt;typename T&gt; </div>
 <p>For non-cacheable types (e.g., <a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a>), each call always returns a fresh instance. When cache=true, the raw file bytes are pinned in RAM so subsequent loads skip disk I/O but still return a new instance with the original data.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Asset type — any registered loader type (<a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> is core; packages register their own via <a class="el" href="#a53c834504fc4c6d1ee5c2e6c44815361" title="Register an asset loader for a type name.">AssetManager::RegisterLoader</a>) </td></tr>
+    <tr><td class="paramname">T</td><td>Asset type - any registered loader type (<a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> is core; packages register their own via <a class="el" href="#a53c834504fc4c6d1ee5c2e6c44815361" title="Register an asset loader for a type name.">AssetManager::RegisterLoader</a>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -615,7 +615,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Advance the invalidation epoch. </p>
-<p>Forces every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Type-safe asset reference wrapper.">AssetRef</a> to drop its cached pointer and re-resolve on its next <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855" title="Get the singleton instance.">Get()</a>. Call when the set of resolvable assets changes in a way that isn't a free/replace of existing memory — e.g. an asset is imported live (or restored via undo), so refs that previously resolved to null can reconnect instead of staying empty. </p>
+<p>Forces every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Type-safe asset reference wrapper.">AssetRef</a> to drop its cached pointer and re-resolve on its next <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855" title="Get the singleton instance.">Get()</a>. Call when the set of resolvable assets changes in a way that isn't a free/replace of existing memory - e.g. an asset is imported live (or restored via undo), so refs that previously resolved to null can reconnect instead of staying empty. </p>
 
 </div>
 </div>
@@ -637,7 +637,7 @@ template&lt;typename T&gt; </div>
 <p>Check if an asset type is cacheable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">typeName</td><td>Asset type name (e.g., "Scene" — package types register via RegisterLoader) </td></tr>
+    <tr><td class="paramname">typeName</td><td>Asset type name (e.g., "Scene" - package types register via RegisterLoader) </td></tr>
   </table>
   </dd>
 </dl>

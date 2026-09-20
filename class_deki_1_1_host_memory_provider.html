@@ -308,7 +308,7 @@ Public Member Functions</h2></td></tr>
 <p>Check if external RAM (PSRAM, SDRAM, etc.) is available. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if external RAM is present and usable</dd></dl>
 <p>Does this board have <span class="tt">region</span> as a distinct place to put memory?</p>
-<p>A platform with one heap answers true for the regions it can satisfy and false for the rest — and answering true for "external" when there is no PSRAM is not a lie if every allocation is equally fast, it is a statement that the distinction does not exist here.</p>
+<p>A platform with one heap answers true for the regions it can satisfy and false for the rest - and answering true for "external" when there is no PSRAM is not a lie if every allocation is equally fast, it is a statement that the distinction does not exist here.</p>
 <p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> asks this once at startup to report what the board has. </p>
 
 <p>Implements <a class="el" href="class_deki_1_1_i_memory_provider.html#a9100a788833bdf32f750f1532da94c24">Deki::IMemoryProvider</a>.</p>
@@ -354,7 +354,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The block, or nullptr — including for a region this board does not serve. There is no substitution.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The block, or nullptr - including for a region this board does not serve. There is no substitution.</dd></dl>
 <p>One entry point rather than one virtual per region, because the set of regions is open: a package can define "rtc" without an engine release, and no interface with a method per region could carry that. A provider dispatches on <span class="tt">region.id</span>, which is a compile-time constant, and returns nullptr for anything it does not recognise. </p>
 
 <p>Implements <a class="el" href="class_deki_1_1_i_memory_provider.html#a89385c115474ccb72142b13d7fa58eca">Deki::IMemoryProvider</a>.</p>

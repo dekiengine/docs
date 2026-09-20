@@ -713,7 +713,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Result of a cache-handler invocation. </p>
-<p>The handler's return value tells ProcessAsset what to do with the asset's cache state — without the handler having to mutate <a class="el" href="struct_deki_editor_1_1_asset_cache_context.html" title="Context passed to asset cache handlers.">AssetCacheContext</a> or touch <a class="el" href="struct_deki_editor_1_1_asset_info.html" title="Information about a discovered asset.">AssetInfo</a> directly. </p>
+<p>The handler's return value tells ProcessAsset what to do with the asset's cache state - without the handler having to mutate <a class="el" href="struct_deki_editor_1_1_asset_cache_context.html" title="Context passed to asset cache handlers.">AssetCacheContext</a> or touch <a class="el" href="struct_deki_editor_1_1_asset_info.html" title="Information about a discovered asset.">AssetInfo</a> directly. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4209b652941c08ae4d42581f7462c61da2d0f8340a2e4ba7158dd9f269b65b482" name="a4209b652941c08ae4d42581f7462c61da2d0f8340a2e4ba7158dd9f269b65b482"></a>NotCached&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4209b652941c08ae4d42581f7462c61da064bede9a565190bdde35f978e1b7193" name="a4209b652941c08ae4d42581f7462c61da064bede9a565190bdde35f978e1b7193"></a>Cached&#160;</td><td class="fielddoc"></td></tr>
@@ -2984,7 +2984,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Where a project's generated content lives. </p>
-<p>This is the public, package-visible definition of the layout, and the only one. <span class="tt">src/core/ProjectPaths.h</span> delegates here rather than restating it — an earlier split between the two is exactly how <span class="tt">cache/</span> ended up being recreated at the project root after everything else had moved under <span class="tt">generated/</span>.</p>
+<p>This is the public, package-visible definition of the layout, and the only one. <span class="tt">src/core/ProjectPaths.h</span> delegates here rather than restating it - an earlier split between the two is exactly how <span class="tt">cache/</span> ended up being recreated at the project root after everything else had moved under <span class="tt">generated/</span>.</p>
 <p>Header-only and dependency-free so a package can include it without linking anything.</p>
 <p>Normalise a project root to an absolute path.</p>
 <p>Every path below is built on this. A relative project root is not merely untidy: package DLLs are loaded with LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR, which rejects a relative path outright (ERROR_INVALID_PARAMETER), so opening a project by a relative path made every package fail to load with an error that pointed at the DLL rather than the path. Resolving once, here, means no caller has to remember. </p>
@@ -3043,7 +3043,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The cache directory as a project-relative path, forward-slashed. </p>
-<p>The asset database stores cache locations relative to the project so a project stays portable between machines. That relative form has to agree with the absolute one below — when they were separate literals, the pipeline wrote to one location and recorded the other. </p>
+<p>The asset database stores cache locations relative to the project so a project stays portable between machines. That relative form has to agree with the absolute one below - when they were separate literals, the pipeline wrote to one location and recorded the other. </p>
 
 </div>
 </div>

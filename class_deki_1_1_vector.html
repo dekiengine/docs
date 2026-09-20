@@ -181,14 +181,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68d511582b5cf3e0c344cbe251ac3a10" id="r_a68d511582b5cf3e0c344cbe251ac3a10"><td class="memItemLeft">const T *&#160;</td><td class="memItemRight"><a class="el" href="#a68d511582b5cf3e0c344cbe251ac3a10">begin</a> () const</td></tr>
 <tr class="memitem:a319f2743c3d0bce15273add0d5b96803" id="r_a319f2743c3d0bce15273add0d5b96803"><td class="memItemLeft">const T *&#160;</td><td class="memItemRight"><a class="el" href="#a319f2743c3d0bce15273add0d5b96803">end</a> () const</td></tr>
 <tr class="memitem:ad066aebe87f8c513fe3c1a5b71575855" id="r_ad066aebe87f8c513fe3c1a5b71575855"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad066aebe87f8c513fe3c1a5b71575855">Back</a> ()</td></tr>
-<tr class="memdesc:ad066aebe87f8c513fe3c1a5b71575855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elements, not capacity — so <span class="tt">for (auto&amp; x : v)</span> sees what <a class="el" href="#a2b23b84b5378480ace6004751d133db8">Size()</a> says.  <br /></td></tr>
+<tr class="memdesc:ad066aebe87f8c513fe3c1a5b71575855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elements, not capacity - so <span class="tt">for (auto&amp; x : v)</span> sees what <a class="el" href="#a2b23b84b5378480ace6004751d133db8">Size()</a> says.  <br /></td></tr>
 <tr class="memitem:af93a9811ac451ff7a5711dfa5d134a79" id="r_af93a9811ac451ff7a5711dfa5d134a79"><td class="memItemLeft">const T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af93a9811ac451ff7a5711dfa5d134a79">Back</a> () const</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class Deki::Vector&lt; T &gt;</div><p>Growable array of <span class="tt">T</span> with failable growth. </p>
 <p>Move-only, like <a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Buffer</a>, and for the same reason: copying needs a second allocation that can fail, which a copy constructor cannot report.</p>
-<p>T must be trivially copyable and trivially destructible — the same constraint <a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Buffer</a> imposes, enforced by it. Growth moves elements with a memcpy and destruction frees the block, so a T with a destructor or a non-trivial move would be silently mishandled. These are the plain structs and handles device code keeps lists of. </p>
+<p>T must be trivially copyable and trivially destructible - the same constraint <a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Buffer</a> imposes, enforced by it. Growth moves elements with a memcpy and destruction frees the block, so a T with a destructor or a non-trivial move would be silently mishandled. These are the plain structs and handles device code keeps lists of. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a25df29d2fd57d5974813b04ebe97db9e" name="a25df29d2fd57d5974813b04ebe97db9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25df29d2fd57d5974813b04ebe97db9e">&#9670;&#160;</a></span>Vector() <span class="overload">[1/4]</span></h2>
@@ -413,7 +413,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Make room for at least <span class="tt">count</span> elements. </p>
-<p>Say this once, up front, where a failure is easy to handle — then the PushBack calls that follow cannot fail. That is the pattern worth writing on a device: one check instead of one per element.</p>
+<p>Say this once, up front, where a failure is easy to handle - then the PushBack calls that follow cannot fail. That is the pattern worth writing on a device: one check instead of one per element.</p>
 <p>Never shrinks. Returns true when the capacity is already sufficient.</p>
 <p>Placement comes from the constructor, so a growth inside PushBack lands in the same region as the storage it replaces. </p>
 
@@ -505,7 +505,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Remove the element at <span class="tt">index</span>, filling the hole with the last one. </p>
-<p>O(1), and it does not preserve order — which is what a device wants for the lists it keeps (live entities, active timers) and is the same trick ParticlePool's KillSwap uses. For order-preserving removal, rebuild. </p>
+<p>O(1), and it does not preserve order - which is what a device wants for the lists it keeps (live entities, active timers) and is the same trick ParticlePool's KillSwap uses. For order-preserving removal, rebuild. </p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Elements, not capacity — so <span class="tt">for (auto&amp; x : v)</span> sees what <a class="el" href="#a2b23b84b5378480ace6004751d133db8">Size()</a> says. </p>
+<p>Elements, not capacity - so <span class="tt">for (auto&amp; x : v)</span> sees what <a class="el" href="#a2b23b84b5378480ace6004751d133db8">Size()</a> says. </p>
 
 </div>
 </div>

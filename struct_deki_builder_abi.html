@@ -168,7 +168,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Get the plugin name for display in the editor. </p>
 <dl class="section return"><dt>Returns</dt><dd>Human-readable name (e.g., "Pico SDK Builder")</dd></dl>
 <p>What the plugin was compiled against.</p>
-<p>A builder plugin shares C++ objects with the editor — PlatformConfig by reference, std::string and std::vector across the boundary, a vtable it inherits. That only works when both sides agree on the layout of those things, and when they disagree the failure is a corrupted field or a crash somewhere unrelated, not an error.</p>
+<p>A builder plugin shares C++ objects with the editor - PlatformConfig by reference, std::string and std::vector across the boundary, a vtable it inherits. That only works when both sides agree on the layout of those things, and when they disagree the failure is a corrupted field or a crash somewhere unrelated, not an error.</p>
 <p>So the editor refuses to load a plugin that cannot prove it matches. This mirrors the reflection ABI guard the package loader already uses.</p>
 <p>Read <span class="tt"><a class="el" href="#ac280ea39072d14383fb0cb59ce360bc9" title="kDekiBuilderAbiVersion the plugin compiled with">version</a></span> THROUGH the pointer before copying the struct: if the plugin was built against a different revision, the struct it returns may be a different size, and copying it first is the bug PluginLoader documents. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>

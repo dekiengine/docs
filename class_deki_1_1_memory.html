@@ -195,7 +195,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a585469b9a34a1dbecec8ee0439f45634" id="r_a585469b9a34a1dbecec8ee0439f45634"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a585469b9a34a1dbecec8ee0439f45634">Internal</a> {&quot;internal&quot;}</td></tr>
-<tr class="memdesc:a585469b9a34a1dbecec8ee0439f45634"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM. Fast, and the scarce one — a few hundred KB on an ESP32-S3.  <br /></td></tr>
+<tr class="memdesc:a585469b9a34a1dbecec8ee0439f45634"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM. Fast, and the scarce one - a few hundred KB on an ESP32-S3.  <br /></td></tr>
 <tr class="memitem:a44e1e0894dcca1ef22f5f59cf04c75ee" id="r_a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee">External</a> {&quot;external&quot;}</td></tr>
 <tr class="memdesc:a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">External RAM (PSRAM) where the board has it.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -361,7 +361,7 @@ Friends</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes </td></tr>
     <tr><td class="paramname">region</td><td>Where it lives. Resolved once, with no fallback to any other region; a region the board's provider does not serve returns nullptr and is named in the log </td></tr>
-    <tr><td class="paramname">ctx</td><td>Who is asking. Omit it — the compiler fills in the call site </td></tr>
+    <tr><td class="paramname">ctx</td><td>Who is asking. Omit it - the compiler fills in the call site </td></tr>
   </table>
   </dd>
 </dl>
@@ -439,7 +439,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deprecated: name the region instead of passing a flag for it. </p>
-<p>true maps to <a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee" title="External RAM (PSRAM) where the board has it.">Deki::Memory::External</a> and false to <a class="el" href="#a585469b9a34a1dbecec8ee0439f45634" title="Internal RAM. Fast, and the scarce one — a few hundred KB on an ESP32-S3.">Deki::Memory::Internal</a>. </p>
+<p>true maps to <a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee" title="External RAM (PSRAM) where the board has it.">Deki::Memory::External</a> and false to <a class="el" href="#a585469b9a34a1dbecec8ee0439f45634" title="Internal RAM. Fast, and the scarce one - a few hundred KB on an ESP32-S3.">Deki::Memory::Internal</a>. </p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size in bytes to allocate </td></tr>
-    <tr><td class="paramname">ctx</td><td>Who is asking. Omit it — the compiler fills in the call site </td></tr>
+    <tr><td class="paramname">ctx</td><td>Who is asking. Omit it - the compiler fills in the call site </td></tr>
   </table>
   </dd>
 </dl>
@@ -666,7 +666,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Get available internal RAM. </p>
-<dl class="section return"><dt>Returns</dt><dd>Free internal RAM in bytes, or 0 where the platform does not report it (the desktop provider does not — the number is meaningless where the OS pages)</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Free internal RAM in bytes, or 0 where the platform does not report it (the desktop provider does not - the number is meaningless where the OS pages)</dd></dl>
 <p>The companion to GetAvailableExternal, which existed alone: the free internal figure is the one a project is actually sized against, and it was reachable only through a provider a caller does not have. </p>
 
 </div>
@@ -834,7 +834,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM. Fast, and the scarce one — a few hundred KB on an ESP32-S3. </p>
+<p><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM. Fast, and the scarce one - a few hundred KB on an ESP32-S3. </p>
 
 </div>
 </div>

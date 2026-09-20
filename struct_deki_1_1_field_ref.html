@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_1_
 </div><!--header-->
 <div class="contents">
 
-<p>Compact field descriptor — the ONE piece of reflection that exists on every platform, embedded included.  
+<p>Compact field descriptor - the ONE piece of reflection that exists on every platform, embedded included.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/reflection/Property.h&gt;</code></p>
@@ -155,7 +155,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad1d09eac0e0071d8e155dac4ef304666" id="r_ad1d09eac0e0071d8e155dac4ef304666"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#ad1d09eac0e0071d8e155dac4ef304666">enumSize</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Compact field descriptor — the ONE piece of reflection that exists on every platform, embedded included. </p>
+<div class="textblock"><p>Compact field descriptor - the ONE piece of reflection that exists on every platform, embedded included. </p>
 <p><a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">PropertyInfo</a> (below) is the editor's rich metadata: display names, tooltips, ranges, enum value names. It is compiled only under DEKI_EDITOR and costs far too much flash for a device build. But a device still needs to answer "where does field X of component Y live, and what type is it" for data-driven systems (a state machine writing a property, a tween driving a field). That is exactly this struct: 8 bytes per field, in flash.</p>
 <p>Codegen emits one flattened table per concrete component (own + inherited fields) and registers it with <a class="el" href="class_deki_1_1_component_registry.html#a300eb882b992c1144bb1f4a989501fd6" title="Register a component&#39;s flattened field table (idempotent per typeId).">ComponentRegistry::RegisterFields</a> on ALL platforms. Look one up with ComponentRegistry::FindField(typeId, nameHash). </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>

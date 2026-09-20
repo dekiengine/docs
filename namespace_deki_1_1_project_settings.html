@@ -479,7 +479,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Serialize project settings to a dproject.bin image (editor only). </p>
-<p>Returns the bytes rather than filling a caller-supplied pointer. The v5 packageSettings chunk grows with the settings registry, so no call site can know the size up front — the previous signature took a bare uint8_t* with no capacity argument and a doc comment claiming 256 bytes would do, while the three call sites each guessed a 4096-byte stack array and LoadFromFile accepted files up to MAX_FILE_SIZE (16384) back.</p>
+<p>Returns the bytes rather than filling a caller-supplied pointer. The v5 packageSettings chunk grows with the settings registry, so no call site can know the size up front - the previous signature took a bare uint8_t* with no capacity argument and a doc comment claiming 256 bytes would do, while the three call sites each guessed a 4096-byte stack array and LoadFromFile accepted files up to MAX_FILE_SIZE (16384) back.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">displayWidth</td><td>Target display width </td></tr>

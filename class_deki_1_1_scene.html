@@ -204,7 +204,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a27b22d1f7f666ff86fec7c0dba00e782" id="r_a27b22d1f7f666ff86fec7c0dba00e782"><td class="memItemLeft">static std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a27b22d1f7f666ff86fec7c0dba00e782">CollectLegacyProperties</a> ()</td></tr>
 <tr class="memdesc:a27b22d1f7f666ff86fec7c0dba00e782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}: the file still carries the name from before a rename.  <br /></td></tr>
 <tr class="memitem:a6728e3445ff0c953e7f0721ae0e0465b" id="r_a6728e3445ff0c953e7f0721ae0e0465b"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a6728e3445ff0c953e7f0721ae0e0465b">ComponentPropertiesToJson</a> (const <a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta)</td></tr>
-<tr class="memdesc:a6728e3445ff0c953e7f0721ae0e0465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">comp</span> — its base class's first, then its own — as the JSON a scene file holds for it, keyed by reflected name.  <br /></td></tr>
+<tr class="memdesc:a6728e3445ff0c953e7f0721ae0e0465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">comp</span> - its base class's first, then its own - as the JSON a scene file holds for it, keyed by reflected name.  <br /></td></tr>
 <tr class="memitem:a7d60f51bbf7e86401165a6ba106bd164" id="r_a7d60f51bbf7e86401165a6ba106bd164"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a7d60f51bbf7e86401165a6ba106bd164">ComponentDefaultsToJson</a> (const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta)</td></tr>
 <tr class="memdesc:a7d60f51bbf7e86401165a6ba106bd164"><td class="mdescLeft">&#160;</td><td class="mdescRight">ComponentPropertiesToJson for a default-constructed instance of <span class="tt">meta</span>.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -305,7 +305,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Asset-relative path without extension (e.g., "scenes/settings/settings") </td></tr>
-    <tr><td class="paramname">cache</td><td>If true, pins the raw file bytes in RAM so subsequent loads skip disk I/O. If false (default), reads from disk every time. Either way, a fresh instance is returned — cached bytes are never mutated. </td></tr>
+    <tr><td class="paramname">cache</td><td>If true, pins the raw file bytes in RAM so subsequent loads skip disk I/O. If false (default), reads from disk every time. Either way, a fresh instance is returned - cached bytes are never mutated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -868,7 +868,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Property keys found in a scene file that no component's current metadata recognises, as {component type name, key}. </p>
-<p>Reflected member names ARE the scene-file format: reflection_codegen emits each C++ identifier as a HashString key, with no opt-in gate. So renaming a reflected member silently changes the on-disk key, the parser's switch falls through, and the property reverts to its default — no error, no log line. The value itself survives (unknown keys are re-emitted on save), but the behaviour is gone.</p>
+<p>Reflected member names ARE the scene-file format: reflection_codegen emits each C++ identifier as a HashString key, with no opt-in gate. So renaming a reflected member silently changes the on-disk key, the parser's switch falls through, and the property reverts to its default - no error, no log line. The value itself survives (unknown keys are re-emitted on save), but the behaviour is gone.</p>
 <p>This is the detector for that. Load every scene in a project and assert this comes back empty; a missed rename names itself. Populated on load, so it reflects the scenes loaded so far in this session. </p>
 
 </div>
@@ -956,7 +956,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Every reflected property of <span class="tt">comp</span> — its base class's first, then its own — as the JSON a scene file holds for it, keyed by reflected name. </p>
+<p>Every reflected property of <span class="tt">comp</span> - its base class's first, then its own - as the JSON a scene file holds for it, keyed by reflected name. </p>
 <p>The same writer SaveToFile uses, so a value prints exactly as it would be saved. The docs build reads default values through this. </p>
 
 </div>
@@ -1005,7 +1005,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Out of line: the callback is stored in a side table in Scene.cpp, not in a member, so that sizeof(Scene) does not depend on DEKI_EDITOR. </p>
-<p>std::function is 32 bytes here — too much to carry unconditionally on an embedded target that can never invoke it. </p>
+<p>std::function is 32 bytes here - too much to carry unconditionally on an embedded target that can never invoke it. </p>
 
 </div>
 </div>

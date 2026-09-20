@@ -338,7 +338,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Drop every factory registered after the first <span class="tt">count</span>, keeping the earlier ones untouched. </p>
 <p>Entries are appended in DLL load order, so a count taken before a DLL was loaded marks exactly where that DLL's registrations begin. Trimming back to it removes one DLL's entries without disturbing the packages loaded before it, which a blunt <a class="el" href="#ae2b9608a4025f625c4dc4dcf347bccc9" title="Clear all factories (must be called before package DLLs are unloaded).">Clear()</a> would also destroy (their static registrars never rerun without a DLL reload).</p>
-<p>MUST run while the owning DLL is still loaded. A std::function carries a pointer to manager code inside the DLL that created it, and that code runs on COPY and on DESTRUCTION alike — so after FreeLibrary even discarding the entry faults, and there is no way to recover. This is the only safe order: trim, then unload. </p>
+<p>MUST run while the owning DLL is still loaded. A std::function carries a pointer to manager code inside the DLL that created it, and that code runs on COPY and on DESTRUCTION alike - so after FreeLibrary even discarding the entry faults, and there is no way to recover. This is the only safe order: trim, then unload. </p>
 
 </div>
 </div>

@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The one definition of where things live inside a project. </p>
 <p>Everything the editor generates lives under a single <span class="tt">generated/</span> folder, so a project's root shows only source and settings. That matters for two reasons beyond tidiness: the ignore file becomes one line instead of an inventory that drifts out of date, and a user who needs to recover from bad generated state has one place to look rather than four.</p>
-<p>Call sites must not join these paths by hand. They did before, in 26 places, and the copies disagreed — an uninstall routine cleaned a <span class="tt">bin/_hotreload_active</span> that had never existed at that path, so stale package copies survived and were loaded again on the next launch.</p>
+<p>Call sites must not join these paths by hand. They did before, in 26 places, and the copies disagreed - an uninstall routine cleaned a <span class="tt">bin/_hotreload_active</span> that had never existed at that path, so stale package copies survived and were loaded again on the next launch.</p>
 <p>Every path is derived from the project root, never from an absolute location recorded anywhere. A project directory can be copied to another machine and opened with no fixups. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a806c9e4ce4e8dfa3d8a9cb21cc5d10d2" name="a806c9e4ce4e8dfa3d8a9cb21cc5d10d2"></a>
@@ -375,7 +375,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Rename a project's "modules" to "packages" (the pre-0.9 layout; "modules" is the legacy name). </p>
-<p>They were always packages — versioned, published, resolved from a registry and pinned by a lockfile. Calling them packages collided with the C++ and CMake senses of the word in the same codebase.</p>
+<p>They were always packages - versioned, published, resolved from a registry and pinned by a lockfile. Calling them packages collided with the C++ and CMake senses of the word in the same codebase.</p>
 <p>Renames the sources directory, the manifest and lock, and the per-package settings folder. Best-effort per entry: each is independently useful and a missed one is retried on the next open. </p>
 
 </div>

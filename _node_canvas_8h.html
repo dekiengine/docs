@@ -163,7 +163,7 @@ Namespaces</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Immediate-mode node-graph view widget: pan/zoom canvas, nodes with labeled pins, bezier links, link dragging, selection, context-menu and delete events. </p>
-<p>The canvas is a pure VIEW: the caller owns the graph data and passes it in every frame; the canvas owns only view state (pan/zoom, in-progress drags) and reports interactions through NodeCanvasEvents. It draws exclusively via EditorUI (it lives in deki-editor.dll and crosses the DLL boundary), and it deliberately knows nothing about node types, documents, or undo — the hosting window (app-side) translates events into commands.</p>
+<p>The canvas is a pure VIEW: the caller owns the graph data and passes it in every frame; the canvas owns only view state (pan/zoom, in-progress drags) and reports interactions through NodeCanvasEvents. It draws exclusively via EditorUI (it lives in deki-editor.dll and crosses the DLL boundary), and it deliberately knows nothing about node types, documents, or undo - the hosting window (app-side) translates events into commands.</p>
 <p>Coordinates: node x/y are graph units (css px at zoom 1). The canvas applies zoom and the global DPI scale to geometry, and sizes text via DrawTextCss so labels match widget text sizing at any DPI. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
