@@ -1,0 +1,379 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: Memory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Memory </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md_2guide-memory"></a></p>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-the-rule"></a>
+The rule</h1>
+<p><b>Every allocation in code that runs on a device goes through the engine.</b> No <span class="tt">new[]</span>, no <span class="tt">malloc</span>, no <span class="tt">heap_caps_*</span> in the engine's runtime code or in a package's. <span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> is the orchestrator; <span class="tt"><a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Deki::Buffer</a>&lt;T&gt;</span> is what you almost always want.</p>
+<p>This is not a style preference, and it is enforced by <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_allocations.py"><span class="tt">tools/ci/check_allocations.py</span></a>. Three reasons it has to hold:</p>
+<ol type="1">
+<li><b><span class="tt">new[]</span> cannot fail gracefully.</b> ESP-IDF builds with exceptions off (<span class="tt">CONFIG_COMPILER_CXX_EXCEPTIONS</span> is not set), so a failed allocation reaches <span class="tt">__cxa_allocate_exception</span> and calls <span class="tt">abort()</span> - the board reboots. There is no catch site to add. <span class="tt">std::nothrow</span> does <em>not</em> help: libstdc++ implements the nothrow form by calling the throwing form inside a <span class="tt">try</span>/<span class="tt">catch</span> that <span class="tt">-fno-exceptions</span> has removed, so it aborts identically. This was diagnosed from a backtrace showing <span class="tt">operator new[](unsigned int, std::nothrow_t const&amp;)</span> calling straight into the throwing form.</li>
+<li><b>Only the engine knows where memory should live.</b> Whether this board has external RAM, how much slower it is, and whether a peripheral can reach a given region are properties of the platform, not of the caller. A caller that picks a region is wrong on the next board.</li>
+<li><b><span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> is also the accounting and the leak check.</b> Statistics, the double-free guard and (in debug builds) the leak table all live behind it. An allocation that skips it is invisible.</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-dekibuffert---use-this"></a>
+<span class="tt">Deki::Buffer&lt;T&gt;</span> - use this</h1>
+<p><span class="tt">&lt;<a class="el" href="_buffer_8h.html">deki/providers/Buffer.h</a>&gt;</span>. An owning array that allocates through <span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> and frees itself.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_buffer_8h.html">deki/providers/Buffer.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_class" href="class_deki_1_1_buffer.html">Deki::Buffer&lt;uint8_t&gt;</a> baked;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (!baked.<a class="code hl_function" href="class_deki_1_1_buffer.html#a3ad60a39fe2acc9275d41adf6eb46ad8">Allocate</a>(width * height * 2, <a class="code hl_variable" href="class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee">Deki::Memory::External</a>))</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_define" href="_log_system_8h.html#ae92a440abe0580d432cdb91c4cb0c192">DEKI_LOG_WARNING</a>(<span class="stringliteral">&quot;no room for a %dx%d bake; not drawing it&quot;</span>, width, height);</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;          <span class="comment">// carry on without the thing, do not abort</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">RenderInto(baked.<a class="code hl_function" href="class_deki_1_1_buffer.html#af3e6d5021ea6de915366edc5d57b1815">Data</a>());  <span class="comment">// Data(), Count(), Bytes(), operator[], begin/end</span></div>
+<div class="ttc" id="a_buffer_8h_html"><div class="ttname"><a href="_buffer_8h.html">Buffer.h</a></div></div>
+<div class="ttc" id="a_log_system_8h_html_ae92a440abe0580d432cdb91c4cb0c192"><div class="ttname"><a href="_log_system_8h.html#ae92a440abe0580d432cdb91c4cb0c192">DEKI_LOG_WARNING</a></div><div class="ttdeci">#define DEKI_LOG_WARNING(fmt,...)</div><div class="ttdef"><b>Definition</b> LogSystem.h:61</div></div>
+<div class="ttc" id="aclass_deki_1_1_buffer_html"><div class="ttname"><a href="class_deki_1_1_buffer.html">Deki::Buffer</a></div><div class="ttdoc">Owning array of T, freed when it goes out of scope.</div><div class="ttdef"><b>Definition</b> Buffer.h:46</div></div>
+<div class="ttc" id="aclass_deki_1_1_buffer_html_a3ad60a39fe2acc9275d41adf6eb46ad8"><div class="ttname"><a href="class_deki_1_1_buffer.html#a3ad60a39fe2acc9275d41adf6eb46ad8">Deki::Buffer::Allocate</a></div><div class="ttdeci">bool Allocate(size_t count, Memory::Region region, AllocContext ctx={})</div><div class="ttdoc">Allocates count elements, replacing what it held.</div><div class="ttdef"><b>Definition</b> Buffer.h:91</div></div>
+<div class="ttc" id="aclass_deki_1_1_buffer_html_af3e6d5021ea6de915366edc5d57b1815"><div class="ttname"><a href="class_deki_1_1_buffer.html#af3e6d5021ea6de915366edc5d57b1815">Deki::Buffer::Data</a></div><div class="ttdeci">T * Data()</div><div class="ttdef"><b>Definition</b> Buffer.h:144</div></div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a44e1e0894dcca1ef22f5f59cf04c75ee"><div class="ttname"><a href="class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee">Deki::Memory::External</a></div><div class="ttdeci">static const Region External</div><div class="ttdoc">External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SP...</div><div class="ttdef"><b>Definition</b> Memory.h:203</div></div>
+</div><!-- fragment --><ul>
+<li><b>Move-only.</b> Copying would need a second allocation that could fail, and a copy constructor cannot report that.</li>
+<li><b><span class="tt">T</span> must be trivially copyable and trivially destructible</b>, both enforced by <span class="tt">static_assert</span>. Nothing here constructs or destroys elements - these are the raw pixel, glyph, span and sample buffers the engine hands to blitters and drivers. A <span class="tt">T</span> with a destructor would silently never run it.</li>
+<li><b>The region is required</b>, here as everywhere else.</li>
+<li><b><span class="tt">Allocate</span> on an unchanged count is a no-op</b>, which is what makes it safe to call from a render path every frame. A different count releases the old buffer first rather than copying: every caller overwrites it immediately afterwards, and holding both allocations at once is the one thing a constrained part cannot spare.</li>
+<li><b><span class="tt">Allocate(0)</span> is a success</b>, not a failure. A sparse font with no codepoints and a sprite with no spans are both normal.</li>
+<li><b>The element count is checked against overflow.</b> <span class="tt">count * sizeof(T)</span> is computed in a 32-bit <span class="tt">size_t</span> on the device, so a count read from a file or a scene could wrap to a small allocation that later overruns.</li>
+<li><span class="tt">Reset()</span> frees early; <span class="tt">Release()</span> hands the raw pointer out and the caller becomes responsible for <span class="tt"><a class="el" href="class_deki_1_1_memory.html#abb36646b85053c9d40c49e734bc6c591">Deki::Memory::Free</a></span>. <span class="tt">Release</span> is rare by design.</li>
+</ul>
+<p>The one thing not automated is <em>whether the memory was there</em>: check <span class="tt">if
+(!buffer)</span> once, where the buffer is created, instead of unwinding on every branch after it.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-why-not-an-arena"></a>
+Why not an arena</h2>
+<p>A frame arena would remove the failure handling too, but it has to be sized up front. One large enough for a single full-screen gradient bake reserves 150 KB whether or not a project has a gradient, which on a part with a few hundred KB of heap is half the memory held against a feature that may not exist. Arenas pay off where there is headroom. Most allocations here are long-lived and owned by something anyway - glyph tables, pixel data, particle columns, framebuffers which is what RAII serves and an arena does not.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-regions---you-choose-every-time"></a>
+Regions - you choose, every time</h1>
+<p><span class="tt">&lt;<a class="el" href="_memory_8h.html">deki/providers/Memory.h</a>&gt;</span>. <b>There is no default and nothing is inferred.</b> Every allocating call names a region, and omitting it does not compile.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Region  </th><th class="markdownTableHeadNone">Where it goes  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634" title="Internal RAM: fast and scarce, a few hundred KB on an ESP32-S3.">Deki::Memory::Internal</a></span>  </td><td class="markdownTableBodyNone">Internal RAM. Fast, and the scarce one  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee" title="External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SP...">Deki::Memory::External</a></span>  </td><td class="markdownTableBodyNone">PSRAM where the board has it. Megabytes, and markedly slower - it is reached over SPI  </td></tr>
+</table>
+<p><span class="tt">Deki::Memory::AllocateDma(bytes, region)</span> adds the constraint that a DMA engine must be able to read the block. That is orthogonal to placement: a framebuffer must be reachable whether the board keeps it internally or in PSRAM, which is why it is a separate entry point rather than a third region.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-a-region-is-a-name-so-packages-can-add-their-own"></a>
+A region is a name, so packages can add their own</h2>
+<p>The engine ships two. The set is open:</p>
+<div class="fragment"><div class="line"><span class="comment">// in a board-support package - no engine change, no registration call</span></div>
+<div class="line"><span class="keyword">namespace </span>DekiEsp32</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">constexpr</span> <a class="code hl_struct" href="struct_deki_1_1_memory_1_1_region.html">Deki::Memory::Region</a> Rtc{<span class="stringliteral">&quot;esp32.rtc&quot;</span>};</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">battery.Allocate(count, DekiEsp32::Rtc);</div>
+<div class="ttc" id="astruct_deki_1_1_memory_1_1_region_html"><div class="ttname"><a href="struct_deki_1_1_memory_1_1_region.html">Deki::Memory::Region</a></div><div class="ttdoc">Where an allocation lives.</div><div class="ttdef"><b>Definition</b> Memory.h:168</div></div>
+</div><!-- fragment --><p>A package keeps its regions in <b>its own namespace</b>, not in <span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> which it could not do anyway, a class being closed, and that is the point. Two board packages that both want an <span class="tt">Rtc</span> constant cannot collide, because the language keeps them apart. Where the constant lives is never load-bearing: a region's identity is its hashed name, so moving one between namespaces changes nothing at all.</p>
+<p><span class="tt">Region()</span> hashes the name at compile time with the same FNV-1a the rest of the engine uses, so a region is a constant expression a provider can switch on.</p>
+<p><b>Two packages naming the same region mean the same region</b> - that is how two board packages agree on <span class="tt">"rtc"</span> without coordinating, exactly like two packages both requiring the <span class="tt">spi</span> capability. What that does not survive is two packages meaning <em>different</em> things by one word, so qualify names you did not invent: <span class="tt">particles.scratch</span>, <span class="tt">esp32.rtc</span>. A debug build reports two different names that hash alike, because the allocation header stores only the id.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-serving-one-is-the-boards-job"></a>
+Serving one is the board's job</h2>
+<p>A package can <em>name</em> a region; only the board's <span class="tt">IMemoryProvider</span> can serve it. A provider that has not heard of <span class="tt">esp32.rtc</span> returns nullptr and the failure names the region:</p>
+<div class="fragment"><div class="line">Failed to allocate 64 bytes in &#39;esp32.rtc&#39; for &#39;void Battery::Save()&#39;</div>
+<div class="line">at Battery.cpp:88 (0 bytes free there)</div>
+</div><!-- fragment --><p>It is not substituted for another region. For <span class="tt">Rtc</span> in particular that matters more than usual: the point of it is surviving deep sleep, so quietly handing back ordinary RAM would lose the data at the one moment it was supposed to persist.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-the-region-name-is-the-capability-name"></a>
+The region name is the capability name</h2>
+<p>A target advertises the regions it has as capabilities, prefixed <span class="tt">memory:</span>:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Capability  </th><th class="markdownTableHeadNone">Comes from  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">memory:internal</span>  </td><td class="markdownTableBodyNone">every platform - derived  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">memory:external</span>  </td><td class="markdownTableBodyNone">the platform's <span class="tt">psramSize</span> - derived  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">memory:esp32.rtc</span>  </td><td class="markdownTableBodyNone">the board's <span class="tt">provides</span>, because only it knows  </td></tr>
+</table>
+<p>So a package that needs one declares it and the build refuses a target that lacks it, by name, before anything runs:</p>
+<div class="fragment"><div class="line">&quot;platformRequires&quot;: [&quot;memory:esp32.rtc&quot;]</div>
+</div><!-- fragment --><p>The two halves cannot drift, because <span class="tt">Region("esp32.rtc")</span> and <span class="tt">"memory:esp32.rtc"</span> are the same token with a prefix rather than two lists somebody keeps in step. Capability names are lowercase with <span class="tt">.</span>, <span class="tt">-</span>, <span class="tt">:</span> and <span class="tt">_</span>; a platform declaring <span class="tt">"WiFi"</span> gets a warning at load, since an exact-string match would silently never fire.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-placement-resolves-once-there-is-no-fallback"></a>
+Placement resolves once. There is no fallback.</h2>
+<p>If the chosen region is full, the allocation <b>fails and returns null</b>. It is not retried in the other region. This is deliberate:</p>
+<ul>
+<li>Quietly moving a <span class="tt">Hot</span> buffer into external RAM turns a placement mistake into frame drops nobody can account for.</li>
+<li>Quietly moving a <span class="tt">Buffer</span> into internal RAM exhausts the heap that the next <span class="tt">Hot</span> allocation needed, so the failure surfaces somewhere unrelated.</li>
+</ul>
+<p>A failure logs what it was, how big, which region, and that no fallback was attempted. Every caller already has to handle null.</p>
+<p>A board with no external RAM resolves everything to internal. That is not a fallback; it is the only region there is.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-the-rest-of-the-api"></a>
+The rest of the API</h1>
+<p><span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> (<span class="tt">&lt;<a class="el" href="_memory_8h.html">deki/providers/Memory.h</a>&gt;</span>), for the cases <span class="tt">Buffer&lt;T&gt;</span> does not cover:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span>* Allocate(<span class="keywordtype">size_t</span> size, Memory::Region region, AllocContext ctx = {});</div>
+<div class="line"><span class="keywordtype">void</span>* AllocateDma(<span class="keywordtype">size_t</span> size, Memory::Region region, AllocContext ctx = {});</div>
+<div class="line">T*    AllocateArray&lt;T&gt;(<span class="keywordtype">size_t</span> count, Memory::Region region, AllocContext ctx = {});</div>
+<div class="line"><span class="keywordtype">void</span>  Free(<span class="keywordtype">void</span>* ptr, <span class="keyword">const</span> <span class="keywordtype">char</span>* context = <span class="keyword">nullptr</span>);</div>
+</div><!-- fragment --><ul>
+<li>Memory is <b>zeroed</b> before it is returned, so a buffer never starts full of noise and callers do not write their own clearing loop.</li>
+<li><span class="tt">Free</span> works out which region the block came from by reading a header placed immediately before the user pointer, so callers never choose. That header also carries a magic value, which turns a double free or a foreign pointer into a logged error instead of heap corruption.</li>
+<li><b>Naming the allocation is optional.</b> See <span class="tt">AllocContext</span> below.</li>
+<li>A failure reports how much was free in the region it tried, which separates "this asset is too big for this board" from "something is holding memory it
+  should have released".</li>
+<li><span class="tt">Memory::Initialize</span> logs the free internal and external RAM once at startup, so a project can be sized against real numbers rather than against the first out-of-memory line.</li>
+<li><span class="tt">AllocateInternal</span> / <span class="tt">FreeInternal</span> bypass the placement decision and exist for the platform layer. Do not reach for them from a component.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-finding-out-where-the-memory-went"></a>
+Finding out where the memory went</h2>
+<div class="fragment"><div class="line"><a class="code hl_function" href="class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e">Deki::Memory::LogStats</a>(<span class="stringliteral">&quot;after level load&quot;</span>);</div>
+<div class="line"><span class="comment">// Memory at after level load: 48216 bytes allocated (48216 internal, 0 external);</span></div>
+<div class="line"><span class="comment">//                             237096 free internal</span></div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a6c3dc565d07425f0580f3d2909c8f35e"><div class="ttname"><a href="class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e">Deki::Memory::LogStats</a></div><div class="ttdeci">static void LogStats(const char *label=nullptr)</div><div class="ttdoc">Logs what is allocated and what is left, in one line, with an optional label (such as &quot;after level lo...</div></div>
+</div><!-- fragment --><ul>
+<li><span class="tt">LogStats(label)</span> answers "how much memory am I using?" in one call. In a debug build it also reports the live and peak allocation counts. It costs nothing unless called.</li>
+<li><span class="tt">GetStats()</span> returns the same numbers as a struct; <span class="tt">GetAvailableInternal()</span> and <span class="tt">GetAvailablePSRAM()</span> give the free side. <span class="tt">IsPSRAMAvailable()</span> says whether there is an external region at all. None of these is a licence to place memory yourself - they are for sizing a project and for finding what is holding memory it should have released.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-alloccontext---the-label-writes-itself"></a>
+<span class="tt">AllocContext</span> - the label writes itself</h1>
+<p>Every allocating call takes one, and almost nobody writes one:</p>
+<div class="fragment"><div class="line">posX.Allocate(capacity, <a class="code hl_variable" href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634">Deki::Memory::Internal</a>);</div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a585469b9a34a1dbecec8ee0439f45634"><div class="ttname"><a href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634">Deki::Memory::Internal</a></div><div class="ttdeci">static const Region Internal</div><div class="ttdoc">Internal RAM: fast and scarce, a few hundred KB on an ESP32-S3.</div><div class="ttdef"><b>Definition</b> Memory.h:198</div></div>
+</div><!-- fragment --><p>In a debug build the default argument captures the call site, so a failure reads:</p>
+<div class="fragment"><div class="line">Failed to allocate 153600 bytes in internal RAM for</div>
+<div class="line">&#39;void ParticlePool::SetCapacity(size_t)&#39; at ParticlePool.h:47</div>
+<div class="line">(126556 bytes free there)</div>
+</div><!-- fragment --><p>There is no name to pass and no way to pass one. A hand-written tag is a second identity for the same allocation that someone has to keep in step with the first, and the compiler already knows the answer. Two allocations in one function are told apart by their line numbers:</p>
+<div class="fragment"><div class="line">&#39;void ParticlePool::SetCapacity(size_t)&#39; at ParticlePool.h:47</div>
+<div class="line">&#39;void ParticlePool::SetCapacity(size_t)&#39; at ParticlePool.h:48</div>
+</div><!-- fragment --><p><b>It names the caller, not the engine.</b> <span class="tt">Buffer&lt;T&gt;::Allocate</span> and <span class="tt">Memory::Allocate</span> both take the context and forward it rather than re-defaulting it, so the location is where <em>you</em> wrote the call, not <span class="tt"><a class="el" href="_buffer_8h.html">Buffer.h</a></span>. A test asserts exactly that, because a version that got this wrong would report a plausible-looking file on every allocation in the engine and be confidently useless.</p>
+<p><b>Nothing is copied.</b> Every member points at a string literal with static storage duration, which is what lets the debug leak table hold the pointer.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-stripping-it"></a>
+Stripping it</h2>
+<p>Capture is on in every build. It costs <b>4,272 bytes on the ESP32-S3 firmware - 0.28%</b> of a 1.5 MB image, about 40 bytes per call site, which is cheap enough not to think about.</p>
+<p>Define <span class="tt">DEKI_STRIP_ALLOC_CONTEXT</span> for a build that needs the flash back. <span class="tt">AllocContext</span> becomes an empty struct, no paths or function names reach the binary, and a failure reports what it was trying to do without claiming an origin:</p>
+<div class="fragment"><div class="line">Failed to allocate 153600 bytes in internal RAM (126556 bytes free there)</div>
+</div><!-- fragment --><p>Note the layout differs between a stripped and an unstripped build, so an engine and the packages calling it have to agree - the same constraint <span class="tt">MemoryStats</span> already imposes.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-dekivectort---when-the-count-changes-at-runtime"></a>
+<span class="tt">Deki::Vector&lt;T&gt;</span> - when the count changes at runtime</h1>
+<p><span class="tt">&lt;<a class="el" href="providers_2_vector_8h.html">deki/providers/Vector.h</a>&gt;</span>. <span class="tt">Buffer&lt;T&gt;</span> covers a count you know when you allocate. When it changes and has no fixed bound, <span class="tt">std::vector</span> is the wrong answer on a device: <span class="tt">push_back</span> calls <span class="tt">operator new</span>, which cannot report exhaustion with exceptions off, so it aborts and the board reboots.</p>
+<p><span class="tt"><a class="el" href="class_deki_1_1_vector.html" title="Growable array of T whose growth can fail.">Deki::Vector</a></span> is that shape with the one thing changed that matters here everything that can allocate returns <span class="tt">bool</span>:</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="class_deki_1_1_vector.html">Deki::Vector&lt;Enemy&gt;</a> enemies(<a class="code hl_variable" href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634">Deki::Memory::Internal</a>);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (!enemies.Reserve(32))            <span class="comment">// out of memory, said once</span></div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span> (!enemies.PushBack(spawned))      <span class="comment">// and per growth, if it has to grow</span></div>
+<div class="line">    <a class="code hl_define" href="_log_system_8h.html#ae92a440abe0580d432cdb91c4cb0c192">DEKI_LOG_WARNING</a>(<span class="stringliteral">&quot;dropped a spawn&quot;</span>);</div>
+<div class="ttc" id="aclass_deki_1_1_vector_html"><div class="ttname"><a href="class_deki_1_1_vector.html">Deki::Vector</a></div><div class="ttdoc">Growable array of T whose growth can fail.</div><div class="ttdef"><b>Definition</b> Vector.h:48</div></div>
+</div><!-- fragment --><ul>
+<li><b>The region is a constructor argument</b>, so the declaration is where a reader learns what memory this list occupies, and every growth lands in the same place. There is no default constructor: a vector that grows must know where to put the new block, and the engine will not decide for it.</li>
+<li><b><span class="tt">Reserve</span> up front makes the pushes that follow infallible.</b> One check instead of one per element; that's the pattern worth writing on a device.</li>
+<li>Growth <b>doubles from a first block of 4</b>, not 16: a device project has many short lists, and a large default on each adds up to more than the lists do.</li>
+<li><b>A failed growth leaves everything already stored intact</b>, so a caller that drops the new element still has a working vector.</li>
+<li><span class="tt">RemoveUnordered(i)</span> is O(1) and fills the hole with the last element - the same trick <span class="tt">ParticlePool::KillSwap</span> uses, and what a list of live entities wants. <span class="tt">Clear()</span> keeps the memory for refilling next frame; <span class="tt">Reset()</span> releases it.</li>
+<li>Same <span class="tt">T</span> constraint as <span class="tt">Buffer</span>: trivially copyable and trivially destructible. Growth moves elements with a <span class="tt">memcpy</span>.</li>
+</ul>
+<p>Reach for <span class="tt">Buffer</span> first. Most "dynamic" data here turns out to have a bound the project already knows, and a fixed allocation cannot fragment a small heap the way repeated growth can.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-stdvector-stdstring-and-plain-new"></a>
+<span class="tt">std::vector</span>, <span class="tt">std::string</span> and plain <span class="tt">new</span></h2>
+<p>These call <span class="tt">operator new</span>, which <span class="tt"><a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Deki::Buffer</a>&lt;T&gt;</span> cannot replace. On a device build the engine replaces the operators themselves (<a href="https://github.com/dekiengine/deki-engine/blob/master/src/providers/OperatorNew.cpp"><span class="tt">src/providers/OperatorNew.cpp</span></a>), which changes two things:</p>
+<ul>
+<li><b>A failed allocation says so.</b> It logs the size it wanted and then aborts, because a throwing <span class="tt">operator new</span> has no other option with exceptions off. "Out of memory asking for 40960 bytes" is a diagnosis; the reboot it replaces was not.</li>
+<li><b><span class="tt">std::nothrow</span> works.</b> <span class="tt">new (std::nothrow) T[n]</span> returns <span class="tt">nullptr</span> instead of aborting, so code that wants to handle exhaustion itself can. Without the replacement it aborts, because libstdc++ implements the nothrow form by calling the throwing one inside a removed <span class="tt">try</span>/<span class="tt">catch</span>.</li>
+</ul>
+<p>These <b>do</b> go through the engine: <span class="tt">operator new</span> calls <span class="tt">IMemoryProvider::AllocateRaw</span>, so a board sees every allocation on the device and can substitute its heap for all of them.</p>
+<p>What it is <em>not</em> is <span class="tt">Memory::Allocate</span>. That would put a 16-byte header before every <span class="tt">std::string</span> that outgrows its small-string buffer, memset memory a vector is about to overwrite, and pay the ESP32 provider's 16-byte SIMD alignment on small blocks - and ESP-IDF implements aligned allocation by over-allocating, so that is more waste than the header. <span class="tt">AllocateRaw</span> has none of it: natural alignment, no header, the pointer the heap returned.</p>
+<p>Measured, 1.6M paired 48-byte allocations, engine at <span class="tt">-O2</span>:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">ns/op  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">malloc</span> + <span class="tt">free</span>  </td><td class="markdownTableBodyNone">47-52  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">routed through the provider  </td><td class="markdownTableBodyNone">46-51 - indistinguishable  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">routed, plus <span class="tt">DEKI_MEMORY_TRACK_RAW</span>  </td><td class="markdownTableBodyNone">63-71 (+35%)  </td></tr>
+</table>
+<p>So the routing is free and always on; <b>counting the bytes is opt-in</b>, because with no header the block size has to come from the heap and on Windows that is <span class="tt">_msize</span> calling <span class="tt">HeapSize</span> under a lock. Build with <span class="tt">DEKI_MEMORY_TRACK_RAW</span> while hunting where memory went, and <span class="tt">Memory::LogStats</span> will report what containers hold; without it that line says so rather than printing a misleading zero.</p>
+<p>What is given up along with the header is its magic value, so a <b>double free of container memory is as undiagnosable as it was</b> when this path was plain <span class="tt">malloc</span>. Anything the engine can describe goes through <span class="tt">Allocate</span> and keeps the guard.</p>
+<p>Placement is deliberately not decided here. Routing by size the way the removed <span class="tt">Auto</span> rule did would silently move a large <span class="tt">std::vector</span> into PSRAM and make a hot loop slow for reasons invisible in the code. A caller who wants external memory names <span class="tt"><a class="el" href="class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee" title="External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SP...">Deki::Memory::External</a></span> and gets <span class="tt"><a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Deki::Buffer</a></span>; <span class="tt">operator new</span> cannot know, so it does not guess.</p>
+<p>It is compiled only where <span class="tt">__cpp_exceptions</span> is undefined - i.e. exactly the builds where the abort problem exists. Host and editor builds keep the standard operators. The over-aligned forms (<span class="tt">align_val_t</span>) are left to libstdc++ so they stay a matched pair.</p>
+<p>So: for a count that changes at runtime, use <span class="tt"><a class="el" href="class_deki_1_1_vector.html" title="Growable array of T whose growth can fail.">Deki::Vector</a>&lt;T&gt;</span> and handle the <span class="tt">false</span>. For anything whose size comes from a file, a scene, or the screen, use <span class="tt"><a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Deki::Buffer</a>&lt;T&gt;</span>. <span class="tt">std::vector</span> stays right for editor and tooling code, and on a device its exhaustion is now a logged abort rather than a silent one.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-platform-layer-imemoryprovider"></a>
+Platform layer: <span class="tt">IMemoryProvider</span></h1>
+<p><span class="tt">&lt;<a class="el" href="_i_memory_provider_8h.html">deki/providers/IMemoryProvider.h</a>&gt;</span>. A platform supplies one and hands it over before <span class="tt">Memory::Initialize()</span>:</p>
+<div class="fragment"><div class="line"><a class="code hl_function" href="class_deki_1_1_memory.html#a1b059aac05f640f1615b15a2ab475914">Deki::Memory::SetBackend</a>(<span class="keyword">new</span> MyBoardMemoryProvider());  <span class="comment">// takes ownership</span></div>
+<div class="line"><a class="code hl_function" href="class_deki_1_1_memory.html#a0b9902ccf85077bdb732c87844a62037">Deki::Memory::Initialize</a>();</div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a0b9902ccf85077bdb732c87844a62037"><div class="ttname"><a href="class_deki_1_1_memory.html#a0b9902ccf85077bdb732c87844a62037">Deki::Memory::Initialize</a></div><div class="ttdeci">static bool Initialize()</div><div class="ttdoc">Returns false on failure.</div></div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a1b059aac05f640f1615b15a2ab475914"><div class="ttname"><a href="class_deki_1_1_memory.html#a1b059aac05f640f1615b15a2ab475914">Deki::Memory::SetBackend</a></div><div class="ttdeci">static void SetBackend(IMemoryProvider *backend)</div><div class="ttdoc">Installs the memory provider and takes ownership of it.</div></div>
+</div><!-- fragment --><p>The interface reports external RAM (<span class="tt">HasExternalRAM</span>, totals, free) and allocates from each region: <span class="tt">AllocateExternal</span> / <span class="tt">FreeExternal</span>, <span class="tt">AllocateInternal</span> / <span class="tt">FreeInternal</span>, and <span class="tt">AllocateDMA</span>.</p>
+<p><b>Every placement virtual is pure - implement all of them.</b> A provider states what each region means on its platform, even when the answer is "the same as
+the others here". A desktop provider writing <span class="tt">return malloc(size);</span> in <span class="tt">AllocateDMA</span> has made a claim you can read and check.</p>
+<p><span class="tt">AllocateDMA</span> is the one that matters. A provider that could inherit it from <span class="tt">AllocateInternal</span> would hand a display peripheral memory it cannot reach on any part where those differ - silent corruption, with nothing in the build to say so.</p>
+<p><span class="tt">GetAvailableInternalRAM</span> is required for the same reason: a provider that answers 0 without meaning it makes the startup line report an exhausted board.</p>
+<p>Pure virtuals occupy the same vtable slots as implemented ones, so this costs no ABI version. It stops a provider compiling until it decides.</p>
+<p><span class="tt">AllocateRaw</span> / <span class="tt">FreeRaw</span> / <span class="tt">GetRawBlockSize</span> are the fourth pair plus a query: the plain natural-alignment allocator the global <span class="tt">operator new</span> routes through, so a board's heap serves <span class="tt">std::vector</span> and scalar <span class="tt">new</span> as well as everything the engine places. They default to <span class="tt">malloc</span>/<span class="tt">free</span>, and <span class="tt">GetRawBlockSize</span> returns 0 where the platform cannot answer - which only costs accuracy in <span class="tt">LogStats</span>. Override both of the pair or neither.</p>
+<p><span class="tt">AllocateDMA</span> is separate from <span class="tt">AllocateInternal</span> because on the ESP32-S3 most internal RAM is DMA-reachable but not all of it, and a display peripheral reading a framebuffer that is not gets silent corruption rather than an error. The ESP32 provider asks for <span class="tt">MALLOC_CAP_DMA</span> explicitly. Whoever overrides one of <span class="tt">AllocateInternal</span>/<span class="tt">FreeInternal</span> must override both: the pair has to match (the ESP32 provider uses <span class="tt">heap_caps_aligned_alloc</span> with 16-byte alignment - it also lets the blit dispatcher engage the S3 SIMD kernels - and <span class="tt">heap_caps_free</span>).</p>
+<p><b><span class="tt">IMemoryProvider</span> is part of the package ABI</b>, so its virtuals are locked by <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_abi.py"><span class="tt">tools/ci/check_abi.py</span></a>. Adding, removing or reordering one moves vtable slots and requires bumping <span class="tt"><a class="el" href="_reflection_abi_8h.html#ab3bac8f1027e8ba7eca770c639f81c9f" title="Bump this for any binary change the sizes above cannot see, so packages built before it are refused a...">kDekiReflectionAbiVersion</a></span> in the same commit.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-memory-the-lint"></a>
+The lint</h1>
+<div class="fragment"><div class="line">python tools/ci/check_allocations.py            # packages beside the repo</div>
+<div class="line">python tools/ci/check_allocations.py --verbose  # also list files and waivers</div>
+</div><!-- fragment --><p>Fails on <span class="tt">new[]</span>, <span class="tt">delete[]</span>, <span class="tt">malloc</span>/<span class="tt">calloc</span>/<span class="tt">realloc</span> and <span class="tt">heap_caps_*</span> in runtime code - <b>the engine's own as well as every package's</b>. An allocation in the engine reaches every project on every board, where a package's reaches only the projects that installed it, so if anything the engine is the more important half; leaving it out of the first version of this lint immediately proved the point, since <span class="tt">ProjectSettings</span> was keeping its on-device settings chunk with a bare <span class="tt">realloc</span>.</p>
+<p>Skipped: <span class="tt">editor/</span>, <span class="tt">tests/</span>, <span class="tt">generated/</span>, <span class="tt">third_party/</span> and the engine's <span class="tt">platforms/editor</span> and <span class="tt">platforms/desktop</span> layers, all of which run on the host where exceptions are on and the heap is a desktop's. Exempt by path, because they are the bottom of the stack rather than code with permission to break the rule: <span class="tt">providers/Memory.cpp</span>, <span class="tt"><a class="el" href="_i_memory_provider_8h.html">providers/IMemoryProvider.h</a></span>, any <span class="tt">*MemoryProvider.*</span>, and <span class="tt">providers/OperatorNew.cpp</span> - which has to define <span class="tt">operator new[]</span> so that nothing else needs to.</p>
+<p>Comments and string literals are blanked before matching, so a comment explaining this rule does not trip it.</p>
+<p>A genuinely unavoidable case takes a waiver <b>with a reason</b> - one without a reason does not count, so a diff always shows which exceptions were argued for:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span>* p = malloc(n);  <span class="comment">// deki-alloc-ok: the C API frees this itself</span></div>
+</div><!-- fragment --><p>It has already earned its keep: it found a <span class="tt">delete[]</span> on a <span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> buffer in <span class="tt">Standard2DRenderer</span> that a manual sweep had missed. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

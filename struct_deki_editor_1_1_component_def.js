@@ -10,6 +10,7 @@ var struct_deki_editor_1_1_component_def =
     [ "fallback", "struct_deki_editor_1_1_component_def.html#ad2fec0955f86e648f9f71ebacc18d0f5", null ],
     [ "detection", "struct_deki_editor_1_1_component_def.html#a8ab6dc8596a4312d5fb27a4eae1916f3", null ],
     [ "postInstall", "struct_deki_editor_1_1_component_def.html#a19573e4c014acb355f6d67754fb4e119", null ],
+    [ "pathEntries", "struct_deki_editor_1_1_component_def.html#a5450c74ace4277f81ddb0463b9dbd17b", null ],
     [ "subComponents", "struct_deki_editor_1_1_component_def.html#acfa985bfd055b0074b46a565d29337a0", null ],
     [ "extractedName", "struct_deki_editor_1_1_component_def.html#a8540694e298ade691f224ae9cbac27ac", null ],
     [ "sha256", "struct_deki_editor_1_1_component_def.html#ad5e9f1ad14e8eda0707b93da204642ea", null ],

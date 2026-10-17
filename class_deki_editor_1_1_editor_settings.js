@@ -6,6 +6,7 @@ var class_deki_editor_1_1_editor_settings =
     [ "FlushIfDirty", "class_deki_editor_1_1_editor_settings.html#a9b9833531e8deab56d4fb2d03eac0943", null ],
     [ "GetLastProjectPath", "class_deki_editor_1_1_editor_settings.html#a00564ba4dc67b78fb916cea327eee082", null ],
     [ "SetLastProjectPath", "class_deki_editor_1_1_editor_settings.html#a4dabedd3d98da9b0f3f4ebb16fdc1216", null ],
+    [ "GetSdkDir", "class_deki_editor_1_1_editor_settings.html#a7583c0088c98b4d13283971f33722af9", null ],
     [ "GetEnginePath", "class_deki_editor_1_1_editor_settings.html#ac3a1fa27ff07f95c84f639f8dd20b643", null ],
     [ "GetBuildDir", "class_deki_editor_1_1_editor_settings.html#a80e49286295f52fdd6cb5a03facba739", null ],
     [ "GetDepsDir", "class_deki_editor_1_1_editor_settings.html#a3a512723fb513593625b721b32d59ea9", null ],

@@ -16,5 +16,5 @@ var _feature_resolver_8h =
     [ "DekiEditor::FeatureStateName", "namespace_deki_editor.html#a929fe2e9220453996a8606b20f3c849b", null ],
     [ "DekiEditor::ResolveStripPlan", "namespace_deki_editor.html#ae45f86583f4c5377f5caf73fefa2a541", null ],
     [ "DekiEditor::FindTargetContentConflicts", "namespace_deki_editor.html#a89d12cf966ece352692df50d66195a1b", null ],
-    [ "DekiEditor::ComputeStripPlan", "namespace_deki_editor.html#afbeb2ff374ce09c7b04d22d2e460168a", null ]
+    [ "DekiEditor::ComputeStripPlan", "namespace_deki_editor.html#a7aa864bf75eb1d0f81caa1b1fd2c95f0", null ]
 ];

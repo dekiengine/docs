@@ -20,5 +20,6 @@ var class_deki_editor_1_1_command_history =
     [ "MarkSavePoint", "class_deki_editor_1_1_command_history.html#a28b5a4e4f2e400a2a6e8cba9f8121e07", null ],
     [ "MarkDirty", "class_deki_editor_1_1_command_history.html#ae6b81b07109290afacee6216cb649d7a", null ],
     [ "IsDirty", "class_deki_editor_1_1_command_history.html#a2734b6c1e9b4e87976381177e5ccbbc2", null ],
+    [ "IsSavedAsideDirty", "class_deki_editor_1_1_command_history.html#a7b98985a2d9039b26afa6b49e6548e1d", null ],
     [ "DiscardCommandsReferencing", "class_deki_editor_1_1_command_history.html#af452ee8a25c62e097329c0dece8c3996", null ]
 ];

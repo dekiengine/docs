@@ -7,7 +7,6 @@ var class_deki_1_1_memory =
     [ "IsInitialized", "class_deki_1_1_memory.html#aea302ebf2abb3f88688c23a9183a9a4f", null ],
     [ "Allocate", "class_deki_1_1_memory.html#a6d9b509ef3314a6575f5962482b751f1", null ],
     [ "AllocateDma", "class_deki_1_1_memory.html#a274732377abd441bb2e8ff9362645c22", null ],
-    [ "Allocate", "class_deki_1_1_memory.html#a34a16803184cb6f218a3cba59ff8fe24", null ],
     [ "AllocateInternal", "class_deki_1_1_memory.html#a2cf615b85242289254ce34197ccae81f", null ],
     [ "FreeInternal", "class_deki_1_1_memory.html#ad445d872ff93cff2894ed58306030f3b", null ],
     [ "Free", "class_deki_1_1_memory.html#abb36646b85053c9d40c49e734bc6c591", null ],
@@ -18,8 +17,8 @@ var class_deki_1_1_memory =
     [ "GetRawAllocated", "class_deki_1_1_memory.html#a02f9bf3184bcd2ad7d819c50d5bfa65c", null ],
     [ "LogStats", "class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e", null ],
     [ "IsExternalAvailable", "class_deki_1_1_memory.html#a440eeede79d061f37209a78da5bf4e63", null ],
-    [ "detail::RawAllocate", "class_deki_1_1_memory.html#a0d590d64847d01b36b6f1bd07ce798cc", null ],
-    [ "detail::RawFree", "class_deki_1_1_memory.html#aa3ba5f25e3ceb8e97042c97123783e39", null ],
+    [ "Detail::RawAllocate", "class_deki_1_1_memory.html#a948ba6b3520f1517d00624724375515f", null ],
+    [ "Detail::RawFree", "class_deki_1_1_memory.html#a94229d8805908773c2287d575ab242ab", null ],
     [ "Internal", "class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634", null ],
     [ "External", "class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee", null ]
 ];

@@ -6,7 +6,7 @@ var searchData=
   ['dekireflectionabi_3',['DekiReflectionAbi',['../struct_deki_reflection_abi.html',1,'']]],
   ['dependencyinfo_4',['DependencyInfo',['../struct_dependency_info.html',1,'']]],
   ['deploytarget_5',['DeployTarget',['../struct_deki_editor_1_1_deploy_target.html',1,'DekiEditor']]],
-  ['displayprojectsettings_6',['DisplayProjectSettings',['../class_deki_1_1_display_project_settings.html',1,'Deki']]],
+  ['dialogbuttonspec_6',['DialogButtonSpec',['../struct_deki_editor_1_1_dialog_button_spec.html',1,'DekiEditor']]],
   ['displaysettings_7',['DisplaySettings',['../struct_deki_1_1_project_settings_1_1_display_settings.html',1,'Deki::ProjectSettings']]],
   ['downloadprogress_8',['DownloadProgress',['../struct_deki_editor_1_1_download_progress.html',1,'DekiEditor']]],
   ['dpackentry_9',['DPackEntry',['../struct_deki_1_1_d_pack_entry.html',1,'Deki']]],

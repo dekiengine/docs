@@ -1,0 +1,290 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: 플랫폼</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/ko/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">문서</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/ko/"><span class="deki-nav-label">사이트</span></a>
+    <a href="https://dekiengine.com/ko/packages/"><span class="deki-nav-label">패키지</span></a>
+    <a href="https://dekiengine.com/ko/blog/"><span class="deki-nav-label">블로그</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/ko/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/ko/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>후원</span></a>
+    <details class="deki-lang"><summary aria-label="언어: 한국어"><span class="deki-nav-label">한국어</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko" aria-current="true">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="검색" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platforms.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">플랫폼 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-ko_2guide-platforms"></a></p>
+<p><b>플랫폼</b>은 프로젝트를 빌드하는 대상 하나입니다. 보드, 데스크톱 시뮬레이터, 콘솔 등이 해당합니다. 이 페이지에서는 플랫폼이 무엇으로 이루어져 있는지, 플랫폼이 어디에서 오는지, 패키지가 보드를 어떻게 제공하는지, 그리고 프로젝트가 보드를 사용하기 시작한 뒤 보드가 어떻게 되는지 설명합니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-what-a-platform-is"></a>
+플랫폼이란</h1>
+<p>프로젝트의 <span class="tt">platforms/</span> 아래에 있는, 플랫폼 ID로 이름 붙은 디렉터리입니다.</p>
+<div class="fragment"><div class="line">&lt;project&gt;/platforms/&lt;id&gt;/&lt;id&gt;.json    the platform</div>
+<div class="line">&lt;project&gt;/platforms/&lt;id&gt;/boot.scene   the scene a build of it boots</div>
+<div class="line">&lt;project&gt;/platforms/&lt;id&gt;/origin.json  only if it came from a package (see below)</div>
+</div><!-- fragment --><p>JSON은 에디터가 알아야 할 것을 기술하며, 빌드 방법에 대해서는 아무것도 기술하지 않습니다.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">키  </th><th class="markdownTableHeadNone">의미  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">id</span>, <span class="tt">displayName</span>  </td><td class="markdownTableBodyNone">ID는 디렉터리 이름이기도 합니다.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">framework</span>  </td><td class="markdownTableBodyNone">어떤 빌드 백엔드가 빌드하는지(<span class="tt">espidf</span>, <span class="tt">native</span>, ...). 기본값은 없습니다. 이를 지정하지 않은 플랫폼에는 백엔드가 없으며, 빌드가 그렇게 알려 줍니다.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">frameworkOptions</span>  </td><td class="markdownTableBodyNone">해당 백엔드 고유의 설정: 칩, 플래시 크기, sdkconfig 줄, 핀. 에디터는 이를 보관만 하고 읽지 않으며, 백엔드가 빌드할 때 검증합니다.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">family</span>  </td><td class="markdownTableBodyNone">설명용일 뿐입니다. 케이퍼빌리티 <span class="tt">family:&lt;x&gt;</span>가 됩니다.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">이 타겟의 화면입니다. 에디터는 이를 미리 보여 주고, 데스크톱 시뮬레이터는 이 크기의 창을 열며, 자동으로 설정된 이미지는 이 타겟용으로 <span class="tt">colorFormat</span>으로 저장됩니다. 장치는 디스플레이 고유의 크기와 포맷으로 렌더링합니다. <a href="guide-screens.html">screens.md</a>를 참조하십시오.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">externalMemorySize</span>  </td><td class="markdownTableBodyNone">내부 힙 외의 메모리 바이트 수(마이크로컨트롤러의 PSRAM). 패키지에 <span class="tt">memory:external</span>을 부여합니다.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">타겟이 패키지에 제공할 수 있는 것: <span class="tt">wifi</span>, <span class="tt">spi</span>, <span class="tt">desktop-os</span>, ...  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">requiresPackages</span>  </td><td class="markdownTableBodyNone">씬이 무엇을 사용하든 타겟이 항상 필요로 하는 패키지. 일반적으로 하드웨어 추상화 계층입니다.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">defines</span>, <span class="tt">cFlags</span>, <span class="tt">cxxFlags</span>, <span class="tt">linkFlags</span>  </td><td class="markdownTableBodyNone">게임 자체 코드의 컴파일러 설정.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">bootScene</span>  </td><td class="markdownTableBodyNone">프로젝트 기준 부트 씬의 경로.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">assetStorage</span>  </td><td class="markdownTableBodyNone">빌드가 게임의 에셋을 두는 곳: <span class="tt">internal</span>(기본값) 또는 <span class="tt">external</span>. 아래를 참조하십시오.  </td></tr>
+</table>
+<p><b>부트 씬</b>에는 <span class="tt">Deki::PlatformSetupComponent</span>가 있으며, 그 <span class="tt">setupComponents</span> 목록은 하드웨어를 기동하는 설정 단계를 순서대로 지정합니다: 전원 핀, 디스플레이, I2C 버스, 터치. 각 항목은 <span class="tt">{id, typeId}</span>이며, 단계를 담은 자식 오브젝트의 ID와 단계의 정규화된 클래스 이름의 해시(<span class="tt">Deki::HashString</span>)입니다. <span class="tt">typeId</span>가 틀려도 실패하지 않으며, 그 단계가 조용히 실행되지 않을 뿐입니다. 에디터 테스트의 <span class="tt">ShippedPlatformTemplates</span>가 패키지가 제공하는 모든 부트 씬을 검사합니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-where-the-assets-go"></a>
+에셋이 놓이는 곳</h1>
+<p>빌드는 게임의 에셋을 두 곳 중 하나에 둡니다.</p>
+<ul>
+<li><b>내부 스토리지</b>(기본값): 장치의 일부입니다. 빌드가 에셋을 부트 씬 옆의 <span class="tt">assets/</span>(런타임에는 <span class="tt">F:/assets/</span>)에 담아 갑니다. ESP32에서는 플래시이며, 데이터 파티션이 칩의 나머지 공간(16 MB 보드에서 약 13 MB)을 차지하고, 게임이 들어가지 않으면 빌드가 실패합니다. 데스크톱 시뮬레이터와 Tactility 앱도 같은 방식으로 동작합니다.</li>
+<li><b>외부 스토리지</b>: 이동식인 SD 카드입니다. 빌드는 부트 씬과 <span class="tt">project_data.bin</span>만 담아 갑니다. <b>SD 카드 배포</b> 패널이 에셋을 카드에 복사하고, 카드가 마운트되면 카드의 스토리지 패키지가 에셋을 로드합니다(<span class="tt">S:/</span>).</li>
+</ul>
+<p>외부를 선택할 수 있는 것은 <span class="tt">external-storage</span>를 <span class="tt">provides</span>하는 플랫폼뿐이며, 플랫폼 에디터는 그런 플랫폼에만 이 선택지(<b>스토리지 &gt; 에셋 위치</b>)를 표시합니다. 플래시에 들어가지 않을 만큼 큰 게임에만 선택하십시오. 외부 스토리지를 선택했는데 슬롯에 카드가 없으면 게임에는 에셋이 없습니다. LilyGO T-Deck Plus는 선택할 수 있으며, 따로 지정하지 않으면 에셋을 플래시에 둡니다.</p>
+<p><span class="tt">project_data.bin</span>이 이 선택을 기록하므로, 엔진은 어디를 봐야 하는지 압니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-simulating-a-board"></a>
+보드 시뮬레이션</h1>
+<p>백엔드에 시뮬레이터가 있는 보드(ESP32 또는 ESP32-S3의 QEMU)는 시뮬레이터에서 실행되도록 빌드할 수 있습니다. 빌드 패널에서 <b>QEMU에서 시뮬레이션</b>을 체크한 다음 빌드하고 <b>플레이</b>를 누릅니다. 명령줄에서는 다음과 같습니다.</p>
+<div class="fragment"><div class="line">DekiEditor --build-firmware --deploy --simulate --platform lilygo_t_deck_plus &lt;project&gt;</div>
+</div><!-- fragment --><p>시뮬레이션 빌드는 보드 부트 씬의 모든 단계를 유지하고, 그 뒤에 시뮬레이터 고유의 단계(QEMU 화면)를 추가한 사본을 빌드 디렉터리 아래(<span class="tt">generated/build/&lt;platform&gt;_qemu/simulation/boot.scene</span>)에 만듭니다. 시뮬레이터가 단계를 다른 방식으로 실행해야 하는 경우 사본에 그렇게 기록됩니다. 예를 들어 SPI로 연결된 SD 카드는 QEMU의 SD 호스트로 옮겨집니다. 빌드 로그에 각 변경 사항이 나열됩니다. 플랫폼의 <span class="tt">boot.scene</span>, 일반 빌드, 보드에 플래시되는 펌웨어는 변경되지 않으며, 시뮬레이터에 필요한 것은 그 어디에도 컴파일되어 들어가지 않습니다.</p>
+<p>시뮬레이션 보드에는 빌드할 때마다 <span class="tt">simulation/sd_card</span>에 새로 만들어지는 SD 카드가 있습니다. 에셋을 카드에 두는 타겟이라면 SD 카드 배포 패널이 복사하는 것과 같은 에셋이 들어가고, 내부에 두는 타겟이라면 비어 있습니다.</p>
+<p>백엔드는 <span class="tt">ITargetBuilder::SupportsSimulation</span>, <span class="tt">GetSimulatorName</span>, <span class="tt">MakeSimulationBootScene</span>(<span class="tt">deki-editor/build/SimulationBootScene.h</span>의 <span class="tt">AddSimulationSteps</span>와 함께)으로 이 기능을 제공하며, 나머지는 <span class="tt">BuildOptions::simulate</span>를 읽어 처리합니다: 자체 빌드 디렉터리, 카드, 그리고 배포가 하는 일.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-where-platforms-come-from"></a>
+플랫폼은 어디에서 오는가</h1>
+<p>빌드 패널의 타겟 목록은 세 가지 출처로 이루어지며, 뒤의 것이 앞의 것을 덮어씁니다.</p>
+<ol type="1">
+<li><span class="tt">~/.deki-editor/board-packs/</span> 아래의 <b>보드 팩</b>.</li>
+<li>프로젝트에 설치된 <b>패키지</b>: 모든 <span class="tt">&lt;package&gt;/platforms/&lt;id&gt;/</span>.</li>
+<li><b>프로젝트 자신의</b> <span class="tt">platforms/</span>.</li>
+</ol>
+<p>패키지를 설치하거나 제거하면 목록이 즉시 업데이트됩니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-shipping-boards-in-a-package"></a>
+패키지로 보드 제공하기</h1>
+<p>패키지 안에 보드마다 디렉터리를 하나씩 둡니다.</p>
+<div class="fragment"><div class="line">deki-lilygo-boards/</div>
+<div class="line">├── package.json</div>
+<div class="line">└── platforms/</div>
+<div class="line">    ├── lilygo_t_deck_plus/</div>
+<div class="line">    │   ├── lilygo_t_deck_plus.json</div>
+<div class="line">    │   └── boot.scene</div>
+<div class="line">    └── lilygo_t_display_s3_amoled/</div>
+<div class="line">        ├── lilygo_t_display_s3_amoled.json</div>
+<div class="line">        └── boot.scene</div>
+</div><!-- fragment --><p>이것이 메커니즘의 전부입니다. 패키지에는 코드가 필요 없습니다. <span class="tt">package.cmake</span>도, 진입점도 필요 없습니다. 보드를 설치하면 함께 설치되도록 <span class="tt">package.json</span>의 <span class="tt">requires</span>에 보드의 부트 씬이 사용하는 패키지를 나열해야 하며, 각 플랫폼은 <span class="tt">requiresPackages</span>에 하드웨어 추상화 계층을 다시 적어야 합니다.</p>
+<p>검사되는 규칙:</p>
+<ul>
+<li><b>디렉터리 이름이 플랫폼 ID이며</b>, JSON은 그 안의 <span class="tt">&lt;id&gt;.json</span>입니다. 단순한 이름이어야 하며, 경로처럼 보이는 것은 건너뜁니다.</li>
+<li><b>설치된 두 패키지가 같은 ID를 제공하면 오류이며</b>, 누군가 그것을 선택할 때 보고됩니다. ID 앞에 제조사 이름을 붙이십시오(<span class="tt">lilygo_...</span>).</li>
+<li><b><span class="tt">defines</span>에 <span class="tt">DEKI_PACKAGE_*</span>나 <span class="tt">DEKI_FEATURE_*</span>를 지정할 수 없습니다.</b> 빌드에 어떤 패키지가 있는지는 리졸버가 답합니다. 항상 어떤 패키지가 필요한 보드는 <span class="tt">requiresPackages</span>에 그렇게 적습니다.</li>
+<li><b><span class="tt">bootScene</span>은 패키지가 아니라 프로젝트 기준입니다</b>: <span class="tt">platforms/&lt;id&gt;/boot.scene</span>. 빌드되는 것은 채택된 사본입니다.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-platforms-features-that-need-other-packages"></a>
+다른 패키지가 필요한 기능</h2>
+<p>패키지 기능은 기능 자체의 <span class="tt">requires</span>에 필요한 패키지를 지정할 수 있습니다.</p>
+<div class="fragment"><div class="line">{ &quot;id&quot;: &quot;trackball&quot;, &quot;componentTypes&quot;: [&quot;TrackballComponent&quot;],</div>
+<div class="line">  &quot;requires&quot;: [&quot;deki-gpio&quot;] }</div>
+</div><!-- fragment --><p>이것들은 패키지와 함께 설치되지 않습니다. 그 기능을 사용하는 보드나 프로젝트가 가져옵니다. T-Deck에는 I2C 버스와 핀이 있으므로 <span class="tt">deki-lilygo-boards</span>는 <span class="tt">deki-i2c</span>와 <span class="tt">deki-gpio</span>를 필요로 하며, 그 덕분에 <span class="tt">deki-input</span>의 키보드와 트랙볼이 빌드됩니다. <span class="tt">deki-input</span>을 설치한 데스크톱 프로젝트는 둘 다 받지 않습니다.</p>
+<p>빌드는 타겟이 기능을 사용하는 동안에만 그 기능의 패키지를 가져옵니다. 사용 중인 기능의 패키지가 없으면, 무엇을 설치해야 하는지 로그로 남기는 단계로 빌드되고 빌드가 경고합니다. 기능의 코드는 <span class="tt">__has_include</span>로 패키지를 확인하므로 어느 쪽이든 컴파일됩니다.</p>
+<p>본보기로 삼을 것은 <span class="tt">deki-lilygo-boards</span>입니다. <span class="tt">deki-desktop-integration</span>은 같은 방식으로 시뮬레이터를, <span class="tt">deki-tactility-integration</span>은 두 개의 타겟을 제공합니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-adopting-the-project-gets-a-copy"></a>
+채택: 프로젝트가 사본을 받습니다</h1>
+<p>패키지의 플랫폼을 선택하면(빌드 패널에서, <span class="tt">set_active_platform</span>으로, 또는 그 플랫폼용으로 빌드하여) 그 디렉터리가 프로젝트의 <span class="tt">platforms/</span>에 복사됩니다. 그 뒤로는 프로젝트의 파일입니다. 플랫폼 에디터에서 편집하고, 부트 씬을 다른 씬처럼 열고, 커밋하십시오. 프로젝트는 결코 패키지 안에서 빌드하지 않습니다.</p>
+<p>프로젝트가 이미 정의한 플랫폼은 채택으로 덮어써지지 않으며, 그 디렉터리에 이미 있는 파일도 유지됩니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-origin-edit-update-restore"></a>
+출처: 편집, 업데이트, 복원</h1>
+<p>채택할 때 플랫폼 옆에 <span class="tt">origin.json</span>도 작성됩니다. 여기에는 패키지 이름과 <b>채택 당시의</b> 템플릿, 즉 플랫폼 JSON과 그 밖의 모든 파일의 해시가 들어 있습니다. 나머지와 함께 커밋하십시오.</p>
+<p>채택한 것, 프로젝트가 지금 가진 것, 패키지가 지금 제공하는 것을 모두 알 수 있으므로, 빌드 패널은 타겟 목록 아래에 다음을 표시합니다.</p>
+<div class="fragment"><div class="line">From package deki-lilygo-boards 0.17.0 - modified - update available</div>
+<div class="line">[Update] [Restore defaults]</div>
+</div><!-- fragment --><ul>
+<li><b>수정됨</b>: 프로젝트의 사본이 채택 당시와 다릅니다. 마우스를 올리면 무엇이 다른지 표시됩니다.</li>
+<li><b>업데이트 있음</b>: 패키지가 채택 당시와 다른 것을 제공합니다.</li>
+<li><b>업데이트</b>는 패키지가 바꾼 것을 가져오고 프로젝트가 바꾼 것은 유지합니다. 플랫폼 설정은 백엔드의 <span class="tt">frameworkOptions</span>를 포함하여 하나씩 병합되며, 부트 씬을 비롯한 그 밖의 파일은 통째로 가져오거나 유지합니다. 양쪽이 같은 것을 바꾼 경우에는 프로젝트의 것을 유지하고 그 사실을 표시하며, 패키지의 버전이 새 기준이 되므로 같은 질문은 한 번만 받습니다.</li>
+<li><b>기본값으로 복원</b>은 확인을 거친 뒤 사본을 현재 패키지의 버전으로 교체합니다. 프로젝트에만 있는 파일(에셋 사이드카, 프로젝트 자체의 씬)은 남겨 둡니다.</li>
+</ul>
+<p>수정으로 간주되지 않는 것: 에디터가 JSON을 자신의 형식으로 다시 저장하는 것(이전 파일은 백엔드 설정을 최상위에 두지만, 저장하면 <span class="tt">frameworkOptions</span> 아래로 중첩됩니다), 그리고 git이 바꾼 줄 끝 문자.</p>
+<p>출처가 기록되기 전에 채택된 플랫폼은, 다음에 사용될 때 여전히 패키지가 제공하는 것과 일치하면 기록을 받습니다. 다르다면 그 변경이 누구의 것인지 알 수 없으므로 기준을 지어내지 않습니다. *패키지와 다름*으로 표시되며, 업데이트는 할 수 없고 복원만 할 수 있습니다.</p>
+<p>패키지를 제거해도 플랫폼은 남아 있으며 계속 빌드됩니다. 패키지가 돌아올 때까지 해당 줄에는 *(설치되지 않음)*이 표시됩니다.</p>
+<p>채택된 플랫폼을 삭제하면 다시 선택지에 나타나며, 다시 선택하면 패키지의 현재 버전이 복사되어 들어옵니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-from-the-command-line"></a>
+명령줄에서</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">도구  </th><th class="markdownTableHeadNone">하는 일  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">list_platforms</span> (또는 <span class="tt">--list-platforms</span>)  </td><td class="markdownTableBodyNone">모든 타겟. 패키지에서 온 타겟에는 <span class="tt">origin</span>이 붙습니다: <span class="tt">package</span>, <span class="tt">modified</span>, <span class="tt">updateAvailable</span>, <span class="tt">canUpdate</span>, <span class="tt">canRestore</span>.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">set_active_platform</span>  </td><td class="markdownTableBodyNone">프로젝트의 기본 타겟을 선택하며, 필요하면 채택합니다.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">create_platform</span>, <span class="tt">set_platform_provides</span>  </td><td class="markdownTableBodyNone">프로젝트 자체의 플랫폼을 만들거나 변경합니다. <span class="tt">set_platform_provides</span>는 <span class="tt">asset_storage</span>와 <span class="tt">cxx_flags</span>를 받습니다.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">update_platform</span>  </td><td class="markdownTableBodyNone">패키지에서 업데이트합니다. <span class="tt">taken</span>과 <span class="tt">kept</span>를 반환합니다.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">restore_platform</span>  </td><td class="markdownTableBodyNone">패키지의 버전으로 복원합니다. <span class="tt">taken</span>을 반환합니다.  </td></tr>
+</table>
+<div class="fragment"><div class="line">DekiEditor --tool update_platform --args &#39;{&quot;platform_id&quot;:&quot;lilygo_t_deck_plus&quot;}&#39; &lt;project&gt;</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-platforms-in-the-code"></a>
+코드에서</h1>
+<p><span class="tt">deki-editor/build/PlatformConfig.h</span>는 플랫폼과 레지스트리입니다. <span class="tt">deki-editor/build/PlatformTemplates.h</span>는 이 페이지에서 패키지에 관해 설명한 모든 것, 즉 제공되는 플랫폼 찾기, 채택, 출처 기록, 업데이트와 복원을 담고 있습니다. 둘 다 에디터 SDK에 포함되어 있으므로 패키지의 빌드 백엔드가 사용할 수 있습니다. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

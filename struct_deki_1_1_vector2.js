@@ -1,7 +1,7 @@
 var struct_deki_1_1_vector2 =
 [
     [ "Vector2", "struct_deki_1_1_vector2.html#ae43872e2e92f3b9f29e38bbedb9909ee", null ],
-    [ "Vector2", "struct_deki_1_1_vector2.html#a972d75ef3dabfe3268d030f84cde25e1", null ],
+    [ "Vector2", "struct_deki_1_1_vector2.html#adab9d4657ed70fc0fa1daf312911b390", null ],
     [ "Zero", "struct_deki_1_1_vector2.html#a7ead18ab9739e06ae0392abe9f1b570f", null ],
     [ "One", "struct_deki_1_1_vector2.html#a1bb3efd17006f2558e23ebacdfc603b5", null ],
     [ "Up", "struct_deki_1_1_vector2.html#a92e7957142edb91cdc7c2d40b20ea229", null ],

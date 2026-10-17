@@ -17,11 +17,13 @@ var class_deki_1_1_asset_manager =
     [ "ReleaseAssetTracking", "class_deki_1_1_asset_manager.html#a20d83ca89c03af00d241ca615667b5d3", null ],
     [ "LoadGuidTable", "class_deki_1_1_asset_manager.html#aabba15429caf0257bb49ad4aab3fe721", null ],
     [ "LoadAssetLookupTable", "class_deki_1_1_asset_manager.html#ab0f444b109d522051a3c9a78f28b0058", null ],
+    [ "LoadAssetRoot", "class_deki_1_1_asset_manager.html#aa66457eab7b1a93ba63c6fc1399999e9", null ],
     [ "RegisterGuid", "class_deki_1_1_asset_manager.html#a9a8cea7f83b27425e4012a8af3e2aac1", null ],
     [ "RemoveGuid", "class_deki_1_1_asset_manager.html#ac311539e6488bd6e75a8bea98ba40761", null ],
     [ "SetCacheDirectory", "class_deki_1_1_asset_manager.html#aa35f9772e74c28a7c0396d904823f740", null ],
     [ "GetCacheDirectory", "class_deki_1_1_asset_manager.html#a9eb88729a35797a5f822d6d8a5b94664", null ],
     [ "IsReady", "class_deki_1_1_asset_manager.html#ae60f4f1a3d23c4c559d765106a7772d8", null ],
     [ "LookupPath", "class_deki_1_1_asset_manager.html#af13d6625425e815401d064ac8837ab73", null ],
-    [ "ReadWholeFile", "class_deki_1_1_asset_manager.html#aca5e6840f0edaa41d7a66028cd10805e", null ]
+    [ "ReadWholeFile", "class_deki_1_1_asset_manager.html#aca5e6840f0edaa41d7a66028cd10805e", null ],
+    [ "ReadWholeFile", "class_deki_1_1_asset_manager.html#a6d3b9c13102b84ca7394c3aadf69610b", null ]
 ];

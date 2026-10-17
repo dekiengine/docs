@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -145,7 +153,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a scene containing objects and components.  
+<p>A scene: objects with components, and <a class="el" href="namespace_deki.html">Deki</a>'s basic unit of content.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/Scene.h&gt;</code></p>
@@ -159,9 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2cf5e37822085364207502a0adb44ac7" id="r_a2cf5e37822085364207502a0adb44ac7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2cf5e37822085364207502a0adb44ac7">Scene</a> ()</td></tr>
 <tr class="memitem:a9ec70d7ad698cded416a6761da1c96f9" id="r_a9ec70d7ad698cded416a6761da1c96f9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9ec70d7ad698cded416a6761da1c96f9">~Scene</a> ()</td></tr>
 <tr class="memitem:ae4423a9e5f8012ecea0fdbafdfd16784" id="r_ae4423a9e5f8012ecea0fdbafdfd16784"><td class="memItemLeft"><a class="el" href="class_deki_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ae4423a9e5f8012ecea0fdbafdfd16784">Instantiate</a> (<a class="el" href="#a2cf5e37822085364207502a0adb44ac7">Scene</a> *targetScene)</td></tr>
-<tr class="memdesc:ae4423a9e5f8012ecea0fdbafdfd16784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate this scene into another scene.  <br /></td></tr>
+<tr class="memdesc:ae4423a9e5f8012ecea0fdbafdfd16784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a copy of this scene's objects to <span class="tt">targetScene</span>.  <br /></td></tr>
 <tr class="memitem:ae4e49120ee65e8aaf3da6869b7370ad1" id="r_ae4e49120ee65e8aaf3da6869b7370ad1"><td class="memItemLeft"><a class="el" href="class_deki_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ae4e49120ee65e8aaf3da6869b7370ad1">Instantiate</a> (<a class="el" href="#a2cf5e37822085364207502a0adb44ac7">Scene</a> *targetScene, float x, float y)</td></tr>
-<tr class="memdesc:ae4e49120ee65e8aaf3da6869b7370ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate this scene with a specific position.  <br /></td></tr>
+<tr class="memdesc:ae4e49120ee65e8aaf3da6869b7370ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate(targetScene), with the root object placed at (x, y).  <br /></td></tr>
 <tr class="memitem:a51bd47324a2ab326cb723f57ceadae8e" id="r_a51bd47324a2ab326cb723f57ceadae8e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a51bd47324a2ab326cb723f57ceadae8e">AddObject</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *obj)</td></tr>
 <tr class="memitem:a53dd3b1289685d6eb557431dabe2fb50" id="r_a53dd3b1289685d6eb557431dabe2fb50"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a53dd3b1289685d6eb557431dabe2fb50">RemoveObject</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *obj)</td></tr>
 <tr class="memitem:a2fa8dd34e24ac16623d8e79f08ea5a66" id="r_a2fa8dd34e24ac16623d8e79f08ea5a66"><td class="memItemLeft">const std::vector&lt; <a class="el" href="class_deki_1_1_object.html">Object</a> * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2fa8dd34e24ac16623d8e79f08ea5a66">GetObjects</a> () const</td></tr>
@@ -183,8 +191,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac7b51b78a0d0580b5e4d190ff4035bc" id="r_aac7b51b78a0d0580b5e4d190ff4035bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aac7b51b78a0d0580b5e4d190ff4035bc">CollapseInstance</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *instanceObj)</td></tr>
 <tr class="memitem:a59cac18aae0ac37d19c5981005f8d068" id="r_a59cac18aae0ac37d19c5981005f8d068"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a59cac18aae0ac37d19c5981005f8d068">ApplyOverrides</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *instanceObj, const nlohmann::json &amp;overrides)</td></tr>
 <tr class="memitem:a0c0890e00874c83e255d586fa13f16f4" id="r_a0c0890e00874c83e255d586fa13f16f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0c0890e00874c83e255d586fa13f16f4">CollectOverrides</a> (const <a class="el" href="class_deki_1_1_object.html">Object</a> *instanceRoot, const <a class="el" href="class_deki_1_1_object.html">Object</a> *obj, nlohmann::json &amp;overrides) const</td></tr>
+<tr class="memitem:a1ba4855cbdb3e76b9d499bcfa8276d23" id="r_a1ba4855cbdb3e76b9d499bcfa8276d23"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1ba4855cbdb3e76b9d499bcfa8276d23">TryCollectOverrides</a> (const <a class="el" href="class_deki_1_1_object.html">Object</a> *instanceRoot, const <a class="el" href="class_deki_1_1_object.html">Object</a> *obj, nlohmann::json &amp;overrides) const</td></tr>
+<tr class="memdesc:a1ba4855cbdb3e76b9d499bcfa8276d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">CollectOverrides, telling whether there was a source to compare with.  <br /></td></tr>
 <tr class="memitem:ab144d134d1926abe529aac1f0da54b2a" id="r_ab144d134d1926abe529aac1f0da54b2a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab144d134d1926abe529aac1f0da54b2a">SetOnObjectsAboutToBeDestroyed</a> (<a class="el" href="#ab7495b0d38574cfcc0d54df9f3003927">OnObjectsAboutToBeDestroyedFn</a> fn)</td></tr>
-<tr class="memdesc:ab144d134d1926abe529aac1f0da54b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out of line: the callback is stored in a side table in Scene.cpp, not in a member, so that sizeof(Scene) does not depend on DEKI_EDITOR.  <br /></td></tr>
+<tr class="memdesc:ab144d134d1926abe529aac1f0da54b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out of line: the callback lives in a side table in Scene.cpp, not in a member, so sizeof(Scene) does not depend on DEKI_EDITOR and embedded targets do not carry a 32-byte std::function they never call.  <br /></td></tr>
 <tr class="memitem:a9836fe7402a4bc564eae6fafd09ca3ad" id="r_a9836fe7402a4bc564eae6fafd09ca3ad"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9836fe7402a4bc564eae6fafd09ca3ad">GetName</a> () const</td></tr>
 <tr class="memitem:af21ff0d30666f67b960f96ca4063844f" id="r_af21ff0d30666f67b960f96ca4063844f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af21ff0d30666f67b960f96ca4063844f">SetName</a> (const std::string &amp;sceneName)</td></tr>
 <tr class="memitem:a3d4d973e7556c67befa2a22a8dce51d9" id="r_a3d4d973e7556c67befa2a22a8dce51d9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3d4d973e7556c67befa2a22a8dce51d9">IsLoaded</a> () const</td></tr>
@@ -192,36 +202,31 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a71a474d6875e7dc0b6228b456f48fa22" id="r_a71a474d6875e7dc0b6228b456f48fa22"><td class="memItemLeft">static <a class="el" href="#a2cf5e37822085364207502a0adb44ac7">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a71a474d6875e7dc0b6228b456f48fa22">Load</a> (const char *path, bool cache=false)</td></tr>
-<tr class="memdesc:a71a474d6875e7dc0b6228b456f48fa22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a scene by asset path through <a class="el" href="class_deki_1_1_asset_manager.html">AssetManager</a>.  <br /></td></tr>
+<tr class="memdesc:a71a474d6875e7dc0b6228b456f48fa22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a scene through <a class="el" href="class_deki_1_1_asset_manager.html">AssetManager</a>.  <br /></td></tr>
 <tr class="memitem:a86e56b09c85b9615e7eaf3a740951885" id="r_a86e56b09c85b9615e7eaf3a740951885"><td class="memItemLeft">static <a class="el" href="#a2cf5e37822085364207502a0adb44ac7">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a86e56b09c85b9615e7eaf3a740951885">LoadInternal</a> (const char *path)</td></tr>
-<tr class="memdesc:a86e56b09c85b9615e7eaf3a740951885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a scene directly from the filesystem (binary MessagePack).  <br /></td></tr>
+<tr class="memdesc:a86e56b09c85b9615e7eaf3a740951885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a compiled .scene (binary MessagePack) from a resolved filesystem path, or returns nullptr.  <br /></td></tr>
 <tr class="memitem:a3aa087edc4a7b247243ba9d5730677ae" id="r_a3aa087edc4a7b247243ba9d5730677ae"><td class="memItemLeft">static <a class="el" href="#a2cf5e37822085364207502a0adb44ac7">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a3aa087edc4a7b247243ba9d5730677ae">LoadFromMemory</a> (const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:a3aa087edc4a7b247243ba9d5730677ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a scene from memory buffer.  <br /></td></tr>
+<tr class="memdesc:a3aa087edc4a7b247243ba9d5730677ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a scene from compiled bytes in memory, or returns nullptr.  <br /></td></tr>
 <tr class="memitem:af9209a73e98e8e898787de5f6f0e7701" id="r_af9209a73e98e8e898787de5f6f0e7701"><td class="memItemLeft">static std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af9209a73e98e8e898787de5f6f0e7701">CollectUnknownProperties</a> ()</td></tr>
-<tr class="memdesc:af9209a73e98e8e898787de5f6f0e7701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys found in a scene file that no component's current metadata recognises, as {component type name, key}.  <br /></td></tr>
+<tr class="memdesc:af9209a73e98e8e898787de5f6f0e7701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys found in a scene file that no component's current metadata knows, as {component type name, key}.  <br /></td></tr>
 <tr class="memitem:aaf27c7ca24760782dbba2eacafc11aaa" id="r_aaf27c7ca24760782dbba2eacafc11aaa"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aaf27c7ca24760782dbba2eacafc11aaa">ClearUnknownProperties</a> ()</td></tr>
-<tr class="memdesc:aaf27c7ca24760782dbba2eacafc11aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forget everything collected so far, so a check can scope itself to the scenes it is about to load.  <br /></td></tr>
+<tr class="memdesc:aaf27c7ca24760782dbba2eacafc11aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets everything collected so far, so a check can cover only the scenes it is about to load.  <br /></td></tr>
 <tr class="memitem:a27b22d1f7f666ff86fec7c0dba00e782" id="r_a27b22d1f7f666ff86fec7c0dba00e782"><td class="memItemLeft">static std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a27b22d1f7f666ff86fec7c0dba00e782">CollectLegacyProperties</a> ()</td></tr>
-<tr class="memdesc:a27b22d1f7f666ff86fec7c0dba00e782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}: the file still carries the name from before a rename.  <br /></td></tr>
+<tr class="memdesc:a27b22d1f7f666ff86fec7c0dba00e782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}.  <br /></td></tr>
 <tr class="memitem:a6728e3445ff0c953e7f0721ae0e0465b" id="r_a6728e3445ff0c953e7f0721ae0e0465b"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a6728e3445ff0c953e7f0721ae0e0465b">ComponentPropertiesToJson</a> (const <a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta)</td></tr>
-<tr class="memdesc:a6728e3445ff0c953e7f0721ae0e0465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">comp</span> - its base class's first, then its own - as the JSON a scene file holds for it, keyed by reflected name.  <br /></td></tr>
+<tr class="memdesc:a6728e3445ff0c953e7f0721ae0e0465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">comp</span> (its base class's first, then its own) as the JSON a scene file holds, keyed by reflected name.  <br /></td></tr>
 <tr class="memitem:a7d60f51bbf7e86401165a6ba106bd164" id="r_a7d60f51bbf7e86401165a6ba106bd164"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a7d60f51bbf7e86401165a6ba106bd164">ComponentDefaultsToJson</a> (const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta)</td></tr>
 <tr class="memdesc:a7d60f51bbf7e86401165a6ba106bd164"><td class="mdescLeft">&#160;</td><td class="mdescRight">ComponentPropertiesToJson for a default-constructed instance of <span class="tt">meta</span>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5a8619747449f4ca9ed96d66a5b8c7b0" id="r_a5a8619747449f4ca9ed96d66a5b8c7b0"><td class="memItemLeft">static constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a5a8619747449f4ca9ed96d66a5b8c7b0">AssetTypeName</a> = &quot;Scene&quot;</td></tr>
-<tr class="memdesc:a5a8619747449f4ca9ed96d66a5b8c7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset type name for <a class="el" href="class_deki_1_1_asset_manager.html#a87b16cb241e74f744e0075d68fde83b5" title="Load an asset by path (unified API).">AssetManager::Load&lt;T&gt;()</a> lookup.  <br /></td></tr>
+<tr class="memitem:a729cdaa6f38ea482a5fcb7cc89896e11" id="r_a729cdaa6f38ea482a5fcb7cc89896e11"><td class="memItemLeft">static constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a729cdaa6f38ea482a5fcb7cc89896e11">kAssetTypeName</a> = &quot;Scene&quot;</td></tr>
+<tr class="memdesc:a729cdaa6f38ea482a5fcb7cc89896e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset type name for <a class="el" href="class_deki_1_1_asset_manager.html#a87b16cb241e74f744e0075d68fde83b5" title="Loads the asset of type T at path, written without the &quot;assets/&quot; prefix and extension (such as &quot;scene...">AssetManager::Load&lt;T&gt;()</a>.  <br /></td></tr>
 <tr class="memitem:a678ce13b00857abd35bf2de347c246a3" id="r_a678ce13b00857abd35bf2de347c246a3"><td class="memItemLeft">static std::function&lt; std::string(const std::string &amp;guid)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a678ce13b00857abd35bf2de347c246a3">s_GuidToPathResolver</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a scene containing objects and components. </p>
-<p>A <a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> is the fundamental content unit in <a class="el" href="namespace_deki.html" title="Base texture class for V-Engine.">Deki</a> <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a>. It can contain objects with components and can be:</p><ul>
-<li>Loaded as the active/running scene</li>
-<li>Instanced inside another scene (what other engines call a prefab)</li>
-<li>Distributed and loaded at runtime</li>
-</ul>
-<p>This unified concept eliminates the scene/prefab distinction other engines draw - here everything is a scene. </p>
+<div class="textblock"><p>A scene: objects with components, and <a class="el" href="namespace_deki.html">Deki</a>'s basic unit of content. </p>
+<p>A scene can be loaded as the running scene, instanced inside another scene (what other engines call a prefab), or shipped and loaded at runtime. There is no separate prefab type. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="ab7495b0d38574cfcc0d54df9f3003927" name="ab7495b0d38574cfcc0d54df9f3003927"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7495b0d38574cfcc0d54df9f3003927">&#9670;&#160;</a></span>OnObjectsAboutToBeDestroyedFn</h2>
@@ -300,16 +305,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Load a scene by asset path through <a class="el" href="class_deki_1_1_asset_manager.html">AssetManager</a>. </p>
-<p>Always returns a fresh <a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> instance with the original data.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Asset-relative path without extension (e.g., "scenes/settings/settings") </td></tr>
-    <tr><td class="paramname">cache</td><td>If true, pins the raw file bytes in RAM so subsequent loads skip disk I/O. If false (default), reads from disk every time. Either way, a fresh instance is returned - cached bytes are never mutated. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Loaded scene or nullptr on failure </dd></dl>
+<p>Loads a scene through <a class="el" href="class_deki_1_1_asset_manager.html">AssetManager</a>. </p>
+<p><span class="tt">path</span> is asset-relative without extension (such as "scenes/settings/settings"). Always returns a fresh <a class="el" href="class_deki_1_1_scene.html" title="A scene: objects with components, and Deki&#39;s basic unit of content.">Scene</a>, or nullptr on failure. With <span class="tt">cache</span>, the raw file bytes stay in RAM so later loads skip the disk; the cached bytes are never modified. </p>
 
 </div>
 </div>
@@ -336,15 +333,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Load a scene directly from the filesystem (binary MessagePack). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Resolved filesystem path to the compiled .scene binary </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Loaded scene or nullptr on failure </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Used internally by <a class="el" href="class_deki_1_1_asset_manager.html">AssetManager</a> and <a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a>. Prefer <a class="el" href="#a71a474d6875e7dc0b6228b456f48fa22" title="Load a scene by asset path through AssetManager.">Load()</a> for user code. </dd></dl>
+<p>Loads a compiled .scene (binary MessagePack) from a resolved filesystem path, or returns nullptr. </p>
+<p>For <a class="el" href="class_deki_1_1_asset_manager.html">AssetManager</a> and <a class="el" href="class_deki_1_1_scene_system.html" title="Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outli...">SceneSystem</a>; user code should call <a class="el" href="#a71a474d6875e7dc0b6228b456f48fa22" title="Loads a scene through AssetManager.">Load()</a>. </p>
 
 </div>
 </div>
@@ -375,15 +365,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Load a scene from memory buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Pointer to scene data </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the data </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Loaded scene or nullptr on failure </dd></dl>
+<p>Loads a scene from compiled bytes in memory, or returns nullptr. </p>
 
 </div>
 </div>
@@ -402,14 +384,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Instantiate this scene into another scene. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">targetScene</td><td>The scene to add the instanced objects to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The root <a class="el" href="class_deki_1_1_object.html">Object</a> of the instanced scene, or nullptr on failure </dd></dl>
+<p>Adds a copy of this scene's objects to <span class="tt">targetScene</span>. </p>
+<p>Returns the copy's root object, or nullptr on failure. </p>
 
 </div>
 </div>
@@ -437,16 +413,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Instantiate this scene with a specific position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">targetScene</td><td>The scene to add the instanced objects to </td></tr>
-    <tr><td class="paramname">x</td><td>X position for the root object </td></tr>
-    <tr><td class="paramname">y</td><td>Y position for the root object </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The root <a class="el" href="class_deki_1_1_object.html">Object</a> of the instanced scene, or nullptr on failure </dd></dl>
+<p>Instantiate(targetScene), with the root object placed at (x, y). </p>
 
 </div>
 </div>
@@ -844,6 +811,35 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1ba4855cbdb3e76b9d499bcfa8276d23" name="a1ba4855cbdb3e76b9d499bcfa8276d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba4855cbdb3e76b9d499bcfa8276d23">&#9670;&#160;</a></span>TryCollectOverrides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Scene::TryCollectOverrides </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>instanceRoot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>overrides</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CollectOverrides, telling whether there was a source to compare with. </p>
+<p>False when the source scene could not be found or loaded (a merge conflict, saved by a newer editor, missing for a moment); <span class="tt">overrides</span> is then empty, and saving it would drop the instance's overrides. </p>
+
+</div>
+</div>
 <a id="af9209a73e98e8e898787de5f6f0e7701" name="af9209a73e98e8e898787de5f6f0e7701"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9209a73e98e8e898787de5f6f0e7701">&#9670;&#160;</a></span>CollectUnknownProperties()</h2>
 
@@ -867,9 +863,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Property keys found in a scene file that no component's current metadata recognises, as {component type name, key}. </p>
-<p>Reflected member names ARE the scene-file format: reflection_codegen emits each C++ identifier as a HashString key, with no opt-in gate. So renaming a reflected member silently changes the on-disk key, the parser's switch falls through, and the property reverts to its default - no error, no log line. The value itself survives (unknown keys are re-emitted on save), but the behaviour is gone.</p>
-<p>This is the detector for that. Load every scene in a project and assert this comes back empty; a missed rename names itself. Populated on load, so it reflects the scenes loaded so far in this session. </p>
+<p>Property keys found in a scene file that no component's current metadata knows, as {component type name, key}. </p>
+<p>Reflected member names are the scene-file keys, so renaming a member changes its key and the old value silently falls back to its default (the value is kept and written back on save, but nothing reads it). Load every scene in a project and check this is empty to catch a rename that lacks DEKI_RENAMED_FROM. Filled on load, so it covers the scenes loaded so far in this session. </p>
 
 </div>
 </div>
@@ -896,7 +891,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Forget everything collected so far, so a check can scope itself to the scenes it is about to load. </p>
+<p>Forgets everything collected so far, so a check can cover only the scenes it is about to load. </p>
 <p>Clears the legacy list too. </p>
 
 </div>
@@ -924,7 +919,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}: the file still carries the name from before a rename. </p>
+<p>Property keys read through a DEKI_RENAMED_FROM alias since the last clear, as {component type name, old key}. </p>
 <p>A save writes the current name, so this is a warning ("re-save to migrate"), not an error. </p>
 
 </div>
@@ -956,8 +951,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Every reflected property of <span class="tt">comp</span> - its base class's first, then its own - as the JSON a scene file holds for it, keyed by reflected name. </p>
-<p>The same writer SaveToFile uses, so a value prints exactly as it would be saved. The docs build reads default values through this. </p>
+<p>Every reflected property of <span class="tt">comp</span> (its base class's first, then its own) as the JSON a scene file holds, keyed by reflected name. </p>
+<p>Uses the same writer as SaveToFile, so values print exactly as saved. The docs build reads default values through this. </p>
 
 </div>
 </div>
@@ -1004,8 +999,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Out of line: the callback is stored in a side table in Scene.cpp, not in a member, so that sizeof(Scene) does not depend on DEKI_EDITOR. </p>
-<p>std::function is 32 bytes here - too much to carry unconditionally on an embedded target that can never invoke it. </p>
+<p>Out of line: the callback lives in a side table in Scene.cpp, not in a member, so sizeof(Scene) does not depend on DEKI_EDITOR and embedded targets do not carry a 32-byte std::function they never call. </p>
 
 </div>
 </div>
@@ -1085,8 +1079,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a5a8619747449f4ca9ed96d66a5b8c7b0" name="a5a8619747449f4ca9ed96d66a5b8c7b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a8619747449f4ca9ed96d66a5b8c7b0">&#9670;&#160;</a></span>AssetTypeName</h2>
+<a id="a729cdaa6f38ea482a5fcb7cc89896e11" name="a729cdaa6f38ea482a5fcb7cc89896e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729cdaa6f38ea482a5fcb7cc89896e11">&#9670;&#160;</a></span>kAssetTypeName</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1095,7 +1089,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::Scene::AssetTypeName = &quot;Scene&quot;</td>
+          <td class="memname">const char* Deki::Scene::kAssetTypeName = &quot;Scene&quot;</td>
         </tr>
       </table>
   </td>
@@ -1105,7 +1099,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Asset type name for <a class="el" href="class_deki_1_1_asset_manager.html#a87b16cb241e74f744e0075d68fde83b5" title="Load an asset by path (unified API).">AssetManager::Load&lt;T&gt;()</a> lookup. </p>
+<p>Asset type name for <a class="el" href="class_deki_1_1_asset_manager.html#a87b16cb241e74f744e0075d68fde83b5" title="Loads the asset of type T at path, written without the &quot;assets/&quot; prefix and extension (such as &quot;scene...">AssetManager::Load&lt;T&gt;()</a>. </p>
 
 </div>
 </div>

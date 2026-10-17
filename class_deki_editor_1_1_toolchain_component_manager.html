@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -142,7 +150,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 </div><!--header-->
 <div class="contents">
 
-<p>Runtime toolchain component manager driven by <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> JSON.  
+<p>Manages a builder's toolchain components as its <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> describes them: detects them, downloads and installs them, and checks for updates.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/build/ToolchainComponentManager.h&gt;</code></p>
@@ -152,25 +160,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2f1c81d9b028cf870d0a831b0739167" id="r_af2f1c81d9b028cf870d0a831b0739167"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af2f1c81d9b028cf870d0a831b0739167">ToolchainComponentManager</a> ()</td></tr>
 <tr class="memitem:a1165dfa64193b3f41e60a4f58be21c5b" id="r_a1165dfa64193b3f41e60a4f58be21c5b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1165dfa64193b3f41e60a4f58be21c5b">~ToolchainComponentManager</a> ()</td></tr>
 <tr class="memitem:ae38888cc3e56e9ea8f38c63a1974a040" id="r_ae38888cc3e56e9ea8f38c63a1974a040"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae38888cc3e56e9ea8f38c63a1974a040">Initialize</a> (const <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> &amp;def)</td></tr>
-<tr class="memdesc:ae38888cc3e56e9ea8f38c63a1974a040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize from a parsed builder definition.  <br /></td></tr>
 <tr class="memitem:ab00088b405c9851c58edaaafa052b23e" id="r_ab00088b405c9851c58edaaafa052b23e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab00088b405c9851c58edaaafa052b23e">IsInitialized</a> () const</td></tr>
-<tr class="memdesc:ab00088b405c9851c58edaaafa052b23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this manager has been initialized with a valid definition.  <br /></td></tr>
+<tr class="memdesc:ab00088b405c9851c58edaaafa052b23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True once initialised with a valid definition.  <br /></td></tr>
 <tr class="memitem:aa83121dd0a1e99d813d41aa01fb655a4" id="r_aa83121dd0a1e99d813d41aa01fb655a4"><td class="memItemLeft">const <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa83121dd0a1e99d813d41aa01fb655a4">GetDefinition</a> () const</td></tr>
-<tr class="memdesc:aa83121dd0a1e99d813d41aa01fb655a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the builder definition.  <br /></td></tr>
 <tr class="memitem:a77851d25628211aff3bcaf44731c9baa" id="r_a77851d25628211aff3bcaf44731c9baa"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_toolchain_component.html">ToolchainComponent</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a77851d25628211aff3bcaf44731c9baa">GetComponents</a> () const</td></tr>
-<tr class="memdesc:a77851d25628211aff3bcaf44731c9baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate detection rules and produce <a class="el" href="struct_deki_editor_1_1_toolchain_component.html">ToolchainComponent</a> list for UI.  <br /></td></tr>
+<tr class="memdesc:a77851d25628211aff3bcaf44731c9baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the detection rules and lists the components for the UI.  <br /></td></tr>
 <tr class="memitem:ac7e1c082bc2a54fc5f2a49b018821ede" id="r_ac7e1c082bc2a54fc5f2a49b018821ede"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7e1c082bc2a54fc5f2a49b018821ede">InstallComponent</a> (const std::string &amp;componentId, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> cb=nullptr)</td></tr>
-<tr class="memdesc:ac7e1c082bc2a54fc5f2a49b018821ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download + extract a component by id (async).  <br /></td></tr>
+<tr class="memdesc:ac7e1c082bc2a54fc5f2a49b018821ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads and extracts a component, asynchronously.  <br /></td></tr>
 <tr class="memitem:ad118a95f3f1e1c362eb26c273076b557" id="r_ad118a95f3f1e1c362eb26c273076b557"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad118a95f3f1e1c362eb26c273076b557">SetupComponent</a> (const std::string &amp;componentId, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> cb=nullptr)</td></tr>
-<tr class="memdesc:ad118a95f3f1e1c362eb26c273076b557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the postInstall script for an already-installed component (async).  <br /></td></tr>
+<tr class="memdesc:ad118a95f3f1e1c362eb26c273076b557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the postInstall script of an installed component, asynchronously.  <br /></td></tr>
 <tr class="memitem:ad30d5721852f5496954861aa67f61022" id="r_ad30d5721852f5496954861aa67f61022"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad30d5721852f5496954861aa67f61022">CheckForUpdates</a> (std::function&lt; void()&gt; onComplete=nullptr)</td></tr>
-<tr class="memdesc:ad30d5721852f5496954861aa67f61022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for newer versions via GitHub API (async).  <br /></td></tr>
+<tr class="memdesc:ad30d5721852f5496954861aa67f61022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the GitHub API for newer versions, asynchronously.  <br /></td></tr>
 <tr class="memitem:a0acd32d53492384870cd56cb7a915680" id="r_a0acd32d53492384870cd56cb7a915680"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0acd32d53492384870cd56cb7a915680">IsBusy</a> () const</td></tr>
-<tr class="memdesc:a0acd32d53492384870cd56cb7a915680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether any operation is in progress.  <br /></td></tr>
+<tr class="memdesc:a0acd32d53492384870cd56cb7a915680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an operation is in progress.  <br /></td></tr>
+<tr class="memitem:a90b88e4ba3477ad081570e8d403f1753" id="r_a90b88e4ba3477ad081570e8d403f1753"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a90b88e4ba3477ad081570e8d403f1753">InstalledPathEntries</a> () const</td></tr>
+<tr class="memdesc:a90b88e4ba3477ad081570e8d403f1753"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PATH entries (<a class="el" href="struct_deki_editor_1_1_component_def.html#a5450c74ace4277f81ddb0463b9dbd17b">ComponentDef::pathEntries</a>) of every installed component, absolute and in definition order, for this platform.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Runtime toolchain component manager driven by <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> JSON. </p>
-<p>Evaluates detection rules, downloads/installs components, checks for updates. Each <a class="el" href="class_deki_editor_1_1_i_target_builder.html" title="A build backend: everything the editor knows about one kind of target.">ITargetBuilder</a> owns one of these, initialized from its builder JSON. </p>
+<div class="textblock"><p>Manages a builder's toolchain components as its <a class="el" href="struct_deki_editor_1_1_builder_definition.html">BuilderDefinition</a> describes them: detects them, downloads and installs them, and checks for updates. </p>
+<p>Each <a class="el" href="class_deki_editor_1_1_i_target_builder.html" title="A build backend: everything the editor knows about one kind of target.">ITargetBuilder</a> owns one, initialised from its builder JSON. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af2f1c81d9b028cf870d0a831b0739167" name="af2f1c81d9b028cf870d0a831b0739167"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2f1c81d9b028cf870d0a831b0739167">&#9670;&#160;</a></span>ToolchainComponentManager()</h2>
@@ -222,8 +230,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize from a parsed builder definition. </p>
-
 </div>
 </div>
 <a id="ab00088b405c9851c58edaaafa052b23e" name="ab00088b405c9851c58edaaafa052b23e"></a>
@@ -249,7 +255,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Whether this manager has been initialized with a valid definition. </p>
+<p>True once initialised with a valid definition. </p>
 
 </div>
 </div>
@@ -276,8 +282,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the builder definition. </p>
-
 </div>
 </div>
 <a id="a77851d25628211aff3bcaf44731c9baa" name="a77851d25628211aff3bcaf44731c9baa"></a>
@@ -295,7 +299,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate detection rules and produce <a class="el" href="struct_deki_editor_1_1_toolchain_component.html">ToolchainComponent</a> list for UI. </p>
+<p>Runs the detection rules and lists the components for the UI. </p>
 
 </div>
 </div>
@@ -318,7 +322,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Download + extract a component by id (async). </p>
+<p>Downloads and extracts a component, asynchronously. </p>
 
 </div>
 </div>
@@ -341,7 +345,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Run the postInstall script for an already-installed component (async). </p>
+<p>Runs the postInstall script of an installed component, asynchronously. </p>
 
 </div>
 </div>
@@ -360,7 +364,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check for newer versions via GitHub API (async). </p>
+<p>Checks the GitHub API for newer versions, asynchronously. </p>
 
 </div>
 </div>
@@ -387,7 +391,26 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Whether any operation is in progress. </p>
+<p>Whether an operation is in progress. </p>
+
+</div>
+</div>
+<a id="a90b88e4ba3477ad081570e8d403f1753" name="a90b88e4ba3477ad081570e8d403f1753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b88e4ba3477ad081570e8d403f1753">&#9670;&#160;</a></span>InstalledPathEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; DekiEditor::ToolchainComponentManager::InstalledPathEntries </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The PATH entries (<a class="el" href="struct_deki_editor_1_1_component_def.html#a5450c74ace4277f81ddb0463b9dbd17b">ComponentDef::pathEntries</a>) of every installed component, absolute and in definition order, for this platform. </p>
 
 </div>
 </div>

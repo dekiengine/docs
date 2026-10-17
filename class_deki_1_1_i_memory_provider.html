@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -142,6 +150,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
+<p>The platform's memory, as the engine sees it, so the engine has no platform-specific allocation code: a microcontroller with external RAM uses its SDK's capability allocator, a part without it or a desktop uses malloc.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;deki/providers/IMemoryProvider.h&gt;</code></p>
 
 <p>Inherited by <a class="el" href="class_deki_1_1_host_memory_provider.html">Deki::HostMemoryProvider</a>.</p>
@@ -150,25 +161,26 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8316242526953f0624c210957fe80d87" id="r_a8316242526953f0624c210957fe80d87"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a8316242526953f0624c210957fe80d87">~IMemoryProvider</a> ()=default</td></tr>
 <tr class="memitem:a76b25b5dcfb5044924c2a21799a2ea36" id="r_a76b25b5dcfb5044924c2a21799a2ea36"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a76b25b5dcfb5044924c2a21799a2ea36">Initialize</a> ()=0</td></tr>
-<tr class="memdesc:a76b25b5dcfb5044924c2a21799a2ea36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the memory backend.  <br /></td></tr>
+<tr class="memdesc:a76b25b5dcfb5044924c2a21799a2ea36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false on failure.  <br /></td></tr>
 <tr class="memitem:adbb44f4b25eaac6d59afb1207e56840a" id="r_adbb44f4b25eaac6d59afb1207e56840a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#adbb44f4b25eaac6d59afb1207e56840a">Shutdown</a> ()=0</td></tr>
-<tr class="memdesc:adbb44f4b25eaac6d59afb1207e56840a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the memory backend.  <br /></td></tr>
 <tr class="memitem:a9100a788833bdf32f750f1532da94c24" id="r_a9100a788833bdf32f750f1532da94c24"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a9100a788833bdf32f750f1532da94c24">Serves</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region) const =0</td></tr>
-<tr class="memdesc:a9100a788833bdf32f750f1532da94c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if external RAM (PSRAM, SDRAM, etc.) is available.  <br /></td></tr>
+<tr class="memdesc:a9100a788833bdf32f750f1532da94c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the board can place memory in <span class="tt">region</span>.  <br /></td></tr>
 <tr class="memitem:a89385c115474ccb72142b13d7fa58eca" id="r_a89385c115474ccb72142b13d7fa58eca"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#a89385c115474ccb72142b13d7fa58eca">Allocate</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, size_t bytes, bool needsDma)=0</td></tr>
-<tr class="memdesc:a89385c115474ccb72142b13d7fa58eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate <span class="tt">bytes</span> from <span class="tt">region</span>.  <br /></td></tr>
+<tr class="memdesc:a89385c115474ccb72142b13d7fa58eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <span class="tt">bytes</span> from <span class="tt">region</span>, or returns nullptr, including for a region the board does not serve; it never substitutes another region.  <br /></td></tr>
 <tr class="memitem:adbbe4bef937d261a80120f4021176cfd" id="r_adbbe4bef937d261a80120f4021176cfd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#adbbe4bef937d261a80120f4021176cfd">Free</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, void *ptr)=0</td></tr>
-<tr class="memdesc:adbbe4bef937d261a80120f4021176cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a block obtained from <span class="tt">region</span>.  <br /></td></tr>
+<tr class="memdesc:adbbe4bef937d261a80120f4021176cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block from <span class="tt">region</span>.  <br /></td></tr>
 <tr class="memitem:ab7d85a1c69a9d37bbc4a8960a0702cca" id="r_ab7d85a1c69a9d37bbc4a8960a0702cca"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#ab7d85a1c69a9d37bbc4a8960a0702cca">GetAvailable</a> (<a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region) const =0</td></tr>
-<tr class="memdesc:ab7d85a1c69a9d37bbc4a8960a0702cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes still available in <span class="tt">region</span>, or 0 where the platform cannot say.  <br /></td></tr>
+<tr class="memdesc:ab7d85a1c69a9d37bbc4a8960a0702cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes still free in <span class="tt">region</span>, or 0 when the platform cannot measure it.  <br /></td></tr>
 <tr class="memitem:acb0fb7704e635ba1084529a409293fe8" id="r_acb0fb7704e635ba1084529a409293fe8"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#acb0fb7704e635ba1084529a409293fe8">AllocateRaw</a> (size_t size)</td></tr>
-<tr class="memdesc:acb0fb7704e635ba1084529a409293fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate with natural alignment and no engine bookkeeping.  <br /></td></tr>
+<tr class="memdesc:acb0fb7704e635ba1084529a409293fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <span class="tt">size</span> bytes, or returns nullptr.  <br /></td></tr>
 <tr class="memitem:a69dbfc6e6bfed0a3699302c95f538b42" id="r_a69dbfc6e6bfed0a3699302c95f538b42"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a69dbfc6e6bfed0a3699302c95f538b42">FreeRaw</a> (void *ptr)</td></tr>
 <tr class="memdesc:a69dbfc6e6bfed0a3699302c95f538b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a block from AllocateRaw. Override both or neither.  <br /></td></tr>
 <tr class="memitem:a807ec8dd4221d87a2154ba710b83d991" id="r_a807ec8dd4221d87a2154ba710b83d991"><td class="memItemLeft">virtual size_t&#160;</td><td class="memItemRight"><a class="el" href="#a807ec8dd4221d87a2154ba710b83d991">GetRawBlockSize</a> (void *ptr) const</td></tr>
-<tr class="memdesc:a807ec8dd4221d87a2154ba710b83d991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usable size of a block from AllocateRaw.  <br /></td></tr>
+<tr class="memdesc:a807ec8dd4221d87a2154ba710b83d991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usable size of a block from AllocateRaw, or 0 when the platform cannot say.  <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The platform's memory, as the engine sees it, so the engine has no platform-specific allocation code: a microcontroller with external RAM uses its SDK's capability allocator, a part without it or a desktop uses malloc. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8316242526953f0624c210957fe80d87" name="a8316242526953f0624c210957fe80d87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8316242526953f0624c210957fe80d87">&#9670;&#160;</a></span>~IMemoryProvider()</h2>
 
@@ -218,8 +230,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize the memory backend. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if initialization succeeded </dd></dl>
+<p>Returns false on failure. </p>
 
 <p>Implemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#ad70c0f2ab5adc9fd7e91b3a49e1d00a6">Deki::HostMemoryProvider</a>.</p>
 
@@ -248,8 +259,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Shutdown the memory backend. </p>
-
 <p>Implemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#a5515a0eb3ae1620f627f21771fa95a0d">Deki::HostMemoryProvider</a>.</p>
 
 </div>
@@ -277,11 +286,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if external RAM (PSRAM, SDRAM, etc.) is available. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if external RAM is present and usable</dd></dl>
-<p>Does this board have <span class="tt">region</span> as a distinct place to put memory?</p>
-<p>A platform with one heap answers true for the regions it can satisfy and false for the rest - and answering true for "external" when there is no PSRAM is not a lie if every allocation is equally fast, it is a statement that the distinction does not exist here.</p>
-<p><a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Memory</a> asks this once at startup to report what the board has. </p>
+<p>True when the board can place memory in <span class="tt">region</span>. </p>
+<p>A platform with one heap answers true for every region it can satisfy: where all memory is equally fast, "external" without PSRAM is the same place as "internal". <a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Memory</a> asks once at startup to report what the board has. </p>
 
 <p>Implemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#aebe637f830ada36a1072d61d1a123336">Deki::HostMemoryProvider</a>.</p>
 
@@ -319,15 +325,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allocate <span class="tt">bytes</span> from <span class="tt">region</span>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">needsDma</td><td>The caller requires a DMA engine to be able to read it. Orthogonal to the region: a framebuffer must be reachable whether it lives in internal RAM or in PSRAM. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The block, or nullptr - including for a region this board does not serve. There is no substitution.</dd></dl>
-<p>One entry point rather than one virtual per region, because the set of regions is open: a package can define "rtc" without an engine release, and no interface with a method per region could carry that. A provider dispatches on <span class="tt">region.id</span>, which is a compile-time constant, and returns nullptr for anything it does not recognise. </p>
+<p>Allocates <span class="tt">bytes</span> from <span class="tt">region</span>, or returns nullptr, including for a region the board does not serve; it never substitutes another region. </p>
+<p><span class="tt">needsDma</span> means a DMA engine must be able to read the block, in any region: a framebuffer must be reachable in internal RAM or PSRAM alike.</p>
+<p>One entry point, not a virtual per region, because packages can define new regions (such as "rtc") without an engine release. A provider switches on <span class="tt">region.id</span>, a compile-time constant, and returns nullptr for any it does not know. </p>
 
 <p>Implemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#a1bebff8b0d7adfa7be5edd2e48939dd4">Deki::HostMemoryProvider</a>.</p>
 
@@ -360,8 +360,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Release a block obtained from <span class="tt">region</span>. </p>
-<p>The region comes from the allocation's own header, so a caller never has to remember it and cannot get it wrong. </p>
+<p>Frees a block from <span class="tt">region</span>. </p>
+<p>The region comes from the allocation's own header, so callers never pass it themselves. </p>
 
 <p>Implemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#a0ff4d1304f219ca082763f7d87564583">Deki::HostMemoryProvider</a>.</p>
 
@@ -390,8 +390,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Bytes still available in <span class="tt">region</span>, or 0 where the platform cannot say. </p>
-<p>Reported in the startup line and in every out-of-memory message, which is why a provider that cannot measure should say so in a comment rather than let 0 read as "exhausted". </p>
+<p>Bytes still free in <span class="tt">region</span>, or 0 when the platform cannot measure it. </p>
+<p>It appears in the startup line and in every out-of-memory message, so a provider returning 0 should say in a comment that 0 means "unknown", not "exhausted". </p>
 
 <p>Implemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#a24cd35c34071b190d413549f121c53c9">Deki::HostMemoryProvider</a>.</p>
 
@@ -420,15 +420,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Allocate with natural alignment and no engine bookkeeping. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>Number of bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer, or nullptr</dd></dl>
-<p>Must be at least as aligned as malloc, since operator new has to satisfy alignof(std::max_align_t). The default IS malloc. </p>
+<p>Allocates <span class="tt">size</span> bytes, or returns nullptr. </p>
+<p>Must be at least as aligned as malloc, since operator new must satisfy alignof(std::max_align_t). The default is malloc. </p>
 
 </div>
 </div>
@@ -482,15 +475,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Usable size of a block from AllocateRaw. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ptr</td><td>A pointer from AllocateRaw </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Its size in bytes, or 0 where the platform cannot say</dd></dl>
-<p>There is no header to read it from, so the heap is asked instead (heap_caps_get_allocated_size on ESP-IDF, _msize on Windows). Used only to keep the byte total honest on free; returning 0 costs accuracy in <a class="el" href="class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e" title="Log what is allocated and what is left, in one line.">Memory::LogStats</a> and nothing else. </p>
+<p>Usable size of a block from AllocateRaw, or 0 when the platform cannot say. </p>
+<p>There is no header, so the heap is asked (heap_caps_get_allocated_size on ESP-IDF, _msize on Windows). Only keeps the byte total right on free; 0 costs accuracy in <a class="el" href="class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e" title="Logs what is allocated and what is left, in one line, with an optional label (such as &quot;after level lo...">Memory::LogStats</a> and nothing else. </p>
 
 <p>Reimplemented in <a class="el" href="class_deki_1_1_host_memory_provider.html#af9008a3e6df54e52026053dda0d9f63f">Deki::HostMemoryProvider</a>.</p>
 

@@ -7,6 +7,6 @@ var _asset_pack_reader_8h =
     [ "Deki::PackIndexEntry", "struct_deki_1_1_pack_index_entry.html", "struct_deki_1_1_pack_index_entry" ],
     [ "Deki::AssetPackReader", "class_deki_1_1_asset_pack_reader.html", "class_deki_1_1_asset_pack_reader" ],
     [ "DEKI_PACK_API", "_asset_pack_reader_8h.html#a1956b6eae4527034b78ef31cd91f41b1", null ],
-    [ "Deki::DPACK_MAGIC", "namespace_deki.html#ae0c36ae179fba6c3d8f94ea490c44847", null ],
-    [ "Deki::DPACK_VERSION", "namespace_deki.html#a377dacebea5d8d5a7f243ac6bd1e83b8", null ]
+    [ "Deki::kDpackMagic", "namespace_deki.html#a788cf5d4318f9011c690b30dcec7bb1f", null ],
+    [ "Deki::kDpackVersion", "namespace_deki.html#a20b0d1f232d8ad518825c4cdc99f93d5", null ]
 ];

@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -142,7 +150,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a> class for managing the root scene.  
+<p>Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outlive scene changes.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/SceneSystem.h&gt;</code></p>
@@ -150,38 +158,31 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a370f0da1df0c9ebb3e8d0b32affd2a60" id="r_a370f0da1df0c9ebb3e8d0b32affd2a60"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a370f0da1df0c9ebb3e8d0b32affd2a60">SceneSystem</a> ()</td></tr>
-<tr class="memdesc:a370f0da1df0c9ebb3e8d0b32affd2a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor - initializes the scene system.  <br /></td></tr>
 <tr class="memitem:a6fbe523e7a55c6d03bf624c60a74966b" id="r_a6fbe523e7a55c6d03bf624c60a74966b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6fbe523e7a55c6d03bf624c60a74966b">~SceneSystem</a> ()</td></tr>
-<tr class="memdesc:a6fbe523e7a55c6d03bf624c60a74966b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor - cleans up resources.  <br /></td></tr>
 <tr class="memitem:aab8cfadf661d630ee307ee7a3e8caddd" id="r_aab8cfadf661d630ee307ee7a3e8caddd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aab8cfadf661d630ee307ee7a3e8caddd">Setup</a> ()</td></tr>
-<tr class="memdesc:aab8cfadf661d630ee307ee7a3e8caddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the scene system.  <br /></td></tr>
+<tr class="memdesc:aab8cfadf661d630ee307ee7a3e8caddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false on failure.  <br /></td></tr>
 <tr class="memitem:ab436b6bccc81f9f43a7b2d5bee0099cd" id="r_ab436b6bccc81f9f43a7b2d5bee0099cd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab436b6bccc81f9f43a7b2d5bee0099cd">Update</a> (uint32_t deltaTime)</td></tr>
-<tr class="memdesc:ab436b6bccc81f9f43a7b2d5bee0099cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the current scene.  <br /></td></tr>
+<tr class="memdesc:ab436b6bccc81f9f43a7b2d5bee0099cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current scene. <span class="tt">deltaTime</span> is in milliseconds.  <br /></td></tr>
 <tr class="memitem:a7895b07731a15df0e4fa6c3d64afa4b4" id="r_a7895b07731a15df0e4fa6c3d64afa4b4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7895b07731a15df0e4fa6c3d64afa4b4">SetRootScene</a> (<a class="el" href="class_deki_1_1_scene.html">Scene</a> *scene, bool takeOwnership=true)</td></tr>
-<tr class="memdesc:a7895b07731a15df0e4fa6c3d64afa4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current root scene.  <br /></td></tr>
+<tr class="memdesc:a7895b07731a15df0e4fa6c3d64afa4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes <span class="tt">scene</span> the root scene.  <br /></td></tr>
 <tr class="memitem:ad648b1f17633b5000fc7660245fbf6b4" id="r_ad648b1f17633b5000fc7660245fbf6b4"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad648b1f17633b5000fc7660245fbf6b4">CreateScene</a> ()</td></tr>
-<tr class="memdesc:ad648b1f17633b5000fc7660245fbf6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new empty scene.  <br /></td></tr>
+<tr class="memdesc:ad648b1f17633b5000fc7660245fbf6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty scene.  <br /></td></tr>
 <tr class="memitem:a10d1918583004d8ccab8b8be851717b4" id="r_a10d1918583004d8ccab8b8be851717b4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a10d1918583004d8ccab8b8be851717b4">LoadBootScene</a> (const char *path)</td></tr>
-<tr class="memdesc:a10d1918583004d8ccab8b8be851717b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a boot scene from file and set it as active.  <br /></td></tr>
+<tr class="memdesc:a10d1918583004d8ccab8b8be851717b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the scene at <span class="tt">path</span> (full path with storage prefix) and makes it the root scene.  <br /></td></tr>
 <tr class="memitem:a902c861b0d2d97d61e3d79c82a40315d" id="r_a902c861b0d2d97d61e3d79c82a40315d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a902c861b0d2d97d61e3d79c82a40315d">LoadBootScene</a> (const char *filename, <a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a> storage)</td></tr>
-<tr class="memdesc:a902c861b0d2d97d61e3d79c82a40315d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a boot scene from a storage location.  <br /></td></tr>
+<tr class="memdesc:a902c861b0d2d97d61e3d79c82a40315d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads <span class="tt">filename</span> (such as "boot.scene") from <span class="tt">storage</span> and makes it the root scene.  <br /></td></tr>
 <tr class="memitem:a548880aac2d7112cf102fecabfe2e1e6" id="r_a548880aac2d7112cf102fecabfe2e1e6"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a548880aac2d7112cf102fecabfe2e1e6">GetRootScene</a> () const</td></tr>
-<tr class="memdesc:a548880aac2d7112cf102fecabfe2e1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current root scene.  <br /></td></tr>
 <tr class="memitem:aabbcf4e28979165d8075ede42a5b01be" id="r_aabbcf4e28979165d8075ede42a5b01be"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aabbcf4e28979165d8075ede42a5b01be">HasRootScene</a> () const</td></tr>
-<tr class="memdesc:aabbcf4e28979165d8075ede42a5b01be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a root scene.  <br /></td></tr>
 <tr class="memitem:a412fe5ecbaff137c0282a1c1d8b11b80" id="r_a412fe5ecbaff137c0282a1c1d8b11b80"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a412fe5ecbaff137c0282a1c1d8b11b80">MarkPersistent</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *obj)</td></tr>
-<tr class="memdesc:a412fe5ecbaff137c0282a1c1d8b11b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark an object as Persistent and move it to persistent storage The object will be removed from its current scene and persisted independently.  <br /></td></tr>
+<tr class="memdesc:a412fe5ecbaff137c0282a1c1d8b11b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <span class="tt">obj</span> from its scene and keeps it alive across scene changes.  <br /></td></tr>
 <tr class="memitem:abf027fcc9ce59b3da17480a36525eb2b" id="r_abf027fcc9ce59b3da17480a36525eb2b"><td class="memItemLeft">const std::vector&lt; <a class="el" href="class_deki_1_1_object.html">Object</a> * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abf027fcc9ce59b3da17480a36525eb2b">GetPersistentObjects</a> () const</td></tr>
-<tr class="memdesc:abf027fcc9ce59b3da17480a36525eb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all Persistent objects.  <br /></td></tr>
 <tr class="memitem:a1123c09b7f22d497420231b728f28bdc" id="r_a1123c09b7f22d497420231b728f28bdc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1123c09b7f22d497420231b728f28bdc">ClearPersistentObjects</a> (bool deleteObjects=true)</td></tr>
-<tr class="memdesc:a1123c09b7f22d497420231b728f28bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all Persistent objects (call when exiting play mode in editor).  <br /></td></tr>
+<tr class="memdesc:a1123c09b7f22d497420231b728f28bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the persistent list, deleting the objects when <span class="tt">deleteObjects</span>.  <br /></td></tr>
 <tr class="memitem:a2fca19a5695e8f8ec8c192875a2a6511" id="r_a2fca19a5695e8f8ec8c192875a2a6511"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2fca19a5695e8f8ec8c192875a2a6511">FlushPendingDeletions</a> ()</td></tr>
-<tr class="memdesc:a2fca19a5695e8f8ec8c192875a2a6511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush any scenes queued for deferred deletion.  <br /></td></tr>
+<tr class="memdesc:a2fca19a5695e8f8ec8c192875a2a6511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the scenes queued by SetRootScene.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a> class for managing the root scene. </p>
-<p>This class handles scene loading, management, and lifecycle operations. It provides a clean separation between the <a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> core and scene management.</p>
-<p>The "root scene" is the currently running scene. </p>
+<div class="textblock"><p>Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outlive scene changes. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a370f0da1df0c9ebb3e8d0b32affd2a60" name="a370f0da1df0c9ebb3e8d0b32affd2a60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a370f0da1df0c9ebb3e8d0b32affd2a60">&#9670;&#160;</a></span>SceneSystem()</h2>
@@ -197,8 +198,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor - initializes the scene system. </p>
 
 </div>
 </div>
@@ -216,8 +215,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor - cleans up resources. </p>
 
 </div>
 </div>
@@ -237,8 +234,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Setup the scene system. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if setup successful, false otherwise </dd></dl>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
@@ -257,13 +253,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update the current scene. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deltaTime</td><td><a class="el" href="class_deki_1_1_time.html" title="Deki Engine timing system.">Time</a> since last update in milliseconds </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Updates the current scene. <span class="tt">deltaTime</span> is in milliseconds. </p>
 
 </div>
 </div>
@@ -286,14 +276,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the current root scene. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scene</td><td>Pointer to the scene to set as root </td></tr>
-    <tr><td class="paramname">takeOwnership</td><td>If true, <a class="el" href="class_deki_1_1_scene_system.html" title="SceneSystem class for managing the root scene.">SceneSystem</a> will delete the scene when replaced or on shutdown </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Makes <span class="tt">scene</span> the root scene. </p>
+<p>With <span class="tt">takeOwnership</span>, it is deleted when replaced or on shutdown. </p>
 
 </div>
 </div>
@@ -312,8 +296,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a new empty scene. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created scene </dd></dl>
+<p>Creates an empty scene. </p>
 
 </div>
 </div>
@@ -332,14 +315,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load a boot scene from file and set it as active. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Full path to the scene file (including storage prefix) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if loaded successfully </dd></dl>
+<p>Loads the scene at <span class="tt">path</span> (full path with storage prefix) and makes it the root scene. </p>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
@@ -362,15 +339,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load a boot scene from a storage location. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td><a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> filename (e.g., "boot.scene") </td></tr>
-    <tr><td class="paramname">storage</td><td><a class="el" href="namespace_deki_1_1_storage.html">Storage</a> location to load from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if loaded successfully </dd></dl>
+<p>Loads <span class="tt">filename</span> (such as "boot.scene") from <span class="tt">storage</span> and makes it the root scene. </p>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
@@ -397,9 +367,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the current root scene. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the current scene </dd></dl>
-
 </div>
 </div>
 <a id="aabbcf4e28979165d8075ede42a5b01be" name="aabbcf4e28979165d8075ede42a5b01be"></a>
@@ -425,9 +392,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if there is a root scene. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if there is a root scene, false otherwise </dd></dl>
-
 </div>
 </div>
 <a id="a412fe5ecbaff137c0282a1c1d8b11b80" name="a412fe5ecbaff137c0282a1c1d8b11b80"></a>
@@ -445,13 +409,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Mark an object as Persistent and move it to persistent storage The object will be removed from its current scene and persisted independently. </p>
-<p>It will survive scene changes without being destroyed or re-added. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obj</td><td>The object to persist </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Removes <span class="tt">obj</span> from its scene and keeps it alive across scene changes. </p>
 
 </div>
 </div>
@@ -478,9 +436,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all Persistent objects. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the vector of persistent objects </dd></dl>
-
 </div>
 </div>
 <a id="a1123c09b7f22d497420231b728f28bdc" name="a1123c09b7f22d497420231b728f28bdc"></a>
@@ -498,13 +453,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear all Persistent objects (call when exiting play mode in editor). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deleteObjects</td><td>If true, deletes the objects. If false, just clears the list. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Empties the persistent list, deleting the objects when <span class="tt">deleteObjects</span>. </p>
+<p>The editor calls it when play mode ends. </p>
 
 </div>
 </div>
@@ -523,8 +473,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flush any scenes queued for deferred deletion. </p>
-<p>Called at the START of ProcessLifecycle / play mode tick, before any behaviour code runs. Safe because no code is iterating over the old scene. </p>
+<p>Deletes the scenes queued by SetRootScene. </p>
+<p>Called at the start of ProcessLifecycle and of the play mode tick, before any behaviour code runs, when nothing iterates the old scene. </p>
 
 </div>
 </div>

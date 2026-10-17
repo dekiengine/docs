@@ -15,5 +15,7 @@ var class_deki_editor_1_1_guid_cache =
     [ "Contains", "class_deki_editor_1_1_guid_cache.html#ad831192e5685dd1942ea2f2da02839b4", null ],
     [ "GetEntryCount", "class_deki_editor_1_1_guid_cache.html#afc1d99de7c26c74e9db0972c3e9eb7f5", null ],
     [ "Clear", "class_deki_editor_1_1_guid_cache.html#a8c9988513f82665fa8814d9b84d0d198", null ],
-    [ "GetCollisionsResolved", "class_deki_editor_1_1_guid_cache.html#a01b62dbfed3eae3d544788f3bd806a0b", null ]
+    [ "GetCollisionsResolved", "class_deki_editor_1_1_guid_cache.html#a01b62dbfed3eae3d544788f3bd806a0b", null ],
+    [ "BeginBatch", "class_deki_editor_1_1_guid_cache.html#aff486965144f46cb09e6c606d1e4bc48", null ],
+    [ "EndBatch", "class_deki_editor_1_1_guid_cache.html#a11908b312a3a551b6cb220a07fc2c3fc", null ]
 ];

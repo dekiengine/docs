@@ -9,7 +9,8 @@ var _texture_importer_8h =
     [ "DekiEditor::MetadataChunkType", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8f", [
       [ "DekiEditor::MetadataChunkType::Sprite", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa51f2b7b14433aa22c67d1f4fc18943cd", null ],
       [ "DekiEditor::MetadataChunkType::FrameList", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa467fa180e2c74380b86f16820d54396b", null ],
-      [ "DekiEditor::MetadataChunkType::ChromaKey", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa31e17d217ff5688cc37b53dee5dc728c", null ]
+      [ "DekiEditor::MetadataChunkType::ChromaKey", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa31e17d217ff5688cc37b53dee5dc728c", null ],
+      [ "DekiEditor::MetadataChunkType::SourceSize", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa5740ee592df7a56b0562450ea11aff09", null ]
     ] ],
     [ "DekiEditor::SpriteSlicingMode", "namespace_deki_editor.html#a83eeb86395a39c07ad67166c87eb0515", [
       [ "DekiEditor::SpriteSlicingMode::None", "namespace_deki_editor.html#a83eeb86395a39c07ad67166c87eb0515a6adf97f83acf6453d4a6a4b1070f3754", null ],

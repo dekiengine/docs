@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -151,10 +159,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e4b301a92a380889c0ce0b3723758ca" id="r_a5e4b301a92a380889c0ce0b3723758ca"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> ()</td></tr>
 <tr class="memitem:a7c63646ad644df1c10adc544a0ee1cd0" id="r_a7c63646ad644df1c10adc544a0ee1cd0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7c63646ad644df1c10adc544a0ee1cd0">Object</a> (const std::string &amp;objectName)</td></tr>
 <tr class="memitem:a0400b212b38c3e77cb73a0974b79b872" id="r_a0400b212b38c3e77cb73a0974b79b872"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0400b212b38c3e77cb73a0974b79b872">Object</a> (const Object &amp;)=delete</td></tr>
-<tr class="memdesc:a0400b212b38c3e77cb73a0974b79b872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-copyable: a <a class="el" href="class_deki_1_1_object.html">Object</a> owns its children and components by raw pointer, so a copy would double-free them.  <br /></td></tr>
+<tr class="memdesc:a0400b212b38c3e77cb73a0974b79b872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable: an <a class="el" href="class_deki_1_1_object.html">Object</a> owns its children and components by raw pointer, so a copy would double-free them, and the editor-only side table is keyed by <span class="tt">this</span>, which a copy would share.  <br /></td></tr>
 <tr class="memitem:ad242d4021d069aeebd8b8db0f54a2db5" id="r_ad242d4021d069aeebd8b8db0f54a2db5"><td class="memItemLeft"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad242d4021d069aeebd8b8db0f54a2db5">operator=</a> (const <a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;)=delete</td></tr>
 <tr class="memitem:a9414786b744e049be01bb503994b1172" id="r_a9414786b744e049be01bb503994b1172"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9414786b744e049be01bb503994b1172">~Object</a> ()</td></tr>
-<tr class="memdesc:a9414786b744e049be01bb503994b1172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out of line ON PURPOSE.  <br /></td></tr>
+<tr class="memdesc:a9414786b744e049be01bb503994b1172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must stay out of line: it erases this object's row from the editor-only side table in Object.cpp.  <br /></td></tr>
 <tr class="memitem:aea9a19c79f53a389eb8d1f17bdb9682b" id="r_aea9a19c79f53a389eb8d1f17bdb9682b"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aea9a19c79f53a389eb8d1f17bdb9682b">GetId</a> () const</td></tr>
 <tr class="memitem:a8620699da5ecd1494af74b291b87b1f8" id="r_a8620699da5ecd1494af74b291b87b1f8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8620699da5ecd1494af74b291b87b1f8">SetId</a> (uint32_t newId)</td></tr>
 <tr class="memitem:a965b11b994a200395941c46c2e8ac751" id="r_a965b11b994a200395941c46c2e8ac751"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a965b11b994a200395941c46c2e8ac751">GetName</a> () const</td></tr>
@@ -187,32 +195,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a428255e266f4f0d900da73b14206e55e" id="r_a428255e266f4f0d900da73b14206e55e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a428255e266f4f0d900da73b14206e55e">InsertChildAt</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> *child, size_t index)</td></tr>
 <tr class="memitem:a492a761a9de341977a6faa27a8586f5d" id="r_a492a761a9de341977a6faa27a8586f5d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a492a761a9de341977a6faa27a8586f5d">GetChildIndex</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> *child) const</td></tr>
 <tr class="memitem:a98eb027868cdcc8f7aa1a49be74a6d68" id="r_a98eb027868cdcc8f7aa1a49be74a6d68"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a98eb027868cdcc8f7aa1a49be74a6d68">IsActiveInHierarchy</a> () const</td></tr>
+<tr class="memdesc:a98eb027868cdcc8f7aa1a49be74a6d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when this object and all its ancestors are active.  <br /></td></tr>
 <tr class="memitem:a9860971733bf5840e7d83142bea35f5b" id="r_a9860971733bf5840e7d83142bea35f5b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9860971733bf5840e7d83142bea35f5b">MarkWorldTransformDirty</a> ()</td></tr>
 <tr class="memitem:af5fc9dcf728c8990c6ee91d535c56f45" id="r_af5fc9dcf728c8990c6ee91d535c56f45"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Args&gt; </td></tr>
 <tr class="memitem:af5fc9dcf728c8990c6ee91d535c56f45 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#af5fc9dcf728c8990c6ee91d535c56f45">AddComponent</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memitem:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3" id="r_ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3">GetComponent</a> ()</td></tr>
-<tr class="memdesc:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get component by type, including derived types Matches both exact type and components that inherit from T.  <br /></td></tr>
+<tr class="memdesc:ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first component of type T or of a class directly derived from T.  <br /></td></tr>
 <tr class="memitem:aa9061c4960996077e6c93ba4a807350e" id="r_aa9061c4960996077e6c93ba4a807350e"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:aa9061c4960996077e6c93ba4a807350e template"><td class="memItemLeft">const T *&#160;</td><td class="memItemRight"><a class="el" href="#aa9061c4960996077e6c93ba4a807350e">GetComponent</a> () const</td></tr>
 <tr class="memitem:aa14b8e5733b943d78e5c240029cb3f45" id="r_aa14b8e5733b943d78e5c240029cb3f45"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aa14b8e5733b943d78e5c240029cb3f45">GetComponentByTypeId</a> (uint32_t typeId)</td></tr>
-<tr class="memdesc:aa14b8e5733b943d78e5c240029cb3f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get component by runtime type ID (exact match only).  <br /></td></tr>
+<tr class="memdesc:aa14b8e5733b943d78e5c240029cb3f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first component whose type id is exactly <span class="tt">typeId</span>.  <br /></td></tr>
 <tr class="memitem:a5f83ebfb748dcf7c3740aa3c66b0e3b1" id="r_a5f83ebfb748dcf7c3740aa3c66b0e3b1"><td class="memItemLeft">const <a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5f83ebfb748dcf7c3740aa3c66b0e3b1">GetComponentByTypeId</a> (uint32_t typeId) const</td></tr>
 <tr class="memitem:a2d42004ced87eb10b7499e317a3b288b" id="r_a2d42004ced87eb10b7499e317a3b288b"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a2d42004ced87eb10b7499e317a3b288b template"><td class="memItemLeft">std::vector&lt; T * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2d42004ced87eb10b7499e317a3b288b">GetComponents</a> ()</td></tr>
-<tr class="memdesc:a2d42004ced87eb10b7499e317a3b288b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components of a specific type, including derived types Matches both exact type and components that inherit from T.  <br /></td></tr>
+<tr class="memdesc:a2d42004ced87eb10b7499e317a3b288b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every component of type T or of a class directly derived from T.  <br /></td></tr>
 <tr class="memitem:a8067b490586af6edd3661342a5f7d98b" id="r_a8067b490586af6edd3661342a5f7d98b"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a8067b490586af6edd3661342a5f7d98b template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8067b490586af6edd3661342a5f7d98b">HasComponent</a> () const</td></tr>
-<tr class="memdesc:a8067b490586af6edd3661342a5f7d98b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object has component of type T, including derived types.  <br /></td></tr>
+<tr class="memdesc:a8067b490586af6edd3661342a5f7d98b"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a component of type T or a class directly derived from T is attached.  <br /></td></tr>
 <tr class="memitem:a86a2b953a05985523a67f9d1fc92b856" id="r_a86a2b953a05985523a67f9d1fc92b856"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a86a2b953a05985523a67f9d1fc92b856 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a86a2b953a05985523a67f9d1fc92b856">RemoveComponent</a> ()</td></tr>
 <tr class="memitem:a6bed06737293ff5ad32cec3431e993ac" id="r_a6bed06737293ff5ad32cec3431e993ac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6bed06737293ff5ad32cec3431e993ac">RemoveComponent</a> (<a class="el" href="class_deki_1_1_component.html">Component</a> *comp)</td></tr>
-<tr class="memdesc:a6bed06737293ff5ad32cec3431e993ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a specific component by pointer.  <br /></td></tr>
+<tr class="memdesc:a6bed06737293ff5ad32cec3431e993ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes and deletes <span class="tt">comp</span>.  <br /></td></tr>
 <tr class="memitem:ae7b0b6010405f7e94dacdf875884360e" id="r_ae7b0b6010405f7e94dacdf875884360e"><td class="memItemLeft">const std::vector&lt; <a class="el" href="class_deki_1_1_component.html">Component</a> * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae7b0b6010405f7e94dacdf875884360e">GetComponents</a> () const</td></tr>
-<tr class="memdesc:ae7b0b6010405f7e94dacdf875884360e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all components on this object.  <br /></td></tr>
 <tr class="memitem:aede92516f456b0358ddc66cf8c2bfc69" id="r_aede92516f456b0358ddc66cf8c2bfc69"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:aede92516f456b0358ddc66cf8c2bfc69 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#aede92516f456b0358ddc66cf8c2bfc69">FindInterface</a> ()</td></tr>
-<tr class="memdesc:aede92516f456b0358ddc66cf8c2bfc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a component implementing a given interface No RTTI needed - uses <a class="el" href="namespace_deki_1_1_component_interface_adapters.html">ComponentInterfaceAdapters</a> registry.  <br /></td></tr>
+<tr class="memdesc:aede92516f456b0358ddc66cf8c2bfc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first component that implements interface T, found through the <a class="el" href="namespace_deki_1_1_component_interface_adapters.html">ComponentInterfaceAdapters</a> registry (no RTTI).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -222,7 +230,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a3318220670f0f0f7c585f9916453f521" id="r_a3318220670f0f0f7c585f9916453f521"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3318220670f0f0f7c585f9916453f521">Internal::AttachComponent</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, <a class="el" href="class_deki_1_1_component.html">Component</a> *component)</td></tr>
-<tr class="memitem:a90a855564194fa802c96d741a925b310" id="r_a90a855564194fa802c96d741a925b310"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a90a855564194fa802c96d741a925b310">Internal::AddComponentByName</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, const std::string &amp;typeName, const std::string &amp;classHint)</td></tr>
+<tr class="memitem:ab15b28ce1ff0422a5efe45f2745c9a29" id="r_ab15b28ce1ff0422a5efe45f2745c9a29"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab15b28ce1ff0422a5efe45f2745c9a29">Internal::AddComponentByName</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, const std::string &amp;typeName)</td></tr>
+<tr class="memitem:aea5cb688ed23ef0312f3bf731c7ea41f" id="r_aea5cb688ed23ef0312f3bf731c7ea41f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aea5cb688ed23ef0312f3bf731c7ea41f">Internal::DetachComponent</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, <a class="el" href="class_deki_1_1_component.html">Component</a> *component)</td></tr>
+<tr class="memitem:abb329db4b5321308cbd7ff3c9c329b61" id="r_abb329db4b5321308cbd7ff3c9c329b61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abb329db4b5321308cbd7ff3c9c329b61">Internal::ReattachComponent</a> (<a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;object, <a class="el" href="class_deki_1_1_component.html">Component</a> *component, size_t index)</td></tr>
 </table>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e4b301a92a380889c0ce0b3723758ca" name="a5e4b301a92a380889c0ce0b3723758ca"></a>
@@ -282,8 +292,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Non-copyable: a <a class="el" href="class_deki_1_1_object.html">Object</a> owns its children and components by raw pointer, so a copy would double-free them. </p>
-<p>Made explicit here because the editor-only instance payload lives in a side table keyed by <span class="tt">this</span>, which a copy would silently share. </p>
+<p>Not copyable: an <a class="el" href="class_deki_1_1_object.html">Object</a> owns its children and components by raw pointer, so a copy would double-free them, and the editor-only side table is keyed by <span class="tt">this</span>, which a copy would share. </p>
 
 </div>
 </div>
@@ -302,8 +311,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Out of line ON PURPOSE. </p>
-<p>It erases this object's row from the editor-only side table in Object.cpp, which the runtime build must not need to see. Defining it <span class="tt">= default</span> in this header would reintroduce exactly the layout dependency this design removes. </p>
+<p>Must stay out of line: it erases this object's row from the editor-only side table in Object.cpp. </p>
+<p>Defining it <span class="tt">= default</span> here would make the class layout depend on DEKI_EDITOR again. </p>
 
 </div>
 </div>
@@ -1047,6 +1056,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>True when this object and all its ancestors are active. </p>
+
 </div>
 </div>
 <a id="a9860971733bf5840e7d83142bea35f5b" name="a9860971733bf5840e7d83142bea35f5b"></a>
@@ -1126,8 +1137,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get component by type, including derived types Matches both exact type and components that inherit from T. </p>
-<p>E.g., <a class="el" href="#ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3" title="Get component by type, including derived types Matches both exact type and components that inherit fr...">GetComponent&lt;SetupComponent&gt;()</a> returns SDCardComponent if it inherits from <a class="el" href="class_deki_1_1_setup_component.html">SetupComponent</a>. </p>
+<p>The first component of type T or of a class directly derived from T. </p>
+<p>For example, <a class="el" href="#ad1718d0cb3d8b8ca7fa6ada4f3a1b7b3" title="The first component of type T or of a class directly derived from T.">GetComponent&lt;SetupComponent&gt;()</a> returns an SDCardComponent that derives from <a class="el" href="class_deki_1_1_setup_component.html" title="Base class for components that need asynchronous setup at boot.">SetupComponent</a>. </p>
 
 </div>
 </div>
@@ -1181,7 +1192,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get component by runtime type ID (exact match only). </p>
+<p>The first component whose type id is exactly <span class="tt">typeId</span>. </p>
 
 </div>
 </div>
@@ -1235,7 +1246,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get all components of a specific type, including derived types Matches both exact type and components that inherit from T. </p>
+<p>Every component of type T or of a class directly derived from T. </p>
 
 </div>
 </div>
@@ -1264,7 +1275,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Check if object has component of type T, including derived types. </p>
+<p>True when a component of type T or a class directly derived from T is attached. </p>
 
 </div>
 </div>
@@ -1318,13 +1329,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Remove a specific component by pointer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">comp</td><td>The component to remove </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Removes and deletes <span class="tt">comp</span>. </p>
 
 </div>
 </div>
@@ -1350,9 +1355,6 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get all components on this object. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the vector of components </dd></dl>
 
 </div>
 </div>
@@ -1381,8 +1383,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Find a component implementing a given interface No RTTI needed - uses <a class="el" href="namespace_deki_1_1_component_interface_adapters.html">ComponentInterfaceAdapters</a> registry. </p>
-<p>T must have a static constexpr uint32_t InterfaceID member. </p>
+<p>The first component that implements interface T, found through the <a class="el" href="namespace_deki_1_1_component_interface_adapters.html">ComponentInterfaceAdapters</a> registry (no RTTI). </p>
+<p>T must have a <span class="tt">static constexpr uint32_t kInterfaceID</span> member. </p>
 
 </div>
 </div>
@@ -1416,8 +1418,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a90a855564194fa802c96d741a925b310" name="a90a855564194fa802c96d741a925b310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90a855564194fa802c96d741a925b310">&#9670;&#160;</a></span>Internal::AddComponentByName</h2>
+<a id="ab15b28ce1ff0422a5efe45f2745c9a29" name="ab15b28ce1ff0422a5efe45f2745c9a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15b28ce1ff0422a5efe45f2745c9a29">&#9670;&#160;</a></span>Internal::AddComponentByName</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1426,19 +1428,77 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_component.html">Component</a> * <a class="el" href="namespace_deki_1_1_internal.html#a7c8357a556108a8646db7a03ff0aa336">Internal::AddComponentByName</a> </td>
+          <td class="memname"><a class="el" href="class_deki_1_1_component.html">Component</a> * <a class="el" href="namespace_deki_1_1_internal.html#a69e2254878a51bfbe85ba112fd279f4c">Internal::AddComponentByName</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea5cb688ed23ef0312f3bf731c7ea41f" name="aea5cb688ed23ef0312f3bf731c7ea41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5cb688ed23ef0312f3bf731c7ea41f">&#9670;&#160;</a></span>Internal::DetachComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="namespace_deki_1_1_internal.html#ad8c5b6d79ad67a5a76fa6c851547a83f">Internal::DetachComponent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>classHint</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb329db4b5321308cbd7ff3c9c329b61" name="abb329db4b5321308cbd7ff3c9c329b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb329db4b5321308cbd7ff3c9c329b61">&#9670;&#160;</a></span>Internal::ReattachComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="namespace_deki_1_1_internal.html#acb29f953064064ba4e0c739bf40d4ff4">Internal::ReattachComponent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5e4b301a92a380889c0ce0b3723758ca">Object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

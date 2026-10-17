@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -145,7 +153,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 </div><!--header-->
 <div class="contents">
 
-<p>Singleton providing the editor UI controls + inspector drawing.  
+<p>The editor's UI controls and inspector drawing, for <a class="el" href="class_deki_editor_1_1_custom_editor.html" title="Custom editor for one component type, like Unity&#39;s CustomEditor: it can replace the component&#39;s Inspe...">CustomEditor</a> code: auto&amp; ui = <a class="el" href="#af95523851f0173e158fa78c1d2571c83">EditorUI::Get()</a>; ui.DrawDefaultInspector(); ui.PropertyField("speed");.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/EditorUI.h&gt;</code></p>
@@ -174,7 +182,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="#ac6212dd48bcc831e657f9ae612b000c3a18452b5fedc3e73b764b566a33702d74">CheckMark</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ac6212dd48bcc831e657f9ae612b000c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Editor style color slots (mapped internally to the theme).  <a href="#ac6212dd48bcc831e657f9ae612b000c3">More...</a><br /></td></tr>
+<tr class="memdesc:ac6212dd48bcc831e657f9ae612b000c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Editor style color slots, mapped to the theme.  <a href="#ac6212dd48bcc831e657f9ae612b000c3">More...</a><br /></td></tr>
 <tr class="memitem:ab7ab88be986e168bcdefc71ca448a45d" id="r_ab7ab88be986e168bcdefc71ca448a45d"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ab7ab88be986e168bcdefc71ca448a45d">TreeFlags</a> { <br />
 &#160;&#160;<a class="el" href="#ab7ab88be986e168bcdefc71ca448a45da01740138143fbe435d3e438d914a8783">TreeNone</a> = 0
 , <a class="el" href="#ab7ab88be986e168bcdefc71ca448a45daaf008114be804e5da7f775039345a7db">TreeDefaultOpen</a> = 1 &lt;&lt; 0
@@ -220,7 +228,7 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#a22a60cd7097470c8654864a3d41fa759ab2900a30f6dbe42ec4470bbf66be6c8d">WindowPadding</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a22a60cd7097470c8654864a3d41fa759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vec2-valued style vars adjustable via PushStyleVar (balance with PopStyleVar).  <a href="#a22a60cd7097470c8654864a3d41fa759">More...</a><br /></td></tr>
+<tr class="memdesc:a22a60cd7097470c8654864a3d41fa759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vec2 style vars for PushStyleVar (balance with PopStyleVar).  <a href="#a22a60cd7097470c8654864a3d41fa759">More...</a><br /></td></tr>
 <tr class="memitem:a6a71d1c6eebf16675a42586a0a702976" id="r_a6a71d1c6eebf16675a42586a0a702976"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a6a71d1c6eebf16675a42586a0a702976">Key</a> { <a class="el" href="#a6a71d1c6eebf16675a42586a0a702976a21c2e59531c8710156d34a3c30ac81d5">Z</a>
 , <a class="el" href="#a6a71d1c6eebf16675a42586a0a702976a57cec4137b614c87cb4e24a3d003a3e0">Y</a>
 , <a class="el" href="#a6a71d1c6eebf16675a42586a0a702976a5dbc98dcc983a70728bd082d1a47546e">S</a>
@@ -237,7 +245,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a8d59083817e6ec305256ce3fb6651038afa89fcc81e9dcfd52671c968fe4e6ddf">NotAllowed</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a8d59083817e6ec305256ce3fb6651038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse cursor shapes for SetMouseCursor (e.g.  <a href="#a8d59083817e6ec305256ce3fb6651038">More...</a><br /></td></tr>
+<tr class="memdesc:a8d59083817e6ec305256ce3fb6651038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse cursor shapes for SetMouseCursor (e.g. splitter resize handles).  <a href="#a8d59083817e6ec305256ce3fb6651038">More...</a><br /></td></tr>
 <tr class="memitem:a02da3121102b419f94f0fde02e260ec6" id="r_a02da3121102b419f94f0fde02e260ec6"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a02da3121102b419f94f0fde02e260ec6">Unit</a> { <br />
 &#160;&#160;<a class="el" href="#a02da3121102b419f94f0fde02e260ec6a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
 , <a class="el" href="#a02da3121102b419f94f0fde02e260ec6a0aa6f4210bf373c95eda00232e93cd98">Distance</a>
@@ -247,33 +255,36 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#a02da3121102b419f94f0fde02e260ec6a45f4ce6c3306644b1efe333f4f8d6929">Angle</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a02da3121102b419f94f0fde02e260ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical unit of a float or vector field.  <a href="#a02da3121102b419f94f0fde02e260ec6">More...</a><br /></td></tr>
 <tr class="memitem:a0863810b7f7f9becf66bc40358348efa" id="r_a0863810b7f7f9becf66bc40358348efa"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a0863810b7f7f9becf66bc40358348efa">DrawPropertyByNameFunc</a> = std::function&lt;void(const char*)&gt;</td></tr>
-<tr class="memdesc:a0863810b7f7f9becf66bc40358348efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback types for property drawing.  <br /></td></tr>
 <tr class="memitem:afd5f170d04cd017b0b84eab4c3fadaa7" id="r_afd5f170d04cd017b0b84eab4c3fadaa7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afd5f170d04cd017b0b84eab4c3fadaa7">DrawPropertyByOffsetFunc</a> = std::function&lt;void(size_t)&gt;</td></tr>
 <tr class="memitem:a8884133f182eae66d6700108d00c1c66" id="r_a8884133f182eae66d6700108d00c1c66"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a8884133f182eae66d6700108d00c1c66">DrawDefaultPropertiesFunc</a> = std::function&lt;void()&gt;</td></tr>
 <tr class="memitem:afb67a1c061fea4b4c0b653f4d1b8fe3a" id="r_afb67a1c061fea4b4c0b653f4d1b8fe3a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afb67a1c061fea4b4c0b653f4d1b8fe3a">ResolveAssetNameFunc</a> = std::function&lt;std::string(const std::string&amp;)&gt;</td></tr>
 <tr class="memitem:adb7d710d3fa8b970fcc6e26dfcdcdac4" id="r_adb7d710d3fa8b970fcc6e26dfcdcdac4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#adb7d710d3fa8b970fcc6e26dfcdcdac4">GetFontAtlasFunc</a> = std::function&lt;uint32_t(const std::string&amp;, int, uint32_t*, uint32_t*)&gt;</td></tr>
-<tr class="memitem:ad6bfcb444d5e616264f6729877ff1f01" id="r_ad6bfcb444d5e616264f6729877ff1f01"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad6bfcb444d5e616264f6729877ff1f01">ModifyAssetFunc</a> = std::function&lt;void(const std::string&amp;, const std::string&amp;, const std::string&amp;, const std::string&amp;)&gt;</td></tr>
+<tr class="memitem:a5f95e33564416a9630a1b91b3ffd09fb" id="r_a5f95e33564416a9630a1b91b3ffd09fb"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a5f95e33564416a9630a1b91b3ffd09fb">ModifyAssetFunc</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abbd5ab3266ebedc89cf9f28e8e264ae5" id="r_abbd5ab3266ebedc89cf9f28e8e264ae5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abbd5ab3266ebedc89cf9f28e8e264ae5">DrawDefaultInspector</a> ()</td></tr>
-<tr class="memdesc:abbd5ab3266ebedc89cf9f28e8e264ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw all default properties for current component.  <br /></td></tr>
+<tr class="memdesc:abbd5ab3266ebedc89cf9f28e8e264ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws every property of the current component, like Unity's <a class="el" href="#abbd5ab3266ebedc89cf9f28e8e264ae5" title="Draws every property of the current component, like Unity&#39;s DrawDefaultInspector().">DrawDefaultInspector()</a>.  <br /></td></tr>
 <tr class="memitem:a035127017ffdfb80ff564eb77f175253" id="r_a035127017ffdfb80ff564eb77f175253"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a035127017ffdfb80ff564eb77f175253">PropertyField</a> (size_t offset)</td></tr>
-<tr class="memdesc:a035127017ffdfb80ff564eb77f175253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a specific property by member offset.  <br /></td></tr>
+<tr class="memdesc:a035127017ffdfb80ff564eb77f175253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws one property by member offset: offsetof(ComponentType, member).  <br /></td></tr>
 <tr class="memitem:a48281b8d0c4e87b7dba0c94a6c1df81d" id="r_a48281b8d0c4e87b7dba0c94a6c1df81d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a48281b8d0c4e87b7dba0c94a6c1df81d">PropertyField</a> (const char *propertyName)</td></tr>
-<tr class="memdesc:a48281b8d0c4e87b7dba0c94a6c1df81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a specific property by name.  <br /></td></tr>
+<tr class="memdesc:a48281b8d0c4e87b7dba0c94a6c1df81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws one property by name.  <br /></td></tr>
 <tr class="memitem:a62e18849118fe49760408d615ccca6d5" id="r_a62e18849118fe49760408d615ccca6d5"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a62e18849118fe49760408d615ccca6d5">ResolveAssetName</a> (const std::string &amp;guid)</td></tr>
-<tr class="memdesc:a62e18849118fe49760408d615ccca6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve asset GUID to display name.  <br /></td></tr>
+<tr class="memdesc:a62e18849118fe49760408d615ccca6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A readable path or name for an asset GUID.  <br /></td></tr>
 <tr class="memitem:a588e2293ab016bea04e9e7bf65058f4f" id="r_a588e2293ab016bea04e9e7bf65058f4f"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a588e2293ab016bea04e9e7bf65058f4f">GetFontAtlasTexture</a> (const std::string &amp;fontGuid, int fontSize, uint32_t *outWidth, uint32_t *outHeight)</td></tr>
-<tr class="memdesc:a588e2293ab016bea04e9e7bf65058f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get font atlas texture for preview.  <br /></td></tr>
+<tr class="memdesc:a588e2293ab016bea04e9e7bf65058f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture of a font at a size, for previews, with its width and height, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:aeeb4f300257263da987934862772c16f" id="r_aeeb4f300257263da987934862772c16f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeeb4f300257263da987934862772c16f">ModifyAsset</a> (const std::string &amp;assetPath, const std::string &amp;assetGuid, const std::string &amp;oldJson, const std::string &amp;newJson)</td></tr>
-<tr class="memdesc:aeeb4f300257263da987934862772c16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify an asset file with undo/redo support.  <br /></td></tr>
+<tr class="memdesc:aeeb4f300257263da987934862772c16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes an asset file (absolute path) from <span class="tt">oldJson</span> to <span class="tt">newJson</span>, as an undoable edit.  <br /></td></tr>
 <tr class="memitem:a06ddb39b513287238818da06d0810740" id="r_a06ddb39b513287238818da06d0810740"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a06ddb39b513287238818da06d0810740">SectionHeader</a> (const char *label)</td></tr>
+<tr class="memdesc:a06ddb39b513287238818da06d0810740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collapsing section header (full-bleed band). Returns true if expanded.  <br /></td></tr>
 <tr class="memitem:a0e8e0884762885de9507d5d653d9b9ca" id="r_a0e8e0884762885de9507d5d653d9b9ca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0e8e0884762885de9507d5d653d9b9ca">PropertyRow</a> (const char *label)</td></tr>
+<tr class="memdesc:a0e8e0884762885de9507d5d653d9b9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a "label : value" row; the next control fills the value column.  <br /></td></tr>
 <tr class="memitem:a8dee9c6e96fe917e37a5953ff6f4954f" id="r_a8dee9c6e96fe917e37a5953ff6f4954f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8dee9c6e96fe917e37a5953ff6f4954f">DragInt</a> (const char *id, int *v, float speed=1.0f, int vmin=0, int vmax=0)</td></tr>
 <tr class="memitem:a45d6e339b3023668dc70d703ef7a9582" id="r_a45d6e339b3023668dc70d703ef7a9582"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a45d6e339b3023668dc70d703ef7a9582">DragFloat</a> (const char *id, float *v, float speed=1.0f, float vmin=0.0f, float vmax=0.0f, const char *format=&quot;%.3f&quot;)</td></tr>
 <tr class="memitem:a06d23262cd192dafab6866697328ccde" id="r_a06d23262cd192dafab6866697328ccde"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a06d23262cd192dafab6866697328ccde">Checkbox</a> (const char *label, bool *v)</td></tr>
+<tr class="memdesc:a06d23262cd192dafab6866697328ccde"><td class="mdescLeft">&#160;</td><td class="mdescRight">A visible label (e.g.  <br /></td></tr>
 <tr class="memitem:a7a1e73a4585ca7c90cf17e960de558db" id="r_a7a1e73a4585ca7c90cf17e960de558db"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7a1e73a4585ca7c90cf17e960de558db">ColorEdit4</a> (const char *id, float col[4])</td></tr>
 <tr class="memitem:a29511c9ffe7f2c1cea707c8118a7ddd2" id="r_a29511c9ffe7f2c1cea707c8118a7ddd2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a29511c9ffe7f2c1cea707c8118a7ddd2">ColorEdit3</a> (const char *id, float col[3])</td></tr>
 <tr class="memitem:a5bbc0636d50b4f9c9064d0b20b3a0a9e" id="r_a5bbc0636d50b4f9c9064d0b20b3a0a9e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5bbc0636d50b4f9c9064d0b20b3a0a9e">Combo</a> (const char *id, int *currentIndex, const char *const items[], int count)</td></tr>
@@ -295,15 +306,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2457aa749f401e2a87efa933e3b5155a" id="r_a2457aa749f401e2a87efa933e3b5155a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2457aa749f401e2a87efa933e3b5155a">Indent</a> ()</td></tr>
 <tr class="memitem:a14157499a120b8df040365779c5c138f" id="r_a14157499a120b8df040365779c5c138f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14157499a120b8df040365779c5c138f">Unindent</a> ()</td></tr>
 <tr class="memitem:ad74deec880801790b4c9588b8db00b0f" id="r_ad74deec880801790b4c9588b8db00b0f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad74deec880801790b4c9588b8db00b0f">Indent</a> (float amount)</td></tr>
+<tr class="memdesc:ad74deec880801790b4c9588b8db00b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indents by a given number of pixels (e.g.  <br /></td></tr>
 <tr class="memitem:a8a88029acfebd004306c96d6ccc20161" id="r_a8a88029acfebd004306c96d6ccc20161"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8a88029acfebd004306c96d6ccc20161">Unindent</a> (float amount)</td></tr>
 <tr class="memitem:adfdc3fb9693bd0f0d724a24aeb77f6f5" id="r_adfdc3fb9693bd0f0d724a24aeb77f6f5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adfdc3fb9693bd0f0d724a24aeb77f6f5">BulletText</a> (const char *text)</td></tr>
 <tr class="memitem:ac525618fb46a93b88cb247edeb173390" id="r_ac525618fb46a93b88cb247edeb173390"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac525618fb46a93b88cb247edeb173390">CollapsingHeader</a> (const char *label, bool *pVisible=nullptr, bool defaultOpen=false)</td></tr>
+<tr class="memdesc:ac525618fb46a93b88cb247edeb173390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collapsing header with an optional close button.  <br /></td></tr>
 <tr class="memitem:a0c0a951db2a1fdbeb4ad078082521dca" id="r_a0c0a951db2a1fdbeb4ad078082521dca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0c0a951db2a1fdbeb4ad078082521dca">GetCursorScreenPos</a> (float *outX, float *outY)</td></tr>
-<tr class="memdesc:a0c0a951db2a1fdbeb4ad078082521dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top-left screen position where the next widget/drawing goes.  <br /></td></tr>
+<tr class="memdesc:a0c0a951db2a1fdbeb4ad078082521dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top-left screen position where the next widget or drawing goes.  <br /></td></tr>
 <tr class="memitem:a56e20bcdca7e60c0e60e1d444a29d688" id="r_a56e20bcdca7e60c0e60e1d444a29d688"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a56e20bcdca7e60c0e60e1d444a29d688">SetCursorScreenPos</a> (float x, float y)</td></tr>
-<tr class="memdesc:a56e20bcdca7e60c0e60e1d444a29d688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place the layout cursor at an absolute screen position (for custom chrome that positions widgets/draws by hand, e.g.  <br /></td></tr>
+<tr class="memdesc:a56e20bcdca7e60c0e60e1d444a29d688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the layout cursor at an absolute screen position, for custom chrome that places widgets and drawing by hand (e.g.  <br /></td></tr>
 <tr class="memitem:a11afedc8c94404942646c442572150f0" id="r_a11afedc8c94404942646c442572150f0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a11afedc8c94404942646c442572150f0">Dummy</a> (float width, float height)</td></tr>
-<tr class="memdesc:a11afedc8c94404942646c442572150f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance the layout cursor by w x h (reserve space for drawing).  <br /></td></tr>
+<tr class="memdesc:a11afedc8c94404942646c442572150f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the layout cursor by width x height, reserving space for drawing.  <br /></td></tr>
 <tr class="memitem:aa3acbca0bba578105011840e46dde86a" id="r_aa3acbca0bba578105011840e46dde86a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa3acbca0bba578105011840e46dde86a">DrawLine</a> (float x0, float y0, float x1, float y1, uint32_t rgba, float thickness=1.0f)</td></tr>
 <tr class="memitem:a5b3ff2b47b4cf6721f54ad80aedca448" id="r_a5b3ff2b47b4cf6721f54ad80aedca448"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5b3ff2b47b4cf6721f54ad80aedca448">DrawRect</a> (float x0, float y0, float x1, float y1, uint32_t rgba, float thickness=1.0f, float rounding=0.0f)</td></tr>
 <tr class="memitem:a8d39c6204c0d8a559bb150b9913a36eb" id="r_a8d39c6204c0d8a559bb150b9913a36eb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8d39c6204c0d8a559bb150b9913a36eb">DrawRectFilled</a> (float x0, float y0, float x1, float y1, uint32_t rgba, float rounding=0.0f)</td></tr>
@@ -312,11 +325,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8969fccafcf477a241cf6cf5c8135134" id="r_a8969fccafcf477a241cf6cf5c8135134"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8969fccafcf477a241cf6cf5c8135134">DrawImage</a> (uint32_t texture, float x0, float y0, float x1, float y1, float u0=0.0f, float v0=0.0f, float u1=1.0f, float v1=1.0f, uint32_t tint=0xFFFFFFFFu)</td></tr>
 <tr class="memitem:a07cd355cfeaa174cb3662210f91fa7ee" id="r_a07cd355cfeaa174cb3662210f91fa7ee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a07cd355cfeaa174cb3662210f91fa7ee">DrawTextAt</a> (float pixelSize, float x, float y, uint32_t rgba, const char *text)</td></tr>
 <tr class="memitem:a19257c89b5fc2a95d3d09cdf7fdbdedb" id="r_a19257c89b5fc2a95d3d09cdf7fdbdedb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19257c89b5fc2a95d3d09cdf7fdbdedb">DrawTextCss</a> (float cssPx, float x, float y, uint32_t rgba, const char *text)</td></tr>
+<tr class="memdesc:a19257c89b5fc2a95d3d09cdf7fdbdedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text sized in CSS px: the backend converts with Fonts::CssPx(currentFont, cssPx) and applies the DPI scale, so hand-drawn labels match widget text.  <br /></td></tr>
 <tr class="memitem:a694ddf36b8c562c1c3f0420b63349114" id="r_a694ddf36b8c562c1c3f0420b63349114"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a694ddf36b8c562c1c3f0420b63349114">MeasureTextCss</a> (float cssPx, const char *text, float *outW, float *outH)</td></tr>
+<tr class="memdesc:a694ddf36b8c562c1c3f0420b63349114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measures text exactly as DrawTextCss draws it.  <br /></td></tr>
 <tr class="memitem:a92b9ab8d76ef09fb7266046d0410ac71" id="r_a92b9ab8d76ef09fb7266046d0410ac71"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a92b9ab8d76ef09fb7266046d0410ac71">PushClipRect</a> (float x0, float y0, float x1, float y1, bool intersectWithCurrent=true)</td></tr>
 <tr class="memitem:a427a2bd65666824a5cdca64bf9e738e8" id="r_a427a2bd65666824a5cdca64bf9e738e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a427a2bd65666824a5cdca64bf9e738e8">PopClipRect</a> ()</td></tr>
 <tr class="memitem:ae1bd71a9e60a63813094932be02e1d5f" id="r_ae1bd71a9e60a63813094932be02e1d5f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae1bd71a9e60a63813094932be02e1d5f">Image</a> (uint32_t texture, float w, float h, float u0=0.0f, float v0=0.0f, float u1=1.0f, float v1=1.0f)</td></tr>
-<tr class="memdesc:ae1bd71a9e60a63813094932be02e1d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline image widget (advances layout), e.g.  <br /></td></tr>
+<tr class="memdesc:ae1bd71a9e60a63813094932be02e1d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline image widget that advances the layout, e.g. a texture or atlas preview.  <br /></td></tr>
 <tr class="memitem:a6cccbe299f284e697f9057ac3a277878" id="r_a6cccbe299f284e697f9057ac3a277878"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6cccbe299f284e697f9057ac3a277878">IsItemHovered</a> (bool allowWhenDisabled=false)</td></tr>
 <tr class="memitem:a77d054922c161f6edba34573e612e164" id="r_a77d054922c161f6edba34573e612e164"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a77d054922c161f6edba34573e612e164">IsItemClicked</a> ()</td></tr>
 <tr class="memitem:a7ce73af32dd00179df7eaaf2db31cc5b" id="r_a7ce73af32dd00179df7eaaf2db31cc5b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7ce73af32dd00179df7eaaf2db31cc5b">GetContentRegionAvail</a> (float *outW, float *outH)</td></tr>
@@ -325,8 +340,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a340e89813a1712a1e35542b8e58f8ed5" id="r_a340e89813a1712a1e35542b8e58f8ed5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a340e89813a1712a1e35542b8e58f8ed5">GetItemSpacing</a> (float *outX, float *outY)</td></tr>
 <tr class="memitem:a95c83a6d9c65cbb3f48f2e5248bc8ea6" id="r_a95c83a6d9c65cbb3f48f2e5248bc8ea6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a95c83a6d9c65cbb3f48f2e5248bc8ea6">GetItemInnerSpacing</a> (float *outX, float *outY)</td></tr>
 <tr class="memitem:aade4d23cb2a9338866101bf7514a7cd9" id="r_aade4d23cb2a9338866101bf7514a7cd9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aade4d23cb2a9338866101bf7514a7cd9">GetItemRect</a> (float *outMinX, float *outMinY, float *outMaxX, float *outMaxY)</td></tr>
+<tr class="memdesc:aade4d23cb2a9338866101bf7514a7cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounds of the last submitted item (screen space), e.g.  <br /></td></tr>
 <tr class="memitem:addd43f36e21b9c4edd610337f5cbd729" id="r_addd43f36e21b9c4edd610337f5cbd729"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#addd43f36e21b9c4edd610337f5cbd729">GetFrameHeight</a> ()</td></tr>
 <tr class="memitem:a36dd0d63f7535aff61cef1e70b65fe75" id="r_a36dd0d63f7535aff61cef1e70b65fe75"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a36dd0d63f7535aff61cef1e70b65fe75">CalcItemWidth</a> ()</td></tr>
+<tr class="memdesc:a36dd0d63f7535aff61cef1e70b65fe75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width the next framed control would take with the current item width and indent, for splitting a row between two controls.  <br /></td></tr>
 <tr class="memitem:ac5ae487adcf4926f892e636a77b8485a" id="r_ac5ae487adcf4926f892e636a77b8485a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac5ae487adcf4926f892e636a77b8485a">GetFontSize</a> ()</td></tr>
 <tr class="memitem:a6e29e51fa9e2dac5d2e399002955f3f5" id="r_a6e29e51fa9e2dac5d2e399002955f3f5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6e29e51fa9e2dac5d2e399002955f3f5">MeasureText</a> (const char *text, float *outW, float *outH)</td></tr>
 <tr class="memitem:a9fb5518b72ea4529e5f9768bf4e33493" id="r_a9fb5518b72ea4529e5f9768bf4e33493"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9fb5518b72ea4529e5f9768bf4e33493">AlignTextToFramePadding</a> ()</td></tr>
@@ -341,6 +358,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad1271dd203ffc8aaa4b74be1b31cb7e" id="r_aad1271dd203ffc8aaa4b74be1b31cb7e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aad1271dd203ffc8aaa4b74be1b31cb7e">RadioButton</a> (const char *label, bool active)</td></tr>
 <tr class="memitem:a0a30635f37e246a8b5f9363045e595ab" id="r_a0a30635f37e246a8b5f9363045e595ab"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0a30635f37e246a8b5f9363045e595ab">Selectable</a> (const char *label, bool selected)</td></tr>
 <tr class="memitem:a4bff7fd43a8ff4ae649b48a4da106acd" id="r_a4bff7fd43a8ff4ae649b48a4da106acd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4bff7fd43a8ff4ae649b48a4da106acd">Selectable</a> (const char *label, bool selected, bool spanAllColumns)</td></tr>
+<tr class="memdesc:a4bff7fd43a8ff4ae649b48a4da106acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selectable spanning every column of the enclosing table (a full-width row).  <br /></td></tr>
 <tr class="memitem:a77f146e6a7ed6bf6474e51f751d94ae0" id="r_a77f146e6a7ed6bf6474e51f751d94ae0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a77f146e6a7ed6bf6474e51f751d94ae0">ImageButton</a> (const char *id, uint32_t texture, float w, float h, float u0=0.0f, float v0=0.0f, float u1=1.0f, float v1=1.0f)</td></tr>
 <tr class="memitem:a0a024c63e87844f34c07a2f7818b565d" id="r_a0a024c63e87844f34c07a2f7818b565d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0a024c63e87844f34c07a2f7818b565d">InvisibleButton</a> (const char *id, float w, float h)</td></tr>
 <tr class="memitem:a167c1a46a445233dc26fde92b67f4699" id="r_a167c1a46a445233dc26fde92b67f4699"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a167c1a46a445233dc26fde92b67f4699">SetNextItemWidth</a> (float w)</td></tr>
@@ -359,6 +377,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d9999665b1872f083719ddc7942a56c" id="r_a0d9999665b1872f083719ddc7942a56c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0d9999665b1872f083719ddc7942a56c">TreeNodeEx</a> (const char *label, int treeFlags=0)</td></tr>
 <tr class="memitem:aea84a80e4869388cd42d9285094d7c0b" id="r_aea84a80e4869388cd42d9285094d7c0b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aea84a80e4869388cd42d9285094d7c0b">TreePop</a> ()</td></tr>
 <tr class="memitem:acf984d26eab24aa21db5dae5bac92edd" id="r_acf984d26eab24aa21db5dae5bac92edd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acf984d26eab24aa21db5dae5bac92edd">BeginGroup</a> ()</td></tr>
+<tr class="memdesc:acf984d26eab24aa21db5dae5bac92edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treats a run of widgets as one item (for SameLine, sizing and hit testing the whole block).  <br /></td></tr>
 <tr class="memitem:a686fe02504a78fef07cb9b1561ffbdb1" id="r_a686fe02504a78fef07cb9b1561ffbdb1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a686fe02504a78fef07cb9b1561ffbdb1">EndGroup</a> ()</td></tr>
 <tr class="memitem:a68f147f4312561d80a8a2acd1de3d3f3" id="r_a68f147f4312561d80a8a2acd1de3d3f3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a68f147f4312561d80a8a2acd1de3d3f3">BeginTable</a> (const char *id, int columns, int tableFlags=0, float outerW=0.0f, float outerH=0.0f)</td></tr>
 <tr class="memitem:ae1d1669a3298058c78eb458e420f0ec1" id="r_ae1d1669a3298058c78eb458e420f0ec1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae1d1669a3298058c78eb458e420f0ec1">TableSetupColumn</a> (const char *label, int columnFlags=0, float widthOrWeight=0.0f)</td></tr>
@@ -370,20 +389,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ce6c61580d840f83565fe9afdd2b43e" id="r_a3ce6c61580d840f83565fe9afdd2b43e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ce6c61580d840f83565fe9afdd2b43e">BeginToolbar</a> ()</td></tr>
 <tr class="memitem:a2325853812d3af02acf4d91686420332" id="r_a2325853812d3af02acf4d91686420332"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2325853812d3af02acf4d91686420332">ToolbarButton</a> (const char *label, bool enabled=true, bool active=false)</td></tr>
 <tr class="memitem:a9a22c442e09e9ff97c83d437927bdf05" id="r_a9a22c442e09e9ff97c83d437927bdf05"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9a22c442e09e9ff97c83d437927bdf05">ToolbarIconButton</a> (const char *id, const char *icon, const char *tooltip=nullptr, bool enabled=true, bool active=false, bool destructive=false)</td></tr>
+<tr class="memdesc:a9a22c442e09e9ff97c83d437927bdf05"><td class="mdescLeft">&#160;</td><td class="mdescRight"><span class="tt">destructive</span> marks a cell that removes something: it is drawn in the palette's red with a red hover fill, so a delete never looks like the buttons beside it.  <br /></td></tr>
 <tr class="memitem:a3585c1f6d06c7a7f92400db9a99794ff" id="r_a3585c1f6d06c7a7f92400db9a99794ff"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3585c1f6d06c7a7f92400db9a99794ff">EndToolbar</a> ()</td></tr>
 <tr class="memitem:a6660cbbf3315755f33b9652a74ee9134" id="r_a6660cbbf3315755f33b9652a74ee9134"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6660cbbf3315755f33b9652a74ee9134">BeginTabLinks</a> ()</td></tr>
+<tr class="memdesc:a6660cbbf3315755f33b9652a74ee9134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sub-nav "tab links": a full-bleed row of text labels with a 2px accent underline on the active one (dim -&gt; bright on hover) and a bottom hairline, like the Asset Browser's Assets/Scripts tabs.  <br /></td></tr>
 <tr class="memitem:a8cbc77432ea370a57087002fab5adc29" id="r_a8cbc77432ea370a57087002fab5adc29"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8cbc77432ea370a57087002fab5adc29">TabLink</a> (const char *label, bool active)</td></tr>
 <tr class="memitem:ae644d36282abe53cc541da918bd642a8" id="r_ae644d36282abe53cc541da918bd642a8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae644d36282abe53cc541da918bd642a8">EndTabLinks</a> ()</td></tr>
 <tr class="memitem:a78256cdd52a2bbd7ea7d81402aab7ba4" id="r_a78256cdd52a2bbd7ea7d81402aab7ba4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a78256cdd52a2bbd7ea7d81402aab7ba4">SelectableCard</a> (const char *id, const char *title, const char *subtitle, bool selected, uint32_t subtitleColor=0)</td></tr>
+<tr class="memdesc:a78256cdd52a2bbd7ea7d81402aab7ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A richer list entry than Selectable: a full-width "card" with a bold title and an optional dim subtitle, rounded hover/selected backgrounds, and a left accent bar when selected.  <br /></td></tr>
 <tr class="memitem:afde0b02a79b56d079e0a6cd7531d6924" id="r_afde0b02a79b56d079e0a6cd7531d6924"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afde0b02a79b56d079e0a6cd7531d6924">OpenPopup</a> (const char *id)</td></tr>
 <tr class="memitem:affe9c0c63283ef2058fc8c8e50af2d42" id="r_affe9c0c63283ef2058fc8c8e50af2d42"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#affe9c0c63283ef2058fc8c8e50af2d42">BeginPopup</a> (const char *id)</td></tr>
 <tr class="memitem:a060cfa0e0087e49eb8bcc9abd1fcf495" id="r_a060cfa0e0087e49eb8bcc9abd1fcf495"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a060cfa0e0087e49eb8bcc9abd1fcf495">BeginPopupModal</a> (const char *name, bool *open=nullptr, int winFlags=0)</td></tr>
 <tr class="memitem:a0f673c65a1fe9dae73c4226432dbc3e3" id="r_a0f673c65a1fe9dae73c4226432dbc3e3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0f673c65a1fe9dae73c4226432dbc3e3">BeginPopupContextItem</a> (const char *id=nullptr)</td></tr>
 <tr class="memitem:ab3a4ed5b64c2c3e5e097824d92c76ba5" id="r_ab3a4ed5b64c2c3e5e097824d92c76ba5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab3a4ed5b64c2c3e5e097824d92c76ba5">OpenPopupOnItemClick</a> (const char *id, int mouseButton=1)</td></tr>
+<tr class="memdesc:ab3a4ed5b64c2c3e5e097824d92c76ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens <span class="tt">id</span> when the last submitted item is clicked with <span class="tt">mouseButton</span> (0 = left, 1 = right, 2 = middle).  <br /></td></tr>
 <tr class="memitem:a584f5ab09470d50ff0dc33c053d5942e" id="r_a584f5ab09470d50ff0dc33c053d5942e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a584f5ab09470d50ff0dc33c053d5942e">EndPopup</a> ()</td></tr>
 <tr class="memitem:af299f15ca87902812d165c609d9f3ec4" id="r_af299f15ca87902812d165c609d9f3ec4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af299f15ca87902812d165c609d9f3ec4">CloseCurrentPopup</a> ()</td></tr>
 <tr class="memitem:a2f9f9cf7042e5a97d2969151b80b332b" id="r_a2f9f9cf7042e5a97d2969151b80b332b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2f9f9cf7042e5a97d2969151b80b332b">MenuItem</a> (const char *label, bool enabled=true)</td></tr>
 <tr class="memitem:a10756b38cb1afe7e4db67123080e3d8d" id="r_a10756b38cb1afe7e4db67123080e3d8d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a10756b38cb1afe7e4db67123080e3d8d">BeginMenu</a> (const char *label)</td></tr>
+<tr class="memdesc:a10756b38cb1afe7e4db67123080e3d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submenu inside an open popup or menu.  <br /></td></tr>
 <tr class="memitem:a4e123289d04a44d231e0840e794e32cd" id="r_a4e123289d04a44d231e0840e794e32cd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4e123289d04a44d231e0840e794e32cd">EndMenu</a> ()</td></tr>
 <tr class="memitem:ab3605d5a2d99774d7b321a4ba89cab40" id="r_ab3605d5a2d99774d7b321a4ba89cab40"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab3605d5a2d99774d7b321a4ba89cab40">Begin</a> (const char *name, bool *open=nullptr, int winFlags=0)</td></tr>
 <tr class="memitem:a1e324d41f96692bc6bcc1ef899e05fa5" id="r_a1e324d41f96692bc6bcc1ef899e05fa5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e324d41f96692bc6bcc1ef899e05fa5">End</a> ()</td></tr>
@@ -395,6 +419,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe9580a54ffeffccb8122e662ddd40df" id="r_afe9580a54ffeffccb8122e662ddd40df"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#afe9580a54ffeffccb8122e662ddd40df">GetStyleColor</a> (<a class="el" href="#ac6212dd48bcc831e657f9ae612b000c3">Col</a> col)</td></tr>
 <tr class="memitem:abc6f4a68bcd12d5a51e223e2e596ec7d" id="r_abc6f4a68bcd12d5a51e223e2e596ec7d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abc6f4a68bcd12d5a51e223e2e596ec7d">PushButtonTextAlign</a> (float x, float y)</td></tr>
 <tr class="memitem:a69bd3ee285e50ad53022e816b0aa93b0" id="r_a69bd3ee285e50ad53022e816b0aa93b0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a69bd3ee285e50ad53022e816b0aa93b0">PushStyleVar</a> (<a class="el" href="#a22a60cd7097470c8654864a3d41fa759">StyleVar</a> var, float x, float y)</td></tr>
+<tr class="memdesc:a69bd3ee285e50ad53022e816b0aa93b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a Vec2 style var (e.g. table CellPadding, ItemSpacing); pop with PopStyleVar.  <br /></td></tr>
 <tr class="memitem:a7026e84fab6d53d922b5ffe9d51cde25" id="r_a7026e84fab6d53d922b5ffe9d51cde25"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7026e84fab6d53d922b5ffe9d51cde25">PopStyleVar</a> (int count=1)</td></tr>
 <tr class="memitem:a06e974b69b6aafd09f2bae65b0f21548" id="r_a06e974b69b6aafd09f2bae65b0f21548"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a06e974b69b6aafd09f2bae65b0f21548">TextColored</a> (uint32_t rgba, const char *text)</td></tr>
 <tr class="memitem:a54b8b925398e8f7637e4dacca650ca09" id="r_a54b8b925398e8f7637e4dacca650ca09"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54b8b925398e8f7637e4dacca650ca09">PushBoldFont</a> ()</td></tr>
@@ -410,6 +435,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad33a4e09e2400135b95c797f1e26d631" id="r_ad33a4e09e2400135b95c797f1e26d631"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad33a4e09e2400135b95c797f1e26d631">IsKeyShift</a> ()</td></tr>
 <tr class="memitem:a83411fb853989faf1bffb016a28a729b" id="r_a83411fb853989faf1bffb016a28a729b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a83411fb853989faf1bffb016a28a729b">IsKeyCtrl</a> ()</td></tr>
 <tr class="memitem:abcf5e1584d4a0772c152b08fa1385993" id="r_abcf5e1584d4a0772c152b08fa1385993"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abcf5e1584d4a0772c152b08fa1385993">GetDpiScale</a> ()</td></tr>
+<tr class="memdesc:abcf5e1584d4a0772c152b08fa1385993"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global DPI scale (FontScaleDpi).  <br /></td></tr>
 <tr class="memitem:aefd22f605ce7054777102bce7ad3627e" id="r_aefd22f605ce7054777102bce7ad3627e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aefd22f605ce7054777102bce7ad3627e">IsKeyAlt</a> ()</td></tr>
 <tr class="memitem:a8c2e5cc3d755beb256ad3549f672f866" id="r_a8c2e5cc3d755beb256ad3549f672f866"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8c2e5cc3d755beb256ad3549f672f866">IsKeyPressed</a> (<a class="el" href="#a6a71d1c6eebf16675a42586a0a702976">Key</a> key, bool repeat=true)</td></tr>
 <tr class="memitem:ab9ff49c3a58a170e77b81a58e8c7d1f4" id="r_ab9ff49c3a58a170e77b81a58e8c7d1f4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab9ff49c3a58a170e77b81a58e8c7d1f4">GetDeltaTime</a> ()</td></tr>
@@ -417,9 +443,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26aca3ea40e503ead5de9c08d4f2e8b3" id="r_a26aca3ea40e503ead5de9c08d4f2e8b3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a26aca3ea40e503ead5de9c08d4f2e8b3">IsItemActive</a> ()</td></tr>
 <tr class="memitem:afa1196b6096ca0aeb0509516947af23e" id="r_afa1196b6096ca0aeb0509516947af23e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afa1196b6096ca0aeb0509516947af23e">IsItemDeactivatedAfterEdit</a> ()</td></tr>
 <tr class="memitem:a366ffae36bce53786e5a4ef21c5e58a2" id="r_a366ffae36bce53786e5a4ef21c5e58a2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a366ffae36bce53786e5a4ef21c5e58a2">IsItemDeactivated</a> ()</td></tr>
+<tr class="memdesc:a366ffae36bce53786e5a4ef21c5e58a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lost focus this frame, edited or not.  <br /></td></tr>
 <tr class="memitem:a4e73f944fd6404d02864f4d76b8ae071" id="r_a4e73f944fd6404d02864f4d76b8ae071"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4e73f944fd6404d02864f4d76b8ae071">SetKeyboardFocusHere</a> ()</td></tr>
+<tr class="memdesc:a4e73f944fd6404d02864f4d76b8ae071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the NEXT widget keyboard focus, for fields that should appear focused (click-to-rename) so the user can type without a second click.  <br /></td></tr>
 <tr class="memitem:a71faf1d34acd33585b2a3608be1c4782" id="r_a71faf1d34acd33585b2a3608be1c4782"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a71faf1d34acd33585b2a3608be1c4782">InvisibleButton</a> (const char *id, float w, float h, bool allowLeft, bool allowMiddle, bool allowRight=false)</td></tr>
+<tr class="memdesc:a71faf1d34acd33585b2a3608be1c4782"><td class="mdescLeft">&#160;</td><td class="mdescRight">InvisibleButton that takes which mouse buttons activate it.  <br /></td></tr>
 <tr class="memitem:a36f717bf0860fdfbdb3caf77a2df25cc" id="r_a36f717bf0860fdfbdb3caf77a2df25cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a36f717bf0860fdfbdb3caf77a2df25cc">SetNextItemAllowOverlap</a> ()</td></tr>
+<tr class="memdesc:a36f717bf0860fdfbdb3caf77a2df25cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lets items submitted LATER in the same window win the hit test against the NEXT item, so submission order becomes front-to-back hit testing.  <br /></td></tr>
 <tr class="memitem:a4385110e82a9a8c62ae51a7e164a7526" id="r_a4385110e82a9a8c62ae51a7e164a7526"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4385110e82a9a8c62ae51a7e164a7526">DragFloat2</a> (const char *id, float v[2], float speed=1.0f, float vmin=0.0f, float vmax=0.0f, const char *format=&quot;%.3f&quot;)</td></tr>
 <tr class="memitem:a94ffac0d39c9c0f45c133ac68e54b9d7" id="r_a94ffac0d39c9c0f45c133ac68e54b9d7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a94ffac0d39c9c0f45c133ac68e54b9d7">DragFloat3</a> (const char *id, float v[3], float speed=1.0f, float vmin=0.0f, float vmax=0.0f, const char *format=&quot;%.3f&quot;)</td></tr>
 <tr class="memitem:ace3374708a8cc80559cc4fd42acc624c" id="r_ace3374708a8cc80559cc4fd42acc624c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ace3374708a8cc80559cc4fd42acc624c">FullBleedSeparator</a> ()</td></tr>
@@ -454,25 +484,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3101a52cf69e8e601cd4ae9e722b16f5" id="r_a3101a52cf69e8e601cd4ae9e722b16f5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3101a52cf69e8e601cd4ae9e722b16f5">Vector3Field</a> (const char *label, float x, float y, float z, float speed, float vmin, float vmax, const char *format, const <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html">VecCallbacks</a> &amp;cb)</td></tr>
 <tr class="memitem:a2e1f96efee2282ed6ee999bd5ce880e2" id="r_a2e1f96efee2282ed6ee999bd5ce880e2"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a2e1f96efee2282ed6ee999bd5ce880e2">GetCurrentComponent</a> () const</td></tr>
 <tr class="memitem:ab3902823f70f0da9fbb00714eb026933" id="r_ab3902823f70f0da9fbb00714eb026933"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_component_meta.html">Deki::ComponentMeta</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab3902823f70f0da9fbb00714eb026933">GetCurrentMeta</a> () const</td></tr>
-<tr class="memitem:a780085eb41be1715255aa597fd9649d8" id="r_a780085eb41be1715255aa597fd9649d8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a780085eb41be1715255aa597fd9649d8">BeginComponent</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp, const <a class="el" href="struct_deki_1_1_component_meta.html">Deki::ComponentMeta</a> *meta, <a class="el" href="#a0863810b7f7f9becf66bc40358348efa">DrawPropertyByNameFunc</a> drawByName, <a class="el" href="#afd5f170d04cd017b0b84eab4c3fadaa7">DrawPropertyByOffsetFunc</a> drawByOffset, <a class="el" href="#a8884133f182eae66d6700108d00c1c66">DrawDefaultPropertiesFunc</a> drawDefault, <a class="el" href="#afb67a1c061fea4b4c0b653f4d1b8fe3a">ResolveAssetNameFunc</a> resolveAsset, <a class="el" href="#adb7d710d3fa8b970fcc6e26dfcdcdac4">GetFontAtlasFunc</a> getFontAtlas, <a class="el" href="#ad6bfcb444d5e616264f6729877ff1f01">ModifyAssetFunc</a> modifyAsset=nullptr)</td></tr>
-<tr class="memdesc:a780085eb41be1715255aa597fd9649d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin editing a component (called by InspectorPanel).  <br /></td></tr>
+<tr class="memitem:a780085eb41be1715255aa597fd9649d8" id="r_a780085eb41be1715255aa597fd9649d8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a780085eb41be1715255aa597fd9649d8">BeginComponent</a> (<a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *comp, const <a class="el" href="struct_deki_1_1_component_meta.html">Deki::ComponentMeta</a> *meta, <a class="el" href="#a0863810b7f7f9becf66bc40358348efa">DrawPropertyByNameFunc</a> drawByName, <a class="el" href="#afd5f170d04cd017b0b84eab4c3fadaa7">DrawPropertyByOffsetFunc</a> drawByOffset, <a class="el" href="#a8884133f182eae66d6700108d00c1c66">DrawDefaultPropertiesFunc</a> drawDefault, <a class="el" href="#afb67a1c061fea4b4c0b653f4d1b8fe3a">ResolveAssetNameFunc</a> resolveAsset, <a class="el" href="#adb7d710d3fa8b970fcc6e26dfcdcdac4">GetFontAtlasFunc</a> getFontAtlas, <a class="el" href="#a5f95e33564416a9630a1b91b3ffd09fb">ModifyAssetFunc</a> modifyAsset=nullptr)</td></tr>
+<tr class="memdesc:a780085eb41be1715255aa597fd9649d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts drawing a component's Inspector. Called by InspectorPanel.  <br /></td></tr>
 <tr class="memitem:a9b3bc5fbf3e1c02934d3db505b168b84" id="r_a9b3bc5fbf3e1c02934d3db505b168b84"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b3bc5fbf3e1c02934d3db505b168b84">EndComponent</a> ()</td></tr>
-<tr class="memdesc:a9b3bc5fbf3e1c02934d3db505b168b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">End editing a component.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af95523851f0173e158fa78c1d2571c83" id="r_af95523851f0173e158fa78c1d2571c83"><td class="memItemLeft">static EditorUI &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af95523851f0173e158fa78c1d2571c83">Get</a> ()</td></tr>
-<tr class="memdesc:af95523851f0173e158fa78c1d2571c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singleton instance.  <br /></td></tr>
 <tr class="memitem:ac757bb132b215f805f40455d96cabf1f" id="r_ac757bb132b215f805f40455d96cabf1f"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ac757bb132b215f805f40455d96cabf1f">Rgba</a> (uint8_t r, uint8_t g, uint8_t b, uint8_t a=255)</td></tr>
-<tr class="memdesc:ac757bb132b215f805f40455d96cabf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an RGBA color (components 0-255) for the Draw* methods.  <br /></td></tr>
+<tr class="memdesc:ac757bb132b215f805f40455d96cabf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packs an RGBA color (components 0-255) for the Draw* methods.  <br /></td></tr>
 <tr class="memitem:abe6370fb6c6b1eb587b3af0ef7059653" id="r_abe6370fb6c6b1eb587b3af0ef7059653"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abe6370fb6c6b1eb587b3af0ef7059653">SetWidgetBackend</a> (const <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html">WidgetBackend</a> &amp;backend)</td></tr>
 <tr class="memitem:af4e74a6ca78cd5982de8d23539f9865a" id="r_af4e74a6ca78cd5982de8d23539f9865a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af4e74a6ca78cd5982de8d23539f9865a">SetExtraWindowFlagsProvider</a> (std::function&lt; int(const char *)&gt; fn)</td></tr>
+<tr class="memdesc:af4e74a6ca78cd5982de8d23539f9865a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extra ImGui window flags for a window, by the name passed to <a class="el" href="#ab3605d5a2d99774d7b321a4ba89cab40">Begin()</a>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Singleton providing the editor UI controls + inspector drawing. </p>
-<p>Unity-like static access for <a class="el" href="class_deki_editor_1_1_custom_editor.html" title="Custom editor for a specific component type.">CustomEditor</a> implementations: auto&amp; ui = <a class="el" href="#af95523851f0173e158fa78c1d2571c83" title="Get singleton instance.">EditorUI::Get()</a>; ui.DrawDefaultInspector(); ui.PropertyField("speed");</p>
-<p>Packages depend on this class instead of ImGui directly: the implementations live in the editor executable and are installed via the callback bridge (BeginComponent for property drawing; widget methods added in later phases), so package editors render with the editor's styled widgets.</p>
-<p>The InspectorPanel calls BeginComponent/EndComponent to set up context before invoking <a class="el" href="class_deki_editor_1_1_custom_editor.html#ac475ab73033e9ecbd684517f96b129ae" title="Draw custom inspector GUI.">CustomEditor::OnInspectorGUI()</a>. </p>
+<div class="textblock"><p>The editor's UI controls and inspector drawing, for <a class="el" href="class_deki_editor_1_1_custom_editor.html" title="Custom editor for one component type, like Unity&#39;s CustomEditor: it can replace the component&#39;s Inspe...">CustomEditor</a> code: auto&amp; ui = <a class="el" href="#af95523851f0173e158fa78c1d2571c83">EditorUI::Get()</a>; ui.DrawDefaultInspector(); ui.PropertyField("speed");. </p>
+<p>Packages use this class instead of ImGui directly. The implementations live in the editor executable and are installed through callbacks (BeginComponent for property drawing, SetWidgetBackend for widgets), so package editors draw with the editor's styled widgets.</p>
+<p>InspectorPanel calls BeginComponent/EndComponent around <a class="el" href="class_deki_editor_1_1_custom_editor.html#ac475ab73033e9ecbd684517f96b129ae" title="Draws the Inspector for the component.">CustomEditor::OnInspectorGUI()</a>. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a0863810b7f7f9becf66bc40358348efa" name="a0863810b7f7f9becf66bc40358348efa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0863810b7f7f9becf66bc40358348efa">&#9670;&#160;</a></span>DrawPropertyByNameFunc</h2>
@@ -485,8 +513,6 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Callback types for property drawing. </p>
 
 </div>
 </div>
@@ -546,18 +572,20 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6bfcb444d5e616264f6729877ff1f01" name="ad6bfcb444d5e616264f6729877ff1f01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6bfcb444d5e616264f6729877ff1f01">&#9670;&#160;</a></span>ModifyAssetFunc</h2>
+<a id="a5f95e33564416a9630a1b91b3ffd09fb" name="a5f95e33564416a9630a1b91b3ffd09fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f95e33564416a9630a1b91b3ffd09fb">&#9670;&#160;</a></span>ModifyAssetFunc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ad6bfcb444d5e616264f6729877ff1f01">DekiEditor::EditorUI::ModifyAssetFunc</a> = std::function&lt;void(const std::string&amp;, const std::string&amp;, const std::string&amp;, const std::string&amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="#a5f95e33564416a9630a1b91b3ffd09fb">DekiEditor::EditorUI::ModifyAssetFunc</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::function&lt;void(<span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> std::string&amp;)&gt;</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
@@ -581,7 +609,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Editor style color slots (mapped internally to the theme). </p>
+<p>Editor style color slots, mapped to the theme. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac6212dd48bcc831e657f9ae612b000c3a9dffbf69ffba8bc38bc4e01abf4b1675" name="ac6212dd48bcc831e657f9ae612b000c3a9dffbf69ffba8bc38bc4e01abf4b1675"></a>Text&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac6212dd48bcc831e657f9ae612b000c3a87b7760f14fbff78d8819291f36ab9a0" name="ac6212dd48bcc831e657f9ae612b000c3a87b7760f14fbff78d8819291f36ab9a0"></a>Button&#160;</td><td class="fielddoc"></td></tr>
@@ -706,7 +734,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Vec2-valued style vars adjustable via PushStyleVar (balance with PopStyleVar). </p>
+<p>Vec2 style vars for PushStyleVar (balance with PopStyleVar). </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22a60cd7097470c8654864a3d41fa759a95a1f596d22793c3a0ab7d6eac6a4d35" name="a22a60cd7097470c8654864a3d41fa759a95a1f596d22793c3a0ab7d6eac6a4d35"></a>ItemSpacing&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a22a60cd7097470c8654864a3d41fa759ad518b6b39635f4baff78668710c61659" name="a22a60cd7097470c8654864a3d41fa759ad518b6b39635f4baff78668710c61659"></a>ItemInnerSpacing&#160;</td><td class="fielddoc"></td></tr>
@@ -765,8 +793,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Mouse cursor shapes for SetMouseCursor (e.g. </p>
-<p>splitter resize handles). </p>
+<p>Mouse cursor shapes for SetMouseCursor (e.g. splitter resize handles). </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8d59083817e6ec305256ce3fb6651038a0f4e1aaabd074689b7d3ead824d1ee8e" name="a8d59083817e6ec305256ce3fb6651038a0f4e1aaabd074689b7d3ead824d1ee8e"></a>Arrow&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8d59083817e6ec305256ce3fb6651038ac852755f85e80bfa21ab754f8dde93dc" name="a8d59083817e6ec305256ce3fb6651038ac852755f85e80bfa21ab754f8dde93dc"></a>TextInput&#160;</td><td class="fielddoc"></td></tr>
@@ -798,6 +825,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Physical unit of a float or vector field. </p>
+<p>The value is stored in canonical units (meters, radians); the editor shows it in the project's display unit (px/m, degrees) and snaps Distance to whole pixels in Pixels mode. Mirrors the engine's <a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270" title="Physical unit of a Float or Vector2 property.">Deki::PhysicalUnit</a> so the int passes straight through. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a02da3121102b419f94f0fde02e260ec6a6adf97f83acf6453d4a6a4b1070f3754" name="a02da3121102b419f94f0fde02e260ec6a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a02da3121102b419f94f0fde02e260ec6a0aa6f4210bf373c95eda00232e93cd98" name="a02da3121102b419f94f0fde02e260ec6a0aa6f4210bf373c95eda00232e93cd98"></a>Distance&#160;</td><td class="fielddoc"></td></tr>
@@ -832,8 +862,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get singleton instance. </p>
-
 </div>
 </div>
 <a id="abbd5ab3266ebedc89cf9f28e8e264ae5" name="abbd5ab3266ebedc89cf9f28e8e264ae5"></a>
@@ -851,8 +879,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Draw all default properties for current component. </p>
-<p>Equivalent to Unity's <a class="el" href="#abbd5ab3266ebedc89cf9f28e8e264ae5" title="Draw all default properties for current component.">DrawDefaultInspector()</a>. </p>
+<p>Draws every property of the current component, like Unity's <a class="el" href="#abbd5ab3266ebedc89cf9f28e8e264ae5" title="Draws every property of the current component, like Unity&#39;s DrawDefaultInspector().">DrawDefaultInspector()</a>. </p>
 
 </div>
 </div>
@@ -871,13 +898,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Draw a specific property by member offset. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">offset</td><td>offsetof(ComponentType, member) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Draws one property by member offset: offsetof(ComponentType, member). </p>
 
 </div>
 </div>
@@ -896,13 +917,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Draw a specific property by name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">propertyName</td><td>Name of the property to draw </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Draws one property by name. </p>
 
 </div>
 </div>
@@ -921,14 +936,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resolve asset GUID to display name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">guid</td><td>Asset GUID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Human-readable asset path/name </dd></dl>
+<p>A readable path or name for an asset GUID. </p>
 
 </div>
 </div>
@@ -961,17 +969,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get font atlas texture for preview. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fontGuid</td><td>Font asset GUID </td></tr>
-    <tr><td class="paramname">fontSize</td><td>Font size </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Output atlas width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Output atlas height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID, or 0 on failure </dd></dl>
+<p>The OpenGL atlas texture of a font at a size, for previews, with its width and height, or 0 on failure. </p>
 
 </div>
 </div>
@@ -1004,16 +1002,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modify an asset file with undo/redo support. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">assetPath</td><td>Absolute path to the asset file </td></tr>
-    <tr><td class="paramname">assetGuid</td><td>Asset GUID </td></tr>
-    <tr><td class="paramname">oldJson</td><td>Old JSON state (for undo) </td></tr>
-    <tr><td class="paramname">newJson</td><td>New JSON state (to apply) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Changes an asset file (absolute path) from <span class="tt">oldJson</span> to <span class="tt">newJson</span>, as an undoable edit. </p>
 
 </div>
 </div>
@@ -1032,6 +1021,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Collapsing section header (full-bleed band). Returns true if expanded. </p>
+
 </div>
 </div>
 <a id="a0e8e0884762885de9507d5d653d9b9ca" name="a0e8e0884762885de9507d5d653d9b9ca"></a>
@@ -1048,6 +1039,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts a "label : value" row; the next control fills the value column. </p>
 
 </div>
 </div>
@@ -1146,6 +1139,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A visible label (e.g. </p>
+<p>"Antialiased") draws a whole labeled row, compact (sized to the checkbox, not the tall field frame). A hidden or empty label ("##id") draws just the styled box, for custom inline layouts. Returns true when toggled. </p>
 
 </div>
 </div>
@@ -1609,6 +1605,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Indents by a given number of pixels (e.g. </p>
+<p>a panel's content gutter). Pair Indent(amount) with Unindent(amount). </p>
+
 </div>
 </div>
 <a id="a8a88029acfebd004306c96d6ccc20161" name="a8a88029acfebd004306c96d6ccc20161"></a>
@@ -1669,6 +1668,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Collapsing header with an optional close button. </p>
+<p>With a null <span class="tt">pVisible</span> there is no close button; otherwise clicking it sets *pVisible to false. Returns true when the section is expanded. </p>
+
 </div>
 </div>
 <a id="ac757bb132b215f805f40455d96cabf1f" name="ac757bb132b215f805f40455d96cabf1f"></a>
@@ -1708,7 +1710,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pack an RGBA color (components 0-255) for the Draw* methods. </p>
+<p>Packs an RGBA color (components 0-255) for the Draw* methods. </p>
 
 </div>
 </div>
@@ -1731,7 +1733,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Top-left screen position where the next widget/drawing goes. </p>
+<p>Top-left screen position where the next widget or drawing goes. </p>
 
 </div>
 </div>
@@ -1754,7 +1756,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Place the layout cursor at an absolute screen position (for custom chrome that positions widgets/draws by hand, e.g. </p>
+<p>Puts the layout cursor at an absolute screen position, for custom chrome that places widgets and drawing by hand (e.g. </p>
 <p>toolbars). </p>
 
 </div>
@@ -1778,7 +1780,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Advance the layout cursor by w x h (reserve space for drawing). </p>
+<p>Advances the layout cursor by width x height, reserving space for drawing. </p>
 
 </div>
 </div>
@@ -2108,6 +2110,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Text sized in CSS px: the backend converts with Fonts::CssPx(currentFont, cssPx) and applies the DPI scale, so hand-drawn labels match widget text. </p>
+<p>Use this rather than DrawTextAt (raw pixels) for any UI-like text. </p>
+
 </div>
 </div>
 <a id="a694ddf36b8c562c1c3f0420b63349114" name="a694ddf36b8c562c1c3f0420b63349114"></a>
@@ -2138,6 +2143,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Measures text exactly as DrawTextCss draws it. </p>
 
 </div>
 </div>
@@ -2238,8 +2245,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inline image widget (advances layout), e.g. </p>
-<p>a texture/atlas preview. </p>
+<p>Inline image widget that advances the layout, e.g. a texture or atlas preview. </p>
 
 </div>
 </div>
@@ -2411,6 +2417,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Bounds of the last submitted item (screen space), e.g. </p>
+<p>to hang a control off the right edge of a row just drawn. </p>
+
 </div>
 </div>
 <a id="addd43f36e21b9c4edd610337f5cbd729" name="addd43f36e21b9c4edd610337f5cbd729"></a>
@@ -2444,6 +2453,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Width the next framed control would take with the current item width and indent, for splitting a row between two controls. </p>
 
 </div>
 </div>
@@ -2736,6 +2747,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Selectable spanning every column of the enclosing table (a full-width row). </p>
 
 </div>
 </div>
@@ -3130,6 +3143,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Treats a run of widgets as one item (for SameLine, sizing and hit testing the whole block). </p>
+<p>Pair BeginGroup with EndGroup. </p>
+
 </div>
 </div>
 <a id="a686fe02504a78fef07cb9b1561ffbdb1" name="a686fe02504a78fef07cb9b1561ffbdb1"></a>
@@ -3382,6 +3398,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><span class="tt">destructive</span> marks a cell that removes something: it is drawn in the palette's red with a red hover fill, so a delete never looks like the buttons beside it. </p>
+
 </div>
 </div>
 <a id="a3585c1f6d06c7a7f92400db9a99794ff" name="a3585c1f6d06c7a7f92400db9a99794ff"></a>
@@ -3415,6 +3433,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sub-nav "tab links": a full-bleed row of text labels with a 2px accent underline on the active one (dim -&gt; bright on hover) and a bottom hairline, like the Asset Browser's Assets/Scripts tabs. </p>
+<p>Pair BeginTabLinks with EndTabLinks; draw each with TabLink (returns true when clicked). </p>
 
 </div>
 </div>
@@ -3489,6 +3510,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A richer list entry than Selectable: a full-width "card" with a bold title and an optional dim subtitle, rounded hover/selected backgrounds, and a left accent bar when selected. </p>
+<p>Reserves its own height, so cards stack vertically. Returns true when clicked; call <a class="el" href="#a6cccbe299f284e697f9057ac3a277878">IsItemHovered()</a> / <a class="el" href="#aa9d22fa98d7ccda01fbcd88079c6edd9">IsMouseDoubleClicked()</a> right after for hover and double-click. <span class="tt">subtitle</span> may be null for a single line. <span class="tt">subtitleColor</span> (packed with <a class="el" href="#ac757bb132b215f805f40455d96cabf1f" title="Packs an RGBA color (components 0-255) for the Draw* methods.">Rgba()</a>) tints the subtitle; 0 = the default dim. </p>
 
 </div>
 </div>
@@ -3588,6 +3612,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Opens <span class="tt">id</span> when the last submitted item is clicked with <span class="tt">mouseButton</span> (0 = left, 1 = right, 2 = middle). </p>
+<p>For context menus on a widget that already uses the click itself. </p>
+
 </div>
 </div>
 <a id="a584f5ab09470d50ff0dc33c053d5942e" name="a584f5ab09470d50ff0dc33c053d5942e"></a>
@@ -3659,6 +3686,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Submenu inside an open popup or menu. </p>
+<p>Call <a class="el" href="#a4e123289d04a44d231e0840e794e32cd">EndMenu()</a> only when <a class="el" href="#a10756b38cb1afe7e4db67123080e3d8d" title="Submenu inside an open popup or menu.">BeginMenu()</a> returned true. </p>
 
 </div>
 </div>
@@ -3909,6 +3939,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pushes a Vec2 style var (e.g. table CellPadding, ItemSpacing); pop with PopStyleVar. </p>
 
 </div>
 </div>
@@ -4181,6 +4213,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The global DPI scale (FontScaleDpi). </p>
+<p>Multiply custom-drawn geometry by it to match widget sizes (DrawTextCss already applies it to text). </p>
+
 </div>
 </div>
 <a id="aefd22f605ce7054777102bce7ad3627e" name="aefd22f605ce7054777102bce7ad3627e"></a>
@@ -4304,6 +4339,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Lost focus this frame, edited or not. </p>
+<p>IsItemDeactivatedAfterEdit stays false when the value was left alone, so it cannot close an inline edit field the user clicked away from without typing. </p>
+
 </div>
 </div>
 <a id="a4e73f944fd6404d02864f4d76b8ae071" name="a4e73f944fd6404d02864f4d76b8ae071"></a>
@@ -4320,6 +4358,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gives the NEXT widget keyboard focus, for fields that should appear focused (click-to-rename) so the user can type without a second click. </p>
 
 </div>
 </div>
@@ -4362,6 +4402,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>InvisibleButton that takes which mouse buttons activate it. </p>
+
 </div>
 </div>
 <a id="a36f717bf0860fdfbdb3caf77a2df25cc" name="a36f717bf0860fdfbdb3caf77a2df25cc"></a>
@@ -4378,6 +4420,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Lets items submitted LATER in the same window win the hit test against the NEXT item, so submission order becomes front-to-back hit testing. </p>
+<p>Without it, a big hit surface (a canvas) takes the hovered id for the frame and every widget drawn on top of it cannot be clicked. Call it right before the surface, not before the widgets on top. </p>
 
 </div>
 </div>
@@ -5577,6 +5622,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Extra ImGui window flags for a window, by the name passed to <a class="el" href="#ab3605d5a2d99774d7b321a4ba89cab40">Begin()</a>. </p>
+<p>The editor executable installs it to make a maximized panel non-resizable: the flag must reach ImGui::Begin() itself, which decides whether the resize grips, border highlight and resize cursor exist. Null (the default) adds nothing. </p>
+
 </div>
 </div>
 <a id="a2e1f96efee2282ed6ee999bd5ce880e2" name="a2e1f96efee2282ed6ee999bd5ce880e2"></a>
@@ -5673,12 +5721,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#ad6bfcb444d5e616264f6729877ff1f01">ModifyAssetFunc</a></td>          <td class="paramname"><span class="paramname"><em>modifyAsset</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a5f95e33564416a9630a1b91b3ffd09fb">ModifyAssetFunc</a></td>          <td class="paramname"><span class="paramname"><em>modifyAsset</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Begin editing a component (called by InspectorPanel). </p>
+<p>Starts drawing a component's Inspector. Called by InspectorPanel. </p>
 
 </div>
 </div>
@@ -5696,8 +5744,6 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>End editing a component. </p>
 
 </div>
 </div>

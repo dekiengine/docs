@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -142,41 +150,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
+<p>What a display package implements: setup, presenting frames, events and UI overlays.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;deki/providers/IDisplay.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a45331ac37b72d54727b97ddc2c7d2153" id="r_a45331ac37b72d54727b97ddc2c7d2153"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a45331ac37b72d54727b97ddc2c7d2153">~IDisplay</a> ()=default</td></tr>
 <tr class="memitem:a6fc2d7ae724b41cd1ac212f5e0401888" id="r_a6fc2d7ae724b41cd1ac212f5e0401888"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a6fc2d7ae724b41cd1ac212f5e0401888">Initialize</a> (int32_t width, int32_t height)=0</td></tr>
-<tr class="memdesc:a6fc2d7ae724b41cd1ac212f5e0401888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the platform display.  <br /></td></tr>
 <tr class="memitem:a4a55efde692e971b27ed4ca192372c81" id="r_a4a55efde692e971b27ed4ca192372c81"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a4a55efde692e971b27ed4ca192372c81">Shutdown</a> ()=0</td></tr>
-<tr class="memdesc:a4a55efde692e971b27ed4ca192372c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the display and cleanup resources.  <br /></td></tr>
 <tr class="memitem:a3d173edc4398d2d2a667c6c08805cdb8" id="r_a3d173edc4398d2d2a667c6c08805cdb8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3d173edc4398d2d2a667c6c08805cdb8">Present</a> (const uint8_t *framebuffer, int width, int height, <a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> format)=0</td></tr>
-<tr class="memdesc:a3d173edc4398d2d2a667c6c08805cdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the frame buffer to the display.  <br /></td></tr>
+<tr class="memdesc:a3d173edc4398d2d2a667c6c08805cdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the whole framebuffer.  <br /></td></tr>
 <tr class="memitem:a4992939c99125ae6db1f367d4263d20e" id="r_a4992939c99125ae6db1f367d4263d20e"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a4992939c99125ae6db1f367d4263d20e">SupportsPartialPresent</a> () const</td></tr>
-<tr class="memdesc:a4992939c99125ae6db1f367d4263d20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#abc40d95a208de0c5913178981404a36f" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given.  <br /></td></tr>
+<tr class="memdesc:a4992939c99125ae6db1f367d4263d20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#abc40d95a208de0c5913178981404a36f" title="Shows only rects of the framebuffer: framebuffer pixels, half-open, already clipped,...">PresentRegions()</a> sends only the rectangles it is given.  <br /></td></tr>
 <tr class="memitem:abc40d95a208de0c5913178981404a36f" id="r_abc40d95a208de0c5913178981404a36f"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#abc40d95a208de0c5913178981404a36f">PresentRegions</a> (const uint8_t *framebuffer, int width, int height, <a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> format, const <a class="el" href="struct_deki_1_1_rect.html">Rect</a> *rects, int32_t count)</td></tr>
-<tr class="memdesc:abc40d95a208de0c5913178981404a36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present only <span class="tt">rects</span> of the framebuffer.  <br /></td></tr>
+<tr class="memdesc:abc40d95a208de0c5913178981404a36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows only <span class="tt">rects</span> of the framebuffer: framebuffer pixels, half-open, already clipped, possibly overlapping.  <br /></td></tr>
 <tr class="memitem:a22561fd38eee67d10e4b79ec7d16e080" id="r_a22561fd38eee67d10e4b79ec7d16e080"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a22561fd38eee67d10e4b79ec7d16e080">GetDisplaySize</a> (int32_t *width, int32_t *height) const =0</td></tr>
-<tr class="memdesc:a22561fd38eee67d10e4b79ec7d16e080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the display dimensions.  <br /></td></tr>
+<tr class="memitem:ac9a7fdf60a12e4bb3b45aeb79a47c92e" id="r_ac9a7fdf60a12e4bb3b45aeb79a47c92e"><td class="memItemLeft">virtual <a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac9a7fdf60a12e4bb3b45aeb79a47c92e">GetColorFormat</a> () const =0</td></tr>
+<tr class="memdesc:ac9a7fdf60a12e4bb3b45aeb79a47c92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pixel format this display takes.  <br /></td></tr>
 <tr class="memitem:aeb236ab0c5867bc5545efb5bd9bbf96f" id="r_aeb236ab0c5867bc5545efb5bd9bbf96f"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#aeb236ab0c5867bc5545efb5bd9bbf96f">IsInitialized</a> () const =0</td></tr>
-<tr class="memdesc:aeb236ab0c5867bc5545efb5bd9bbf96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the display is initialized.  <br /></td></tr>
 <tr class="memitem:a93392c7d59e1e577d1a79ad5d9e8d4e8" id="r_a93392c7d59e1e577d1a79ad5d9e8d4e8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a93392c7d59e1e577d1a79ad5d9e8d4e8">RequestFullRefresh</a> ()=0</td></tr>
-<tr class="memdesc:a93392c7d59e1e577d1a79ad5d9e8d4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a full display refresh.  <br /></td></tr>
+<tr class="memdesc:a93392c7d59e1e577d1a79ad5d9e8d4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the next present redraw the whole screen.  <br /></td></tr>
 <tr class="memitem:a11b55c481eae1c67112fb537388df2a3" id="r_a11b55c481eae1c67112fb537388df2a3"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a11b55c481eae1c67112fb537388df2a3">ProcessEvents</a> ()=0</td></tr>
-<tr class="memdesc:a11b55c481eae1c67112fb537388df2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process platform events (window close, resize, etc.).  <br /></td></tr>
+<tr class="memdesc:a11b55c481eae1c67112fb537388df2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles platform events (window close, resize, ...).  <br /></td></tr>
 <tr class="memitem:a00ac0f8939bf8d1d7d4f195820021866" id="r_a00ac0f8939bf8d1d7d4f195820021866"><td class="memItemLeft">virtual void *&#160;</td><td class="memItemRight"><a class="el" href="#a00ac0f8939bf8d1d7d4f195820021866">CreateUIOverlay</a> (int32_t width, int32_t height)=0</td></tr>
 <tr class="memitem:a56ee21df1608396d8b2f6aabeacdbf3e" id="r_a56ee21df1608396d8b2f6aabeacdbf3e"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a56ee21df1608396d8b2f6aabeacdbf3e">UpdateUIOverlay</a> (void *overlay, int32_t x, int32_t y, int32_t width, int32_t height, const uint32_t *pixels)=0</td></tr>
-<tr class="memitem:a7441986c905175862de943e0740af259" id="r_a7441986c905175862de943e0740af259"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a7441986c905175862de943e0740af259">UpdateUIOverlayRGB565A8</a> (void *overlay, int32_t x, int32_t y, int32_t width, int32_t height, const uint8_t *rgb565a8_pixels)=0</td></tr>
+<tr class="memitem:a3fd3b948b6534dc3eae7eb30996655e4" id="r_a3fd3b948b6534dc3eae7eb30996655e4"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a3fd3b948b6534dc3eae7eb30996655e4">UpdateUIOverlayRGB565A8</a> (void *overlay, int32_t x, int32_t y, int32_t width, int32_t height, const uint8_t *rgb565a8Pixels)=0</td></tr>
 <tr class="memitem:a2476207c3440689e8be668ae21e971d3" id="r_a2476207c3440689e8be668ae21e971d3"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2476207c3440689e8be668ae21e971d3">DestroyUIOverlay</a> (void *overlay)=0</td></tr>
 <tr class="memitem:aa38c6db454384b481f15645deffb5000" id="r_aa38c6db454384b481f15645deffb5000"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa38c6db454384b481f15645deffb5000">SetActiveUIOverlay</a> (void *overlay)=0</td></tr>
 <tr class="memitem:a77e6b359312a0c6fc2e7d2bd4a37222a" id="r_a77e6b359312a0c6fc2e7d2bd4a37222a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a77e6b359312a0c6fc2e7d2bd4a37222a">ClearActiveUIOverlay</a> ()=0</td></tr>
 <tr class="memitem:a3e5d83297941951d661b9eabffc338da" id="r_a3e5d83297941951d661b9eabffc338da"><td class="memItemLeft">virtual uint8_t *&#160;</td><td class="memItemRight"><a class="el" href="#a3e5d83297941951d661b9eabffc338da">GetRenderBuffer</a> (int32_t *width, int32_t *height)</td></tr>
-<tr class="memdesc:a3e5d83297941951d661b9eabffc338da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a display-owned buffer suitable for direct rendering.  <br /></td></tr>
+<tr class="memdesc:a3e5d83297941951d661b9eabffc338da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer the display owns that the renderer can draw into directly, such as a DMA-capable buffer in fast internal RAM, saving a copy in Present.  <br /></td></tr>
 <tr class="memitem:ac43afb8bae1bbd35505d0f5e6f13f3cf" id="r_ac43afb8bae1bbd35505d0f5e6f13f3cf"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac43afb8bae1bbd35505d0f5e6f13f3cf">SetBacklight</a> (bool on)</td></tr>
-<tr class="memdesc:ac43afb8bae1bbd35505d0f5e6f13f3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the display backlight on or off.  <br /></td></tr>
+<tr class="memdesc:ac43afb8bae1bbd35505d0f5e6f13f3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the backlight on or off.  <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>What a display package implements: setup, presenting frames, events and UI overlays. </p>
+<p>The platform package loaded at runtime registers its display with Engine::SetDisplay(this, name); the engine holds only the pointer. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a45331ac37b72d54727b97ddc2c7d2153" name="a45331ac37b72d54727b97ddc2c7d2153"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45331ac37b72d54727b97ddc2c7d2153">&#9670;&#160;</a></span>~IDisplay()</h2>
 
@@ -230,8 +242,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize the platform display. </p>
-
 </div>
 </div>
 <a id="a4a55efde692e971b27ed4ca192372c81" name="a4a55efde692e971b27ed4ca192372c81"></a>
@@ -256,8 +266,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Shutdown the display and cleanup resources. </p>
 
 </div>
 </div>
@@ -298,8 +306,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Present the frame buffer to the display. </p>
-<p><span class="tt">format</span> used to be an int, with the enum's numbering repeated in a comment here and as literals in every display package. That comment was already missing RGB565A8, and one package computed bytes-per-pixel from the literals in a way that gave it 2 instead of 3. Passing the enum makes the boundary type-checked and lets a compiler flag a format nobody handles. </p>
+<p>Shows the whole framebuffer. </p>
+<p>Use FrameBufferBytes(format, ...) for its size rather than working out bytes per pixel. </p>
 
 </div>
 </div>
@@ -326,8 +334,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>True when <a class="el" href="#abc40d95a208de0c5913178981404a36f" title="Present only rects of the framebuffer.">PresentRegions()</a> pushes only the rectangles it is given. </p>
-<p>The default display presents whole frames, and the engine then never calls PresentRegions. A display that can address a sub-rectangle of its panel or texture returns true and implements PresentRegions. </p>
+<p>True when <a class="el" href="#abc40d95a208de0c5913178981404a36f" title="Shows only rects of the framebuffer: framebuffer pixels, half-open, already clipped,...">PresentRegions()</a> sends only the rectangles it is given. </p>
+<p>A display that can address part of its panel or texture returns true and implements PresentRegions; otherwise the engine never calls it. </p>
 
 </div>
 </div>
@@ -378,8 +386,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Present only <span class="tt">rects</span> of the framebuffer. </p>
-<p>Rectangles are framebuffer pixels, half-open, already clipped to the buffer; they may overlap. <span class="tt">count</span> 0 means nothing changed since the last present: a windowed display still redraws its window from the texture it holds, an LCD does nothing. The default pushes the whole frame, so a display that does not override this behaves exactly as before. </p>
+<p>Shows only <span class="tt">rects</span> of the framebuffer: framebuffer pixels, half-open, already clipped, possibly overlapping. </p>
+<p><span class="tt">count</span> 0 means nothing changed since the last present: a windowed display still redraws its window from the texture it holds, an LCD does nothing. The default sends the whole frame. </p>
 
 </div>
 </div>
@@ -410,7 +418,33 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the display dimensions. </p>
+</div>
+</div>
+<a id="ac9a7fdf60a12e4bb3b45aeb79a47c92e" name="ac9a7fdf60a12e4bb3b45aeb79a47c92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a7fdf60a12e4bb3b45aeb79a47c92e">&#9670;&#160;</a></span>GetColorFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> Deki::IDisplay::GetColorFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The pixel format this display takes. </p>
+<p>With GetDisplaySize, it sets the framebuffer's size and format when the display is registered, so every target renders in its own screen's format and Present never converts. </p>
 
 </div>
 </div>
@@ -437,8 +471,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if the display is initialized. </p>
-
 </div>
 </div>
 <a id="a93392c7d59e1e577d1a79ad5d9e8d4e8" name="a93392c7d59e1e577d1a79ad5d9e8d4e8"></a>
@@ -464,7 +496,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Request a full display refresh. </p>
+<p>Makes the next present redraw the whole screen. </p>
 
 </div>
 </div>
@@ -491,8 +523,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Process platform events (window close, resize, etc.). </p>
-<dl class="section return"><dt>Returns</dt><dd>true if application should continue running, false to exit </dd></dl>
+<p>Handles platform events (window close, resize, ...). </p>
+<p>Returns false when the application should exit. </p>
 
 </div>
 </div>
@@ -574,8 +606,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7441986c905175862de943e0740af259" name="a7441986c905175862de943e0740af259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7441986c905175862de943e0740af259">&#9670;&#160;</a></span>UpdateUIOverlayRGB565A8()</h2>
+<a id="a3fd3b948b6534dc3eae7eb30996655e4" name="a3fd3b948b6534dc3eae7eb30996655e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd3b948b6534dc3eae7eb30996655e4">&#9670;&#160;</a></span>UpdateUIOverlayRGB565A8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -611,7 +643,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>rgb565a8_pixels</em></span>&#160;)</td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>rgb565a8Pixels</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -725,8 +757,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get a display-owned buffer suitable for direct rendering. </p>
-<p>If the display has an internal DMA-aligned buffer (e.g. in fast internal RAM), DekiRenderSystem can render directly into it, avoiding a memcpy during Present. </p>
+<p>A buffer the display owns that the renderer can draw into directly, such as a DMA-capable buffer in fast internal RAM, saving a copy in Present. </p>
+<p>nullptr when there is none. </p>
 
 </div>
 </div>
@@ -753,8 +785,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Turn the display backlight on or off. </p>
-<p>Called by <a class="el" href="class_deki_1_1_i_power.html">IPower</a> around sleep transitions: off in OnBeforeSleep so the panel doesn't burn current while the CPU is paused, on in OnScreenOn after wake. Displays without controllable backlight (desktop windows) leave the default no-op. </p>
+<p>Turns the backlight on or off. </p>
+<p><a class="el" href="class_deki_1_1_i_power.html" title="Device power management (sleep and wake).">IPower</a> calls it around sleep: off in OnBeforeSleep so the panel draws no current while the CPU is paused, on in OnScreenOn after waking. Displays without one (desktop windows) keep the default, which does nothing. </p>
 
 </div>
 </div>

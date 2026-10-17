@@ -1,0 +1,300 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: 폰트 시스템</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/ko/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">문서</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/ko/"><span class="deki-nav-label">사이트</span></a>
+    <a href="https://dekiengine.com/ko/packages/"><span class="deki-nav-label">패키지</span></a>
+    <a href="https://dekiengine.com/ko/blog/"><span class="deki-nav-label">블로그</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/ko/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/ko/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>후원</span></a>
+    <details class="deki-lang"><summary aria-label="언어: 한국어"><span class="deki-nav-label">한국어</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko" aria-current="true">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="검색" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-font-system.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">폰트 시스템 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-ko_2guide-font-system"></a></p>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-overview"></a>
+개요</h1>
+<p>폰트는 컴파일 파이프라인을 거칩니다. TTF 소스 파일 -&gt; 베이크된 BitmapFont(.dfont) + 텍스처 아틀라스. 폰트 크기마다 결정적 GUID를 가진 <b>별도의 파일 쌍</b>이 만들어집니다.</p>
+<div class="fragment"><div class="line">assets/fonts/MyFont.ttf (source)</div>
+<div class="line">  -&gt; cache/{variantGuid}  (compiled .dfont for 16px)</div>
+<div class="line">  -&gt; cache/{atlasGuid}    (texture atlas for 16px)</div>
+<div class="line">  -&gt; cache/{variantGuid2} (compiled .dfont for 24px)</div>
+<div class="line">  -&gt; cache/{atlasGuid2}   (texture atlas for 24px)</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-font-system-guid-generation"></a>
+GUID 생성</h1>
+<p>폰트 베리언트 GUID는 소스 GUID + 폰트 크기로부터 <b>결정적으로</b> 만들어집니다.</p>
+<div class="fragment"><div class="line">variantGuid = GenerateDeterministicGuid(sourceGuid + &quot;:&quot; + fontSize)</div>
+<div class="line">atlasGuid   = GenerateDeterministicGuid(sourceGuid + &quot;:&quot; + fontSize + &quot;:atlas&quot;)</div>
+</div><!-- fragment --><p>따라서 다음이 성립합니다.</p><ul>
+<li>같은 소스 + 크기는 항상 같은 GUID를 만듭니다</li>
+<li>참조를 깨뜨리지 않고 캐시를 처음부터 다시 만들 수 있습니다</li>
+<li>크기가 다르면 절대 충돌하지 않습니다</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-data-sidecar-file"></a>
+.data 사이드카 파일</h1>
+<p>각 폰트에는 <span class="tt">.data</span> JSON 사이드카(예: <span class="tt">MyFont.ttf.data</span>)가 있습니다.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;guid&quot;: &quot;random-uuid-for-ttf-file&quot;,</div>
+<div class="line">  &quot;fontSettings&quot;: {</div>
+<div class="line">    &quot;sizes&quot;: [12, 16, 24],</div>
+<div class="line">    &quot;firstChar&quot;: 32,</div>
+<div class="line">    &quot;lastChar&quot;: 126</div>
+<div class="line">  },</div>
+<div class="line">  &quot;variants&quot;: {</div>
+<div class="line">    &quot;12&quot;: { &quot;guid&quot;: &quot;deterministic-variant-guid&quot;, &quot;atlasGuid&quot;: &quot;deterministic-atlas-guid&quot; },</div>
+<div class="line">    &quot;16&quot;: { &quot;guid&quot;: &quot;...&quot;, &quot;atlasGuid&quot;: &quot;...&quot; },</div>
+<div class="line">    &quot;24&quot;: { &quot;guid&quot;: &quot;...&quot;, &quot;atlasGuid&quot;: &quot;...&quot; }</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><ul>
+<li><span class="tt">fontSettings.sizes</span>: 이 폰트에 설정된 크기</li>
+<li><span class="tt">variants</span>: 각 크기를 해당 베리언트 + 아틀라스 GUID에 매핑합니다(항상 결정적으로 다시 생성됨)</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-baking-authority-fontsynchandler"></a>
+베이크 권한: FontSyncHandler</h1>
+<p><b>파일:</b> <span class="tt">../../modules/deki-2d/editor/FontSyncHandler.cpp</span></p>
+<p>FontSyncHandler는 폰트 베이크의 <b>유일한 권한자</b>입니다. 모든 베이크 요청은 이를 거칩니다.</p>
+<div class="fragment"><div class="line">EnsureFontSizeBaked(sourceGuid, fontSize)</div>
+<div class="line">  -&gt; Updates .data file with the requested size</div>
+<div class="line">  -&gt; Calls pipeline-&gt;RefreshAsset() to trigger HandleFontSync</div>
+<div class="line">  -&gt; HandleFontSync reads .data, compiles TTF for each size</div>
+<div class="line">  -&gt; Writes cache/{variantGuid} (dfont) and cache/{atlasGuid} (atlas)</div>
+<div class="line">  -&gt; Registers variant GUID with AssetManager</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-font-system-who-calls-ensurefontsizebaked"></a>
+EnsureFontSizeBaked를 호출하는 곳:</h2>
+<ul>
+<li><span class="tt">TextComponentEditor.cpp</span> - 폰트 미리보기의 "저장 후 사용" 버튼</li>
+<li><span class="tt">AssetPropertyEditor.cpp</span> - 에셋 프로퍼티 에디터의 "저장 후 사용" 버튼</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-font-system-registration"></a>
+등록</h2>
+<p>베이크가 끝나면 FontSyncHandler는 베리언트를 AssetManager에 등록합니다. </p><div class="fragment"><div class="line">AssetManager::Get()-&gt;RegisterGuid(variantGuid, variantGuid);</div>
+</div><!-- fragment --><p> 이를 통해 에디터에서 <span class="tt">LookupPath(variantGuid)</span> -&gt; <span class="tt">cacheDir/variantGuid</span>가 가능해집니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-assetref-fields-for-fonts"></a>
+폰트의 AssetRef 필드</h1>
+<p>TextComponent에서는 다음과 같습니다. </p><div class="fragment"><div class="line">font.guid   = variant GUID (baked .dfont file for a specific size)</div>
+<div class="line">font.source = TTF source GUID (the original font file)</div>
+</div><!-- fragment --><p><span class="tt">font.Get()</span>은 <span class="tt">font.guid</span> -&gt; <span class="tt">AssetManager::LoadByGuidAndType</span> -&gt; <span class="tt">BitmapFont::Load</span> 순서로 로드합니다.</p>
+<h2 class="doxsection"><a class="anchor" id="guide-font-system-how-fontguid-stays-in-sync"></a>
+font.guid가 동기화되는 방식</h2>
+<p><span class="tt">TextComponent::RenderContent</span>(에디터 모드)에서: </p><div class="fragment"><div class="line">std::string expectedGuid = GenerateDeterministicGuid(font.source + <span class="stringliteral">&quot;:&quot;</span> + std::to_string(fontSize));</div>
+<div class="line"><span class="keywordflow">if</span> (font.guid != expectedGuid) {</div>
+<div class="line">    font.guid = expectedGuid;</div>
+<div class="line">    font.ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line">    font.loadAttempted = <span class="keyword">false</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>이렇게 하면 사용자가 인스펙터에서 <span class="tt">fontSize</span>를 바꿨을 때 다음 렌더 프레임에서 올바른 베리언트를 로드합니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-preview-mode-editor-only"></a>
+미리보기 모드 (에디터 전용)</h1>
+<p>에디터에서는 디스크에 베이크하지 않고 임의의 크기로 폰트를 미리 볼 수 있습니다.</p>
+<ol type="1">
+<li>사용자가 TextComponentEditor에서 미리보기를 켭니다</li>
+<li><span class="tt">GetEditorFontVariant()</span>가 필요할 때 TTF를 메모리 내 BitmapFont로 컴파일합니다</li>
+<li>미리보기 슬롯은 하나뿐이며, 한 번에 하나의 미리보기만 존재합니다</li>
+<li>캐시에 저장되지 않으며, 순전히 테스트용입니다</li>
+<li>"저장 후 사용" 버튼은 미리 본 크기를 <span class="tt">EnsureFontSizeBaked</span>로 베이크합니다</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-export-pipeline"></a>
+익스포트 파이프라인</h1>
+<p><span class="tt">AssetExporter::ExportToStorage()</span> 동안:</p>
+<div class="fragment"><div class="line">1. CollectUsedAssets()</div>
+<div class="line">   -&gt; Scans all scenes for TextComponents</div>
+<div class="line">   -&gt; CollectFontUsage() extracts font.source + fontSize</div>
+<div class="line">   -&gt; Creates FontUsageInfo {sourceGuid, fontSize}</div>
+<div class="line"> </div>
+<div class="line">2. BakeFontsForExport(fontUsages)</div>
+<div class="line">   -&gt; For each usage, generates deterministic variant + atlas GUIDs</div>
+<div class="line">   -&gt; Checks cache; bakes if missing</div>
+<div class="line">   -&gt; Returns map of key -&gt; GUID for both variants and atlases</div>
+<div class="line">   -&gt; Adds ALL GUIDs (variant + atlas) to usedGuids</div>
+<div class="line"> </div>
+<div class="line">3. CopyUsedAssetsToOutput()</div>
+<div class="line">   -&gt; Copies cache/{guid} -&gt; storage/{guid} for all used GUIDs</div>
+<div class="line"> </div>
+<div class="line">4. ExportAssetLookupTable()</div>
+<div class="line">   -&gt; Adds variant + atlas GUIDs to binary lookup table</div>
+<div class="line">   -&gt; Runtime resolves: hash(variantGuid) -&gt; variantGuid -&gt; storage/{variantGuid}</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-font-system-bitmapfont-file-format-dfont"></a>
+BitmapFont 파일 형식 (.dfont)</h1>
+<div class="fragment"><div class="line">[Header]</div>
+<div class="line">  magic: &quot;DFNT&quot; (4 bytes)</div>
+<div class="line">  version: uint8_t (currently 1)</div>
+<div class="line">  first_char, last_char: uint8_t</div>
+<div class="line">  line_height, baseline: uint8_t</div>
+<div class="line">  glyph_count: uint16_t</div>
+<div class="line">  atlas_path_len: uint16_t</div>
+<div class="line"> </div>
+<div class="line">[Glyph Data]</div>
+<div class="line">  glyph_count x GlyphInfo structs</div>
+<div class="line"> </div>
+<div class="line">[Atlas Path]</div>
+<div class="line">  Relative path to atlas file (e.g., just the atlasGuid string)</div>
+</div><!-- fragment --><p>dfont 안에 저장된 아틀라스 경로는 dfont 파일이 있는 디렉터리를 기준으로 한 상대 경로입니다. 두 파일은 같은 cache/ 또는 storage/ 디렉터리에 있으므로 atlasGuid 문자열 그대로입니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-font-system-key-files"></a>
+주요 파일</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">파일  </th><th class="markdownTableHeadNone">용도  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/TextComponent.h</span>  </td><td class="markdownTableBodyNone">fontSize, previewEnabled, previewSize 필드  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/TextComponent.cpp</span>  </td><td class="markdownTableBodyNone">RenderContent의 폰트 로딩, 미리보기 컴파일  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/BitmapFont.cpp</span>  </td><td class="markdownTableBodyNone">폰트 로딩, 글리프 렌더링  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/editor/FontSyncHandler.cpp</span>  </td><td class="markdownTableBodyNone">베이크 권한자  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/editor/FontCompiler.cpp</span>  </td><td class="markdownTableBodyNone">TTF -&gt; BitmapFont 컴파일  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/editor/TextComponentEditor.cpp</span>  </td><td class="markdownTableBodyNone">인스펙터 UI, 폰트 크기 드롭다운  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">src/services/AssetExporter.cpp</span>  </td><td class="markdownTableBodyNone">익스포트 시 베이크 및 복사  </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

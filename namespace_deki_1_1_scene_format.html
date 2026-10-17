@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -138,7 +146,6 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Deki::SceneFormat Namespace Reference</div></div>
@@ -152,78 +159,42 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:SceneMsgPackParser" id="r_SceneMsgPackParser"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html">SceneMsgPackParser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Embedded-friendly MessagePack parser for scene files No dynamic allocation, fixed stack depth.  <a href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MessagePack parser for compiled scene files, made for embedded targets: it allocates nothing and its recursion depth is capped (kMaxDepth).  <a href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SceneMsgPackWriter" id="r_SceneMsgPackWriter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_writer.html">SceneMsgPackWriter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MessagePack writer for saving scenes from editor.  <a href="class_deki_1_1_scene_format_1_1_scene_msg_pack_writer.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a4416761ee8dbcecb75bda486d3a350cb" id="r_a4416761ee8dbcecb75bda486d3a350cb"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a4416761ee8dbcecb75bda486d3a350cb">AssetResolver</a> = std::function&lt;std::string(const std::string&amp; guid)&gt;</td></tr>
-<tr class="memitem:a91d2a6206d888ef6f2a530ae6edcbc1f" id="r_a91d2a6206d888ef6f2a530ae6edcbc1f"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a91d2a6206d888ef6f2a530ae6edcbc1f">SubAssetResolverCallback</a> = std::function&lt;bool(const std::string&amp; guid, std::string&amp; outParentGuid)&gt;</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a scene in the compiled MessagePack format (editor only).  <a href="class_deki_1_1_scene_format_1_1_scene_msg_pack_writer.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a759c33f8cda3706bb62b953f458489a6" id="r_a759c33f8cda3706bb62b953f458489a6"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a759c33f8cda3706bb62b953f458489a6">MPType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6ade50c343b2e463098c93bc6efa74d233">MP_NIL</a> = 0xc0
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a1399aabb9190585525cb3d8ba7bc6979">MP_FALSE</a> = 0xc2
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a4f13028db13409f1ac7f593957281776">MP_TRUE</a> = 0xc3
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a967d280b5c16d95f2947647dd2ca6cc2">FLOAT32</a> = 0xca
+&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6a4da8b7eb2c3f2007cf8238334401ef51">Nil</a> = 0xc0
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6af8320b26d30ab433c5a54546d21f414c">False</a> = 0xc2
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6af827cf462f62848df37c5e1e94a4da74">True</a> = 0xc3
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a166495adc0d0f53bee6baecc577f5204">Float32</a> = 0xca
 , <br />
-&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6aee9d73311ff0658494edfff14c3ec1e3">INT8</a> = 0xd0
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a5f90af42814c0a419d715d43ae54fd7a">INT16</a> = 0xd1
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a6495adba09844fac8eeb0aba86e6f1bf">INT32</a> = 0xd2
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6aecfc091ed2a607335524c8389cfa41b5">UINT8</a> = 0xcc
+&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6a7d839b2c12bfd40ac121b4cc9e81c539">Int8</a> = 0xd0
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a39bc2ae44b184207f560ff8619823208">Int16</a> = 0xd1
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6ac06129f6e6e15c09328365e553f1dc31">Int32</a> = 0xd2
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6ab31df9c476d20e85ff898121efe11b5a">UInt8</a> = 0xcc
 , <br />
-&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6a48d8f1a723d44ff4a87db1bb6c551c62">UINT16</a> = 0xcd
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a17266551181f69a1b4a3ad5c9e270afc">UINT32</a> = 0xce
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6adf0809a5454684ca40eef661abc0cc1b">FIXSTR_BASE</a> = 0xa0
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a280e4e0df68aa4ff89ffb5804715dda5">STR8</a> = 0xd9
+&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6a8bd950a9d7779b83f5c30046c9aaf1cf">UInt16</a> = 0xcd
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6ae7956ed7be1c5025a27ed3cb42a396bd">UInt32</a> = 0xce
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a03bef83056daf567d86b20e5987125a0">FixStrBase</a> = 0xa0
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a05e5ef6827bf6f19653248425183d95e">Str8</a> = 0xd9
 , <br />
-&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6a882a20c2d17a568e363b91e799c33cd0">STR16</a> = 0xda
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a3891eed1eb817f228933986158803492">FIXMAP_BASE</a> = 0x80
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6ae949e6bd251de9cfe0d756fddc8de973">MAP16</a> = 0xde
-, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a270d0bedf0b3cc88a663bf4428e50d3f">FIXARRAY_BASE</a> = 0x90
+&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6ad3baadc693368072d17224398b2a4460">Str16</a> = 0xda
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a3204266940627d300d5edbd6c59b6ddf">FixMapBase</a> = 0x80
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a7f971d5131dc1c295db97418a7b1df97">Map16</a> = 0xde
+, <a class="el" href="#a759c33f8cda3706bb62b953f458489a6a23f6f68a3e668f6e74d2b28c946ef42c">FixArrayBase</a> = 0x90
 , <br />
-&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6ad2744fcae9bdb9042759685ac3b98600">ARRAY16</a> = 0xdc
+&#160;&#160;<a class="el" href="#a759c33f8cda3706bb62b953f458489a6a1a311a2260dfe4e00c9f6a16dbe60ab2">Array16</a> = 0xdc
 <br />
  }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a93c0a8c95489b52b7aaa1195fb1ef164" id="r_a93c0a8c95489b52b7aaa1195fb1ef164"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a93c0a8c95489b52b7aaa1195fb1ef164">SCENE_EXTENSION</a> = &quot;.scene&quot;</td></tr>
-<tr class="memdesc:a93c0a8c95489b52b7aaa1195fb1ef164"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> file extension.  <br /></td></tr>
-<tr class="memitem:a7c5c37546b3dc8e029cfe2f969eee6e1" id="r_a7c5c37546b3dc8e029cfe2f969eee6e1"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a7c5c37546b3dc8e029cfe2f969eee6e1">SCENE_FORMAT_VERSION</a> = 1</td></tr>
-<tr class="memdesc:a7c5c37546b3dc8e029cfe2f969eee6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> format version.  <br /></td></tr>
+<tr class="memitem:a39259c66fe6c2cedc0d35085623f4bf5" id="r_a39259c66fe6c2cedc0d35085623f4bf5"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a39259c66fe6c2cedc0d35085623f4bf5">kSceneExtension</a> = &quot;.scene&quot;</td></tr>
+<tr class="memitem:a49c17cb0bcfbe18a048ac046722aa2f9" id="r_a49c17cb0bcfbe18a048ac046722aa2f9"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a49c17cb0bcfbe18a048ac046722aa2f9">kSceneFormatVersion</a> = 1</td></tr>
 </table>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
-<a id="a4416761ee8dbcecb75bda486d3a350cb" name="a4416761ee8dbcecb75bda486d3a350cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4416761ee8dbcecb75bda486d3a350cb">&#9670;&#160;</a></span>AssetResolver</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#a4416761ee8dbcecb75bda486d3a350cb">Deki::SceneFormat::AssetResolver</a> = std::function&lt;std::string(const std::string&amp; guid)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a91d2a6206d888ef6f2a530ae6edcbc1f" name="a91d2a6206d888ef6f2a530ae6edcbc1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91d2a6206d888ef6f2a530ae6edcbc1f">&#9670;&#160;</a></span>SubAssetResolverCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#a91d2a6206d888ef6f2a530ae6edcbc1f">Deki::SceneFormat::SubAssetResolverCallback</a> = std::function&lt;bool(const std::string&amp; guid, std::string&amp; outParentGuid)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
 <a id="a759c33f8cda3706bb62b953f458489a6" name="a759c33f8cda3706bb62b953f458489a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a759c33f8cda3706bb62b953f458489a6">&#9670;&#160;</a></span>MPType</h2>
@@ -245,30 +216,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ade50c343b2e463098c93bc6efa74d233" name="a759c33f8cda3706bb62b953f458489a6ade50c343b2e463098c93bc6efa74d233"></a>MP_NIL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a1399aabb9190585525cb3d8ba7bc6979" name="a759c33f8cda3706bb62b953f458489a6a1399aabb9190585525cb3d8ba7bc6979"></a>MP_FALSE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a4f13028db13409f1ac7f593957281776" name="a759c33f8cda3706bb62b953f458489a6a4f13028db13409f1ac7f593957281776"></a>MP_TRUE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a967d280b5c16d95f2947647dd2ca6cc2" name="a759c33f8cda3706bb62b953f458489a6a967d280b5c16d95f2947647dd2ca6cc2"></a>FLOAT32&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6aee9d73311ff0658494edfff14c3ec1e3" name="a759c33f8cda3706bb62b953f458489a6aee9d73311ff0658494edfff14c3ec1e3"></a>INT8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a5f90af42814c0a419d715d43ae54fd7a" name="a759c33f8cda3706bb62b953f458489a6a5f90af42814c0a419d715d43ae54fd7a"></a>INT16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a6495adba09844fac8eeb0aba86e6f1bf" name="a759c33f8cda3706bb62b953f458489a6a6495adba09844fac8eeb0aba86e6f1bf"></a>INT32&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6aecfc091ed2a607335524c8389cfa41b5" name="a759c33f8cda3706bb62b953f458489a6aecfc091ed2a607335524c8389cfa41b5"></a>UINT8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a48d8f1a723d44ff4a87db1bb6c551c62" name="a759c33f8cda3706bb62b953f458489a6a48d8f1a723d44ff4a87db1bb6c551c62"></a>UINT16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a17266551181f69a1b4a3ad5c9e270afc" name="a759c33f8cda3706bb62b953f458489a6a17266551181f69a1b4a3ad5c9e270afc"></a>UINT32&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6adf0809a5454684ca40eef661abc0cc1b" name="a759c33f8cda3706bb62b953f458489a6adf0809a5454684ca40eef661abc0cc1b"></a>FIXSTR_BASE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a280e4e0df68aa4ff89ffb5804715dda5" name="a759c33f8cda3706bb62b953f458489a6a280e4e0df68aa4ff89ffb5804715dda5"></a>STR8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a882a20c2d17a568e363b91e799c33cd0" name="a759c33f8cda3706bb62b953f458489a6a882a20c2d17a568e363b91e799c33cd0"></a>STR16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a3891eed1eb817f228933986158803492" name="a759c33f8cda3706bb62b953f458489a6a3891eed1eb817f228933986158803492"></a>FIXMAP_BASE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ae949e6bd251de9cfe0d756fddc8de973" name="a759c33f8cda3706bb62b953f458489a6ae949e6bd251de9cfe0d756fddc8de973"></a>MAP16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a270d0bedf0b3cc88a663bf4428e50d3f" name="a759c33f8cda3706bb62b953f458489a6a270d0bedf0b3cc88a663bf4428e50d3f"></a>FIXARRAY_BASE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ad2744fcae9bdb9042759685ac3b98600" name="a759c33f8cda3706bb62b953f458489a6ad2744fcae9bdb9042759685ac3b98600"></a>ARRAY16&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a4da8b7eb2c3f2007cf8238334401ef51" name="a759c33f8cda3706bb62b953f458489a6a4da8b7eb2c3f2007cf8238334401ef51"></a>Nil&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6af8320b26d30ab433c5a54546d21f414c" name="a759c33f8cda3706bb62b953f458489a6af8320b26d30ab433c5a54546d21f414c"></a>False&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6af827cf462f62848df37c5e1e94a4da74" name="a759c33f8cda3706bb62b953f458489a6af827cf462f62848df37c5e1e94a4da74"></a>True&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a166495adc0d0f53bee6baecc577f5204" name="a759c33f8cda3706bb62b953f458489a6a166495adc0d0f53bee6baecc577f5204"></a>Float32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a7d839b2c12bfd40ac121b4cc9e81c539" name="a759c33f8cda3706bb62b953f458489a6a7d839b2c12bfd40ac121b4cc9e81c539"></a>Int8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a39bc2ae44b184207f560ff8619823208" name="a759c33f8cda3706bb62b953f458489a6a39bc2ae44b184207f560ff8619823208"></a>Int16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ac06129f6e6e15c09328365e553f1dc31" name="a759c33f8cda3706bb62b953f458489a6ac06129f6e6e15c09328365e553f1dc31"></a>Int32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ab31df9c476d20e85ff898121efe11b5a" name="a759c33f8cda3706bb62b953f458489a6ab31df9c476d20e85ff898121efe11b5a"></a>UInt8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a8bd950a9d7779b83f5c30046c9aaf1cf" name="a759c33f8cda3706bb62b953f458489a6a8bd950a9d7779b83f5c30046c9aaf1cf"></a>UInt16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ae7956ed7be1c5025a27ed3cb42a396bd" name="a759c33f8cda3706bb62b953f458489a6ae7956ed7be1c5025a27ed3cb42a396bd"></a>UInt32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a03bef83056daf567d86b20e5987125a0" name="a759c33f8cda3706bb62b953f458489a6a03bef83056daf567d86b20e5987125a0"></a>FixStrBase&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a05e5ef6827bf6f19653248425183d95e" name="a759c33f8cda3706bb62b953f458489a6a05e5ef6827bf6f19653248425183d95e"></a>Str8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6ad3baadc693368072d17224398b2a4460" name="a759c33f8cda3706bb62b953f458489a6ad3baadc693368072d17224398b2a4460"></a>Str16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a3204266940627d300d5edbd6c59b6ddf" name="a759c33f8cda3706bb62b953f458489a6a3204266940627d300d5edbd6c59b6ddf"></a>FixMapBase&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a7f971d5131dc1c295db97418a7b1df97" name="a759c33f8cda3706bb62b953f458489a6a7f971d5131dc1c295db97418a7b1df97"></a>Map16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a23f6f68a3e668f6e74d2b28c946ef42c" name="a759c33f8cda3706bb62b953f458489a6a23f6f68a3e668f6e74d2b28c946ef42c"></a>FixArrayBase&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a759c33f8cda3706bb62b953f458489a6a1a311a2260dfe4e00c9f6a16dbe60ab2" name="a759c33f8cda3706bb62b953f458489a6a1a311a2260dfe4e00c9f6a16dbe60ab2"></a>Array16&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a93c0a8c95489b52b7aaa1195fb1ef164" name="a93c0a8c95489b52b7aaa1195fb1ef164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93c0a8c95489b52b7aaa1195fb1ef164">&#9670;&#160;</a></span>SCENE_EXTENSION</h2>
+<a id="a39259c66fe6c2cedc0d35085623f4bf5" name="a39259c66fe6c2cedc0d35085623f4bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39259c66fe6c2cedc0d35085623f4bf5">&#9670;&#160;</a></span>kSceneExtension</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +248,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::SCENE_EXTENSION = &quot;.scene&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::kSceneExtension = &quot;.scene&quot;</td>
         </tr>
       </table>
   </td>
@@ -287,12 +258,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> file extension. </p>
-
 </div>
 </div>
-<a id="a7c5c37546b3dc8e029cfe2f969eee6e1" name="a7c5c37546b3dc8e029cfe2f969eee6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c5c37546b3dc8e029cfe2f969eee6e1">&#9670;&#160;</a></span>SCENE_FORMAT_VERSION</h2>
+<a id="a49c17cb0bcfbe18a048ac046722aa2f9" name="a49c17cb0bcfbe18a048ac046722aa2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c17cb0bcfbe18a048ac046722aa2f9">&#9670;&#160;</a></span>kSceneFormatVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +270,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Deki::SceneFormat::SCENE_FORMAT_VERSION = 1</td>
+          <td class="memname">uint16_t Deki::SceneFormat::kSceneFormatVersion = 1</td>
         </tr>
       </table>
   </td>
@@ -310,8 +279,6 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Scene</a> format version. </p>
 
 </div>
 </div>

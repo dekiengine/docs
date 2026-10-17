@@ -29,6 +29,7 @@ var class_deki_1_1_scene =
     [ "CollapseInstance", "class_deki_1_1_scene.html#aac7b51b78a0d0580b5e4d190ff4035bc", null ],
     [ "ApplyOverrides", "class_deki_1_1_scene.html#a59cac18aae0ac37d19c5981005f8d068", null ],
     [ "CollectOverrides", "class_deki_1_1_scene.html#a0c0890e00874c83e255d586fa13f16f4", null ],
+    [ "TryCollectOverrides", "class_deki_1_1_scene.html#a1ba4855cbdb3e76b9d499bcfa8276d23", null ],
     [ "CollectUnknownProperties", "class_deki_1_1_scene.html#af9209a73e98e8e898787de5f6f0e7701", null ],
     [ "ClearUnknownProperties", "class_deki_1_1_scene.html#aaf27c7ca24760782dbba2eacafc11aaa", null ],
     [ "CollectLegacyProperties", "class_deki_1_1_scene.html#a27b22d1f7f666ff86fec7c0dba00e782", null ],
@@ -38,6 +39,6 @@ var class_deki_1_1_scene =
     [ "GetName", "class_deki_1_1_scene.html#a9836fe7402a4bc564eae6fafd09ca3ad", null ],
     [ "SetName", "class_deki_1_1_scene.html#af21ff0d30666f67b960f96ca4063844f", null ],
     [ "IsLoaded", "class_deki_1_1_scene.html#a3d4d973e7556c67befa2a22a8dce51d9", null ],
-    [ "AssetTypeName", "class_deki_1_1_scene.html#a5a8619747449f4ca9ed96d66a5b8c7b0", null ],
+    [ "kAssetTypeName", "class_deki_1_1_scene.html#a729cdaa6f38ea482a5fcb7cc89896e11", null ],
     [ "s_GuidToPathResolver", "class_deki_1_1_scene.html#a678ce13b00857abd35bf2de347c246a3", null ]
 ];

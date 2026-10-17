@@ -6,5 +6,6 @@ var struct_deki_editor_1_1_sub_asset_info =
     [ "name", "struct_deki_editor_1_1_sub_asset_info.html#a387b188261173e4ac82ca977cf61c67e", null ],
     [ "depth", "struct_deki_editor_1_1_sub_asset_info.html#a58c855d4626214d6f69c764baad09fe5", null ],
     [ "cachePath", "struct_deki_editor_1_1_sub_asset_info.html#ad9f0d5e006f545230c525082b46c87eb", null ],
-    [ "hasPreview", "struct_deki_editor_1_1_sub_asset_info.html#ae085ebded196389151771076c1bcd1ff", null ]
+    [ "hasPreview", "struct_deki_editor_1_1_sub_asset_info.html#ae085ebded196389151771076c1bcd1ff", null ],
+    [ "frameId", "struct_deki_editor_1_1_sub_asset_info.html#a251182233d133a42e8d5affce280fefb", null ]
 ];

@@ -2,15 +2,15 @@ var class_deki_1_1_i_file_system =
 [
     [ "FileHandle", "class_deki_1_1_i_file_system.html#a4a146d4a526f4e92c5bc1f70fedf5a6b", null ],
     [ "OpenMode", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2a", [
-      [ "READ_BINARY", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aab5a18261f532573ce42ebb1c8a040f3b", null ],
-      [ "WRITE_BINARY", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aab7c82c62e26c2043f55dca2a21a4045f", null ],
-      [ "READ_TEXT", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa928e013206055dad084cebe02963b10e", null ],
-      [ "WRITE_TEXT", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa407a6e340be304c7d40ff9d90858931d", null ]
+      [ "ReadBinary", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa087df96b394ba2f8b205fa9452fe2473", null ],
+      [ "WriteBinary", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aaf3de1e6f327fc28e955c698773c74045", null ],
+      [ "ReadText", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa7ee329a9e87666c61690713c44aac54d", null ],
+      [ "WriteText", "class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa9fafe29facddc25b6579c4c5e29af7fb", null ]
     ] ],
     [ "SeekOrigin", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8", [
-      [ "BEGIN", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8a19aad9f2fe3ce0023298ab83f7e75775", null ],
-      [ "CURRENT", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8aa2770969c827f0f2910f6179418462df", null ],
-      [ "END", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8ab1a326c06d88bf042f73d70f50197905", null ]
+      [ "Begin", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8a1a06729125544cab7cee73195fc044f0", null ],
+      [ "Current", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8a222a267cc5778206b253be35ee3ddab5", null ],
+      [ "End", "class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8a87557f11575c0ad78e4e28abedc13b6e", null ]
     ] ],
     [ "~IFileSystem", "class_deki_1_1_i_file_system.html#a85334c47ec33cfaf8dd9b0564a562365", null ],
     [ "Initialize", "class_deki_1_1_i_file_system.html#a6fcce5f43f43a6a66a49e53592e18562", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['read_5fbinary_0',['READ_BINARY',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aab5a18261f532573ce42ebb1c8a040f3b',1,'Deki::IFileSystem']]],
-  ['read_5ftext_1',['READ_TEXT',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa928e013206055dad084cebe02963b10e',1,'Deki::IFileSystem']]],
+  ['readbinary_0',['ReadBinary',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa087df96b394ba2f8b205fa9452fe2473',1,'Deki::IFileSystem']]],
+  ['readtext_1',['ReadText',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa7ee329a9e87666c61690713c44aac54d',1,'Deki::IFileSystem']]],
   ['rect_2',['Rect',['../namespace_deki_editor.html#a890eb8b6d87bce87caaa8478df7e00d9a69ad58d91eec91b5c152d21ca117dc81',1,'DekiEditor']]],
   ['required_3',['Required',['../namespace_deki_editor.html#aaf7c4d4a830420db63a30d992d937642ab651efdb98a5d6bd2b3935d0c3f4a5e2',1,'DekiEditor']]],
   ['resizeall_4',['ResizeAll',['../class_deki_editor_1_1_editor_u_i.html#a8d59083817e6ec305256ce3fb6651038a8ed948580cad15af6c9215267bcedf82',1,'DekiEditor::EditorUI']]],
@@ -11,8 +11,9 @@ var searchData=
   ['rgb565a8_8',['RGB565A8',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a689ff49e67fec7456408b89a7eb71def',1,'Deki::Texture2D::RGB565A8'],['../namespace_deki.html#adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def',1,'Deki::RGB565A8'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca689ff49e67fec7456408b89a7eb71def',1,'DekiEditor::RGB565A8']]],
   ['rgb888_9',['RGB888',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a30ff380a3be74628024063a99fba10f0',1,'Deki::Texture2D::RGB888'],['../namespace_deki.html#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0',1,'Deki::RGB888'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca30ff380a3be74628024063a99fba10f0',1,'DekiEditor::RGB888']]],
   ['rgba8888_10',['RGBA8888',['../class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119a165f06116e7b8d9b2481dfc805db4619',1,'Deki::Texture2D::RGBA8888'],['../namespace_deki_editor.html#a8c67ad30b594830135ad4b626be3c7cca165f06116e7b8d9b2481dfc805db4619',1,'DekiEditor::RGBA8888']]],
-  ['rotation_11',['Rotation',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64af1a42bd417390fc63b030a519624607a',1,'Deki']]],
-  ['rotationx_12',['RotationX',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a14dcec09ce1f4dfaac5955bc70825ebc',1,'Deki']]],
-  ['rotationy_13',['RotationY',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a7527ced5a5153f3b21e31c4b177c2ea7',1,'Deki']]],
-  ['running_14',['Running',['../namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09',1,'Deki']]]
+  ['right_11',['Right',['../namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a92b09c7c48c520c3c55e497875da437c',1,'Deki']]],
+  ['rotation_12',['Rotation',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64af1a42bd417390fc63b030a519624607a',1,'Deki']]],
+  ['rotationx_13',['RotationX',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a14dcec09ce1f4dfaac5955bc70825ebc',1,'Deki']]],
+  ['rotationy_14',['RotationY',['../namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a7527ced5a5153f3b21e31c4b177c2ea7',1,'Deki']]],
+  ['running_15',['Running',['../namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244da5bda814c4aedb126839228f1a3d92f09',1,'Deki']]]
 ];

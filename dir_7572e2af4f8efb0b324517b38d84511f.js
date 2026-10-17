@@ -34,6 +34,8 @@ var dir_7572e2af4f8efb0b324517b38d84511f =
     [ "GuidCache.h", "_guid_cache_8h.html", "_guid_cache_8h" ],
     [ "IAssetImporter.h", "_i_asset_importer_8h.html", "_i_asset_importer_8h" ],
     [ "IconsTabler.h", "_icons_tabler_8h.html", "_icons_tabler_8h" ],
+    [ "Localization.h", "_localization_8h.html", "_localization_8h" ],
+    [ "Motion.h", "_motion_8h.html", "_motion_8h" ],
     [ "NodeCanvas.h", "_node_canvas_8h.html", "_node_canvas_8h" ],
     [ "PackageContract.h", "_package_contract_8h.html", "_package_contract_8h" ],
     [ "PackageInstallerPlugin.h", "_package_installer_plugin_8h.html", "_package_installer_plugin_8h" ],
@@ -46,6 +48,8 @@ var dir_7572e2af4f8efb0b324517b38d84511f =
     [ "ShellCommand.h", "_shell_command_8h.html", "_shell_command_8h" ],
     [ "SubAsset.h", "_sub_asset_8h.html", "_sub_asset_8h" ],
     [ "TextureData.h", "_texture_data_8h.html", "_texture_data_8h" ],
+    [ "TextureFormatResolve.h", "_texture_format_resolve_8h.html", "_texture_format_resolve_8h" ],
     [ "TextureImporter.h", "_texture_importer_8h.html", "_texture_importer_8h" ],
+    [ "TextureSettings.h", "_texture_settings_8h.html", "_texture_settings_8h" ],
     [ "VersionCompare.h", "_version_compare_8h.html", "_version_compare_8h" ]
 ];

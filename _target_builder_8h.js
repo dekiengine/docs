@@ -21,5 +21,7 @@ var _target_builder_8h =
       [ "DekiEditor::BuildState::Completed", "namespace_deki_editor.html#a2618f4c022e74277c5532b30f28a1dd7a07ca5050e697392c9ed47e6453f1453f", null ],
       [ "DekiEditor::BuildState::Failed", "namespace_deki_editor.html#a2618f4c022e74277c5532b30f28a1dd7ad7c8c85bf79bbe1b7188497c32c3b0ca", null ]
     ] ],
-    [ "DekiEditor::DrawStringListEditor", "namespace_deki_editor.html#a72f47d14149b3b8eacc846705c5eca64", null ]
+    [ "DekiEditor::DrawStringListEditor", "namespace_deki_editor.html#a72f47d14149b3b8eacc846705c5eca64", null ],
+    [ "DekiEditor::kSimulationSceneDir", "namespace_deki_editor.html#a059115ff8f9ef9ef2026e15027de859b", null ],
+    [ "DekiEditor::kSimulationCardDir", "namespace_deki_editor.html#a712444c61ed76c24c95c64d5f85828c8", null ]
 ];

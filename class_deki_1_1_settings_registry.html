@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -143,7 +151,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>Registry for package-extensible project-settings types.  
+<p>Registry of project-settings types, which packages can add to.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/reflection/SettingsRegistry.h&gt;</code></p>
@@ -151,39 +159,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afc0df11113e7f1f1a355d0640d75b57e" id="r_afc0df11113e7f1f1a355d0640d75b57e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc0df11113e7f1f1a355d0640d75b57e">Register</a> (const char *sectionName, const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> *meta)</td></tr>
-<tr class="memdesc:afc0df11113e7f1f1a355d0640d75b57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a settings type owned by deki-engine-core.  <br /></td></tr>
+<tr class="memdesc:afc0df11113e7f1f1a355d0640d75b57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a settings type owned by deki-engine-core.  <br /></td></tr>
 <tr class="memitem:ac5dded3dec78c2ae1da24b1c3b0c60a2" id="r_ac5dded3dec78c2ae1da24b1c3b0c60a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac5dded3dec78c2ae1da24b1c3b0c60a2">RegisterPlugin</a> (const char *sectionName, const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> *meta)</td></tr>
-<tr class="memdesc:ac5dded3dec78c2ae1da24b1c3b0c60a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a settings type owned by a plugin/package DLL.  <br /></td></tr>
+<tr class="memdesc:ac5dded3dec78c2ae1da24b1c3b0c60a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a settings type owned by a plugin or package DLL.  <br /></td></tr>
 <tr class="memitem:aae9bc670a6f50ab7fc7ea808b6b6af42" id="r_aae9bc670a6f50ab7fc7ea808b6b6af42"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aae9bc670a6f50ab7fc7ea808b6b6af42">GetByName</a> (const char *sectionName)</td></tr>
-<tr class="memdesc:aae9bc670a6f50ab7fc7ea808b6b6af42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up a settings instance by section name.  <br /></td></tr>
+<tr class="memdesc:aae9bc670a6f50ab7fc7ea808b6b6af42"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings instance for a section name.  <br /></td></tr>
 <tr class="memitem:aed5a71fe0a13369ac864f8491cddf308" id="r_aed5a71fe0a13369ac864f8491cddf308"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aed5a71fe0a13369ac864f8491cddf308">GetByTypeId</a> (uint32_t typeId)</td></tr>
-<tr class="memdesc:aed5a71fe0a13369ac864f8491cddf308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up a settings instance by component type id (uint32_t hash of GUID).  <br /></td></tr>
+<tr class="memdesc:aed5a71fe0a13369ac864f8491cddf308"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings instance for a component type id.  <br /></td></tr>
 <tr class="memitem:a1959845bc09c693a077c6cee370057ca" id="r_a1959845bc09c693a077c6cee370057ca"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a1959845bc09c693a077c6cee370057ca template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#a1959845bc09c693a077c6cee370057ca">Get</a> ()</td></tr>
-<tr class="memdesc:a1959845bc09c693a077c6cee370057ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-safe lookup: T must be a registered settings type.  <br /></td></tr>
+<tr class="memdesc:a1959845bc09c693a077c6cee370057ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The instance of settings type T, which must be registered.  <br /></td></tr>
 <tr class="memitem:ad8473de32e4b120bca1da374e7f81b1f" id="r_ad8473de32e4b120bca1da374e7f81b1f"><td class="memItemLeft">const std::vector&lt; <a class="el" href="struct_deki_1_1_settings_type_info.html">SettingsTypeInfo</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad8473de32e4b120bca1da374e7f81b1f">GetAll</a> () const</td></tr>
-<tr class="memdesc:ad8473de32e4b120bca1da374e7f81b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">All registered settings types (for the editor panel walk).  <br /></td></tr>
+<tr class="memdesc:ad8473de32e4b120bca1da374e7f81b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">All registered settings types, for the Project Settings panel.  <br /></td></tr>
 <tr class="memitem:afbb910c0d15db671b898bfd14f444853" id="r_afbb910c0d15db671b898bfd14f444853"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afbb910c0d15db671b898bfd14f444853">ClearPluginSettings</a> ()</td></tr>
-<tr class="memdesc:afbb910c0d15db671b898bfd14f444853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all plugin-loaded settings instances.  <br /></td></tr>
+<tr class="memdesc:afbb910c0d15db671b898bfd14f444853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes every plugin settings instance and keeps the engine-core ones.  <br /></td></tr>
 <tr class="memitem:a6f631412e1ce65ecc7dd69b3f9d6d69d" id="r_a6f631412e1ce65ecc7dd69b3f9d6d69d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6f631412e1ce65ecc7dd69b3f9d6d69d">Unregister</a> (uint32_t typeId)</td></tr>
-<tr class="memdesc:a6f631412e1ce65ecc7dd69b3f9d6d69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a settings type by component type id.  <br /></td></tr>
+<tr class="memdesc:a6f631412e1ce65ecc7dd69b3f9d6d69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a settings type.  <br /></td></tr>
 <tr class="memitem:a4cad133938eec657ac0730265861b4b9" id="r_a4cad133938eec657ac0730265861b4b9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4cad133938eec657ac0730265861b4b9">IsPluginSetting</a> (uint32_t typeId) const</td></tr>
-<tr class="memdesc:a4cad133938eec657ac0730265861b4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the type was registered via RegisterPlugin (vs Register).  <br /></td></tr>
+<tr class="memdesc:a4cad133938eec657ac0730265861b4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the type was registered with RegisterPlugin, not Register.  <br /></td></tr>
 <tr class="memitem:a239eff54bd92e600871e6579eb2fed9f" id="r_a239eff54bd92e600871e6579eb2fed9f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a239eff54bd92e600871e6579eb2fed9f">FreezeEngineSettings</a> ()</td></tr>
-<tr class="memdesc:a239eff54bd92e600871e6579eb2fed9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Snapshot current state as engine-core baseline.  <br /></td></tr>
+<tr class="memdesc:a239eff54bd92e600871e6579eb2fed9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current state as the engine-core baseline.  <br /></td></tr>
 <tr class="memitem:a823508d7ae3e181f8d7fde486a9d4e1b" id="r_a823508d7ae3e181f8d7fde486a9d4e1b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a823508d7ae3e181f8d7fde486a9d4e1b">SnapshotPluginSettingsAsJson</a> () const</td></tr>
-<tr class="memdesc:a823508d7ae3e181f8d7fde486a9d4e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Snapshot every plugin-owned settings instance to a JSON string.  <br /></td></tr>
+<tr class="memdesc:a823508d7ae3e181f8d7fde486a9d4e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes every plugin-owned settings instance to a JSON string.  <br /></td></tr>
 <tr class="memitem:ae26920cae232d7f14af49c0d07de998b" id="r_ae26920cae232d7f14af49c0d07de998b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae26920cae232d7f14af49c0d07de998b">RestoreFromJson</a> (const std::string &amp;snapshotJson)</td></tr>
-<tr class="memdesc:ae26920cae232d7f14af49c0d07de998b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore plugin settings from a snapshot produced by <a class="el" href="#a823508d7ae3e181f8d7fde486a9d4e1b" title="Snapshot every plugin-owned settings instance to a JSON string.">SnapshotPluginSettingsAsJson()</a>.  <br /></td></tr>
+<tr class="memdesc:ae26920cae232d7f14af49c0d07de998b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores plugin settings from a <a class="el" href="#a823508d7ae3e181f8d7fde486a9d4e1b" title="Writes every plugin-owned settings instance to a JSON string.">SnapshotPluginSettingsAsJson()</a> snapshot.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afcae4469932a58ebdc8b0b5413c6dc14" id="r_afcae4469932a58ebdc8b0b5413c6dc14"><td class="memItemLeft">static SettingsRegistry &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afcae4469932a58ebdc8b0b5413c6dc14">Instance</a> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registry for package-extensible project-settings types. </p>
-<p>Packages declare settings types as ordinary components with a DEKI_SETTINGS_SECTION("...") marker above the class; the reflection codegen registers them here from the package's registration function. The editor's Project Settings panel iterates the registry and renders each type's properties via the existing PropertyEditorFactory machinery - tooltips, ranges, visibility conditions all work out of the box.</p>
-<p>The registry <b>owns</b> the live instance (one per registered type), unlike <a class="el" href="class_deki_1_1_component_registry.html">ComponentRegistry</a> which only owns metadata. Plugin instances are deleted before FreeLibrary via ClearPluginSettings to avoid dangling vtables. </p>
+<div class="textblock"><p>Registry of project-settings types, which packages can add to. </p>
+<p>Packages declare settings types as ordinary components with a DEKI_SETTINGS_SECTION("...") marker above the class, and the codegen registers them here from the package's registration function. The Project Settings panel walks the registry and draws each type's properties with PropertyEditorFactory, so tooltips, ranges and visibility conditions all work.</p>
+<p>Unlike <a class="el" href="class_deki_1_1_component_registry.html">ComponentRegistry</a>, which holds only metadata, this registry owns one live instance per type. Plugin instances are deleted by ClearPluginSettings before FreeLibrary, so no vtable is left dangling. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="afcae4469932a58ebdc8b0b5413c6dc14" name="afcae4469932a58ebdc8b0b5413c6dc14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcae4469932a58ebdc8b0b5413c6dc14">&#9670;&#160;</a></span>Instance()</h2>
@@ -229,14 +237,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register a settings type owned by deki-engine-core. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sectionName</td><td>UI section header &amp; lookup key (e.g. "Rendering") </td></tr>
-    <tr><td class="paramname">meta</td><td><a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a> metadata; must contain a working createFunc. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Registers a settings type owned by deki-engine-core. </p>
+<p><span class="tt">sectionName</span> is the panel's section header and lookup key (e.g. "Rendering"). <span class="tt">meta</span> must have a working createFunc. </p>
 
 </div>
 </div>
@@ -259,8 +261,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register a settings type owned by a plugin/package DLL. </p>
-<p>Live instance is deleted by <a class="el" href="#afbb910c0d15db671b898bfd14f444853" title="Clear all plugin-loaded settings instances.">ClearPluginSettings()</a> / <a class="el" href="#a6f631412e1ce65ecc7dd69b3f9d6d69d" title="Remove a settings type by component type id.">Unregister()</a> before the owning DLL is unloaded, preventing dangling-vtable crashes. </p>
+<p>Registers a settings type owned by a plugin or package DLL. </p>
+<p>Its instance is deleted by <a class="el" href="#afbb910c0d15db671b898bfd14f444853" title="Deletes every plugin settings instance and keeps the engine-core ones.">ClearPluginSettings()</a> or <a class="el" href="#a6f631412e1ce65ecc7dd69b3f9d6d69d" title="Removes a settings type.">Unregister()</a> before the DLL unloads, so no vtable is left dangling. </p>
 
 </div>
 </div>
@@ -279,7 +281,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Look up a settings instance by section name. </p>
+<p>The settings instance for a section name. </p>
 
 </div>
 </div>
@@ -298,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Look up a settings instance by component type id (uint32_t hash of GUID). </p>
+<p>The settings instance for a component type id. </p>
 
 </div>
 </div>
@@ -327,7 +329,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Type-safe lookup: T must be a registered settings type. </p>
+<p>The instance of settings type T, which must be registered. </p>
 
 </div>
 </div>
@@ -354,7 +356,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>All registered settings types (for the editor panel walk). </p>
+<p>All registered settings types, for the Project Settings panel. </p>
 
 </div>
 </div>
@@ -373,8 +375,8 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Clear all plugin-loaded settings instances. </p>
-<p>Called by PackageLoader before FreeLibrary on plugin DLLs. Engine-core registrations are preserved. </p>
+<p>Deletes every plugin settings instance and keeps the engine-core ones. </p>
+<p>PackageLoader calls it before FreeLibrary on plugin DLLs. </p>
 
 </div>
 </div>
@@ -393,8 +395,8 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a settings type by component type id. </p>
-<p>Used during per-package unload to clear entries before FreeLibrary, preventing dangling pointers from one package taking down the editor when another is reloaded. </p>
+<p>Removes a settings type. </p>
+<p>Called when a single package unloads, before FreeLibrary, so its stale pointers cannot crash the editor when another package reloads. </p>
 
 </div>
 </div>
@@ -413,7 +415,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>True if the type was registered via RegisterPlugin (vs Register). </p>
+<p>True if the type was registered with RegisterPlugin, not Register. </p>
 
 </div>
 </div>
@@ -432,8 +434,8 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Snapshot current state as engine-core baseline. </p>
-<p>Call once after engine init, before any package loads. ClearPluginSettings uses the snapshot to restore instead of dereferencing potentially-stale meta pointers. </p>
+<p>Saves the current state as the engine-core baseline. </p>
+<p>Call once after engine init, before any package loads. ClearPluginSettings restores from it instead of dereferencing possibly stale meta pointers. </p>
 
 </div>
 </div>
@@ -452,10 +454,9 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Snapshot every plugin-owned settings instance to a JSON string. </p>
-<p>Used by hot reload: capture the user's edits before unloading plugin DLLs, then restore them via <a class="el" href="#ae26920cae232d7f14af49c0d07de998b" title="Restore plugin settings from a snapshot produced by SnapshotPluginSettingsAsJson().">RestoreFromJson()</a> after the DLLs reload and re-register their (default-valued) instances.</p>
-<p>Engine-core settings are NOT included - those instances survive the reload because they live in deki-engine-core.dll.</p>
-<p>The format mirrors deki.json's "packageSettings" block, so a snapshot can also be persisted to disk and restored later if needed. </p>
+<p>Writes every plugin-owned settings instance to a JSON string. </p>
+<p>Hot reload uses it to keep the user's edits: snapshot before unloading plugin DLLs, then <a class="el" href="#ae26920cae232d7f14af49c0d07de998b" title="Restores plugin settings from a SnapshotPluginSettingsAsJson() snapshot.">RestoreFromJson()</a> once the DLLs have reloaded and registered fresh default instances. Engine-core settings are left out; they live in deki-engine-core.dll and survive the reload.</p>
+<p>The format matches deki.json's "packageSettings" block, so a snapshot can also be saved to disk. </p>
 
 </div>
 </div>
@@ -474,8 +475,8 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Restore plugin settings from a snapshot produced by <a class="el" href="#a823508d7ae3e181f8d7fde486a9d4e1b" title="Snapshot every plugin-owned settings instance to a JSON string.">SnapshotPluginSettingsAsJson()</a>. </p>
-<p>Sections whose owning package didn't reload are silently skipped (the user can still recover them on the next reload). Properties that no longer exist on the new metadata are silently skipped - graceful for field renames or removals. </p>
+<p>Restores plugin settings from a <a class="el" href="#a823508d7ae3e181f8d7fde486a9d4e1b" title="Writes every plugin-owned settings instance to a JSON string.">SnapshotPluginSettingsAsJson()</a> snapshot. </p>
+<p>Sections whose package did not reload are skipped and can be restored on the next reload. Properties the new metadata no longer has are skipped, so renamed or removed fields do no harm. </p>
 
 </div>
 </div>

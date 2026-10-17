@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -152,29 +160,28 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a03fceb33112b27e49336358e770bfe49" id="r_a03fceb33112b27e49336358e770bfe49"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a03fceb33112b27e49336358e770bfe49">~EditorWindow</a> ()=default</td></tr>
 <tr class="memitem:a7bbf20ad4b7596600587267f5cfbedd7" id="r_a7bbf20ad4b7596600587267f5cfbedd7"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="#a7bbf20ad4b7596600587267f5cfbedd7">GetTitle</a> ()=0</td></tr>
-<tr class="memdesc:a7bbf20ad4b7596600587267f5cfbedd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the window title.  <br /></td></tr>
+<tr class="memdesc:a7bbf20ad4b7596600587267f5cfbedd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window title.  <br /></td></tr>
 <tr class="memitem:aacd4d662755172c9f9699eff9320eecb" id="r_aacd4d662755172c9f9699eff9320eecb"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="#aacd4d662755172c9f9699eff9320eecb">GetMenuPath</a> ()</td></tr>
-<tr class="memdesc:aacd4d662755172c9f9699eff9320eecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the menu path for the Tools menu.  <br /></td></tr>
+<tr class="memdesc:aacd4d662755172c9f9699eff9320eecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the window sits in the Tools menu (e.g.  <br /></td></tr>
 <tr class="memitem:af900d780cd486f82a505bd3f86a2123f" id="r_af900d780cd486f82a505bd3f86a2123f"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="#af900d780cd486f82a505bd3f86a2123f">GetShortcut</a> ()</td></tr>
-<tr class="memdesc:af900d780cd486f82a505bd3f86a2123f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get optional keyboard shortcut.  <br /></td></tr>
+<tr class="memdesc:af900d780cd486f82a505bd3f86a2123f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A keyboard shortcut (e.g. "Ctrl+Shift+S"), or nullptr.  <br /></td></tr>
 <tr class="memitem:abb8ab8e94663623f14d87f7e0dd46ea8" id="r_abb8ab8e94663623f14d87f7e0dd46ea8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#abb8ab8e94663623f14d87f7e0dd46ea8">OnOpen</a> ()</td></tr>
 <tr class="memdesc:abb8ab8e94663623f14d87f7e0dd46ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window is first opened.  <br /></td></tr>
 <tr class="memitem:a84e583ae9450081f2184b54ea28ef033" id="r_a84e583ae9450081f2184b54ea28ef033"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a84e583ae9450081f2184b54ea28ef033">OnClose</a> ()</td></tr>
-<tr class="memdesc:a84e583ae9450081f2184b54ea28ef033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window is closed.  <br /></td></tr>
 <tr class="memitem:ac795e7a9cb1788f9aec20c2d53651282" id="r_ac795e7a9cb1788f9aec20c2d53651282"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac795e7a9cb1788f9aec20c2d53651282">OnGUI</a> ()=0</td></tr>
-<tr class="memdesc:ac795e7a9cb1788f9aec20c2d53651282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each frame to draw the window UI.  <br /></td></tr>
+<tr class="memdesc:ac795e7a9cb1788f9aec20c2d53651282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the window each frame, with ImGui directly.  <br /></td></tr>
 <tr class="memitem:a5010d950a29038af9f687d969a61309d" id="r_a5010d950a29038af9f687d969a61309d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5010d950a29038af9f687d969a61309d">OnUpdate</a> (float deltaTime)</td></tr>
-<tr class="memdesc:a5010d950a29038af9f687d969a61309d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each frame for non-UI updates.  <br /></td></tr>
+<tr class="memdesc:a5010d950a29038af9f687d969a61309d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each frame for work other than drawing. <span class="tt">deltaTime</span> is in seconds.  <br /></td></tr>
 <tr class="memitem:ac3f4096aef92d2268dcdb3f331ccf7b1" id="r_ac3f4096aef92d2268dcdb3f331ccf7b1"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ac3f4096aef92d2268dcdb3f331ccf7b1">CanOpenFile</a> (const char *extension)</td></tr>
-<tr class="memdesc:ac3f4096aef92d2268dcdb3f331ccf7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this window can open a file type.  <br /></td></tr>
+<tr class="memdesc:ac3f4096aef92d2268dcdb3f331ccf7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this window opens files with this extension (e.g. ".png", ".anim").  <br /></td></tr>
 <tr class="memitem:adc3f4ad1f6453eaf98b84539e8f00d59" id="r_adc3f4ad1f6453eaf98b84539e8f00d59"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#adc3f4ad1f6453eaf98b84539e8f00d59">CanOpenAssetType</a> (const char *assetType)</td></tr>
-<tr class="memdesc:adc3f4ad1f6453eaf98b84539e8f00d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this window can open a .asset file by its type field.  <br /></td></tr>
+<tr class="memdesc:adc3f4ad1f6453eaf98b84539e8f00d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this window opens .asset files whose JSON "type" is <span class="tt">assetType</span> (e.g.  <br /></td></tr>
 <tr class="memitem:ab4cc2d23c89fd996ecd10fec6718172e" id="r_ab4cc2d23c89fd996ecd10fec6718172e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab4cc2d23c89fd996ecd10fec6718172e">OpenFile</a> (const char *filePath, const char *cachePath)</td></tr>
-<tr class="memdesc:ab4cc2d23c89fd996ecd10fec6718172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file in this window.  <br /></td></tr>
+<tr class="memdesc:ab4cc2d23c89fd996ecd10fec6718172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file, given the full paths of the file and of its cached version.  <br /></td></tr>
 <tr class="memitem:a25f66b8a998542d7295d9e4aacf451bd" id="r_a25f66b8a998542d7295d9e4aacf451bd"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a25f66b8a998542d7295d9e4aacf451bd">SaveSession</a> (std::string &amp;)</td></tr>
-<tr class="memdesc:a25f66b8a998542d7295d9e4aacf451bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize window state to JSON.  <br /></td></tr>
+<tr class="memdesc:a25f66b8a998542d7295d9e4aacf451bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the window's state as JSON. Return false to save nothing.  <br /></td></tr>
 <tr class="memitem:a53c5e34fe185d9ed9ba79ef03c41f658" id="r_a53c5e34fe185d9ed9ba79ef03c41f658"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a53c5e34fe185d9ed9ba79ef03c41f658">RestoreSession</a> (const std::string &amp;)</td></tr>
-<tr class="memdesc:a53c5e34fe185d9ed9ba79ef03c41f658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild state from SaveSession's JSON (after DLLs reloaded).  <br /></td></tr>
+<tr class="memdesc:a53c5e34fe185d9ed9ba79ef03c41f658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores state from SaveSession's JSON, after the DLLs reloaded.  <br /></td></tr>
 <tr class="memitem:a103ea348bc83b2922495196612bd6d88" id="r_a103ea348bc83b2922495196612bd6d88"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a103ea348bc83b2922495196612bd6d88">IsOpen</a> () const</td></tr>
 <tr class="memitem:aac1f12a06a339973358ca4b12b494126" id="r_aac1f12a06a339973358ca4b12b494126"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aac1f12a06a339973358ca4b12b494126">SetOpen</a> (bool open)</td></tr>
 </table><table class="memberdecls">
@@ -184,37 +191,12 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for standalone editor windows. </p>
-<p>Replaces IEditorTool. Use <a class="el" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec" title="Get singleton instance.">EditorApplication::Get()</a> for project info.</p>
-<p>Usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>SpritesheetEditorWindow : <span class="keyword">public</span> <a class="code hl_class" href="class_deki_editor_1_1_editor_window.html">EditorWindow</a></div>
-<div class="line">{</div>
-<div class="line"><span class="keyword">public</span>:</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="#a7bbf20ad4b7596600587267f5cfbedd7">GetTitle</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Spritesheet Editor&quot;</span>; }</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="#aacd4d662755172c9f9699eff9320eecb">GetMenuPath</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;2D/Spritesheet Editor&quot;</span>; }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="#abb8ab8e94663623f14d87f7e0dd46ea8">OnOpen</a>()<span class="keyword"> override</span></div>
-<div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keyword">auto</span>&amp; app = <a class="code hl_function" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">EditorApplication::Get</a>();</div>
-<div class="line">        m_ProjectPath = app.GetProjectPath();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="#ac795e7a9cb1788f9aec20c2d53651282">OnGUI</a>()<span class="keyword"> override</span></div>
-<div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        ImGui::Begin(<a class="code hl_function" href="#a7bbf20ad4b7596600587267f5cfbedd7">GetTitle</a>(), &amp;<a class="code hl_variable" href="#a0404ee9ab3f83b68da51114e1db5888b">m_IsOpen</a>);</div>
-<div class="line">        <span class="comment">// ... draw UI</span></div>
-<div class="line">        ImGui::End();</div>
-<div class="line">    }</div>
-<div class="line">};</div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_define" href="_editor_window_8h.html#aade54c809682a699f34e1f9b4db20055">REGISTER_EDITOR_WINDOW</a>(SpritesheetEditorWindow, <span class="stringliteral">&quot;Spritesheet Editor&quot;</span>, <span class="stringliteral">&quot;2D/Spritesheet Editor&quot;</span>)</div>
-<div class="ttc" id="a_editor_window_8h_html_aade54c809682a699f34e1f9b4db20055"><div class="ttname"><a href="_editor_window_8h.html#aade54c809682a699f34e1f9b4db20055">REGISTER_EDITOR_WINDOW</a></div><div class="ttdeci">#define REGISTER_EDITOR_WINDOW(WindowClass, WindowTitle, MenuPath)</div><div class="ttdoc">Register an editor window.</div><div class="ttdef"><b>Definition</b> EditorWindow.h:193</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_application_html_af39a0dde1a614f46a8c82d37fa711eec"><div class="ttname"><a href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">DekiEditor::EditorApplication::Get</a></div><div class="ttdeci">static EditorApplication &amp; Get()</div><div class="ttdoc">Get singleton instance.</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_window_html"><div class="ttname"><a href="class_deki_editor_1_1_editor_window.html">DekiEditor::EditorWindow</a></div><div class="ttdoc">Base class for standalone editor windows.</div><div class="ttdef"><b>Definition</b> EditorWindow.h:44</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_window_html_a0404ee9ab3f83b68da51114e1db5888b"><div class="ttname"><a href="#a0404ee9ab3f83b68da51114e1db5888b">DekiEditor::EditorWindow::m_IsOpen</a></div><div class="ttdeci">bool m_IsOpen</div><div class="ttdef"><b>Definition</b> EditorWindow.h:161</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_window_html_a7bbf20ad4b7596600587267f5cfbedd7"><div class="ttname"><a href="#a7bbf20ad4b7596600587267f5cfbedd7">DekiEditor::EditorWindow::GetTitle</a></div><div class="ttdeci">virtual const char * GetTitle()=0</div><div class="ttdoc">Get the window title.</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_window_html_aacd4d662755172c9f9699eff9320eecb"><div class="ttname"><a href="#aacd4d662755172c9f9699eff9320eecb">DekiEditor::EditorWindow::GetMenuPath</a></div><div class="ttdeci">virtual const char * GetMenuPath()</div><div class="ttdoc">Get the menu path for the Tools menu.</div><div class="ttdef"><b>Definition</b> EditorWindow.h:62</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_window_html_abb8ab8e94663623f14d87f7e0dd46ea8"><div class="ttname"><a href="#abb8ab8e94663623f14d87f7e0dd46ea8">DekiEditor::EditorWindow::OnOpen</a></div><div class="ttdeci">virtual void OnOpen()</div><div class="ttdoc">Called when the window is first opened.</div><div class="ttdef"><b>Definition</b> EditorWindow.h:87</div></div>
-<div class="ttc" id="aclass_deki_editor_1_1_editor_window_html_ac795e7a9cb1788f9aec20c2d53651282"><div class="ttname"><a href="#ac795e7a9cb1788f9aec20c2d53651282">DekiEditor::EditorWindow::OnGUI</a></div><div class="ttdeci">virtual void OnGUI()=0</div><div class="ttdoc">Called each frame to draw the window UI.</div></div>
-</div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>Use <a class="el" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">EditorApplication::Get()</a> for project info.</p>
+<p>Usage: class SpritesheetEditorWindow : public <a class="el" href="class_deki_editor_1_1_editor_window.html" title="Base class for standalone editor windows.">EditorWindow</a> { public: const char* <a class="el" href="#a7bbf20ad4b7596600587267f5cfbedd7" title="The window title.">GetTitle()</a> override { return "Spritesheet Editor"; } const char* <a class="el" href="#aacd4d662755172c9f9699eff9320eecb" title="Where the window sits in the Tools menu (e.g.">GetMenuPath()</a> override { return "2D/Spritesheet Editor"; }</p>
+<p>void <a class="el" href="#abb8ab8e94663623f14d87f7e0dd46ea8" title="Called when the window is first opened.">OnOpen()</a> override { auto&amp; app = <a class="el" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">EditorApplication::Get()</a>; m_ProjectPath = app.GetProjectPath(); }</p>
+<p>void <a class="el" href="#ac795e7a9cb1788f9aec20c2d53651282" title="Draws the window each frame, with ImGui directly.">OnGUI()</a> override { ImGui::Begin(GetTitle(), &amp;m_IsOpen); // ... draw UI ImGui::End(); } };</p>
+<p>REGISTER_EDITOR_WINDOW(SpritesheetEditorWindow, "Spritesheet Editor", "2D/Spritesheet Editor") </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a03fceb33112b27e49336358e770bfe49" name="a03fceb33112b27e49336358e770bfe49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03fceb33112b27e49336358e770bfe49">&#9670;&#160;</a></span>~EditorWindow()</h2>
 
@@ -264,8 +246,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the window title. </p>
-<dl class="section return"><dt>Returns</dt><dd>Human-readable window title </dd></dl>
+<p>The window title. </p>
 
 </div>
 </div>
@@ -292,8 +273,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the menu path for the Tools menu. </p>
-<dl class="section return"><dt>Returns</dt><dd>Menu path (e.g., "2D/Spritesheet Editor") or nullptr </dd></dl>
+<p>Where the window sits in the Tools menu (e.g. </p>
+<p>"2D/Spritesheet Editor"), or nullptr. </p>
 
 </div>
 </div>
@@ -320,8 +301,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get optional keyboard shortcut. </p>
-<dl class="section return"><dt>Returns</dt><dd>Shortcut string (e.g., "Ctrl+Shift+S") or nullptr </dd></dl>
+<p>A keyboard shortcut (e.g. "Ctrl+Shift+S"), or nullptr. </p>
 
 </div>
 </div>
@@ -349,13 +329,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the window is first opened. </p>
-<p>Use <a class="el" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec" title="Get singleton instance.">EditorApplication::Get()</a> to access project paths: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="#abb8ab8e94663623f14d87f7e0dd46ea8">OnOpen</a>()<span class="keyword"> override</span></div>
-<div class="line"><span class="keyword"></span>{</div>
-<div class="line">    <span class="keyword">auto</span>&amp; app = <a class="code hl_function" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">EditorApplication::Get</a>();</div>
-<div class="line">    m_ProjectPath = app.GetProjectPath();</div>
-<div class="line">    m_AssetsPath = app.GetAssetsPath();</div>
-<div class="line">}</div>
-</div><!-- fragment --> 
+<p><a class="el" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">EditorApplication::Get()</a> gives the project paths: void <a class="el" href="#abb8ab8e94663623f14d87f7e0dd46ea8" title="Called when the window is first opened.">OnOpen()</a> override { auto&amp; app = <a class="el" href="class_deki_editor_1_1_editor_application.html#af39a0dde1a614f46a8c82d37fa711eec">EditorApplication::Get()</a>; m_ProjectPath = app.GetProjectPath(); m_AssetsPath = app.GetAssetsPath(); } </p>
+
 </div>
 </div>
 <a id="a84e583ae9450081f2184b54ea28ef033" name="a84e583ae9450081f2184b54ea28ef033"></a>
@@ -380,8 +355,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Called when the window is closed. </p>
 
 </div>
 </div>
@@ -408,8 +381,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called each frame to draw the window UI. </p>
-<p>Use ImGui directly. Call ImGui::Begin() with &amp;m_IsOpen. </p>
+<p>Draws the window each frame, with ImGui directly. </p>
+<p>Call ImGui::Begin() with &amp;m_IsOpen. </p>
 
 </div>
 </div>
@@ -436,13 +409,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called each frame for non-UI updates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deltaTime</td><td>Time since last frame in seconds </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Called each frame for work other than drawing. <span class="tt">deltaTime</span> is in seconds. </p>
 
 </div>
 </div>
@@ -469,14 +436,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if this window can open a file type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">extension</td><td>File extension (e.g., ".png", ".anim") </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if window can handle this file type </dd></dl>
+<p>Whether this window opens files with this extension (e.g. ".png", ".anim"). </p>
 
 </div>
 </div>
@@ -503,14 +463,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if this window can open a .asset file by its type field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">assetType</td><td>The "type" value from the .asset JSON (e.g., "iconexport") </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if window can handle this asset type </dd></dl>
+<p>Whether this window opens .asset files whose JSON "type" is <span class="tt">assetType</span> (e.g. </p>
+<p>"iconexport"). </p>
 
 </div>
 </div>
@@ -541,14 +495,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Open a file in this window. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filePath</td><td>Full path to the file </td></tr>
-    <tr><td class="paramname">cachePath</td><td>Full path to the cached file </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Opens a file, given the full paths of the file and of its cached version. </p>
 
 </div>
 </div>
@@ -575,8 +522,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Serialize window state to JSON. </p>
-<p>Return false to skip persistence. </p>
+<p>Saves the window's state as JSON. Return false to save nothing. </p>
 
 </div>
 </div>
@@ -603,7 +549,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rebuild state from SaveSession's JSON (after DLLs reloaded). </p>
+<p>Restores state from SaveSession's JSON, after the DLLs reloaded. </p>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var class_deki_editor_1_1_editor_assets =
 [
     [ "ImageLoaderFn", "class_deki_editor_1_1_editor_assets.html#af0d760c17309b14de65fba7b2202009a", null ],
-    [ "FontFromDfontFn", "class_deki_editor_1_1_editor_assets.html#a312f76fefa47932f89e6dd3d59a70cb0", null ],
+    [ "FontFromDfontFn", "class_deki_editor_1_1_editor_assets.html#ad98beb2e4325b1cf653ba96c9aa4caa4", null ],
     [ "FontDestroyFn", "class_deki_editor_1_1_editor_assets.html#ad98cac2255ca49c4b0e15efd7ffa3161", null ],
     [ "FontBakeCallback", "class_deki_editor_1_1_editor_assets.html#a75d2851f8c87f150bc5efdf74face9c3", null ],
     [ "FontAtlasCallback", "class_deki_editor_1_1_editor_assets.html#afcdca5ae8f296d89450a0c594a2cc862", null ],

@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -148,30 +156,30 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab6ae6cc485464b551cfc85b56ffc8012" id="r_ab6ae6cc485464b551cfc85b56ffc8012"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char *&#160;</td><td class="memItemRight"><a class="el" href="#ab6ae6cc485464b551cfc85b56ffc8012">DekiPlugin_GetName</a> (void)</td></tr>
-<tr class="memdesc:ab6ae6cc485464b551cfc85b56ffc8012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the plugin name for display in the editor.  <br /></td></tr>
-<tr class="memitem:a0ef4b7c52be41fe5c7bbc92471e9915f" id="r_a0ef4b7c52be41fe5c7bbc92471e9915f"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char *&#160;</td><td class="memItemRight"><a class="el" href="#a0ef4b7c52be41fe5c7bbc92471e9915f">DekiPlugin_GetVersion</a> (void)</td></tr>
-<tr class="memdesc:a0ef4b7c52be41fe5c7bbc92471e9915f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the plugin version.  <br /></td></tr>
-<tr class="memitem:a5639ed2172d64355867da37e2f6d2cb0" id="r_a5639ed2172d64355867da37e2f6d2cb0"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int&#160;</td><td class="memItemRight"><a class="el" href="#a5639ed2172d64355867da37e2f6d2cb0">DekiPlugin_Init</a> (void)</td></tr>
-<tr class="memdesc:a5639ed2172d64355867da37e2f6d2cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: Initialize the plugin.  <br /></td></tr>
-<tr class="memitem:ad72f802938cfff4377dd186c056fa497" id="r_ad72f802938cfff4377dd186c056fa497"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ad72f802938cfff4377dd186c056fa497">DekiPlugin_Shutdown</a> (void)</td></tr>
-<tr class="memdesc:ad72f802938cfff4377dd186c056fa497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: Shutdown the plugin.  <br /></td></tr>
-<tr class="memitem:ac49205c814cae75402e1d5f3fe45efc4" id="r_ac49205c814cae75402e1d5f3fe45efc4"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int&#160;</td><td class="memItemRight"><a class="el" href="#ac49205c814cae75402e1d5f3fe45efc4">DekiPlugin_GetComponentCount</a> (void)</td></tr>
-<tr class="memdesc:ac49205c814cae75402e1d5f3fe45efc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of components provided by this plugin.  <br /></td></tr>
-<tr class="memitem:a3d96e0e370dda0c4e2ba88736ea0540a" id="r_a3d96e0e370dda0c4e2ba88736ea0540a"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const void *&#160;</td><td class="memItemRight"><a class="el" href="#a3d96e0e370dda0c4e2ba88736ea0540a">DekiPlugin_GetComponentMeta</a> (int index)</td></tr>
-<tr class="memdesc:a3d96e0e370dda0c4e2ba88736ea0540a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get component metadata by index.  <br /></td></tr>
-<tr class="memitem:a3a5ab047853234cdb9846be0dc690752" id="r_a3a5ab047853234cdb9846be0dc690752"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a3a5ab047853234cdb9846be0dc690752">DekiPlugin_RegisterComponents</a> (void)</td></tr>
-<tr class="memdesc:a3a5ab047853234cdb9846be0dc690752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register all plugin components with the engine's <a class="el" href="class_deki_1_1_component_registry.html">Deki::ComponentRegistry</a>.  <br /></td></tr>
-<tr class="memitem:ae91f117d505487cd76254d142b374f7d" id="r_ae91f117d505487cd76254d142b374f7d"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ae91f117d505487cd76254d142b374f7d">DekiPlugin_SetImGuiContext</a> (void *context)</td></tr>
-<tr class="memdesc:ae91f117d505487cd76254d142b374f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive the editor's ImGui context.  <br /></td></tr>
-<tr class="memitem:ab2bb34b34843f1503c8c49f30149129c" id="r_ab2bb34b34843f1503c8c49f30149129c"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#ab2bb34b34843f1503c8c49f30149129c">DekiPlugin_GetImGuiContextSize</a> (void)</td></tr>
-<tr class="memdesc:ab2bb34b34843f1503c8c49f30149129c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report sizeof(ImGuiContext) as this package compiled it.  <br /></td></tr>
-<tr class="memitem:a71930a0564703e81ef6b3133c6acfc44" id="r_a71930a0564703e81ef6b3133c6acfc44"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a71930a0564703e81ef6b3133c6acfc44">DekiPlugin_ClearRegistries</a> (void)</td></tr>
-<tr class="memdesc:a71930a0564703e81ef6b3133c6acfc44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop everything this package registered into engine-side registries.  <br /></td></tr>
-<tr class="memitem:abe99232c7163d8a3af0c6df39e398ca3" id="r_abe99232c7163d8a3af0c6df39e398ca3"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#abe99232c7163d8a3af0c6df39e398ca3">DekiPlugin_OnPlayModeStart</a> (void *scene)</td></tr>
-<tr class="memdesc:abe99232c7163d8a3af0c6df39e398ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play mode is starting, for the given <a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Deki::Scene</a>*.  <br /></td></tr>
-<tr class="memitem:ac0ca5daea136c79b8f0359238c65a5ce" id="r_ac0ca5daea136c79b8f0359238c65a5ce"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ac0ca5daea136c79b8f0359238c65a5ce">DekiPlugin_OnPlayModeStop</a> (void)</td></tr>
-<tr class="memdesc:ac0ca5daea136c79b8f0359238c65a5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play mode has stopped.  <br /></td></tr>
+<tr class="memitem:a6da8ded1b5c443c9cb3618e0f0caaea2" id="r_a6da8ded1b5c443c9cb3618e0f0caaea2"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char *&#160;</td><td class="memItemRight"><a class="el" href="#a6da8ded1b5c443c9cb3618e0f0caaea2">DekiPluginGetName</a> (void)</td></tr>
+<tr class="memdesc:a6da8ded1b5c443c9cb3618e0f0caaea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The plugin's name as the editor shows it.  <br /></td></tr>
+<tr class="memitem:aae32d20e5e2425493b43d682b5d0f17f" id="r_aae32d20e5e2425493b43d682b5d0f17f"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char *&#160;</td><td class="memItemRight"><a class="el" href="#aae32d20e5e2425493b43d682b5d0f17f">DekiPluginGetVersion</a> (void)</td></tr>
+<tr class="memdesc:aae32d20e5e2425493b43d682b5d0f17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The plugin's version, such as "1.0.0".  <br /></td></tr>
+<tr class="memitem:a3b1e1607ec9328332b04d3b6f1c72e44" id="r_a3b1e1607ec9328332b04d3b6f1c72e44"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int&#160;</td><td class="memItemRight"><a class="el" href="#a3b1e1607ec9328332b04d3b6f1c72e44">DekiPluginInit</a> (void)</td></tr>
+<tr class="memdesc:a3b1e1607ec9328332b04d3b6f1c72e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional. Starts the plugin; returns 0 on success.  <br /></td></tr>
+<tr class="memitem:ac60044e5d2f15f471107ccf66877d175" id="r_ac60044e5d2f15f471107ccf66877d175"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ac60044e5d2f15f471107ccf66877d175">DekiPluginShutdown</a> (void)</td></tr>
+<tr class="memdesc:ac60044e5d2f15f471107ccf66877d175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional. Shuts the plugin down.  <br /></td></tr>
+<tr class="memitem:acc0d1503f9acb4d0084f21200c38a57c" id="r_acc0d1503f9acb4d0084f21200c38a57c"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int&#160;</td><td class="memItemRight"><a class="el" href="#acc0d1503f9acb4d0084f21200c38a57c">DekiPluginGetComponentCount</a> (void)</td></tr>
+<tr class="memdesc:acc0d1503f9acb4d0084f21200c38a57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of components the plugin provides.  <br /></td></tr>
+<tr class="memitem:a8020d08cbdeceb97f06eac3d164daf46" id="r_a8020d08cbdeceb97f06eac3d164daf46"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const void *&#160;</td><td class="memItemRight"><a class="el" href="#a8020d08cbdeceb97f06eac3d164daf46">DekiPluginGetComponentMeta</a> (int index)</td></tr>
+<tr class="memdesc:a8020d08cbdeceb97f06eac3d164daf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata of component <span class="tt">index</span> (0 to count - 1), or nullptr when out of range.  <br /></td></tr>
+<tr class="memitem:af54b68c2e96f358d9679257c66c9f456" id="r_af54b68c2e96f358d9679257c66c9f456"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#af54b68c2e96f358d9679257c66c9f456">DekiPluginRegisterComponents</a> (void)</td></tr>
+<tr class="memdesc:af54b68c2e96f358d9679257c66c9f456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the plugin's components with the engine, so they appear in the Add Component menu.  <br /></td></tr>
+<tr class="memitem:ac2ed12ce776fc3a5ab4f7196a479dcef" id="r_ac2ed12ce776fc3a5ab4f7196a479dcef"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ac2ed12ce776fc3a5ab4f7196a479dcef">DekiPluginSetImGuiContext</a> (void *context)</td></tr>
+<tr class="memdesc:ac2ed12ce776fc3a5ab4f7196a479dcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives the editor's ImGui context.  <br /></td></tr>
+<tr class="memitem:a83960f85456e997f939cd27ede843974" id="r_a83960f85456e997f939cd27ede843974"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a83960f85456e997f939cd27ede843974">DekiPluginGetImGuiContextSize</a> (void)</td></tr>
+<tr class="memdesc:a83960f85456e997f939cd27ede843974"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(ImGuiContext) as this package compiled it.  <br /></td></tr>
+<tr class="memitem:ae442d0b7be9272121f887ffe038a1e2b" id="r_ae442d0b7be9272121f887ffe038a1e2b"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ae442d0b7be9272121f887ffe038a1e2b">DekiPluginClearRegistries</a> (void)</td></tr>
+<tr class="memdesc:ae442d0b7be9272121f887ffe038a1e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes everything this package registered in engine registries.  <br /></td></tr>
+<tr class="memitem:a0db9b93dd06707268b23e044628006bf" id="r_a0db9b93dd06707268b23e044628006bf"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a0db9b93dd06707268b23e044628006bf">DekiPluginOnPlayModeStart</a> (void *scene)</td></tr>
+<tr class="memdesc:a0db9b93dd06707268b23e044628006bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play mode is starting, with the given <a class="el" href="class_deki_1_1_scene.html" title="A scene: objects with components, and Deki&#39;s basic unit of content.">Deki::Scene</a>*.  <br /></td></tr>
+<tr class="memitem:ac4072378f0bee1a431b7b94e6b21f9d1" id="r_ac4072378f0bee1a431b7b94e6b21f9d1"><td class="memItemLeft"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ac4072378f0bee1a431b7b94e6b21f9d1">DekiPluginOnPlayModeStop</a> (void)</td></tr>
+<tr class="memdesc:ac4072378f0bee1a431b7b94e6b21f9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play mode has stopped.  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a12872a670bbeacf5f0026431d68f06dc" name="a12872a670bbeacf5f0026431d68f06dc"></a>
@@ -189,14 +197,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ab6ae6cc485464b551cfc85b56ffc8012" name="ab6ae6cc485464b551cfc85b56ffc8012"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6ae6cc485464b551cfc85b56ffc8012">&#9670;&#160;</a></span>DekiPlugin_GetName()</h2>
+<a id="a6da8ded1b5c443c9cb3618e0f0caaea2" name="a6da8ded1b5c443c9cb3618e0f0caaea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da8ded1b5c443c9cb3618e0f0caaea2">&#9670;&#160;</a></span>DekiPluginGetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char * DekiPlugin_GetName </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char * DekiPluginGetName </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -204,19 +212,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the plugin name for display in the editor. </p>
-<dl class="section return"><dt>Returns</dt><dd>Human-readable plugin name (e.g., "Project-V Components") </dd></dl>
+<p>The plugin's name as the editor shows it. </p>
 
 </div>
 </div>
-<a id="a0ef4b7c52be41fe5c7bbc92471e9915f" name="a0ef4b7c52be41fe5c7bbc92471e9915f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ef4b7c52be41fe5c7bbc92471e9915f">&#9670;&#160;</a></span>DekiPlugin_GetVersion()</h2>
+<a id="aae32d20e5e2425493b43d682b5d0f17f" name="aae32d20e5e2425493b43d682b5d0f17f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae32d20e5e2425493b43d682b5d0f17f">&#9670;&#160;</a></span>DekiPluginGetVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char * DekiPlugin_GetVersion </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const char * DekiPluginGetVersion </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -224,19 +231,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the plugin version. </p>
-<dl class="section return"><dt>Returns</dt><dd>Version string (e.g., "1.0.0") </dd></dl>
+<p>The plugin's version, such as "1.0.0". </p>
 
 </div>
 </div>
-<a id="a5639ed2172d64355867da37e2f6d2cb0" name="a5639ed2172d64355867da37e2f6d2cb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5639ed2172d64355867da37e2f6d2cb0">&#9670;&#160;</a></span>DekiPlugin_Init()</h2>
+<a id="a3b1e1607ec9328332b04d3b6f1c72e44" name="a3b1e1607ec9328332b04d3b6f1c72e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1e1607ec9328332b04d3b6f1c72e44">&#9670;&#160;</a></span>DekiPluginInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int DekiPlugin_Init </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int DekiPluginInit </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -244,19 +250,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Optional: Initialize the plugin. </p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, non-zero on failure </dd></dl>
+<p>Optional. Starts the plugin; returns 0 on success. </p>
 
 </div>
 </div>
-<a id="ad72f802938cfff4377dd186c056fa497" name="ad72f802938cfff4377dd186c056fa497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72f802938cfff4377dd186c056fa497">&#9670;&#160;</a></span>DekiPlugin_Shutdown()</h2>
+<a id="ac60044e5d2f15f471107ccf66877d175" name="ac60044e5d2f15f471107ccf66877d175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60044e5d2f15f471107ccf66877d175">&#9670;&#160;</a></span>DekiPluginShutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPlugin_Shutdown </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPluginShutdown </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -264,18 +269,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Optional: Shutdown the plugin. </p>
+<p>Optional. Shuts the plugin down. </p>
 
 </div>
 </div>
-<a id="ac49205c814cae75402e1d5f3fe45efc4" name="ac49205c814cae75402e1d5f3fe45efc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac49205c814cae75402e1d5f3fe45efc4">&#9670;&#160;</a></span>DekiPlugin_GetComponentCount()</h2>
+<a id="acc0d1503f9acb4d0084f21200c38a57c" name="acc0d1503f9acb4d0084f21200c38a57c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0d1503f9acb4d0084f21200c38a57c">&#9670;&#160;</a></span>DekiPluginGetComponentCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int DekiPlugin_GetComponentCount </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> int DekiPluginGetComponentCount </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -283,19 +288,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of components provided by this plugin. </p>
-<dl class="section return"><dt>Returns</dt><dd>Number of components (0 if plugin only provides JSON metadata) </dd></dl>
+<p>Number of components the plugin provides. </p>
 
 </div>
 </div>
-<a id="a3d96e0e370dda0c4e2ba88736ea0540a" name="a3d96e0e370dda0c4e2ba88736ea0540a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d96e0e370dda0c4e2ba88736ea0540a">&#9670;&#160;</a></span>DekiPlugin_GetComponentMeta()</h2>
+<a id="a8020d08cbdeceb97f06eac3d164daf46" name="a8020d08cbdeceb97f06eac3d164daf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8020d08cbdeceb97f06eac3d164daf46">&#9670;&#160;</a></span>DekiPluginGetComponentMeta()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const void * DekiPlugin_GetComponentMeta </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> const void * DekiPluginGetComponentMeta </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td></td>
@@ -303,26 +307,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get component metadata by index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>Component index (0 to GetComponentCount()-1) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to component metadata, or nullptr if index is invalid</dd></dl>
-<p>The returned <a class="el" href="struct_deki_1_1_component_meta.html" title="Component metadata for runtime reflection.">Deki::ComponentMeta</a> includes a factory function that can create instances of the component. This enables the editor to instantiate plugin components for play mode. </p>
+<p>Metadata of component <span class="tt">index</span> (0 to count - 1), or nullptr when out of range. </p>
+<p>It includes a factory, so the editor can create the component in play mode. </p>
 
 </div>
 </div>
-<a id="a3a5ab047853234cdb9846be0dc690752" name="a3a5ab047853234cdb9846be0dc690752"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a5ab047853234cdb9846be0dc690752">&#9670;&#160;</a></span>DekiPlugin_RegisterComponents()</h2>
+<a id="af54b68c2e96f358d9679257c66c9f456" name="af54b68c2e96f358d9679257c66c9f456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54b68c2e96f358d9679257c66c9f456">&#9670;&#160;</a></span>DekiPluginRegisterComponents()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPlugin_RegisterComponents </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPluginRegisterComponents </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -330,19 +327,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register all plugin components with the engine's <a class="el" href="class_deki_1_1_component_registry.html">Deki::ComponentRegistry</a>. </p>
-<p>Called by the editor after loading the plugin DLL. This allows the plugin to register its components so they appear in the Add Component menu. </p>
+<p>Registers the plugin's components with the engine, so they appear in the Add Component menu. </p>
+<p>The editor calls it after loading the DLL. </p>
 
 </div>
 </div>
-<a id="ae91f117d505487cd76254d142b374f7d" name="ae91f117d505487cd76254d142b374f7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae91f117d505487cd76254d142b374f7d">&#9670;&#160;</a></span>DekiPlugin_SetImGuiContext()</h2>
+<a id="ac2ed12ce776fc3a5ab4f7196a479dcef" name="ac2ed12ce776fc3a5ab4f7196a479dcef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ed12ce776fc3a5ab4f7196a479dcef">&#9670;&#160;</a></span>DekiPluginSetImGuiContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPlugin_SetImGuiContext </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPluginSetImGuiContext </td>
           <td>(</td>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
           <td></td>
@@ -350,19 +347,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Receive the editor's ImGui context. </p>
-<p>Only needed by packages that call ImGui directly. Note that none currently do - they draw through deki-editor's EditorUI, which shares the context via <a class="el" href="namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a" title="Set ImGui context for DLL boundary crossing.">Deki::SetImGuiContext</a>. </p>
+<p>Receives the editor's ImGui context. </p>
+<p>Only packages that call ImGui directly need it; packages that draw through deki-editor's EditorUI get the context through <a class="el" href="namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a" title="Gives this DLL the host&#39;s ImGui context, so ImGui state is shared across the DLL boundary.">Deki::SetImGuiContext</a>. </p>
 
 </div>
 </div>
-<a id="ab2bb34b34843f1503c8c49f30149129c" name="ab2bb34b34843f1503c8c49f30149129c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2bb34b34843f1503c8c49f30149129c">&#9670;&#160;</a></span>DekiPlugin_GetImGuiContextSize()</h2>
+<a id="a83960f85456e997f939cd27ede843974" name="a83960f85456e997f939cd27ede843974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83960f85456e997f939cd27ede843974">&#9670;&#160;</a></span>DekiPluginGetImGuiContextSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> unsigned int DekiPlugin_GetImGuiContextSize </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> unsigned int DekiPluginGetImGuiContextSize </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -370,19 +367,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Report sizeof(ImGuiContext) as this package compiled it. </p>
-<p>The loader compares this against its own and refuses the package on a mismatch, rather than letting it corrupt the shared context. A package that does not export it is loaded unchecked - so export it if you touch ImGui at all. </p>
+<p>sizeof(ImGuiContext) as this package compiled it. </p>
+<p>The loader refuses the package when it differs from its own, rather than let it corrupt the shared context. A package without it loads unchecked, so export it if you touch ImGui at all. </p>
 
 </div>
 </div>
-<a id="a71930a0564703e81ef6b3133c6acfc44" name="a71930a0564703e81ef6b3133c6acfc44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71930a0564703e81ef6b3133c6acfc44">&#9670;&#160;</a></span>DekiPlugin_ClearRegistries()</h2>
+<a id="ae442d0b7be9272121f887ffe038a1e2b" name="ae442d0b7be9272121f887ffe038a1e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae442d0b7be9272121f887ffe038a1e2b">&#9670;&#160;</a></span>DekiPluginClearRegistries()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPlugin_ClearRegistries </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPluginClearRegistries </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -390,19 +387,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Drop everything this package registered into engine-side registries. </p>
-<p>Called before the package's DLL is unloaded for a hot reload. Anything holding a pointer into this DLL - factories, std::function callbacks, metadata - must go here, or it dangles the moment FreeLibrary runs. </p>
+<p>Removes everything this package registered in engine registries. </p>
+<p>Called before the DLL is unloaded for a hot reload: anything holding a pointer into the DLL (factories, std::function callbacks, metadata) must go here, or it dangles once FreeLibrary runs. </p>
 
 </div>
 </div>
-<a id="abe99232c7163d8a3af0c6df39e398ca3" name="abe99232c7163d8a3af0c6df39e398ca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe99232c7163d8a3af0c6df39e398ca3">&#9670;&#160;</a></span>DekiPlugin_OnPlayModeStart()</h2>
+<a id="a0db9b93dd06707268b23e044628006bf" name="a0db9b93dd06707268b23e044628006bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db9b93dd06707268b23e044628006bf">&#9670;&#160;</a></span>DekiPluginOnPlayModeStart()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPlugin_OnPlayModeStart </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPluginOnPlayModeStart </td>
           <td>(</td>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
           <td></td>
@@ -410,18 +407,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Play mode is starting, for the given <a class="el" href="class_deki_1_1_scene.html" title="Represents a scene containing objects and components.">Deki::Scene</a>*. </p>
+<p>Play mode is starting, with the given <a class="el" href="class_deki_1_1_scene.html" title="A scene: objects with components, and Deki&#39;s basic unit of content.">Deki::Scene</a>*. </p>
 
 </div>
 </div>
-<a id="ac0ca5daea136c79b8f0359238c65a5ce" name="ac0ca5daea136c79b8f0359238c65a5ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0ca5daea136c79b8f0359238c65a5ce">&#9670;&#160;</a></span>DekiPlugin_OnPlayModeStop()</h2>
+<a id="ac4072378f0bee1a431b7b94e6b21f9d1" name="ac4072378f0bee1a431b7b94e6b21f9d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4072378f0bee1a431b7b94e6b21f9d1">&#9670;&#160;</a></span>DekiPluginOnPlayModeStop()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPlugin_OnPlayModeStop </td>
+          <td class="memname"><a class="el" href="#a12872a670bbeacf5f0026431d68f06dc">DEKI_PLUGIN_API</a> void DekiPluginOnPlayModeStop </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

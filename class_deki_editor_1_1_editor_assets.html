@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -144,7 +152,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 </div><!--header-->
 <div class="contents">
 
-<p>Editor-only asset utilities for GPU resource management.  
+<p>Loads assets onto the GPU for the editor, cached by GUID: uint32_t texId = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">EditorAssets::Get()</a>-&gt;LoadTexture(guid, &amp;w, &amp;h); Deki2D::BitmapFont* font = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">EditorAssets::Get()</a>-&gt;GetBitmapFont(bakedGuid);.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/EditorAssets.h&gt;</code></p>
@@ -152,70 +160,63 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af0d760c17309b14de65fba7b2202009a" id="r_af0d760c17309b14de65fba7b2202009a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> = uint8_t* (*)(const char* path, int32_t&amp; outWidth, int32_t&amp; outHeight, bool&amp; outHasAlpha)</td></tr>
-<tr class="memdesc:af0d760c17309b14de65fba7b2202009a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a .dtex image file as RGBA pixel data. Caller must free() the returned buffer.  <br /></td></tr>
-<tr class="memitem:a312f76fefa47932f89e6dd3d59a70cb0" id="r_a312f76fefa47932f89e6dd3d59a70cb0"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a312f76fefa47932f89e6dd3d59a70cb0">FontFromDfontFn</a> = void* (*)(const char* dfontPath, uint8_t** outAtlasRGBA, int32_t&amp; outAtlasW, int32_t&amp; outAtlasH)</td></tr>
-<tr class="memdesc:a312f76fefa47932f89e6dd3d59a70cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data for GPU upload.  <br /></td></tr>
+<tr class="memdesc:af0d760c17309b14de65fba7b2202009a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a .dtex image file as RGBA pixels. The caller must free() the buffer.  <br /></td></tr>
+<tr class="memitem:ad98beb2e4325b1cf653ba96c9aa4caa4" id="r_ad98beb2e4325b1cf653ba96c9aa4caa4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a></td></tr>
+<tr class="memdesc:ad98beb2e4325b1cf653ba96c9aa4caa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.  <br /></td></tr>
 <tr class="memitem:ad98cac2255ca49c4b0e15efd7ffa3161" id="r_ad98cac2255ca49c4b0e15efd7ffa3161"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> = void (*)(void* font)</td></tr>
-<tr class="memdesc:ad98cac2255ca49c4b0e15efd7ffa3161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an opaque Deki2D::BitmapFont* returned by <a class="el" href="#a312f76fefa47932f89e6dd3d59a70cb0" title="Load a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data for GPU upload.">FontFromDfontFn</a>.  <br /></td></tr>
+<tr class="memdesc:ad98cac2255ca49c4b0e15efd7ffa3161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a font returned by <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4" title="Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.">FontFromDfontFn</a>.  <br /></td></tr>
 <tr class="memitem:a75d2851f8c87f150bc5efdf74face9c3" id="r_a75d2851f8c87f150bc5efdf74face9c3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> = std::function&lt;Deki2D::BitmapFont*(const std::string&amp;, int)&gt;</td></tr>
-<tr class="memdesc:a75d2851f8c87f150bc5efdf74face9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for font baking.  <br /></td></tr>
+<tr class="memdesc:a75d2851f8c87f150bc5efdf74face9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes a TTF asset (GUID) at a pixel size.  <br /></td></tr>
 <tr class="memitem:afcdca5ae8f296d89450a0c594a2cc862" id="r_afcdca5ae8f296d89450a0c594a2cc862"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a> = std::function&lt;uint32_t(const std::string&amp;, int, uint32_t*, uint32_t*)&gt;</td></tr>
-<tr class="memdesc:afcdca5ae8f296d89450a0c594a2cc862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for getting font atlas texture.  <br /></td></tr>
+<tr class="memdesc:afcdca5ae8f296d89450a0c594a2cc862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2eb0cb3f4d9dce4e8578ec47ac105ed5" id="r_a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a2eb0cb3f4d9dce4e8578ec47ac105ed5">LoadTexture</a> (const std::string &amp;guid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load texture by GUID and upload to GPU.  <br /></td></tr>
+<tr class="memdesc:a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL texture for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:a0f101fb9277f315d05eef80766545d46" id="r_a0f101fb9277f315d05eef80766545d46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f101fb9277f315d05eef80766545d46">InvalidateTexture</a> (const std::string &amp;guid)</td></tr>
-<tr class="memdesc:a0f101fb9277f315d05eef80766545d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate cached texture (forces reload on next access).  <br /></td></tr>
+<tr class="memdesc:a0f101fb9277f315d05eef80766545d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached texture so the next access reloads it.  <br /></td></tr>
 <tr class="memitem:aedfec9d573ad1cd41b5217a3fbf45013" id="r_aedfec9d573ad1cd41b5217a3fbf45013"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aedfec9d573ad1cd41b5217a3fbf45013">ClearTextureCache</a> ()</td></tr>
-<tr class="memdesc:aedfec9d573ad1cd41b5217a3fbf45013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all cached textures (frees GPU memory).  <br /></td></tr>
+<tr class="memdesc:aedfec9d573ad1cd41b5217a3fbf45013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every cached texture, freeing GPU memory.  <br /></td></tr>
 <tr class="memitem:a18c0b85fdfbed6d62e765b85e73c9122" id="r_a18c0b85fdfbed6d62e765b85e73c9122"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a18c0b85fdfbed6d62e765b85e73c9122">LoadFontAtlas</a> (const std::string &amp;bakedGuid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a18c0b85fdfbed6d62e765b85e73c9122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load font atlas by baked GUID and upload to GPU.  <br /></td></tr>
+<tr class="memdesc:a18c0b85fdfbed6d62e765b85e73c9122"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure.  <br /></td></tr>
 <tr class="memitem:aece108873afec7d71506197dee941e8b" id="r_aece108873afec7d71506197dee941e8b"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aece108873afec7d71506197dee941e8b">LoadFontAtlasFromPath</a> (const std::string &amp;dfontPath, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:aece108873afec7d71506197dee941e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load font atlas from filesystem path.  <br /></td></tr>
+<tr class="memdesc:aece108873afec7d71506197dee941e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture for the .dfont at a full path, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:abb7595eee8315f5f6aa65079681cacc2" id="r_abb7595eee8315f5f6aa65079681cacc2"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#abb7595eee8315f5f6aa65079681cacc2">GetBitmapFont</a> (const std::string &amp;bakedGuid)</td></tr>
-<tr class="memdesc:abb7595eee8315f5f6aa65079681cacc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BitmapFont by baked GUID (for glyph metrics).  <br /></td></tr>
+<tr class="memdesc:abb7595eee8315f5f6aa65079681cacc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached.  <br /></td></tr>
 <tr class="memitem:a25229958d433bfbd3f3882e00817a720" id="r_a25229958d433bfbd3f3882e00817a720"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a25229958d433bfbd3f3882e00817a720">InvalidateFontAtlas</a> (const std::string &amp;bakedGuid)</td></tr>
-<tr class="memdesc:a25229958d433bfbd3f3882e00817a720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate cached font (forces reload on next access).  <br /></td></tr>
+<tr class="memdesc:a25229958d433bfbd3f3882e00817a720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached font so the next access reloads it.  <br /></td></tr>
 <tr class="memitem:ae79e9dd0e6c1c4ba605e30840c25c047" id="r_ae79e9dd0e6c1c4ba605e30840c25c047"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae79e9dd0e6c1c4ba605e30840c25c047">ClearFontCache</a> ()</td></tr>
-<tr class="memdesc:ae79e9dd0e6c1c4ba605e30840c25c047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all cached fonts (frees GPU memory).  <br /></td></tr>
+<tr class="memdesc:ae79e9dd0e6c1c4ba605e30840c25c047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every cached font, freeing GPU memory.  <br /></td></tr>
 <tr class="memitem:af5533ead3b64f669917c8013d9234675" id="r_af5533ead3b64f669917c8013d9234675"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af5533ead3b64f669917c8013d9234675">SetFontBakingCallbacks</a> (<a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> bakeFont, <a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a> getAtlas)</td></tr>
-<tr class="memdesc:af5533ead3b64f669917c8013d9234675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callbacks for font baking (called by editor on startup).  <br /></td></tr>
+<tr class="memdesc:af5533ead3b64f669917c8013d9234675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the editor at startup.  <br /></td></tr>
 <tr class="memitem:a46d2783a124929cb1b88e06e41ee8e2f" id="r_a46d2783a124929cb1b88e06e41ee8e2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a46d2783a124929cb1b88e06e41ee8e2f">ClearFontBakingCallbacks</a> ()</td></tr>
-<tr class="memdesc:a46d2783a124929cb1b88e06e41ee8e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear font baking callbacks before package DLL unload.  <br /></td></tr>
+<tr class="memdesc:a46d2783a124929cb1b88e06e41ee8e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called BEFORE FreeLibrary on the package that set the callbacks: the std::function destructor runs the callable's manager function, which must still be mapped.  <br /></td></tr>
 <tr class="memitem:aecc7ef0d1af75aa914ae834071566f69" id="r_aecc7ef0d1af75aa914ae834071566f69"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#aecc7ef0d1af75aa914ae834071566f69">GetBitmapFontWithBaking</a> (const std::string &amp;sourceGuid, int fontSize)</td></tr>
-<tr class="memdesc:aecc7ef0d1af75aa914ae834071566f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BitmapFont by source GUID and size (triggers baking if needed).  <br /></td></tr>
+<tr class="memdesc:aecc7ef0d1af75aa914ae834071566f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found.  <br /></td></tr>
 <tr class="memitem:a0a4639d12e383e89e5eae02294ef455e" id="r_a0a4639d12e383e89e5eae02294ef455e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0a4639d12e383e89e5eae02294ef455e">LoadFontAtlasWithBaking</a> (const std::string &amp;sourceGuid, int fontSize, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a0a4639d12e383e89e5eae02294ef455e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load font atlas by source GUID and size (triggers baking if needed).  <br /></td></tr>
+<tr class="memdesc:a0a4639d12e383e89e5eae02294ef455e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture of a TTF asset at a pixel size, baking it if needed, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:af54310be3f20c4530402878f65ebd4d1" id="r_af54310be3f20c4530402878f65ebd4d1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af54310be3f20c4530402878f65ebd4d1">LoadSpriteSettings</a> (const std::string &amp;guid, int *outFrameWidth=nullptr, int *outFrameHeight=nullptr)</td></tr>
-<tr class="memdesc:af54310be3f20c4530402878f65ebd4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load sprite settings (frame dimensions) from .data file.  <br /></td></tr>
+<tr class="memdesc:af54310be3f20c4530402878f65ebd4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a spritesheet's frame size from the asset's .data file.  <br /></td></tr>
 <tr class="memitem:a27ddf9be9cac90ea8a79f35fa3e085c0" id="r_a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a27ddf9be9cac90ea8a79f35fa3e085c0">LoadFrameTexture</a> (const std::string &amp;frameGuid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load texture for a frame sprite (loads parent spritesheet texture).  <br /></td></tr>
+<tr class="memdesc:a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL texture of a frame's parent spritesheet, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:a8952340341b97c5a95edebcc1e0b2f09" id="r_a8952340341b97c5a95edebcc1e0b2f09"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09">GetFrameUVs</a> (const std::string &amp;frameGuid, float *outU0, float *outV0, float *outU1, float *outV1)</td></tr>
-<tr class="memdesc:a8952340341b97c5a95edebcc1e0b2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get UV coordinates for a frame sprite.  <br /></td></tr>
+<tr class="memdesc:a8952340341b97c5a95edebcc1e0b2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a31e3303cae2f79648f4437cbf86ef211" id="r_a31e3303cae2f79648f4437cbf86ef211"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31e3303cae2f79648f4437cbf86ef211">RegisterImageLoader</a> (<a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> fn)</td></tr>
-<tr class="memitem:a31bdd80455cd5a7b231bab27ce504864" id="r_a31bdd80455cd5a7b231bab27ce504864"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31bdd80455cd5a7b231bab27ce504864">RegisterFontFactory</a> (<a class="el" href="#a312f76fefa47932f89e6dd3d59a70cb0">FontFromDfontFn</a> factory, <a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> destroyer)</td></tr>
+<tr class="memitem:a31bdd80455cd5a7b231bab27ce504864" id="r_a31bdd80455cd5a7b231bab27ce504864"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31bdd80455cd5a7b231bab27ce504864">RegisterFontFactory</a> (<a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a> factory, <a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> destroyer)</td></tr>
 <tr class="memitem:ade9f5777d6f6ce6816d9ebc44e45cb27" id="r_ade9f5777d6f6ce6816d9ebc44e45cb27"><td class="memItemLeft">static <a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a>&#160;</td><td class="memItemRight"><a class="el" href="#ade9f5777d6f6ce6816d9ebc44e45cb27">GetImageLoader</a> ()</td></tr>
 <tr class="memitem:a2eb46ddba093eb16f5de23ef4ce2f245" id="r_a2eb46ddba093eb16f5de23ef4ce2f245"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a2eb46ddba093eb16f5de23ef4ce2f245">ClearPackageInjectedCallbacks</a> ()</td></tr>
-<tr class="memdesc:a2eb46ddba093eb16f5de23ef4ce2f245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null all package-injected function pointers.  <br /></td></tr>
+<tr class="memdesc:a2eb46ddba093eb16f5de23ef4ce2f245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears every function pointer packages registered.  <br /></td></tr>
 <tr class="memitem:a5739971995feeb2e20dd5dd97223c3c7" id="r_a5739971995feeb2e20dd5dd97223c3c7"><td class="memItemLeft">static EditorAssets *&#160;</td><td class="memItemRight"><a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">Get</a> ()</td></tr>
-<tr class="memdesc:a5739971995feeb2e20dd5dd97223c3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singleton instance.  <br /></td></tr>
 <tr class="memitem:a169a194e797c01cbc57ac6b75c0efb7e" id="r_a169a194e797c01cbc57ac6b75c0efb7e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a169a194e797c01cbc57ac6b75c0efb7e">Shutdown</a> ()</td></tr>
-<tr class="memdesc:a169a194e797c01cbc57ac6b75c0efb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown and cleanup all GPU resources.  <br /></td></tr>
+<tr class="memdesc:a169a194e797c01cbc57ac6b75c0efb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every GPU resource.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Editor-only asset utilities for GPU resource management. </p>
-<p>Provides Unity-like asset loading for editor use: uint32_t texId = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7" title="Get singleton instance.">EditorAssets::Get()</a>-&gt;LoadTexture(guid, &amp;w, &amp;h); Deki2D::BitmapFont* font = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7" title="Get singleton instance.">EditorAssets::Get()</a>-&gt;GetBitmapFont(bakedGuid);</p>
-<p>Features:</p><ul>
-<li>GPU texture caching by GUID</li>
-<li>Automatic texture upload to OpenGL</li>
-<li>Font atlas loading and caching</li>
-</ul>
-<p>Note: Uses AssetManager's GUID table for path resolution. The editor must populate the GUID table on project load. </p>
+<div class="textblock"><p>Loads assets onto the GPU for the editor, cached by GUID: uint32_t texId = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">EditorAssets::Get()</a>-&gt;LoadTexture(guid, &amp;w, &amp;h); Deki2D::BitmapFont* font = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">EditorAssets::Get()</a>-&gt;GetBitmapFont(bakedGuid);. </p>
+<p>Paths come from AssetManager's GUID table, which the editor must fill when a project loads. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="af0d760c17309b14de65fba7b2202009a" name="af0d760c17309b14de65fba7b2202009a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0d760c17309b14de65fba7b2202009a">&#9670;&#160;</a></span>ImageLoaderFn</h2>
@@ -229,24 +230,26 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load a .dtex image file as RGBA pixel data. Caller must free() the returned buffer. </p>
+<p>Loads a .dtex image file as RGBA pixels. The caller must free() the buffer. </p>
 
 </div>
 </div>
-<a id="a312f76fefa47932f89e6dd3d59a70cb0" name="a312f76fefa47932f89e6dd3d59a70cb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a312f76fefa47932f89e6dd3d59a70cb0">&#9670;&#160;</a></span>FontFromDfontFn</h2>
+<a id="ad98beb2e4325b1cf653ba96c9aa4caa4" name="ad98beb2e4325b1cf653ba96c9aa4caa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98beb2e4325b1cf653ba96c9aa4caa4">&#9670;&#160;</a></span>FontFromDfontFn</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a312f76fefa47932f89e6dd3d59a70cb0">DekiEditor::EditorAssets::FontFromDfontFn</a> = void* (*)(const char* dfontPath, uint8_t** outAtlasRGBA, int32_t&amp; outAtlasW, int32_t&amp; outAtlasH)</td>
+          <td class="memname">using <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">DekiEditor::EditorAssets::FontFromDfontFn</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Load a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data for GPU upload. </p>
-<p>The caller must free() outAtlasRGBA after uploading. The returned font is owned by the caller. </p>
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span>* (*)(<span class="keyword">const</span> <span class="keywordtype">char</span>* dfontPath, uint8_t** outAtlasRGBA, int32_t&amp; outAtlasW,</div>
+<div class="line">                                     int32_t&amp; outAtlasH)</div>
+</div><!-- fragment -->
+<p>Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload. </p>
+<p>The caller owns the font and must free() outAtlasRGBA after uploading. </p>
 
 </div>
 </div>
@@ -262,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroy an opaque Deki2D::BitmapFont* returned by <a class="el" href="#a312f76fefa47932f89e6dd3d59a70cb0" title="Load a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data for GPU upload.">FontFromDfontFn</a>. </p>
+<p>Destroys a font returned by <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4" title="Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.">FontFromDfontFn</a>. </p>
 
 </div>
 </div>
@@ -278,15 +281,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback for font baking. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceGuid</td><td>TTF asset GUID </td></tr>
-    <tr><td class="paramname">fontSize</td><td>Font size in pixels </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>BitmapFont pointer (owned by caller's cache), or nullptr on failure </dd></dl>
+<p>Bakes a TTF asset (GUID) at a pixel size. </p>
+<p>Returns the font, owned by the caller's cache, or nullptr on failure. </p>
 
 </div>
 </div>
@@ -302,17 +298,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback for getting font atlas texture. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceGuid</td><td>TTF asset GUID </td></tr>
-    <tr><td class="paramname">fontSize</td><td>Font size in pixels </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Output atlas width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Output atlas height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID, or 0 on failure </dd></dl>
+<p>The OpenGL atlas texture of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure. </p>
 
 </div>
 </div>
@@ -354,7 +340,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void DekiEditor::EditorAssets::RegisterFontFactory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a312f76fefa47932f89e6dd3d59a70cb0">FontFromDfontFn</a></td>          <td class="paramname"><span class="paramname"><em>factory</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a></td>          <td class="paramname"><span class="paramname"><em>factory</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -419,8 +405,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Null all package-injected function pointers. </p>
-<p>Must be called before a package DLL is unloaded - otherwise any subsequent LoadTexture/LoadFontAtlas would invoke code that no longer exists, crashing the editor. </p>
+<p>Clears every function pointer packages registered. </p>
+<p>Must be called before a package DLL unloads, or the next LoadTexture/LoadFontAtlas calls code that is gone and the editor crashes. </p>
 
 </div>
 </div>
@@ -447,8 +433,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get singleton instance. </p>
-
 </div>
 </div>
 <a id="a169a194e797c01cbc57ac6b75c0efb7e" name="a169a194e797c01cbc57ac6b75c0efb7e"></a>
@@ -474,7 +458,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Shutdown and cleanup all GPU resources. </p>
+<p>Frees every GPU resource. </p>
 
 </div>
 </div>
@@ -502,17 +486,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load texture by GUID and upload to GPU. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">guid</td><td>Asset GUID (looked up via AssetManager) </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Optional output for texture width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Optional output for texture height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID, or 0 on failure</dd></dl>
-<p>Textures are cached - subsequent calls with same GUID return cached texture. </p>
+<p>The OpenGL texture for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure. </p>
+<p>Width and height are written to the optional outputs. </p>
 
 </div>
 </div>
@@ -531,13 +506,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Invalidate cached texture (forces reload on next access). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">guid</td><td>Asset GUID </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Drops a cached texture so the next access reloads it. </p>
 
 </div>
 </div>
@@ -556,7 +525,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear all cached textures (frees GPU memory). </p>
+<p>Drops every cached texture, freeing GPU memory. </p>
 
 </div>
 </div>
@@ -584,17 +553,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load font atlas by baked GUID and upload to GPU. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bakedGuid</td><td>Deterministic GUID of the baked font (font.guid) </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Optional output for atlas width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Optional output for atlas height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID, or 0 on failure</dd></dl>
-<p>Uses AssetManager::LookupPath() to resolve the baked GUID to a .dfont path. </p>
+<p>The OpenGL atlas texture for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure. </p>
 
 </div>
 </div>
@@ -622,16 +581,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load font atlas from filesystem path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dfontPath</td><td>Full path to the .dfont file </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Optional output for atlas width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Optional output for atlas height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID, or 0 on failure </dd></dl>
+<p>The OpenGL atlas texture for the .dfont at a full path, or 0 on failure. </p>
 
 </div>
 </div>
@@ -650,14 +600,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get BitmapFont by baked GUID (for glyph metrics). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bakedGuid</td><td>Deterministic GUID of the baked font </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to BitmapFont, or nullptr if not cached </dd></dl>
+<p>The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached. </p>
 
 </div>
 </div>
@@ -676,13 +619,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Invalidate cached font (forces reload on next access). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bakedGuid</td><td>Baked font GUID </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Drops a cached font so the next access reloads it. </p>
 
 </div>
 </div>
@@ -701,7 +638,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear all cached fonts (frees GPU memory). </p>
+<p>Drops every cached font, freeing GPU memory. </p>
 
 </div>
 </div>
@@ -724,7 +661,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set callbacks for font baking (called by editor on startup). </p>
+<p>Called by the editor at startup. </p>
 
 </div>
 </div>
@@ -743,8 +680,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear font baking callbacks before package DLL unload. </p>
-<p>Must be called BEFORE FreeLibrary on the package that set the callbacks, so the std::function destructor can safely invoke the old callable's manager function while the DLL code is still mapped. </p>
+<p>Must be called BEFORE FreeLibrary on the package that set the callbacks: the std::function destructor runs the callable's manager function, which must still be mapped. </p>
 
 </div>
 </div>
@@ -767,15 +703,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get BitmapFont by source GUID and size (triggers baking if needed). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceGuid</td><td>TTF asset GUID </td></tr>
-    <tr><td class="paramname">fontSize</td><td>Font size in pixels </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>BitmapFont pointer, or nullptr if not found </dd></dl>
+<p>The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found. </p>
 
 </div>
 </div>
@@ -808,17 +736,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load font atlas by source GUID and size (triggers baking if needed). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceGuid</td><td>TTF asset GUID </td></tr>
-    <tr><td class="paramname">fontSize</td><td>Font size in pixels </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Optional output for atlas width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Optional output for atlas height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID, or 0 on failure </dd></dl>
+<p>The OpenGL atlas texture of a TTF asset at a pixel size, baking it if needed, or 0 on failure. </p>
 
 </div>
 </div>
@@ -846,17 +764,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load sprite settings (frame dimensions) from .data file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">guid</td><td>Asset GUID </td></tr>
-    <tr><td class="paramname">outFrameWidth</td><td>Optional output for frame width </td></tr>
-    <tr><td class="paramname">outFrameHeight</td><td>Optional output for frame height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if sprite settings exist and were loaded</dd></dl>
-<p>For spritesheets, this returns the individual frame dimensions. For regular textures without sprite settings, returns false. </p>
+<p>Reads a spritesheet's frame size from the asset's .data file. </p>
+<p>Returns false for a texture without sprite settings. </p>
 
 </div>
 </div>
@@ -884,17 +793,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load texture for a frame sprite (loads parent spritesheet texture). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frameGuid</td><td>Frame GUID (format: "parent:frame-N") </td></tr>
-    <tr><td class="paramname">outWidth</td><td>Optional output for parent texture width </td></tr>
-    <tr><td class="paramname">outHeight</td><td>Optional output for parent texture height </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL texture ID of parent spritesheet, or 0 on failure</dd></dl>
-<p>Frame sprites reference the same texture as their parent spritesheet. Use <a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09" title="Get UV coordinates for a frame sprite.">GetFrameUVs()</a> to get the UV coordinates for the specific frame. </p>
+<p>The OpenGL texture of a frame's parent spritesheet, or 0 on failure. </p>
+<p><span class="tt">frameGuid</span> has the form "parent:frame-N"; the size outputs get the parent texture's size. Use <a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09" title="The normalized UVs (0 to 1) of a frame (&quot;parent:frame-N&quot;) within its parent texture: (U0,...">GetFrameUVs()</a> for the frame's place in it. </p>
 
 </div>
 </div>
@@ -932,19 +832,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get UV coordinates for a frame sprite. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frameGuid</td><td>Frame GUID (format: "parent:frame-N") </td></tr>
-    <tr><td class="paramname">outU0</td><td>Output for top-left U coordinate </td></tr>
-    <tr><td class="paramname">outV0</td><td>Output for top-left V coordinate </td></tr>
-    <tr><td class="paramname">outU1</td><td>Output for bottom-right U coordinate </td></tr>
-    <tr><td class="paramname">outV1</td><td>Output for bottom-right V coordinate </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if frame info was found and UVs calculated</dd></dl>
-<p>UV coordinates are normalized (0.0 to 1.0) based on frame position within parent texture. </p>
+<p>The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right. </p>
+<p>Returns false when the frame is not found. </p>
 
 </div>
 </div>

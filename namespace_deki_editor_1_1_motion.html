@@ -1,0 +1,769 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: DekiEditor::Motion Namespace Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki_editor_1_1_motion.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">DekiEditor::Motion Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:RowHover" id="r_RowHover"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_motion_1_1_row_hover.html">RowHover</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">List rows that ImGui draws (tree nodes, selectables) with a fading highlight.  <a href="struct_deki_editor_1_1_motion_1_1_row_hover.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a593b36ffc1272ff8a2cfdbec377fec6d" id="r_a593b36ffc1272ff8a2cfdbec377fec6d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a593b36ffc1272ff8a2cfdbec377fec6d">ReduceMotion</a> ()</td></tr>
+<tr class="memdesc:a593b36ffc1272ff8a2cfdbec377fec6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce motion: every animation lands on its target the frame it is asked for.  <br /></td></tr>
+<tr class="memitem:a026c25dcaf47cd361c44e1dffee92548" id="r_a026c25dcaf47cd361c44e1dffee92548"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a026c25dcaf47cd361c44e1dffee92548">SetReduceMotion</a> (bool reduce)</td></tr>
+<tr class="memitem:a6063d705df5884bc98dbca39089c12b8" id="r_a6063d705df5884bc98dbca39089c12b8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6063d705df5884bc98dbca39089c12b8">To</a> (ImGuiID id, float target, float seconds)</td></tr>
+<tr class="memdesc:a6063d705df5884bc98dbca39089c12b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move <span class="tt">id</span>'s value linearly toward <span class="tt">target</span> so a full 0 -&gt; 1 sweep takes <span class="tt">seconds</span>, and return it.  <br /></td></tr>
+<tr class="memitem:a4a8a84a9788054dcdf544535d1a28f75" id="r_a4a8a84a9788054dcdf544535d1a28f75"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4a8a84a9788054dcdf544535d1a28f75">ToFrom</a> (ImGuiID id, float from, float target, float seconds)</td></tr>
+<tr class="memdesc:a4a8a84a9788054dcdf544535d1a28f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like To, but the first sighting starts at <span class="tt">from</span> instead of the target, for things that should animate IN when they first appear (a popup opening, a toast arriving).  <br /></td></tr>
+<tr class="memitem:a44814ba8ccd38e1d5b5079361a6a24ab" id="r_a44814ba8ccd38e1d5b5079361a6a24ab"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a44814ba8ccd38e1d5b5079361a6a24ab">Follow</a> (ImGuiID id, float target, float seconds, float epsilon=0.01f)</td></tr>
+<tr class="memdesc:a44814ba8ccd38e1d5b5079361a6a24ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chase an unbounded value (a scroll position, a zoom level): covers most of the remaining distance within <span class="tt">seconds</span>, fast at first and settling (exponential ease-out), and snaps when within <span class="tt">epsilon</span>.  <br /></td></tr>
+<tr class="memitem:a55d50419d4731de68970f844c7b00e6b" id="r_a55d50419d4731de68970f844c7b00e6b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a55d50419d4731de68970f844c7b00e6b">Set</a> (ImGuiID id, float value)</td></tr>
+<tr class="memdesc:a55d50419d4731de68970f844c7b00e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jump <span class="tt">id</span> to <span class="tt">value</span> now, with no animation (e.g.  <br /></td></tr>
+<tr class="memitem:a5f766f3cef51b0f9acffea28e82dffdd" id="r_a5f766f3cef51b0f9acffea28e82dffdd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5f766f3cef51b0f9acffea28e82dffdd">AnyMoving</a> ()</td></tr>
+<tr class="memdesc:a5f766f3cef51b0f9acffea28e82dffdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether anything animated this frame is still moving.  <br /></td></tr>
+<tr class="memitem:a2edd929e5d316892ea3227fa19da5d27" id="r_a2edd929e5d316892ea3227fa19da5d27"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a2edd929e5d316892ea3227fa19da5d27">EaseOut</a> (float t)</td></tr>
+<tr class="memdesc:a2edd929e5d316892ea3227fa19da5d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Curves: map linear progress t in [0, 1] to eased progress.  <br /></td></tr>
+<tr class="memitem:ade880485d6c4e57817b113dfb6074223" id="r_ade880485d6c4e57817b113dfb6074223"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ade880485d6c4e57817b113dfb6074223">Smooth</a> (float t)</td></tr>
+<tr class="memitem:ab7e8391770a59aadb0d31d0fb6152641" id="r_ab7e8391770a59aadb0d31d0fb6152641"><td class="memItemLeft">ImVec4&#160;</td><td class="memItemRight"><a class="el" href="#ab7e8391770a59aadb0d31d0fb6152641">Mix</a> (const ImVec4 &amp;a, const ImVec4 &amp;b, float t)</td></tr>
+<tr class="memdesc:ab7e8391770a59aadb0d31d0fb6152641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend two colours by t in [0, 1].  <br /></td></tr>
+<tr class="memitem:af045a47c9a5f1a7f5922e62874115ac4" id="r_af045a47c9a5f1a7f5922e62874115ac4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af045a47c9a5f1a7f5922e62874115ac4">Hover</a> (ImGuiID id, bool hovered)</td></tr>
+<tr class="memdesc:af045a47c9a5f1a7f5922e62874115ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hover highlight in one call: eased 0 -&gt; 1 while <span class="tt">hovered</span>, back to 0 after.  <br /></td></tr>
+<tr class="memitem:afd71c4005a282ea8a2e06fc250ccbc74" id="r_afd71c4005a282ea8a2e06fc250ccbc74"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afd71c4005a282ea8a2e06fc250ccbc74">Progress</a> (ImGuiID id, float fraction)</td></tr>
+<tr class="memdesc:afd71c4005a282ea8a2e06fc250ccbc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">A progress bar's fill: glides toward <span class="tt">fraction</span> as work reports it in steps, and drops back at once when it goes down (a new run starting at 0).  <br /></td></tr>
+<tr class="memitem:aecdd5a0347845cc5974bea66afcd39ac" id="r_aecdd5a0347845cc5974bea66afcd39ac"><td class="memItemLeft">ImU32&#160;</td><td class="memItemRight"><a class="el" href="#aecdd5a0347845cc5974bea66afcd39ac">WithAlpha</a> (ImU32 col, float t)</td></tr>
+<tr class="memdesc:aecdd5a0347845cc5974bea66afcd39ac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><span class="tt">col</span> with its alpha scaled by t in [0, 1].  <br /></td></tr>
+<tr class="memitem:ad6965d87c82aa72864babf40578bc7a4" id="r_ad6965d87c82aa72864babf40578bc7a4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad6965d87c82aa72864babf40578bc7a4">ItemHover</a> (bool hovered)</td></tr>
+<tr class="memdesc:ad6965d87c82aa72864babf40578bc7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a hand-drawn hover background, right after its item (usually an InvisibleButton): the fade for the item just submitted.  <br /></td></tr>
+<tr class="memitem:abdb1a21c9b9d968abe895c4166484674" id="r_abdb1a21c9b9d968abe895c4166484674"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abdb1a21c9b9d968abe895c4166484674">ItemPress</a> ()</td></tr>
+<tr class="memdesc:abdb1a21c9b9d968abe895c4166484674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Press feedback for the same kind of item, also right after it: eased 0 -&gt; 1 while it is held under the pointer, back to 0 after release.  <br /></td></tr>
+<tr class="memitem:aa987505861a186adb4e70d3714160dae" id="r_aa987505861a186adb4e70d3714160dae"><td class="memItemLeft">ImU32&#160;</td><td class="memItemRight"><a class="el" href="#aa987505861a186adb4e70d3714160dae">PressShade</a> (float t)</td></tr>
+<tr class="memitem:a331b973156c8eb035ddb32346a6ae04c" id="r_a331b973156c8eb035ddb32346a6ae04c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a331b973156c8eb035ddb32346a6ae04c">RowHighlight</a> (ImGuiID id, bool selected, bool hovered, float selectedAlpha, float hoveredAlpha, float *outSelected=nullptr)</td></tr>
+<tr class="memdesc:a331b973156c8eb035ddb32346a6ae04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A row's highlight strength: the stronger of its selection fade (scaled by <span class="tt">selectedAlpha</span>) and its hover fade (by <span class="tt">hoveredAlpha</span>).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a69c8babce523b880fc98232aa7c5472d" id="r_a69c8babce523b880fc98232aa7c5472d"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a69c8babce523b880fc98232aa7c5472d">kFast</a> = 0.10f</td></tr>
+<tr class="memitem:a1c71be68b970d1608213cc31ab80caa4" id="r_a1c71be68b970d1608213cc31ab80caa4"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a1c71be68b970d1608213cc31ab80caa4">kNormal</a> = 0.14f</td></tr>
+<tr class="memitem:af6c8be7d763b593e7eed7b923361094e" id="r_af6c8be7d763b593e7eed7b923361094e"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#af6c8be7d763b593e7eed7b923361094e">kSlow</a> = 0.20f</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a593b36ffc1272ff8a2cfdbec377fec6d" name="a593b36ffc1272ff8a2cfdbec377fec6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593b36ffc1272ff8a2cfdbec377fec6d">&#9670;&#160;</a></span>ReduceMotion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::Motion::ReduceMotion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reduce motion: every animation lands on its target the frame it is asked for. </p>
+<p>Stored in the editor settings ("editor.reduceMotion"), read once and cached, so the check costs nothing per widget. </p>
+
+</div>
+</div>
+<a id="a026c25dcaf47cd361c44e1dffee92548" name="a026c25dcaf47cd361c44e1dffee92548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026c25dcaf47cd361c44e1dffee92548">&#9670;&#160;</a></span>SetReduceMotion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::Motion::SetReduceMotion </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>reduce</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6063d705df5884bc98dbca39089c12b8" name="a6063d705df5884bc98dbca39089c12b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6063d705df5884bc98dbca39089c12b8">&#9670;&#160;</a></span>To()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::To </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>seconds</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move <span class="tt">id</span>'s value linearly toward <span class="tt">target</span> so a full 0 -&gt; 1 sweep takes <span class="tt">seconds</span>, and return it. </p>
+<p>Time-based (the same length at 60 and 144 Hz). A value seen for the first time starts AT its target: a panel that just opened shows its state instead of animating everything in it from zero. Pair with an easing curve below for the shape. </p>
+
+</div>
+</div>
+<a id="a4a8a84a9788054dcdf544535d1a28f75" name="a4a8a84a9788054dcdf544535d1a28f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8a84a9788054dcdf544535d1a28f75">&#9670;&#160;</a></span>ToFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::ToFrom </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>seconds</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Like To, but the first sighting starts at <span class="tt">from</span> instead of the target, for things that should animate IN when they first appear (a popup opening, a toast arriving). </p>
+
+</div>
+</div>
+<a id="a44814ba8ccd38e1d5b5079361a6a24ab" name="a44814ba8ccd38e1d5b5079361a6a24ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44814ba8ccd38e1d5b5079361a6a24ab">&#9670;&#160;</a></span>Follow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::Follow </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>seconds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>epsilon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.01f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Chase an unbounded value (a scroll position, a zoom level): covers most of the remaining distance within <span class="tt">seconds</span>, fast at first and settling (exponential ease-out), and snaps when within <span class="tt">epsilon</span>. </p>
+<p>First sighting snaps to the target. </p>
+
+</div>
+</div>
+<a id="a55d50419d4731de68970f844c7b00e6b" name="a55d50419d4731de68970f844c7b00e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d50419d4731de68970f844c7b00e6b">&#9670;&#160;</a></span>Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::Motion::Set </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Jump <span class="tt">id</span> to <span class="tt">value</span> now, with no animation (e.g. </p>
+<p>a scroll the user dragged directly, which the follower must not fight). </p>
+
+</div>
+</div>
+<a id="a5f766f3cef51b0f9acffea28e82dffdd" name="a5f766f3cef51b0f9acffea28e82dffdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f766f3cef51b0f9acffea28e82dffdd">&#9670;&#160;</a></span>AnyMoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::Motion::AnyMoving </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether anything animated this frame is still moving. </p>
+<p>Lets a caller keep redrawing while motion is in flight and rest once it settles. </p>
+
+</div>
+</div>
+<a id="a2edd929e5d316892ea3227fa19da5d27" name="a2edd929e5d316892ea3227fa19da5d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2edd929e5d316892ea3227fa19da5d27">&#9670;&#160;</a></span>EaseOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::EaseOut </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Curves: map linear progress t in [0, 1] to eased progress. </p>
+
+</div>
+</div>
+<a id="ade880485d6c4e57817b113dfb6074223" name="ade880485d6c4e57817b113dfb6074223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade880485d6c4e57817b113dfb6074223">&#9670;&#160;</a></span>Smooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::Smooth </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7e8391770a59aadb0d31d0fb6152641" name="ab7e8391770a59aadb0d31d0fb6152641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e8391770a59aadb0d31d0fb6152641">&#9670;&#160;</a></span>Mix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImVec4 DekiEditor::Motion::Mix </td>
+          <td>(</td>
+          <td class="paramtype">const ImVec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ImVec4 &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blend two colours by t in [0, 1]. </p>
+
+</div>
+</div>
+<a id="af045a47c9a5f1a7f5922e62874115ac4" name="af045a47c9a5f1a7f5922e62874115ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af045a47c9a5f1a7f5922e62874115ac4">&#9670;&#160;</a></span>Hover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::Hover </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hovered</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hover highlight in one call: eased 0 -&gt; 1 while <span class="tt">hovered</span>, back to 0 after. </p>
+
+</div>
+</div>
+<a id="afd71c4005a282ea8a2e06fc250ccbc74" name="afd71c4005a282ea8a2e06fc250ccbc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd71c4005a282ea8a2e06fc250ccbc74">&#9670;&#160;</a></span>Progress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::Progress </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fraction</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A progress bar's fill: glides toward <span class="tt">fraction</span> as work reports it in steps, and drops back at once when it goes down (a new run starting at 0). </p>
+
+</div>
+</div>
+<a id="aecdd5a0347845cc5974bea66afcd39ac" name="aecdd5a0347845cc5974bea66afcd39ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecdd5a0347845cc5974bea66afcd39ac">&#9670;&#160;</a></span>WithAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImU32 DekiEditor::Motion::WithAlpha </td>
+          <td>(</td>
+          <td class="paramtype">ImU32</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><span class="tt">col</span> with its alpha scaled by t in [0, 1]. </p>
+
+</div>
+</div>
+<a id="ad6965d87c82aa72864babf40578bc7a4" name="ad6965d87c82aa72864babf40578bc7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6965d87c82aa72864babf40578bc7a4">&#9670;&#160;</a></span>ItemHover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::ItemHover </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hovered</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For a hand-drawn hover background, right after its item (usually an InvisibleButton): the fade for the item just submitted. </p>
+<p>Draw the background while this is above 0, with its colour through WithAlpha, and it fades in and out instead of switching. </p>
+
+</div>
+</div>
+<a id="abdb1a21c9b9d968abe895c4166484674" name="abdb1a21c9b9d968abe895c4166484674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb1a21c9b9d968abe895c4166484674">&#9670;&#160;</a></span>ItemPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::ItemPress </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Press feedback for the same kind of item, also right after it: eased 0 -&gt; 1 while it is held under the pointer, back to 0 after release. </p>
+<p>Draw PressShade over the item's background at this value and it dips while pressed. (Native ImGui buttons get the same through PressMotion, with no call.) </p>
+
+</div>
+</div>
+<a id="aa987505861a186adb4e70d3714160dae" name="aa987505861a186adb4e70d3714160dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa987505861a186adb4e70d3714160dae">&#9670;&#160;</a></span>PressShade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImU32 DekiEditor::Motion::PressShade </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a331b973156c8eb035ddb32346a6ae04c" name="a331b973156c8eb035ddb32346a6ae04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331b973156c8eb035ddb32346a6ae04c">&#9670;&#160;</a></span>RowHighlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::RowHighlight </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiID</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>selected</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hovered</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>selectedAlpha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>hoveredAlpha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outSelected</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A row's highlight strength: the stronger of its selection fade (scaled by <span class="tt">selectedAlpha</span>) and its hover fade (by <span class="tt">hoveredAlpha</span>). </p>
+<p>Draw the row as selected while this is above 0, with the highlight colour at this alpha as both its normal and hovered background. <span class="tt">outSelected</span> receives the eased selection fade alone, for anything else that marks selection. </p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a69c8babce523b880fc98232aa7c5472d" name="a69c8babce523b880fc98232aa7c5472d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c8babce523b880fc98232aa7c5472d">&#9670;&#160;</a></span>kFast</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::kFast = 0.10f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c71be68b970d1608213cc31ab80caa4" name="a1c71be68b970d1608213cc31ab80caa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c71be68b970d1608213cc31ab80caa4">&#9670;&#160;</a></span>kNormal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::kNormal = 0.14f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6c8be7d763b593e7eed7b923361094e" name="af6c8be7d763b593e7eed7b923361094e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c8be7d763b593e7eed7b923361094e">&#9670;&#160;</a></span>kSlow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::Motion::kSlow = 0.20f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_deki_editor.html">DekiEditor</a></li><li class="navelem"><a href="namespace_deki_editor_1_1_motion.html">Motion</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

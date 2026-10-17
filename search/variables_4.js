@@ -2,7 +2,7 @@ var searchData=
 [
   ['editable_0',['editable',['../struct_package_entry.html#a9e3dc45ad21787a02e8cdeae4b1b4188',1,'PackageEntry']]],
   ['elementtype_1',['elementType',['../struct_deki_1_1_property_info.html#a73687fa382cae840c71978eba4c7587a',1,'Deki::PropertyInfo']]],
-  ['enabled_2',['enabled',['../struct_deki_1_1_package_config.html#ad815a687628ff21654cd311fc3a07757',1,'Deki::PackageConfig::enabled'],['../struct_deki_editor_1_1_chroma_key_settings.html#a2f65def48e39680cc8d19b2b06d9a102',1,'DekiEditor::ChromaKeySettings::enabled']]],
+  ['enabled_2',['enabled',['../struct_deki_1_1_package_config.html#ad815a687628ff21654cd311fc3a07757',1,'Deki::PackageConfig::enabled'],['../struct_deki_editor_1_1_dialog_button_spec.html#ada92b3b256ea9c177cf92790f08200cf',1,'DekiEditor::DialogButtonSpec::enabled'],['../struct_deki_editor_1_1_chroma_key_settings.html#a2f65def48e39680cc8d19b2b06d9a102',1,'DekiEditor::ChromaKeySettings::enabled']]],
   ['enableinternallogging_3',['enableInternalLogging',['../struct_deki_editor_1_1_build_options.html#a80770b8b5197cc535793c2735ede7400',1,'DekiEditor::BuildOptions']]],
   ['enablelogging_4',['enableLogging',['../struct_deki_editor_1_1_build_options.html#afc23d8b818c55f9fdb84911606ff7426',1,'DekiEditor::BuildOptions']]],
   ['endcombo_5',['endCombo',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a3fac8156114b8a2b131fc4a7d7e32294',1,'DekiEditor::EditorUI::WidgetBackend']]],
@@ -14,15 +14,14 @@ var searchData=
   ['enumints_11',['enumInts',['../struct_deki_1_1_property_info.html#a979518e11f5b9a0e9ed71c4ef9010da0',1,'Deki::PropertyInfo']]],
   ['enumsize_12',['enumSize',['../struct_deki_1_1_field_ref.html#ad1d09eac0e0071d8e155dac4ef304666',1,'Deki::FieldRef::enumSize'],['../struct_deki_1_1_property_info.html#a8750375f546e51a32886825e60500f4c',1,'Deki::PropertyInfo::enumSize']]],
   ['enumvalues_13',['enumValues',['../struct_deki_1_1_property_info.html#a2e99ad4dd143f6b74ff074545eacfcec',1,'Deki::PropertyInfo']]],
-  ['error_14',['error',['../struct_deki_editor_1_1_download_progress.html#a5522df7f837849e1e62c6b4d28a72d63',1,'DekiEditor::DownloadProgress::error'],['../struct_deki_editor_1_1_build_progress.html#a2fd24f73bc7b8ccca2195f182ddcb341',1,'DekiEditor::BuildProgress::error']]],
+  ['error_14',['error',['../struct_deki_editor_1_1_download_progress.html#a5522df7f837849e1e62c6b4d28a72d63',1,'DekiEditor::DownloadProgress::error'],['../struct_deki_editor_1_1_platform_sync_result.html#a7fb044fd2c2d9bc6ee4800b541a973bc',1,'DekiEditor::PlatformSyncResult::error'],['../struct_deki_editor_1_1_build_progress.html#a2fd24f73bc7b8ccca2195f182ddcb341',1,'DekiEditor::BuildProgress::error']]],
   ['errormessage_15',['errorMessage',['../struct_deki_editor_1_1_import_result.html#ae76ddd1788988abe4fead13565f637db',1,'DekiEditor::ImportResult']]],
   ['excludedstems_16',['excludedStems',['../struct_deki_editor_1_1_strip_plan.html#a89442068d404958b547ef40ac9acdffc',1,'DekiEditor::StripPlan']]],
   ['experimental_17',['experimental',['../struct_package_entry.html#a9f1b57f55723fcfabd8d4de2b332b5e7',1,'PackageEntry']]],
-  ['export_5ffilename_18',['EXPORT_FILENAME',['../namespace_deki_1_1_project_settings.html#ae0a9489872d1d6fee5221152f6cb59d7',1,'Deki::ProjectSettings']]],
-  ['extension_19',['extension',['../struct_deki_editor_1_1_asset_cache_context.html#a1b93f106f3eff9a237c6b743acae55fc',1,'DekiEditor::AssetCacheContext']]],
-  ['extensions_20',['extensions',['../struct_deki_editor_1_1_asset_type_handler.html#a3ce6e0bfd38a57f65699d3d567583609',1,'DekiEditor::AssetTypeHandler']]],
-  ['external_21',['External',['../class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee',1,'Deki::Memory']]],
-  ['externalallocated_22',['externalAllocated',['../struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f',1,'Deki::MemoryStats']]],
-  ['externalmemorysize_23',['externalMemorySize',['../struct_deki_editor_1_1_platform_config.html#a7d4ba9c1ecf48d02584781fd4569dd46',1,'DekiEditor::PlatformConfig']]],
-  ['extractedname_24',['extractedName',['../struct_deki_editor_1_1_sub_component_def.html#a3701cc1d2a9b3967c056ded8baad88db',1,'DekiEditor::SubComponentDef::extractedName'],['../struct_deki_editor_1_1_component_def.html#a8540694e298ade691f224ae9cbac27ac',1,'DekiEditor::ComponentDef::extractedName']]]
+  ['extension_18',['extension',['../struct_deki_editor_1_1_asset_cache_context.html#a1b93f106f3eff9a237c6b743acae55fc',1,'DekiEditor::AssetCacheContext::extension'],['../struct_deki_editor_1_1_asset_export_context.html#a8a106e9168343bb3922a7278aeca72f8',1,'DekiEditor::AssetExportContext::extension']]],
+  ['extensions_19',['extensions',['../struct_deki_editor_1_1_asset_type_handler.html#a3ce6e0bfd38a57f65699d3d567583609',1,'DekiEditor::AssetTypeHandler']]],
+  ['external_20',['External',['../class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee',1,'Deki::Memory']]],
+  ['externalallocated_21',['externalAllocated',['../struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f',1,'Deki::MemoryStats']]],
+  ['externalmemorysize_22',['externalMemorySize',['../struct_deki_editor_1_1_platform_config.html#a7d4ba9c1ecf48d02584781fd4569dd46',1,'DekiEditor::PlatformConfig']]],
+  ['extractedname_23',['extractedName',['../struct_deki_editor_1_1_sub_component_def.html#a3701cc1d2a9b3967c056ded8baad88db',1,'DekiEditor::SubComponentDef::extractedName'],['../struct_deki_editor_1_1_component_def.html#a8540694e298ade691f224ae9cbac27ac',1,'DekiEditor::ComponentDef::extractedName']]]
 ];

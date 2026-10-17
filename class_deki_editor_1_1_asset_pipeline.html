@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -140,12 +148,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_deki_editor_1_1_asset_pipeline-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">DekiEditor::AssetPipeline Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Asset pipeline service - handles GUID creation, caching, and asset discovery.  
+<p>The asset import pipeline, like Unity's: finds assets, gives them GUIDs and compiles them into the cache.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/AssetPipeline.h&gt;</code></p>
@@ -155,137 +164,142 @@ Public Types</h2></td></tr>
 <tr class="memitem:a163d0a7bb5c58db5957798adc3f58208" id="r_a163d0a7bb5c58db5957798adc3f58208"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a163d0a7bb5c58db5957798adc3f58208">SyncHandlerPolicy</a> { <a class="el" href="#a163d0a7bb5c58db5957798adc3f58208af18589c1cf94d0eb6df46e580221b70f">OnSourceChange</a>
 , <a class="el" href="#a163d0a7bb5c58db5957798adc3f58208a68eec46437c384d8dad18d5464ebc35c">Always</a>
  }</td></tr>
-<tr class="memdesc:a163d0a7bb5c58db5957798adc3f58208"><td class="mdescLeft">&#160;</td><td class="mdescRight">When should a registered sync handler fire on ProcessAsset?  <a href="#a163d0a7bb5c58db5957798adc3f58208">More...</a><br /></td></tr>
-<tr class="memitem:a37b5292450de9fcdf933c6264fcafb86" id="r_a37b5292450de9fcdf933c6264fcafb86"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a37b5292450de9fcdf933c6264fcafb86">AssetSyncHandler</a></td></tr>
-<tr class="memdesc:a37b5292450de9fcdf933c6264fcafb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset sync handler callback type Called during ProcessAsset for registered extensions.  <br /></td></tr>
-<tr class="memitem:a7f1a72e058d143f602ad6ef8bf698882" id="r_a7f1a72e058d143f602ad6ef8bf698882"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a7f1a72e058d143f602ad6ef8bf698882">CacheVariantProvider</a></td></tr>
-<tr class="memdesc:a7f1a72e058d143f602ad6ef8bf698882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache-variant provider callback type.  <br /></td></tr>
+<tr class="memdesc:a163d0a7bb5c58db5957798adc3f58208"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a sync handler runs during ProcessAsset.  <a href="#a163d0a7bb5c58db5957798adc3f58208">More...</a><br /></td></tr>
+<tr class="memitem:aa07d747c03104abae6a1340fd66a0210" id="r_aa07d747c03104abae6a1340fd66a0210"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aa07d747c03104abae6a1340fd66a0210">AssetSyncHandler</a></td></tr>
+<tr class="memdesc:aa07d747c03104abae6a1340fd66a0210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by ProcessAsset for a registered extension, with the asset's absolute path, its GUID and the absolute project root.  <br /></td></tr>
+<tr class="memitem:a0610ac4bf2c3c8bce1dcef560076f9a7" id="r_a0610ac4bf2c3c8bce1dcef560076f9a7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a0610ac4bf2c3c8bce1dcef560076f9a7">CacheVariantProvider</a></td></tr>
+<tr class="memdesc:a0610ac4bf2c3c8bce1dcef560076f9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the derived cache files of a source asset.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af62632bfe0938e96623e72be6de3da27" id="r_af62632bfe0938e96623e72be6de3da27"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> ()</td></tr>
 <tr class="memitem:a8d40d98931313225eedab051fad69161" id="r_a8d40d98931313225eedab051fad69161"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8d40d98931313225eedab051fad69161">~AssetPipeline</a> ()</td></tr>
-<tr class="memitem:a6b9ce8a8e9c63edfba7d97ffb9692730" id="r_a6b9ce8a8e9c63edfba7d97ffb9692730"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b9ce8a8e9c63edfba7d97ffb9692730">RegisterSyncHandler</a> (const std::string &amp;extension, <a class="el" href="#a37b5292450de9fcdf933c6264fcafb86">AssetSyncHandler</a> handler, <a class="el" href="#a163d0a7bb5c58db5957798adc3f58208">SyncHandlerPolicy</a> policy=<a class="el" href="#a163d0a7bb5c58db5957798adc3f58208af18589c1cf94d0eb6df46e580221b70f">SyncHandlerPolicy::OnSourceChange</a>)</td></tr>
-<tr class="memdesc:a6b9ce8a8e9c63edfba7d97ffb9692730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a sync handler for a file extension Handlers are called after an asset is processed during <a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2" title="Import all assets (called on project load).">ImportAllAssets()</a> or a watcher-driven <a class="el" href="#a27926695f60af12fd3ac2a1b6c587528" title="Drain pending file-watcher events and reprocess affected assets.">Tick()</a>, subject to the supplied policy.  <br /></td></tr>
+<tr class="memitem:a6b9ce8a8e9c63edfba7d97ffb9692730" id="r_a6b9ce8a8e9c63edfba7d97ffb9692730"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b9ce8a8e9c63edfba7d97ffb9692730">RegisterSyncHandler</a> (const std::string &amp;extension, <a class="el" href="#aa07d747c03104abae6a1340fd66a0210">AssetSyncHandler</a> handler, <a class="el" href="#a163d0a7bb5c58db5957798adc3f58208">SyncHandlerPolicy</a> policy=<a class="el" href="#a163d0a7bb5c58db5957798adc3f58208af18589c1cf94d0eb6df46e580221b70f">SyncHandlerPolicy::OnSourceChange</a>)</td></tr>
+<tr class="memdesc:a6b9ce8a8e9c63edfba7d97ffb9692730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a sync handler for an extension (with dot, e.g.  <br /></td></tr>
 <tr class="memitem:a3d24f13761f8874a814474753e159674" id="r_a3d24f13761f8874a814474753e159674"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3d24f13761f8874a814474753e159674">RegisterCacheHandler</a> (const std::string &amp;extension, <a class="el" href="namespace_deki_editor.html#acfcbbcee26213394d590a174db83fbb3">AssetCacheHandler</a> handler)</td></tr>
-<tr class="memdesc:a3d24f13761f8874a814474753e159674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a cache handler for a file extension.  <br /></td></tr>
+<tr class="memdesc:a3d24f13761f8874a814474753e159674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the cache handler for an extension (with dot, e.g.  <br /></td></tr>
+<tr class="memitem:afd5734ec7c058997598cfdc13aba9195" id="r_afd5734ec7c058997598cfdc13aba9195"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afd5734ec7c058997598cfdc13aba9195">RegisterExportEncoder</a> (const std::string &amp;extension, <a class="el" href="namespace_deki_editor.html#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a> encoder)</td></tr>
+<tr class="memdesc:afd5734ec7c058997598cfdc13aba9195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the encoder that writes this extension's assets for a target.  <br /></td></tr>
+<tr class="memitem:ab4aead5ad4d18931ebe24614e816a9e9" id="r_ab4aead5ad4d18931ebe24614e816a9e9"><td class="memItemLeft">const <a class="el" href="namespace_deki_editor.html#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab4aead5ad4d18931ebe24614e816a9e9">FindExportEncoder</a> (const std::string &amp;extension) const</td></tr>
+<tr class="memdesc:ab4aead5ad4d18931ebe24614e816a9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The encoder for an extension (lowercase, with dot), or null.  <br /></td></tr>
+<tr class="memitem:a5a6af76e2f1a97aee9d47c30f3fca8e1" id="r_a5a6af76e2f1a97aee9d47c30f3fca8e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5a6af76e2f1a97aee9d47c30f3fca8e1">SetEditorTarget</a> (const <a class="el" href="struct_deki_editor_1_1_asset_export_target.html">AssetExportTarget</a> &amp;target)</td></tr>
+<tr class="memdesc:a5a6af76e2f1a97aee9d47c30f3fca8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the target the editor's own cache is stored for: the project's active platform, set when a project opens and when the active platform changes.  <br /></td></tr>
+<tr class="memitem:a5b735b30bfb35d982255c46a35c6bef7" id="r_a5b735b30bfb35d982255c46a35c6bef7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5b735b30bfb35d982255c46a35c6bef7">IsRunning</a> () const</td></tr>
+<tr class="memitem:ab4b49482b2aa45262fad15377e0a2336" id="r_ab4b49482b2aa45262fad15377e0a2336"><td class="memItemLeft">const <a class="el" href="struct_deki_editor_1_1_asset_export_target.html">AssetExportTarget</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab4b49482b2aa45262fad15377e0a2336">GetEditorTarget</a> () const</td></tr>
 <tr class="memitem:a023653241eadf93ec7e9777c3156ea58" id="r_a023653241eadf93ec7e9777c3156ea58"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a023653241eadf93ec7e9777c3156ea58">SetDefaultCacheHandler</a> (<a class="el" href="namespace_deki_editor.html#acfcbbcee26213394d590a174db83fbb3">AssetCacheHandler</a> handler)</td></tr>
-<tr class="memdesc:a023653241eadf93ec7e9777c3156ea58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default cache handler for extensions without a specific handler.  <br /></td></tr>
-<tr class="memitem:af56f2c5b3479889bb1b5a2a05714b586" id="r_af56f2c5b3479889bb1b5a2a05714b586"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af56f2c5b3479889bb1b5a2a05714b586">RegisterCacheVariantProvider</a> (const std::string &amp;extension, <a class="el" href="#a7f1a72e058d143f602ad6ef8bf698882">CacheVariantProvider</a> provider)</td></tr>
-<tr class="memdesc:af56f2c5b3479889bb1b5a2a05714b586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a cache-variant provider for a file extension.  <br /></td></tr>
+<tr class="memdesc:a023653241eadf93ec7e9777c3156ea58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handler used for extensions that have none registered.  <br /></td></tr>
+<tr class="memitem:af56f2c5b3479889bb1b5a2a05714b586" id="r_af56f2c5b3479889bb1b5a2a05714b586"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af56f2c5b3479889bb1b5a2a05714b586">RegisterCacheVariantProvider</a> (const std::string &amp;extension, <a class="el" href="#a0610ac4bf2c3c8bce1dcef560076f9a7">CacheVariantProvider</a> provider)</td></tr>
+<tr class="memdesc:af56f2c5b3479889bb1b5a2a05714b586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a cache-variant provider for an extension.  <br /></td></tr>
 <tr class="memitem:a4429db6a530e8b350796ed83069de935" id="r_a4429db6a530e8b350796ed83069de935"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a4429db6a530e8b350796ed83069de935">MakeProjectRelative</a> (const std::string &amp;absolutePath) const</td></tr>
-<tr class="memdesc:a4429db6a530e8b350796ed83069de935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an absolute path to a project-relative path.  <br /></td></tr>
+<tr class="memdesc:a4429db6a530e8b350796ed83069de935"><td class="mdescLeft">&#160;</td><td class="mdescRight">An absolute path made project-relative, with forward slashes.  <br /></td></tr>
 <tr class="memitem:a8f17f41f1966e960b74cb840e705128c" id="r_a8f17f41f1966e960b74cb840e705128c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8f17f41f1966e960b74cb840e705128c">Start</a> (const std::string &amp;assetsPath, const std::string &amp;projectPath)</td></tr>
-<tr class="memdesc:a8f17f41f1966e960b74cb840e705128c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the pipeline.  <br /></td></tr>
+<tr class="memdesc:a8f17f41f1966e960b74cb840e705128c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the pipeline on the absolute assets folder and project root.  <br /></td></tr>
 <tr class="memitem:a33a0ad631d60da8258290e526c9c579a" id="r_a33a0ad631d60da8258290e526c9c579a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a33a0ad631d60da8258290e526c9c579a">Stop</a> ()</td></tr>
-<tr class="memdesc:a33a0ad631d60da8258290e526c9c579a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the pipeline.  <br /></td></tr>
 <tr class="memitem:a5b6eb467a6c3ef809de2340f9a3de3d2" id="r_a5b6eb467a6c3ef809de2340f9a3de3d2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2">ImportAllAssets</a> ()</td></tr>
-<tr class="memdesc:a5b6eb467a6c3ef809de2340f9a3de3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import all assets (called on project load).  <br /></td></tr>
+<tr class="memdesc:a5b6eb467a6c3ef809de2340f9a3de3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports every asset. Called when a project loads.  <br /></td></tr>
 <tr class="memitem:a27926695f60af12fd3ac2a1b6c587528" id="r_a27926695f60af12fd3ac2a1b6c587528"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27926695f60af12fd3ac2a1b6c587528">Tick</a> ()</td></tr>
-<tr class="memdesc:a27926695f60af12fd3ac2a1b6c587528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drain pending file-watcher events and reprocess affected assets.  <br /></td></tr>
+<tr class="memdesc:a27926695f60af12fd3ac2a1b6c587528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes pending file-watcher events and reprocesses the assets they name.  <br /></td></tr>
 <tr class="memitem:a5c3151b74c44681d1cf0d40d319f1a3b" id="r_a5c3151b74c44681d1cf0d40d319f1a3b"><td class="memItemLeft">const <a class="el" href="struct_deki_editor_1_1_asset_info.html">AssetInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5c3151b74c44681d1cf0d40d319f1a3b">GetAssetInfo</a> (const std::string &amp;relativePath) const</td></tr>
-<tr class="memdesc:a5c3151b74c44681d1cf0d40d319f1a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get asset info by project-relative path.  <br /></td></tr>
+<tr class="memdesc:a5c3151b74c44681d1cf0d40d319f1a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset info by project-relative path, e.g. "assets/textures/player.png".  <br /></td></tr>
 <tr class="memitem:a76aa4d253a8b3c4a98a4f929f547dcb1" id="r_a76aa4d253a8b3c4a98a4f929f547dcb1"><td class="memItemLeft">const <a class="el" href="struct_deki_editor_1_1_asset_info.html">AssetInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a76aa4d253a8b3c4a98a4f929f547dcb1">GetAssetInfoByGuid</a> (const std::string &amp;guid) const</td></tr>
-<tr class="memdesc:a76aa4d253a8b3c4a98a4f929f547dcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get asset info by GUID.  <br /></td></tr>
+<tr class="memitem:a9b08405d603c7da9c4ab6344bb343ccb" id="r_a9b08405d603c7da9c4ab6344bb343ccb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9b08405d603c7da9c4ab6344bb343ccb">IsBdfFont</a> (const std::string &amp;sourceGuid) const</td></tr>
+<tr class="memdesc:a9b08405d603c7da9c4ab6344bb343ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the font asset with this GUID is a BDF font, which has one baked form whatever the text's size (see BakedFontGuid).  <br /></td></tr>
 <tr class="memitem:a43f086e78ccc90de58e07994be50f7a3" id="r_a43f086e78ccc90de58e07994be50f7a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a43f086e78ccc90de58e07994be50f7a3">RefreshAsset</a> (const std::string &amp;relativePath)</td></tr>
-<tr class="memdesc:a43f086e78ccc90de58e07994be50f7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh a specific asset (reimport and regenerate cache).  <br /></td></tr>
+<tr class="memdesc:a43f086e78ccc90de58e07994be50f7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reimports one asset and rebuilds its cache.  <br /></td></tr>
+<tr class="memitem:acdd9b7c72a315dc337241d9e1356c9cb" id="r_acdd9b7c72a315dc337241d9e1356c9cb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acdd9b7c72a315dc337241d9e1356c9cb">RecompileStaleScenes</a> ()</td></tr>
+<tr class="memdesc:acdd9b7c72a315dc337241d9e1356c9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recompiles every scene whose cache does not match the component types registered now (see MakeCacheStamp), or that has none: one that could not compile before its packages were built or loaded, or compiled before a component gained or lost a property.  <br /></td></tr>
 <tr class="memitem:a89a527d425a513193c373e3f56ceab3d" id="r_a89a527d425a513193c373e3f56ceab3d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a89a527d425a513193c373e3f56ceab3d">RemoveAsset</a> (const std::string &amp;relativePath)</td></tr>
-<tr class="memdesc:a89a527d425a513193c373e3f56ceab3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an asset from the pipeline index and <a class="el" href="class_deki_editor_1_1_guid_cache.html" title="Cache for mapping asset paths to GUIDs using .data sidecar files.">GuidCache</a>.  <br /></td></tr>
+<tr class="memdesc:a89a527d425a513193c373e3f56ceab3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an asset from the index and the <a class="el" href="class_deki_editor_1_1_guid_cache.html" title="Maps asset paths to GUIDs, read from the .data sidecar files and cached in a JSON file.">GuidCache</a>.  <br /></td></tr>
 <tr class="memitem:a318cc4f4b6664913c39de11aedacbdbf" id="r_a318cc4f4b6664913c39de11aedacbdbf"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a318cc4f4b6664913c39de11aedacbdbf">GetAbsolutePath</a> (const std::string &amp;relativePath) const</td></tr>
-<tr class="memdesc:a318cc4f4b6664913c39de11aedacbdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get absolute path from project-relative path.  <br /></td></tr>
 <tr class="memitem:ac318c28ae8ed2c43ba947b3ee642d9f8" id="r_ac318c28ae8ed2c43ba947b3ee642d9f8"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac318c28ae8ed2c43ba947b3ee642d9f8">GetProjectPath</a> () const</td></tr>
-<tr class="memdesc:ac318c28ae8ed2c43ba947b3ee642d9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get project path.  <br /></td></tr>
 <tr class="memitem:a15dd33f8ee233f7c290b1c9ff2b7a206" id="r_a15dd33f8ee233f7c290b1c9ff2b7a206"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a15dd33f8ee233f7c290b1c9ff2b7a206">GetAssetsPath</a> () const</td></tr>
 <tr class="memitem:a39a640b5d71df760c9ec95207b066353" id="r_a39a640b5d71df760c9ec95207b066353"><td class="memItemLeft">const std::unordered_map&lt; std::string, <a class="el" href="struct_deki_editor_1_1_asset_info.html">AssetInfo</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a39a640b5d71df760c9ec95207b066353">GetAllAssets</a> () const</td></tr>
-<tr class="memdesc:a39a640b5d71df760c9ec95207b066353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all discovered assets.  <br /></td></tr>
+<tr class="memdesc:a39a640b5d71df760c9ec95207b066353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every discovered asset, keyed by project-relative path.  <br /></td></tr>
 <tr class="memitem:aafcc4da25683ad536fcf264ad7bd98f3" id="r_aafcc4da25683ad536fcf264ad7bd98f3"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aafcc4da25683ad536fcf264ad7bd98f3">GetOrCreateAssetGuid</a> (const std::string &amp;relativePath)</td></tr>
-<tr class="memdesc:aafcc4da25683ad536fcf264ad7bd98f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get or create GUID for an asset (creates .data sidecar file).  <br /></td></tr>
+<tr class="memdesc:aafcc4da25683ad536fcf264ad7bd98f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The asset's GUID, creating its .data sidecar if needed.  <br /></td></tr>
 <tr class="memitem:a20706504c0147f72cd6fd8f035f1e6ae" id="r_a20706504c0147f72cd6fd8f035f1e6ae"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a20706504c0147f72cd6fd8f035f1e6ae">CleanCache</a> ()</td></tr>
-<tr class="memdesc:a20706504c0147f72cd6fd8f035f1e6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean cache - remove orphaned cache files.  <br /></td></tr>
+<tr class="memdesc:a20706504c0147f72cd6fd8f035f1e6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes orphaned cache files. Returns how many were removed.  <br /></td></tr>
 <tr class="memitem:ad68e241ef6c6cdfc304a80ea94b5f271" id="r_ad68e241ef6c6cdfc304a80ea94b5f271"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad68e241ef6c6cdfc304a80ea94b5f271">UpdateAssetTable</a> ()</td></tr>
-<tr class="memdesc:ad68e241ef6c6cdfc304a80ea94b5f271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the persistent asset lookup table (cache/asset_table.bin).  <br /></td></tr>
+<tr class="memdesc:ad68e241ef6c6cdfc304a80ea94b5f271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewrites cache/asset_table.bin, the one table that resolves assets for play mode and ExportToStorage.  <br /></td></tr>
 <tr class="memitem:a394adaae52f3bf807e67b35212d34a2a" id="r_a394adaae52f3bf807e67b35212d34a2a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a394adaae52f3bf807e67b35212d34a2a">ValidateCache</a> ()</td></tr>
-<tr class="memdesc:a394adaae52f3bf807e67b35212d34a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate cache integrity and remove orphaned files.  <br /></td></tr>
+<tr class="memdesc:a394adaae52f3bf807e67b35212d34a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes cache files that match no known asset. Called on project load.  <br /></td></tr>
 <tr class="memitem:a9e84ae1b9aab2cb701bb67a153ca194a" id="r_a9e84ae1b9aab2cb701bb67a153ca194a"><td class="memItemLeft">const std::vector&lt; <a class="el" href="struct_deki_editor_1_1_sub_asset_info.html">SubAssetInfo</a> &gt; *&#160;</td><td class="memItemRight"><a class="el" href="#a9e84ae1b9aab2cb701bb67a153ca194a">GetSubAssets</a> (const std::string &amp;parentGuid) const</td></tr>
-<tr class="memdesc:a9e84ae1b9aab2cb701bb67a153ca194a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all sub-assets for a parent asset.  <br /></td></tr>
+<tr class="memdesc:a9e84ae1b9aab2cb701bb67a153ca194a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sub-assets of a parent asset, or nullptr when it has none.  <br /></td></tr>
 <tr class="memitem:a871ed5262974a8251915f2bd72eae866" id="r_a871ed5262974a8251915f2bd72eae866"><td class="memItemLeft">const <a class="el" href="struct_deki_editor_1_1_sub_asset_info.html">SubAssetInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a871ed5262974a8251915f2bd72eae866">GetSubAsset</a> (const std::string &amp;guid) const</td></tr>
-<tr class="memdesc:a871ed5262974a8251915f2bd72eae866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sub-asset info by GUID.  <br /></td></tr>
+<tr class="memdesc:a871ed5262974a8251915f2bd72eae866"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sub-asset with this GUID, or nullptr.  <br /></td></tr>
 <tr class="memitem:ae95c8fbf482cb521ebc97b039f7520fa" id="r_ae95c8fbf482cb521ebc97b039f7520fa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae95c8fbf482cb521ebc97b039f7520fa">RegisterSubAssets</a> (const std::string &amp;parentGuid, const std::vector&lt; <a class="el" href="struct_deki_editor_1_1_sub_asset_info.html">SubAssetInfo</a> &gt; &amp;subAssets)</td></tr>
-<tr class="memdesc:ae95c8fbf482cb521ebc97b039f7520fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register sub-assets for a parent asset (generic for all asset types).  <br /></td></tr>
+<tr class="memdesc:ae95c8fbf482cb521ebc97b039f7520fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sub-assets of a parent asset, for any asset type.  <br /></td></tr>
 <tr class="memitem:a0083678f94d4adfb484f1d9347be4c03" id="r_a0083678f94d4adfb484f1d9347be4c03"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0083678f94d4adfb484f1d9347be4c03">CompileSceneFile</a> (const std::string &amp;scenePath, const std::string &amp;binaryPath)</td></tr>
 <tr class="memitem:a4b75f9f02af44e31a0f302e4bcb8fe0c" id="r_a4b75f9f02af44e31a0f302e4bcb8fe0c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4b75f9f02af44e31a0f302e4bcb8fe0c">CompileAssetFile</a> (const std::string &amp;assetPath, const std::string &amp;cachePath)</td></tr>
+<tr class="memitem:ac3634fbfa271137e9a9d01bb5a5942e7" id="r_ac3634fbfa271137e9a9d01bb5a5942e7"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ac3634fbfa271137e9a9d01bb5a5942e7">MakeCacheStamp</a> (const std::string &amp;absolutePath) const</td></tr>
+<tr class="memdesc:ac3634fbfa271137e9a9d01bb5a5942e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a cache built from this source now would be built from: the size and modification time of the source and its .data file, and the cache format version; for a scene, also the registered component types and their properties.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa42c3c39d679da1c4d7a66d8ce85d58a" id="r_aa42c3c39d679da1c4d7a66d8ce85d58a"><td class="memItemLeft">static <a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aa42c3c39d679da1c4d7a66d8ce85d58a">Instance</a> ()</td></tr>
-<tr class="memdesc:aa42c3c39d679da1c4d7a66d8ce85d58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current active pipeline instance.  <br /></td></tr>
+<tr class="memdesc:aa42c3c39d679da1c4d7a66d8ce85d58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The running pipeline, or nullptr if none has started.  <br /></td></tr>
 <tr class="memitem:ad928d13fb8824cdd441b457b32faf14b" id="r_ad928d13fb8824cdd441b457b32faf14b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad928d13fb8824cdd441b457b32faf14b">OnStarted</a> (std::function&lt; void(<a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> *)&gt; callback)</td></tr>
-<tr class="memdesc:ad928d13fb8824cdd441b457b32faf14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be invoked when a pipeline starts If a pipeline is already active, callback is invoked immediately.  <br /></td></tr>
+<tr class="memdesc:ad928d13fb8824cdd441b457b32faf14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <span class="tt">callback</span> when a pipeline starts, or right away if one is running.  <br /></td></tr>
 <tr class="memitem:a4cf12dde32a3f91a40e3a9d5452f0ccd" id="r_a4cf12dde32a3f91a40e3a9d5452f0ccd"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a4cf12dde32a3f91a40e3a9d5452f0ccd">OnImportComplete</a> (std::function&lt; void(<a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> *)&gt; callback)</td></tr>
-<tr class="memdesc:a4cf12dde32a3f91a40e3a9d5452f0ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for when all assets have been imported.  <br /></td></tr>
+<tr class="memdesc:a4cf12dde32a3f91a40e3a9d5452f0ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <span class="tt">callback</span> after <a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2" title="Imports every asset. Called when a project loads.">ImportAllAssets()</a> finishes.  <br /></td></tr>
 <tr class="memitem:a12145b22c194a490773d14809952085d" id="r_a12145b22c194a490773d14809952085d"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a12145b22c194a490773d14809952085d">ClearOnStartedCallbacks</a> ()</td></tr>
-<tr class="memdesc:a12145b22c194a490773d14809952085d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all OnStarted callbacks and sync handlers.  <br /></td></tr>
+<tr class="memdesc:a12145b22c194a490773d14809952085d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all OnStarted callbacks and sync handlers.  <br /></td></tr>
 <tr class="memitem:aa6b8f34b92768eca89d218ed82800151" id="r_aa6b8f34b92768eca89d218ed82800151"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa6b8f34b92768eca89d218ed82800151">GetAssetTypeFromExtension</a> (const std::string &amp;ext)</td></tr>
-<tr class="memdesc:aa6b8f34b92768eca89d218ed82800151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get asset type name from file extension.  <br /></td></tr>
+<tr class="memdesc:aa6b8f34b92768eca89d218ed82800151"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type name for an extension with dot (".scene" gives "Scene", ".png" gives "Sprite"), or "" when unknown.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a456a18532ba95c4cc98d6dfbded10ad2" id="r_a456a18532ba95c4cc98d6dfbded10ad2"><td class="memItemLeft">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a456a18532ba95c4cc98d6dfbded10ad2">OnAssetDiscovered</a></td></tr>
-<tr class="memitem:adaa0ee448b964b5cf7c32420e6fd437c" id="r_adaa0ee448b964b5cf7c32420e6fd437c"><td class="memItemLeft">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#adaa0ee448b964b5cf7c32420e6fd437c">OnAssetChanged</a></td></tr>
-<tr class="memitem:a3819e8391f966372072f3393115abc96" id="r_a3819e8391f966372072f3393115abc96"><td class="memItemLeft">std::function&lt; void(const std::string &amp;relativePath, const std::string &amp;guid)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3819e8391f966372072f3393115abc96">OnAssetDeleted</a></td></tr>
-<tr class="memitem:a0d8a16d2d5321c760eea0ce763f32cdf" id="r_a0d8a16d2d5321c760eea0ce763f32cdf"><td class="memItemLeft">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0d8a16d2d5321c760eea0ce763f32cdf">OnAssetCreated</a></td></tr>
+<tr class="memitem:a17cf8bf6a322a461946f043261053d84" id="r_a17cf8bf6a322a461946f043261053d84"><td class="memItemLeft">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a17cf8bf6a322a461946f043261053d84">onAssetDiscovered</a></td></tr>
+<tr class="memitem:a14fa1a12f049f51552f6457c330f8f5d" id="r_a14fa1a12f049f51552f6457c330f8f5d"><td class="memItemLeft">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a14fa1a12f049f51552f6457c330f8f5d">onAssetChanged</a></td></tr>
+<tr class="memitem:ad5dcfd9de8cab9515e10e7d5288243be" id="r_ad5dcfd9de8cab9515e10e7d5288243be"><td class="memItemLeft">std::function&lt; void(const std::string &amp;relativePath, const std::string &amp;guid)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad5dcfd9de8cab9515e10e7d5288243be">onAssetDeleted</a></td></tr>
+<tr class="memitem:ab5b58115c2267c2e5a7202012604722c" id="r_ab5b58115c2267c2e5a7202012604722c"><td class="memItemLeft">std::function&lt; void(const std::string &amp;)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab5b58115c2267c2e5a7202012604722c">onAssetCreated</a></td></tr>
+<tr class="memitem:a7f367f0a85553098af1dd983569b063d" id="r_a7f367f0a85553098af1dd983569b063d"><td class="memItemLeft">std::function&lt; void()&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7f367f0a85553098af1dd983569b063d">onImportAllFinished</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa48920855583df16ef6ed175a6ad6ed5" id="r_aa48920855583df16ef6ed175a6ad6ed5"><td class="memItemLeft">static <a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aa48920855583df16ef6ed175a6ad6ed5">s_Instance</a></td></tr>
+<tr class="memitem:a8deb7ef8f2c322c137e8035a365ae1aa" id="r_a8deb7ef8f2c322c137e8035a365ae1aa"><td class="memItemLeft">static std::vector&lt; std::function&lt; void(<a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> *)&gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8deb7ef8f2c322c137e8035a365ae1aa">s_OnStartedCallbacks</a></td></tr>
+<tr class="memitem:a845eef126303ae1868853a4168a1f7b6" id="r_a845eef126303ae1868853a4168a1f7b6"><td class="memItemLeft">static std::vector&lt; std::function&lt; void(<a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a> *)&gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a845eef126303ae1868853a4168a1f7b6">s_OnImportCompleteCallbacks</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Asset pipeline service - handles GUID creation, caching, and asset discovery. </p>
-<p>Unity-like asset import pipeline. Discovers assets, assigns GUIDs, and compiles to cache format. </p>
+<div class="textblock"><p>The asset import pipeline, like Unity's: finds assets, gives them GUIDs and compiles them into the cache. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
-<a id="a37b5292450de9fcdf933c6264fcafb86" name="a37b5292450de9fcdf933c6264fcafb86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b5292450de9fcdf933c6264fcafb86">&#9670;&#160;</a></span>AssetSyncHandler</h2>
+<a id="aa07d747c03104abae6a1340fd66a0210" name="aa07d747c03104abae6a1340fd66a0210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07d747c03104abae6a1340fd66a0210">&#9670;&#160;</a></span>AssetSyncHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a37b5292450de9fcdf933c6264fcafb86">DekiEditor::AssetPipeline::AssetSyncHandler</a></td>
+          <td class="memname">using <a class="el" href="#aa07d747c03104abae6a1340fd66a0210">DekiEditor::AssetPipeline::AssetSyncHandler</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">std::function&lt;void(</div>
-<div class="line">       <span class="keyword">const</span> std::string&amp; absolutePath,</div>
-<div class="line">       <span class="keyword">const</span> std::string&amp; guid,</div>
-<div class="line">       <span class="keyword">const</span> std::string&amp; projectPath)&gt;</div>
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::function&lt;void(<span class="keyword">const</span> std::string&amp; absolutePath, <span class="keyword">const</span> std::string&amp; guid, <span class="keyword">const</span> std::string&amp; projectPath)&gt;</div>
 </div><!-- fragment -->
-<p>Asset sync handler callback type Called during ProcessAsset for registered extensions. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">absolutePath</td><td>Absolute path to the asset file </td></tr>
-    <tr><td class="paramname">guid</td><td>Asset's GUID </td></tr>
-    <tr><td class="paramname">projectPath</td><td>Absolute path to the project root </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Called by ProcessAsset for a registered extension, with the asset's absolute path, its GUID and the absolute project root. </p>
 
 </div>
 </div>
-<a id="a7f1a72e058d143f602ad6ef8bf698882" name="a7f1a72e058d143f602ad6ef8bf698882"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f1a72e058d143f602ad6ef8bf698882">&#9670;&#160;</a></span>CacheVariantProvider</h2>
+<a id="a0610ac4bf2c3c8bce1dcef560076f9a7" name="a0610ac4bf2c3c8bce1dcef560076f9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0610ac4bf2c3c8bce1dcef560076f9a7">&#9670;&#160;</a></span>CacheVariantProvider</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a7f1a72e058d143f602ad6ef8bf698882">DekiEditor::AssetPipeline::CacheVariantProvider</a></td>
+          <td class="memname">using <a class="el" href="#a0610ac4bf2c3c8bce1dcef560076f9a7">DekiEditor::AssetPipeline::CacheVariantProvider</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">std::function&lt;void(</div>
-<div class="line">       <span class="keyword">const</span> <a class="code hl_struct" href="struct_deki_editor_1_1_asset_info.html">AssetInfo</a>&amp; info,</div>
-<div class="line">       std::unordered_set&lt;std::string&gt;&amp; outValidGuids)&gt;</div>
-<div class="ttc" id="astruct_deki_editor_1_1_asset_info_html"><div class="ttname"><a href="struct_deki_editor_1_1_asset_info.html">DekiEditor::AssetInfo</a></div><div class="ttdoc">Information about a discovered asset.</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:81</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::function&lt;void(<span class="keyword">const</span> <a class="code hl_struct" href="struct_deki_editor_1_1_asset_info.html">AssetInfo</a>&amp; info, std::unordered_set&lt;std::string&gt;&amp; outValidGuids)&gt;</div>
+<div class="ttc" id="astruct_deki_editor_1_1_asset_info_html"><div class="ttname"><a href="struct_deki_editor_1_1_asset_info.html">DekiEditor::AssetInfo</a></div><div class="ttdoc">A discovered asset.</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:101</div></div>
 </div><!-- fragment -->
-<p>Cache-variant provider callback type. </p>
-<p>For asset types that produce derived cache files (e.g. font baking emits one variant per requested size + atlas siblings), the owning package declares which derived GUIDs belong to a given source asset. The pipeline consults registered providers when sweeping orphaned cache files so still- needed variants are not deleted.</p>
-<p>The provider should insert all derived GUIDs into outValidGuids. The source asset's own GUID is already kept by the pipeline - providers only need to enumerate variants. </p>
+<p>Lists the derived cache files of a source asset. </p>
+<p>Some asset types make extra cache files (font baking writes one variant per size plus its atlases); the owning package names their GUIDs here so the orphan sweep keeps them.</p>
+<p>Insert every derived GUID into outValidGuids. The pipeline already keeps the source asset's own GUID. </p>
 
 </div>
 </div>
@@ -310,7 +324,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>When should a registered sync handler fire on ProcessAsset? </p>
+<p>When a sync handler runs during ProcessAsset. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a163d0a7bb5c58db5957798adc3f58208af18589c1cf94d0eb6df46e580221b70f" name="a163d0a7bb5c58db5957798adc3f58208af18589c1cf94d0eb6df46e580221b70f"></a>OnSourceChange&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a163d0a7bb5c58db5957798adc3f58208a68eec46437c384d8dad18d5464ebc35c" name="a163d0a7bb5c58db5957798adc3f58208a68eec46437c384d8dad18d5464ebc35c"></a>Always&#160;</td><td class="fielddoc"></td></tr>
@@ -377,8 +391,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the current active pipeline instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the active pipeline, or nullptr if not started </dd></dl>
+<p>The running pipeline, or nullptr if none has started. </p>
 
 </div>
 </div>
@@ -405,13 +418,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register a callback to be invoked when a pipeline starts If a pipeline is already active, callback is invoked immediately. </p>
-<p>Use this to register sync handlers from package initialization code. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callback</td><td>Function to call with the pipeline pointer </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Calls <span class="tt">callback</span> when a pipeline starts, or right away if one is running. </p>
+<p>Packages use it to register their handlers at load. </p>
 
 </div>
 </div>
@@ -438,13 +446,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register a callback for when all assets have been imported. </p>
-<p>Called after <a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2" title="Import all assets (called on project load).">ImportAllAssets()</a> finishes. Use this to register sub-assets that depend on cache state (e.g., baked font variants). </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callback</td><td>Function to call with the pipeline pointer </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Calls <span class="tt">callback</span> after <a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2" title="Imports every asset. Called when a project loads.">ImportAllAssets()</a> finishes. </p>
+<p>Use it for sub-assets that depend on cache state, such as baked font variants. </p>
 
 </div>
 </div>
@@ -471,8 +474,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clear all OnStarted callbacks and sync handlers. </p>
-<p>Must be called BEFORE unloading package DLLs that registered callbacks. After reload, packages will re-register via DekiPlugin_RegisterComponents. </p>
+<p>Clears all OnStarted callbacks and sync handlers. </p>
+<p>Must be called before unloading the package DLLs that registered them; after a reload the packages register again through DekiPluginRegisterComponents. </p>
 
 </div>
 </div>
@@ -490,7 +493,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a37b5292450de9fcdf933c6264fcafb86">AssetSyncHandler</a></td>          <td class="paramname"><span class="paramname"><em>handler</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#aa07d747c03104abae6a1340fd66a0210">AssetSyncHandler</a></td>          <td class="paramname"><span class="paramname"><em>handler</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -500,15 +503,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register a sync handler for a file extension Handlers are called after an asset is processed during <a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2" title="Import all assets (called on project load).">ImportAllAssets()</a> or a watcher-driven <a class="el" href="#a27926695f60af12fd3ac2a1b6c587528" title="Drain pending file-watcher events and reprocess affected assets.">Tick()</a>, subject to the supplied policy. </p>
-<p>Default is OnSourceChange so warm reopens are fast. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">extension</td><td>File extension including dot (e.g., ".ttf") </td></tr>
-    <tr><td class="paramname">handler</td><td>Callback to invoke for assets with this extension </td></tr>
-    <tr><td class="paramname">policy</td><td>When the handler should fire (default: OnSourceChange) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Registers a sync handler for an extension (with dot, e.g. </p>
+<p>".ttf"). It runs after an asset is processed by <a class="el" href="#a5b6eb467a6c3ef809de2340f9a3de3d2" title="Imports every asset. Called when a project loads.">ImportAllAssets()</a> or by <a class="el" href="#a27926695f60af12fd3ac2a1b6c587528" title="Takes pending file-watcher events and reprocesses the assets they name.">Tick()</a>, as <span class="tt">policy</span> allows. The default, OnSourceChange, keeps warm reopens fast. </p>
 
 </div>
 </div>
@@ -531,14 +527,129 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register a cache handler for a file extension. </p>
-<p>Cache handlers are called during ProcessAsset to generate cache files. Packages can override built-in handlers by registering for the same extension. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">extension</td><td>File extension including dot (e.g., ".png") </td></tr>
-    <tr><td class="paramname">handler</td><td>Callback to invoke for assets with this extension </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Registers the cache handler for an extension (with dot, e.g. </p>
+<p>".png"). ProcessAsset calls it to write the cache files. Registering an extension that has a built-in handler replaces it. </p>
+
+</div>
+</div>
+<a id="afd5734ec7c058997598cfdc13aba9195" name="afd5734ec7c058997598cfdc13aba9195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5734ec7c058997598cfdc13aba9195">&#9670;&#160;</a></span>RegisterExportEncoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::AssetPipeline::RegisterExportEncoder </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>extension</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a></td>          <td class="paramname"><span class="paramname"><em>encoder</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers the encoder that writes this extension's assets for a target. </p>
+<p>Cleared with the cache handlers when a package unloads. </p>
+
+</div>
+</div>
+<a id="ab4aead5ad4d18931ebe24614e816a9e9" name="ab4aead5ad4d18931ebe24614e816a9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4aead5ad4d18931ebe24614e816a9e9">&#9670;&#160;</a></span>FindExportEncoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespace_deki_editor.html#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a> * DekiEditor::AssetPipeline::FindExportEncoder </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>extension</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The encoder for an extension (lowercase, with dot), or null. </p>
+
+</div>
+</div>
+<a id="a5a6af76e2f1a97aee9d47c30f3fca8e1" name="a5a6af76e2f1a97aee9d47c30f3fca8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6af76e2f1a97aee9d47c30f3fca8e1">&#9670;&#160;</a></span>SetEditorTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::AssetPipeline::SetEditorTarget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_editor_1_1_asset_export_target.html">AssetExportTarget</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the target the editor's own cache is stored for: the project's active platform, set when a project opens and when the active platform changes. </p>
+<p>Changing it re-imports what depends on it. </p>
+
+</div>
+</div>
+<a id="a5b735b30bfb35d982255c46a35c6bef7" name="a5b735b30bfb35d982255c46a35c6bef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b735b30bfb35d982255c46a35c6bef7">&#9670;&#160;</a></span>IsRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::AssetPipeline::IsRunning </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4b49482b2aa45262fad15377e0a2336" name="ab4b49482b2aa45262fad15377e0a2336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b49482b2aa45262fad15377e0a2336">&#9670;&#160;</a></span>GetEditorTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_editor_1_1_asset_export_target.html">AssetExportTarget</a> &amp; DekiEditor::AssetPipeline::GetEditorTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -557,13 +668,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the default cache handler for extensions without a specific handler. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">handler</td><td>Fallback handler called for unregistered extensions </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The handler used for extensions that have none registered. </p>
 
 </div>
 </div>
@@ -581,13 +686,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a7f1a72e058d143f602ad6ef8bf698882">CacheVariantProvider</a></td>          <td class="paramname"><span class="paramname"><em>provider</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a0610ac4bf2c3c8bce1dcef560076f9a7">CacheVariantProvider</a></td>          <td class="paramname"><span class="paramname"><em>provider</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register a cache-variant provider for a file extension. </p>
-<p>Called during cache cleanup / validation. Packages that produce derived cache files (font sizes, etc.) register here so the pipeline doesn't delete their variants as orphans. </p>
+<p>Registers a cache-variant provider for an extension. </p>
+<p>Consulted during cache cleanup and validation so derived files are not deleted as orphans. </p>
 
 </div>
 </div>
@@ -606,14 +711,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert an absolute path to a project-relative path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">absolutePath</td><td>Absolute filesystem path </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Project-relative path with forward slashes </dd></dl>
+<p>An absolute path made project-relative, with forward slashes. </p>
 
 </div>
 </div>
@@ -636,14 +734,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start the pipeline. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">assetsPath</td><td>Absolute path to assets directory </td></tr>
-    <tr><td class="paramname">projectPath</td><td>Absolute path to project root </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Starts the pipeline on the absolute assets folder and project root. </p>
 
 </div>
 </div>
@@ -662,8 +753,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stop the pipeline. </p>
-
 </div>
 </div>
 <a id="a5b6eb467a6c3ef809de2340f9a3de3d2" name="a5b6eb467a6c3ef809de2340f9a3de3d2"></a>
@@ -681,7 +770,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Import all assets (called on project load). </p>
+<p>Imports every asset. Called when a project loads. </p>
 
 </div>
 </div>
@@ -700,8 +789,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Drain pending file-watcher events and reprocess affected assets. </p>
-<p>Call once per frame from the editor main loop. Coalesced events delivered by <a class="el" href="class_deki_editor_1_1_asset_file_watcher.html" title="OS-level file watcher that feeds AssetPipeline::Tick().">AssetFileWatcher</a> (Added / Modified / Deleted) drive ProcessAsset and fire OnAssetDiscovered / OnAssetChanged / OnAssetDeleted on the main thread (downstream subscribers touch GPU resources, so this must not run on the watcher's worker thread). </p>
+<p>Takes pending file-watcher events and reprocesses the assets they name. </p>
+<p>Call once per frame from the editor main loop. Runs ProcessAsset and fires onAssetDiscovered / onAssetChanged / onAssetDeleted on the main thread, because subscribers touch GPU resources. </p>
 
 </div>
 </div>
@@ -720,13 +809,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get asset info by project-relative path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">relativePath</td><td>e.g., "assets/textures/player.png" </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Asset info by project-relative path, e.g. "assets/textures/player.png". </p>
 
 </div>
 </div>
@@ -745,7 +828,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get asset info by GUID. </p>
+</div>
+</div>
+<a id="a9b08405d603c7da9c4ab6344bb343ccb" name="a9b08405d603c7da9c4ab6344bb343ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b08405d603c7da9c4ab6344bb343ccb">&#9670;&#160;</a></span>IsBdfFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::AssetPipeline::IsBdfFont </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceGuid</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True when the font asset with this GUID is a BDF font, which has one baked form whatever the text's size (see BakedFontGuid). </p>
 
 </div>
 </div>
@@ -772,14 +872,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get asset type name from file extension. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ext</td><td>File extension including dot (e.g., ".scene", ".png") </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Type name (e.g., "Scene", "Sprite") or empty string for unknown </dd></dl>
+<p>The type name for an extension with dot (".scene" gives "Scene", ".png" gives "Sprite"), or "" when unknown. </p>
 
 </div>
 </div>
@@ -798,13 +891,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Refresh a specific asset (reimport and regenerate cache). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Project-relative path </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Reimports one asset and rebuilds its cache. </p>
+
+</div>
+</div>
+<a id="acdd9b7c72a315dc337241d9e1356c9cb" name="acdd9b7c72a315dc337241d9e1356c9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd9b7c72a315dc337241d9e1356c9cb">&#9670;&#160;</a></span>RecompileStaleScenes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DekiEditor::AssetPipeline::RecompileStaleScenes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recompiles every scene whose cache does not match the component types registered now (see MakeCacheStamp), or that has none: one that could not compile before its packages were built or loaded, or compiled before a component gained or lost a property. </p>
+<p>Returns how many it tried. Play mode calls it before it starts. </p>
 
 </div>
 </div>
@@ -823,13 +930,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove an asset from the pipeline index and <a class="el" href="class_deki_editor_1_1_guid_cache.html" title="Cache for mapping asset paths to GUIDs using .data sidecar files.">GuidCache</a>. </p>
-<p>Call before RefreshAsset when an asset has been moved/renamed. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Project-relative path of the OLD location </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Removes an asset from the index and the <a class="el" href="class_deki_editor_1_1_guid_cache.html" title="Maps asset paths to GUIDs, read from the .data sidecar files and cached in a JSON file.">GuidCache</a>. </p>
+<p>When an asset moves or is renamed, call this with the old path before RefreshAsset. </p>
 
 </div>
 </div>
@@ -847,8 +949,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get absolute path from project-relative path. </p>
 
 </div>
 </div>
@@ -874,8 +974,6 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get project path. </p>
 
 </div>
 </div>
@@ -927,7 +1025,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all discovered assets. </p>
+<p>Every discovered asset, keyed by project-relative path. </p>
 
 </div>
 </div>
@@ -946,13 +1044,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get or create GUID for an asset (creates .data sidecar file). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">relativePath</td><td>Project-relative path </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The asset's GUID, creating its .data sidecar if needed. </p>
 
 </div>
 </div>
@@ -971,8 +1063,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clean cache - remove orphaned cache files. </p>
-<dl class="section return"><dt>Returns</dt><dd>Number of files removed </dd></dl>
+<p>Removes orphaned cache files. Returns how many were removed. </p>
 
 </div>
 </div>
@@ -991,8 +1082,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update the persistent asset lookup table (cache/asset_table.bin). </p>
-<p>This maintains cache/asset_table.bin as the single source of truth for asset resolution. Called automatically after ProcessAsset() and asset deletions. PlayMode and ExportToStorage both use this table directly. </p>
+<p>Rewrites cache/asset_table.bin, the one table that resolves assets for play mode and ExportToStorage. </p>
+<p>Called after ProcessAsset() and after asset deletions. </p>
 
 </div>
 </div>
@@ -1011,8 +1102,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Validate cache integrity and remove orphaned files. </p>
-<p>Called on project load to ensure cache is consistent with source assets. Removes any cache files that don't correspond to known assets. </p>
+<p>Removes cache files that match no known asset. Called on project load. </p>
 
 </div>
 </div>
@@ -1031,14 +1121,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get all sub-assets for a parent asset. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parentGuid</td><td>Parent asset's GUID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to vector of sub-assets, or nullptr if parent has no sub-assets </dd></dl>
+<p>The sub-assets of a parent asset, or nullptr when it has none. </p>
 
 </div>
 </div>
@@ -1057,14 +1140,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get sub-asset info by GUID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">guid</td><td>Sub-asset GUID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to <a class="el" href="struct_deki_editor_1_1_sub_asset_info.html" title="Information about a sub-asset.">SubAssetInfo</a> or nullptr </dd></dl>
+<p>The sub-asset with this GUID, or nullptr. </p>
 
 </div>
 </div>
@@ -1087,14 +1163,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register sub-assets for a parent asset (generic for all asset types). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parentGuid</td><td>Parent asset's GUID </td></tr>
-    <tr><td class="paramname">subAssets</td><td>Vector of sub-asset information </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Sets the sub-assets of a parent asset, for any asset type. </p>
 
 </div>
 </div>
@@ -1140,59 +1209,159 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac3634fbfa271137e9a9d01bb5a5942e7" name="ac3634fbfa271137e9a9d01bb5a5942e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3634fbfa271137e9a9d01bb5a5942e7">&#9670;&#160;</a></span>MakeCacheStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::AssetPipeline::MakeCacheStamp </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>absolutePath</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>What a cache built from this source now would be built from: the size and modification time of the source and its .data file, and the cache format version; for a scene, also the registered component types and their properties. </p>
+<p>Compared for equality (not "is the source newer"), so a file restored from a backup or unzip with an older time, or a cache format change, still counts as changed. Also used for the per-target export cache. </p>
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a456a18532ba95c4cc98d6dfbded10ad2" name="a456a18532ba95c4cc98d6dfbded10ad2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a456a18532ba95c4cc98d6dfbded10ad2">&#9670;&#160;</a></span>OnAssetDiscovered</h2>
+<a id="a17cf8bf6a322a461946f043261053d84" name="a17cf8bf6a322a461946f043261053d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cf8bf6a322a461946f043261053d84">&#9670;&#160;</a></span>onAssetDiscovered</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; DekiEditor::AssetPipeline::OnAssetDiscovered</td>
+          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; DekiEditor::AssetPipeline::onAssetDiscovered</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adaa0ee448b964b5cf7c32420e6fd437c" name="adaa0ee448b964b5cf7c32420e6fd437c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaa0ee448b964b5cf7c32420e6fd437c">&#9670;&#160;</a></span>OnAssetChanged</h2>
+<a id="a14fa1a12f049f51552f6457c330f8f5d" name="a14fa1a12f049f51552f6457c330f8f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fa1a12f049f51552f6457c330f8f5d">&#9670;&#160;</a></span>onAssetChanged</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; DekiEditor::AssetPipeline::OnAssetChanged</td>
+          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; DekiEditor::AssetPipeline::onAssetChanged</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3819e8391f966372072f3393115abc96" name="a3819e8391f966372072f3393115abc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3819e8391f966372072f3393115abc96">&#9670;&#160;</a></span>OnAssetDeleted</h2>
+<a id="ad5dcfd9de8cab9515e10e7d5288243be" name="ad5dcfd9de8cab9515e10e7d5288243be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5dcfd9de8cab9515e10e7d5288243be">&#9670;&#160;</a></span>onAssetDeleted</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const std::string&amp; relativePath, const std::string&amp; guid)&gt; DekiEditor::AssetPipeline::OnAssetDeleted</td>
+          <td class="memname">std::function&lt;void(const std::string&amp; relativePath, const std::string&amp; guid)&gt; DekiEditor::AssetPipeline::onAssetDeleted</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0d8a16d2d5321c760eea0ce763f32cdf" name="a0d8a16d2d5321c760eea0ce763f32cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d8a16d2d5321c760eea0ce763f32cdf">&#9670;&#160;</a></span>OnAssetCreated</h2>
+<a id="ab5b58115c2267c2e5a7202012604722c" name="ab5b58115c2267c2e5a7202012604722c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b58115c2267c2e5a7202012604722c">&#9670;&#160;</a></span>onAssetCreated</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; DekiEditor::AssetPipeline::OnAssetCreated</td>
+          <td class="memname">std::function&lt;void(const std::string&amp;)&gt; DekiEditor::AssetPipeline::onAssetCreated</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f367f0a85553098af1dd983569b063d" name="a7f367f0a85553098af1dd983569b063d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f367f0a85553098af1dd983569b063d">&#9670;&#160;</a></span>onImportAllFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; DekiEditor::AssetPipeline::onImportAllFinished</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa48920855583df16ef6ed175a6ad6ed5" name="aa48920855583df16ef6ed175a6ad6ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48920855583df16ef6ed175a6ad6ed5">&#9670;&#160;</a></span>s_Instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a>* DekiEditor::AssetPipeline::s_Instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8deb7ef8f2c322c137e8035a365ae1aa" name="a8deb7ef8f2c322c137e8035a365ae1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8deb7ef8f2c322c137e8035a365ae1aa">&#9670;&#160;</a></span>s_OnStartedCallbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::function&lt;void(<a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a>*)&gt; &gt; DekiEditor::AssetPipeline::s_OnStartedCallbacks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a845eef126303ae1868853a4168a1f7b6" name="a845eef126303ae1868853a4168a1f7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845eef126303ae1868853a4168a1f7b6">&#9670;&#160;</a></span>s_OnImportCompleteCallbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::function&lt;void(<a class="el" href="#af62632bfe0938e96623e72be6de3da27">AssetPipeline</a>*)&gt; &gt; DekiEditor::AssetPipeline::s_OnImportCompleteCallbacks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

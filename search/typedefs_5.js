@@ -5,5 +5,5 @@ var searchData=
   ['fontatlascallback_2',['FontAtlasCallback',['../class_deki_editor_1_1_editor_assets.html#afcdca5ae8f296d89450a0c594a2cc862',1,'DekiEditor::EditorAssets']]],
   ['fontbakecallback_3',['FontBakeCallback',['../class_deki_editor_1_1_editor_assets.html#a75d2851f8c87f150bc5efdf74face9c3',1,'DekiEditor::EditorAssets']]],
   ['fontdestroyfn_4',['FontDestroyFn',['../class_deki_editor_1_1_editor_assets.html#ad98cac2255ca49c4b0e15efd7ffa3161',1,'DekiEditor::EditorAssets']]],
-  ['fontfromdfontfn_5',['FontFromDfontFn',['../class_deki_editor_1_1_editor_assets.html#a312f76fefa47932f89e6dd3d59a70cb0',1,'DekiEditor::EditorAssets']]]
+  ['fontfromdfontfn_5',['FontFromDfontFn',['../class_deki_editor_1_1_editor_assets.html#ad98beb2e4325b1cf653ba96c9aa4caa4',1,'DekiEditor::EditorAssets']]]
 ];

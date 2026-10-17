@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -143,7 +151,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 </div><!--header-->
 <div class="contents">
 
-<p>Singleton providing current render context for scene view.  
+<p>The scene view's current render context, for gizmo code to read:  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/SceneView.h&gt;</code></p>
@@ -151,60 +159,54 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a04caba9d132daa8496e496e9adf3c1a0" id="r_a04caba9d132daa8496e496e9adf3c1a0"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a04caba9d132daa8496e496e9adf3c1a0">GetScreenX</a> () const</td></tr>
-<tr class="memdesc:a04caba9d132daa8496e496e9adf3c1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen X position of object center.  <br /></td></tr>
+<tr class="memdesc:a04caba9d132daa8496e496e9adf3c1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen position of the object's centre.  <br /></td></tr>
 <tr class="memitem:ad8f82d5b378dcda810a47108ddbd86bd" id="r_ad8f82d5b378dcda810a47108ddbd86bd"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad8f82d5b378dcda810a47108ddbd86bd">GetScreenY</a> () const</td></tr>
-<tr class="memdesc:ad8f82d5b378dcda810a47108ddbd86bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen Y position of object center.  <br /></td></tr>
 <tr class="memitem:aafb52054992ee000252a5737abf42cc9" id="r_aafb52054992ee000252a5737abf42cc9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aafb52054992ee000252a5737abf42cc9">GetWorldX</a> () const</td></tr>
-<tr class="memdesc:aafb52054992ee000252a5737abf42cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">World X position.  <br /></td></tr>
 <tr class="memitem:a52e04f8380336bb612e144436d6d369e" id="r_a52e04f8380336bb612e144436d6d369e"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a52e04f8380336bb612e144436d6d369e">GetWorldY</a> () const</td></tr>
-<tr class="memdesc:a52e04f8380336bb612e144436d6d369e"><td class="mdescLeft">&#160;</td><td class="mdescRight">World Y position.  <br /></td></tr>
 <tr class="memitem:a13312573e59ff77fb374edac8f2e762a" id="r_a13312573e59ff77fb374edac8f2e762a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a13312573e59ff77fb374edac8f2e762a">GetScaleX</a> () const</td></tr>
-<tr class="memdesc:a13312573e59ff77fb374edac8f2e762a"><td class="mdescLeft">&#160;</td><td class="mdescRight">World scale X.  <br /></td></tr>
+<tr class="memdesc:a13312573e59ff77fb374edac8f2e762a"><td class="mdescLeft">&#160;</td><td class="mdescRight">World scale.  <br /></td></tr>
 <tr class="memitem:a1ef0d818f109a1e12599346117b20e3f" id="r_a1ef0d818f109a1e12599346117b20e3f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1ef0d818f109a1e12599346117b20e3f">GetScaleY</a> () const</td></tr>
-<tr class="memdesc:a1ef0d818f109a1e12599346117b20e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">World scale Y.  <br /></td></tr>
 <tr class="memitem:acce4315efbc929906346fdcfe7d40ba0" id="r_acce4315efbc929906346fdcfe7d40ba0"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#acce4315efbc929906346fdcfe7d40ba0">GetRotation</a> () const</td></tr>
-<tr class="memdesc:acce4315efbc929906346fdcfe7d40ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation in radians (engine convention).  <br /></td></tr>
+<tr class="memdesc:acce4315efbc929906346fdcfe7d40ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation in radians, engine convention.  <br /></td></tr>
 <tr class="memitem:a7f78bb790469961d439aaef70b351084" id="r_a7f78bb790469961d439aaef70b351084"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7f78bb790469961d439aaef70b351084">GetZoom</a> () const</td></tr>
-<tr class="memdesc:a7f78bb790469961d439aaef70b351084"><td class="mdescLeft">&#160;</td><td class="mdescRight">View zoom level (editor wheel zoom * dpi only - no PPM).  <br /></td></tr>
+<tr class="memdesc:a7f78bb790469961d439aaef70b351084"><td class="mdescLeft">&#160;</td><td class="mdescRight">View zoom: editor wheel zoom * dpi, without pixels-per-meter.  <br /></td></tr>
 <tr class="memitem:aa00a06fc894f3474e5d477dc4409ea7b" id="r_aa00a06fc894f3474e5d477dc4409ea7b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa00a06fc894f3474e5d477dc4409ea7b">GetPixelsPerMeter</a> () const</td></tr>
-<tr class="memdesc:aa00a06fc894f3474e5d477dc4409ea7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels per meter for the active project camera (world scale).  <br /></td></tr>
+<tr class="memdesc:aa00a06fc894f3474e5d477dc4409ea7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels per meter of the scene view: the project's art density.  <br /></td></tr>
 <tr class="memitem:af639255a6c6c924725d6c8f57752497e" id="r_af639255a6c6c924725d6c8f57752497e"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af639255a6c6c924725d6c8f57752497e">GetWorldToScreenScale</a> () const</td></tr>
-<tr class="memdesc:af639255a6c6c924725d6c8f57752497e"><td class="mdescLeft">&#160;</td><td class="mdescRight">World meters to screen pixels (= zoom * pixelsPerMeter).  <br /></td></tr>
+<tr class="memdesc:af639255a6c6c924725d6c8f57752497e"><td class="mdescLeft">&#160;</td><td class="mdescRight">World meters to screen pixels (zoom * pixelsPerMeter).  <br /></td></tr>
 <tr class="memitem:a68af14007b3a497ee9f06cbd92f6dea4" id="r_a68af14007b3a497ee9f06cbd92f6dea4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a68af14007b3a497ee9f06cbd92f6dea4">GetDisplayWidth</a> () const</td></tr>
-<tr class="memdesc:a68af14007b3a497ee9f06cbd92f6dea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display width (for current component).  <br /></td></tr>
+<tr class="memdesc:a68af14007b3a497ee9f06cbd92f6dea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display size for the current component.  <br /></td></tr>
 <tr class="memitem:ae4ffebba4d890ebda05b563980b5e205" id="r_ae4ffebba4d890ebda05b563980b5e205"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae4ffebba4d890ebda05b563980b5e205">GetDisplayHeight</a> () const</td></tr>
-<tr class="memdesc:ae4ffebba4d890ebda05b563980b5e205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display height (for current component).  <br /></td></tr>
 <tr class="memitem:a61ad684fb0b14d043c31726ad47e242e" id="r_a61ad684fb0b14d043c31726ad47e242e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a61ad684fb0b14d043c31726ad47e242e">IsCurrentObjectSelected</a> () const</td></tr>
-<tr class="memdesc:a61ad684fb0b14d043c31726ad47e242e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether current object is selected.  <br /></td></tr>
 <tr class="memitem:a3ae55cb91862261b11cab5affcbae0fe" id="r_a3ae55cb91862261b11cab5affcbae0fe"><td class="memItemLeft"><a class="el" href="class_deki_1_1_object.html">Deki::Object</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a3ae55cb91862261b11cab5affcbae0fe">GetCurrentObject</a> () const</td></tr>
-<tr class="memdesc:a3ae55cb91862261b11cab5affcbae0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current object being rendered.  <br /></td></tr>
-<tr class="memitem:abc61f3792ede010be2dec1061a6e06c5" id="r_abc61f3792ede010be2dec1061a6e06c5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abc61f3792ede010be2dec1061a6e06c5">GetTargetWidth</a> () const</td></tr>
-<tr class="memdesc:abc61f3792ede010be2dec1061a6e06c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Project render target width in pixels (DisplaySettings.targetWidth).  <br /></td></tr>
-<tr class="memitem:a1834c6ece2c709bcfdeee9f954215292" id="r_a1834c6ece2c709bcfdeee9f954215292"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1834c6ece2c709bcfdeee9f954215292">GetTargetHeight</a> () const</td></tr>
-<tr class="memdesc:a1834c6ece2c709bcfdeee9f954215292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Project render target height in pixels (DisplaySettings.targetHeight).  <br /></td></tr>
-<tr class="memitem:ae768ff226e1b374fc2804c4e43a960e5" id="r_ae768ff226e1b374fc2804c4e43a960e5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae768ff226e1b374fc2804c4e43a960e5">SetTargetSize</a> (int width, int height)</td></tr>
-<tr class="memdesc:ae768ff226e1b374fc2804c4e43a960e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set project render target size (called by SceneViewPanel).  <br /></td></tr>
+<tr class="memitem:a949f0710e413a3efe0f822c041c62ddd" id="r_a949f0710e413a3efe0f822c041c62ddd"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a949f0710e413a3efe0f822c041c62ddd">GetPreviewWidth</a> () const</td></tr>
+<tr class="memdesc:a949f0710e413a3efe0f822c041c62ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width in pixels of the screen the Play view previews: the resolution picked in its toolbar, or for an aspect ratio, the panel's size at that ratio.  <br /></td></tr>
+<tr class="memitem:a2aea131a16c344d2b1689767993d29b1" id="r_a2aea131a16c344d2b1689767993d29b1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2aea131a16c344d2b1689767993d29b1">GetPreviewHeight</a> () const</td></tr>
+<tr class="memdesc:a2aea131a16c344d2b1689767993d29b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height in pixels of the previewed screen (see GetPreviewWidth).  <br /></td></tr>
+<tr class="memitem:a988b5a623dc8574c89cf6b906f766d45" id="r_a988b5a623dc8574c89cf6b906f766d45"><td class="memItemLeft"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">Deki::ColorFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#a988b5a623dc8574c89cf6b906f766d45">GetPreviewFormat</a> () const</td></tr>
+<tr class="memdesc:a988b5a623dc8574c89cf6b906f766d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixel format of the previewed screen; play mode renders in it.  <br /></td></tr>
+<tr class="memitem:a819917e8eb43b219cacec94a15b59b83" id="r_a819917e8eb43b219cacec94a15b59b83"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a819917e8eb43b219cacec94a15b59b83">SetPreviewFormat</a> (<a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">Deki::ColorFormat</a> format)</td></tr>
+<tr class="memitem:a44e4e106410408bee704c34c449b54c7" id="r_a44e4e106410408bee704c34c449b54c7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a44e4e106410408bee704c34c449b54c7">SetPreviewSize</a> (int width, int height)</td></tr>
+<tr class="memdesc:a44e4e106410408bee704c34c449b54c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Previews a screen of this size. The Play view calls it every frame.  <br /></td></tr>
 <tr class="memitem:aeff3c69a0b5f087452b2329dcd34a420" id="r_aeff3c69a0b5f087452b2329dcd34a420"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeff3c69a0b5f087452b2329dcd34a420">DrawLine</a> (float x0, float y0, float x1, float y1, uint32_t rgba, float thickness=1.0f)</td></tr>
 <tr class="memitem:af0c4decb85519293291ac678a94aca23" id="r_af0c4decb85519293291ac678a94aca23"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af0c4decb85519293291ac678a94aca23">DrawRect</a> (float x0, float y0, float x1, float y1, uint32_t rgba, float thickness=1.0f, float rounding=0.0f)</td></tr>
 <tr class="memitem:ad2b016202d66394f945c9fb7969bf2e4" id="r_ad2b016202d66394f945c9fb7969bf2e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2b016202d66394f945c9fb7969bf2e4">DrawRectFilled</a> (float x0, float y0, float x1, float y1, uint32_t rgba, float rounding=0.0f)</td></tr>
 <tr class="memitem:a34b8fcfdb37fef0157709c580fad1fd4" id="r_a34b8fcfdb37fef0157709c580fad1fd4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34b8fcfdb37fef0157709c580fad1fd4">DrawCircle</a> (float cx, float cy, float radius, uint32_t rgba, float thickness=1.0f)</td></tr>
 <tr class="memitem:a76ff1f1058e664e58377ccbfc596d9b9" id="r_a76ff1f1058e664e58377ccbfc596d9b9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a76ff1f1058e664e58377ccbfc596d9b9">DrawCircleFilled</a> (float cx, float cy, float radius, uint32_t rgba)</td></tr>
 <tr class="memitem:aa4c7f99d90f0c92859d4aef190c661a3" id="r_aa4c7f99d90f0c92859d4aef190c661a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa4c7f99d90f0c92859d4aef190c661a3">BeginObject</a> (const <a class="el" href="struct_deki_editor_1_1_scene_view_context.html">SceneViewContext</a> &amp;ctx)</td></tr>
-<tr class="memdesc:aa4c7f99d90f0c92859d4aef190c661a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin rendering an object (called by SceneObjectRenderer).  <br /></td></tr>
+<tr class="memdesc:aa4c7f99d90f0c92859d4aef190c661a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the context for one object's gizmos, from <span class="tt">ctx</span>.  <br /></td></tr>
 <tr class="memitem:ad3e9c54972e869fba1ba6f5b1551cc59" id="r_ad3e9c54972e869fba1ba6f5b1551cc59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad3e9c54972e869fba1ba6f5b1551cc59">EndObject</a> ()</td></tr>
-<tr class="memdesc:ad3e9c54972e869fba1ba6f5b1551cc59"><td class="mdescLeft">&#160;</td><td class="mdescRight">End rendering an object.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac13f9709fec14abaaf2940344b295adf" id="r_ac13f9709fec14abaaf2940344b295adf"><td class="memItemLeft">static SceneView &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac13f9709fec14abaaf2940344b295adf">Get</a> ()</td></tr>
-<tr class="memdesc:ac13f9709fec14abaaf2940344b295adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get singleton instance.  <br /></td></tr>
 <tr class="memitem:a8207abd3a5bd48ef1469819440293d6a" id="r_a8207abd3a5bd48ef1469819440293d6a"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a8207abd3a5bd48ef1469819440293d6a">Rgba</a> (uint8_t r, uint8_t g, uint8_t b, uint8_t a=255)</td></tr>
-<tr class="memdesc:a8207abd3a5bd48ef1469819440293d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an RGBA color (components 0-255) for the Draw* methods.  <br /></td></tr>
+<tr class="memdesc:a8207abd3a5bd48ef1469819440293d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packs an RGBA colour (components 0-255) for the Draw* methods.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Singleton providing current render context for scene view. </p>
-<p>Unity-like static access for gizmo implementations: auto&amp; view = <a class="el" href="#ac13f9709fec14abaaf2940344b295adf" title="Get singleton instance.">SceneView::Get()</a>; float halfW = sprite-&gt;width * view.GetScaleX() * view.GetZoom() * 0.5f;</p>
-<p>The SceneViewPanel calls BeginObject/EndObject to set up context for gizmo rendering. Visual content is rendered via DekiRenderSystem. </p>
+<div class="textblock"><p>The scene view's current render context, for gizmo code to read: </p>
+<p>auto&amp; view = <a class="el" href="#ac13f9709fec14abaaf2940344b295adf">SceneView::Get()</a>; float halfW = sprite-&gt;width * view.GetScaleX() * view.GetZoom() * 0.5f;</p>
+<p>SceneViewPanel calls BeginObject/EndObject around each object's gizmos. The scene itself is drawn by DekiRenderSystem. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ac13f9709fec14abaaf2940344b295adf" name="ac13f9709fec14abaaf2940344b295adf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac13f9709fec14abaaf2940344b295adf">&#9670;&#160;</a></span>Get()</h2>
@@ -228,8 +230,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get singleton instance. </p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Screen X position of object center. </p>
+<p>Screen position of the object's centre. </p>
 
 </div>
 </div>
@@ -283,8 +283,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Screen Y position of object center. </p>
-
 </div>
 </div>
 <a id="aafb52054992ee000252a5737abf42cc9" name="aafb52054992ee000252a5737abf42cc9"></a>
@@ -309,8 +307,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>World X position. </p>
 
 </div>
 </div>
@@ -337,8 +333,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>World Y position. </p>
-
 </div>
 </div>
 <a id="a13312573e59ff77fb374edac8f2e762a" name="a13312573e59ff77fb374edac8f2e762a"></a>
@@ -364,7 +358,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>World scale X. </p>
+<p>World scale. </p>
 
 </div>
 </div>
@@ -391,8 +385,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>World scale Y. </p>
-
 </div>
 </div>
 <a id="acce4315efbc929906346fdcfe7d40ba0" name="acce4315efbc929906346fdcfe7d40ba0"></a>
@@ -418,7 +410,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Rotation in radians (engine convention). </p>
+<p>Rotation in radians, engine convention. </p>
 
 </div>
 </div>
@@ -445,7 +437,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>View zoom level (editor wheel zoom * dpi only - no PPM). </p>
+<p>View zoom: editor wheel zoom * dpi, without pixels-per-meter. </p>
 
 </div>
 </div>
@@ -472,7 +464,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pixels per meter for the active project camera (world scale). </p>
+<p>Pixels per meter of the scene view: the project's art density. </p>
 
 </div>
 </div>
@@ -499,8 +491,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>World meters to screen pixels (= zoom * pixelsPerMeter). </p>
-<p>Use this for any gizmo dimension that originates in world units (e.g. CameraComponent::GetVisibleWidth, or an emission shape's radius). For fixed-screen-size accents (crosshairs, handle dots) use <a class="el" href="#a7f78bb790469961d439aaef70b351084" title="View zoom level (editor wheel zoom * dpi only - no PPM).">GetZoom()</a>. </p>
+<p>World meters to screen pixels (zoom * pixelsPerMeter). </p>
+<p>Use it for any gizmo size given in world units (the camera's visible area, an emission shape's radius). For accents of fixed screen size (crosshairs, handle dots) use <a class="el" href="#a7f78bb790469961d439aaef70b351084" title="View zoom: editor wheel zoom * dpi, without pixels-per-meter.">GetZoom()</a>. </p>
 
 </div>
 </div>
@@ -527,7 +519,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Display width (for current component). </p>
+<p>Display size for the current component. </p>
 
 </div>
 </div>
@@ -554,8 +546,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Display height (for current component). </p>
-
 </div>
 </div>
 <a id="a61ad684fb0b14d043c31726ad47e242e" name="a61ad684fb0b14d043c31726ad47e242e"></a>
@@ -580,8 +570,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Whether current object is selected. </p>
 
 </div>
 </div>
@@ -608,12 +596,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get current object being rendered. </p>
-
 </div>
 </div>
-<a id="abc61f3792ede010be2dec1061a6e06c5" name="abc61f3792ede010be2dec1061a6e06c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc61f3792ede010be2dec1061a6e06c5">&#9670;&#160;</a></span>GetTargetWidth()</h2>
+<a id="a949f0710e413a3efe0f822c041c62ddd" name="a949f0710e413a3efe0f822c041c62ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949f0710e413a3efe0f822c041c62ddd">&#9670;&#160;</a></span>GetPreviewWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,7 +608,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DekiEditor::SceneView::GetTargetWidth </td>
+          <td class="memname">int DekiEditor::SceneView::GetPreviewWidth </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -635,12 +621,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Project render target width in pixels (DisplaySettings.targetWidth). </p>
+<p>Width in pixels of the screen the Play view previews: the resolution picked in its toolbar, or for an aspect ratio, the panel's size at that ratio. </p>
+<p>Play mode runs at it, and gizmos use it to show what that screen sees. 320 until the Play view has set it. </p>
 
 </div>
 </div>
-<a id="a1834c6ece2c709bcfdeee9f954215292" name="a1834c6ece2c709bcfdeee9f954215292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1834c6ece2c709bcfdeee9f954215292">&#9670;&#160;</a></span>GetTargetHeight()</h2>
+<a id="a2aea131a16c344d2b1689767993d29b1" name="a2aea131a16c344d2b1689767993d29b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aea131a16c344d2b1689767993d29b1">&#9670;&#160;</a></span>GetPreviewHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -649,7 +636,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DekiEditor::SceneView::GetTargetHeight </td>
+          <td class="memname">int DekiEditor::SceneView::GetPreviewHeight </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -662,12 +649,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Project render target height in pixels (DisplaySettings.targetHeight). </p>
+<p>Height in pixels of the previewed screen (see GetPreviewWidth). </p>
 
 </div>
 </div>
-<a id="ae768ff226e1b374fc2804c4e43a960e5" name="ae768ff226e1b374fc2804c4e43a960e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae768ff226e1b374fc2804c4e43a960e5">&#9670;&#160;</a></span>SetTargetSize()</h2>
+<a id="a988b5a623dc8574c89cf6b906f766d45" name="a988b5a623dc8574c89cf6b906f766d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988b5a623dc8574c89cf6b906f766d45">&#9670;&#160;</a></span>GetPreviewFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +663,59 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DekiEditor::SceneView::SetTargetSize </td>
+          <td class="memname"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">Deki::ColorFormat</a> DekiEditor::SceneView::GetPreviewFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pixel format of the previewed screen; play mode renders in it. </p>
+
+</div>
+</div>
+<a id="a819917e8eb43b219cacec94a15b59b83" name="a819917e8eb43b219cacec94a15b59b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819917e8eb43b219cacec94a15b59b83">&#9670;&#160;</a></span>SetPreviewFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::SceneView::SetPreviewFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">Deki::ColorFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44e4e106410408bee704c34c449b54c7" name="a44e4e106410408bee704c34c449b54c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e4e106410408bee704c34c449b54c7">&#9670;&#160;</a></span>SetPreviewSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::SceneView::SetPreviewSize </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
         </tr>
@@ -693,7 +732,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set project render target size (called by SceneViewPanel). </p>
+<p>Previews a screen of this size. The Play view calls it every frame. </p>
 
 </div>
 </div>
@@ -734,7 +773,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pack an RGBA color (components 0-255) for the Draw* methods. </p>
+<p>Packs an RGBA colour (components 0-255) for the Draw* methods. </p>
 
 </div>
 </div>
@@ -948,13 +987,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Begin rendering an object (called by SceneObjectRenderer). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctx</td><td>Context containing all render parameters </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Sets the context for one object's gizmos, from <span class="tt">ctx</span>. </p>
 
 </div>
 </div>
@@ -972,8 +1005,6 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>End rendering an object. </p>
 
 </div>
 </div>

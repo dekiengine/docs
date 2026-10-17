@@ -1,0 +1,311 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: 资源系统</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/zh/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">文档</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/zh/"><span class="deki-nav-label">网站</span></a>
+    <a href="https://dekiengine.com/zh/packages/"><span class="deki-nav-label">包</span></a>
+    <a href="https://dekiengine.com/zh/blog/"><span class="deki-nav-label">博客</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/zh/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/zh/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>捐赠</span></a>
+    <details class="deki-lang"><summary aria-label="语言: 简体中文"><span class="deki-nav-label">简体中文</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-asset-system.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">资源系统 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-zh_2guide-asset-system"></a></p>
+<h1 class="doxsection"><a class="anchor" id="guide-asset-system-assetreft-template"></a>
+AssetRef&lt;T&gt; 模板</h1>
+<p><b>文件：</b> <span class="tt">deki-engine/include/deki/assets/AssetRef.h</span></p>
+<p>所有引用资源的组件都使用 <span class="tt">AssetRef&lt;T&gt;</span>。它有四个字段：</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">字段  </th><th class="markdownTableHeadNone">类型  </th><th class="markdownTableHeadNone">用途  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">guid</span>  </td><td class="markdownTableBodyNone"><span class="tt">std::string</span>  </td><td class="markdownTableBodyNone">用于<b>从磁盘加载资源</b>的 GUID。始终指向一个实际存在的文件。  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">source</span>  </td><td class="markdownTableBodyNone"><span class="tt">std::string</span>  </td><td class="markdownTableBodyNone">含义取决于上下文的元数据。参见下文的“双字段模式”。  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">ptr</span>  </td><td class="markdownTableBodyNone"><span class="tt">void*</span>  </td><td class="markdownTableBodyNone">指向已加载资源的缓存指针。在第一次调用 <span class="tt">Get()</span> 时设置。  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">loadAttempted</span>  </td><td class="markdownTableBodyNone"><span class="tt">bool</span>  </td><td class="markdownTableBodyNone">防止反复重试。第一次尝试加载后设为 <span class="tt">true</span>。  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-lazy-loading"></a>
+延迟加载</h2>
+<p><span class="tt">Get()</span> 会触发一次性加载：</p>
+<div class="fragment"><div class="line">if (!ptr &amp;&amp; !guid.empty() &amp;&amp; !loadAttempted) {</div>
+<div class="line">    loadAttempted = true;</div>
+<div class="line">    ptr = static_cast&lt;T*&gt;(AssetManager::Get()-&gt;LoadByGuidAndType(guid, T::kAssetTypeName));</div>
+<div class="line">}</div>
+<div class="line">return ptr;</div>
+</div><!-- fragment --><p>修改 <span class="tt">guid</span> 后如需强制重新加载，必须同时清除 <span class="tt">ptr</span> 和 <span class="tt">loadAttempted</span>： </p><div class="fragment"><div class="line">ref.guid = newGuid;</div>
+<div class="line">ref.ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line">ref.loadAttempted = <span class="keyword">false</span>;</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-asset-system-dual-field-pattern-guid-vs-source"></a>
+双字段模式（guid 与 source）</h1>
+<p><span class="tt">guid</span> 和 <span class="tt">source</span> 字段的<b>含义因资源类型而异</b>。这是有意为之，反映了架构上的真实差异。</p>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-rule-guid-always--the-file-to-load-from-disk"></a>
+规则：<span class="tt">guid</span> 始终表示“要从磁盘加载的文件”</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">资源类型  </th><th class="markdownTableHeadNone"><span class="tt">guid</span>  </th><th class="markdownTableHeadNone"><span class="tt">source</span>  </th><th class="markdownTableHeadNone">原因  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>精灵</b>（普通）  </td><td class="markdownTableBodyNone">精灵 GUID  </td><td class="markdownTableBodyNone">（空）  </td><td class="markdownTableBodyNone">单个文件，没有间接引用  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>精灵</b>（帧）  </td><td class="markdownTableBodyNone"><b>父</b>精灵 GUID  </td><td class="markdownTableBodyNone"><b>帧</b> GUID  </td><td class="markdownTableBodyNone">父 .tex 文件包含所有帧。<span class="tt">guid</span> 用于加载文件，<span class="tt">source</span> 用于标识帧所在的区域。  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>字体</b>  </td><td class="markdownTableBodyNone"><b>变体</b> GUID（已烘焙）  </td><td class="markdownTableBodyNone"><b>TTF</b> 源文件 GUID  </td><td class="markdownTableBodyNone">每个字号都是单独的文件。<span class="tt">guid</span> 直接加载已烘焙的变体。  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>动画</b>  </td><td class="markdownTableBodyNone">动画 GUID  </td><td class="markdownTableBodyNone">（空）  </td><td class="markdownTableBodyNone">单个文件  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-why-sprites-and-fonts-differ"></a>
+精灵和字体为何不同</h2>
+<ul>
+<li><b>字体变体是独立的文件。</b> 16px 和 24px 的字体会生成不同的 .dfont 和图集文件。变体 GUID 直接指向对应的文件。</li>
+<li><b>精灵帧是同一个文件中的区域。</b> 第 0 帧和第 5 帧是同一个 .tex 文件的子区域。父 GUID 指向整张纹理。帧 GUID 只用于通过 <span class="tt">FindFrame()</span> 查找坐标。</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-generated-code-pattern"></a>
+生成代码的模式</h2>
+<p>代码生成器生成的 <span class="tt">ResolveObjectRefs</span> 如下： </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* _frameGuid = ref.source.empty() ? ref.guid.c_str() : ref.source.c_str();</div>
+<div class="line">OnAssetRefResolved(propertyName, loadedAsset, _frameGuid);</div>
+</div><!-- fragment --><p>这样，无论<b>有意义的标识符</b>（精灵为帧 GUID，字体为 TTF 源文件）存放在哪个字段中，<span class="tt">OnAssetRefResolved</span> 都能收到它。</p>
+<h1 class="doxsection"><a class="anchor" id="guide-asset-system-deterministic-guid-generation"></a>
+确定性 GUID 生成</h1>
+<p>虚拟资源和派生资源使用确定性 GUID，由 <span class="tt">GenerateDeterministicGuid()</span> 根据种子字符串生成（双 64 位 FNV-1a 哈希，格式化为 UUID）。</p>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-seed-formats-never-change-these"></a>
+种子格式（绝对不要更改）</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">虚拟资源  </th><th class="markdownTableHeadNone">种子格式  </th><th class="markdownTableHeadNone">示例  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">字体变体  </td><td class="markdownTableBodyNone"><span class="tt">sourceGuid + ":" + fontSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">"abc-123:16"</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">字体图集  </td><td class="markdownTableBodyNone"><span class="tt">sourceGuid + ":" + fontSize + ":atlas"</span>  </td><td class="markdownTableBodyNone"><span class="tt">"abc-123:16:atlas"</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">精灵帧  </td><td class="markdownTableBodyNone"><span class="tt">parentGuid + ":" + frameIndex</span>  </td><td class="markdownTableBodyNone"><span class="tt">"abc-123:0"</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">预览字体  </td><td class="markdownTableBodyNone"><span class="tt">"preview:" + sourceGuid + ":" + fontSize</span>  </td><td class="markdownTableBodyNone"><span class="tt">"preview:abc-123:16"</span>  </td></tr>
+</table>
+<p><span class="tt">"preview:"</span> 前缀可防止与真正的字体变体 GUID 冲突。</p>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-where-deterministic-guids-are-generated"></a>
+生成确定性 GUID 的位置</h2>
+<ul>
+<li><span class="tt">deki-engine/src/Guid.cpp</span> - 核心实现</li>
+<li><span class="tt">../../modules/deki-2d/editor/FontSyncHandler.cpp</span> - 字体烘焙</li>
+<li><span class="tt">../../modules/deki-2d/TextComponent.cpp</span> - 编辑模式下的 font.guid 同步</li>
+<li><span class="tt">src/services/AssetExporter.cpp</span> - 导出时烘焙</li>
+<li><span class="tt">src/PlayMode.cpp</span> - 运行模式下的字体设置</li>
+<li><span class="tt">deki-editor/src/AssetPipeline.cpp</span> - 缓存管理</li>
+<li><span class="tt">deki-editor/src/TextureImporter.cpp</span> - 精灵帧生成</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="guide-asset-system-asset-lookup-table-asset_tablebin"></a>
+资源查找表（asset_table.bin）</h1>
+<p>用于运行时 O(log n) 查找的<b>二进制格式</b>：</p>
+<div class="fragment"><div class="line">[4 bytes]  entry count (uint32_t)</div>
+<div class="line">[N entries, 44 bytes each, sorted by hash]:</div>
+<div class="line">  [4 bytes]  FNV-1a hash of key (uint32_t)</div>
+<div class="line">  [37 bytes] GUID string (null-terminated)</div>
+<div class="line">  [3 bytes]  padding</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-asset-system-hash-function-fnv-1a-32-bit"></a>
+哈希函数（FNV-1a 32 位）</h2>
+<div class="fragment"><div class="line">offset_basis = 2166136261</div>
+<div class="line">prime = 16777619</div>
+</div><!-- fragment --><p><b>绝对不要更改这些常量。</b> 以下各处必须保持一致：</p><ul>
+<li><span class="tt">src/services/AssetExporter.cpp</span>（导出端）</li>
+<li><span class="tt">deki-engine/include/deki/assets/AssetLookupTable.h</span>（运行时端）</li>
+<li><span class="tt">deki-editor/src/AssetPipeline.cpp</span>（编辑器缓存）</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-key-types-in-the-table"></a>
+表中的键类型</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">键格式  </th><th class="markdownTableHeadNone">映射到  </th><th class="markdownTableHeadNone">使用者  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">"path:type"</span>（例如 <span class="tt">"textures/player:Sprite"</span>）  </td><td class="markdownTableBodyNone">资源 GUID  </td><td class="markdownTableBodyNone"><span class="tt">AssetManager::Load&lt;T&gt;("path")</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">GUID 字符串（例如 <span class="tt">"abc-123-..."</span>）  </td><td class="markdownTableBodyNone">同一 GUID  </td><td class="markdownTableBodyNone">已烘焙字体的直接 GUID 查找  </td></tr>
+</table>
+<h2 class="doxsection"><a class="anchor" id="guide-asset-system-two-versions-of-the-table"></a>
+表的两个版本</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">文件  </th><th class="markdownTableHeadNone">范围  </th><th class="markdownTableHeadNone">写入者  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">cache/asset_table.bin</span>  </td><td class="markdownTableBodyNone">项目的所有资源  </td><td class="markdownTableBodyNone"><span class="tt">AssetPipeline::UpdateAssetTable()</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">&lt;build's assets&gt;/asset_table.bin</span>  </td><td class="markdownTableBodyNone">仅用到的资源  </td><td class="markdownTableBodyNone"><span class="tt">AssetExporter::ExportAssetLookupTable()</span>  </td></tr>
+</table>
+<p>如果目标将资源保存在内部存储中，构建的资源会导出到其引导数据旁边（<span class="tt">assets/</span>，以 <span class="tt">F:/assets/</span> 读取）；如果使用 SD 卡，则导出到 <span class="tt">&lt;project&gt;/storage/</span>（<span class="tt">S:/</span>）。<span class="tt">AssetManager::LoadAssetRoot</span> 从该位置加载查找表、资源包索引和所有资源；参见 <a href="guide-platforms.html#guide-platforms-where-the-assets-go">platforms.md</a>。</p>
+<h1 class="doxsection"><a class="anchor" id="guide-asset-system-asset-loading-flow"></a>
+资源加载流程</h1>
+<div class="fragment"><div class="line">AssetRef::Get()</div>
+<div class="line">  -&gt; AssetManager::LoadByGuidAndType(guid, T::kAssetTypeName)</div>
+<div class="line">    -&gt; LookupPath(guid)</div>
+<div class="line">      -&gt; Check binary asset_table.bin (binary search by FNV-1a hash)</div>
+<div class="line">      -&gt; Check guidToPath_ map (runtime registrations)</div>
+<div class="line">      -&gt; Return: cacheDirectory + &quot;/&quot; + resolved path</div>
+<div class="line">    -&gt; Load&lt;T&gt;(resolvedPath)  // Sprite::Load, BitmapFont::Load, etc.</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-asset-system-key-files"></a>
+关键文件</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">文件  </th><th class="markdownTableHeadNone">用途  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">deki-engine/include/deki/assets/AssetRef.h</span>  </td><td class="markdownTableBodyNone">AssetRef 模板  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">deki-engine/src/assets/AssetManager.cpp</span>  </td><td class="markdownTableBodyNone">GUID 查找、资源加载  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">deki-engine/include/deki/assets/AssetLookupTable.h</span>  </td><td class="markdownTableBodyNone">二进制表格式 + FNV-1a  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">deki-engine/src/Guid.h</span> / <span class="tt">.cpp</span>  </td><td class="markdownTableBodyNone">确定性 GUID 生成  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">deki-editor/src/AssetPipeline.cpp</span>  </td><td class="markdownTableBodyNone">GUID 分配、缓存管理  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">src/services/AssetExporter.cpp</span>  </td><td class="markdownTableBodyNone">导出管线  </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

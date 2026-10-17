@@ -10,5 +10,6 @@ var searchData=
   ['normalize_7',['Normalize',['../struct_deki_1_1_vector2.html#a161c632e222bd723fcda3791651a4f01',1,'Deki::Vector2::Normalize()'],['../struct_deki_1_1_vector3.html#a9e70f998dba033603b18233879d31611',1,'Deki::Vector3::Normalize()']]],
   ['normalized_8',['Normalized',['../struct_deki_1_1_vector2.html#a299ee3accab5dc6b6afbc79ac9ab03c0',1,'Deki::Vector2::Normalized()'],['../struct_deki_1_1_vector3.html#ae5f299f6504612ab1ef227b522a60173',1,'Deki::Vector3::Normalized()']]],
   ['normalizeprojectroot_9',['NormalizeProjectRoot',['../namespace_deki_editor.html#a75bb0870ccd4cfebd8da0f686224413b',1,'DekiEditor']]],
-  ['notifyactivity_10',['NotifyActivity',['../class_deki_1_1_i_power.html#a242d0a8e614b52503115701fc5ceaa1f',1,'Deki::IPower']]]
+  ['noteprojectplatformschanged_10',['NoteProjectPlatformsChanged',['../namespace_deki_editor.html#a315beb897270460e47bb328cf93ddf5b',1,'DekiEditor']]],
+  ['notifyactivity_11',['NotifyActivity',['../class_deki_1_1_i_power.html#a242d0a8e614b52503115701fc5ceaa1f',1,'Deki::IPower']]]
 ];

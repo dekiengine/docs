@@ -11,13 +11,14 @@ var searchData=
   ['componentfactory_8',['ComponentFactory',['../class_deki_1_1_component_factory.html',1,'Deki']]],
   ['componentmeta_9',['ComponentMeta',['../struct_deki_1_1_component_meta.html',1,'Deki']]],
   ['componentregistry_10',['ComponentRegistry',['../class_deki_1_1_component_registry.html',1,'Deki']]],
-  ['componenttypeinfo_11',['ComponentTypeInfo',['../struct_deki_1_1_component_type_info.html',1,'Deki']]],
-  ['componentusage_12',['ComponentUsage',['../struct_deki_editor_1_1_component_usage.html',1,'DekiEditor']]],
-  ['compoundcommand_13',['CompoundCommand',['../class_deki_editor_1_1_compound_command.html',1,'DekiEditor']]],
-  ['coredependency_14',['CoreDependency',['../struct_core_dependency.html',1,'']]],
-  ['coreprojectsettings_15',['CoreProjectSettings',['../class_deki_1_1_core_project_settings.html',1,'Deki']]],
-  ['createmenuentry_16',['CreateMenuEntry',['../struct_deki_editor_1_1_create_menu_entry.html',1,'DekiEditor']]],
-  ['createmenuregistry_17',['CreateMenuRegistry',['../class_deki_editor_1_1_create_menu_registry.html',1,'DekiEditor']]],
-  ['customeditor_18',['CustomEditor',['../class_deki_editor_1_1_custom_editor.html',1,'DekiEditor']]],
-  ['customeditorregistry_19',['CustomEditorRegistry',['../class_deki_editor_1_1_custom_editor_registry.html',1,'DekiEditor']]]
+  ['componentsmigrationregistrar_11',['ComponentsMigrationRegistrar',['../struct_deki_1_1_components_migration_registrar.html',1,'Deki']]],
+  ['componenttypeinfo_12',['ComponentTypeInfo',['../struct_deki_1_1_component_type_info.html',1,'Deki']]],
+  ['componentusage_13',['ComponentUsage',['../struct_deki_editor_1_1_component_usage.html',1,'DekiEditor']]],
+  ['compoundcommand_14',['CompoundCommand',['../class_deki_editor_1_1_compound_command.html',1,'DekiEditor']]],
+  ['coredependency_15',['CoreDependency',['../struct_core_dependency.html',1,'']]],
+  ['coreprojectsettings_16',['CoreProjectSettings',['../class_deki_1_1_core_project_settings.html',1,'Deki']]],
+  ['createmenuentry_17',['CreateMenuEntry',['../struct_deki_editor_1_1_create_menu_entry.html',1,'DekiEditor']]],
+  ['createmenuregistry_18',['CreateMenuRegistry',['../class_deki_editor_1_1_create_menu_registry.html',1,'DekiEditor']]],
+  ['customeditor_19',['CustomEditor',['../class_deki_editor_1_1_custom_editor.html',1,'DekiEditor']]],
+  ['customeditorregistry_20',['CustomEditorRegistry',['../class_deki_editor_1_1_custom_editor_registry.html',1,'DekiEditor']]]
 ];

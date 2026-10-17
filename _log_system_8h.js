@@ -9,7 +9,7 @@ var _log_system_8h =
     [ "DEKI_LOG_WARNING", "_log_system_8h.html#ae92a440abe0580d432cdb91c4cb0c192", null ],
     [ "DEKI_LOG_ERROR", "_log_system_8h.html#aa049175c9a04ee33486a881babb4d2c7", null ],
     [ "DEKI_LOG_INTERNAL", "_log_system_8h.html#af13bd2237349de5f3b44ab90525824af", null ],
-    [ "Deki::LogCallback", "namespace_deki.html#abea9386d083c93ac96ed8da00fb1a5a3", null ],
+    [ "Deki::LogCallback", "namespace_deki.html#a5deed6f848dd408e513e8e9af4d1e80b", null ],
     [ "Deki::LogLevel", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7", [
       [ "Deki::LogLevel::Editor", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257", null ],
       [ "Deki::LogLevel::Internal", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7aafbf0897a5a83fdd873dfb032ec695d3", null ],

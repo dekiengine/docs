@@ -1,7 +1,7 @@
 var class_deki_editor_1_1_asset_pipeline =
 [
-    [ "AssetSyncHandler", "class_deki_editor_1_1_asset_pipeline.html#a37b5292450de9fcdf933c6264fcafb86", null ],
-    [ "CacheVariantProvider", "class_deki_editor_1_1_asset_pipeline.html#a7f1a72e058d143f602ad6ef8bf698882", null ],
+    [ "AssetSyncHandler", "class_deki_editor_1_1_asset_pipeline.html#aa07d747c03104abae6a1340fd66a0210", null ],
+    [ "CacheVariantProvider", "class_deki_editor_1_1_asset_pipeline.html#a0610ac4bf2c3c8bce1dcef560076f9a7", null ],
     [ "SyncHandlerPolicy", "class_deki_editor_1_1_asset_pipeline.html#a163d0a7bb5c58db5957798adc3f58208", [
       [ "OnSourceChange", "class_deki_editor_1_1_asset_pipeline.html#a163d0a7bb5c58db5957798adc3f58208af18589c1cf94d0eb6df46e580221b70f", null ],
       [ "Always", "class_deki_editor_1_1_asset_pipeline.html#a163d0a7bb5c58db5957798adc3f58208a68eec46437c384d8dad18d5464ebc35c", null ]
@@ -14,6 +14,11 @@ var class_deki_editor_1_1_asset_pipeline =
     [ "ClearOnStartedCallbacks", "class_deki_editor_1_1_asset_pipeline.html#a12145b22c194a490773d14809952085d", null ],
     [ "RegisterSyncHandler", "class_deki_editor_1_1_asset_pipeline.html#a6b9ce8a8e9c63edfba7d97ffb9692730", null ],
     [ "RegisterCacheHandler", "class_deki_editor_1_1_asset_pipeline.html#a3d24f13761f8874a814474753e159674", null ],
+    [ "RegisterExportEncoder", "class_deki_editor_1_1_asset_pipeline.html#afd5734ec7c058997598cfdc13aba9195", null ],
+    [ "FindExportEncoder", "class_deki_editor_1_1_asset_pipeline.html#ab4aead5ad4d18931ebe24614e816a9e9", null ],
+    [ "SetEditorTarget", "class_deki_editor_1_1_asset_pipeline.html#a5a6af76e2f1a97aee9d47c30f3fca8e1", null ],
+    [ "IsRunning", "class_deki_editor_1_1_asset_pipeline.html#a5b735b30bfb35d982255c46a35c6bef7", null ],
+    [ "GetEditorTarget", "class_deki_editor_1_1_asset_pipeline.html#ab4b49482b2aa45262fad15377e0a2336", null ],
     [ "SetDefaultCacheHandler", "class_deki_editor_1_1_asset_pipeline.html#a023653241eadf93ec7e9777c3156ea58", null ],
     [ "RegisterCacheVariantProvider", "class_deki_editor_1_1_asset_pipeline.html#af56f2c5b3479889bb1b5a2a05714b586", null ],
     [ "MakeProjectRelative", "class_deki_editor_1_1_asset_pipeline.html#a4429db6a530e8b350796ed83069de935", null ],
@@ -23,8 +28,10 @@ var class_deki_editor_1_1_asset_pipeline =
     [ "Tick", "class_deki_editor_1_1_asset_pipeline.html#a27926695f60af12fd3ac2a1b6c587528", null ],
     [ "GetAssetInfo", "class_deki_editor_1_1_asset_pipeline.html#a5c3151b74c44681d1cf0d40d319f1a3b", null ],
     [ "GetAssetInfoByGuid", "class_deki_editor_1_1_asset_pipeline.html#a76aa4d253a8b3c4a98a4f929f547dcb1", null ],
+    [ "IsBdfFont", "class_deki_editor_1_1_asset_pipeline.html#a9b08405d603c7da9c4ab6344bb343ccb", null ],
     [ "GetAssetTypeFromExtension", "class_deki_editor_1_1_asset_pipeline.html#aa6b8f34b92768eca89d218ed82800151", null ],
     [ "RefreshAsset", "class_deki_editor_1_1_asset_pipeline.html#a43f086e78ccc90de58e07994be50f7a3", null ],
+    [ "RecompileStaleScenes", "class_deki_editor_1_1_asset_pipeline.html#acdd9b7c72a315dc337241d9e1356c9cb", null ],
     [ "RemoveAsset", "class_deki_editor_1_1_asset_pipeline.html#a89a527d425a513193c373e3f56ceab3d", null ],
     [ "GetAbsolutePath", "class_deki_editor_1_1_asset_pipeline.html#a318cc4f4b6664913c39de11aedacbdbf", null ],
     [ "GetProjectPath", "class_deki_editor_1_1_asset_pipeline.html#ac318c28ae8ed2c43ba947b3ee642d9f8", null ],
@@ -39,8 +46,13 @@ var class_deki_editor_1_1_asset_pipeline =
     [ "RegisterSubAssets", "class_deki_editor_1_1_asset_pipeline.html#ae95c8fbf482cb521ebc97b039f7520fa", null ],
     [ "CompileSceneFile", "class_deki_editor_1_1_asset_pipeline.html#a0083678f94d4adfb484f1d9347be4c03", null ],
     [ "CompileAssetFile", "class_deki_editor_1_1_asset_pipeline.html#a4b75f9f02af44e31a0f302e4bcb8fe0c", null ],
-    [ "OnAssetDiscovered", "class_deki_editor_1_1_asset_pipeline.html#a456a18532ba95c4cc98d6dfbded10ad2", null ],
-    [ "OnAssetChanged", "class_deki_editor_1_1_asset_pipeline.html#adaa0ee448b964b5cf7c32420e6fd437c", null ],
-    [ "OnAssetDeleted", "class_deki_editor_1_1_asset_pipeline.html#a3819e8391f966372072f3393115abc96", null ],
-    [ "OnAssetCreated", "class_deki_editor_1_1_asset_pipeline.html#a0d8a16d2d5321c760eea0ce763f32cdf", null ]
+    [ "MakeCacheStamp", "class_deki_editor_1_1_asset_pipeline.html#ac3634fbfa271137e9a9d01bb5a5942e7", null ],
+    [ "onAssetDiscovered", "class_deki_editor_1_1_asset_pipeline.html#a17cf8bf6a322a461946f043261053d84", null ],
+    [ "onAssetChanged", "class_deki_editor_1_1_asset_pipeline.html#a14fa1a12f049f51552f6457c330f8f5d", null ],
+    [ "onAssetDeleted", "class_deki_editor_1_1_asset_pipeline.html#ad5dcfd9de8cab9515e10e7d5288243be", null ],
+    [ "onAssetCreated", "class_deki_editor_1_1_asset_pipeline.html#ab5b58115c2267c2e5a7202012604722c", null ],
+    [ "onImportAllFinished", "class_deki_editor_1_1_asset_pipeline.html#a7f367f0a85553098af1dd983569b063d", null ],
+    [ "s_Instance", "class_deki_editor_1_1_asset_pipeline.html#aa48920855583df16ef6ed175a6ad6ed5", null ],
+    [ "s_OnStartedCallbacks", "class_deki_editor_1_1_asset_pipeline.html#a8deb7ef8f2c322c137e8035a365ae1aa", null ],
+    [ "s_OnImportCompleteCallbacks", "class_deki_editor_1_1_asset_pipeline.html#a845eef126303ae1868853a4168a1f7b6", null ]
 ];

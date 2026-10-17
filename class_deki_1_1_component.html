@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -148,7 +156,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 
 <p><code>#include &lt;deki/Component.h&gt;</code></p>
 
-<p>Inherited by <a class="el" href="class_deki_1_1_core_project_settings.html">Deki::CoreProjectSettings</a>, <a class="el" href="class_deki_1_1_display_project_settings.html">Deki::DisplayProjectSettings</a>, <a class="el" href="class_deki_1_1_platform_setup_component.html">Deki::PlatformSetupComponent</a>, <a class="el" href="class_deki_1_1_setup_component.html">Deki::SetupComponent</a>, and <a class="el" href="class_deki_1_1_unit_project_settings.html">Deki::UnitProjectSettings</a>.</p>
+<p>Inherited by <a class="el" href="class_deki_1_1_core_project_settings.html">Deki::CoreProjectSettings</a>, <a class="el" href="class_deki_1_1_platform_setup_component.html">Deki::PlatformSetupComponent</a>, <a class="el" href="class_deki_1_1_screen_anchor.html">Deki::ScreenAnchor</a>, <a class="el" href="class_deki_1_1_setup_component.html">Deki::SetupComponent</a>, and <a class="el" href="class_deki_1_1_unit_project_settings.html">Deki::UnitProjectSettings</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -163,15 +171,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e36ca6322236193d121968db72ed2b9" id="r_a9e36ca6322236193d121968db72ed2b9"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9e36ca6322236193d121968db72ed2b9">GetTypeInfo</a> () const</td></tr>
 <tr class="memdesc:a9e36ca6322236193d121968db72ed2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class entry this instance runs through.  <br /></td></tr>
 <tr class="memitem:a8f71e5aa4baf519c444769e17255de6a" id="r_a8f71e5aa4baf519c444769e17255de6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8f71e5aa4baf519c444769e17255de6a">SetTypeInfo</a> (const <a class="el" href="struct_deki_1_1_component_type_info.html">ComponentTypeInfo</a> *info)</td></tr>
-<tr class="memdesc:a8f71e5aa4baf519c444769e17255de6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the class entry.  <br /></td></tr>
+<tr class="memdesc:a8f71e5aa4baf519c444769e17255de6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches the class entry.  <br /></td></tr>
 <tr class="memitem:a4e5dcce721781137dce72f1285cce38a" id="r_a4e5dcce721781137dce72f1285cce38a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4e5dcce721781137dce72f1285cce38a">DeclaresUpdate</a> () const</td></tr>
-<tr class="memdesc:a4e5dcce721781137dce72f1285cce38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this class (or a reflected base) declare <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>?  <br /></td></tr>
+<tr class="memdesc:a4e5dcce721781137dce72f1285cce38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when this class (or a reflected base) declares <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>, as the codegen read it from the class declaration.  <br /></td></tr>
 <tr class="memitem:aee91f8a67b7e30d151befa3904102b4f" id="r_aee91f8a67b7e30d151befa3904102b4f"><td class="memItemLeft"><a class="el" href="class_deki_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aee91f8a67b7e30d151befa3904102b4f">GetOwner</a> () const</td></tr>
 <tr class="memitem:a8022ad1da8b0f4126357d3d0b5d9d7e0" id="r_a8022ad1da8b0f4126357d3d0b5d9d7e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8022ad1da8b0f4126357d3d0b5d9d7e0">SetOwner</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *owner)</td></tr>
 <tr class="memitem:a9c076500cdd7536867dc12598b59743f" id="r_a9c076500cdd7536867dc12598b59743f"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9c076500cdd7536867dc12598b59743f">Awake</a> ()</td></tr>
-<tr class="memdesc:a9c076500cdd7536867dc12598b59743f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once after AssetRefs and ObjectRefs are resolved.  <br /></td></tr>
+<tr class="memdesc:a9c076500cdd7536867dc12598b59743f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once, after AssetRefs and ObjectRefs are resolved.  <br /></td></tr>
 <tr class="memitem:a361c0a10d27411e6f5cc5734565b4e0c" id="r_a361c0a10d27411e6f5cc5734565b4e0c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a361c0a10d27411e6f5cc5734565b4e0c">Start</a> ()</td></tr>
-<tr class="memdesc:a361c0a10d27411e6f5cc5734565b4e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once before the first Update, after ALL Awake calls complete.  <br /></td></tr>
+<tr class="memdesc:a361c0a10d27411e6f5cc5734565b4e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once before the first Update, after every component's Awake has run.  <br /></td></tr>
 <tr class="memitem:a5f3e2a4c36281112e58c9050265eae5b" id="r_a5f3e2a4c36281112e58c9050265eae5b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b">Update</a> ()</td></tr>
 <tr class="memdesc:a5f3e2a4c36281112e58c9050265eae5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame, only on classes that declare it.  <br /></td></tr>
 <tr class="memitem:a6593e8a0cb80df6c30f3cbf7ec2cd3ae" id="r_a6593e8a0cb80df6c30f3cbf7ec2cd3ae"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6593e8a0cb80df6c30f3cbf7ec2cd3ae">HasAwoken</a> () const</td></tr>
@@ -179,28 +187,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b007455e5bc69895a36f45220555df5" id="r_a1b007455e5bc69895a36f45220555df5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1b007455e5bc69895a36f45220555df5">MarkAwoken</a> ()</td></tr>
 <tr class="memitem:ace4055d0a312929b6205cc8c28a262b5" id="r_ace4055d0a312929b6205cc8c28a262b5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ace4055d0a312929b6205cc8c28a262b5">MarkStarted</a> ()</td></tr>
 <tr class="memitem:aa494d1e06908e627a7811027854c9379" id="r_aa494d1e06908e627a7811027854c9379"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa494d1e06908e627a7811027854c9379">LoadAssets</a> ()</td></tr>
-<tr class="memdesc:aa494d1e06908e627a7811027854c9379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load assets needed by this component.  <br /></td></tr>
+<tr class="memdesc:aa494d1e06908e627a7811027854c9379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the assets this component needs (sprites, fonts, ...).  <br /></td></tr>
 <tr class="memitem:ac58a14fe404f443ca6d035a5c187f68a" id="r_ac58a14fe404f443ca6d035a5c187f68a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac58a14fe404f443ca6d035a5c187f68a">UnloadAssets</a> ()</td></tr>
-<tr class="memdesc:ac58a14fe404f443ca6d035a5c187f68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload/clear assets held by this component.  <br /></td></tr>
+<tr class="memdesc:ac58a14fe404f443ca6d035a5c187f68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops this component's asset pointers before shutdown.  <br /></td></tr>
 <tr class="memitem:aa838a4adb5eca6dd0b2dcabb6bba01a1" id="r_aa838a4adb5eca6dd0b2dcabb6bba01a1"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa838a4adb5eca6dd0b2dcabb6bba01a1">RuntimeUpdate</a> (float deltaTime)</td></tr>
-<tr class="memdesc:aa838a4adb5eca6dd0b2dcabb6bba01a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this component (runtime only).  <br /></td></tr>
+<tr class="memdesc:aa838a4adb5eca6dd0b2dcabb6bba01a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine-driven per-frame work (physics, animation, ...), separate from the script-facing <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>: it runs in every mode, including the editor in edit mode, on components whose <a class="el" href="#aad7e0cc3f99a1cdb7f8ea0576b5b8aab" title="True when RuntimeUpdate() should be called each frame.">NeedsRuntimeUpdate()</a> is true.  <br /></td></tr>
 <tr class="memitem:a3e623a7b09cfcf41ece1a0dcdaa3e05b" id="r_a3e623a7b09cfcf41ece1a0dcdaa3e05b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3e623a7b09cfcf41ece1a0dcdaa3e05b">OnAssetRefResolved</a> (const char *propertyName, void *asset, const char *guid)</td></tr>
-<tr class="memdesc:a3e623a7b09cfcf41ece1a0dcdaa3e05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Type-safe asset reference wrapper.">AssetRef</a> property is resolved by LifecycleManager.  <br /></td></tr>
+<tr class="memdesc:a3e623a7b09cfcf41ece1a0dcdaa3e05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after LifecycleManager resolves the <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> field <span class="tt">propertyName</span> to <span class="tt">asset</span>, loaded from <span class="tt">guid</span>.  <br /></td></tr>
 <tr class="memitem:abb3d1ec13d98de64016dc2198c094f37" id="r_abb3d1ec13d98de64016dc2198c094f37"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#abb3d1ec13d98de64016dc2198c094f37">NeedsAssetLoading</a> () const</td></tr>
-<tr class="memdesc:abb3d1ec13d98de64016dc2198c094f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this component needs asset loading.  <br /></td></tr>
+<tr class="memdesc:abb3d1ec13d98de64016dc2198c094f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#aa494d1e06908e627a7811027854c9379" title="Loads the assets this component needs (sprites, fonts, ...).">LoadAssets()</a> should be called.  <br /></td></tr>
 <tr class="memitem:aad7e0cc3f99a1cdb7f8ea0576b5b8aab" id="r_aad7e0cc3f99a1cdb7f8ea0576b5b8aab"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#aad7e0cc3f99a1cdb7f8ea0576b5b8aab">NeedsRuntimeUpdate</a> () const</td></tr>
-<tr class="memdesc:aad7e0cc3f99a1cdb7f8ea0576b5b8aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this component needs runtime updates.  <br /></td></tr>
+<tr class="memdesc:aad7e0cc3f99a1cdb7f8ea0576b5b8aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#aa838a4adb5eca6dd0b2dcabb6bba01a1" title="Engine-driven per-frame work (physics, animation, ...), separate from the script-facing Update(): it ...">RuntimeUpdate()</a> should be called each frame.  <br /></td></tr>
 <tr class="memitem:a28ce26bbe235f2fd1766fb509bf801aa" id="r_a28ce26bbe235f2fd1766fb509bf801aa"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a28ce26bbe235f2fd1766fb509bf801aa">Deserialize</a> (<a class="el" href="class_deki_1_1_scene_format_1_1_scene_msg_pack_parser.html">SceneFormat::SceneMsgPackParser</a> &amp;parser, uint32_t mapSize)</td></tr>
-<tr class="memdesc:a28ce26bbe235f2fd1766fb509bf801aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize component data from MessagePack.  <br /></td></tr>
+<tr class="memdesc:a28ce26bbe235f2fd1766fb509bf801aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads this component's fields from the MessagePack map the parser is at (<span class="tt">mapSize</span> key-value pairs), through the codegen's hash-switch deserializer.  <br /></td></tr>
 <tr class="memitem:aafe9623f695cc4517f93b9b719b30b17" id="r_aafe9623f695cc4517f93b9b719b30b17"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aafe9623f695cc4517f93b9b719b30b17">ResolveObjectRefs</a> (<a class="el" href="class_deki_1_1_scene.html">Scene</a> *scene)</td></tr>
-<tr class="memdesc:aafe9623f695cc4517f93b9b719b30b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve all <a class="el" href="struct_deki_1_1_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef</a> properties in this component.  <br /></td></tr>
+<tr class="memdesc:aafe9623f695cc4517f93b9b719b30b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points every <a class="el" href="struct_deki_1_1_object_ref.html" title="An object reference the user assigns in the editor.">ObjectRef</a> field at its object in <span class="tt">scene</span> (<a class="el" href="struct_deki_1_1_object_ref_base.html#ae2941fb59fade2a5f44ac1d0713a6066">ObjectRef.id</a> -&gt; <a class="el" href="struct_deki_1_1_object_ref_base.html#a71de81285738ed459205da5393f1ce5a">ObjectRef.resolved</a>).  <br /></td></tr>
 <tr class="memitem:a631af41a70943b17e43b0f970f83c4be" id="r_a631af41a70943b17e43b0f970f83c4be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a631af41a70943b17e43b0f970f83c4be">RemapObjectRefs</a> (const std::unordered_map&lt; uint32_t, uint32_t &gt; &amp;idRemap)</td></tr>
-<tr class="memdesc:a631af41a70943b17e43b0f970f83c4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remap <a class="el" href="struct_deki_1_1_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef</a> IDs after cloning/instantiation.  <br /></td></tr>
+<tr class="memdesc:a631af41a70943b17e43b0f970f83c4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewrites <a class="el" href="struct_deki_1_1_object_ref.html" title="An object reference the user assigns in the editor.">ObjectRef</a> ids through <span class="tt">idRemap</span> (old id -&gt; new id), after Instantiate() gave the copies new ids.  <br /></td></tr>
 <tr class="memitem:a10b4bdc32698c8d7a411b09ed5c34d31" id="r_a10b4bdc32698c8d7a411b09ed5c34d31"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a10b4bdc32698c8d7a411b09ed5c34d31">HasRefsResolved</a> () const</td></tr>
 <tr class="memitem:a80911b7bec7f2b6c2e3f639a27b39cd9" id="r_a80911b7bec7f2b6c2e3f639a27b39cd9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a80911b7bec7f2b6c2e3f639a27b39cd9">MarkRefsResolved</a> ()</td></tr>
 <tr class="memitem:a20d6d00a036d30a7565e974880b5be44" id="r_a20d6d00a036d30a7565e974880b5be44"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20d6d00a036d30a7565e974880b5be44">ResetRefsResolved</a> ()</td></tr>
 <tr class="memitem:ad1ba83ec3474011482fe690c250b3e77" id="r_ad1ba83ec3474011482fe690c250b3e77"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad1ba83ec3474011482fe690c250b3e77">OnPropertyChanged</a> (const char *propertyName)</td></tr>
-<tr class="memdesc:ad1ba83ec3474011482fe690c250b3e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a property is modified via the editor.  <br /></td></tr>
+<tr class="memdesc:ad1ba83ec3474011482fe690c250b3e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the editor changes the field <span class="tt">propertyName</span>, after both Execute() and Undo() of ModifyComponentPropertyCommand.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -212,12 +220,12 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class of every component. </p>
-<p>A component is any class deriving publicly from <a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a>. Nothing else is declared: the reflection codegen finds the class by its base, its identity is its qualified name (see <a class="el" href="_type_id_8h.html" title="Compile-time component identity derived from the class name.">TypeId.h</a>) and the per-class operations below run through the <a class="el" href="struct_deki_1_1_component_type_info.html" title="Everything the engine knows about one component class.">ComponentTypeInfo</a> the engine attaches when the instance is created (AddComponent&lt;T&gt;, the scene loader, the factory).</p>
-<p>A component with exported fields and no lifecycle methods is data. One that declares <a class="el" href="#a9c076500cdd7536867dc12598b59743f" title="Called once after AssetRefs and ObjectRefs are resolved.">Awake()</a>, <a class="el" href="#a361c0a10d27411e6f5cc5734565b4e0c" title="Called once before the first Update, after ALL Awake calls complete.">Start()</a> or <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> takes part in the lifecycle, and only a class that declares <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> is ticked: the codegen records that per class, so a data component costs nothing per frame.</p>
+<p>A component is any class deriving publicly from <a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Component</a>; it declares nothing else. The reflection codegen finds the class by its base, its identity is its qualified name (see <a class="el" href="_type_id_8h.html">TypeId.h</a>), and the per-class operations below run through the <a class="el" href="struct_deki_1_1_component_type_info.html" title="Everything the engine knows about one component class.">ComponentTypeInfo</a> the engine attaches when the instance is created (AddComponent&lt;T&gt;, the scene loader, the factory).</p>
+<p>A component with exported fields and no lifecycle methods is data. One that declares <a class="el" href="#a9c076500cdd7536867dc12598b59743f" title="Called once, after AssetRefs and ObjectRefs are resolved.">Awake()</a>, <a class="el" href="#a361c0a10d27411e6f5cc5734565b4e0c" title="Called once before the first Update, after every component&#39;s Awake has run.">Start()</a> or <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> takes part in the lifecycle. Only a class that declares <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> is ticked, so a data component costs nothing per frame.</p>
 <p>Lifecycle order:</p><ol type="1">
 <li>InternalAwake (engine) - resolves AssetRefs and ObjectRefs</li>
-<li><a class="el" href="#a9c076500cdd7536867dc12598b59743f" title="Called once after AssetRefs and ObjectRefs are resolved.">Awake()</a> - once, after the references are resolved</li>
-<li><a class="el" href="#a361c0a10d27411e6f5cc5734565b4e0c" title="Called once before the first Update, after ALL Awake calls complete.">Start()</a> - once, before the first Update, after every Awake has run</li>
+<li><a class="el" href="#a9c076500cdd7536867dc12598b59743f" title="Called once, after AssetRefs and ObjectRefs are resolved.">Awake()</a> - once, after the references are resolved</li>
+<li><a class="el" href="#a361c0a10d27411e6f5cc5734565b4e0c" title="Called once before the first Update, after every component&#39;s Awake has run.">Start()</a> - once, before the first Update, after every Awake has run</li>
 <li><a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> - every frame</li>
 <li>Render (RendererComponent) </li>
 </ol>
@@ -428,8 +436,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Attach the class entry. </p>
-<p>Called by AddComponent&lt;T&gt;, the factory and the scene loader; user code never needs it. </p>
+<p>Attaches the class entry. </p>
+<p>AddComponent&lt;T&gt;, the factory and the scene loader call this; user code never needs it. </p>
 
 </div>
 </div>
@@ -456,8 +464,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Does this class (or a reflected base) declare <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>? </p>
-<p>Answered by the reflection codegen from the class declaration. LifecycleManager only calls <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> on components that answer true, so a component with no Update costs nothing per frame. </p>
+<p>True when this class (or a reflected base) declares <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>, as the codegen read it from the class declaration. </p>
+<p>LifecycleManager calls <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a> only on these. </p>
 
 </div>
 </div>
@@ -534,8 +542,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called once after AssetRefs and ObjectRefs are resolved. </p>
-<p>Use for self-initialisation. All asset references are available. </p>
+<p>Called once, after AssetRefs and ObjectRefs are resolved. </p>
+<p>Use it for self-initialisation. </p>
 
 </div>
 </div>
@@ -562,8 +570,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called once before the first Update, after ALL Awake calls complete. </p>
-<p>Use for cross-component setup: every component has been awakened. </p>
+<p>Called once before the first Update, after every component's Awake has run. </p>
+<p>Use it for setup that touches other components. </p>
 
 <p>Reimplemented in <a class="el" href="class_deki_1_1_platform_setup_component.html#aa1b5bea2d3367064c3edd81b6f7786bc">Deki::PlatformSetupComponent</a>.</p>
 
@@ -721,8 +729,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Load assets needed by this component. </p>
-<p>Components override this to load their assets (sprites, fonts, etc.) Called by Play Mode during initialization. Use <a class="el" href="class_deki_1_1_asset_manager.html#a0a7f01a791c9ff3f7ff78cfc05c1a855" title="Get the singleton instance.">Deki::AssetManager::Get()</a> to access the asset manager. </p>
+<p>Loads the assets this component needs (sprites, fonts, ...). </p>
+<p>Play Mode calls it during initialisation. Use <a class="el" href="class_deki_1_1_asset_manager.html#a0a7f01a791c9ff3f7ff78cfc05c1a855">Deki::AssetManager::Get()</a>. </p>
 
 </div>
 </div>
@@ -749,8 +757,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unload/clear assets held by this component. </p>
-<p>Components override this to clear asset pointers before shutdown. The asset manager owns the memory, so just set pointers to nullptr. </p>
+<p>Drops this component's asset pointers before shutdown. </p>
+<p>The asset manager owns the memory, so only set the pointers to nullptr. </p>
 
 </div>
 </div>
@@ -777,14 +785,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update this component (runtime only). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deltaTime</td><td><a class="el" href="class_deki_1_1_time.html" title="Deki Engine timing system.">Time</a> since last frame in seconds</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Engine-driven per-frame work (physics, animation, etc.), distinct from the script-facing <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>: it runs in every mode, including the editor in edit mode, on components that answer <a class="el" href="#aad7e0cc3f99a1cdb7f8ea0576b5b8aab" title="Check if this component needs runtime updates.">NeedsRuntimeUpdate()</a>. </p>
+<p>Engine-driven per-frame work (physics, animation, ...), separate from the script-facing <a class="el" href="#a5f3e2a4c36281112e58c9050265eae5b" title="Called every frame, only on classes that declare it.">Update()</a>: it runs in every mode, including the editor in edit mode, on components whose <a class="el" href="#aad7e0cc3f99a1cdb7f8ea0576b5b8aab" title="True when RuntimeUpdate() should be called each frame.">NeedsRuntimeUpdate()</a> is true. </p>
+<p><span class="tt">deltaTime</span> is in seconds. </p>
 
 </div>
 </div>
@@ -820,16 +822,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called after an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Type-safe asset reference wrapper.">AssetRef</a> property is resolved by LifecycleManager. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">propertyName</td><td>Name of the property that was resolved </td></tr>
-    <tr><td class="paramname">asset</td><td>Pointer to the loaded asset </td></tr>
-    <tr><td class="paramname">guid</td><td>The GUID that was used to load the asset</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Components can override this to perform post-load processing - e.g. inspecting whether the GUID resolves to a sub-asset and deriving extra runtime state from it. </p>
+<p>Called after LifecycleManager resolves the <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> field <span class="tt">propertyName</span> to <span class="tt">asset</span>, loaded from <span class="tt">guid</span>. </p>
+<p>Override it for post-load work, such as checking whether the GUID names a sub-asset and deriving state from it. </p>
 
 </div>
 </div>
@@ -856,8 +850,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if this component needs asset loading. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="#aa494d1e06908e627a7811027854c9379" title="Load assets needed by this component.">LoadAssets()</a> should be called </dd></dl>
+<p>True when <a class="el" href="#aa494d1e06908e627a7811027854c9379" title="Loads the assets this component needs (sprites, fonts, ...).">LoadAssets()</a> should be called. </p>
 
 </div>
 </div>
@@ -884,8 +877,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if this component needs runtime updates. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="#aa838a4adb5eca6dd0b2dcabb6bba01a1" title="Update this component (runtime only).">RuntimeUpdate()</a> should be called each frame </dd></dl>
+<p>True when <a class="el" href="#aa838a4adb5eca6dd0b2dcabb6bba01a1" title="Engine-driven per-frame work (physics, animation, ...), separate from the script-facing Update(): it ...">RuntimeUpdate()</a> should be called each frame. </p>
 
 </div>
 </div>
@@ -908,16 +900,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deserialize component data from MessagePack. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parser</td><td>The msgpack parser positioned at component data map </td></tr>
-    <tr><td class="paramname">mapSize</td><td>Number of key-value pairs in the data map </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if deserialization succeeded</dd></dl>
-<p>Runs the codegen's hash-switch deserializer for this class. An instance without type info skips the map so the parser stays in step. </p>
+<p>Reads this component's fields from the MessagePack map the parser is at (<span class="tt">mapSize</span> key-value pairs), through the codegen's hash-switch deserializer. </p>
+<p>An instance without type info skips the map so the parser stays in step. Returns false on failure. </p>
 
 </div>
 </div>
@@ -944,14 +928,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Resolve all <a class="el" href="struct_deki_1_1_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef</a> properties in this component. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scene</td><td>The scene to look up objects in</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Called by LifecycleManager before <a class="el" href="#a9c076500cdd7536867dc12598b59743f" title="Called once after AssetRefs and ObjectRefs are resolved.">Awake()</a> to resolve <a class="el" href="struct_deki_1_1_object_ref_base.html#ae2941fb59fade2a5f44ac1d0713a6066">ObjectRef.id</a> → <a class="el" href="struct_deki_1_1_object_ref_base.html#a71de81285738ed459205da5393f1ce5a">ObjectRef.resolved</a>. Zero-overhead: direct field access, no metadata iteration. </p>
+<p>Points every <a class="el" href="struct_deki_1_1_object_ref.html" title="An object reference the user assigns in the editor.">ObjectRef</a> field at its object in <span class="tt">scene</span> (<a class="el" href="struct_deki_1_1_object_ref_base.html#ae2941fb59fade2a5f44ac1d0713a6066">ObjectRef.id</a> -&gt; <a class="el" href="struct_deki_1_1_object_ref_base.html#a71de81285738ed459205da5393f1ce5a">ObjectRef.resolved</a>). </p>
+<p>LifecycleManager calls it before <a class="el" href="#a9c076500cdd7536867dc12598b59743f" title="Called once, after AssetRefs and ObjectRefs are resolved.">Awake()</a>. The generated code reads the fields directly, with no metadata walk. </p>
 
 </div>
 </div>
@@ -978,14 +956,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remap <a class="el" href="struct_deki_1_1_object_ref.html" title="Object reference wrapper for editor-assignable object IDs.">ObjectRef</a> IDs after cloning/instantiation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idRemap</td><td>Map of old object ID → new object ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Called after Instantiate() to update <a class="el" href="struct_deki_1_1_object_ref_base.html#ae2941fb59fade2a5f44ac1d0713a6066">ObjectRef.id</a> fields to new unique IDs. </p>
+<p>Rewrites <a class="el" href="struct_deki_1_1_object_ref.html" title="An object reference the user assigns in the editor.">ObjectRef</a> ids through <span class="tt">idRemap</span> (old id -&gt; new id), after Instantiate() gave the copies new ids. </p>
 
 </div>
 </div>
@@ -1087,14 +1058,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when a property is modified via the editor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">propertyName</td><td>Name of the property that changed</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Components can override this to react to property changes. Called after Execute() and Undo() in ModifyComponentPropertyCommand. </p>
+<p>Called when the editor changes the field <span class="tt">propertyName</span>, after both Execute() and Undo() of ModifyComponentPropertyCommand. </p>
 
 </div>
 </div>

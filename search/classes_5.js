@@ -11,5 +11,6 @@ var searchData=
   ['firmwarebuilderbase_8',['FirmwareBuilderBase',['../class_deki_editor_1_1_firmware_builder_base.html',1,'DekiEditor']]],
   ['floatcallbacks_9',['FloatCallbacks',['../struct_deki_editor_1_1_editor_u_i_1_1_float_callbacks.html',1,'DekiEditor::EditorUI']]],
   ['fpscounter_10',['FPSCounter',['../class_deki_1_1_f_p_s_counter.html',1,'Deki']]],
-  ['frameworkdependency_11',['FrameworkDependency',['../struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html',1,'DekiEditor::CMakeGen']]]
+  ['frametimings_11',['FrameTimings',['../struct_deki_1_1_engine_1_1_frame_timings.html',1,'Deki::Engine']]],
+  ['frameworkdependency_12',['FrameworkDependency',['../struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html',1,'DekiEditor::CMakeGen']]]
 ];

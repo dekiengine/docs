@@ -1,6 +1,8 @@
 var _platform_templates_8h =
 [
     [ "DekiEditor::PlatformTemplate", "struct_deki_editor_1_1_platform_template.html", "struct_deki_editor_1_1_platform_template" ],
+    [ "DekiEditor::PlatformOriginStatus", "struct_deki_editor_1_1_platform_origin_status.html", "struct_deki_editor_1_1_platform_origin_status" ],
+    [ "DekiEditor::PlatformSyncResult", "struct_deki_editor_1_1_platform_sync_result.html", "struct_deki_editor_1_1_platform_sync_result" ],
     [ "DekiEditor::AdoptPlatformResult", "namespace_deki_editor.html#ac588badb739acc637ed497ed903d588c", [
       [ "DekiEditor::AdoptPlatformResult::AlreadyDefined", "namespace_deki_editor.html#ac588badb739acc637ed497ed903d588cafcb64e02aede727ef9cfc83522f05d62", null ],
       [ "DekiEditor::AdoptPlatformResult::Adopted", "namespace_deki_editor.html#ac588badb739acc637ed497ed903d588ca7388c21e2e0e65e985cbb16757ad88d0", null ],
@@ -11,5 +13,11 @@ var _platform_templates_8h =
     [ "DekiEditor::FindPlatformTemplates", "namespace_deki_editor.html#abe34e42f9c70cc013f3e3b1507df0450", null ],
     [ "DekiEditor::AdoptPlatformTemplate", "namespace_deki_editor.html#a3d43decea579881a3d86911197b6b9fe", null ],
     [ "DekiEditor::EnsureProjectPlatform", "namespace_deki_editor.html#ad57330e58de928c530ae7ba5f8b436a7", null ],
-    [ "DekiEditor::RegisterPlatformTemplates", "namespace_deki_editor.html#a43a62cb3add0f4975c7a6a3606cd13d2", null ]
+    [ "DekiEditor::RegisterPlatformTemplates", "namespace_deki_editor.html#a43a62cb3add0f4975c7a6a3606cd13d2", null ],
+    [ "DekiEditor::GetPlatformOrigin", "namespace_deki_editor.html#aa22745722d21f03c8a8af0b4c2ba2f0d", null ],
+    [ "DekiEditor::UpdatePlatformFromPackage", "namespace_deki_editor.html#ad54788a5aca4084bc8ad50df803b3d62", null ],
+    [ "DekiEditor::RestorePlatformFromPackage", "namespace_deki_editor.html#a7fc437ea86d077250e1d0367417d784d", null ],
+    [ "DekiEditor::ProjectPlatformsRevision", "namespace_deki_editor.html#ac9aad99c523f131247c689195b8928e9", null ],
+    [ "DekiEditor::NoteProjectPlatformsChanged", "namespace_deki_editor.html#a315beb897270460e47bb328cf93ddf5b", null ],
+    [ "DekiEditor::ReloadProjectPlatforms", "namespace_deki_editor.html#a4f669d6ce874fd1388c3c55064a89383", null ]
 ];

@@ -1,0 +1,414 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: Sprite System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-sprite-system.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Sprite System </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md_2guide-sprite-system"></a></p>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-overview"></a>
+Overview</h1>
+<p>Spritesheets go through an import pipeline: PNG source file -&gt; compiled .tex file with embedded frame metadata. All frames live <b>inside the parent .tex file</b> as regions - no separate files are generated per frame.</p>
+<div class="fragment"><div class="line">assets/sprites/player.png (source)</div>
+<div class="line">  -&gt; cache/{parentGuid}  (compiled .tex with FrameList chunk)</div>
+</div><!-- fragment --><p>Unlike fonts (where each size produces a separate file), sprite frames are sub-regions of a single texture. The parent .tex file contains both the pixel data and a FrameList metadata chunk listing all frame coordinates.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-guid-generation"></a>
+GUID Generation</h1>
+<p>Frame GUIDs are <b>deterministic</b> from the parent GUID + frame index:</p>
+<div class="fragment"><div class="line">frameGuid = GenerateDeterministicGuid(parentGuid + &quot;:&quot; + frameIndex)</div>
+</div><!-- fragment --><p>This means:</p><ul>
+<li>Same parent + index always produces the same frame GUID</li>
+<li>Cache can be rebuilt from scratch without breaking references</li>
+<li>Different frames never collide</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-tex-file-format-2dtx"></a>
+.tex File Format (2DTX)</h1>
+<div class="fragment"><div class="line">[Header - 32 bytes]</div>
+<div class="line">  magic: &quot;2DTX&quot; (4 bytes)</div>
+<div class="line">  version: uint32_t</div>
+<div class="line">  width, height: uint32_t</div>
+<div class="line">  format: uint32_t (RGB565, RGB565A8, RGBA8888, ALPHA8)</div>
+<div class="line">  dataSize: uint32_t</div>
+<div class="line">  metadataSize: uint32_t</div>
+<div class="line">  flags: uint32_t (HasTransparency, HasAlpha, IsSprite)</div>
+<div class="line"> </div>
+<div class="line">[Pixel Data]</div>
+<div class="line">  Raw pixel data in the specified format</div>
+<div class="line"> </div>
+<div class="line">[Metadata Chunks]</div>
+<div class="line">  numChunks: uint32_t</div>
+<div class="line"> </div>
+<div class="line">  For each chunk:</div>
+<div class="line">    chunkType: uint32_t (1=Sprite, 2=FrameList, 3=ChromaKey, 4=SourceSize)</div>
+<div class="line">    chunkSize: uint32_t</div>
+<div class="line">    ...chunk data...</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-sprite-system-sprite-chunk-type-1"></a>
+Sprite Chunk (type 1)</h2>
+<p>Grid-based spritesheets store default frame dimensions:</p>
+<div class="fragment"><div class="line">frameWidth:  int32_t</div>
+<div class="line">frameHeight: int32_t</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-sprite-system-framelist-chunk-type-2"></a>
+FrameList Chunk (type 2)</h2>
+<p>All frames with their GUIDs and coordinates:</p>
+<div class="fragment"><div class="line">frameCount: uint16_t</div>
+<div class="line"> </div>
+<div class="line">For each frame (52 bytes):</div>
+<div class="line">  guid:   36 bytes (no null terminator)</div>
+<div class="line">  x:      int32_t</div>
+<div class="line">  y:      int32_t</div>
+<div class="line">  width:  int32_t</div>
+<div class="line">  height: int32_t</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-sprite-system-sourcesize-chunk-type-4"></a>
+SourceSize Chunk (type 4)</h2>
+<p>Present only when the texture is stored smaller than its image (Max Size):</p>
+<div class="fragment"><div class="line">width:  uint32_t   the image&#39;s size</div>
+<div class="line">height: uint32_t</div>
+</div><!-- fragment --><p>The Sprite and FrameList chunks, nine-slice borders and tilesets stay in the image's pixels. <span class="tt">Sprite::ApplySourceSize</span> brings frames, borders and <span class="tt">pixelsPerMeter</span> to the stored pixels at load, so a sprite keeps its size in the world; a tileset maps its tile rects with <span class="tt">Sprite::SourceToStoredX/Y</span>. Both use round(v x stored / image) on rect edges, the rule the encoder resampled each frame with, so frames that touch still touch and none bleeds into another.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-data-sidecar-file"></a>
+.data Sidecar File</h1>
+<p>Each spritesheet can have a <span class="tt">.data</span> JSON sidecar (e.g., <span class="tt">player.png.data</span>):</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;guid&quot;: &quot;random-uuid-for-png-file&quot;,</div>
+<div class="line">  &quot;slicing&quot;: {</div>
+<div class="line">    &quot;mode&quot;: &quot;grid&quot;,</div>
+<div class="line">    &quot;frameWidth&quot;: 32,</div>
+<div class="line">    &quot;frameHeight&quot;: 32</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>For atlas mode (custom frame definitions):</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;guid&quot;: &quot;random-uuid-for-png-file&quot;,</div>
+<div class="line">  &quot;slicing&quot;: {</div>
+<div class="line">    &quot;mode&quot;: &quot;atlas&quot;,</div>
+<div class="line">    &quot;frames&quot;: [</div>
+<div class="line">      { &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;width&quot;: 32, &quot;height&quot;: 48 },</div>
+<div class="line">      { &quot;x&quot;: 32, &quot;y&quot;: 0, &quot;width&quot;: 24, &quot;height&quot;: 48 }</div>
+<div class="line">    ]</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-sprite-system-import-pipeline-textureimporter"></a>
+Import Pipeline: TextureImporter</h1>
+<p><b>File:</b> <span class="tt">deki-editor/src/TextureImporter.cpp</span></p>
+<p>TextureImporter handles PNG -&gt; .tex conversion with frame metadata:</p>
+<h2 class="doxsection"><a class="anchor" id="guide-sprite-system-two-pass-import"></a>
+Two-Pass Import</h2>
+<p><b>Pass 1: Discovery</b></p><ul>
+<li>Scan all image files in assets/</li>
+<li>Generate deterministic SubAsset GUIDs for each frame</li>
+<li>Register frame coordinates in <span class="tt">s_FrameDataRegistry</span></li>
+</ul>
+<p><b>Pass 2: Compilation</b></p><ul>
+<li>Load source image via stb_image</li>
+<li>Convert to target format (RGB565, etc.)</li>
+<li>Write .tex file with header + pixel data + metadata chunks</li>
+<li>FrameList chunk contains all frame GUIDs + coordinates</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-sprite-system-subasset-generation"></a>
+SubAsset Generation</h2>
+<div class="fragment"><div class="line"><span class="comment">// Grid mode</span></div>
+<div class="line"><span class="keywordflow">for</span> (row = 0; row &lt; rows; row++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (col = 0; col &lt; cols; col++) {</div>
+<div class="line">        <span class="keywordtype">int</span> index = row * cols + col;</div>
+<div class="line">        subAsset.guid = GenerateDeterministicGuid(parentGuid + <span class="stringliteral">&quot;:&quot;</span> + std::to_string(index));</div>
+<div class="line">        subAsset.parentGuid = parentGuid;</div>
+<div class="line">        subAsset.subAssetIndex = index;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-sprite-system-frame-data-registry"></a>
+Frame Data Registry</h2>
+<p>In-memory cache for quick frame coordinate lookups in the editor:</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> std::unordered_map&lt;std::string, SpriteFrameData&gt; s_FrameDataRegistry;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// API:</span></div>
+<div class="line">TextureImporter::RegisterFrameData(frameGuid, data);</div>
+<div class="line">TextureImporter::GetFrameData(frameGuid);</div>
+<div class="line">TextureImporter::ClearFrameData();</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-sprite-system-assetref-fields-for-sprites"></a>
+AssetRef Fields for Sprites</h1>
+<p>On a SpriteComponent:</p>
+<div class="fragment"><div class="line">sprite.guid   = parent sprite GUID (the .tex file to load)</div>
+<div class="line">sprite.source = frame GUID (which sub-region to render)</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-sprite-system-why-guid--parent-source--frame"></a>
+Why guid = parent, source = frame</h2>
+<p>Sprite frames are <b>regions within one file</b>, not separate files. The parent .tex contains all frames embedded in its FrameList chunk. So:</p>
+<ul>
+<li><span class="tt">sprite.guid</span> must point to the parent .tex (the actual file to load from disk)</li>
+<li><span class="tt">sprite.source</span> identifies which frame region within that file</li>
+</ul>
+<p>This differs from fonts where each variant is a separate file (<span class="tt">font.guid</span> = variant file, <span class="tt">font.source</span> = TTF source).</p>
+<h2 class="doxsection"><a class="anchor" id="guide-sprite-system-for-plain-sprites-no-frames"></a>
+For plain sprites (no frames)</h2>
+<div class="fragment"><div class="line">sprite.guid   = sprite GUID (the .tex file)</div>
+<div class="line">sprite.source = (empty)</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-sprite-system-frame-resolution-flow"></a>
+Frame Resolution Flow</h1>
+<div class="fragment"><div class="line">1. Scene loaded from MessagePack</div>
+<div class="line">   -&gt; SpriteComponent.Deserialize()</div>
+<div class="line">   -&gt; sprite.guid = &quot;parent-sprite-guid&quot;</div>
+<div class="line">   -&gt; sprite.source = &quot;frame-guid&quot; (or empty)</div>
+<div class="line"> </div>
+<div class="line">2. SpriteComponent::ResolveObjectRefs()</div>
+<div class="line">   -&gt; sprite.Get() loads parent .tex via AssetManager</div>
+<div class="line">   -&gt; Sprite::Load() parses FrameList chunk -&gt; populates frames vector</div>
+<div class="line"> </div>
+<div class="line">3. Choose the meaningful GUID:</div>
+<div class="line">   -&gt; If sprite.source is empty: use sprite.guid (full texture)</div>
+<div class="line">   -&gt; If sprite.source is set:  use sprite.source (specific frame)</div>
+<div class="line">   -&gt; Call OnAssetRefResolved(propertyName, loadedSprite, frameGuid)</div>
+<div class="line"> </div>
+<div class="line">4. SpriteComponent::OnAssetRefResolved()</div>
+<div class="line">   -&gt; Sprite::FindFrame(frameGuid) -&gt; linear search in frames vector</div>
+<div class="line">   -&gt; SetFrameRect(frame-&gt;x, frame-&gt;y, frame-&gt;width, frame-&gt;height)</div>
+<div class="line"> </div>
+<div class="line">5. SpriteComponent::RenderContent()</div>
+<div class="line">   -&gt; Uses frame_x, frame_y, frame_width, frame_height for QuadBlit source rect</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="guide-sprite-system-generated-resolveobjectrefs"></a>
+Generated ResolveObjectRefs</h2>
+<p>The code generator produces this pattern:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> SpriteComponent::ResolveObjectRefs(Scene* scene) {</div>
+<div class="line">    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* _loaded_sprite = sprite.Get()) {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">char</span>* _frameGuid = sprite.source.empty()</div>
+<div class="line">            ? sprite.guid.c_str()</div>
+<div class="line">            : sprite.source.c_str();</div>
+<div class="line">        OnAssetRefResolved(<span class="stringliteral">&quot;sprite&quot;</span>, _loaded_sprite, _frameGuid);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>This ensures <span class="tt">OnAssetRefResolved</span> receives the <b>meaningful identifier</b> (frame GUID for spritesheets, sprite GUID for plain sprites).</p>
+<h2 class="doxsection"><a class="anchor" id="guide-sprite-system-findframe"></a>
+FindFrame</h2>
+<div class="fragment"><div class="line"><span class="keyword">const</span> SpriteFrame* Sprite::FindFrame(<span class="keyword">const</span> std::string&amp; guid)<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; frames.size(); i++) {</div>
+<div class="line">        <span class="keywordflow">if</span> (guid == frames[i].guid) <span class="keywordflow">return</span> &amp;frames[i];</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Linear search - frame counts are small (typically &lt; 100).</p>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-assignment-in-editor"></a>
+Assignment in Editor</h1>
+<p><b>File:</b> <span class="tt">src/panels/inspector/AssetPropertyEditor.cpp</span></p>
+<p>When a user drops a frame onto a SpriteComponent in the inspector:</p>
+<div class="fragment"><div class="line"><span class="comment">// Frame dropped (SubAsset)</span></div>
+<div class="line">assetRefBase.guid = subAsset-&gt;parentGuid;   <span class="comment">// Parent for loading</span></div>
+<div class="line">assetRefBase.source = droppedGuid;          <span class="comment">// Frame for coordinate lookup</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Plain sprite dropped</span></div>
+<div class="line">assetRefBase.guid = droppedGuid;            <span class="comment">// Sprite for loading</span></div>
+<div class="line">assetRefBase.source = <span class="stringliteral">&quot;&quot;</span>;                   <span class="comment">// No frame</span></div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-sprite-system-guid-registration-editor"></a>
+GUID Registration (Editor)</h1>
+<p>SubAsset GUIDs are registered with AssetManager so that <span class="tt">LookupPath</span> works:</p>
+<div class="fragment"><div class="line"><span class="comment">// EditorApp.cpp</span></div>
+<div class="line">AssetManager::Get()-&gt;RegisterGuid(subAsset.guid, info.guid);</div>
+<div class="line"><span class="comment">// Maps: frameGuid -&gt; parentGuid</span></div>
+<div class="line"><span class="comment">// LookupPath(frameGuid) -&gt; cacheDir/parentGuid -&gt; loads parent .tex</span></div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-sprite-system-export-pipeline"></a>
+Export Pipeline</h1>
+<p>During <span class="tt">AssetExporter::ExportToStorage()</span>:</p>
+<div class="fragment"><div class="line">1. CollectUsedAssets()</div>
+<div class="line">   -&gt; Scans all scenes for SpriteComponents</div>
+<div class="line">   -&gt; Collects parent GUIDs (sprite.guid)</div>
+<div class="line"> </div>
+<div class="line">2. CopyUsedAssetsToOutput()</div>
+<div class="line">   -&gt; Copies cache/{parentGuid} -&gt; storage/{parentGuid}</div>
+<div class="line">   -&gt; Only the parent .tex is copied (frames are embedded)</div>
+<div class="line"> </div>
+<div class="line">3. ExportAssetLookupTable()</div>
+<div class="line">   -&gt; Adds parent GUID to binary lookup table</div>
+<div class="line">   -&gt; Frame GUIDs are NOT in the lookup table</div>
+<div class="line">   -&gt; At runtime, frames are found via FindFrame() after loading parent</div>
+</div><!-- fragment --><p><b>Key difference from fonts:</b> Font variants need separate entries in the lookup table because they are separate files. Sprite frames do not - they are found via <span class="tt">FindFrame()</span> after the parent is loaded.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-comparison-fonts-vs-sprites"></a>
+Comparison: Fonts vs Sprites</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Aspect  </th><th class="markdownTableHeadNone">Fonts  </th><th class="markdownTableHeadNone">Sprites  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Virtual assets  </td><td class="markdownTableBodyNone">Separate files (variant + atlas)  </td><td class="markdownTableBodyNone">Regions within one file  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">guid</span> field  </td><td class="markdownTableBodyNone">Variant GUID (baked file)  </td><td class="markdownTableBodyNone">Parent GUID (.tex file)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">source</span> field  </td><td class="markdownTableBodyNone">TTF source GUID  </td><td class="markdownTableBodyNone">Frame GUID  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Deterministic seed  </td><td class="markdownTableBodyNone"><span class="tt">source + ":" + size</span>  </td><td class="markdownTableBodyNone"><span class="tt">parent + ":" + index</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Exported files  </td><td class="markdownTableBodyNone">One variant + one atlas per size  </td><td class="markdownTableBodyNone">One .tex per spritesheet  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Lookup table entries  </td><td class="markdownTableBodyNone">Variant + atlas GUIDs  </td><td class="markdownTableBodyNone">Parent GUID only  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Runtime resolution  </td><td class="markdownTableBodyNone"><span class="tt">LookupPath(variantGuid)</span> -&gt; file  </td><td class="markdownTableBodyNone"><span class="tt">LookupPath(parentGuid)</span> -&gt; file, then <span class="tt">FindFrame(frameGuid)</span>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="guide-sprite-system-key-files"></a>
+Key Files</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">File  </th><th class="markdownTableHeadNone">Purpose  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">deki-editor/src/TextureImporter.cpp</span>  </td><td class="markdownTableBodyNone">PNG -&gt; .tex conversion, SubAsset generation  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_texture_importer_8h.html">deki-editor/include/deki-editor/TextureImporter.h</a></span>  </td><td class="markdownTableBodyNone">TextureImporter interface, SpriteFrameData  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/Sprite.h</span>  </td><td class="markdownTableBodyNone">Sprite class, SpriteFrame struct, FindFrame  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/Sprite.cpp</span>  </td><td class="markdownTableBodyNone">Sprite loading, FrameList parsing  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/SpriteComponent.h</span>  </td><td class="markdownTableBodyNone">SpriteComponent with frame rect fields  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">../../modules/deki-2d/generated/Deki2DReflection0.gen.cpp</span>  </td><td class="markdownTableBodyNone">Generated ResolveObjectRefs with source pattern (one file per package, not per component)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">src/panels/inspector/AssetPropertyEditor.cpp</span>  </td><td class="markdownTableBodyNone">Frame assignment UI  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">src/services/AssetExporter.cpp</span>  </td><td class="markdownTableBodyNone">Export pipeline  </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

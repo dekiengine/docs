@@ -17,8 +17,10 @@ var class_deki_editor_1_1_editor_application =
     [ "PopAssetRefreshRequest", "class_deki_editor_1_1_editor_application.html#ac1479fb85bd53111f5371b7351c59951", null ],
     [ "RequestAssetInvalidation", "class_deki_editor_1_1_editor_application.html#a6814e059c09878ad16c449b5928fb6d4", null ],
     [ "PopAssetInvalidationRequest", "class_deki_editor_1_1_editor_application.html#ac1955171b1b45155e14d978732e82484", null ],
-    [ "RequestOpenTool", "class_deki_editor_1_1_editor_application.html#a0b6d9b19fa263424000617b773f1b8f1", null ],
-    [ "PopOpenToolRequest", "class_deki_editor_1_1_editor_application.html#a988b397ee82ddbbd920e11efc4d2d687", null ],
+    [ "RequestOpenTool", "class_deki_editor_1_1_editor_application.html#a373f356f29a9407b27595a1c074324c0", null ],
+    [ "PopOpenToolRequest", "class_deki_editor_1_1_editor_application.html#a77ae770bed803ae4c8e761f44a6a6f5e", null ],
     [ "RequestSceneTool", "class_deki_editor_1_1_editor_application.html#ac1bf3e7d0f6ec7ad3aa0d221c9ac7975", null ],
-    [ "PopSceneToolRequest", "class_deki_editor_1_1_editor_application.html#acd9329490c270c851d1c872634256ac8", null ]
+    [ "PopSceneToolRequest", "class_deki_editor_1_1_editor_application.html#acd9329490c270c851d1c872634256ac8", null ],
+    [ "GetSelectedAssetPath", "class_deki_editor_1_1_editor_application.html#a546f69bff61c7c91b2b0cf26d458720d", null ],
+    [ "SetSelectedAssetPath", "class_deki_editor_1_1_editor_application.html#a1b61b09578a4bb8dcda7215c2faf16b6", null ]
 ];

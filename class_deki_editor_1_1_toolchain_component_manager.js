@@ -9,5 +9,6 @@ var class_deki_editor_1_1_toolchain_component_manager =
     [ "InstallComponent", "class_deki_editor_1_1_toolchain_component_manager.html#ac7e1c082bc2a54fc5f2a49b018821ede", null ],
     [ "SetupComponent", "class_deki_editor_1_1_toolchain_component_manager.html#ad118a95f3f1e1c362eb26c273076b557", null ],
     [ "CheckForUpdates", "class_deki_editor_1_1_toolchain_component_manager.html#ad30d5721852f5496954861aa67f61022", null ],
-    [ "IsBusy", "class_deki_editor_1_1_toolchain_component_manager.html#a0acd32d53492384870cd56cb7a915680", null ]
+    [ "IsBusy", "class_deki_editor_1_1_toolchain_component_manager.html#a0acd32d53492384870cd56cb7a915680", null ],
+    [ "InstalledPathEntries", "class_deki_editor_1_1_toolchain_component_manager.html#a90b88e4ba3477ad081570e8d403f1753", null ]
 ];

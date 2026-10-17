@@ -11,6 +11,8 @@ var namespace_deki_editor_1_1_c_make_gen =
     [ "MissingCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a5da71b32db273daf61f2e9392ed31481", null ],
     [ "PackageSupportsPlatform", "namespace_deki_editor_1_1_c_make_gen.html#ab58f7b9a98c6ead0aca489306a4ea9f6", null ],
     [ "ScanPackageManifests", "namespace_deki_editor_1_1_c_make_gen.html#abcb718867b7fdbb26072b3faf49b9616", null ],
+    [ "FeatureInBuild", "namespace_deki_editor_1_1_c_make_gen.html#aefbf20f54affae7cb8ee0af170a3c429", null ],
+    [ "RequiredPackagesInBuild", "namespace_deki_editor_1_1_c_make_gen.html#afbb184ffa99347d91041d6b8d9b28ff4", null ],
     [ "ResolveActivePackages", "namespace_deki_editor_1_1_c_make_gen.html#a14a33bb16a49f6a2ef92de2d6aa483d9", null ],
     [ "ReadProjectTags", "namespace_deki_editor_1_1_c_make_gen.html#af57732e2f05def1f8975a510500466b0", null ],
     [ "ResolveTransformWidth", "namespace_deki_editor_1_1_c_make_gen.html#a965b84f1b49da3d3337e3c89127bb27c", null ],

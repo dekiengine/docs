@@ -1,10 +1,10 @@
 var annotated_dup =
 [
     [ "Deki", "namespace_deki.html", [
-      [ "detail", "namespace_deki_1_1detail.html", [
-        [ "TypeNameProbe", "struct_deki_1_1detail_1_1_type_name_probe.html", "struct_deki_1_1detail_1_1_type_name_probe" ],
-        [ "TypeNameStorage", "struct_deki_1_1detail_1_1_type_name_storage.html", null ],
-        [ "TypeShortNameStorage", "struct_deki_1_1detail_1_1_type_short_name_storage.html", null ]
+      [ "Detail", "namespace_deki_1_1_detail.html", [
+        [ "TypeNameProbe", "struct_deki_1_1_detail_1_1_type_name_probe.html", "struct_deki_1_1_detail_1_1_type_name_probe" ],
+        [ "TypeNameStorage", "struct_deki_1_1_detail_1_1_type_name_storage.html", null ],
+        [ "TypeShortNameStorage", "struct_deki_1_1_detail_1_1_type_short_name_storage.html", null ]
       ] ],
       [ "ProjectSettings", "namespace_deki_1_1_project_settings.html", [
         [ "FileHeader", "struct_deki_1_1_project_settings_1_1_file_header.html", "struct_deki_1_1_project_settings_1_1_file_header" ],
@@ -28,9 +28,9 @@ var annotated_dup =
       [ "ComponentFactory", "class_deki_1_1_component_factory.html", "class_deki_1_1_component_factory" ],
       [ "ComponentMeta", "struct_deki_1_1_component_meta.html", "struct_deki_1_1_component_meta" ],
       [ "ComponentRegistry", "class_deki_1_1_component_registry.html", "class_deki_1_1_component_registry" ],
+      [ "ComponentsMigrationRegistrar", "struct_deki_1_1_components_migration_registrar.html", "struct_deki_1_1_components_migration_registrar" ],
       [ "ComponentTypeInfo", "struct_deki_1_1_component_type_info.html", "struct_deki_1_1_component_type_info" ],
       [ "CoreProjectSettings", "class_deki_1_1_core_project_settings.html", "class_deki_1_1_core_project_settings" ],
-      [ "DisplayProjectSettings", "class_deki_1_1_display_project_settings.html", "class_deki_1_1_display_project_settings" ],
       [ "DPackEntry", "struct_deki_1_1_d_pack_entry.html", "struct_deki_1_1_d_pack_entry" ],
       [ "DPackHeader", "struct_deki_1_1_d_pack_header.html", "struct_deki_1_1_d_pack_header" ],
       [ "Engine", "class_deki_1_1_engine.html", "class_deki_1_1_engine" ],
@@ -70,6 +70,7 @@ var annotated_dup =
       [ "Rect", "struct_deki_1_1_rect.html", "struct_deki_1_1_rect" ],
       [ "Scene", "class_deki_1_1_scene.html", "class_deki_1_1_scene" ],
       [ "SceneSystem", "class_deki_1_1_scene_system.html", "class_deki_1_1_scene_system" ],
+      [ "ScreenAnchor", "class_deki_1_1_screen_anchor.html", "class_deki_1_1_screen_anchor" ],
       [ "SettingsRegistry", "class_deki_1_1_settings_registry.html", "class_deki_1_1_settings_registry" ],
       [ "SettingsTypeInfo", "struct_deki_1_1_settings_type_info.html", "struct_deki_1_1_settings_type_info" ],
       [ "SetupComponent", "class_deki_1_1_setup_component.html", "class_deki_1_1_setup_component" ],
@@ -86,9 +87,18 @@ var annotated_dup =
         [ "FeatureEntry", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry" ],
         [ "PackageEntry", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry" ]
       ] ],
+      [ "Localization", "namespace_deki_editor_1_1_localization.html", [
+        [ "Language", "struct_deki_editor_1_1_localization_1_1_language.html", "struct_deki_editor_1_1_localization_1_1_language" ],
+        [ "ScopedPackage", "class_deki_editor_1_1_localization_1_1_scoped_package.html", "class_deki_editor_1_1_localization_1_1_scoped_package" ]
+      ] ],
+      [ "Motion", "namespace_deki_editor_1_1_motion.html", [
+        [ "RowHover", "struct_deki_editor_1_1_motion_1_1_row_hover.html", "struct_deki_editor_1_1_motion_1_1_row_hover" ]
+      ] ],
       [ "AssetCacheContext", "struct_deki_editor_1_1_asset_cache_context.html", "struct_deki_editor_1_1_asset_cache_context" ],
       [ "AssetData", "struct_deki_editor_1_1_asset_data.html", "struct_deki_editor_1_1_asset_data" ],
       [ "AssetDatabase", "class_deki_editor_1_1_asset_database.html", "class_deki_editor_1_1_asset_database" ],
+      [ "AssetExportContext", "struct_deki_editor_1_1_asset_export_context.html", "struct_deki_editor_1_1_asset_export_context" ],
+      [ "AssetExportTarget", "struct_deki_editor_1_1_asset_export_target.html", "struct_deki_editor_1_1_asset_export_target" ],
       [ "AssetFileWatcher", "class_deki_editor_1_1_asset_file_watcher.html", "class_deki_editor_1_1_asset_file_watcher" ],
       [ "AssetInfo", "struct_deki_editor_1_1_asset_info.html", "struct_deki_editor_1_1_asset_info" ],
       [ "AssetPicker", "class_deki_editor_1_1_asset_picker.html", "class_deki_editor_1_1_asset_picker" ],
@@ -119,6 +129,7 @@ var annotated_dup =
       [ "DeadMemory", "class_deki_editor_1_1_dead_memory.html", "class_deki_editor_1_1_dead_memory" ],
       [ "DecodedImage", "struct_deki_editor_1_1_decoded_image.html", "struct_deki_editor_1_1_decoded_image" ],
       [ "DeployTarget", "struct_deki_editor_1_1_deploy_target.html", "struct_deki_editor_1_1_deploy_target" ],
+      [ "DialogButtonSpec", "struct_deki_editor_1_1_dialog_button_spec.html", "struct_deki_editor_1_1_dialog_button_spec" ],
       [ "DownloadProgress", "struct_deki_editor_1_1_download_progress.html", "struct_deki_editor_1_1_download_progress" ],
       [ "EditorApplication", "class_deki_editor_1_1_editor_application.html", "class_deki_editor_1_1_editor_application" ],
       [ "EditorAssets", "class_deki_editor_1_1_editor_assets.html", "class_deki_editor_1_1_editor_assets" ],
@@ -148,7 +159,9 @@ var annotated_dup =
       [ "PackageDecision", "struct_deki_editor_1_1_package_decision.html", "struct_deki_editor_1_1_package_decision" ],
       [ "PickerItem", "struct_deki_editor_1_1_picker_item.html", "struct_deki_editor_1_1_picker_item" ],
       [ "PlatformConfig", "struct_deki_editor_1_1_platform_config.html", "struct_deki_editor_1_1_platform_config" ],
+      [ "PlatformOriginStatus", "struct_deki_editor_1_1_platform_origin_status.html", "struct_deki_editor_1_1_platform_origin_status" ],
       [ "PlatformRegistry", "class_deki_editor_1_1_platform_registry.html", "class_deki_editor_1_1_platform_registry" ],
+      [ "PlatformSyncResult", "struct_deki_editor_1_1_platform_sync_result.html", "struct_deki_editor_1_1_platform_sync_result" ],
       [ "PlatformTemplate", "struct_deki_editor_1_1_platform_template.html", "struct_deki_editor_1_1_platform_template" ],
       [ "PostInstallDef", "struct_deki_editor_1_1_post_install_def.html", "struct_deki_editor_1_1_post_install_def" ],
       [ "SceneView", "class_deki_editor_1_1_scene_view.html", "class_deki_editor_1_1_scene_view" ],
@@ -162,6 +175,8 @@ var annotated_dup =
       [ "TexData", "struct_deki_editor_1_1_tex_data.html", "struct_deki_editor_1_1_tex_data" ],
       [ "TexHeader", "struct_deki_editor_1_1_tex_header.html", "struct_deki_editor_1_1_tex_header" ],
       [ "TextureImporter", "class_deki_editor_1_1_texture_importer.html", "class_deki_editor_1_1_texture_importer" ],
+      [ "TextureSettings", "struct_deki_editor_1_1_texture_settings.html", "struct_deki_editor_1_1_texture_settings" ],
+      [ "TextureTargetSettings", "struct_deki_editor_1_1_texture_target_settings.html", "struct_deki_editor_1_1_texture_target_settings" ],
       [ "ToolchainComponent", "struct_deki_editor_1_1_toolchain_component.html", "struct_deki_editor_1_1_toolchain_component" ],
       [ "ToolchainComponentManager", "class_deki_editor_1_1_toolchain_component_manager.html", "class_deki_editor_1_1_toolchain_component_manager" ],
       [ "ToolchainVersionInfo", "struct_deki_editor_1_1_toolchain_version_info.html", "struct_deki_editor_1_1_toolchain_version_info" ],

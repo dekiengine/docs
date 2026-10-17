@@ -1,0 +1,289 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: Platforms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   </div>
+   <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platforms.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Platforms </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md_2guide-platforms"></a></p>
+<p>A <b>platform</b> is one thing a project builds for: a board, the desktop simulator, a console. This page says what a platform is made of, where platforms come from, how a package ships boards, and what happens to a board once a project is using it.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-what-a-platform-is"></a>
+What a platform is</h1>
+<p>A directory under the project's <span class="tt">platforms/</span>, named by the platform's id:</p>
+<div class="fragment"><div class="line">&lt;project&gt;/platforms/&lt;id&gt;/&lt;id&gt;.json    the platform</div>
+<div class="line">&lt;project&gt;/platforms/&lt;id&gt;/boot.scene   the scene a build of it boots</div>
+<div class="line">&lt;project&gt;/platforms/&lt;id&gt;/origin.json  only if it came from a package (see below)</div>
+</div><!-- fragment --><p>The JSON says what the editor needs to know and nothing about how to build:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Meaning  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">id</span>, <span class="tt">displayName</span>  </td><td class="markdownTableBodyNone">The id is also the directory name.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">framework</span>  </td><td class="markdownTableBodyNone">Which build backend builds it (<span class="tt">espidf</span>, <span class="tt">native</span>, ...). No default: a platform that does not say has no backend, and the build says so.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">frameworkOptions</span>  </td><td class="markdownTableBodyNone">That backend's own settings: chip, flash size, sdkconfig lines, pins. The editor carries them and does not read them; the backend validates them when it builds.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">family</span>  </td><td class="markdownTableBodyNone">Descriptive only. Becomes the capability <span class="tt">family:&lt;x&gt;</span>.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">The screen this target has. The editor previews it, the desktop simulator opens a window of it, and images set to Automatic are stored in <span class="tt">colorFormat</span> for it. A device renders at its display's own size and format; see <a href="guide-screens.html">screens.md</a>.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">externalMemorySize</span>  </td><td class="markdownTableBodyNone">Bytes of memory beyond the internal heap (PSRAM on a microcontroller). Grants packages <span class="tt">memory:external</span>.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">What the target can offer a package: <span class="tt">wifi</span>, <span class="tt">spi</span>, <span class="tt">desktop-os</span>, ...  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">requiresPackages</span>  </td><td class="markdownTableBodyNone">Packages the target always needs, whatever the scenes use. Its hardware abstraction layer, typically.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">defines</span>, <span class="tt">cFlags</span>, <span class="tt">cxxFlags</span>, <span class="tt">linkFlags</span>  </td><td class="markdownTableBodyNone">Compiler settings for the game's own code.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">bootScene</span>  </td><td class="markdownTableBodyNone">Path of the boot scene, relative to the project.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">assetStorage</span>  </td><td class="markdownTableBodyNone">Where a build keeps the game's assets: <span class="tt">internal</span> (the default) or <span class="tt">external</span>. See below.  </td></tr>
+</table>
+<p>The <b>boot scene</b> holds a <span class="tt"><a class="el" href="class_deki_1_1_platform_setup_component.html" title="Runs the boot scene&#39;s SetupComponents (such as SDCardComponent) one at a time, in order,...">Deki::PlatformSetupComponent</a></span> whose <span class="tt">setupComponents</span> list names, in order, the setup steps that bring the hardware up: a power pin, the display, an I2C bus, touch. Each entry is <span class="tt">{id, typeId}</span>: the id of the child object holding the step, and the hash of the step's qualified class name (<span class="tt"><a class="el" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50" title="FNV-1a of a C string; the hash behind every type and property id.">Deki::HashString</a></span>). A wrong <span class="tt">typeId</span> does not fail; the step silently never runs. <span class="tt">ShippedPlatformTemplates</span> in the editor's tests checks every boot scene the packages ship.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-where-the-assets-go"></a>
+Where the assets go</h1>
+<p>A build keeps the game's assets in one of two places:</p>
+<ul>
+<li><b>Internal storage</b>, the default: part of the device. The build carries them, in <span class="tt">assets/</span> next to the boot scene (<span class="tt">F:/assets/</span> at runtime). On an ESP32 that is the flash: the data partition takes the rest of the chip (about 13 MB on a 16 MB board), and the build fails if the game does not fit. The desktop simulator and Tactility apps work the same way.</li>
+<li><b>External storage</b>: removable, an SD card. The build carries only the boot scene and <span class="tt">project_data.bin</span>; the <b>SD Card Deploy</b> panel copies the assets to the card, and the card's storage package loads them (<span class="tt">S:/</span>) once it is mounted.</li>
+</ul>
+<p>Only a platform that <span class="tt">provides</span> <span class="tt">external-storage</span> can choose external; the platform editor shows the choice (<b>Storage &gt; Assets on</b>) only for those. Choose it only for a game too big for the flash: with external storage and no card in the slot, the game has no assets. The LilyGO T-Deck Plus can choose; it keeps its assets in its flash unless told otherwise.</p>
+<p><span class="tt">project_data.bin</span> records the choice, so the engine knows where to look.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-simulating-a-board"></a>
+Simulating a board</h1>
+<p>A board whose backend has a simulator (QEMU for an ESP32 or ESP32-S3) can be built to run there: tick <b>Simulate in QEMU</b> in the Build panel, then Build and <b>Run</b>. From the command line:</p>
+<div class="fragment"><div class="line">DekiEditor --build-firmware --deploy --simulate --platform lilygo_t_deck_plus &lt;project&gt;</div>
+</div><!-- fragment --><p>The simulated build keeps every step of the board's boot scene and adds the simulator's own after them (the QEMU screen), in a copy under its build directory (<span class="tt">generated/build/&lt;platform&gt;_qemu/simulation/boot.scene</span>). Where the simulator has to run a step another way, the copy says so: an SD card wired for SPI goes on QEMU's SD host. The build log lists each change. The platform's <span class="tt">boot.scene</span>, its normal build and the firmware flashed to the board are not changed, and nothing the simulator needs is compiled into them.</p>
+<p>The simulated board has an SD card, made fresh for each build in <span class="tt">simulation/sd_card</span>: the assets, as the SD Card Deploy panel would copy them, for a target that keeps them on the card; empty for one that keeps them inside.</p>
+<p>A backend offers this with <span class="tt">ITargetBuilder::SupportsSimulation</span>, <span class="tt">GetSimulatorName</span> and <span class="tt">MakeSimulationBootScene</span> (with <span class="tt">AddSimulationSteps</span> from <span class="tt"><a class="el" href="_simulation_boot_scene_8h.html">deki-editor/build/SimulationBootScene.h</a></span>), and reads <span class="tt">BuildOptions::simulate</span> for the rest: its own build directory, the card, and what deploy does.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-where-platforms-come-from"></a>
+Where platforms come from</h1>
+<p>The Build panel's target list is three sources, later ones overriding earlier:</p>
+<ol type="1">
+<li><b>Board packs</b> under <span class="tt">~/.deki-editor/board-packs/</span>.</li>
+<li><b>Packages</b> installed in the project: every <span class="tt">&lt;package&gt;/platforms/&lt;id&gt;/</span>.</li>
+<li><b>The project's own</b> <span class="tt">platforms/</span>.</li>
+</ol>
+<p>Installing or removing a package updates the list at once.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-shipping-boards-in-a-package"></a>
+Shipping boards in a package</h1>
+<p>Put one directory per board in the package:</p>
+<div class="fragment"><div class="line">deki-lilygo-boards/</div>
+<div class="line">├── package.json</div>
+<div class="line">└── platforms/</div>
+<div class="line">    ├── lilygo_t_deck_plus/</div>
+<div class="line">    │   ├── lilygo_t_deck_plus.json</div>
+<div class="line">    │   └── boot.scene</div>
+<div class="line">    └── lilygo_t_display_s3_amoled/</div>
+<div class="line">        ├── lilygo_t_display_s3_amoled.json</div>
+<div class="line">        └── boot.scene</div>
+</div><!-- fragment --><p>That is the whole mechanism. The package needs no code: no <span class="tt">package.cmake</span>, no entry point. Its <span class="tt">package.json</span> should list under <span class="tt">requires</span> the packages its boards' boot scenes use, so installing the boards installs them too, and each platform should repeat its hardware abstraction layer in <span class="tt">requiresPackages</span>.</p>
+<p>Rules that are checked:</p>
+<ul>
+<li><b>The directory name is the platform id</b>, and the JSON is <span class="tt">&lt;id&gt;.json</span> inside it. It must be a plain name; anything that looks like a path is skipped.</li>
+<li><b>An id offered by two installed packages is an error</b>, reported when someone chooses it. Prefix ids with the vendor (<span class="tt">lilygo_...</span>).</li>
+<li><b><span class="tt">defines</span> may not name <span class="tt">DEKI_PACKAGE_*</span> or <span class="tt">DEKI_FEATURE_*</span>.</b> Which packages a build has is the resolver's answer. A board that always needs a package says so in <span class="tt">requiresPackages</span>.</li>
+<li><b><span class="tt">bootScene</span> is relative to the project</b>, not the package: <span class="tt">platforms/&lt;id&gt;/boot.scene</span>. It is the adopted copy that gets built.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="guide-platforms-features-that-need-other-packages"></a>
+Features that need other packages</h2>
+<p>A package feature can name packages it needs on its own, in the feature's <span class="tt">requires</span>:</p>
+<div class="fragment"><div class="line">{ &quot;id&quot;: &quot;trackball&quot;, &quot;componentTypes&quot;: [&quot;TrackballComponent&quot;],</div>
+<div class="line">  &quot;requires&quot;: [&quot;deki-gpio&quot;] }</div>
+</div><!-- fragment --><p>Those are not installed with the package. The board, or the project, that uses the feature brings them: <span class="tt">deki-lilygo-boards</span> requires <span class="tt">deki-i2c</span> and <span class="tt">deki-gpio</span> because the T-Deck has an I2C bus and pins, and that is what lets <span class="tt">deki-input</span>'s keyboard and trackball build. A desktop project that installs <span class="tt">deki-input</span> gets neither.</p>
+<p>A build pulls a feature's packages in only while a target uses the feature. A feature in use whose package is missing builds as a step that logs what to install, and the build warns. The feature's code checks for the package with <span class="tt">__has_include</span> so it compiles either way.</p>
+<p><span class="tt">deki-lilygo-boards</span> is the example to copy. <span class="tt">deki-desktop-integration</span> ships the simulator the same way, and <span class="tt">deki-tactility-integration</span> its two targets.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-adopting-the-project-gets-a-copy"></a>
+Adopting: the project gets a copy</h1>
+<p>Choosing a package's platform - in the Build panel, with <span class="tt">set_active_platform</span>, or by building for it - copies its directory into the project's <span class="tt">platforms/</span>. From then on it is the project's file: edit it in the platform editor, open its boot scene like any scene, commit it. A project never builds from inside a package.</p>
+<p>A platform the project already defines is never overwritten by an adoption, and files already in that directory are kept.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-origin-edit-update-restore"></a>
+Origin: edit, update, restore</h1>
+<p>An adoption also writes <span class="tt">origin.json</span> beside the platform. It names the package and holds the template <b>as adopted</b>: the platform JSON, and a hash of every other file. Commit it with the rest.</p>
+<p>With what was adopted, what the project has now, and what the package offers now all known, the Build panel shows under the target list:</p>
+<div class="fragment"><div class="line">From package deki-lilygo-boards 0.17.0 - modified - update available</div>
+<div class="line">[Update] [Restore defaults]</div>
+</div><!-- fragment --><ul>
+<li><b>modified</b>: the project's copy differs from what was adopted. Hover for what.</li>
+<li><b>update available</b>: the package offers something other than what was adopted.</li>
+<li><b>Update</b> takes what the package changed and keeps what the project changed. Platform settings merge one by one, a backend's <span class="tt">frameworkOptions</span> included; other files, the boot scene among them, are taken or kept whole. Where both sides changed the same thing the project's is kept and named, and the package's version becomes the new baseline, so the question is asked once.</li>
+<li><b>Restore defaults</b> replaces the copy with the package's version as it is now, after confirming. Files only the project has (an asset sidecar, a scene of its own) are left.</li>
+</ul>
+<p>What does not count as a modification: the editor re-saving the JSON in its own form (older files keep backend settings at the top level; a save nests them under <span class="tt">frameworkOptions</span>), and line endings changed by git.</p>
+<p>A platform adopted before origins were recorded gets its record the next time it is used, if it still matches what the package offers. If it differs there is nothing to say whose change that was, so no baseline is invented: it shows as <em>differs from the package</em> and can be restored, not updated.</p>
+<p>If the package is removed, the platform stays and still builds. The line reads <em>(not installed)</em> until the package is back.</p>
+<p>Deleting an adopted platform puts it back on offer; choosing it again copies the package's current version in.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-platforms-from-the-command-line"></a>
+From the command line</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Tool  </th><th class="markdownTableHeadNone">Does  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">list_platforms</span> (or <span class="tt">--list-platforms</span>)  </td><td class="markdownTableBodyNone">Every target, with <span class="tt">origin</span> on the ones from a package: <span class="tt">package</span>, <span class="tt">modified</span>, <span class="tt">updateAvailable</span>, <span class="tt">canUpdate</span>, <span class="tt">canRestore</span>.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">set_active_platform</span>  </td><td class="markdownTableBodyNone">Choose the project's default target, adopting it if needed.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">create_platform</span>, <span class="tt">set_platform_provides</span>  </td><td class="markdownTableBodyNone">Make or change a platform of the project's own. <span class="tt">set_platform_provides</span> takes <span class="tt">asset_storage</span> and <span class="tt">cxx_flags</span>.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">update_platform</span>  </td><td class="markdownTableBodyNone">Update from the package. Returns <span class="tt">taken</span> and <span class="tt">kept</span>.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">restore_platform</span>  </td><td class="markdownTableBodyNone">Restore the package's version. Returns <span class="tt">taken</span>.  </td></tr>
+</table>
+<div class="fragment"><div class="line">DekiEditor --tool update_platform --args &#39;{&quot;platform_id&quot;:&quot;lilygo_t_deck_plus&quot;}&#39; &lt;project&gt;</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-platforms-in-the-code"></a>
+In the code</h1>
+<p><span class="tt"><a class="el" href="_platform_config_8h.html">deki-editor/build/PlatformConfig.h</a></span> is the platform and the registry. <span class="tt"><a class="el" href="_platform_templates_8h.html">deki-editor/build/PlatformTemplates.h</a></span> is everything on this page about packages: finding offers, adopting, the origin record, update and restore. Both are in the editor's SDK, so a package's build backend can use them. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

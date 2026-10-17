@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -146,42 +154,42 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:FileHeader" id="r_FileHeader"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_file_header.html">FileHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary file header for project settings.  <a href="struct_deki_1_1_project_settings_1_1_file_header.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DisplaySettings" id="r_DisplaySettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_display_settings.html">DisplaySettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display/rendering settings.  <a href="struct_deki_1_1_project_settings_1_1_display_settings.html#details">More...</a><br /></td></tr>
 <tr class="memitem:RuntimeSettings" id="r_RuntimeSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_project_settings_1_1_runtime_settings.html">RuntimeSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime settings (version 3+).  <a href="struct_deki_1_1_project_settings_1_1_runtime_settings.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afe0de3076b39d760eed2c6968ad6bc92" id="r_afe0de3076b39d760eed2c6968ad6bc92"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92">Load</a> (const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render pipeline configuration (version 4+).  <br /></td></tr>
+<tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads project settings from the bytes of a project_data.bin.  <br /></td></tr>
 <tr class="memitem:aa3a74675706af66cae659f467f493e1d" id="r_aa3a74675706af66cae659f467f493e1d"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa3a74675706af66cae659f467f493e1d">GetTargetFPS</a> ()</td></tr>
-<tr class="memdesc:aa3a74675706af66cae659f467f493e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the target FPS from loaded project settings.  <br /></td></tr>
+<tr class="memdesc:aa3a74675706af66cae659f467f493e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target frame rate, 0 for no limit.  <br /></td></tr>
+<tr class="memitem:a53b9fe8e2a8d4eb8629bdd44f5e36be6" id="r_a53b9fe8e2a8d4eb8629bdd44f5e36be6"><td class="memItemLeft"><a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a>&#160;</td><td class="memItemRight"><a class="el" href="#a53b9fe8e2a8d4eb8629bdd44f5e36be6">GetAssetStorage</a> ()</td></tr>
+<tr class="memdesc:a53b9fe8e2a8d4eb8629bdd44f5e36be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this build's assets are on internal or external storage.  <br /></td></tr>
 <tr class="memitem:a3ede2597091ba3cbec425d5fbdd4899d" id="r_a3ede2597091ba3cbec425d5fbdd4899d"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a3ede2597091ba3cbec425d5fbdd4899d">GetStartupScene</a> ()</td></tr>
-<tr class="memdesc:a3ede2597091ba3cbec425d5fbdd4899d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the startup scene path from loaded project settings.  <br /></td></tr>
+<tr class="memdesc:a3ede2597091ba3cbec425d5fbdd4899d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Startup scene path, empty when not set.  <br /></td></tr>
 <tr class="memitem:a2567174a33b1829969a67f85a855fe8b" id="r_a2567174a33b1829969a67f85a855fe8b"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2567174a33b1829969a67f85a855fe8b">GetRenderPipeline</a> ()</td></tr>
-<tr class="memdesc:a2567174a33b1829969a67f85a855fe8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render pipeline renderer name (version 4+).  <br /></td></tr>
+<tr class="memdesc:a2567174a33b1829969a67f85a855fe8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer name, such as "standard2d"; "standard2d" when not set.  <br /></td></tr>
 <tr class="memitem:af40d68695cc65e961d3cc2616d202aa1" id="r_af40d68695cc65e961d3cc2616d202aa1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af40d68695cc65e961d3cc2616d202aa1">GetPassCount</a> ()</td></tr>
-<tr class="memdesc:af40d68695cc65e961d3cc2616d202aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of render passes in the pipeline (version 4+).  <br /></td></tr>
+<tr class="memdesc:af40d68695cc65e961d3cc2616d202aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of render passes, 0 when not set.  <br /></td></tr>
 <tr class="memitem:ad64bb5928fb4b3bfb71516c82fa04edd" id="r_ad64bb5928fb4b3bfb71516c82fa04edd"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#ad64bb5928fb4b3bfb71516c82fa04edd">GetPassName</a> (int index)</td></tr>
-<tr class="memdesc:ad64bb5928fb4b3bfb71516c82fa04edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a render pass by index (version 4+).  <br /></td></tr>
+<tr class="memdesc:ad64bb5928fb4b3bfb71516c82fa04edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of render pass <span class="tt">index</span> (such as "clip2d"), or "" when out of range.  <br /></td></tr>
 <tr class="memitem:a9b8fd73b7762fa6abb6f083aaa0a0c50" id="r_a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9b8fd73b7762fa6abb6f083aaa0a0c50">LoadFromFile</a> (const char *path=nullptr)</td></tr>
-<tr class="memdesc:a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load project settings from filesystem.  <br /></td></tr>
+<tr class="memdesc:a9b8fd73b7762fa6abb6f083aaa0a0c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads project settings from <span class="tt">path</span>, or from kFilename when it is nullptr.  <br /></td></tr>
 <tr class="memitem:a888af89782768d83693cf5c8fd3b8041" id="r_a888af89782768d83693cf5c8fd3b8041"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a888af89782768d83693cf5c8fd3b8041">ReadPackageSettingBool</a> (const char *section, const char *key, bool &amp;out)</td></tr>
-<tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime lookup of one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a>.  <br /></td></tr>
+<tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Reads project settings from the bytes of a project_data.bin.">Load()</a>.  <br /></td></tr>
 <tr class="memitem:af0e60e7c6f701d39e142589bac712755" id="r_af0e60e7c6f701d39e142589bac712755"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af0e60e7c6f701d39e142589bac712755">ReadPackageSettingInt32</a> (const char *section, const char *key, int32_t &amp;out)</td></tr>
 <tr class="memitem:a176b5cfa6939b893dc28d08b305fbb0f" id="r_a176b5cfa6939b893dc28d08b305fbb0f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a176b5cfa6939b893dc28d08b305fbb0f">ReadPackageSettingFloat</a> (const char *section, const char *key, float &amp;out)</td></tr>
-<tr class="memitem:aa980522f7fb2d282b82360c7ee2f7f0b" id="r_aa980522f7fb2d282b82360c7ee2f7f0b"><td class="memItemLeft">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa980522f7fb2d282b82360c7ee2f7f0b">Write</a> (int32_t displayWidth, int32_t displayHeight, uint8_t colorFormat, int32_t targetFPS=0, const char *startupScene=nullptr, const char *rendererName=nullptr, const char *const *passNames=nullptr, int passCount=0)</td></tr>
-<tr class="memdesc:aa980522f7fb2d282b82360c7ee2f7f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize project settings to a dproject.bin image (editor only).  <br /></td></tr>
+<tr class="memitem:a082b927b2c9d8ee9b0a44b435cc5e7cc" id="r_a082b927b2c9d8ee9b0a44b435cc5e7cc"><td class="memItemLeft">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a082b927b2c9d8ee9b0a44b435cc5e7cc">Write</a> (<a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a> assetStorage, int32_t targetFPS=0, const char *startupScene=nullptr, const char *rendererName=nullptr, const char *const *passNames=nullptr, int passCount=0)</td></tr>
+<tr class="memdesc:a082b927b2c9d8ee9b0a44b435cc5e7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a project_data.bin image (editor only).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae16a7f24210eb71828b4cc0123728edc" id="r_ae16a7f24210eb71828b4cc0123728edc"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ae16a7f24210eb71828b4cc0123728edc">FILENAME</a> = &quot;F:/dproject.bin&quot;</td></tr>
-<tr class="memitem:ae0a9489872d1d6fee5221152f6cb59d7" id="r_ae0a9489872d1d6fee5221152f6cb59d7"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ae0a9489872d1d6fee5221152f6cb59d7">EXPORT_FILENAME</a> = &quot;dproject.bin&quot;</td></tr>
-<tr class="memitem:aa27a7a0a5e4ff20ff12a6779817f749f" id="r_aa27a7a0a5e4ff20ff12a6779817f749f"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa27a7a0a5e4ff20ff12a6779817f749f">MAGIC</a> = 0x444B5052</td></tr>
-<tr class="memitem:a59f6a993741fb5a7f56c3a7dda9d5121" id="r_a59f6a993741fb5a7f56c3a7dda9d5121"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a59f6a993741fb5a7f56c3a7dda9d5121">VERSION</a> = 5</td></tr>
-<tr class="memitem:a62b4f8fa6722ea85ea883bed2cfe9aab" id="r_a62b4f8fa6722ea85ea883bed2cfe9aab"><td class="memItemLeft">constexpr size_t&#160;</td><td class="memItemRight"><a class="el" href="#a62b4f8fa6722ea85ea883bed2cfe9aab">MAX_FILE_SIZE</a> = 16384</td></tr>
+<tr class="memitem:a72ead5030e6136bbb1dbfb47bd518a50" id="r_a72ead5030e6136bbb1dbfb47bd518a50"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a72ead5030e6136bbb1dbfb47bd518a50">kFilename</a> = &quot;F:/project_data.bin&quot;</td></tr>
+<tr class="memitem:a16c29618660cc2ae6f0aae3a055c9c3f" id="r_a16c29618660cc2ae6f0aae3a055c9c3f"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a16c29618660cc2ae6f0aae3a055c9c3f">kExportFilename</a> = &quot;project_data.bin&quot;</td></tr>
+<tr class="memitem:aaebb0cbd826fd18e71744c878a0be4ef" id="r_aaebb0cbd826fd18e71744c878a0be4ef"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aaebb0cbd826fd18e71744c878a0be4ef">kMagic</a> = 0x444B5052</td></tr>
+<tr class="memitem:a01897366c074aa852f99e8c896b6c19d" id="r_a01897366c074aa852f99e8c896b6c19d"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a01897366c074aa852f99e8c896b6c19d">kVersion</a> = 7</td></tr>
+<tr class="memitem:a687200d312f379d10f691f63d726cd48" id="r_a687200d312f379d10f691f63d726cd48"><td class="memItemLeft">constexpr uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a687200d312f379d10f691f63d726cd48">kFlagAssetsExternal</a> = 1u &lt;&lt; 0</td></tr>
+<tr class="memitem:a164d481ac003af90ac05f7e4d9b3467d" id="r_a164d481ac003af90ac05f7e4d9b3467d"><td class="memItemLeft">constexpr size_t&#160;</td><td class="memItemRight"><a class="el" href="#a164d481ac003af90ac05f7e4d9b3467d">kMaxFileSize</a> = 16384</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="afe0de3076b39d760eed2c6968ad6bc92" name="afe0de3076b39d760eed2c6968ad6bc92"></a>
@@ -203,16 +211,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Render pipeline configuration (version 4+). </p>
-<p>Baked from the .rpipeline asset at export time: which renderer to activate and which passes to run, read back through <a class="el" href="#a2567174a33b1829969a67f85a855fe8b" title="Get the render pipeline renderer name (version 4+).">GetRenderPipeline()</a>, <a class="el" href="#af40d68695cc65e961d3cc2616d202aa1" title="Get the number of render passes in the pipeline (version 4+).">GetPassCount()</a> and <a class="el" href="#ad64bb5928fb4b3bfb71516c82fa04edd" title="Get the name of a render pass by index (version 4+).">GetPassName()</a>. Both the renderer name and each pass name are stored as a length followed by bytes, so neither the count nor the length of a name is capped by this format. The one ceiling is the pass count's own width, one byte.</p>
-<p>Load project settings from binary file </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Pointer to file data </td></tr>
-    <tr><td class="paramname">size</td><td>Size of file data </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if loaded successfully </dd></dl>
+<p>Reads project settings from the bytes of a project_data.bin. </p>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
@@ -231,8 +231,26 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the target FPS from loaded project settings. </p>
-<dl class="section return"><dt>Returns</dt><dd>Target FPS (0 = no limit) </dd></dl>
+<p>Target frame rate, 0 for no limit. </p>
+
+</div>
+</div>
+<a id="a53b9fe8e2a8d4eb8629bdd44f5e36be6" name="a53b9fe8e2a8d4eb8629bdd44f5e36be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b9fe8e2a8d4eb8629bdd44f5e36be6">&#9670;&#160;</a></span>GetAssetStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a> Deki::ProjectSettings::GetAssetStorage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether this build's assets are on internal or external storage. </p>
 
 </div>
 </div>
@@ -251,8 +269,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the startup scene path from loaded project settings. </p>
-<dl class="section return"><dt>Returns</dt><dd>Startup scene path (empty if not set) </dd></dl>
+<p>Startup scene path, empty when not set. </p>
 
 </div>
 </div>
@@ -271,8 +288,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the render pipeline renderer name (version 4+). </p>
-<dl class="section return"><dt>Returns</dt><dd>Renderer name (e.g., "standard2d"), or "standard2d" if not set </dd></dl>
+<p>Renderer name, such as "standard2d"; "standard2d" when not set. </p>
 
 </div>
 </div>
@@ -291,8 +307,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of render passes in the pipeline (version 4+). </p>
-<dl class="section return"><dt>Returns</dt><dd>Pass count (0 if not set) </dd></dl>
+<p>Number of render passes, 0 when not set. </p>
 
 </div>
 </div>
@@ -311,14 +326,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the name of a render pass by index (version 4+). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>Pass index (0-based) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pass name (e.g., "clip2d"), or empty string if out of range </dd></dl>
+<p>Name of render pass <span class="tt">index</span> (such as "clip2d"), or "" when out of range. </p>
 
 </div>
 </div>
@@ -337,14 +345,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Load project settings from filesystem. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Path to dproject.bin file (optional, uses FILENAME if nullptr) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if loaded successfully </dd></dl>
+<p>Loads project settings from <span class="tt">path</span>, or from kFilename when it is nullptr. </p>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
@@ -372,8 +374,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runtime lookup of one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a>. </p>
-<p><span class="tt">section</span> is the DEKI_PROJECT_SETTINGS_SECTION name (e.g. "Rendering"), <span class="tt">key</span> the reflected field name. Works without the settings registry, which device builds do not have (the generic hydration in <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Render pipeline configuration (version 4+).">Load()</a> needs the registry's metadata); editor builds should read the registry instance. Returns false when no file is loaded, the section or key is absent, or the stored type is not the one asked for. </p>
+<p>Reads one package setting from the last <a class="el" href="#afe0de3076b39d760eed2c6968ad6bc92" title="Reads project settings from the bytes of a project_data.bin.">Load()</a>. </p>
+<p><span class="tt">section</span> is the DEKI_PROJECT_SETTINGS_SECTION name (such as "Rendering"), <span class="tt">key</span> the reflected field name. Works without the settings registry, which device builds lack; editor builds should read the registry instance instead. Returns false when no file is loaded, the section or key is missing, or the stored type is a different one. </p>
 
 </div>
 </div>
@@ -429,8 +431,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa980522f7fb2d282b82360c7ee2f7f0b" name="aa980522f7fb2d282b82360c7ee2f7f0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa980522f7fb2d282b82360c7ee2f7f0b">&#9670;&#160;</a></span>Write()</h2>
+<a id="a082b927b2c9d8ee9b0a44b435cc5e7cc" name="a082b927b2c9d8ee9b0a44b435cc5e7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082b927b2c9d8ee9b0a44b435cc5e7cc">&#9670;&#160;</a></span>Write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,17 +440,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; uint8_t &gt; Deki::ProjectSettings::Write </td>
           <td>(</td>
-          <td class="paramtype">int32_t</td>          <td class="paramname"><span class="paramname"><em>displayWidth</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t</td>          <td class="paramname"><span class="paramname"><em>displayHeight</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>colorFormat</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a></td>          <td class="paramname"><span class="paramname"><em>assetStorage</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -478,25 +470,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Serialize project settings to a dproject.bin image (editor only). </p>
-<p>Returns the bytes rather than filling a caller-supplied pointer. The v5 packageSettings chunk grows with the settings registry, so no call site can know the size up front - the previous signature took a bare uint8_t* with no capacity argument and a doc comment claiming 256 bytes would do, while the three call sites each guessed a 4096-byte stack array and LoadFromFile accepted files up to MAX_FILE_SIZE (16384) back.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">displayWidth</td><td>Target display width </td></tr>
-    <tr><td class="paramname">displayHeight</td><td>Target display height </td></tr>
-    <tr><td class="paramname">colorFormat</td><td><a class="el" href="class_deki_1_1_color.html" title="RGBA colour with packed-format conversions (RGB565, RGBA8888).">Color</a> format (0=RGB565, 1=RGB888, 2=ARGB8888) </td></tr>
-    <tr><td class="paramname">targetFPS</td><td>Target FPS (0 = no limit) </td></tr>
-    <tr><td class="paramname">startupScene</td><td>Startup scene path (can be nullptr) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The serialized image; empty only if nothing could be written </dd></dl>
+<p>Builds a project_data.bin image (editor only). </p>
+<p><span class="tt">targetFPS</span> 0 means no limit; <span class="tt">startupScene</span> may be nullptr. Returns the bytes, rather than filling a caller's buffer, because the packageSettings chunk grows with the settings registry and no caller can know the size. Empty only when nothing could be written. </p>
 
 </div>
 </div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="ae16a7f24210eb71828b4cc0123728edc" name="ae16a7f24210eb71828b4cc0123728edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae16a7f24210eb71828b4cc0123728edc">&#9670;&#160;</a></span>FILENAME</h2>
+<a id="a72ead5030e6136bbb1dbfb47bd518a50" name="a72ead5030e6136bbb1dbfb47bd518a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ead5030e6136bbb1dbfb47bd518a50">&#9670;&#160;</a></span>kFilename</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +486,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::ProjectSettings::FILENAME = &quot;F:/dproject.bin&quot;</td>
+          <td class="memname">const char* Deki::ProjectSettings::kFilename = &quot;F:/project_data.bin&quot;</td>
         </tr>
       </table>
   </td>
@@ -517,8 +498,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0a9489872d1d6fee5221152f6cb59d7" name="ae0a9489872d1d6fee5221152f6cb59d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0a9489872d1d6fee5221152f6cb59d7">&#9670;&#160;</a></span>EXPORT_FILENAME</h2>
+<a id="a16c29618660cc2ae6f0aae3a055c9c3f" name="a16c29618660cc2ae6f0aae3a055c9c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c29618660cc2ae6f0aae3a055c9c3f">&#9670;&#160;</a></span>kExportFilename</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -527,7 +508,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::ProjectSettings::EXPORT_FILENAME = &quot;dproject.bin&quot;</td>
+          <td class="memname">const char* Deki::ProjectSettings::kExportFilename = &quot;project_data.bin&quot;</td>
         </tr>
       </table>
   </td>
@@ -539,8 +520,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa27a7a0a5e4ff20ff12a6779817f749f" name="aa27a7a0a5e4ff20ff12a6779817f749f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa27a7a0a5e4ff20ff12a6779817f749f">&#9670;&#160;</a></span>MAGIC</h2>
+<a id="aaebb0cbd826fd18e71744c878a0be4ef" name="aaebb0cbd826fd18e71744c878a0be4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaebb0cbd826fd18e71744c878a0be4ef">&#9670;&#160;</a></span>kMagic</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,7 +530,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t Deki::ProjectSettings::MAGIC = 0x444B5052</td>
+          <td class="memname">uint32_t Deki::ProjectSettings::kMagic = 0x444B5052</td>
         </tr>
       </table>
   </td>
@@ -561,8 +542,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a59f6a993741fb5a7f56c3a7dda9d5121" name="a59f6a993741fb5a7f56c3a7dda9d5121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59f6a993741fb5a7f56c3a7dda9d5121">&#9670;&#160;</a></span>VERSION</h2>
+<a id="a01897366c074aa852f99e8c896b6c19d" name="a01897366c074aa852f99e8c896b6c19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01897366c074aa852f99e8c896b6c19d">&#9670;&#160;</a></span>kVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +552,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Deki::ProjectSettings::VERSION = 5</td>
+          <td class="memname">uint16_t Deki::ProjectSettings::kVersion = 7</td>
         </tr>
       </table>
   </td>
@@ -583,8 +564,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a62b4f8fa6722ea85ea883bed2cfe9aab" name="a62b4f8fa6722ea85ea883bed2cfe9aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62b4f8fa6722ea85ea883bed2cfe9aab">&#9670;&#160;</a></span>MAX_FILE_SIZE</h2>
+<a id="a687200d312f379d10f691f63d726cd48" name="a687200d312f379d10f691f63d726cd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687200d312f379d10f691f63d726cd48">&#9670;&#160;</a></span>kFlagAssetsExternal</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +574,29 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Deki::ProjectSettings::MAX_FILE_SIZE = 16384</td>
+          <td class="memname">uint16_t Deki::ProjectSettings::kFlagAssetsExternal = 1u &lt;&lt; 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a164d481ac003af90ac05f7e4d9b3467d" name="a164d481ac003af90ac05f7e4d9b3467d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164d481ac003af90ac05f7e4d9b3467d">&#9670;&#160;</a></span>kMaxFileSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::ProjectSettings::kMaxFileSize = 16384</td>
         </tr>
       </table>
   </td>

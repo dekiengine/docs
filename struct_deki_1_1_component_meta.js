@@ -21,5 +21,6 @@ var struct_deki_1_1_component_meta =
     [ "settingsSection", "struct_deki_1_1_component_meta.html#a80e5fc5c69b79fe85d878e96ea4f722a", null ],
     [ "typeInfo", "struct_deki_1_1_component_meta.html#a227d410684ba44b3051aec689c5e87ff", null ],
     [ "formerNames", "struct_deki_1_1_component_meta.html#a49093042bdf549d5931f5b8fbfea51c1", null ],
-    [ "formerNameCount", "struct_deki_1_1_component_meta.html#a20a79e8df35de251e4ae81c07ecbfa9f", null ]
+    [ "formerNameCount", "struct_deki_1_1_component_meta.html#a20a79e8df35de251e4ae81c07ecbfa9f", null ],
+    [ "package", "struct_deki_1_1_component_meta.html#af096125c2107148ce0b03349775e2bfa", null ]
 ];

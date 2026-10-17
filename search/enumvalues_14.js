@@ -7,6 +7,6 @@ var searchData=
   ['winnone_4',['WinNone',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0a0e6ccc11d9aa3cab20d83779aba9aa62',1,'DekiEditor::EditorUI']]],
   ['winnosavedsettings_5',['WinNoSavedSettings',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0a113cfc39a9487c1f2f905903181886a8',1,'DekiEditor::EditorUI']]],
   ['winnoscrollbar_6',['WinNoScrollbar',['../class_deki_editor_1_1_editor_u_i.html#a841f1fc64ffa55358471d3e166a7dcd0a4fdee9d6e4dde6b97e1753f569fabe66',1,'DekiEditor::EditorUI']]],
-  ['write_5fbinary_7',['WRITE_BINARY',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aab7c82c62e26c2043f55dca2a21a4045f',1,'Deki::IFileSystem']]],
-  ['write_5ftext_8',['WRITE_TEXT',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa407a6e340be304c7d40ff9d90858931d',1,'Deki::IFileSystem']]]
+  ['writebinary_7',['WriteBinary',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aaf3de1e6f327fc28e955c698773c74045',1,'Deki::IFileSystem']]],
+  ['writetext_8',['WriteText',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa9fafe29facddc25b6579c4c5e29af7fb',1,'Deki::IFileSystem']]]
 ];

@@ -1,8 +1,8 @@
 var struct_deki_1_1_vector3 =
 [
     [ "Vector3", "struct_deki_1_1_vector3.html#a0cca25ed1e53f0eda7c7bcc052619538", null ],
-    [ "Vector3", "struct_deki_1_1_vector3.html#a75ea28578e58ccca5503151113390069", null ],
-    [ "Vector3", "struct_deki_1_1_vector3.html#ab2b1d4cc986156bf8ca0cb4273633839", null ],
+    [ "Vector3", "struct_deki_1_1_vector3.html#a3c68e89b42784caf931e89902c16f1d7", null ],
+    [ "Vector3", "struct_deki_1_1_vector3.html#ae8a9ce87938f5a180c35286ec863013f", null ],
     [ "Zero", "struct_deki_1_1_vector3.html#ac858f1637f69f0521f9b929171393f5b", null ],
     [ "One", "struct_deki_1_1_vector3.html#ad74f7c477dfdd1692594c7e9dd51cddf", null ],
     [ "Up", "struct_deki_1_1_vector3.html#ad06fdab3a8cd116782a1923b7e809495", null ],

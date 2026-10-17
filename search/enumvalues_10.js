@@ -9,12 +9,12 @@ var searchData=
   ['scenes_6',['Scenes',['../namespace_deki_editor.html#aa642bc0086d6d1298921cac19472959dabb34f602e45a9fbcb2cdfee7a48673fc',1,'DekiEditor']]],
   ['script_7',['Script',['../namespace_deki_editor.html#ae6db2932853c76e2df52a32010e1c763af907e651164789346ae0a1e257c462d8',1,'DekiEditor']]],
   ['scripts_8',['Scripts',['../namespace_deki_editor.html#aa642bc0086d6d1298921cac19472959daa83f1ca5ad00b39773d9e6a26b0e70b2',1,'DekiEditor']]],
-  ['sdcard_9',['SDCard',['../namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3bac26c9cfab7c0dabebc9c8bfa822fec9a',1,'Deki::Storage']]],
-  ['select_10',['Select',['../namespace_deki_editor.html#a890eb8b6d87bce87caaa8478df7e00d9ae0626222614bdee31951d84c64e5e9ff',1,'DekiEditor']]],
-  ['sleeping_11',['Sleeping',['../class_deki_1_1_i_power.html#abc1cca9b8658f1e9e1f6205b425caf73abddd4f44136f466c065a2c7a4c53e75b',1,'Deki::IPower']]],
+  ['select_9',['Select',['../namespace_deki_editor.html#a890eb8b6d87bce87caaa8478df7e00d9ae0626222614bdee31951d84c64e5e9ff',1,'DekiEditor']]],
+  ['sleeping_10',['Sleeping',['../class_deki_1_1_i_power.html#abc1cca9b8658f1e9e1f6205b425caf73abddd4f44136f466c065a2c7a4c53e75b',1,'Deki::IPower']]],
+  ['sourcesize_11',['SourceSize',['../namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa5740ee592df7a56b0562450ea11aff09',1,'DekiEditor']]],
   ['sprite_12',['Sprite',['../namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa51f2b7b14433aa22c67d1f4fc18943cd',1,'DekiEditor']]],
-  ['str16_13',['STR16',['../namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6a882a20c2d17a568e363b91e799c33cd0',1,'Deki::SceneFormat']]],
-  ['str8_14',['STR8',['../namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6a280e4e0df68aa4ff89ffb5804715dda5',1,'Deki::SceneFormat']]],
+  ['str16_13',['Str16',['../namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6ad3baadc693368072d17224398b2a4460',1,'Deki::SceneFormat']]],
+  ['str8_14',['Str8',['../namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6a05e5ef6827bf6f19653248425183d95e',1,'Deki::SceneFormat']]],
   ['string_15',['String',['../namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a27118326006d3829667a400ad23d5d98',1,'Deki']]],
   ['stripped_16',['Stripped',['../namespace_deki_editor.html#aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954',1,'DekiEditor']]]
 ];

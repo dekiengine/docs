@@ -12,7 +12,7 @@ var class_deki_editor_1_1_editor_u_i =
     [ "DrawDefaultPropertiesFunc", "class_deki_editor_1_1_editor_u_i.html#a8884133f182eae66d6700108d00c1c66", null ],
     [ "ResolveAssetNameFunc", "class_deki_editor_1_1_editor_u_i.html#afb67a1c061fea4b4c0b653f4d1b8fe3a", null ],
     [ "GetFontAtlasFunc", "class_deki_editor_1_1_editor_u_i.html#adb7d710d3fa8b970fcc6e26dfcdcdac4", null ],
-    [ "ModifyAssetFunc", "class_deki_editor_1_1_editor_u_i.html#ad6bfcb444d5e616264f6729877ff1f01", null ],
+    [ "ModifyAssetFunc", "class_deki_editor_1_1_editor_u_i.html#a5f95e33564416a9630a1b91b3ffd09fb", null ],
     [ "Col", "class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3", [
       [ "Text", "class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a9dffbf69ffba8bc38bc4e01abf4b1675", null ],
       [ "Button", "class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a87b7760f14fbff78d8819291f36ab9a0", null ],

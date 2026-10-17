@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -143,18 +151,18 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7816d85ec296873d8c6925f19692c97b" id="r_a7816d85ec296873d8c6925f19692c97b"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a7816d85ec296873d8c6925f19692c97b">InspectorIndent</a> = 18.0f</td></tr>
-<tr class="memitem:a301385a3a748c0bd409063359a64cd54" id="r_a301385a3a748c0bd409063359a64cd54"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a301385a3a748c0bd409063359a64cd54">SectionHeaderOutdent</a> = 10.0f</td></tr>
-<tr class="memitem:a968da52492ca0ba67e0b3b5fd1cb1be1" id="r_a968da52492ca0ba67e0b3b5fd1cb1be1"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a968da52492ca0ba67e0b3b5fd1cb1be1">SectionHeaderMargin</a> = 8.0f</td></tr>
-<tr class="memitem:af98cdcfa782f61eb4660a7bc31bf50b6" id="r_af98cdcfa782f61eb4660a7bc31bf50b6"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#af98cdcfa782f61eb4660a7bc31bf50b6">SectionLabelIndent</a> = 22.0f</td></tr>
-<tr class="memitem:ab9070c0f9168919380d5df9d0d5bbf4b" id="r_ab9070c0f9168919380d5df9d0d5bbf4b"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#ab9070c0f9168919380d5df9d0d5bbf4b">InspectorRightPad</a> = 14.0f</td></tr>
-<tr class="memitem:a5d179d43710ccbbd33951060e67548d7" id="r_a5d179d43710ccbbd33951060e67548d7"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a5d179d43710ccbbd33951060e67548d7">RowSpacing</a> = 12.0f</td></tr>
-<tr class="memitem:ad31858069536b05693fa3d24e990b169" id="r_ad31858069536b05693fa3d24e990b169"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#ad31858069536b05693fa3d24e990b169">FieldPadding</a> = 8.0f</td></tr>
-<tr class="memitem:adb0c126bcae48b9d8649ee9f1263ce84" id="r_adb0c126bcae48b9d8649ee9f1263ce84"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#adb0c126bcae48b9d8649ee9f1263ce84">PreviewMaxHeight</a> = 200.0f</td></tr>
+<tr class="memitem:afd5185cb36415f908528119247aa5c0d" id="r_afd5185cb36415f908528119247aa5c0d"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#afd5185cb36415f908528119247aa5c0d">kInspectorIndent</a> = 18.0f</td></tr>
+<tr class="memitem:ab515b3e553d1c8627941f83e5e8957df" id="r_ab515b3e553d1c8627941f83e5e8957df"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#ab515b3e553d1c8627941f83e5e8957df">kSectionHeaderOutdent</a> = 10.0f</td></tr>
+<tr class="memitem:a5853f0e6d727ec304d9843b1051a76cc" id="r_a5853f0e6d727ec304d9843b1051a76cc"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a5853f0e6d727ec304d9843b1051a76cc">kSectionHeaderMargin</a> = 8.0f</td></tr>
+<tr class="memitem:a1036ab4acd5f7235c8fdd68829b6015f" id="r_a1036ab4acd5f7235c8fdd68829b6015f"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a1036ab4acd5f7235c8fdd68829b6015f">kSectionLabelIndent</a> = 22.0f</td></tr>
+<tr class="memitem:a9e520781dec339e3c154d82ecc210ac6" id="r_a9e520781dec339e3c154d82ecc210ac6"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a9e520781dec339e3c154d82ecc210ac6">kInspectorRightPad</a> = 14.0f</td></tr>
+<tr class="memitem:a86a98d75166cc2cacba1c9a8347b7a6c" id="r_a86a98d75166cc2cacba1c9a8347b7a6c"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a86a98d75166cc2cacba1c9a8347b7a6c">kRowSpacing</a> = 12.0f</td></tr>
+<tr class="memitem:ab4eb049bd7c485e23034e19b75526c5a" id="r_ab4eb049bd7c485e23034e19b75526c5a"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#ab4eb049bd7c485e23034e19b75526c5a">kFieldPadding</a> = 8.0f</td></tr>
+<tr class="memitem:a98947fc71c2bf740c7c11ea86b59e200" id="r_a98947fc71c2bf740c7c11ea86b59e200"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a98947fc71c2bf740c7c11ea86b59e200">kPreviewMaxHeight</a> = 200.0f</td></tr>
 </table>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a7816d85ec296873d8c6925f19692c97b" name="a7816d85ec296873d8c6925f19692c97b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7816d85ec296873d8c6925f19692c97b">&#9670;&#160;</a></span>InspectorIndent</h2>
+<a id="afd5185cb36415f908528119247aa5c0d" name="afd5185cb36415f908528119247aa5c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5185cb36415f908528119247aa5c0d">&#9670;&#160;</a></span>kInspectorIndent</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +171,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::InspectorIndent = 18.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kInspectorIndent = 18.0f</td>
         </tr>
       </table>
   </td>
@@ -175,8 +183,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a301385a3a748c0bd409063359a64cd54" name="a301385a3a748c0bd409063359a64cd54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a301385a3a748c0bd409063359a64cd54">&#9670;&#160;</a></span>SectionHeaderOutdent</h2>
+<a id="ab515b3e553d1c8627941f83e5e8957df" name="ab515b3e553d1c8627941f83e5e8957df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab515b3e553d1c8627941f83e5e8957df">&#9670;&#160;</a></span>kSectionHeaderOutdent</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +193,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::SectionHeaderOutdent = 10.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kSectionHeaderOutdent = 10.0f</td>
         </tr>
       </table>
   </td>
@@ -197,8 +205,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a968da52492ca0ba67e0b3b5fd1cb1be1" name="a968da52492ca0ba67e0b3b5fd1cb1be1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a968da52492ca0ba67e0b3b5fd1cb1be1">&#9670;&#160;</a></span>SectionHeaderMargin</h2>
+<a id="a5853f0e6d727ec304d9843b1051a76cc" name="a5853f0e6d727ec304d9843b1051a76cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5853f0e6d727ec304d9843b1051a76cc">&#9670;&#160;</a></span>kSectionHeaderMargin</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +215,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::SectionHeaderMargin = 8.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kSectionHeaderMargin = 8.0f</td>
         </tr>
       </table>
   </td>
@@ -219,8 +227,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af98cdcfa782f61eb4660a7bc31bf50b6" name="af98cdcfa782f61eb4660a7bc31bf50b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98cdcfa782f61eb4660a7bc31bf50b6">&#9670;&#160;</a></span>SectionLabelIndent</h2>
+<a id="a1036ab4acd5f7235c8fdd68829b6015f" name="a1036ab4acd5f7235c8fdd68829b6015f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1036ab4acd5f7235c8fdd68829b6015f">&#9670;&#160;</a></span>kSectionLabelIndent</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +237,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::SectionLabelIndent = 22.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kSectionLabelIndent = 22.0f</td>
         </tr>
       </table>
   </td>
@@ -241,8 +249,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9070c0f9168919380d5df9d0d5bbf4b" name="ab9070c0f9168919380d5df9d0d5bbf4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9070c0f9168919380d5df9d0d5bbf4b">&#9670;&#160;</a></span>InspectorRightPad</h2>
+<a id="a9e520781dec339e3c154d82ecc210ac6" name="a9e520781dec339e3c154d82ecc210ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e520781dec339e3c154d82ecc210ac6">&#9670;&#160;</a></span>kInspectorRightPad</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +259,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::InspectorRightPad = 14.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kInspectorRightPad = 14.0f</td>
         </tr>
       </table>
   </td>
@@ -263,8 +271,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d179d43710ccbbd33951060e67548d7" name="a5d179d43710ccbbd33951060e67548d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d179d43710ccbbd33951060e67548d7">&#9670;&#160;</a></span>RowSpacing</h2>
+<a id="a86a98d75166cc2cacba1c9a8347b7a6c" name="a86a98d75166cc2cacba1c9a8347b7a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a98d75166cc2cacba1c9a8347b7a6c">&#9670;&#160;</a></span>kRowSpacing</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +281,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::RowSpacing = 12.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kRowSpacing = 12.0f</td>
         </tr>
       </table>
   </td>
@@ -285,8 +293,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad31858069536b05693fa3d24e990b169" name="ad31858069536b05693fa3d24e990b169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad31858069536b05693fa3d24e990b169">&#9670;&#160;</a></span>FieldPadding</h2>
+<a id="ab4eb049bd7c485e23034e19b75526c5a" name="ab4eb049bd7c485e23034e19b75526c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4eb049bd7c485e23034e19b75526c5a">&#9670;&#160;</a></span>kFieldPadding</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +303,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::FieldPadding = 8.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kFieldPadding = 8.0f</td>
         </tr>
       </table>
   </td>
@@ -307,8 +315,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adb0c126bcae48b9d8649ee9f1263ce84" name="adb0c126bcae48b9d8649ee9f1263ce84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0c126bcae48b9d8649ee9f1263ce84">&#9670;&#160;</a></span>PreviewMaxHeight</h2>
+<a id="a98947fc71c2bf740c7c11ea86b59e200" name="a98947fc71c2bf740c7c11ea86b59e200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98947fc71c2bf740c7c11ea86b59e200">&#9670;&#160;</a></span>kPreviewMaxHeight</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +325,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float DekiEditor::Metrics::PreviewMaxHeight = 200.0f</td>
+          <td class="memname">float DekiEditor::Metrics::kPreviewMaxHeight = 200.0f</td>
         </tr>
       </table>
   </td>

@@ -62,7 +62,6 @@ var _property_8h =
       [ "Deki::PropertyType::Color", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4acb5feb1b7314637725a2e73bdc9f7295", null ],
       [ "Deki::PropertyType::Vector2", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a1bebc5ae2822f8e361fb0ce57b5e09e2", null ],
       [ "Deki::PropertyType::Vector3", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a02b4dab58bbc49e0851fb3fd8df520cc", null ],
-      [ "Deki::PropertyType::Asset", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a26e9054be7f40079575582b7ad3f7363", null ],
       [ "Deki::PropertyType::Enum", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4acf20423ed48998082c20099488a0917c", null ],
       [ "Deki::PropertyType::ObjectRef", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a771d51735305d4fccf5380814a764c3d", null ],
       [ "Deki::PropertyType::Array", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a4410ec34d9e6c1a68100ca0ce033fb17", null ],
@@ -71,6 +70,7 @@ var _property_8h =
       [ "Deki::PropertyType::PropertyRef", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99", null ]
     ] ],
     [ "Deki::EnumNameForValue", "namespace_deki.html#afbf29718303fbdf46b25cd50d80aa4ab", null ],
+    [ "Deki::SameNameIgnoringStyle", "namespace_deki.html#a3dab441e50a318806ab2dfbd7c4836ff", null ],
     [ "Deki::EnumValueForName", "namespace_deki.html#a3dc1b030a7759538fa38b1c92881cd44", null ],
     [ "Deki::EnumIndexForValue", "namespace_deki.html#aa95bec25813f1604a2f55134af34f8d3", null ],
     [ "Deki::GetPropertyRef", "namespace_deki.html#ab2db578a37de2fc62dd9e4e740e861c1", null ],

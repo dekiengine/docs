@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -136,6 +144,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_deki_editor_1_1_editor_http_utils-members.html">List of all members</a>  </div>
@@ -143,30 +152,48 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 </div><!--header-->
 <div class="contents">
 
-<p>Static HTTP/archive utility functions used across the editor.  
+<p>HTTP and archive helpers for the whole editor.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/EditorHttpUtils.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:ArchiveLink" id="r_ArchiveLink"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html">ArchiveLink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A symbolic link in an archive: its entry name and the path it points to, as the archive stores them.  <a href="struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a30d91876fc08b640e499e608d6d93a1d" id="r_a30d91876fc08b640e499e608d6d93a1d"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a30d91876fc08b640e499e608d6d93a1d">FetchUrl</a> (const std::string &amp;url)</td></tr>
+<tr class="memdesc:a30d91876fc08b640e499e608d6d93a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">GETs a URL and returns the body, or "" on any failure.  <br /></td></tr>
 <tr class="memitem:a78f3d3d2c73f8bb68d01c16bfbb2215f" id="r_a78f3d3d2c73f8bb68d01c16bfbb2215f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a78f3d3d2c73f8bb68d01c16bfbb2215f">IsAllowedUrl</a> (const std::string &amp;url, std::string &amp;reason)</td></tr>
+<tr class="memdesc:a78f3d3d2c73f8bb68d01c16bfbb2215f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rule every fetch and download checks first: <a href="https://">https://</a>, at most 2048 characters, printable ASCII without quoting metacharacters.  <br /></td></tr>
 <tr class="memitem:a01cd3dcfcc472a6fbe36fa3ceae7b145" id="r_a01cd3dcfcc472a6fbe36fa3ceae7b145"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a01cd3dcfcc472a6fbe36fa3ceae7b145">DownloadFile</a> (const std::string &amp;url, const std::string &amp;localPath, std::atomic&lt; bool &gt; *cancelFlag=nullptr, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr)</td></tr>
+<tr class="memdesc:a01cd3dcfcc472a6fbe36fa3ceae7b145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads a URL to a local file.  <br /></td></tr>
 <tr class="memitem:a2eec68dfc739768ca54eae45ad041f52" id="r_a2eec68dfc739768ca54eae45ad041f52"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2eec68dfc739768ca54eae45ad041f52">DownloadFileVerified</a> (const std::string &amp;url, const std::string &amp;localPath, const std::string &amp;expectedSha256, std::atomic&lt; bool &gt; *cancelFlag=nullptr, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr, bool allowUnpinned=false)</td></tr>
+<tr class="memdesc:a2eec68dfc739768ca54eae45ad041f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads and checks the file against an expected lowercase hex SHA-256.  <br /></td></tr>
 <tr class="memitem:a34e32f118132156bc2e89e79ef5352b1" id="r_a34e32f118132156bc2e89e79ef5352b1"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a34e32f118132156bc2e89e79ef5352b1">Sha256File</a> (const std::string &amp;path)</td></tr>
-<tr class="memitem:aa708a9e4a5aeb466a561c2aeea029e18" id="r_aa708a9e4a5aeb466a561c2aeea029e18"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa708a9e4a5aeb466a561c2aeea029e18">ExtractZip</a> (const std::string &amp;zipPath, const std::string &amp;destDir, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr)</td></tr>
+<tr class="memdesc:a34e32f118132156bc2e89e79ef5352b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA-256 of a file as lowercase hex, or "" if it cannot be read.  <br /></td></tr>
+<tr class="memitem:a58cddc86c57c59a1c8aca1d9c9947c6f" id="r_a58cddc86c57c59a1c8aca1d9c9947c6f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a58cddc86c57c59a1c8aca1d9c9947c6f">ExtractZip</a> (const std::string &amp;zipPath, const std::string &amp;destDir, <a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a> status=nullptr, std::string *error=nullptr)</td></tr>
+<tr class="memdesc:a58cddc86c57c59a1c8aca1d9c9947c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a zip into destDir.  <br /></td></tr>
+<tr class="memitem:a82883d0901b38245b9821281359d5110" id="r_a82883d0901b38245b9821281359d5110"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a82883d0901b38245b9821281359d5110">ParseArchiveLinks</a> (const std::string &amp;names, const std::string &amp;verbose, std::vector&lt; <a class="el" href="struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html">ArchiveLink</a> &gt; &amp;out, std::string &amp;error)</td></tr>
+<tr class="memdesc:a82883d0901b38245b9821281359d5110"><td class="mdescLeft">&#160;</td><td class="mdescRight">The links in an archive, read from <span class="tt">tar -tf</span> (its entry names, one per line) and <span class="tt">tar -tvf</span> (the same entries in the same order; a link's line starts with 'l' and ends "name -&gt; target").  <br /></td></tr>
+<tr class="memitem:a8fe0ed2a5bc705edc06ed1e79fd532ba" id="r_a8fe0ed2a5bc705edc06ed1e79fd532ba"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8fe0ed2a5bc705edc06ed1e79fd532ba">MaterializeArchiveLinks</a> (const std::string &amp;destDir, const std::vector&lt; <a class="el" href="struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html">ArchiveLink</a> &gt; &amp;links, std::string &amp;error)</td></tr>
+<tr class="memdesc:a8fe0ed2a5bc705edc06ed1e79fd532ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts a copy of each link's target where the link would be, under destDir: a file is copied, a directory copied whole, and a link to another link once that one is in place.  <br /></td></tr>
 <tr class="memitem:a28d5e7cd3eee6e05833efe1aecda9127" id="r_a28d5e7cd3eee6e05833efe1aecda9127"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a28d5e7cd3eee6e05833efe1aecda9127">ZipEntriesAreSafe</a> (const std::string &amp;zipPath, std::string &amp;reason)</td></tr>
+<tr class="memdesc:a28d5e7cd3eee6e05833efe1aecda9127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the archive and applies IsSafeArchiveEntry to every entry.  <br /></td></tr>
 <tr class="memitem:ad940f73df12865e36ef0c11460d0e46c" id="r_ad940f73df12865e36ef0c11460d0e46c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad940f73df12865e36ef0c11460d0e46c">IsSafeArchiveEntry</a> (const std::string &amp;entry)</td></tr>
+<tr class="memdesc:ad940f73df12865e36ef0c11460d0e46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks one archive entry name: no absolute path, drive letter, UNC prefix, control character or ".." segment (either separator).  <br /></td></tr>
 <tr class="memitem:aee0366f48c696ec15c6a187ef1e070ff" id="r_aee0366f48c696ec15c6a187ef1e070ff"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aee0366f48c696ec15c6a187ef1e070ff">ParseGitHubRelease</a> (const std::string &amp;json, const std::string &amp;assetPattern, const std::string &amp;repo, std::string &amp;outVersion, std::string &amp;outDownloadUrl)</td></tr>
+<tr class="memdesc:aee0366f48c696ec15c6a187ef1e070ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads GitHub "latest release" JSON: the tag, and the first asset whose browser_download_url contains assetPattern.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a481b0832699e74e1d1933af9fac1ee3f" id="r_a481b0832699e74e1d1933af9fac1ee3f"><td class="memItemLeft">static constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#a481b0832699e74e1d1933af9fac1ee3f">kMaxRedirects</a> = 10</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Static HTTP/archive utility functions used across the editor. </p>
-<p>Centralizes WinHTTP (Windows) / curl (Unix) usage. </p>
+<div class="textblock"><p>HTTP and archive helpers for the whole editor. </p>
+<p>The one place that uses WinHTTP (Windows) and curl (Unix). </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a30d91876fc08b640e499e608d6d93a1d" name="a30d91876fc08b640e499e608d6d93a1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30d91876fc08b640e499e608d6d93a1d">&#9670;&#160;</a></span>FetchUrl()</h2>
@@ -190,6 +217,9 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>GETs a URL and returns the body, or "" on any failure. </p>
+<p>https only (IsAllowedUrl). No shell is involved on any platform. </p>
 
 </div>
 </div>
@@ -219,6 +249,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The rule every fetch and download checks first: <a href="https://">https://</a>, at most 2048 characters, printable ASCII without quoting metacharacters. </p>
 
 </div>
 </div>
@@ -258,6 +290,10 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Downloads a URL to a local file. </p>
+<p><span class="tt">cancelFlag</span> (optional) stops the download when set; <span class="tt">status</span> (optional) gets progress lines.</p>
+<p>Follows up to kMaxRedirects redirects, in a loop. A redirect may not downgrade https to http. </p>
 
 </div>
 </div>
@@ -308,6 +344,10 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Downloads and checks the file against an expected lowercase hex SHA-256. </p>
+<p>What is fetched here gets run (toolchain archives become the compilers that build the user's firmware), so an unchecked download trusts both the network and the mirror. On a mismatch the file is deleted and this returns false.</p>
+<p>An empty expectedSha256 is refused unless allowUnpinned is set (only for board-pack sources the user added); then the check is skipped and logged, so an unpinned download is visible. The built-in toolchain definitions pin every archive. </p>
+
 </div>
 </div>
 <a id="a34e32f118132156bc2e89e79ef5352b1" name="a34e32f118132156bc2e89e79ef5352b1"></a>
@@ -333,10 +373,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>SHA-256 of a file as lowercase hex, or "" if it cannot be read. </p>
+
 </div>
 </div>
-<a id="aa708a9e4a5aeb466a561c2aeea029e18" name="aa708a9e4a5aeb466a561c2aeea029e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa708a9e4a5aeb466a561c2aeea029e18">&#9670;&#160;</a></span>ExtractZip()</h2>
+<a id="a58cddc86c57c59a1c8aca1d9c9947c6f" name="a58cddc86c57c59a1c8aca1d9c9947c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cddc86c57c59a1c8aca1d9c9947c6f">&#9670;&#160;</a></span>ExtractZip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +399,12 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50">HttpStatusCallback</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -366,6 +413,88 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Extracts a zip into destDir. </p>
+<p>Before writing anything, refuses an archive with entries that would land outside destDir (ZipEntriesAreSafe). On Windows a symbolic link in the archive is extracted as a copy of what it points to (MaterializeArchiveLinks): tar.exe cannot create links without administrator rights or Developer Mode, and failing on them failed the whole extract. <span class="tt">error</span>, when given, says why it failed. </p>
+
+</div>
+</div>
+<a id="a82883d0901b38245b9821281359d5110" name="a82883d0901b38245b9821281359d5110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82883d0901b38245b9821281359d5110">&#9670;&#160;</a></span>ParseArchiveLinks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorHttpUtils::ParseArchiveLinks </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>names</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>verbose</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html">ArchiveLink</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The links in an archive, read from <span class="tt">tar -tf</span> (its entry names, one per line) and <span class="tt">tar -tvf</span> (the same entries in the same order; a link's line starts with 'l' and ends "name -&gt; target"). </p>
+<p>False, with <span class="tt">error</span>, when the two listings do not line up. </p>
+
+</div>
+</div>
+<a id="a8fe0ed2a5bc705edc06ed1e79fd532ba" name="a8fe0ed2a5bc705edc06ed1e79fd532ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe0ed2a5bc705edc06ed1e79fd532ba">&#9670;&#160;</a></span>MaterializeArchiveLinks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorHttpUtils::MaterializeArchiveLinks </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>destDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html">ArchiveLink</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>links</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puts a copy of each link's target where the link would be, under destDir: a file is copied, a directory copied whole, and a link to another link once that one is in place. </p>
+<p>False, with <span class="tt">error</span>, when a target is absolute or outside destDir. A link to nothing is left out, as such a link would lead nowhere either. </p>
 
 </div>
 </div>
@@ -396,6 +525,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Lists the archive and applies IsSafeArchiveEntry to every entry. </p>
+
 </div>
 </div>
 <a id="ad940f73df12865e36ef0c11460d0e46c" name="ad940f73df12865e36ef0c11460d0e46c"></a>
@@ -420,6 +551,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Checks one archive entry name: no absolute path, drive letter, UNC prefix, control character or ".." segment (either separator). </p>
 
 </div>
 </div>
@@ -464,6 +597,9 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads GitHub "latest release" JSON: the tag, and the first asset whose browser_download_url contains assetPattern. </p>
+<p>When <span class="tt">repo</span> ("owner/name") is given, the asset must live under that repository's releases; a release body naming any other host is rejected whole. </p>
 
 </div>
 </div>

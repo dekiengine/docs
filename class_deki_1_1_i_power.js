@@ -20,7 +20,7 @@ var class_deki_1_1_i_power =
     [ "SetIdleTimeoutSec", "class_deki_1_1_i_power.html#a17a1326ed26c9dd7752d4e50368b5ec4", null ],
     [ "SetIdleSleepMode", "class_deki_1_1_i_power.html#acfb33cffb939565cb6ddd7fce44529ed", null ],
     [ "RequestSleep", "class_deki_1_1_i_power.html#a9313075bd4ec66d5f7c8ce37ec9ca88e", null ],
-    [ "SetWakeGpio", "class_deki_1_1_i_power.html#a9ae6bc72ccb04bbc74ebc8b8dda2b3fc", null ],
+    [ "SetWakeGpio", "class_deki_1_1_i_power.html#afbdd271a673bd59ae81f0cf60e28f214", null ],
     [ "RegisterOnScreenOn", "class_deki_1_1_i_power.html#a9bb3d113c5a5e8b5293dcc7ab30b4408", null ],
     [ "RegisterOnBeforeSleep", "class_deki_1_1_i_power.html#a8b1939eacd08d0af37cc8ae3370723b1", null ],
     [ "Tick", "class_deki_1_1_i_power.html#a213ec5ff02bb993d3a322966d97df297", null ]

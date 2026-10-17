@@ -25,9 +25,13 @@ var dir_49626dee8e15c7505eec6dc01cafd456 =
     [ "ProjectSettings.h", "_project_settings_8h.html", "_project_settings_8h" ],
     [ "Scene.h", "_scene_8h.html", "_scene_8h" ],
     [ "SceneMessagePack.h", "_scene_message_pack_8h.html", "_scene_message_pack_8h" ],
+    [ "SceneMigration.h", "_scene_migration_8h.html", "_scene_migration_8h" ],
     [ "SceneSystem.h", "_scene_system_8h.html", "_scene_system_8h" ],
+    [ "ScreenAnchor.h", "_screen_anchor_8h.html", "_screen_anchor_8h" ],
+    [ "ScreenScale.h", "_screen_scale_8h.html", "_screen_scale_8h" ],
     [ "SetupComponent.h", "_setup_component_8h.html", "_setup_component_8h" ],
     [ "Storage.h", "_storage_8h.html", "_storage_8h" ],
+    [ "ThreadLocal.h", "_thread_local_8h.html", "_thread_local_8h" ],
     [ "Time.h", "_time_8h.html", "_time_8h" ],
     [ "TypeId.h", "_type_id_8h.html", "_type_id_8h" ],
     [ "Vector.h", "_vector_8h.html", "_vector_8h" ]

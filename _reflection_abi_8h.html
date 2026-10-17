@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -148,11 +156,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_reflection_ab
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:DekiReflectionAbi" id="r_DekiReflectionAbi"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_reflection_abi.html">DekiReflectionAbi</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layout fingerprint of the reflection structs that cross DLL boundaries.  <a href="struct_deki_reflection_abi.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layout fingerprint of the structs that cross DLL boundaries.  <a href="struct_deki_reflection_abi.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad7dccf268c11ec8c6e37b3aa9e7a7642" id="r_ad7dccf268c11ec8c6e37b3aa9e7a7642"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad7dccf268c11ec8c6e37b3aa9e7a7642">DEKI_REFLECTION_ABI_EXPORT_NAME</a>&#160;&#160;&#160;&quot;DekiPlugin_GetReflectionAbi&quot;</td></tr>
+<tr class="memitem:ad7dccf268c11ec8c6e37b3aa9e7a7642" id="r_ad7dccf268c11ec8c6e37b3aa9e7a7642"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad7dccf268c11ec8c6e37b3aa9e7a7642">DEKI_REFLECTION_ABI_EXPORT_NAME</a>&#160;&#160;&#160;&quot;DekiPluginGetReflectionAbi&quot;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -163,12 +171,12 @@ Functions</h2></td></tr>
 <tr class="memitem:acbc1c9a3d2b2e394acc18d944e054a72" id="r_acbc1c9a3d2b2e394acc18d944e054a72"><td class="memItemLeft"><a class="el" href="struct_deki_reflection_abi.html">DekiReflectionAbi</a>&#160;</td><td class="memItemRight"><a class="el" href="#acbc1c9a3d2b2e394acc18d944e054a72">DekiCurrentReflectionAbi</a> ()</td></tr>
 <tr class="memdesc:acbc1c9a3d2b2e394acc18d944e054a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The values as compiled into whoever calls this.  <br /></td></tr>
 <tr class="memitem:af1b24c7a467b6e4ed5ef32f27161f157" id="r_af1b24c7a467b6e4ed5ef32f27161f157"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af1b24c7a467b6e4ed5ef32f27161f157">DekiReflectionAbiMatches</a> (const <a class="el" href="struct_deki_reflection_abi.html">DekiReflectionAbi</a> &amp;other, char *what, size_t whatSize)</td></tr>
-<tr class="memdesc:af1b24c7a467b6e4ed5ef32f27161f157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare a loaded DLL's values against ours.  <br /></td></tr>
+<tr class="memdesc:af1b24c7a467b6e4ed5ef32f27161f157"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a loaded DLL's values match ours and it is safe to use.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab3bac8f1027e8ba7eca770c639f81c9f" id="r_ab3bac8f1027e8ba7eca770c639f81c9f"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab3bac8f1027e8ba7eca770c639f81c9f">kDekiReflectionAbiVersion</a> = 17</td></tr>
-<tr class="memdesc:ab3bac8f1027e8ba7eca770c639f81c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bump ONLY for a layout change that keeps every sizeof identical (reordering or repurposing a field).  <br /></td></tr>
+<tr class="memitem:ab3bac8f1027e8ba7eca770c639f81c9f" id="r_ab3bac8f1027e8ba7eca770c639f81c9f"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab3bac8f1027e8ba7eca770c639f81c9f">kDekiReflectionAbiVersion</a> = 21</td></tr>
+<tr class="memdesc:ab3bac8f1027e8ba7eca770c639f81c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bump this for any binary change the sizes above cannot see, so packages built before it are refused at load ("rebuild it") instead of misbehaving:  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="ad7dccf268c11ec8c6e37b3aa9e7a7642" name="ad7dccf268c11ec8c6e37b3aa9e7a7642"></a>
@@ -178,7 +186,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEKI_REFLECTION_ABI_EXPORT_NAME&#160;&#160;&#160;&quot;DekiPlugin_GetReflectionAbi&quot;</td>
+          <td class="memname">#define DEKI_REFLECTION_ABI_EXPORT_NAME&#160;&#160;&#160;&quot;DekiPluginGetReflectionAbi&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,14 +268,8 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compare a loaded DLL's values against ours. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">what</td><td>Buffer receiving a description of the FIRST mismatch (for the log). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true when the layouts match and the DLL is safe to use. </dd></dl>
+<p>True when a loaded DLL's values match ours and it is safe to use. </p>
+<p>Otherwise <span class="tt">what</span> receives a description of the first mismatch, for the log. </p>
 
 </div>
 </div>
@@ -282,7 +284,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t kDekiReflectionAbiVersion = 17</td>
+          <td class="memname">uint32_t kDekiReflectionAbiVersion = 21</td>
         </tr>
       </table>
   </td>
@@ -292,28 +294,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Bump ONLY for a layout change that keeps every sizeof identical (reordering or repurposing a field). </p>
-<p>Size changes are caught anyway.</p>
-<p>2: dropped sizeofNodeMeta. DekiNodeMeta moved out of the engine into the deki-nodegraph package, and the engine must not include a package header to build its own ABI fingerprint. That guard now lives where the struct does: NodeTypeRegistry::Register takes the caller's compiled sizeof through a default argument and refuses a meta that disagrees. This field shrinking is itself a layout change, hence the bump - <span class="tt">version</span> sits at offset 0 in both the old and new struct, so a pre-bump DLL is rejected on it.</p>
-<p>3: added sizeofDekiObject and sizeofDekiComponent. Until now the handshake covered only the reflection tables, while packages were also reading <a class="el" href="class_deki_1_1_object.html">Deki::Object</a>'s members through inline accessors with nothing checking that layout at all. Growing the struct is itself a layout change, so the bump is required: a version-2 DLL returns a shorter struct, and reading the two new fields out of it would read past its end. The loader must therefore check <span class="tt">version</span> THROUGH THE POINTER before copying the struct by value.</p>
-<p>4: dropped the deprecated getType()/getBaseType() forwarders. The struct is unchanged and every sizeof still matches, so nothing else here would catch a package built against v3 &ndash; it would reference a spelling that no longer exists. This is exactly the layout-compatible but semantically incompatible case this counter exists for: bump it so such a package is refused at load rather than failing in a confusing way later.</p>
-<p>5: added the <a class="el" href="class_deki_1_1_component.html#a4e5dcce721781137dce72f1285cce38a" title="Does this class (or a reflected base) declare Update()?">Deki::Component::DeclaresUpdate()</a> virtual. Every sizeof is unchanged, but a slot was inserted in the middle of the component vtable, so a package built against v4 calls the wrong function through every virtual after it (seen as an integer divide by zero deep inside a stale plugin while compiling a scene). The vtable is part of the ABI even though nothing here can measure it: any new virtual on <a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Deki::Component</a> or Deki::Behaviour needs a bump.</p>
-<p>(no bump) <a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">Deki::PropertyInfo</a> grew <span class="tt">renamedFrom</span> (DEKI_RENAMED_FROM). The struct's size changed, which sizeofPropertyInfo catches on its own: a package built before it is refused and rebuilt.</p>
-<p>(no bump) <a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata (stored per-component-type, not per-instance).">Deki::PropertyInfo</a> grew <span class="tt">enumInts</span>, the underlying value of each enumerator beside the existing names. Same reasoning: sizeofPropertyInfo moves, so a package built before it is refused and rebuilt rather than having its enum tables read as though a list position were a value.</p>
-<p>6: engine 0.10 (the namespace release) moved every engine type into namespace <a class="el" href="namespace_deki.html" title="Base texture class for V-Engine.">Deki</a> (<a class="el" href="class_deki_1_1_object.html">Deki::Object</a> -&gt; <a class="el" href="class_deki_1_1_object.html">Deki::Object</a>, ...). Every sizeof is unchanged, but the symbol mangling of every exported engine function changed, so a 1.x package DLL would fail to load with unresolved imports; the bump turns that into the loader's "built against another engine, rebuilding" path instead.</p>
-<p>7: engine 0.11 (macro-free components). <a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Deki::Component</a> lost six virtuals (GetType, GetBaseType, DeclaresUpdate, Deserialize, ResolveObjectRefs, RemapObjectRefs are now plain calls through the instance's ComponentTypeInfo pointer, which also grew the class by one pointer), and a component's identity is the hash of its qualified class name instead of a declared GUID. sizeofDekiComponent catches the size, the version bump catches the vtable.</p>
-<p>8: engine 0.12 dropped Deki::Behaviour::NeedsUpdate() (a virtual) and its flag. Declaring Update() is the only thing that makes it run. A slot left the Behaviour vtable, so a v7 package would call the wrong function through every virtual after it.</p>
-<p>9: engine 0.13 merged Deki::Behaviour into <a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Deki::Component</a>. Component gained Awake/Start/Update and two state flags, lost AsBehaviour(), and Behaviour is gone: every package rebuilds against the one base.</p>
-<p>10: added transformConfig. The transform width became a build switch (DEKI_TRANSFORM_2D / DEKI_TRANSFORM_3D), so <a class="el" href="class_deki_1_1_object.html">Deki::Object</a>'s layout is now a property of the project's configuration and the handshake has to say which one a DLL was built for. Growing the struct is itself the layout change that forces the bump.</p>
-<p>11: <a class="el" href="class_deki_1_1_i_memory_provider.html">Deki::IMemoryProvider</a> gained AllocateDMA. Memory::Region::DMA promised a buffer a peripheral could read, and only the platform knows how to get one - on the ESP32 some internal RAM is not DMA-reachable, so "internal and probably fine" was silent corruption waiting for a display driver. Adding the virtual moves every slot after it, so a provider DLL built at ABI 10 would call the wrong one. No struct grew, which is exactly the case the size fingerprint cannot see and this number exists for.</p>
-<p>12: <a class="el" href="class_deki_1_1_i_memory_provider.html">Deki::IMemoryProvider</a> gained AllocateRaw, FreeRaw and GetRawBlockSize, the plain natural-alignment allocator the global operator new routes through, so every allocation on a device goes through the provider without paying for a bookkeeping header. Appended, so ABI 11's slots keep their indices - but 11 was published to master for a few hours and package DLLs were built against it, and those would call into the provider past the end of the vtable they know. Two numbers inside one unreleased cycle is cheaper than one silent miscall.</p>
-<p>13: <a class="el" href="class_deki_1_1_memory.html" title="Memory Provider for Deki Engine.">Deki::Memory</a>'s allocating functions take a <a class="el" href="struct_deki_1_1_alloc_context.html" title="Who asked for an allocation.">Deki::AllocContext</a> instead of a const char*, so an allocation names itself without the caller writing a label. Nothing grew and no vtable moved - AllocContext is a single pointer in a release build, the same size the parameter always was - but the mangled names of Allocate, AllocateInternal and Free all changed, so a package DLL built at ABI 12 would not resolve them. The size fingerprint cannot see a parameter type change either, which is the second time this cycle that is the reason for a bump.</p>
-<p>Also in 13: IMemoryProvider::AllocateDma is spelled AllocateDMA, and the placement virtuals (AllocateInternal, AllocateDMA, FreeInternal, GetAvailableInternalRAM) lost their default implementations. Neither moves a slot - a rename keeps its index and a pure virtual keeps its index - so both are source breaks rather than binary ones, and they ride along on a number this cycle had already bumped. Unlike 11, ABI 13 never reached master, so nothing was ever built against an earlier spelling of it.</p>
-<p>AllocContext also has a different LAYOUT between debug and release: it carries file, function and line only where DEKI_ALLOC_CONTEXT_CAPTURE is defined. Mixing a debug engine with release packages was already unsupported (MemoryStats has done this for longer), and this makes the consequence sharper rather than introducing it.</p>
-<p>14: Memory regions replace the MemoryUse enum and IMemoryProvider serves them through Allocate/Free/GetAvailable/Serves instead of a virtual per region, so a package can define a region the engine has never heard of.</p>
-<p>15: MemoryRegion is Memory::Region, nested where it belongs.</p>
-<p>16: IDisplay::Present and PresentRegions take a ColorFormat instead of an int whose numbering lived in a comment and as literals in every display.</p>
-<p>17: packages moved their types into a namespace of their own, so every component is identified by a qualified name rather than a bare one and nothing of a package's sits at global scope. No layout moved, but the mangling of anything naming a package type did - IRenderSystem's SetRenderer and GetRenderer take DekiRendering::DekiRenderer now - so a package built before this fails to resolve against the engine's symbols. The bump turns that into the loader's "rebuild it" path. </p>
+<p>Bump this for any binary change the sizes above cannot see, so packages built before it are refused at load ("rebuild it") instead of misbehaving: </p>
+<ul>
+<li>a field reordered or repurposed without a size change;</li>
+<li>a virtual added, removed or reordered on an engine class that packages derive from or call (<a class="el" href="class_deki_1_1_component.html" title="The base class of every component.">Deki::Component</a>, IMemoryProvider, IDisplay, ICamera, IRenderSystem, ...), since every later vtable slot moves;</li>
+<li>a changed signature or name of anything packages link to or look up by name, since its mangled or exported name changes;</li>
+<li>a change to <a class="el" href="struct_deki_reflection_abi.html" title="Layout fingerprint of the structs that cross DLL boundaries.">DekiReflectionAbi</a> itself. <span class="tt">version</span> stays at offset 0, and the loader must check it through the pointer before copying the struct, because an older DLL returns a shorter one. A size change alone (such as a field added to <a class="el" href="struct_deki_1_1_property_info.html" title="Property metadata, one per component type and field.">Deki::PropertyInfo</a>) needs no bump: the sizeof fields catch it.</li>
+</ul>
+<p>Debug and release builds may differ in layout (AllocContext carries file, function and line only with DEKI_ALLOC_CONTEXT_CAPTURE), so a debug engine with release packages is not supported. </p>
 
 </div>
 </div>

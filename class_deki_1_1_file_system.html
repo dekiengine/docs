@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -142,36 +150,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
+<p>Holds the process-wide filesystems.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;deki/providers/FileSystem.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a0abb35d829d9ad88e28b9a198232a1" id="r_a7a0abb35d829d9ad88e28b9a198232a1"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a7a0abb35d829d9ad88e28b9a198232a1">Initialize</a> ()</td></tr>
-<tr class="memdesc:a7a0abb35d829d9ad88e28b9a198232a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the filesystem manager.  <br /></td></tr>
+<tr class="memdesc:a7a0abb35d829d9ad88e28b9a198232a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false on failure.  <br /></td></tr>
 <tr class="memitem:a7e78e134e724e2a0c51b95768b596025" id="r_a7e78e134e724e2a0c51b95768b596025"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a7e78e134e724e2a0c51b95768b596025">Shutdown</a> ()</td></tr>
-<tr class="memdesc:a7e78e134e724e2a0c51b95768b596025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the current filesystem.  <br /></td></tr>
 <tr class="memitem:af55905e5c97e11d0069972ea1242efcc" id="r_af55905e5c97e11d0069972ea1242efcc"><td class="memItemLeft">static <a class="el" href="class_deki_1_1_i_file_system.html">IFileSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#af55905e5c97e11d0069972ea1242efcc">GetCurrentFileSystem</a> ()</td></tr>
-<tr class="memdesc:af55905e5c97e11d0069972ea1242efcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current filesystem implementation.  <br /></td></tr>
+<tr class="memdesc:af55905e5c97e11d0069972ea1242efcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The installed filesystem, or nullptr before one is set.  <br /></td></tr>
 <tr class="memitem:ab9aded0024636d645ac493dbfe9a0ba6" id="r_ab9aded0024636d645ac493dbfe9a0ba6"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab9aded0024636d645ac493dbfe9a0ba6">IsInitialized</a> ()</td></tr>
-<tr class="memdesc:ab9aded0024636d645ac493dbfe9a0ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the filesystem manager is initialized.  <br /></td></tr>
 <tr class="memitem:aa7214801c85fe953267ad98f0b1390af" id="r_aa7214801c85fe953267ad98f0b1390af"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa7214801c85fe953267ad98f0b1390af">SetFileSystem</a> (<a class="el" href="class_deki_1_1_i_file_system.html">IFileSystem</a> *fs)</td></tr>
-<tr class="memdesc:aa7214801c85fe953267ad98f0b1390af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom filesystem implementation.  <br /></td></tr>
+<tr class="memdesc:aa7214801c85fe953267ad98f0b1390af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs <span class="tt">fs</span> and takes ownership of it.  <br /></td></tr>
 <tr class="memitem:a34b1e683929b1167aad2dc64dddb7a70" id="r_a34b1e683929b1167aad2dc64dddb7a70"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a34b1e683929b1167aad2dc64dddb7a70">SupportsStorageMode</a> ()</td></tr>
-<tr class="memdesc:a34b1e683929b1167aad2dc64dddb7a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if storage mode (USB MSC) is supported.  <br /></td></tr>
+<tr class="memdesc:a34b1e683929b1167aad2dc64dddb7a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the filesystem can be exposed as USB mass storage.  <br /></td></tr>
 <tr class="memitem:a7517067d92f3bdbd17af6c077307f21f" id="r_a7517067d92f3bdbd17af6c077307f21f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a7517067d92f3bdbd17af6c077307f21f">SetStorageMode</a> (bool enabled)</td></tr>
-<tr class="memdesc:a7517067d92f3bdbd17af6c077307f21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter or exit storage mode (USB Mass <a class="el" href="namespace_deki_1_1_storage.html">Storage</a>).  <br /></td></tr>
+<tr class="memdesc:a7517067d92f3bdbd17af6c077307f21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enters or leaves USB mass storage mode. Returns false on failure.  <br /></td></tr>
 <tr class="memitem:a075522e82aeb42bb6cc4b69ddb4e331a" id="r_a075522e82aeb42bb6cc4b69ddb4e331a"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a075522e82aeb42bb6cc4b69ddb4e331a">IsStorageMode</a> ()</td></tr>
-<tr class="memdesc:a075522e82aeb42bb6cc4b69ddb4e331a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if currently in storage mode.  <br /></td></tr>
+<tr class="memdesc:a075522e82aeb42bb6cc4b69ddb4e331a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True while USB mass storage is active.  <br /></td></tr>
 <tr class="memitem:ab8f29d07f002271206afc96cf51e96b0" id="r_ab8f29d07f002271206afc96cf51e96b0"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab8f29d07f002271206afc96cf51e96b0">RegisterFileSystem</a> (const std::string &amp;prefix, <a class="el" href="class_deki_1_1_i_file_system.html">IFileSystem</a> *fs)</td></tr>
-<tr class="memdesc:ab8f29d07f002271206afc96cf51e96b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a filesystem for a specific path prefix.  <br /></td></tr>
+<tr class="memdesc:ab8f29d07f002271206afc96cf51e96b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes paths starting with <span class="tt">prefix</span> (such as "F:/" or "S:/") to <span class="tt">fs</span>.  <br /></td></tr>
 <tr class="memitem:a3d8515f9b4e46f6455c620514d336272" id="r_a3d8515f9b4e46f6455c620514d336272"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3d8515f9b4e46f6455c620514d336272">UnregisterFileSystem</a> (const std::string &amp;prefix)</td></tr>
-<tr class="memdesc:a3d8515f9b4e46f6455c620514d336272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a filesystem for a path prefix.  <br /></td></tr>
 <tr class="memitem:ac6e1175bde780821b91adace5810a14e" id="r_ac6e1175bde780821b91adace5810a14e"><td class="memItemLeft">static <a class="el" href="class_deki_1_1_i_file_system.html">IFileSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac6e1175bde780821b91adace5810a14e">GetFileSystemForPath</a> (const char *path)</td></tr>
-<tr class="memdesc:ac6e1175bde780821b91adace5810a14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the filesystem that handles a specific path.  <br /></td></tr>
+<tr class="memdesc:ac6e1175bde780821b91adace5810a14e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The filesystem for <span class="tt">path</span> (such as "F:/boot.scene" or "scenes/Demo"): the one registered for its prefix, else the default.  <br /></td></tr>
 <tr class="memitem:abada24b7d5a5d506edf009042f96107b" id="r_abada24b7d5a5d506edf009042f96107b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abada24b7d5a5d506edf009042f96107b">SetDefaultFileSystem</a> (<a class="el" href="class_deki_1_1_i_file_system.html">IFileSystem</a> *fs)</td></tr>
-<tr class="memdesc:abada24b7d5a5d506edf009042f96107b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default filesystem for non-prefixed paths.  <br /></td></tr>
+<tr class="memdesc:abada24b7d5a5d506edf009042f96107b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The filesystem for paths with no registered prefix, so code can use "scenes/Demo" instead of "S:/scenes/Demo"; it resolves them as suits the platform.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Holds the process-wide filesystems. </p>
+<p>Platform packages install their implementation with <a class="el" href="#aa7214801c85fe953267ad98f0b1390af" title="Installs fs and takes ownership of it.">SetFileSystem()</a>, so the loaded package decides which one is used. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a7a0abb35d829d9ad88e28b9a198232a1" name="a7a0abb35d829d9ad88e28b9a198232a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a0abb35d829d9ad88e28b9a198232a1">&#9670;&#160;</a></span>Initialize()</h2>
 
@@ -195,8 +206,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize the filesystem manager. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if initialization successful, false otherwise </dd></dl>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
@@ -223,8 +233,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Shutdown the current filesystem. </p>
-
 </div>
 </div>
 <a id="af55905e5c97e11d0069972ea1242efcc" name="af55905e5c97e11d0069972ea1242efcc"></a>
@@ -250,8 +258,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the current filesystem implementation. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to current filesystem, or nullptr if not initialized </dd></dl>
+<p>The installed filesystem, or nullptr before one is set. </p>
 
 </div>
 </div>
@@ -278,9 +285,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if the filesystem manager is initialized. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if initialized, false otherwise </dd></dl>
-
 </div>
 </div>
 <a id="aa7214801c85fe953267ad98f0b1390af" name="aa7214801c85fe953267ad98f0b1390af"></a>
@@ -306,14 +310,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set a custom filesystem implementation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fs</td><td>Pointer to filesystem (takes ownership) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful </dd></dl>
+<p>Installs <span class="tt">fs</span> and takes ownership of it. </p>
 
 </div>
 </div>
@@ -340,8 +337,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if storage mode (USB MSC) is supported. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the current filesystem supports storage mode </dd></dl>
+<p>True when the filesystem can be exposed as USB mass storage. </p>
 
 </div>
 </div>
@@ -368,14 +364,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enter or exit storage mode (USB Mass <a class="el" href="namespace_deki_1_1_storage.html">Storage</a>). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enabled</td><td>true to enter storage mode, false to exit </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if mode change successful </dd></dl>
+<p>Enters or leaves USB mass storage mode. Returns false on failure. </p>
 
 </div>
 </div>
@@ -402,8 +391,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if currently in storage mode. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if in storage mode (USB MSC active) </dd></dl>
+<p>True while USB mass storage is active. </p>
 
 </div>
 </div>
@@ -434,14 +422,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register a filesystem for a specific path prefix. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prefix</td><td>Path prefix (e.g., "F:/", "S:/") </td></tr>
-    <tr><td class="paramname">fs</td><td>Filesystem to handle paths with this prefix </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Routes paths starting with <span class="tt">prefix</span> (such as "F:/" or "S:/") to <span class="tt">fs</span>. </p>
 
 </div>
 </div>
@@ -468,14 +449,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unregister a filesystem for a path prefix. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prefix</td><td>Path prefix to unregister </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ac6e1175bde780821b91adace5810a14e" name="ac6e1175bde780821b91adace5810a14e"></a>
@@ -501,14 +474,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the filesystem that handles a specific path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Path to look up (e.g., "F:/boot.scene", "S:/main.scene", or "scenes/Demo") </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Filesystem for this path, or default filesystem if no prefix match </dd></dl>
+<p>The filesystem for <span class="tt">path</span> (such as "F:/boot.scene" or "scenes/Demo"): the one registered for its prefix, else the default. </p>
 
 </div>
 </div>
@@ -535,14 +501,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the default filesystem for non-prefixed paths. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fs</td><td>Filesystem to use for paths without a registered prefix (e.g., "scenes/Demo")</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This allows code to use simple relative paths like "scenes/Demo" instead of prefixed paths like "S:/scenes/Demo". The default filesystem will handle path resolution appropriately for the platform. </p>
+<p>The filesystem for paths with no registered prefix, so code can use "scenes/Demo" instead of "S:/scenes/Demo"; it resolves them as suits the platform. </p>
 
 </div>
 </div>

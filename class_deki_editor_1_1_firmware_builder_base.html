@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -152,72 +160,78 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9962404a01e9b5d4596001bcec277d9b" id="r_a9962404a01e9b5d4596001bcec277d9b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9962404a01e9b5d4596001bcec277d9b">~FirmwareBuilderBase</a> () override=default</td></tr>
 <tr class="memitem:a173ea76bd7a6f6accd8fb2d5c3388a07" id="r_a173ea76bd7a6f6accd8fb2d5c3388a07"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a173ea76bd7a6f6accd8fb2d5c3388a07">Cancel</a> () override</td></tr>
-<tr class="memdesc:a173ea76bd7a6f6accd8fb2d5c3388a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel current operation.  <br /></td></tr>
+<tr class="memdesc:a173ea76bd7a6f6accd8fb2d5c3388a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the current operation.  <br /></td></tr>
 <tr class="memitem:ae42d99c260db3cc3feb82e3c8a167871" id="r_ae42d99c260db3cc3feb82e3c8a167871"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae42d99c260db3cc3feb82e3c8a167871">IsBuilding</a> () const override</td></tr>
 <tr class="memitem:a554d42d7c2bf1dd552d91e3806143588" id="r_a554d42d7c2bf1dd552d91e3806143588"><td class="memItemLeft"><a class="el" href="namespace_deki_editor.html#a2618f4c022e74277c5532b30f28a1dd7">BuildState</a>&#160;</td><td class="memItemRight"><a class="el" href="#a554d42d7c2bf1dd552d91e3806143588">GetState</a> () const override</td></tr>
 <tr class="memitem:a1196998e477f63701fa096473e4a94e5" id="r_a1196998e477f63701fa096473e4a94e5"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_build_progress.html">BuildProgress</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1196998e477f63701fa096473e4a94e5">GetProgress</a> () const override</td></tr>
 <tr class="memitem:a65dcf1fdbcd3c7e53987c1f4e2760d21" id="r_a65dcf1fdbcd3c7e53987c1f4e2760d21"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a65dcf1fdbcd3c7e53987c1f4e2760d21">SetBuildOptions</a> (const <a class="el" href="struct_deki_editor_1_1_build_options.html">BuildOptions</a> &amp;options) override</td></tr>
 <tr class="memitem:a2e8ea2dc777f7a0506cba64c58a43d29" id="r_a2e8ea2dc777f7a0506cba64c58a43d29"><td class="memItemLeft">const <a class="el" href="struct_deki_editor_1_1_build_options.html">BuildOptions</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2e8ea2dc777f7a0506cba64c58a43d29">GetBuildOptions</a> () const override</td></tr>
 <tr class="memitem:ae3dcc83f8413eebca7bf86ea12cfaace" id="r_ae3dcc83f8413eebca7bf86ea12cfaace"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae3dcc83f8413eebca7bf86ea12cfaace">SetPlatformConfig</a> (const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config) override</td></tr>
-<tr class="memdesc:ae3dcc83f8413eebca7bf86ea12cfaace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set platform-specific hardware configuration (display, memory, etc.).  <br /></td></tr>
+<tr class="memdesc:ae3dcc83f8413eebca7bf86ea12cfaace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the platform's hardware configuration (display, memory, etc.).  <br /></td></tr>
 <tr class="memitem:aa6120e03cfa0d3d1dd4bb6cadacc205c" id="r_aa6120e03cfa0d3d1dd4bb6cadacc205c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa6120e03cfa0d3d1dd4bb6cadacc205c">ClearPlatformConfig</a> () override</td></tr>
 <tr class="memitem:a12aa55c7de00e5f98e5d72347b789599" id="r_a12aa55c7de00e5f98e5d72347b789599"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12aa55c7de00e5f98e5d72347b789599">SetPackageDefines</a> (const std::vector&lt; std::string &gt; &amp;defines) override</td></tr>
-<tr class="memdesc:a12aa55c7de00e5f98e5d72347b789599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set package defines (auto-detected from scene scanning).  <br /></td></tr>
+<tr class="memdesc:a12aa55c7de00e5f98e5d72347b789599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the package defines, found by scanning the scenes.  <br /></td></tr>
 <tr class="memitem:a4f983199afb8f47073905ba513e80284" id="r_a4f983199afb8f47073905ba513e80284"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a4f983199afb8f47073905ba513e80284">GetEnginePath</a> (const std::string &amp;projectPath) const override</td></tr>
-<tr class="memdesc:a4f983199afb8f47073905ba513e80284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the engine path for a project.  <br /></td></tr>
+<tr class="memdesc:a4f983199afb8f47073905ba513e80284"><td class="mdescLeft">&#160;</td><td class="mdescRight">The engine path for a project.  <br /></td></tr>
 <tr class="memitem:a5c55208477c676490ef54b3c1c110d65" id="r_a5c55208477c676490ef54b3c1c110d65"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a5c55208477c676490ef54b3c1c110d65">GetPlatformKey</a> () const override</td></tr>
 <tr class="memdesc:a5c55208477c676490ef54b3c1c110d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform key for resolving dependencies in package.json / .deki-package.json.  <br /></td></tr>
 <tr class="memitem:a95c35f5c383766ada37f51d9063eae09" id="r_a95c35f5c383766ada37f51d9063eae09"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a95c35f5c383766ada37f51d9063eae09">IsPackageCompatible</a> (const std::string &amp;metadataPath) const override</td></tr>
-<tr class="memdesc:a95c35f5c383766ada37f51d9063eae09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a package is compatible with this builder given its metadata file.  <br /></td></tr>
+<tr class="memdesc:a95c35f5c383766ada37f51d9063eae09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a package works with this builder, from the dependencies in its metadata file (package.json or .deki-package.json).  <br /></td></tr>
 <tr class="memitem:ab70f69f8c4f539a3e76d51e8b96bb094" id="r_ab70f69f8c4f539a3e76d51e8b96bb094"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab70f69f8c4f539a3e76d51e8b96bb094">GetPackageSupportedPlatforms</a> (const std::string &amp;metadataPath) const override</td></tr>
-<tr class="memdesc:ab70f69f8c4f539a3e76d51e8b96bb094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get supported platform keys from a package's metadata file.  <br /></td></tr>
+<tr class="memdesc:ab70f69f8c4f539a3e76d51e8b96bb094"><td class="mdescLeft">&#160;</td><td class="mdescRight">The platform keys a package's metadata file lists under dependencies, with "default" reported as "all".  <br /></td></tr>
 <tr class="memitem:a99d5633f6ea09eb5cba0dd79be9f32c2" id="r_a99d5633f6ea09eb5cba0dd79be9f32c2"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_deki_editor_1_1_toolchain_component.html">ToolchainComponent</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a99d5633f6ea09eb5cba0dd79be9f32c2">GetToolchainComponents</a> () const override</td></tr>
-<tr class="memdesc:a99d5633f6ea09eb5cba0dd79be9f32c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get structured list of toolchain components and their status.  <br /></td></tr>
+<tr class="memdesc:a99d5633f6ea09eb5cba0dd79be9f32c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The toolchain's components and their status.  <br /></td></tr>
 <tr class="memitem:aaaa20c5f7e4e7d9fadfdb937d25dd182" id="r_aaaa20c5f7e4e7d9fadfdb937d25dd182"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaaa20c5f7e4e7d9fadfdb937d25dd182">InstallToolchainComponent</a> (const std::string &amp;componentId, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> cb=nullptr) override</td></tr>
-<tr class="memdesc:aaaa20c5f7e4e7d9fadfdb937d25dd182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install or reinstall a specific toolchain component by id.  <br /></td></tr>
+<tr class="memdesc:aaaa20c5f7e4e7d9fadfdb937d25dd182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs or reinstalls one toolchain component.  <br /></td></tr>
 <tr class="memitem:a99f8ad86c27ef1fe12c7934d74b6ccc0" id="r_a99f8ad86c27ef1fe12c7934d74b6ccc0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a99f8ad86c27ef1fe12c7934d74b6ccc0">SetupToolchainComponent</a> (const std::string &amp;componentId, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> cb=nullptr) override</td></tr>
-<tr class="memdesc:a99f8ad86c27ef1fe12c7934d74b6ccc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the postInstall setup script for an already-installed component.  <br /></td></tr>
+<tr class="memdesc:a99f8ad86c27ef1fe12c7934d74b6ccc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the postInstall setup script of an installed component.  <br /></td></tr>
 <tr class="memitem:a2240755b466db913ea19b039e6c8c5f4" id="r_a2240755b466db913ea19b039e6c8c5f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2240755b466db913ea19b039e6c8c5f4">CheckForToolchainUpdates</a> (std::function&lt; void()&gt; onComplete=nullptr) override</td></tr>
-<tr class="memdesc:a2240755b466db913ea19b039e6c8c5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for toolchain updates (async). Calls onComplete when done.  <br /></td></tr>
+<tr class="memdesc:a2240755b466db913ea19b039e6c8c5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for toolchain updates asynchronously and calls onComplete when done.  <br /></td></tr>
 <tr class="memitem:a34ee413a3c24d35f6ae6b329d8d51b14" id="r_a34ee413a3c24d35f6ae6b329d8d51b14"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a34ee413a3c24d35f6ae6b329d8d51b14">IsToolchainBusy</a> () const override</td></tr>
-<tr class="memdesc:a34ee413a3c24d35f6ae6b329d8d51b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether any toolchain operation (install/update check) is in progress.  <br /></td></tr>
+<tr class="memdesc:a34ee413a3c24d35f6ae6b329d8d51b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a toolchain install or update check is in progress.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_deki_editor_1_1_i_target_builder"><td colspan="2">Public Member Functions inherited from <a class="el" href="class_deki_editor_1_1_i_target_builder.html">DekiEditor::ITargetBuilder</a></td></tr>
 <tr class="memitem:a57fd9eca15ee6818decf51d8a23d4a31 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a57fd9eca15ee6818decf51d8a23d4a31"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a57fd9eca15ee6818decf51d8a23d4a31">~ITargetBuilder</a> ()=default</td></tr>
 <tr class="memitem:a6332becff08f00b139e4abcadca031b3 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a6332becff08f00b139e4abcadca031b3"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a6332becff08f00b139e4abcadca031b3">Build</a> (const std::string &amp;projectPath, <a class="el" href="namespace_deki_editor.html#a102fc12c05cce32374d11e0fe46bf847">BuildOutputCallback</a> outputCallback=nullptr, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> progressCallback=nullptr)=0</td></tr>
-<tr class="memdesc:a6332becff08f00b139e4abcadca031b3 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build firmware for the given project.  <br /></td></tr>
+<tr class="memdesc:a6332becff08f00b139e4abcadca031b3 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds firmware for the project.  <br /></td></tr>
 <tr class="memitem:a7af30b25e3cff5bbf40af7a7f5e597ad pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a7af30b25e3cff5bbf40af7a7f5e597ad"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a7af30b25e3cff5bbf40af7a7f5e597ad">Clean</a> (const std::string &amp;projectPath, <a class="el" href="namespace_deki_editor.html#a102fc12c05cce32374d11e0fe46bf847">BuildOutputCallback</a> outputCallback=nullptr, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> progressCallback=nullptr)=0</td></tr>
-<tr class="memdesc:a7af30b25e3cff5bbf40af7a7f5e597ad pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean build directory.  <br /></td></tr>
+<tr class="memdesc:a7af30b25e3cff5bbf40af7a7f5e597ad pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans the build directory.  <br /></td></tr>
 <tr class="memitem:a542c04757e76b86eaf48dad0ed7d3305 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a542c04757e76b86eaf48dad0ed7d3305"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a542c04757e76b86eaf48dad0ed7d3305">SupportsDeploy</a> () const =0</td></tr>
 <tr class="memdesc:a542c04757e76b86eaf48dad0ed7d3305 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this target has a deploy step at all.  <br /></td></tr>
 <tr class="memitem:a8aa26a0f622b33e60c0da0924b676261 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a8aa26a0f622b33e60c0da0924b676261"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a8aa26a0f622b33e60c0da0924b676261">GetDeployLabel</a> () const</td></tr>
 <tr class="memdesc:a8aa26a0f622b33e60c0da0924b676261 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The verb for the button and the log: "Flash", "Run", "Install".  <br /></td></tr>
 <tr class="memitem:a7008812b260847c2bbbbbbac86f8906d pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a7008812b260847c2bbbbbbac86f8906d"><td class="memItemLeft">virtual std::vector&lt; <a class="el" href="struct_deki_editor_1_1_deploy_target.html">DeployTarget</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a7008812b260847c2bbbbbbac86f8906d">EnumerateDeployTargets</a> () const</td></tr>
-<tr class="memdesc:a7008812b260847c2bbbbbbac86f8906d pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a deploy can be aimed at right now - serial ports, devkits on the network, paired devices.  <br /></td></tr>
+<tr class="memdesc:a7008812b260847c2bbbbbbac86f8906d pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a deploy can be aimed at right now: serial ports, devkits on the network, paired devices.  <br /></td></tr>
 <tr class="memitem:a067f2b9f405623502f82c579c623ceea pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a067f2b9f405623502f82c579c623ceea"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a067f2b9f405623502f82c579c623ceea">Deploy</a> (const std::string &amp;projectPath, const std::string &amp;deployTargetId, <a class="el" href="namespace_deki_editor.html#a102fc12c05cce32374d11e0fe46bf847">BuildOutputCallback</a> outputCallback=nullptr, <a class="el" href="namespace_deki_editor.html#a7793ebb7f1651054d85b46d4072ebcc9">BuildProgressCallback</a> progressCallback=nullptr)</td></tr>
-<tr class="memdesc:a067f2b9f405623502f82c579c623ceea pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deploy the last build.  <br /></td></tr>
+<tr class="memdesc:a067f2b9f405623502f82c579c623ceea pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deploys the last build.  <br /></td></tr>
 <tr class="memitem:a1f598a95b2fd48ca413beb05080e52dd pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a1f598a95b2fd48ca413beb05080e52dd"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a1f598a95b2fd48ca413beb05080e52dd">IsToolchainInstalled</a> () const =0</td></tr>
-<tr class="memdesc:a1f598a95b2fd48ca413beb05080e52dd pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the required toolchain is installed.  <br /></td></tr>
+<tr class="memdesc:a1f598a95b2fd48ca413beb05080e52dd pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the required toolchain is installed.  <br /></td></tr>
 <tr class="memitem:a8c1a4b9202ee51810d94ff77b52c06d2 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a8c1a4b9202ee51810d94ff77b52c06d2"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a8c1a4b9202ee51810d94ff77b52c06d2">GetToolchainStatus</a> () const =0</td></tr>
-<tr class="memdesc:a8c1a4b9202ee51810d94ff77b52c06d2 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get human-readable toolchain status description.  <br /></td></tr>
+<tr class="memdesc:a8c1a4b9202ee51810d94ff77b52c06d2 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The toolchain's status, as text for the user.  <br /></td></tr>
 <tr class="memitem:a3f3af770986c4928e682ff16abef3378 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a3f3af770986c4928e682ff16abef3378"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a3f3af770986c4928e682ff16abef3378">GenerateBuildFiles</a> (const std::string &amp;projectPath, const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config, const std::vector&lt; std::string &gt; &amp;packageDefines)=0</td></tr>
-<tr class="memdesc:a3f3af770986c4928e682ff16abef3378 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate/regenerate build files for the given platform configuration.  <br /></td></tr>
+<tr class="memdesc:a3f3af770986c4928e682ff16abef3378 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the build files (CMakeLists.txt, etc.) for <span class="tt">config</span>, in the builder's own project structure.  <br /></td></tr>
 <tr class="memitem:a0e8991bf9120e5559b410d299c75a9f3 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a0e8991bf9120e5559b410d299c75a9f3"><td class="memItemLeft">virtual std::unique_ptr&lt; <a class="el" href="class_deki_editor_1_1_i_platform_editor_u_i.html">IPlatformEditorUI</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a0e8991bf9120e5559b410d299c75a9f3">CreateEditorUI</a> (const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config) const</td></tr>
-<tr class="memdesc:a0e8991bf9120e5559b410d299c75a9f3 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a custom editor UI for this builder's platform configuration.  <br /></td></tr>
+<tr class="memdesc:a0e8991bf9120e5559b410d299c75a9f3 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates this builder's settings UI for the platform editor, or nullptr if it has none.  <br /></td></tr>
 <tr class="memitem:a38416aab39e0f839fbb6d5e308fd4657 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a38416aab39e0f839fbb6d5e308fd4657"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a38416aab39e0f839fbb6d5e308fd4657">GetName</a> () const =0</td></tr>
-<tr class="memdesc:a38416aab39e0f839fbb6d5e308fd4657 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Human-readable backend name.  <br /></td></tr>
+<tr class="memdesc:a38416aab39e0f839fbb6d5e308fd4657 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The backend's name, for the user.  <br /></td></tr>
 <tr class="memitem:af6c0a8c8b4e57dcd8c72e6a80227a1d0 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_af6c0a8c8b4e57dcd8c72e6a80227a1d0"><td class="memItemLeft">virtual std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#af6c0a8c8b4e57dcd8c72e6a80227a1d0">DescribePlatform</a> (const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config) const</td></tr>
-<tr class="memdesc:af6c0a8c8b4e57dcd8c72e6a80227a1d0 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the Build panel shows about a platform aimed at this backend, as label/value rows: a chip and its memory, a devkit model, nothing at all.  <br /></td></tr>
+<tr class="memdesc:af6c0a8c8b4e57dcd8c72e6a80227a1d0 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the Build panel shows about a platform aimed at this backend, as label/value rows: a chip and its memory, a devkit model, or nothing.  <br /></td></tr>
 <tr class="memitem:a658e67588f9c2ef69d1a5e021f0e553c pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a658e67588f9c2ef69d1a5e021f0e553c"><td class="memItemLeft">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a658e67588f9c2ef69d1a5e021f0e553c">ValidatePlatform</a> (const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config) const</td></tr>
-<tr class="memdesc:a658e67588f9c2ef69d1a5e021f0e553c pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Problems with a platform aimed at this builder, empty when it is fine.  <br /></td></tr>
+<tr class="memdesc:a658e67588f9c2ef69d1a5e021f0e553c pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Problems with a platform aimed at this builder; empty when it is fine.  <br /></td></tr>
 <tr class="memitem:a9ab55ee88f172dd5ae9baaf10964a7ee pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a9ab55ee88f172dd5ae9baaf10964a7ee"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a9ab55ee88f172dd5ae9baaf10964a7ee">GetFrameworkId</a> () const =0</td></tr>
 <tr class="memdesc:a9ab55ee88f172dd5ae9baaf10964a7ee pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The build framework this backend serves, as a lowercase id.  <br /></td></tr>
 <tr class="memitem:aafe7e6cb5949cb713d0515a5e1131995 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_aafe7e6cb5949cb713d0515a5e1131995"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#aafe7e6cb5949cb713d0515a5e1131995">GetIcon</a> () const</td></tr>
 <tr class="memdesc:aafe7e6cb5949cb713d0515a5e1131995 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional self-description for the platform editor's builder picker, so a third-party builder is not anonymous in the UI.  <br /></td></tr>
 <tr class="memitem:ad389b6129934d12a7e05237c57f4d8e0 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_ad389b6129934d12a7e05237c57f4d8e0"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#ad389b6129934d12a7e05237c57f4d8e0">GetDescription</a> () const</td></tr>
 <tr class="memitem:a21ef6b7a94f6c16a5eb3086f3a8cc7ea pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a21ef6b7a94f6c16a5eb3086f3a8cc7ea"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a21ef6b7a94f6c16a5eb3086f3a8cc7ea">GetBuildDirectory</a> (const std::string &amp;projectPath) const =0</td></tr>
-<tr class="memdesc:a21ef6b7a94f6c16a5eb3086f3a8cc7ea pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the builder's project directory for a given project path.  <br /></td></tr>
+<tr class="memdesc:a21ef6b7a94f6c16a5eb3086f3a8cc7ea pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The builder's build directory for a project.  <br /></td></tr>
+<tr class="memitem:a80bdd35c77284dba62f6fb18a190686f pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a80bdd35c77284dba62f6fb18a190686f"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a80bdd35c77284dba62f6fb18a190686f">SupportsSimulation</a> () const</td></tr>
+<tr class="memdesc:a80bdd35c77284dba62f6fb18a190686f pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this backend can build a platform's firmware for a simulator (<a class="el" href="struct_deki_editor_1_1_build_options.html#a5fde5f481a9abf6bebb821835297374c">BuildOptions::simulate</a>).  <br /></td></tr>
+<tr class="memitem:a546f3da237de043e0434338005d8ea72 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a546f3da237de043e0434338005d8ea72"><td class="memItemLeft">virtual const char *&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a546f3da237de043e0434338005d8ea72">GetSimulatorName</a> () const</td></tr>
+<tr class="memdesc:a546f3da237de043e0434338005d8ea72 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The simulator's name, for the UI and the log: "QEMU".  <br /></td></tr>
+<tr class="memitem:adfe8ef4acc6d37ae7ef6495b45f4ebbf pub_methods_class_deki_editor_1_1_i_target_builder" id="r_adfe8ef4acc6d37ae7ef6495b45f4ebbf"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#adfe8ef4acc6d37ae7ef6495b45f4ebbf">MakeSimulationBootScene</a> (std::string &amp;scene, const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config, std::vector&lt; std::string &gt; &amp;notes, std::string &amp;error) const</td></tr>
+<tr class="memdesc:adfe8ef4acc6d37ae7ef6495b45f4ebbf pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the simulated build's boot scene.  <br /></td></tr>
 <tr class="memitem:a72ec2e18916261521ae9370a9afce200 pub_methods_class_deki_editor_1_1_i_target_builder" id="r_a72ec2e18916261521ae9370a9afce200"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_i_target_builder.html#a72ec2e18916261521ae9370a9afce200">GetBootPayloadDirectory</a> (const std::string &amp;projectPath) const =0</td></tr>
-<tr class="memdesc:a72ec2e18916261521ae9370a9afce200 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the editor writes the boot payload before <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a6332becff08f00b139e4abcadca031b3" title="Build firmware for the given project.">Build()</a>: the compiled project settings (dproject.bin) and the platform's boot scene.  <br /></td></tr>
+<tr class="memdesc:a72ec2e18916261521ae9370a9afce200 pub_methods_class_deki_editor_1_1_i_target_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the editor writes the boot payload before <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a6332becff08f00b139e4abcadca031b3" title="Builds firmware for the project.">Build()</a>: the compiled project settings (dproject.bin) and the platform's boot scene.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -289,7 +303,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Cancel current operation. </p>
+<p>Cancels the current operation. </p>
 
 <p>Implements <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a2a81fb7ca2ca33df883cf0ba1ec2c01a">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -453,7 +467,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set platform-specific hardware configuration (display, memory, etc.). </p>
+<p>Sets the platform's hardware configuration (display, memory, etc.). </p>
 
 <p>Implements <a class="el" href="class_deki_editor_1_1_i_target_builder.html#ac55e1d3553814bae1a9927dae1efdabf">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -509,7 +523,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set package defines (auto-detected from scene scanning). </p>
+<p>Sets the package defines, found by scanning the scenes. </p>
 
 <p>Implements <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a3dd7a297e7cf26004d4db8b10bd9e000">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -538,7 +552,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the engine path for a project. </p>
+<p>The engine path for a project. </p>
 
 <p>Implements <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a343d4d7f21098d71f46d213ac216cf1e">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -596,8 +610,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if a package is compatible with this builder given its metadata file. </p>
-<p>Reads dependencies from package.json or .deki-package.json. Returns true if dependencies contains this platform's key or "default", or if no dependencies exists (pure code, works everywhere). </p>
+<p>Whether a package works with this builder, from the dependencies in its metadata file (package.json or .deki-package.json). </p>
+<p>True when they name this platform's key or "default", or when there are none (pure code works everywhere). </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#aeb98ed97466aaf00cbb1bb8ea78ebf58">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -626,8 +640,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get supported platform keys from a package's metadata file. </p>
-<p>Returns keys from dependencies (mapping "default" to "all"). Returns empty if file doesn't exist or has no dependencies. </p>
+<p>The platform keys a package's metadata file lists under dependencies, with "default" reported as "all". </p>
+<p>Empty if the file is missing or has no dependencies. </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a55f9c1f5bd7721ee3d85795a2aae8592">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -656,7 +670,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get structured list of toolchain components and their status. </p>
+<p>The toolchain's components and their status. </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#ad7a783ed811ffb4a634a606be0165507">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -689,7 +703,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Install or reinstall a specific toolchain component by id. </p>
+<p>Installs or reinstalls one toolchain component. </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a39eba7bd20a96426ad682947b83339e1">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -722,7 +736,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Run the postInstall setup script for an already-installed component. </p>
+<p>Runs the postInstall setup script of an installed component. </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#acea6bdde270d4e4e4b65611674c7d882">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -751,7 +765,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check for toolchain updates (async). Calls onComplete when done. </p>
+<p>Checks for toolchain updates asynchronously and calls onComplete when done. </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#a6cb4109bb234c200293b0d3c037fb371">DekiEditor::ITargetBuilder</a>.</p>
 
@@ -780,7 +794,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Whether any toolchain operation (install/update check) is in progress. </p>
+<p>Whether a toolchain install or update check is in progress. </p>
 
 <p>Reimplemented from <a class="el" href="class_deki_editor_1_1_i_target_builder.html#afefbcf966190eeeea218344f1a34e41e">DekiEditor::ITargetBuilder</a>.</p>
 

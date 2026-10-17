@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -143,35 +151,30 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8e33b99dc53aea854dfb34371925a14c" id="r_a8e33b99dc53aea854dfb34371925a14c"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a8e33b99dc53aea854dfb34371925a14c">VERSION</a> = &quot;version&quot;</td></tr>
-<tr class="memitem:a0bd6971e9aba9bbb3bd32051b794174a" id="r_a0bd6971e9aba9bbb3bd32051b794174a"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a0bd6971e9aba9bbb3bd32051b794174a">NAME</a> = &quot;name&quot;</td></tr>
-<tr class="memitem:ab17fb89520916a5be489bf68cb0f5e4e" id="r_ab17fb89520916a5be489bf68cb0f5e4e"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ab17fb89520916a5be489bf68cb0f5e4e">WIDTH</a> = &quot;width&quot;</td></tr>
-<tr class="memitem:ad756bd396dca7894ea5a715e05e14da1" id="r_ad756bd396dca7894ea5a715e05e14da1"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ad756bd396dca7894ea5a715e05e14da1">HEIGHT</a> = &quot;height&quot;</td></tr>
-<tr class="memitem:a20fa3ff9b5eb5bcc9fb65609f80c400e" id="r_a20fa3ff9b5eb5bcc9fb65609f80c400e"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a20fa3ff9b5eb5bcc9fb65609f80c400e">CLEAR_COLOR</a> = &quot;clear_color&quot;</td></tr>
-<tr class="memitem:a2237bb92792c2cff8ba7f5d931705587" id="r_a2237bb92792c2cff8ba7f5d931705587"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2237bb92792c2cff8ba7f5d931705587">OBJECTS</a> = &quot;objects&quot;</td></tr>
-<tr class="memitem:abdf5e154804ddf66ade9746bb8ce2007" id="r_abdf5e154804ddf66ade9746bb8ce2007"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#abdf5e154804ddf66ade9746bb8ce2007">OBJ_ID</a> = &quot;id&quot;</td></tr>
-<tr class="memitem:a20672f24a1862fdbf5ac96b902028714" id="r_a20672f24a1862fdbf5ac96b902028714"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a20672f24a1862fdbf5ac96b902028714">OBJ_NAME</a> = &quot;name&quot;</td></tr>
-<tr class="memitem:a219178c75f320ce11fe870fb71e097ae" id="r_a219178c75f320ce11fe870fb71e097ae"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a219178c75f320ce11fe870fb71e097ae">OBJ_ACTIVE</a> = &quot;active&quot;</td></tr>
-<tr class="memitem:a80f66ca60d1de60ff8588d9f7b15cff1" id="r_a80f66ca60d1de60ff8588d9f7b15cff1"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a80f66ca60d1de60ff8588d9f7b15cff1">OBJ_SORT_ORDER</a> = &quot;sort_order&quot;</td></tr>
-<tr class="memitem:a8454c6a2cd38dcd909c55ccd4652ff87" id="r_a8454c6a2cd38dcd909c55ccd4652ff87"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a8454c6a2cd38dcd909c55ccd4652ff87">OBJ_TRANSFORM</a> = &quot;transform&quot;</td></tr>
-<tr class="memitem:a1b55486269c70baeb8775256613a1da6" id="r_a1b55486269c70baeb8775256613a1da6"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a1b55486269c70baeb8775256613a1da6">OBJ_COMPONENTS</a> = &quot;components&quot;</td></tr>
-<tr class="memitem:a4cc1eae9a329c8a9e2cbbc450057ef07" id="r_a4cc1eae9a329c8a9e2cbbc450057ef07"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a4cc1eae9a329c8a9e2cbbc450057ef07">OBJ_CHILDREN</a> = &quot;children&quot;</td></tr>
-<tr class="memitem:a83c4ac426de286a5853a227c1a1d5101" id="r_a83c4ac426de286a5853a227c1a1d5101"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a83c4ac426de286a5853a227c1a1d5101">OBJ_INSTANCE</a> = &quot;instance&quot;</td></tr>
-<tr class="memitem:a8f6514a77941581eeff31557f3d8cfc0" id="r_a8f6514a77941581eeff31557f3d8cfc0"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a8f6514a77941581eeff31557f3d8cfc0">TR_X</a> = &quot;x&quot;</td></tr>
-<tr class="memitem:a23d4508a13280a4bcd3dd0f93a23d9a5" id="r_a23d4508a13280a4bcd3dd0f93a23d9a5"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a23d4508a13280a4bcd3dd0f93a23d9a5">TR_Y</a> = &quot;y&quot;</td></tr>
-<tr class="memitem:abb985188b99f710e744210a3534d7579" id="r_abb985188b99f710e744210a3534d7579"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#abb985188b99f710e744210a3534d7579">TR_Z</a> = &quot;z&quot;</td></tr>
-<tr class="memitem:a8c8a8472c0c22d64c3604d5ff518e51f" id="r_a8c8a8472c0c22d64c3604d5ff518e51f"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a8c8a8472c0c22d64c3604d5ff518e51f">TR_ROTATION_X</a> = &quot;rotationX&quot;</td></tr>
-<tr class="memitem:aa0c84b496650ff16d224b222ea9343d5" id="r_aa0c84b496650ff16d224b222ea9343d5"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa0c84b496650ff16d224b222ea9343d5">TR_ROTATION_Y</a> = &quot;rotationY&quot;</td></tr>
-<tr class="memitem:a16a15315e927742206891b84b61d10c5" id="r_a16a15315e927742206891b84b61d10c5"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a16a15315e927742206891b84b61d10c5">TR_SCALE_Z</a> = &quot;scaleZ&quot;</td></tr>
-<tr class="memitem:aead550824657c854f55b926de0c7423a" id="r_aead550824657c854f55b926de0c7423a"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#aead550824657c854f55b926de0c7423a">TR_ROTATION</a> = &quot;rotation&quot;</td></tr>
-<tr class="memitem:ad0adba3250e86d6c878f26924f12f188" id="r_ad0adba3250e86d6c878f26924f12f188"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ad0adba3250e86d6c878f26924f12f188">TR_SCALE_X</a> = &quot;scaleX&quot;</td></tr>
-<tr class="memitem:a2ad3c8585ea2f7b3a4c88845ccfa95aa" id="r_a2ad3c8585ea2f7b3a4c88845ccfa95aa"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2ad3c8585ea2f7b3a4c88845ccfa95aa">TR_SCALE_Y</a> = &quot;scaleY&quot;</td></tr>
-<tr class="memitem:a286fa1babc6b7c8517c892a743419d7e" id="r_a286fa1babc6b7c8517c892a743419d7e"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a286fa1babc6b7c8517c892a743419d7e">COMP_TYPE</a> = &quot;type&quot;</td></tr>
-<tr class="memitem:afd5b25b6c93e1e7d06cc061fc6b20d77" id="r_afd5b25b6c93e1e7d06cc061fc6b20d77"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#afd5b25b6c93e1e7d06cc061fc6b20d77">COMP_DATA</a> = &quot;data&quot;</td></tr>
+<tr class="memitem:a07a0b6c7f02e9285508a251d30e6cecf" id="r_a07a0b6c7f02e9285508a251d30e6cecf"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a07a0b6c7f02e9285508a251d30e6cecf">kVersion</a> = &quot;version&quot;</td></tr>
+<tr class="memitem:a140643a94fac4cac23948deb7ae282b3" id="r_a140643a94fac4cac23948deb7ae282b3"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a140643a94fac4cac23948deb7ae282b3">kObjects</a> = &quot;objects&quot;</td></tr>
+<tr class="memitem:acad6a52cb7380da0cbb98ac772aca2aa" id="r_acad6a52cb7380da0cbb98ac772aca2aa"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#acad6a52cb7380da0cbb98ac772aca2aa">kObjID</a> = &quot;id&quot;</td></tr>
+<tr class="memitem:abf303fe00e7781084f0c7452fe3b0426" id="r_abf303fe00e7781084f0c7452fe3b0426"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#abf303fe00e7781084f0c7452fe3b0426">kObjName</a> = &quot;name&quot;</td></tr>
+<tr class="memitem:ae5c29e557818a053fec299e05bf6038a" id="r_ae5c29e557818a053fec299e05bf6038a"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ae5c29e557818a053fec299e05bf6038a">kObjActive</a> = &quot;active&quot;</td></tr>
+<tr class="memitem:a2fe2c240a759c8cc6846a45d796cf090" id="r_a2fe2c240a759c8cc6846a45d796cf090"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2fe2c240a759c8cc6846a45d796cf090">kObjTransform</a> = &quot;transform&quot;</td></tr>
+<tr class="memitem:a86e5731f951e2f96d96af8932159dec2" id="r_a86e5731f951e2f96d96af8932159dec2"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a86e5731f951e2f96d96af8932159dec2">kObjComponents</a> = &quot;components&quot;</td></tr>
+<tr class="memitem:a39c055554ed911a8902a9dd90e2a21a8" id="r_a39c055554ed911a8902a9dd90e2a21a8"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a39c055554ed911a8902a9dd90e2a21a8">kObjChildren</a> = &quot;children&quot;</td></tr>
+<tr class="memitem:affb9b3055a6a5f29aea52ab70469ed22" id="r_affb9b3055a6a5f29aea52ab70469ed22"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#affb9b3055a6a5f29aea52ab70469ed22">kObjInstance</a> = &quot;instance&quot;</td></tr>
+<tr class="memitem:a091416be5de9e261afe4da7a500b4c34" id="r_a091416be5de9e261afe4da7a500b4c34"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a091416be5de9e261afe4da7a500b4c34">kTrX</a> = &quot;x&quot;</td></tr>
+<tr class="memitem:aa60fe06c3c60872e2f4b4542ea66f0f6" id="r_aa60fe06c3c60872e2f4b4542ea66f0f6"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa60fe06c3c60872e2f4b4542ea66f0f6">kTrY</a> = &quot;y&quot;</td></tr>
+<tr class="memitem:aa99db1af6c5afaa66f12eac301fe1f55" id="r_aa99db1af6c5afaa66f12eac301fe1f55"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa99db1af6c5afaa66f12eac301fe1f55">kTrZ</a> = &quot;z&quot;</td></tr>
+<tr class="memitem:a429c264589cc1414b5cd927629b5d887" id="r_a429c264589cc1414b5cd927629b5d887"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a429c264589cc1414b5cd927629b5d887">kTrRotationX</a> = &quot;rotationX&quot;</td></tr>
+<tr class="memitem:a2faede6b6582f20f96c3eb7b246b8783" id="r_a2faede6b6582f20f96c3eb7b246b8783"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2faede6b6582f20f96c3eb7b246b8783">kTrRotationY</a> = &quot;rotationY&quot;</td></tr>
+<tr class="memitem:ab5f98167a252f824c1f324c90ebfaf85" id="r_ab5f98167a252f824c1f324c90ebfaf85"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#ab5f98167a252f824c1f324c90ebfaf85">kTrScaleZ</a> = &quot;scaleZ&quot;</td></tr>
+<tr class="memitem:a697f58be006b5abe02c3b69fc428eafe" id="r_a697f58be006b5abe02c3b69fc428eafe"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a697f58be006b5abe02c3b69fc428eafe">kTrRotation</a> = &quot;rotation&quot;</td></tr>
+<tr class="memitem:a8a791fff962c4b82fb0682fe048617a5" id="r_a8a791fff962c4b82fb0682fe048617a5"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a8a791fff962c4b82fb0682fe048617a5">kTrScaleX</a> = &quot;scaleX&quot;</td></tr>
+<tr class="memitem:a3db2e64ddec5117ba27b5c2278ac1940" id="r_a3db2e64ddec5117ba27b5c2278ac1940"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a3db2e64ddec5117ba27b5c2278ac1940">kTrScaleY</a> = &quot;scaleY&quot;</td></tr>
+<tr class="memitem:a1bdc65c4445ce1c6c184a19b1b2550da" id="r_a1bdc65c4445ce1c6c184a19b1b2550da"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a1bdc65c4445ce1c6c184a19b1b2550da">kCompType</a> = &quot;type&quot;</td></tr>
+<tr class="memitem:a53eafab13cbca318287001e61bebc786" id="r_a53eafab13cbca318287001e61bebc786"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a53eafab13cbca318287001e61bebc786">kCompData</a> = &quot;data&quot;</td></tr>
 </table>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a8e33b99dc53aea854dfb34371925a14c" name="a8e33b99dc53aea854dfb34371925a14c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e33b99dc53aea854dfb34371925a14c">&#9670;&#160;</a></span>VERSION</h2>
+<a id="a07a0b6c7f02e9285508a251d30e6cecf" name="a07a0b6c7f02e9285508a251d30e6cecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a0b6c7f02e9285508a251d30e6cecf">&#9670;&#160;</a></span>kVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +183,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::VERSION = &quot;version&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kVersion = &quot;version&quot;</td>
         </tr>
       </table>
   </td>
@@ -192,8 +195,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0bd6971e9aba9bbb3bd32051b794174a" name="a0bd6971e9aba9bbb3bd32051b794174a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bd6971e9aba9bbb3bd32051b794174a">&#9670;&#160;</a></span>NAME</h2>
+<a id="a140643a94fac4cac23948deb7ae282b3" name="a140643a94fac4cac23948deb7ae282b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140643a94fac4cac23948deb7ae282b3">&#9670;&#160;</a></span>kObjects</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +205,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::NAME = &quot;name&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjects = &quot;objects&quot;</td>
         </tr>
       </table>
   </td>
@@ -214,8 +217,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab17fb89520916a5be489bf68cb0f5e4e" name="ab17fb89520916a5be489bf68cb0f5e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab17fb89520916a5be489bf68cb0f5e4e">&#9670;&#160;</a></span>WIDTH</h2>
+<a id="acad6a52cb7380da0cbb98ac772aca2aa" name="acad6a52cb7380da0cbb98ac772aca2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad6a52cb7380da0cbb98ac772aca2aa">&#9670;&#160;</a></span>kObjID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +227,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::WIDTH = &quot;width&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjID = &quot;id&quot;</td>
         </tr>
       </table>
   </td>
@@ -236,8 +239,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad756bd396dca7894ea5a715e05e14da1" name="ad756bd396dca7894ea5a715e05e14da1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad756bd396dca7894ea5a715e05e14da1">&#9670;&#160;</a></span>HEIGHT</h2>
+<a id="abf303fe00e7781084f0c7452fe3b0426" name="abf303fe00e7781084f0c7452fe3b0426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf303fe00e7781084f0c7452fe3b0426">&#9670;&#160;</a></span>kObjName</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,7 +249,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::HEIGHT = &quot;height&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjName = &quot;name&quot;</td>
         </tr>
       </table>
   </td>
@@ -258,8 +261,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a20fa3ff9b5eb5bcc9fb65609f80c400e" name="a20fa3ff9b5eb5bcc9fb65609f80c400e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20fa3ff9b5eb5bcc9fb65609f80c400e">&#9670;&#160;</a></span>CLEAR_COLOR</h2>
+<a id="ae5c29e557818a053fec299e05bf6038a" name="ae5c29e557818a053fec299e05bf6038a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c29e557818a053fec299e05bf6038a">&#9670;&#160;</a></span>kObjActive</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +271,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::CLEAR_COLOR = &quot;clear_color&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjActive = &quot;active&quot;</td>
         </tr>
       </table>
   </td>
@@ -280,8 +283,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2237bb92792c2cff8ba7f5d931705587" name="a2237bb92792c2cff8ba7f5d931705587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2237bb92792c2cff8ba7f5d931705587">&#9670;&#160;</a></span>OBJECTS</h2>
+<a id="a2fe2c240a759c8cc6846a45d796cf090" name="a2fe2c240a759c8cc6846a45d796cf090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe2c240a759c8cc6846a45d796cf090">&#9670;&#160;</a></span>kObjTransform</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +293,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJECTS = &quot;objects&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjTransform = &quot;transform&quot;</td>
         </tr>
       </table>
   </td>
@@ -302,8 +305,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abdf5e154804ddf66ade9746bb8ce2007" name="abdf5e154804ddf66ade9746bb8ce2007"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf5e154804ddf66ade9746bb8ce2007">&#9670;&#160;</a></span>OBJ_ID</h2>
+<a id="a86e5731f951e2f96d96af8932159dec2" name="a86e5731f951e2f96d96af8932159dec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e5731f951e2f96d96af8932159dec2">&#9670;&#160;</a></span>kObjComponents</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +315,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_ID = &quot;id&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjComponents = &quot;components&quot;</td>
         </tr>
       </table>
   </td>
@@ -324,8 +327,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a20672f24a1862fdbf5ac96b902028714" name="a20672f24a1862fdbf5ac96b902028714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20672f24a1862fdbf5ac96b902028714">&#9670;&#160;</a></span>OBJ_NAME</h2>
+<a id="a39c055554ed911a8902a9dd90e2a21a8" name="a39c055554ed911a8902a9dd90e2a21a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c055554ed911a8902a9dd90e2a21a8">&#9670;&#160;</a></span>kObjChildren</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +337,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_NAME = &quot;name&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjChildren = &quot;children&quot;</td>
         </tr>
       </table>
   </td>
@@ -346,8 +349,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a219178c75f320ce11fe870fb71e097ae" name="a219178c75f320ce11fe870fb71e097ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a219178c75f320ce11fe870fb71e097ae">&#9670;&#160;</a></span>OBJ_ACTIVE</h2>
+<a id="affb9b3055a6a5f29aea52ab70469ed22" name="affb9b3055a6a5f29aea52ab70469ed22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb9b3055a6a5f29aea52ab70469ed22">&#9670;&#160;</a></span>kObjInstance</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +359,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_ACTIVE = &quot;active&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kObjInstance = &quot;instance&quot;</td>
         </tr>
       </table>
   </td>
@@ -368,8 +371,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a80f66ca60d1de60ff8588d9f7b15cff1" name="a80f66ca60d1de60ff8588d9f7b15cff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80f66ca60d1de60ff8588d9f7b15cff1">&#9670;&#160;</a></span>OBJ_SORT_ORDER</h2>
+<a id="a091416be5de9e261afe4da7a500b4c34" name="a091416be5de9e261afe4da7a500b4c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091416be5de9e261afe4da7a500b4c34">&#9670;&#160;</a></span>kTrX</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +381,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_SORT_ORDER = &quot;sort_order&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrX = &quot;x&quot;</td>
         </tr>
       </table>
   </td>
@@ -390,8 +393,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8454c6a2cd38dcd909c55ccd4652ff87" name="a8454c6a2cd38dcd909c55ccd4652ff87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8454c6a2cd38dcd909c55ccd4652ff87">&#9670;&#160;</a></span>OBJ_TRANSFORM</h2>
+<a id="aa60fe06c3c60872e2f4b4542ea66f0f6" name="aa60fe06c3c60872e2f4b4542ea66f0f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60fe06c3c60872e2f4b4542ea66f0f6">&#9670;&#160;</a></span>kTrY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +403,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_TRANSFORM = &quot;transform&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrY = &quot;y&quot;</td>
         </tr>
       </table>
   </td>
@@ -412,8 +415,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b55486269c70baeb8775256613a1da6" name="a1b55486269c70baeb8775256613a1da6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b55486269c70baeb8775256613a1da6">&#9670;&#160;</a></span>OBJ_COMPONENTS</h2>
+<a id="aa99db1af6c5afaa66f12eac301fe1f55" name="aa99db1af6c5afaa66f12eac301fe1f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99db1af6c5afaa66f12eac301fe1f55">&#9670;&#160;</a></span>kTrZ</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +425,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_COMPONENTS = &quot;components&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrZ = &quot;z&quot;</td>
         </tr>
       </table>
   </td>
@@ -434,8 +437,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4cc1eae9a329c8a9e2cbbc450057ef07" name="a4cc1eae9a329c8a9e2cbbc450057ef07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc1eae9a329c8a9e2cbbc450057ef07">&#9670;&#160;</a></span>OBJ_CHILDREN</h2>
+<a id="a429c264589cc1414b5cd927629b5d887" name="a429c264589cc1414b5cd927629b5d887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429c264589cc1414b5cd927629b5d887">&#9670;&#160;</a></span>kTrRotationX</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +447,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_CHILDREN = &quot;children&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrRotationX = &quot;rotationX&quot;</td>
         </tr>
       </table>
   </td>
@@ -456,8 +459,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a83c4ac426de286a5853a227c1a1d5101" name="a83c4ac426de286a5853a227c1a1d5101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83c4ac426de286a5853a227c1a1d5101">&#9670;&#160;</a></span>OBJ_INSTANCE</h2>
+<a id="a2faede6b6582f20f96c3eb7b246b8783" name="a2faede6b6582f20f96c3eb7b246b8783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2faede6b6582f20f96c3eb7b246b8783">&#9670;&#160;</a></span>kTrRotationY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +469,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::OBJ_INSTANCE = &quot;instance&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrRotationY = &quot;rotationY&quot;</td>
         </tr>
       </table>
   </td>
@@ -478,8 +481,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f6514a77941581eeff31557f3d8cfc0" name="a8f6514a77941581eeff31557f3d8cfc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f6514a77941581eeff31557f3d8cfc0">&#9670;&#160;</a></span>TR_X</h2>
+<a id="ab5f98167a252f824c1f324c90ebfaf85" name="ab5f98167a252f824c1f324c90ebfaf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f98167a252f824c1f324c90ebfaf85">&#9670;&#160;</a></span>kTrScaleZ</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +491,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_X = &quot;x&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrScaleZ = &quot;scaleZ&quot;</td>
         </tr>
       </table>
   </td>
@@ -500,8 +503,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a23d4508a13280a4bcd3dd0f93a23d9a5" name="a23d4508a13280a4bcd3dd0f93a23d9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23d4508a13280a4bcd3dd0f93a23d9a5">&#9670;&#160;</a></span>TR_Y</h2>
+<a id="a697f58be006b5abe02c3b69fc428eafe" name="a697f58be006b5abe02c3b69fc428eafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697f58be006b5abe02c3b69fc428eafe">&#9670;&#160;</a></span>kTrRotation</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,7 +513,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_Y = &quot;y&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrRotation = &quot;rotation&quot;</td>
         </tr>
       </table>
   </td>
@@ -522,8 +525,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abb985188b99f710e744210a3534d7579" name="abb985188b99f710e744210a3534d7579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb985188b99f710e744210a3534d7579">&#9670;&#160;</a></span>TR_Z</h2>
+<a id="a8a791fff962c4b82fb0682fe048617a5" name="a8a791fff962c4b82fb0682fe048617a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a791fff962c4b82fb0682fe048617a5">&#9670;&#160;</a></span>kTrScaleX</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +535,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_Z = &quot;z&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrScaleX = &quot;scaleX&quot;</td>
         </tr>
       </table>
   </td>
@@ -544,8 +547,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c8a8472c0c22d64c3604d5ff518e51f" name="a8c8a8472c0c22d64c3604d5ff518e51f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c8a8472c0c22d64c3604d5ff518e51f">&#9670;&#160;</a></span>TR_ROTATION_X</h2>
+<a id="a3db2e64ddec5117ba27b5c2278ac1940" name="a3db2e64ddec5117ba27b5c2278ac1940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db2e64ddec5117ba27b5c2278ac1940">&#9670;&#160;</a></span>kTrScaleY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -554,7 +557,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_ROTATION_X = &quot;rotationX&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kTrScaleY = &quot;scaleY&quot;</td>
         </tr>
       </table>
   </td>
@@ -566,8 +569,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0c84b496650ff16d224b222ea9343d5" name="aa0c84b496650ff16d224b222ea9343d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0c84b496650ff16d224b222ea9343d5">&#9670;&#160;</a></span>TR_ROTATION_Y</h2>
+<a id="a1bdc65c4445ce1c6c184a19b1b2550da" name="a1bdc65c4445ce1c6c184a19b1b2550da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bdc65c4445ce1c6c184a19b1b2550da">&#9670;&#160;</a></span>kCompType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -576,7 +579,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_ROTATION_Y = &quot;rotationY&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kCompType = &quot;type&quot;</td>
         </tr>
       </table>
   </td>
@@ -588,8 +591,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a16a15315e927742206891b84b61d10c5" name="a16a15315e927742206891b84b61d10c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a15315e927742206891b84b61d10c5">&#9670;&#160;</a></span>TR_SCALE_Z</h2>
+<a id="a53eafab13cbca318287001e61bebc786" name="a53eafab13cbca318287001e61bebc786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53eafab13cbca318287001e61bebc786">&#9670;&#160;</a></span>kCompData</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,117 +601,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_SCALE_Z = &quot;scaleZ&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aead550824657c854f55b926de0c7423a" name="aead550824657c854f55b926de0c7423a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aead550824657c854f55b926de0c7423a">&#9670;&#160;</a></span>TR_ROTATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_ROTATION = &quot;rotation&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad0adba3250e86d6c878f26924f12f188" name="ad0adba3250e86d6c878f26924f12f188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0adba3250e86d6c878f26924f12f188">&#9670;&#160;</a></span>TR_SCALE_X</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_SCALE_X = &quot;scaleX&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ad3c8585ea2f7b3a4c88845ccfa95aa" name="a2ad3c8585ea2f7b3a4c88845ccfa95aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad3c8585ea2f7b3a4c88845ccfa95aa">&#9670;&#160;</a></span>TR_SCALE_Y</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::TR_SCALE_Y = &quot;scaleY&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a286fa1babc6b7c8517c892a743419d7e" name="a286fa1babc6b7c8517c892a743419d7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286fa1babc6b7c8517c892a743419d7e">&#9670;&#160;</a></span>COMP_TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::COMP_TYPE = &quot;type&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afd5b25b6c93e1e7d06cc061fc6b20d77" name="afd5b25b6c93e1e7d06cc061fc6b20d77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd5b25b6c93e1e7d06cc061fc6b20d77">&#9670;&#160;</a></span>COMP_DATA</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::SceneFormat::Fields::COMP_DATA = &quot;data&quot;</td>
+          <td class="memname">const char* Deki::SceneFormat::Fields::kCompData = &quot;data&quot;</td>
         </tr>
       </table>
   </td>

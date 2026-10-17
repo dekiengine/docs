@@ -24,5 +24,6 @@ var struct_deki_editor_1_1_platform_config =
     [ "linkFlags", "struct_deki_editor_1_1_platform_config.html#a5f0788d121f80e905c582f59b6ac31d3", null ],
     [ "provides", "struct_deki_editor_1_1_platform_config.html#a2924fea541f277660a577e84fc004fb5", null ],
     [ "requiresPackages", "struct_deki_editor_1_1_platform_config.html#a5b5dd53af819126c932d24a61ea1071a", null ],
+    [ "assetStorage", "struct_deki_editor_1_1_platform_config.html#a3ee77a637cd3fcb15885b0988555682c", null ],
     [ "bootScene", "struct_deki_editor_1_1_platform_config.html#ae58ac00a7a6983b583cd688f3922c9a0", null ]
 ];

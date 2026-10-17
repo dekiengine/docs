@@ -8,5 +8,6 @@ var struct_deki_editor_1_1_strip_plan =
     [ "packages", "struct_deki_editor_1_1_strip_plan.html#a7bbbfe76a41e6b14dbb3aad562fcc4ea", null ],
     [ "defines", "struct_deki_editor_1_1_strip_plan.html#ac7b6ee4494515c9945dd6e3ce344f88f", null ],
     [ "excludedStems", "struct_deki_editor_1_1_strip_plan.html#a89442068d404958b547ef40ac9acdffc", null ],
-    [ "summary", "struct_deki_editor_1_1_strip_plan.html#a19ebdb35002ed7a2f3b05eb304a0f515", null ]
+    [ "summary", "struct_deki_editor_1_1_strip_plan.html#a19ebdb35002ed7a2f3b05eb304a0f515", null ],
+    [ "warnings", "struct_deki_editor_1_1_strip_plan.html#a65be06066e329be75159bbcb919bad43", null ]
 ];

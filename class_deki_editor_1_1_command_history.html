@@ -43,6 +43,14 @@
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
     <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
   </div>
 </div>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -51,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.16.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -143,7 +151,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 </div><!--header-->
 <div class="contents">
 
-<p>Manages undo/redo command history with support for command merging.  
+<p>The undo/redo history. Commands that arrive close together can merge.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;C:/Users/kirby/Documents/Github/deki/deki-editor/deki-editor/include/deki-editor/CommandHistory.h&gt;</code></p>
@@ -151,52 +159,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a754a0816ed2e3daa19b1dfa27382a19f" id="r_a754a0816ed2e3daa19b1dfa27382a19f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a754a0816ed2e3daa19b1dfa27382a19f">Execute</a> (std::unique_ptr&lt; <a class="el" href="class_deki_editor_1_1_command.html">Command</a> &gt; command)</td></tr>
-<tr class="memdesc:a754a0816ed2e3daa19b1dfa27382a19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a command and add it to history.  <br /></td></tr>
+<tr class="memdesc:a754a0816ed2e3daa19b1dfa27382a19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a command and adds it to the history, merging it with the last one when it can.  <br /></td></tr>
 <tr class="memitem:acd864b47df891e81febf529d8d853ee2" id="r_acd864b47df891e81febf529d8d853ee2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acd864b47df891e81febf529d8d853ee2">ExecuteNoMerge</a> (std::unique_ptr&lt; <a class="el" href="class_deki_editor_1_1_command.html">Command</a> &gt; command)</td></tr>
-<tr class="memdesc:acd864b47df891e81febf529d8d853ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a command without merge possibility.  <br /></td></tr>
+<tr class="memdesc:acd864b47df891e81febf529d8d853ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a command and adds it to the history without merging.  <br /></td></tr>
 <tr class="memitem:ac491d008f07a7b433577d905eeb67429" id="r_ac491d008f07a7b433577d905eeb67429"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac491d008f07a7b433577d905eeb67429">Undo</a> ()</td></tr>
-<tr class="memdesc:ac491d008f07a7b433577d905eeb67429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo the last command.  <br /></td></tr>
 <tr class="memitem:a0d64e858ce000e8891f2acea295f6cac" id="r_a0d64e858ce000e8891f2acea295f6cac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0d64e858ce000e8891f2acea295f6cac">Redo</a> ()</td></tr>
-<tr class="memdesc:a0d64e858ce000e8891f2acea295f6cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redo the last undone command.  <br /></td></tr>
 <tr class="memitem:a7678069dfad949182a210145b7f79c53" id="r_a7678069dfad949182a210145b7f79c53"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7678069dfad949182a210145b7f79c53">Clear</a> ()</td></tr>
-<tr class="memdesc:a7678069dfad949182a210145b7f79c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all history.  <br /></td></tr>
 <tr class="memitem:aa3a1b0534ce662278b152df04d9ab014" id="r_aa3a1b0534ce662278b152df04d9ab014"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa3a1b0534ce662278b152df04d9ab014">CanUndo</a> () const</td></tr>
-<tr class="memdesc:aa3a1b0534ce662278b152df04d9ab014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if undo is available.  <br /></td></tr>
 <tr class="memitem:ae06c87dd2e29ced6957b99d81c8de511" id="r_ae06c87dd2e29ced6957b99d81c8de511"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae06c87dd2e29ced6957b99d81c8de511">CanRedo</a> () const</td></tr>
-<tr class="memdesc:ae06c87dd2e29ced6957b99d81c8de511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if redo is available.  <br /></td></tr>
 <tr class="memitem:af84b8b2106f6454fa38d2dfce3ae0beb" id="r_af84b8b2106f6454fa38d2dfce3ae0beb"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#af84b8b2106f6454fa38d2dfce3ae0beb">GetUndoCount</a> () const</td></tr>
-<tr class="memdesc:af84b8b2106f6454fa38d2dfce3ae0beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get count of undo commands.  <br /></td></tr>
 <tr class="memitem:a7b3e10b62b3fa710a3cd24d17f312eaa" id="r_a7b3e10b62b3fa710a3cd24d17f312eaa"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a7b3e10b62b3fa710a3cd24d17f312eaa">GetRedoCount</a> () const</td></tr>
-<tr class="memdesc:a7b3e10b62b3fa710a3cd24d17f312eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get count of redo commands.  <br /></td></tr>
 <tr class="memitem:a9c5e1ae190ce39ef86faddd0163efcbd" id="r_a9c5e1ae190ce39ef86faddd0163efcbd"><td class="memItemLeft">uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#a9c5e1ae190ce39ef86faddd0163efcbd">GetGeneration</a> () const</td></tr>
-<tr class="memdesc:a9c5e1ae190ce39ef86faddd0163efcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotonic counter bumped on every state-changing operation (Execute, ExecuteNoMerge, Undo, Redo, Clear, MarkDirty, SaveAndClear, RestoreFromSave).  <br /></td></tr>
+<tr class="memdesc:a9c5e1ae190ce39ef86faddd0163efcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A counter bumped on every change (Execute, ExecuteNoMerge, Undo, Redo, Clear, MarkDirty, SaveAndClear, RestoreFromSave).  <br /></td></tr>
 <tr class="memitem:af494a211437be069176ccffb7c7ff91a" id="r_af494a211437be069176ccffb7c7ff91a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#af494a211437be069176ccffb7c7ff91a">GetUndoDescription</a> () const</td></tr>
-<tr class="memdesc:af494a211437be069176ccffb7c7ff91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get description of next undo command.  <br /></td></tr>
+<tr class="memdesc:af494a211437be069176ccffb7c7ff91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the command Undo would undo.  <br /></td></tr>
 <tr class="memitem:a954cb3c45679dee0954f10a267f73acb" id="r_a954cb3c45679dee0954f10a267f73acb"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a954cb3c45679dee0954f10a267f73acb">GetRedoDescription</a> () const</td></tr>
-<tr class="memdesc:a954cb3c45679dee0954f10a267f73acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get description of next redo command.  <br /></td></tr>
+<tr class="memdesc:a954cb3c45679dee0954f10a267f73acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the command Redo would redo.  <br /></td></tr>
 <tr class="memitem:a2fbd1ca308ce678ed8a851d8103e3949" id="r_a2fbd1ca308ce678ed8a851d8103e3949"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2fbd1ca308ce678ed8a851d8103e3949">SetOnHistoryChanged</a> (std::function&lt; void()&gt; callback)</td></tr>
-<tr class="memdesc:a2fbd1ca308ce678ed8a851d8103e3949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback for history changes.  <br /></td></tr>
 <tr class="memitem:aae2bc2a20520407bc331f4e7dc7cd120" id="r_aae2bc2a20520407bc331f4e7dc7cd120"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aae2bc2a20520407bc331f4e7dc7cd120">SaveAndClear</a> ()</td></tr>
-<tr class="memdesc:aae2bc2a20520407bc331f4e7dc7cd120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save current stacks aside and clear for play mode isolation.  <br /></td></tr>
+<tr class="memdesc:aae2bc2a20520407bc331f4e7dc7cd120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stacks aside and starts empty ones, for play mode.  <br /></td></tr>
 <tr class="memitem:ae7c4738cda1c4bacedbd2a173884464d" id="r_ae7c4738cda1c4bacedbd2a173884464d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7c4738cda1c4bacedbd2a173884464d">RestoreFromSave</a> ()</td></tr>
-<tr class="memdesc:ae7c4738cda1c4bacedbd2a173884464d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore saved stacks, discarding current (play mode) stacks.  <br /></td></tr>
+<tr class="memdesc:ae7c4738cda1c4bacedbd2a173884464d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brings back the stacks set aside, dropping the play mode ones.  <br /></td></tr>
 <tr class="memitem:ae1f026bb9f52f44e60f07072af5334af" id="r_ae1f026bb9f52f44e60f07072af5334af"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae1f026bb9f52f44e60f07072af5334af">SetMaxHistory</a> (size_t max)</td></tr>
-<tr class="memdesc:ae1f026bb9f52f44e60f07072af5334af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum history size.  <br /></td></tr>
 <tr class="memitem:a28b5a4e4f2e400a2a6e8cba9f8121e07" id="r_a28b5a4e4f2e400a2a6e8cba9f8121e07"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a28b5a4e4f2e400a2a6e8cba9f8121e07">MarkSavePoint</a> ()</td></tr>
-<tr class="memdesc:a28b5a4e4f2e400a2a6e8cba9f8121e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark current state as saved (for dirty tracking).  <br /></td></tr>
+<tr class="memdesc:a28b5a4e4f2e400a2a6e8cba9f8121e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the current state as saved, for IsDirty.  <br /></td></tr>
 <tr class="memitem:ae6b81b07109290afacee6216cb649d7a" id="r_ae6b81b07109290afacee6216cb649d7a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6b81b07109290afacee6216cb649d7a">MarkDirty</a> ()</td></tr>
-<tr class="memdesc:ae6b81b07109290afacee6216cb649d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the history into a "dirty vs disk" state with no undoable commands.  <br /></td></tr>
+<tr class="memdesc:ae6b81b07109290afacee6216cb649d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the scene as differing from its file, with nothing to undo.  <br /></td></tr>
 <tr class="memitem:a2734b6c1e9b4e87976381177e5ccbbc2" id="r_a2734b6c1e9b4e87976381177e5ccbbc2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2734b6c1e9b4e87976381177e5ccbbc2">IsDirty</a> () const</td></tr>
-<tr class="memdesc:a2734b6c1e9b4e87976381177e5ccbbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there are unsaved changes since last save point.  <br /></td></tr>
+<tr class="memdesc:a2734b6c1e9b4e87976381177e5ccbbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there are unsaved changes since the save point.  <br /></td></tr>
+<tr class="memitem:a7b98985a2d9039b26afa6b49e6548e1d" id="r_a7b98985a2d9039b26afa6b49e6548e1d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7b98985a2d9039b26afa6b49e6548e1d">IsSavedAsideDirty</a> () const</td></tr>
+<tr class="memdesc:a7b98985a2d9039b26afa6b49e6548e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">While Play has the edit history set aside (SaveAndClear), whether THAT history has unsaved changes: the edit scene's state.  <br /></td></tr>
 <tr class="memitem:af452ee8a25c62e097329c0dece8c3996" id="r_af452ee8a25c62e097329c0dece8c3996"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af452ee8a25c62e097329c0dece8c3996">DiscardCommandsReferencing</a> (const <a class="el" href="class_deki_editor_1_1_dead_memory.html">DeadMemory</a> &amp;dead)</td></tr>
-<tr class="memdesc:af452ee8a25c62e097329c0dece8c3996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discard history that can no longer be safely replayed because the objects it points at are being freed.  <br /></td></tr>
+<tr class="memdesc:af452ee8a25c62e097329c0dece8c3996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops history that points at objects about to be freed.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc79687263898b92a54b6f0c15897501" id="r_afc79687263898b92a54b6f0c15897501"><td class="memItemLeft">static CommandHistory &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afc79687263898b92a54b6f0c15897501">Instance</a> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages undo/redo command history with support for command merging. </p>
+<div class="textblock"><p>The undo/redo history. Commands that arrive close together can merge. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="afc79687263898b92a54b6f0c15897501" name="afc79687263898b92a54b6f0c15897501"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc79687263898b92a54b6f0c15897501">&#9670;&#160;</a></span>Instance()</h2>
@@ -238,7 +239,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Execute a command and add it to history. </p>
+<p>Runs a command and adds it to the history, merging it with the last one when it can. </p>
 
 </div>
 </div>
@@ -257,7 +258,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Execute a command without merge possibility. </p>
+<p>Runs a command and adds it to the history without merging. </p>
 
 </div>
 </div>
@@ -276,8 +277,6 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Undo the last command. </p>
-
 </div>
 </div>
 <a id="a0d64e858ce000e8891f2acea295f6cac" name="a0d64e858ce000e8891f2acea295f6cac"></a>
@@ -295,8 +294,6 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Redo the last undone command. </p>
-
 </div>
 </div>
 <a id="a7678069dfad949182a210145b7f79c53" name="a7678069dfad949182a210145b7f79c53"></a>
@@ -313,8 +310,6 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Clear all history. </p>
 
 </div>
 </div>
@@ -341,8 +336,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if undo is available. </p>
-
 </div>
 </div>
 <a id="ae06c87dd2e29ced6957b99d81c8de511" name="ae06c87dd2e29ced6957b99d81c8de511"></a>
@@ -367,8 +360,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Check if redo is available. </p>
 
 </div>
 </div>
@@ -395,8 +386,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get count of undo commands. </p>
-
 </div>
 </div>
 <a id="a7b3e10b62b3fa710a3cd24d17f312eaa" name="a7b3e10b62b3fa710a3cd24d17f312eaa"></a>
@@ -421,8 +410,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get count of redo commands. </p>
 
 </div>
 </div>
@@ -449,8 +436,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Monotonic counter bumped on every state-changing operation (Execute, ExecuteNoMerge, Undo, Redo, Clear, MarkDirty, SaveAndClear, RestoreFromSave). </p>
-<p>Polled by panels that need to invalidate cached derived state (e.g. <a class="el" href="class_deki_editor_1_1_scene_view.html" title="Singleton providing current render context for scene view.">SceneView</a>'s edit-mode buffer) when the scene content changes through the command system. </p>
+<p>A counter bumped on every change (Execute, ExecuteNoMerge, Undo, Redo, Clear, MarkDirty, SaveAndClear, RestoreFromSave). </p>
+<p>Panels poll it to drop cached state (e.g. <a class="el" href="class_deki_editor_1_1_scene_view.html" title="The scene view&#39;s current render context, for gizmo code to read:">SceneView</a>'s edit-mode buffer) when the scene changes through commands. </p>
 
 </div>
 </div>
@@ -469,7 +456,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get description of next undo command. </p>
+<p>Description of the command Undo would undo. </p>
 
 </div>
 </div>
@@ -488,7 +475,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get description of next redo command. </p>
+<p>Description of the command Redo would redo. </p>
 
 </div>
 </div>
@@ -515,8 +502,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set callback for history changes. </p>
-
 </div>
 </div>
 <a id="aae2bc2a20520407bc331f4e7dc7cd120" name="aae2bc2a20520407bc331f4e7dc7cd120"></a>
@@ -534,7 +519,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Save current stacks aside and clear for play mode isolation. </p>
+<p>Sets the stacks aside and starts empty ones, for play mode. </p>
 
 </div>
 </div>
@@ -553,7 +538,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Restore saved stacks, discarding current (play mode) stacks. </p>
+<p>Brings back the stacks set aside, dropping the play mode ones. </p>
 
 </div>
 </div>
@@ -580,8 +565,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set maximum history size. </p>
-
 </div>
 </div>
 <a id="a28b5a4e4f2e400a2a6e8cba9f8121e07" name="a28b5a4e4f2e400a2a6e8cba9f8121e07"></a>
@@ -599,7 +582,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Mark current state as saved (for dirty tracking). </p>
+<p>Marks the current state as saved, for IsDirty. </p>
 
 </div>
 </div>
@@ -618,8 +601,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Force the history into a "dirty vs disk" state with no undoable commands. </p>
-<p>Used after loading content (e.g. crash recovery) that differs from the file currently at m_CurrentScenePath, so the user is prompted to save. </p>
+<p>Marks the scene as differing from its file, with nothing to undo. </p>
+<p>Used after loading content (e.g. crash recovery) that differs from the file at m_CurrentScenePath, so the user is asked to save. </p>
 
 </div>
 </div>
@@ -638,7 +621,27 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if there are unsaved changes since last save point. </p>
+<p>Whether there are unsaved changes since the save point. </p>
+
+</div>
+</div>
+<a id="a7b98985a2d9039b26afa6b49e6548e1d" name="a7b98985a2d9039b26afa6b49e6548e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b98985a2d9039b26afa6b49e6548e1d">&#9670;&#160;</a></span>IsSavedAsideDirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::CommandHistory::IsSavedAsideDirty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>While Play has the edit history set aside (SaveAndClear), whether THAT history has unsaved changes: the edit scene's state. </p>
+<p>Play's own edits are thrown away on Stop and say nothing about the file. </p>
 
 </div>
 </div>
@@ -657,9 +660,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Discard history that can no longer be safely replayed because the objects it points at are being freed. </p>
+<p>Drops history that points at objects about to be freed. </p>
 <p>Hook this to Scene's on_objects_about_to_be_destroyed. <span class="tt">dead</span> must contain the dying objects and all of their components.</p>
-<p>Truncation, not surgical removal: undo walks the stack newest-to-oldest, so a dead command at index k makes everything at or below k unreachable without stepping through it. Those entries are dropped and the remaining suffix stays consistent. </p>
+<p>Truncates rather than removing single commands: undo walks the stack newest to oldest, so a dead command at index k makes everything at or below k unreachable. Those entries are dropped and the rest stays consistent. </p>
 
 </div>
 </div>

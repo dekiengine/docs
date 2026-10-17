@@ -2,8 +2,9 @@ var searchData=
 [
   ['editor_0',['Editor',['../namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257',1,'Deki']]],
   ['editorload_1',['EditorLoad',['../class_deki_1_1_setup_component.html#a64750307474c576933262818233686b4aca5a4c69fd65f7ed18d2b2de9060fa38',1,'Deki::SetupComponent']]],
-  ['end_2',['END',['../class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8ab1a326c06d88bf042f73d70f50197905',1,'Deki::IFileSystem']]],
+  ['end_2',['End',['../class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8a87557f11575c0ad78e4e28abedc13b6e',1,'Deki::IFileSystem']]],
   ['enum_3',['Enum',['../namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4acf20423ed48998082c20099488a0917c',1,'Deki']]],
   ['error_4',['Error',['../namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a902b0d55fddef6f8d651fe1035b7d4bd',1,'Deki::Error'],['../namespace_deki.html#ace9c0fee5b0c655878f4657ecdf1244da902b0d55fddef6f8d651fe1035b7d4bd',1,'Deki::Error']]],
-  ['extracting_5',['Extracting',['../namespace_deki_editor.html#a211a93600fdf7acea2e4a27997fc32b5ae0cff7bb5e702e8a43816a12be4c93aa',1,'DekiEditor']]]
+  ['external_5',['External',['../namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3ba6758e9acc9dea41f82da60f7a403555c',1,'Deki::Storage']]],
+  ['extracting_6',['Extracting',['../namespace_deki_editor.html#a211a93600fdf7acea2e4a27997fc32b5ae0cff7bb5e702e8a43816a12be4c93aa',1,'DekiEditor']]]
 ];

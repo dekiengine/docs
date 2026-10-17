@@ -13,6 +13,7 @@ var dir_90aad1752c48315073e7c25b2069d35d =
     [ "PlatformConfig.h", "_platform_config_8h.html", "_platform_config_8h" ],
     [ "PlatformTemplates.h", "_platform_templates_8h.html", "_platform_templates_8h" ],
     [ "ProjectPaths.h", "_project_paths_8h.html", "_project_paths_8h" ],
+    [ "SimulationBootScene.h", "_simulation_boot_scene_8h.html", "_simulation_boot_scene_8h" ],
     [ "TargetBuilder.h", "_target_builder_8h.html", "_target_builder_8h" ],
     [ "ToolchainComponentManager.h", "_toolchain_component_manager_8h.html", "_toolchain_component_manager_8h" ]
 ];

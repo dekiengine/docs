@@ -7,12 +7,14 @@ var searchData=
   ['packindexentry_4',['PackIndexEntry',['../struct_deki_1_1_pack_index_entry.html',1,'Deki']]],
   ['pickeritem_5',['PickerItem',['../struct_deki_editor_1_1_picker_item.html',1,'DekiEditor']]],
   ['platformconfig_6',['PlatformConfig',['../struct_deki_editor_1_1_platform_config.html',1,'DekiEditor']]],
-  ['platformregistry_7',['PlatformRegistry',['../class_deki_editor_1_1_platform_registry.html',1,'DekiEditor']]],
-  ['platformsetupcomponent_8',['PlatformSetupComponent',['../class_deki_1_1_platform_setup_component.html',1,'Deki']]],
-  ['platformtemplate_9',['PlatformTemplate',['../struct_deki_editor_1_1_platform_template.html',1,'DekiEditor']]],
-  ['postinstalldef_10',['PostInstallDef',['../struct_deki_editor_1_1_post_install_def.html',1,'DekiEditor']]],
-  ['power_11',['Power',['../class_deki_1_1_power.html',1,'Deki']]],
-  ['propertybinding_12',['PropertyBinding',['../struct_deki_1_1_property_binding.html',1,'Deki']]],
-  ['propertyinfo_13',['PropertyInfo',['../struct_deki_1_1_property_info.html',1,'Deki']]],
-  ['propertyref_14',['PropertyRef',['../struct_deki_1_1_property_ref.html',1,'Deki']]]
+  ['platformoriginstatus_7',['PlatformOriginStatus',['../struct_deki_editor_1_1_platform_origin_status.html',1,'DekiEditor']]],
+  ['platformregistry_8',['PlatformRegistry',['../class_deki_editor_1_1_platform_registry.html',1,'DekiEditor']]],
+  ['platformsetupcomponent_9',['PlatformSetupComponent',['../class_deki_1_1_platform_setup_component.html',1,'Deki']]],
+  ['platformsyncresult_10',['PlatformSyncResult',['../struct_deki_editor_1_1_platform_sync_result.html',1,'DekiEditor']]],
+  ['platformtemplate_11',['PlatformTemplate',['../struct_deki_editor_1_1_platform_template.html',1,'DekiEditor']]],
+  ['postinstalldef_12',['PostInstallDef',['../struct_deki_editor_1_1_post_install_def.html',1,'DekiEditor']]],
+  ['power_13',['Power',['../class_deki_1_1_power.html',1,'Deki']]],
+  ['propertybinding_14',['PropertyBinding',['../struct_deki_1_1_property_binding.html',1,'Deki']]],
+  ['propertyinfo_15',['PropertyInfo',['../struct_deki_1_1_property_info.html',1,'Deki']]],
+  ['propertyref_16',['PropertyRef',['../struct_deki_1_1_property_ref.html',1,'Deki']]]
 ];

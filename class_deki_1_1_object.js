@@ -51,5 +51,7 @@ var class_deki_1_1_object =
     [ "GetComponents", "class_deki_1_1_object.html#ae7b0b6010405f7e94dacdf875884360e", null ],
     [ "FindInterface", "class_deki_1_1_object.html#aede92516f456b0358ddc66cf8c2bfc69", null ],
     [ "Internal::AttachComponent", "class_deki_1_1_object.html#a3318220670f0f0f7c585f9916453f521", null ],
-    [ "Internal::AddComponentByName", "class_deki_1_1_object.html#a90a855564194fa802c96d741a925b310", null ]
+    [ "Internal::AddComponentByName", "class_deki_1_1_object.html#ab15b28ce1ff0422a5efe45f2745c9a29", null ],
+    [ "Internal::DetachComponent", "class_deki_1_1_object.html#aea5cb688ed23ef0312f3bf731c7ea41f", null ],
+    [ "Internal::ReattachComponent", "class_deki_1_1_object.html#abb329db4b5321308cbd7ff3c9c329b61", null ]
 ];

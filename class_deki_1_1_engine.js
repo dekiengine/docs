@@ -1,5 +1,6 @@
 var class_deki_1_1_engine =
 [
+    [ "FrameTimings", "struct_deki_1_1_engine_1_1_frame_timings.html", "struct_deki_1_1_engine_1_1_frame_timings" ],
     [ "GetInstance", "class_deki_1_1_engine.html#a40915f4a293d3b18e9d4fc98b88f206b", null ],
     [ "Initialize", "class_deki_1_1_engine.html#acb73ab416fc26ec65e5a36ada5e847a2", null ],
     [ "Initialize", "class_deki_1_1_engine.html#af14a991be52404909d2ed9918398e4ef", null ],
@@ -37,6 +38,7 @@ var class_deki_1_1_engine =
     [ "IsRunning", "class_deki_1_1_engine.html#a7f563762340f0614675f0aa63431f404", null ],
     [ "MarkDirty", "class_deki_1_1_engine.html#ae16ed24050e6b65679465fb10cdb4687", null ],
     [ "IsDirty", "class_deki_1_1_engine.html#ae05f48bde487c615d836e8632e1a1fd2", null ],
+    [ "GetLastFrameTimings", "class_deki_1_1_engine.html#a8b085d607962f132ddd1245b34579208", null ],
     [ "GetFrameBuffer", "class_deki_1_1_engine.html#a314836fb4b16ba5c849505caa9587862", null ],
     [ "GetScreenWidth", "class_deki_1_1_engine.html#a653a48b6ad469d3f3532ed10844fad39", null ],
     [ "GetScreenHeight", "class_deki_1_1_engine.html#af02796b9de90366c6f7a43bd5b24ef3b", null ],
