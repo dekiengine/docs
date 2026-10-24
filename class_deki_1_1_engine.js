@@ -43,6 +43,11 @@ var class_deki_1_1_engine =
     [ "GetScreenWidth", "class_deki_1_1_engine.html#a653a48b6ad469d3f3532ed10844fad39", null ],
     [ "GetScreenHeight", "class_deki_1_1_engine.html#af02796b9de90366c6f7a43bd5b24ef3b", null ],
     [ "GetFrameBufferFormat", "class_deki_1_1_engine.html#ab693e04a66f7286b1d1220bb8266d2fc", null ],
+    [ "GetScreenDiagonalInches", "class_deki_1_1_engine.html#a581bf297386333c4cc558e18bdcd876b", null ],
+    [ "SetScreenDiagonalInches", "class_deki_1_1_engine.html#a27379f8ce3b69a08bd6c2372fb0ca819", null ],
+    [ "GetScreenPixelsPerInch", "class_deki_1_1_engine.html#a5417442513b5482aa479d6cfcead40d9", null ],
+    [ "GetScreenWidthMeters", "class_deki_1_1_engine.html#ab14ae69910c913041659ab39812921b8", null ],
+    [ "GetScreenHeightMeters", "class_deki_1_1_engine.html#a924c4f66f82b74d632317c53e4ad2f72", null ],
     [ "GetSettings", "class_deki_1_1_engine.html#ac86bc8707bbf59bc346b84147fcf570b", null ],
     [ "GetSettings", "class_deki_1_1_engine.html#a04c7170e729eefc88d88b8f7a30c70ec", null ]
 ];

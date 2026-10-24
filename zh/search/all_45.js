@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['相机_0',['相机',['../guide-screens.html#guide-screens-the-camera',1,'']]]
+  ['查明内存去了哪里_0',['查明内存去了哪里',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]]
 ];

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
 <p>A modular C++ 2D engine for embedded displays and desktop, with a visual editor.</p>
-<p>The engine core and its C++ API are here. Packages document themselves, linked below. All of it is generated from the code (engine 0.19.0).</p>
+<p>The engine core and its C++ API are here. Packages document themselves, linked below. All of it is generated from the code (engine 0.20.2).</p>
 <ul>
 <li><a href="engine-core.html">Engine core</a>: components and settings the engine provides itself</li>
 <li><a href="settings.html">Project settings</a>: every settings section, by owner</li>
@@ -160,10 +160,13 @@ Guides</h1>
 <ul>
 <li><a href="guide-asset-system.html">Asset System</a></li>
 <li><a href="guide-font-system.html">Font System</a></li>
+<li><a href="guide-hardware-checklist.html">Hardware checklist</a></li>
 <li><a href="guide-localization.html">Languages</a></li>
 <li><a href="guide-memory.html">Memory</a></li>
+<li><a href="guide-performance.html">Making it fast</a></li>
 <li><a href="guide-platforms.html">Platforms</a></li>
 <li><a href="guide-project-layout.html">Project layout</a></li>
+<li><a href="guide-releasing.html">Releasing</a></li>
 <li><a href="guide-screens.html">Screens</a></li>
 <li><a href="guide-sprite-system.html">Sprite System</a></li>
 <li><a href="guide-units.html">Units</a></li>
@@ -185,41 +188,45 @@ Packages</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-desktop-integration/">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Desktop platform memory and filesystem providers  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-display/">deki-display</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone"><a class="el" href="namespace_deki.html">Deki</a>'s own display library: panel controllers on SPI, quad SPI or 8- and 16-bit parallel buses, touch controllers, and frames that never tear  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-esp32-integration/">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">ESP32 memory, filesystem, serial, and SD card providers  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-fsm/">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Visual state machines with per-state action stacks and event-wired transitions  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gpio/">deki-gpio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Digital pins: drive, read, and count a pin's pulses by interrupt, plus a boot step that drives a pin. The platform package supplies the backend  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gps/">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS peripheral interface and NMEA-over-UART backend  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-http/">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP client facade with WinHTTP and curl backends  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2c/">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C bus peripheral interface with an editor-configurable bus component  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2s/">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">I²S audio bus peripheral interface  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-imu/">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Accelerometer + gyroscope peripheral interface with LSM6DS3 backend (hardware pedometer)  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-input/">deki-input</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Input handling and collision detection  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-json/">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">JSON parsing and serialization backed by cJSON  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lora/">deki-lora</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">LoRa radio: an SX1262 driver with a duty-cycle limit, sending and receiving packets  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">LovyanGFX display and touch panel integration  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Generic node graph editor: canvas view, domains, undo, and node registration  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">Modular particle emitter (gravity, drag, velocity, lifetime modifiers)  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Core rendering system with camera and renderer components  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Real-time clock peripheral interface and DS3231 (I²C) backend  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD card interface: mount, card state, capacity, and filesystem access  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Real-time clock peripheral interface and DS3231 (I²C) backend  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD card interface: mount, card state, capacity, and filesystem access  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">SDL3 display, input, and filesystem integration  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-spi/">deki-spi</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SPI buses and their devices: a boot step that starts a bus, shared by displays, SD cards and radios. The platform package supplies the backend  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Runs a <a class="el" href="namespace_deki.html">Deki</a> game as a Tactility app. Builds and installs into the Tactility simulator; the on-device build is not written yet  </td></tr>
 <tr class="markdownTableRowOdd">

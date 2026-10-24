@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['表中的键类型_0',['表中的键类型',['../guide-asset-system.html#guide-asset-system-key-types-in-the-table',1,'']]],
-  ['表的两个版本_1',['表的两个版本',['../guide-asset-system.html#guide-asset-system-two-versions-of-the-table',1,'']]]
+  ['每次都由你选择_0',['区域 - 每次都由你选择',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
+  ['每种屏幕看到什么_1',['每种屏幕看到什么',['../guide-screens.html#autotoc_md1',1,'']]]
 ];

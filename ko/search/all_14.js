@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]],
-  ['결정적_20guid를_20생성하는_20곳_1',['결정적 GUID를 생성하는 곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
-  ['결정적_20guid_20생성_2',['결정적 GUID 생성',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]],
-  ['결정_20흐름_3',['프레임 결정 흐름',['../guide-sprite-system.html#guide-sprite-system-frame-resolution-flow',1,'']]]
+  ['packages_0',['4.4 The packages',['../guide-releasing.html#guide-releasing-44-the-packages',1,'']]],
+  ['partial_20present_1',['4. Partial present',['../guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present',1,'']]],
+  ['past_20releases_2',['Past releases',['../guide-hardware-checklist.html#guide-hardware-checklist-past-releases',1,'']]],
+  ['platformsetupcomponent_3',['PlatformSetupComponent',['../engine-core.html#engine-platformsetupcomponent',1,'']]],
+  ['present_4',['4. Partial present',['../guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present',1,'']]],
+  ['promise_20to_20current_20users_5',['The promise to current users',['../guide-releasing.html#guide-releasing-the-promise-to-current-users',1,'']]]
 ];

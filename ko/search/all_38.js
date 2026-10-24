@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['배치는_20한_20번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['레시피_0',['레시피',['../guide-screens.html#autotoc_md3',1,'']]],
+  ['레이블은_20저절로_20작성됩니다_1',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - 레이블은 저절로 작성됩니다',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'']]],
+  ['레지스트리_2',['프레임 데이터 레지스트리',['../guide-sprite-system.html#guide-sprite-system-frame-data-registry',1,'']]],
+  ['레퍼런스_3',['컴포넌트 레퍼런스',['../engine-core.html#engine-component-reference',1,'']]]
 ];

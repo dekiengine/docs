@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['烘焙的唯一负责者：fontsynchandler_0',['烘焙的唯一负责者：FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
+  ['放置只解析一次。没有回退。_0',['放置只解析一次。没有回退。',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
 ];

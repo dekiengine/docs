@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['预览模式（仅限编辑器）_0',['预览模式（仅限编辑器）',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
-  ['预览_1',['预览',['../guide-screens.html#guide-screens-previewing',1,'']]]
+  ['种子格式（绝对不要更改）_0',['种子格式（绝对不要更改）',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
 ];

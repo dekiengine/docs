@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
 <p>組み込みディスプレイとデスクトップのための、ビジュアルエディターを備えたモジュール式の C++ 2D エンジンです。</p>
-<p>ここにはエンジンのコアとその C++ API があります。パッケージのドキュメントはそれぞれのパッケージにあり、下にリンクがあります。すべてコードから生成しています (エンジン 0.19.0)。</p>
+<p>ここにはエンジンのコアとその C++ API があります。パッケージのドキュメントはそれぞれのパッケージにあり、下にリンクがあります。すべてコードから生成しています (エンジン 0.20.2)。</p>
 <ul>
 <li><a href="engine-core.html">エンジンコア</a>: エンジン自身が提供するコンポーネントと設定</li>
 <li><a href="settings.html">プロジェクト設定</a>: すべての設定セクションと、それを定義するもの</li>
@@ -161,10 +161,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <ul>
 <li><a href="guide-asset-system.html">アセットシステム</a></li>
 <li><a href="guide-font-system.html">フォントシステム</a></li>
+<li><a href="guide-hardware-checklist.html">Hardware checklist</a></li>
 <li><a href="guide-localization.html">言語</a></li>
 <li><a href="guide-memory.html">メモリ</a></li>
+<li><a href="guide-performance.html">高速化</a></li>
 <li><a href="guide-platforms.html">プラットフォーム</a></li>
 <li><a href="guide-project-layout.html">プロジェクトの構成</a></li>
+<li><a href="guide-releasing.html">Releasing</a></li>
 <li><a href="guide-screens.html">画面</a></li>
 <li><a href="guide-sprite-system.html">スプライトシステム</a></li>
 <li><a href="guide-units.html">単位</a></li>
@@ -186,41 +189,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-desktop-integration/ja/">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">デスクトップ用のプラットフォーム HAL：デスクトップビルド向けのメモリとファイルシステムのプロバイダー。  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-display/ja/">deki-display</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Deki 独自のディスプレイライブラリ。趣味のボードでよく使われる画面を動かし、タッチを読み、どのフレームも丸ごと送ります。  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-esp32-integration/ja/">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">ESP32 用のプラットフォーム HAL：ESP-IDF の SDMMC による SD カード、FATFS ファイルシステム、シリアルコマンド、メモリとファイルシステムのセットアップ。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-fsm/ja/">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">ビジュアルなステートマシン。キャンバス上にステート、グループ、トランジションを置き、各ステートの中にアクションフローを持ちます。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gpio/ja/">deki-gpio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">デジタルピン：ピンを駆動する、ピンを読む、ピンのパルスを数える。加えて、ボードの周辺機器に電源を入れるブートステップ。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gps/ja/">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS 周辺機器。どのトーカーの NMEA でも UART 経由で読み取り、受信機の通信速度を自分で見つけ、衛星数と高度を報告します。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-http/ja/">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP クライアント。デスクトップでは WinHTTP による同期 GET を提供します。組み込みボードは独自のネットワークスタックを使います。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2c/ja/">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C バスのサポート。バスはボード上で一度だけ設定し、周辺機器パッケージ（RTC、IMU、タッチ）がそれを共有します。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2s/ja/">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">MAX98357 D 級アンプなど、デジタルオーディオ周辺機器のための I²S バスのサポート。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-imu/ja/">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">ハードウェア歩数計を備えた 6 軸 IMU（加速度センサー + ジャイロスコープ）。I²C で接続する LSM6DS3。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-input/ja/">deki-input</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">入力のディスパッチと衝突判定。ポインター / タッチ / キーのイベントを、それを必要とするコンポーネントに送ります。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-json/ja/">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">実行時に JSON を扱う必要があるパッケージ向けの JSON パーサーです。組み込みでは ESP-IDF の cJSON をラップし、デスクトップでは同等の実装を使います。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lora/ja/">deki-lora</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">LoRa 無線。パケットを送受信する Semtech SX1262 ドライバーで、デューティサイクル制限を組み込んでいます。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/ja/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">LovyanGFX 1.2.19 による組み込み向けのディスプレイとタッチ。一般的な SPI／パラレル TFT と FT6336U 静電容量式タッチパネルを駆動します。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/ja/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">ノードグラフのキャンバス。エディターウィンドウ、元に戻す（Undo）、ドメイン、ノード登録を提供し、ノードが何を意味するかには関与しません。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/ja/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">モジュール式のパーティクルシステム。点／円／矩形の放出形状、重力、抵抗（ドラッグ）、初速度、そして寿命・サイズ・色・回転のモディファイアを備えます。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/ja/">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">コアのレンダリングパイプライン。カメラ、レンダーシステム、標準 2D レンダラー、QuadBlit、レンダーパス、ソートを提供します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/ja/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">リアルタイムクロックの周辺機器（ペリフェラル）。シーンコンポーネントから現在時刻を読み書きでき、DS3231（I²C）用のバックエンドを備えます。  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/ja/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD カード対応。カードをマウントし、アセットマネージャーが実行時にそこからストリーミングできるようにします。  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/ja/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">リアルタイムクロックの周辺機器（ペリフェラル）。シーンコンポーネントから現在時刻を読み書きでき、DS3231（I²C）用のバックエンドを備えます。  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/ja/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD カード対応。カードをマウントし、アセットマネージャーが実行時にそこからストリーミングできるようにします。  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/ja/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">SDL3（3.2.8）によるデスクトップ向けのディスプレイ、入力、ファイルシステム。  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-spi/ja/">deki-spi</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SPI バスとその上のデバイス。起動ステップでバスを一度だけ開始し、ディスプレイ、SD カード、無線がそれを共有します。  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/ja/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Deki のゲームを、デバイス全体を占有するファームウェアとしてではなく、ESP32 ボード向けのオペレーティングシステム Tactility の中のアプリとして実行します。  </td></tr>
 <tr class="markdownTableRowOdd">

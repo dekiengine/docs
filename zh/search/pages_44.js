@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['相机_0',['相机',['../guide-screens.html#guide-screens-the-camera',1,'']]]
+  ['来源：编辑、更新、恢复_0',['来源：编辑、更新、恢复',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

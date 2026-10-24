@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['때_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime',1,'']]]
+  ['그래도_20괜찮습니다_0',['데이터시트는 SI를 쓰지 않으며, 그래도 괜찮습니다',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]]
 ];

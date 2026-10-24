@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['各画面に映る範囲_0',['各画面に映る範囲',['../guide-screens.html#guide-screens-what-each-screen-sees',1,'']]]
+  ['ベイクの担当_3a_20fontsynchandler_0',['ベイクの担当: FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
 ];

@@ -21,13 +21,12 @@ var searchData=
   ['reserved1_18',['reserved1',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a29d9d46e223a13b126cdda43ab107ca2',1,'Deki::ProjectSettings::DisplaySettings']]],
   ['reserved2_19',['reserved2',['../struct_deki_1_1_project_settings_1_1_display_settings.html#ad3ca7b1b395b6b0336db05aec6282073',1,'Deki::ProjectSettings::DisplaySettings']]],
   ['reserved3_20',['reserved3',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a851652b2bb2eeae0a1f9a93d0715c96d',1,'Deki::ProjectSettings::DisplaySettings']]],
-  ['reserved4_21',['reserved4',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a2444b08a585f307785febaec03904d2c',1,'Deki::ProjectSettings::DisplaySettings']]],
-  ['reserved5_22',['reserved5',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a395055b94338025c1df86da6b50875f3',1,'Deki::ProjectSettings::DisplaySettings']]],
-  ['reserved6_23',['reserved6',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a4c6e3aaa95cc58997f5a692b540812b3',1,'Deki::ProjectSettings::DisplaySettings']]],
-  ['resolved_24',['resolved',['../struct_deki_1_1_object_ref_base.html#a71de81285738ed459205da5393f1ce5a',1,'Deki::ObjectRefBase']]],
-  ['resolvedby_25',['resolvedBy',['../struct_package_entry.html#a3364d165b58d845ecb56561574e0b11f',1,'PackageEntry']]],
-  ['resolveobjectrefs_26',['resolveObjectRefs',['../struct_deki_1_1_component_type_info.html#a480453f639938d597c1c8b20507e36ea',1,'Deki::ComponentTypeInfo']]],
-  ['rgba_27',['rgba',['../struct_deki_editor_1_1_decoded_image.html#ab6a986a027e8ec6157ef5b55b640c960',1,'DekiEditor::DecodedImage']]],
-  ['right_28',['right',['../struct_deki_1_1_rect.html#abb089cfbf5dd530923d7381a8f133c29',1,'Deki::Rect']]],
-  ['rotation_29',['rotation',['../struct_deki_editor_1_1_scene_view_context.html#a5ec1991bacbad0b7719b177a6ac798d3',1,'DekiEditor::SceneViewContext']]]
+  ['reserved5_21',['reserved5',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a395055b94338025c1df86da6b50875f3',1,'Deki::ProjectSettings::DisplaySettings']]],
+  ['reserved6_22',['reserved6',['../struct_deki_1_1_project_settings_1_1_display_settings.html#a4c6e3aaa95cc58997f5a692b540812b3',1,'Deki::ProjectSettings::DisplaySettings']]],
+  ['resolved_23',['resolved',['../struct_deki_1_1_object_ref_base.html#a71de81285738ed459205da5393f1ce5a',1,'Deki::ObjectRefBase']]],
+  ['resolvedby_24',['resolvedBy',['../struct_package_entry.html#a3364d165b58d845ecb56561574e0b11f',1,'PackageEntry']]],
+  ['resolveobjectrefs_25',['resolveObjectRefs',['../struct_deki_1_1_component_type_info.html#a480453f639938d597c1c8b20507e36ea',1,'Deki::ComponentTypeInfo']]],
+  ['rgba_26',['rgba',['../struct_deki_editor_1_1_decoded_image.html#ab6a986a027e8ec6157ef5b55b640c960',1,'DekiEditor::DecodedImage']]],
+  ['right_27',['right',['../struct_deki_1_1_rect.html#abb089cfbf5dd530923d7381a8f133c29',1,'Deki::Rect']]],
+  ['rotation_28',['rotation',['../struct_deki_editor_1_1_scene_view_context.html#a5ec1991bacbad0b7719b177a6ac798d3',1,'DekiEditor::SceneViewContext']]]
 ];

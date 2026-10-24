@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['개수가_20바뀔_20때_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime',1,'']]],
-  ['개요_1',['개요',['../guide-font-system.html#guide-font-system-overview',1,'개요'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'개요']]]
+  ['new_0',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;, &lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt;, 일반 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new',1,'']]],
+  ['numbers_1',['8. Record the numbers',['../guide-hardware-checklist.html#guide-hardware-checklist-8-record-the-numbers',1,'']]]
 ];

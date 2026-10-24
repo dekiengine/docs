@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['提供区域是开发板的职责_0',['提供区域是开发板的职责',['../guide-memory.html#guide-memory-serving-one-is-the-boards-job',1,'']]]
+  ['块（类型_201）_0',['Sprite 块（类型 1）',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
+  ['块（类型_202）_1',['FrameList 块（类型 2）',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
+  ['块（类型_204）_2',['SourceSize 块（类型 4）',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]]
 ];

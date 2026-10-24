@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['과_20나란히_20있는_20이유_0',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
+  ['version_0',['1. Choose the version',['../guide-releasing.html#guide-releasing-1-choose-the-version',1,'']]]
 ];

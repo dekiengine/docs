@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['检查_0',['lint 检查',['../guide-memory.html#guide-memory-the-lint',1,'']]]
+  ['延迟加载_0',['延迟加载',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]]
 ];

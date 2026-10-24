@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['结构版本_0',['结构版本',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]],
-  ['结构_1',['结构',['../guide-project-layout.html#guide-project-layout-layout',1,'']]]
+  ['模拟开发板_0',['模拟开发板',['../guide-platforms.html#guide-platforms-simulating-a-board',1,'']]],
+  ['模板_1',['AssetRef&amp;lt;T&amp;gt; 模板',['../guide-asset-system.html#guide-asset-system-assetreft-template',1,'']]]
 ];

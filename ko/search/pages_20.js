@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['나란히_20있는_20이유_0',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
-  ['나머지_20api_1',['나머지 API',['../guide-memory.html#guide-memory-the-rest-of-the-api',1,'']]]
+  ['결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]],
+  ['결정적_20guid를_20생성하는_20곳_1',['결정적 GUID를 생성하는 곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
+  ['결정적_20guid_20생성_2',['결정적 GUID 생성',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]],
+  ['결정_20흐름_3',['프레임 결정 흐름',['../guide-sprite-system.html#guide-sprite-system-frame-resolution-flow',1,'']]]
 ];

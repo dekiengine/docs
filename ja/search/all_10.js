@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['tex_20ファイルの形式_202dtx_0',['.tex ファイルの形式 (2DTX)',['../guide-sprite-system.html#guide-sprite-system-tex-file-format-2dtx',1,'']]],
-  ['textureimporter_1',['インポートのパイプライン: TextureImporter',['../guide-sprite-system.html#guide-sprite-system-import-pipeline-textureimporter',1,'']]],
-  ['type_201_2',['Sprite チャンク (type 1)',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
-  ['type_202_3',['FrameList チャンク (type 2)',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
-  ['type_204_4',['SourceSize チャンク (type 4)',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]]
+  ['if_20something_20is_20wrong_0',['If something is wrong',['../guide-releasing.html#guide-releasing-if-something-is-wrong',1,'']]],
+  ['imemoryprovider_1',['プラットフォームレイヤー: &lt;span class=&quot;tt&quot;&gt;IMemoryProvider&lt;/span&gt;',['../guide-memory.html#guide-memory-platform-layer-imemoryprovider',1,'']]],
+  ['in_20this_20order_2',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]],
+  ['index_2emd_3',['index.md',['../index_8md.html',1,'']]],
+  ['input_4',['5. Input',['../guide-hardware-checklist.html#guide-hardware-checklist-5-input',1,'']]],
+  ['is_20wrong_5',['If something is wrong',['../guide-releasing.html#guide-releasing-if-something-is-wrong',1,'']]],
+  ['it_6',['3. Check it',['../guide-releasing.html#guide-releasing-3-check-it',1,'']]]
 ];

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -487,6 +487,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a72bf4246fe7072801c61bcadfa52bf38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whole art-pixel multiple for pixel-perfect scaling, at least 1.  <br /></td></tr>
 <tr class="memitem:ad8c6a44e999b023bdd129cca800250d6" id="r_ad8c6a44e999b023bdd129cca800250d6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad8c6a44e999b023bdd129cca800250d6">OrthoPixelsPerMeter</a> (int screenHeight, float orthoHeight, bool pixelPerfect, float artPixelsPerMeter)</td></tr>
 <tr class="memdesc:ad8c6a44e999b023bdd129cca800250d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen pixels per meter for a screen this tall showing orthoHeight meters.  <br /></td></tr>
+<tr class="memitem:ab2107cb2c325f26d95d9dac0f357d92a" id="r_ab2107cb2c325f26d95d9dac0f357d92a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab2107cb2c325f26d95d9dac0f357d92a">ScreenPixelsPerInch</a> (int width, int height, float diagonalInches)</td></tr>
+<tr class="memdesc:ab2107cb2c325f26d95d9dac0f357d92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels per inch of a screen <span class="tt">width</span> x <span class="tt">height</span> pixels whose diagonal is <span class="tt">diagonalInches</span>, taking the pixels as square.  <br /></td></tr>
 <tr class="memitem:a83e2a8e59b9ade12ac092ce334e4bb50" id="r_a83e2a8e59b9ade12ac092ce334e4bb50"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a83e2a8e59b9ade12ac092ce334e4bb50">HashString</a> (const char *str, uint32_t hash=2166136261u)</td></tr>
 <tr class="memdesc:a83e2a8e59b9ade12ac092ce334e4bb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">FNV-1a of a C string; the hash behind every type and property id.  <br /></td></tr>
 <tr class="memitem:a693b81cbcc3e331d8b8695e6d9959971" id="r_a693b81cbcc3e331d8b8695e6d9959971"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a693b81cbcc3e331d8b8695e6d9959971">HashStringLen</a> (const char *str, uint16_t length)</td></tr>
@@ -524,6 +526,8 @@ Variables</h2></td></tr>
 <tr class="memdesc:aa88aafaeabf5ad00e9ff8a3721514f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component name a reference stores to mean "the object's transform".  <br /></td></tr>
 <tr class="memitem:a5cf24745dd885deb3b83037a873e9938" id="r_a5cf24745dd885deb3b83037a873e9938"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a5cf24745dd885deb3b83037a873e9938">kVariableRefComponent</a> = &quot;Variable&quot;</td></tr>
 <tr class="memdesc:a5cf24745dd885deb3b83037a873e9938"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component name a reference stores to mean "a variable of this graph".  <br /></td></tr>
+<tr class="memitem:afc1e4c9cbfb35f1111bb8d71dd1b4ea9" id="r_afc1e4c9cbfb35f1111bb8d71dd1b4ea9"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#afc1e4c9cbfb35f1111bb8d71dd1b4ea9">kMetersPerInch</a> = 0.0254f</td></tr>
+<tr class="memdesc:afc1e4c9cbfb35f1111bb8d71dd1b4ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inches are what screen makers give; everything stored is in meters.  <br /></td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="ac1a8930b53b509439baac5ea7b71948d" name="ac1a8930b53b509439baac5ea7b71948d"></a>
@@ -2065,6 +2069,43 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="ab2107cb2c325f26d95d9dac0f357d92a" name="ab2107cb2c325f26d95d9dac0f357d92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2107cb2c325f26d95d9dac0f357d92a">&#9670;&#160;</a></span>ScreenPixelsPerInch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::ScreenPixelsPerInch </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>diagonalInches</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pixels per inch of a screen <span class="tt">width</span> x <span class="tt">height</span> pixels whose diagonal is <span class="tt">diagonalInches</span>, taking the pixels as square. </p>
+<p>Returns 0 when any of them is unknown (not positive). </p>
+
+</div>
+</div>
 <a id="a83e2a8e59b9ade12ac092ce334e4bb50" name="a83e2a8e59b9ade12ac092ce334e4bb50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83e2a8e59b9ade12ac092ce334e4bb50">&#9670;&#160;</a></span>HashString()</h2>
 
@@ -2522,6 +2563,30 @@ template&lt;class T&gt; </div>
 <p>The component name a reference stores to mean "a variable of this graph". </p>
 <p>The field is the variable's name.</p>
 <p>Variables are declared by a node with DEKI_NODE_VARIABLES and live in storage the graph's runner allocates per instance. BindPropertyRef skips them; the runner binds them itself with DekiVariableFieldRef. </p>
+
+</div>
+</div>
+<a id="afc1e4c9cbfb35f1111bb8d71dd1b4ea9" name="afc1e4c9cbfb35f1111bb8d71dd1b4ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1e4c9cbfb35f1111bb8d71dd1b4ea9">&#9670;&#160;</a></span>kMetersPerInch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::kMetersPerInch = 0.0254f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inches are what screen makers give; everything stored is in meters. </p>
 
 </div>
 </div>

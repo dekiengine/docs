@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['베이크_20권한_3a_20fontsynchandler_0',['베이크 권한: FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
+  ['마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['两遍导入_0',['两遍导入',['../guide-sprite-system.html#guide-sprite-system-two-pass-import',1,'']]]
+  ['master_0',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]]
 ];

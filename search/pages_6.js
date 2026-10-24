@@ -1,27 +1,5 @@
 var searchData=
 [
-  ['calls_20ensurefontsizebaked_3a_0',['Who calls EnsureFontSizeBaked:',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]],
-  ['camera_1',['The camera',['../guide-screens.html#guide-screens-the-camera',1,'']]],
-  ['can_20add_20their_20own_2',['A region is a name, so packages can add their own',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]],
-  ['capability_20name_3',['The region name is the capability name',['../guide-memory.html#guide-memory-the-region-name-is-the-capability-name',1,'']]],
-  ['change_20these_4',['Seed Formats (NEVER CHANGE THESE)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]],
-  ['changes_20at_20runtime_5',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - when the count changes at runtime',['../guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime',1,'']]],
-  ['choose_20every_20time_6',['Regions - you choose, every time',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
-  ['chunk_20type_201_7',['Sprite Chunk (type 1)',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
-  ['chunk_20type_202_8',['FrameList Chunk (type 2)',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
-  ['chunk_20type_204_9',['SourceSize Chunk (type 4)',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]],
-  ['code_10',['code',['../guide-platforms.html#guide-platforms-in-the-code',1,'In the code'],['../guide-localization.html#guide-localization-showing-text-in-code',1,'Showing text in code']]],
-  ['code_20pattern_11',['Generated code pattern',['../guide-asset-system.html#guide-asset-system-generated-code-pattern',1,'']]],
-  ['colour_20formats_12',['Colour formats',['../guide-screens.html#guide-screens-colour-formats',1,'']]],
-  ['come_20from_13',['Where platforms come from',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]],
-  ['command_20line_14',['From the command line',['../guide-platforms.html#guide-platforms-from-the-command-line',1,'']]],
-  ['comparison_3a_20fonts_20vs_20sprites_15',['Comparison: Fonts vs Sprites',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]],
-  ['component_20reference_16',['Component reference',['../engine-core.html#engine-component-reference',1,'']]],
-  ['components_17',['Components',['../engine-core.html#engine-components',1,'']]],
-  ['conventions_18',['Why time has two conventions',['../guide-units.html#guide-units-why-time-has-two-conventions',1,'']]],
-  ['conversion_19',['Display conversion',['../guide-units.html#guide-units-display-conversion',1,'']]],
-  ['copy_20',['Adopting: the project gets a copy',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]],
-  ['core_21',['Engine core',['../engine-core.html',1,'']]],
-  ['core_20settings_22',['Core settings',['../engine-core.html#engine-core-settings',1,'Core settings'],['../settings.html#settings-core-settings',1,'Core settings']]],
-  ['count_20changes_20at_20runtime_23',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - when the count changes at runtime',['../guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime',1,'']]]
+  ['7_20radios_20and_20sensors_0',['7. Radios and sensors',['../guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors',1,'']]],
+  ['7_20the_20docs_20and_20the_20site_1',['4.7 The docs and the site',['../guide-releasing.html#guide-releasing-47-the-docs-and-the-site',1,'']]]
 ];

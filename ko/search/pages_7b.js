@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['필드_0',['필드',['../guide-sprite-system.html#guide-sprite-system-assetref-fields-for-sprites',1,'스프라이트의 AssetRef 필드'],['../guide-font-system.html#guide-font-system-assetref-fields-for-fonts',1,'폰트의 AssetRef 필드']]],
-  ['필드_20패턴_20guid와_20source_1',['이중 필드 패턴 (guid와 source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]],
-  ['필요한_20기능_2',['다른 패키지가 필요한 기능',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
+  ['추가하기_0',['프로퍼티에 단위 추가하기',['../guide-units.html#guide-units-adding-a-unit-to-a-property',1,'']]],
+  ['추가할_20수_20있습니다_1',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]]
 ];

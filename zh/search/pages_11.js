@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['两遍导入_0',['两遍导入',['../guide-sprite-system.html#guide-sprite-system-two-pass-import',1,'']]]
+  ['lint_20检查_0',['lint 检查',['../guide-memory.html#guide-memory-the-lint',1,'']]]
 ];

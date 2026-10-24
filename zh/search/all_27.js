@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['导入管线：textureimporter_0',['导入管线：TextureImporter',['../guide-sprite-system.html#guide-sprite-system-import-pipeline-textureimporter',1,'']]],
-  ['导出管线_1',['导出管线',['../guide-font-system.html#guide-font-system-export-pipeline',1,'导出管线'],['../guide-sprite-system.html#guide-sprite-system-export-pipeline',1,'导出管线']]]
+  ['单位_0',['单位',['../guide-units.html',1,'']]],
+  ['单位_20设置_1',['单位 设置',['../engine-core.html#engine-units-settings',1,'单位 设置'],['../settings.html#settings-units-settings',1,'单位 设置']]]
 ];

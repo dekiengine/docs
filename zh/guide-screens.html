@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
   </td>
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-zh_2guide-screens"></a></p>
 <p>一个项目可以在任何屏幕上运行。每台设备都以其原生分辨率渲染，由相机决定显示多大范围的世界。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-the-camera"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 相机</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 </table>
 <p>形状相同的更大屏幕显示相同的世界范围，只是画得更大。更宽的屏幕在两侧显示更多内容；更窄的屏幕则显示更少。要拉近，请减小正交高度。</p>
 <p>每米像素数（项目设置 &gt; 单位）表示美术资源的密度：在 16 px/m 时，一个 16 px 的精灵宽一米。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-what-each-screen-sees"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 每种屏幕看到什么</h1>
 <p>正交高度为 11.25 m 的相机：</p>
 <table class="markdownTable">
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 <td class="markdownTableBodyNone">240x320 (竖屏)  </td><td class="markdownTableBodyNone">8.4 x 11.25 m  </td></tr>
 </table>
 <p>将重要的内容放在你所面向的最窄屏幕之内，并在其外侧为更宽的屏幕多构建一些世界，否则玩家会在那里看到相机的清除颜色。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-pinning-to-the-screen"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 固定到屏幕</h1>
 <p>HUD 属于屏幕，而不属于世界：左上角的红心、右上角的分数。为对象添加<b>屏幕锚点</b>，并在其网格中选择一个点：一个角、一条边的中点或中心。它的<b>偏移</b>是与该点之间的距离，单位为米，Y 轴向上，因此距左边 0.875 m、向下 1 m 的红心就是“左上”，偏移为 (0.875, -1)。</p>
 <p>之后，该对象在每种屏幕上、在相机移动时，都会停留在那个点上。它和其他所有东西一样以米为单位确定大小，因此会随相机缩放：在 320x240 和 536x240 的屏幕上大小相同，在 720p 上则占三倍的像素。</p>
@@ -190,13 +190,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 <li>在场景视图中，对象位于它在运行视图所显示的屏幕上应处的位置；切换该屏幕会移动它。拖动它会更改其偏移。一条线将所选对象与其锚点连接起来。</li>
 <li>场景文件存储的是偏移，因此它不会随屏幕变化。</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-recipes"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 用法示例</h1>
 <p><b>2D 像素画。</b> 将正交高度设为美术资源的原生高度：例如，16 px/m 下的 240 px 对应 15 m。开启像素完美。640x480 的屏幕将每个美术像素绘制为 2x2，1280x720 为 3x3，400x300 则以 1x 绘制并多显示一点世界。像素完美向下取整，因此相机显示的范围会比正交高度略多，而不会裁掉任何部分；小于 1x 的屏幕会被裁剪。</p>
 <p><b>2D 高分辨率或矢量美术。</b> 将正交高度设为主屏幕应显示的范围，将每米像素数设为美术资源的密度。每种屏幕都会平滑缩放。渲染器使用最近邻采样，因此缩小很多的美术资源（1280 到 320）在移动时会闪烁：请按接近最小屏幕的尺寸制作。</p>
 <p><b>带 3D 网格的 2D。</b> 与 2D 相同，只是将相机的投影设为透视。视野与正交高度一样是垂直方向的，因此网格和精灵在每种屏幕上都能对齐。精灵仍按平面绘制；在 3D 中放置精灵是下一步的工作。</p>
 <p><b>3D。</b> 将相机设为透视并设置其视野。与正交高度一样，它是垂直方向的：更宽的屏幕在两侧看到更多内容。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-previewing"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 预览</h1>
 <p>运行视图的工具栏用于选择要查看的屏幕，就像 Unity 的 Game 视图一样：</p>
 <ul>
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 </ul>
 <p>旁边是该屏幕的像素格式。运行时使用这个尺寸和格式。运行期间可以更改尺寸，就像设备的屏幕变了一样；格式则在停止之前保持不变。场景视图中的相机小工具会勾勒出该屏幕所看到的范围；没有相机时，场景视图会在原点周围绘制该屏幕。运行视图会按项目记住这一选择。</p>
 <p><span class="tt">DekiEditor --render-scenes</span> 以活动平台的屏幕尺寸和 RGB565 进行渲染；<span class="tt">DEKI_RENDER_SIZE=WxH</span> 可渲染其他尺寸，<span class="tt">DEKI_RENDER_FORMAT</span> 可渲染其他格式。<span class="tt">--export --platform &lt;id&gt;</span> 可为活动平台以外的目标导出。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-colour-formats"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 颜色格式</h1>
 <p>每种屏幕还有自己的像素格式：大多数小型面板上是 RGB565，桌面上是全彩。由此带来两点。</p>
 <ul>
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 </ul>
 <p>平台的 <span class="tt">colorFormat</span> 是其屏幕的格式。编辑器自身的缓存跟随活动平台，因此场景视图中显示的就是该目标得到的结果。运行视图的格式下拉列表可以预览其他格式；图像在绘制时进行转换，因此任何格式都能在任何屏幕上绘制。</p>
 <p>3D 模型在其 <span class="tt">.data</span> 文件中使用相同的格式和最大大小设置，并能绘制到每种帧缓冲格式中。模型的纹理以 2 的幂存储，因此最大大小会对其设置上限；为“无”时上限为 256，这是小型开发板能够常驻内存的大小。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-on-the-device"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 在设备上</h1>
 <p>帧缓冲区使用显示屏自身的尺寸和格式，在显示屏启动时读取。同一个构建可以在不同尺寸的屏幕上运行。平台的 <span class="tt">screenWidth</span>、<span class="tt">screenHeight</span> 和 <span class="tt">colorFormat</span> 是编辑器预览时使用的值，也是桌面模拟器打开窗口时使用的值。 </p>
 </div></div><!-- contents -->

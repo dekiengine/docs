@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['用法示例_0',['用法示例',['../guide-screens.html#guide-screens-recipes',1,'']]]
+  ['显示换算_0',['显示换算',['../guide-units.html#guide-units-display-conversion',1,'']]]
 ];

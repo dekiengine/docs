@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['如何保持同步_0',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
+  ['值得了解的项目设置_0',['值得了解的项目设置',['../guide-performance.html#guide-performance-project-settings-worth-knowing',1,'']]]
 ];

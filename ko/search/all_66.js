@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['채택_3a_20프로젝트가_20사본을_20받습니다_0',['채택: 프로젝트가 사본을 받습니다',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]]
+  ['익스포트_20파이프라인_0',['익스포트 파이프라인',['../guide-font-system.html#guide-font-system-export-pipeline',1,'익스포트 파이프라인'],['../guide-sprite-system.html#guide-sprite-system-export-pipeline',1,'익스포트 파이프라인']]]
 ];

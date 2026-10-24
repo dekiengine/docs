@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['놓이는_20곳_0',['에셋이 놓이는 곳',['../guide-platforms.html#guide-platforms-where-the-assets-go',1,'']]]
+  ['경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
 ];

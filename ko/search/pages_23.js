@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['단위_0',['단위',['../guide-units.html',1,'']]],
-  ['단위_20설정_1',['단위 설정',['../engine-core.html#engine-units-settings',1,'단위 설정'],['../settings.html#settings-units-settings',1,'단위 설정']]],
-  ['단위_20추가하기_2',['프로퍼티에 단위 추가하기',['../guide-units.html#guide-units-adding-a-unit-to-a-property',1,'']]]
+  ['고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
+  ['고유의_20이름_1',['패키지 고유의 이름',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
+  ['고정하기_2',['화면에 고정하기',['../guide-screens.html#autotoc_md2',1,'']]]
 ];

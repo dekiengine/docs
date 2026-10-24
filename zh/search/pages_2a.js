@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['并列_0',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
+  ['可移植性_0',['可移植性',['../guide-project-layout.html#guide-project-layout-portability',1,'']]]
 ];

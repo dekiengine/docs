@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['并列_0',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
+  ['和普通的_20new_0',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;、&lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt; 和普通的 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new',1,'']]]
 ];

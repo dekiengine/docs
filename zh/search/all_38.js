@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['标签自动生成_0',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - 标签自动生成',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'']]]
+  ['并列_0',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
 ];

@@ -6,5 +6,5 @@ var struct_deki_1_1_project_settings_1_1_display_settings =
     [ "reserved1", "struct_deki_1_1_project_settings_1_1_display_settings.html#a29d9d46e223a13b126cdda43ab107ca2", null ],
     [ "reserved2", "struct_deki_1_1_project_settings_1_1_display_settings.html#ad3ca7b1b395b6b0336db05aec6282073", null ],
     [ "reserved3", "struct_deki_1_1_project_settings_1_1_display_settings.html#a851652b2bb2eeae0a1f9a93d0715c96d", null ],
-    [ "reserved4", "struct_deki_1_1_project_settings_1_1_display_settings.html#a2444b08a585f307785febaec03904d2c", null ]
+    [ "screenDiagonalInches", "struct_deki_1_1_project_settings_1_1_display_settings.html#af5eb61cd48004dd76677600aa0765d17", null ]
 ];

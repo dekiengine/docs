@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
   </td>
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
 <p>임베디드 디스플레이와 데스크톱을 위한, 비주얼 에디터를 갖춘 모듈식 C++ 2D 엔진입니다.</p>
-<p>여기에는 엔진 코어와 그 C++ API가 있습니다. 패키지 문서는 각 패키지에 있으며 아래에 링크가 있습니다. 모든 내용은 코드에서 생성됩니다(엔진 0.19.0).</p>
+<p>여기에는 엔진 코어와 그 C++ API가 있습니다. 패키지 문서는 각 패키지에 있으며 아래에 링크가 있습니다. 모든 내용은 코드에서 생성됩니다(엔진 0.20.2).</p>
 <ul>
 <li><a href="engine-core.html">엔진 코어</a>: 엔진 자체가 제공하는 컴포넌트와 설정</li>
 <li><a href="settings.html">프로젝트 설정</a>: 모든 설정 섹션과 그것을 정의하는 곳</li>
@@ -161,10 +161,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <ul>
 <li><a href="guide-asset-system.html">에셋 시스템</a></li>
 <li><a href="guide-font-system.html">폰트 시스템</a></li>
+<li><a href="guide-hardware-checklist.html">Hardware checklist</a></li>
 <li><a href="guide-localization.html">언어</a></li>
 <li><a href="guide-memory.html">메모리</a></li>
+<li><a href="guide-performance.html">빠르게 만들기</a></li>
 <li><a href="guide-platforms.html">플랫폼</a></li>
 <li><a href="guide-project-layout.html">프로젝트 구조</a></li>
+<li><a href="guide-releasing.html">Releasing</a></li>
 <li><a href="guide-screens.html">화면</a></li>
 <li><a href="guide-sprite-system.html">스프라이트 시스템</a></li>
 <li><a href="guide-units.html">단위</a></li>
@@ -186,41 +189,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-desktop-integration/ko/">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">데스크톱 플랫폼 HAL: 데스크톱 빌드를 위한 메모리 및 파일 시스템 프로바이더.  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-display/ko/">deki-display</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Deki 자체 디스플레이 라이브러리. 취미용 보드에서 흔히 쓰는 화면을 구동하고, 터치를 읽고, 모든 프레임을 온전히 보냅니다.  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-esp32-integration/ko/">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">ESP32 플랫폼 HAL: ESP-IDF SDMMC를 통한 SD 카드, FATFS 파일 시스템, 시리얼 명령, 메모리 및 파일 시스템 설정.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-fsm/ko/">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">비주얼 상태 머신. 캔버스 위의 상태, 그룹, 전이와 각 상태 안의 액션 흐름.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gpio/ko/">deki-gpio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">디지털 핀: 핀 출력, 핀 읽기, 핀 펄스 카운트. 그리고 보드의 주변 장치에 전원을 넣는 부트 단계.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gps/ko/">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS 주변 장치. 어떤 토커든 UART로 NMEA를 읽고, 수신기의 속도를 스스로 찾으며, 위성과 고도를 보고합니다.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-http/ko/">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP 클라이언트. 데스크톱에서는 WinHTTP 기반의 동기식 GET을 제공합니다. 임베디드 보드는 자체 네트워크 스택을 사용합니다.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2c/ko/">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C 버스 지원. 보드에서 버스를 한 번 설정하면 주변 장치 패키지(RTC, IMU, 터치)가 이를 공유합니다.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2s/ko/">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">MAX98357 D급 앰프 같은 디지털 오디오 주변 장치를 위한 I²S 버스 지원.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-imu/ko/">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">하드웨어 만보계를 갖춘 6축 IMU(가속도계 + 자이로스코프). I²C로 연결하는 LSM6DS3.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-input/ko/">deki-input</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">입력 디스패치와 충돌 감지. 포인터 / 터치 / 키 이벤트를 관심 있는 컴포넌트에 전달합니다.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-json/ko/">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">런타임에 JSON 파싱이 필요한 패키지를 위한 패키지. 임베디드에서는 ESP-IDF cJSON을 감싸고, 데스크톱에서는 동등한 구현을 사용합니다.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lora/ko/">deki-lora</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">LoRa 무선. 패킷을 송수신하는 Semtech SX1262 드라이버로, 듀티 사이클 제한이 내장되어 있습니다.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/ko/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">LovyanGFX 1.2.19를 통한 임베디드 디스플레이와 터치. 일반적인 SPI/병렬 TFT와 FT6336U 정전식 터치 패널을 구동합니다.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/ko/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">노드 그래프 캔버스: 에디터 창, 실행 취소, 도메인, 노드 등록을 제공하며, 노드가 무엇을 의미하는지는 정하지 않습니다.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/ko/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">모듈식 파티클 시스템: 점/원/사각형 방출 형태, 중력, 항력, 초기 속도, 그리고 수명/크기/색상/회전 모디파이어.  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/ko/">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">핵심 렌더링 파이프라인: 카메라, 렌더 시스템, 표준 2D 렌더러, QuadBlit, 렌더 패스, 정렬.  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/ko/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">실시간 시계 주변 장치. 씬 컴포넌트에서 현재 시각을 읽고 쓰며, DS3231(I²C) 백엔드를 제공합니다.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/ko/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD 카드 지원. 카드를 마운트해 에셋 매니저가 런타임에 카드에서 스트리밍할 수 있게 합니다.  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/ko/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">실시간 시계 주변 장치. 씬 컴포넌트에서 현재 시각을 읽고 쓰며, DS3231(I²C) 백엔드를 제공합니다.  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/ko/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD 카드 지원. 카드를 마운트해 에셋 매니저가 런타임에 카드에서 스트리밍할 수 있게 합니다.  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/ko/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">SDL3(3.2.8) 기반의 데스크톱 디스플레이, 입력, 파일 시스템.  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-spi/ko/">deki-spi</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SPI 버스와 그 위의 장치. 부팅 단계에서 버스를 한 번 시작하면 디스플레이, SD 카드, 무선 장치가 이를 공유합니다.  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/ko/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Deki 게임을 장치 전체를 차지하는 펌웨어가 아니라, ESP32 보드용 운영체제인 Tactility 안의 앱으로 실행합니다.  </td></tr>
 <tr class="markdownTableRowOdd">

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['放置只解析一次。没有回退。_0',['放置只解析一次。没有回退。',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['如何保持同步_0',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
 ];

@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-ja_2guide-screens"></a></p>
 <p>1 つのプロジェクトがどんな画面でも動きます。どのデバイスも自身のネイティブ解像度で描画し、ワールドをどれだけ映すかはカメラが決めます。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-the-camera"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 カメラ</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 </table>
 <p>同じ縦横比のより大きな画面では、同じワールドがより大きく描画されます。横に広い画面では左右がより多く映り、狭い画面ではより少なく映ります。寄って映すには、平行投影の高さを小さくします。</p>
 <p>1 メートルあたりのピクセル数 (プロジェクト設定 &gt; 単位) は、アートの密度を表します。16 px/m では、16 px のスプライトの幅は 1 メートルです。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-what-each-screen-sees"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 各画面に映る範囲</h1>
 <p>平行投影の高さが 11.25 m のカメラの場合:</p>
 <table class="markdownTable">
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 <td class="markdownTableBodyNone">240x320 (縦向き)  </td><td class="markdownTableBodyNone">8.4 x 11.25 m  </td></tr>
 </table>
 <p>重要なものは対象とする最も狭い画面の内側に収め、その外側にも広い画面向けに少しワールドを作っておいてください。そうしないと、その部分にはカメラのクリアカラーが見えてしまいます。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-pinning-to-the-screen"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 画面に固定する</h1>
 <p>HUD はワールドではなく画面に属します。左上隅のハート、右上のスコアなどです。オブジェクトに <b>スクリーンアンカー</b> を追加し、そのグリッドで点を選びます。隅、辺の中央、または中心です。<b>オフセット</b> はその点からの距離で、単位はメートル、Y は上向きです。つまり、左から 0.875 m 内側、上から 1 m 下にあるハートは、左上でオフセット (0.875, -1) になります。</p>
 <p>するとオブジェクトは、どの画面でも、カメラが動いている間も、その点にとどまります。ほかのすべてと同じくメートル単位でサイズが決まるので、カメラに合わせて拡大縮小します。320x240 と 536x240 の画面では同じサイズ、720p では 3 倍のピクセル数になります。</p>
@@ -190,13 +190,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 <li>シーンビューでは、オブジェクトはプレイビューが表示している画面上での位置に置かれます。その画面を切り替えると移動します。ドラッグするとオフセットが変わります。選択したオブジェクトとその点は線で結ばれます。</li>
 <li>シーンファイルはオフセットを保存するので、画面によって変わることはありません。</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-recipes"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 レシピ</h1>
 <p><b>2D ピクセルアート。</b> 平行投影の高さをアートのネイティブの高さに設定します。たとえば 16 px/m で 240 px なら 15 m です。ピクセルパーフェクトをオンにします。640x480 の画面ではアートの各ピクセルを 2x2 で、1280x720 では 3x3 で、400x300 では 1 倍で少し広いワールドとともに描画します。ピクセルパーフェクトは切り捨てるので、カメラは平行投影の高さのどこかを切り取るのではなく、それより少し多くを映します。1 倍でも小さすぎる画面では切り取られます。</p>
 <p><b>2D の高解像度またはベクターアート。</b> 平行投影の高さをメインの画面に映したい量に、1 メートルあたりのピクセル数をアートの密度に設定します。どの画面でも滑らかに拡大縮小します。レンダラーはニアレストネイバーでサンプリングするので、大きく縮小したアート (1280 から 320) は動くとちらつきます。最も小さい画面に近いサイズで作ってください。</p>
 <p><b>3D メッシュを使う 2D。</b> 2D と同様にし、カメラの投影を透視投影に設定します。視野角は平行投影の高さと同じく垂直方向なので、どの画面でもメッシュとスプライトの位置が揃います。スプライトは引き続き平面的に描画されます。3D 空間への配置は今後の予定です。</p>
 <p><b>3D。</b> カメラを透視投影にし、視野角を設定します。平行投影の高さと同じく垂直方向なので、横に広い画面では左右がより多く映ります。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-previewing"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 プレビュー</h1>
 <p>プレイビューのツールバーでは、Unity の Game ビューと同じように、表示する画面を選びます。</p>
 <ul>
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 </ul>
 <p>その隣には画面のピクセルフォーマットがあります。再生はそのサイズとフォーマットで実行されます。サイズは、デバイスの画面が変わったかのように再生中に変更できます。フォーマットは停止するまで固定です。シーンビューのカメラのギズモは、その画面に映る範囲を枠で示します。カメラがない場合、シーンビューは原点の周りに画面を描画します。プレイビューは選択をプロジェクトごとに記憶します。</p>
 <p><span class="tt">DekiEditor --render-scenes</span> はアクティブなプラットフォームの画面で RGB565 で描画します。<span class="tt">DEKI_RENDER_SIZE=WxH</span> で別のサイズ、<span class="tt">DEKI_RENDER_FORMAT</span> で別のフォーマットで描画します。<span class="tt">--export --platform &lt;id&gt;</span> はアクティブなもの以外のターゲット向けにエクスポートします。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-colour-formats"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 カラーフォーマット</h1>
 <p>各画面には独自のピクセルフォーマットもあります。小型のパネルの多くは RGB565、デスクトップはフルカラーです。これに従うものが 2 つあります。</p>
 <ul>
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-screens.
 </ul>
 <p>プラットフォームの <span class="tt">colorFormat</span> は、その画面のフォーマットです。エディター自身のキャッシュはアクティブなプラットフォームに従うので、シーンビューに表示されるものがそのターゲットが受け取るものです。プレイビューのフォーマットのドロップダウンで別のフォーマットをプレビューできます。画像は描画時に変換されるので、どのフォーマットもどの画面にも描画できます。</p>
 <p>3D モデルは、同じフォーマットと最大サイズの設定を <span class="tt">.data</span> ファイルに持ち、どのフレームバッファのフォーマットにも描画できます。モデルのテクスチャは 2 のべき乗のサイズで保存されるので、最大サイズはその上限になります。なしの場合の上限は 256 で、これは小さなボードが常駐させておけるサイズです。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-screens-on-the-device"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 デバイス上では</h1>
 <p>フレームバッファはディスプレイ自身のサイズとフォーマットで、ディスプレイの起動時に読み取られます。1 つのビルドが異なるサイズの画面で動きます。プラットフォームの <span class="tt">screenWidth</span>、<span class="tt">screenHeight</span>、<span class="tt">colorFormat</span> は、エディターがプレビューするものであり、デスクトップシミュレーターが開くウィンドウの形です。 </p>
 </div></div><!-- contents -->

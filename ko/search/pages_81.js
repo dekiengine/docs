@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['호출하는_20곳_3a_0',['EnsureFontSizeBaked를 호출하는 곳:',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]]
+  ['키_20종류_0',['테이블의 키 종류',['../guide-asset-system.html#guide-asset-system-key-types-in-the-table',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['屏幕_0',['屏幕',['../guide-screens.html',1,'']]]
+  ['去除它_0',['去除它',['../guide-memory.html#guide-memory-stripping-it',1,'']]]
 ];

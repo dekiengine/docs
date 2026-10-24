@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['한_20번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['출처_3a_20편집_20업데이트_20복원_0',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

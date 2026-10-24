@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bin_0',['에셋 조회 테이블 (asset_table.bin)',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]],
-  ['bitmapfont_20파일_20형식_20dfont_1',['BitmapFont 파일 형식 (.dfont)',['../guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont',1,'']]]
+  ['6_20storage_0',['6. Storage',['../guide-hardware-checklist.html#guide-hardware-checklist-6-storage',1,'']]],
+  ['6_20the_20demo_1',['4.6 The demo',['../guide-releasing.html#guide-releasing-46-the-demo',1,'']]]
 ];

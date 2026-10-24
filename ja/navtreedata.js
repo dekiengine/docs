@@ -77,6 +77,18 @@ var NAVTREE =
       [ "BitmapFont のファイル形式 (.dfont)", "guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont", null ],
       [ "主なファイル", "guide-font-system.html#guide-font-system-key-files", null ]
     ] ],
+    [ "Hardware checklist", "guide-hardware-checklist.html", [
+      [ "Before you start", "guide-hardware-checklist.html#guide-hardware-checklist-before-you-start", null ],
+      [ "1. Build and flash", "guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash", null ],
+      [ "2. Every scene draws", "guide-hardware-checklist.html#guide-hardware-checklist-2-every-scene-draws", null ],
+      [ "3. Frame time", "guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time", null ],
+      [ "4. Partial present", "guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present", null ],
+      [ "5. Input", "guide-hardware-checklist.html#guide-hardware-checklist-5-input", null ],
+      [ "6. Storage", "guide-hardware-checklist.html#guide-hardware-checklist-6-storage", null ],
+      [ "7. Radios and sensors", "guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors", null ],
+      [ "8. Record the numbers", "guide-hardware-checklist.html#guide-hardware-checklist-8-record-the-numbers", null ],
+      [ "Past releases", "guide-hardware-checklist.html#guide-hardware-checklist-past-releases", null ]
+    ] ],
     [ "言語", "guide-localization.html", [
       [ "表を翻訳する", "guide-localization.html#guide-localization-translating-a-table", null ],
       [ "コードでテキストを表示する", "guide-localization.html#guide-localization-showing-text-in-code", null ],
@@ -106,6 +118,13 @@ var NAVTREE =
       [ "プラットフォームレイヤー: <span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#guide-memory-platform-layer-imemoryprovider", null ],
       [ "lint", "guide-memory.html#guide-memory-the-lint", null ]
     ] ],
+    [ "高速化", "guide-performance.html", [
+      [ "ボードから始める", "guide-performance.html#guide-performance-start-from-a-board", null ],
+      [ "自動で選ばれるもの", "guide-performance.html#guide-performance-what-chooses-itself", null ],
+      [ "ボードで設定するもの", "guide-performance.html#guide-performance-what-a-board-sets", null ],
+      [ "知っておくとよいプロジェクト設定", "guide-performance.html#guide-performance-project-settings-worth-knowing", null ],
+      [ "数値の読み方", "guide-performance.html#guide-performance-reading-the-numbers", null ]
+    ] ],
     [ "プラットフォーム", "guide-platforms.html", [
       [ "プラットフォームとは", "guide-platforms.html#guide-platforms-what-a-platform-is", null ],
       [ "アセットの置き場所", "guide-platforms.html#guide-platforms-where-the-assets-go", null ],
@@ -126,14 +145,32 @@ var NAVTREE =
       [ "shadow/ が runtime/ と同じ階層にある理由", "guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime", null ],
       [ "構造のバージョン", "guide-project-layout.html#guide-project-layout-structure-version", null ]
     ] ],
+    [ "Releasing", "guide-releasing.html", [
+      [ "The promise to current users", "guide-releasing.html#guide-releasing-the-promise-to-current-users", null ],
+      [ "1. Choose the version", "guide-releasing.html#guide-releasing-1-choose-the-version", null ],
+      [ "2. Get every branch ready", "guide-releasing.html#guide-releasing-2-get-every-branch-ready", null ],
+      [ "3. Check it", "guide-releasing.html#guide-releasing-3-check-it", null ],
+      [ "4. Release, in this order", "guide-releasing.html#guide-releasing-4-release-in-this-order", [
+        [ "4.1 Each repo's branch onto master", "guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master", null ],
+        [ "4.2 The engine", "guide-releasing.html#guide-releasing-42-the-engine", null ],
+        [ "4.3 The editor", "guide-releasing.html#guide-releasing-43-the-editor", null ],
+        [ "4.4 The packages", "guide-releasing.html#guide-releasing-44-the-packages", null ],
+        [ "4.5 The registry", "guide-releasing.html#guide-releasing-45-the-registry", null ],
+        [ "4.6 The demo", "guide-releasing.html#guide-releasing-46-the-demo", null ],
+        [ "4.7 The docs and the site", "guide-releasing.html#guide-releasing-47-the-docs-and-the-site", null ],
+        [ "4.8 Clean up", "guide-releasing.html#guide-releasing-48-clean-up", null ]
+      ] ],
+      [ "5. Right after", "guide-releasing.html#guide-releasing-5-right-after", null ],
+      [ "If something is wrong", "guide-releasing.html#guide-releasing-if-something-is-wrong", null ]
+    ] ],
     [ "画面", "guide-screens.html", [
-      [ "カメラ", "guide-screens.html#guide-screens-the-camera", null ],
-      [ "各画面に映る範囲", "guide-screens.html#guide-screens-what-each-screen-sees", null ],
-      [ "画面に固定する", "guide-screens.html#guide-screens-pinning-to-the-screen", null ],
-      [ "レシピ", "guide-screens.html#guide-screens-recipes", null ],
-      [ "プレビュー", "guide-screens.html#guide-screens-previewing", null ],
-      [ "カラーフォーマット", "guide-screens.html#guide-screens-colour-formats", null ],
-      [ "デバイス上では", "guide-screens.html#guide-screens-on-the-device", null ]
+      [ "カメラ", "guide-screens.html#autotoc_md0", null ],
+      [ "各画面に映る範囲", "guide-screens.html#autotoc_md1", null ],
+      [ "画面に固定する", "guide-screens.html#autotoc_md2", null ],
+      [ "レシピ", "guide-screens.html#autotoc_md3", null ],
+      [ "プレビュー", "guide-screens.html#autotoc_md4", null ],
+      [ "カラーフォーマット", "guide-screens.html#autotoc_md5", null ],
+      [ "デバイス上では", "guide-screens.html#autotoc_md6", null ]
     ] ],
     [ "スプライトシステム", "guide-sprite-system.html", [
       [ "概要", "guide-sprite-system.html#guide-sprite-system-overview", null ],

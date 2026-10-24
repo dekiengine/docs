@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['언어_0',['언어',['../guide-localization.html',1,'']]]
+  ['빠르게_20만들기_0',['빠르게 만들기',['../guide-performance.html',1,'']]]
 ];

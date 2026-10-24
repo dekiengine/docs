@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['翻译对照表_0',['翻译对照表',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
+  ['每次都由你选择_0',['区域 - 每次都由你选择',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
+  ['每种屏幕看到什么_1',['每种屏幕看到什么',['../guide-screens.html#autotoc_md1',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['알아내기_0',['메모리가 어디에 쓰였는지 알아내기',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]]
+  ['부모_20source_20프레임인_20이유_0',['guid = 부모, source = 프레임인 이유',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
 ];

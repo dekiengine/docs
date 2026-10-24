@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['预览模式（仅限编辑器）_0',['预览模式（仅限编辑器）',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
-  ['预览_1',['预览',['../guide-screens.html#guide-screens-previewing',1,'']]]
+  ['精灵和字体为何不同_0',['精灵和字体为何不同',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
+  ['精灵的_20assetref_20字段_1',['精灵的 AssetRef 字段',['../guide-sprite-system.html#guide-sprite-system-assetref-fields-for-sprites',1,'']]],
+  ['精灵系统_2',['精灵系统',['../guide-sprite-system.html',1,'']]]
 ];

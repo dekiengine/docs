@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['恢复_0',['恢复',['../guide-project-layout.html#guide-project-layout-recovery',1,'']]]
+  ['固定到屏幕_0',['固定到屏幕',['../guide-screens.html#autotoc_md2',1,'']]]
 ];

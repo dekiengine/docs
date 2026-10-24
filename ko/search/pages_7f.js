@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['해시_20함수_20fnv_201a_2032비트_0',['해시 함수 (FNV-1a 32비트)',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]]
+  ['케이퍼빌리티_20이름입니다_0',['영역 이름은 케이퍼빌리티 이름입니다',['../guide-memory.html#guide-memory-the-region-name-is-the-capability-name',1,'']]]
 ];

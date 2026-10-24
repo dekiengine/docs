@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['设置_0',['设置',['../engine-core.html#engine-units-settings',1,'单位 设置'],['../settings.html#settings-units-settings',1,'单位 设置'],['../engine-core.html#engine-core-settings',1,'核心 设置'],['../settings.html#settings-core-settings',1,'核心 设置']]]
+  ['注册（编辑器）_0',['GUID 注册（编辑器）',['../guide-sprite-system.html#guide-sprite-system-guid-registration-editor',1,'']]],
+  ['注册_1',['注册',['../guide-font-system.html#guide-font-system-registration',1,'']]]
 ];

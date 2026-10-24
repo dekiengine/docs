@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['screenanchor_0',['ScreenAnchor',['../engine-core.html#engine-screenanchor',1,'']]],
-  ['setupcomponent_1',['SetupComponent',['../engine-core.html#engine-setupcomponent',1,'']]],
-  ['shadow_20与_20runtime_20并列_2',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
-  ['si，这没有问题_3',['数据手册不使用 SI，这没有问题',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]],
-  ['source）_4',['双字段模式（guid 与 source）',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]],
-  ['sourcesize_20块（类型_204）_5',['SourceSize 块（类型 4）',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]],
-  ['sprite_20块（类型_201）_6',['Sprite 块（类型 1）',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
-  ['std_3a_3avector、std_3a_3astring_20和普通的_20new_7',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;、&lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt; 和普通的 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new',1,'']]],
-  ['subasset_20生成_8',['SubAsset 生成',['../guide-sprite-system.html#guide-sprite-system-subasset-generation',1,'']]]
+  ['get_20every_20branch_20ready_0',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
+  ['guid_20如何保持同步_1',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
+  ['guid_20注册（编辑器）_2',['GUID 注册（编辑器）',['../guide-sprite-system.html#guide-sprite-system-guid-registration-editor',1,'']]],
+  ['guid_20父资源，source_20帧_3',['为什么 guid = 父资源，source = 帧',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]],
+  ['guid_20生成_4',['GUID 生成',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'确定性 GUID 生成'],['../guide-font-system.html#guide-font-system-guid-generation',1,'GUID 生成'],['../guide-sprite-system.html#guide-sprite-system-guid-generation',1,'GUID 生成']]],
+  ['guid_20的位置_5',['生成确定性 GUID 的位置',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]]
 ];

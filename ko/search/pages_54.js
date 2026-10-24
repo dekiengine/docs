@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['오는가_0',['플랫폼은 어디에서 오는가',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]]
+  ['수_20있습니다_0',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['从命令行使用_0',['从命令行使用',['../guide-platforms.html#guide-platforms-from-the-command-line',1,'']]]
+  ['onto_20master_0',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
+  ['order_1',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]]
 ];

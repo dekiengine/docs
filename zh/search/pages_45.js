@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['确定性_20guid_20生成_0',['确定性 GUID 生成',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]]
+  ['查明内存去了哪里_0',['查明内存去了哪里',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]]
 ];

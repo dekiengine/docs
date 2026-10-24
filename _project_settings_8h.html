@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -169,6 +169,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:afe0de3076b39d760eed2c6968ad6bc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads project settings from the bytes of a project_data.bin.  <br /></td></tr>
 <tr class="memitem:aa3a74675706af66cae659f467f493e1d" id="r_aa3a74675706af66cae659f467f493e1d"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#aa3a74675706af66cae659f467f493e1d">Deki::ProjectSettings::GetTargetFPS</a> ()</td></tr>
 <tr class="memdesc:aa3a74675706af66cae659f467f493e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target frame rate, 0 for no limit.  <br /></td></tr>
+<tr class="memitem:ae80d1fb466eed82946b156921c86b60d" id="r_ae80d1fb466eed82946b156921c86b60d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#ae80d1fb466eed82946b156921c86b60d">Deki::ProjectSettings::GetScreenDiagonalInches</a> ()</td></tr>
+<tr class="memdesc:ae80d1fb466eed82946b156921c86b60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's diagonal in inches, from the board's platform file; 0 when unknown.  <br /></td></tr>
 <tr class="memitem:a53b9fe8e2a8d4eb8629bdd44f5e36be6" id="r_a53b9fe8e2a8d4eb8629bdd44f5e36be6"><td class="memItemLeft"><a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a>&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a53b9fe8e2a8d4eb8629bdd44f5e36be6">Deki::ProjectSettings::GetAssetStorage</a> ()</td></tr>
 <tr class="memdesc:a53b9fe8e2a8d4eb8629bdd44f5e36be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this build's assets are on internal or external storage.  <br /></td></tr>
 <tr class="memitem:a3ede2597091ba3cbec425d5fbdd4899d" id="r_a3ede2597091ba3cbec425d5fbdd4899d"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a3ede2597091ba3cbec425d5fbdd4899d">Deki::ProjectSettings::GetStartupScene</a> ()</td></tr>
@@ -185,8 +187,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a888af89782768d83693cf5c8fd3b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads one package setting from the last <a class="el" href="namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92" title="Reads project settings from the bytes of a project_data.bin.">Load()</a>.  <br /></td></tr>
 <tr class="memitem:af0e60e7c6f701d39e142589bac712755" id="r_af0e60e7c6f701d39e142589bac712755"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#af0e60e7c6f701d39e142589bac712755">Deki::ProjectSettings::ReadPackageSettingInt32</a> (const char *section, const char *key, int32_t &amp;out)</td></tr>
 <tr class="memitem:a176b5cfa6939b893dc28d08b305fbb0f" id="r_a176b5cfa6939b893dc28d08b305fbb0f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a176b5cfa6939b893dc28d08b305fbb0f">Deki::ProjectSettings::ReadPackageSettingFloat</a> (const char *section, const char *key, float &amp;out)</td></tr>
-<tr class="memitem:a082b927b2c9d8ee9b0a44b435cc5e7cc" id="r_a082b927b2c9d8ee9b0a44b435cc5e7cc"><td class="memItemLeft">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#a082b927b2c9d8ee9b0a44b435cc5e7cc">Deki::ProjectSettings::Write</a> (<a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a> assetStorage, int32_t targetFPS=0, const char *startupScene=nullptr, const char *rendererName=nullptr, const char *const *passNames=nullptr, int passCount=0)</td></tr>
-<tr class="memdesc:a082b927b2c9d8ee9b0a44b435cc5e7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a project_data.bin image (editor only).  <br /></td></tr>
+<tr class="memitem:ad15785c1336fae8be4d93ec29e43cfaf" id="r_ad15785c1336fae8be4d93ec29e43cfaf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#ad15785c1336fae8be4d93ec29e43cfaf">Deki::ProjectSettings::ReadPackageSettingEnum</a> (const char *section, const char *key, size_t enumSize, int32_t &amp;out)</td></tr>
+<tr class="memdesc:ad15785c1336fae8be4d93ec29e43cfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum setting, stored at the enum's own width: pass sizeof the enum (1, 2 or 4).  <br /></td></tr>
+<tr class="memitem:aaa3c62c55f441c333c5b070886911845" id="r_aaa3c62c55f441c333c5b070886911845"><td class="memItemLeft">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_1_1_project_settings.html#aaa3c62c55f441c333c5b070886911845">Deki::ProjectSettings::Write</a> (<a class="el" href="namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3b">Storage::Location</a> assetStorage, int32_t targetFPS=0, const char *startupScene=nullptr, const char *rendererName=nullptr, const char *const *passNames=nullptr, int passCount=0, float screenDiagonalInches=0.0f)</td></tr>
+<tr class="memdesc:aaa3c62c55f441c333c5b070886911845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a project_data.bin image (editor only).  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['配置は_201_20回で決まる。フォールバックはない_0',['配置は 1 回で決まる。フォールバックはない',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['比較_3a_20フォントとスプライト_0',['比較: フォントとスプライト',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]]
 ];

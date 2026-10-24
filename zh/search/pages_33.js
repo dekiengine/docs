@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['显示换算_0',['显示换算',['../guide-units.html#guide-units-display-conversion',1,'']]]
+  ['存储的内容_0',['存储的内容',['../guide-units.html#guide-units-what-is-stored',1,'']]]
 ];

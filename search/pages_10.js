@@ -1,6 +1,27 @@
 var searchData=
 [
-  ['memory_0',['Memory',['../guide-memory.html',1,'']]],
-  ['memory_20went_1',['Finding out where the memory went',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]],
-  ['mode_20editor_20only_2',['Preview Mode (Editor Only)',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]]
+  ['if_20something_20is_20wrong_0',['If something is wrong',['../guide-releasing.html#guide-releasing-if-something-is-wrong',1,'']]],
+  ['imemoryprovider_1',['Platform layer: &lt;span class=&quot;tt&quot;&gt;IMemoryProvider&lt;/span&gt;',['../guide-memory.html#guide-memory-platform-layer-imemoryprovider',1,'']]],
+  ['import_2',['Two-Pass Import',['../guide-sprite-system.html#guide-sprite-system-two-pass-import',1,'']]],
+  ['import_20pipeline_3a_20textureimporter_3',['Import Pipeline: TextureImporter',['../guide-sprite-system.html#guide-sprite-system-import-pipeline-textureimporter',1,'']]],
+  ['in_20a_20package_4',['Shipping boards in a package',['../guide-platforms.html#guide-platforms-shipping-boards-in-a-package',1,'']]],
+  ['in_20code_5',['Showing text in code',['../guide-localization.html#guide-localization-showing-text-in-code',1,'']]],
+  ['in_20editor_6',['Assignment in Editor',['../guide-sprite-system.html#guide-sprite-system-assignment-in-editor',1,'']]],
+  ['in_20sync_7',['How font.guid stays in sync',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
+  ['in_20the_20code_8',['In the code',['../guide-platforms.html#guide-platforms-in-the-code',1,'']]],
+  ['in_20the_20table_9',['Key types in the table',['../guide-asset-system.html#guide-asset-system-key-types-in-the-table',1,'']]],
+  ['in_20this_20order_10',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]],
+  ['input_11',['5. Input',['../guide-hardware-checklist.html#guide-hardware-checklist-5-input',1,'']]],
+  ['is_12',['What a platform is',['../guide-platforms.html#guide-platforms-what-a-platform-is',1,'']]],
+  ['is_20a_20name_20so_20packages_20can_20add_20their_20own_13',['A region is a name, so packages can add their own',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]],
+  ['is_20a_20sibling_20of_20runtime_14',['Why shadow/ is a sibling of runtime/',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
+  ['is_20fine_15',['Datasheets do not use SI, and that is fine',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]],
+  ['is_20no_20fallback_16',['Placement resolves once. There is no fallback.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]],
+  ['is_20stored_17',['What is stored',['../guide-units.html#guide-units-what-is-stored',1,'']]],
+  ['is_20the_20board_20s_20job_18',['Serving one is the board&apos;s job',['../guide-memory.html#guide-memory-serving-one-is-the-boards-job',1,'']]],
+  ['is_20the_20capability_20name_19',['The region name is the capability name',['../guide-memory.html#guide-memory-the-region-name-is-the-capability-name',1,'']]],
+  ['is_20wrong_20',['If something is wrong',['../guide-releasing.html#guide-releasing-if-something-is-wrong',1,'']]],
+  ['it_21',['it',['../guide-releasing.html#guide-releasing-3-check-it',1,'3. Check it'],['../guide-memory.html#guide-memory-stripping-it',1,'Stripping it']]],
+  ['it_20fast_22',['Making it fast',['../guide-performance.html',1,'']]],
+  ['itself_23',['itself',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - the label writes itself'],['../guide-performance.html#guide-performance-what-chooses-itself',1,'What chooses itself']]]
 ];

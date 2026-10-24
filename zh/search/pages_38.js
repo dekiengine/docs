@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['核心_20设置_0',['核心 设置',['../engine-core.html#engine-core-settings',1,'核心 设置'],['../settings.html#settings-core-settings',1,'核心 设置']]]
+  ['并列_0',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
 ];

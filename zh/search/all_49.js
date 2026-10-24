@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['组件参考_0',['组件参考',['../engine-core.html#engine-component-reference',1,'']]],
-  ['组件_1',['组件',['../engine-core.html#engine-components',1,'']]]
+  ['概述_0',['概述',['../guide-font-system.html#guide-font-system-overview',1,'概述'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'概述']]]
 ];

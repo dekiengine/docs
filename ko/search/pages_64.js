@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['지연_20로딩_0',['지연 로딩',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]],
-  ['지정_1',['에디터에서의 지정',['../guide-sprite-system.html#guide-sprite-system-assignment-in-editor',1,'']]]
+  ['의_20경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
 ];

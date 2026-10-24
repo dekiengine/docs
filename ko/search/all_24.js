@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['곳_0',['곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'결정적 GUID를 생성하는 곳'],['../guide-platforms.html#guide-platforms-where-the-assets-go',1,'에셋이 놓이는 곳']]],
+  ['곳_3a_1',['EnsureFontSizeBaked를 호출하는 곳:',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]]
 ];

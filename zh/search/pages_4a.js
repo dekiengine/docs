@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['翻译对照表_0',['翻译对照表',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
+  ['模拟开发板_0',['模拟开发板',['../guide-platforms.html#guide-platforms-simulating-a-board',1,'']]],
+  ['模板_1',['AssetRef&amp;lt;T&amp;gt; 模板',['../guide-asset-system.html#guide-asset-system-assetreft-template',1,'']]]
 ];

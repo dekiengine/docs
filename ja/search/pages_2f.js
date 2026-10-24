@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['主なファイル_0',['主なファイル',['../guide-asset-system.html#guide-asset-system-key-files',1,'主なファイル'],['../guide-font-system.html#guide-font-system-key-files',1,'主なファイル'],['../guide-sprite-system.html#guide-sprite-system-key-files',1,'主なファイル']]]
+  ['デバイス上では_0',['デバイス上では',['../guide-screens.html#autotoc_md6',1,'']]],
+  ['データシートは_20si_20を使わないが、それで問題ない_1',['データシートは SI を使わないが、それで問題ない',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]]
 ];

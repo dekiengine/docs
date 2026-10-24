@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['형식_20절대_20변경하지_20마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]],
-  ['형식_202dtx_1',['.tex 파일 형식 (2DTX)',['../guide-sprite-system.html#guide-sprite-system-tex-file-format-2dtx',1,'']]],
-  ['형식_20dfont_2',['BitmapFont 파일 형식 (.dfont)',['../guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont',1,'']]]
+  ['코드에서_0',['코드에서',['../guide-platforms.html#guide-platforms-in-the-code',1,'']]],
+  ['코드에서_20텍스트_20표시하기_1',['코드에서 텍스트 표시하기',['../guide-localization.html#guide-localization-showing-text-in-code',1,'']]],
+  ['코드_20패턴_2',['생성 코드 패턴',['../guide-asset-system.html#guide-asset-system-generated-code-pattern',1,'']]],
+  ['코어_3',['엔진 코어',['../engine-core.html',1,'']]],
+  ['코어_20설정_4',['코어 설정',['../engine-core.html#engine-core-settings',1,'코어 설정'],['../settings.html#settings-core-settings',1,'코어 설정']]]
 ];

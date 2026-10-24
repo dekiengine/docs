@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['親、source_20フレームである理由_0',['guid = 親、source = フレームである理由',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
+  ['時間に_202_20つの決まりがある理由_0',['時間に 2 つの決まりがある理由',['../guide-units.html#guide-units-why-time-has-two-conventions',1,'']]]
 ];

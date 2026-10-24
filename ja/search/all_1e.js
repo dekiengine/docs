@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['サイドカーファイル_0',['サイドカーファイル',['../guide-font-system.html#guide-font-system-data-sidecar-file',1,'.data サイドカーファイル'],['../guide-sprite-system.html#guide-sprite-system-data-sidecar-file',1,'.data サイドカーファイル']]]
+  ['これを使う_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Buffer&amp;lt;T&amp;gt;&lt;/span&gt; - これを使う',['../guide-memory.html#guide-memory-dekibuffert---use-this',1,'']]]
 ];

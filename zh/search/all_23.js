@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['如何保持同步_0',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
+  ['关键文件_0',['关键文件',['../guide-asset-system.html#guide-asset-system-key-files',1,'关键文件'],['../guide-font-system.html#guide-font-system-key-files',1,'关键文件'],['../guide-sprite-system.html#guide-sprite-system-key-files',1,'关键文件']]]
 ];

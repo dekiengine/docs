@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['注册（编辑器）_0',['GUID 注册（编辑器）',['../guide-sprite-system.html#guide-sprite-system-guid-registration-editor',1,'']]],
-  ['注册_1',['注册',['../guide-font-system.html#guide-font-system-registration',1,'']]]
+  ['放置只解析一次。没有回退。_0',['放置只解析一次。没有回退。',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
 ];

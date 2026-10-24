@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['출처_3a_20편집_20업데이트_20복원_0',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
+  ['임포트_0',['2단계 임포트',['../guide-sprite-system.html#guide-sprite-system-two-pass-import',1,'']]],
+  ['임포트_20파이프라인_3a_20textureimporter_1',['임포트 파이프라인: TextureImporter',['../guide-sprite-system.html#guide-sprite-system-import-pipeline-textureimporter',1,'']]]
 ];

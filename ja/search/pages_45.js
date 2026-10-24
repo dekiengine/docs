@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['絶対に変更しないでください_0',['シードの形式 (絶対に変更しないでください)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['採用_3a_20プロジェクトはコピーを受け取る_0',['採用: プロジェクトはコピーを受け取る',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]]
 ];

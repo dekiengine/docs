@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['可移植性_0',['可移植性',['../guide-project-layout.html#guide-project-layout-portability',1,'']]]
+  ['you_20start_0',['Before you start',['../guide-hardware-checklist.html#guide-hardware-checklist-before-you-start',1,'']]]
 ];

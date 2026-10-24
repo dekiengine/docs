@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['레시피_0',['레시피',['../guide-screens.html#guide-screens-recipes',1,'']]],
-  ['레이블은_20저절로_20작성됩니다_1',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - 레이블은 저절로 작성됩니다',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'']]],
-  ['레지스트리_2',['프레임 데이터 레지스트리',['../guide-sprite-system.html#guide-sprite-system-frame-data-registry',1,'']]],
-  ['레퍼런스_3',['컴포넌트 레퍼런스',['../engine-core.html#engine-component-reference',1,'']]]
+  ['나란히_20있는_20이유_0',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
+  ['나머지_20api_1',['나머지 API',['../guide-memory.html#guide-memory-the-rest-of-the-api',1,'']]]
 ];

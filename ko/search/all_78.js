@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['표시하기_0',['코드에서 텍스트 표시하기',['../guide-localization.html#guide-localization-showing-text-in-code',1,'']]],
-  ['표시_20변환_1',['표시 변환',['../guide-units.html#guide-units-display-conversion',1,'']]]
+  ['직접_20고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
+  ['직접_20추가할_20수_20있습니다_1',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]]
 ];

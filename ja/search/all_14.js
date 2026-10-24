@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['と同じ階層にある理由_0',['shadow/ が runtime/ と同じ階層にある理由',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
-  ['と_20source_1',['二重フィールドのパターン (guid と source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]]
+  ['onto_20master_0',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
+  ['order_1',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]]
 ];

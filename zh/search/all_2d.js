@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['引擎核心_0',['引擎核心',['../engine-core.html',1,'']]],
-  ['引擎的分区_1',['引擎的分区',['../settings.html#engine-sections',1,'']]]
+  ['固定到屏幕_0',['固定到屏幕',['../guide-screens.html#autotoc_md2',1,'']]]
 ];

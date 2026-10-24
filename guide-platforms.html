@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -169,16 +169,18 @@ What a platform is</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">The screen this target has. The editor previews it, the desktop simulator opens a window of it, and images set to Automatic are stored in <span class="tt">colorFormat</span> for it. A device renders at its display's own size and format; see <a href="guide-screens.html">screens.md</a>.  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">screenDiagonalInches</span>  </td><td class="markdownTableBodyNone">The screen's diagonal in inches, as the board's maker gives it (<span class="tt">2.8</span>, <span class="tt">1.91</span>). Optional; absent means unknown. A panel cannot report its own size, so the board says, and the build carries it to the device for layouts that fit a physically small screen; see <a href="guide-screens.html#guide-screens-size-on-the-glass">screens.md</a>.  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">externalMemorySize</span>  </td><td class="markdownTableBodyNone">Bytes of memory beyond the internal heap (PSRAM on a microcontroller). Grants packages <span class="tt">memory:external</span>.  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">What the target can offer a package: <span class="tt">wifi</span>, <span class="tt">spi</span>, <span class="tt">desktop-os</span>, ...  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">requiresPackages</span>  </td><td class="markdownTableBodyNone">Packages the target always needs, whatever the scenes use. Its hardware abstraction layer, typically.  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">defines</span>, <span class="tt">cFlags</span>, <span class="tt">cxxFlags</span>, <span class="tt">linkFlags</span>  </td><td class="markdownTableBodyNone">Compiler settings for the game's own code.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">bootScene</span>  </td><td class="markdownTableBodyNone">Path of the boot scene, relative to the project.  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">defines</span>, <span class="tt">cFlags</span>, <span class="tt">cxxFlags</span>, <span class="tt">linkFlags</span>  </td><td class="markdownTableBodyNone">Compiler settings for the game's own code.  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">bootScene</span>  </td><td class="markdownTableBodyNone">Path of the boot scene, relative to the project.  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">assetStorage</span>  </td><td class="markdownTableBodyNone">Where a build keeps the game's assets: <span class="tt">internal</span> (the default) or <span class="tt">external</span>. See below.  </td></tr>
 </table>
 <p>The <b>boot scene</b> holds a <span class="tt"><a class="el" href="class_deki_1_1_platform_setup_component.html" title="Runs the boot scene&#39;s SetupComponents (such as SDCardComponent) one at a time, in order,...">Deki::PlatformSetupComponent</a></span> whose <span class="tt">setupComponents</span> list names, in order, the setup steps that bring the hardware up: a power pin, the display, an I2C bus, touch. Each entry is <span class="tt">{id, typeId}</span>: the id of the child object holding the step, and the hash of the step's qualified class name (<span class="tt"><a class="el" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50" title="FNV-1a of a C string; the hash behind every type and property id.">Deki::HashString</a></span>). A wrong <span class="tt">typeId</span> does not fail; the step silently never runs. <span class="tt">ShippedPlatformTemplates</span> in the editor's tests checks every boot scene the packages ship.</p>

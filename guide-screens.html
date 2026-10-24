@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -215,6 +215,22 @@ Colour formats</h1>
 </ul>
 <p>A platform's <span class="tt">colorFormat</span> is the format of its screen. The editor's own cache follows the active platform, so what the scene view shows is what that target gets. The Play view's format dropdown previews another; images are converted as they are drawn, so any format draws on any screen.</p>
 <p>3D models take the same Format and Max Size settings in their <span class="tt">.data</span> file, and draw into every framebuffer format. A model's texture is stored at powers of two, so Max Size caps them; with None it is capped at 256, the size a small board can hold resident.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-screens-size-on-the-glass"></a>
+Size on the glass</h1>
+<p>Pixels say nothing about how big a screen is in your hand. The T-Deck Plus (320x240, 2.8") and the T-Display S3 AMOLED (536x240, 1.91") are both 240 pixels tall, so a camera draws them at the same pixel size, but the AMOLED packs 307 pixels into an inch against the T-Deck's 143: the same 12 px label is 2.1 mm tall on one and 1 mm on the other.</p>
+<p>A panel cannot report its own size, so the board says: a platform's <span class="tt">screenDiagonalInches</span> (<a href="guide-platforms.html">platforms.md</a>). The build carries it to the device, and a script reads it from the engine:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><span class="tt"><a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Deki::Engine</a></span>  </th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">GetScreenDiagonalInches()</span>  </td><td class="markdownTableBodyNone">As the platform gives it; 0 when unknown  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">GetScreenPixelsPerInch()</span>  </td><td class="markdownTableBodyNone">From the diagonal and the screen's current size; 0 when unknown  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt">GetScreenWidthMeters()</span>, <span class="tt">GetScreenHeightMeters()</span>  </td><td class="markdownTableBodyNone">The screen's size on the glass; 0 when unknown  </td></tr>
+</table>
+<p>The camera does not use it: every screen still shows the camera's ortho height. What changes on a small screen is the layout, which is the scene's to decide. With the camera's pixels per meter, one meter of world is <span class="tt">ppm / ppi * 0.0254</span> meters of glass, so a script can tell whether a button comes out big enough to tap (about 9 mm) and lay the screen out differently when it does not. The demo's menu is a 4x2 grid on the T-Deck and on a desktop, and a row of tiles twice the size, swiped left and right, on the AMOLED.</p>
+<p>A screen of unknown size (a desktop window, a platform that does not say) reports 0, and a layout should keep its usual form there. The Play view uses the previewed platform's diagonal; a resolution added with Add... can be given one. <span class="tt"><a class="el" href="namespace_deki_editor.html">DekiEditor</a> --render-scenes</span> uses the platform's, and <span class="tt">DEKI_RENDER_INCHES</span> gives another.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-screens-on-the-device"></a>
 On the device</h1>
 <p>The framebuffer is the display's own size and format, read when the display starts. One build runs on screens of different sizes. A platform's <span class="tt">screenWidth</span>, <span class="tt">screenHeight</span> and <span class="tt">colorFormat</span> are what the editor previews and what the desktop simulator opens its window as. </p>

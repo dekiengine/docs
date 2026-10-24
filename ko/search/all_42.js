@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['색상_20포맷_0',['색상 포맷',['../guide-screens.html#guide-screens-colour-formats',1,'']]]
+  ['바뀔_20때_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime',1,'']]]
 ];

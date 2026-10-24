@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['核心_20设置_0',['核心 设置',['../engine-core.html#engine-core-settings',1,'核心 设置'],['../settings.html#settings-core-settings',1,'核心 设置']]]
+  ['延迟加载_0',['延迟加载',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]]
 ];

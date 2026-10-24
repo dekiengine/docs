@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['guid_20如何保持同步_0',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
-  ['guid_20注册（编辑器）_1',['GUID 注册（编辑器）',['../guide-sprite-system.html#guide-sprite-system-guid-registration-editor',1,'']]],
-  ['guid_20父资源，source_20帧_2',['为什么 guid = 父资源，source = 帧',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]],
-  ['guid_20生成_3',['GUID 生成',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'确定性 GUID 生成'],['../guide-font-system.html#guide-font-system-guid-generation',1,'GUID 生成'],['../guide-sprite-system.html#guide-sprite-system-guid-generation',1,'GUID 生成']]],
-  ['guid_20的位置_4',['生成确定性 GUID 的位置',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]]
+  ['before_20you_20start_0',['Before you start',['../guide-hardware-checklist.html#guide-hardware-checklist-before-you-start',1,'']]],
+  ['bin）_1',['资源查找表（asset_table.bin）',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]],
+  ['bitmapfont_20文件格式（_20dfont）_2',['BitmapFont 文件格式（.dfont）',['../guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont',1,'']]],
+  ['branch_20onto_20master_3',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
+  ['branch_20ready_4',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
+  ['build_20and_20flash_5',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]]
 ];

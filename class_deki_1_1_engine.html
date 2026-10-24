@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -228,6 +228,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a653a48b6ad469d3f3532ed10844fad39" id="r_a653a48b6ad469d3f3532ed10844fad39"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#a653a48b6ad469d3f3532ed10844fad39">GetScreenWidth</a> () const</td></tr>
 <tr class="memitem:af02796b9de90366c6f7a43bd5b24ef3b" id="r_af02796b9de90366c6f7a43bd5b24ef3b"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#af02796b9de90366c6f7a43bd5b24ef3b">GetScreenHeight</a> () const</td></tr>
 <tr class="memitem:ab693e04a66f7286b1d1220bb8266d2fc" id="r_ab693e04a66f7286b1d1220bb8266d2fc"><td class="memItemLeft"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab693e04a66f7286b1d1220bb8266d2fc">GetFrameBufferFormat</a> () const</td></tr>
+<tr class="memitem:a581bf297386333c4cc558e18bdcd876b" id="r_a581bf297386333c4cc558e18bdcd876b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a581bf297386333c4cc558e18bdcd876b">GetScreenDiagonalInches</a> () const</td></tr>
+<tr class="memdesc:a581bf297386333c4cc558e18bdcd876b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's diagonal in inches, 0 when unknown.  <br /></td></tr>
+<tr class="memitem:a27379f8ce3b69a08bd6c2372fb0ca819" id="r_a27379f8ce3b69a08bd6c2372fb0ca819"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27379f8ce3b69a08bd6c2372fb0ca819">SetScreenDiagonalInches</a> (float inches)</td></tr>
+<tr class="memitem:a5417442513b5482aa479d6cfcead40d9" id="r_a5417442513b5482aa479d6cfcead40d9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5417442513b5482aa479d6cfcead40d9">GetScreenPixelsPerInch</a> () const</td></tr>
+<tr class="memdesc:a5417442513b5482aa479d6cfcead40d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels per inch of the screen at its current size, 0 when its diagonal or size is unknown.  <br /></td></tr>
+<tr class="memitem:ab14ae69910c913041659ab39812921b8" id="r_ab14ae69910c913041659ab39812921b8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab14ae69910c913041659ab39812921b8">GetScreenWidthMeters</a> () const</td></tr>
+<tr class="memdesc:ab14ae69910c913041659ab39812921b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's size on the glass in meters, 0 when unknown.  <br /></td></tr>
+<tr class="memitem:a924c4f66f82b74d632317c53e4ad2f72" id="r_a924c4f66f82b74d632317c53e4ad2f72"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a924c4f66f82b74d632317c53e4ad2f72">GetScreenHeightMeters</a> () const</td></tr>
 <tr class="memitem:ac86bc8707bbf59bc346b84147fcf570b" id="r_ac86bc8707bbf59bc346b84147fcf570b"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac86bc8707bbf59bc346b84147fcf570b">GetSettings</a> ()</td></tr>
 <tr class="memitem:a04c7170e729eefc88d88b8f7a30c70ec" id="r_a04c7170e729eefc88d88b8f7a30c70ec"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a04c7170e729eefc88d88b8f7a30c70ec">GetSettings</a> () const</td></tr>
 </table><table class="memberdecls">
@@ -1198,6 +1206,109 @@ Static Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> Deki::Engine::GetFrameBufferFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a581bf297386333c4cc558e18bdcd876b" name="a581bf297386333c4cc558e18bdcd876b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581bf297386333c4cc558e18bdcd876b">&#9670;&#160;</a></span>GetScreenDiagonalInches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenDiagonalInches </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The screen's diagonal in inches, 0 when unknown. </p>
+<p>A panel cannot report its size, so it comes from the board's platform file: a device build reads it from project_data.bin, and the editor sets it for the screen the Play view shows. </p>
+
+</div>
+</div>
+<a id="a27379f8ce3b69a08bd6c2372fb0ca819" name="a27379f8ce3b69a08bd6c2372fb0ca819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27379f8ce3b69a08bd6c2372fb0ca819">&#9670;&#160;</a></span>SetScreenDiagonalInches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::SetScreenDiagonalInches </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>inches</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5417442513b5482aa479d6cfcead40d9" name="a5417442513b5482aa479d6cfcead40d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5417442513b5482aa479d6cfcead40d9">&#9670;&#160;</a></span>GetScreenPixelsPerInch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenPixelsPerInch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pixels per inch of the screen at its current size, 0 when its diagonal or size is unknown. </p>
+<p>See ScreenPixelsPerInch. </p>
+
+</div>
+</div>
+<a id="ab14ae69910c913041659ab39812921b8" name="ab14ae69910c913041659ab39812921b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14ae69910c913041659ab39812921b8">&#9670;&#160;</a></span>GetScreenWidthMeters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenWidthMeters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The screen's size on the glass in meters, 0 when unknown. </p>
+<p>For laying out for a physically small screen: the 1.91" T-Display S3 AMOLED is
+0.044 x 0.020 m, the 2.8" T-Deck 0.057 x 0.043 m. </p>
+
+</div>
+</div>
+<a id="a924c4f66f82b74d632317c53e4ad2f72" name="a924c4f66f82b74d632317c53e4ad2f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924c4f66f82b74d632317c53e4ad2f72">&#9670;&#160;</a></span>GetScreenHeightMeters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenHeightMeters </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

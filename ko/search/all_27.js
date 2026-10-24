@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['두_20가지_20규약이_20있는_20이유_0',['시간에 두 가지 규약이 있는 이유',['../guide-units.html#guide-units-why-time-has-two-conventions',1,'']]],
-  ['두_20가지_20버전_1',['테이블의 두 가지 버전',['../guide-asset-system.html#guide-asset-system-two-versions-of-the-table',1,'']]]
+  ['구조_0',['구조',['../guide-project-layout.html#guide-project-layout-layout',1,'구조'],['../guide-project-layout.html',1,'프로젝트 구조']]],
+  ['구조_20버전_1',['구조 버전',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]]
 ];

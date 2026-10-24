@@ -245,6 +245,7 @@ var namespace_deki =
     [ "RunComponentsMigrations", "namespace_deki.html#ac03b5d23317a6338d5f51363919102d2", null ],
     [ "PixelPerfectMultiple", "namespace_deki.html#a72bf4246fe7072801c61bcadfa52bf38", null ],
     [ "OrthoPixelsPerMeter", "namespace_deki.html#ad8c6a44e999b023bdd129cca800250d6", null ],
+    [ "ScreenPixelsPerInch", "namespace_deki.html#ab2107cb2c325f26d95d9dac0f357d92a", null ],
     [ "HashString", "namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50", null ],
     [ "HashStringLen", "namespace_deki.html#a693b81cbcc3e331d8b8695e6d9959971", null ],
     [ "HashStringView", "namespace_deki.html#adfed7ba4e49294c4ae09279eeec541c7", null ],
@@ -261,5 +262,6 @@ var namespace_deki =
     [ "kDpackVersion", "namespace_deki.html#a20b0d1f232d8ad518825c4cdc99f93d5", null ],
     [ "kRGB565BigEndian", "namespace_deki.html#a09b9d7c17742ee078ceb521d4d3c07eb", null ],
     [ "kTransformRefComponent", "namespace_deki.html#aa88aafaeabf5ad00e9ff8a3721514f0c", null ],
-    [ "kVariableRefComponent", "namespace_deki.html#a5cf24745dd885deb3b83037a873e9938", null ]
+    [ "kVariableRefComponent", "namespace_deki.html#a5cf24745dd885deb3b83037a873e9938", null ],
+    [ "kMetersPerInch", "namespace_deki.html#afc1e4c9cbfb35f1111bb8d71dd1b4ea9", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['需要其他包的功能_0',['需要其他包的功能',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
+  ['确定性_20guid_20生成_0',['确定性 GUID 生成',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]]
 ];

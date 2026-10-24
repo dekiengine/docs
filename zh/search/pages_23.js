@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['始终表示“要从磁盘加载的文件”_0',['规则：&lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt; 始终表示“要从磁盘加载的文件”',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]]
+  ['关键文件_0',['关键文件',['../guide-asset-system.html#guide-asset-system-key-files',1,'关键文件'],['../guide-font-system.html#guide-font-system-key-files',1,'关键文件'],['../guide-sprite-system.html#guide-sprite-system-key-files',1,'关键文件']]]
 ];

@@ -77,6 +77,18 @@ var NAVTREE =
       [ "BitmapFont File Format (.dfont)", "guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont", null ],
       [ "Key Files", "guide-font-system.html#guide-font-system-key-files", null ]
     ] ],
+    [ "Hardware checklist", "guide-hardware-checklist.html", [
+      [ "Before you start", "guide-hardware-checklist.html#guide-hardware-checklist-before-you-start", null ],
+      [ "1. Build and flash", "guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash", null ],
+      [ "2. Every scene draws", "guide-hardware-checklist.html#guide-hardware-checklist-2-every-scene-draws", null ],
+      [ "3. Frame time", "guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time", null ],
+      [ "4. Partial present", "guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present", null ],
+      [ "5. Input", "guide-hardware-checklist.html#guide-hardware-checklist-5-input", null ],
+      [ "6. Storage", "guide-hardware-checklist.html#guide-hardware-checklist-6-storage", null ],
+      [ "7. Radios and sensors", "guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors", null ],
+      [ "8. Record the numbers", "guide-hardware-checklist.html#guide-hardware-checklist-8-record-the-numbers", null ],
+      [ "Past releases", "guide-hardware-checklist.html#guide-hardware-checklist-past-releases", null ]
+    ] ],
     [ "Languages", "guide-localization.html", [
       [ "Translating a table", "guide-localization.html#guide-localization-translating-a-table", null ],
       [ "Showing text in code", "guide-localization.html#guide-localization-showing-text-in-code", null ],
@@ -106,6 +118,13 @@ var NAVTREE =
       [ "Platform layer: <span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#guide-memory-platform-layer-imemoryprovider", null ],
       [ "The lint", "guide-memory.html#guide-memory-the-lint", null ]
     ] ],
+    [ "Making it fast", "guide-performance.html", [
+      [ "Start from a board", "guide-performance.html#guide-performance-start-from-a-board", null ],
+      [ "What chooses itself", "guide-performance.html#guide-performance-what-chooses-itself", null ],
+      [ "What a board sets", "guide-performance.html#guide-performance-what-a-board-sets", null ],
+      [ "Project settings worth knowing", "guide-performance.html#guide-performance-project-settings-worth-knowing", null ],
+      [ "Reading the numbers", "guide-performance.html#guide-performance-reading-the-numbers", null ]
+    ] ],
     [ "Platforms", "guide-platforms.html", [
       [ "What a platform is", "guide-platforms.html#guide-platforms-what-a-platform-is", null ],
       [ "Where the assets go", "guide-platforms.html#guide-platforms-where-the-assets-go", null ],
@@ -126,6 +145,24 @@ var NAVTREE =
       [ "Why shadow/ is a sibling of runtime/", "guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime", null ],
       [ "Structure version", "guide-project-layout.html#guide-project-layout-structure-version", null ]
     ] ],
+    [ "Releasing", "guide-releasing.html", [
+      [ "The promise to current users", "guide-releasing.html#guide-releasing-the-promise-to-current-users", null ],
+      [ "1. Choose the version", "guide-releasing.html#guide-releasing-1-choose-the-version", null ],
+      [ "2. Get every branch ready", "guide-releasing.html#guide-releasing-2-get-every-branch-ready", null ],
+      [ "3. Check it", "guide-releasing.html#guide-releasing-3-check-it", null ],
+      [ "4. Release, in this order", "guide-releasing.html#guide-releasing-4-release-in-this-order", [
+        [ "4.1 Each repo's branch onto master", "guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master", null ],
+        [ "4.2 The engine", "guide-releasing.html#guide-releasing-42-the-engine", null ],
+        [ "4.3 The editor", "guide-releasing.html#guide-releasing-43-the-editor", null ],
+        [ "4.4 The packages", "guide-releasing.html#guide-releasing-44-the-packages", null ],
+        [ "4.5 The registry", "guide-releasing.html#guide-releasing-45-the-registry", null ],
+        [ "4.6 The demo", "guide-releasing.html#guide-releasing-46-the-demo", null ],
+        [ "4.7 The docs and the site", "guide-releasing.html#guide-releasing-47-the-docs-and-the-site", null ],
+        [ "4.8 Clean up", "guide-releasing.html#guide-releasing-48-clean-up", null ]
+      ] ],
+      [ "5. Right after", "guide-releasing.html#guide-releasing-5-right-after", null ],
+      [ "If something is wrong", "guide-releasing.html#guide-releasing-if-something-is-wrong", null ]
+    ] ],
     [ "Screens", "guide-screens.html", [
       [ "The camera", "guide-screens.html#guide-screens-the-camera", null ],
       [ "What each screen sees", "guide-screens.html#guide-screens-what-each-screen-sees", null ],
@@ -133,6 +170,7 @@ var NAVTREE =
       [ "Recipes", "guide-screens.html#guide-screens-recipes", null ],
       [ "Previewing", "guide-screens.html#guide-screens-previewing", null ],
       [ "Colour formats", "guide-screens.html#guide-screens-colour-formats", null ],
+      [ "Size on the glass", "guide-screens.html#guide-screens-size-on-the-glass", null ],
       [ "On the device", "guide-screens.html#guide-screens-on-the-device", null ]
     ] ],
     [ "Sprite System", "guide-sprite-system.html", [
@@ -245,27 +283,28 @@ var NAVTREEINDEX =
 "_icons_tabler_8h.html#afb530605096f6ac0f03890f14c3a13a4",
 "class_deki_1_1_asset_lookup_table.html#a1c6a95c9119d341dbfd74feda9f7b736",
 "class_deki_1_1_component.html#a3e623a7b09cfcf41ece1a0dcdaa3e05b",
-"class_deki_1_1_file_system.html#a7a0abb35d829d9ad88e28b9a198232a1",
-"class_deki_1_1_i_power.html#a92934cb5d09494f4e0e81409431aa59fa21d01af167e6874b88ed5f6dc7c4b1e4",
-"class_deki_1_1_power.html#ad5bbcd657ca6b297a81e2cb159509cc6",
-"class_deki_1_1_texture2_d.html#a854b4817ac2d4b5297df6fb2bbe81119",
-"class_deki_editor_1_1_asset_pipeline.html#a9b08405d603c7da9c4ab6344bb343ccb",
-"class_deki_editor_1_1_custom_editor.html#a6b10312659483e34a1cfae52d1960a15",
-"class_deki_editor_1_1_editor_u_i.html",
-"class_deki_editor_1_1_editor_u_i.html#a75e8a62297b188ea46fa0abb481f2cce",
-"class_deki_editor_1_1_editor_u_i.html#afb67a1c061fea4b4c0b653f4d1b8fe3a",
-"class_deki_editor_1_1_i_target_builder.html#a6cb4109bb234c200293b0d3c037fb371",
-"dir_1ccdead0cdc9cc2d7d621e00675502e6.html",
-"namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a39bc2ae44b184207f560ff8619823208",
-"namespace_deki_editor.html#a108e930c2d2e29a6e3026f653469cf78",
-"namespace_deki_editor.html#afe5ad9b326ee62efb80f3c7be191005f",
-"struct_deki_1_1_component_meta.html#a403d77a5f678dd060d19a36223034910",
-"struct_deki_1_1_object_ref_base.html#ae2941fb59fade2a5f44ac1d0713a6066",
-"struct_deki_1_1_vector2.html#abbebb9f7793d055c9b5cac42463f3c98",
-"struct_deki_editor_1_1_build_strip_settings.html#a72a26166fff5ca658cfd38a9f1809254",
-"struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#a6f261dd6ddc2ec006d1e76d2ac5a4ec5",
-"struct_deki_editor_1_1_node_canvas_link.html#aca94ea3535d391ccfc211442abd0bf5c",
-"struct_deki_editor_1_1_strip_plan.html#a168f654941f44b3f964bbc4192431018"
+"class_deki_1_1_file_system.html",
+"class_deki_1_1_i_power.html#a242d0a8e614b52503115701fc5ceaa1f",
+"class_deki_1_1_platform_setup_component.html#a6a462f5ac38306e9c6e6aba8cb29397e",
+"class_deki_1_1_texture2_d.html#a4da6db9785c584a65272f71aeeaf7563",
+"class_deki_editor_1_1_asset_pipeline.html#a871ed5262974a8251915f2bd72eae866",
+"class_deki_editor_1_1_create_menu_registry.html#a6dc38de555e71007064c3da4567f6a15",
+"class_deki_editor_1_1_editor_settings.html#ab549b881ebb155b2aab86103dcf0ed79",
+"class_deki_editor_1_1_editor_u_i.html#a7026e84fab6d53d922b5ffe9d51cde25",
+"class_deki_editor_1_1_editor_u_i.html#af4e74a6ca78cd5982de8d23539f9865a",
+"class_deki_editor_1_1_i_target_builder.html#a546f3da237de043e0434338005d8ea72",
+"class_i_package_installer.html#aeb7aae4a203fc31c22a1b970b46d85e1",
+"guide-sprite-system.html#guide-sprite-system-assignment-in-editor",
+"namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6a8bd950a9d7779b83f5c30046c9aaf1cf",
+"namespace_deki_editor.html#ac6b7b960db42b2bfb7d256056d169705",
+"struct_deki_1_1_asset_ref.html#a724d2cc06e8ced268a5a2b51b2a5aef6",
+"struct_deki_1_1_memory_1_1_region.html#a9ef9a238cc10fb28377e43e4c128408c",
+"struct_deki_1_1_vector2.html#a299ee3accab5dc6b6afbc79ac9ab03c0",
+"struct_deki_editor_1_1_asset_type_handler.html#a693205cbda792688b3946ef77600801f",
+"struct_deki_editor_1_1_editor_u_i_1_1_enum_callbacks.html#a2d127176603c22203fd7b94742242ba2",
+"struct_deki_editor_1_1_node_canvas_events.html#a35e505f038b54fe7a7b9d83796172eba",
+"struct_deki_editor_1_1_scene_view_context.html#aa2bf0e5a1eb73081b858435004d17147",
+"struct_package_entry.html#ab27b5790a6d69efececf44ab97741157"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

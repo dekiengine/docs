@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['资源加载流程_0',['资源加载流程',['../guide-asset-system.html#guide-asset-system-asset-loading-flow',1,'']]],
-  ['资源放在哪里_1',['资源放在哪里',['../guide-platforms.html#guide-platforms-where-the-assets-go',1,'']]],
-  ['资源查找表（asset_5ftable_20bin）_2',['资源查找表（asset_table.bin）',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]],
-  ['资源系统_3',['资源系统',['../guide-asset-system.html',1,'']]]
+  ['的位置：_0',['调用 EnsureFontSizeBaked 的位置：',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]],
+  ['的位置_1',['生成确定性 GUID 的位置',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
+  ['的其余部分_2',['API 的其余部分',['../guide-memory.html#guide-memory-the-rest-of-the-api',1,'']]]
 ];

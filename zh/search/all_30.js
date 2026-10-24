@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['提供区域是开发板的职责_0',['提供区域是开发板的职责',['../guide-memory.html#guide-memory-serving-one-is-the-boards-job',1,'']]]
+  ['如何保持同步_0',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
 ];

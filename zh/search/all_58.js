@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['颜色格式_0',['颜色格式',['../guide-screens.html#guide-screens-colour-formats',1,'']]]
+  ['组件参考_0',['组件参考',['../engine-core.html#engine-component-reference',1,'']]],
+  ['组件_1',['组件',['../engine-core.html#engine-components',1,'']]]
 ];

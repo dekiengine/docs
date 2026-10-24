@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['去除它_0',['去除它',['../guide-memory.html#guide-memory-stripping-it',1,'']]]
+  ['version_0',['1. Choose the version',['../guide-releasing.html#guide-releasing-1-choose-the-version',1,'']]]
 ];

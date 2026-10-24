@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['放置只解析一次。没有回退。_0',['放置只解析一次。没有回退。',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['始终表示“要从磁盘加载的文件”_0',['规则：&lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt; 始终表示“要从磁盘加载的文件”',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]]
 ];

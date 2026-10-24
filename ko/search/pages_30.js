@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['매번_20직접_20고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]]
+  ['대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
 ];

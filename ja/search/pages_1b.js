@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['カメラ_0',['カメラ',['../guide-screens.html#guide-screens-the-camera',1,'']]],
-  ['カラーフォーマット_1',['カラーフォーマット',['../guide-screens.html#guide-screens-colour-formats',1,'']]]
+  ['wrong_0',['If something is wrong',['../guide-releasing.html#guide-releasing-if-something-is-wrong',1,'']]]
 ];

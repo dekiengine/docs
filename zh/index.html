@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.19.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
    </div>
    <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
   </td>
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
 <p>面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎，带有可视化编辑器。</p>
-<p>这里是引擎核心及其 C++ API。各个包的文档在包自己的站点上，链接见下文。所有内容都由代码生成（引擎 0.19.0）。</p>
+<p>这里是引擎核心及其 C++ API。各个包的文档在包自己的站点上，链接见下文。所有内容都由代码生成（引擎 0.20.2）。</p>
 <ul>
 <li><a href="engine-core.html">引擎核心</a>：引擎自身提供的组件和设置</li>
 <li><a href="settings.html">项目设置</a>：所有设置分区，按定义者列出</li>
@@ -161,10 +161,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <ul>
 <li><a href="guide-asset-system.html">资源系统</a></li>
 <li><a href="guide-font-system.html">字体系统</a></li>
+<li><a href="guide-hardware-checklist.html">Hardware checklist</a></li>
 <li><a href="guide-localization.html">语言</a></li>
 <li><a href="guide-memory.html">内存</a></li>
+<li><a href="guide-performance.html">提升速度</a></li>
 <li><a href="guide-platforms.html">平台</a></li>
 <li><a href="guide-project-layout.html">项目结构</a></li>
+<li><a href="guide-releasing.html">Releasing</a></li>
 <li><a href="guide-screens.html">屏幕</a></li>
 <li><a href="guide-sprite-system.html">精灵系统</a></li>
 <li><a href="guide-units.html">单位</a></li>
@@ -186,41 +189,45 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-desktop-integration/zh/">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">桌面平台 HAL：为桌面构建提供内存和文件系统提供者。  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-display/zh/">deki-display</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Deki 自己的显示库。驱动大多数爱好者开发板使用的屏幕，读取它们的触摸，并完整地发送每一帧。  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-esp32-integration/zh/">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">ESP32 平台 HAL：通过 ESP-IDF SDMMC 使用 SD 卡、FATFS 文件系统、串口命令，以及内存和文件系统的设置。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-fsm/zh/">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">可视化状态机。在画布上布置状态、分组和转换，每个状态内部有一条动作流。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gpio/zh/">deki-gpio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">数字引脚：驱动引脚、读取引脚、对引脚的脉冲计数。另有一个为开发板外设上电的启动步骤。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gps/zh/">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS 外设。通过 UART 读取任意发送端（talker）的 NMEA，自行找出接收器的通信速率，并报告卫星和海拔。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-http/zh/">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP 客户端。桌面上是基于 WinHTTP 的同步 GET。嵌入式开发板使用自己的网络协议栈。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2c/zh/">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C 总线支持。在开发板上配置一次总线，外设包（RTC、IMU、触摸）共用它。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2s/zh/">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">I²S 总线支持，用于 MAX98357 D 类功放等数字音频外设。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-imu/zh/">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">6 轴 IMU（加速度计 + 陀螺仪），带硬件计步器。通过 I²C 连接 LSM6DS3。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-input/zh/">deki-input</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">输入分发和碰撞检测。将指针/触摸/按键事件分发给需要它们的组件。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-json/zh/">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">为运行时需要 JSON 的包提供 JSON 解析。嵌入式上封装 ESP-IDF 的 cJSON；桌面上使用等效实现。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lora/zh/">deki-lora</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">LoRa 射频。Semtech SX1262 驱动，收发数据包，内置占空比限制。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/zh/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">通过 LovyanGFX 1.2.19 实现嵌入式显示和触摸。驱动常见的 SPI/并口 TFT 屏和 FT6336U 电容触摸面板。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/zh/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">节点图画布：编辑器窗口、撤销、域和节点注册，不对节点的含义做任何假定。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/zh/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">模块化粒子系统：点/圆/矩形发射形状、重力、阻力、初速度，以及生命周期/大小/颜色/旋转修改器。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/zh/">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">核心渲染管线：相机、渲染系统、标准 2D 渲染器、QuadBlit、渲染通道和排序。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/zh/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">实时时钟外设。通过场景组件读写实际时间，后端为 DS3231（I²C）。  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/zh/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD 卡支持。挂载 SD 卡，让资源管理器在运行时从中流式读取。  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/zh/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">实时时钟外设。通过场景组件读写实际时间，后端为 DS3231（I²C）。  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/zh/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD 卡支持。挂载 SD 卡，让资源管理器在运行时从中流式读取。  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/zh/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">基于 SDL3（3.2.8）的桌面显示、输入和文件系统。  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-spi/zh/">deki-spi</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SPI 总线及其设备。一个启动步骤只启动一次总线，显示屏、SD 卡和无线模块共用它。  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/zh/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">让 Deki 游戏作为应用运行在 Tactility（面向 ESP32 开发板的操作系统）中，而不是作为占据整个设备的固件。  </td></tr>
 <tr class="markdownTableRowOdd">

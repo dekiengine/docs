@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['screenanchor_0',['ScreenAnchor',['../engine-core.html#engine-screenanchor',1,'']]],
-  ['setupcomponent_1',['SetupComponent',['../engine-core.html#engine-setupcomponent',1,'']]],
-  ['shadow_20가_20runtime_20과_20나란히_20있는_20이유_2',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
-  ['si를_20쓰지_20않으며_20그래도_20괜찮습니다_3',['데이터시트는 SI를 쓰지 않으며, 그래도 괜찮습니다',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]],
-  ['source_4',['이중 필드 패턴 (guid와 source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]],
-  ['source_20프레임인_20이유_5',['guid = 부모, source = 프레임인 이유',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]],
-  ['sourcesize_20청크_20타입_204_6',['SourceSize 청크 (타입 4)',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]],
-  ['sprite_20청크_20타입_201_7',['Sprite 청크 (타입 1)',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
-  ['std_3a_3astring_20일반_20new_8',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;, &lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt;, 일반 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new',1,'']]],
-  ['std_3a_3avector_20std_3a_3astring_20일반_20new_9',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;, &lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt;, 일반 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new',1,'']]],
-  ['subasset_20생성_10',['SubAsset 생성',['../guide-sprite-system.html#guide-sprite-system-subasset-generation',1,'']]]
+  ['get_20every_20branch_20ready_0',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
+  ['guid가_20동기화되는_20방식_1',['font.guid가 동기화되는 방식',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
+  ['guid는_20항상_20디스크에서_20로드할_20파일_2',['규칙: &lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt;는 항상 &quot;디스크에서 로드할 파일&quot;',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]],
+  ['guid를_20생성하는_20곳_3',['결정적 GUID를 생성하는 곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
+  ['guid와_20source_4',['이중 필드 패턴 (guid와 source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]],
+  ['guid_20등록_20에디터_5',['GUID 등록 (에디터)',['../guide-sprite-system.html#guide-sprite-system-guid-registration-editor',1,'']]],
+  ['guid_20부모_20source_20프레임인_20이유_6',['guid = 부모, source = 프레임인 이유',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]],
+  ['guid_20생성_7',['GUID 생성',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'결정적 GUID 생성'],['../guide-font-system.html#guide-font-system-guid-generation',1,'GUID 생성'],['../guide-sprite-system.html#guide-sprite-system-guid-generation',1,'GUID 생성']]]
 ];

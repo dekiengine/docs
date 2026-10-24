@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['컴포넌트_0',['컴포넌트',['../engine-core.html#engine-components',1,'']]],
-  ['컴포넌트_20레퍼런스_1',['컴포넌트 레퍼런스',['../engine-core.html#engine-component-reference',1,'']]]
+  ['자동으로_20정해지는_20것_0',['자동으로 정해지는 것',['../guide-performance.html#guide-performance-what-chooses-itself',1,'']]]
 ];

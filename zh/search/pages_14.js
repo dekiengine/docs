@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['位）_0',['哈希函数（FNV-1a 32 位）',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]]
+  ['onto_20master_0',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
+  ['order_1',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]]
 ];

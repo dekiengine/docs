@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ガイド_0',['ガイド',['../index.html#guides',1,'']]]
+  ['you_20start_0',['Before you start',['../guide-hardware-checklist.html#guide-hardware-checklist-before-you-start',1,'']]]
 ];

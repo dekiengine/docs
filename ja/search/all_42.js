@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['画面に固定する_0',['画面に固定する',['../guide-screens.html#guide-screens-pinning-to-the-screen',1,'']]],
-  ['画面_1',['画面',['../guide-screens.html',1,'']]]
+  ['回で決まる。フォールバックはない_0',['配置は 1 回で決まる。フォールバックはない',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['スプライトとフォントが異なる理由_0',['スプライトとフォントが異なる理由',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
-  ['スプライトの_20assetref_20フィールド_1',['スプライトの AssetRef フィールド',['../guide-sprite-system.html#guide-sprite-system-assetref-fields-for-sprites',1,'']]],
-  ['スプライトシステム_2',['スプライトシステム',['../guide-sprite-system.html',1,'']]]
+  ['と同じ階層にある理由_0',['shadow/ が runtime/ と同じ階層にある理由',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
+  ['と_20source_1',['二重フィールドのパターン (guid と source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]]
 ];

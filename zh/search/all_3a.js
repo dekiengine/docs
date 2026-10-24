@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['检查_0',['lint 检查',['../guide-memory.html#guide-memory-the-lint',1,'']]]
+  ['开发板需要设置的内容_0',['开发板需要设置的内容',['../guide-performance.html#guide-performance-what-a-board-sets',1,'']]]
 ];
