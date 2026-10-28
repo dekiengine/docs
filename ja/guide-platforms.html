@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -187,11 +187,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platform
 アセットの置き場所</h1>
 <p>ビルドはゲームのアセットを 2 つの場所のどちらかに置きます。</p>
 <ul>
-<li><b>内部ストレージ</b> (デフォルト): デバイスの一部です。ビルドがアセットを持ち、ブートシーンの隣の <span class="tt">assets/</span> (実行時は <span class="tt">F:/assets/</span>) に置きます。ESP32 ではフラッシュがこれにあたります。データパーティションがチップの残りを使い (16 MB のボードで約 13 MB)、ゲームが収まらなければビルドは失敗します。デスクトップシミュレーターと Tactility のアプリも同じように動作します。</li>
+<li><b>内部ストレージ</b> (デフォルト): デバイスの一部です。ビルドがアセットを持ち、ブートシーンの隣の <span class="tt">assets/</span> (実行時は <span class="tt">F:/assets/</span>) に置きます。ESP32 ではフラッシュがこれにあたります。ゲームのデータは 1 つのイメージにまとめられ、ボードはそれをその場で読むので、ファイルの検索は数マイクロ秒で済みます。ユーザーデータを除くチップの残りを使い (16 MB のボードで約 12 MB)、ゲームが収まらなければビルドは失敗します。デスクトップシミュレーターと Tactility のアプリも同じ場所にアセットを置きます。</li>
 <li><b>外部ストレージ</b>: 取り外し可能な SD カードです。ビルドが持つのはブートシーンと <span class="tt">project_data.bin</span> だけです。<b>SD カードへのデプロイ</b> パネルがアセットをカードにコピーし、カードがマウントされるとカードのストレージパッケージがそれらを読み込みます (<span class="tt">S:/</span>)。</li>
 </ul>
 <p>外部を選べるのは、<span class="tt">external-storage</span> を <span class="tt">provides</span> するプラットフォームだけです。プラットフォームエディターは、そのようなプラットフォームにだけこの選択肢 (<b>ストレージ &gt; アセットの保存先</b>) を表示します。外部は、フラッシュに収まらないほど大きいゲームにだけ選んでください。外部ストレージを選んでスロットにカードがなければ、ゲームにはアセットがありません。LilyGO T-Deck Plus は選択できますが、指定しない限りアセットはフラッシュに置かれます。</p>
 <p><span class="tt">project_data.bin</span> がこの選択を記録するので、エンジンはどこを探せばよいかわかります。</p>
+<h2 class="doxsection"><a class="anchor" id="guide-platforms-files-the-game-writes"></a>
+ゲームが書き込むファイル</h2>
+<p>ゲームはセーブなど自分のファイルも <span class="tt">F:/</span> に書き込みます (<span class="tt">F:/save.bin</span>)。ESP32 では、フラッシュの末尾にあるユーザーデータパーティションに入ります (16 MB のボードで 1 MB、8 MB で 512 KB、4 MB で 128 KB)。新しいビルドを書き込んでもここには触れないので、セーブはアップデート後も残ります。ゲーム自身のデータは書き込まれません。そのファイルを書き込み用に開くと失敗し、理由がログに出ます。 デスクトップシミュレーターではその隣の <span class="tt">userdata/</span> に、Tactility のアプリではアプリのユーザーデータ内の <span class="tt">internal/</span> に、同じ決まりで入ります。</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-simulating-a-board"></a>
 ボードをシミュレートする</h1>
 <p>バックエンドにシミュレーターがあるボード (ESP32 や ESP32-S3 では QEMU) は、シミュレーター上で動くようにビルドできます。ビルドパネルで <b>QEMU でシミュレート</b> にチェックを入れ、ビルドしてから <b>実行</b> します。コマンドラインからは次のようにします。</p>

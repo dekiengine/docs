@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['청크_20타입_201_0',['Sprite 청크 (타입 1)',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
-  ['청크_20타입_202_1',['FrameList 청크 (타입 2)',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
-  ['청크_20타입_204_2',['SourceSize 청크 (타입 4)',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]]
+  ['직접_20고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
+  ['직접_20추가할_20수_20있습니다_1',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['种子格式（绝对不要更改）_0',['种子格式（绝对不要更改）',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['看懂数字_0',['看懂数字',['../guide-performance.html#guide-performance-reading-the-numbers',1,'']]]
 ];

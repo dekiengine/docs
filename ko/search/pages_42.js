@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['바뀔_20때_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime',1,'']]]
+  ['미리보기_0',['미리보기',['../guide-screens.html#autotoc_md4',1,'']]],
+  ['미리보기_20모드_20에디터_20전용_1',['미리보기 모드 (에디터 전용)',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]]
 ];

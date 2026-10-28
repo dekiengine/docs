@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['항상_20디스크에서_20로드할_20파일_0',['규칙: &lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt;는 항상 &quot;디스크에서 로드할 파일&quot;',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]]
+  ['한_20번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
 ];

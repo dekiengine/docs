@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['组件参考_0',['组件参考',['../engine-core.html#engine-component-reference',1,'']]],
-  ['组件_1',['组件',['../engine-core.html#engine-components',1,'']]]
+  ['种子格式（绝对不要更改）_0',['种子格式（绝对不要更改）',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
 ];

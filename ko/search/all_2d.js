@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['놓이는_20곳_0',['에셋이 놓이는 곳',['../guide-platforms.html#guide-platforms-where-the-assets-go',1,'']]]
+  ['나란히_20있는_20이유_0',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
+  ['나머지_20api_1',['나머지 API',['../guide-memory.html#guide-memory-the-rest-of-the-api',1,'']]]
 ];

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -306,6 +306,8 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:acfcbbcee26213394d590a174db83fbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by ProcessAsset for the extensions it is registered for.  <br /></td></tr>
 <tr class="memitem:a9acda1ed4f943d71cfe2cced8dfda57c" id="r_a9acda1ed4f943d71cfe2cced8dfda57c"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a> = std::function&lt;bool(const <a class="el" href="struct_deki_editor_1_1_asset_export_context.html">AssetExportContext</a>&amp; ctx)&gt;</td></tr>
 <tr class="memdesc:a9acda1ed4f943d71cfe2cced8dfda57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an asset the way a given target stores it.  <br /></td></tr>
+<tr class="memitem:ae082f09529208fe90840be48c6282da7" id="r_ae082f09529208fe90840be48c6282da7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ae082f09529208fe90840be48c6282da7">AssetDependencyReporter</a></td></tr>
+<tr class="memdesc:ae082f09529208fe90840be48c6282da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists, by GUID, the assets an asset uses that a scene does not name: a tilemap's tilesets, a tileset's image.  <br /></td></tr>
 <tr class="memitem:af8aa323fd48862ba7ab9aa36155abac7" id="r_af8aa323fd48862ba7ab9aa36155abac7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af8aa323fd48862ba7ab9aa36155abac7">DownloadProgressCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_download_progress.html">DownloadProgress</a>&amp;)&gt;</td></tr>
 <tr class="memitem:a2322b9ebd0b9ae159d225a2b4294465e" id="r_a2322b9ebd0b9ae159d225a2b4294465e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a2322b9ebd0b9ae159d225a2b4294465e">VersionCheckCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_toolchain_version_info.html">ToolchainVersionInfo</a>&amp;)&gt;</td></tr>
 <tr class="memitem:a102fc12c05cce32374d11e0fe46bf847" id="r_a102fc12c05cce32374d11e0fe46bf847"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a102fc12c05cce32374d11e0fe46bf847">BuildOutputCallback</a> = std::function&lt;void(const std::string&amp; line, bool isError)&gt;</td></tr>
@@ -744,6 +746,27 @@ Variables</h2></td></tr>
 
 <p>Writes an asset the way a given target stores it. </p>
 <p>Registered per extension by the package that owns the asset type, next to its cache handler. Returns false when it could not write outPath; the export then reports it and ships nothing for that asset. </p>
+
+</div>
+</div>
+<a id="ae082f09529208fe90840be48c6282da7" name="ae082f09529208fe90840be48c6282da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae082f09529208fe90840be48c6282da7">&#9670;&#160;</a></span>AssetDependencyReporter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ae082f09529208fe90840be48c6282da7">DekiEditor::AssetDependencyReporter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::function&lt;std::vector&lt;std::string&gt;(<span class="keyword">const</span> std::string&amp; absolutePath, <a class="code hl_class" href="class_deki_editor_1_1_asset_pipeline.html">AssetPipeline</a>* pipeline)&gt;</div>
+<div class="ttc" id="aclass_deki_editor_1_1_asset_pipeline_html"><div class="ttname"><a href="class_deki_editor_1_1_asset_pipeline.html">DekiEditor::AssetPipeline</a></div><div class="ttdoc">The asset import pipeline, like Unity&#39;s: finds assets, gives them GUIDs and compiles them into the ca...</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:121</div></div>
+</div><!-- fragment -->
+<p>Lists, by GUID, the assets an asset uses that a scene does not name: a tilemap's tilesets, a tileset's image. </p>
+<p>A build ships them with it; without them the asset loads on a device and draws nothing.</p>
+<p>Registered per extension by the package that owns the asset type, next to its cache handler. Given the asset's absolute path. </p>
 
 </div>
 </div>

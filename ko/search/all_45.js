@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['배치는_20한_20번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['방식_0',['font.guid가 동기화되는 방식',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
 ];

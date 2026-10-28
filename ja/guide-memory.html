@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -264,6 +264,11 @@ API のその他の部分</h1>
 <li><span class="tt">LogStats(label)</span> は「どれだけメモリを使っているか」に 1 回の呼び出しで答えます。デバッグビルドでは、現在の確保数とピーク時の確保数も報告します。呼ばない限りコストはかかりません。</li>
 <li><span class="tt">GetStats()</span> は同じ数値を構造体で返します。<span class="tt">GetAvailableInternal()</span> と <span class="tt">GetAvailablePSRAM()</span> は空き容量を返します。<span class="tt">IsPSRAMAvailable()</span> は外部の領域がそもそもあるかどうかを返します。これらはどれも、自分でメモリを配置してよいという許可ではありません。プロジェクトの規模を決めるためと、解放すべきメモリを持ち続けているものを見つけるためのものです。</li>
 </ul>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-changing-scenes"></a>
+シーンの切り替え</h2>
+<div class="fragment"><div class="line">Deki::Engine::GetInstance().OpenScene(nextScene);  <span class="comment">// AssetRef&lt;Scene&gt;</span></div>
+</div><!-- fragment --><p><span class="tt">OpenScene</span> は、フレームの終わりに、離れるシーンを解放してから次のシーンを読み込むので、2 つが同時にメモリに載ることはありません。次のシーンを自分で読み込んで <span class="tt">SetRootScene</span> を呼ぶと両方を抱えることになり、T-Deck Plus でデモのメニューから草原へそうして移ると、内部 RAM の残りは 16 バイトでした。存在しないシーンは開かれず、ゲームは今のシーンにとどまります。</p>
+<p>デバイスではその後、離れたシーンだけが使っていたアセット (スプライト、フォント、アニメーション) を解放するので、ゲームのメモリは訪れたすべてのシーンではなく、今のシーンが必要とする分になります。多くのオブジェクトを取り除いた後に同じことをするには <span class="tt">Engine::ReleaseUnusedAssets()</span> を呼びます。生きているオブジェクトのコンポーネントの <span class="tt">AssetRef</span> フィールドが指している間、アセットは残ります。アセットは <span class="tt">AssetRef</span> で持ってください。それ以外で持たれた <span class="tt">AssetRef</span> は次に求められたときに読み込み直しますが、<span class="tt">Get()</span> で得た生のポインタをフレームをまたいで持つと、そのアセットを使うものがある間しか有効ではありません。</p>
 <h1 class="doxsection"><a class="anchor" id="guide-memory-alloccontext---the-label-writes-itself"></a>
 <span class="tt">AllocContext</span> - ラベルは自動で書かれる</h1>
 <p>確保を行う呼び出しはすべてこれを受け取りますが、ほとんど誰も書きません。</p>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['查明内存去了哪里_0',['查明内存去了哪里',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]]
+  ['来源：编辑、更新、恢复_0',['来源：编辑、更新、恢复',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

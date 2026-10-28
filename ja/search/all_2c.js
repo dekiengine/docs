@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['スプライトとフォントが異なる理由_0',['スプライトとフォントが異なる理由',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
-  ['スプライトの_20assetref_20フィールド_1',['スプライトの AssetRef フィールド',['../guide-sprite-system.html#guide-sprite-system-assetref-fields-for-sprites',1,'']]],
-  ['スプライトシステム_2',['スプライトシステム',['../guide-sprite-system.html',1,'']]]
+  ['シードの形式_20絶対に変更しないでください_0',['シードの形式 (絶対に変更しないでください)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]],
+  ['シーンの切り替え_1',['シーンの切り替え',['../guide-memory.html#guide-memory-changing-scenes',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ハッシュ関数_20fnv_201a_2032_20ビット_0',['ハッシュ関数 (FNV-1a 32 ビット)',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]]
+  ['デバイス上では_0',['デバイス上では',['../guide-screens.html#autotoc_md6',1,'']]],
+  ['データシートは_20si_20を使わないが、それで問題ない_1',['データシートは SI を使わないが、それで問題ない',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]]
 ];

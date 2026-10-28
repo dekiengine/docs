@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['설정하는_20것_0',['보드에서 설정하는 것',['../guide-performance.html#guide-performance-what-a-board-sets',1,'']]],
-  ['설정_1',['설정',['../engine-core.html#engine-units-settings',1,'단위 설정'],['../settings.html#settings-units-settings',1,'단위 설정'],['../guide-performance.html#guide-performance-project-settings-worth-knowing',1,'알아 두면 좋은 프로젝트 설정'],['../engine-core.html#engine-core-settings',1,'코어 설정'],['../settings.html#settings-core-settings',1,'코어 설정'],['../settings.html',1,'프로젝트 설정'],['../engine-core.html#engine-project-settings',1,'프로젝트 설정']]]
+  ['생성된_20resolveobjectrefs_0',['생성된 ResolveObjectRefs',['../guide-sprite-system.html#guide-sprite-system-generated-resolveobjectrefs',1,'']]],
+  ['생성하는_20곳_1',['결정적 GUID를 생성하는 곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
+  ['생성_2',['생성',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'결정적 GUID 생성'],['../guide-font-system.html#guide-font-system-guid-generation',1,'GUID 생성'],['../guide-sprite-system.html#guide-sprite-system-guid-generation',1,'GUID 생성'],['../guide-sprite-system.html#guide-sprite-system-subasset-generation',1,'SubAsset 생성']]],
+  ['생성_20코드_20패턴_3',['생성 코드 패턴',['../guide-asset-system.html#guide-asset-system-generated-code-pattern',1,'']]]
 ];

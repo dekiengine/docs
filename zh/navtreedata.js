@@ -82,7 +82,7 @@ var NAVTREE =
       [ "1. Build and flash", "guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash", null ],
       [ "2. Every scene draws", "guide-hardware-checklist.html#guide-hardware-checklist-2-every-scene-draws", null ],
       [ "3. Frame time", "guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time", null ],
-      [ "4. Partial present", "guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present", null ],
+      [ "4. Redrawing only what changed", "guide-hardware-checklist.html#guide-hardware-checklist-4-redrawing-only-what-changed", null ],
       [ "5. Input", "guide-hardware-checklist.html#guide-hardware-checklist-5-input", null ],
       [ "6. Storage", "guide-hardware-checklist.html#guide-hardware-checklist-6-storage", null ],
       [ "7. Radios and sensors", "guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors", null ],
@@ -107,7 +107,8 @@ var NAVTREE =
         [ "放置只解析一次。没有回退。", "guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback", null ]
       ] ],
       [ "API 的其余部分", "guide-memory.html#guide-memory-the-rest-of-the-api", [
-        [ "查明内存去了哪里", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ]
+        [ "查明内存去了哪里", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ],
+        [ "切换场景", "guide-memory.html#guide-memory-changing-scenes", null ]
       ] ],
       [ "<span class=\"tt\">AllocContext</span> - 标签自动生成", "guide-memory.html#guide-memory-alloccontext---the-label-writes-itself", [
         [ "去除它", "guide-memory.html#guide-memory-stripping-it", null ]
@@ -127,7 +128,9 @@ var NAVTREE =
     ] ],
     [ "平台", "guide-platforms.html", [
       [ "平台是什么", "guide-platforms.html#guide-platforms-what-a-platform-is", null ],
-      [ "资源放在哪里", "guide-platforms.html#guide-platforms-where-the-assets-go", null ],
+      [ "资源放在哪里", "guide-platforms.html#guide-platforms-where-the-assets-go", [
+        [ "游戏写入的文件", "guide-platforms.html#guide-platforms-files-the-game-writes", null ]
+      ] ],
       [ "模拟开发板", "guide-platforms.html#guide-platforms-simulating-a-board", null ],
       [ "平台从哪里来", "guide-platforms.html#guide-platforms-where-platforms-come-from", null ],
       [ "在包中附带开发板", "guide-platforms.html#guide-platforms-shipping-boards-in-a-package", [

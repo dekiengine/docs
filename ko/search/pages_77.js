@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['지연_20로딩_0',['지연 로딩',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]],
-  ['지정_1',['에디터에서의 지정',['../guide-sprite-system.html#guide-sprite-system-assignment-in-editor',1,'']]]
+  ['좋은_20프로젝트_20설정_0',['알아 두면 좋은 프로젝트 설정',['../guide-performance.html#guide-performance-project-settings-worth-knowing',1,'']]]
 ];

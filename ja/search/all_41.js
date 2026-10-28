@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['各画面に映る範囲_0',['各画面に映る範囲',['../guide-screens.html#autotoc_md1',1,'']]]
+  ['取り除く_0',['取り除く',['../guide-memory.html#guide-memory-stripping-it',1,'']]]
 ];

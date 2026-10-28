@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['단위_0',['단위',['../guide-units.html',1,'']]],
-  ['단위_20설정_1',['단위 설정',['../engine-core.html#engine-units-settings',1,'단위 설정'],['../settings.html#settings-units-settings',1,'단위 설정']]],
-  ['단위_20추가하기_2',['프로퍼티에 단위 추가하기',['../guide-units.html#guide-units-adding-a-unit-to-a-property',1,'']]]
+  ['다른_20이유_0',['스프라이트와 폰트가 다른 이유',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
+  ['다른_20패키지가_20필요한_20기능_1',['다른 패키지가 필요한 기능',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
 ];

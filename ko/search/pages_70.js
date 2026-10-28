@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['절대_20변경하지_20마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['저장되는_20것_0',['저장되는 것',['../guide-units.html#guide-units-what-is-stored',1,'']]],
+  ['저절로_20작성됩니다_1',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - 레이블은 저절로 작성됩니다',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'']]]
 ];

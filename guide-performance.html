@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -169,7 +169,7 @@ What chooses itself</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Whole frames or strips  </td><td class="markdownTableBodyNone">Whole frames when the framebuffer fits in internal RAM with room to spare; strips when it does not. Strips are drawn into internal RAM a few rows or columns at a time, which is much faster than drawing a whole frame in PSRAM. (Rendering settings, <span class="tt">frameMode</span>.)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Sending from the other core  </td><td class="markdownTableBodyNone">On a dual-core chip with the memory for two frame copies, each frame is sent while the next is drawn. Otherwise frames are sent as they are drawn. (<span class="tt">asyncPresent</span>, on.)  </td></tr>
+<td class="markdownTableBodyNone">Sending from the other core  </td><td class="markdownTableBodyNone">On a dual-core chip with the memory for two frame copies, each frame is sent while the next is drawn. Otherwise frames are sent as they are drawn. (<span class="tt">asyncPresent</span>, on.) The sender runs on the core the game does not, at priority 5, and takes about 1% of it when little moves and up to 20% (T-Display S3) or 40% (T-Deck Plus) when most of the screen changes. A task of your own on that core above priority 5 runs first; turn <span class="tt">asyncPresent</span> off when the game needs that whole core.  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Tearing  </td><td class="markdownTableBodyNone">With a TE line wired (<span class="tt">tePin</span>), frames follow the panel's refresh signal. Without one, the panel's scanline is read back instead (<span class="tt">scanlineSync</span>, on). A panel that cannot be read back is sent as drawn, and can tear.  </td></tr>
 </table>
@@ -196,7 +196,7 @@ Project settings worth knowing</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Setting  </th><th class="markdownTableHeadNone">When to change it  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">dirtyTileTracking</span>  </td><td class="markdownTableBodyNone">On when most of the screen stays still and nothing is drawn over the whole screen every frame (a full-screen background is). Then only what changed is sent.  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">redrawChanges</span>  </td><td class="markdownTableBodyNone">On when most of the screen stays still. Then each frame draws and sends only what changed, and a frame where most of the screen changes is drawn whole as usual.  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">bandRows</span>  </td><td class="markdownTableBodyNone">The size of a strip. Bigger strips walk the scene fewer times but take more internal RAM. 40 suits most screens.  </td></tr>
 <tr class="markdownTableRowOdd">

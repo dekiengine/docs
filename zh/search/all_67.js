@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['预览模式（仅限编辑器）_0',['预览模式（仅限编辑器）',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
-  ['预览_1',['预览',['../guide-screens.html#autotoc_md4',1,'']]]
+  ['需要其他包的功能_0',['需要其他包的功能',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
 ];

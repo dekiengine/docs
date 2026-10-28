@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -161,6 +161,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a99bf3ed57e2b19d309a896c4351f2cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call once at engine startup.  <br /></td></tr>
 <tr class="memitem:afefa10aef6d5c80c1922c7ea60db0236" id="r_afefa10aef6d5c80c1922c7ea60db0236"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#afefa10aef6d5c80c1922c7ea60db0236">GetTime</a> ()</td></tr>
 <tr class="memdesc:afefa10aef6d5c80c1922c7ea60db0236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Milliseconds since <a class="el" href="#a99bf3ed57e2b19d309a896c4351f2cb9" title="Call once at engine startup.">Initialize()</a>.  <br /></td></tr>
+<tr class="memitem:aacef2380aba401d69ee6afd968fce376" id="r_aacef2380aba401d69ee6afd968fce376"><td class="memItemLeft">static uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#aacef2380aba401d69ee6afd968fce376">GetTimeUs</a> ()</td></tr>
+<tr class="memdesc:aacef2380aba401d69ee6afd968fce376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microseconds on the platform's clock, for timing frames finer than a millisecond.  <br /></td></tr>
 <tr class="memitem:afba1330257f3b6e4e0ddb81b79db6bbf" id="r_afba1330257f3b6e4e0ddb81b79db6bbf"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#afba1330257f3b6e4e0ddb81b79db6bbf">GetElapsed</a> (uint32_t previousTime)</td></tr>
 <tr class="memdesc:afba1330257f3b6e4e0ddb81b79db6bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Milliseconds since <span class="tt">previousTime</span>, a value from <a class="el" href="#afefa10aef6d5c80c1922c7ea60db0236" title="Milliseconds since Initialize().">GetTime()</a>.  <br /></td></tr>
 <tr class="memitem:a07035628d9301312cf8ef2183b30949f" id="r_a07035628d9301312cf8ef2183b30949f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a07035628d9301312cf8ef2183b30949f">Update</a> (uint32_t deltaTime)</td></tr>
@@ -236,6 +238,34 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Milliseconds since <a class="el" href="#a99bf3ed57e2b19d309a896c4351f2cb9" title="Call once at engine startup.">Initialize()</a>. </p>
+
+</div>
+</div>
+<a id="aacef2380aba401d69ee6afd968fce376" name="aacef2380aba401d69ee6afd968fce376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacef2380aba401d69ee6afd968fce376">&#9670;&#160;</a></span>GetTimeUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Deki::Time::GetTimeUs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Microseconds on the platform's clock, for timing frames finer than a millisecond. </p>
+<p>Only differences between two readings mean anything. </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['린트_0',['린트',['../guide-memory.html#guide-memory-the-lint',1,'']]]
 ];

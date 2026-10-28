@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['계층_3a_20imemoryprovider_0',['플랫폼 계층: &lt;span class=&quot;tt&quot;&gt;IMemoryProvider&lt;/span&gt;',['../guide-memory.html#guide-memory-platform-layer-imemoryprovider',1,'']]]
+  ['경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
 ];

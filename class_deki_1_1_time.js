@@ -2,6 +2,7 @@ var class_deki_1_1_time =
 [
     [ "Initialize", "class_deki_1_1_time.html#a99bf3ed57e2b19d309a896c4351f2cb9", null ],
     [ "GetTime", "class_deki_1_1_time.html#afefa10aef6d5c80c1922c7ea60db0236", null ],
+    [ "GetTimeUs", "class_deki_1_1_time.html#aacef2380aba401d69ee6afd968fce376", null ],
     [ "GetElapsed", "class_deki_1_1_time.html#afba1330257f3b6e4e0ddb81b79db6bbf", null ],
     [ "Update", "class_deki_1_1_time.html#a07035628d9301312cf8ef2183b30949f", null ],
     [ "GetDeltaTime", "class_deki_1_1_time.html#a3c6da08c95beccde2e5947c958757953", null ],

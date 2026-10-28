@@ -11,6 +11,7 @@ var dir_49626dee8e15c7505eec6dc01cafd456 =
     [ "ComponentInterfaceAdapters.h", "_component_interface_adapters_8h.html", "_component_interface_adapters_8h" ],
     [ "Engine.h", "_engine_8h.html", "_engine_8h" ],
     [ "Export.h", "_export_8h.html", "_export_8h" ],
+    [ "FileImage.h", "_file_image_8h.html", "_file_image_8h" ],
     [ "FPSCounter.h", "_f_p_s_counter_8h.html", "_f_p_s_counter_8h" ],
     [ "Guid.h", "_guid_8h.html", "_guid_8h" ],
     [ "ICamera.h", "_i_camera_8h.html", "_i_camera_8h" ],

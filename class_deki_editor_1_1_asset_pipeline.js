@@ -16,6 +16,8 @@ var class_deki_editor_1_1_asset_pipeline =
     [ "RegisterCacheHandler", "class_deki_editor_1_1_asset_pipeline.html#a3d24f13761f8874a814474753e159674", null ],
     [ "RegisterExportEncoder", "class_deki_editor_1_1_asset_pipeline.html#afd5734ec7c058997598cfdc13aba9195", null ],
     [ "FindExportEncoder", "class_deki_editor_1_1_asset_pipeline.html#ab4aead5ad4d18931ebe24614e816a9e9", null ],
+    [ "RegisterDependencyReporter", "class_deki_editor_1_1_asset_pipeline.html#a9b721dbe73942ba83014132965c76193", null ],
+    [ "FindDependencyReporter", "class_deki_editor_1_1_asset_pipeline.html#af86192568a16c904576ad122e79eaf24", null ],
     [ "SetEditorTarget", "class_deki_editor_1_1_asset_pipeline.html#a5a6af76e2f1a97aee9d47c30f3fca8e1", null ],
     [ "IsRunning", "class_deki_editor_1_1_asset_pipeline.html#a5b735b30bfb35d982255c46a35c6bef7", null ],
     [ "GetEditorTarget", "class_deki_editor_1_1_asset_pipeline.html#ab4b49482b2aa45262fad15377e0a2336", null ],

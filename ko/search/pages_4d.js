@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['비교_3a_20폰트와_20스프라이트_0',['비교: 폰트와 스프라이트',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]]
+  ['부모_20source_20프레임인_20이유_0',['guid = 부모, source = 프레임인 이유',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
 ];

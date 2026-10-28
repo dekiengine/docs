@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['采用：项目获得一份副本_0',['采用：项目获得一份副本',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]]
+  ['调用_20ensurefontsizebaked_20的位置：_0',['调用 EnsureFontSizeBaked 的位置：',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]]
 ];

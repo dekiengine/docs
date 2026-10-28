@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['데이터시트는_20si를_20쓰지_20않으며_20그래도_20괜찮습니다_0',['데이터시트는 SI를 쓰지 않으며, 그래도 괜찮습니다',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]],
-  ['데이터_20레지스트리_1',['프레임 데이터 레지스트리',['../guide-sprite-system.html#guide-sprite-system-frame-data-registry',1,'']]]
+  ['대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
 ];

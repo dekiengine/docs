@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -273,6 +273,13 @@ Finding out where the memory went</h2>
 <li><span class="tt">LogStats(label)</span> answers "how much memory am I using?" in one call. In a debug build it also reports the live and peak allocation counts. It costs nothing unless called.</li>
 <li><span class="tt">GetStats()</span> returns the same numbers as a struct; <span class="tt">GetAvailableInternal()</span> and <span class="tt">GetAvailablePSRAM()</span> give the free side. <span class="tt">IsPSRAMAvailable()</span> says whether there is an external region at all. None of these is a licence to place memory yourself - they are for sizing a project and for finding what is holding memory it should have released.</li>
 </ul>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-changing-scenes"></a>
+Changing scenes</h2>
+<div class="fragment"><div class="line"><a class="code hl_function" href="class_deki_1_1_engine.html#a40915f4a293d3b18e9d4fc98b88f206b">Deki::Engine::GetInstance</a>().<a class="code hl_function" href="class_deki_1_1_engine.html#af5fca93ae3d9ec6de6f31cedd8137aac">OpenScene</a>(nextScene);  <span class="comment">// an AssetRef&lt;Scene&gt;</span></div>
+<div class="ttc" id="aclass_deki_1_1_engine_html_a40915f4a293d3b18e9d4fc98b88f206b"><div class="ttname"><a href="class_deki_1_1_engine.html#a40915f4a293d3b18e9d4fc98b88f206b">Deki::Engine::GetInstance</a></div><div class="ttdeci">static Engine &amp; GetInstance()</div></div>
+<div class="ttc" id="aclass_deki_1_1_engine_html_af5fca93ae3d9ec6de6f31cedd8137aac"><div class="ttname"><a href="class_deki_1_1_engine.html#af5fca93ae3d9ec6de6f31cedd8137aac">Deki::Engine::OpenScene</a></div><div class="ttdeci">void OpenScene(const AssetRefBase &amp;scene)</div><div class="ttdoc">Opens the scene scene refers to (an AssetRef&lt;Scene&gt;) once this frame&#39;s updates are done: the scene be...</div></div>
+</div><!-- fragment --><p><span class="tt">OpenScene</span> frees the scene being left before it loads the next one, at the end of the frame, so the two are never in memory at once. Loading the next scene yourself and calling <span class="tt">SetRootScene</span> holds both: on a T-Deck Plus, going from the demo's menu to its meadow that way left 16 bytes of internal RAM. A scene that does not exist is not opened, and the game stays where it is.</p>
+<p>On a device it then frees the assets (sprites, fonts, animations) that only the scene left used, so a game's memory is what its current scene needs, not every scene it has visited. Call <span class="tt">Engine::ReleaseUnusedAssets()</span> to do the same after removing many objects. An asset is kept while an <span class="tt">AssetRef</span> field of a component on a live object names it. Hold assets in <span class="tt">AssetRef</span>s: one held elsewhere loads its asset again when next asked, but a raw pointer from <span class="tt">Get()</span> kept across frames is only good while something still uses the asset.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-memory-alloccontext---the-label-writes-itself"></a>
 <span class="tt">AllocContext</span> - the label writes itself</h1>
 <p>Every allocating call takes one, and almost nobody writes one:</p>

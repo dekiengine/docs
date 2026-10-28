@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['부모_20source_20프레임인_20이유_0',['guid = 부모, source = 프레임인 이유',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
+  ['복구_0',['복구',['../guide-project-layout.html#guide-project-layout-recovery',1,'']]],
+  ['복원_1',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['로드할_20파일_0',['규칙: &lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt;는 항상 &quot;디스크에서 로드할 파일&quot;',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]],
-  ['로딩_1',['지연 로딩',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]],
-  ['로딩_20흐름_2',['에셋 로딩 흐름',['../guide-asset-system.html#guide-asset-system-asset-loading-flow',1,'']]]
+  ['레시피_0',['레시피',['../guide-screens.html#autotoc_md3',1,'']]],
+  ['레이블은_20저절로_20작성됩니다_1',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - 레이블은 저절로 작성됩니다',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'']]],
+  ['레지스트리_2',['프레임 데이터 레지스트리',['../guide-sprite-system.html#guide-sprite-system-frame-data-registry',1,'']]],
+  ['레퍼런스_3',['컴포넌트 레퍼런스',['../engine-core.html#engine-component-reference',1,'']]]
 ];

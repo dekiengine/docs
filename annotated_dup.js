@@ -37,6 +37,7 @@ var annotated_dup =
       [ "EngineHost", "struct_deki_1_1_engine_host.html", "struct_deki_1_1_engine_host" ],
       [ "EngineSettings", "struct_deki_1_1_engine_settings.html", "struct_deki_1_1_engine_settings" ],
       [ "FieldRef", "struct_deki_1_1_field_ref.html", "struct_deki_1_1_field_ref" ],
+      [ "FileImage", "class_deki_1_1_file_image.html", "class_deki_1_1_file_image" ],
       [ "FileSystem", "class_deki_1_1_file_system.html", "class_deki_1_1_file_system" ],
       [ "FPSCounter", "class_deki_1_1_f_p_s_counter.html", "class_deki_1_1_f_p_s_counter" ],
       [ "HostMemoryProvider", "class_deki_1_1_host_memory_provider.html", "class_deki_1_1_host_memory_provider" ],

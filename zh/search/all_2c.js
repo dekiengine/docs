@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['哈希函数（fnv_201a_2032_20位）_0',['哈希函数（FNV-1a 32 位）',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]]
+  ['和普通的_20new_0',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;、&lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt; 和普通的 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['项目结构_0',['项目结构',['../guide-project-layout.html',1,'']]],
-  ['项目设置_1',['项目设置',['../settings.html',1,'项目设置'],['../engine-core.html#engine-project-settings',1,'项目设置']]]
+  ['附属文件_0',['附属文件',['../guide-font-system.html#guide-font-system-data-sidecar-file',1,'.data 附属文件'],['../guide-sprite-system.html#guide-sprite-system-data-sidecar-file',1,'.data 附属文件']]]
 ];

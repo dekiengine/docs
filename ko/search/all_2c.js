@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['나란히_20있는_20이유_0',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
-  ['나머지_20api_1',['나머지 API',['../guide-memory.html#guide-memory-the-rest-of-the-api',1,'']]]
+  ['기능_0',['다른 패키지가 필요한 기능',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
 ];

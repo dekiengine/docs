@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -179,9 +179,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
   <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a7f563762340f0614675f0aa63431f404">IsRunning</a>() const</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a181738d14fc6c50f385634eb26a420be">IsRuntimeMode</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#ae16ed24050e6b65679465fb10cdb4687">MarkDirty</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a822a52de412dea6adacd8d4b4f205b29">PresentFrame</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a871edbe49446a474bf01ce33ac46cb08">ProcessLifecycle</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#abe04495f260fba16be76de7e19b2e233">RegisterUpdate</a>(const UpdateCallback &amp;callback)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#aa911854b72a1f40fe93cab51b8a713d3">OpenRequestedScene</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#af5fca93ae3d9ec6de6f31cedd8137aac">OpenScene</a>(const AssetRefBase &amp;scene)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a015e9b32eac330f93ee3919cd5769593">OpenScene</a>(const std::string &amp;guid)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a822a52de412dea6adacd8d4b4f205b29">PresentFrame</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a871edbe49446a474bf01ce33ac46cb08">ProcessLifecycle</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#abe04495f260fba16be76de7e19b2e233">RegisterUpdate</a>(const UpdateCallback &amp;callback)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a3a1b4d4617a17a2881f9320f71c7a53c">ReleaseUnusedAssets</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a04fb0c8ceba0ac711d1a57bc5b7a32b6">Render</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a5cf81001a1c805148c1ac6c41e0bcadf">RequestFullRefresh</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a77cc93d4f64e7dff9c68fa9f7da20e67">RunMainLoop</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
@@ -197,7 +201,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
   <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a7c84d67fb6c58a08bc099ddc86d1d864">Shutdown</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a115758fbb0b037dc2e651746ea25bca8">StopMainLoop</a>()</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#aca66b772420ed1d6c00305a837d71b28">UnregisterUpdate</a>(size_t id)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a367af7b8bed65ec79dd132918db47a27">Update</a>(uint32_t deltaTime)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_deki_1_1_engine.html#a50aa325effbdfd8df81f6ef8260683f0">Update</a>(float deltaMs)</td><td class="entry"><a class="el" href="class_deki_1_1_engine.html">Deki::Engine</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

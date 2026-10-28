@@ -149,6 +149,7 @@ var namespace_deki_editor =
     [ "VersionCheckDef", "struct_deki_editor_1_1_version_check_def.html", "struct_deki_editor_1_1_version_check_def" ],
     [ "AssetCacheHandler", "namespace_deki_editor.html#acfcbbcee26213394d590a174db83fbb3", null ],
     [ "AssetExportEncoder", "namespace_deki_editor.html#a9acda1ed4f943d71cfe2cced8dfda57c", null ],
+    [ "AssetDependencyReporter", "namespace_deki_editor.html#ae082f09529208fe90840be48c6282da7", null ],
     [ "DownloadProgressCallback", "namespace_deki_editor.html#af8aa323fd48862ba7ab9aa36155abac7", null ],
     [ "VersionCheckCallback", "namespace_deki_editor.html#a2322b9ebd0b9ae159d225a2b4294465e", null ],
     [ "BuildOutputCallback", "namespace_deki_editor.html#a102fc12c05cce32374d11e0fe46bf847", null ],

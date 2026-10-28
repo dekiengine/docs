@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['可移植性_0',['可移植性',['../guide-project-layout.html#guide-project-layout-portability',1,'']]]
+  ['双字段模式（guid_20与_20source）_0',['双字段模式（guid 与 source）',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]]
 ];

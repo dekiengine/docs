@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['베이크_20권한_3a_20fontsynchandler_0',['베이크 권한: FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
+  ['번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]],
+  ['번역하기_1',['테이블 번역하기',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
 ];

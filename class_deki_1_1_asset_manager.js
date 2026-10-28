@@ -10,6 +10,7 @@ var class_deki_1_1_asset_manager =
     [ "UnloadAll", "class_deki_1_1_asset_manager.html#a9f444ddb2a0ce4f9e3bff1eabaf5f334", null ],
     [ "InvalidateAsset", "class_deki_1_1_asset_manager.html#a1f3c316c7b1f3bd1694f02e747d44580", null ],
     [ "ClearCache", "class_deki_1_1_asset_manager.html#a57fc355e8a3e56ff5a2b357638e22e14", null ],
+    [ "UnloadUnused", "class_deki_1_1_asset_manager.html#af0c0acc5b98f41ef7bac3f085455ee39", null ],
     [ "DropCache", "class_deki_1_1_asset_manager.html#af951595cfe2b666b38a5928be25eabfe", null ],
     [ "GetEpoch", "class_deki_1_1_asset_manager.html#afa30ffe948e009eadc0fdf8603bc6671", null ],
     [ "AdvanceEpoch", "class_deki_1_1_asset_manager.html#a506376977fcff9999773a404295f6310", null ],

@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
   </td>
@@ -203,16 +203,15 @@ Before you start</h1>
 <ul class="check">
 <li class="unchecked">Free internal and external memory are no more than 5% below the last release's</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="guide-hardware-checklist-4-partial-present"></a>
-4. Partial present</h1>
-<p>Set <span class="tt">dirtyTileTracking</span> on in the project's Rendering settings, then build and flash again.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-hardware-checklist-4-redrawing-only-what-changed"></a>
+4. Redrawing only what changed</h1>
+<p>deki-demo has <span class="tt">redrawChanges</span> on in its Rendering settings.</p>
 <ul class="check">
-<li class="unchecked">Every scene still draws correctly: no stale rectangles left behind by a moving sprite, no smearing at the edges of what changed</li>
+<li class="unchecked">Every scene draws correctly: nothing left behind by a moving sprite, no smearing at the edges of what changed</li>
 </ul>
 <ul class="check">
-<li class="unchecked">A mostly still scene (ui, menu) shows a lower presentMs than with it off</li>
+<li class="unchecked">A mostly still scene (ui, menu) shows a lower renderMs and presentMs than with it off (set it off, build and flash, then set it back on)</li>
 </ul>
-<p>Set it back off before going on.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-hardware-checklist-5-input"></a>
 5. Input</h1>
 <ul class="check">
@@ -248,12 +247,22 @@ Before you start</h1>
 <div class="line">Scene        fps   updateMs  renderMs  presentMs  freeInternal  freeExternal</div>
 <div class="line">meadow</div>
 <div class="line">effects</div>
-<div class="line">Partial present, ui: presentMs off __ / on __</div>
+<div class="line">Redraw changes, ui: renderMs off __ / on __, presentMs off __ / on __</div>
 <div class="line">Notes:</div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-hardware-checklist-past-releases"></a>
 Past releases</h1>
-<p>None recorded yet. </p>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line">Release:     0.21.0  (T-Deck Plus)</div>
+<div class="line">Date:        2026-10-28</div>
+<div class="line">Scene        fps   updateMs  renderMs  presentMs  freeInternal  freeExternal</div>
+<div class="line">meadow       60.2  1.08      6.03      8.50       21739         7953392</div>
+<div class="line">effects      60.2  0.93      9.18      5.44       31347         7557800</div>
+<div class="line">Redraw changes, ui: renderMs on 1.03, presentMs on 0.11 (menu, 2026-10-27:</div>
+<div class="line">renderMs off 7.6 / on 2.0, presentMs off 3.4 / on 0.1)</div>
+<div class="line">Notes: fps is the panel&#39;s own 60.2 Hz: frames are paced to its refresh, and</div>
+<div class="line">presentMs includes waiting for it. Meadow is the endless run. On the</div>
+<div class="line">T-Display S3 AMOLED (59.7 Hz panel, strips of 88 rows): meadow 59.7 fps,</div>
+<div class="line">effects 59.6; renderMs about 15.4 there is mostly waiting for the panel.</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
   </td>
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-performa
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">프레임 전체 또는 스트립  </td><td class="markdownTableBodyNone">프레임 버퍼가 내부 RAM에 여유 있게 들어가면 프레임 전체, 들어가지 않으면 스트립입니다. 스트립은 몇 행 또는 몇 열씩 내부 RAM에 그리므로, 프레임 전체를 PSRAM에 그리는 것보다 훨씬 빠릅니다. (렌더링 설정 <span class="tt">frameMode</span>)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">다른 코어에서 보내기  </td><td class="markdownTableBodyNone">듀얼 코어 칩에 프레임 사본 두 개 분량의 메모리가 있으면, 다음 프레임을 그리는 동안 각 프레임을 보냅니다. 그렇지 않으면 그리는 대로 보냅니다. (<span class="tt">asyncPresent</span>, 켜짐)  </td></tr>
+<td class="markdownTableBodyNone">다른 코어에서 보내기  </td><td class="markdownTableBodyNone">듀얼 코어 칩에 프레임 사본 두 개 분량의 메모리가 있으면, 다음 프레임을 그리는 동안 각 프레임을 보냅니다. 그렇지 않으면 그리는 대로 보냅니다. (<span class="tt">asyncPresent</span>, 켜짐) 보내기는 게임이 쓰지 않는 코어에서 우선순위 5로 실행되며, 거의 움직이지 않을 때 그 코어의 약 1%, 화면 대부분이 바뀔 때 최대 20%(T-Display S3) 또는 40%(T-Deck Plus)를 씁니다. 그 코어에서 우선순위 5보다 높은 직접 만든 태스크가 먼저 실행됩니다. 게임이 그 코어 전체를 써야 하면 <span class="tt">asyncPresent</span>를 끄세요.  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">티어링  </td><td class="markdownTableBodyNone">TE 선이 연결되어 있으면(<span class="tt">tePin</span>) 프레임이 패널의 새로 고침 신호를 따릅니다. 없으면 대신 패널의 주사선을 다시 읽습니다(<span class="tt">scanlineSync</span>, 켜짐). 다시 읽을 수 없는 패널은 그리는 대로 보내며, 찢어질 수 있습니다.  </td></tr>
 </table>
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-performa
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">설정  </th><th class="markdownTableHeadNone">바꿀 때  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">dirtyTileTracking</span>  </td><td class="markdownTableBodyNone">화면 대부분이 멈춰 있고 매 프레임 화면 전체에 그리는 것이 없을 때 켭니다(화면 전체 배경은 화면 전체에 그립니다). 그러면 바뀐 부분만 보냅니다.  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">redrawChanges</span>  </td><td class="markdownTableBodyNone">화면 대부분이 멈춰 있을 때 켭니다. 그러면 각 프레임은 바뀐 부분만 그려서 보내고, 화면 대부분이 바뀌는 프레임은 평소처럼 전체를 그립니다.  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">bandRows</span>  </td><td class="markdownTableBodyNone">스트립의 크기. 클수록 장면을 순회하는 횟수가 줄지만 내부 RAM을 더 씁니다. 대부분의 화면에는 40이 맞습니다.  </td></tr>
 <tr class="markdownTableRowOdd">

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -184,6 +184,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3e5d83297941951d661b9eabffc338da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer the display owns that the renderer can draw into directly, such as a DMA-capable buffer in fast internal RAM, saving a copy in Present.  <br /></td></tr>
 <tr class="memitem:ac43afb8bae1bbd35505d0f5e6f13f3cf" id="r_ac43afb8bae1bbd35505d0f5e6f13f3cf"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac43afb8bae1bbd35505d0f5e6f13f3cf">SetBacklight</a> (bool on)</td></tr>
 <tr class="memdesc:ac43afb8bae1bbd35505d0f5e6f13f3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the backlight on or off.  <br /></td></tr>
+<tr class="memitem:a7a76ba09fbaeb9484da956bf5587b259" id="r_a7a76ba09fbaeb9484da956bf5587b259"><td class="memItemLeft">virtual uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a7a76ba09fbaeb9484da956bf5587b259">GetRefreshPeriodUs</a> () const</td></tr>
+<tr class="memdesc:a7a76ba09fbaeb9484da956bf5587b259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microseconds between the panel's refreshes when each frame waits for one, so it is shown whole; 0 when frames are shown as they come.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>What a display package implements: setup, presenting frames, events and UI overlays. </p>
@@ -787,6 +789,34 @@ Public Member Functions</h2></td></tr>
 
 <p>Turns the backlight on or off. </p>
 <p><a class="el" href="class_deki_1_1_i_power.html" title="Device power management (sleep and wake).">IPower</a> calls it around sleep: off in OnBeforeSleep so the panel draws no current while the CPU is paused, on in OnScreenOn after waking. Displays without one (desktop windows) keep the default, which does nothing. </p>
+
+</div>
+</div>
+<a id="a7a76ba09fbaeb9484da956bf5587b259" name="a7a76ba09fbaeb9484da956bf5587b259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a76ba09fbaeb9484da956bf5587b259">&#9670;&#160;</a></span>GetRefreshPeriodUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t Deki::IDisplay::GetRefreshPeriodUs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Microseconds between the panel's refreshes when each frame waits for one, so it is shown whole; 0 when frames are shown as they come. </p>
+<p>The main loop then times frames to a whole number of refreshes: a game clock a little off the panel's (60.0 frames a second on a 60.2 Hz panel) would show a frame twice every few seconds, a stutter. </p>
 
 </div>
 </div>

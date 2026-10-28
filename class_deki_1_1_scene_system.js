@@ -9,6 +9,7 @@ var class_deki_1_1_scene_system =
     [ "LoadBootScene", "class_deki_1_1_scene_system.html#a10d1918583004d8ccab8b8be851717b4", null ],
     [ "LoadBootScene", "class_deki_1_1_scene_system.html#a902c861b0d2d97d61e3d79c82a40315d", null ],
     [ "GetRootScene", "class_deki_1_1_scene_system.html#a548880aac2d7112cf102fecabfe2e1e6", null ],
+    [ "GetRootSceneSerial", "class_deki_1_1_scene_system.html#ae3ecf528e343ec2544f5156d3e065677", null ],
     [ "HasRootScene", "class_deki_1_1_scene_system.html#aabbcf4e28979165d8075ede42a5b01be", null ],
     [ "MarkPersistent", "class_deki_1_1_scene_system.html#a412fe5ecbaff137c0282a1c1d8b11b80", null ],
     [ "GetPersistentObjects", "class_deki_1_1_scene_system.html#abf027fcc9ce59b3da17480a36525eb2b", null ],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['알아내기_0',['메모리가 어디에 쓰였는지 알아내기',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]],
-  ['알아_20두면_20좋은_20프로젝트_20설정_1',['알아 두면 좋은 프로젝트 설정',['../guide-performance.html#guide-performance-project-settings-worth-knowing',1,'']]]
+  ['아레나를_20쓰지_20않는_20이유_0',['아레나를 쓰지 않는 이유',['../guide-memory.html#guide-memory-why-not-an-arena',1,'']]]
 ];

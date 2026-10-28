@@ -95,6 +95,7 @@ var searchData=
   ['buttonactive_92',['ButtonActive',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a9ef9a76f89d3d4a4a9a02a5b8fddbfb3',1,'DekiEditor::EditorUI']]],
   ['buttonhovered_93',['ButtonHovered',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3afaea675ba618620c5af718f4ecebaaea',1,'DekiEditor::EditorUI']]],
   ['bytes_94',['Bytes',['../class_deki_1_1_buffer.html#af2481b64e87f4bd2ab7929def24e78fa',1,'Deki::Buffer']]],
-  ['bytesdownloaded_95',['bytesDownloaded',['../struct_deki_editor_1_1_download_progress.html#a949dfad69feffe1f0038058565d72cef',1,'DekiEditor::DownloadProgress']]],
-  ['bytype_96',['byType',['../struct_deki_editor_1_1_component_usage.html#af8eedf331e7cdbd3047a10b7e850b485',1,'DekiEditor::ComponentUsage']]]
+  ['bytes_95',['bytes',['../struct_deki_1_1_file_image_1_1_file.html#a083fdb0b674956e7f001a0d9d8f74c36',1,'Deki::FileImage::File']]],
+  ['bytesdownloaded_96',['bytesDownloaded',['../struct_deki_editor_1_1_download_progress.html#a949dfad69feffe1f0038058565d72cef',1,'DekiEditor::DownloadProgress']]],
+  ['bytype_97',['byType',['../struct_deki_editor_1_1_component_usage.html#af8eedf331e7cdbd3047a10b7e850b485',1,'DekiEditor::ComponentUsage']]]
 ];

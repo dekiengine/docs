@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -168,6 +168,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1f3c316c7b1f3bd1694f02e747d44580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the cached asset <span class="tt">guid</span> of type <span class="tt">typeName</span> (such as "Sprite"), so the next load reads it from disk again.  <br /></td></tr>
 <tr class="memitem:a57fc355e8a3e56ff5a2b357638e22e14" id="r_a57fc355e8a3e56ff5a2b357638e22e14"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57fc355e8a3e56ff5a2b357638e22e14">ClearCache</a> (const char *typeName)</td></tr>
 <tr class="memdesc:a57fc355e8a3e56ff5a2b357638e22e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every cached asset of type <span class="tt">typeName</span> (such as "BitmapFont"), so the next loads read from disk again.  <br /></td></tr>
+<tr class="memitem:af0c0acc5b98f41ef7bac3f085455ee39" id="r_af0c0acc5b98f41ef7bac3f085455ee39"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#af0c0acc5b98f41ef7bac3f085455ee39">UnloadUnused</a> (const std::vector&lt; std::string &gt; &amp;usedGuids)</td></tr>
+<tr class="memdesc:af0c0acc5b98f41ef7bac3f085455ee39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every cached asset whose GUID is not in <span class="tt">usedGuids</span>, and moves the epoch, so an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> that pointed at one loads it again when next asked.  <br /></td></tr>
 <tr class="memitem:af951595cfe2b666b38a5928be25eabfe" id="r_af951595cfe2b666b38a5928be25eabfe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af951595cfe2b666b38a5928be25eabfe">DropCache</a> ()</td></tr>
 <tr class="memdesc:af951595cfe2b666b38a5928be25eabfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets the cache without freeing the assets, which may still be in use; the next load reads a fresh copy from disk.  <br /></td></tr>
 <tr class="memitem:afa30ffe948e009eadc0fdf8603bc6671" id="r_afa30ffe948e009eadc0fdf8603bc6671"><td class="memItemLeft">uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#afa30ffe948e009eadc0fdf8603bc6671">GetEpoch</a> () const noexcept</td></tr>
@@ -488,6 +490,26 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Frees every cached asset of type <span class="tt">typeName</span> (such as "BitmapFont"), so the next loads read from disk again. </p>
+
+</div>
+</div>
+<a id="af0c0acc5b98f41ef7bac3f085455ee39" name="af0c0acc5b98f41ef7bac3f085455ee39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c0acc5b98f41ef7bac3f085455ee39">&#9670;&#160;</a></span>UnloadUnused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::AssetManager::UnloadUnused </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>usedGuids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees every cached asset whose GUID is not in <span class="tt">usedGuids</span>, and moves the epoch, so an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> that pointed at one loads it again when next asked. </p>
+<p>Returns how many were freed. <a class="el" href="class_deki_1_1_engine.html#a3a1b4d4617a17a2881f9320f71c7a53c" title="Frees the cached assets nothing uses any more: those no AssetRef field of a component on a live objec...">Engine::ReleaseUnusedAssets</a> works out the list from the live objects. </p>
 
 </div>
 </div>

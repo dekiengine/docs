@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-performa
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">フレーム全体かストリップか  </td><td class="markdownTableBodyNone">フレームバッファーが内部 RAM に余裕をもって収まるならフレーム全体、収まらなければストリップです。ストリップは数行または数列ずつ内部 RAM に描くので、フレーム全体を PSRAM に描くよりずっと速くなります。(レンダリング設定の <span class="tt">frameMode</span>)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">もう一方のコアからの送信  </td><td class="markdownTableBodyNone">デュアルコアのチップでフレームのコピー 2 つ分のメモリがあれば、次のフレームを描いている間に各フレームを送ります。そうでなければ描いた順に送ります。(<span class="tt">asyncPresent</span>、オン)  </td></tr>
+<td class="markdownTableBodyNone">もう一方のコアからの送信  </td><td class="markdownTableBodyNone">デュアルコアのチップでフレームのコピー 2 つ分のメモリがあれば、次のフレームを描いている間に各フレームを送ります。そうでなければ描いた順に送ります。(<span class="tt">asyncPresent</span>、オン) 送信はゲームが使わないほうのコアで優先度 5 で動き、そのコアのほとんど動かないときは約 1、画面の大部分が変わるときは最大 20% (T-Display S3) か 40% (T-Deck Plus) を使います。そのコアで優先度 5 より高い自分のタスクは先に動きます。ゲームがそのコアをすべて使うなら <span class="tt">asyncPresent</span> をオフにしてください。  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ティアリング  </td><td class="markdownTableBodyNone">TE 線が配線されていれば (<span class="tt">tePin</span>)、フレームはパネルのリフレッシュ信号に合わせます。なければ代わりにパネルの走査線を読み戻します (<span class="tt">scanlineSync</span>、オン)。読み戻せないパネルには描いた順に送り、ティアリングすることがあります。  </td></tr>
 </table>
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-performa
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">設定  </th><th class="markdownTableHeadNone">変えるとき  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">dirtyTileTracking</span>  </td><td class="markdownTableBodyNone">画面の大部分が動かず、毎フレーム画面全体に描くものがない場合にオンにします (画面全体の背景は画面全体に描きます)。変わったところだけが送られます。  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">redrawChanges</span>  </td><td class="markdownTableBodyNone">画面の大部分が動かない場合にオンにします。各フレームは変わったところだけを描いて送り、画面の大部分が変わるフレームはこれまでどおり全体を描きます。  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">bandRows</span>  </td><td class="markdownTableBodyNone">ストリップの大きさです。大きいほどシーンをたどる回数が減りますが、内部 RAM を多く使います。ほとんどの画面には 40 が合います。  </td></tr>
 <tr class="markdownTableRowOdd">

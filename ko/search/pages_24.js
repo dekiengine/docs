@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['곳_0',['곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'결정적 GUID를 생성하는 곳'],['../guide-platforms.html#guide-platforms-where-the-assets-go',1,'에셋이 놓이는 곳']]],
-  ['곳_3a_1',['EnsureFontSizeBaked를 호출하는 곳:',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]]
+  ['고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
+  ['고유의_20이름_1',['패키지 고유의 이름',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
+  ['고정하기_2',['화면에 고정하기',['../guide-screens.html#autotoc_md2',1,'']]]
 ];

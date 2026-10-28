@@ -82,7 +82,7 @@ var NAVTREE =
       [ "1. Build and flash", "guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash", null ],
       [ "2. Every scene draws", "guide-hardware-checklist.html#guide-hardware-checklist-2-every-scene-draws", null ],
       [ "3. Frame time", "guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time", null ],
-      [ "4. Partial present", "guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present", null ],
+      [ "4. Redrawing only what changed", "guide-hardware-checklist.html#guide-hardware-checklist-4-redrawing-only-what-changed", null ],
       [ "5. Input", "guide-hardware-checklist.html#guide-hardware-checklist-5-input", null ],
       [ "6. Storage", "guide-hardware-checklist.html#guide-hardware-checklist-6-storage", null ],
       [ "7. Radios and sensors", "guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors", null ],
@@ -107,7 +107,8 @@ var NAVTREE =
         [ "배치는 한 번에 결정됩니다. 대체는 없습니다.", "guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback", null ]
       ] ],
       [ "나머지 API", "guide-memory.html#guide-memory-the-rest-of-the-api", [
-        [ "메모리가 어디에 쓰였는지 알아내기", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ]
+        [ "메모리가 어디에 쓰였는지 알아내기", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ],
+        [ "씬 바꾸기", "guide-memory.html#guide-memory-changing-scenes", null ]
       ] ],
       [ "<span class=\"tt\">AllocContext</span> - 레이블은 저절로 작성됩니다", "guide-memory.html#guide-memory-alloccontext---the-label-writes-itself", [
         [ "제거하기", "guide-memory.html#guide-memory-stripping-it", null ]
@@ -127,7 +128,9 @@ var NAVTREE =
     ] ],
     [ "플랫폼", "guide-platforms.html", [
       [ "플랫폼이란", "guide-platforms.html#guide-platforms-what-a-platform-is", null ],
-      [ "에셋이 놓이는 곳", "guide-platforms.html#guide-platforms-where-the-assets-go", null ],
+      [ "에셋이 놓이는 곳", "guide-platforms.html#guide-platforms-where-the-assets-go", [
+        [ "게임이 쓰는 파일", "guide-platforms.html#guide-platforms-files-the-game-writes", null ]
+      ] ],
       [ "보드 시뮬레이션", "guide-platforms.html#guide-platforms-simulating-a-board", null ],
       [ "플랫폼은 어디에서 오는가", "guide-platforms.html#guide-platforms-where-platforms-come-from", null ],
       [ "패키지로 보드 제공하기", "guide-platforms.html#guide-platforms-shipping-boards-in-a-package", [

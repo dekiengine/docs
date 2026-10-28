@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['概要_0',['概要',['../guide-font-system.html#guide-font-system-overview',1,'概要'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'概要']]]
+  ['時間に_202_20つの決まりがある理由_0',['時間に 2 つの決まりがある理由',['../guide-units.html#guide-units-why-time-has-two-conventions',1,'']]]
 ];

@@ -62,7 +62,7 @@ var searchData=
   ['ismousedoubleclicked_59',['IsMouseDoubleClicked',['../class_deki_editor_1_1_editor_u_i.html#aa9d22fa98d7ccda01fbcd88079c6edd9',1,'DekiEditor::EditorUI']]],
   ['ismousedown_60',['IsMouseDown',['../class_deki_editor_1_1_editor_u_i.html#a96e5d0e3a14c34fef9704f1f66496476',1,'DekiEditor::EditorUI']]],
   ['ismousedragging_61',['IsMouseDragging',['../class_deki_editor_1_1_editor_u_i.html#ab3aea2943c1a6b36fdc3e483333c3c06',1,'DekiEditor::EditorUI']]],
-  ['isopen_62',['IsOpen',['../class_deki_editor_1_1_editor_window.html#a103ea348bc83b2922495196612bd6d88',1,'DekiEditor::EditorWindow']]],
+  ['isopen_62',['IsOpen',['../class_deki_1_1_file_image.html#aa6d7c69fe04226ed73a11b5866df81c3',1,'Deki::FileImage::IsOpen()'],['../class_deki_editor_1_1_editor_window.html#a103ea348bc83b2922495196612bd6d88',1,'DekiEditor::EditorWindow::IsOpen()']]],
   ['ispackagecompatible_63',['IsPackageCompatible',['../class_deki_editor_1_1_firmware_builder_base.html#a95c35f5c383766ada37f51d9063eae09',1,'DekiEditor::FirmwareBuilderBase::IsPackageCompatible()'],['../class_deki_editor_1_1_i_target_builder.html#aeb98ed97466aaf00cbb1bb8ea78ebf58',1,'DekiEditor::ITargetBuilder::IsPackageCompatible()']]],
   ['ispartofinstance_64',['IsPartOfInstance',['../class_deki_1_1_object.html#a2f609c4597332f9e090aca4e5356bcaf',1,'Deki::Object']]],
   ['ispersistent_65',['IsPersistent',['../class_deki_1_1_object.html#aa13c90a6b6a1ddb729df68d5fc915fd1',1,'Deki::Object']]],

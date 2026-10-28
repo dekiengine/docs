@@ -5901,7 +5901,7 @@ var searchData=
   ['ismousedown_5898',['IsMouseDown',['../class_deki_editor_1_1_editor_u_i.html#a96e5d0e3a14c34fef9704f1f66496476',1,'DekiEditor::EditorUI']]],
   ['ismousedragging_5899',['IsMouseDragging',['../class_deki_editor_1_1_editor_u_i.html#ab3aea2943c1a6b36fdc3e483333c3c06',1,'DekiEditor::EditorUI']]],
   ['ismultiline_5900',['isMultiline',['../struct_deki_1_1_property_info.html#acc3ed5b5e3790a1819564071739cfe8f',1,'Deki::PropertyInfo']]],
-  ['isopen_5901',['IsOpen',['../class_deki_editor_1_1_editor_window.html#a103ea348bc83b2922495196612bd6d88',1,'DekiEditor::EditorWindow']]],
+  ['isopen_5901',['IsOpen',['../class_deki_1_1_file_image.html#aa6d7c69fe04226ed73a11b5866df81c3',1,'Deki::FileImage::IsOpen()'],['../class_deki_editor_1_1_editor_window.html#a103ea348bc83b2922495196612bd6d88',1,'DekiEditor::EditorWindow::IsOpen()']]],
   ['isortableprovider_5902',['ISortableProvider',['../class_deki_1_1_i_sortable_provider.html',1,'Deki']]],
   ['isortableprovider_2eh_5903',['ISortableProvider.h',['../_i_sortable_provider_8h.html',1,'']]],
   ['ispackagecompatible_5904',['IsPackageCompatible',['../class_deki_editor_1_1_firmware_builder_base.html#a95c35f5c383766ada37f51d9063eae09',1,'DekiEditor::FirmwareBuilderBase::IsPackageCompatible()'],['../class_deki_editor_1_1_i_target_builder.html#aeb98ed97466aaf00cbb1bb8ea78ebf58',1,'DekiEditor::ITargetBuilder::IsPackageCompatible()']]],

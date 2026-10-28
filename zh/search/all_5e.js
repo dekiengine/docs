@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['设置_0',['设置',['../engine-core.html#engine-units-settings',1,'单位 设置'],['../settings.html#settings-units-settings',1,'单位 设置'],['../engine-core.html#engine-core-settings',1,'核心 设置'],['../settings.html#settings-core-settings',1,'核心 设置']]]
+  ['表中的键类型_0',['表中的键类型',['../guide-asset-system.html#guide-asset-system-key-types-in-the-table',1,'']]],
+  ['表的两个版本_1',['表的两个版本',['../guide-asset-system.html#guide-asset-system-two-versions-of-the-table',1,'']]]
 ];

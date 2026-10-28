@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['영역은_20이름이므로_20패키지가_20직접_20추가할_20수_20있습니다_0',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]],
-  ['영역을_20제공하는_20것은_20보드의_20일입니다_1',['영역을 제공하는 것은 보드의 일입니다',['../guide-memory.html#guide-memory-serving-one-is-the-boards-job',1,'']]],
-  ['영역_20매번_20직접_20고릅니다_2',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
-  ['영역_20이름은_20케이퍼빌리티_20이름입니다_3',['영역 이름은 케이퍼빌리티 이름입니다',['../guide-memory.html#guide-memory-the-region-name-is-the-capability-name',1,'']]]
+  ['에디터에서의_20지정_0',['에디터에서의 지정',['../guide-sprite-system.html#guide-sprite-system-assignment-in-editor',1,'']]],
+  ['에디터_1',['GUID 등록 (에디터)',['../guide-sprite-system.html#guide-sprite-system-guid-registration-editor',1,'']]],
+  ['에디터_20전용_2',['미리보기 모드 (에디터 전용)',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
+  ['에셋이_20놓이는_20곳_3',['에셋이 놓이는 곳',['../guide-platforms.html#guide-platforms-where-the-assets-go',1,'']]],
+  ['에셋_20로딩_20흐름_4',['에셋 로딩 흐름',['../guide-asset-system.html#guide-asset-system-asset-loading-flow',1,'']]],
+  ['에셋_20시스템_5',['에셋 시스템',['../guide-asset-system.html',1,'']]],
+  ['에셋_20조회_20테이블_20asset_5ftable_20bin_6',['에셋 조회 테이블 (asset_table.bin)',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]]
 ];

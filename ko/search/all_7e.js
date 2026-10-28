@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['컴포넌트_0',['컴포넌트',['../engine-core.html#engine-components',1,'']]],
-  ['컴포넌트_20레퍼런스_1',['컴포넌트 레퍼런스',['../engine-core.html#engine-component-reference',1,'']]]
+  ['출처_3a_20편집_20업데이트_20복원_0',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

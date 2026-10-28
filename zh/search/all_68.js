@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['颜色格式_0',['颜色格式',['../guide-screens.html#autotoc_md5',1,'']]]
+  ['项目结构_0',['项目结构',['../guide-project-layout.html',1,'']]],
+  ['项目设置_1',['项目设置',['../settings.html',1,'项目设置'],['../engine-core.html#engine-project-settings',1,'项目设置']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['シードの形式_20絶対に変更しないでください_0',['シードの形式 (絶対に変更しないでください)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['サイドカーファイル_0',['サイドカーファイル',['../guide-font-system.html#guide-font-system-data-sidecar-file',1,'.data サイドカーファイル'],['../guide-sprite-system.html#guide-sprite-system-data-sidecar-file',1,'.data サイドカーファイル']]]
 ];

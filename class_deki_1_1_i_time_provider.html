@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.20.2</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -160,6 +160,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd783416f1579dabfa9777a1779ffa54" id="r_abd783416f1579dabfa9777a1779ffa54"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#abd783416f1579dabfa9777a1779ffa54">~ITimeProvider</a> ()=default</td></tr>
 <tr class="memitem:a8dbd9e75f8248322b5545d0957cb182f" id="r_a8dbd9e75f8248322b5545d0957cb182f"><td class="memItemLeft">virtual uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a8dbd9e75f8248322b5545d0957cb182f">GetTicksMs</a> () const =0</td></tr>
 <tr class="memdesc:a8dbd9e75f8248322b5545d0957cb182f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotonic time in milliseconds, from a platform-chosen start.  <br /></td></tr>
+<tr class="memitem:a92a5d5e56c7b1b92c08f003566e67e55" id="r_a92a5d5e56c7b1b92c08f003566e67e55"><td class="memItemLeft">virtual uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#a92a5d5e56c7b1b92c08f003566e67e55">GetTicksUs</a> () const</td></tr>
+<tr class="memdesc:a92a5d5e56c7b1b92c08f003566e67e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotonic time in microseconds, from a platform-chosen start.  <br /></td></tr>
 <tr class="memitem:a0e028e260ae6e87f8872a00b5338fc95" id="r_a0e028e260ae6e87f8872a00b5338fc95"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a0e028e260ae6e87f8872a00b5338fc95">DelayMs</a> (uint32_t ms) const</td></tr>
 <tr class="memdesc:a0e028e260ae6e87f8872a00b5338fc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleeps <span class="tt">ms</span> milliseconds (SDL_Delay on SDL3, vTaskDelay on ESP32), for frame rate limiting.  <br /></td></tr>
 </table>
@@ -216,6 +218,34 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Monotonic time in milliseconds, from a platform-chosen start. </p>
+
+</div>
+</div>
+<a id="a92a5d5e56c7b1b92c08f003566e67e55" name="a92a5d5e56c7b1b92c08f003566e67e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a5d5e56c7b1b92c08f003566e67e55">&#9670;&#160;</a></span>GetTicksUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t Deki::ITimeProvider::GetTicksUs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Monotonic time in microseconds, from a platform-chosen start. </p>
+<p>The default counts whole milliseconds; a platform with a finer clock returns it, so frame times are not rounded to a millisecond. </p>
 
 </div>
 </div>

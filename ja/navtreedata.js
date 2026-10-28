@@ -82,7 +82,7 @@ var NAVTREE =
       [ "1. Build and flash", "guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash", null ],
       [ "2. Every scene draws", "guide-hardware-checklist.html#guide-hardware-checklist-2-every-scene-draws", null ],
       [ "3. Frame time", "guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time", null ],
-      [ "4. Partial present", "guide-hardware-checklist.html#guide-hardware-checklist-4-partial-present", null ],
+      [ "4. Redrawing only what changed", "guide-hardware-checklist.html#guide-hardware-checklist-4-redrawing-only-what-changed", null ],
       [ "5. Input", "guide-hardware-checklist.html#guide-hardware-checklist-5-input", null ],
       [ "6. Storage", "guide-hardware-checklist.html#guide-hardware-checklist-6-storage", null ],
       [ "7. Radios and sensors", "guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors", null ],
@@ -107,7 +107,8 @@ var NAVTREE =
         [ "配置は 1 回で決まる。フォールバックはない", "guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback", null ]
       ] ],
       [ "API のその他の部分", "guide-memory.html#guide-memory-the-rest-of-the-api", [
-        [ "メモリの行き先を調べる", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ]
+        [ "メモリの行き先を調べる", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ],
+        [ "シーンの切り替え", "guide-memory.html#guide-memory-changing-scenes", null ]
       ] ],
       [ "<span class=\"tt\">AllocContext</span> - ラベルは自動で書かれる", "guide-memory.html#guide-memory-alloccontext---the-label-writes-itself", [
         [ "取り除く", "guide-memory.html#guide-memory-stripping-it", null ]
@@ -127,7 +128,9 @@ var NAVTREE =
     ] ],
     [ "プラットフォーム", "guide-platforms.html", [
       [ "プラットフォームとは", "guide-platforms.html#guide-platforms-what-a-platform-is", null ],
-      [ "アセットの置き場所", "guide-platforms.html#guide-platforms-where-the-assets-go", null ],
+      [ "アセットの置き場所", "guide-platforms.html#guide-platforms-where-the-assets-go", [
+        [ "ゲームが書き込むファイル", "guide-platforms.html#guide-platforms-files-the-game-writes", null ]
+      ] ],
       [ "ボードをシミュレートする", "guide-platforms.html#guide-platforms-simulating-a-board", null ],
       [ "プラットフォームの提供元", "guide-platforms.html#guide-platforms-where-platforms-come-from", null ],
       [ "パッケージでボードを提供する", "guide-platforms.html#guide-platforms-shipping-boards-in-a-package", [
