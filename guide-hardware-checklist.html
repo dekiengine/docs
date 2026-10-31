@@ -249,7 +249,32 @@ Before you start</h1>
 <div class="line">Notes:</div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="guide-hardware-checklist-past-releases"></a>
 Past releases</h1>
-<div class="fragment"><div class="line">Release:     0.21.0  (T-Deck Plus)</div>
+<div class="fragment"><div class="line">Release:     0.22.1  (T-Deck Plus; deki-2d and deki-esp32-integration)</div>
+<div class="line">Date:        2026-10-31</div>
+<div class="line">Scene        fps   updateMs  renderMs  presentMs  freeInternal  freeExternal</div>
+<div class="line">meadow       60.1  1.00      5.77      8.88       21498         7952496</div>
+<div class="line">effects      60.2  1.00      8.96      5.72       28551         7555944</div>
+<div class="line">widgets      60.7  2.91      1.08      0.10       16571         7428944</div>
+<div class="line">menu         60.7  1.00      1.04      0.10       26703         7814272</div>
+<div class="line">Notes: built with idf.py outside the editor and flashed over USB. The roller</div>
+<div class="line">on Widgets is cut to its frame: Clip was never registered on boards before.</div>
+<div class="line">Widgets keeps 16 KB internal free (lowest 15684) instead of 235 bytes; its</div>
+<div class="line">updateMs is 0.85 above 0.22.0 because the objects allocated last now live in</div>
+<div class="line">PSRAM.</div>
+</div><!-- fragment --><div class="fragment"><div class="line">Release:     0.22.0  (T-Deck Plus)</div>
+<div class="line">Date:        2026-10-31</div>
+<div class="line">Scene        fps   updateMs  renderMs  presentMs  freeInternal  freeExternal</div>
+<div class="line">meadow       60.2  0.96      5.73      8.88       18985         7952849</div>
+<div class="line">effects      60.1  1.00      9.19      5.51       28887         7555944</div>
+<div class="line">widgets      60.9  2.06      1.83      0.08       235           7445429</div>
+<div class="line">Redraw changes: widgets (Basics tab, still) renderMs 1.83, presentMs 0.08</div>
+<div class="line">Notes: scenes opened over USB with DEKI:SCENE, stats from DEKI:STATS averaged</div>
+<div class="line">over four one-second windows. Widgets leaves only 235 bytes of internal RAM</div>
+<div class="line">(lowest since boot 16): the engine holds 169 KB there (150 KB frame buffer,</div>
+<div class="line">15 KB display bands); the rest is small allocations, which ESP-IDF keeps</div>
+<div class="line">internal below 16 KB. Its roller draws rows outside its frame on the Basics</div>
+<div class="line">tab. Both fixed in 0.22.1.</div>
+</div><!-- fragment --><div class="fragment"><div class="line">Release:     0.21.0  (T-Deck Plus)</div>
 <div class="line">Date:        2026-10-28</div>
 <div class="line">Scene        fps   updateMs  renderMs  presentMs  freeInternal  freeExternal</div>
 <div class="line">meadow       60.2  1.08      6.03      8.50       21739         7953392</div>
