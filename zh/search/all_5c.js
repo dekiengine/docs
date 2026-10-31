@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['翻译对照表_0',['翻译对照表',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
+  ['结构版本_0',['结构版本',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]],
+  ['结构_1',['结构',['../guide-project-layout.html#guide-project-layout-layout',1,'']]]
 ];

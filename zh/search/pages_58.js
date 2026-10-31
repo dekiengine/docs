@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['种子格式（绝对不要更改）_0',['种子格式（绝对不要更改）',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['确定性_20guid_20生成_0',['确定性 GUID 生成',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]]
 ];

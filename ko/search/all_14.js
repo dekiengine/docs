@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['packages_0',['4.4 The packages',['../guide-releasing.html#guide-releasing-44-the-packages',1,'']]],
-  ['past_20releases_1',['Past releases',['../guide-hardware-checklist.html#guide-hardware-checklist-past-releases',1,'']]],
-  ['platformsetupcomponent_2',['PlatformSetupComponent',['../engine-core.html#engine-platformsetupcomponent',1,'']]],
-  ['promise_20to_20current_20users_3',['The promise to current users',['../guide-releasing.html#guide-releasing-the-promise-to-current-users',1,'']]]
+  ['names_0',['The same ideas, other names',['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-the-same-ideas-other-names',1,'']]],
+  ['new_1',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;, &lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt;, 일반 &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#autotoc_md14',1,'']]],
+  ['numbers_2',['8. Record the numbers',['../guide-hardware-checklist.html#guide-hardware-checklist-8-record-the-numbers',1,'']]]
 ];

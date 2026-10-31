@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -175,7 +175,7 @@ The rule</h1>
 <div class="ttc" id="aclass_deki_1_1_buffer_html"><div class="ttname"><a href="class_deki_1_1_buffer.html">Deki::Buffer</a></div><div class="ttdoc">Owning array of T, freed when it goes out of scope.</div><div class="ttdef"><b>Definition</b> Buffer.h:46</div></div>
 <div class="ttc" id="aclass_deki_1_1_buffer_html_a3ad60a39fe2acc9275d41adf6eb46ad8"><div class="ttname"><a href="class_deki_1_1_buffer.html#a3ad60a39fe2acc9275d41adf6eb46ad8">Deki::Buffer::Allocate</a></div><div class="ttdeci">bool Allocate(size_t count, Memory::Region region, AllocContext ctx={})</div><div class="ttdoc">Allocates count elements, replacing what it held.</div><div class="ttdef"><b>Definition</b> Buffer.h:91</div></div>
 <div class="ttc" id="aclass_deki_1_1_buffer_html_af3e6d5021ea6de915366edc5d57b1815"><div class="ttname"><a href="class_deki_1_1_buffer.html#af3e6d5021ea6de915366edc5d57b1815">Deki::Buffer::Data</a></div><div class="ttdeci">T * Data()</div><div class="ttdef"><b>Definition</b> Buffer.h:144</div></div>
-<div class="ttc" id="aclass_deki_1_1_memory_html_a44e1e0894dcca1ef22f5f59cf04c75ee"><div class="ttname"><a href="class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee">Deki::Memory::External</a></div><div class="ttdeci">static const Region External</div><div class="ttdoc">External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SP...</div><div class="ttdef"><b>Definition</b> Memory.h:203</div></div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a44e1e0894dcca1ef22f5f59cf04c75ee"><div class="ttname"><a href="class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee">Deki::Memory::External</a></div><div class="ttdeci">static const Region External</div><div class="ttdoc">External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SP...</div><div class="ttdef"><b>Definition</b> Memory.h:219</div></div>
 </div><!-- fragment --><ul>
 <li><b>Move-only.</b> Copying would need a second allocation that could fail, and a copy constructor cannot report that.</li>
 <li><b><span class="tt">T</span> must be trivially copyable and trivially destructible</b>, both enforced by <span class="tt">static_assert</span>. Nothing here constructs or destroys elements - these are the raw pixel, glyph, span and sample buffers the engine hands to blitters and drivers. A <span class="tt">T</span> with a destructor would silently never run it.</li>
@@ -212,7 +212,7 @@ A region is a name, so packages can add their own</h2>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">battery.Allocate(count, DekiEsp32::Rtc);</div>
-<div class="ttc" id="astruct_deki_1_1_memory_1_1_region_html"><div class="ttname"><a href="struct_deki_1_1_memory_1_1_region.html">Deki::Memory::Region</a></div><div class="ttdoc">Where an allocation lives.</div><div class="ttdef"><b>Definition</b> Memory.h:168</div></div>
+<div class="ttc" id="astruct_deki_1_1_memory_1_1_region_html"><div class="ttname"><a href="struct_deki_1_1_memory_1_1_region.html">Deki::Memory::Region</a></div><div class="ttdoc">Where an allocation lives.</div><div class="ttdef"><b>Definition</b> Memory.h:184</div></div>
 </div><!-- fragment --><p>A package keeps its regions in <b>its own namespace</b>, not in <span class="tt"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Deki::Memory</a></span> which it could not do anyway, a class being closed, and that is the point. Two board packages that both want an <span class="tt">Rtc</span> constant cannot collide, because the language keeps them apart. Where the constant lives is never load-bearing: a region's identity is its hashed name, so moving one between namespaces changes nothing at all.</p>
 <p><span class="tt">Region()</span> hashes the name at compile time with the same FNV-1a the rest of the engine uses, so a region is a constant expression a provider can switch on.</p>
 <p><b>Two packages naming the same region mean the same region</b> - that is how two board packages agree on <span class="tt">"rtc"</span> without coordinating, exactly like two packages both requiring the <span class="tt">spi</span> capability. What that does not survive is two packages meaning <em>different</em> things by one word, so qualify names you did not invent: <span class="tt">particles.scratch</span>, <span class="tt">esp32.rtc</span>. A debug build reports two different names that hash alike, because the allocation header stores only the id.</p>
@@ -273,6 +273,23 @@ Finding out where the memory went</h2>
 <li><span class="tt">LogStats(label)</span> answers "how much memory am I using?" in one call. In a debug build it also reports the live and peak allocation counts. It costs nothing unless called.</li>
 <li><span class="tt">GetStats()</span> returns the same numbers as a struct; <span class="tt">GetAvailableInternal()</span> and <span class="tt">GetAvailablePSRAM()</span> give the free side. <span class="tt">IsPSRAMAvailable()</span> says whether there is an external region at all. None of these is a licence to place memory yourself - they are for sizing a project and for finding what is holding memory it should have released.</li>
 </ul>
+<h2 class="doxsection"><a class="anchor" id="guide-memory-what-takes-it-call-sites-and-the-memory-panel"></a>
+What takes it: call sites, and the Memory panel</h2>
+<p>The engine also keeps what each <b>call site</b> holds: every allocation already carries the place it was written (<span class="tt">AllocContext</span>, below), so the breakdown needs no tag at the call. <span class="tt">Memory::GetSiteCount()</span> and <span class="tt">GetSite(i, out)</span> give one <span class="tt">MemorySite</span> per place: its function, file and line, the bytes it holds now in internal and in external RAM, its peak and how many blocks. <span class="tt">GetPeakInternal()</span> / <span class="tt">GetPeakExternal()</span> are each region's peak, and <span class="tt">ResetPeaks()</span> starts every peak again from what is held now.</p>
+<ul>
+<li>The table has 64 rows: 63 call sites, in the order they first allocate, and an overflow row the rest share. About 1.8 KB of internal RAM on a 32-bit board, from plain <span class="tt">malloc</span> like the debug leak table: it is the engine's own bookkeeping, so the board's provider never sees it among the allocations it serves.</li>
+<li>The row goes in the allocation header, in bits the header was not using, so a free finds its row without a search and the header stays 16 bytes.</li>
+<li>A site keeps its row once its memory is freed, so its peak stays visible.</li>
+<li>A build with <span class="tt">DEKI_STRIP_ALLOC_CONTEXT</span> captures no call sites, so it has no table and <span class="tt">GetSiteCount()</span> is 0.</li>
+<li><span class="tt">std::vector</span>, <span class="tt">std::string</span> and scalar <span class="tt">new</span> have no call site. They are in the heap's free figures, not in the table.</li>
+</ul>
+<p>A board answers the serial line <span class="tt">DEKI:MEMORY</span> with all of it (deki-esp32-integration, <span class="tt">ESP32ScreenCapture.cpp</span>): each region's use, peak, free space, lowest free space since boot and size, from <span class="tt">heap_caps</span>, then a <span class="tt">DEKI:MEMORY:SITE</span> line per call site and <span class="tt">DEKI:MEMORY:END</span>.</p>
+<p>The editor's <b>Memory panel</b> (Window &gt; PERFORMANCE &gt; Memory) shows two views:</p>
+<ul>
+<li><b>Scene</b> works out what the open scene takes on a target without running it: the frame buffer or render strip from the screen and the Rendering settings, every asset its components name (an image at the size and format it is stored in on that target, anything else at its built file's size), and every object with its components. It sets this against the target's RAM and lists the biggest first. These figures are all estimates, and the panel says so. A target's description gives its external RAM but not its internal RAM, so the internal budget comes from a board read in Live.</li>
+<li><b>Live</b> measures a running game: Play mode in the editor (optionally only what the game added since Play started), or a board over its serial port. It groups the call sites into categories by the file each one is in (the frame buffer, the display driver, images, fonts, tilemaps and so on), with peaks.</li>
+</ul>
+<p>The MCP tools <span class="tt">memory_report</span> and <span class="tt">device_memory</span> return the same figures.</p>
 <h2 class="doxsection"><a class="anchor" id="guide-memory-changing-scenes"></a>
 Changing scenes</h2>
 <div class="fragment"><div class="line"><a class="code hl_function" href="class_deki_1_1_engine.html#a40915f4a293d3b18e9d4fc98b88f206b">Deki::Engine::GetInstance</a>().<a class="code hl_function" href="class_deki_1_1_engine.html#af5fca93ae3d9ec6de6f31cedd8137aac">OpenScene</a>(nextScene);  <span class="comment">// an AssetRef&lt;Scene&gt;</span></div>
@@ -284,7 +301,7 @@ Changing scenes</h2>
 <span class="tt">AllocContext</span> - the label writes itself</h1>
 <p>Every allocating call takes one, and almost nobody writes one:</p>
 <div class="fragment"><div class="line">posX.Allocate(capacity, <a class="code hl_variable" href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634">Deki::Memory::Internal</a>);</div>
-<div class="ttc" id="aclass_deki_1_1_memory_html_a585469b9a34a1dbecec8ee0439f45634"><div class="ttname"><a href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634">Deki::Memory::Internal</a></div><div class="ttdeci">static const Region Internal</div><div class="ttdoc">Internal RAM: fast and scarce, a few hundred KB on an ESP32-S3.</div><div class="ttdef"><b>Definition</b> Memory.h:198</div></div>
+<div class="ttc" id="aclass_deki_1_1_memory_html_a585469b9a34a1dbecec8ee0439f45634"><div class="ttname"><a href="class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634">Deki::Memory::Internal</a></div><div class="ttdeci">static const Region Internal</div><div class="ttdoc">Internal RAM: fast and scarce, a few hundred KB on an ESP32-S3.</div><div class="ttdef"><b>Definition</b> Memory.h:214</div></div>
 </div><!-- fragment --><p>In a debug build the default argument captures the call site, so a failure reads:</p>
 <div class="fragment"><div class="line">Failed to allocate 153600 bytes in internal RAM for</div>
 <div class="line">&#39;void ParticlePool::SetCapacity(size_t)&#39; at ParticlePool.h:47</div>

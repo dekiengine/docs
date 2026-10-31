@@ -24,7 +24,8 @@ var searchData=
   ['hastransparency_21',['HasTransparency',['../struct_deki_editor_1_1_tex_data.html#a46a991da0100de06914cb2abcf456ce2',1,'DekiEditor::TexData']]],
   ['height_22',['Height',['../struct_deki_1_1_rect.html#abe28f9f8f1c66c1980934f24243711ae',1,'Deki::Rect']]],
   ['highestversion_23',['HighestVersion',['../namespace_deki_editor.html#ab15e77a22e56a8ebec9c5ae81767c199',1,'DekiEditor']]],
-  ['hittest_24',['HitTest',['../class_deki_editor_1_1_custom_editor.html#abb9ba421c7950ac4393f01a8ae43f64e',1,'DekiEditor::CustomEditor']]],
-  ['hostmemoryprovider_25',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider']]],
-  ['hover_26',['Hover',['../namespace_deki_editor_1_1_motion.html#af045a47c9a5f1a7f5922e62874115ac4',1,'DekiEditor::Motion']]]
+  ['hint_24',['Hint',['../class_deki_editor_1_1_editor_u_i.html#a453a359db74272127eed8cdb445ad7c8',1,'DekiEditor::EditorUI']]],
+  ['hittest_25',['HitTest',['../class_deki_editor_1_1_custom_editor.html#abb9ba421c7950ac4393f01a8ae43f64e',1,'DekiEditor::CustomEditor']]],
+  ['hostmemoryprovider_26',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider']]],
+  ['hover_27',['Hover',['../namespace_deki_editor_1_1_motion.html#af045a47c9a5f1a7f5922e62874115ac4',1,'DekiEditor::Motion']]]
 ];

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -169,6 +169,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afbe592c311d8080cd3e192d90212ed2c" id="r_afbe592c311d8080cd3e192d90212ed2c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afbe592c311d8080cd3e192d90212ed2c">SetName</a> (const std::string &amp;newName)</td></tr>
 <tr class="memitem:af1df6c1141b0fd227ca12944d24fc57a" id="r_af1df6c1141b0fd227ca12944d24fc57a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af1df6c1141b0fd227ca12944d24fc57a">IsActive</a> () const</td></tr>
 <tr class="memitem:a0769f3738b3150cd480377d6394a5350" id="r_a0769f3738b3150cd480377d6394a5350"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0769f3738b3150cd480377d6394a5350">SetActive</a> (bool value)</td></tr>
+<tr class="memdesc:a0769f3738b3150cd480377d6394a5350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out of line: a change tells the owner scene to rebuild its list of active components, so an object shown after load gets Start and Update.  <br /></td></tr>
 <tr class="memitem:aecea63ff6f948a87344f5022e89eeeb5" id="r_aecea63ff6f948a87344f5022e89eeeb5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aecea63ff6f948a87344f5022e89eeeb5">IsEditorOnly</a> () const</td></tr>
 <tr class="memitem:ade70bd7bafd6e0086a9168e3111ef9c2" id="r_ade70bd7bafd6e0086a9168e3111ef9c2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ade70bd7bafd6e0086a9168e3111ef9c2">SetEditorOnly</a> (bool value)</td></tr>
 <tr class="memitem:aa13c90a6b6a1ddb729df68d5fc915fd1" id="r_aa13c90a6b6a1ddb729df68d5fc915fd1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa13c90a6b6a1ddb729df68d5fc915fd1">IsPersistent</a> () const</td></tr>
@@ -518,9 +519,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Deki::Object::SetActive </td>
@@ -529,12 +527,9 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Out of line: a change tells the owner scene to rebuild its list of active components, so an object shown after load gets Start and Update. </p>
 
 </div>
 </div>

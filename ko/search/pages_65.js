@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['오는가_0',['플랫폼은 어디에서 오는가',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]]
+  ['엔진_20섹션_0',['엔진 섹션',['../settings.html#engine-sections',1,'']]],
+  ['엔진_20코어_1',['엔진 코어',['../engine-core.html',1,'']]]
 ];

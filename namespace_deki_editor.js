@@ -6,6 +6,7 @@ var namespace_deki_editor =
       [ "GetDisplayName", "namespace_deki_editor_1_1_editor_naming.html#afd732c4abf876d79a9429fb20e5136d3", null ],
       [ "ClearDisplayNameCache", "namespace_deki_editor_1_1_editor_naming.html#a24446acdad526363be810beb7d9cffa6", null ]
     ] ],
+    [ "EditorTexture", "namespace_deki_editor_1_1_editor_texture.html", "namespace_deki_editor_1_1_editor_texture" ],
     [ "Fonts", "namespace_deki_editor_1_1_fonts.html", [
       [ "RegisterTtf", "namespace_deki_editor_1_1_fonts.html#add4a2b780ab2cca691dbb5c61a917f26", null ],
       [ "CssPx", "namespace_deki_editor_1_1_fonts.html#a360c255affb248618f4b714f2d5c20d3", null ]
@@ -298,6 +299,11 @@ var namespace_deki_editor =
     [ "NoteProjectPlatformsChanged", "namespace_deki_editor.html#a315beb897270460e47bb328cf93ddf5b", null ],
     [ "ReloadProjectPlatforms", "namespace_deki_editor.html#a4f669d6ce874fd1388c3c55064a89383", null ],
     [ "AddSimulationSteps", "namespace_deki_editor.html#ace10af030fccd8526965e7bdcd8058bc", null ],
+    [ "BuildPriorityFlag", "namespace_deki_editor.html#a47c0a0ee2211584fe195adc8e4f6a5b6", null ],
+    [ "LowerBuildPriority", "namespace_deki_editor.html#a6c024f63549d4acba558b700cf5c72df", null ],
+    [ "AtBuildPriority", "namespace_deki_editor.html#afda264ca500f002148faba9e0e3f82fa", null ],
+    [ "BuildJobCount", "namespace_deki_editor.html#a383b7bdae23fe03f110cc0f27d30d80b", null ],
+    [ "PrepareBuildJobs", "namespace_deki_editor.html#ab3f4b414ad1fc57d9d1e1899fd2590cc", null ],
     [ "ReadCMakeCacheVar", "namespace_deki_editor.html#a8a404fe14df02d696f644372cb1b97c1", null ],
     [ "ScanComponentUsage", "namespace_deki_editor.html#a6fffe440b25df4ff9f812be75f190823", null ],
     [ "ShortTypeName", "namespace_deki_editor.html#a65df211554c72cc29d2a44b6de453264", null ],

@@ -9,7 +9,8 @@ var searchData=
   ['board_20s_20job_6',['Serving one is the board&apos;s job',['../guide-memory.html#guide-memory-serving-one-is-the-boards-job',1,'']]],
   ['board_20sets_7',['What a board sets',['../guide-performance.html#guide-performance-what-a-board-sets',1,'']]],
   ['boards_20in_20a_20package_8',['Shipping boards in a package',['../guide-platforms.html#guide-platforms-shipping-boards-in-a-package',1,'']]],
-  ['branch_20onto_20master_9',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
-  ['branch_20ready_10',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
-  ['build_20and_20flash_11',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]]
+  ['both_9',['Using both',['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-using-both',1,'']]],
+  ['branch_20onto_20master_10',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
+  ['branch_20ready_11',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
+  ['build_20and_20flash_12',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]]
 ];

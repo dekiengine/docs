@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['颜色格式_0',['颜色格式',['../guide-screens.html#autotoc_md5',1,'']]]
+  ['预览模式（仅限编辑器）_0',['预览模式（仅限编辑器）',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
+  ['预览_1',['预览',['../guide-screens.html#autotoc_md21',1,'']]]
 ];

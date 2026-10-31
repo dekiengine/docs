@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['you_20start_0',['Before you start',['../guide-hardware-checklist.html#guide-hardware-checklist-before-you-start',1,'']]]
+  ['version_0',['1. Choose the version',['../guide-releasing.html#guide-releasing-1-choose-the-version',1,'']]]
 ];

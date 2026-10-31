@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback',1,'']]]
+  ['다른_20이유_0',['스프라이트와 폰트가 다른 이유',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
+  ['다른_20패키지가_20필요한_20기능_1',['다른 패키지가 필요한 기능',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
 ];

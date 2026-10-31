@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['烘焙的唯一负责者：fontsynchandler_0',['烘焙的唯一负责者：FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
+  ['游戏写入的文件_0',['游戏写入的文件',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]]
 ];

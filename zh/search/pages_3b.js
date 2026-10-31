@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['开发板需要设置的内容_0',['开发板需要设置的内容',['../guide-performance.html#guide-performance-what-a-board-sets',1,'']]]
+  ['延迟加载_0',['延迟加载',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]]
 ];

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -213,6 +213,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0b728d536ac2361f4c24e99b4f47cbd3" id="r_a0b728d536ac2361f4c24e99b4f47cbd3"><td class="memItemLeft">std::function&lt; bool(const char *label, float *value, int count, int unitKind, bool ownsStorage, const <a class="el" href="struct_deki_editor_1_1_editor_u_i_1_1_edit_callbacks_bytes.html">EditCallbacksBytes</a> &amp;cb)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0b728d536ac2361f4c24e99b4f47cbd3">unitField</a></td></tr>
 <tr class="memitem:aac97f0281fcb2137a26abe38771fede5" id="r_aac97f0281fcb2137a26abe38771fede5"><td class="memItemLeft">std::function&lt; void(float, float, float, uint32_t, const char *)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#aac97f0281fcb2137a26abe38771fede5">drawTextCss</a></td></tr>
 <tr class="memitem:aa359f22fab65eea026beff538367f087" id="r_aa359f22fab65eea026beff538367f087"><td class="memItemLeft">std::function&lt; void(float, const char *, float *, float *)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa359f22fab65eea026beff538367f087">measureTextCss</a></td></tr>
+<tr class="memitem:ad0f042a6bd7eec2d989effca6b893d56" id="r_ad0f042a6bd7eec2d989effca6b893d56"><td class="memItemLeft">std::function&lt; void(const char *)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad0f042a6bd7eec2d989effca6b893d56">valueText</a></td></tr>
+<tr class="memitem:aa1c56fed377b40f0c68558a99f1238f6" id="r_aa1c56fed377b40f0c68558a99f1238f6"><td class="memItemLeft">std::function&lt; void(const char *)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa1c56fed377b40f0c68558a99f1238f6">hint</a></td></tr>
+<tr class="memitem:a383059a07f0da75f5463e04f51d64f9a" id="r_a383059a07f0da75f5463e04f51d64f9a"><td class="memItemLeft">std::function&lt; bool(const char *, float)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a383059a07f0da75f5463e04f51d64f9a">actionButton</a></td></tr>
 </table>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="ad4078abe056c578be2de3d8eaac05cbc" name="ad4078abe056c578be2de3d8eaac05cbc"></a>
@@ -1035,6 +1038,48 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::function&lt;void(float, const char*, float*, float*)&gt; DekiEditor::EditorUI::WidgetBackend::measureTextCss</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0f042a6bd7eec2d989effca6b893d56" name="ad0f042a6bd7eec2d989effca6b893d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f042a6bd7eec2d989effca6b893d56">&#9670;&#160;</a></span>valueText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(const char*)&gt; DekiEditor::EditorUI::WidgetBackend::valueText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1c56fed377b40f0c68558a99f1238f6" name="aa1c56fed377b40f0c68558a99f1238f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c56fed377b40f0c68558a99f1238f6">&#9670;&#160;</a></span>hint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(const char*)&gt; DekiEditor::EditorUI::WidgetBackend::hint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a383059a07f0da75f5463e04f51d64f9a" name="a383059a07f0da75f5463e04f51d64f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383059a07f0da75f5463e04f51d64f9a">&#9670;&#160;</a></span>actionButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;bool(const char*, float)&gt; DekiEditor::EditorUI::WidgetBackend::actionButton</td>
         </tr>
       </table>
 </div><div class="memdoc">

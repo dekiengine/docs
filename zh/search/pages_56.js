@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['看懂数字_0',['看懂数字',['../guide-performance.html#guide-performance-reading-the-numbers',1,'']]]
+  ['相机_0',['相机',['../guide-screens.html#autotoc_md17',1,'']]]
 ];

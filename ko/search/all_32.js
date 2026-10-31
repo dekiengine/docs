@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['데이터시트는_20si를_20쓰지_20않으며_20그래도_20괜찮습니다_0',['데이터시트는 SI를 쓰지 않으며, 그래도 괜찮습니다',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]],
-  ['데이터_20레지스트리_1',['프레임 데이터 레지스트리',['../guide-sprite-system.html#guide-sprite-system-frame-data-registry',1,'']]]
+  ['단위_0',['단위',['../guide-units.html',1,'']]],
+  ['단위_20설정_1',['단위 설정',['../engine-core.html#engine-units-settings',1,'단위 설정'],['../settings.html#settings-units-settings',1,'단위 설정']]],
+  ['단위_20추가하기_2',['프로퍼티에 단위 추가하기',['../guide-units.html#guide-units-adding-a-unit-to-a-property',1,'']]]
 ];

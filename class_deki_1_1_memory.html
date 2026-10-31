@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -194,6 +194,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6c3dc565d07425f0580f3d2909c8f35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs what is allocated and what is left, in one line, with an optional <span class="tt">label</span> (such as "after level load").  <br /></td></tr>
 <tr class="memitem:a440eeede79d061f37209a78da5bf4e63" id="r_a440eeede79d061f37209a78da5bf4e63"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a440eeede79d061f37209a78da5bf4e63">IsExternalAvailable</a> ()</td></tr>
 <tr class="memdesc:a440eeede79d061f37209a78da5bf4e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the target's provider serves the External region.  <br /></td></tr>
+<tr class="memitem:a3431dd5adc87d3b29e9ab2c25f21331c" id="r_a3431dd5adc87d3b29e9ab2c25f21331c"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a3431dd5adc87d3b29e9ab2c25f21331c">GetPeakInternal</a> ()</td></tr>
+<tr class="memdesc:a3431dd5adc87d3b29e9ab2c25f21331c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most ever held at once outside the External region, since Initialize or the last ResetPeaks.  <br /></td></tr>
+<tr class="memitem:aeb7ccecf576e4157b7e7413f4b5e9ff4" id="r_aeb7ccecf576e4157b7e7413f4b5e9ff4"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aeb7ccecf576e4157b7e7413f4b5e9ff4">GetPeakExternal</a> ()</td></tr>
+<tr class="memdesc:aeb7ccecf576e4157b7e7413f4b5e9ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most ever held at once in the External region.  <br /></td></tr>
+<tr class="memitem:ab1288a25317be817ee26e25056c5ee1f" id="r_ab1288a25317be817ee26e25056c5ee1f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab1288a25317be817ee26e25056c5ee1f">ResetPeaks</a> ()</td></tr>
+<tr class="memdesc:ab1288a25317be817ee26e25056c5ee1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the peaks again from what is held now, the global ones and every site's.  <br /></td></tr>
+<tr class="memitem:ab0fe1a3f00bc8bb2f275abc882ae13b1" id="r_ab0fe1a3f00bc8bb2f275abc882ae13b1"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab0fe1a3f00bc8bb2f275abc882ae13b1">GetSiteCount</a> ()</td></tr>
+<tr class="memdesc:ab0fe1a3f00bc8bb2f275abc882ae13b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many call sites have allocated, the overflow row included.  <br /></td></tr>
+<tr class="memitem:a0f1bc2147ad1ecc78ce72cd318236f46" id="r_a0f1bc2147ad1ecc78ce72cd318236f46"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0f1bc2147ad1ecc78ce72cd318236f46">GetSite</a> (uint32_t index, <a class="el" href="struct_deki_1_1_memory_site.html">MemorySite</a> &amp;out)</td></tr>
+<tr class="memdesc:a0f1bc2147ad1ecc78ce72cd318236f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies site <span class="tt">index</span> (0 to <a class="el" href="#ab0fe1a3f00bc8bb2f275abc882ae13b1" title="How many call sites have allocated, the overflow row included.">GetSiteCount()</a> - 1) to <span class="tt">out</span>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -201,6 +211,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a585469b9a34a1dbecec8ee0439f45634"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM: fast and scarce, a few hundred KB on an ESP32-S3.  <br /></td></tr>
 <tr class="memitem:a44e1e0894dcca1ef22f5f59cf04c75ee" id="r_a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee">External</a> { &quot;external&quot; }</td></tr>
 <tr class="memdesc:a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SPI.  <br /></td></tr>
+<tr class="memitem:a0f3c92d0656e9aa6331dd9cf59b2473b" id="r_a0f3c92d0656e9aa6331dd9cf59b2473b"><td class="memItemLeft">static constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0f3c92d0656e9aa6331dd9cf59b2473b">kMaxSites</a> = 64</td></tr>
+<tr class="memdesc:a0f3c92d0656e9aa6331dd9cf59b2473b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rows in the site table: 63 sites and an overflow row.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -683,6 +695,149 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="a3431dd5adc87d3b29e9ab2c25f21331c" name="a3431dd5adc87d3b29e9ab2c25f21331c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3431dd5adc87d3b29e9ab2c25f21331c">&#9670;&#160;</a></span>GetPeakInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Memory::GetPeakInternal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The most ever held at once outside the External region, since Initialize or the last ResetPeaks. </p>
+
+</div>
+</div>
+<a id="aeb7ccecf576e4157b7e7413f4b5e9ff4" name="aeb7ccecf576e4157b7e7413f4b5e9ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7ccecf576e4157b7e7413f4b5e9ff4">&#9670;&#160;</a></span>GetPeakExternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Memory::GetPeakExternal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The most ever held at once in the External region. </p>
+
+</div>
+</div>
+<a id="ab1288a25317be817ee26e25056c5ee1f" name="ab1288a25317be817ee26e25056c5ee1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1288a25317be817ee26e25056c5ee1f">&#9670;&#160;</a></span>ResetPeaks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::ResetPeaks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts the peaks again from what is held now, the global ones and every site's. </p>
+<p>The editor calls it when play starts. </p>
+
+</div>
+</div>
+<a id="ab0fe1a3f00bc8bb2f275abc882ae13b1" name="ab0fe1a3f00bc8bb2f275abc882ae13b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0fe1a3f00bc8bb2f275abc882ae13b1">&#9670;&#160;</a></span>GetSiteCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Memory::GetSiteCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many call sites have allocated, the overflow row included. </p>
+<p>0 in a build with DEKI_STRIP_ALLOC_CONTEXT, which captures no call sites.</p>
+<p>The first kMaxSites - 1 sites get a row each, in the order they first allocated; the rest share the last row, whose function is null. A site keeps its row after its memory is freed, with zero bytes. </p>
+
+</div>
+</div>
+<a id="a0f1bc2147ad1ecc78ce72cd318236f46" name="a0f1bc2147ad1ecc78ce72cd318236f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1bc2147ad1ecc78ce72cd318236f46">&#9670;&#160;</a></span>GetSite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Memory::GetSite </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_site.html">MemorySite</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies site <span class="tt">index</span> (0 to <a class="el" href="#ab0fe1a3f00bc8bb2f275abc882ae13b1" title="How many call sites have allocated, the overflow row included.">GetSiteCount()</a> - 1) to <span class="tt">out</span>. </p>
+<p>False for an index out of range. </p>
+
+</div>
+</div>
 <a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
 <a id="a948ba6b3520f1517d00624724375515f" name="a948ba6b3520f1517d00624724375515f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a948ba6b3520f1517d00624724375515f">&#9670;&#160;</a></span>Detail::RawAllocate</h2>
@@ -781,6 +936,31 @@ template&lt;typename T&gt; </div>
 
 <p>External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SPI. </p>
 <p>Use it only for buffers whose latency does not matter, not for one read every frame. </p>
+
+</div>
+</div>
+<a id="a0f3c92d0656e9aa6331dd9cf59b2473b" name="a0f3c92d0656e9aa6331dd9cf59b2473b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3c92d0656e9aa6331dd9cf59b2473b">&#9670;&#160;</a></span>kMaxSites</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Memory::kMaxSites = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rows in the site table: 63 sites and an overflow row. </p>
+<p>The table is 1.8 KB on a 32-bit board, from the heap's malloc (internal RAM on an ESP32), which the board's provider never sees. </p>
 
 </div>
 </div>

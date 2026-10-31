@@ -83,15 +83,16 @@ var searchData=
   ['convertpath_80',['ConvertPath',['../class_deki_1_1_i_file_system.html#a16c5bbbcd6a2a3f2efa643ab14a5ada2',1,'Deki::IFileSystem']]],
   ['converttorgba_81',['ConvertToRGBA',['../class_deki_1_1_texture2_d.html#afc4eeff6b386cbf6132cc2e468ff6659',1,'Deki::Texture2D::ConvertToRGBA()'],['../class_deki_editor_1_1_texture_importer.html#a674b995ca95edc4337daad56959a5241',1,'DekiEditor::TextureImporter::ConvertToRGBA()']]],
   ['count_82',['Count',['../class_deki_1_1_buffer.html#a30f8d95d9d506fc67d8d48d16f823953',1,'Deki::Buffer']]],
-  ['create_83',['Create',['../class_deki_1_1_component_factory.html#a7106751634bbadec3b3b7b3853f0538d',1,'Deki::ComponentFactory']]],
+  ['create_83',['Create',['../class_deki_1_1_component_factory.html#a7106751634bbadec3b3b7b3853f0538d',1,'Deki::ComponentFactory::Create()'],['../namespace_deki_editor_1_1_editor_texture.html#a66b978054b05667c2fdb0cc9501182e8',1,'DekiEditor::EditorTexture::Create()']]],
   ['createasset_84',['CreateAsset',['../class_deki_editor_1_1_asset_type_registry.html#ad11406f5f6ae5a2bbc4e95f7d2cd776c',1,'DekiEditor::AssetTypeRegistry']]],
   ['createcomponent_85',['CreateComponent',['../class_deki_1_1_component_registry.html#a92f31e44babf0f2db8632918b455eace',1,'Deki::ComponentRegistry::CreateComponent(uint32_t typeId) const'],['../class_deki_1_1_component_registry.html#ac75a438897fe1756d84300acd7858bd1',1,'Deki::ComponentRegistry::CreateComponent(const std::string &amp;name) const']]],
   ['createdekiobject_86',['CreateDekiObject',['../class_deki_1_1_scene.html#a99125f1d00a0dd04978fa9af5156e6dd',1,'Deki::Scene']]],
   ['createeditorui_87',['CreateEditorUI',['../class_deki_editor_1_1_i_target_builder.html#a0e8991bf9120e5559b410d299c75a9f3',1,'DekiEditor::ITargetBuilder']]],
-  ['createscene_88',['CreateScene',['../class_deki_1_1_engine.html#a8cec9f89c015309b85a9698b139feb25',1,'Deki::Engine::CreateScene()'],['../class_deki_1_1_scene_system.html#ad648b1f17633b5000fc7660245fbf6b4',1,'Deki::SceneSystem::CreateScene()']]],
-  ['createuioverlay_89',['CreateUIOverlay',['../class_deki_1_1_i_display.html#a00ac0f8939bf8d1d7d4f195820021866',1,'Deki::IDisplay']]],
-  ['cross_90',['Cross',['../struct_deki_1_1_vector2.html#a6cd25e0fde656cb0c935f9b47af22b09',1,'Deki::Vector2::Cross()'],['../struct_deki_1_1_vector3.html#a984dbedf3590728ea6fb5450a3626bb7',1,'Deki::Vector3::Cross()']]],
-  ['csspx_91',['CssPx',['../namespace_deki_editor_1_1_fonts.html#a360c255affb248618f4b714f2d5c20d3',1,'DekiEditor::Fonts']]],
-  ['current_92',['Current',['../namespace_deki_editor_1_1_localization.html#a3eee23e002da85398c533bcbeca90220',1,'DekiEditor::Localization']]],
-  ['customeditorregistry_93',['CustomEditorRegistry',['../class_deki_editor_1_1_custom_editor_registry.html#ab7b2cdb543223d0ec7f89fa3b8338776',1,'DekiEditor::CustomEditorRegistry']]]
+  ['creatergba_88',['CreateRgba',['../namespace_deki_editor_1_1_editor_texture.html#a8a277ddb9fe5d7a8cc7bbfa19a83c08a',1,'DekiEditor::EditorTexture']]],
+  ['createscene_89',['CreateScene',['../class_deki_1_1_engine.html#a8cec9f89c015309b85a9698b139feb25',1,'Deki::Engine::CreateScene()'],['../class_deki_1_1_scene_system.html#ad648b1f17633b5000fc7660245fbf6b4',1,'Deki::SceneSystem::CreateScene()']]],
+  ['createuioverlay_90',['CreateUIOverlay',['../class_deki_1_1_i_display.html#a00ac0f8939bf8d1d7d4f195820021866',1,'Deki::IDisplay']]],
+  ['cross_91',['Cross',['../struct_deki_1_1_vector2.html#a6cd25e0fde656cb0c935f9b47af22b09',1,'Deki::Vector2::Cross()'],['../struct_deki_1_1_vector3.html#a984dbedf3590728ea6fb5450a3626bb7',1,'Deki::Vector3::Cross()']]],
+  ['csspx_92',['CssPx',['../namespace_deki_editor_1_1_fonts.html#a360c255affb248618f4b714f2d5c20d3',1,'DekiEditor::Fonts']]],
+  ['current_93',['Current',['../namespace_deki_editor_1_1_localization.html#a3eee23e002da85398c533bcbeca90220',1,'DekiEditor::Localization']]],
+  ['customeditorregistry_94',['CustomEditorRegistry',['../class_deki_editor_1_1_custom_editor_registry.html#ab7b2cdb543223d0ec7f89fa3b8338776',1,'DekiEditor::CustomEditorRegistry']]]
 ];

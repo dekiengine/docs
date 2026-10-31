@@ -23,7 +23,7 @@ var searchData=
   ['light_20',['Light',['../class_deki_1_1_i_power.html#a92934cb5d09494f4e0e81409431aa59fa9914a0ce04a7b7b6a8e39bec55064b82',1,'Deki::IPower']]],
   ['lightgray_21',['LightGray',['../class_deki_1_1_color.html#ad4d58668be4597ba0558953206bd8cc5',1,'Deki::Color']]],
   ['line_22',['Line',['../struct_deki_1_1_alloc_context.html#a4a8524ff8a3cdf578e82dd37bf9485bf',1,'Deki::AllocContext::Line()'],['../namespace_deki_editor_1_1_palette.html#a0c9bc727b34a87409a26b44b21ad2a55',1,'DekiEditor::Palette::Line']]],
-  ['line_23',['line',['../guide-platforms.html#guide-platforms-from-the-command-line',1,'From the command line'],['../struct_deki_1_1_alloc_context.html#a6b8648bae122b0cf4028bc95d263460c',1,'Deki::AllocContext::line']]],
+  ['line_23',['line',['../guide-platforms.html#guide-platforms-from-the-command-line',1,'From the command line'],['../struct_deki_1_1_alloc_context.html#a6b8648bae122b0cf4028bc95d263460c',1,'Deki::AllocContext::line'],['../struct_deki_1_1_memory_site.html#a135928c0f4605b669c27c33c4c20cfea',1,'Deki::MemorySite::line']]],
   ['line2_24',['Line2',['../namespace_deki_editor_1_1_palette.html#a9e65f50ca92f098ac35b5b6b310677c6',1,'DekiEditor::Palette']]],
   ['line3_25',['Line3',['../namespace_deki_editor_1_1_palette.html#a917f0d28788c976bd7b080577dc28af6',1,'DekiEditor::Palette']]],
   ['link_26',['link',['../struct_deki_editor_1_1_node_canvas_palette.html#a0cbb4a49827a676154e4588ec03a4c9c',1,'DekiEditor::NodeCanvasPalette']]],
@@ -78,7 +78,10 @@ var searchData=
   ['logsystem_75',['LogSystem',['../class_deki_1_1_log_system.html',1,'Deki']]],
   ['logsystem_2eh_76',['LogSystem.h',['../_log_system_8h.html',1,'']]],
   ['logwithlevel_77',['LogWithLevel',['../class_deki_1_1_log_system.html#a6f337be99ca2519f580e2805e546ae73',1,'Deki::LogSystem']]],
-  ['lookup_78',['Lookup',['../class_deki_1_1_asset_lookup_table.html#a3d58f754eb4cceb07cc84125c2645e4b',1,'Deki::AssetLookupTable']]],
-  ['lookup_20table_20asset_5ftable_20bin_79',['Asset Lookup Table (asset_table.bin)',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]],
-  ['lookuppath_80',['LookupPath',['../class_deki_1_1_asset_manager.html#af13d6625425e815401d064ac8837ab73',1,'Deki::AssetManager']]]
+  ['looks_78',['Changing how it looks',['../guide-ui-widgets.html#guide-ui-widgets-changing-how-it-looks',1,'']]],
+  ['lookup_79',['Lookup',['../class_deki_1_1_asset_lookup_table.html#a3d58f754eb4cceb07cc84125c2645e4b',1,'Deki::AssetLookupTable']]],
+  ['lookup_20table_20asset_5ftable_20bin_80',['Asset Lookup Table (asset_table.bin)',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]],
+  ['lookuppath_81',['LookupPath',['../class_deki_1_1_asset_manager.html#af13d6625425e815401d064ac8837ab73',1,'Deki::AssetManager']]],
+  ['lowerbuildpriority_82',['LowerBuildPriority',['../namespace_deki_editor.html#a6c024f63549d4acba558b700cf5c72df',1,'DekiEditor']]],
+  ['lvgl_83',['Coming from LVGL',['../guide-coming-from-lvgl.html',1,'']]]
 ];

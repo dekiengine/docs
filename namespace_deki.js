@@ -79,6 +79,7 @@ var namespace_deki =
     [ "LogSystem", "class_deki_1_1_log_system.html", "class_deki_1_1_log_system" ],
     [ "Mat4", "struct_deki_1_1_mat4.html", "struct_deki_1_1_mat4" ],
     [ "Memory", "class_deki_1_1_memory.html", "class_deki_1_1_memory" ],
+    [ "MemorySite", "struct_deki_1_1_memory_site.html", "struct_deki_1_1_memory_site" ],
     [ "MemoryStats", "struct_deki_1_1_memory_stats.html", "struct_deki_1_1_memory_stats" ],
     [ "NodeRef", "struct_deki_1_1_node_ref.html", "struct_deki_1_1_node_ref" ],
     [ "Object", "class_deki_1_1_object.html", "class_deki_1_1_object" ],

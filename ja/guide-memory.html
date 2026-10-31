@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-ja_2guide-memory"></a></p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-the-rule"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 ルール</h1>
 <p><b>デバイスで実行されるコードのメモリ確保は、すべてエンジンを通します。</b> エンジンのランタイムコードでも、パッケージのコードでも、<span class="tt">new[]</span>、<span class="tt">malloc</span>、<span class="tt">heap_caps_*</span> は使いません。<span class="tt">Deki::Memory</span> が全体を取りまとめ、ほとんどの場合に使うべきものは <span class="tt">Deki::Buffer&lt;T&gt;</span> です。</p>
 <p>これは書き方の好みではなく、<a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_allocations.py"><span class="tt">tools/ci/check_allocations.py</span></a> によって強制されています。これを守らなければならない理由は 3 つあります。</p>
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><b>メモリをどこに置くべきかを知っているのはエンジンだけです。</b> そのボードに外部 RAM があるか、それがどれだけ遅いか、周辺機器がある領域にアクセスできるかは、呼び出し側ではなくプラットフォームの性質です。領域を自分で選ぶ呼び出し側は、次のボードで間違ったものになります。</li>
 <li><b><span class="tt">Deki::Memory</span> は集計とリークの検査も担います。</b> 統計、二重解放の防止、(デバッグビルドでは) リークの表はすべてその背後にあります。それを経由しない確保は見えなくなります。</li>
 </ol>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-dekibuffert---use-this"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 <span class="tt">Deki::Buffer&lt;T&gt;</span> - これを使う</h1>
 <p><span class="tt">&lt;deki/providers/Buffer.h&gt;</span>。<span class="tt">Deki::Memory</span> を通して確保し、自分で解放する、所有権を持つ配列です。</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;deki/providers/Buffer.h&gt;</span></div>
@@ -181,10 +181,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><span class="tt">Reset()</span> は早めに解放します。<span class="tt">Release()</span> は生のポインターを渡し、呼び出し側が <span class="tt">Deki::Memory::Free</span> の責任を負うようになります。<span class="tt">Release</span> はあえて使う機会が少なくなるようにしています。</li>
 </ul>
 <p>自動化されていないのは、*メモリがあったかどうか*だけです。その後のすべての分岐で後始末をするのではなく、バッファを作成した場所で <span class="tt">if (!buffer)</span> を 1 回確認してください。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-why-not-an-arena"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 アリーナを使わない理由</h2>
 <p>フレームアリーナでも失敗の処理はなくせますが、事前にサイズを決めておく必要があります。全画面のグラデーションのベイク 1 回分に足りる大きさのアリーナは、プロジェクトにグラデーションがあるかどうかにかかわらず 150 KB を確保します。ヒープが数百 KB しかないチップでは、存在しないかもしれない機能のためにメモリの半分を押さえることになります。アリーナは余裕がある環境で効果を発揮します。ここでのほとんどの確保は寿命が長く、いずれにしても何かが所有しています。グリフの表、ピクセルデータ、パーティクルの列、フレームバッファなどです。これは RAII が対応するもので、アリーナは対応しません。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-regions---you-choose-every-time"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 領域 - 毎回あなたが選ぶ</h1>
 <p><span class="tt">&lt;deki/providers/Memory.h&gt;</span>。<b>デフォルトはなく、何も推測されません。</b> 確保を行う呼び出しはすべて領域を指定し、省略するとコンパイルできません。</p>
 <table class="markdownTable">
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <td class="markdownTableBodyNone"><span class="tt">Deki::Memory::External</span>  </td><td class="markdownTableBodyNone">ボードにあれば PSRAM。メガバイト単位ですが、SPI 経由でアクセスするので明らかに遅くなります  </td></tr>
 </table>
 <p><span class="tt">Deki::Memory::AllocateDma(bytes, region)</span> は、DMA エンジンがそのブロックを読めなければならないという制約を加えます。これは配置とは独立しています。フレームバッファは、ボードがそれを内部に置くか PSRAM に置くかにかかわらずアクセス可能でなければならないので、3 つ目の領域ではなく別のエントリーポイントになっています。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-a-region-is-a-name-so-packages-can-add-their-own"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 領域は名前なので、パッケージが独自に追加できる</h2>
 <p>エンジンが提供するのは 2 つです。この集合は開かれています。</p>
 <div class="fragment"><div class="line"><span class="comment">// in a board-support package - no engine change, no registration call</span></div>
@@ -209,13 +209,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 </div><!-- fragment --><p>パッケージは自分の領域を <span class="tt">Deki::Memory</span> の中ではなく、<b>自分の名前空間</b>に置きます。クラスは閉じているのでどのみちそうするしかありませんが、それこそが狙いです。どちらも <span class="tt">Rtc</span> という定数を使いたい 2 つのボードパッケージは、言語が両者を分けてくれるので衝突しません。定数がどこにあるかは決して重要ではありません。領域の識別子はハッシュ化した名前なので、名前空間の間で移動しても何も変わりません。</p>
 <p><span class="tt">Region()</span> は、エンジンのほかの部分と同じ FNV-1a で名前をコンパイル時にハッシュ化するので、領域はプロバイダーが switch できる定数式になります。</p>
 <p><b>2 つのパッケージが同じ領域名を使えば、それは同じ領域を意味します。</b> 2 つのボードパッケージが調整なしで <span class="tt">"rtc"</span> について合意できるのはこのためで、2 つのパッケージがどちらも <span class="tt">spi</span> ケーパビリティを要求するのとまったく同じです。これが通用しないのは、2 つのパッケージが 1 つの単語で*異なる*ものを意味している場合です。そのため、自分で考えたものでない名前には修飾を付けてください: <span class="tt">particles.scratch</span>、<span class="tt">esp32.rtc</span>。確保のヘッダーには id しか保存されないので、デバッグビルドは同じハッシュになる 2 つの異なる名前を報告します。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-serving-one-is-the-boards-job"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 領域を提供するのはボードの仕事</h2>
 <p>パッケージは領域に*名前を付ける*ことはできますが、それを提供できるのはボードの <span class="tt">IMemoryProvider</span> だけです。<span class="tt">esp32.rtc</span> を知らないプロバイダーは nullptr を返し、失敗のメッセージには領域の名前が出ます。</p>
 <div class="fragment"><div class="line">Failed to allocate 64 bytes in &#39;esp32.rtc&#39; for &#39;void Battery::Save()&#39;</div>
 <div class="line">at Battery.cpp:88 (0 bytes free there)</div>
 </div><!-- fragment --><p>別の領域で代用されることはありません。特に <span class="tt">Rtc</span> ではこれが普段以上に重要です。この領域の目的はディープスリープを越えて保持することなので、黙って通常の RAM を返すと、まさに保持されるべきときにデータが失われてしまいます。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-the-region-name-is-the-capability-name"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 領域名はケーパビリティ名でもある</h2>
 <p>ターゲットは、持っている領域を <span class="tt">memory:</span> を接頭辞としたケーパビリティとして公開します。</p>
 <table class="markdownTable">
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <p>そのため、領域を必要とするパッケージはそれを宣言し、ビルドは何かが実行される前に、それを持たないターゲットを名前を挙げて拒否します。</p>
 <div class="fragment"><div class="line">&quot;platformRequires&quot;: [&quot;memory:esp32.rtc&quot;]</div>
 </div><!-- fragment --><p><span class="tt">Region("esp32.rtc")</span> と <span class="tt">"memory:esp32.rtc"</span> は、誰かが揃えておく 2 つのリストではなく、接頭辞を付けただけの同じトークンなので、両者がずれることはありません。ケーパビリティ名は小文字で、<span class="tt">.</span>、<span class="tt">-</span>、<span class="tt">:</span>、<span class="tt">_</span> を使います。<span class="tt">"WiFi"</span> を宣言するプラットフォームは読み込み時に警告を受けます。文字列の完全一致では、黙って一度も一致しないことになるからです。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-placement-resolves-once-there-is-no-fallback"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 配置は 1 回で決まる。フォールバックはない</h2>
 <p>選んだ領域がいっぱいなら、確保は<b>失敗して null を返します</b>。もう一方の領域で再試行することはありません。これは意図的です。</p>
 <ul>
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 </ul>
 <p>失敗すると、それが何で、どれだけの大きさで、どの領域で、フォールバックを試みなかったことがログに出ます。どの呼び出し側も、もともと null を処理しなければなりません。</p>
 <p>外部 RAM のないボードでは、すべてが内部に解決されます。これはフォールバックではなく、領域がそれしかないということです。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-the-rest-of-the-api"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 API のその他の部分</h1>
 <p><span class="tt">Deki::Memory</span> (<span class="tt">&lt;deki/providers/Memory.h&gt;</span>)。<span class="tt">Buffer&lt;T&gt;</span> でカバーされない場合に使います。</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span>* Allocate(<span class="keywordtype">size_t</span> size, Memory::Region region, AllocContext ctx = {});</div>
@@ -255,7 +255,7 @@ API のその他の部分</h1>
 <li><span class="tt">Memory::Initialize</span> は起動時に 1 回、内部 RAM と外部 RAM の空き容量をログに出します。そのため、最初のメモリ不足のログ行ではなく、実際の数値に基づいてプロジェクトの規模を決められます。</li>
 <li><span class="tt">AllocateInternal</span> / <span class="tt">FreeInternal</span> は配置の判断を迂回するもので、プラットフォームレイヤーのためにあります。コンポーネントからは使わないでください。</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-finding-out-where-the-memory-went"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
 メモリの行き先を調べる</h2>
 <div class="fragment"><div class="line">Deki::Memory::LogStats(<span class="stringliteral">&quot;after level load&quot;</span>);</div>
 <div class="line"><span class="comment">// Memory at after level load: 48216 bytes allocated (48216 internal, 0 external);</span></div>
@@ -264,12 +264,12 @@ API のその他の部分</h1>
 <li><span class="tt">LogStats(label)</span> は「どれだけメモリを使っているか」に 1 回の呼び出しで答えます。デバッグビルドでは、現在の確保数とピーク時の確保数も報告します。呼ばない限りコストはかかりません。</li>
 <li><span class="tt">GetStats()</span> は同じ数値を構造体で返します。<span class="tt">GetAvailableInternal()</span> と <span class="tt">GetAvailablePSRAM()</span> は空き容量を返します。<span class="tt">IsPSRAMAvailable()</span> は外部の領域がそもそもあるかどうかを返します。これらはどれも、自分でメモリを配置してよいという許可ではありません。プロジェクトの規模を決めるためと、解放すべきメモリを持ち続けているものを見つけるためのものです。</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-changing-scenes"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
 シーンの切り替え</h2>
 <div class="fragment"><div class="line">Deki::Engine::GetInstance().OpenScene(nextScene);  <span class="comment">// AssetRef&lt;Scene&gt;</span></div>
 </div><!-- fragment --><p><span class="tt">OpenScene</span> は、フレームの終わりに、離れるシーンを解放してから次のシーンを読み込むので、2 つが同時にメモリに載ることはありません。次のシーンを自分で読み込んで <span class="tt">SetRootScene</span> を呼ぶと両方を抱えることになり、T-Deck Plus でデモのメニューから草原へそうして移ると、内部 RAM の残りは 16 バイトでした。存在しないシーンは開かれず、ゲームは今のシーンにとどまります。</p>
 <p>デバイスではその後、離れたシーンだけが使っていたアセット (スプライト、フォント、アニメーション) を解放するので、ゲームのメモリは訪れたすべてのシーンではなく、今のシーンが必要とする分になります。多くのオブジェクトを取り除いた後に同じことをするには <span class="tt">Engine::ReleaseUnusedAssets()</span> を呼びます。生きているオブジェクトのコンポーネントの <span class="tt">AssetRef</span> フィールドが指している間、アセットは残ります。アセットは <span class="tt">AssetRef</span> で持ってください。それ以外で持たれた <span class="tt">AssetRef</span> は次に求められたときに読み込み直しますが、<span class="tt">Get()</span> で得た生のポインタをフレームをまたいで持つと、そのアセットを使うものがある間しか有効ではありません。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-alloccontext---the-label-writes-itself"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
 <span class="tt">AllocContext</span> - ラベルは自動で書かれる</h1>
 <p>確保を行う呼び出しはすべてこれを受け取りますが、ほとんど誰も書きません。</p>
 <div class="fragment"><div class="line">posX.Allocate(capacity, Deki::Memory::Internal);</div>
@@ -282,13 +282,13 @@ API のその他の部分</h1>
 <div class="line">&#39;void ParticlePool::SetCapacity(size_t)&#39; at ParticlePool.h:48</div>
 </div><!-- fragment --><p><b>示されるのはエンジンではなく呼び出し側です。</b> <span class="tt">Buffer&lt;T&gt;::Allocate</span> と <span class="tt">Memory::Allocate</span> はどちらもコンテキストを受け取り、デフォルト値で上書きせずにそのまま渡すので、場所は <span class="tt">Buffer.h</span> ではなく*あなたが*呼び出しを書いた場所になります。テストがまさにそれを確認しています。これを間違えた版は、エンジン内のすべての確保についてもっともらしく見えるファイルを報告し、自信満々に役に立たないものになるからです。</p>
 <p><b>何もコピーされません。</b> どのメンバーも静的記憶域期間を持つ文字列リテラルを指しているので、デバッグ用のリークの表がポインターを保持できます。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-stripping-it"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 取り除く</h2>
 <p>取得はすべてのビルドで有効です。そのコストは <b>ESP32-S3 のファームウェアで 4,272 バイト、1.5 MB のイメージの 0.28%</b> で、呼び出し箇所あたり約 40 バイトです。気にする必要がないほど小さいコストです。</p>
 <p>フラッシュを取り戻す必要があるビルドでは、<span class="tt">DEKI_STRIP_ALLOC_CONTEXT</span> を定義します。<span class="tt">AllocContext</span> は空の構造体になり、パスも関数名もバイナリに入らず、失敗時には発生元を示さずに何をしようとしていたかを報告します。</p>
 <div class="fragment"><div class="line">Failed to allocate 153600 bytes in internal RAM (126556 bytes free there)</div>
 </div><!-- fragment --><p>取り除いたビルドと取り除いていないビルドではレイアウトが異なるので、エンジンとそれを呼ぶパッケージは一致している必要があります。これは <span class="tt">MemoryStats</span> がすでに課しているのと同じ制約です。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-dekivectort---when-the-count-changes-at-runtime"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 <span class="tt">Deki::Vector&lt;T&gt;</span> - 実行時に個数が変わる場合</h1>
 <p><span class="tt">&lt;deki/providers/Vector.h&gt;</span>。<span class="tt">Buffer&lt;T&gt;</span> は、確保時にわかっている個数を扱います。個数が変わり、固定の上限がない場合、デバイス上では <span class="tt">std::vector</span> は誤った選択です。<span class="tt">push_back</span> は <span class="tt">operator new</span> を呼びますが、これは例外が無効だとメモリ不足を報告できないので、abort してボードが再起動します。</p>
 <p><span class="tt">Deki::Vector</span> はそれと同じ形で、ここで重要な 1 点だけを変えたものです。確保しうるものはすべて <span class="tt">bool</span> を返します。</p>
@@ -308,7 +308,7 @@ API のその他の部分</h1>
 <li><span class="tt">T</span> の制約は <span class="tt">Buffer</span> と同じで、トリビアルにコピー可能かつトリビアルに破棄可能です。拡張時には <span class="tt">memcpy</span> で要素を移動します。</li>
 </ul>
 <p>まずは <span class="tt">Buffer</span> を使ってください。ここでいう「動的な」データのほとんどは、プロジェクトがすでに知っている上限を持っています。また、固定の確保は、繰り返しの拡張のように小さなヒープを断片化させることがありません。</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-stdvector-stdstring-and-plain-new"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 <span class="tt">std::vector</span>、<span class="tt">std::string</span>、通常の <span class="tt">new</span></h2>
 <p>これらは <span class="tt">operator new</span> を呼び、<span class="tt">Deki::Buffer&lt;T&gt;</span> はそれを置き換えられません。デバイス向けのビルドでは、エンジンが演算子そのものを置き換えます (<a href="https://github.com/dekiengine/deki-engine/blob/master/src/providers/OperatorNew.cpp"><span class="tt">src/providers/OperatorNew.cpp</span></a>)。これで 2 つのことが変わります。</p>
 <ul>
@@ -333,7 +333,7 @@ API のその他の部分</h1>
 <p>配置はここではあえて決めません。削除された <span class="tt">Auto</span> ルールのようにサイズで振り分けると、大きな <span class="tt">std::vector</span> が黙って PSRAM に移り、コードからは見えない理由でホットループが遅くなってしまいます。外部メモリが欲しい呼び出し側は <span class="tt">Deki::Memory::External</span> を指定して <span class="tt">Deki::Buffer</span> を使います。<span class="tt">operator new</span> にはそれがわからないので、推測はしません。</p>
 <p>これは <span class="tt">__cpp_exceptions</span> が未定義の場合、つまり abort の問題が存在するビルドでだけコンパイルされます。ホストやエディターのビルドは標準の演算子を使い続けます。過剰アラインメント版 (<span class="tt">align_val_t</span>) は、対になったまま保たれるように libstdc++ に任せています。</p>
 <p>まとめると、実行時に変わる個数には <span class="tt">Deki::Vector&lt;T&gt;</span> を使い、<span class="tt">false</span> を処理してください。サイズがファイル、シーン、画面から来るものには <span class="tt">Deki::Buffer&lt;T&gt;</span> を使います。<span class="tt">std::vector</span> はエディターやツールのコードでは引き続き適切で、デバイス上でのメモリ不足は、黙った abort ではなくログに出る abort になりました。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-platform-layer-imemoryprovider"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 プラットフォームレイヤー: <span class="tt">IMemoryProvider</span></h1>
 <p><span class="tt">&lt;deki/providers/IMemoryProvider.h&gt;</span>。プラットフォームはこれを 1 つ用意し、<span class="tt">Memory::Initialize()</span> の前に渡します。</p>
 <div class="fragment"><div class="line">Deki::Memory::SetBackend(<span class="keyword">new</span> MyBoardMemoryProvider());  <span class="comment">// takes ownership</span></div>
@@ -346,7 +346,7 @@ API のその他の部分</h1>
 <p><span class="tt">AllocateRaw</span> / <span class="tt">FreeRaw</span> / <span class="tt">GetRawBlockSize</span> は 4 組目の組と問い合わせです。グローバルな <span class="tt">operator new</span> が経由する、自然なアラインメントの単純なアロケーターです。これにより、ボードのヒープが、エンジンが配置するすべてのものに加えて <span class="tt">std::vector</span> やスカラーの <span class="tt">new</span> にも使われます。デフォルトは <span class="tt">malloc</span>/<span class="tt">free</span> で、プラットフォームが答えられない場合 <span class="tt">GetRawBlockSize</span> は 0 を返します。その影響は <span class="tt">LogStats</span> の精度だけです。組の両方をオーバーライドするか、どちらもしないかにしてください。</p>
 <p><span class="tt">AllocateDMA</span> が <span class="tt">AllocateInternal</span> と別になっているのは、ESP32-S3 では内部 RAM の大部分は DMA でアクセスできるもののすべてではなく、アクセスできない領域のフレームバッファを読むディスプレイの周辺機器では、エラーではなく黙ってデータが壊れるためです。ESP32 のプロバイダーは明示的に <span class="tt">MALLOC_CAP_DMA</span> を要求します。<span class="tt">AllocateInternal</span>/<span class="tt">FreeInternal</span> のどちらかをオーバーライドする場合は両方をオーバーライドしてください。組は一致していなければなりません (ESP32 のプロバイダーは 16 バイトのアラインメントで <span class="tt">heap_caps_aligned_alloc</span> を使い (これによりブリットのディスパッチャーが S3 の SIMD カーネルを使えるようにもなります)、<span class="tt">heap_caps_free</span> を使います)。</p>
 <p><b><span class="tt">IMemoryProvider</span> はパッケージの ABI の一部です。</b> そのため、その仮想関数は <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_abi.py"><span class="tt">tools/ci/check_abi.py</span></a> によって固定されています。追加、削除、並べ替えをすると vtable のスロットが動くので、同じコミットで <span class="tt">kDekiReflectionAbiVersion</span> を上げる必要があります。</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-the-lint"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 lint</h1>
 <div class="fragment"><div class="line">python tools/ci/check_allocations.py            # packages beside the repo</div>
 <div class="line">python tools/ci/check_allocations.py --verbose  # also list files and waivers</div>

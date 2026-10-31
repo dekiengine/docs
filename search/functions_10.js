@@ -62,7 +62,7 @@ var searchData=
   ['setactiveobject_59',['SetActiveObject',['../class_deki_editor_1_1_editor_application.html#a9eeb82e940c565191223d1e607986511',1,'DekiEditor::EditorApplication']]],
   ['setactivescene_60',['SetActiveScene',['../class_deki_editor_1_1_editor_application.html#a0884eb50519a8d1296e9cfedcd37b224',1,'DekiEditor::EditorApplication']]],
   ['setactiveuioverlay_61',['SetActiveUIOverlay',['../class_deki_1_1_i_display.html#aa38c6db454384b481f15645deffb5000',1,'Deki::IDisplay']]],
-  ['setbackend_62',['SetBackend',['../class_deki_1_1_memory.html#a1b059aac05f640f1615b15a2ab475914',1,'Deki::Memory']]],
+  ['setbackend_62',['SetBackend',['../class_deki_1_1_memory.html#a1b059aac05f640f1615b15a2ab475914',1,'Deki::Memory::SetBackend()'],['../namespace_deki_editor_1_1_editor_texture.html#a6fdd5c6338563aaa68e5e4e8d96d63df',1,'DekiEditor::EditorTexture::SetBackend()']]],
   ['setbacklight_63',['SetBacklight',['../class_deki_1_1_i_display.html#ac43afb8bae1bbd35505d0f5e6f13f3cf',1,'Deki::IDisplay']]],
   ['setbool_64',['SetBool',['../class_deki_editor_1_1_editor_settings.html#a8f604c4807052dd7cf9f28bbf24d1c94',1,'DekiEditor::EditorSettings']]],
   ['setbuildactivitysink_65',['SetBuildActivitySink',['../namespace_deki_editor.html#ad630f65c2850ff715ff3e97df6f20694',1,'DekiEditor']]],

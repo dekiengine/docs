@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
+  ['게임이_20쓰는_20파일_0',['게임이 쓰는 파일',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]]
 ];

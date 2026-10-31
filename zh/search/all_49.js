@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['检查_0',['lint 检查',['../guide-memory.html#guide-memory-the-lint',1,'']]]
+  ['核心_20设置_0',['核心 设置',['../engine-core.html#engine-core-settings',1,'核心 设置'],['../settings.html#settings-core-settings',1,'核心 设置']]]
 ];

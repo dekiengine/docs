@@ -8,7 +8,7 @@ var searchData=
   ['license_5',['license',['../struct_package_entry.html#a9225b5fedf9c89c5279f62953a8a9ead',1,'PackageEntry']]],
   ['lightgray_6',['LightGray',['../class_deki_1_1_color.html#ad4d58668be4597ba0558953206bd8cc5',1,'Deki::Color']]],
   ['line_7',['Line',['../namespace_deki_editor_1_1_palette.html#a0c9bc727b34a87409a26b44b21ad2a55',1,'DekiEditor::Palette']]],
-  ['line_8',['line',['../struct_deki_1_1_alloc_context.html#a6b8648bae122b0cf4028bc95d263460c',1,'Deki::AllocContext']]],
+  ['line_8',['line',['../struct_deki_1_1_alloc_context.html#a6b8648bae122b0cf4028bc95d263460c',1,'Deki::AllocContext::line'],['../struct_deki_1_1_memory_site.html#a135928c0f4605b669c27c33c4c20cfea',1,'Deki::MemorySite::line']]],
   ['line2_9',['Line2',['../namespace_deki_editor_1_1_palette.html#a9e65f50ca92f098ac35b5b6b310677c6',1,'DekiEditor::Palette']]],
   ['line3_10',['Line3',['../namespace_deki_editor_1_1_palette.html#a917f0d28788c976bd7b080577dc28af6',1,'DekiEditor::Palette']]],
   ['link_11',['link',['../struct_deki_editor_1_1_node_canvas_palette.html#a0cbb4a49827a676154e4588ec03a4c9c',1,'DekiEditor::NodeCanvasPalette']]],

@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
   </td>
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-ko_2guide-memory"></a></p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-the-rule"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 규칙</h1>
 <p><b>장치에서 실행되는 코드의 모든 할당은 엔진을 거칩니다.</b> 엔진의 런타임 코드에서도, 패키지의 런타임 코드에서도 <span class="tt">new[]</span>, <span class="tt">malloc</span>, <span class="tt">heap_caps_*</span>를 쓰지 않습니다. <span class="tt">Deki::Memory</span>가 전체를 조율하며, 거의 언제나 필요한 것은 <span class="tt">Deki::Buffer&lt;T&gt;</span>입니다.</p>
 <p>이것은 스타일 취향이 아니며, <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_allocations.py"><span class="tt">tools/ci/check_allocations.py</span></a>가 강제합니다. 이 규칙이 지켜져야 하는 이유는 세 가지입니다.</p>
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><b>메모리가 어디에 있어야 하는지는 엔진만 압니다.</b> 이 보드에 외부 RAM이 있는지, 얼마나 느린지, 주변 장치가 특정 영역에 접근할 수 있는지는 호출하는 쪽이 아니라 플랫폼의 속성입니다. 영역을 직접 고르는 호출자는 다음 보드에서 틀리게 됩니다.</li>
 <li><b><span class="tt">Deki::Memory</span>는 사용량 집계이자 누수 검사이기도 합니다.</b> 통계, 이중 해제 방지, (디버그 빌드에서의) 누수 테이블이 모두 그 뒤에 있습니다. 이를 건너뛴 할당은 보이지 않습니다.</li>
 </ol>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-dekibuffert---use-this"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 <span class="tt">Deki::Buffer&lt;T&gt;</span> - 이것을 사용하십시오</h1>
 <p><span class="tt">&lt;deki/providers/Buffer.h&gt;</span>. <span class="tt">Deki::Memory</span>를 통해 할당하고 스스로 해제하는 소유 배열입니다.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;deki/providers/Buffer.h&gt;</span></div>
@@ -181,10 +181,10 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><span class="tt">Reset()</span>은 일찍 해제합니다. <span class="tt">Release()</span>는 원시 포인터를 넘겨주며, 이후 호출자가 <span class="tt">Deki::Memory::Free</span>를 책임집니다. <span class="tt">Release</span>는 의도적으로 드물게 쓰이도록 설계되었습니다.</li>
 </ul>
 <p>자동화되지 않는 단 한 가지는 *메모리가 실제로 있었는지*입니다. 이후의 모든 분기에서 되감는 대신, 버퍼를 만드는 곳에서 <span class="tt">if (!buffer)</span>를 한 번 검사하십시오.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-why-not-an-arena"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 아레나를 쓰지 않는 이유</h2>
 <p>프레임 아레나도 실패 처리를 없애 주지만, 크기를 미리 정해야 합니다. 전체 화면 그라디언트 베이크 하나를 담을 만큼 큰 아레나는 프로젝트에 그라디언트가 있든 없든 150 KB를 예약하는데, 힙이 수백 KB인 칩에서는 존재하지 않을 수도 있는 기능을 위해 메모리의 절반을 잡아 두는 셈입니다. 아레나는 여유가 있는 곳에서 효과가 있습니다. 여기서 대부분의 할당은 수명이 길고 어차피 무언가가 소유합니다. 글리프 테이블, 픽셀 데이터, 파티클 열, 프레임버퍼 등이며, 이것이 바로 RAII가 다루는 경우이고 아레나는 다루지 않는 경우입니다.</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-regions---you-choose-every-time"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 영역 - 매번 직접 고릅니다</h1>
 <p><span class="tt">&lt;deki/providers/Memory.h&gt;</span>. <b>기본값은 없고 아무것도 추론하지 않습니다.</b> 할당하는 모든 호출은 영역을 지정하며, 생략하면 컴파일되지 않습니다.</p>
 <table class="markdownTable">
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <td class="markdownTableBodyNone"><span class="tt">Deki::Memory::External</span>  </td><td class="markdownTableBodyNone">보드에 PSRAM이 있으면 PSRAM. 메가바이트 단위이며 SPI를 통해 접근하므로 눈에 띄게 느립니다  </td></tr>
 </table>
 <p><span class="tt">Deki::Memory::AllocateDma(bytes, region)</span>는 DMA 엔진이 그 블록을 읽을 수 있어야 한다는 제약을 추가합니다. 이것은 배치와는 별개입니다. 프레임버퍼는 보드가 내부에 두든 PSRAM에 두든 접근 가능해야 하므로, 세 번째 영역이 아니라 별도의 진입점으로 되어 있습니다.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-a-region-is-a-name-so-packages-can-add-their-own"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 영역은 이름이므로 패키지가 직접 추가할 수 있습니다</h2>
 <p>엔진은 두 가지를 제공합니다. 그 집합은 열려 있습니다.</p>
 <div class="fragment"><div class="line"><span class="comment">// in a board-support package - no engine change, no registration call</span></div>
@@ -209,13 +209,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 </div><!-- fragment --><p>패키지는 자신의 영역을 <span class="tt">Deki::Memory</span>가 아니라 <b>자신의 네임스페이스</b>에 둡니다. 클래스는 닫혀 있으므로 어차피 그렇게 할 수도 없으며, 바로 그것이 핵심입니다. 둘 다 <span class="tt">Rtc</span> 상수를 원하는 두 보드 패키지는 언어가 둘을 분리해 주므로 충돌할 수 없습니다. 상수가 어디에 있는지는 결코 중요하지 않습니다. 영역의 정체성은 해시된 이름이므로, 네임스페이스 사이에서 옮겨도 아무것도 바뀌지 않습니다.</p>
 <p><span class="tt">Region()</span>은 엔진의 다른 곳에서 쓰는 것과 같은 FNV-1a로 컴파일 시점에 이름을 해시하므로, 영역은 프로바이더가 switch로 분기할 수 있는 상수 표현식입니다.</p>
 <p><b>두 패키지가 같은 영역 이름을 쓰면 같은 영역을 뜻합니다.</b> 두 보드 패키지가 서로 조율하지 않고도 <span class="tt">"rtc"</span>에 합의하는 방식이 이것이며, 두 패키지가 모두 <span class="tt">spi</span> 케이퍼빌리티를 요구하는 것과 똑같습니다. 이 방식이 감당하지 못하는 것은 두 패키지가 한 단어로 <em>서로 다른</em> 것을 뜻하는 경우이므로, 직접 만든 이름이 아니라면 한정하십시오: <span class="tt">particles.scratch</span>, <span class="tt">esp32.rtc</span>. 할당 헤더는 ID만 저장하므로, 디버그 빌드는 해시가 같은 서로 다른 두 이름을 보고합니다.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-serving-one-is-the-boards-job"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 영역을 제공하는 것은 보드의 일입니다</h2>
 <p>패키지는 영역에 <em>이름을 붙일</em> 수 있지만, 영역을 제공할 수 있는 것은 보드의 <span class="tt">IMemoryProvider</span>뿐입니다. <span class="tt">esp32.rtc</span>를 모르는 프로바이더는 nullptr를 반환하며, 실패 메시지에 영역 이름이 나옵니다.</p>
 <div class="fragment"><div class="line">Failed to allocate 64 bytes in &#39;esp32.rtc&#39; for &#39;void Battery::Save()&#39;</div>
 <div class="line">at Battery.cpp:88 (0 bytes free there)</div>
 </div><!-- fragment --><p>다른 영역으로 대체되지 않습니다. 특히 <span class="tt">Rtc</span>의 경우에는 이것이 더욱 중요합니다. 이 영역의 목적은 딥 슬립을 넘어 살아남는 것이므로, 조용히 일반 RAM을 돌려주면 데이터가 유지되어야 할 바로 그 순간에 데이터를 잃게 됩니다.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-the-region-name-is-the-capability-name"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 영역 이름은 케이퍼빌리티 이름입니다</h2>
 <p>타겟은 자신이 가진 영역을 <span class="tt">memory:</span> 접두사를 붙인 케이퍼빌리티로 알립니다.</p>
 <table class="markdownTable">
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <p>따라서 영역이 필요한 패키지는 이를 선언하고, 빌드는 그것이 없는 타겟을 아무것도 실행하기 전에 이름을 들어 거부합니다.</p>
 <div class="fragment"><div class="line">&quot;platformRequires&quot;: [&quot;memory:esp32.rtc&quot;]</div>
 </div><!-- fragment --><p><span class="tt">Region("esp32.rtc")</span>와 <span class="tt">"memory:esp32.rtc"</span>는 누군가 맞춰 관리해야 하는 두 목록이 아니라 접두사만 붙은 같은 토큰이므로, 양쪽이 어긋날 수 없습니다. 케이퍼빌리티 이름은 소문자와 <span class="tt">.</span>, <span class="tt">-</span>, <span class="tt">:</span>, <span class="tt">_</span>로 이루어집니다. <span class="tt">"WiFi"</span>를 선언한 플랫폼은 로드할 때 경고를 받습니다. 정확한 문자열 일치로는 조용히 영원히 일치하지 않기 때문입니다.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-placement-resolves-once-there-is-no-fallback"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 배치는 한 번에 결정됩니다. 대체는 없습니다.</h2>
 <p>선택한 영역이 가득 차 있으면 할당은 <b>실패하고 null을 반환합니다</b>. 다른 영역에서 재시도하지 않습니다. 이는 의도된 것입니다.</p>
 <ul>
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 </ul>
 <p>실패 시에는 무엇이었는지, 크기, 영역, 그리고 대체를 시도하지 않았다는 사실을 로그로 남깁니다. 모든 호출자는 이미 null을 처리해야 합니다.</p>
 <p>외부 RAM이 없는 보드는 모든 것을 내부로 결정합니다. 이것은 대체가 아니라, 존재하는 영역이 그것뿐인 것입니다.</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-the-rest-of-the-api"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 나머지 API</h1>
 <p><span class="tt">Buffer&lt;T&gt;</span>가 다루지 않는 경우를 위한 <span class="tt">Deki::Memory</span>(<span class="tt">&lt;deki/providers/Memory.h&gt;</span>):</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span>* Allocate(<span class="keywordtype">size_t</span> size, Memory::Region region, AllocContext ctx = {});</div>
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><span class="tt">Memory::Initialize</span>는 시작할 때 내부 및 외부 RAM의 여유 공간을 한 번 로그로 남기므로, 첫 메모리 부족 메시지가 아니라 실제 숫자를 기준으로 프로젝트 크기를 정할 수 있습니다.</li>
 <li><span class="tt">AllocateInternal</span> / <span class="tt">FreeInternal</span>은 배치 결정을 우회하며 플랫폼 계층을 위해 존재합니다. 컴포넌트에서 사용하지 마십시오.</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-finding-out-where-the-memory-went"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
 메모리가 어디에 쓰였는지 알아내기</h2>
 <div class="fragment"><div class="line">Deki::Memory::LogStats(<span class="stringliteral">&quot;after level load&quot;</span>);</div>
 <div class="line"><span class="comment">// Memory at after level load: 48216 bytes allocated (48216 internal, 0 external);</span></div>
@@ -264,12 +264,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><span class="tt">LogStats(label)</span>는 "메모리를 얼마나 쓰고 있는가?"에 한 번의 호출로 답합니다. 디버그 빌드에서는 현재 할당 수와 최대 할당 수도 보고합니다. 호출하지 않으면 비용이 들지 않습니다.</li>
 <li><span class="tt">GetStats()</span>는 같은 숫자를 구조체로 반환합니다. <span class="tt">GetAvailableInternal()</span>과 <span class="tt">GetAvailablePSRAM()</span>은 여유 공간을 알려 줍니다. <span class="tt">IsPSRAMAvailable()</span>은 외부 영역이 있는지 여부를 알려 줍니다. 이들 중 어느 것도 메모리를 직접 배치해도 된다는 허가가 아닙니다. 프로젝트 크기를 정하고, 해제했어야 할 메모리를 붙잡고 있는 것을 찾기 위한 것입니다.</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-changing-scenes"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
 씬 바꾸기</h2>
 <div class="fragment"><div class="line">Deki::Engine::GetInstance().OpenScene(nextScene);  <span class="comment">// AssetRef&lt;Scene&gt;</span></div>
 </div><!-- fragment --><p><span class="tt">OpenScene</span>은 프레임이 끝날 때 떠나는 씬을 먼저 해제한 뒤 다음 씬을 로드하므로, 두 씬이 동시에 메모리에 있는 일이 없습니다. 다음 씬을 직접 로드하고 <span class="tt">SetRootScene</span>을 호출하면 둘 다 들고 있게 되며, T-Deck Plus에서 데모의 메뉴에서 초원으로 그렇게 넘어가면 내부 RAM이 16바이트만 남았습니다. 존재하지 않는 씬은 열리지 않고, 게임은 지금 씬에 머뭅니다.</p>
 <p>장치에서는 그다음 떠난 씬만 쓰던 에셋(스프라이트, 폰트, 애니메이션)을 해제하므로, 게임의 메모리는 방문한 모든 씬이 아니라 지금 씬에 필요한 만큼이 됩니다. 많은 오브젝트를 제거한 뒤 같은 일을 하려면 <span class="tt">Engine::ReleaseUnusedAssets()</span>를 호출합니다. 살아 있는 오브젝트에 있는 컴포넌트의 <span class="tt">AssetRef</span> 필드가 가리키는 동안 에셋은 남아 있습니다. 에셋은 <span class="tt">AssetRef</span>로 들고 있으세요. 다른 곳에서 들고 있는 <span class="tt">AssetRef</span>는 다음에 요청될 때 에셋을 다시 로드하지만, <span class="tt">Get()</span>으로 얻은 원시 포인터를 프레임을 넘겨 들고 있으면 그 에셋을 쓰는 것이 있는 동안만 유효합니다.</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-alloccontext---the-label-writes-itself"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
 <span class="tt">AllocContext</span> - 레이블은 저절로 작성됩니다</h1>
 <p>할당하는 모든 호출이 이를 받지만, 직접 작성하는 사람은 거의 없습니다.</p>
 <div class="fragment"><div class="line">posX.Allocate(capacity, Deki::Memory::Internal);</div>
@@ -282,13 +282,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <div class="line">&#39;void ParticlePool::SetCapacity(size_t)&#39; at ParticlePool.h:48</div>
 </div><!-- fragment --><p><b>엔진이 아니라 호출자를 가리킵니다.</b> <span class="tt">Buffer&lt;T&gt;::Allocate</span>와 <span class="tt">Memory::Allocate</span>는 모두 컨텍스트를 받아 기본값을 다시 적용하지 않고 그대로 전달하므로, 위치는 <span class="tt">Buffer.h</span>가 아니라 <em>여러분이</em> 호출을 작성한 곳이 됩니다. 테스트가 바로 이것을 검사합니다. 이를 잘못 구현한 버전은 엔진의 모든 할당에서 그럴듯해 보이는 파일을 보고하면서 자신만만하게 쓸모없을 것이기 때문입니다.</p>
 <p><b>아무것도 복사하지 않습니다.</b> 모든 멤버는 정적 저장 기간을 가진 문자열 리터럴을 가리키며, 그 덕분에 디버그 누수 테이블이 포인터를 보관할 수 있습니다.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-stripping-it"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 제거하기</h2>
 <p>캡처는 모든 빌드에서 켜져 있습니다. 비용은 <b>ESP32-S3 펌웨어에서 4,272 바이트, 즉 1.5 MB 이미지의 0.28%</b>이며 호출 위치당 약 40 바이트로, 신경 쓰지 않아도 될 만큼 저렴합니다.</p>
 <p>플래시 용량을 되찾아야 하는 빌드에서는 <span class="tt">DEKI_STRIP_ALLOC_CONTEXT</span>를 정의하십시오. <span class="tt">AllocContext</span>는 빈 구조체가 되고, 경로나 함수 이름이 바이너리에 들어가지 않으며, 실패 시에는 출처를 밝히지 않고 무엇을 하려 했는지만 보고합니다.</p>
 <div class="fragment"><div class="line">Failed to allocate 153600 bytes in internal RAM (126556 bytes free there)</div>
 </div><!-- fragment --><p>제거한 빌드와 제거하지 않은 빌드는 레이아웃이 다르므로, 엔진과 엔진을 호출하는 패키지는 일치해야 합니다. 이는 <span class="tt">MemoryStats</span>가 이미 부과하는 것과 같은 제약입니다.</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-dekivectort---when-the-count-changes-at-runtime"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 <span class="tt">Deki::Vector&lt;T&gt;</span> - 런타임에 개수가 바뀔 때</h1>
 <p><span class="tt">&lt;deki/providers/Vector.h&gt;</span>. <span class="tt">Buffer&lt;T&gt;</span>는 할당할 때 알고 있는 개수를 다룹니다. 개수가 바뀌고 고정된 상한이 없을 때, 장치에서 <span class="tt">std::vector</span>는 잘못된 답입니다. <span class="tt">push_back</span>은 <span class="tt">operator new</span>를 호출하는데, 예외가 꺼진 상태에서는 고갈을 알릴 수 없으므로 중단되고 보드가 재부팅됩니다.</p>
 <p><span class="tt">Deki::Vector</span>는 같은 형태에서 여기서 중요한 한 가지만 바꾼 것입니다. 할당할 수 있는 모든 것이 <span class="tt">bool</span>을 반환합니다.</p>
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li><span class="tt">T</span>에 대한 제약은 <span class="tt">Buffer</span>와 같습니다. 트리비얼하게 복사 가능하고 트리비얼하게 소멸 가능해야 합니다. 증가 시 요소는 <span class="tt">memcpy</span>로 이동합니다.</li>
 </ul>
 <p>먼저 <span class="tt">Buffer</span>를 고려하십시오. 여기서 "동적"인 데이터 대부분은 프로젝트가 이미 아는 상한이 있는 것으로 밝혀지며, 고정 할당은 반복적인 증가와 달리 작은 힙을 단편화시키지 않습니다.</p>
-<h2 class="doxsection"><a class="anchor" id="guide-memory-stdvector-stdstring-and-plain-new"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 <span class="tt">std::vector</span>, <span class="tt">std::string</span>, 일반 <span class="tt">new</span></h2>
 <p>이것들은 <span class="tt">Deki::Buffer&lt;T&gt;</span>가 대체할 수 없는 <span class="tt">operator new</span>를 호출합니다. 장치 빌드에서는 엔진이 연산자 자체를 대체하며(<a href="https://github.com/dekiengine/deki-engine/blob/master/src/providers/OperatorNew.cpp"><span class="tt">src/providers/OperatorNew.cpp</span></a>), 이로 인해 두 가지가 바뀝니다.</p>
 <ul>
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <p>배치는 의도적으로 여기서 결정하지 않습니다. 제거된 <span class="tt">Auto</span> 규칙처럼 크기에 따라 경로를 정하면 큰 <span class="tt">std::vector</span>가 조용히 PSRAM으로 옮겨져, 코드에서는 보이지 않는 이유로 핫 루프가 느려질 것입니다. 외부 메모리를 원하는 호출자는 <span class="tt">Deki::Memory::External</span>을 지정하고 <span class="tt">Deki::Buffer</span>를 사용합니다. <span class="tt">operator new</span>는 알 수 없으므로 추측하지 않습니다.</p>
 <p>이것은 <span class="tt">__cpp_exceptions</span>가 정의되지 않은 곳에서만, 즉 정확히 중단 문제가 존재하는 빌드에서만 컴파일됩니다. 호스트 빌드와 에디터 빌드는 표준 연산자를 유지합니다. 초과 정렬 형식(<span class="tt">align_val_t</span>)은 짝이 맞도록 libstdc++에 맡깁니다.</p>
 <p>정리하면, 런타임에 바뀌는 개수에는 <span class="tt">Deki::Vector&lt;T&gt;</span>를 쓰고 <span class="tt">false</span>를 처리하십시오. 크기가 파일, 씬, 화면에서 오는 것에는 <span class="tt">Deki::Buffer&lt;T&gt;</span>를 쓰십시오. 에디터와 도구 코드에는 <span class="tt">std::vector</span>가 여전히 적합하며, 장치에서도 그 고갈은 이제 조용한 중단이 아니라 로그가 남는 중단입니다.</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-platform-layer-imemoryprovider"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 플랫폼 계층: <span class="tt">IMemoryProvider</span></h1>
 <p><span class="tt">&lt;deki/providers/IMemoryProvider.h&gt;</span>. 플랫폼은 이를 하나 제공하여 <span class="tt">Memory::Initialize()</span> 전에 넘겨줍니다.</p>
 <div class="fragment"><div class="line">Deki::Memory::SetBackend(<span class="keyword">new</span> MyBoardMemoryProvider());  <span class="comment">// takes ownership</span></div>
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <p><span class="tt">AllocateRaw</span> / <span class="tt">FreeRaw</span> / <span class="tt">GetRawBlockSize</span>는 네 번째 쌍과 조회 함수입니다. 전역 <span class="tt">operator new</span>가 경유하는 일반 자연 정렬 할당자로, 보드의 힙이 엔진이 배치하는 모든 것뿐 아니라 <span class="tt">std::vector</span>와 스칼라 <span class="tt">new</span>도 처리하게 합니다. 기본값은 <span class="tt">malloc</span>/<span class="tt">free</span>이며, <span class="tt">GetRawBlockSize</span>는 플랫폼이 답할 수 없으면 0을 반환합니다. 이 경우 <span class="tt">LogStats</span>의 정확도만 떨어집니다. 쌍은 둘 다 재정의하거나 둘 다 재정의하지 마십시오.</p>
 <p><span class="tt">AllocateDMA</span>가 <span class="tt">AllocateInternal</span>과 분리되어 있는 이유는, ESP32-S3에서 내부 RAM 대부분은 DMA로 접근할 수 있지만 전부는 아니며, 디스플레이 주변 장치가 접근할 수 없는 프레임버퍼를 읽으면 오류가 아니라 조용한 손상이 일어나기 때문입니다. ESP32 프로바이더는 <span class="tt">MALLOC_CAP_DMA</span>를 명시적으로 요청합니다. <span class="tt">AllocateInternal</span>/<span class="tt">FreeInternal</span> 중 하나를 재정의하는 쪽은 둘 다 재정의해야 합니다. 쌍이 일치해야 하기 때문입니다(ESP32 프로바이더는 16바이트 정렬의 <span class="tt">heap_caps_aligned_alloc</span>을 사용하며, 이는 블릿 디스패처가 S3 SIMD 커널을 사용할 수 있게 해 주기도 합니다. 그리고 <span class="tt">heap_caps_free</span>를 사용합니다).</p>
 <p><b><span class="tt">IMemoryProvider</span>는 패키지 ABI의 일부이므로</b>, 그 가상 함수는 <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_abi.py"><span class="tt">tools/ci/check_abi.py</span></a>로 고정됩니다. 가상 함수를 추가, 제거하거나 순서를 바꾸면 vtable 슬롯이 이동하므로, 같은 커밋에서 <span class="tt">kDekiReflectionAbiVersion</span>을 올려야 합니다.</p>
-<h1 class="doxsection"><a class="anchor" id="guide-memory-the-lint"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 린트</h1>
 <div class="fragment"><div class="line">python tools/ci/check_allocations.py            # packages beside the repo</div>
 <div class="line">python tools/ci/check_allocations.py --verbose  # also list files and waivers</div>

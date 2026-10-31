@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['매번_20직접_20고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]]
+  ['마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
 ];

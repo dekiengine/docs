@@ -61,6 +61,12 @@ var NAVTREE =
       [ "资源加载流程", "guide-asset-system.html#guide-asset-system-asset-loading-flow", null ],
       [ "关键文件", "guide-asset-system.html#guide-asset-system-key-files", null ]
     ] ],
+    [ "Coming from LVGL", "guide-coming-from-lvgl.html", [
+      [ "The same ideas, other names", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-the-same-ideas-other-names", null ],
+      [ "Widgets", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-widgets", null ],
+      [ "What changes in practice", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-what-changes-in-practice", null ],
+      [ "Using both", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-using-both", null ]
+    ] ],
     [ "字体系统", "guide-font-system.html", [
       [ "概述", "guide-font-system.html#guide-font-system-overview", null ],
       [ "GUID 生成", "guide-font-system.html#guide-font-system-guid-generation", null ],
@@ -96,28 +102,28 @@ var NAVTREE =
       [ "字体", "guide-localization.html#guide-localization-fonts", null ]
     ] ],
     [ "内存", "guide-memory.html", [
-      [ "规则", "guide-memory.html#guide-memory-the-rule", null ],
-      [ "<span class=\"tt\">Deki::Buffer&lt;T&gt;</span> - 请使用它", "guide-memory.html#guide-memory-dekibuffert---use-this", [
-        [ "为什么不用 arena", "guide-memory.html#guide-memory-why-not-an-arena", null ]
+      [ "规则", "guide-memory.html#autotoc_md0", null ],
+      [ "<span class=\"tt\">Deki::Buffer&lt;T&gt;</span> - 请使用它", "guide-memory.html#autotoc_md1", [
+        [ "为什么不用 arena", "guide-memory.html#autotoc_md2", null ]
       ] ],
-      [ "区域 - 每次都由你选择", "guide-memory.html#guide-memory-regions---you-choose-every-time", [
-        [ "区域就是一个名称，所以包可以添加自己的区域", "guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own", null ],
-        [ "提供区域是开发板的职责", "guide-memory.html#guide-memory-serving-one-is-the-boards-job", null ],
-        [ "区域名称就是能力名称", "guide-memory.html#guide-memory-the-region-name-is-the-capability-name", null ],
-        [ "放置只解析一次。没有回退。", "guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback", null ]
+      [ "区域 - 每次都由你选择", "guide-memory.html#autotoc_md3", [
+        [ "区域就是一个名称，所以包可以添加自己的区域", "guide-memory.html#autotoc_md4", null ],
+        [ "提供区域是开发板的职责", "guide-memory.html#autotoc_md5", null ],
+        [ "区域名称就是能力名称", "guide-memory.html#autotoc_md6", null ],
+        [ "放置只解析一次。没有回退。", "guide-memory.html#autotoc_md7", null ]
       ] ],
-      [ "API 的其余部分", "guide-memory.html#guide-memory-the-rest-of-the-api", [
-        [ "查明内存去了哪里", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ],
-        [ "切换场景", "guide-memory.html#guide-memory-changing-scenes", null ]
+      [ "API 的其余部分", "guide-memory.html#autotoc_md8", [
+        [ "查明内存去了哪里", "guide-memory.html#autotoc_md9", null ],
+        [ "切换场景", "guide-memory.html#autotoc_md10", null ]
       ] ],
-      [ "<span class=\"tt\">AllocContext</span> - 标签自动生成", "guide-memory.html#guide-memory-alloccontext---the-label-writes-itself", [
-        [ "去除它", "guide-memory.html#guide-memory-stripping-it", null ]
+      [ "<span class=\"tt\">AllocContext</span> - 标签自动生成", "guide-memory.html#autotoc_md11", [
+        [ "去除它", "guide-memory.html#autotoc_md12", null ]
       ] ],
-      [ "<span class=\"tt\">Deki::Vector&lt;T&gt;</span> - 数量在运行时变化时", "guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime", [
-        [ "<span class=\"tt\">std::vector</span>、<span class=\"tt\">std::string</span> 和普通的 <span class=\"tt\">new</span>", "guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new", null ]
+      [ "<span class=\"tt\">Deki::Vector&lt;T&gt;</span> - 数量在运行时变化时", "guide-memory.html#autotoc_md13", [
+        [ "<span class=\"tt\">std::vector</span>、<span class=\"tt\">std::string</span> 和普通的 <span class=\"tt\">new</span>", "guide-memory.html#autotoc_md14", null ]
       ] ],
-      [ "平台层：<span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#guide-memory-platform-layer-imemoryprovider", null ],
-      [ "lint 检查", "guide-memory.html#guide-memory-the-lint", null ]
+      [ "平台层：<span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#autotoc_md15", null ],
+      [ "lint 检查", "guide-memory.html#autotoc_md16", null ]
     ] ],
     [ "提升速度", "guide-performance.html", [
       [ "从开发板开始", "guide-performance.html#guide-performance-start-from-a-board", null ],
@@ -167,13 +173,13 @@ var NAVTREE =
       [ "If something is wrong", "guide-releasing.html#guide-releasing-if-something-is-wrong", null ]
     ] ],
     [ "屏幕", "guide-screens.html", [
-      [ "相机", "guide-screens.html#autotoc_md0", null ],
-      [ "每种屏幕看到什么", "guide-screens.html#autotoc_md1", null ],
-      [ "固定到屏幕", "guide-screens.html#autotoc_md2", null ],
-      [ "用法示例", "guide-screens.html#autotoc_md3", null ],
-      [ "预览", "guide-screens.html#autotoc_md4", null ],
-      [ "颜色格式", "guide-screens.html#autotoc_md5", null ],
-      [ "在设备上", "guide-screens.html#autotoc_md6", null ]
+      [ "相机", "guide-screens.html#autotoc_md17", null ],
+      [ "每种屏幕看到什么", "guide-screens.html#autotoc_md18", null ],
+      [ "固定到屏幕", "guide-screens.html#autotoc_md19", null ],
+      [ "用法示例", "guide-screens.html#autotoc_md20", null ],
+      [ "预览", "guide-screens.html#autotoc_md21", null ],
+      [ "颜色格式", "guide-screens.html#autotoc_md22", null ],
+      [ "在设备上", "guide-screens.html#autotoc_md23", null ]
     ] ],
     [ "精灵系统", "guide-sprite-system.html", [
       [ "概述", "guide-sprite-system.html#guide-sprite-system-overview", null ],
@@ -202,6 +208,15 @@ var NAVTREE =
       [ "导出管线", "guide-sprite-system.html#guide-sprite-system-export-pipeline", null ],
       [ "比较：字体与精灵", "guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites", null ],
       [ "关键文件", "guide-sprite-system.html#guide-sprite-system-key-files", null ]
+    ] ],
+    [ "UI widgets", "guide-ui-widgets.html", [
+      [ "The widgets", "guide-ui-widgets.html#guide-ui-widgets-the-widgets", null ],
+      [ "Adding one", "guide-ui-widgets.html#guide-ui-widgets-adding-one", null ],
+      [ "Changing how it looks", "guide-ui-widgets.html#guide-ui-widgets-changing-how-it-looks", null ],
+      [ "Reacting in code", "guide-ui-widgets.html#guide-ui-widgets-reacting-in-code", null ],
+      [ "Keys and focus", "guide-ui-widgets.html#guide-ui-widgets-keys-and-focus", null ],
+      [ "Only what you use ships", "guide-ui-widgets.html#guide-ui-widgets-only-what-you-use-ships", null ],
+      [ "On the device", "guide-ui-widgets.html#guide-ui-widgets-on-the-device", null ]
     ] ],
     [ "单位", "guide-units.html", [
       [ "规则", "guide-units.html#guide-units-the-rule", null ],

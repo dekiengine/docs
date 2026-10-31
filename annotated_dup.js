@@ -56,6 +56,7 @@ var annotated_dup =
       [ "LogSystem", "class_deki_1_1_log_system.html", "class_deki_1_1_log_system" ],
       [ "Mat4", "struct_deki_1_1_mat4.html", "struct_deki_1_1_mat4" ],
       [ "Memory", "class_deki_1_1_memory.html", "class_deki_1_1_memory" ],
+      [ "MemorySite", "struct_deki_1_1_memory_site.html", "struct_deki_1_1_memory_site" ],
       [ "MemoryStats", "struct_deki_1_1_memory_stats.html", "struct_deki_1_1_memory_stats" ],
       [ "NodeRef", "struct_deki_1_1_node_ref.html", "struct_deki_1_1_node_ref" ],
       [ "Object", "class_deki_1_1_object.html", "class_deki_1_1_object" ],
@@ -87,6 +88,9 @@ var annotated_dup =
         [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ],
         [ "FeatureEntry", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry" ],
         [ "PackageEntry", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry" ]
+      ] ],
+      [ "EditorTexture", "namespace_deki_editor_1_1_editor_texture.html", [
+        [ "Backend", "struct_deki_editor_1_1_editor_texture_1_1_backend.html", "struct_deki_editor_1_1_editor_texture_1_1_backend" ]
       ] ],
       [ "Localization", "namespace_deki_editor_1_1_localization.html", [
         [ "Language", "struct_deki_editor_1_1_localization_1_1_language.html", "struct_deki_editor_1_1_localization_1_1_language" ],

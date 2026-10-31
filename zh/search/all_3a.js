@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['延迟加载_0',['延迟加载',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]]
+  ['并列_0',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
 ];

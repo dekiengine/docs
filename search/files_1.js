@@ -7,5 +7,6 @@ var searchData=
   ['builderplugin_2eh_4',['BuilderPlugin.h',['../_builder_plugin_8h.html',1,'']]],
   ['builderregistry_2eh_5',['BuilderRegistry.h',['../_builder_registry_8h.html',1,'']]],
   ['builderwidgets_2eh_6',['BuilderWidgets.h',['../_builder_widgets_8h.html',1,'']]],
-  ['buildstripsettings_2eh_7',['BuildStripSettings.h',['../_build_strip_settings_8h.html',1,'']]]
+  ['buildload_2eh_7',['BuildLoad.h',['../_build_load_8h.html',1,'']]],
+  ['buildstripsettings_2eh_8',['BuildStripSettings.h',['../_build_strip_settings_8h.html',1,'']]]
 ];

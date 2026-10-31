@@ -61,6 +61,12 @@ var NAVTREE =
       [ "에셋 로딩 흐름", "guide-asset-system.html#guide-asset-system-asset-loading-flow", null ],
       [ "주요 파일", "guide-asset-system.html#guide-asset-system-key-files", null ]
     ] ],
+    [ "Coming from LVGL", "guide-coming-from-lvgl.html", [
+      [ "The same ideas, other names", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-the-same-ideas-other-names", null ],
+      [ "Widgets", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-widgets", null ],
+      [ "What changes in practice", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-what-changes-in-practice", null ],
+      [ "Using both", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-using-both", null ]
+    ] ],
     [ "폰트 시스템", "guide-font-system.html", [
       [ "개요", "guide-font-system.html#guide-font-system-overview", null ],
       [ "GUID 생성", "guide-font-system.html#guide-font-system-guid-generation", null ],
@@ -96,28 +102,28 @@ var NAVTREE =
       [ "폰트", "guide-localization.html#guide-localization-fonts", null ]
     ] ],
     [ "메모리", "guide-memory.html", [
-      [ "규칙", "guide-memory.html#guide-memory-the-rule", null ],
-      [ "<span class=\"tt\">Deki::Buffer&lt;T&gt;</span> - 이것을 사용하십시오", "guide-memory.html#guide-memory-dekibuffert---use-this", [
-        [ "아레나를 쓰지 않는 이유", "guide-memory.html#guide-memory-why-not-an-arena", null ]
+      [ "규칙", "guide-memory.html#autotoc_md0", null ],
+      [ "<span class=\"tt\">Deki::Buffer&lt;T&gt;</span> - 이것을 사용하십시오", "guide-memory.html#autotoc_md1", [
+        [ "아레나를 쓰지 않는 이유", "guide-memory.html#autotoc_md2", null ]
       ] ],
-      [ "영역 - 매번 직접 고릅니다", "guide-memory.html#guide-memory-regions---you-choose-every-time", [
-        [ "영역은 이름이므로 패키지가 직접 추가할 수 있습니다", "guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own", null ],
-        [ "영역을 제공하는 것은 보드의 일입니다", "guide-memory.html#guide-memory-serving-one-is-the-boards-job", null ],
-        [ "영역 이름은 케이퍼빌리티 이름입니다", "guide-memory.html#guide-memory-the-region-name-is-the-capability-name", null ],
-        [ "배치는 한 번에 결정됩니다. 대체는 없습니다.", "guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback", null ]
+      [ "영역 - 매번 직접 고릅니다", "guide-memory.html#autotoc_md3", [
+        [ "영역은 이름이므로 패키지가 직접 추가할 수 있습니다", "guide-memory.html#autotoc_md4", null ],
+        [ "영역을 제공하는 것은 보드의 일입니다", "guide-memory.html#autotoc_md5", null ],
+        [ "영역 이름은 케이퍼빌리티 이름입니다", "guide-memory.html#autotoc_md6", null ],
+        [ "배치는 한 번에 결정됩니다. 대체는 없습니다.", "guide-memory.html#autotoc_md7", null ]
       ] ],
-      [ "나머지 API", "guide-memory.html#guide-memory-the-rest-of-the-api", [
-        [ "메모리가 어디에 쓰였는지 알아내기", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ],
-        [ "씬 바꾸기", "guide-memory.html#guide-memory-changing-scenes", null ]
+      [ "나머지 API", "guide-memory.html#autotoc_md8", [
+        [ "메모리가 어디에 쓰였는지 알아내기", "guide-memory.html#autotoc_md9", null ],
+        [ "씬 바꾸기", "guide-memory.html#autotoc_md10", null ]
       ] ],
-      [ "<span class=\"tt\">AllocContext</span> - 레이블은 저절로 작성됩니다", "guide-memory.html#guide-memory-alloccontext---the-label-writes-itself", [
-        [ "제거하기", "guide-memory.html#guide-memory-stripping-it", null ]
+      [ "<span class=\"tt\">AllocContext</span> - 레이블은 저절로 작성됩니다", "guide-memory.html#autotoc_md11", [
+        [ "제거하기", "guide-memory.html#autotoc_md12", null ]
       ] ],
-      [ "<span class=\"tt\">Deki::Vector&lt;T&gt;</span> - 런타임에 개수가 바뀔 때", "guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime", [
-        [ "<span class=\"tt\">std::vector</span>, <span class=\"tt\">std::string</span>, 일반 <span class=\"tt\">new</span>", "guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new", null ]
+      [ "<span class=\"tt\">Deki::Vector&lt;T&gt;</span> - 런타임에 개수가 바뀔 때", "guide-memory.html#autotoc_md13", [
+        [ "<span class=\"tt\">std::vector</span>, <span class=\"tt\">std::string</span>, 일반 <span class=\"tt\">new</span>", "guide-memory.html#autotoc_md14", null ]
       ] ],
-      [ "플랫폼 계층: <span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#guide-memory-platform-layer-imemoryprovider", null ],
-      [ "린트", "guide-memory.html#guide-memory-the-lint", null ]
+      [ "플랫폼 계층: <span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#autotoc_md15", null ],
+      [ "린트", "guide-memory.html#autotoc_md16", null ]
     ] ],
     [ "빠르게 만들기", "guide-performance.html", [
       [ "보드에서 시작하기", "guide-performance.html#guide-performance-start-from-a-board", null ],
@@ -167,13 +173,13 @@ var NAVTREE =
       [ "If something is wrong", "guide-releasing.html#guide-releasing-if-something-is-wrong", null ]
     ] ],
     [ "화면", "guide-screens.html", [
-      [ "카메라", "guide-screens.html#autotoc_md0", null ],
-      [ "각 화면에 보이는 것", "guide-screens.html#autotoc_md1", null ],
-      [ "화면에 고정하기", "guide-screens.html#autotoc_md2", null ],
-      [ "레시피", "guide-screens.html#autotoc_md3", null ],
-      [ "미리보기", "guide-screens.html#autotoc_md4", null ],
-      [ "색상 포맷", "guide-screens.html#autotoc_md5", null ],
-      [ "장치에서", "guide-screens.html#autotoc_md6", null ]
+      [ "카메라", "guide-screens.html#autotoc_md17", null ],
+      [ "각 화면에 보이는 것", "guide-screens.html#autotoc_md18", null ],
+      [ "화면에 고정하기", "guide-screens.html#autotoc_md19", null ],
+      [ "레시피", "guide-screens.html#autotoc_md20", null ],
+      [ "미리보기", "guide-screens.html#autotoc_md21", null ],
+      [ "색상 포맷", "guide-screens.html#autotoc_md22", null ],
+      [ "장치에서", "guide-screens.html#autotoc_md23", null ]
     ] ],
     [ "스프라이트 시스템", "guide-sprite-system.html", [
       [ "개요", "guide-sprite-system.html#guide-sprite-system-overview", null ],
@@ -202,6 +208,15 @@ var NAVTREE =
       [ "익스포트 파이프라인", "guide-sprite-system.html#guide-sprite-system-export-pipeline", null ],
       [ "비교: 폰트와 스프라이트", "guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites", null ],
       [ "주요 파일", "guide-sprite-system.html#guide-sprite-system-key-files", null ]
+    ] ],
+    [ "UI widgets", "guide-ui-widgets.html", [
+      [ "The widgets", "guide-ui-widgets.html#guide-ui-widgets-the-widgets", null ],
+      [ "Adding one", "guide-ui-widgets.html#guide-ui-widgets-adding-one", null ],
+      [ "Changing how it looks", "guide-ui-widgets.html#guide-ui-widgets-changing-how-it-looks", null ],
+      [ "Reacting in code", "guide-ui-widgets.html#guide-ui-widgets-reacting-in-code", null ],
+      [ "Keys and focus", "guide-ui-widgets.html#guide-ui-widgets-keys-and-focus", null ],
+      [ "Only what you use ships", "guide-ui-widgets.html#guide-ui-widgets-only-what-you-use-ships", null ],
+      [ "On the device", "guide-ui-widgets.html#guide-ui-widgets-on-the-device", null ]
     ] ],
     [ "단위", "guide-units.html", [
       [ "규칙", "guide-units.html#guide-units-the-rule", null ],

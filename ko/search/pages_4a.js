@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['변경하지_20마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]],
-  ['변환_1',['표시 변환',['../guide-units.html#guide-units-display-conversion',1,'']]]
+  ['번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#autotoc_md7',1,'']]],
+  ['번역하기_1',['테이블 번역하기',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
 ];

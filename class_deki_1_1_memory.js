@@ -17,8 +17,14 @@ var class_deki_1_1_memory =
     [ "GetRawAllocated", "class_deki_1_1_memory.html#a02f9bf3184bcd2ad7d819c50d5bfa65c", null ],
     [ "LogStats", "class_deki_1_1_memory.html#a6c3dc565d07425f0580f3d2909c8f35e", null ],
     [ "IsExternalAvailable", "class_deki_1_1_memory.html#a440eeede79d061f37209a78da5bf4e63", null ],
+    [ "GetPeakInternal", "class_deki_1_1_memory.html#a3431dd5adc87d3b29e9ab2c25f21331c", null ],
+    [ "GetPeakExternal", "class_deki_1_1_memory.html#aeb7ccecf576e4157b7e7413f4b5e9ff4", null ],
+    [ "ResetPeaks", "class_deki_1_1_memory.html#ab1288a25317be817ee26e25056c5ee1f", null ],
+    [ "GetSiteCount", "class_deki_1_1_memory.html#ab0fe1a3f00bc8bb2f275abc882ae13b1", null ],
+    [ "GetSite", "class_deki_1_1_memory.html#a0f1bc2147ad1ecc78ce72cd318236f46", null ],
     [ "Detail::RawAllocate", "class_deki_1_1_memory.html#a948ba6b3520f1517d00624724375515f", null ],
     [ "Detail::RawFree", "class_deki_1_1_memory.html#a94229d8805908773c2287d575ab242ab", null ],
     [ "Internal", "class_deki_1_1_memory.html#a585469b9a34a1dbecec8ee0439f45634", null ],
-    [ "External", "class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee", null ]
+    [ "External", "class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee", null ],
+    [ "kMaxSites", "class_deki_1_1_memory.html#a0f3c92d0656e9aa6331dd9cf59b2473b", null ]
 ];

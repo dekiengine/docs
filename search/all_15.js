@@ -5,7 +5,7 @@ var searchData=
   ['name_20is_20the_20capability_20name_2',['The region name is the capability name',['../guide-memory.html#guide-memory-the-region-name-is-the-capability-name',1,'']]],
   ['name_20so_20packages_20can_20add_20their_20own_3',['A region is a name, so packages can add their own',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]],
   ['namehash_4',['nameHash',['../struct_deki_1_1_field_ref.html#a90b68d79b9408003cac3296e2b4795a2',1,'Deki::FieldRef']]],
-  ['names_5',['A package&apos;s own names',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
+  ['names_5',['names',['../guide-localization.html#guide-localization-a-packages-own-names',1,'A package&apos;s own names'],['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-the-same-ideas-other-names',1,'The same ideas, other names']]],
   ['need_20other_20packages_6',['Features that need other packages',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]],
   ['needsassetloading_7',['NeedsAssetLoading',['../class_deki_1_1_component.html#abb3d1ec13d98de64016dc2198c094f37',1,'Deki::Component']]],
   ['needsreimport_8',['NeedsReimport',['../class_deki_editor_1_1_i_asset_importer.html#a8decdb202c99a29fdcec6c06e92bfaeb',1,'DekiEditor::IAssetImporter']]],

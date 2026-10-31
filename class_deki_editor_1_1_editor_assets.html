@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -168,20 +168,20 @@ Public Types</h2></td></tr>
 <tr class="memitem:a75d2851f8c87f150bc5efdf74face9c3" id="r_a75d2851f8c87f150bc5efdf74face9c3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> = std::function&lt;Deki2D::BitmapFont*(const std::string&amp;, int)&gt;</td></tr>
 <tr class="memdesc:a75d2851f8c87f150bc5efdf74face9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes a TTF asset (GUID) at a pixel size.  <br /></td></tr>
 <tr class="memitem:afcdca5ae8f296d89450a0c594a2cc862" id="r_afcdca5ae8f296d89450a0c594a2cc862"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a> = std::function&lt;uint32_t(const std::string&amp;, int, uint32_t*, uint32_t*)&gt;</td></tr>
-<tr class="memdesc:afcdca5ae8f296d89450a0c594a2cc862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:afcdca5ae8f296d89450a0c594a2cc862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2eb0cb3f4d9dce4e8578ec47ac105ed5" id="r_a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a2eb0cb3f4d9dce4e8578ec47ac105ed5">LoadTexture</a> (const std::string &amp;guid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL texture for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:a0f101fb9277f315d05eef80766545d46" id="r_a0f101fb9277f315d05eef80766545d46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f101fb9277f315d05eef80766545d46">InvalidateTexture</a> (const std::string &amp;guid)</td></tr>
 <tr class="memdesc:a0f101fb9277f315d05eef80766545d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached texture so the next access reloads it.  <br /></td></tr>
 <tr class="memitem:aedfec9d573ad1cd41b5217a3fbf45013" id="r_aedfec9d573ad1cd41b5217a3fbf45013"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aedfec9d573ad1cd41b5217a3fbf45013">ClearTextureCache</a> ()</td></tr>
 <tr class="memdesc:aedfec9d573ad1cd41b5217a3fbf45013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every cached texture, freeing GPU memory.  <br /></td></tr>
 <tr class="memitem:a18c0b85fdfbed6d62e765b85e73c9122" id="r_a18c0b85fdfbed6d62e765b85e73c9122"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a18c0b85fdfbed6d62e765b85e73c9122">LoadFontAtlas</a> (const std::string &amp;bakedGuid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a18c0b85fdfbed6d62e765b85e73c9122"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:a18c0b85fdfbed6d62e765b85e73c9122"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure.  <br /></td></tr>
 <tr class="memitem:aece108873afec7d71506197dee941e8b" id="r_aece108873afec7d71506197dee941e8b"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aece108873afec7d71506197dee941e8b">LoadFontAtlasFromPath</a> (const std::string &amp;dfontPath, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:aece108873afec7d71506197dee941e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture for the .dfont at a full path, or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:aece108873afec7d71506197dee941e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas for the .dfont at a full path, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:abb7595eee8315f5f6aa65079681cacc2" id="r_abb7595eee8315f5f6aa65079681cacc2"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#abb7595eee8315f5f6aa65079681cacc2">GetBitmapFont</a> (const std::string &amp;bakedGuid)</td></tr>
 <tr class="memdesc:abb7595eee8315f5f6aa65079681cacc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached.  <br /></td></tr>
 <tr class="memitem:a25229958d433bfbd3f3882e00817a720" id="r_a25229958d433bfbd3f3882e00817a720"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a25229958d433bfbd3f3882e00817a720">InvalidateFontAtlas</a> (const std::string &amp;bakedGuid)</td></tr>
@@ -195,11 +195,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aecc7ef0d1af75aa914ae834071566f69" id="r_aecc7ef0d1af75aa914ae834071566f69"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#aecc7ef0d1af75aa914ae834071566f69">GetBitmapFontWithBaking</a> (const std::string &amp;sourceGuid, int fontSize)</td></tr>
 <tr class="memdesc:aecc7ef0d1af75aa914ae834071566f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found.  <br /></td></tr>
 <tr class="memitem:a0a4639d12e383e89e5eae02294ef455e" id="r_a0a4639d12e383e89e5eae02294ef455e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0a4639d12e383e89e5eae02294ef455e">LoadFontAtlasWithBaking</a> (const std::string &amp;sourceGuid, int fontSize, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a0a4639d12e383e89e5eae02294ef455e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture of a TTF asset at a pixel size, baking it if needed, or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:a0a4639d12e383e89e5eae02294ef455e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset at a pixel size, baking it if needed, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:af54310be3f20c4530402878f65ebd4d1" id="r_af54310be3f20c4530402878f65ebd4d1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af54310be3f20c4530402878f65ebd4d1">LoadSpriteSettings</a> (const std::string &amp;guid, int *outFrameWidth=nullptr, int *outFrameHeight=nullptr)</td></tr>
 <tr class="memdesc:af54310be3f20c4530402878f65ebd4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a spritesheet's frame size from the asset's .data file.  <br /></td></tr>
 <tr class="memitem:a27ddf9be9cac90ea8a79f35fa3e085c0" id="r_a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a27ddf9be9cac90ea8a79f35fa3e085c0">LoadFrameTexture</a> (const std::string &amp;frameGuid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL texture of a frame's parent spritesheet, or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> of a frame's parent spritesheet, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:a8952340341b97c5a95edebcc1e0b2f09" id="r_a8952340341b97c5a95edebcc1e0b2f09"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09">GetFrameUVs</a> (const std::string &amp;frameGuid, float *outU0, float *outV0, float *outU1, float *outV1)</td></tr>
 <tr class="memdesc:a8952340341b97c5a95edebcc1e0b2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -298,7 +298,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL atlas texture of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure. </p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL texture for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure. </p>
 <p>Width and height are written to the optional outputs. </p>
 
 </div>
@@ -553,7 +553,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL atlas texture for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure. </p>
 
 </div>
 </div>
@@ -581,7 +581,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL atlas texture for the .dfont at a full path, or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas for the .dfont at a full path, or 0 on failure. </p>
 
 </div>
 </div>
@@ -736,7 +736,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL atlas texture of a TTF asset at a pixel size, baking it if needed, or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset at a pixel size, baking it if needed, or 0 on failure. </p>
 
 </div>
 </div>
@@ -793,7 +793,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL texture of a frame's parent spritesheet, or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> of a frame's parent spritesheet, or 0 on failure. </p>
 <p><span class="tt">frameGuid</span> has the form "parent:frame-N"; the size outputs get the parent texture's size. Use <a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09" title="The normalized UVs (0 to 1) of a frame (&quot;parent:frame-N&quot;) within its parent texture: (U0,...">GetFrameUVs()</a> for the frame's place in it. </p>
 
 </div>

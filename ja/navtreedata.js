@@ -61,6 +61,12 @@ var NAVTREE =
       [ "アセットの読み込みの流れ", "guide-asset-system.html#guide-asset-system-asset-loading-flow", null ],
       [ "主なファイル", "guide-asset-system.html#guide-asset-system-key-files", null ]
     ] ],
+    [ "Coming from LVGL", "guide-coming-from-lvgl.html", [
+      [ "The same ideas, other names", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-the-same-ideas-other-names", null ],
+      [ "Widgets", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-widgets", null ],
+      [ "What changes in practice", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-what-changes-in-practice", null ],
+      [ "Using both", "guide-coming-from-lvgl.html#guide-coming-from-lvgl-using-both", null ]
+    ] ],
     [ "フォントシステム", "guide-font-system.html", [
       [ "概要", "guide-font-system.html#guide-font-system-overview", null ],
       [ "GUID の生成", "guide-font-system.html#guide-font-system-guid-generation", null ],
@@ -96,28 +102,28 @@ var NAVTREE =
       [ "フォント", "guide-localization.html#guide-localization-fonts", null ]
     ] ],
     [ "メモリ", "guide-memory.html", [
-      [ "ルール", "guide-memory.html#guide-memory-the-rule", null ],
-      [ "<span class=\"tt\">Deki::Buffer&lt;T&gt;</span> - これを使う", "guide-memory.html#guide-memory-dekibuffert---use-this", [
-        [ "アリーナを使わない理由", "guide-memory.html#guide-memory-why-not-an-arena", null ]
+      [ "ルール", "guide-memory.html#autotoc_md0", null ],
+      [ "<span class=\"tt\">Deki::Buffer&lt;T&gt;</span> - これを使う", "guide-memory.html#autotoc_md1", [
+        [ "アリーナを使わない理由", "guide-memory.html#autotoc_md2", null ]
       ] ],
-      [ "領域 - 毎回あなたが選ぶ", "guide-memory.html#guide-memory-regions---you-choose-every-time", [
-        [ "領域は名前なので、パッケージが独自に追加できる", "guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own", null ],
-        [ "領域を提供するのはボードの仕事", "guide-memory.html#guide-memory-serving-one-is-the-boards-job", null ],
-        [ "領域名はケーパビリティ名でもある", "guide-memory.html#guide-memory-the-region-name-is-the-capability-name", null ],
-        [ "配置は 1 回で決まる。フォールバックはない", "guide-memory.html#guide-memory-placement-resolves-once-there-is-no-fallback", null ]
+      [ "領域 - 毎回あなたが選ぶ", "guide-memory.html#autotoc_md3", [
+        [ "領域は名前なので、パッケージが独自に追加できる", "guide-memory.html#autotoc_md4", null ],
+        [ "領域を提供するのはボードの仕事", "guide-memory.html#autotoc_md5", null ],
+        [ "領域名はケーパビリティ名でもある", "guide-memory.html#autotoc_md6", null ],
+        [ "配置は 1 回で決まる。フォールバックはない", "guide-memory.html#autotoc_md7", null ]
       ] ],
-      [ "API のその他の部分", "guide-memory.html#guide-memory-the-rest-of-the-api", [
-        [ "メモリの行き先を調べる", "guide-memory.html#guide-memory-finding-out-where-the-memory-went", null ],
-        [ "シーンの切り替え", "guide-memory.html#guide-memory-changing-scenes", null ]
+      [ "API のその他の部分", "guide-memory.html#autotoc_md8", [
+        [ "メモリの行き先を調べる", "guide-memory.html#autotoc_md9", null ],
+        [ "シーンの切り替え", "guide-memory.html#autotoc_md10", null ]
       ] ],
-      [ "<span class=\"tt\">AllocContext</span> - ラベルは自動で書かれる", "guide-memory.html#guide-memory-alloccontext---the-label-writes-itself", [
-        [ "取り除く", "guide-memory.html#guide-memory-stripping-it", null ]
+      [ "<span class=\"tt\">AllocContext</span> - ラベルは自動で書かれる", "guide-memory.html#autotoc_md11", [
+        [ "取り除く", "guide-memory.html#autotoc_md12", null ]
       ] ],
-      [ "<span class=\"tt\">Deki::Vector&lt;T&gt;</span> - 実行時に個数が変わる場合", "guide-memory.html#guide-memory-dekivectort---when-the-count-changes-at-runtime", [
-        [ "<span class=\"tt\">std::vector</span>、<span class=\"tt\">std::string</span>、通常の <span class=\"tt\">new</span>", "guide-memory.html#guide-memory-stdvector-stdstring-and-plain-new", null ]
+      [ "<span class=\"tt\">Deki::Vector&lt;T&gt;</span> - 実行時に個数が変わる場合", "guide-memory.html#autotoc_md13", [
+        [ "<span class=\"tt\">std::vector</span>、<span class=\"tt\">std::string</span>、通常の <span class=\"tt\">new</span>", "guide-memory.html#autotoc_md14", null ]
       ] ],
-      [ "プラットフォームレイヤー: <span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#guide-memory-platform-layer-imemoryprovider", null ],
-      [ "lint", "guide-memory.html#guide-memory-the-lint", null ]
+      [ "プラットフォームレイヤー: <span class=\"tt\">IMemoryProvider</span>", "guide-memory.html#autotoc_md15", null ],
+      [ "lint", "guide-memory.html#autotoc_md16", null ]
     ] ],
     [ "高速化", "guide-performance.html", [
       [ "ボードから始める", "guide-performance.html#guide-performance-start-from-a-board", null ],
@@ -167,13 +173,13 @@ var NAVTREE =
       [ "If something is wrong", "guide-releasing.html#guide-releasing-if-something-is-wrong", null ]
     ] ],
     [ "画面", "guide-screens.html", [
-      [ "カメラ", "guide-screens.html#autotoc_md0", null ],
-      [ "各画面に映る範囲", "guide-screens.html#autotoc_md1", null ],
-      [ "画面に固定する", "guide-screens.html#autotoc_md2", null ],
-      [ "レシピ", "guide-screens.html#autotoc_md3", null ],
-      [ "プレビュー", "guide-screens.html#autotoc_md4", null ],
-      [ "カラーフォーマット", "guide-screens.html#autotoc_md5", null ],
-      [ "デバイス上では", "guide-screens.html#autotoc_md6", null ]
+      [ "カメラ", "guide-screens.html#autotoc_md17", null ],
+      [ "各画面に映る範囲", "guide-screens.html#autotoc_md18", null ],
+      [ "画面に固定する", "guide-screens.html#autotoc_md19", null ],
+      [ "レシピ", "guide-screens.html#autotoc_md20", null ],
+      [ "プレビュー", "guide-screens.html#autotoc_md21", null ],
+      [ "カラーフォーマット", "guide-screens.html#autotoc_md22", null ],
+      [ "デバイス上では", "guide-screens.html#autotoc_md23", null ]
     ] ],
     [ "スプライトシステム", "guide-sprite-system.html", [
       [ "概要", "guide-sprite-system.html#guide-sprite-system-overview", null ],
@@ -202,6 +208,15 @@ var NAVTREE =
       [ "エクスポートのパイプライン", "guide-sprite-system.html#guide-sprite-system-export-pipeline", null ],
       [ "比較: フォントとスプライト", "guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites", null ],
       [ "主なファイル", "guide-sprite-system.html#guide-sprite-system-key-files", null ]
+    ] ],
+    [ "UI widgets", "guide-ui-widgets.html", [
+      [ "The widgets", "guide-ui-widgets.html#guide-ui-widgets-the-widgets", null ],
+      [ "Adding one", "guide-ui-widgets.html#guide-ui-widgets-adding-one", null ],
+      [ "Changing how it looks", "guide-ui-widgets.html#guide-ui-widgets-changing-how-it-looks", null ],
+      [ "Reacting in code", "guide-ui-widgets.html#guide-ui-widgets-reacting-in-code", null ],
+      [ "Keys and focus", "guide-ui-widgets.html#guide-ui-widgets-keys-and-focus", null ],
+      [ "Only what you use ships", "guide-ui-widgets.html#guide-ui-widgets-only-what-you-use-ships", null ],
+      [ "On the device", "guide-ui-widgets.html#guide-ui-widgets-on-the-device", null ]
     ] ],
     [ "単位", "guide-units.html", [
       [ "ルール", "guide-units.html#guide-units-the-rule", null ],

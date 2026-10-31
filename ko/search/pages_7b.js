@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['채택_3a_20프로젝트가_20사본을_20받습니다_0',['채택: 프로젝트가 사본을 받습니다',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]]
+  ['지연_20로딩_0',['지연 로딩',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]],
+  ['지정_1',['에디터에서의 지정',['../guide-sprite-system.html#guide-sprite-system-assignment-in-editor',1,'']]]
 ];

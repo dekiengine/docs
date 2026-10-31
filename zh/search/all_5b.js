@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['结构版本_0',['结构版本',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]],
-  ['结构_1',['结构',['../guide-project-layout.html#guide-project-layout-layout',1,'']]]
+  ['组件参考_0',['组件参考',['../engine-core.html#engine-component-reference',1,'']]],
+  ['组件_1',['组件',['../engine-core.html#engine-components',1,'']]]
 ];

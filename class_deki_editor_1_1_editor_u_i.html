@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62e18849118fe49760408d615ccca6d5" id="r_a62e18849118fe49760408d615ccca6d5"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a62e18849118fe49760408d615ccca6d5">ResolveAssetName</a> (const std::string &amp;guid)</td></tr>
 <tr class="memdesc:a62e18849118fe49760408d615ccca6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A readable path or name for an asset GUID.  <br /></td></tr>
 <tr class="memitem:a588e2293ab016bea04e9e7bf65058f4f" id="r_a588e2293ab016bea04e9e7bf65058f4f"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a588e2293ab016bea04e9e7bf65058f4f">GetFontAtlasTexture</a> (const std::string &amp;fontGuid, int fontSize, uint32_t *outWidth, uint32_t *outHeight)</td></tr>
-<tr class="memdesc:a588e2293ab016bea04e9e7bf65058f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenGL atlas texture of a font at a size, for previews, with its width and height, or 0 on failure.  <br /></td></tr>
+<tr class="memdesc:a588e2293ab016bea04e9e7bf65058f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a font at a size, for previews, with its width and height, or 0 on failure.  <br /></td></tr>
 <tr class="memitem:aeeb4f300257263da987934862772c16f" id="r_aeeb4f300257263da987934862772c16f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeeb4f300257263da987934862772c16f">ModifyAsset</a> (const std::string &amp;assetPath, const std::string &amp;assetGuid, const std::string &amp;oldJson, const std::string &amp;newJson)</td></tr>
 <tr class="memdesc:aeeb4f300257263da987934862772c16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes an asset file (absolute path) from <span class="tt">oldJson</span> to <span class="tt">newJson</span>, as an undoable edit.  <br /></td></tr>
 <tr class="memitem:a06ddb39b513287238818da06d0810740" id="r_a06ddb39b513287238818da06d0810740"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a06ddb39b513287238818da06d0810740">SectionHeader</a> (const char *label)</td></tr>
@@ -297,6 +297,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a524ecbe68a0a8161199881953d5dfcc7" id="r_a524ecbe68a0a8161199881953d5dfcc7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a524ecbe68a0a8161199881953d5dfcc7">Text</a> (const char *text)</td></tr>
 <tr class="memitem:ad71853dec04ed07bda82db674b345a74" id="r_ad71853dec04ed07bda82db674b345a74"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad71853dec04ed07bda82db674b345a74">TextColored</a> (float r, float g, float b, float a, const char *text)</td></tr>
 <tr class="memitem:a61940c9a6f47c931a6f19ceb2b31f369" id="r_a61940c9a6f47c931a6f19ceb2b31f369"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a61940c9a6f47c931a6f19ceb2b31f369">TextDisabled</a> (const char *text)</td></tr>
+<tr class="memitem:aca811a1394e3d6d13a39daa5486d7526" id="r_aca811a1394e3d6d13a39daa5486d7526"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca811a1394e3d6d13a39daa5486d7526">ValueText</a> (const char *text)</td></tr>
+<tr class="memdesc:aca811a1394e3d6d13a39daa5486d7526"><td class="mdescLeft">&#160;</td><td class="mdescRight">A read-only value in the value column of the row PropertyRow began, in the fields' font, dimmed and centred on the row.  <br /></td></tr>
+<tr class="memitem:a453a359db74272127eed8cdb445ad7c8" id="r_a453a359db74272127eed8cdb445ad7c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a453a359db74272127eed8cdb445ad7c8">Hint</a> (const char *text)</td></tr>
+<tr class="memdesc:a453a359db74272127eed8cdb445ad7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dim help text under a run of rows, wrapped and lined up with the row labels.  <br /></td></tr>
+<tr class="memitem:a658405b29a4bcbc13067b3519f20870b" id="r_a658405b29a4bcbc13067b3519f20870b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a658405b29a4bcbc13067b3519f20870b">ActionButton</a> (const char *label, float width=0.0f)</td></tr>
+<tr class="memdesc:a658405b29a4bcbc13067b3519f20870b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A button for an action rather than a value (Edit 9-Slice, Edit Rect): the outlined, centred box Add Component uses.  <br /></td></tr>
 <tr class="memitem:a75e8a62297b188ea46fa0abb481f2cce" id="r_a75e8a62297b188ea46fa0abb481f2cce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75e8a62297b188ea46fa0abb481f2cce">SameLine</a> (float offsetFromStartX=0.0f, float spacing=-1.0f)</td></tr>
 <tr class="memitem:af0c61a8670f40e097d81402a20a7ceeb" id="r_af0c61a8670f40e097d81402a20a7ceeb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af0c61a8670f40e097d81402a20a7ceeb">Spacing</a> ()</td></tr>
 <tr class="memitem:a14d761ea4158a074a9358addd6bdcb46" id="r_a14d761ea4158a074a9358addd6bdcb46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14d761ea4158a074a9358addd6bdcb46">Separator</a> ()</td></tr>
@@ -969,7 +975,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The OpenGL atlas texture of a font at a size, for previews, with its width and height, or 0 on failure. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a font at a size, for previews, with its width and height, or 0 on failure. </p>
 
 </div>
 </div>
@@ -1447,6 +1453,69 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca811a1394e3d6d13a39daa5486d7526" name="aca811a1394e3d6d13a39daa5486d7526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca811a1394e3d6d13a39daa5486d7526">&#9670;&#160;</a></span>ValueText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorUI::ValueText </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A read-only value in the value column of the row PropertyRow began, in the fields' font, dimmed and centred on the row. </p>
+<p>For what a row shows but does not edit there (a 9-slice's borders, a computed total). </p>
+
+</div>
+</div>
+<a id="a453a359db74272127eed8cdb445ad7c8" name="a453a359db74272127eed8cdb445ad7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453a359db74272127eed8cdb445ad7c8">&#9670;&#160;</a></span>Hint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorUI::Hint </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dim help text under a run of rows, wrapped and lined up with the row labels. </p>
+
+</div>
+</div>
+<a id="a658405b29a4bcbc13067b3519f20870b" name="a658405b29a4bcbc13067b3519f20870b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658405b29a4bcbc13067b3519f20870b">&#9670;&#160;</a></span>ActionButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorUI::ActionButton </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>width</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A button for an action rather than a value (Edit 9-Slice, Edit Rect): the outlined, centred box Add Component uses. </p>
+<p><span class="tt">width</span> 0 uses a comfortable default. Returns true when clicked. </p>
 
 </div>
 </div>

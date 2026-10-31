@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.21.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -158,6 +158,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
 Namespaces</h2></td></tr>
 <tr class="memitem:CMakeGen" id="r_CMakeGen"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_c_make_gen.html">CMakeGen</a></td></tr>
 <tr class="memitem:EditorNaming" id="r_EditorNaming"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_editor_naming.html">EditorNaming</a></td></tr>
+<tr class="memitem:EditorTexture" id="r_EditorTexture"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_editor_texture.html">EditorTexture</a></td></tr>
+<tr class="memdesc:namespace_deki_editor_1_1_editor_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases. <br /></td></tr>
 <tr class="memitem:Fonts" id="r_Fonts"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_fonts.html">Fonts</a></td></tr>
 <tr class="memitem:Localization" id="r_Localization"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_localization.html">Localization</a></td></tr>
 <tr class="memitem:Metrics" id="r_Metrics"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_deki_editor_1_1_metrics.html">Metrics</a></td></tr>
@@ -503,6 +505,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4f669d6ce874fd1388c3c55064a89383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds <a class="el" href="class_deki_editor_1_1_platform_registry.html" title="The available platforms, all loaded from JSON: the project&#39;s own, those its packages offer,...">PlatformRegistry</a> for the project from scratch: board packs, then what its installed packages offer, then its own.  <br /></td></tr>
 <tr class="memitem:ace10af030fccd8526965e7bdcd8058bc" id="r_ace10af030fccd8526965e7bdcd8058bc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ace10af030fccd8526965e7bdcd8058bc">AddSimulationSteps</a> (nlohmann::json &amp;scene, const nlohmann::json &amp;steps, std::string &amp;error)</td></tr>
 <tr class="memdesc:ace10af030fccd8526965e7bdcd8058bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a simulated build's boot scene: the board's, plus the simulator's steps.  <br /></td></tr>
+<tr class="memitem:a47c0a0ee2211584fe195adc8e4f6a5b6" id="r_a47c0a0ee2211584fe195adc8e4f6a5b6"><td class="memItemLeft">unsigned long&#160;</td><td class="memItemRight"><a class="el" href="#a47c0a0ee2211584fe195adc8e4f6a5b6">BuildPriorityFlag</a> ()</td></tr>
+<tr class="memdesc:a47c0a0ee2211584fe195adc8e4f6a5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows process creation flag for a build: below-normal priority, which the processes it starts inherit.  <br /></td></tr>
+<tr class="memitem:a6c024f63549d4acba558b700cf5c72df" id="r_a6c024f63549d4acba558b700cf5c72df"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c024f63549d4acba558b700cf5c72df">LowerBuildPriority</a> ()</td></tr>
+<tr class="memdesc:a6c024f63549d4acba558b700cf5c72df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowers the calling process's priority.  <br /></td></tr>
+<tr class="memitem:afda264ca500f002148faba9e0e3f82fa" id="r_afda264ca500f002148faba9e0e3f82fa"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#afda264ca500f002148faba9e0e3f82fa">AtBuildPriority</a> (const std::string &amp;shellLine)</td></tr>
+<tr class="memdesc:afda264ca500f002148faba9e0e3f82fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shell line run at build priority where the process cannot be lowered before it starts (popen): <span class="tt">nice -n 10 /bin/sh -c '&lt;line&gt;'</span>.  <br /></td></tr>
+<tr class="memitem:a383b7bdae23fe03f110cc0f27d30d80b" id="r_a383b7bdae23fe03f110cc0f27d30d80b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a383b7bdae23fe03f110cc0f27d30d80b">BuildJobCount</a> ()</td></tr>
+<tr class="memdesc:a383b7bdae23fe03f110cc0f27d30d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many compile jobs a build starting now should run: one per core, but no more than free memory holds, and at least one.  <br /></td></tr>
+<tr class="memitem:ab3f4b414ad1fc57d9d1e1899fd2590cc" id="r_ab3f4b414ad1fc57d9d1e1899fd2590cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab3f4b414ad1fc57d9d1e1899fd2590cc">PrepareBuildJobs</a> ()</td></tr>
+<tr class="memdesc:ab3f4b414ad1fc57d9d1e1899fd2590cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets CMAKE_BUILD_PARALLEL_LEVEL (cmake &ndash;build) and IDF_PY_BUILD_JOBS (idf.py) to <a class="el" href="#a383b7bdae23fe03f110cc0f27d30d80b" title="How many compile jobs a build starting now should run: one per core, but no more than free memory hol...">BuildJobCount()</a> for the processes this one starts next.  <br /></td></tr>
 <tr class="memitem:a8a404fe14df02d696f644372cb1b97c1" id="r_a8a404fe14df02d696f644372cb1b97c1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a8a404fe14df02d696f644372cb1b97c1">ReadCMakeCacheVar</a> (const std::string &amp;buildDir, const std::string &amp;name)</td></tr>
 <tr class="memdesc:a8a404fe14df02d696f644372cb1b97c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of <span class="tt">name</span> in &lt;buildDir&gt;/CMakeCache.txt, i.e.  <br /></td></tr>
 <tr class="memitem:a6fffe440b25df4ff9f812be75f190823" id="r_a6fffe440b25df4ff9f812be75f190823"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6fffe440b25df4ff9f812be75f190823">ScanComponentUsage</a> (const std::string &amp;projectPath, const std::vector&lt; std::string &gt; &amp;knownTypes, const std::vector&lt; std::string &gt; &amp;scanPackageIds, const std::string &amp;targetPlatformId=&quot;&quot;, const std::set&lt; std::string &gt; &amp;targetCapabilities={}, const std::vector&lt; std::string &gt; &amp;extraSceneDirs={})</td></tr>
@@ -2085,6 +2097,105 @@ Variables</h2></td></tr>
 <p><span class="tt">steps</span> is an array of {"name", "type", "properties"} (the qualified component type and its property values). Each becomes a child of the object holding the <a class="el" href="class_deki_1_1_platform_setup_component.html" title="Runs the boot scene&#39;s SetupComponents (such as SDCardComponent) one at a time, in order,...">Deki::PlatformSetupComponent</a>, with an id unique in the scene, listed after the board's own setup steps so it runs last: a simulator's display is installed after the board's and is the one the game renders to. Every other object and step is kept as it was.</p>
 <p><span class="tt">scene</span> may be null (a platform with no boot scene of its own); it then becomes a boot scene with only a PlatformSetupComponent and the steps, which boots the project's startup scene as the device would.</p>
 <p>False, with <span class="tt">error</span> set, when <span class="tt">steps</span> is not an array of such objects or the scene has no objects array. </p>
+
+</div>
+</div>
+<a id="a47c0a0ee2211584fe195adc8e4f6a5b6" name="a47c0a0ee2211584fe195adc8e4f6a5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c0a0ee2211584fe195adc8e4f6a5b6">&#9670;&#160;</a></span>BuildPriorityFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long DekiEditor::BuildPriorityFlag </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Windows process creation flag for a build: below-normal priority, which the processes it starts inherit. </p>
+<p>0 elsewhere. </p>
+
+</div>
+</div>
+<a id="a6c024f63549d4acba558b700cf5c72df" name="a6c024f63549d4acba558b700cf5c72df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c024f63549d4acba558b700cf5c72df">&#9670;&#160;</a></span>LowerBuildPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::LowerBuildPriority </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lowers the calling process's priority. </p>
+<p>For a build's child process, after fork and before exec; what it starts inherits it. Does nothing on Windows. </p>
+
+</div>
+</div>
+<a id="afda264ca500f002148faba9e0e3f82fa" name="afda264ca500f002148faba9e0e3f82fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda264ca500f002148faba9e0e3f82fa">&#9670;&#160;</a></span>AtBuildPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::AtBuildPriority </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>shellLine</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shell line run at build priority where the process cannot be lowered before it starts (popen): <span class="tt">nice -n 10 /bin/sh -c '&lt;line&gt;'</span>. </p>
+<p>The line as it is on Windows, which uses BuildPriorityFlag instead. </p>
+
+</div>
+</div>
+<a id="a383b7bdae23fe03f110cc0f27d30d80b" name="a383b7bdae23fe03f110cc0f27d30d80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383b7bdae23fe03f110cc0f27d30d80b">&#9670;&#160;</a></span>BuildJobCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DekiEditor::BuildJobCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How many compile jobs a build starting now should run: one per core, but no more than free memory holds, and at least one. </p>
+
+</div>
+</div>
+<a id="ab3f4b414ad1fc57d9d1e1899fd2590cc" name="ab3f4b414ad1fc57d9d1e1899fd2590cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f4b414ad1fc57d9d1e1899fd2590cc">&#9670;&#160;</a></span>PrepareBuildJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::PrepareBuildJobs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets CMAKE_BUILD_PARALLEL_LEVEL (cmake &ndash;build) and IDF_PY_BUILD_JOBS (idf.py) to <a class="el" href="#a383b7bdae23fe03f110cc0f27d30d80b" title="How many compile jobs a build starting now should run: one per core, but no more than free memory hol...">BuildJobCount()</a> for the processes this one starts next. </p>
+<p>A value the user set before the editor started is left alone. </p>
 
 </div>
 </div>

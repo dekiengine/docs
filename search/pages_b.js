@@ -9,7 +9,7 @@ var searchData=
   ['demo_6',['4.6 The demo',['../guide-releasing.html#guide-releasing-46-the-demo',1,'']]],
   ['deterministic_20guid_20generation_7',['Deterministic GUID Generation',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]],
   ['deterministic_20guids_20are_20generated_8',['Where deterministic GUIDs are generated',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
-  ['device_9',['On the device',['../guide-screens.html#guide-screens-on-the-device',1,'']]],
+  ['device_9',['device',['../guide-screens.html#guide-screens-on-the-device',1,'On the device'],['../guide-ui-widgets.html#guide-ui-widgets-on-the-device',1,'On the device']]],
   ['dfont_10',['BitmapFont File Format (.dfont)',['../guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont',1,'']]],
   ['differ_11',['Why sprites and fonts differ',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
   ['disk_12',['Rule: &lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt; always = &quot;the file to load from disk&quot;',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]],

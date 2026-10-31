@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
-  ['고유의_20이름_1',['패키지 고유의 이름',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
-  ['고정하기_2',['화면에 고정하기',['../guide-screens.html#autotoc_md2',1,'']]]
+  ['경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
 ];

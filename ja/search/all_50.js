@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['画面に固定する_0',['画面に固定する',['../guide-screens.html#autotoc_md2',1,'']]],
-  ['画面_1',['画面',['../guide-screens.html',1,'']]]
+  ['生成されるコードのパターン_0',['生成されるコードのパターン',['../guide-asset-system.html#guide-asset-system-generated-code-pattern',1,'']]],
+  ['生成される_20resolveobjectrefs_1',['生成される ResolveObjectRefs',['../guide-sprite-system.html#guide-sprite-system-generated-resolveobjectrefs',1,'']]]
 ];

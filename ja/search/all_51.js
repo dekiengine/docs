@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['登録_0',['登録',['../guide-font-system.html#guide-font-system-registration',1,'']]]
+  ['画面に固定する_0',['画面に固定する',['../guide-screens.html#autotoc_md19',1,'']]],
+  ['画面_1',['画面',['../guide-screens.html',1,'']]]
 ];

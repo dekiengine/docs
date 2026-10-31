@@ -58,5 +58,8 @@ var struct_deki_editor_1_1_editor_u_i_1_1_widget_backend =
     [ "commitEdit", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a407dd19025b756e33e5caa4dc361d8c8", null ],
     [ "unitField", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a0b728d536ac2361f4c24e99b4f47cbd3", null ],
     [ "drawTextCss", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#aac97f0281fcb2137a26abe38771fede5", null ],
-    [ "measureTextCss", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#aa359f22fab65eea026beff538367f087", null ]
+    [ "measureTextCss", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#aa359f22fab65eea026beff538367f087", null ],
+    [ "valueText", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ad0f042a6bd7eec2d989effca6b893d56", null ],
+    [ "hint", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#aa1c56fed377b40f0c68558a99f1238f6", null ],
+    [ "actionButton", "struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a383059a07f0da75f5463e04f51d64f9a", null ]
 ];

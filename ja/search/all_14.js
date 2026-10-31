@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['only_20what_20changed_0',['4. Redrawing only what changed',['../guide-hardware-checklist.html#guide-hardware-checklist-4-redrawing-only-what-changed',1,'']]],
-  ['onto_20master_1',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
-  ['order_2',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]]
+  ['names_0',['The same ideas, other names',['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-the-same-ideas-other-names',1,'']]],
+  ['new_1',['&lt;span class=&quot;tt&quot;&gt;std::vector&lt;/span&gt;、&lt;span class=&quot;tt&quot;&gt;std::string&lt;/span&gt;、通常の &lt;span class=&quot;tt&quot;&gt;new&lt;/span&gt;',['../guide-memory.html#autotoc_md14',1,'']]],
+  ['numbers_2',['8. Record the numbers',['../guide-hardware-checklist.html#guide-hardware-checklist-8-record-the-numbers',1,'']]]
 ];

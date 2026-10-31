@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['親、source_20フレームである理由_0',['guid = 親、source = フレームである理由',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
+  ['表を翻訳する_0',['表を翻訳する',['../guide-localization.html#guide-localization-translating-a-table',1,'']]],
+  ['表示の変換_1',['表示の変換',['../guide-units.html#guide-units-display-conversion',1,'']]]
 ];

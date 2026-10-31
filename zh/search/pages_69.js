@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['预览模式（仅限编辑器）_0',['预览模式（仅限编辑器）',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
-  ['预览_1',['预览',['../guide-screens.html#autotoc_md4',1,'']]]
+  ['项目结构_0',['项目结构',['../guide-project-layout.html',1,'']]],
+  ['项目设置_1',['项目设置',['../settings.html',1,'项目设置'],['../engine-core.html#engine-project-settings',1,'项目设置']]]
 ];

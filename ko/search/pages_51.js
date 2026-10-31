@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['색상_20포맷_0',['색상 포맷',['../guide-screens.html#autotoc_md5',1,'']]]
+  ['빠르게_20만들기_0',['빠르게 만들기',['../guide-performance.html',1,'']]]
 ];

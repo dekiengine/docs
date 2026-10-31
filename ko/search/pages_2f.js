@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['다른_20이유_0',['스프라이트와 폰트가 다른 이유',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
-  ['다른_20패키지가_20필요한_20기능_1',['다른 패키지가 필요한 기능',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
+  ['나란히_20있는_20이유_0',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]],
+  ['나머지_20api_1',['나머지 API',['../guide-memory.html#autotoc_md8',1,'']]]
 ];

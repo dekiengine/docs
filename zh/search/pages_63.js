@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['调用_20ensurefontsizebaked_20的位置：_0',['调用 EnsureFontSizeBaked 的位置：',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]]
+  ['请使用它_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Buffer&amp;lt;T&amp;gt;&lt;/span&gt; - 请使用它',['../guide-memory.html#autotoc_md1',1,'']]]
 ];

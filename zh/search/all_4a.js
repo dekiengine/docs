@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['概述_0',['概述',['../guide-font-system.html#guide-font-system-overview',1,'概述'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'概述']]]
+  ['检查_0',['lint 检查',['../guide-memory.html#autotoc_md16',1,'']]]
 ];

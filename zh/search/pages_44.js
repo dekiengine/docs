@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['普通精灵（没有帧）_0',['普通精灵（没有帧）',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
+  ['显示换算_0',['显示换算',['../guide-units.html#guide-units-display-conversion',1,'']]]
 ];

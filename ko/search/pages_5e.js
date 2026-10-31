@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['어디에서_20오는가_0',['플랫폼은 어디에서 오는가',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]],
-  ['어디에_20쓰였는지_20알아내기_1',['메모리가 어디에 쓰였는지 알아내기',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]]
+  ['않는_20이유_0',['아레나를 쓰지 않는 이유',['../guide-memory.html#autotoc_md2',1,'']]],
+  ['않으며_20그래도_20괜찮습니다_1',['데이터시트는 SI를 쓰지 않으며, 그래도 괜찮습니다',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]]
 ];

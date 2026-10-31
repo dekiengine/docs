@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['每次都由你选择_0',['区域 - 每次都由你选择',['../guide-memory.html#guide-memory-regions---you-choose-every-time',1,'']]],
-  ['每种屏幕看到什么_1',['每种屏幕看到什么',['../guide-screens.html#autotoc_md1',1,'']]]
+  ['模拟开发板_0',['模拟开发板',['../guide-platforms.html#guide-platforms-simulating-a-board',1,'']]],
+  ['模板_1',['AssetRef&amp;lt;T&amp;gt; 模板',['../guide-asset-system.html#guide-asset-system-assetreft-template',1,'']]]
 ];

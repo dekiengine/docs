@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['切换场景_0',['切换场景',['../guide-memory.html#guide-memory-changing-scenes',1,'']]]
+  ['内存_0',['内存',['../guide-memory.html',1,'']]]
 ];

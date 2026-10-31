@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ガイド_0',['ガイド',['../index.html#guides',1,'']]]
+  ['カメラ_0',['カメラ',['../guide-screens.html#autotoc_md17',1,'']]],
+  ['カラーフォーマット_1',['カラーフォーマット',['../guide-screens.html#autotoc_md22',1,'']]]
 ];

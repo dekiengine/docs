@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['需要其他包的功能_0',['需要其他包的功能',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
+  ['附属文件_0',['附属文件',['../guide-font-system.html#guide-font-system-data-sidecar-file',1,'.data 附属文件'],['../guide-sprite-system.html#guide-sprite-system-data-sidecar-file',1,'.data 附属文件']]]
 ];

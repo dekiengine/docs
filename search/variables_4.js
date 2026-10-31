@@ -22,6 +22,7 @@ var searchData=
   ['extensions_19',['extensions',['../struct_deki_editor_1_1_asset_type_handler.html#a3ce6e0bfd38a57f65699d3d567583609',1,'DekiEditor::AssetTypeHandler']]],
   ['external_20',['External',['../class_deki_1_1_memory.html#a44e1e0894dcca1ef22f5f59cf04c75ee',1,'Deki::Memory']]],
   ['externalallocated_21',['externalAllocated',['../struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f',1,'Deki::MemoryStats']]],
-  ['externalmemorysize_22',['externalMemorySize',['../struct_deki_editor_1_1_platform_config.html#a7d4ba9c1ecf48d02584781fd4569dd46',1,'DekiEditor::PlatformConfig']]],
-  ['extractedname_23',['extractedName',['../struct_deki_editor_1_1_sub_component_def.html#a3701cc1d2a9b3967c056ded8baad88db',1,'DekiEditor::SubComponentDef::extractedName'],['../struct_deki_editor_1_1_component_def.html#a8540694e298ade691f224ae9cbac27ac',1,'DekiEditor::ComponentDef::extractedName']]]
+  ['externalbytes_22',['externalBytes',['../struct_deki_1_1_memory_site.html#a95913dadd15af51c3a5227d56a757a62',1,'Deki::MemorySite']]],
+  ['externalmemorysize_23',['externalMemorySize',['../struct_deki_editor_1_1_platform_config.html#a7d4ba9c1ecf48d02584781fd4569dd46',1,'DekiEditor::PlatformConfig']]],
+  ['extractedname_24',['extractedName',['../struct_deki_editor_1_1_sub_component_def.html#a3701cc1d2a9b3967c056ded8baad88db',1,'DekiEditor::SubComponentDef::extractedName'],['../struct_deki_editor_1_1_component_def.html#a8540694e298ade691f224ae9cbac27ac',1,'DekiEditor::ComponentDef::extractedName']]]
 ];
