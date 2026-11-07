@@ -1,5 +1,14 @@
 var NAVTREEINDEX42 =
 {
+"struct_deki_1_1_memory_stats.html#a735a5ddfe6eda2a53a5b3df3edcc0310":[19,0,0,46,0],
+"struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f":[18,0,0,50,1],
+"struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f":[19,0,0,46,1],
+"struct_deki_1_1_node_ref.html":[18,0,0,51],
+"struct_deki_1_1_node_ref.html":[19,0,0,47],
+"struct_deki_1_1_node_ref.html#a1224a228a27ec7d5d09bad12d483902d":[18,0,0,51,0],
+"struct_deki_1_1_node_ref.html#a1224a228a27ec7d5d09bad12d483902d":[19,0,0,47,0],
+"struct_deki_1_1_object_ref.html":[18,0,0,53],
+"struct_deki_1_1_object_ref.html":[19,0,0,49],
 "struct_deki_1_1_object_ref.html#a1d01c5c9b2cd279b3e675faf48e636cb":[18,0,0,53,3],
 "struct_deki_1_1_object_ref.html#a1d01c5c9b2cd279b3e675faf48e636cb":[19,0,0,49,3],
 "struct_deki_1_1_object_ref.html#a83003b63083d2e410cd5d0a097a281df":[18,0,0,53,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX42 =
 "struct_deki_1_1_vector2.html#a3da232d0bf41978a2a30393f18cfbd2e":[19,0,0,69,10],
 "struct_deki_1_1_vector2.html#a47e0b857a98e04584577d725087f7df6":[18,0,0,73,12],
 "struct_deki_1_1_vector2.html#a47e0b857a98e04584577d725087f7df6":[19,0,0,69,12],
-"struct_deki_1_1_vector2.html#a64175482c82df8108e92009a01678907":[18,0,0,73,13],
-"struct_deki_1_1_vector2.html#a64175482c82df8108e92009a01678907":[19,0,0,69,13],
-"struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed":[18,0,0,73,33],
-"struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed":[19,0,0,69,33],
-"struct_deki_1_1_vector2.html#a6cd25e0fde656cb0c935f9b47af22b09":[18,0,0,73,26],
-"struct_deki_1_1_vector2.html#a6cd25e0fde656cb0c935f9b47af22b09":[19,0,0,69,26],
-"struct_deki_1_1_vector2.html#a73a5195578a1e441f3d36af611205be9":[18,0,0,73,31],
-"struct_deki_1_1_vector2.html#a73a5195578a1e441f3d36af611205be9":[19,0,0,69,31],
-"struct_deki_1_1_vector2.html#a782fd4015975400326d3a5eb1390964a":[18,0,0,73,11],
-"struct_deki_1_1_vector2.html#a782fd4015975400326d3a5eb1390964a":[19,0,0,69,11]
+"struct_deki_1_1_vector2.html#a64175482c82df8108e92009a01678907":[18,0,0,73,13]
 };

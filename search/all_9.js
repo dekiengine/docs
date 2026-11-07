@@ -98,12 +98,14 @@ var searchData=
   ['builtinprovider_95',['BuiltInProvider',['../class_deki_editor_1_1_builder_registry.html#a6442ef0c86efccb60a5eec4bce3ab04a',1,'DekiEditor::BuilderRegistry']]],
   ['bullettext_96',['BulletText',['../class_deki_editor_1_1_editor_u_i.html#adfdc3fb9693bd0f0d724a24aeb77f6f5',1,'DekiEditor::EditorUI']]],
   ['bullettext_97',['bulletText',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#a96a5212f8a003b472db3985bccd83a8e',1,'DekiEditor::EditorUI::WidgetBackend']]],
-  ['button_98',['Button',['../class_deki_editor_1_1_editor_u_i.html#a64edc85cd7b6fb4593d6eb6a19c64f71',1,'DekiEditor::EditorUI::Button(const char *label, float width=0.0f, float height=0.0f)'],['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a87b7760f14fbff78d8819291f36ab9a0',1,'DekiEditor::EditorUI::Button']]],
-  ['button_99',['button',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ace4c15561b7e898a9953fa345acb011d',1,'DekiEditor::EditorUI::WidgetBackend']]],
-  ['buttonactive_100',['ButtonActive',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a9ef9a76f89d3d4a4a9a02a5b8fddbfb3',1,'DekiEditor::EditorUI']]],
-  ['buttonhovered_101',['ButtonHovered',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3afaea675ba618620c5af718f4ecebaaea',1,'DekiEditor::EditorUI']]],
-  ['bytes_102',['Bytes',['../class_deki_1_1_buffer.html#af2481b64e87f4bd2ab7929def24e78fa',1,'Deki::Buffer']]],
-  ['bytes_103',['bytes',['../struct_deki_1_1_file_image_1_1_file.html#a083fdb0b674956e7f001a0d9d8f74c36',1,'Deki::FileImage::File']]],
-  ['bytesdownloaded_104',['bytesDownloaded',['../struct_deki_editor_1_1_download_progress.html#a949dfad69feffe1f0038058565d72cef',1,'DekiEditor::DownloadProgress']]],
-  ['bytype_105',['byType',['../struct_deki_editor_1_1_component_usage.html#af8eedf331e7cdbd3047a10b7e850b485',1,'DekiEditor::ComponentUsage']]]
+  ['bundledtoolchain_2eh_98',['BundledToolchain.h',['../_bundled_toolchain_8h.html',1,'']]],
+  ['bundledtoolchaindir_99',['BundledToolchainDir',['../namespace_deki_editor.html#a29212f4a0a7761398e7a8d79189329d4',1,'DekiEditor']]],
+  ['button_100',['Button',['../class_deki_editor_1_1_editor_u_i.html#a64edc85cd7b6fb4593d6eb6a19c64f71',1,'DekiEditor::EditorUI::Button(const char *label, float width=0.0f, float height=0.0f)'],['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a87b7760f14fbff78d8819291f36ab9a0',1,'DekiEditor::EditorUI::Button']]],
+  ['button_101',['button',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#ace4c15561b7e898a9953fa345acb011d',1,'DekiEditor::EditorUI::WidgetBackend']]],
+  ['buttonactive_102',['ButtonActive',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3a9ef9a76f89d3d4a4a9a02a5b8fddbfb3',1,'DekiEditor::EditorUI']]],
+  ['buttonhovered_103',['ButtonHovered',['../class_deki_editor_1_1_editor_u_i.html#ac6212dd48bcc831e657f9ae612b000c3afaea675ba618620c5af718f4ecebaaea',1,'DekiEditor::EditorUI']]],
+  ['bytes_104',['Bytes',['../class_deki_1_1_buffer.html#af2481b64e87f4bd2ab7929def24e78fa',1,'Deki::Buffer']]],
+  ['bytes_105',['bytes',['../struct_deki_1_1_file_image_1_1_file.html#a083fdb0b674956e7f001a0d9d8f74c36',1,'Deki::FileImage::File']]],
+  ['bytesdownloaded_106',['bytesDownloaded',['../struct_deki_editor_1_1_download_progress.html#a949dfad69feffe1f0038058565d72cef',1,'DekiEditor::DownloadProgress']]],
+  ['bytype_107',['byType',['../struct_deki_editor_1_1_component_usage.html#af8eedf331e7cdbd3047a10b7e850b485',1,'DekiEditor::ComponentUsage']]]
 ];

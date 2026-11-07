@@ -1,5 +1,14 @@
 var NAVTREEINDEX48 =
 {
+"struct_deki_editor_1_1_texture_target_settings.html#a3310d524a3084d63fc7e14f9463a8d67":[19,0,1,90,1],
+"struct_deki_editor_1_1_texture_target_settings.html#a34e4c6bdce3854c75da6a3a1cb224435":[18,0,2,96,3],
+"struct_deki_editor_1_1_texture_target_settings.html#a34e4c6bdce3854c75da6a3a1cb224435":[19,0,1,90,3],
+"struct_deki_editor_1_1_texture_target_settings.html#a4859accc3c4a02c9d4d6ae1183bbbfe3":[18,0,2,96,2],
+"struct_deki_editor_1_1_texture_target_settings.html#a4859accc3c4a02c9d4d6ae1183bbbfe3":[19,0,1,90,2],
+"struct_deki_editor_1_1_toolchain_component.html":[18,0,2,97],
+"struct_deki_editor_1_1_toolchain_component.html":[19,0,1,91],
+"struct_deki_editor_1_1_toolchain_component.html#a1c167e9950d868c6a633e0f64e00841f":[18,0,2,97,3],
+"struct_deki_editor_1_1_toolchain_component.html#a1c167e9950d868c6a633e0f64e00841f":[19,0,1,91,3],
 "struct_deki_editor_1_1_toolchain_component.html#a239552827638ddf057979f5d27faae0c":[18,0,2,97,6],
 "struct_deki_editor_1_1_toolchain_component.html#a239552827638ddf057979f5d27faae0c":[19,0,1,91,6],
 "struct_deki_editor_1_1_toolchain_component.html#a387289847a07a1fd30b0f4506e0cb118":[18,0,2,97,1],

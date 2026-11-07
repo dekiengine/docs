@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
    </div>
    <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
   </td>
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
 <p>面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎，带有可视化编辑器。</p>
-<p>这里是引擎核心及其 C++ API。各个包的文档在包自己的站点上，链接见下文。所有内容都由代码生成（引擎 0.30.0）。</p>
+<p>这里是引擎核心及其 C++ API。各个包的文档在包自己的站点上，链接见下文。所有内容都由代码生成（引擎 0.30.3）。</p>
 <ul>
 <li><a href="engine-core.html">引擎核心</a>：引擎自身提供的组件和设置</li>
 <li><a href="settings.html">项目设置</a>：所有设置分区，按定义者列出</li>
@@ -217,28 +217,30 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/zh/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">通过 LovyanGFX 1.2.19 实现嵌入式显示和触摸。驱动常见的 SPI/并口 TFT 屏和 FT6336U 电容触摸面板。  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-miyoo-boards/zh/">deki-miyoo-boards</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">将 Miyoo Mini 作为构建目标。在构建面板中选择它：Build 生成用于 Miyoo 菜单的应用，Install 将其放到掌机的 SD 卡上，无论是原厂固件还是 Onion OS，应用都会出现在 Apps 中。  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/zh/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">节点图画布：编辑器窗口、撤销、域和节点注册，不对节点的含义做任何假定。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/zh/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">模块化粒子系统：点/圆/矩形发射形状、重力、阻力、初速度，以及生命周期/大小/颜色/旋转修改器。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/zh/">deki-rendering</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">核心渲染管线：相机、渲染系统、标准 2D 渲染器、QuadBlit、渲染通道和排序。  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/zh/">deki-rendering</a>  </td><td class="markdownTableBodyNone">4  </td><td class="markdownTableBodyNone">核心渲染管线：相机、渲染系统、标准 2D 渲染器、QuadBlit、渲染通道和排序。  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/zh/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">实时时钟外设。通过场景组件读写实际时间，后端为 DS3231（I²C）。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/zh/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD 卡支持。挂载 SD 卡，让资源管理器在运行时从中流式读取。  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/zh/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">基于 SDL3（3.2.8）的桌面显示、输入和文件系统。  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-spi/zh/">deki-spi</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SPI 总线及其设备。一个启动步骤只启动一次总线，显示屏、SD 卡和无线模块共用它。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/zh/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">让 Deki 游戏作为应用运行在 Tactility（面向 ESP32 开发板的操作系统）中，而不是作为占据整个设备的固件。  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/zh/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">让 Deki 游戏作为应用运行在 Tactility（面向 ESP32 开发板的操作系统）中，而不是作为占据整个设备的固件。  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tiledmapeditor-integration/zh/">deki-tiledmapeditor-integration</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Tiled 地图编辑器集成。将 .tmj 文件放进项目，编辑器会将其烘焙为可流式读取的二进制瓦片地图。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tween/zh/">deki-tween</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">补间动画，提供 30 多种缓动函数。在检视器中使用 TweenComponent，或在代码中使用 TweenManager。  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-uart/zh/">deki-uart</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">UART 支持，用于 GPS 接收器等串口外设。  </td></tr>
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tween/zh/">deki-tween</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">补间动画，提供 30 多种缓动函数。在检视器中使用 TweenComponent，或在代码中使用 TweenManager。  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-uart/zh/">deki-uart</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">UART 支持，用于 GPS 接收器等串口外设。  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-wifi/zh/">deki-wifi</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Wi-Fi 抽象。连接、断开并报告状态；具体后端由平台集成包提供。  </td></tr>
 </table>
 </div></div><!-- PageDoc -->

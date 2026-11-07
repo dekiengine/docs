@@ -10,6 +10,7 @@ var dir_7572e2af4f8efb0b324517b38d84511f =
     [ "AssetTypeRegistry.h", "_asset_type_registry_8h.html", "_asset_type_registry_8h" ],
     [ "BuildLoad.h", "_build_load_8h.html", "_build_load_8h" ],
     [ "BuildStripSettings.h", "_build_strip_settings_8h.html", "_build_strip_settings_8h" ],
+    [ "BundledToolchain.h", "_bundled_toolchain_8h.html", "_bundled_toolchain_8h" ],
     [ "CliTool.h", "_cli_tool_8h.html", "_cli_tool_8h" ],
     [ "CMakeCacheReader.h", "_c_make_cache_reader_8h.html", "_c_make_cache_reader_8h" ],
     [ "Command.h", "_command_8h.html", "_command_8h" ],

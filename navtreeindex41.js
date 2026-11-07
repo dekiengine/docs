@@ -1,5 +1,14 @@
 var NAVTREEINDEX41 =
 {
+"struct_deki_1_1_asset_ref_base.html#acd6d16aae622acda5a5819c161eca24a":[19,0,0,8,1],
+"struct_deki_1_1_asset_ref_base.html#ae4fbb5b5b41251d5d117ef79b4d00c49":[18,0,0,12,7],
+"struct_deki_1_1_asset_ref_base.html#ae4fbb5b5b41251d5d117ef79b4d00c49":[19,0,0,8,7],
+"struct_deki_1_1_auto_setup_registrar.html":[18,0,0,13],
+"struct_deki_1_1_auto_setup_registrar.html":[19,0,0,9],
+"struct_deki_1_1_auto_setup_registrar.html#acddb985094c55f8e46ef77b566a4b11c":[18,0,0,13,0],
+"struct_deki_1_1_auto_setup_registrar.html#acddb985094c55f8e46ef77b566a4b11c":[19,0,0,9,0],
+"struct_deki_1_1_component_meta.html":[18,0,0,18],
+"struct_deki_1_1_component_meta.html":[19,0,0,14],
 "struct_deki_1_1_component_meta.html#a07a093fa1f0892a5a754085472e6cfa3":[18,0,0,18,0],
 "struct_deki_1_1_component_meta.html#a07a093fa1f0892a5a754085472e6cfa3":[19,0,0,14,0],
 "struct_deki_1_1_component_meta.html#a20a79e8df35de251e4ae81c07ecbfa9f":[18,0,0,18,21],
@@ -240,14 +249,5 @@ var NAVTREEINDEX41 =
 "struct_deki_1_1_memory_stats.html":[19,0,0,46],
 "struct_deki_1_1_memory_stats.html#a20443804b2544661c4599439322fa04e":[18,0,0,50,2],
 "struct_deki_1_1_memory_stats.html#a20443804b2544661c4599439322fa04e":[19,0,0,46,2],
-"struct_deki_1_1_memory_stats.html#a735a5ddfe6eda2a53a5b3df3edcc0310":[18,0,0,50,0],
-"struct_deki_1_1_memory_stats.html#a735a5ddfe6eda2a53a5b3df3edcc0310":[19,0,0,46,0],
-"struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f":[18,0,0,50,1],
-"struct_deki_1_1_memory_stats.html#a8d6f8acc916c05605d264d007d3a1b5f":[19,0,0,46,1],
-"struct_deki_1_1_node_ref.html":[18,0,0,51],
-"struct_deki_1_1_node_ref.html":[19,0,0,47],
-"struct_deki_1_1_node_ref.html#a1224a228a27ec7d5d09bad12d483902d":[18,0,0,51,0],
-"struct_deki_1_1_node_ref.html#a1224a228a27ec7d5d09bad12d483902d":[19,0,0,47,0],
-"struct_deki_1_1_object_ref.html":[18,0,0,53],
-"struct_deki_1_1_object_ref.html":[19,0,0,49]
+"struct_deki_1_1_memory_stats.html#a735a5ddfe6eda2a53a5b3df3edcc0310":[18,0,0,50,0]
 };

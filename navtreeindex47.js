@@ -1,5 +1,14 @@
 var NAVTREEINDEX47 =
 {
+"struct_deki_editor_1_1_platform_origin_status.html#ab2b8792232db72f872c4a731d8f7f2df":[19,0,1,69,8],
+"struct_deki_editor_1_1_platform_origin_status.html#adc0de2f11e1544e9109a2e39b7d462ec":[18,0,2,75,7],
+"struct_deki_editor_1_1_platform_origin_status.html#adc0de2f11e1544e9109a2e39b7d462ec":[19,0,1,69,7],
+"struct_deki_editor_1_1_platform_sync_result.html":[18,0,2,77],
+"struct_deki_editor_1_1_platform_sync_result.html":[19,0,1,71],
+"struct_deki_editor_1_1_platform_sync_result.html#a0569309a41917c31736931026f04c8ea":[18,0,2,77,0],
+"struct_deki_editor_1_1_platform_sync_result.html#a0569309a41917c31736931026f04c8ea":[19,0,1,71,0],
+"struct_deki_editor_1_1_platform_sync_result.html#a6a0ba9e2eb4e96c8329515d273ea6234":[18,0,2,77,3],
+"struct_deki_editor_1_1_platform_sync_result.html#a6a0ba9e2eb4e96c8329515d273ea6234":[19,0,1,71,3],
 "struct_deki_editor_1_1_platform_sync_result.html#a7fb044fd2c2d9bc6ee4800b541a973bc":[18,0,2,77,1],
 "struct_deki_editor_1_1_platform_sync_result.html#a7fb044fd2c2d9bc6ee4800b541a973bc":[19,0,1,71,1],
 "struct_deki_editor_1_1_platform_sync_result.html#abb37318aaf6953315fe3170e65d7c214":[18,0,2,77,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX47 =
 "struct_deki_editor_1_1_texture_target_settings.html":[19,0,1,90],
 "struct_deki_editor_1_1_texture_target_settings.html#a106e8167972306b59a1f0669eebc0d62":[18,0,2,96,0],
 "struct_deki_editor_1_1_texture_target_settings.html#a106e8167972306b59a1f0669eebc0d62":[19,0,1,90,0],
-"struct_deki_editor_1_1_texture_target_settings.html#a3310d524a3084d63fc7e14f9463a8d67":[18,0,2,96,1],
-"struct_deki_editor_1_1_texture_target_settings.html#a3310d524a3084d63fc7e14f9463a8d67":[19,0,1,90,1],
-"struct_deki_editor_1_1_texture_target_settings.html#a34e4c6bdce3854c75da6a3a1cb224435":[18,0,2,96,3],
-"struct_deki_editor_1_1_texture_target_settings.html#a34e4c6bdce3854c75da6a3a1cb224435":[19,0,1,90,3],
-"struct_deki_editor_1_1_texture_target_settings.html#a4859accc3c4a02c9d4d6ae1183bbbfe3":[18,0,2,96,2],
-"struct_deki_editor_1_1_texture_target_settings.html#a4859accc3c4a02c9d4d6ae1183bbbfe3":[19,0,1,90,2],
-"struct_deki_editor_1_1_toolchain_component.html":[18,0,2,97],
-"struct_deki_editor_1_1_toolchain_component.html":[19,0,1,91],
-"struct_deki_editor_1_1_toolchain_component.html#a1c167e9950d868c6a633e0f64e00841f":[18,0,2,97,3],
-"struct_deki_editor_1_1_toolchain_component.html#a1c167e9950d868c6a633e0f64e00841f":[19,0,1,91,3]
+"struct_deki_editor_1_1_texture_target_settings.html#a3310d524a3084d63fc7e14f9463a8d67":[18,0,2,96,1]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX43 =
 {
+"struct_deki_1_1_vector2.html#a64175482c82df8108e92009a01678907":[19,0,0,69,13],
+"struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed":[18,0,0,73,33],
+"struct_deki_1_1_vector2.html#a647d9e63971d4d10314b29cade8006ed":[19,0,0,69,33],
+"struct_deki_1_1_vector2.html#a6cd25e0fde656cb0c935f9b47af22b09":[18,0,0,73,26],
+"struct_deki_1_1_vector2.html#a6cd25e0fde656cb0c935f9b47af22b09":[19,0,0,69,26],
+"struct_deki_1_1_vector2.html#a73a5195578a1e441f3d36af611205be9":[18,0,0,73,31],
+"struct_deki_1_1_vector2.html#a73a5195578a1e441f3d36af611205be9":[19,0,0,69,31],
+"struct_deki_1_1_vector2.html#a782fd4015975400326d3a5eb1390964a":[18,0,0,73,11],
+"struct_deki_1_1_vector2.html#a782fd4015975400326d3a5eb1390964a":[19,0,0,69,11],
 "struct_deki_1_1_vector2.html#a7dac92c54aa1b13fb02abecfafa98133":[18,0,0,73,17],
 "struct_deki_1_1_vector2.html#a7dac92c54aa1b13fb02abecfafa98133":[19,0,0,69,17],
 "struct_deki_1_1_vector2.html#a7ead18ab9739e06ae0392abe9f1b570f":[18,0,0,73,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX43 =
 "struct_deki_editor_1_1_asset_type_handler.html#a693205cbda792688b3946ef77600801f":[19,0,1,16,1],
 "struct_deki_editor_1_1_asset_type_handler.html#aaa3e3d34ed0b32169574c275df1d1fcc":[18,0,2,22,8],
 "struct_deki_editor_1_1_asset_type_handler.html#aaa3e3d34ed0b32169574c275df1d1fcc":[19,0,1,16,8],
-"struct_deki_editor_1_1_asset_type_handler.html#ad7fd8d19bd0efda636d143510a026b5b":[18,0,2,22,3],
-"struct_deki_editor_1_1_asset_type_handler.html#ad7fd8d19bd0efda636d143510a026b5b":[19,0,1,16,3],
-"struct_deki_editor_1_1_atlas_frame.html":[18,0,2,24],
-"struct_deki_editor_1_1_atlas_frame.html":[19,0,1,18],
-"struct_deki_editor_1_1_atlas_frame.html#a58074c1910ae1d8ccae3cbd514c992f4":[18,0,2,24,4],
-"struct_deki_editor_1_1_atlas_frame.html#a58074c1910ae1d8ccae3cbd514c992f4":[19,0,1,18,4],
-"struct_deki_editor_1_1_atlas_frame.html#a7efe0e2161114baded173415c75fbded":[18,0,2,24,3],
-"struct_deki_editor_1_1_atlas_frame.html#a7efe0e2161114baded173415c75fbded":[19,0,1,18,3],
-"struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7":[18,0,2,24,0],
-"struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7":[19,0,1,18,0]
+"struct_deki_editor_1_1_asset_type_handler.html#ad7fd8d19bd0efda636d143510a026b5b":[18,0,2,22,3]
 };

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -530,6 +530,21 @@ Functions</h2></td></tr>
 <tr class="memdesc:a383b7bdae23fe03f110cc0f27d30d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many compile jobs a build starting now should run: one per core, but no more than free memory holds, and at least one.  <br /></td></tr>
 <tr class="memitem:ab3f4b414ad1fc57d9d1e1899fd2590cc" id="r_ab3f4b414ad1fc57d9d1e1899fd2590cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab3f4b414ad1fc57d9d1e1899fd2590cc">PrepareBuildJobs</a> ()</td></tr>
 <tr class="memdesc:ab3f4b414ad1fc57d9d1e1899fd2590cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets CMAKE_BUILD_PARALLEL_LEVEL (cmake &ndash;build) and IDF_PY_BUILD_JOBS (idf.py) to <a class="el" href="#a383b7bdae23fe03f110cc0f27d30d80b" title="How many compile jobs a build starting now should run: one per core, but no more than free memory hol...">BuildJobCount()</a> for the processes this one starts next.  <br /></td></tr>
+<tr class="memitem:a29212f4a0a7761398e7a8d79189329d4" id="r_a29212f4a0a7761398e7a8d79189329d4"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a29212f4a0a7761398e7a8d79189329d4">BundledToolchainDir</a> ()</td></tr>
+<tr class="memdesc:a29212f4a0a7761398e7a8d79189329d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute path to &lt;executable dir&gt;/toolchain (toolchain/mingw64 on Windows), whether or not it exists.  <br /></td></tr>
+<tr class="memitem:ab7bc85439fe0c5f1a62f875ef7d86412" id="r_ab7bc85439fe0c5f1a62f875ef7d86412"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab7bc85439fe0c5f1a62f875ef7d86412">HasBundledToolchain</a> ()</td></tr>
+<tr class="memdesc:ab7bc85439fe0c5f1a62f875ef7d86412"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a bundled toolchain is present (its bin/ directory exists).  <br /></td></tr>
+<tr class="memitem:aba7d45185c96f9ad85307c02f79220be" id="r_aba7d45185c96f9ad85307c02f79220be"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aba7d45185c96f9ad85307c02f79220be">ResolveTool</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:aba7d45185c96f9ad85307c02f79220be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bundled copy of a tool when there is one; else <span class="tt">name</span> unchanged for PATH lookup when it is on PATH; else its full path in the toolchain folder (ToolchainBinDir) when it is there; else <span class="tt">name</span>.  <br /></td></tr>
+<tr class="memitem:a2a9ff5b6807e82ffeb9cb0b77e730b34" id="r_a2a9ff5b6807e82ffeb9cb0b77e730b34"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2a9ff5b6807e82ffeb9cb0b77e730b34">ToolchainBinDir</a> ()</td></tr>
+<tr class="memdesc:a2a9ff5b6807e82ffeb9cb0b77e730b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows: the folder of the GNU toolchain projects are built with - the bundled toolchain's bin/, else the folder of the compiler this editor was built with, else the first standard MSYS2 / MinGW folder that has g++.  <br /></td></tr>
+<tr class="memitem:af18534023fdadcb9ccefba86f67dc8af" id="r_af18534023fdadcb9ccefba86f67dc8af"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af18534023fdadcb9ccefba86f67dc8af">PrepareToolchainPath</a> ()</td></tr>
+<tr class="memdesc:af18534023fdadcb9ccefba86f67dc8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows: puts <a class="el" href="#a2a9ff5b6807e82ffeb9cb0b77e730b34" title="Windows: the folder of the GNU toolchain projects are built with - the bundled toolchain&#39;s bin/,...">ToolchainBinDir()</a> at the front of this process's PATH unless it is on PATH already.  <br /></td></tr>
+<tr class="memitem:a7470486bbd42ff6bc0824c40a216e9d6" id="r_a7470486bbd42ff6bc0824c40a216e9d6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7470486bbd42ff6bc0824c40a216e9d6">PathListHasDir</a> (const std::string &amp;pathList, const std::string &amp;dir)</td></tr>
+<tr class="memdesc:a7470486bbd42ff6bc0824c40a216e9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <span class="tt">dir</span> is one of the ;-separated entries of <span class="tt">pathList</span>, ignoring case, slash direction and a trailing slash, as Windows does.  <br /></td></tr>
+<tr class="memitem:a329dc7d76f5fc8c6696ae7fca8a49b19" id="r_a329dc7d76f5fc8c6696ae7fca8a49b19"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a329dc7d76f5fc8c6696ae7fca8a49b19">ProjectCxxCompiler</a> ()</td></tr>
+<tr class="memdesc:a329dc7d76f5fc8c6696ae7fca8a49b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The C++ and C compilers to build projects with: the bundled toolchain's, otherwise the compiler this editor was built with.  <br /></td></tr>
+<tr class="memitem:a40d4b4b5da61114ffa48ef27d45eb32a" id="r_a40d4b4b5da61114ffa48ef27d45eb32a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a40d4b4b5da61114ffa48ef27d45eb32a">ProjectCCompiler</a> ()</td></tr>
 <tr class="memitem:a8a404fe14df02d696f644372cb1b97c1" id="r_a8a404fe14df02d696f644372cb1b97c1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a8a404fe14df02d696f644372cb1b97c1">ReadCMakeCacheVar</a> (const std::string &amp;buildDir, const std::string &amp;name)</td></tr>
 <tr class="memdesc:a8a404fe14df02d696f644372cb1b97c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of <span class="tt">name</span> in &lt;buildDir&gt;/CMakeCache.txt, i.e.  <br /></td></tr>
 <tr class="memitem:a6fffe440b25df4ff9f812be75f190823" id="r_a6fffe440b25df4ff9f812be75f190823"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_component_usage.html">ComponentUsage</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6fffe440b25df4ff9f812be75f190823">ScanComponentUsage</a> (const std::string &amp;projectPath, const std::vector&lt; std::string &gt; &amp;knownTypes, const std::vector&lt; std::string &gt; &amp;scanPackageIds, const std::string &amp;targetPlatformId=&quot;&quot;, const std::set&lt; std::string &gt; &amp;targetCapabilities={}, const std::vector&lt; std::string &gt; &amp;extraSceneDirs={})</td></tr>
@@ -2325,6 +2340,164 @@ Variables</h2></td></tr>
 
 <p>Sets CMAKE_BUILD_PARALLEL_LEVEL (cmake &ndash;build) and IDF_PY_BUILD_JOBS (idf.py) to <a class="el" href="#a383b7bdae23fe03f110cc0f27d30d80b" title="How many compile jobs a build starting now should run: one per core, but no more than free memory hol...">BuildJobCount()</a> for the processes this one starts next. </p>
 <p>A value the user set before the editor started is left alone. </p>
+
+</div>
+</div>
+<a id="a29212f4a0a7761398e7a8d79189329d4" name="a29212f4a0a7761398e7a8d79189329d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29212f4a0a7761398e7a8d79189329d4">&#9670;&#160;</a></span>BundledToolchainDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::BundledToolchainDir </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Absolute path to &lt;executable dir&gt;/toolchain (toolchain/mingw64 on Windows), whether or not it exists. </p>
+
+</div>
+</div>
+<a id="ab7bc85439fe0c5f1a62f875ef7d86412" name="ab7bc85439fe0c5f1a62f875ef7d86412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bc85439fe0c5f1a62f875ef7d86412">&#9670;&#160;</a></span>HasBundledToolchain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::HasBundledToolchain </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if a bundled toolchain is present (its bin/ directory exists). </p>
+
+</div>
+</div>
+<a id="aba7d45185c96f9ad85307c02f79220be" name="aba7d45185c96f9ad85307c02f79220be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7d45185c96f9ad85307c02f79220be">&#9670;&#160;</a></span>ResolveTool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::ResolveTool </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the bundled copy of a tool when there is one; else <span class="tt">name</span> unchanged for PATH lookup when it is on PATH; else its full path in the toolchain folder (ToolchainBinDir) when it is there; else <span class="tt">name</span>. </p>
+<p><span class="tt">name</span> is the plain tool name ("ninja", "cmake"); the platform's executable suffix is added as needed. </p>
+
+</div>
+</div>
+<a id="a2a9ff5b6807e82ffeb9cb0b77e730b34" name="a2a9ff5b6807e82ffeb9cb0b77e730b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9ff5b6807e82ffeb9cb0b77e730b34">&#9670;&#160;</a></span>ToolchainBinDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::ToolchainBinDir </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Windows: the folder of the GNU toolchain projects are built with - the bundled toolchain's bin/, else the folder of the compiler this editor was built with, else the first standard MSYS2 / MinGW folder that has g++. </p>
+<p>Empty when there is none, and always empty elsewhere (the toolchain is on the system PATH there). </p>
+
+</div>
+</div>
+<a id="af18534023fdadcb9ccefba86f67dc8af" name="af18534023fdadcb9ccefba86f67dc8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18534023fdadcb9ccefba86f67dc8af">&#9670;&#160;</a></span>PrepareToolchainPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::PrepareToolchainPath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Windows: puts <a class="el" href="#a2a9ff5b6807e82ffeb9cb0b77e730b34" title="Windows: the folder of the GNU toolchain projects are built with - the bundled toolchain&#39;s bin/,...">ToolchainBinDir()</a> at the front of this process's PATH unless it is on PATH already. </p>
+<p>Every build the editor starts inherits it, so cmake, ninja and the compiler - whose own helpers (cc1plus, as, ld) load DLLs from that folder - are found however the editor was started: from the Start menu, from a terminal opened before MSYS2 was installed, or with MSYS2 not on the user PATH at all. Call once, first thing in main(). </p>
+
+</div>
+</div>
+<a id="a7470486bbd42ff6bc0824c40a216e9d6" name="a7470486bbd42ff6bc0824c40a216e9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7470486bbd42ff6bc0824c40a216e9d6">&#9670;&#160;</a></span>PathListHasDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::PathListHasDir </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pathList</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>dir</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether <span class="tt">dir</span> is one of the ;-separated entries of <span class="tt">pathList</span>, ignoring case, slash direction and a trailing slash, as Windows does. </p>
+
+</div>
+</div>
+<a id="a329dc7d76f5fc8c6696ae7fca8a49b19" name="a329dc7d76f5fc8c6696ae7fca8a49b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329dc7d76f5fc8c6696ae7fca8a49b19">&#9670;&#160;</a></span>ProjectCxxCompiler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::ProjectCxxCompiler </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The C++ and C compilers to build projects with: the bundled toolchain's, otherwise the compiler this editor was built with. </p>
+<p>Packages are loaded into this process, so they must stay ABI-compatible with it. </p>
+
+</div>
+</div>
+<a id="a40d4b4b5da61114ffa48ef27d45eb32a" name="a40d4b4b5da61114ffa48ef27d45eb32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d4b4b5da61114ffa48ef27d45eb32a">&#9670;&#160;</a></span>ProjectCCompiler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::ProjectCCompiler </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

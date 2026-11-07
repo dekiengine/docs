@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"functions_vars_y.html":[19,3,2,23],
 "functions_vars_z.html":[19,3,2,24],
 "functions_w.html":[19,3,0,21],
 "functions_x.html":[19,3,0,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270aee7a8e262285ed49ea1b4e4ae11525bd":[18,0,0,88,6],
 "namespace_deki.html#a3b4689dd54bc12d6440e12f40ef2147e":[18,0,0,144],
 "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1":[18,0,0,91],
-"namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a1d85a557894c340c318493f33bfa8efb":[18,0,0,91,2],
-"namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a2ad9d63b69c4a10a5cc9cad923133bc4":[18,0,0,91,7]
+"namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a1d85a557894c340c318493f33bfa8efb":[18,0,0,91,2]
 };

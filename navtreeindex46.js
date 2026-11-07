@@ -1,5 +1,14 @@
 var NAVTREEINDEX46 =
 {
+"struct_deki_editor_1_1_feature_decision.html#aa4c78588cbba6e692f1cf6b3f7925a33":[19,0,1,51,8],
+"struct_deki_editor_1_1_feature_decision.html#ab8afd476566916ca11d5b67ce7d81223":[18,0,2,57,1],
+"struct_deki_editor_1_1_feature_decision.html#ab8afd476566916ca11d5b67ce7d81223":[19,0,1,51,1],
+"struct_deki_editor_1_1_feature_decision.html#ac495c33313384ef4768e9260780a2015":[18,0,2,57,5],
+"struct_deki_editor_1_1_feature_decision.html#ac495c33313384ef4768e9260780a2015":[19,0,1,51,5],
+"struct_deki_editor_1_1_feature_decision.html#af0e32b298e7fac021a876c5d775aa63d":[18,0,2,57,9],
+"struct_deki_editor_1_1_feature_decision.html#af0e32b298e7fac021a876c5d775aa63d":[19,0,1,51,9],
+"struct_deki_editor_1_1_feature_decision.html#af5789fc43161871d34105e07ebe2303a":[18,0,2,57,2],
+"struct_deki_editor_1_1_feature_decision.html#af5789fc43161871d34105e07ebe2303a":[19,0,1,51,2],
 "struct_deki_editor_1_1_import_result.html":[18,0,2,64],
 "struct_deki_editor_1_1_import_result.html":[19,0,1,58],
 "struct_deki_editor_1_1_import_result.html#a3f2b2b3b4b8f0a29d282369df969d5ef":[18,0,2,64,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX46 =
 "struct_deki_editor_1_1_platform_origin_status.html#aab6faf265f99c745e5d067174719b46a":[19,0,1,69,2],
 "struct_deki_editor_1_1_platform_origin_status.html#aacb800015786c29def8666f214e79144":[18,0,2,75,9],
 "struct_deki_editor_1_1_platform_origin_status.html#aacb800015786c29def8666f214e79144":[19,0,1,69,9],
-"struct_deki_editor_1_1_platform_origin_status.html#ab2b8792232db72f872c4a731d8f7f2df":[18,0,2,75,8],
-"struct_deki_editor_1_1_platform_origin_status.html#ab2b8792232db72f872c4a731d8f7f2df":[19,0,1,69,8],
-"struct_deki_editor_1_1_platform_origin_status.html#adc0de2f11e1544e9109a2e39b7d462ec":[18,0,2,75,7],
-"struct_deki_editor_1_1_platform_origin_status.html#adc0de2f11e1544e9109a2e39b7d462ec":[19,0,1,69,7],
-"struct_deki_editor_1_1_platform_sync_result.html":[18,0,2,77],
-"struct_deki_editor_1_1_platform_sync_result.html":[19,0,1,71],
-"struct_deki_editor_1_1_platform_sync_result.html#a0569309a41917c31736931026f04c8ea":[18,0,2,77,0],
-"struct_deki_editor_1_1_platform_sync_result.html#a0569309a41917c31736931026f04c8ea":[19,0,1,71,0],
-"struct_deki_editor_1_1_platform_sync_result.html#a6a0ba9e2eb4e96c8329515d273ea6234":[18,0,2,77,3],
-"struct_deki_editor_1_1_platform_sync_result.html#a6a0ba9e2eb4e96c8329515d273ea6234":[19,0,1,71,3]
+"struct_deki_editor_1_1_platform_origin_status.html#ab2b8792232db72f872c4a731d8f7f2df":[18,0,2,75,8]
 };

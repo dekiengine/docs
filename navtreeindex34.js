@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"class_deki_editor_1_1_editor_u_i.html#aabd9353efd1c9c4ebbadceef6cf6e956":[19,0,1,47,195],
 "class_deki_editor_1_1_editor_u_i.html#aad1271dd203ffc8aaa4b74be1b31cb7e":[18,0,2,53,98],
 "class_deki_editor_1_1_editor_u_i.html#aad1271dd203ffc8aaa4b74be1b31cb7e":[19,0,1,47,98],
 "class_deki_editor_1_1_editor_u_i.html#aade4d23cb2a9338866101bf7514a7cd9":[18,0,2,53,84],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "class_deki_editor_1_1_firmware_builder_base.html#a5c55208477c676490ef54b3c1c110d65":[19,0,1,54,11],
 "class_deki_editor_1_1_firmware_builder_base.html#a65dcf1fdbcd3c7e53987c1f4e2760d21":[18,0,2,60,5],
 "class_deki_editor_1_1_firmware_builder_base.html#a65dcf1fdbcd3c7e53987c1f4e2760d21":[19,0,1,54,5],
-"class_deki_editor_1_1_firmware_builder_base.html#a7bfc57646871e10a583c69a8fabd43c0":[18,0,2,60,21],
-"class_deki_editor_1_1_firmware_builder_base.html#a7bfc57646871e10a583c69a8fabd43c0":[19,0,1,54,21]
+"class_deki_editor_1_1_firmware_builder_base.html#a7bfc57646871e10a583c69a8fabd43c0":[18,0,2,60,21]
 };

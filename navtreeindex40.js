@@ -1,5 +1,14 @@
 var NAVTREEINDEX40 =
 {
+"namespace_deki_editor_1_1_c_make_gen.html":[18,0,2,0],
+"namespace_deki_editor_1_1_c_make_gen.html#a060d99f9ed12b7a85ecee185181ceb04":[18,0,2,0,23],
+"namespace_deki_editor_1_1_c_make_gen.html#a06e47f39de696e1c27fde1eafaeb696a":[18,0,2,0,33],
+"namespace_deki_editor_1_1_c_make_gen.html#a0ab36ee7f1c4a36651b6279eec242896":[18,0,2,0,12],
+"namespace_deki_editor_1_1_c_make_gen.html#a14a33bb16a49f6a2ef92de2d6aa483d9":[18,0,2,0,17],
+"namespace_deki_editor_1_1_c_make_gen.html#a193db8ecb5c830094fd8889c943bd0ce":[18,0,2,0,26],
+"namespace_deki_editor_1_1_c_make_gen.html#a19911fd782e049e6ff774946c3a4b908":[18,0,2,0,20],
+"namespace_deki_editor_1_1_c_make_gen.html#a2ac839bde82f8b3a9f40107cedf7354c":[18,0,2,0,22],
+"namespace_deki_editor_1_1_c_make_gen.html#a2f9321526cd8c3a538f164a0323f119f":[18,0,2,0,13],
 "namespace_deki_editor_1_1_c_make_gen.html#a42d86066f77e8c208d7c2ad5ae356536":[18,0,2,0,9],
 "namespace_deki_editor_1_1_c_make_gen.html#a4f95399a45caf74755beaefe9255cb61":[18,0,2,0,32],
 "namespace_deki_editor_1_1_c_make_gen.html#a50ce38d53baba8934503a82582afb9a1":[18,0,2,0,31],
@@ -240,14 +249,5 @@ var NAVTREEINDEX40 =
 "struct_deki_1_1_asset_ref_base.html#aa707cccda9d537ca9ae5879f2b7ad210":[19,0,0,8,3],
 "struct_deki_1_1_asset_ref_base.html#aad269364aa81b16baae3a42c8ec0ff76":[18,0,0,12,4],
 "struct_deki_1_1_asset_ref_base.html#aad269364aa81b16baae3a42c8ec0ff76":[19,0,0,8,4],
-"struct_deki_1_1_asset_ref_base.html#acd6d16aae622acda5a5819c161eca24a":[18,0,0,12,1],
-"struct_deki_1_1_asset_ref_base.html#acd6d16aae622acda5a5819c161eca24a":[19,0,0,8,1],
-"struct_deki_1_1_asset_ref_base.html#ae4fbb5b5b41251d5d117ef79b4d00c49":[18,0,0,12,7],
-"struct_deki_1_1_asset_ref_base.html#ae4fbb5b5b41251d5d117ef79b4d00c49":[19,0,0,8,7],
-"struct_deki_1_1_auto_setup_registrar.html":[18,0,0,13],
-"struct_deki_1_1_auto_setup_registrar.html":[19,0,0,9],
-"struct_deki_1_1_auto_setup_registrar.html#acddb985094c55f8e46ef77b566a4b11c":[18,0,0,13,0],
-"struct_deki_1_1_auto_setup_registrar.html#acddb985094c55f8e46ef77b566a4b11c":[19,0,0,9,0],
-"struct_deki_1_1_component_meta.html":[18,0,0,18],
-"struct_deki_1_1_component_meta.html":[19,0,0,14]
+"struct_deki_1_1_asset_ref_base.html#acd6d16aae622acda5a5819c161eca24a":[18,0,0,12,1]
 };

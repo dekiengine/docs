@@ -37,6 +37,7 @@ var searchData=
   ['buildpath_34',['BuildPath',['../namespace_deki_1_1_storage.html#af4f661f23375e1474951dbf9d75d72be',1,'Deki::Storage']]],
   ['buildpriorityflag_35',['BuildPriorityFlag',['../namespace_deki_editor.html#a47c0a0ee2211584fe195adc8e4f6a5b6',1,'DekiEditor']]],
   ['bullettext_36',['BulletText',['../class_deki_editor_1_1_editor_u_i.html#adfdc3fb9693bd0f0d724a24aeb77f6f5',1,'DekiEditor::EditorUI']]],
-  ['button_37',['Button',['../class_deki_editor_1_1_editor_u_i.html#a64edc85cd7b6fb4593d6eb6a19c64f71',1,'DekiEditor::EditorUI']]],
-  ['bytes_38',['Bytes',['../class_deki_1_1_buffer.html#af2481b64e87f4bd2ab7929def24e78fa',1,'Deki::Buffer']]]
+  ['bundledtoolchaindir_37',['BundledToolchainDir',['../namespace_deki_editor.html#a29212f4a0a7761398e7a8d79189329d4',1,'DekiEditor']]],
+  ['button_38',['Button',['../class_deki_editor_1_1_editor_u_i.html#a64edc85cd7b6fb4593d6eb6a19c64f71',1,'DekiEditor::EditorUI']]],
+  ['bytes_39',['Bytes',['../class_deki_1_1_buffer.html#af2481b64e87f4bd2ab7929def24e78fa',1,'Deki::Buffer']]]
 ];

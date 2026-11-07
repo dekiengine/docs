@@ -1,5 +1,14 @@
 var NAVTREEINDEX44 =
 {
+"struct_deki_editor_1_1_asset_type_handler.html#ad7fd8d19bd0efda636d143510a026b5b":[19,0,1,16,3],
+"struct_deki_editor_1_1_atlas_frame.html":[18,0,2,24],
+"struct_deki_editor_1_1_atlas_frame.html":[19,0,1,18],
+"struct_deki_editor_1_1_atlas_frame.html#a58074c1910ae1d8ccae3cbd514c992f4":[18,0,2,24,4],
+"struct_deki_editor_1_1_atlas_frame.html#a58074c1910ae1d8ccae3cbd514c992f4":[19,0,1,18,4],
+"struct_deki_editor_1_1_atlas_frame.html#a7efe0e2161114baded173415c75fbded":[18,0,2,24,3],
+"struct_deki_editor_1_1_atlas_frame.html#a7efe0e2161114baded173415c75fbded":[19,0,1,18,3],
+"struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7":[18,0,2,24,0],
+"struct_deki_editor_1_1_atlas_frame.html#a84fb21e32b0c5ff26fe8159a06245fc7":[19,0,1,18,0],
 "struct_deki_editor_1_1_atlas_frame.html#aaf43e23164360e8e044a2f6a74b6f7b3":[18,0,2,24,5],
 "struct_deki_editor_1_1_atlas_frame.html#aaf43e23164360e8e044a2f6a74b6f7b3":[19,0,1,18,5],
 "struct_deki_editor_1_1_atlas_frame.html#ad80a110179db245d6450d6ba7259de73":[18,0,2,24,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX44 =
 "struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html":[19,0,1,44,0],
 "struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html#a33ff7cc6aada55c367e0f112668499c4":[18,0,2,50,0,1],
 "struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html#a33ff7cc6aada55c367e0f112668499c4":[19,0,1,44,0,1],
-"struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html#a667cce3d1faed91c9da5e80115e7bb34":[18,0,2,50,0,0],
-"struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html#a667cce3d1faed91c9da5e80115e7bb34":[19,0,1,44,0,0],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html":[18,0,2,52,0],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html":[19,0,1,46,0],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a0565ec50d15e19968472703fe6af34e7":[18,0,2,52,0,1],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a0565ec50d15e19968472703fe6af34e7":[19,0,1,46,0,1],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a2152a39eef935ac3953d2753d933cfca":[18,0,2,52,0,2],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a2152a39eef935ac3953d2753d933cfca":[19,0,1,46,0,2],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a8d0a25a8a970c4daceb1278c2c35a0a2":[18,0,2,52,0,4],
-"struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a8d0a25a8a970c4daceb1278c2c35a0a2":[19,0,1,46,0,4]
+"struct_deki_editor_1_1_editor_http_utils_1_1_archive_link.html#a667cce3d1faed91c9da5e80115e7bb34":[18,0,2,50,0,0]
 };
