@@ -11,5 +11,7 @@ var struct_deki_editor_1_1_c_make_gen_1_1_package_entry =
     [ "hasSystemInit", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#a2c3ebe64a82f0f7696df1de5a4efec52", null ],
     [ "tags", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#a40473f940f8cb7d19fa2e4b07923471f", null ],
     [ "features", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#ae966c7519102c028b4d5f816f6a9bf43", null ],
-    [ "platformRequires", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#a4b50fe1b861a001e7b7a208a008613f9", null ]
+    [ "platformRequires", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#a4b50fe1b861a001e7b7a208a008613f9", null ],
+    [ "capabilityDefines", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#ae7617d2f2646e7b27929d171d1699974", null ],
+    [ "filtersTexturesWith", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html#a91439beb8630a6a9c0bf3ead4ab01045", null ]
 ];

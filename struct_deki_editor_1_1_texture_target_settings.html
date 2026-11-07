@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -164,11 +164,12 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3310d524a3084d63fc7e14f9463a8d67" id="r_a3310d524a3084d63fc7e14f9463a8d67"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a3310d524a3084d63fc7e14f9463a8d67">format</a></td></tr>
 <tr class="memitem:a4859accc3c4a02c9d4d6ae1183bbbfe3" id="r_a4859accc3c4a02c9d4d6ae1183bbbfe3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4859accc3c4a02c9d4d6ae1183bbbfe3">maxSize</a> = -1</td></tr>
+<tr class="memitem:a34e4c6bdce3854c75da6a3a1cb224435" id="r_a34e4c6bdce3854c75da6a3a1cb224435"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a34e4c6bdce3854c75da6a3a1cb224435">filter</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>One target's own values. </p>
-<p>Format "" and maxSize -1 mean "use the image's
-default"; maxSize 0 means no limit on this target. </p>
+<p>Format "", maxSize -1 and filter "" mean "use
+the image's default"; maxSize 0 means no limit on this target. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a106e8167972306b59a1f0669eebc0d62" name="a106e8167972306b59a1f0669eebc0d62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a106e8167972306b59a1f0669eebc0d62">&#9670;&#160;</a></span>Empty()</h2>
@@ -218,6 +219,20 @@ default"; maxSize 0 means no limit on this target. </p>
       <table class="memname">
         <tr>
           <td class="memname">int DekiEditor::TextureTargetSettings::maxSize = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34e4c6bdce3854c75da6a3a1cb224435" name="a34e4c6bdce3854c75da6a3a1cb224435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e4c6bdce3854c75da6a3a1cb224435">&#9670;&#160;</a></span>filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::TextureTargetSettings::filter</td>
         </tr>
       </table>
 </div><div class="memdoc">

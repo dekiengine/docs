@@ -4,7 +4,7 @@ var class_deki_editor_1_1_texture_importer =
     [ "GetImporterName", "class_deki_editor_1_1_texture_importer.html#ac9e15d48aada61345195c9dd2ce60769", null ],
     [ "Import", "class_deki_editor_1_1_texture_importer.html#ad1e3ee3dcee17feea5ef8c7c2fa1f2f2", null ],
     [ "ImportWithFormat", "class_deki_editor_1_1_texture_importer.html#ab40fd06db5ff3f474903d94783f85090", null ],
-    [ "WriteTexFile", "class_deki_editor_1_1_texture_importer.html#a909b09376fd2b027c22e314f7dcda87c", null ],
+    [ "WriteTexFile", "class_deki_editor_1_1_texture_importer.html#a33cd526608ac69e4e0f22e4b5282a65a", null ],
     [ "ReadTexFile", "class_deki_editor_1_1_texture_importer.html#ab5b09938027bb3c74d86239e70466435", null ],
     [ "ReadSourceSize", "class_deki_editor_1_1_texture_importer.html#a964908f77cd6ed64bc06a3149340cbc2", null ],
     [ "ConvertToRGBA", "class_deki_editor_1_1_texture_importer.html#a674b995ca95edc4337daad56959a5241", null ],

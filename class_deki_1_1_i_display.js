@@ -19,5 +19,7 @@ var class_deki_1_1_i_display =
     [ "ClearActiveUIOverlay", "class_deki_1_1_i_display.html#a77e6b359312a0c6fc2e7d2bd4a37222a", null ],
     [ "GetRenderBuffer", "class_deki_1_1_i_display.html#a3e5d83297941951d661b9eabffc338da", null ],
     [ "SetBacklight", "class_deki_1_1_i_display.html#ac43afb8bae1bbd35505d0f5e6f13f3cf", null ],
-    [ "GetRefreshPeriodUs", "class_deki_1_1_i_display.html#a7a76ba09fbaeb9484da956bf5587b259", null ]
+    [ "GetRefreshPeriodUs", "class_deki_1_1_i_display.html#a7a76ba09fbaeb9484da956bf5587b259", null ],
+    [ "SetRefreshesPerFrame", "class_deki_1_1_i_display.html#a1044251d2d47399b7501e33f8612bb9b", null ],
+    [ "GetFramesShown", "class_deki_1_1_i_display.html#a5f38e2d61c772fcea7d4b03f02ee7957", null ]
 ];

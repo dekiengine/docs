@@ -90,6 +90,8 @@ var hierarchy =
     [ "Deki::EngineSettings", "struct_deki_1_1_engine_settings.html", null ],
     [ "DekiEditor::EditorUI::EnumCallbacks", "struct_deki_editor_1_1_editor_u_i_1_1_enum_callbacks.html", null ],
     [ "DekiEditor::AssetFileWatcher::Event", "struct_deki_editor_1_1_asset_file_watcher_1_1_event.html", null ],
+    [ "DekiEditor::CMakeGen::ExecutableCMakeOptions", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options.html", null ],
+    [ "DekiEditor::CMakeGen::ExecutableLibrary", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library.html", null ],
     [ "DekiEditor::FallbackDef", "struct_deki_editor_1_1_fallback_def.html", null ],
     [ "DekiEditor::FeatureDecision", "struct_deki_editor_1_1_feature_decision.html", null ],
     [ "DekiEditor::CMakeGen::FeatureEntry", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html", null ],
@@ -112,7 +114,9 @@ var hierarchy =
     [ "Deki::ICamera", "class_deki_1_1_i_camera.html", null ],
     [ "Deki::IClipProvider", "class_deki_1_1_i_clip_provider.html", null ],
     [ "Deki::IDisplay", "class_deki_1_1_i_display.html", null ],
-    [ "Deki::IFileSystem", "class_deki_1_1_i_file_system.html", null ],
+    [ "Deki::IFileSystem", "class_deki_1_1_i_file_system.html", [
+      [ "Deki::HostFileSystem", "class_deki_1_1_host_file_system.html", null ]
+    ] ],
     [ "Deki::IInputSystem", "class_deki_1_1_i_input_system.html", null ],
     [ "Deki::IMemoryProvider", "class_deki_1_1_i_memory_provider.html", [
       [ "Deki::HostMemoryProvider", "class_deki_1_1_host_memory_provider.html", null ]
@@ -177,12 +181,16 @@ var hierarchy =
     [ "DekiEditor::Localization::ScopedPackage", "class_deki_editor_1_1_localization_1_1_scoped_package.html", null ],
     [ "Deki::SettingsRegistry", "class_deki_1_1_settings_registry.html", null ],
     [ "Deki::SettingsTypeInfo", "struct_deki_1_1_settings_type_info.html", null ],
+    [ "DekiEditor::ShaderCompiler", "class_deki_editor_1_1_shader_compiler.html", null ],
+    [ "DekiEditor::ShaderCompileRequest", "struct_deki_editor_1_1_shader_compile_request.html", null ],
+    [ "DekiEditor::ShaderStageText", "struct_deki_editor_1_1_shader_stage_text.html", null ],
     [ "Deki::IPower::SleepInfo", "struct_deki_1_1_i_power_1_1_sleep_info.html", null ],
     [ "DekiEditor::SpriteFrameData", "struct_deki_editor_1_1_sprite_frame_data.html", null ],
     [ "DekiEditor::SpriteSettings", "struct_deki_editor_1_1_sprite_settings.html", null ],
     [ "DekiEditor::StripPlan", "struct_deki_editor_1_1_strip_plan.html", null ],
     [ "DekiEditor::SubAssetInfo", "struct_deki_editor_1_1_sub_asset_info.html", null ],
     [ "DekiEditor::SubComponentDef", "struct_deki_editor_1_1_sub_component_def.html", null ],
+    [ "DekiEditor::TargetCardInfo", "struct_deki_editor_1_1_target_card_info.html", null ],
     [ "DekiEditor::TargetContentConflict", "struct_deki_editor_1_1_target_content_conflict.html", null ],
     [ "DekiEditor::TexData", "struct_deki_editor_1_1_tex_data.html", null ],
     [ "DekiEditor::TexHeader", "struct_deki_editor_1_1_tex_header.html", null ],

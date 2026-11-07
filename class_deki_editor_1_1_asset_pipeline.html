@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -182,8 +182,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afd5734ec7c058997598cfdc13aba9195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the encoder that writes this extension's assets for a target.  <br /></td></tr>
 <tr class="memitem:ab4aead5ad4d18931ebe24614e816a9e9" id="r_ab4aead5ad4d18931ebe24614e816a9e9"><td class="memItemLeft">const <a class="el" href="namespace_deki_editor.html#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab4aead5ad4d18931ebe24614e816a9e9">FindExportEncoder</a> (const std::string &amp;extension) const</td></tr>
 <tr class="memdesc:ab4aead5ad4d18931ebe24614e816a9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The encoder for an extension (lowercase, with dot), or null.  <br /></td></tr>
+<tr class="memitem:a35b43e53d05d063dc8e4c1eb8d48e38b" id="r_a35b43e53d05d063dc8e4c1eb8d48e38b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a35b43e53d05d063dc8e4c1eb8d48e38b">RegisterSceneExportCheck</a> (const std::string &amp;name, <a class="el" href="namespace_deki_editor.html#a5ec6111ff9ba782f54e70e4c30f284a4">SceneExportCheck</a> check)</td></tr>
+<tr class="memdesc:a35b43e53d05d063dc8e4c1eb8d48e38b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a check of the scenes a build ships, under a name of its own.  <br /></td></tr>
+<tr class="memitem:aadb8a09a32098d081951a079077b02e0" id="r_aadb8a09a32098d081951a079077b02e0"><td class="memItemLeft">const std::unordered_map&lt; std::string, <a class="el" href="namespace_deki_editor.html#a5ec6111ff9ba782f54e70e4c30f284a4">SceneExportCheck</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aadb8a09a32098d081951a079077b02e0">SceneExportChecks</a> () const</td></tr>
 <tr class="memitem:a9b721dbe73942ba83014132965c76193" id="r_a9b721dbe73942ba83014132965c76193"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b721dbe73942ba83014132965c76193">RegisterDependencyReporter</a> (const std::string &amp;extension, <a class="el" href="namespace_deki_editor.html#ae082f09529208fe90840be48c6282da7">AssetDependencyReporter</a> reporter)</td></tr>
 <tr class="memdesc:a9b721dbe73942ba83014132965c76193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers what lists the assets an extension's assets use.  <br /></td></tr>
+<tr class="memitem:a104aca58422e031c1339b7c81b31c997" id="r_a104aca58422e031c1339b7c81b31c997"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a104aca58422e031c1339b7c81b31c997">RegisterSourceFilesReporter</a> (const std::string &amp;extension, <a class="el" href="namespace_deki_editor.html#a57737e2579d6c245cd106ad0aa3bb753">AssetSourceFilesReporter</a> reporter)</td></tr>
+<tr class="memdesc:a104aca58422e031c1339b7c81b31c997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers what an asset type is compiled from besides its own file (<a class="el" href="namespace_deki_editor.html#a57737e2579d6c245cd106ad0aa3bb753" title="The other files an asset is compiled from, absolute: a model&#39;s material library and texture images.">AssetSourceFilesReporter</a>).  <br /></td></tr>
 <tr class="memitem:af86192568a16c904576ad122e79eaf24" id="r_af86192568a16c904576ad122e79eaf24"><td class="memItemLeft">const <a class="el" href="namespace_deki_editor.html#ae082f09529208fe90840be48c6282da7">AssetDependencyReporter</a> *&#160;</td><td class="memItemRight"><a class="el" href="#af86192568a16c904576ad122e79eaf24">FindDependencyReporter</a> (const std::string &amp;extension) const</td></tr>
 <tr class="memdesc:af86192568a16c904576ad122e79eaf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dependency reporter for an extension (any case, with dot), or null.  <br /></td></tr>
 <tr class="memitem:a5a6af76e2f1a97aee9d47c30f3fca8e1" id="r_a5a6af76e2f1a97aee9d47c30f3fca8e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5a6af76e2f1a97aee9d47c30f3fca8e1">SetEditorTarget</a> (const <a class="el" href="struct_deki_editor_1_1_asset_export_target.html">AssetExportTarget</a> &amp;target)</td></tr>
@@ -299,7 +304,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
 <div class="line">std::function&lt;void(<span class="keyword">const</span> <a class="code hl_struct" href="struct_deki_editor_1_1_asset_info.html">AssetInfo</a>&amp; info, std::unordered_set&lt;std::string&gt;&amp; outValidGuids)&gt;</div>
-<div class="ttc" id="astruct_deki_editor_1_1_asset_info_html"><div class="ttname"><a href="struct_deki_editor_1_1_asset_info.html">DekiEditor::AssetInfo</a></div><div class="ttdoc">A discovered asset.</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:110</div></div>
+<div class="ttc" id="astruct_deki_editor_1_1_asset_info_html"><div class="ttname"><a href="struct_deki_editor_1_1_asset_info.html">DekiEditor::AssetInfo</a></div><div class="ttdoc">A discovered asset.</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:142</div></div>
 </div><!-- fragment -->
 <p>Lists the derived cache files of a source asset. </p>
 <p>Some asset types make extra cache files (font baking writes one variant per size plus its atlases); the owning package names their GUIDs here so the orphan sweep keeps them.</p>
@@ -579,6 +584,55 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a35b43e53d05d063dc8e4c1eb8d48e38b" name="a35b43e53d05d063dc8e4c1eb8d48e38b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b43e53d05d063dc8e4c1eb8d48e38b">&#9670;&#160;</a></span>RegisterSceneExportCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::AssetPipeline::RegisterSceneExportCheck </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a5ec6111ff9ba782f54e70e4c30f284a4">SceneExportCheck</a></td>          <td class="paramname"><span class="paramname"><em>check</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a check of the scenes a build ships, under a name of its own. </p>
+<p>Cleared with the cache handlers when a package unloads. </p>
+
+</div>
+</div>
+<a id="aadb8a09a32098d081951a079077b02e0" name="aadb8a09a32098d081951a079077b02e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb8a09a32098d081951a079077b02e0">&#9670;&#160;</a></span>SceneExportChecks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unordered_map&lt; std::string, <a class="el" href="namespace_deki_editor.html#a5ec6111ff9ba782f54e70e4c30f284a4">SceneExportCheck</a> &gt; &amp; DekiEditor::AssetPipeline::SceneExportChecks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9b721dbe73942ba83014132965c76193" name="a9b721dbe73942ba83014132965c76193"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b721dbe73942ba83014132965c76193">&#9670;&#160;</a></span>RegisterDependencyReporter()</h2>
 
@@ -600,6 +654,30 @@ Static Public Attributes</h2></td></tr>
 
 <p>Registers what lists the assets an extension's assets use. </p>
 <p>Cleared with the cache handlers when a package unloads. </p>
+
+</div>
+</div>
+<a id="a104aca58422e031c1339b7c81b31c997" name="a104aca58422e031c1339b7c81b31c997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104aca58422e031c1339b7c81b31c997">&#9670;&#160;</a></span>RegisterSourceFilesReporter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::AssetPipeline::RegisterSourceFilesReporter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>extension</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_deki_editor.html#a57737e2579d6c245cd106ad0aa3bb753">AssetSourceFilesReporter</a></td>          <td class="paramname"><span class="paramname"><em>reporter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers what an asset type is compiled from besides its own file (<a class="el" href="namespace_deki_editor.html#a57737e2579d6c245cd106ad0aa3bb753" title="The other files an asset is compiled from, absolute: a model&#39;s material library and texture images.">AssetSourceFilesReporter</a>). </p>
+<p>Cleared with the cache handlers. </p>
 
 </div>
 </div>

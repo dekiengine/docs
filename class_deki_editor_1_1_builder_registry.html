@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -176,6 +176,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a30c8063a711f611b5dec947994620f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The builder for a platform, chosen by its <span class="tt">framework</span>.  <br /></td></tr>
 <tr class="memitem:a1c19093ec4c75ec2f145f5b31a62bbc7" id="r_a1c19093ec4c75ec2f145f5b31a62bbc7"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a1c19093ec4c75ec2f145f5b31a62bbc7">DescribeMissingBuilder</a> (const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config) const</td></tr>
 <tr class="memdesc:a1c19093ec4c75ec2f145f5b31a62bbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message for when GetBuilderForPlatform returned nullptr.  <br /></td></tr>
+<tr class="memitem:ad5e0e460e27e46a33407e30b0d146d76" id="r_ad5e0e460e27e46a33407e30b0d146d76"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad5e0e460e27e46a33407e30b0d146d76">SetPackageBuildErrors</a> (std::vector&lt; std::string &gt; errors)</td></tr>
+<tr class="memdesc:ad5e0e460e27e46a33407e30b0d146d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the last build of the project's packages failed on (its error lines), or nothing when it built.  <br /></td></tr>
 <tr class="memitem:addc148900732e64c0e661d3f034ddd28" id="r_addc148900732e64c0e661d3f034ddd28"><td class="memItemLeft">std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#addc148900732e64c0e661d3f034ddd28">GetAllBuilders</a> () const</td></tr>
 <tr class="memitem:add1a30de4477a187c3ac62209f95745c" id="r_add1a30de4477a187c3ac62209f95745c"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#add1a30de4477a187c3ac62209f95745c">GetSupportedPlatforms</a> (const std::string &amp;metadataPath) const</td></tr>
 <tr class="memdesc:add1a30de4477a187c3ac62209f95745c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The platforms a package supports, according to its metadata file.  <br /></td></tr>
@@ -363,6 +365,26 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Message for when GetBuilderForPlatform returned nullptr. </p>
+
+</div>
+</div>
+<a id="ad5e0e460e27e46a33407e30b0d146d76" name="ad5e0e460e27e46a33407e30b0d146d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e0e460e27e46a33407e30b0d146d76">&#9670;&#160;</a></span>SetPackageBuildErrors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::BuilderRegistry::SetPackageBuildErrors </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>errors</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>What the last build of the project's packages failed on (its error lines), or nothing when it built. </p>
+<p>The editor sets it after each build, so DescribeMissingBuilder can say the backends are missing because their packages did not build. </p>
 
 </div>
 </div>

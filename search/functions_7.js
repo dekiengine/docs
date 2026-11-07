@@ -26,6 +26,7 @@ var searchData=
   ['highestversion_23',['HighestVersion',['../namespace_deki_editor.html#ab15e77a22e56a8ebec9c5ae81767c199',1,'DekiEditor']]],
   ['hint_24',['Hint',['../class_deki_editor_1_1_editor_u_i.html#a453a359db74272127eed8cdb445ad7c8',1,'DekiEditor::EditorUI']]],
   ['hittest_25',['HitTest',['../class_deki_editor_1_1_custom_editor.html#abb9ba421c7950ac4393f01a8ae43f64e',1,'DekiEditor::CustomEditor']]],
-  ['hostmemoryprovider_26',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider']]],
-  ['hover_27',['Hover',['../namespace_deki_editor_1_1_motion.html#af045a47c9a5f1a7f5922e62874115ac4',1,'DekiEditor::Motion']]]
+  ['hostfilesystem_26',['HostFileSystem',['../class_deki_1_1_host_file_system.html#a7db2e63251c06cbde08c92fa6d288afe',1,'Deki::HostFileSystem']]],
+  ['hostmemoryprovider_27',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider']]],
+  ['hover_28',['Hover',['../namespace_deki_editor_1_1_motion.html#af045a47c9a5f1a7f5922e62874115ac4',1,'DekiEditor::Motion']]]
 ];

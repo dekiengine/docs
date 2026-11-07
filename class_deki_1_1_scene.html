@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>A scene: objects with components, and <a class="el" href="namespace_deki.html">Deki</a>'s basic unit of content.  
+<p>A scene: objects with components, and <a class="el" href="namespace_deki.html" title="The file system of a game that runs as a program on an operating system (the desktop build,...">Deki</a>'s basic unit of content.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;deki/Scene.h&gt;</code></p>
@@ -217,6 +217,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6728e3445ff0c953e7f0721ae0e0465b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">comp</span> (its base class's first, then its own) as the JSON a scene file holds, keyed by reflected name.  <br /></td></tr>
 <tr class="memitem:a7d60f51bbf7e86401165a6ba106bd164" id="r_a7d60f51bbf7e86401165a6ba106bd164"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a7d60f51bbf7e86401165a6ba106bd164">ComponentDefaultsToJson</a> (const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta)</td></tr>
 <tr class="memdesc:a7d60f51bbf7e86401165a6ba106bd164"><td class="mdescLeft">&#160;</td><td class="mdescRight">ComponentPropertiesToJson for a default-constructed instance of <span class="tt">meta</span>.  <br /></td></tr>
+<tr class="memitem:a3991121863cb478e03677c857cdc2f08" id="r_a3991121863cb478e03677c857cdc2f08"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a3991121863cb478e03677c857cdc2f08">PropertyToJson</a> (const <a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop)</td></tr>
+<tr class="memdesc:a3991121863cb478e03677c857cdc2f08"><td class="mdescLeft">&#160;</td><td class="mdescRight"><span class="tt">prop</span>'s value as a scene file holds it: an enum by name (its number when the enum declares none for it), a colour as "#RRGGBBAA", an asset by GUID (with its source as {"guid", "source"}), a vector as an array.  <br /></td></tr>
+<tr class="memitem:aa104f228396f8458027947c29790f717" id="r_aa104f228396f8458027947c29790f717"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa104f228396f8458027947c29790f717">PropertyFromJson</a> (<a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop, const nlohmann::json &amp;value)</td></tr>
+<tr class="memdesc:aa104f228396f8458027947c29790f717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <span class="tt">prop</span> from <span class="tt">value</span>: any form PropertyToJson writes, the forms older scene files hold, and the plain ones code builds: an enum's stored number, a colour as [r, g, b, a].  <br /></td></tr>
+<tr class="memitem:a8151c4fea5cfb5ca139dedf60a594e81" id="r_a8151c4fea5cfb5ca139dedf60a594e81"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8151c4fea5cfb5ca139dedf60a594e81">PropertyFromJsonObject</a> (<a class="el" href="class_deki_1_1_component.html">Component</a> *comp, const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;prop, const nlohmann::json &amp;props)</td></tr>
+<tr class="memdesc:a8151c4fea5cfb5ca139dedf60a594e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">PropertyFromJson of <span class="tt">prop</span>'s entry in <span class="tt">props</span>, an object keyed by property name as a scene's or settings file's "properties" is: under its name, else under its DEKI_RENAMED_FROM name.  <br /></td></tr>
+<tr class="memitem:a44eef755cd525597f371a0e4a62042ad" id="r_a44eef755cd525597f371a0e4a62042ad"><td class="memItemLeft">static nlohmann::json&#160;</td><td class="memItemRight"><a class="el" href="#a44eef755cd525597f371a0e4a62042ad">TransformToJson</a> (const <a class="el" href="class_deki_1_1_object.html">Object</a> *obj)</td></tr>
+<tr class="memdesc:a44eef755cd525597f371a0e4a62042ad"><td class="mdescLeft">&#160;</td><td class="mdescRight"><span class="tt">obj</span>'s local transform as a scene file holds it: x, y, rotation (in radians), scaleX and scaleY, and the depth (z, rotationX, rotationY, scaleZ) where it is not at its default, so a 2D project's files carry none.  <br /></td></tr>
+<tr class="memitem:a284057d2c2b7cd9b96356277bf56c158" id="r_a284057d2c2b7cd9b96356277bf56c158"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a284057d2c2b7cd9b96356277bf56c158">TransformFromJson</a> (<a class="el" href="class_deki_1_1_object.html">Object</a> *obj, const nlohmann::json &amp;transform)</td></tr>
+<tr class="memdesc:a284057d2c2b7cd9b96356277bf56c158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets <span class="tt">obj</span>'s local transform from TransformToJson's form.  <br /></td></tr>
+<tr class="memitem:a73647846408902cabcb0612f353034df" id="r_a73647846408902cabcb0612f353034df"><td class="memItemLeft">static std::vector&lt; const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a73647846408902cabcb0612f353034df">AllProperties</a> (const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta)</td></tr>
+<tr class="memdesc:a73647846408902cabcb0612f353034df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every reflected property of <span class="tt">meta</span>'s type: its base classes' first, from the root down, then its own.  <br /></td></tr>
+<tr class="memitem:ab4c2563ca8b473f86198f6fa3b0a8937" id="r_ab4c2563ca8b473f86198f6fa3b0a8937"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab4c2563ca8b473f86198f6fa3b0a8937">FindProperty</a> (const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;meta, const std::string &amp;name)</td></tr>
+<tr class="memdesc:ab4c2563ca8b473f86198f6fa3b0a8937"><td class="mdescLeft">&#160;</td><td class="mdescRight">The property named <span class="tt">name</span> among AllProperties(meta), or null.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -225,7 +239,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a678ce13b00857abd35bf2de347c246a3" id="r_a678ce13b00857abd35bf2de347c246a3"><td class="memItemLeft">static std::function&lt; std::string(const std::string &amp;guid)&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a678ce13b00857abd35bf2de347c246a3">s_GuidToPathResolver</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A scene: objects with components, and <a class="el" href="namespace_deki.html">Deki</a>'s basic unit of content. </p>
+<div class="textblock"><p>A scene: objects with components, and <a class="el" href="namespace_deki.html" title="The file system of a game that runs as a program on an operating system (the desktop build,...">Deki</a>'s basic unit of content. </p>
 <p>A scene can be loaded as the running scene, instanced inside another scene (what other engines call a prefab), or shipped and loaded at runtime. There is no separate prefab type. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="ab7495b0d38574cfcc0d54df9f3003927" name="ab7495b0d38574cfcc0d54df9f3003927"></a>
@@ -981,6 +995,231 @@ Static Public Attributes</h2></td></tr>
 
 <p>ComponentPropertiesToJson for a default-constructed instance of <span class="tt">meta</span>. </p>
 <p>Null when the type is abstract or has no factory. </p>
+
+</div>
+</div>
+<a id="a3991121863cb478e03677c857cdc2f08" name="a3991121863cb478e03677c857cdc2f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3991121863cb478e03677c857cdc2f08">&#9670;&#160;</a></span>PropertyToJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::json Deki::Scene::PropertyToJson </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><span class="tt">prop</span>'s value as a scene file holds it: an enum by name (its number when the enum declares none for it), a colour as "#RRGGBBAA", an asset by GUID (with its source as {"guid", "source"}), a vector as an array. </p>
+<p>Discarded (is_discarded()) for a type a scene file does not store. </p>
+
+</div>
+</div>
+<a id="aa104f228396f8458027947c29790f717" name="aa104f228396f8458027947c29790f717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa104f228396f8458027947c29790f717">&#9670;&#160;</a></span>PropertyFromJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Scene::PropertyFromJson </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets <span class="tt">prop</span> from <span class="tt">value</span>: any form PropertyToJson writes, the forms older scene files hold, and the plain ones code builds: an enum's stored number, a colour as [r, g, b, a]. </p>
+<p>False, leaving it as it was, when <span class="tt">value</span> is none of them. </p>
+
+</div>
+</div>
+<a id="a8151c4fea5cfb5ca139dedf60a594e81" name="a8151c4fea5cfb5ca139dedf60a594e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8151c4fea5cfb5ca139dedf60a594e81">&#9670;&#160;</a></span>PropertyFromJsonObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Scene::PropertyFromJsonObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PropertyFromJson of <span class="tt">prop</span>'s entry in <span class="tt">props</span>, an object keyed by property name as a scene's or settings file's "properties" is: under its name, else under its DEKI_RENAMED_FROM name. </p>
+<p>False, leaving it as it was, when neither is there or the value does not fit. </p>
+
+</div>
+</div>
+<a id="a44eef755cd525597f371a0e4a62042ad" name="a44eef755cd525597f371a0e4a62042ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44eef755cd525597f371a0e4a62042ad">&#9670;&#160;</a></span>TransformToJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nlohmann::json Deki::Scene::TransformToJson </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><span class="tt">obj</span>'s local transform as a scene file holds it: x, y, rotation (in radians), scaleX and scaleY, and the depth (z, rotationX, rotationY, scaleZ) where it is not at its default, so a 2D project's files carry none. </p>
+<p>The editor's one form of a transform: scene files, copy and paste, and undo use it. </p>
+
+</div>
+</div>
+<a id="a284057d2c2b7cd9b96356277bf56c158" name="a284057d2c2b7cd9b96356277bf56c158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a284057d2c2b7cd9b96356277bf56c158">&#9670;&#160;</a></span>TransformFromJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Scene::TransformFromJson </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const nlohmann::json &amp;</td>          <td class="paramname"><span class="paramname"><em>transform</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets <span class="tt">obj</span>'s local transform from TransformToJson's form. </p>
+<p>A key that is absent sets that part to its default. </p>
+
+</div>
+</div>
+<a id="a73647846408902cabcb0612f353034df" name="a73647846408902cabcb0612f353034df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73647846408902cabcb0612f353034df">&#9670;&#160;</a></span>AllProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> * &gt; Deki::Scene::AllProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>meta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Every reflected property of <span class="tt">meta</span>'s type: its base classes' first, from the root down, then its own. </p>
+<p>The one walk that saving, loading and looking a property up share. </p>
+
+</div>
+</div>
+<a id="ab4c2563ca8b473f86198f6fa3b0a8937" name="ab4c2563ca8b473f86198f6fa3b0a8937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c2563ca8b473f86198f6fa3b0a8937">&#9670;&#160;</a></span>FindProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_property_info.html">PropertyInfo</a> * Deki::Scene::FindProperty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_component_meta.html">ComponentMeta</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>meta</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The property named <span class="tt">name</span> among AllProperties(meta), or null. </p>
 
 </div>
 </div>

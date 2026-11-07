@@ -12,5 +12,7 @@ var class_deki_1_1_time =
     [ "ResetFrameTime", "class_deki_1_1_time.html#a5bcc7afcb193ac9bd2933158ff4e07a9", null ],
     [ "SetDelayFunction", "class_deki_1_1_time.html#a9a24a52b90af269f2628c18e792db329", null ],
     [ "Delay", "class_deki_1_1_time.html#a5058c842d38c254c0aa771cf0976cb2b", null ],
-    [ "SetTimeProvider", "class_deki_1_1_time.html#aec40ff45f4c7fbe2ef8594dddce7e996", null ]
+    [ "SetTimeProvider", "class_deki_1_1_time.html#aec40ff45f4c7fbe2ef8594dddce7e996", null ],
+    [ "NoteTimeDrivenFrame", "class_deki_1_1_time.html#a17f39bcf3529c6204d66f09f48a96db3", null ],
+    [ "TakeTimeDrivenFrame", "class_deki_1_1_time.html#a05e1fd234d3bcfa287a583cf139455ba", null ]
 ];

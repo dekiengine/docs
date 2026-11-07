@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -153,6 +153,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('namespace_deki
   <div class="headertitle"><div class="title">Deki Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The file system of a game that runs as a program on an operating system (the desktop build, a Linux handheld), on the C standard library.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -204,6 +207,7 @@ Classes</h2></td></tr>
 <tr class="memitem:FileSystem" id="r_FileSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_file_system.html">FileSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the process-wide filesystems.  <a href="class_deki_1_1_file_system.html#details">More...</a><br /></td></tr>
 <tr class="memitem:FPSCounter" id="r_FPSCounter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_f_p_s_counter.html">FPSCounter</a></td></tr>
+<tr class="memitem:HostFileSystem" id="r_HostFileSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_host_file_system.html">HostFileSystem</a></td></tr>
 <tr class="memitem:HostMemoryProvider" id="r_HostMemoryProvider"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_host_memory_provider.html">HostMemoryProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_deki_1_1_memory.html" title="The engine&#39;s memory, in named regions.">Memory</a> provider over the C heap (malloc/free), for any host with a normal C library heap: the editor, desktop and simulator builds, tests.  <a href="class_deki_1_1_host_memory_provider.html#details">More...</a><br /></td></tr>
 <tr class="memitem:ICamera" id="r_ICamera"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_i_camera.html">ICamera</a></td></tr>
@@ -254,7 +258,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A picked field of a component on an object.  <a href="struct_deki_1_1_property_ref.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Rect" id="r_Rect"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_1_1_rect.html">Rect</a></td></tr>
 <tr class="memitem:Scene" id="r_Scene"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_scene.html">Scene</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A scene: objects with components, and <a class="el" href="namespace_deki.html">Deki</a>'s basic unit of content.  <a href="class_deki_1_1_scene.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A scene: objects with components, and <a class="el" href="namespace_deki.html" title="The file system of a game that runs as a program on an operating system (the desktop build,...">Deki</a>'s basic unit of content.  <a href="class_deki_1_1_scene.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SceneSystem" id="r_SceneSystem"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outlive scene changes.  <a href="class_deki_1_1_scene_system.html#details">More...</a><br /></td></tr>
 <tr class="memitem:ScreenAnchor" id="r_ScreenAnchor"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_1_1_screen_anchor.html">ScreenAnchor</a></td></tr>
@@ -286,6 +290,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a50a75bf86f88c438697d0ef96de468fc" id="r_a50a75bf86f88c438697d0ef96de468fc"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a> : uint8_t { <a class="el" href="#a50a75bf86f88c438697d0ef96de468fca2a3cd5946cfd317eb99c3d32e35e2d4c">Point</a> = 0
+, <a class="el" href="#a50a75bf86f88c438697d0ef96de468fcaaf17c98bbd83c27d6426d2ff3fa81d7f">Bilinear</a> = 1
+, <a class="el" href="#a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d">Trilinear</a> = 2
+ }</td></tr>
 <tr class="memitem:adf997e436efe620d60266910d8f63061" id="r_adf997e436efe620d60266910d8f63061"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#adf997e436efe620d60266910d8f63061">ColorFormat</a> { <a class="el" href="#adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a">RGB565</a> = 0
 , <a class="el" href="#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0">RGB888</a> = 1
 , <a class="el" href="#adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251">ARGB8888</a> = 2
@@ -409,6 +417,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af17e9299e575fc846cdf14702e5bb178" id="r_af17e9299e575fc846cdf14702e5bb178"><td class="memItemLeft"><a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a>&#160;</td><td class="memItemRight"><a class="el" href="#af17e9299e575fc846cdf14702e5bb178">TextureFilterFromFlags</a> (uint32_t flags)</td></tr>
+<tr class="memitem:a326691f765441af45d289a5b1ca53573" id="r_a326691f765441af45d289a5b1ca53573"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a326691f765441af45d289a5b1ca53573">TextureFilterToFlags</a> (<a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a> filter)</td></tr>
+<tr class="memitem:a775ed9afca48408f3e4eede734747c30" id="r_a775ed9afca48408f3e4eede734747c30"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a775ed9afca48408f3e4eede734747c30">TextureFilterName</a> (<a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a> filter)</td></tr>
+<tr class="memitem:a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93" id="r_a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93">ParseTextureFilter</a> (const char *name, <a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a> &amp;out)</td></tr>
+<tr class="memdesc:a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Point", "Bilinear" or "Trilinear".  <br /></td></tr>
 <tr class="memitem:a4a409d33bd4fc6d79328a7c4009f4a43" id="r_a4a409d33bd4fc6d79328a7c4009f4a43"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a409d33bd4fc6d79328a7c4009f4a43">ColorToHex</a> (const <a class="el" href="class_deki_1_1_color.html">Color</a> &amp;c, char out[10])</td></tr>
 <tr class="memdesc:a4a409d33bd4fc6d79328a7c4009f4a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <span class="tt">c</span> as "#RRGGBBAA", the form saved files use.  <br /></td></tr>
 <tr class="memitem:a8aec643e6cd3fcf4a68620bedaec4946" id="r_a8aec643e6cd3fcf4a68620bedaec4946"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8aec643e6cd3fcf4a68620bedaec4946">ColorFromHex</a> (const char *text, <a class="el" href="class_deki_1_1_color.html">Color</a> &amp;out)</td></tr>
@@ -524,6 +537,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a788cf5d4318f9011c690b30dcec7bb1f" id="r_a788cf5d4318f9011c690b30dcec7bb1f"><td class="memItemLeft">static constexpr char&#160;</td><td class="memItemRight"><a class="el" href="#a788cf5d4318f9011c690b30dcec7bb1f">kDpackMagic</a> [4] = { 'D', 'P', 'A', 'K' }</td></tr>
 <tr class="memitem:a20b0d1f232d8ad518825c4cdc99f93d5" id="r_a20b0d1f232d8ad518825c4cdc99f93d5"><td class="memItemLeft">static constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a20b0d1f232d8ad518825c4cdc99f93d5">kDpackVersion</a> = 1</td></tr>
+<tr class="memitem:aeb586fbc686a92a8a66e18b75e20ab13" id="r_aeb586fbc686a92a8a66e18b75e20ab13"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aeb586fbc686a92a8a66e18b75e20ab13">kTextureFilterFlagShift</a> = 4</td></tr>
+<tr class="memdesc:aeb586fbc686a92a8a66e18b75e20ab13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a filter sits in a compiled image's header flags (<a class="el" href="class_deki_1_1_texture2_d.html">Texture2D</a>'s DTEX_FLAG_*): bits 4 and 5.  <br /></td></tr>
+<tr class="memitem:a9ce3803f33fac689d97c2a01f8b1de58" id="r_a9ce3803f33fac689d97c2a01f8b1de58"><td class="memItemLeft">constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a9ce3803f33fac689d97c2a01f8b1de58">kTextureFilterFlagMask</a> = 0x3u &lt;&lt; <a class="el" href="#aeb586fbc686a92a8a66e18b75e20ab13">kTextureFilterFlagShift</a></td></tr>
 <tr class="memitem:a09b9d7c17742ee078ceb521d4d3c07eb" id="r_a09b9d7c17742ee078ceb521d4d3c07eb"><td class="memItemLeft">constexpr bool&#160;</td><td class="memItemRight"><a class="el" href="#a09b9d7c17742ee078ceb521d4d3c07eb">kRGB565BigEndian</a> = false</td></tr>
 <tr class="memitem:aa88aafaeabf5ad00e9ff8a3721514f0c" id="r_aa88aafaeabf5ad00e9ff8a3721514f0c"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa88aafaeabf5ad00e9ff8a3721514f0c">kTransformRefComponent</a> = &quot;Transform&quot;</td></tr>
 <tr class="memdesc:aa88aafaeabf5ad00e9ff8a3721514f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component name a reference stores to mean "the object's transform".  <br /></td></tr>
@@ -532,7 +548,11 @@ Variables</h2></td></tr>
 <tr class="memitem:afc1e4c9cbfb35f1111bb8d71dd1b4ea9" id="r_afc1e4c9cbfb35f1111bb8d71dd1b4ea9"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#afc1e4c9cbfb35f1111bb8d71dd1b4ea9">kMetersPerInch</a> = 0.0254f</td></tr>
 <tr class="memdesc:afc1e4c9cbfb35f1111bb8d71dd1b4ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inches are what screen makers give; everything stored is in meters.  <br /></td></tr>
 </table>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The file system of a game that runs as a program on an operating system (the desktop build, a Linux handheld), on the C standard library. </p>
+<p>Maps the device's virtual mounts to folders beside the program, on Windows, Linux and macOS alike. The hosted entry (src/hosted/HostedMain.cpp) sets it before the engine starts.</p>
+<p>F:/ is the board's flash, as on a device: the game's data (the build's export, in ./flash/) is read and never written, and the files the game writes go to ./userdata/, read from there when the game's data has no file of that name. </p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="ac1a8930b53b509439baac5ea7b71948d" name="ac1a8930b53b509439baac5ea7b71948d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1a8930b53b509439baac5ea7b71948d">&#9670;&#160;</a></span>InterfaceAdapter</h2>
 
@@ -618,6 +638,33 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="a50a75bf86f88c438697d0ef96de468fc" name="a50a75bf86f88c438697d0ef96de468fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a75bf86f88c438697d0ef96de468fc">&#9670;&#160;</a></span>TextureFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">Deki::TextureFilter</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a50a75bf86f88c438697d0ef96de468fca2a3cd5946cfd317eb99c3d32e35e2d4c" name="a50a75bf86f88c438697d0ef96de468fca2a3cd5946cfd317eb99c3d32e35e2d4c"></a>Point&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a50a75bf86f88c438697d0ef96de468fcaaf17c98bbd83c27d6426d2ff3fa81d7f" name="a50a75bf86f88c438697d0ef96de468fcaaf17c98bbd83c27d6426d2ff3fa81d7f"></a>Bilinear&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d" name="a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d"></a>Trilinear&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="adf997e436efe620d60266910d8f63061" name="adf997e436efe620d60266910d8f63061"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf997e436efe620d60266910d8f63061">&#9670;&#160;</a></span>ColorFormat</h2>
 
@@ -984,6 +1031,113 @@ this object to (x, y)" is one action, not two. </p>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="af17e9299e575fc846cdf14702e5bb178" name="af17e9299e575fc846cdf14702e5bb178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17e9299e575fc846cdf14702e5bb178">&#9670;&#160;</a></span>TextureFilterFromFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a> Deki::TextureFilterFromFlags </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a326691f765441af45d289a5b1ca53573" name="a326691f765441af45d289a5b1ca53573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326691f765441af45d289a5b1ca53573">&#9670;&#160;</a></span>TextureFilterToFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::TextureFilterToFlags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a></td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a775ed9afca48408f3e4eede734747c30" name="a775ed9afca48408f3e4eede734747c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775ed9afca48408f3e4eede734747c30">&#9670;&#160;</a></span>TextureFilterName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Deki::TextureFilterName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a></td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93" name="a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93">&#9670;&#160;</a></span>ParseTextureFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::ParseTextureFilter </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a50a75bf86f88c438697d0ef96de468fc">TextureFilter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Point", "Bilinear" or "Trilinear". </p>
+<p>False, leaving <span class="tt">out</span> alone, for anything else. </p>
+
+</div>
+</div>
 <a id="a4a409d33bd4fc6d79328a7c4009f4a43" name="a4a409d33bd4fc6d79328a7c4009f4a43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a409d33bd4fc6d79328a7c4009f4a43">&#9670;&#160;</a></span>ColorToHex()</h2>
 
@@ -2491,6 +2645,53 @@ template&lt;class T&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb586fbc686a92a8a66e18b75e20ab13" name="aeb586fbc686a92a8a66e18b75e20ab13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb586fbc686a92a8a66e18b75e20ab13">&#9670;&#160;</a></span>kTextureFilterFlagShift</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::kTextureFilterFlagShift = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Where a filter sits in a compiled image's header flags (<a class="el" href="class_deki_1_1_texture2_d.html">Texture2D</a>'s DTEX_FLAG_*): bits 4 and 5. </p>
+<p>0 is Point, so a file from before reads as it drew then. </p>
+
+</div>
+</div>
+<a id="a9ce3803f33fac689d97c2a01f8b1de58" name="a9ce3803f33fac689d97c2a01f8b1de58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce3803f33fac689d97c2a01f8b1de58">&#9670;&#160;</a></span>kTextureFilterFlagMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::kTextureFilterFlagMask = 0x3u &lt;&lt; <a class="el" href="#aeb586fbc686a92a8a66e18b75e20ab13">kTextureFilterFlagShift</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -8,6 +8,7 @@ var class_deki_editor_1_1_builder_registry =
     [ "GetBuilder", "class_deki_editor_1_1_builder_registry.html#a6360bdf34ab790b76bc3b32860280d48", null ],
     [ "GetBuilderForPlatform", "class_deki_editor_1_1_builder_registry.html#a30c8063a711f611b5dec947994620f44", null ],
     [ "DescribeMissingBuilder", "class_deki_editor_1_1_builder_registry.html#a1c19093ec4c75ec2f145f5b31a62bbc7", null ],
+    [ "SetPackageBuildErrors", "class_deki_editor_1_1_builder_registry.html#ad5e0e460e27e46a33407e30b0d146d76", null ],
     [ "GetAllBuilders", "class_deki_editor_1_1_builder_registry.html#addc148900732e64c0e661d3f034ddd28", null ],
     [ "GetSupportedPlatforms", "class_deki_editor_1_1_builder_registry.html#add1a30de4477a187c3ac62209f95745c", null ],
     [ "EnsureLoaded", "class_deki_editor_1_1_builder_registry.html#a03f8b1c60e520eae05cbad0d8f843456", null ],

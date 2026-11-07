@@ -2,7 +2,7 @@ var searchData=
 [
   ['wantsinspectoroverride_0',['WantsInspectorOverride',['../class_deki_editor_1_1_custom_editor.html#aa8f5970d868a97e56455be7ed979c592',1,'DekiEditor::CustomEditor']]],
   ['warning_1',['Warning',['../namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'Deki']]],
-  ['warnings_2',['warnings',['../struct_deki_editor_1_1_strip_plan.html#a65be06066e329be75159bbcb919bad43',1,'DekiEditor::StripPlan']]],
+  ['warnings_2',['warnings',['../struct_deki_editor_1_1_asset_export_context.html#af20b413254ee2240ffe296f145dcdc5f',1,'DekiEditor::AssetExportContext::warnings'],['../struct_deki_editor_1_1_strip_plan.html#a65be06066e329be75159bbcb919bad43',1,'DekiEditor::StripPlan::warnings']]],
   ['washovered_3',['WasHovered',['../struct_deki_editor_1_1_motion_1_1_row_hover.html#a72fbeba477f7a92f86baa2b75e8584d7',1,'DekiEditor::Motion::RowHover']]],
   ['went_4',['Finding out where the memory went',['../guide-memory.html#guide-memory-finding-out-where-the-memory-went',1,'']]],
   ['what_20a_20board_20sets_5',['What a board sets',['../guide-performance.html#guide-performance-what-a-board-sets',1,'']]],
@@ -49,12 +49,12 @@ var searchData=
   ['writebinary_46',['WriteBinary',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aaf3de1e6f327fc28e955c698773c74045',1,'Deki::IFileSystem']]],
   ['writeboundnumbers_47',['WriteBoundNumbers',['../namespace_deki.html#a4f2bdda636d292108b0ff5194ac30881',1,'Deki']]],
   ['writeboundproperty_48',['WriteBoundProperty',['../namespace_deki.html#ad008be6af01fc7dbb33e9a1f8731800c',1,'Deki']]],
-  ['writefile_49',['WriteFile',['../class_deki_1_1_i_file_system.html#ab7d6b2386ab5c1ca8b9c1034b1683139',1,'Deki::IFileSystem']]],
+  ['writefile_49',['WriteFile',['../class_deki_1_1_host_file_system.html#a785254fe74e99bcd872e1dc03ef60e72',1,'Deki::HostFileSystem::WriteFile()'],['../class_deki_1_1_i_file_system.html#ab7d6b2386ab5c1ca8b9c1034b1683139',1,'Deki::IFileSystem::WriteFile()']]],
   ['writeifchanged_50',['WriteIfChanged',['../namespace_deki_editor_1_1_c_make_gen.html#a4f95399a45caf74755beaefe9255cb61',1,'DekiEditor::CMakeGen']]],
   ['writes_51',['Files the game writes',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]],
   ['writes_20itself_52',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - the label writes itself',['../guide-memory.html#guide-memory-alloccontext---the-label-writes-itself',1,'']]],
   ['writescene_53',['WriteScene',['../class_deki_1_1_scene_format_1_1_scene_msg_pack_writer.html#a945dfc2eb394b5c07a1281fd51dea6a5',1,'Deki::SceneFormat::SceneMsgPackWriter']]],
-  ['writetexfile_54',['WriteTexFile',['../class_deki_editor_1_1_texture_importer.html#a909b09376fd2b027c22e314f7dcda87c',1,'DekiEditor::TextureImporter']]],
+  ['writetexfile_54',['WriteTexFile',['../class_deki_editor_1_1_texture_importer.html#a33cd526608ac69e4e0f22e4b5282a65a',1,'DekiEditor::TextureImporter']]],
   ['writetext_55',['WriteText',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2aa9fafe29facddc25b6579c4c5e29af7fb',1,'Deki::IFileSystem']]],
   ['writetexturetarget_56',['WriteTextureTarget',['../namespace_deki_editor.html#aef9a71605689871d2390a59b9d0178cb',1,'DekiEditor']]],
   ['wrong_57',['If something is wrong',['../guide-releasing.html#guide-releasing-if-something-is-wrong',1,'']]]

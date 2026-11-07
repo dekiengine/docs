@@ -20,7 +20,7 @@ var searchData=
   ['onstarted_17',['OnStarted',['../class_deki_editor_1_1_asset_pipeline.html#ad928d13fb8824cdd441b457b32faf14b',1,'DekiEditor::AssetPipeline']]],
   ['onupdate_18',['OnUpdate',['../class_deki_editor_1_1_editor_window.html#a5010d950a29038af9f687d969a61309d',1,'DekiEditor::EditorWindow']]],
   ['open_19',['Open',['../class_deki_1_1_file_image.html#a79587ef53412b4862f9b65418e10bb30',1,'Deki::FileImage::Open()'],['../class_deki_editor_1_1_asset_picker.html#a93249440b846baf0d038461ac4105aed',1,'DekiEditor::AssetPicker::Open()']]],
-  ['openfile_20',['OpenFile',['../class_deki_1_1_i_file_system.html#aaff0192aeaedbdb879bc35933d3e57ec',1,'Deki::IFileSystem::OpenFile()'],['../class_deki_editor_1_1_editor_window.html#ab4cc2d23c89fd996ecd10fec6718172e',1,'DekiEditor::EditorWindow::OpenFile()']]],
+  ['openfile_20',['OpenFile',['../class_deki_1_1_host_file_system.html#a8b545cd84910aa7b299c5a2583417235',1,'Deki::HostFileSystem::OpenFile()'],['../class_deki_1_1_i_file_system.html#aaff0192aeaedbdb879bc35933d3e57ec',1,'Deki::IFileSystem::OpenFile()'],['../class_deki_editor_1_1_editor_window.html#ab4cc2d23c89fd996ecd10fec6718172e',1,'DekiEditor::EditorWindow::OpenFile()']]],
   ['openincodeeditor_21',['OpenInCodeEditor',['../namespace_deki_editor.html#a7ac54aa8ccc6b630232c16e269bedec8',1,'DekiEditor']]],
   ['openpopup_22',['OpenPopup',['../class_deki_editor_1_1_editor_u_i.html#afde0b02a79b56d079e0a6cd7531d6924',1,'DekiEditor::EditorUI']]],
   ['openpopuponitemclick_23',['OpenPopupOnItemClick',['../class_deki_editor_1_1_editor_u_i.html#ab3a4ed5b64c2c3e5e097824d92c76ba5',1,'DekiEditor::EditorUI']]],

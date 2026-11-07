@@ -11,6 +11,12 @@ var _c_make_gen_utils_8h =
     [ "DekiEditor::CMakeGen::MissingCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a5da71b32db273daf61f2e9392ed31481", null ],
     [ "DekiEditor::CMakeGen::PackageSupportsPlatform", "namespace_deki_editor_1_1_c_make_gen.html#ab58f7b9a98c6ead0aca489306a4ea9f6", null ],
     [ "DekiEditor::CMakeGen::ScanPackageManifests", "namespace_deki_editor_1_1_c_make_gen.html#abcb718867b7fdbb26072b3faf49b9616", null ],
+    [ "DekiEditor::CMakeGen::CapabilityDefinesFor", "namespace_deki_editor_1_1_c_make_gen.html#a42d86066f77e8c208d7c2ad5ae356536", null ],
+    [ "DekiEditor::CMakeGen::TextureFilteringCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a7ef8fce965635b9b45869dae4fc7b572", null ],
+    [ "DekiEditor::CMakeGen::CapabilityDefineName", "namespace_deki_editor_1_1_c_make_gen.html#a7032a11861aa6413e9bb8ace45a6fe14", null ],
+    [ "DekiEditor::CMakeGen::CapabilityDefinesTestedBy", "namespace_deki_editor_1_1_c_make_gen.html#a0ab36ee7f1c4a36651b6279eec242896", null ],
+    [ "DekiEditor::CMakeGen::UndeclaredCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a2f9321526cd8c3a538f164a0323f119f", null ],
+    [ "DekiEditor::CMakeGen::SourcesDefiningMain", "namespace_deki_editor_1_1_c_make_gen.html#a67d43d6564b2c4dbd9b8414fe3588766", null ],
     [ "DekiEditor::CMakeGen::FeatureInBuild", "namespace_deki_editor_1_1_c_make_gen.html#aefbf20f54affae7cb8ee0af170a3c429", null ],
     [ "DekiEditor::CMakeGen::RequiredPackagesInBuild", "namespace_deki_editor_1_1_c_make_gen.html#afbb184ffa99347d91041d6b8d9b28ff4", null ],
     [ "DekiEditor::CMakeGen::ResolveActivePackages", "namespace_deki_editor_1_1_c_make_gen.html#a14a33bb16a49f6a2ef92de2d6aa483d9", null ],
@@ -27,6 +33,6 @@ var _c_make_gen_utils_8h =
     [ "DekiEditor::CMakeGen::EmitProjectSourceCollection", "namespace_deki_editor_1_1_c_make_gen.html#add93f4ad4a7558801cdd2970e1fc04eb", null ],
     [ "DekiEditor::CMakeGen::EmitPlatformDefines", "namespace_deki_editor_1_1_c_make_gen.html#ab7ee120d93c2eda07cc5a1102604b627", null ],
     [ "DekiEditor::CMakeGen::EmitIncludePaths", "namespace_deki_editor_1_1_c_make_gen.html#acec07c552fdf9316b468ca144e46b7a0", null ],
-    [ "DekiEditor::CMakeGen::GeneratePackageInitFile", "namespace_deki_editor_1_1_c_make_gen.html#a717eeec3015b5db6e3349b2b5db5749d", null ],
+    [ "DekiEditor::CMakeGen::GeneratePackageInitFile", "namespace_deki_editor_1_1_c_make_gen.html#a50ce38d53baba8934503a82582afb9a1", null ],
     [ "DekiEditor::CMakeGen::WriteIfChanged", "namespace_deki_editor_1_1_c_make_gen.html#a4f95399a45caf74755beaefe9255cb61", null ]
 ];

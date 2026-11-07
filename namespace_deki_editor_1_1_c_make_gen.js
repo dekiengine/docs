@@ -1,7 +1,9 @@
 var namespace_deki_editor_1_1_c_make_gen =
 [
-    [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ],
+    [ "ExecutableCMakeOptions", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options.html", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options" ],
+    [ "ExecutableLibrary", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library.html", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library" ],
     [ "FeatureEntry", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry" ],
+    [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ],
     [ "PackageEntry", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry" ],
     [ "TransformWidth", "namespace_deki_editor_1_1_c_make_gen.html#ad15580c65628d86828d140de60726ca2", [
       [ "None", "namespace_deki_editor_1_1_c_make_gen.html#ad15580c65628d86828d140de60726ca2a6adf97f83acf6453d4a6a4b1070f3754", null ],
@@ -11,6 +13,12 @@ var namespace_deki_editor_1_1_c_make_gen =
     [ "MissingCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a5da71b32db273daf61f2e9392ed31481", null ],
     [ "PackageSupportsPlatform", "namespace_deki_editor_1_1_c_make_gen.html#ab58f7b9a98c6ead0aca489306a4ea9f6", null ],
     [ "ScanPackageManifests", "namespace_deki_editor_1_1_c_make_gen.html#abcb718867b7fdbb26072b3faf49b9616", null ],
+    [ "CapabilityDefinesFor", "namespace_deki_editor_1_1_c_make_gen.html#a42d86066f77e8c208d7c2ad5ae356536", null ],
+    [ "TextureFilteringCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a7ef8fce965635b9b45869dae4fc7b572", null ],
+    [ "CapabilityDefineName", "namespace_deki_editor_1_1_c_make_gen.html#a7032a11861aa6413e9bb8ace45a6fe14", null ],
+    [ "CapabilityDefinesTestedBy", "namespace_deki_editor_1_1_c_make_gen.html#a0ab36ee7f1c4a36651b6279eec242896", null ],
+    [ "UndeclaredCapabilities", "namespace_deki_editor_1_1_c_make_gen.html#a2f9321526cd8c3a538f164a0323f119f", null ],
+    [ "SourcesDefiningMain", "namespace_deki_editor_1_1_c_make_gen.html#a67d43d6564b2c4dbd9b8414fe3588766", null ],
     [ "FeatureInBuild", "namespace_deki_editor_1_1_c_make_gen.html#aefbf20f54affae7cb8ee0af170a3c429", null ],
     [ "RequiredPackagesInBuild", "namespace_deki_editor_1_1_c_make_gen.html#afbb184ffa99347d91041d6b8d9b28ff4", null ],
     [ "ResolveActivePackages", "namespace_deki_editor_1_1_c_make_gen.html#a14a33bb16a49f6a2ef92de2d6aa483d9", null ],
@@ -27,6 +35,8 @@ var namespace_deki_editor_1_1_c_make_gen =
     [ "EmitProjectSourceCollection", "namespace_deki_editor_1_1_c_make_gen.html#add93f4ad4a7558801cdd2970e1fc04eb", null ],
     [ "EmitPlatformDefines", "namespace_deki_editor_1_1_c_make_gen.html#ab7ee120d93c2eda07cc5a1102604b627", null ],
     [ "EmitIncludePaths", "namespace_deki_editor_1_1_c_make_gen.html#acec07c552fdf9316b468ca144e46b7a0", null ],
-    [ "GeneratePackageInitFile", "namespace_deki_editor_1_1_c_make_gen.html#a717eeec3015b5db6e3349b2b5db5749d", null ],
-    [ "WriteIfChanged", "namespace_deki_editor_1_1_c_make_gen.html#a4f95399a45caf74755beaefe9255cb61", null ]
+    [ "GeneratePackageInitFile", "namespace_deki_editor_1_1_c_make_gen.html#a50ce38d53baba8934503a82582afb9a1", null ],
+    [ "WriteIfChanged", "namespace_deki_editor_1_1_c_make_gen.html#a4f95399a45caf74755beaefe9255cb61", null ],
+    [ "AddRequiredPackageDefines", "namespace_deki_editor_1_1_c_make_gen.html#a06e47f39de696e1c27fde1eafaeb696a", null ],
+    [ "GenerateExecutableCMakeLists", "namespace_deki_editor_1_1_c_make_gen.html#af2b29f22e6b42e6e5ec09a62d72a926e", null ]
 ];

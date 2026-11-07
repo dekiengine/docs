@@ -23,6 +23,7 @@ var class_deki_1_1_texture2_d =
     [ "format", "class_deki_1_1_texture2_d.html#ad553cb0028d8ad89ffea52b938a4058f", null ],
     [ "hasTransparency", "class_deki_1_1_texture2_d.html#af233fcfd7d9ceb79ec5934cc94d68770", null ],
     [ "hasAlpha", "class_deki_1_1_texture2_d.html#afc47dc098f6d051711d785044a471867", null ],
+    [ "filter", "class_deki_1_1_texture2_d.html#a82e7786137917444221516d8211374f1", null ],
     [ "alphaRowSpans", "class_deki_1_1_texture2_d.html#a472697f834297bd8af566ab578b31b32", null ],
     [ "allocatedWithBackend", "class_deki_1_1_texture2_d.html#a7b8a0c6a8859136b2ab487fc3f778975", null ]
 ];

@@ -17,5 +17,7 @@ var searchData=
   ['enginehost_14',['EngineHost',['../struct_deki_1_1_engine_host.html',1,'Deki']]],
   ['enginesettings_15',['EngineSettings',['../struct_deki_1_1_engine_settings.html',1,'Deki']]],
   ['enumcallbacks_16',['EnumCallbacks',['../struct_deki_editor_1_1_editor_u_i_1_1_enum_callbacks.html',1,'DekiEditor::EditorUI']]],
-  ['event_17',['Event',['../struct_deki_editor_1_1_asset_file_watcher_1_1_event.html',1,'DekiEditor::AssetFileWatcher']]]
+  ['event_17',['Event',['../struct_deki_editor_1_1_asset_file_watcher_1_1_event.html',1,'DekiEditor::AssetFileWatcher']]],
+  ['executablecmakeoptions_18',['ExecutableCMakeOptions',['../struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options.html',1,'DekiEditor::CMakeGen']]],
+  ['executablelibrary_19',['ExecutableLibrary',['../struct_deki_editor_1_1_c_make_gen_1_1_executable_library.html',1,'DekiEditor::CMakeGen']]]
 ];

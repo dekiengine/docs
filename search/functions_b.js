@@ -11,5 +11,6 @@ var searchData=
   ['normalized_8',['Normalized',['../struct_deki_1_1_vector2.html#a299ee3accab5dc6b6afbc79ac9ab03c0',1,'Deki::Vector2::Normalized()'],['../struct_deki_1_1_vector3.html#ae5f299f6504612ab1ef227b522a60173',1,'Deki::Vector3::Normalized()']]],
   ['normalizeprojectroot_9',['NormalizeProjectRoot',['../namespace_deki_editor.html#a75bb0870ccd4cfebd8da0f686224413b',1,'DekiEditor']]],
   ['noteprojectplatformschanged_10',['NoteProjectPlatformsChanged',['../namespace_deki_editor.html#a315beb897270460e47bb328cf93ddf5b',1,'DekiEditor']]],
-  ['notifyactivity_11',['NotifyActivity',['../class_deki_1_1_i_power.html#a242d0a8e614b52503115701fc5ceaa1f',1,'Deki::IPower']]]
+  ['notetimedrivenframe_11',['NoteTimeDrivenFrame',['../class_deki_1_1_time.html#a17f39bcf3529c6204d66f09f48a96db3',1,'Deki::Time']]],
+  ['notifyactivity_12',['NotifyActivity',['../class_deki_1_1_i_power.html#a242d0a8e614b52503115701fc5ceaa1f',1,'Deki::IPower']]]
 ];

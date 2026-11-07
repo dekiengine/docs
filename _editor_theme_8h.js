@@ -27,6 +27,8 @@ var _editor_theme_8h =
     [ "DekiEditor::SchematicAddButton", "namespace_deki_editor.html#a71025c40fc84ab2df50d747ee44d5024", null ],
     [ "DekiEditor::DrawTreeNodeChevronLabel", "namespace_deki_editor.html#ad396d2bd3f0f868786d65d5e1b322521", null ],
     [ "DekiEditor::FullBleedSeparator", "namespace_deki_editor.html#a5001e03f52ced7b9c2da14f1a3606eab", null ],
+    [ "DekiEditor::SectionAlignedCursorX", "namespace_deki_editor.html#af432290d675a398dcd855d97a6c4eee9", null ],
+    [ "DekiEditor::PropertyLabelWidth", "namespace_deki_editor.html#a39346c8660df7dc1a0440c7f716ee8b5", null ],
     [ "DekiEditor::PanelToolbar", "namespace_deki_editor.html#a11d9f8c59aa4345379ca20af0af7aa29", null ],
     [ "DekiEditor::SearchField", "namespace_deki_editor.html#a626aeef38978fb6f07f2404ad171546f", null ],
     [ "DekiEditor::SchematicToolbarCombo", "namespace_deki_editor.html#a8abd77ed998f3bd8f929ac00b6141572", null ],

@@ -4,6 +4,7 @@ var namespace_deki_1_1_project_settings =
     [ "DisplaySettings", "struct_deki_1_1_project_settings_1_1_display_settings.html", "struct_deki_1_1_project_settings_1_1_display_settings" ],
     [ "RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", "struct_deki_1_1_project_settings_1_1_runtime_settings" ],
     [ "Load", "namespace_deki_1_1_project_settings.html#afe0de3076b39d760eed2c6968ad6bc92", null ],
+    [ "Unload", "namespace_deki_1_1_project_settings.html#ae1a9d6720f93186eb2fa7811820f1b0f", null ],
     [ "GetTargetFPS", "namespace_deki_1_1_project_settings.html#aa3a74675706af66cae659f467f493e1d", null ],
     [ "GetScreenDiagonalInches", "namespace_deki_1_1_project_settings.html#ae80d1fb466eed82946b156921c86b60d", null ],
     [ "GetAssetStorage", "namespace_deki_1_1_project_settings.html#a53b9fe8e2a8d4eb8629bdd44f5e36be6", null ],

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platform
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_build_2docs_2md_2guide-platforms"></a></p>
-<p>A <b>platform</b> is one thing a project builds for: a board, the desktop simulator, a console. This page says what a platform is made of, where platforms come from, how a package ships boards, and what happens to a board once a project is using it.</p>
+<p>A <b>platform</b> is one thing a project builds for: a board, the desktop, a console. This page says what a platform is made of, where platforms come from, how a package ships boards, and what happens to a board once a project is using it.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-what-a-platform-is"></a>
 What a platform is</h1>
 <p>A directory under the project's <span class="tt">platforms/</span>, named by the platform's id:</p>
@@ -167,13 +167,13 @@ What a platform is</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">family</span>  </td><td class="markdownTableBodyNone">Descriptive only. Becomes the capability <span class="tt">family:&lt;x&gt;</span>.  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">The screen this target has. The editor previews it, the desktop simulator opens a window of it, and images set to Automatic are stored in <span class="tt">colorFormat</span> for it. A device renders at its display's own size and format; see <a href="guide-screens.html">screens.md</a>.  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">The screen this target has. The editor previews it, the desktop build opens a window of it, and images set to Automatic are stored in <span class="tt">colorFormat</span> for it. A device renders at its display's own size and format; see <a href="guide-screens.html">screens.md</a>.  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">screenDiagonalInches</span>  </td><td class="markdownTableBodyNone">The screen's diagonal in inches, as the board's maker gives it (<span class="tt">2.8</span>, <span class="tt">1.91</span>). Optional; absent means unknown. A panel cannot report its own size, so the board says, and the build carries it to the device for layouts that fit a physically small screen; see <a href="guide-screens.html#guide-screens-size-on-the-glass">screens.md</a>.  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">externalMemorySize</span>  </td><td class="markdownTableBodyNone">Bytes of memory beyond the internal heap (PSRAM on a microcontroller). Grants packages <span class="tt">memory:external</span>.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">What the target can offer a package: <span class="tt">wifi</span>, <span class="tt">spi</span>, <span class="tt">desktop-os</span>, ...  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">What the target can offer a package: <span class="tt">wifi</span>, <span class="tt">spi</span>, <span class="tt">hosted</span>, ... <span class="tt">hosted</span>: an operating system starts the game as a program and gets control back when it quits (a desktop, the Miyoo Mini). A board whose firmware is the game, RTOS included, is not hosted. Its old name, <span class="tt">desktop-os</span>, is read for one release.  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">requiresPackages</span>  </td><td class="markdownTableBodyNone">Packages the target always needs, whatever the scenes use. Its hardware abstraction layer, typically.  </td></tr>
 <tr class="markdownTableRowEven">
@@ -183,19 +183,20 @@ What a platform is</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">assetStorage</span>  </td><td class="markdownTableBodyNone">Where a build keeps the game's assets: <span class="tt">internal</span> (the default) or <span class="tt">external</span>. See below.  </td></tr>
 </table>
+<p>What a capability means is the packages' to say, not the editor's. A package whose code tests one at compile time names it in its <span class="tt">package.json</span> <span class="tt">capabilityDefines</span>, and a build for a platform that provides it defines <span class="tt">DEKI_CAPABILITY_&lt;NAME&gt;</span> (<span class="tt">opengl</span> is <span class="tt">DEKI_CAPABILITY_OPENGL</span>, named by deki-rendering, deki-3d and deki-sdl3-integration). A package that draws textures filtered names the capability it does that with in <span class="tt">filtersTexturesWith</span>, so an image's Filter setting applies on a platform that provides it and is drawn Point elsewhere.</p>
 <p>The <b>boot scene</b> holds a <span class="tt"><a class="el" href="class_deki_1_1_platform_setup_component.html" title="Runs the boot scene&#39;s SetupComponents (such as SDCardComponent) one at a time, in order,...">Deki::PlatformSetupComponent</a></span> whose <span class="tt">setupComponents</span> list names, in order, the setup steps that bring the hardware up: a power pin, the display, an I2C bus, touch. Each entry is <span class="tt">{id, typeId}</span>: the id of the child object holding the step, and the hash of the step's qualified class name (<span class="tt"><a class="el" href="namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50" title="FNV-1a of a C string; the hash behind every type and property id.">Deki::HashString</a></span>). A wrong <span class="tt">typeId</span> does not fail; the step silently never runs. <span class="tt">ShippedPlatformTemplates</span> in the editor's tests checks every boot scene the packages ship.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-where-the-assets-go"></a>
 Where the assets go</h1>
 <p>A build keeps the game's assets in one of two places:</p>
 <ul>
-<li><b>Internal storage</b>, the default: part of the device. The build carries them, in <span class="tt">assets/</span> next to the boot scene (<span class="tt">F:/assets/</span> at runtime). On an ESP32 that is the flash: the game's data is packed into one image that the board reads in place, so finding a file takes microseconds. It gets the rest of the chip but the user data (about 12 MB on a 16 MB board), and the build fails if the game does not fit. The desktop simulator and Tactility apps keep the assets in the same place.</li>
+<li><b>Internal storage</b>, the default: part of the device. The build carries them, in <span class="tt">assets/</span> next to the boot scene (<span class="tt">F:/assets/</span> at runtime). On an ESP32 that is the flash: the game's data is packed into one image that the board reads in place, so finding a file takes microseconds. It gets the rest of the chip but the user data (about 12 MB on a 16 MB board), and the build fails if the game does not fit. The desktop build and Tactility apps keep the assets in the same place.</li>
 <li><b>External storage</b>: removable, an SD card. The build carries only the boot scene and <span class="tt">project_data.bin</span>; the <b>SD Card Deploy</b> panel copies the assets to the card, and the card's storage package loads them (<span class="tt">S:/</span>) once it is mounted.</li>
 </ul>
 <p>Only a platform that <span class="tt">provides</span> <span class="tt">external-storage</span> can choose external; the platform editor shows the choice (<b>Storage &gt; Assets on</b>) only for those. Choose it only for a game too big for the flash: with external storage and no card in the slot, the game has no assets. The LilyGO T-Deck Plus can choose; it keeps its assets in its flash unless told otherwise.</p>
 <p><span class="tt">project_data.bin</span> records the choice, so the engine knows where to look.</p>
 <h2 class="doxsection"><a class="anchor" id="guide-platforms-files-the-game-writes"></a>
 Files the game writes</h2>
-<p>A game writes its own files, such as saves, under <span class="tt">F:/</span> too (<span class="tt">F:/save.bin</span>). On an ESP32 they go to the user data partition at the end of the flash (1 MB on a 16 MB board, 512 KB on 8 MB, 128 KB on 4 MB). Flashing a new build never touches it, so saves survive updates. The game's own data is never written: opening one of its files to write fails, and the log says why. In the desktop simulator they go to <span class="tt">userdata/</span> beside it, and in a Tactility app to <span class="tt">internal/</span> in the app's user data, with the same rule.</p>
+<p>A game writes its own files, such as saves, under <span class="tt">F:/</span> too (<span class="tt">F:/save.bin</span>). On an ESP32 they go to the user data partition at the end of the flash (1 MB on a 16 MB board, 512 KB on 8 MB, 128 KB on 4 MB). Flashing a new build never touches it, so saves survive updates. The game's own data is never written: opening one of its files to write fails, and the log says why. In the desktop build they go to <span class="tt">userdata/</span> beside it, and in a Tactility app to <span class="tt">internal/</span> in the app's user data, with the same rule.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-simulating-a-board"></a>
 Simulating a board</h1>
 <p>A board whose backend has a simulator (QEMU for an ESP32 or ESP32-S3) can be built to run there: tick <b>Simulate in QEMU</b> in the Build panel, then Build and <b>Run</b>. From the command line:</p>

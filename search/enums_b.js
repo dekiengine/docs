@@ -4,9 +4,10 @@ var searchData=
   ['screenpoint_1',['ScreenPoint',['../namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1',1,'Deki']]],
   ['seekorigin_2',['SeekOrigin',['../class_deki_1_1_i_file_system.html#abd373c8f7fc08875c145c79c86a19cf8',1,'Deki::IFileSystem']]],
   ['setupphase_3',['SetupPhase',['../class_deki_1_1_setup_component.html#a64750307474c576933262818233686b4',1,'Deki::SetupComponent']]],
-  ['sleepmode_4',['SleepMode',['../class_deki_1_1_i_power.html#a92934cb5d09494f4e0e81409431aa59f',1,'Deki::IPower']]],
-  ['spriteslicingmode_5',['SpriteSlicingMode',['../namespace_deki_editor.html#a83eeb86395a39c07ad67166c87eb0515',1,'DekiEditor']]],
-  ['state_6',['State',['../class_deki_1_1_i_power.html#abc1cca9b8658f1e9e1f6205b425caf73',1,'Deki::IPower']]],
-  ['stylevar_7',['StyleVar',['../class_deki_editor_1_1_editor_u_i.html#a22a60cd7097470c8654864a3d41fa759',1,'DekiEditor::EditorUI']]],
-  ['synchandlerpolicy_8',['SyncHandlerPolicy',['../class_deki_editor_1_1_asset_pipeline.html#a163d0a7bb5c58db5957798adc3f58208',1,'DekiEditor::AssetPipeline']]]
+  ['shaderstage_4',['ShaderStage',['../namespace_deki_editor.html#a618948497317ba6329ff1939c3b9a4af',1,'DekiEditor']]],
+  ['sleepmode_5',['SleepMode',['../class_deki_1_1_i_power.html#a92934cb5d09494f4e0e81409431aa59f',1,'Deki::IPower']]],
+  ['spriteslicingmode_6',['SpriteSlicingMode',['../namespace_deki_editor.html#a83eeb86395a39c07ad67166c87eb0515',1,'DekiEditor']]],
+  ['state_7',['State',['../class_deki_1_1_i_power.html#abc1cca9b8658f1e9e1f6205b425caf73',1,'Deki::IPower']]],
+  ['stylevar_8',['StyleVar',['../class_deki_editor_1_1_editor_u_i.html#a22a60cd7097470c8654864a3d41fa759',1,'DekiEditor::EditorUI']]],
+  ['synchandlerpolicy_9',['SyncHandlerPolicy',['../class_deki_editor_1_1_asset_pipeline.html#a163d0a7bb5c58db5957798adc3f58208',1,'DekiEditor::AssetPipeline']]]
 ];

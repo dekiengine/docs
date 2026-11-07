@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -186,6 +186,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac43afb8bae1bbd35505d0f5e6f13f3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the backlight on or off.  <br /></td></tr>
 <tr class="memitem:a7a76ba09fbaeb9484da956bf5587b259" id="r_a7a76ba09fbaeb9484da956bf5587b259"><td class="memItemLeft">virtual uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a7a76ba09fbaeb9484da956bf5587b259">GetRefreshPeriodUs</a> () const</td></tr>
 <tr class="memdesc:a7a76ba09fbaeb9484da956bf5587b259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microseconds between the panel's refreshes when each frame waits for one, so it is shown whole; 0 when frames are shown as they come.  <br /></td></tr>
+<tr class="memitem:a1044251d2d47399b7501e33f8612bb9b" id="r_a1044251d2d47399b7501e33f8612bb9b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a1044251d2d47399b7501e33f8612bb9b">SetRefreshesPerFrame</a> (uint32_t refreshes)</td></tr>
+<tr class="memdesc:a1044251d2d47399b7501e33f8612bb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many refreshes each frame stays on screen: 1 at the panel's rate, 2 at half of it.  <br /></td></tr>
+<tr class="memitem:a5f38e2d61c772fcea7d4b03f02ee7957" id="r_a5f38e2d61c772fcea7d4b03f02ee7957"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a5f38e2d61c772fcea7d4b03f02ee7957">GetFramesShown</a> (uint64_t *frames, uint64_t *lastShownUs) const</td></tr>
+<tr class="memdesc:a5f38e2d61c772fcea7d4b03f02ee7957"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many frames the panel has shown so far, and when the latest one went up (microseconds on the display's own monotonic clock), for a frame-rate counter: frames shown over the time between two readings is the rate the player sees, which timing the game's loop is not (the loop may run a frame ahead and its frames take uneven times).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>What a display package implements: setup, presenting frames, events and UI overlays. </p>
@@ -816,7 +820,67 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Microseconds between the panel's refreshes when each frame waits for one, so it is shown whole; 0 when frames are shown as they come. </p>
-<p>The main loop then times frames to a whole number of refreshes: a game clock a little off the panel's (60.0 frames a second on a 60.2 Hz panel) would show a frame twice every few seconds, a stutter. </p>
+<p>The main loop then times frames to a whole number of refreshes: a game clock a little off the panel's (60.0 frames a second on a 60.2 Hz panel) would show a frame twice every few seconds, a stutter. Each frame also moves the game on by its whole number of refreshes, not the time the loop measured, so motion steps exactly with the panel. </p>
+
+</div>
+</div>
+<a id="a1044251d2d47399b7501e33f8612bb9b" name="a1044251d2d47399b7501e33f8612bb9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1044251d2d47399b7501e33f8612bb9b">&#9670;&#160;</a></span>SetRefreshesPerFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Deki::IDisplay::SetRefreshesPerFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>refreshes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many refreshes each frame stays on screen: 1 at the panel's rate, 2 at half of it. </p>
+<p>The main loop sets it from the target frame rate, for a display that reports its refresh period. A display that shows frames on its own thread holds each one that long, so a frame finished a little early is not shown early and then followed by a long one, which is judder at a steady average. The default ignores it. </p>
+
+</div>
+</div>
+<a id="a5f38e2d61c772fcea7d4b03f02ee7957" name="a5f38e2d61c772fcea7d4b03f02ee7957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f38e2d61c772fcea7d4b03f02ee7957">&#9670;&#160;</a></span>GetFramesShown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Deki::IDisplay::GetFramesShown </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>frames</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>lastShownUs</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many frames the panel has shown so far, and when the latest one went up (microseconds on the display's own monotonic clock), for a frame-rate counter: frames shown over the time between two readings is the rate the player sees, which timing the game's loop is not (the loop may run a frame ahead and its frames take uneven times). </p>
+<p>False from a display that does not see its frames go up; a counter then has only the loop to time, and should say so. </p>
 
 </div>
 </div>

@@ -42,10 +42,12 @@ var searchData=
   ['hint_39',['Hint',['../class_deki_editor_1_1_editor_u_i.html#a453a359db74272127eed8cdb445ad7c8',1,'DekiEditor::EditorUI']]],
   ['hint_40',['hint',['../struct_deki_editor_1_1_editor_u_i_1_1_widget_backend.html#aa1c56fed377b40f0c68558a99f1238f6',1,'DekiEditor::EditorUI::WidgetBackend']]],
   ['hittest_41',['HitTest',['../class_deki_editor_1_1_custom_editor.html#abb9ba421c7950ac4393f01a8ae43f64e',1,'DekiEditor::CustomEditor']]],
-  ['hostmemoryprovider_42',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html',1,'Deki::HostMemoryProvider'],['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider::HostMemoryProvider()']]],
-  ['hostmemoryprovider_2eh_43',['HostMemoryProvider.h',['../_host_memory_provider_8h.html',1,'']]],
-  ['hover_44',['Hover',['../namespace_deki_editor_1_1_motion.html#af045a47c9a5f1a7f5922e62874115ac4',1,'DekiEditor::Motion']]],
-  ['how_20font_20guid_20stays_20in_20sync_45',['How font.guid stays in sync',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
-  ['how_20it_20looks_46',['Changing how it looks',['../guide-ui-widgets.html#guide-ui-widgets-changing-how-it-looks',1,'']]],
-  ['httpstatuscallback_47',['HttpStatusCallback',['../namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50',1,'DekiEditor']]]
+  ['hostfilesystem_42',['HostFileSystem',['../class_deki_1_1_host_file_system.html',1,'Deki::HostFileSystem'],['../class_deki_1_1_host_file_system.html#a7db2e63251c06cbde08c92fa6d288afe',1,'Deki::HostFileSystem::HostFileSystem()']]],
+  ['hostfilesystem_2eh_43',['HostFileSystem.h',['../_host_file_system_8h.html',1,'']]],
+  ['hostmemoryprovider_44',['HostMemoryProvider',['../class_deki_1_1_host_memory_provider.html',1,'Deki::HostMemoryProvider'],['../class_deki_1_1_host_memory_provider.html#a024d0d7672e6b121eccb769849c72440',1,'Deki::HostMemoryProvider::HostMemoryProvider()']]],
+  ['hostmemoryprovider_2eh_45',['HostMemoryProvider.h',['../_host_memory_provider_8h.html',1,'']]],
+  ['hover_46',['Hover',['../namespace_deki_editor_1_1_motion.html#af045a47c9a5f1a7f5922e62874115ac4',1,'DekiEditor::Motion']]],
+  ['how_20font_20guid_20stays_20in_20sync_47',['How font.guid stays in sync',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
+  ['how_20it_20looks_48',['Changing how it looks',['../guide-ui-widgets.html#guide-ui-widgets-changing-how-it-looks',1,'']]],
+  ['httpstatuscallback_49',['HttpStatusCallback',['../namespace_deki_editor.html#a6b6b790d85c8ae57579a7bbd35b18b50',1,'DekiEditor']]]
 ];

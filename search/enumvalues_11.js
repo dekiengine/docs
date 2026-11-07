@@ -24,6 +24,7 @@ var searchData=
   ['treenone_21',['TreeNone',['../class_deki_editor_1_1_editor_u_i.html#ab7ab88be986e168bcdefc71ca448a45da01740138143fbe435d3e438d914a8783',1,'DekiEditor::EditorUI']]],
   ['treeopenonarrow_22',['TreeOpenOnArrow',['../class_deki_editor_1_1_editor_u_i.html#ab7ab88be986e168bcdefc71ca448a45da07333a52e0a24b6df9e8a275c320605e',1,'DekiEditor::EditorUI']]],
   ['treeselected_23',['TreeSelected',['../class_deki_editor_1_1_editor_u_i.html#ab7ab88be986e168bcdefc71ca448a45da947373cfb0071af1d55e2d3b01126f01',1,'DekiEditor::EditorUI']]],
-  ['true_24',['True',['../namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6af827cf462f62848df37c5e1e94a4da74',1,'Deki::SceneFormat']]],
-  ['twod_25',['TwoD',['../namespace_deki_editor_1_1_c_make_gen.html#ad15580c65628d86828d140de60726ca2a7fec533aaab2dc4c675964c8ff8a747b',1,'DekiEditor::CMakeGen']]]
+  ['trilinear_24',['Trilinear',['../namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d',1,'Deki']]],
+  ['true_25',['True',['../namespace_deki_1_1_scene_format.html#a759c33f8cda3706bb62b953f458489a6af827cf462f62848df37c5e1e94a4da74',1,'Deki::SceneFormat']]],
+  ['twod_26',['TwoD',['../namespace_deki_editor_1_1_c_make_gen.html#ad15580c65628d86828d140de60726ca2a7fec533aaab2dc4c675964c8ff8a747b',1,'DekiEditor::CMakeGen']]]
 ];

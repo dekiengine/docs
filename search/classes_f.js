@@ -11,10 +11,13 @@ var searchData=
   ['settingsregistry_8',['SettingsRegistry',['../class_deki_1_1_settings_registry.html',1,'Deki']]],
   ['settingstypeinfo_9',['SettingsTypeInfo',['../struct_deki_1_1_settings_type_info.html',1,'Deki']]],
   ['setupcomponent_10',['SetupComponent',['../class_deki_1_1_setup_component.html',1,'Deki']]],
-  ['sleepinfo_11',['SleepInfo',['../struct_deki_1_1_i_power_1_1_sleep_info.html',1,'Deki::IPower']]],
-  ['spriteframedata_12',['SpriteFrameData',['../struct_deki_editor_1_1_sprite_frame_data.html',1,'DekiEditor']]],
-  ['spritesettings_13',['SpriteSettings',['../struct_deki_editor_1_1_sprite_settings.html',1,'DekiEditor']]],
-  ['stripplan_14',['StripPlan',['../struct_deki_editor_1_1_strip_plan.html',1,'DekiEditor']]],
-  ['subassetinfo_15',['SubAssetInfo',['../struct_deki_editor_1_1_sub_asset_info.html',1,'DekiEditor']]],
-  ['subcomponentdef_16',['SubComponentDef',['../struct_deki_editor_1_1_sub_component_def.html',1,'DekiEditor']]]
+  ['shadercompiler_11',['ShaderCompiler',['../class_deki_editor_1_1_shader_compiler.html',1,'DekiEditor']]],
+  ['shadercompilerequest_12',['ShaderCompileRequest',['../struct_deki_editor_1_1_shader_compile_request.html',1,'DekiEditor']]],
+  ['shaderstagetext_13',['ShaderStageText',['../struct_deki_editor_1_1_shader_stage_text.html',1,'DekiEditor']]],
+  ['sleepinfo_14',['SleepInfo',['../struct_deki_1_1_i_power_1_1_sleep_info.html',1,'Deki::IPower']]],
+  ['spriteframedata_15',['SpriteFrameData',['../struct_deki_editor_1_1_sprite_frame_data.html',1,'DekiEditor']]],
+  ['spritesettings_16',['SpriteSettings',['../struct_deki_editor_1_1_sprite_settings.html',1,'DekiEditor']]],
+  ['stripplan_17',['StripPlan',['../struct_deki_editor_1_1_strip_plan.html',1,'DekiEditor']]],
+  ['subassetinfo_18',['SubAssetInfo',['../struct_deki_editor_1_1_sub_asset_info.html',1,'DekiEditor']]],
+  ['subcomponentdef_19',['SubComponentDef',['../struct_deki_editor_1_1_sub_component_def.html',1,'DekiEditor']]]
 ];

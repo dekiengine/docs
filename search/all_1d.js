@@ -22,11 +22,12 @@ var searchData=
   ['versioncompare_2eh_19',['VersionCompare.h',['../_version_compare_8h.html',1,'']]],
   ['versions_20of_20the_20table_20',['Two versions of the table',['../guide-asset-system.html#guide-asset-system-two-versions-of-the-table',1,'']]],
   ['versionscallback_21',['VersionsCallback',['../_package_contract_8h.html#abe7f82c0a871fd5503ebf34775b2c418',1,'PackageContract.h']]],
-  ['visibilitymask_22',['visibilityMask',['../struct_deki_1_1_property_info.html#a64e0a33d247adbad88d50684c3baa3e6',1,'Deki::PropertyInfo']]],
-  ['visibilityminvalue_23',['visibilityMinValue',['../struct_deki_1_1_property_info.html#a04be1771750d9e560c4902040cdc5097',1,'Deki::PropertyInfo']]],
-  ['visibilityproperty_24',['visibilityProperty',['../struct_deki_1_1_property_info.html#a708abe25a880975aefa72bb3bdd404c9',1,'Deki::PropertyInfo']]],
-  ['visitactivesubtree_25',['VisitActiveSubtree',['../namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff',1,'Deki']]],
-  ['visitsubtree_26',['VisitSubtree',['../namespace_deki.html#a22ea94289b214746512305d8bc075c4d',1,'Deki']]],
-  ['vs_20source_27',['Dual-Field Pattern (guid vs source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]],
-  ['vs_20sprites_28',['Comparison: Fonts vs Sprites',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]]
+  ['vertex_22',['Vertex',['../namespace_deki_editor.html#a618948497317ba6329ff1939c3b9a4afab22b929ba52471a02d18bb3a4e4472e6',1,'DekiEditor']]],
+  ['visibilitymask_23',['visibilityMask',['../struct_deki_1_1_property_info.html#a64e0a33d247adbad88d50684c3baa3e6',1,'Deki::PropertyInfo']]],
+  ['visibilityminvalue_24',['visibilityMinValue',['../struct_deki_1_1_property_info.html#a04be1771750d9e560c4902040cdc5097',1,'Deki::PropertyInfo']]],
+  ['visibilityproperty_25',['visibilityProperty',['../struct_deki_1_1_property_info.html#a708abe25a880975aefa72bb3bdd404c9',1,'Deki::PropertyInfo']]],
+  ['visitactivesubtree_26',['VisitActiveSubtree',['../namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff',1,'Deki']]],
+  ['visitsubtree_27',['VisitSubtree',['../namespace_deki.html#a22ea94289b214746512305d8bc075c4d',1,'Deki']]],
+  ['vs_20source_28',['Dual-Field Pattern (guid vs source)',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]],
+  ['vs_20sprites_29',['Comparison: Fonts vs Sprites',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]]
 ];

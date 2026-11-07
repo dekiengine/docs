@@ -58,7 +58,7 @@ var searchData=
   ['onundo_55',['onUndo',['../struct_deki_editor_1_1_editor_u_i_1_1_float_callbacks.html#a07a286b0699e2ca8ef60fe48c215fe63',1,'DekiEditor::EditorUI::FloatCallbacks::onUndo'],['../struct_deki_editor_1_1_editor_u_i_1_1_int_callbacks.html#a61b29ebf2a519158445ce0b46adecaac',1,'DekiEditor::EditorUI::IntCallbacks::onUndo'],['../struct_deki_editor_1_1_editor_u_i_1_1_vec_callbacks.html#ad879e0eff23499757282e75a4d61762f',1,'DekiEditor::EditorUI::VecCallbacks::onUndo'],['../struct_deki_editor_1_1_editor_u_i_1_1_enum_callbacks.html#a859eac02f5c5edcf08c5528c90a12227',1,'DekiEditor::EditorUI::EnumCallbacks::onUndo'],['../struct_deki_editor_1_1_editor_u_i_1_1_text_callbacks.html#a0a05ff5137795744a3984ea36a07212d',1,'DekiEditor::EditorUI::TextCallbacks::onUndo'],['../struct_deki_editor_1_1_editor_u_i_1_1_edit_callbacks_bytes.html#afd50338e6ad3280ca2a89f2890132bea',1,'DekiEditor::EditorUI::EditCallbacksBytes::onUndo']]],
   ['onupdate_56',['OnUpdate',['../class_deki_editor_1_1_editor_window.html#a5010d950a29038af9f687d969a61309d',1,'DekiEditor::EditorWindow']]],
   ['open_57',['Open',['../class_deki_1_1_file_image.html#a79587ef53412b4862f9b65418e10bb30',1,'Deki::FileImage::Open()'],['../class_deki_editor_1_1_asset_picker.html#a93249440b846baf0d038461ac4105aed',1,'DekiEditor::AssetPicker::Open()']]],
-  ['openfile_58',['OpenFile',['../class_deki_1_1_i_file_system.html#aaff0192aeaedbdb879bc35933d3e57ec',1,'Deki::IFileSystem::OpenFile()'],['../class_deki_editor_1_1_editor_window.html#ab4cc2d23c89fd996ecd10fec6718172e',1,'DekiEditor::EditorWindow::OpenFile()']]],
+  ['openfile_58',['OpenFile',['../class_deki_1_1_host_file_system.html#a8b545cd84910aa7b299c5a2583417235',1,'Deki::HostFileSystem::OpenFile()'],['../class_deki_1_1_i_file_system.html#aaff0192aeaedbdb879bc35933d3e57ec',1,'Deki::IFileSystem::OpenFile()'],['../class_deki_editor_1_1_editor_window.html#ab4cc2d23c89fd996ecd10fec6718172e',1,'DekiEditor::EditorWindow::OpenFile()']]],
   ['openincodeeditor_59',['OpenInCodeEditor',['../namespace_deki_editor.html#a7ac54aa8ccc6b630232c16e269bedec8',1,'DekiEditor']]],
   ['openmode_60',['OpenMode',['../class_deki_1_1_i_file_system.html#ae6cae7efb7875e764bc460c465eafa2a',1,'Deki::IFileSystem']]],
   ['openpopup_61',['OpenPopup',['../class_deki_editor_1_1_editor_u_i.html#afde0b02a79b56d079e0a6cd7531d6924',1,'DekiEditor::EditorUI']]],
@@ -99,10 +99,11 @@ var searchData=
   ['outputcount_96',['outputCount',['../struct_deki_editor_1_1_node_canvas_node.html#af48329ac51fd9ca68a7b56f5c7b5f71a',1,'DekiEditor::NodeCanvasNode']]],
   ['outputlabels_97',['outputLabels',['../struct_deki_editor_1_1_node_canvas_node.html#ad5937ad6859093996bdc9e92dc0fda68',1,'DekiEditor::NodeCanvasNode']]],
   ['outputpath_98',['outputPath',['../struct_deki_editor_1_1_import_result.html#a8a89a196431c99aa3949fce22c78d402',1,'DekiEditor::ImportResult']]],
-  ['override_99',['Override',['../struct_deki_editor_1_1_build_strip_settings.html#ae32641848841027c4050642c0e1fa0cc',1,'DekiEditor::BuildStripSettings']]],
-  ['overridescachestatus_100',['OverridesCacheStatus',['../class_deki_editor_1_1_file_inspector.html#ac3b949f1b81bf9a5332640ea05fbb7f6',1,'DekiEditor::FileInspector']]],
-  ['overview_101',['Overview',['../guide-font-system.html#guide-font-system-overview',1,'Overview'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'Overview']]],
-  ['own_102',['A region is a name, so packages can add their own',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]],
-  ['own_20names_103',['A package&apos;s own names',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
-  ['ownsmainloop_104',['ownsMainLoop',['../struct_deki_1_1_engine_host.html#a1c789876429031998301c14baeb005e1',1,'Deki::EngineHost']]]
+  ['overridden_99',['overridden',['../struct_deki_editor_1_1_target_card_info.html#a9085be847f5e8dae606b6fcb150b4d92',1,'DekiEditor::TargetCardInfo']]],
+  ['override_100',['Override',['../struct_deki_editor_1_1_build_strip_settings.html#ae32641848841027c4050642c0e1fa0cc',1,'DekiEditor::BuildStripSettings']]],
+  ['overridescachestatus_101',['OverridesCacheStatus',['../class_deki_editor_1_1_file_inspector.html#ac3b949f1b81bf9a5332640ea05fbb7f6',1,'DekiEditor::FileInspector']]],
+  ['overview_102',['Overview',['../guide-font-system.html#guide-font-system-overview',1,'Overview'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'Overview']]],
+  ['own_103',['A region is a name, so packages can add their own',['../guide-memory.html#guide-memory-a-region-is-a-name-so-packages-can-add-their-own',1,'']]],
+  ['own_20names_104',['A package&apos;s own names',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
+  ['ownsmainloop_105',['ownsMainLoop',['../struct_deki_1_1_engine_host.html#a1c789876429031998301c14baeb005e1',1,'Deki::EngineHost']]]
 ];

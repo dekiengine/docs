@@ -24,5 +24,6 @@ var searchData=
   ['outputcount_21',['outputCount',['../struct_deki_editor_1_1_node_canvas_node.html#af48329ac51fd9ca68a7b56f5c7b5f71a',1,'DekiEditor::NodeCanvasNode']]],
   ['outputlabels_22',['outputLabels',['../struct_deki_editor_1_1_node_canvas_node.html#ad5937ad6859093996bdc9e92dc0fda68',1,'DekiEditor::NodeCanvasNode']]],
   ['outputpath_23',['outputPath',['../struct_deki_editor_1_1_import_result.html#a8a89a196431c99aa3949fce22c78d402',1,'DekiEditor::ImportResult']]],
-  ['ownsmainloop_24',['ownsMainLoop',['../struct_deki_1_1_engine_host.html#a1c789876429031998301c14baeb005e1',1,'Deki::EngineHost']]]
+  ['overridden_24',['overridden',['../struct_deki_editor_1_1_target_card_info.html#a9085be847f5e8dae606b6fcb150b4d92',1,'DekiEditor::TargetCardInfo']]],
+  ['ownsmainloop_25',['ownsMainLoop',['../struct_deki_1_1_engine_host.html#a1c789876429031998301c14baeb005e1',1,'Deki::EngineHost']]]
 ];

@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -155,6 +155,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_ed
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aadc831cd942045bd616895e7cd8af6dd" id="r_aadc831cd942045bd616895e7cd8af6dd"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aadc831cd942045bd616895e7cd8af6dd">FilterFor</a> (const std::string &amp;platformId) const</td></tr>
+<tr class="memdesc:aadc831cd942045bd616895e7cd8af6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The filter an image asks for on a target: its own, else the image's.  <br /></td></tr>
 <tr class="memitem:adc23bbd3079e1182786bfabd874fda35" id="r_adc23bbd3079e1182786bfabd874fda35"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#adc23bbd3079e1182786bfabd874fda35">TargetFormat</a> (const std::string &amp;platformId) const</td></tr>
 <tr class="memdesc:adc23bbd3079e1182786bfabd874fda35"><td class="mdescLeft">&#160;</td><td class="mdescRight">The format a target names for itself, or "" to use the image's.  <br /></td></tr>
 <tr class="memitem:a9fc3b2944ee3b49a381168779dfa5673" id="r_a9fc3b2944ee3b49a381168779dfa5673"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9fc3b2944ee3b49a381168779dfa5673">MaxSizeFor</a> (const std::string &amp;platformId) const</td></tr>
@@ -164,9 +166,38 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af7540269f8697080812ea2277e295a27" id="r_af7540269f8697080812ea2277e295a27"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#af7540269f8697080812ea2277e295a27">format</a></td></tr>
 <tr class="memitem:a1a16e4906e49d97c50ac7b8dbb9f6ad0" id="r_a1a16e4906e49d97c50ac7b8dbb9f6ad0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1a16e4906e49d97c50ac7b8dbb9f6ad0">maxSize</a> = 0</td></tr>
+<tr class="memitem:acdced4691f79e5db20e2203173f5afb5" id="r_acdced4691f79e5db20e2203173f5afb5"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#acdced4691f79e5db20e2203173f5afb5">filter</a></td></tr>
 <tr class="memitem:ad10b1e9aa5f0ba82b7db100b38fab73b" id="r_ad10b1e9aa5f0ba82b7db100b38fab73b"><td class="memItemLeft">std::map&lt; std::string, <a class="el" href="struct_deki_editor_1_1_texture_target_settings.html">TextureTargetSettings</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad10b1e9aa5f0ba82b7db100b38fab73b">targets</a></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="aadc831cd942045bd616895e7cd8af6dd" name="aadc831cd942045bd616895e7cd8af6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc831cd942045bd616895e7cd8af6dd">&#9670;&#160;</a></span>FilterFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::TextureSettings::FilterFor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>platformId</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The filter an image asks for on a target: its own, else the image's. </p>
+<p>What the target can draw is ResolveTextureFilter's to say. </p>
+
+</div>
+</div>
 <a id="adc23bbd3079e1182786bfabd874fda35" name="adc23bbd3079e1182786bfabd874fda35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc23bbd3079e1182786bfabd874fda35">&#9670;&#160;</a></span>TargetFormat()</h2>
 
@@ -244,6 +275,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int DekiEditor::TextureSettings::maxSize = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdced4691f79e5db20e2203173f5afb5" name="acdced4691f79e5db20e2203173f5afb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdced4691f79e5db20e2203173f5afb5">&#9670;&#160;</a></span>filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::TextureSettings::filter</td>
         </tr>
       </table>
 </div><div class="memdoc">

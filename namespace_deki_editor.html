@@ -59,7 +59,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -282,6 +282,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene view's current render context, for gizmo code to read:  <a href="class_deki_editor_1_1_scene_view.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SceneViewContext" id="r_SceneViewContext"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_scene_view_context.html">SceneViewContext</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Everything BeginObject() needs to set up an object's gizmo context.  <a href="struct_deki_editor_1_1_scene_view_context.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ShaderCompiler" id="r_ShaderCompiler"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_deki_editor_1_1_shader_compiler.html">ShaderCompiler</a></td></tr>
+<tr class="memitem:ShaderCompileRequest" id="r_ShaderCompileRequest"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_shader_compile_request.html">ShaderCompileRequest</a></td></tr>
+<tr class="memitem:ShaderStageText" id="r_ShaderStageText"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_shader_stage_text.html">ShaderStageText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One stage, in both dialects.  <a href="struct_deki_editor_1_1_shader_stage_text.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SpriteFrameData" id="r_SpriteFrameData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sprite_frame_data.html">SpriteFrameData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sprite frame's pixel rect within its texture, registered by frame GUID and used for rendering.  <a href="struct_deki_editor_1_1_sprite_frame_data.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SpriteSettings" id="r_SpriteSettings"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sprite_settings.html">SpriteSettings</a></td></tr>
@@ -289,6 +293,8 @@ Classes</h2></td></tr>
 <tr class="memitem:SubAssetInfo" id="r_SubAssetInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sub_asset_info.html">SubAssetInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An item inside a parent asset, such as a sprite frame or a LOD level.  <a href="struct_deki_editor_1_1_sub_asset_info.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SubComponentDef" id="r_SubComponentDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_sub_component_def.html">SubComponentDef</a></td></tr>
+<tr class="memitem:TargetCardInfo" id="r_TargetCardInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_target_card_info.html">TargetCardInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One card's header.  <a href="struct_deki_editor_1_1_target_card_info.html#details">More...</a><br /></td></tr>
 <tr class="memitem:TargetContentConflict" id="r_TargetContentConflict"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_target_content_conflict.html">TargetContentConflict</a></td></tr>
 <tr class="memitem:TexData" id="r_TexData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_tex_data.html">TexData</a></td></tr>
 <tr class="memitem:TexHeader" id="r_TexHeader"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_deki_editor_1_1_tex_header.html">TexHeader</a></td></tr>
@@ -306,10 +312,14 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:acfcbbcee26213394d590a174db83fbb3" id="r_acfcbbcee26213394d590a174db83fbb3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#acfcbbcee26213394d590a174db83fbb3">AssetCacheHandler</a> = std::function&lt;<a class="el" href="#a4209b652941c08ae4d42581f7462c61d">AssetCacheResult</a>(const <a class="el" href="struct_deki_editor_1_1_asset_cache_context.html">AssetCacheContext</a>&amp; ctx)&gt;</td></tr>
 <tr class="memdesc:acfcbbcee26213394d590a174db83fbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by ProcessAsset for the extensions it is registered for.  <br /></td></tr>
+<tr class="memitem:a5ec6111ff9ba782f54e70e4c30f284a4" id="r_a5ec6111ff9ba782f54e70e4c30f284a4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a5ec6111ff9ba782f54e70e4c30f284a4">SceneExportCheck</a></td></tr>
+<tr class="memdesc:a5ec6111ff9ba782f54e70e4c30f284a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A look at a scene a build ships, for what its target does without that the build still allows, such as a light's shadows on a board without OpenGL.  <br /></td></tr>
 <tr class="memitem:a9acda1ed4f943d71cfe2cced8dfda57c" id="r_a9acda1ed4f943d71cfe2cced8dfda57c"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9acda1ed4f943d71cfe2cced8dfda57c">AssetExportEncoder</a> = std::function&lt;bool(const <a class="el" href="struct_deki_editor_1_1_asset_export_context.html">AssetExportContext</a>&amp; ctx)&gt;</td></tr>
 <tr class="memdesc:a9acda1ed4f943d71cfe2cced8dfda57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an asset the way a given target stores it.  <br /></td></tr>
 <tr class="memitem:ae082f09529208fe90840be48c6282da7" id="r_ae082f09529208fe90840be48c6282da7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ae082f09529208fe90840be48c6282da7">AssetDependencyReporter</a></td></tr>
 <tr class="memdesc:ae082f09529208fe90840be48c6282da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists, by GUID, the assets an asset uses that a scene does not name: a tilemap's tilesets, a tileset's image.  <br /></td></tr>
+<tr class="memitem:a57737e2579d6c245cd106ad0aa3bb753" id="r_a57737e2579d6c245cd106ad0aa3bb753"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a57737e2579d6c245cd106ad0aa3bb753">AssetSourceFilesReporter</a> = std::function&lt;std::vector&lt;std::string&gt;(const std::string&amp; absolutePath)&gt;</td></tr>
+<tr class="memdesc:a57737e2579d6c245cd106ad0aa3bb753"><td class="mdescLeft">&#160;</td><td class="mdescRight">The other files an asset is compiled from, absolute: a model's material library and texture images.  <br /></td></tr>
 <tr class="memitem:af8aa323fd48862ba7ab9aa36155abac7" id="r_af8aa323fd48862ba7ab9aa36155abac7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af8aa323fd48862ba7ab9aa36155abac7">DownloadProgressCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_download_progress.html">DownloadProgress</a>&amp;)&gt;</td></tr>
 <tr class="memitem:a2322b9ebd0b9ae159d225a2b4294465e" id="r_a2322b9ebd0b9ae159d225a2b4294465e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a2322b9ebd0b9ae159d225a2b4294465e">VersionCheckCallback</a> = std::function&lt;void(const <a class="el" href="struct_deki_editor_1_1_toolchain_version_info.html">ToolchainVersionInfo</a>&amp;)&gt;</td></tr>
 <tr class="memitem:a102fc12c05cce32374d11e0fe46bf847" id="r_a102fc12c05cce32374d11e0fe46bf847"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a102fc12c05cce32374d11e0fe46bf847">BuildOutputCallback</a> = std::function&lt;void(const std::string&amp; line, bool isError)&gt;</td></tr>
@@ -414,6 +424,9 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954">Stripped</a>
 <br />
  }</td></tr>
+<tr class="memitem:a618948497317ba6329ff1939c3b9a4af" id="r_a618948497317ba6329ff1939c3b9a4af"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a618948497317ba6329ff1939c3b9a4af">ShaderStage</a> { <a class="el" href="#a618948497317ba6329ff1939c3b9a4afab22b929ba52471a02d18bb3a4e4472e6">Vertex</a>
+, <a class="el" href="#a618948497317ba6329ff1939c3b9a4afa37d01b98065725fe3a1d30acf3a0064a">Fragment</a>
+ }</td></tr>
 <tr class="memitem:a5d253adfc040f7eff5a1cc013014917e" id="r_a5d253adfc040f7eff5a1cc013014917e"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a5d253adfc040f7eff5a1cc013014917e">TexFlags</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="#a5d253adfc040f7eff5a1cc013014917ea6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
 , <a class="el" href="#a5d253adfc040f7eff5a1cc013014917eaa5e11673876486df9e54fc7de39e9a76">HasTransparency</a> = 0x01
@@ -478,11 +491,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:aff6756db3269d948e462dd9b4c059f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same, from a file the backend locates itself.  <br /></td></tr>
 <tr class="memitem:a8401dfa502ae14dd9a98c45f66392b1d" id="r_a8401dfa502ae14dd9a98c45f66392b1d"><td class="memItemLeft"><a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a8401dfa502ae14dd9a98c45f66392b1d">SelectBuilder</a> (const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;builders, const std::string &amp;framework)</td></tr>
 <tr class="memdesc:a8401dfa502ae14dd9a98c45f66392b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The builder claiming <span class="tt">framework</span>, or nullptr.  <br /></td></tr>
-<tr class="memitem:aace137306a1c0d81bfa1df8eeb9498b1" id="r_aace137306a1c0d81bfa1df8eeb9498b1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aace137306a1c0d81bfa1df8eeb9498b1">DescribeNoBuilder</a> (const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;builders, const std::string &amp;framework)</td></tr>
-<tr class="memdesc:aace137306a1c0d81bfa1df8eeb9498b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Why no builder matched, for the error the user sees: names the framework asked for and lists the registered ones.  <br /></td></tr>
+<tr class="memitem:acff7da7252bcb0ea00deae276f002d05" id="r_acff7da7252bcb0ea00deae276f002d05"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#acff7da7252bcb0ea00deae276f002d05">DescribeNoBuilder</a> (const std::vector&lt; <a class="el" href="class_deki_editor_1_1_i_target_builder.html">ITargetBuilder</a> * &gt; &amp;builders, const std::string &amp;framework, const std::vector&lt; std::string &gt; &amp;packageBuildErrors={})</td></tr>
+<tr class="memdesc:acff7da7252bcb0ea00deae276f002d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Why no builder matched, for the error the user sees: names the framework asked for and lists the registered ones.  <br /></td></tr>
 <tr class="memitem:a72f47d14149b3b8eacc846705c5eca64" id="r_a72f47d14149b3b8eacc846705c5eca64"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a72f47d14149b3b8eacc846705c5eca64">DrawStringListEditor</a> (const char *label, std::vector&lt; std::string &gt; &amp;list, char *newItemBuffer, size_t bufSize)</td></tr>
 <tr class="memdesc:a72f47d14149b3b8eacc846705c5eca64"><td class="mdescLeft">&#160;</td><td class="mdescRight">An editable list of strings: one row per entry with a remove button, and a field that appends.  <br /></td></tr>
 <tr class="memitem:a108e930c2d2e29a6e3026f653469cf78" id="r_a108e930c2d2e29a6e3026f653469cf78"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a108e930c2d2e29a6e3026f653469cf78">IsValidCapabilityName</a> (const std::string &amp;name)</td></tr>
+<tr class="memitem:ac60708607c0ae9a2457506de1010cd4b" id="r_ac60708607c0ae9a2457506de1010cd4b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ac60708607c0ae9a2457506de1010cd4b">CurrentCapabilityName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:ac60708607c0ae9a2457506de1010cd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><span class="tt">name</span> as capabilities are called now: a renamed one's new name, any other as it is.  <br /></td></tr>
 <tr class="memitem:a4dd3953d577702c03f364b774a77bda9" id="r_a4dd3953d577702c03f364b774a77bda9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4dd3953d577702c03f364b774a77bda9">PlatformFromJson</a> (const std::string &amp;text, <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config)</td></tr>
 <tr class="memdesc:a4dd3953d577702c03f364b774a77bda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A platform as JSON text, in the one form SavePlatformToFile writes.  <br /></td></tr>
 <tr class="memitem:a462fb0492dc13176c92ee2295328e39a" id="r_a462fb0492dc13176c92ee2295328e39a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a462fb0492dc13176c92ee2295328e39a">PlatformToJson</a> (const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> &amp;config)</td></tr>
@@ -522,7 +537,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad26c0046658ede6a823f430281b1e5b0" id="r_ad26c0046658ede6a823f430281b1e5b0"><td class="memItemLeft"><a class="el" href="class_deki_1_1_component.html">Deki::Component</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad26c0046658ede6a823f430281b1e5b0">AddComponentByName</a> (<a class="el" href="class_deki_1_1_object.html">Deki::Object</a> *object, const std::string &amp;typeName)</td></tr>
 <tr class="memdesc:ad26c0046658ede6a823f430281b1e5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a component by its qualified class name and attaches it to <span class="tt">object</span>.  <br /></td></tr>
 <tr class="memitem:a4223c0f07da52769789798c2fef0991c" id="r_a4223c0f07da52769789798c2fef0991c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4223c0f07da52769789798c2fef0991c">SetupEditorTheme</a> (float dpiScale)</td></tr>
-<tr class="memdesc:a4223c0f07da52769789798c2fef0991c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the <a class="el" href="namespace_deki.html">Deki</a> schematic theme to ImGui.  <br /></td></tr>
+<tr class="memdesc:a4223c0f07da52769789798c2fef0991c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the <a class="el" href="namespace_deki.html" title="The file system of a game that runs as a program on an operating system (the desktop build,...">Deki</a> schematic theme to ImGui.  <br /></td></tr>
 <tr class="memitem:a79876406984e4587dfe00432b559d4e5" id="r_a79876406984e4587dfe00432b559d4e5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a79876406984e4587dfe00432b559d4e5">Tooltip</a> (const char *fmt,...) IM_FMTARGS(1)</td></tr>
 <tr class="memitem:ad68d7cef15432cdce34b4c6019b2afc6" id="r_ad68d7cef15432cdce34b4c6019b2afc6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad68d7cef15432cdce34b4c6019b2afc6">FirstUseWindowPlacement</a> (float width, float height)</td></tr>
 <tr class="memdesc:ad68d7cef15432cdce34b4c6019b2afc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a window first appears: <span class="tt">width</span> x <span class="tt">height</span>, centred over the editor.  <br /></td></tr>
@@ -553,6 +568,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad396d2bd3f0f868786d65d5e1b322521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a tree node's expand chevron (Tabler chevron, down=open / right=closed) and its label, in place of ImGui's filled triangle.  <br /></td></tr>
 <tr class="memitem:a5001e03f52ced7b9c2da14f1a3606eab" id="r_a5001e03f52ced7b9c2da14f1a3606eab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5001e03f52ced7b9c2da14f1a3606eab">FullBleedSeparator</a> ()</td></tr>
 <tr class="memdesc:a5001e03f52ced7b9c2da14f1a3606eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like ImGui::Separator(), but the hairline spans the full panel width, past the indent on the left and past the scrollbar on the right, so it touches both dock seams.  <br /></td></tr>
+<tr class="memitem:af432290d675a398dcd855d97a6c4eee9" id="r_af432290d675a398dcd855d97a6c4eee9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af432290d675a398dcd855d97a6c4eee9">SectionAlignedCursorX</a> ()</td></tr>
+<tr class="memdesc:af432290d675a398dcd855d97a6c4eee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a section band's labels (and the rows under it) start: a fixed indent in from the band's left edge, which sits kSectionHeaderOutdent left of the cursor (never past the panel's margin).  <br /></td></tr>
+<tr class="memitem:a39346c8660df7dc1a0440c7f716ee8b5" id="r_a39346c8660df7dc1a0440c7f716ee8b5"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a39346c8660df7dc1a0440c7f716ee8b5">PropertyLabelWidth</a> (float labelStartX)</td></tr>
+<tr class="memdesc:a39346c8660df7dc1a0440c7f716ee8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of a property row's label column: 42% of the row, kept between 5.5em and 9em.  <br /></td></tr>
 <tr class="memitem:a11d9f8c59aa4345379ca20af0af7aa29" id="r_a11d9f8c59aa4345379ca20af0af7aa29"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a11d9f8c59aa4345379ca20af0af7aa29">PanelToolbar</a> (bool *pinned=nullptr)</td></tr>
 <tr class="memdesc:a11d9f8c59aa4345379ca20af0af7aa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">The toolbar under a panel's tab: a full-width strip with a PIN (lock-to-selection) toggle on the left, a "..." menu on the right and a hairline below.  <br /></td></tr>
 <tr class="memitem:a626aeef38978fb6f07f2404ad171546f" id="r_a626aeef38978fb6f07f2404ad171546f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a626aeef38978fb6f07f2404ad171546f">SearchField</a> (const char *id, char *buf, size_t bufSize, float rightReserve=0.0f, bool bottomBorder=false, float *outSlotX=nullptr, float *outSlotY=nullptr, float *outSlotW=nullptr, float *outSlotH=nullptr, const char *hint=&quot;Search&quot;)</td></tr>
@@ -675,6 +694,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1f3bff694e056e0f22f904569fcb3027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial ports on the machine, sorted (COM1 before COM10 on Windows).  <br /></td></tr>
 <tr class="memitem:adf38dfc52dc7be49a3a996d28b67d4d3" id="r_adf38dfc52dc7be49a3a996d28b67d4d3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adf38dfc52dc7be49a3a996d28b67d4d3">RunShellCommand</a> (const std::string &amp;commandLine, const std::string &amp;workingDirectory, const std::function&lt; void(const std::string &amp;line)&gt; &amp;onLine, const std::atomic&lt; bool &gt; *cancel=nullptr)</td></tr>
 <tr class="memdesc:adf38dfc52dc7be49a3a996d28b67d4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs <span class="tt">commandLine</span> through the platform shell: <span class="tt">cmd.exe /S /C "&lt;line&gt;"</span> on Windows, <span class="tt">/bin/sh -c</span> elsewhere.  <br /></td></tr>
+<tr class="memitem:a833f76dc154ca329f8920e036891e1ff" id="r_a833f76dc154ca329f8920e036891e1ff"><td class="memItemLeft">std::vector&lt; const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a833f76dc154ca329f8920e036891e1ff">ProjectTargets</a> (const std::string &amp;projectPath)</td></tr>
+<tr class="memdesc:a833f76dc154ca329f8920e036891e1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The platforms this project can build for, in the registry's order: its own (platforms/&lt;id&gt;/), those its packages offer, and the installed board packs', as ReloadProjectPlatforms fills the registry for it.  <br /></td></tr>
+<tr class="memitem:acb75fd37dce2a379340c7045fa3598f6" id="r_acb75fd37dce2a379340c7045fa3598f6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acb75fd37dce2a379340c7045fa3598f6">TargetCardsBegin</a> ()</td></tr>
+<tr class="memdesc:acb75fd37dce2a379340c7045fa3598f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the Targets section.  <br /></td></tr>
+<tr class="memitem:a91127de6ede116d5416a2cb32bdf4cd5" id="r_a91127de6ede116d5416a2cb32bdf4cd5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a91127de6ede116d5416a2cb32bdf4cd5">TargetCardsEnd</a> ()</td></tr>
+<tr class="memitem:aff1551e0bfa05928223c8d44e1fbaba8" id="r_aff1551e0bfa05928223c8d44e1fbaba8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aff1551e0bfa05928223c8d44e1fbaba8">TargetCard</a> (const <a class="el" href="struct_deki_editor_1_1_target_card_info.html">TargetCardInfo</a> &amp;info, bool &amp;open, const std::function&lt; void(float labelX, float valueX, float valueW)&gt; &amp;body)</td></tr>
+<tr class="memdesc:aff1551e0bfa05928223c8d44e1fbaba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A card.  <br /></td></tr>
+<tr class="memitem:af9784c04e22cb9a2b806ff35d8a4ae5d" id="r_af9784c04e22cb9a2b806ff35d8a4ae5d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af9784c04e22cb9a2b806ff35d8a4ae5d">TargetCardRow</a> (const char *label, float labelX, float valueX)</td></tr>
+<tr class="memdesc:af9784c04e22cb9a2b806ff35d8a4ae5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A row inside a card: the label (translated), then the cursor at valueX for its control.  <br /></td></tr>
+<tr class="memitem:a2e5b725636da2a47843ad6c9457cb816" id="r_a2e5b725636da2a47843ad6c9457cb816"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2e5b725636da2a47843ad6c9457cb816">TargetOverrideCombo</a> (const char *id, float width, const char *preview, bool fromDefault, const std::string &amp;defaultLabel, const std::function&lt; const char *(int)&gt; &amp;label, int count, int firstIndex, int &amp;index)</td></tr>
+<tr class="memdesc:a2e5b725636da2a47843ad6c9457cb816"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dropdown whose closed box shows <span class="tt">preview</span>, dimmed when it comes from Default, and whose list starts with <span class="tt">defaultLabel</span> (choosing it sets <span class="tt">index</span> to firstIndex - 1), then label(firstIndex) .  <br /></td></tr>
 <tr class="memitem:ae8c758dc87100d07d8cc509498e7d897" id="r_ae8c758dc87100d07d8cc509498e7d897"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae8c758dc87100d07d8cc509498e7d897">ParseTextureFormat</a> (const std::string &amp;name, <a class="el" href="#a8c67ad30b594830135ad4b626be3c7cc">TextureFormat</a> &amp;out)</td></tr>
 <tr class="memdesc:ae8c758dc87100d07d8cc509498e7d897"><td class="mdescLeft">&#160;</td><td class="mdescRight">A texture format by the name the sidecar and the inspector use.  <br /></td></tr>
 <tr class="memitem:a49c2cb87a6bec866f60ac0407b159d95" id="r_a49c2cb87a6bec866f60ac0407b159d95"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a49c2cb87a6bec866f60ac0407b159d95">TextureFormatName</a> (<a class="el" href="#a8c67ad30b594830135ad4b626be3c7cc">TextureFormat</a> f)</td></tr>
@@ -693,6 +723,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:aef9a71605689871d2390a59b9d0178cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes one target's values into <span class="tt">settings.texture</span>, always in the object form.  <br /></td></tr>
 <tr class="memitem:adcb3a815a26784b48f5f99a5b9dcda0d" id="r_adcb3a815a26784b48f5f99a5b9dcda0d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adcb3a815a26784b48f5f99a5b9dcda0d">MaxSizeDims</a> (int srcW, int srcH, int maxSize, int &amp;outW, int &amp;outH)</td></tr>
 <tr class="memdesc:adcb3a815a26784b48f5f99a5b9dcda0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size an image of srcW x srcH is stored at under <span class="tt">maxSize</span> (0 = no limit): unchanged when it fits, else its larger side becomes maxSize and the other keeps the proportion (at least 1).  <br /></td></tr>
+<tr class="memitem:a6012b5944b259c90c1ab39f6ce7f10f0" id="r_a6012b5944b259c90c1ab39f6ce7f10f0"><td class="memItemLeft"><a class="el" href="struct_deki_editor_1_1_texture_settings.html">TextureSettings</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6012b5944b259c90c1ab39f6ce7f10f0">ReadImageTextureSettings</a> (const std::string &amp;imagePath)</td></tr>
+<tr class="memdesc:a6012b5944b259c90c1ab39f6ce7f10f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture settings of the image at <span class="tt">imagePath</span> (absolute), from its sidecar (<span class="tt">&lt;image&gt;.data</span>, settings.texture); defaults when it has none.  <br /></td></tr>
+<tr class="memitem:ae6df0b78bc00577d2e8b4611bd87edaf" id="r_ae6df0b78bc00577d2e8b4611bd87edaf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6df0b78bc00577d2e8b4611bd87edaf">SetTextureFilteringCapabilities</a> (std::set&lt; std::string &gt; capabilities)</td></tr>
+<tr class="memdesc:ae6df0b78bc00577d2e8b4611bd87edaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The capabilities with which the project's packages draw textures filtered (<a class="el" href="namespace_deki_editor_1_1_c_make_gen.html#a7ef8fce965635b9b45869dae4fc7b572" title="Every capability some package filters textures with (its filtersTexturesWith).">CMakeGen::TextureFilteringCapabilities</a> of its packages).  <br /></td></tr>
+<tr class="memitem:af8029af9870ff720144b69da37d368ad" id="r_af8029af9870ff720144b69da37d368ad"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af8029af9870ff720144b69da37d368ad">TargetSamplesTextures</a> (const std::string &amp;platformId)</td></tr>
+<tr class="memdesc:af8029af9870ff720144b69da37d368ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <span class="tt">platformId</span> draws textures filtered, so a texture's filter means something there: a platform that provides a capability some package filters with (deki-rendering's "opengl"), or "" (the editor's own desktop).  <br /></td></tr>
+<tr class="memitem:a5898aeb82aafa8f27cea23b57a05c1fe" id="r_a5898aeb82aafa8f27cea23b57a05c1fe"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a50a75bf86f88c438697d0ef96de468fc">Deki::TextureFilter</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5898aeb82aafa8f27cea23b57a05c1fe">ResolveTextureFilter</a> (const <a class="el" href="struct_deki_editor_1_1_texture_settings.html">TextureSettings</a> &amp;settings, const std::string &amp;platformId)</td></tr>
+<tr class="memdesc:a5898aeb82aafa8f27cea23b57a05c1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The filter an image is drawn with on <span class="tt">platformId</span>: FilterFor's, or Point where the target has no GPU (TargetSamplesTextures), and for a name that is not a filter.  <br /></td></tr>
 <tr class="memitem:a3155a24a405bf2cfe905d1aba6bd2460" id="r_a3155a24a405bf2cfe905d1aba6bd2460"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3155a24a405bf2cfe905d1aba6bd2460">SourceToStored</a> (int v, int sourceSize, int storedSize)</td></tr>
 <tr class="memdesc:a3155a24a405bf2cfe905d1aba6bd2460"><td class="mdescLeft">&#160;</td><td class="mdescRight">A source-pixel coordinate on one axis (a rect edge, not a size) in stored pixels: round(v * stored / source).  <br /></td></tr>
 <tr class="memitem:ab602781dafd57a99fd3a9a3cf6c50795" id="r_ab602781dafd57a99fd3a9a3cf6c50795"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab602781dafd57a99fd3a9a3cf6c50795">CompareVersions</a> (const std::string &amp;a, const std::string &amp;b)</td></tr>
@@ -702,7 +740,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac3bbd60d46cd0aa01f90977ef559b767" id="r_ac3bbd60d46cd0aa01f90977ef559b767"><td class="memItemLeft">constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#ac3bbd60d46cd0aa01f90977ef559b767">kDekiCacheVersion</a> = 5</td></tr>
+<tr class="memitem:ac3bbd60d46cd0aa01f90977ef559b767" id="r_ac3bbd60d46cd0aa01f90977ef559b767"><td class="memItemLeft">constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#ac3bbd60d46cd0aa01f90977ef559b767">kDekiCacheVersion</a> = 9</td></tr>
 <tr class="memitem:ad7ca258649fed5356a4129cf3b12d2f7" id="r_ad7ca258649fed5356a4129cf3b12d2f7"><td class="memItemLeft">constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#ad7ca258649fed5356a4129cf3b12d2f7">kSceneCompileVersion</a> = 2</td></tr>
 <tr class="memitem:a059115ff8f9ef9ef2026e15027de859b" id="r_a059115ff8f9ef9ef2026e15027de859b"><td class="memItemLeft">constexpr const char *&#160;</td><td class="memItemRight"><a class="el" href="#a059115ff8f9ef9ef2026e15027de859b">kSimulationSceneDir</a> = &quot;simulation&quot;</td></tr>
 <tr class="memdesc:a059115ff8f9ef9ef2026e15027de859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a simulated build keeps its boot scene: this directory under the builder's build directory, as boot.scene.  <br /></td></tr>
@@ -744,6 +782,27 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a5ec6111ff9ba782f54e70e4c30f284a4" name="a5ec6111ff9ba782f54e70e4c30f284a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec6111ff9ba782f54e70e4c30f284a4">&#9670;&#160;</a></span>SceneExportCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5ec6111ff9ba782f54e70e4c30f284a4">DekiEditor::SceneExportCheck</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">std::function&lt;void(<span class="keyword">const</span> <a class="code hl_class" href="class_deki_1_1_scene.html">Deki::Scene</a>&amp; scene, <span class="keyword">const</span> std::string&amp; scenePath,</div>
+<div class="line">                                           <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; capabilities,</div>
+<div class="line">                                           std::vector&lt;std::string&gt;&amp; warnings)&gt;</div>
+<div class="ttc" id="aclass_deki_1_1_scene_html"><div class="ttname"><a href="class_deki_1_1_scene.html">Deki::Scene</a></div><div class="ttdoc">A scene: objects with components, and Deki&#39;s basic unit of content.</div><div class="ttdef"><b>Definition</b> Scene.h:32</div></div>
+</div><!-- fragment -->
+<p>A look at a scene a build ships, for what its target does without that the build still allows, such as a light's shadows on a board without OpenGL. </p>
+<p>Each line added to <span class="tt">warnings</span> is listed in the build's output; the build goes on. <span class="tt">capabilities</span> are the target platform's ("opengl", ...). </p>
+
+</div>
+</div>
 <a id="a9acda1ed4f943d71cfe2cced8dfda57c" name="a9acda1ed4f943d71cfe2cced8dfda57c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9acda1ed4f943d71cfe2cced8dfda57c">&#9670;&#160;</a></span>AssetExportEncoder</h2>
 
@@ -757,7 +816,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes an asset the way a given target stores it. </p>
-<p>Registered per extension by the package that owns the asset type, next to its cache handler. Returns false when it could not write outPath; the export then reports it and ships nothing for that asset. </p>
+<p>Registered per extension by the package that owns the asset type, next to its cache handler. Returns false, with the reason in *ctx.error, when it could not write outPath; the build then stops and lists it. </p>
 
 </div>
 </div>
@@ -774,10 +833,28 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
 <div class="line">std::function&lt;std::vector&lt;std::string&gt;(<span class="keyword">const</span> std::string&amp; absolutePath, <a class="code hl_class" href="class_deki_editor_1_1_asset_pipeline.html">AssetPipeline</a>* pipeline)&gt;</div>
-<div class="ttc" id="aclass_deki_editor_1_1_asset_pipeline_html"><div class="ttname"><a href="class_deki_editor_1_1_asset_pipeline.html">DekiEditor::AssetPipeline</a></div><div class="ttdoc">The asset import pipeline, like Unity&#39;s: finds assets, gives them GUIDs and compiles them into the ca...</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:121</div></div>
+<div class="ttc" id="aclass_deki_editor_1_1_asset_pipeline_html"><div class="ttname"><a href="class_deki_editor_1_1_asset_pipeline.html">DekiEditor::AssetPipeline</a></div><div class="ttdoc">The asset import pipeline, like Unity&#39;s: finds assets, gives them GUIDs and compiles them into the ca...</div><div class="ttdef"><b>Definition</b> AssetPipeline.h:153</div></div>
 </div><!-- fragment -->
 <p>Lists, by GUID, the assets an asset uses that a scene does not name: a tilemap's tilesets, a tileset's image. </p>
 <p>A build ships them with it; without them the asset loads on a device and draws nothing.</p>
+<p>Registered per extension by the package that owns the asset type, next to its cache handler. Given the asset's absolute path. </p>
+
+</div>
+</div>
+<a id="a57737e2579d6c245cd106ad0aa3bb753" name="a57737e2579d6c245cd106ad0aa3bb753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57737e2579d6c245cd106ad0aa3bb753">&#9670;&#160;</a></span>AssetSourceFilesReporter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a57737e2579d6c245cd106ad0aa3bb753">DekiEditor::AssetSourceFilesReporter</a> = std::function&lt;std::vector&lt;std::string&gt;(const std::string&amp; absolutePath)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The other files an asset is compiled from, absolute: a model's material library and texture images. </p>
+<p>They and their sidecars are part of its cache stamp, so a change to one, or to its settings, rebuilds the asset; and when one of them is processed, the assets compiled from it are processed again.</p>
 <p>Registered per extension by the package that owns the asset type, next to its cache handler. Given the asset's absolute path. </p>
 
 </div>
@@ -1212,6 +1289,32 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a979ef112f87481c1c53464419070c00b" name="aaf7c4d4a830420db63a30d992d937642a979ef112f87481c1c53464419070c00b"></a>DefaultOn&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a67fbb19beaab450abf96596704779bd6" name="aaf7c4d4a830420db63a30d992d937642a67fbb19beaab450abf96596704779bd6"></a>ForcedOff&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954" name="aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954"></a>Stripped&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a618948497317ba6329ff1939c3b9a4af" name="a618948497317ba6329ff1939c3b9a4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618948497317ba6329ff1939c3b9a4af">&#9670;&#160;</a></span>ShaderStage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a618948497317ba6329ff1939c3b9a4af">DekiEditor::ShaderStage</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a618948497317ba6329ff1939c3b9a4afab22b929ba52471a02d18bb3a4e4472e6" name="a618948497317ba6329ff1939c3b9a4afab22b929ba52471a02d18bb3a4e4472e6"></a>Vertex&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a618948497317ba6329ff1939c3b9a4afa37d01b98065725fe3a1d30acf3a0064a" name="a618948497317ba6329ff1939c3b9a4afa37d01b98065725fe3a1d30acf3a0064a"></a>Fragment&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1731,8 +1834,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aace137306a1c0d81bfa1df8eeb9498b1" name="aace137306a1c0d81bfa1df8eeb9498b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace137306a1c0d81bfa1df8eeb9498b1">&#9670;&#160;</a></span>DescribeNoBuilder()</h2>
+<a id="acff7da7252bcb0ea00deae276f002d05" name="acff7da7252bcb0ea00deae276f002d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff7da7252bcb0ea00deae276f002d05">&#9670;&#160;</a></span>DescribeNoBuilder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1745,12 +1848,18 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>framework</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>framework</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>packageBuildErrors</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Why no builder matched, for the error the user sees: names the framework asked for and lists the registered ones. </p>
+<p>Build backends come from packages, so when the project's packages did not build, <span class="tt">packageBuildErrors</span> (their first error lines) says that is why theirs are missing. </p>
 
 </div>
 </div>
@@ -1803,6 +1912,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac60708607c0ae9a2457506de1010cd4b" name="ac60708607c0ae9a2457506de1010cd4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60708607c0ae9a2457506de1010cd4b">&#9670;&#160;</a></span>CurrentCapabilityName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DekiEditor::CurrentCapabilityName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><span class="tt">name</span> as capabilities are called now: a renamed one's new name, any other as it is. </p>
+<p><span class="tt">desktop-os</span> is <span class="tt">hosted</span>: an operating system starts the game as a program and gets control back when it quits (the desktop simulator, a Linux handheld). A board whose firmware is the game, RTOS included, is not hosted. The old name is read for one release, and whoever reads it from a file warns, naming the file. </p>
 
 </div>
 </div>
@@ -2321,7 +2450,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Applies the <a class="el" href="namespace_deki.html">Deki</a> schematic theme to ImGui. </p>
+<p>Applies the <a class="el" href="namespace_deki.html" title="The file system of a game that runs as a program on an operating system (the desktop build,...">Deki</a> schematic theme to ImGui. </p>
 <p>Call after ImGui::CreateContext() and before the first frame. </p>
 
 </div>
@@ -2779,6 +2908,46 @@ children" are different questions here, and pairing on the wrong one is an easy 
 
 <p>Like ImGui::Separator(), but the hairline spans the full panel width, past the indent on the left and past the scrollbar on the right, so it touches both dock seams. </p>
 <p>Use it to bound a component section like a window edge. </p>
+
+</div>
+</div>
+<a id="af432290d675a398dcd855d97a6c4eee9" name="af432290d675a398dcd855d97a6c4eee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af432290d675a398dcd855d97a6c4eee9">&#9670;&#160;</a></span>SectionAlignedCursorX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::SectionAlignedCursorX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Where a section band's labels (and the rows under it) start: a fixed indent in from the band's left edge, which sits kSectionHeaderOutdent left of the cursor (never past the panel's margin). </p>
+<p>Window-relative x, ready for SetCursorPosX. </p>
+
+</div>
+</div>
+<a id="a39346c8660df7dc1a0440c7f716ee8b5" name="a39346c8660df7dc1a0440c7f716ee8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39346c8660df7dc1a0440c7f716ee8b5">&#9670;&#160;</a></span>PropertyLabelWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DekiEditor::PropertyLabelWidth </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>labelStartX</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Width of a property row's label column: 42% of the row, kept between 5.5em and 9em. </p>
+<p>A wide Inspector gives long names room, a narrow one still leaves the value usable, and below 5.5em names are cut instead. </p>
 
 </div>
 </div>
@@ -4794,6 +4963,179 @@ children" are different questions here, and pairing on the wrong one is an easy 
 
 </div>
 </div>
+<a id="a833f76dc154ca329f8920e036891e1ff" name="a833f76dc154ca329f8920e036891e1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833f76dc154ca329f8920e036891e1ff">&#9670;&#160;</a></span>ProjectTargets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; const <a class="el" href="struct_deki_editor_1_1_platform_config.html">PlatformConfig</a> * &gt; DekiEditor::ProjectTargets </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>projectPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The platforms this project can build for, in the registry's order: its own (platforms/&lt;id&gt;/), those its packages offer, and the installed board packs', as ReloadProjectPlatforms fills the registry for it. </p>
+<p>The same list as the Build panel's, so every platform a build can target has its card. </p>
+
+</div>
+</div>
+<a id="acb75fd37dce2a379340c7045fa3598f6" name="acb75fd37dce2a379340c7045fa3598f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb75fd37dce2a379340c7045fa3598f6">&#9670;&#160;</a></span>TargetCardsBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::TargetCardsBegin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts the Targets section. </p>
+<p>False when it is folded: draw nothing more and do not call TargetCardsEnd. </p>
+
+</div>
+</div>
+<a id="a91127de6ede116d5416a2cb32bdf4cd5" name="a91127de6ede116d5416a2cb32bdf4cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91127de6ede116d5416a2cb32bdf4cd5">&#9670;&#160;</a></span>TargetCardsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::TargetCardsEnd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff1551e0bfa05928223c8d44e1fbaba8" name="aff1551e0bfa05928223c8d44e1fbaba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1551e0bfa05928223c8d44e1fbaba8">&#9670;&#160;</a></span>TargetCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::TargetCard </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_editor_1_1_target_card_info.html">TargetCardInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>open</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(float labelX, float valueX, float valueW)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A card. </p>
+<p><span class="tt">body</span> draws its rows when it is open, given where labels start, where values start, and how wide a value may be. </p>
+
+</div>
+</div>
+<a id="af9784c04e22cb9a2b806ff35d8a4ae5d" name="af9784c04e22cb9a2b806ff35d8a4ae5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9784c04e22cb9a2b806ff35d8a4ae5d">&#9670;&#160;</a></span>TargetCardRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::TargetCardRow </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>labelX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>valueX</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A row inside a card: the label (translated), then the cursor at valueX for its control. </p>
+
+</div>
+</div>
+<a id="a2e5b725636da2a47843ad6c9457cb816" name="a2e5b725636da2a47843ad6c9457cb816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5b725636da2a47843ad6c9457cb816">&#9670;&#160;</a></span>TargetOverrideCombo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::TargetOverrideCombo </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>preview</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fromDefault</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>defaultLabel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; const char *(int)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>firstIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A dropdown whose closed box shows <span class="tt">preview</span>, dimmed when it comes from Default, and whose list starts with <span class="tt">defaultLabel</span> (choosing it sets <span class="tt">index</span> to firstIndex - 1), then label(firstIndex) . </p>
+<p>. label(count - 1), translated. True when <span class="tt">index</span> changed. </p>
+
+</div>
+</div>
 <a id="ae8c758dc87100d07d8cc509498e7d897" name="ae8c758dc87100d07d8cc509498e7d897"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8c758dc87100d07d8cc509498e7d897">&#9670;&#160;</a></span>ParseTextureFormat()</h2>
 
@@ -5114,6 +5456,89 @@ children" are different questions here, and pairing on the wrong one is an easy 
 
 </div>
 </div>
+<a id="a6012b5944b259c90c1ab39f6ce7f10f0" name="a6012b5944b259c90c1ab39f6ce7f10f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6012b5944b259c90c1ab39f6ce7f10f0">&#9670;&#160;</a></span>ReadImageTextureSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_editor_1_1_texture_settings.html">TextureSettings</a> DekiEditor::ReadImageTextureSettings </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>imagePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The texture settings of the image at <span class="tt">imagePath</span> (absolute), from its sidecar (<span class="tt">&lt;image&gt;.data</span>, settings.texture); defaults when it has none. </p>
+<p>How anything that stores an image (a model's textures) reads the image's own settings. </p>
+
+</div>
+</div>
+<a id="ae6df0b78bc00577d2e8b4611bd87edaf" name="ae6df0b78bc00577d2e8b4611bd87edaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6df0b78bc00577d2e8b4611bd87edaf">&#9670;&#160;</a></span>SetTextureFilteringCapabilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::SetTextureFilteringCapabilities </td>
+          <td>(</td>
+          <td class="paramtype">std::set&lt; std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>capabilities</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The capabilities with which the project's packages draw textures filtered (<a class="el" href="namespace_deki_editor_1_1_c_make_gen.html#a7ef8fce965635b9b45869dae4fc7b572" title="Every capability some package filters textures with (its filtersTexturesWith).">CMakeGen::TextureFilteringCapabilities</a> of its packages). </p>
+<p>The editor sets them when it opens a project; none are set before. </p>
+
+</div>
+</div>
+<a id="af8029af9870ff720144b69da37d368ad" name="af8029af9870ff720144b69da37d368ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8029af9870ff720144b69da37d368ad">&#9670;&#160;</a></span>TargetSamplesTextures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::TargetSamplesTextures </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>platformId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether <span class="tt">platformId</span> draws textures filtered, so a texture's filter means something there: a platform that provides a capability some package filters with (deki-rendering's "opengl"), or "" (the editor's own desktop). </p>
+
+</div>
+</div>
+<a id="a5898aeb82aafa8f27cea23b57a05c1fe" name="a5898aeb82aafa8f27cea23b57a05c1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5898aeb82aafa8f27cea23b57a05c1fe">&#9670;&#160;</a></span>ResolveTextureFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_deki.html#a50a75bf86f88c438697d0ef96de468fc">Deki::TextureFilter</a> DekiEditor::ResolveTextureFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_editor_1_1_texture_settings.html">TextureSettings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>settings</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>platformId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The filter an image is drawn with on <span class="tt">platformId</span>: FilterFor's, or Point where the target has no GPU (TargetSamplesTextures), and for a name that is not a filter. </p>
+<p>What the compiled image and mesh record. </p>
+
+</div>
+</div>
 <a id="a3155a24a405bf2cfe905d1aba6bd2460" name="a3155a24a405bf2cfe905d1aba6bd2460"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3155a24a405bf2cfe905d1aba6bd2460">&#9670;&#160;</a></span>SourceToStored()</h2>
 
@@ -5207,7 +5632,7 @@ children" are different questions here, and pairing on the wrong one is an easy 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DekiEditor::kDekiCacheVersion = 5</td>
+          <td class="memname">int DekiEditor::kDekiCacheVersion = 9</td>
         </tr>
       </table>
   </td>

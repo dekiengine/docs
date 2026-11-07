@@ -40,6 +40,7 @@ var annotated_dup =
       [ "FileImage", "class_deki_1_1_file_image.html", "class_deki_1_1_file_image" ],
       [ "FileSystem", "class_deki_1_1_file_system.html", "class_deki_1_1_file_system" ],
       [ "FPSCounter", "class_deki_1_1_f_p_s_counter.html", "class_deki_1_1_f_p_s_counter" ],
+      [ "HostFileSystem", "class_deki_1_1_host_file_system.html", "class_deki_1_1_host_file_system" ],
       [ "HostMemoryProvider", "class_deki_1_1_host_memory_provider.html", "class_deki_1_1_host_memory_provider" ],
       [ "ICamera", "class_deki_1_1_i_camera.html", "class_deki_1_1_i_camera" ],
       [ "IClipProvider", "class_deki_1_1_i_clip_provider.html", "class_deki_1_1_i_clip_provider" ],
@@ -85,8 +86,10 @@ var annotated_dup =
     ] ],
     [ "DekiEditor", "namespace_deki_editor.html", [
       [ "CMakeGen", "namespace_deki_editor_1_1_c_make_gen.html", [
-        [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ],
+        [ "ExecutableCMakeOptions", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options.html", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options" ],
+        [ "ExecutableLibrary", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library.html", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library" ],
         [ "FeatureEntry", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry" ],
+        [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ],
         [ "PackageEntry", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry" ]
       ] ],
       [ "EditorTexture", "namespace_deki_editor_1_1_editor_texture.html", [
@@ -171,11 +174,15 @@ var annotated_dup =
       [ "PostInstallDef", "struct_deki_editor_1_1_post_install_def.html", "struct_deki_editor_1_1_post_install_def" ],
       [ "SceneView", "class_deki_editor_1_1_scene_view.html", "class_deki_editor_1_1_scene_view" ],
       [ "SceneViewContext", "struct_deki_editor_1_1_scene_view_context.html", "struct_deki_editor_1_1_scene_view_context" ],
+      [ "ShaderCompiler", "class_deki_editor_1_1_shader_compiler.html", "class_deki_editor_1_1_shader_compiler" ],
+      [ "ShaderCompileRequest", "struct_deki_editor_1_1_shader_compile_request.html", "struct_deki_editor_1_1_shader_compile_request" ],
+      [ "ShaderStageText", "struct_deki_editor_1_1_shader_stage_text.html", "struct_deki_editor_1_1_shader_stage_text" ],
       [ "SpriteFrameData", "struct_deki_editor_1_1_sprite_frame_data.html", "struct_deki_editor_1_1_sprite_frame_data" ],
       [ "SpriteSettings", "struct_deki_editor_1_1_sprite_settings.html", "struct_deki_editor_1_1_sprite_settings" ],
       [ "StripPlan", "struct_deki_editor_1_1_strip_plan.html", "struct_deki_editor_1_1_strip_plan" ],
       [ "SubAssetInfo", "struct_deki_editor_1_1_sub_asset_info.html", "struct_deki_editor_1_1_sub_asset_info" ],
       [ "SubComponentDef", "struct_deki_editor_1_1_sub_component_def.html", "struct_deki_editor_1_1_sub_component_def" ],
+      [ "TargetCardInfo", "struct_deki_editor_1_1_target_card_info.html", "struct_deki_editor_1_1_target_card_info" ],
       [ "TargetContentConflict", "struct_deki_editor_1_1_target_content_conflict.html", "struct_deki_editor_1_1_target_content_conflict" ],
       [ "TexData", "struct_deki_editor_1_1_tex_data.html", "struct_deki_editor_1_1_tex_data" ],
       [ "TexHeader", "struct_deki_editor_1_1_tex_header.html", "struct_deki_editor_1_1_tex_header" ],

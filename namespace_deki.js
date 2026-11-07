@@ -63,6 +63,7 @@ var namespace_deki =
     [ "FileImage", "class_deki_1_1_file_image.html", "class_deki_1_1_file_image" ],
     [ "FileSystem", "class_deki_1_1_file_system.html", "class_deki_1_1_file_system" ],
     [ "FPSCounter", "class_deki_1_1_f_p_s_counter.html", "class_deki_1_1_f_p_s_counter" ],
+    [ "HostFileSystem", "class_deki_1_1_host_file_system.html", "class_deki_1_1_host_file_system" ],
     [ "HostMemoryProvider", "class_deki_1_1_host_memory_provider.html", "class_deki_1_1_host_memory_provider" ],
     [ "ICamera", "class_deki_1_1_i_camera.html", "class_deki_1_1_i_camera" ],
     [ "IClipProvider", "class_deki_1_1_i_clip_provider.html", "class_deki_1_1_i_clip_provider" ],
@@ -111,6 +112,11 @@ var namespace_deki =
     [ "LogCallback", "namespace_deki.html#a5deed6f848dd408e513e8e9af4d1e80b", null ],
     [ "ComponentsMigration", "namespace_deki.html#a4ae9dd026fbc696a38ea30128cb24426", null ],
     [ "ComponentType", "namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d", null ],
+    [ "TextureFilter", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fc", [
+      [ "Point", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca2a3cd5946cfd317eb99c3d32e35e2d4c", null ],
+      [ "Bilinear", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fcaaf17c98bbd83c27d6426d2ff3fa81d7f", null ],
+      [ "Trilinear", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d", null ]
+    ] ],
     [ "ColorFormat", "namespace_deki.html#adf997e436efe620d60266910d8f63061", [
       [ "RGB565", "namespace_deki.html#adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a", null ],
       [ "RGB888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0", null ],
@@ -208,6 +214,10 @@ var namespace_deki =
       [ "Always", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8a68eec46437c384d8dad18d5464ebc35c", null ],
       [ "Once", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8ae1a9dc9f23534e63de9df0d540ac1611", null ]
     ] ],
+    [ "TextureFilterFromFlags", "namespace_deki.html#af17e9299e575fc846cdf14702e5bb178", null ],
+    [ "TextureFilterToFlags", "namespace_deki.html#a326691f765441af45d289a5b1ca53573", null ],
+    [ "TextureFilterName", "namespace_deki.html#a775ed9afca48408f3e4eede734747c30", null ],
+    [ "ParseTextureFilter", "namespace_deki.html#a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93", null ],
     [ "ColorToHex", "namespace_deki.html#a4a409d33bd4fc6d79328a7c4009f4a43", null ],
     [ "ColorFromHex", "namespace_deki.html#a8aec643e6cd3fcf4a68620bedaec4946", null ],
     [ "FrameBufferBytes", "namespace_deki.html#a342cf845b27a0d51e29a411e4f285311", null ],
@@ -262,6 +272,8 @@ var namespace_deki =
     [ "SetImGuiAllocators", "namespace_deki.html#a842fa2a17af886ab760e861d44444ba2", null ],
     [ "kDpackMagic", "namespace_deki.html#a788cf5d4318f9011c690b30dcec7bb1f", null ],
     [ "kDpackVersion", "namespace_deki.html#a20b0d1f232d8ad518825c4cdc99f93d5", null ],
+    [ "kTextureFilterFlagShift", "namespace_deki.html#aeb586fbc686a92a8a66e18b75e20ab13", null ],
+    [ "kTextureFilterFlagMask", "namespace_deki.html#a9ce3803f33fac689d97c2a01f8b1de58", null ],
     [ "kRGB565BigEndian", "namespace_deki.html#a09b9d7c17742ee078ceb521d4d3c07eb", null ],
     [ "kTransformRefComponent", "namespace_deki.html#aa88aafaeabf5ad00e9ff8a3721514f0c", null ],
     [ "kVariableRefComponent", "namespace_deki.html#a5cf24745dd885deb3b83037a873e9938", null ],

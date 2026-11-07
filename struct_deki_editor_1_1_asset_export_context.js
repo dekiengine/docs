@@ -7,5 +7,7 @@ var struct_deki_editor_1_1_asset_export_context =
     [ "projectPath", "struct_deki_editor_1_1_asset_export_context.html#abe470e34c52defa3de20caf52ce669d6", null ],
     [ "outPath", "struct_deki_editor_1_1_asset_export_context.html#a0bb5d556db6bb2ccac7dd797970bc2d7", null ],
     [ "target", "struct_deki_editor_1_1_asset_export_context.html#a039b92f9354aa23c7cc54e32c1969662", null ],
-    [ "pipeline", "struct_deki_editor_1_1_asset_export_context.html#a303e156daadaac0c37ba4585244c674c", null ]
+    [ "pipeline", "struct_deki_editor_1_1_asset_export_context.html#a303e156daadaac0c37ba4585244c674c", null ],
+    [ "error", "struct_deki_editor_1_1_asset_export_context.html#a0b1b84607b482d5b14980b44f4bdf0b4", null ],
+    [ "warnings", "struct_deki_editor_1_1_asset_export_context.html#af20b413254ee2240ffe296f145dcdc5f", null ]
 ];

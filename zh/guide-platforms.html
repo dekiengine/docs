@@ -60,7 +60,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.22.0</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.0</span>
    </div>
    <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
   </td>
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platform
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-zh_2guide-platforms"></a></p>
-<p><b>平台</b>是项目构建的一个目标：一块开发板、桌面模拟器或一台游戏机。本页介绍平台由什么组成、平台从哪里来、包如何附带开发板，以及项目开始使用某块开发板之后会发生什么。</p>
+<p><b>平台</b>是项目构建的一个目标：一块开发板、桌面版或一台游戏机。本页介绍平台由什么组成、平台从哪里来、包如何附带开发板，以及项目开始使用某块开发板之后会发生什么。</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-what-a-platform-is"></a>
 平台是什么</h1>
 <p>项目 <span class="tt">platforms/</span> 下的一个目录，以平台的 id 命名：</p>
@@ -168,11 +168,11 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platform
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">family</span>  </td><td class="markdownTableBodyNone">仅用于描述。会成为能力 <span class="tt">family:&lt;x&gt;</span>。  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">该目标的屏幕。编辑器会预览它，桌面模拟器会打开该尺寸的窗口，设为“自动”的图像会以 <span class="tt">colorFormat</span> 为它存储。设备以其显示屏自身的尺寸和格式进行渲染；参见 <a href="guide-screens.html">screens.md</a>。  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">screenWidth</span>, <span class="tt">screenHeight</span>, <span class="tt">colorFormat</span>  </td><td class="markdownTableBodyNone">该目标的屏幕。编辑器会预览它，桌面版会打开该尺寸的窗口，设为“自动”的图像会以 <span class="tt">colorFormat</span> 为它存储。设备以其显示屏自身的尺寸和格式进行渲染；参见 <a href="guide-screens.html">screens.md</a>。  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">externalMemorySize</span>  </td><td class="markdownTableBodyNone">内部堆之外的内存字节数（在微控制器上即 PSRAM）。为包提供 <span class="tt">memory:external</span>。  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">该目标可以为包提供的东西：<span class="tt">wifi</span>、<span class="tt">spi</span>、<span class="tt">desktop-os</span>、...  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">provides</span>  </td><td class="markdownTableBodyNone">该目标可以为包提供的东西：<span class="tt">wifi</span>、<span class="tt">spi</span>、<span class="tt">hosted</span>、... <span class="tt">hosted</span> 表示由操作系统把游戏作为程序启动，游戏退出时控制权回到操作系统（桌面、Miyoo Mini）。游戏本身就是固件的开发板（包括 RTOS）不是 hosted。旧名 <span class="tt">desktop-os</span> 在一个版本内仍会被读取。  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">requiresPackages</span>  </td><td class="markdownTableBodyNone">无论场景使用什么，该目标始终需要的包。通常是它的硬件抽象层。  </td></tr>
 <tr class="markdownTableRowOdd">
@@ -182,19 +182,20 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-platform
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">assetStorage</span>  </td><td class="markdownTableBodyNone">构建将游戏资源保存在哪里：<span class="tt">internal</span>（默认）或 <span class="tt">external</span>。见下文。  </td></tr>
 </table>
+<p>能力（capability）的含义由包决定，而不是由编辑器决定。在编译时检查某项能力的包，会在其 <span class="tt">package.json</span> 的 <span class="tt">capabilityDefines</span> 中写明该能力；为提供该能力的平台进行构建时，会定义 <span class="tt">DEKI_CAPABILITY_&lt;NAME&gt;</span>（<span class="tt">opengl</span> 即 <span class="tt">DEKI_CAPABILITY_OPENGL</span>，由 deki-rendering、deki-3d 和 deki-sdl3-integration 指定）。以过滤方式绘制纹理的包，会在 <span class="tt">filtersTexturesWith</span> 中写明它为此使用的能力；图像的 Filter 设置在提供该能力的平台上生效，在其他平台上以 Point 绘制。</p>
 <p><b>引导场景</b>包含一个 <span class="tt">Deki::PlatformSetupComponent</span>，其 <span class="tt">setupComponents</span> 列表按顺序列出启动硬件的配置步骤：电源引脚、显示屏、I2C 总线、触摸。每个条目为 <span class="tt">{id, typeId}</span>：持有该步骤的子对象的 id，以及该步骤限定类名的哈希值（<span class="tt">Deki::HashString</span>）。<span class="tt">typeId</span> 错误不会导致失败；该步骤只是悄无声息地永远不会运行。编辑器测试中的 <span class="tt">ShippedPlatformTemplates</span> 会检查各个包附带的每个引导场景。</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-where-the-assets-go"></a>
 资源放在哪里</h1>
 <p>构建将游戏资源保存在以下两个位置之一：</p>
 <ul>
-<li><b>内部存储</b>，默认选项：设备的一部分。资源由构建携带，放在引导场景旁边的 <span class="tt">assets/</span> 中（运行时为 <span class="tt">F:/assets/</span>）。在 ESP32 上就是闪存：游戏数据被打包成一个镜像，开发板直接就地读取，查找一个文件只需几微秒。它占用除用户数据外的芯片其余部分（在 16 MB 的开发板上约为 12 MB），如果游戏放不下，构建就会失败。桌面模拟器和 Tactility 应用把资源放在同样的位置。</li>
+<li><b>内部存储</b>，默认选项：设备的一部分。资源由构建携带，放在引导场景旁边的 <span class="tt">assets/</span> 中（运行时为 <span class="tt">F:/assets/</span>）。在 ESP32 上就是闪存：游戏数据被打包成一个镜像，开发板直接就地读取，查找一个文件只需几微秒。它占用除用户数据外的芯片其余部分（在 16 MB 的开发板上约为 12 MB），如果游戏放不下，构建就会失败。桌面版和 Tactility 应用把资源放在同样的位置。</li>
 <li><b>外部存储</b>：可移除的存储，即 SD 卡。构建只携带引导场景和 <span class="tt">project_data.bin</span>；<b>SD 卡部署</b>面板会将资源复制到卡上，卡的存储包在挂载后从卡中加载它们（<span class="tt">S:/</span>）。</li>
 </ul>
 <p>只有 <span class="tt">provides</span> 中包含 <span class="tt">external-storage</span> 的平台才能选择外部存储；平台编辑器只对这些平台显示该选项（<b>存储 &gt; 资源存放位置</b>）。只有游戏大到闪存放不下时才选择它：使用外部存储时如果卡槽中没有卡，游戏就没有任何资源。LilyGO T-Deck Plus 可以选择；除非另行指定，它会将资源保存在闪存中。</p>
 <p><span class="tt">project_data.bin</span> 会记录这一选择，以便引擎知道去哪里查找。</p>
 <h2 class="doxsection"><a class="anchor" id="guide-platforms-files-the-game-writes"></a>
 游戏写入的文件</h2>
-<p>游戏也把自己的文件（例如存档）写在 <span class="tt">F:/</span> 下（<span class="tt">F:/save.bin</span>）。在 ESP32 上，它们位于闪存末尾的用户数据分区（16 MB 开发板上为 1 MB，8 MB 上为 512 KB，4 MB 上为 128 KB）。烧录新构建不会触及它，因此存档在更新后依然保留。游戏自身的数据永远不会被写入：以写入方式打开其中的文件会失败，日志会说明原因。 在桌面模拟器中，它们位于旁边的 <span class="tt">userdata/</span>；在 Tactility 应用中，位于应用用户数据里的 <span class="tt">internal/</span>，规则相同。</p>
+<p>游戏也把自己的文件（例如存档）写在 <span class="tt">F:/</span> 下（<span class="tt">F:/save.bin</span>）。在 ESP32 上，它们位于闪存末尾的用户数据分区（16 MB 开发板上为 1 MB，8 MB 上为 512 KB，4 MB 上为 128 KB）。烧录新构建不会触及它，因此存档在更新后依然保留。游戏自身的数据永远不会被写入：以写入方式打开其中的文件会失败，日志会说明原因。 在桌面版中，它们位于旁边的 <span class="tt">userdata/</span>；在 Tactility 应用中，位于应用用户数据里的 <span class="tt">internal/</span>，规则相同。</p>
 <h1 class="doxsection"><a class="anchor" id="guide-platforms-simulating-a-board"></a>
 模拟开发板</h1>
 <p>如果开发板的后端带有模拟器（ESP32 或 ESP32-S3 使用 QEMU），就可以将其构建为在模拟器中运行：在构建面板中勾选 <b>在 QEMU 中模拟</b>，然后点击“构建”和 <b>运行</b>。在命令行中：</p>
