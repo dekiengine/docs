@@ -279,7 +279,8 @@ The farm</h1>
 <div class="line">    <span class="comment">// reached, round whatever is in between. False when there is none.</span></div>
 <div class="line">    <span class="keywordtype">bool</span> FindWay(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// The next point of that way to walk straight to. False once there.</span></div>
+<div class="line">    <span class="comment">// The next point of that way to walk straight to, always along the</span></div>
+<div class="line">    <span class="comment">// squares as the keys walk. False once there.</span></div>
 <div class="line">    <span class="keywordtype">bool</span> NextPoint(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; outX, <span class="keywordtype">float</span>&amp; outY) <span class="keyword">const</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Plants on the empty patch nearest this point. A ripe turnip there is</span></div>
@@ -350,7 +351,13 @@ The farm</h1>
 <div class="line">    <span class="keywordtype">float</span> LevelAt(<span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row) <span class="keyword">const</span>;</div>
 <div class="line">    <span class="keywordtype">bool</span> InTheWay(<span class="keyword">const</span> Thing&amp; thing, <span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row, <span class="keywordtype">float</span> clearance) <span class="keyword">const</span>;</div>
 <div class="line">    <span class="keywordtype">bool</span> CanWalk(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> clearance = 0.0f) <span class="keyword">const</span>;</div>
-<div class="line">    <span class="keywordtype">void</span> AlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; toX, <span class="keywordtype">float</span>&amp; toY) <span class="keyword">const</span>;</div>
+<div class="line">    <span class="comment">// Whether she can walk from one point to another along the squares, and</span></div>
+<div class="line">    <span class="comment">// where to first: the point itself, or the corner of two walks.</span></div>
+<div class="line">    <span class="keywordtype">bool</span> AlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; toX, <span class="keywordtype">float</span>&amp; toY, <span class="keywordtype">float</span> clearance = 0.0f) <span class="keyword">const</span>;</div>
+<div class="line">    <span class="keywordtype">bool</span> CanWalkAlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> clearance = 0.0f)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">    </span>{</div>
+<div class="line">        <span class="keywordflow">return</span> AlongTheSquares(fromX, fromY, toX, toY, clearance);</div>
+<div class="line">    }</div>
 <div class="line">    <span class="keywordtype">void</span> Flood(<span class="keywordtype">int</span> from);</div>
 <div class="line">    <span class="keywordtype">void</span> Show(Patch&amp; patch);</div>
 <div class="line">    <span class="keywordtype">void</span> ShowScore();</div>
@@ -363,7 +370,7 @@ The farm</h1>
 <div class="line"> </div>
 <div class="line">    Deki::Buffer&lt;Thing&gt; m_Things;</div>
 <div class="line">    Deki::Buffer&lt;float&gt; m_FencePoints;  <span class="comment">// each fence post&#39;s column and row</span></div>
-<div class="line">    <span class="comment">// For each square of the island: which of the eight around it can be</span></div>
+<div class="line">    <span class="comment">// For each square of the island: which of the four beside it can be</span></div>
 <div class="line">    <span class="comment">// walked to, and how many squares away the last flood started.</span></div>
 <div class="line">    Deki::Buffer&lt;uint8_t&gt; m_Ways;</div>
 <div class="line">    Deki::Buffer&lt;uint16_t&gt; m_Steps;</div>
@@ -417,9 +424,11 @@ The farm</h1>
 <div class="line"><span class="comment">// How far a roof reaches past its house&#39;s walls, across the screen, in meters.</span></div>
 <div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kRoofOverhang = 1.0f;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// The eight squares around one, as columns and rows, and a square the flood</span></div>
-<div class="line"><span class="comment">// did not reach.</span></div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kAround[8][2] = { { 1, 0 }, { 1, 1 }, { 0, 1 }, { -1, 1 }, { -1, 0 }, { -1, -1 }, { 0, -1 }, { 1, -1 } };</div>
+<div class="line"><span class="comment">// The four squares beside one, as columns and rows, and a square the flood</span></div>
+<div class="line"><span class="comment">// did not reach. Only these: a square that meets one at a corner is straight</span></div>
+<div class="line"><span class="comment">// up, down, left or right of it on the screen, and she walks along the</span></div>
+<div class="line"><span class="comment">// squares, as the keys do.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kAround[4][2] = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };</div>
 <div class="line"><span class="keyword">const</span> uint16_t kNoWay = 0xFFFF;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Two points this close are the same spot, in meters.</span></div>
@@ -610,14 +619,14 @@ The farm</h1>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Which squares can be walked between never changes, so it is worked out</span></div>
-<div class="line">    <span class="comment">// once: from the middle of each to the middle of each one around it. A</span></div>
+<div class="line">    <span class="comment">// once: from the middle of each to the middle of each one beside it. A</span></div>
 <div class="line">    <span class="comment">// way that can be walked one way can be walked back.</span></div>
 <div class="line">    std::memset(m_Ways.Data(), 0, kSquares);</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; kIslandSize; ++row)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> column = 0; column &lt; kIslandSize; ++column)</div>
 <div class="line">        {</div>
-<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 4; ++way)</div>
+<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 2; ++way)</div>
 <div class="line">            {</div>
 <div class="line">                <span class="keyword">const</span> <span class="keywordtype">int</span> nextColumn = column + kAround[way][0];</div>
 <div class="line">                <span class="keyword">const</span> <span class="keywordtype">int</span> nextRow = row + kAround[way][1];</div>
@@ -628,7 +637,7 @@ The farm</h1>
 <div class="line">                    uint8_t&amp; there = m_Ways[row * kIslandSize + column];</div>
 <div class="line">                    uint8_t&amp; back = m_Ways[nextRow * kIslandSize + nextColumn];</div>
 <div class="line">                    there = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(there | (1 &lt;&lt; way));</div>
-<div class="line">                    back = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(back | (1 &lt;&lt; (way + 4)));</div>
+<div class="line">                    back = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(back | (1 &lt;&lt; (way + 2)));</div>
 <div class="line">                }</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
@@ -910,7 +919,7 @@ The farm</h1>
 <div class="line">    <span class="keywordflow">while</span> (first &lt; count)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> square = m_Queue[first++];</div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 8; ++way)</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 4; ++way)</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">int</span> next = square + kAround[way][0] + kAround[way][1] * kIslandSize;</div>
 <div class="line">            <span class="keywordflow">if</span> ((m_Ways[square] &amp; (1 &lt;&lt; way)) &amp;&amp; m_Steps[next] == kNoWay)</div>
@@ -929,8 +938,8 @@ The farm</h1>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Starts from the nearest square whose middle can be walked straight to:</span></div>
-<div class="line">    <span class="comment">// the one under the point, or one beside it.</span></div>
+<div class="line">    <span class="comment">// Starts from the nearest square whose middle can be walked to: the one</span></div>
+<div class="line">    <span class="comment">// under the point, or one around it.</span></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> column = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(ColumnAt(fromX, fromY) + 0.5f));</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> row = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(RowAt(fromX, fromY) + 0.5f));</div>
 <div class="line">    <span class="keywordtype">int</span> start = -1;</div>
@@ -943,7 +952,7 @@ The farm</h1>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleY = WorldY(nextColumn, nextRow);</div>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> distance = Squares(fromX, fromY, middleX, middleY);</div>
 <div class="line">            <span class="keywordflow">if</span> (IsOnIsland(nextColumn, nextRow) &amp;&amp; (start &lt; 0 || distance &lt; nearest) &amp;&amp;</div>
-<div class="line">                CanWalk(fromX, fromY, middleX, middleY))</div>
+<div class="line">                CanWalkAlongTheSquares(fromX, fromY, middleX, middleY))</div>
 <div class="line">            {</div>
 <div class="line">                start = nextRow * kIslandSize + nextColumn;</div>
 <div class="line">                nearest = distance;</div>
@@ -976,7 +985,7 @@ The farm</h1>
 <div class="line">    Flood(goal);</div>
 <div class="line">    m_GoalX = WorldX(goal % kIslandSize, goal / kIslandSize);</div>
 <div class="line">    m_GoalY = WorldY(goal % kIslandSize, goal / kIslandSize);</div>
-<div class="line">    <span class="keywordflow">if</span> (CanWalk(m_GoalX, m_GoalY, x, y))</div>
+<div class="line">    <span class="keywordflow">if</span> (CanWalkAlongTheSquares(m_GoalX, m_GoalY, x, y))</div>
 <div class="line">    {</div>
 <div class="line">        m_GoalX = x;</div>
 <div class="line">        m_GoalY = y;</div>
@@ -994,20 +1003,19 @@ The farm</h1>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> column = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(ColumnAt(fromX, fromY) + 0.5f));</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> row = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(RowAt(fromX, fromY) + 0.5f));</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Straight to the goal when the line there is clear, or it is in the</span></div>
-<div class="line">    <span class="comment">// square she is already in.</span></div>
+<div class="line">    <span class="comment">// Right to the goal when the way there is clear, or it is in the square</span></div>
+<div class="line">    <span class="comment">// she is already in.</span></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> inGoalSquare = IsOnIsland(column, row) &amp;&amp; m_Steps[row * kIslandSize + column] == 0;</div>
-<div class="line">    <span class="keywordflow">if</span> (CanWalk(fromX, fromY, m_GoalX, m_GoalY, kClearance) ||</div>
-<div class="line">        (inGoalSquare &amp;&amp; CanWalk(fromX, fromY, m_GoalX, m_GoalY)))</div>
+<div class="line">    outX = m_GoalX;</div>
+<div class="line">    outY = m_GoalY;</div>
+<div class="line">    <span class="keywordflow">if</span> (AlongTheSquares(fromX, fromY, outX, outY, kClearance) ||</div>
+<div class="line">        (inGoalSquare &amp;&amp; AlongTheSquares(fromX, fromY, outX, outY)))</div>
 <div class="line">    {</div>
-<div class="line">        outX = m_GoalX;</div>
-<div class="line">        outY = m_GoalY;</div>
-<div class="line">        AlongTheSquares(fromX, fromY, outX, outY);</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Otherwise to the middle of a square: of the one under the point and the</span></div>
-<div class="line">    <span class="comment">// eight around it, the nearest the goal that can be walked straight to.</span></div>
+<div class="line">    <span class="comment">// eight around it, the nearest the goal that can be walked to.</span></div>
 <div class="line">    <span class="keywordtype">int</span> best = -1;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> nextRow = row - 1; nextRow &lt;= row + 1; ++nextRow)</div>
 <div class="line">    {</div>
@@ -1021,7 +1029,8 @@ The farm</h1>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleX = WorldX(nextColumn, nextRow);</div>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleY = WorldY(nextColumn, nextRow);</div>
 <div class="line">            <span class="keywordflow">if</span> ((best &lt; 0 || m_Steps[square] &lt; m_Steps[best]) &amp;&amp; m_Steps[square] != kNoWay &amp;&amp;</div>
-<div class="line">                Squares(fromX, fromY, middleX, middleY) &gt;= kSameSpot &amp;&amp; CanWalk(fromX, fromY, middleX, middleY))</div>
+<div class="line">                Squares(fromX, fromY, middleX, middleY) &gt;= kSameSpot &amp;&amp;</div>
+<div class="line">                CanWalkAlongTheSquares(fromX, fromY, middleX, middleY))</div>
 <div class="line">            {</div>
 <div class="line">                best = square;</div>
 <div class="line">            }</div>
@@ -1032,14 +1041,14 @@ The farm</h1>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Then on along the way for as far as the line stays clear: each time to</span></div>
-<div class="line">    <span class="comment">// the square a step nearer the goal, of those the one nearest it. One long</span></div>
-<div class="line">    <span class="comment">// straight walk, where there would be a turn at every square.</span></div>
+<div class="line">    <span class="comment">// Then on along the way for as far as it stays clear: each time to the</span></div>
+<div class="line">    <span class="comment">// square a step nearer the goal, of those the one nearest it. One long</span></div>
+<div class="line">    <span class="comment">// walk, where there would be a turn at every square.</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> look = 0; look &lt; kLookAhead; ++look)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordtype">int</span> nearer = -1;</div>
 <div class="line">        <span class="keywordtype">float</span> nearest = 0.0f;</div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 8; ++way)</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 4; ++way)</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keyword">const</span> <span class="keywordtype">int</span> next = best + kAround[way][0] + kAround[way][1] * kIslandSize;</div>
 <div class="line">            <span class="keywordflow">if</span> (!(m_Ways[best] &amp; (1 &lt;&lt; way)) || m_Steps[next] + 1 != m_Steps[best])</div>
@@ -1054,8 +1063,8 @@ The farm</h1>
 <div class="line">                nearest = distance;</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">if</span> (nearer &lt; 0 || !CanWalk(fromX, fromY, WorldX(nearer % kIslandSize, nearer / kIslandSize),</div>
-<div class="line">                                   WorldY(nearer % kIslandSize, nearer / kIslandSize), kClearance))</div>
+<div class="line">        <span class="keywordflow">if</span> (nearer &lt; 0 || !CanWalkAlongTheSquares(fromX, fromY, WorldX(nearer % kIslandSize, nearer / kIslandSize),</div>
+<div class="line">                                                  WorldY(nearer % kIslandSize, nearer / kIslandSize), kClearance))</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
@@ -1067,17 +1076,17 @@ The farm</h1>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> Farm::AlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; toX, <span class="keywordtype">float</span>&amp; toY)<span class="keyword"> const</span></div>
+<div class="line"><span class="keywordtype">bool</span> Farm::AlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; toX, <span class="keywordtype">float</span>&amp; toY, <span class="keywordtype">float</span> clearance)<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword"></span>{</div>
-<div class="line">    <span class="comment">// The keys walk along the squares, two across for one up or down. Any</span></div>
-<div class="line">    <span class="comment">// other line is laid as two that do, one along each way of the squares,</span></div>
-<div class="line">    <span class="comment">// when nothing is in the way of either, so a tapped walk moves in the</span></div>
-<div class="line">    <span class="comment">// same whole-pixel steps as the keys.</span></div>
+<div class="line">    <span class="comment">// The keys walk along the squares, two across for one up or down, and so</span></div>
+<div class="line">    <span class="comment">// does a tapped walk: any other line is two that do, one along each way</span></div>
+<div class="line">    <span class="comment">// of the squares, with nothing in the way of either. So she moves in the</span></div>
+<div class="line">    <span class="comment">// same whole-pixel steps and faces the same four ways as with the keys.</span></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> dx = toX - fromX;</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> dy = toY - fromY;</div>
 <div class="line">    <span class="keywordflow">if</span> (std::fabs(std::fabs(dx) - std::fabs(dy) * 2.0f) &lt; kAligned)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">        <span class="keywordflow">return</span> CanWalk(fromX, fromY, toX, toY, clearance);</div>
 <div class="line">    }</div>
 <div class="line">    <span class="comment">// How far along each way: up-right (2, 1) and down-right (2, -1).</span></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> upRight = (dx * 0.5f + dy) * 0.5f;</div>
@@ -1086,13 +1095,15 @@ The farm</h1>
 <div class="line">                                  { fromX + downRight * 2.0f, fromY - downRight } };</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; corner : corners)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">if</span> (CanWalk(fromX, fromY, corner[0], corner[1]) &amp;&amp; CanWalk(corner[0], corner[1], toX, toY))</div>
+<div class="line">        <span class="keywordflow">if</span> (CanWalk(fromX, fromY, corner[0], corner[1], clearance) &amp;&amp;</div>
+<div class="line">            CanWalk(corner[0], corner[1], toX, toY, clearance))</div>
 <div class="line">        {</div>
 <div class="line">            toX = corner[0];</div>
 <div class="line">            toY = corner[1];</div>
-<div class="line">            <span class="keywordflow">return</span>;</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">bool</span> Farm::IsSoil(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)<span class="keyword"> const</span></div>
@@ -1177,7 +1188,7 @@ The farm</h1>
 <div class="line">}</div>
 </div><!-- fragment --><p>The soil and the turnips are pieces of two Sprite Batch components. <span class="tt">Add</span> places a rectangle of the sheet, so nothing needs cutting up first, and returns the piece's number. <span class="tt">SetFrameRect</span> and <span class="tt">SetVisible</span> change that piece later. Twenty patches are two objects where they would be forty, which a small device feels, and each piece still sorts on its own: the farmer walks in front of one turnip and behind the next.</p>
 <p>A column and a row name a square on the island: columns run down and to the right, rows down and to the left. <span class="tt">WorldX</span> and <span class="tt">WorldY</span> turn them into a position, and <span class="tt">ColumnAt</span> and <span class="tt">RowAt</span> do the reverse. <span class="tt">ReadMap</span> reads the <span class="tt">collision</span> layer's shapes once, with <span class="tt">FindProperty</span> for each one's <span class="tt">level</span>, and leaves the tile objects, the pictures, to the spawner. <span class="tt">GroundHeight</span> says how high the ground is at a point: 0 on the lower ground, 1 on the raised ground and in between on the steps. It keeps the farmer on the island and out of everything on her level: a <span class="tt">Wall</span> over its whole area, a rock or a tree inside its ellipse, a fence along its line. Her feet have a width, <span class="tt">kFeetHalfWidth</span> to each side across the screen, and all of it has to stand on the same ground: so no part of her is inside the cliff or a wall, and on the raised ground she stops before her feet hang over its edge. Behind the raised ground she walks right up to its back wall, where its edge covers her feet, so she looks to stand below it.</p>
-<p>A tap can be on the other side of a fence, so the farm finds the way round. <span class="tt">FindWays</span> works out once, at the start, which squares can be walked between: <span class="tt">CanWalk</span> tries the straight line from the middle of one to the middle of the next with <span class="tt">GroundHeight</span>, so whatever stops the farmer stops the way too, and the steps are the only way up. <span class="tt">Flood</span> then spreads from one square to all it can reach, a square further each round, and every square learns how many squares away it is. <span class="tt">FindWay</span> floods twice: from the farmer, to find the square nearest the tap that she can reach at all, and from that square, so that walking to any square with a smaller number leads there. <span class="tt">NextPoint</span> hands the way out a point at a time: the goal itself when the line there is clear, otherwise the middle of a square. It starts from the best square beside her and looks on along the way, a square nearer the goal each time, for as long as she could still walk straight there with a little room to spare. So she walks in long straight lines and turns only where something is in the way. <span class="tt">AlongTheSquares</span> then lays a line the keys could not walk as two they can, one along each way of the squares, when nothing is in the way of either, so a tapped walk moves in the same whole-pixel steps as the keys.</p>
+<p>A tap can be on the other side of a fence, so the farm finds the way round. <span class="tt">FindWays</span> works out once, at the start, which squares can be walked between: <span class="tt">CanWalk</span> tries the straight line from the middle of one to the middle of the next with <span class="tt">GroundHeight</span>, so whatever stops the farmer stops the way too, and the steps are the only way up. <span class="tt">Flood</span> then spreads from one square to all it can reach, a square further each round, and every square learns how many squares away it is. <span class="tt">FindWay</span> floods twice: from the farmer, to find the square nearest the tap that she can reach at all, and from that square, so that walking to any square with a smaller number leads there. Squares are joined only to the four beside them: one that meets a square at a corner is straight up, down, left or right of it on the screen, and she never walks that way. <span class="tt">NextPoint</span> hands the way out a point at a time: the goal itself when the way there is clear, otherwise the middle of a square. It starts from the best square around her and looks on along the way, a square nearer the goal each time, for as long as she could still get there with a little room to spare. So she walks in long lines and turns only where something is in the way. Every point goes through <span class="tt">AlongTheSquares</span>, which lays a line the keys could not walk as two they can, one along each way of the squares, and only counts the way clear when nothing is in the way of either. So a tapped walk, with a mouse or a finger, moves in the same whole-pixel steps and faces the same four ways as the keys.</p>
 <p><span class="tt">UseSoil</span> plants on an empty patch and picks a ripe turnip, when the farmer says she has room for one more. The count on screen is of turnips sold: <span class="tt">IsAtDoor</span> says when she stands on the map's <span class="tt">Door</span> area, and <span class="tt">Sell</span> counts one.</p>
 <p><span class="tt">DrawOrder</span> is what makes the farmer walk behind the trees and in front of the turnips: lower on the screen draws on top. It matches the spawner's <b>Sort Base</b> and <b>Sort Per Meter</b>, so the farmer and the scenery sort together. The spawner sorts a tile object by its point. The house's point is inside its walls, and its tileset's <b>Tile Offset</b> draws the picture from there. A fence, a log or the house is wider than one point, though: part of it can be lower on the screen than her feet while she stands behind it. <span class="tt">DrawOrderAt</span> sorts her against its line, or against the house's walls, instead: in front of all of it or behind all of it, by which side she is on. In the corner of two fences she is in front of one and behind the other, and in front wins for the post they share. The pieces of the raised ground's edge are sorted the same way, by where she is: they cover her only while she is on the lower ground behind it, and anywhere else, on top of it or in front of its cliff, she draws over them. Beside a corner, of the cliff or of the house, she counts as behind it until all her width is past, so her side comes out from behind the corner instead of jumping in front of it.</p>
 <h1 class="doxsection"><a class="anchor" id="guide-first-game-the-farmer"></a>
