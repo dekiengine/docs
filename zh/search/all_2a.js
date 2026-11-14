@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['去除它_0',['去除它',['../guide-memory.html#autotoc_md12',1,'']]]
+  ['切换场景_0',['切换场景',['../guide-memory.html#autotoc_md10',1,'']]]
 ];

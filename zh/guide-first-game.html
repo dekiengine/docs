@@ -1,0 +1,2043 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: Your first game</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/zh/">
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">文档</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">手册</span></a>
+    <a class="deki-tab deki-tab-api" href="https://dekiengine.github.io/docs/annotated.html"><span class="deki-nav-label">API 参考</span></a>
+  </div>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/zh/"><span class="deki-nav-label">网站</span></a>
+    <a href="https://dekiengine.com/zh/packages/"><span class="deki-nav-label">包</span></a>
+    <a href="https://dekiengine.com/zh/blog/"><span class="deki-nav-label">博客</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/zh/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>下载</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/zh/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>捐赠</span></a>
+    <details class="deki-lang"><summary aria-label="语言: 简体中文"><span class="deki-nav-label">简体中文</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
+   </div>
+   <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-first-game.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Your first game </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-zh_2guide-first-game"></a></p>
+<p>本指南尚未翻译。</p>
+<p>A tiny farm. Walk around the island, plant turnips and watch them grow. Pick the ripe ones into a tower on the farmer's head, then carry it up the steps to the house to sell. It plays with a keyboard, a handheld's buttons or taps, and a help button says what to do and shows the controls for whichever the player uses.</p>
+<div class="image">
+<img src="first-game.webp" alt=""/>
+<div class="caption">
+The finished game</div></div>
+    <p><em>Art: <a href="https://aibyzz.itch.io/sc-farm-pack">Simple Cozy - Farm Asset Pack</a> by <a href="https://aibyzz.itch.io">Aibyzz</a>.</em></p>
+<p>It starts from a new project: see <a href="guide-getting-started.html">Getting started</a>. The Inspector shows sizes in pixels and code uses meters, with 16 pixels to the meter by default: see <a href="guide-units.html">Units</a>.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-get-the-art-and-the-island"></a>
+Get the art and the island</h1>
+<p>The art is <a href="https://aibyzz.itch.io/sc-farm-pack">Simple Cozy - Farm Asset Pack</a> by Aibyzz. Download the free version and unpack it. Deki does not include it, because its licence does not allow sharing the files. You can use it in your own games, commercial ones too.</p>
+<p>The island is a <a href="https://www.mapeditor.org">Tiled</a> map, ready to use, in <a href="first-game-files.zip">first-game-files.zip</a>. The zip also holds the map's eight tilesets, the HUD's icons and panel and the <a href="https://datagoblin.itch.io/monogram">monogram</a> pixel font. The ground is painted on tile layers, steps included, and everything that stands on it, from the fences to the house, is a tile object on the <span class="tt">scenery</span> layer. So is the top of the raised ground's back edge, a second time, so it can be drawn over the farmer and cover her feet when she walks behind it. The tiles are whole blocks whose sides the next tiles hide, so the edge is made of strips 8 pixels tall from the same sheet: the <span class="tt">raised_edge_back</span> and <span class="tt">raised_edge_front</span> tilesets cut it that way, each drawing its strip that far above its point, so every strip stands on its tile's front corner. The front corner's cliff is there too, as the left half of its tile, from the <span class="tt">raised_edge_corner</span> tileset, and the rest of that tile's top as a quarter from <span class="tt">raised_edge_quarter</span>.</p>
+<p>The <span class="tt">collision</span> layer is for the game, not to be seen. It says what is in the way, drawn over the pictures: an ellipse round the foot of each rock, bush, log and tree, and a line along each fence's posts. Three rectangles there have a class: <span class="tt">Steps</span> marks where the steps climb, the house's <span class="tt">Wall</span> keeps the farmer out of the house, and <span class="tt">Door</span> is the ground in front of the door, where turnips are sold. Tiled has no levels, so whatever stands on the raised ground has a custom property, <span class="tt">level</span>, set to 1.</p>
+<ol type="1">
+<li>Open <b>View → Package Manager</b> and install <b>Tiled Map Editor Integration</b>.</li>
+<li>Unpack the zip into your project's <span class="tt">assets</span> folder. It makes the folders <span class="tt">tilemaps</span>, <span class="tt">hud</span> and <span class="tt">fonts</span> there.</li>
+<li>From the art pack, copy <span class="tt">Farm/Free ver.png</span>, <span class="tt">Farm/Objects.png</span> and <span class="tt">Farm/House.png</span> into <span class="tt">assets/tilemaps</span>. The tilesets look for them there.</li>
+<li>Drag <span class="tt">Player/FPlayer 1 idle.png</span> and <span class="tt">Player/FPlayer 1 walking.png</span> onto the Asset Browser.</li>
+<li>Select <span class="tt">monogram</span> in the Asset Browser and set its <b>Hinting Mode</b> to <b>Mono (1-bit, no AA)</b>. A pixel font then draws crisp, with no smoothed edges, like the art around it. It is drawn for size 16: one of its pixels to one on the screen.</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-the-scene"></a>
+The scene</h1>
+<p>The island is bigger than the screen, so the camera follows the farmer.</p>
+<ol type="1">
+<li>Delete <b>Sky</b>.</li>
+<li>On <b>Camera</b>, set <b>Clear Color</b> to <span class="tt">#BDE8F0</span> and turn on <b>Pixel Perfect</b>. The art is then scaled by whole numbers only, so on a screen bigger than the game every pixel of it is the same size.</li>
+<li>Make an empty object called <b>Map</b> at 0, 8. Add a <b>Tilemap Component</b> and set its <b>Tilemap</b> to <span class="tt">farm</span>. Then add a <b>Tilemap Object Spawner</b>, set its <b>Tilemap</b> to <span class="tt">farm</span>, <b>Sort Base</b> to 1000 and <b>Sort Per Meter</b> to 16, one order for each pixel row. The spawner is what turns the <span class="tt">scenery</span> layer into sprites when the game starts.</li>
+<li>Make an empty object called <b>Tap Area</b>, drag it onto <b>Camera</b> and add an <b>Input Collider</b> with <b>Width</b> 640 and <b>Height</b> 480. It covers the screen, and a wider one too, so every tap or click lands on it.</li>
+<li>Make two empty objects, <b>Farm</b> and <b>Farmer</b>. Set the Farmer's position to 40, -16 and add a <b>Sprite Component</b> to it. Leave its <b>Sprite</b> empty: the code sets it.</li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-the-farm"></a>
+The farm</h1>
+<p>The map holds the island, so this script is only the game: where the soil is, how the turnips grow, the score, where the farmer can walk and the way from one spot to another. Create a script called <span class="tt">Farm</span>.</p>
+<p><span class="tt">src/Farm.h</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;deki/Engine.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/assets/AssetRef.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/providers/Buffer.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/reflection/ObjectRef.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;SpriteBatchComponent.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;SpriteComponent.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;Tilemap.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;TextComponent.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DEKI_CATEGORY(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line">DEKI_DESCRIPTION(<span class="stringliteral">&quot;Grows the turnips, counts the ones sold and says where the farmer can walk.&quot;</span>)</div>
+<div class="line">class Farm : public Deki::Component</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::AssetRef&lt;Deki2D::Sprite&gt; farmSheet;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::AssetRef&lt;DekiTiledMap::Tilemap&gt; map;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;Deki2D::TextComponent&gt; scoreText;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    <span class="keywordtype">float</span> secondsPerStage = 2.0f;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> Start() <span class="keyword">override</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Update() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// How high the ground is at this point, given as if it were on the lower</span></div>
+<div class="line">    <span class="comment">// ground: 0 there, 1 on the raised ground and in between on the steps.</span></div>
+<div class="line">    <span class="comment">// -1 where no one can stand. With a clearance, in squares, whatever is in</span></div>
+<div class="line">    <span class="comment">// the way is that much bigger: for planning a walk that is not to graze it.</span></div>
+<div class="line">    <span class="keywordtype">float</span> GroundHeight(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> clearance = 0.0f) <span class="keyword">const</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Finds the way from one point to the spot nearest another that can be</span></div>
+<div class="line">    <span class="comment">// reached, round whatever is in between. False when there is none.</span></div>
+<div class="line">    <span class="keywordtype">bool</span> FindWay(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The next point of that way to walk straight to. False once there.</span></div>
+<div class="line">    <span class="keywordtype">bool</span> NextPoint(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; outX, <span class="keywordtype">float</span>&amp; outY) <span class="keyword">const</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Plants on the empty patch nearest this point. A ripe turnip there is</span></div>
+<div class="line">    <span class="comment">// picked when there is room to carry it: true when one was.</span></div>
+<div class="line">    <span class="keywordtype">bool</span> UseSoil(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">bool</span> canCarry);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Whether this point is in front of the house door, where turnips are sold.</span></div>
+<div class="line">    <span class="keywordtype">bool</span> IsAtDoor(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) <span class="keyword">const</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Counts a turnip as sold.</span></div>
+<div class="line">    <span class="keywordtype">void</span> Sell();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Whether this point is on a patch of soil.</span></div>
+<div class="line">    <span class="keywordtype">bool</span> IsSoil(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) <span class="keyword">const</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// What stands nearer the bottom of the screen draws on top, one order</span></div>
+<div class="line">    <span class="comment">// per pixel row, as the map&#39;s spawner sorts the scenery.</span></div>
+<div class="line">    <span class="keyword">static</span> <span class="keywordtype">int</span> DrawOrder(<span class="keywordtype">float</span> y) { <span class="keywordflow">return</span> 1000 - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(y * 16.0f)); }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The farmer&#39;s draw order, with her feet at this point and this high up:</span></div>
+<div class="line">    <span class="comment">// as DrawOrder, but in front of a fence, a log, a rock or a house beside</span></div>
+<div class="line">    <span class="comment">// her or behind it as a whole.</span></div>
+<div class="line">    <span class="keywordtype">int</span> DrawOrderAt(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> feet, <span class="keywordtype">float</span> height) <span class="keyword">const</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="comment">// Something on the map&#39;s collision layer, in columns and rows of the</span></div>
+<div class="line">    <span class="comment">// ground it stands on.</span></div>
+<div class="line">    <span class="keyword">struct </span>Thing</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">enum</span> Kind : uint8_t</div>
+<div class="line">        {</div>
+<div class="line">            Round,  <span class="comment">// in the way inside its ellipse: a rock, a bush, a trunk</span></div>
+<div class="line">            Fence,  <span class="comment">// in the way along the line of its posts</span></div>
+<div class="line">            Wall,   <span class="comment">// in the way over its whole area</span></div>
+<div class="line">            Steps,  <span class="comment">// climbs one level, from its front edge to its back</span></div>
+<div class="line">            Door,   <span class="comment">// where turnips are sold; not in the way</span></div>
+<div class="line">        };</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordtype">float</span> column = 0.0f;</div>
+<div class="line">        <span class="keywordtype">float</span> row = 0.0f;</div>
+<div class="line">        <span class="keywordtype">float</span> columns = 0.0f;  <span class="comment">// an area&#39;s or an ellipse&#39;s size</span></div>
+<div class="line">        <span class="keywordtype">float</span> rows = 0.0f;</div>
+<div class="line">        uint32_t firstPoint = 0;  <span class="comment">// a fence&#39;s posts, in m_FencePoints</span></div>
+<div class="line">        uint32_t points = 0;</div>
+<div class="line">        <span class="keywordtype">int</span> level = 0;</div>
+<div class="line">        Kind kind = Wall;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordtype">bool</span> Holds(<span class="keywordtype">float</span> c, <span class="keywordtype">float</span> r)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">        </span>{</div>
+<div class="line">            <span class="keywordflow">return</span> c &gt;= column &amp;&amp; c &lt;= column + columns &amp;&amp; r &gt;= row &amp;&amp; r &lt;= row + rows;</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">struct </span>Patch</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">float</span> x = 0.0f;</div>
+<div class="line">        <span class="keywordtype">float</span> y = 0.0f;</div>
+<div class="line">        <span class="comment">// Pieces of the soil and crop batches.</span></div>
+<div class="line">        uint32_t soil = 0;</div>
+<div class="line">        uint32_t crop = 0;</div>
+<div class="line">        <span class="keywordtype">int</span> stage = -1;  <span class="comment">// -1: nothing planted</span></div>
+<div class="line">        <span class="keywordtype">float</span> age = 0.0f;</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> ReadMap();</div>
+<div class="line">    <span class="keywordtype">void</span> FindWays();</div>
+<div class="line">    <span class="comment">// How high the ground itself is at a column and row, or -1 off the island.</span></div>
+<div class="line">    <span class="keywordtype">float</span> LevelAt(<span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row) <span class="keyword">const</span>;</div>
+<div class="line">    <span class="keywordtype">bool</span> InTheWay(<span class="keyword">const</span> Thing&amp; thing, <span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row, <span class="keywordtype">float</span> clearance) <span class="keyword">const</span>;</div>
+<div class="line">    <span class="keywordtype">bool</span> CanWalk(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> clearance = 0.0f) <span class="keyword">const</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> AlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; toX, <span class="keywordtype">float</span>&amp; toY) <span class="keyword">const</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Flood(<span class="keywordtype">int</span> from);</div>
+<div class="line">    <span class="keywordtype">void</span> Show(Patch&amp; patch);</div>
+<div class="line">    <span class="keywordtype">void</span> ShowScore();</div>
+<div class="line"> </div>
+<div class="line">    Patch m_Patches[20];</div>
+<div class="line">    <span class="comment">// Every patch&#39;s soil, and every patch&#39;s turnip, each one batch.</span></div>
+<div class="line">    Deki2D::SpriteBatchComponent* m_Soil = <span class="keyword">nullptr</span>;</div>
+<div class="line">    Deki2D::SpriteBatchComponent* m_Crops = <span class="keyword">nullptr</span>;</div>
+<div class="line">    <span class="keywordtype">int</span> m_Score = 0;</div>
+<div class="line"> </div>
+<div class="line">    Deki::Buffer&lt;Thing&gt; m_Things;</div>
+<div class="line">    Deki::Buffer&lt;float&gt; m_FencePoints;  <span class="comment">// each fence post&#39;s column and row</span></div>
+<div class="line">    <span class="comment">// For each square of the island: which of the eight around it can be</span></div>
+<div class="line">    <span class="comment">// walked to, and how many squares away the last flood started.</span></div>
+<div class="line">    Deki::Buffer&lt;uint8_t&gt; m_Ways;</div>
+<div class="line">    Deki::Buffer&lt;uint16_t&gt; m_Steps;</div>
+<div class="line">    Deki::Buffer&lt;uint16_t&gt; m_Queue;</div>
+<div class="line">    <span class="keywordtype">float</span> m_GoalX = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_GoalY = 0.0f;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p><span class="tt">src/Farm.cpp</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Farm.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace</span></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kIslandSize = 24;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kSquares = kIslandSize * kIslandSize;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kIslandTop = 12.0f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Where the raised ground, with the house on it, starts: the back edge of its</span></div>
+<div class="line"><span class="comment">// first column and the front edge of its last row.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kRaisedColumn = 11.5f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kRaisedRow = 9.5f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The farmer&#39;s feet reach this far to each side across the screen, in</span></div>
+<div class="line"><span class="comment">// squares: this many columns and rows.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kFeetHalfWidth = 0.3f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The raised ground&#39;s back edge is on the map a second time, as pieces</span></div>
+<div class="line"><span class="comment">// sorted with her. They stand along this column, this far across from their</span></div>
+<div class="line"><span class="comment">// middle, in meters.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kEdgePieces = kRaisedColumn + 1.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kEdgePieceHalfWidth = 1.0f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// How far from the line of a fence&#39;s posts the farmer keeps, in squares: half</span></div>
+<div class="line"><span class="comment">// a post&#39;s width.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kFenceHalfWidth = 0.22f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Pictures are drawn in front of what stands higher on the screen than their</span></div>
+<div class="line"><span class="comment">// point. In meters: how far the farmer reaches across from her middle, how far</span></div>
+<div class="line"><span class="comment">// a fence&#39;s pieces reach across from theirs, how far below the fence&#39;s line</span></div>
+<div class="line"><span class="comment">// their points are at most, and how far below the front of its ellipse a</span></div>
+<div class="line"><span class="comment">// rock&#39;s or a tree&#39;s point is at most.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kFarmerHalfWidth = 0.6f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kPieceHalfWidth = 1.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kPieceBelowLine = 0.5f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kPictureBelowFoot = 0.25f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// How far a roof reaches past its house&#39;s walls, across the screen, in meters.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kRoofOverhang = 1.0f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The eight squares around one, as columns and rows, and a square the flood</span></div>
+<div class="line"><span class="comment">// did not reach.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kAround[8][2] = { { 1, 0 }, { 1, 1 }, { 0, 1 }, { -1, 1 }, { -1, 0 }, { -1, -1 }, { 0, -1 }, { 1, -1 } };</div>
+<div class="line"><span class="keyword">const</span> uint16_t kNoWay = 0xFFFF;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Two points this close are the same spot, in meters.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kSameSpot = 0.01f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A long straight walk keeps this far from whatever is in the way, in</span></div>
+<div class="line"><span class="comment">// squares, and looks this many squares ahead along the way for one.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kClearance = 0.1f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A line this close to one the keys walk is one, in meters.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kAligned = 0.01f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kLookAhead = 12;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Tiled stores positions at 16 per square, from the corner of the map&#39;s grid:</span></div>
+<div class="line"><span class="comment">// the island starts a square in, and a square is named by its middle, half a</span></div>
+<div class="line"><span class="comment">// square further.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kMapUnitsPerSquare = 16.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kMapMargin = 1.5f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The middle of a square on the lower ground. A square is 2 meters wide and</span></div>
+<div class="line"><span class="comment">// 1 tall, and the raised ground is 1 meter higher.</span></div>
+<div class="line"><span class="keywordtype">float</span> WorldX(<span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> column - row;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">float</span> WorldY(<span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> kIslandTop - (column + row) * 0.5f;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The column and row of a point on the lower ground.</span></div>
+<div class="line"><span class="keywordtype">float</span> ColumnAt(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> kIslandTop - y + x * 0.5f;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">float</span> RowAt(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> kIslandTop - y - x * 0.5f;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> IsOnIsland(<span class="keywordtype">int</span> column, <span class="keywordtype">int</span> row)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> column &gt;= 0 &amp;&amp; row &gt;= 0 &amp;&amp; column &lt; kIslandSize &amp;&amp; row &lt; kIslandSize;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// How far apart two points are in squares. On this view a meter up the</span></div>
+<div class="line"><span class="comment">// screen is twice as far over the ground as a meter across.</span></div>
+<div class="line"><span class="keywordtype">float</span> Squares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> std::hypot(toX - fromX, (toY - fromY) * 2.0f) / 1.41f;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> IsA(<span class="keyword">const</span> DekiTiledMap::DTilemapObject&amp; <span class="keywordtype">object</span>, <span class="keyword">const</span> <span class="keywordtype">char</span>* type)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> std::strncmp(<span class="keywordtype">object</span>.type, type, <span class="keyword">sizeof</span>(<span class="keywordtype">object</span>.type)) == 0;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// How far a point is from the nearest point of the line between two others.</span></div>
+<div class="line"><span class="keywordtype">float</span> DistanceToLine(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> alongX = toX - fromX;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> alongY = toY - fromY;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> length = alongX * alongX + alongY * alongY;</div>
+<div class="line">    <span class="keywordtype">float</span> part = length &gt; 0.0f ? ((x - fromX) * alongX + (y - fromY) * alongY) / length : 0.0f;</div>
+<div class="line">    part = std::fmin(1.0f, std::fmax(0.0f, part));</div>
+<div class="line">    <span class="keywordflow">return</span> std::hypot(x - fromX - alongX * part, y - fromY - alongY * part);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// How high up the screen the line between two points is at a point across,</span></div>
+<div class="line"><span class="comment">// or at its nearer end past either end.</span></div>
+<div class="line"><span class="keywordtype">float</span> HeightAlong(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> x)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (toX == fromX)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> std::fmax(fromY, toY);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> part = std::fmin(1.0f, std::fmax(0.0f, (x - fromX) / (toX - fromX)));</div>
+<div class="line">    <span class="keywordflow">return</span> fromY + (toY - fromY) * part;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The draw orders the farmer may have: over all she stands in front of, and</span></div>
+<div class="line"><span class="comment">// under all she stands behind.</span></div>
+<div class="line"><span class="keyword">struct </span>Between</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">int</span> over = 0;</div>
+<div class="line">    <span class="keywordtype">int</span> under = 0x7FFFFFFF;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Puts the farmer in front of all that is drawn along a line on the ground,</span></div>
+<div class="line"><span class="comment">// or behind all of it. What is drawn reaches this far across from her middle,</span></div>
+<div class="line"><span class="comment">// and has its points no further than this below the line.</span></div>
+<div class="line"><span class="keywordtype">void</span> SortBySide(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> reach, <span class="keywordtype">float</span> below, <span class="keywordtype">bool</span> inFront,</div>
+<div class="line">                Between&amp; order)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (std::fmax(fromX, toX) &lt; x - reach || std::fmin(fromX, toX) &gt; x + reach)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> left = HeightAlong(fromX, fromY, toX, toY, x - reach);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> right = HeightAlong(fromX, fromY, toX, toY, x + reach);</div>
+<div class="line">    <span class="keywordflow">if</span> (inFront)</div>
+<div class="line">    {</div>
+<div class="line">        order.over = std::max(order.over, Farm::DrawOrder(std::fmin(left, right) - below) + 1);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        order.under = std::min(order.under, Farm::DrawOrder(std::fmax(left, right)) - 1);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The same, by which side of the line her feet are on.</span></div>
+<div class="line"><span class="keywordtype">void</span> SortAgainstLine(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> feet, <span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> reach, <span class="keywordtype">float</span> below,</div>
+<div class="line">                     Between&amp; order)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> here = HeightAlong(fromX, fromY, toX, toY, x);</div>
+<div class="line">    <span class="keywordflow">if</span> (feet &lt; here || feet &lt; here + reach)</div>
+<div class="line">    {</div>
+<div class="line">        SortBySide(x, fromX, fromY, toX, toY, reach, below, feet &lt; here, order);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line">}  <span class="comment">// namespace</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::ReadMap()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// The map&#39;s tile objects are only pictures. What is in the way is drawn</span></div>
+<div class="line">    <span class="comment">// on its collision layer as shapes: an ellipse round the foot of a rock or</span></div>
+<div class="line">    <span class="comment">// a tree, a line along a fence&#39;s posts, a rectangle for a wall.</span></div>
+<div class="line">    <span class="keyword">const</span> DekiTiledMap::Tilemap&amp; tilemap = *map.Get();</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; objects = tilemap.Objects();</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; points = tilemap.PolygonPoints();</div>
+<div class="line">    <span class="keywordtype">size_t</span> count = 0;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> DekiTiledMap::DTilemapObject&amp; <span class="keywordtype">object</span> : objects)</div>
+<div class="line">    {</div>
+<div class="line">        count += <span class="keywordtype">object</span>.gid == 0 ? 1 : 0;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (!m_Things.Allocate(count, Deki::Memory::External) ||</div>
+<div class="line">        !m_FencePoints.Allocate(points.size(), Deki::Memory::External))</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">size_t</span> next = 0;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> DekiTiledMap::DTilemapObject&amp; <span class="keywordtype">object</span> : objects)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (<span class="keywordtype">object</span>.gid != 0)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="comment">// Tiled has no levels, so whatever stands on the raised ground has a</span></div>
+<div class="line">        <span class="comment">// &quot;level&quot; property of 1. Tiled shows it where it would be on the</span></div>
+<div class="line">        <span class="comment">// lower ground: a square further up and to the left.</span></div>
+<div class="line">        <span class="keyword">const</span> DekiTiledMap::DTilemapProperty* level = tilemap.FindProperty(<span class="keywordtype">object</span>, <span class="stringliteral">&quot;level&quot;</span>);</div>
+<div class="line">        Thing thing;</div>
+<div class="line">        thing.level = level ? level-&gt;intValue : 0;</div>
+<div class="line">        thing.column = <span class="keywordtype">object</span>.x / kMapUnitsPerSquare - kMapMargin + thing.level;</div>
+<div class="line">        thing.row = <span class="keywordtype">object</span>.y / kMapUnitsPerSquare - kMapMargin + thing.level;</div>
+<div class="line">        thing.columns = <span class="keywordtype">object</span>.width / kMapUnitsPerSquare;</div>
+<div class="line">        thing.rows = <span class="keywordtype">object</span>.height / kMapUnitsPerSquare;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span> shape = <span class="keyword">static_cast&lt;</span>DekiTiledMap::DObjectShape<span class="keyword">&gt;</span>(<span class="keywordtype">object</span>.shape);</div>
+<div class="line">        thing.kind = IsA(<span class="keywordtype">object</span>, <span class="stringliteral">&quot;Steps&quot;</span>)                            ? Thing::Steps</div>
+<div class="line">                     : IsA(<span class="keywordtype">object</span>, <span class="stringliteral">&quot;Door&quot;</span>)                           ? Thing::Door</div>
+<div class="line">                     : shape == DekiTiledMap::DObjectShape::Ellipse  ? Thing::Round</div>
+<div class="line">                     : shape == DekiTiledMap::DObjectShape::Polyline ? Thing::Fence</div>
+<div class="line">                                                                     : Thing::Wall;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// A fence&#39;s posts, as columns and rows. Tiled keeps them from the</span></div>
+<div class="line">        <span class="comment">// object&#39;s own point.</span></div>
+<div class="line">        thing.firstPoint = <span class="keywordtype">object</span>.pointOffset;</div>
+<div class="line">        thing.points = <span class="keywordtype">object</span>.pointCount;</div>
+<div class="line">        <span class="keywordflow">for</span> (uint32_t point = <span class="keywordtype">object</span>.pointOffset; point &lt; <span class="keywordtype">object</span>.pointOffset + <span class="keywordtype">object</span>.pointCount; ++point)</div>
+<div class="line">        {</div>
+<div class="line">            m_FencePoints[point * 2] = thing.column + points[point * 2] / kMapUnitsPerSquare;</div>
+<div class="line">            m_FencePoints[point * 2 + 1] = thing.row + points[point * 2 + 1] / kMapUnitsPerSquare;</div>
+<div class="line">        }</div>
+<div class="line">        m_Things[next++] = thing;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::FindWays()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (!m_Ways.Allocate(kSquares, Deki::Memory::External) || !m_Steps.Allocate(kSquares, Deki::Memory::External) ||</div>
+<div class="line">        !m_Queue.Allocate(kSquares, Deki::Memory::External))</div>
+<div class="line">    {</div>
+<div class="line">        m_Ways.Reset();</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Which squares can be walked between never changes, so it is worked out</span></div>
+<div class="line">    <span class="comment">// once: from the middle of each to the middle of each one around it. A</span></div>
+<div class="line">    <span class="comment">// way that can be walked one way can be walked back.</span></div>
+<div class="line">    std::memset(m_Ways.Data(), 0, kSquares);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; kIslandSize; ++row)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> column = 0; column &lt; kIslandSize; ++column)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 4; ++way)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">int</span> nextColumn = column + kAround[way][0];</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">int</span> nextRow = row + kAround[way][1];</div>
+<div class="line">                <span class="keywordflow">if</span> (IsOnIsland(nextColumn, nextRow) &amp;&amp;</div>
+<div class="line">                    CanWalk(WorldX(column, row), WorldY(column, row), WorldX(nextColumn, nextRow),</div>
+<div class="line">                            WorldY(nextColumn, nextRow)))</div>
+<div class="line">                {</div>
+<div class="line">                    uint8_t&amp; there = m_Ways[row * kIslandSize + column];</div>
+<div class="line">                    uint8_t&amp; back = m_Ways[nextRow * kIslandSize + nextColumn];</div>
+<div class="line">                    there = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(there | (1 &lt;&lt; way));</div>
+<div class="line">                    back = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(back | (1 &lt;&lt; (way + 4)));</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::Start()</div>
+<div class="line">{</div>
+<div class="line">    ReadMap();</div>
+<div class="line">    FindWays();</div>
+<div class="line"> </div>
+<div class="line">    Deki2D::Sprite* farm = farmSheet.Get();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Every patch&#39;s soil in one batch, and every turnip in another, each</span></div>
+<div class="line">    <span class="comment">// piece sorted on its own, at world (0, 0).</span></div>
+<div class="line">    Deki::Object* beds = GetOwner()-&gt;GetOwnerScene()-&gt;CreateDekiObject(<span class="stringliteral">&quot;Beds&quot;</span>);</div>
+<div class="line">    beds-&gt;SetWorldPosition(0.0f, 0.0f);</div>
+<div class="line">    m_Soil = beds-&gt;AddComponent&lt;Deki2D::SpriteBatchComponent&gt;();</div>
+<div class="line">    m_Soil-&gt;sprite = farm;</div>
+<div class="line">    m_Crops = beds-&gt;GetOwnerScene()-&gt;CreateDekiObject(<span class="stringliteral">&quot;Crops&quot;</span>)-&gt;AddComponent&lt;Deki2D::SpriteBatchComponent&gt;();</div>
+<div class="line">    m_Crops-&gt;sprite = farm;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Two long beds of soil, with a path to the gate between them.</span></div>
+<div class="line">    <span class="keywordtype">int</span> next = 0;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row : { 13, 14, 16, 17 })</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> column = 4; column &lt;= 8; ++column)</div>
+<div class="line">        {</div>
+<div class="line">            Patch&amp; patch = m_Patches[next++];</div>
+<div class="line">            patch.x = WorldX(column, row);</div>
+<div class="line">            patch.y = WorldY(column, row);</div>
+<div class="line">            patch.soil = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(m_Soil-&gt;Add(patch.x, patch.y + 0.5f, 128, 0, 32, 32, 100));</div>
+<div class="line">            patch.crop =</div>
+<div class="line">                <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(m_Crops-&gt;Add(patch.x, patch.y + 0.5f, 0, 96, 32, 32, DrawOrder(patch.y - 0.5f)));</div>
+<div class="line">            m_Crops-&gt;SetVisible(patch.crop, <span class="keyword">false</span>);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    ShowScore();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::Update()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> seconds = Deki::Time::GetDeltaTimeF() * 0.001f;</div>
+<div class="line">    <span class="keywordflow">for</span> (Patch&amp; patch : m_Patches)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (patch.stage &lt; 0 || patch.stage == 3)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        patch.age += seconds;</div>
+<div class="line">        <span class="keywordflow">if</span> (patch.age &gt;= secondsPerStage)</div>
+<div class="line">        {</div>
+<div class="line">            patch.age = 0.0f;</div>
+<div class="line">            ++patch.stage;</div>
+<div class="line">            Show(patch);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">float</span> Farm::LevelAt(<span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="comment">// The island&#39;s squares are named by their middles, so its ground reaches</span></div>
+<div class="line">    <span class="comment">// half a square past the first and the last.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> last = kIslandSize - 0.5f;</div>
+<div class="line">    <span class="keywordflow">if</span> (column &lt; -0.5f || row &lt; -0.5f || column &gt; last || row &gt; last)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> -1.0f;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">float</span> height = column &gt; kRaisedColumn &amp;&amp; row &lt; kRaisedRow ? 1.0f : 0.0f;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = 0; index &lt; m_Things.Count(); ++index)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> Thing&amp; thing = m_Things[index];</div>
+<div class="line">        <span class="keywordflow">if</span> (thing.kind == Thing::Steps &amp;&amp; thing.Holds(column, row))</div>
+<div class="line">        {</div>
+<div class="line">            height = (thing.row + thing.rows - row) / thing.rows;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> height;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">float</span> Farm::GroundHeight(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> clearance)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> column = ColumnAt(x, y);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> row = RowAt(x, y);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> height = LevelAt(column, row);</div>
+<div class="line">    <span class="keywordflow">if</span> (height &lt; 0.0f)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> -1.0f;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Her feet have a width, and all of it stands on the same ground: no</span></div>
+<div class="line">    <span class="comment">// part of her is inside the cliff, or past the raised ground&#39;s edge.</span></div>
+<div class="line">    <span class="comment">// Across the screen is a column further for a row less.</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">float</span> side : { -kFeetHalfWidth, kFeetHalfWidth })</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> there = LevelAt(column + side, row - side);</div>
+<div class="line">        <span class="keywordflow">if</span> (there &lt; 0.0f || std::fabs(there - height) &gt;= 0.5f)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> -1.0f;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Everything else on the map is in the way of whoever is on its level.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> level = height &lt; 0.5f ? 0 : 1;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = 0; index &lt; m_Things.Count(); ++index)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> Thing&amp; thing = m_Things[index];</div>
+<div class="line">        <span class="keywordflow">if</span> (thing.level == level &amp;&amp; InTheWay(thing, column, row, clearance))</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> -1.0f;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> height;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::InTheWay(<span class="keyword">const</span> Thing&amp; thing, <span class="keywordtype">float</span> column, <span class="keywordtype">float</span> row, <span class="keywordtype">float</span> clearance)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="keywordflow">switch</span> (thing.kind)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">case</span> Thing::Wall:</div>
+<div class="line">            <span class="comment">// No part of her feet&#39;s width is inside a wall.</span></div>
+<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">float</span> side : { -kFeetHalfWidth, 0.0f, kFeetHalfWidth })</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">if</span> (column + side &gt;= thing.column - clearance &amp;&amp;</div>
+<div class="line">                    column + side &lt;= thing.column + thing.columns + clearance &amp;&amp; row - side &gt;= thing.row - clearance &amp;&amp;</div>
+<div class="line">                    row - side &lt;= thing.row + thing.rows + clearance)</div>
+<div class="line">                {</div>
+<div class="line">                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> Thing::Round:</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> across = thing.columns * 0.5f + clearance;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> down = thing.rows * 0.5f + clearance;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> columns = (column - thing.column - thing.columns * 0.5f) / across;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> rows = (row - thing.row - thing.rows * 0.5f) / down;</div>
+<div class="line">            <span class="keywordflow">return</span> columns * columns + rows * rows &lt; 1.0f;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">case</span> Thing::Fence:</div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t point = thing.firstPoint + 1; point &lt; thing.firstPoint + thing.points; ++point)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">float</span>* from = &amp;m_FencePoints[(point - 1) * 2];</div>
+<div class="line">                <span class="keywordflow">if</span> (DistanceToLine(column, row, from[0], from[1], from[2], from[3]) &lt; kFenceHalfWidth + clearance)</div>
+<div class="line">                {</div>
+<div class="line">                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">        <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> Farm::DrawOrderAt(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> feet, <span class="keywordtype">float</span> height)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="comment">// A fence, a log or a house beside her is wider than one point on the</span></div>
+<div class="line">    <span class="comment">// screen, so part of it can be lower or higher on the screen than her feet</span></div>
+<div class="line">    <span class="comment">// while she is on the other side of it. She draws in front of all of it or</span></div>
+<div class="line">    <span class="comment">// behind all of it, by which side of it she is on.</span></div>
+<div class="line">    Between order;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> level = height &lt; 0.5f ? 0 : 1;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = 0; index &lt; m_Things.Count(); ++index)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> Thing&amp; thing = m_Things[index];</div>
+<div class="line">        <span class="keywordflow">if</span> (thing.level != level)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (thing.kind == Thing::Round)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// The line along its length: just its middle, for a round rock.</span></div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> across = thing.columns * 0.5f;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> down = thing.rows * 0.5f;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> shorter = std::fmin(across, down);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleColumn = thing.column + across;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleRow = thing.row + down;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> fromColumn = middleColumn - (across - shorter);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> fromRow = middleRow - (down - shorter);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> toColumn = middleColumn + (across - shorter);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> toRow = middleRow + (down - shorter);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> size = std::hypot(across, down);</div>
+<div class="line">            SortAgainstLine(x, feet, WorldX(fromColumn, fromRow), WorldY(fromColumn, fromRow) + thing.level,</div>
+<div class="line">                            WorldX(toColumn, toRow), WorldY(toColumn, toRow) + thing.level, kFarmerHalfWidth + size,</div>
+<div class="line">                            size * 0.5f + kPictureBelowFoot, order);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (thing.kind == Thing::Fence)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t point = thing.firstPoint + 1; point &lt; thing.firstPoint + thing.points; ++point)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">float</span>* from = &amp;m_FencePoints[(point - 1) * 2];</div>
+<div class="line">                SortAgainstLine(x, feet, WorldX(from[0], from[1]), WorldY(from[0], from[1]) + thing.level,</div>
+<div class="line">                                WorldX(from[2], from[3]), WorldY(from[2], from[3]) + thing.level,</div>
+<div class="line">                                kFarmerHalfWidth + kPieceHalfWidth, kPieceBelowLine, order);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (thing.kind == Thing::Wall)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// A house is wide and deep. Its picture stands with its point</span></div>
+<div class="line">            <span class="comment">// inside its walls, so she draws in front of all of it once she</span></div>
+<div class="line">            <span class="comment">// is past its front walls, and behind all of it otherwise. Beside</span></div>
+<div class="line">            <span class="comment">// a corner, her side nearer the house is still behind it until</span></div>
+<div class="line">            <span class="comment">// all her width is past.</span></div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> left = WorldX(thing.column, thing.row + thing.rows) - kRoofOverhang;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> right = WorldX(thing.column + thing.columns, thing.row) + kRoofOverhang;</div>
+<div class="line">            <span class="keywordflow">if</span> (left &gt; x + kFarmerHalfWidth || right &lt; x - kFarmerHalfWidth)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> column = ColumnAt(x, feet - thing.level);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> row = RowAt(x, feet - thing.level);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> lastColumn = thing.column + thing.columns;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> lastRow = thing.row + thing.rows;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">bool</span> besideLeft = column &lt; thing.column &amp;&amp; row &lt; lastRow + kFeetHalfWidth;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">bool</span> besideRight = row &lt; thing.row &amp;&amp; column &lt; lastColumn + kFeetHalfWidth;</div>
+<div class="line">            <span class="keywordflow">if</span> ((column &gt; lastColumn || row &gt; lastRow) &amp;&amp; !besideLeft &amp;&amp; !besideRight)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">float</span> front = WorldY(thing.column + thing.columns, thing.row + thing.rows) + thing.level;</div>
+<div class="line">                order.over = std::max(order.over, DrawOrder(front) + 1);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            {</div>
+<div class="line">                order.under = std::min(order.under, DrawOrder(WorldY(thing.column, thing.row) + thing.level) - 1);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The pieces of the raised ground&#39;s back edge cover her only while she</span></div>
+<div class="line">    <span class="comment">// is on the lower ground behind it, where her feet are behind its wall:</span></div>
+<div class="line">    <span class="comment">// there she walks half hidden, which is what shows the ground is higher.</span></div>
+<div class="line">    <span class="comment">// Anywhere else she is on top of it or in front of its cliff. Her right</span></div>
+<div class="line">    <span class="comment">// side comes out from behind the cliff&#39;s corner after her feet do.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> column = ColumnAt(x, feet - height);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> row = RowAt(x, feet - height);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> behind = level == 0 &amp;&amp; column &lt; kRaisedColumn &amp;&amp; row &lt; kRaisedRow + kFeetHalfWidth;</div>
+<div class="line">    SortBySide(x, WorldX(kEdgePieces, 0.0f), WorldY(kEdgePieces, 0.0f), WorldX(kEdgePieces, kRaisedRow),</div>
+<div class="line">               WorldY(kEdgePieces, kRaisedRow), kFarmerHalfWidth + kEdgePieceHalfWidth, 0.0f, !behind, order);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Otherwise as anything else, by how low on the screen her feet are. In</span></div>
+<div class="line">    <span class="comment">// the corner of two fences she is in front of one and behind the other,</span></div>
+<div class="line">    <span class="comment">// and the post they share cannot be both: in front of it wins.</span></div>
+<div class="line">    <span class="keywordflow">return</span> std::max(std::min(DrawOrder(feet - 0.5f), order.under), order.over);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::CanWalk(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> toX, <span class="keywordtype">float</span> toY, <span class="keywordtype">float</span> clearance)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="comment">// Looks six times a square: close enough to see a fence, and the cliff as</span></div>
+<div class="line">    <span class="comment">// a drop of more than half a level between two looks.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> looks = 1 + <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(Squares(fromX, fromY, toX, toY) * 6.0f);</div>
+<div class="line">    <span class="comment">// Where she stands now is as it is: she may be right up against a fence.</span></div>
+<div class="line">    <span class="keywordtype">float</span> height = GroundHeight(fromX, fromY);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> look = 1; look &lt;= looks &amp;&amp; height &gt;= 0.0f; ++look)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> part = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(look) / looks;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> next = GroundHeight(fromX + (toX - fromX) * part, fromY + (toY - fromY) * part, clearance);</div>
+<div class="line">        <span class="keywordflow">if</span> (next &lt; 0.0f || std::fabs(next - height) &gt;= 0.5f)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">        }</div>
+<div class="line">        height = next;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> height &gt;= 0.0f;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::Flood(<span class="keywordtype">int</span> from)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// Spreads out from one square, a square further each round, so every</span></div>
+<div class="line">    <span class="comment">// square it reaches learns how many squares away it is.</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> square = 0; square &lt; kSquares; ++square)</div>
+<div class="line">    {</div>
+<div class="line">        m_Steps[square] = kNoWay;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordtype">int</span> first = 0;</div>
+<div class="line">    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line">    m_Steps[from] = 0;</div>
+<div class="line">    m_Queue[count++] = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(from);</div>
+<div class="line">    <span class="keywordflow">while</span> (first &lt; count)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> square = m_Queue[first++];</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 8; ++way)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">int</span> next = square + kAround[way][0] + kAround[way][1] * kIslandSize;</div>
+<div class="line">            <span class="keywordflow">if</span> ((m_Ways[square] &amp; (1 &lt;&lt; way)) &amp;&amp; m_Steps[next] == kNoWay)</div>
+<div class="line">            {</div>
+<div class="line">                m_Steps[next] = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(m_Steps[square] + 1);</div>
+<div class="line">                m_Queue[count++] = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(next);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::FindWay(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (!m_Ways)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Starts from the nearest square whose middle can be walked straight to:</span></div>
+<div class="line">    <span class="comment">// the one under the point, or one beside it.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> column = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(ColumnAt(fromX, fromY) + 0.5f));</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> row = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(RowAt(fromX, fromY) + 0.5f));</div>
+<div class="line">    <span class="keywordtype">int</span> start = -1;</div>
+<div class="line">    <span class="keywordtype">float</span> nearest = 0.0f;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> nextRow = row - 1; nextRow &lt;= row + 1; ++nextRow)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> nextColumn = column - 1; nextColumn &lt;= column + 1; ++nextColumn)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleX = WorldX(nextColumn, nextRow);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleY = WorldY(nextColumn, nextRow);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> distance = Squares(fromX, fromY, middleX, middleY);</div>
+<div class="line">            <span class="keywordflow">if</span> (IsOnIsland(nextColumn, nextRow) &amp;&amp; (start &lt; 0 || distance &lt; nearest) &amp;&amp;</div>
+<div class="line">                CanWalk(fromX, fromY, middleX, middleY))</div>
+<div class="line">            {</div>
+<div class="line">                start = nextRow * kIslandSize + nextColumn;</div>
+<div class="line">                nearest = distance;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (start &lt; 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// A flood from there finds every square that can be reached. The goal is</span></div>
+<div class="line">    <span class="comment">// the one nearest the point asked for: its own square when it is one.</span></div>
+<div class="line">    Flood(start);</div>
+<div class="line">    <span class="keywordtype">int</span> goal = -1;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> square = 0; square &lt; kSquares; ++square)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> middleX = WorldX(square % kIslandSize, square / kIslandSize);</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> middleY = WorldY(square % kIslandSize, square / kIslandSize);</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> distance = Squares(x, y, middleX, middleY);</div>
+<div class="line">        <span class="keywordflow">if</span> (m_Steps[square] != kNoWay &amp;&amp; (goal &lt; 0 || distance &lt; nearest))</div>
+<div class="line">        {</div>
+<div class="line">            goal = square;</div>
+<div class="line">            nearest = distance;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// A second flood, from the goal, tells every square how far from it it</span></div>
+<div class="line">    <span class="comment">// is. The way there is always to a square that is nearer.</span></div>
+<div class="line">    Flood(goal);</div>
+<div class="line">    m_GoalX = WorldX(goal % kIslandSize, goal / kIslandSize);</div>
+<div class="line">    m_GoalY = WorldY(goal % kIslandSize, goal / kIslandSize);</div>
+<div class="line">    <span class="keywordflow">if</span> (CanWalk(m_GoalX, m_GoalY, x, y))</div>
+<div class="line">    {</div>
+<div class="line">        m_GoalX = x;</div>
+<div class="line">        m_GoalY = y;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::NextPoint(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; outX, <span class="keywordtype">float</span>&amp; outY)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="keywordflow">if</span> (Squares(fromX, fromY, m_GoalX, m_GoalY) &lt; kSameSpot)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> column = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(ColumnAt(fromX, fromY) + 0.5f));</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> row = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::floor(RowAt(fromX, fromY) + 0.5f));</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Straight to the goal when the line there is clear, or it is in the</span></div>
+<div class="line">    <span class="comment">// square she is already in.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> inGoalSquare = IsOnIsland(column, row) &amp;&amp; m_Steps[row * kIslandSize + column] == 0;</div>
+<div class="line">    <span class="keywordflow">if</span> (CanWalk(fromX, fromY, m_GoalX, m_GoalY, kClearance) ||</div>
+<div class="line">        (inGoalSquare &amp;&amp; CanWalk(fromX, fromY, m_GoalX, m_GoalY)))</div>
+<div class="line">    {</div>
+<div class="line">        outX = m_GoalX;</div>
+<div class="line">        outY = m_GoalY;</div>
+<div class="line">        AlongTheSquares(fromX, fromY, outX, outY);</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Otherwise to the middle of a square: of the one under the point and the</span></div>
+<div class="line">    <span class="comment">// eight around it, the nearest the goal that can be walked straight to.</span></div>
+<div class="line">    <span class="keywordtype">int</span> best = -1;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> nextRow = row - 1; nextRow &lt;= row + 1; ++nextRow)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> nextColumn = column - 1; nextColumn &lt;= column + 1; ++nextColumn)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (!IsOnIsland(nextColumn, nextRow))</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">int</span> square = nextRow * kIslandSize + nextColumn;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleX = WorldX(nextColumn, nextRow);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> middleY = WorldY(nextColumn, nextRow);</div>
+<div class="line">            <span class="keywordflow">if</span> ((best &lt; 0 || m_Steps[square] &lt; m_Steps[best]) &amp;&amp; m_Steps[square] != kNoWay &amp;&amp;</div>
+<div class="line">                Squares(fromX, fromY, middleX, middleY) &gt;= kSameSpot &amp;&amp; CanWalk(fromX, fromY, middleX, middleY))</div>
+<div class="line">            {</div>
+<div class="line">                best = square;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (best &lt; 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Then on along the way for as far as the line stays clear: each time to</span></div>
+<div class="line">    <span class="comment">// the square a step nearer the goal, of those the one nearest it. One long</span></div>
+<div class="line">    <span class="comment">// straight walk, where there would be a turn at every square.</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> look = 0; look &lt; kLookAhead; ++look)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> nearer = -1;</div>
+<div class="line">        <span class="keywordtype">float</span> nearest = 0.0f;</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> way = 0; way &lt; 8; ++way)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">int</span> next = best + kAround[way][0] + kAround[way][1] * kIslandSize;</div>
+<div class="line">            <span class="keywordflow">if</span> (!(m_Ways[best] &amp; (1 &lt;&lt; way)) || m_Steps[next] + 1 != m_Steps[best])</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> distance = Squares(WorldX(next % kIslandSize, next / kIslandSize),</div>
+<div class="line">                                           WorldY(next % kIslandSize, next / kIslandSize), m_GoalX, m_GoalY);</div>
+<div class="line">            <span class="keywordflow">if</span> (nearer &lt; 0 || distance &lt; nearest)</div>
+<div class="line">            {</div>
+<div class="line">                nearer = next;</div>
+<div class="line">                nearest = distance;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (nearer &lt; 0 || !CanWalk(fromX, fromY, WorldX(nearer % kIslandSize, nearer / kIslandSize),</div>
+<div class="line">                                   WorldY(nearer % kIslandSize, nearer / kIslandSize), kClearance))</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
+<div class="line">        best = nearer;</div>
+<div class="line">    }</div>
+<div class="line">    outX = WorldX(best % kIslandSize, best / kIslandSize);</div>
+<div class="line">    outY = WorldY(best % kIslandSize, best / kIslandSize);</div>
+<div class="line">    AlongTheSquares(fromX, fromY, outX, outY);</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::AlongTheSquares(<span class="keywordtype">float</span> fromX, <span class="keywordtype">float</span> fromY, <span class="keywordtype">float</span>&amp; toX, <span class="keywordtype">float</span>&amp; toY)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="comment">// The keys walk along the squares, two across for one up or down. Any</span></div>
+<div class="line">    <span class="comment">// other line is laid as two that do, one along each way of the squares,</span></div>
+<div class="line">    <span class="comment">// when nothing is in the way of either, so a tapped walk moves in the</span></div>
+<div class="line">    <span class="comment">// same whole-pixel steps as the keys.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> dx = toX - fromX;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> dy = toY - fromY;</div>
+<div class="line">    <span class="keywordflow">if</span> (std::fabs(std::fabs(dx) - std::fabs(dy) * 2.0f) &lt; kAligned)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">// How far along each way: up-right (2, 1) and down-right (2, -1).</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> upRight = (dx * 0.5f + dy) * 0.5f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> downRight = (dx * 0.5f - dy) * 0.5f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> corners[2][2] = { { fromX + upRight * 2.0f, fromY + upRight },</div>
+<div class="line">                                  { fromX + downRight * 2.0f, fromY - downRight } };</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; corner : corners)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (CanWalk(fromX, fromY, corner[0], corner[1]) &amp;&amp; CanWalk(corner[0], corner[1], toX, toY))</div>
+<div class="line">        {</div>
+<div class="line">            toX = corner[0];</div>
+<div class="line">            toY = corner[1];</div>
+<div class="line">            <span class="keywordflow">return</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::IsSoil(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> Patch&amp; patch : m_Patches)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (std::hypot(patch.x - x, (patch.y - y) * 2.0f) &lt; 1.0f)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::IsAtDoor(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> index = 0; index &lt; m_Things.Count(); ++index)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (m_Things[index].kind == Thing::Door &amp;&amp; m_Things[index].Holds(ColumnAt(x, y), RowAt(x, y)))</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::Sell()</div>
+<div class="line">{</div>
+<div class="line">    ++m_Score;</div>
+<div class="line">    ShowScore();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Farm::UseSoil(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">bool</span> canCarry)</div>
+<div class="line">{</div>
+<div class="line">    Patch* nearest = <span class="keyword">nullptr</span>;</div>
+<div class="line">    <span class="keywordtype">float</span> best = 1.4f;</div>
+<div class="line">    <span class="keywordflow">for</span> (Patch&amp; patch : m_Patches)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> distance = std::hypot(patch.x - x, (patch.y - y) * 2.0f);</div>
+<div class="line">        <span class="keywordflow">if</span> (distance &lt; best)</div>
+<div class="line">        {</div>
+<div class="line">            best = distance;</div>
+<div class="line">            nearest = &amp;patch;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (!nearest)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (nearest-&gt;stage &lt; 0)</div>
+<div class="line">    {</div>
+<div class="line">        nearest-&gt;stage = 0;</div>
+<div class="line">        nearest-&gt;age = 0.0f;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nearest-&gt;stage == 3 &amp;&amp; canCarry)</div>
+<div class="line">    {</div>
+<div class="line">        nearest-&gt;stage = -1;</div>
+<div class="line">        Show(*nearest);</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    }</div>
+<div class="line">    Show(*nearest);</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::Show(Patch&amp; patch)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// The dark soil is the watered one, just below the light one on the sheet.</span></div>
+<div class="line">    m_Soil-&gt;SetFrameRect(patch.soil, 128, patch.stage &lt; 0 ? 0 : 32, 32, 32);</div>
+<div class="line">    m_Crops-&gt;SetVisible(patch.crop, patch.stage &gt;= 0);</div>
+<div class="line">    <span class="keywordflow">if</span> (patch.stage &gt;= 0)</div>
+<div class="line">    {</div>
+<div class="line">        m_Crops-&gt;SetFrameRect(patch.crop, patch.stage * 32, 96, 32, 32);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farm::ShowScore()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">char</span> line[24];</div>
+<div class="line">    std::snprintf(line, <span class="keyword">sizeof</span>(line), <span class="stringliteral">&quot;%d&quot;</span>, m_Score);</div>
+<div class="line">    scoreText.Get()-&gt;SetText(line);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The soil and the turnips are pieces of two Sprite Batch components. <span class="tt">Add</span> places a rectangle of the sheet, so nothing needs cutting up first, and returns the piece's number. <span class="tt">SetFrameRect</span> and <span class="tt">SetVisible</span> change that piece later. Twenty patches are two objects where they would be forty, which a small device feels, and each piece still sorts on its own: the farmer walks in front of one turnip and behind the next.</p>
+<p>A column and a row name a square on the island: columns run down and to the right, rows down and to the left. <span class="tt">WorldX</span> and <span class="tt">WorldY</span> turn them into a position, and <span class="tt">ColumnAt</span> and <span class="tt">RowAt</span> do the reverse. <span class="tt">ReadMap</span> reads the <span class="tt">collision</span> layer's shapes once, with <span class="tt">FindProperty</span> for each one's <span class="tt">level</span>, and leaves the tile objects, the pictures, to the spawner. <span class="tt">GroundHeight</span> says how high the ground is at a point: 0 on the lower ground, 1 on the raised ground and in between on the steps. It keeps the farmer on the island and out of everything on her level: a <span class="tt">Wall</span> over its whole area, a rock or a tree inside its ellipse, a fence along its line. Her feet have a width, <span class="tt">kFeetHalfWidth</span> to each side across the screen, and all of it has to stand on the same ground: so no part of her is inside the cliff or a wall, and on the raised ground she stops before her feet hang over its edge. Behind the raised ground she walks right up to its back wall, where its edge covers her feet, so she looks to stand below it.</p>
+<p>A tap can be on the other side of a fence, so the farm finds the way round. <span class="tt">FindWays</span> works out once, at the start, which squares can be walked between: <span class="tt">CanWalk</span> tries the straight line from the middle of one to the middle of the next with <span class="tt">GroundHeight</span>, so whatever stops the farmer stops the way too, and the steps are the only way up. <span class="tt">Flood</span> then spreads from one square to all it can reach, a square further each round, and every square learns how many squares away it is. <span class="tt">FindWay</span> floods twice: from the farmer, to find the square nearest the tap that she can reach at all, and from that square, so that walking to any square with a smaller number leads there. <span class="tt">NextPoint</span> hands the way out a point at a time: the goal itself when the line there is clear, otherwise the middle of a square. It starts from the best square beside her and looks on along the way, a square nearer the goal each time, for as long as she could still walk straight there with a little room to spare. So she walks in long straight lines and turns only where something is in the way. <span class="tt">AlongTheSquares</span> then lays a line the keys could not walk as two they can, one along each way of the squares, when nothing is in the way of either, so a tapped walk moves in the same whole-pixel steps as the keys.</p>
+<p><span class="tt">UseSoil</span> plants on an empty patch and picks a ripe turnip, when the farmer says she has room for one more. The count on screen is of turnips sold: <span class="tt">IsAtDoor</span> says when she stands on the map's <span class="tt">Door</span> area, and <span class="tt">Sell</span> counts one.</p>
+<p><span class="tt">DrawOrder</span> is what makes the farmer walk behind the trees and in front of the turnips: lower on the screen draws on top. It matches the spawner's <b>Sort Base</b> and <b>Sort Per Meter</b>, so the farmer and the scenery sort together. The spawner sorts a tile object by its point. The house's point is inside its walls, and its tileset's <b>Tile Offset</b> draws the picture from there. A fence, a log or the house is wider than one point, though: part of it can be lower on the screen than her feet while she stands behind it. <span class="tt">DrawOrderAt</span> sorts her against its line, or against the house's walls, instead: in front of all of it or behind all of it, by which side she is on. In the corner of two fences she is in front of one and behind the other, and in front wins for the post they share. The pieces of the raised ground's edge are sorted the same way, by where she is: they cover her only while she is on the lower ground behind it, and anywhere else, on top of it or in front of its cliff, she draws over them. Beside a corner, of the cliff or of the house, she counts as behind it until all her width is past, so her side comes out from behind the corner instead of jumping in front of it.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-the-farmer"></a>
+The farmer</h1>
+<p>Create a script called <span class="tt">Farmer</span>.</p>
+<p><span class="tt">src/Farmer.h</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;deki/Engine.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/assets/AssetRef.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/reflection/ObjectRef.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;CameraComponent.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;Farm.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;InputCollider.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;SpriteBatchComponent.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;SpriteComponent.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DEKI_CATEGORY(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line">DEKI_DESCRIPTION(<span class="stringliteral">&quot;Walks with the arrow keys or to a tapped spot, runs while B is held, and carries the turnips she &quot;</span></div>
+<div class="line">                 <span class="stringliteral">&quot;picks to the house.&quot;</span>)</div>
+<div class="line">class Farmer : public Deki::Component</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;Farm&gt; farm;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;DekiRendering::CameraComponent&gt; camera;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;DekiInput::InputCollider&gt; tapArea;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::AssetRef&lt;Deki2D::Sprite&gt; idleSheet;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::AssetRef&lt;Deki2D::Sprite&gt; walkSheet;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    <span class="keywordtype">float</span> speed = 3.75f;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    <span class="keywordtype">float</span> runSpeed = 7.5f;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> Start() <span class="keyword">override</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Update() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="comment">// One pair of arrows: which way it steers, and for how long.</span></div>
+<div class="line">    <span class="keyword">struct </span>Steer</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> way = 0;         <span class="comment">// -1, 0 or 1: the last way pressed</span></div>
+<div class="line">        <span class="keywordtype">float</span> held = 0.0f;   <span class="comment">// how long that press has lasted</span></div>
+<div class="line">        <span class="keywordtype">float</span> since = 1.0f;  <span class="comment">// how long ago it was let go; 0 while pressed</span></div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">static</span> <span class="keywordtype">int</span> Steered(Steer&amp; steer, <span class="keywordtype">int</span> pressed, <span class="keywordtype">float</span> seconds);</div>
+<div class="line">    <span class="keywordtype">void</span> WalkTo(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line">    <span class="keywordtype">void</span> Use(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> ground);</div>
+<div class="line">    <span class="keywordtype">void</span> CarryTower(<span class="keywordtype">bool</span> walking, <span class="keywordtype">float</span> seconds, <span class="keywordtype">int</span> order);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> m_HasTarget = <span class="keyword">false</span>;  <span class="comment">// walking to a tapped spot</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_TargetX = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_TargetGround = 0.0f;</div>
+<div class="line">    <span class="keywordtype">bool</span> m_UseWhenThere = <span class="keyword">false</span>;</div>
+<div class="line">    <span class="keywordtype">float</span> m_Height = 0.0f;  <span class="comment">// how far up she has climbed, in levels</span></div>
+<div class="line">    <span class="keywordtype">int</span> m_FacingX = 1;</div>
+<div class="line">    <span class="keywordtype">int</span> m_FacingY = -1;</div>
+<div class="line">    <span class="keywordtype">float</span> m_TurnClock = 0.0f;  <span class="comment">// how long she has been going another way than she faces</span></div>
+<div class="line">    Steer m_SteerX;</div>
+<div class="line">    Steer m_SteerY;</div>
+<div class="line">    <span class="keywordtype">float</span> m_X = 0.0f;  <span class="comment">// where her feet are, as if on the lower ground; she is shown on the nearest pixel</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_Ground = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_FrameSeconds = 0.0f;  <span class="comment">// how long a frame takes, evened out over the last few</span></div>
+<div class="line">    <span class="keywordtype">int</span> m_StickWay = -1;          <span class="comment">// which of the four ways the stick is pushed, or -1</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_Clock = 0.0f;         <span class="comment">// counts frames of the sheet</span></div>
+<div class="line">    <span class="keywordtype">bool</span> m_WasWalking = <span class="keyword">true</span>;</div>
+<div class="line">    <span class="keywordtype">bool</span> m_WasUseDown = <span class="keyword">false</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The turnips she carries, one on top of the other.</span></div>
+<div class="line">    Deki2D::SpriteBatchComponent* m_Tower = <span class="keyword">nullptr</span>;</div>
+<div class="line">    <span class="keywordtype">int</span> m_Carried = 0;</div>
+<div class="line">    <span class="keywordtype">float</span> m_LeanX = 0.0f;  <span class="comment">// how far each turnip sits from the one below, across and up, in pixels</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_LeanY = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_LeanSpeedX = 0.0f;  <span class="comment">// how fast the lean is changing</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_LeanSpeedY = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_Hop = 0.0f;        <span class="comment">// how much the turnips hop with her steps, 0 to 1</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_Drop = 0.0f;       <span class="comment">// how far the last turnip picked still has to fall, 1 to 0</span></div>
+<div class="line">    <span class="keywordtype">float</span> m_SellClock = 0.0f;  <span class="comment">// since the last turnip went into the house</span></div>
+<div class="line">};</div>
+</div><!-- fragment --><p><span class="tt">src/Farmer.cpp</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Farmer.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;DekiInput.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;Keys.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace</span></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kFeetBelowCentre = 1.25f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// This close to a point of the way, she is there, in meters.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kThere = 0.01f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The tower: how many turnips she can carry, where the first sits above her</span></div>
+<div class="line"><span class="comment">// middle and how far apart they are, in pixels.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kMostCarried = 8;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kTowerBase = 25.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kTowerStep = 8.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kSecondsPerSale = 0.12f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The tower is a spring: it is pulled to lean back from the way she walks,</span></div>
+<div class="line"><span class="comment">// overshoots and swings before it settles. Stiffer swings faster, and more</span></div>
+<div class="line"><span class="comment">// damping settles sooner.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kLeanWalking = 1.4f;  <span class="comment">// how far each turnip sits behind the one below, over the ground, in pixels</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kLeanStiffness = 110.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kLeanDamping = 6.0f;</div>
+<div class="line"><span class="comment">// Each turnip hops with her steps, a little after the one below it, and a</span></div>
+<div class="line"><span class="comment">// picked turnip drops onto the tower from above.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kHopHeight = 2.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kDropHeight = 14.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kDropSeconds = 0.18f;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Held(uint32_t key)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> DekiInput::DekiInput::IsKeyPressed(key);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The sheet&#39;s row for a way to face: x and y are each -1, 0 or 1, and up is</span></div>
+<div class="line"><span class="comment">// +1. The first four rows face left, right, down and up, and the next four</span></div>
+<div class="line"><span class="comment">// the diagonals.</span></div>
+<div class="line"><span class="keywordtype">int</span> RowFacing(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (y == 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> x &lt; 0 ? 0 : 1;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (x == 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> y &lt; 0 ? 2 : 3;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (y &lt; 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> x &lt; 0 ? 4 : 5;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> x &lt; 0 ? 6 : 7;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// How many frames of the walk she steps through for each meter, and how many</span></div>
+<div class="line"><span class="comment">// a second while she stands.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kFramesPerMeter = 1.6f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kIdleFramesPerSecond = 6.0f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A turn waits this long, so a step aside does not flick her round.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kTurnSeconds = 0.05f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Walked into a corner, she slips round it when the way is clear this many</span></div>
+<div class="line"><span class="comment">// pixels to one side: half a square.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> kSlipPixels = 4;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A stick counts once it is pushed this far, of 1. Round the circle it has a</span></div>
+<div class="line"><span class="comment">// quarter for each way she walks. Counted in quarter turns: the first quarter</span></div>
+<div class="line"><span class="comment">// starts this far above straight right, and a way is kept until the stick is</span></div>
+<div class="line"><span class="comment">// this far into the next quarter.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kStickDeadZone = 0.4f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kStickFirstQuarter = 0.19f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kStickKeep = 0.1f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kQuarterTurn = 1.5708f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A press shorter than this carries on for as long: a trackball&#39;s roll comes</span></div>
+<div class="line"><span class="comment">// as presses of one frame each, and this makes one walk of them.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kTapSeconds = 0.12f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A frame&#39;s length is evened out over about this many frames, and a pace</span></div>
+<div class="line"><span class="comment">// this near a whole number of screen pixels across a frame is taken as that.</span></div>
+<div class="line"><span class="comment">// A frame this much shorter than usual is the new usual at once: the first</span></div>
+<div class="line"><span class="comment">// frame, which the scene loads in, is long. One longer than usual counts for</span></div>
+<div class="line"><span class="comment">// no more than this many times the usual: a hitch is not the pace.</span></div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kFramesEvened = 10.0f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kNearlyEven = 0.05f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kMuchShorter = 0.75f;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">float</span> kHitch = 2.0f;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The screen pixel a position is shown on, on a screen with this many pixels</span></div>
+<div class="line"><span class="comment">// to a meter. Half pixels always go the same way, so a walk of half pixels</span></div>
+<div class="line"><span class="comment">// makes even stairs.</span></div>
+<div class="line"><span class="keywordtype">float</span> WholePixel(<span class="keywordtype">float</span> meters, <span class="keywordtype">float</span> pixelsPerMeter)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> std::floor(meters * pixelsPerMeter + 0.25f) / pixelsPerMeter;</div>
+<div class="line">}</div>
+<div class="line">}  <span class="comment">// namespace</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farmer::Start()</div>
+<div class="line">{</div>
+<div class="line">    m_X = GetOwner()-&gt;GetWorldX();</div>
+<div class="line">    m_Ground = GetOwner()-&gt;GetWorldY() - kFeetBelowCentre - m_Height;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// A tap or a click anywhere on the screen sends her there.</span></div>
+<div class="line">    tapArea.Get()-&gt;onPointerDown.push_back([<span class="keyword">this</span>](<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) { WalkTo(x, y); });</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The tower is one batch of ripe turnips off the farm&#39;s sheet, at world</span></div>
+<div class="line">    <span class="comment">// (0, 0), with only the ones she carries shown.</span></div>
+<div class="line">    m_Tower = GetOwner()-&gt;GetOwnerScene()-&gt;CreateDekiObject(<span class="stringliteral">&quot;Tower&quot;</span>)-&gt;AddComponent&lt;Deki2D::SpriteBatchComponent&gt;();</div>
+<div class="line">    m_Tower-&gt;sprite = farm.Get()-&gt;farmSheet.Get();</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0; index &lt; kMostCarried; ++index)</div>
+<div class="line">    {</div>
+<div class="line">        m_Tower-&gt;Add(0.0f, 0.0f, 96, 96, 32, 32, 0);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> Farmer::Steered(Steer&amp; steer, <span class="keywordtype">int</span> pressed, <span class="keywordtype">float</span> seconds)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (pressed != 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Still held from the last frame, or pressed anew.</span></div>
+<div class="line">        steer.held = pressed == steer.way &amp;&amp; steer.since == 0.0f ? steer.held + seconds : 0.0f;</div>
+<div class="line">        steer.way = pressed;</div>
+<div class="line">        steer.since = 0.0f;</div>
+<div class="line">        <span class="keywordflow">return</span> pressed;</div>
+<div class="line">    }</div>
+<div class="line">    steer.since += seconds;</div>
+<div class="line">    <span class="keywordflow">return</span> steer.held &lt; kTapSeconds &amp;&amp; steer.since &lt; kTapSeconds ? steer.way : 0;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farmer::Use(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> ground)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (farm.Get()-&gt;UseSoil(x, ground, m_Carried &lt; kMostCarried))</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// The new turnip drops onto the tower, which rocks under it the way</span></div>
+<div class="line">        <span class="comment">// she faces.</span></div>
+<div class="line">        ++m_Carried;</div>
+<div class="line">        m_Drop = 1.0f;</div>
+<div class="line">        m_LeanSpeedX += 14.0f * m_FacingX;</div>
+<div class="line">        m_LeanSpeedY += 7.0f * m_FacingY;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farmer::CarryTower(<span class="keywordtype">bool</span> walking, <span class="keywordtype">float</span> seconds, <span class="keywordtype">int</span> order)</div>
+<div class="line">{</div>
+<div class="line">    Deki::Object* me = GetOwner();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// In front of the door the tower goes into the house, a turnip at a time</span></div>
+<div class="line">    <span class="comment">// from the top.</span></div>
+<div class="line">    m_SellClock += seconds;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> ground = me-&gt;GetWorldY() - kFeetBelowCentre - m_Height;</div>
+<div class="line">    <span class="keywordflow">if</span> (m_Carried &gt; 0 &amp;&amp; m_SellClock &gt;= kSecondsPerSale &amp;&amp; farm.Get()-&gt;IsAtDoor(me-&gt;GetWorldX(), ground))</div>
+<div class="line">    {</div>
+<div class="line">        --m_Carried;</div>
+<div class="line">        m_SellClock = 0.0f;</div>
+<div class="line">        farm.Get()-&gt;Sell();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The lean is a spring pulled back from the way she walks: it lags when</span></div>
+<div class="line">    <span class="comment">// she sets off, and swings past upright when she stops. It leans over the</span></div>
+<div class="line">    <span class="comment">// ground, so on the screen a lean up or down is half as long as one</span></div>
+<div class="line">    <span class="comment">// across, as a square is half as tall as it is wide, and it is as long</span></div>
+<div class="line">    <span class="comment">// whichever way she walks.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> step = std::fmin(seconds, 0.05f);</div>
+<div class="line">    <span class="keywordtype">float</span> leanX = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> leanY = 0.0f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> across = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(m_FacingX);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> up = m_FacingY * 0.5f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> overGround = std::sqrt(across * across * 0.5f + up * up * 2.0f);</div>
+<div class="line">    <span class="keywordflow">if</span> (walking &amp;&amp; overGround &gt; 0.0f)</div>
+<div class="line">    {</div>
+<div class="line">        leanX = -kLeanWalking * across / overGround;</div>
+<div class="line">        leanY = -kLeanWalking * up / overGround;</div>
+<div class="line">    }</div>
+<div class="line">    m_LeanSpeedX += ((leanX - m_LeanX) * kLeanStiffness - m_LeanSpeedX * kLeanDamping) * step;</div>
+<div class="line">    m_LeanSpeedY += ((leanY - m_LeanY) * kLeanStiffness - m_LeanSpeedY * kLeanDamping) * step;</div>
+<div class="line">    m_LeanX += m_LeanSpeedX * step;</div>
+<div class="line">    m_LeanY += m_LeanSpeedY * step;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The hop fades in as she walks and out as she stops, and the drop runs out.</span></div>
+<div class="line">    m_Hop += ((walking ? 1.0f : 0.0f) - m_Hop) * std::fmin(1.0f, seconds * 10.0f);</div>
+<div class="line">    m_Drop = std::fmax(0.0f, m_Drop - seconds / kDropSeconds);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0; index &lt; kMostCarried; ++index)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Higher turnips lean further, so the tower bends like a stalk.</span></div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> bend = index * (1.0f + index * 0.15f);</div>
+<div class="line">        <span class="comment">// Two steps to a turn of the walk&#39;s four frames.</span></div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> hop = std::fabs(std::sin(m_Clock * 1.5708f - index * 0.6f)) * kHopHeight * m_Hop;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> drop = index == m_Carried - 1 ? m_Drop * kDropHeight : 0.0f;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> x = me-&gt;GetWorldX() + std::round(m_LeanX * bend) / 16.0f;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> y =</div>
+<div class="line">            me-&gt;GetWorldY() + std::round(kTowerBase + index * kTowerStep + m_LeanY * bend + hop + drop) / 16.0f;</div>
+<div class="line">        m_Tower-&gt;SetPlace(index, x, y, order + 1 + index);</div>
+<div class="line">        m_Tower-&gt;SetVisible(index, index &lt; m_Carried);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farmer::WalkTo(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// The tap is where her feet should end up. On the raised ground that is a</span></div>
+<div class="line">    <span class="comment">// level up, so look there first.</span></div>
+<div class="line">    Farm* field = farm.Get();</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> up = field-&gt;GroundHeight(x, y - 1.0f) &gt;= 0.5f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> ground = up ? y - 1.0f : y;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The farm finds the way there, round the fences and up the steps, and</span></div>
+<div class="line">    <span class="comment">// hands it out a point at a time. The first is where she stands.</span></div>
+<div class="line">    Deki::Object* me = GetOwner();</div>
+<div class="line">    m_HasTarget = field-&gt;FindWay(m_X, m_Ground, x, ground);</div>
+<div class="line">    m_TargetX = m_X;</div>
+<div class="line">    m_TargetGround = m_Ground;</div>
+<div class="line">    m_UseWhenThere = field-&gt;IsSoil(x, ground);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Farmer::Update()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Down;</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Enter;</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Esc;</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Left;</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Right;</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Space;</div>
+<div class="line">    <span class="keyword">using </span>DekiInput::Keys::Up;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> seconds = Deki::Time::GetDeltaTimeF() * 0.001f;</div>
+<div class="line">    <span class="keywordtype">int</span> x = Steered(m_SteerX, (Held(Right) ? 1 : 0) - (Held(Left) ? 1 : 0), seconds);</div>
+<div class="line">    <span class="keywordtype">int</span> y = Steered(m_SteerY, (Held(Up) ? 1 : 0) - (Held(Down) ? 1 : 0), seconds);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// A stick walks the way it is pushed, and the same way as the keys: pushed</span></div>
+<div class="line">    <span class="comment">// up-right or straight up she goes up-right, as with Up; down-right or</span></div>
+<div class="line">    <span class="comment">// straight right, down-right, as with Right; and so on round. So each way</span></div>
+<div class="line">    <span class="comment">// has a quarter of the circle, and the same push always goes the same way.</span></div>
+<div class="line">    <span class="comment">// Near the edge of a quarter it keeps the way it had, so she does not</span></div>
+<div class="line">    <span class="comment">// flick between two.</span></div>
+<div class="line">    <span class="keywordtype">float</span> stickX = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> stickY = 0.0f;</div>
+<div class="line">    <span class="keywordflow">if</span> (DekiInput::DekiInput::GetStick(0, &amp;stickX, &amp;stickY) &amp;&amp; std::hypot(stickX, stickY) &gt; kStickDeadZone)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// In quarter turns from the start of the first quarter, 0 to 4:</span></div>
+<div class="line">        <span class="comment">// up-right, up-left, down-left, down-right.</span></div>
+<div class="line">        <span class="keywordtype">float</span> turns = std::atan2(stickY, stickX) / kQuarterTurn - kStickFirstQuarter;</div>
+<div class="line">        turns = turns &lt; 0.0f ? turns + 4.0f : turns;</div>
+<div class="line">        <span class="keywordtype">float</span> fromKept = turns - (m_StickWay + 0.5f);</div>
+<div class="line">        fromKept = fromKept &gt; 2.0f ? fromKept - 4.0f : (fromKept &lt; -2.0f ? fromKept + 4.0f : fromKept);</div>
+<div class="line">        <span class="keywordflow">if</span> (m_StickWay &lt; 0 || std::fabs(fromKept) &gt; 0.5f + kStickKeep)</div>
+<div class="line">        {</div>
+<div class="line">            m_StickWay = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(turns) % 4;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> ways[4][2] = { { 0, 1 }, { -1, 0 }, { 0, -1 }, { 1, 0 } };</div>
+<div class="line">        x = ways[m_StickWay][0];</div>
+<div class="line">        y = ways[m_StickWay][1];</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        m_StickWay = -1;</div>
+<div class="line">    }</div>
+<div class="line">    Deki::Object* me = GetOwner();</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> ground = m_Ground;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// This frame&#39;s move. She walks along the island&#39;s squares, as the ground</span></div>
+<div class="line">    <span class="comment">// is laid: Up goes up-right, Right down-right, Down down-left and Left</span></div>
+<div class="line">    <span class="comment">// up-left. Two held together are a corner of the pad, which points one</span></div>
+<div class="line">    <span class="comment">// of those ways on the screen as a stick does: Up and Right go up-right,</span></div>
+<div class="line">    <span class="comment">// Right and Down down-right, and so on round. Each way is two</span></div>
+<div class="line">    <span class="comment">// pixels across for one up or down, the same length every way, so she</span></div>
+<div class="line">    <span class="comment">// walks at one pace. She steps every frame, by as much as Speed says,</span></div>
+<div class="line">    <span class="comment">// and is shown on the nearest pixel of the screen: the steps on the</span></div>
+<div class="line">    <span class="comment">// screen are as even as pixels allow at any Speed, never more than one</span></div>
+<div class="line">    <span class="comment">// apart. A screen that shows the art twice as large has two pixels for</span></div>
+<div class="line">    <span class="comment">// each of the art&#39;s, so there every step up or down is a whole one and</span></div>
+<div class="line">    <span class="comment">// the walk is smooth. Frames are not</span></div>
+<div class="line">    <span class="comment">// all as long, which would show as a hitch now and then, so the pace</span></div>
+<div class="line">    <span class="comment">// goes by a frame&#39;s usual length, and one that is all but a whole number</span></div>
+<div class="line">    <span class="comment">// of screen pixels across a frame is made exactly that: then every step</span></div>
+<div class="line">    <span class="comment">// is the same.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> pixel = 1.0f / 16.0f;</div>
+<div class="line">    <span class="keyword">auto</span>&amp; engine = Deki::Engine::GetInstance();</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> perMeter = camera.Get()-&gt;GetPixelsPerMeter(engine.GetScreenWidth(), engine.GetScreenHeight());</div>
+<div class="line">    <span class="keywordflow">if</span> (m_FrameSeconds &lt;= 0.0f || seconds &lt; m_FrameSeconds * kMuchShorter)</div>
+<div class="line">    {</div>
+<div class="line">        m_FrameSeconds = seconds;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        m_FrameSeconds += (std::fmin(seconds, m_FrameSeconds * kHitch) - m_FrameSeconds) / kFramesEvened;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">// She runs while B is held: the B key, or a handheld&#39;s B button, which</span></div>
+<div class="line">    <span class="comment">// arrives as Esc.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> pace = Held(DekiInput::Keys::B) || Held(Esc) ? runSpeed : speed;</div>
+<div class="line">    <span class="keywordtype">float</span> across = pace * m_FrameSeconds * perMeter;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> even = std::round(across);</div>
+<div class="line">    <span class="keywordflow">if</span> (even &gt; 0.0f &amp;&amp; std::fabs(across - even) &lt; kNearlyEven * even)</div>
+<div class="line">    {</div>
+<div class="line">        across = even;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> rise = across * 0.5f / perMeter;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> alongX = x != 0 &amp;&amp; (y == 0 || x == -y);</div>
+<div class="line">    <span class="keywordtype">float</span> moveX = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> moveGround = 0.0f;</div>
+<div class="line">    <span class="keywordflow">if</span> (x != 0 || y != 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (alongX)</div>
+<div class="line">        {</div>
+<div class="line">            moveX = x * rise * 2.0f;</div>
+<div class="line">            moveGround = -x * rise;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            moveX = y * rise * 2.0f;</div>
+<div class="line">            moveGround = y * rise;</div>
+<div class="line">        }</div>
+<div class="line">        m_HasTarget = <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_HasTarget)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Walk to the next point of the way, at the pace of the keys.</span></div>
+<div class="line">        <span class="keywordtype">float</span> dx = m_TargetX - m_X;</div>
+<div class="line">        <span class="keywordtype">float</span> dy = m_TargetGround - ground;</div>
+<div class="line">        <span class="keywordflow">if</span> (std::hypot(dx, dy * 2.0f) &lt; kThere)</div>
+<div class="line">        {</div>
+<div class="line">            m_HasTarget = farm.Get()-&gt;NextPoint(m_X, ground, m_TargetX, m_TargetGround);</div>
+<div class="line">            <span class="keywordflow">if</span> (!m_HasTarget &amp;&amp; m_UseWhenThere)</div>
+<div class="line">            {</div>
+<div class="line">                Use(m_X, ground);</div>
+<div class="line">            }</div>
+<div class="line">            dx = m_TargetX - m_X;</div>
+<div class="line">            dy = m_TargetGround - ground;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (m_HasTarget)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (std::fabs(std::fabs(dx) - std::fabs(dy) * 2.0f) &lt; kThere)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">// The farm laid it along the squares: the keys&#39; steps, the</span></div>
+<div class="line">                <span class="comment">// last one shorter.</span></div>
+<div class="line">                moveX = std::copysign(std::fmin(std::fabs(dx), rise * 2.0f), dx);</div>
+<div class="line">                moveGround = std::copysign(std::fmin(std::fabs(dy), rise), dy);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">// A line it could not lay so: walked straight.</span></div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">float</span> part = std::fmin(1.0f, rise * 2.0f / std::hypot(dx, dy * 2.0f));</div>
+<div class="line">                moveX = dx * part;</div>
+<div class="line">                moveGround = dy * part;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> stepping = moveX != 0.0f || moveGround != 0.0f;</div>
+<div class="line">    <span class="keywordtype">bool</span> walking = stepping;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (stepping)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Where her feet go, as if on the lower ground: Farm says how high it</span></div>
+<div class="line">        <span class="comment">// is there. The cliff is too high to step up or down: only the steps</span></div>
+<div class="line">        <span class="comment">// go between.</span></div>
+<div class="line">        Farm* field = farm.Get();</div>
+<div class="line">        <span class="keyword">auto</span> canStand = [&amp;](<span class="keywordtype">float</span> atX, <span class="keywordtype">float</span> atGround)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> there = field-&gt;GroundHeight(atX, atGround);</div>
+<div class="line">            <span class="keywordflow">return</span> there &gt;= 0.0f &amp;&amp; std::fabs(there - m_Height) &lt; 0.5f;</div>
+<div class="line">        };</div>
+<div class="line">        <span class="keywordtype">float</span> stepX = moveX;</div>
+<div class="line">        <span class="keywordtype">float</span> stepGround = moveGround;</div>
+<div class="line">        <span class="keywordtype">bool</span> free = canStand(m_X + stepX, ground + stepGround);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Walked into the corner of something, she slips round it: when the</span></div>
+<div class="line">        <span class="comment">// way is clear a little to one side, she glides that way, half her</span></div>
+<div class="line">        <span class="comment">// step forward and half to the side, so she slides straight along a</span></div>
+<div class="line">        <span class="comment">// slanted edge instead of zigzagging. Where even the glide is in the</span></div>
+<div class="line">        <span class="comment">// way, she steps to the side.</span></div>
+<div class="line">        <span class="keywordflow">if</span> (!free &amp;&amp; (x != 0 || y != 0))</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// The other way: two pixels across for one up or down, as hers.</span></div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> upPerAcross = moveX * moveGround &lt; 0.0f ? 0.5f : -0.5f;</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> sideX = std::fabs(moveX);</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">float</span> sideGround = sideX * upPerAcross;</div>
+<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> pixels = 1; pixels &lt;= kSlipPixels &amp;&amp; !free; ++pixels)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">for</span> (<span class="keywordtype">float</span> side : { 1.0f, -1.0f })</div>
+<div class="line">                {</div>
+<div class="line">                    <span class="keyword">const</span> <span class="keywordtype">float</span> asideX = side * pixels * 2.0f * pixel;</div>
+<div class="line">                    <span class="keyword">const</span> <span class="keywordtype">float</span> asideGround = asideX * upPerAcross;</div>
+<div class="line">                    <span class="keywordflow">if</span> (!free &amp;&amp; canStand(m_X + asideX + moveX, ground + asideGround + moveGround) &amp;&amp;</div>
+<div class="line">                        canStand(m_X + side * sideX, ground + side * sideGround))</div>
+<div class="line">                    {</div>
+<div class="line">                        <span class="keyword">const</span> <span class="keywordtype">float</span> glideX = (moveX + side * sideX) * 0.5f;</div>
+<div class="line">                        <span class="keyword">const</span> <span class="keywordtype">float</span> glideGround = (moveGround + side * sideGround) * 0.5f;</div>
+<div class="line">                        <span class="keyword">const</span> <span class="keywordtype">bool</span> glides = canStand(m_X + glideX, ground + glideGround);</div>
+<div class="line">                        stepX = glides ? glideX : side * sideX;</div>
+<div class="line">                        stepGround = glides ? glideGround : side * sideGround;</div>
+<div class="line">                        free = <span class="keyword">true</span>;</div>
+<div class="line">                    }</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span> (free)</div>
+<div class="line">        {</div>
+<div class="line">            m_X += stepX;</div>
+<div class="line">            m_Ground += stepGround;</div>
+<div class="line">            m_Height = field-&gt;GroundHeight(m_X, m_Ground);</div>
+<div class="line">            me-&gt;SetWorldPosition(WholePixel(m_X, perMeter),</div>
+<div class="line">                                 WholePixel(m_Ground, perMeter) + kFeetBelowCentre + m_Height);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// Something is in the way: she turns to it and stands.</span></div>
+<div class="line">            m_HasTarget = <span class="keyword">false</span>;</div>
+<div class="line">            walking = <span class="keyword">false</span>;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// She faces the nearest of the eight ways to the one she is going. A</span></div>
+<div class="line">        <span class="comment">// step up the screen counts double, as it is twice as far over the</span></div>
+<div class="line">        <span class="comment">// ground, so walking along the island&#39;s squares is a diagonal.</span></div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> across = std::fabs(moveX);</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">float</span> up = std::fabs(moveGround) * 2.0f;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> faceX = across &gt; up * 0.41f ? (moveX &gt; 0.0f ? 1 : -1) : 0;</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> faceY = up &gt; across * 0.41f ? (moveGround &gt; 0.0f ? 1 : -1) : 0;</div>
+<div class="line">        m_TurnClock = faceX == m_FacingX &amp;&amp; faceY == m_FacingY ? 0.0f : m_TurnClock + seconds;</div>
+<div class="line">        <span class="keywordflow">if</span> (!m_WasWalking || m_TurnClock &gt;= kTurnSeconds)</div>
+<div class="line">        {</div>
+<div class="line">            m_FacingX = faceX;</div>
+<div class="line">            m_FacingY = faceY;</div>
+<div class="line">            m_TurnClock = 0.0f;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">auto</span>* sprite = me-&gt;GetComponent&lt;Deki2D::SpriteComponent&gt;();</div>
+<div class="line">    <span class="keywordflow">if</span> (walking != m_WasWalking)</div>
+<div class="line">    {</div>
+<div class="line">        sprite-&gt;sprite = walking ? walkSheet.Get() : idleSheet.Get();</div>
+<div class="line">        m_WasWalking = walking;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The walk steps with the ground she covers, so her feet do not slide.</span></div>
+<div class="line">    m_Clock += seconds * (walking ? pace * kFramesPerMeter : kIdleFramesPerSecond);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> frame = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_Clock) % 4;</div>
+<div class="line">    sprite-&gt;SetFrameRect(frame * 48, RowFacing(m_FacingX, m_FacingY) * 48, 48, 48);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> feet = me-&gt;GetWorldY() - kFeetBelowCentre;</div>
+<div class="line">    sprite-&gt;sortingOrder = farm.Get()-&gt;DrawOrderAt(me-&gt;GetWorldX(), feet, m_Height);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Enter is also a handheld&#39;s A button.</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> useDown = Held(Space) || Held(Enter);</div>
+<div class="line">    <span class="keywordflow">if</span> (useDown &amp;&amp; !m_WasUseDown)</div>
+<div class="line">    {</div>
+<div class="line">        Use(me-&gt;GetWorldX(), feet - m_Height);</div>
+<div class="line">    }</div>
+<div class="line">    m_WasUseDown = useDown;</div>
+<div class="line"> </div>
+<div class="line">    CarryTower(walking, seconds, sprite-&gt;sortingOrder);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// The camera stays on her: she is always in the middle of the screen and</span></div>
+<div class="line">    <span class="comment">// the map moves under her, a step of the map for each step of hers. She</span></div>
+<div class="line">    <span class="comment">// is on a whole pixel of the screen, so the camera is too.</span></div>
+<div class="line">    camera.GetObject()-&gt;SetWorldPosition(me-&gt;GetWorldX(), me-&gt;GetWorldY());</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Arrows and Space are the keyboard. A handheld's D-pad arrives as the arrows too, and its A button as Enter, so <span class="tt">Update</span> takes Enter as well as Space: see <a href="guide-input.html">Input</a>. She runs while B is held: the B key, or a handheld's B button, which arrives as Esc. A trackball, like the LilyGO T-Deck's, arrives as arrows pressed for a single frame at each step of the ball. <span class="tt">Steered</span> lets a press that short carry on for a moment, so rolling the ball is one walk and not a row of single steps. A key that is held stops when it is let go.</p>
+<p>A tap, a click or a touch lands on the <b>Tap Area</b>. <span class="tt">Start</span> adds a listener to its <span class="tt">onPointerDown</span>, which gets the spot in world meters, and <span class="tt">WalkTo</span> asks the farm for the way there. <span class="tt">Update</span> then walks straight to each point the farm hands out, through the gate or up the steps when that is the way, and uses the soil if the tap was on it. A tap on a fence or inside the house takes her as near as she can get.</p>
+<p>The farmer remembers how high she has climbed. Ground more than half a level higher or lower than her is refused, so the cliff stops her and only the steps take her up. Walked into the corner of something, she slips round it: when the way is clear up to half a square to one side, she glides that way, half a step forward and half to the side, instead of stopping. So a corner by a pixel does not catch her, and she slides straight along a slanted edge rather than zigzagging.</p>
+<p>The sheet has eight rows and four frames in each: she faces left, right, down and up in the first four rows, and the four diagonals in the rest. <span class="tt">RowFacing</span> picks the row for the way she is going, and going along the island's squares is a diagonal. A turn waits a twentieth of a second, so one frame's step aside does not flick her round. She walks along the island's squares, the way the ground is laid: Up goes up-right, Right down-right, Down down-left and Left up-left. Two held together are a corner of the pad, and point one of those ways on the screen as a stick does: Up and Right go up-right, Right and Down down-right, Down and Left down-left, Left and Up up-left. Each of those is two pixels across for one up or down, so every way is the same length and she walks at one pace. She steps every frame, by as much as <b>Speed</b> says, so the screen moves a little each frame and never a lot every other. <span class="tt">m_X</span> and <span class="tt">m_Ground</span> keep exactly where she is, and <span class="tt">WholePixel</span> picks the pixel she is shown on, so any <b>Speed</b> walks as evenly as pixels allow: two frames' steps are never more than a pixel apart. At 3.75 every step is the same, one pixel across every frame and one up or down every other, the stairs a slanted line is drawn in, and at 7.5 two across and one up. Frames are not all as long, so the pace goes by a frame's usual length, and one that is all but a whole number of half pixels a frame is made exactly that. The camera stays on her: she is always in the middle of the screen and the map moves under her, a step of the map for each step of hers. A handheld's stick walks the same ways as the keys: pushed up-right or straight up she goes up-right, down-right or straight right down-right, and so on round, so each way has a quarter of the circle and the same push always goes the same way. Near the edge of a quarter it keeps the way it had. <span class="tt">DekiInput::GetStick</span> reads it, from the handheld or a gamepad, and the Play view passes a gamepad's on. The frame comes from a clock that counts with the ground she covers, not with time, so her feet do not slide when <b>Speed</b> changes, and she stands when something is in her way.</p>
+<p>The tower is one more sprite batch: eight ripe turnips, of which only the ones she carries are shown. <span class="tt">Use</span> adds one each time <span class="tt">UseSoil</span> picks, and drops it onto the tower from above. <span class="tt">CarryTower</span> places them above her head every frame. The lean is a spring: it is pulled back from the way she walks, so the tower lags when she sets off, bends further the higher it goes, and swings past upright a few times when she stops. It leans over the ground, as she walks: walking up the island it tips towards you, down it tips away, and on the screen a lean up or down is half as long as one across, as the squares are. Each turnip also hops with her steps, a little after the one below it. In front of the door <span class="tt">CarryTower</span> takes one off the top every eighth of a second and sells it.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-the-hud"></a>
+The HUD</h1>
+<p>The HUD goes under the camera, and a <b>Screen Anchor</b> keeps each part of it at a corner of the screen, whatever the screen's size. Every panel is the same small picture, <span class="tt">raised-panel</span>, from the zip. It is a Procedural Sprite: the editor draws it from the numbers in its Inspector, here a face with an outline and a darker band along the bottom, which gives it the raised look of the keys. A Sprite Component in <b>Nine Slice</b> mode stretches its middle to any size and keeps its corners.</p>
+<p>Positions and sizes are in pixels, as the Inspector shows them. Set every Text Component's <b>Font</b> to <span class="tt">monogram</span>, <b>Align</b> to <b>Left</b>, <b>Vertical Align</b> to <b>Cap Center</b> and <b>Color</b> to <span class="tt">#6B4024</span>. The score uses <b>Pixel Scale</b> 2, which doubles every pixel of the font and keeps it crisp. "Order" is the <b>Sorting Order</b>.</p>
+<p>The turnip counter sits in the top left corner. Make an empty object called <b>Counter</b> under <b>Camera</b>. Its position is set by the anchor.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Counter</b>  </td><td class="markdownTableBodyNone">Screen Anchor: <b>Anchor</b> <b>Top Left</b>, <b>Offset</b> 38, -22  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">raised-panel</span>, <b>Render Mode</b> <b>Nine Slice</b>, 60 × 28, order 1989  </td></tr>
+</table>
+<p>Under it. <b>Score</b> is the Hello text: rename it and drag it onto <b>Counter</b>.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Turnip Icon</b>  </td><td class="markdownTableBodyNone">-16, 3  </td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">turnip</span>, order 1992  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Score</b> (Hello, renamed)  </td><td class="markdownTableBodyNone">13, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">0</span>, <b>Font Size</b> 16, <b>Pixel Scale</b> 2, 32 × 28, order 1992  </td></tr>
+</table>
+<p>The help sits behind a button in the top right corner. Make an empty object called <b>Help Button</b> under <b>Tap Area</b>: an object under another gets a tap before it, so a tap on the button does not also send the farmer there.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Help Button</b>  </td><td class="markdownTableBodyNone">Screen Anchor: <b>Anchor</b> <b>Top Right</b>, <b>Offset</b> -22, -22  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">raised-panel</span>, <b>Render Mode</b> <b>Nine Slice</b>, 28 × 28, order 1989  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Input Collider: 28 × 28  </td></tr>
+</table>
+<p>Under it:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Mark</b>  </td><td class="markdownTableBodyNone">1, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">?</span>, <b>Align</b> <b>Center</b>, <b>Font Size</b> 16, <b>Pixel Scale</b> 2, 28 × 28, order 1992  </td></tr>
+</table>
+<p>The popup goes under the button too, for the same reason: while it is open it gets every tap first. Make an empty object called <b>Help</b> under <b>Help Button</b>.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Help</b>  </td><td class="markdownTableBodyNone">Screen Anchor: <b>Anchor</b> <b>Center</b>, <b>Offset</b> 0, 0  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">raised-panel</span>, <b>Render Mode</b> <b>Nine Slice</b>, 256 × 152, order 1993  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Input Collider: 640 × 480  </td></tr>
+</table>
+<p>Under it, every one with order 1994. Set <b>Align</b> to <b>Center</b> on these Text Components:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Title</b>  </td><td class="markdownTableBodyNone">0, 54  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">How to play</span>, <b>Font Size</b> 16, <b>Pixel Scale</b> 2, 232 × 28  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Plant Line</b>  </td><td class="markdownTableBodyNone">0, 30  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Plant turnips on the soil.</span>, <b>Font Size</b> 16, 232 × 14  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Pick Line</b>  </td><td class="markdownTableBodyNone">0, 16  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Pick the ripe ones: they stack up.</span>, <b>Font Size</b> 16, 232 × 14  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Sell Line</b>  </td><td class="markdownTableBodyNone">0, 2  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Sell the tower at the house door.</span>, <b>Font Size</b> 16, 232 × 14  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Close Line</b>  </td><td class="markdownTableBodyNone">0, -58  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Tab, Y or a tap closes this.</span>, <b>Font Size</b> 16, 232 × 14  </td></tr>
+</table>
+<p>The controls are three rows in the same place, one for each way to play, and a script shows the one that matches. Each row is its first icon, with the rest under it. These labels keep <b>Align</b> <b>Left</b>.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Keys Hint</b>  </td><td class="markdownTableBodyNone">-82, -30  </td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">arrow-keys</span>  </td></tr>
+</table>
+<p>Under it:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Walk Label</b>  </td><td class="markdownTableBodyNone">39, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Walk</span>, <b>Font Size</b> 16, 26 × 36  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Space Key</b>  </td><td class="markdownTableBodyNone">78, 0  </td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">space-key</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Use Label</b>  </td><td class="markdownTableBodyNone">139, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Plant, pick</span>, <b>Font Size</b> 16, 66 × 36  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Buttons Hint</b>  </td><td class="markdownTableBodyNone">-68, -30  </td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">d-pad</span>  </td></tr>
+</table>
+<p>Under it:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Walk Label</b>  </td><td class="markdownTableBodyNone">31, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Walk</span>, <b>Font Size</b> 16, 26 × 36  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>A Button</b>  </td><td class="markdownTableBodyNone">55, 0  </td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">a-button</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Use Label</b>  </td><td class="markdownTableBodyNone">101, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Plant, pick</span>, <b>Font Size</b> 16, 66 × 36  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Tap Hint</b>  </td><td class="markdownTableBodyNone">-63, -30  </td><td class="markdownTableBodyNone">Sprite Component: <span class="tt">tap</span>  </td></tr>
+</table>
+<p>Under it:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Object  </th><th class="markdownTableHeadNone">Position  </th><th class="markdownTableHeadNone">Add  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Tap Label</b>  </td><td class="markdownTableBodyNone">74, 0  </td><td class="markdownTableBodyNone">Text Component: <span class="tt">Tap to walk and farm</span>, <b>Font Size</b> 16, 120 × 36  </td></tr>
+</table>
+<p>Create a script called <span class="tt">Help</span>, and add the <b>Help</b> component to <b>Help Button</b>.</p>
+<p><span class="tt">src/Help.h</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;deki/Engine.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/reflection/ObjectRef.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;InputCollider.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DEKI_CATEGORY(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line">DEKI_DESCRIPTION(<span class="stringliteral">&quot;Opens the help when its button is tapped or Tab is pressed. A tap or Tab closes it.&quot;</span>)</div>
+<div class="line">class Help : public Deki::Component</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;DekiInput::InputCollider&gt; popup;</div>
+<div class="line"> </div>
+<div class="line">    ~Help() <span class="keyword">override</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Start() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> Show(<span class="keywordtype">bool</span> shown);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">size_t</span> m_Listener = 0;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p><span class="tt">src/Help.cpp</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Help.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;DekiInput.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;Keys.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Help::Start()</div>
+<div class="line">{</div>
+<div class="line">    Show(<span class="keyword">false</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// A tap on the button opens the help. Its collider covers the screen and</span></div>
+<div class="line">    <span class="comment">// it is under the button, so while it is open it gets every tap first:</span></div>
+<div class="line">    <span class="comment">// any tap closes it, and none reaches the farm behind.</span></div>
+<div class="line">    GetOwner()-&gt;GetComponent&lt;DekiInput::InputCollider&gt;()-&gt;onPointerDown.push_back([<span class="keyword">this</span>](<span class="keywordtype">float</span>, <span class="keywordtype">float</span>) { Show(true); });</div>
+<div class="line">    popup.Get()-&gt;onPointerDown.push_back([<span class="keyword">this</span>](<span class="keywordtype">float</span>, <span class="keywordtype">float</span>) { Show(<span class="keyword">false</span>); });</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Tab opens and closes it without a touchscreen. It is a handheld&#39;s Y button.</span></div>
+<div class="line">    m_Listener = DekiInput::DekiInput::RegisterEventCallback(</div>
+<div class="line">        [<span class="keyword">this</span>](<span class="keyword">const</span> DekiInput::InputEvent&amp; event)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (event.type == DekiInput::InputEventType::KeyDown &amp;&amp; event.key == DekiInput::Keys::Tab)</div>
+<div class="line">            {</div>
+<div class="line">                Show(!popup.GetObject()-&gt;IsActive());</div>
+<div class="line">            }</div>
+<div class="line">        });</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">Help::~Help()</div>
+<div class="line">{</div>
+<div class="line">    DekiInput::DekiInput::UnregisterEventCallback(m_Listener);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Help::Show(<span class="keywordtype">bool</span> shown)</div>
+<div class="line">{</div>
+<div class="line">    popup.GetObject()-&gt;SetActive(shown);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><span class="tt">Start</span> hides the popup and listens to the two colliders: a tap on the button opens the help, and any tap while it is open closes it. Tab does both from a keyboard, and from a handheld, where it is the Y button. The destructor stops listening to the keys, or the callback would be called on a component that is gone.</p>
+<p>Create a script called <span class="tt">ControlsHint</span>, and add the <b>Controls Hint</b> component to <b>Help Button</b> as well: the button is always there, so it hears every key and tap, also while the popup is closed.</p>
+<p><span class="tt">src/ControlsHint.h</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;deki/Engine.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;deki/reflection/ObjectRef.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;SpriteComponent.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line">DEKI_CATEGORY(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line">DEKI_DESCRIPTION(<span class="stringliteral">&quot;Shows the controls for what the player last used: the keyboard, a handheld&#39;s buttons or taps.&quot;</span>)</div>
+<div class="line">class ControlsHint : public Deki::Component</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;Deki2D::SpriteComponent&gt; keysHint;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;Deki2D::SpriteComponent&gt; buttonsHint;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    Deki::ObjectRef&lt;Deki2D::SpriteComponent&gt; tapHint;</div>
+<div class="line"> </div>
+<div class="line">    ~ControlsHint() <span class="keyword">override</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Start() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> Show(Deki::ObjectRef&lt;Deki2D::SpriteComponent&gt;&amp; hint);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">size_t</span> m_Listener = 0;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p><span class="tt">src/ControlsHint.cpp</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;ControlsHint.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;DekiInput.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> ControlsHint::Start()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// Start with what this device has: a handheld&#39;s buttons, a touchscreen, or keys.</span></div>
+<div class="line">    <span class="keywordflow">if</span> (DekiInput::DekiInput::GetInput(<span class="stringliteral">&quot;Miyoo&quot;</span>))</div>
+<div class="line">    {</div>
+<div class="line">        Show(buttonsHint);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (DekiInput::DekiInput::GetInput(<span class="stringliteral">&quot;DekiDisplayTouch&quot;</span>))</div>
+<div class="line">    {</div>
+<div class="line">        Show(tapHint);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        Show(keysHint);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Then follow the player. A key says which input sent it: the Miyoo&#39;s</span></div>
+<div class="line">    <span class="comment">// buttons arrive as keys too. A tap or a click is a pointer going down.</span></div>
+<div class="line">    m_Listener = DekiInput::DekiInput::RegisterEventCallback(</div>
+<div class="line">        [<span class="keyword">this</span>](<span class="keyword">const</span> DekiInput::InputEvent&amp; event)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (event.type == DekiInput::InputEventType::KeyDown)</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">bool</span> handheld = <span class="keyword">event</span>.source &amp;&amp; std::strcmp(event.source, <span class="stringliteral">&quot;Miyoo&quot;</span>) == 0;</div>
+<div class="line">                Show(handheld ? buttonsHint : keysHint);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.type == DekiInput::InputEventType::MouseButtonDown ||</div>
+<div class="line">                     event.type == DekiInput::InputEventType::TouchDown)</div>
+<div class="line">            {</div>
+<div class="line">                Show(tapHint);</div>
+<div class="line">            }</div>
+<div class="line">        });</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">ControlsHint::~ControlsHint()</div>
+<div class="line">{</div>
+<div class="line">    DekiInput::DekiInput::UnregisterEventCallback(m_Listener);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> ControlsHint::Show(Deki::ObjectRef&lt;Deki2D::SpriteComponent&gt;&amp; hint)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">for</span> (Deki::ObjectRef&lt;Deki2D::SpriteComponent&gt;* each : { &amp;keysHint, &amp;buttonsHint, &amp;tapHint })</div>
+<div class="line">    {</div>
+<div class="line">        each-&gt;GetObject()-&gt;SetActive(each == &amp;hint);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><span class="tt">Start</span> picks the row from the inputs the device has: <span class="tt">GetInput("Miyoo")</span> finds the Miyoo Mini's buttons, and <span class="tt">DekiDisplayTouch</span> is a touchscreen. After that it follows the player. Every input event names what sent it, so a key from the <span class="tt">Miyoo</span> shows the buttons, any other key shows the keyboard, and a pointer going down, which is a tap or a click, shows the tap row.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-connect-it"></a>
+Connect it</h1>
+<p>Add the <b>Farm</b> component to the Farm object and fill in its fields.</p>
+<div class="image">
+<img src="first-game-fields.png" alt=""/>
+<div class="caption">
+Farm's fields in the Inspector</div></div>
+    <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Field  </th><th class="markdownTableHeadNone">Set it to  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Farm Sheet</b>  </td><td class="markdownTableBodyNone"><span class="tt">Free ver</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Map</b>  </td><td class="markdownTableBodyNone"><span class="tt">farm</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Score Text</b>  </td><td class="markdownTableBodyNone">The Score object  </td></tr>
+</table>
+<p>Add the <b>Farmer</b> component to the Farmer object. Set <b>Farm</b> to the Farm object, <b>Camera</b> to the Camera object, <b>Tap Area</b> to the Tap Area object, <b>Idle Sheet</b> to <span class="tt">FPlayer 1 idle</span> and <b>Walk Sheet</b> to <span class="tt">FPlayer 1 walking</span>.</p>
+<p>On <b>Help Button</b>, set the Help's <b>Popup</b> to the Help object, and the Controls Hint's <b>Keys Hint</b>, <b>Buttons Hint</b> and <b>Tap Hint</b> to the three rows.</p>
+<p>Save with Ctrl+S and press <b>Run</b>.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-take-it-further"></a>
+Take it further</h1>
+<p><b>Change the pace.</b> <b>Seconds Per Stage</b> on the Farm is how fast turnips grow, <b>Speed</b> on the Farmer is how fast she walks and <b>Run Speed</b> how fast she runs, and <span class="tt">kMostCarried</span> in <span class="tt">Farmer.cpp</span> is how tall the tower gets. The constants beside it set how much the tower leans, swings and hops.</p>
+<p><b>Rearrange the island.</b> Open <span class="tt">farm.tmj</span> in <a href="https://www.mapeditor.org">Tiled</a> to paint the ground or move things on the <span class="tt">scenery</span> layer, and their shapes on the <span class="tt">collision</span> layer with them. Deki picks up the map when you save it.</p>
+<p><b>Restyle the HUD.</b> Select <span class="tt">raised-panel</span> in the Asset Browser and change its colors, <b>Border Radius</b> or <b>Depth</b>. Every panel follows.</p>
+<p><b>Change the farmer.</b> The pack also has <span class="tt">MPlayer 1 idle</span> and <span class="tt">MPlayer 1 walking</span>, with the same layout.</p>
+<p><b>Build more.</b> The pack's paid version adds water, waterfalls and fruit trees.</p>
+<p><b>Put it on a device.</b> Follow the last part of <a href="guide-getting-started.html">Getting started</a>. In <b>Project Settings → Rendering</b>, turn on <b>Redraw Changes</b>: the camera stays on whole pixels, so each frame moves the last one and draws only the edge it uncovers and what changed. Then use the <a href="guide-performance.html">Speed</a> tools to see what a frame costs there.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-first-game-credits"></a>
+Credits</h1>
+<p>Art: <a href="https://aibyzz.itch.io/sc-farm-pack">Simple Cozy - Farm Asset Pack</a> by <a href="https://aibyzz.itch.io">Aibyzz</a>. The HUD's icons were drawn for this guide. Font: <a href="https://datagoblin.itch.io/monogram">monogram</a> by Vinícius Menézio, free under CC0. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="index.html">Deki</a></li><li class="navelem"><a href="section-start-here.html">从这里开始</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

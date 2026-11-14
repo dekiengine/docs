@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['방식_0',['font.guid가 동기화되는 방식',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
+  ['무선_0',['네트워크와 무선',['../section-packages.html#autotoc_md34',1,'']]]
 ];

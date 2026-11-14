@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['普通精灵（没有帧）_0',['普通精灵（没有帧）',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
+  ['开发_0',['参与 Deki 开发',['../section-working-on-deki.html',1,'index']]]
 ];

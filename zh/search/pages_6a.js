@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['预览模式（仅限编辑器）_0',['预览模式（仅限编辑器）',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]],
-  ['预览_1',['预览',['../guide-screens.html#autotoc_md21',1,'']]]
+  ['翻译对照表_0',['翻译对照表',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['恢复_0',['恢复',['../guide-project-layout.html#guide-project-layout-recovery',1,'']]]
+  ['安装编辑器_0',['安装编辑器',['../guide-getting-started.html#guide-getting-started-install-the-editor',1,'']]]
 ];

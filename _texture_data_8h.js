@@ -1,7 +1,7 @@
 var _texture_data_8h =
 [
-    [ "DekiEditor::TexHeader", "struct_deki_editor_1_1_tex_header.html", "struct_deki_editor_1_1_tex_header" ],
     [ "DekiEditor::TexData", "struct_deki_editor_1_1_tex_data.html", "struct_deki_editor_1_1_tex_data" ],
+    [ "DekiEditor::TexHeader", "struct_deki_editor_1_1_tex_header.html", "struct_deki_editor_1_1_tex_header" ],
     [ "DekiEditor::TexFlags", "namespace_deki_editor.html#a5d253adfc040f7eff5a1cc013014917e", [
       [ "DekiEditor::TexFlags::None", "namespace_deki_editor.html#a5d253adfc040f7eff5a1cc013014917ea6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "DekiEditor::TexFlags::HasTransparency", "namespace_deki_editor.html#a5d253adfc040f7eff5a1cc013014917eaa5e11673876486df9e54fc7de39e9a76", null ],

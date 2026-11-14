@@ -12,8 +12,5 @@ var searchData=
   ['time_9',['Time',['../class_deki_1_1_time.html',1,'Deki']]],
   ['toolchaincomponent_10',['ToolchainComponent',['../struct_deki_editor_1_1_toolchain_component.html',1,'DekiEditor']]],
   ['toolchaincomponentmanager_11',['ToolchainComponentManager',['../class_deki_editor_1_1_toolchain_component_manager.html',1,'DekiEditor']]],
-  ['toolchainversioninfo_12',['ToolchainVersionInfo',['../struct_deki_editor_1_1_toolchain_version_info.html',1,'DekiEditor']]],
-  ['typenameprobe_13',['TypeNameProbe',['../struct_deki_1_1_detail_1_1_type_name_probe.html',1,'Deki::Detail']]],
-  ['typenamestorage_14',['TypeNameStorage',['../struct_deki_1_1_detail_1_1_type_name_storage.html',1,'Deki::Detail']]],
-  ['typeshortnamestorage_15',['TypeShortNameStorage',['../struct_deki_1_1_detail_1_1_type_short_name_storage.html',1,'Deki::Detail']]]
+  ['toolchainversioninfo_12',['ToolchainVersionInfo',['../struct_deki_editor_1_1_toolchain_version_info.html',1,'DekiEditor']]]
 ];

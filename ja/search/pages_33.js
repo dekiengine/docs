@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['パスのインポート_0',['2 パスのインポート',['../guide-sprite-system.html#guide-sprite-system-two-pass-import',1,'']]],
-  ['パッケージでボードを提供する_1',['パッケージでボードを提供する',['../guide-platforms.html#guide-platforms-shipping-boards-in-a-package',1,'']]],
-  ['パッケージ自身の名前_2',['パッケージ自身の名前',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
-  ['パッケージ_3',['パッケージ',['../index.html#packages',1,'']]]
+  ['チャンク_20type_201_0',['Sprite チャンク (type 1)',['../guide-sprite-system.html#guide-sprite-system-sprite-chunk-type-1',1,'']]],
+  ['チャンク_20type_202_1',['FrameList チャンク (type 2)',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
+  ['チャンク_20type_204_2',['SourceSize チャンク (type 4)',['../guide-sprite-system.html#guide-sprite-system-sourcesize-chunk-type-4',1,'']]]
 ];

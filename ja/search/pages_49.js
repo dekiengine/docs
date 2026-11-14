@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['数値の読み方_0',['数値の読み方',['../guide-performance.html#guide-performance-reading-the-numbers',1,'']]]
+  ['取り除く_0',['取り除く',['../guide-memory.html#autotoc_md12',1,'']]]
 ];

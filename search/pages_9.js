@@ -5,12 +5,15 @@ var searchData=
   ['bin_2',['Asset Lookup Table (asset_table.bin)',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]],
   ['bit_3',['Hash function (FNV-1a 32-bit)',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]],
   ['bitmapfont_20file_20format_20dfont_4',['BitmapFont File Format (.dfont)',['../guide-font-system.html#guide-font-system-bitmapfont-file-format-dfont',1,'']]],
-  ['board_5',['board',['../guide-platforms.html#guide-platforms-simulating-a-board',1,'Simulating a board'],['../guide-performance.html#guide-performance-start-from-a-board',1,'Start from a board']]],
-  ['board_20s_20job_6',['Serving one is the board&apos;s job',['../guide-memory.html#guide-memory-serving-one-is-the-boards-job',1,'']]],
-  ['board_20sets_7',['What a board sets',['../guide-performance.html#guide-performance-what-a-board-sets',1,'']]],
-  ['boards_20in_20a_20package_8',['Shipping boards in a package',['../guide-platforms.html#guide-platforms-shipping-boards-in-a-package',1,'']]],
-  ['both_9',['Using both',['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-using-both',1,'']]],
-  ['branch_20onto_20master_10',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
-  ['branch_20ready_11',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
-  ['build_20and_20flash_12',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]]
+  ['bodies_5',['Bodies',['../guide-physics.html#guide-physics-bodies',1,'']]],
+  ['boot_6',['What the engine decides at boot',['../guide-performance.html#guide-performance-what-the-engine-decides-at-boot',1,'']]],
+  ['both_7',['Using both',['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-using-both',1,'']]],
+  ['branch_20onto_20master_8',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
+  ['branch_20ready_9',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
+  ['build_20and_20flash_10',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]],
+  ['build_20it_11',['Build it',['../guide-your-own-device.html#guide-your-own-device-build-it',1,'']]],
+  ['buses_12',['Pins and buses',['../section-packages.html#autotoc_md3',1,'']]],
+  ['button_13',['The button',['../guide-first-app.html#guide-first-app-the-button',1,'']]],
+  ['buttons_14',['Buttons',['../guide-device-anbernic-rg40xx-h.html#guide-device-anbernic-rg40xx-h-buttons',1,'Buttons'],['../guide-device-miyoo-mini.html#guide-device-miyoo-mini-buttons',1,'Buttons']]],
+  ['buttons_20and_20gamepads_15',['Buttons and gamepads',['../guide-input.html#guide-input-buttons-and-gamepads',1,'']]]
 ];

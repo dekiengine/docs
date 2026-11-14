@@ -1,10 +1,24 @@
 var searchData=
 [
-  ['findframe_0',['FindFrame',['../guide-sprite-system.html#guide-sprite-system-findframe',1,'']]],
-  ['flash_1',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]],
-  ['focus_2',['Keys and focus',['../guide-ui-widgets.html#guide-ui-widgets-keys-and-focus',1,'']]],
-  ['font_20guid_20如何保持同步_3',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
-  ['frame_20time_4',['3. Frame time',['../guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time',1,'']]],
-  ['framelist_20块（类型_202）_5',['FrameList 块（类型 2）',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
-  ['from_20lvgl_6',['Coming from LVGL',['../guide-coming-from-lvgl.html',1,'']]]
+  ['fall_0',['Make something fall',['../guide-physics.html#guide-physics-make-something-fall',1,'']]],
+  ['farm_1',['The farm',['../guide-first-game.html#guide-first-game-the-farm',1,'']]],
+  ['farmer_2',['The farmer',['../guide-first-game.html#guide-first-game-the-farmer',1,'']]],
+  ['fast_3',['Make it fast',['../guide-your-own-device.html#guide-your-own-device-make-it-fast',1,'']]],
+  ['fields_20in_20the_20inspector_4',['Fields in the Inspector',['../guide-components.html#guide-components-fields-in-the-inspector',1,'']]],
+  ['file_20with_20it_5',['Keep the .data file with it',['../guide-assets.html#guide-assets-keep-the-data-file-with-it',1,'']]],
+  ['findframe_6',['FindFrame',['../guide-sprite-system.html#guide-sprite-system-findframe',1,'']]],
+  ['first_20app_7',['Your first app',['../guide-first-app.html',1,'section-start-here']]],
+  ['first_20game_8',['Your first game',['../guide-first-game.html',1,'section-start-here']]],
+  ['flash_9',['1. Build and flash',['../guide-hardware-checklist.html#guide-hardware-checklist-1-build-and-flash',1,'']]],
+  ['focus_10',['Keys and focus',['../guide-ui-widgets.html#guide-ui-widgets-keys-and-focus',1,'']]],
+  ['font_11',['Use your own font',['../guide-text.html#guide-text-use-your-own-font',1,'']]],
+  ['font_20guid_20如何保持同步_12',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]],
+  ['for_20you_13',['for you',['../guide-device-anbernic-rg40xx-h.html#guide-device-anbernic-rg40xx-h-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-lilygo-t-deck-plus.html#guide-device-lilygo-t-deck-plus-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-lilygo-t-deck.html#guide-device-lilygo-t-deck-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-lilygo-t-display-s3-amoled.html#guide-device-lilygo-t-display-s3-amoled-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-miyoo-mini.html#guide-device-miyoo-mini-what-is-set-up-for-you',1,'What is set up for you']]],
+  ['frame_20animation_14',['Frame animation',['../guide-animation.html#guide-animation-frame-animation',1,'']]],
+  ['frame_20time_15',['3. Frame time',['../guide-hardware-checklist.html#guide-hardware-checklist-3-frame-time',1,'']]],
+  ['framelist_20块（类型_202）_16',['FrameList 块（类型 2）',['../guide-sprite-system.html#guide-sprite-system-framelist-chunk-type-2',1,'']]],
+  ['frames_17',['Cut a sheet into frames',['../guide-sprites.html#guide-sprites-cut-a-sheet-into-frames',1,'']]],
+  ['from_20code_18',['From code',['../guide-physics.html#guide-physics-from-code',1,'From code'],['../guide-sprites.html#guide-sprites-from-code',1,'From code'],['../guide-text.html#guide-text-from-code',1,'From code']]],
+  ['from_20lvgl_19',['Coming from LVGL',['../guide-coming-from-lvgl.html',1,'section-start-here']]],
+  ['further_20',['further',['../guide-first-app.html#guide-first-app-take-it-further',1,'Take it further'],['../guide-first-game.html#guide-first-game-take-it-further',1,'Take it further']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['知っておくとよいプロジェクト設定_0',['知っておくとよいプロジェクト設定',['../guide-performance.html#guide-performance-project-settings-worth-knowing',1,'']]]
+  ['概要_0',['概要',['../guide-font-system.html#guide-font-system-overview',1,'概要'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'概要']]]
 ];

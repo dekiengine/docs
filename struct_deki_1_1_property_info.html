@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki::PropertyInfo Struct Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -157,144 +210,46 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a661935d1c8fcc3dc3e915817f905de19" id="r_a661935d1c8fcc3dc3e915817f905de19"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a661935d1c8fcc3dc3e915817f905de19">name</a></td></tr>
-<tr class="memitem:a2d24d3d5689a339fd4283a34b61d5114" id="r_a2d24d3d5689a339fd4283a34b61d5114"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2d24d3d5689a339fd4283a34b61d5114">displayName</a></td></tr>
-<tr class="memitem:a1735ba00158185026eade50cf019fdec" id="r_a1735ba00158185026eade50cf019fdec"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1735ba00158185026eade50cf019fdec">type</a></td></tr>
-<tr class="memitem:aa536b425841f24bf02b84d3d45f4fcf1" id="r_aa536b425841f24bf02b84d3d45f4fcf1"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#aa536b425841f24bf02b84d3d45f4fcf1">offset</a></td></tr>
-<tr class="memitem:af95cdb65996c61e1fcc9670c8308a844" id="r_af95cdb65996c61e1fcc9670c8308a844"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#af95cdb65996c61e1fcc9670c8308a844">tooltip</a></td></tr>
-<tr class="memitem:a99e94f1b777ffb0374a62962b18eb959" id="r_a99e94f1b777ffb0374a62962b18eb959"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a99e94f1b777ffb0374a62962b18eb959">minValue</a></td></tr>
-<tr class="memitem:a14e032d9857e0ba5e32f8b1904ca03d4" id="r_a14e032d9857e0ba5e32f8b1904ca03d4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a14e032d9857e0ba5e32f8b1904ca03d4">maxValue</a></td></tr>
-<tr class="memitem:ab79acb7eac687ef210a04f824b4fc4c7" id="r_ab79acb7eac687ef210a04f824b4fc4c7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab79acb7eac687ef210a04f824b4fc4c7">hasRange</a></td></tr>
-<tr class="memitem:a71a0659a11e0d00f5b204c75be871c50" id="r_a71a0659a11e0d00f5b204c75be871c50"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a71a0659a11e0d00f5b204c75be871c50">assetType</a></td></tr>
-<tr class="memitem:a2e99ad4dd143f6b74ff074545eacfcec" id="r_a2e99ad4dd143f6b74ff074545eacfcec"><td class="memItemLeft">const char *const  *&#160;</td><td class="memItemRight"><a class="el" href="#a2e99ad4dd143f6b74ff074545eacfcec">enumValues</a></td></tr>
-<tr class="memitem:a87050577ca8d732e4f90e0fceed6b5ad" id="r_a87050577ca8d732e4f90e0fceed6b5ad"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a87050577ca8d732e4f90e0fceed6b5ad">enumCount</a></td></tr>
-<tr class="memitem:a8750375f546e51a32886825e60500f4c" id="r_a8750375f546e51a32886825e60500f4c"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a8750375f546e51a32886825e60500f4c">enumSize</a></td></tr>
-<tr class="memitem:a73687fa382cae840c71978eba4c7587a" id="r_a73687fa382cae840c71978eba4c7587a"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a73687fa382cae840c71978eba4c7587a">elementType</a></td></tr>
-<tr class="memitem:a708abe25a880975aefa72bb3bdd404c9" id="r_a708abe25a880975aefa72bb3bdd404c9"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a708abe25a880975aefa72bb3bdd404c9">visibilityProperty</a></td></tr>
-<tr class="memitem:a04be1771750d9e560c4902040cdc5097" id="r_a04be1771750d9e560c4902040cdc5097"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a04be1771750d9e560c4902040cdc5097">visibilityMinValue</a></td></tr>
-<tr class="memitem:a64e0a33d247adbad88d50684c3baa3e6" id="r_a64e0a33d247adbad88d50684c3baa3e6"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a64e0a33d247adbad88d50684c3baa3e6">visibilityMask</a></td></tr>
-<tr class="memitem:a17ff5af0e5552e03fcbe3abc64dabbf4" id="r_a17ff5af0e5552e03fcbe3abc64dabbf4"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a17ff5af0e5552e03fcbe3abc64dabbf4">componentRefType</a></td></tr>
-<tr class="memitem:acc3ed5b5e3790a1819564071739cfe8f" id="r_acc3ed5b5e3790a1819564071739cfe8f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acc3ed5b5e3790a1819564071739cfe8f">isMultiline</a></td></tr>
-<tr class="memitem:a8ff05c6590efc1ac72fa68e8ca64d3df" id="r_a8ff05c6590efc1ac72fa68e8ca64d3df"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8ff05c6590efc1ac72fa68e8ca64d3df">triggersAssetRegen</a></td></tr>
 <tr class="memitem:a1960b98292797cc42aa9b587905e43cf" id="r_a1960b98292797cc42aa9b587905e43cf"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a1960b98292797cc42aa9b587905e43cf">assetRegenType</a></td></tr>
-<tr class="memitem:a0743773f639e8ca1b77a90875eb801a4" id="r_a0743773f639e8ca1b77a90875eb801a4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0743773f639e8ca1b77a90875eb801a4">useSlider</a></td></tr>
-<tr class="memitem:a59c23a8c8c9dab3027b4b0f09e517069" id="r_a59c23a8c8c9dab3027b4b0f09e517069"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a59c23a8c8c9dab3027b4b0f09e517069">group</a></td></tr>
-<tr class="memitem:a920692f68318972028bb0a89d176b1f1" id="r_a920692f68318972028bb0a89d176b1f1"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a920692f68318972028bb0a89d176b1f1">togglesObjectOf</a></td></tr>
-<tr class="memitem:a03f7af385f93cde5154057c640e5ba5a" id="r_a03f7af385f93cde5154057c640e5ba5a"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270">PhysicalUnit</a>&#160;</td><td class="memItemRight"><a class="el" href="#a03f7af385f93cde5154057c640e5ba5a">physicalUnit</a> = <a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a6adf97f83acf6453d4a6a4b1070f3754">PhysicalUnit::None</a></td></tr>
-<tr class="memitem:a81584e1ea925ac8e91c6c30e0a2df650" id="r_a81584e1ea925ac8e91c6c30e0a2df650"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a81584e1ea925ac8e91c6c30e0a2df650">valueOfProperty</a> = nullptr</td></tr>
-<tr class="memitem:aa4309a7d864f50f4a421244de3435cc4" id="r_aa4309a7d864f50f4a421244de3435cc4"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa4309a7d864f50f4a421244de3435cc4">renamedFrom</a> = nullptr</td></tr>
+<tr class="memitem:a71a0659a11e0d00f5b204c75be871c50" id="r_a71a0659a11e0d00f5b204c75be871c50"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a71a0659a11e0d00f5b204c75be871c50">assetType</a></td></tr>
+<tr class="memitem:a17ff5af0e5552e03fcbe3abc64dabbf4" id="r_a17ff5af0e5552e03fcbe3abc64dabbf4"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a17ff5af0e5552e03fcbe3abc64dabbf4">componentRefType</a></td></tr>
+<tr class="memitem:a2d24d3d5689a339fd4283a34b61d5114" id="r_a2d24d3d5689a339fd4283a34b61d5114"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a2d24d3d5689a339fd4283a34b61d5114">displayName</a></td></tr>
+<tr class="memitem:a73687fa382cae840c71978eba4c7587a" id="r_a73687fa382cae840c71978eba4c7587a"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a73687fa382cae840c71978eba4c7587a">elementType</a></td></tr>
+<tr class="memitem:a87050577ca8d732e4f90e0fceed6b5ad" id="r_a87050577ca8d732e4f90e0fceed6b5ad"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a87050577ca8d732e4f90e0fceed6b5ad">enumCount</a></td></tr>
 <tr class="memitem:a979518e11f5b9a0e9ed71c4ef9010da0" id="r_a979518e11f5b9a0e9ed71c4ef9010da0"><td class="memItemLeft">const int32_t *&#160;</td><td class="memItemRight"><a class="el" href="#a979518e11f5b9a0e9ed71c4ef9010da0">enumInts</a> = nullptr</td></tr>
+<tr class="memitem:a8750375f546e51a32886825e60500f4c" id="r_a8750375f546e51a32886825e60500f4c"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a8750375f546e51a32886825e60500f4c">enumSize</a></td></tr>
+<tr class="memitem:a2e99ad4dd143f6b74ff074545eacfcec" id="r_a2e99ad4dd143f6b74ff074545eacfcec"><td class="memItemLeft">const char *const  *&#160;</td><td class="memItemRight"><a class="el" href="#a2e99ad4dd143f6b74ff074545eacfcec">enumValues</a></td></tr>
+<tr class="memitem:a59c23a8c8c9dab3027b4b0f09e517069" id="r_a59c23a8c8c9dab3027b4b0f09e517069"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a59c23a8c8c9dab3027b4b0f09e517069">group</a></td></tr>
+<tr class="memitem:ab79acb7eac687ef210a04f824b4fc4c7" id="r_ab79acb7eac687ef210a04f824b4fc4c7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab79acb7eac687ef210a04f824b4fc4c7">hasRange</a></td></tr>
+<tr class="memitem:acc3ed5b5e3790a1819564071739cfe8f" id="r_acc3ed5b5e3790a1819564071739cfe8f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acc3ed5b5e3790a1819564071739cfe8f">isMultiline</a></td></tr>
+<tr class="memitem:a14e032d9857e0ba5e32f8b1904ca03d4" id="r_a14e032d9857e0ba5e32f8b1904ca03d4"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a14e032d9857e0ba5e32f8b1904ca03d4">maxValue</a></td></tr>
+<tr class="memitem:a99e94f1b777ffb0374a62962b18eb959" id="r_a99e94f1b777ffb0374a62962b18eb959"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a99e94f1b777ffb0374a62962b18eb959">minValue</a></td></tr>
+<tr class="memitem:a661935d1c8fcc3dc3e915817f905de19" id="r_a661935d1c8fcc3dc3e915817f905de19"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a661935d1c8fcc3dc3e915817f905de19">name</a></td></tr>
+<tr class="memitem:aa536b425841f24bf02b84d3d45f4fcf1" id="r_aa536b425841f24bf02b84d3d45f4fcf1"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#aa536b425841f24bf02b84d3d45f4fcf1">offset</a></td></tr>
+<tr class="memitem:a03f7af385f93cde5154057c640e5ba5a" id="r_a03f7af385f93cde5154057c640e5ba5a"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270">PhysicalUnit</a>&#160;</td><td class="memItemRight"><a class="el" href="#a03f7af385f93cde5154057c640e5ba5a">physicalUnit</a> = <a class="el" href="namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a6adf97f83acf6453d4a6a4b1070f3754">PhysicalUnit::None</a></td></tr>
+<tr class="memitem:aa4309a7d864f50f4a421244de3435cc4" id="r_aa4309a7d864f50f4a421244de3435cc4"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa4309a7d864f50f4a421244de3435cc4">renamedFrom</a> = nullptr</td></tr>
+<tr class="memitem:a920692f68318972028bb0a89d176b1f1" id="r_a920692f68318972028bb0a89d176b1f1"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a920692f68318972028bb0a89d176b1f1">togglesObjectOf</a></td></tr>
+<tr class="memitem:af95cdb65996c61e1fcc9670c8308a844" id="r_af95cdb65996c61e1fcc9670c8308a844"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#af95cdb65996c61e1fcc9670c8308a844">tooltip</a></td></tr>
+<tr class="memitem:a8ff05c6590efc1ac72fa68e8ca64d3df" id="r_a8ff05c6590efc1ac72fa68e8ca64d3df"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8ff05c6590efc1ac72fa68e8ca64d3df">triggersAssetRegen</a></td></tr>
+<tr class="memitem:a1735ba00158185026eade50cf019fdec" id="r_a1735ba00158185026eade50cf019fdec"><td class="memItemLeft"><a class="el" href="namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1735ba00158185026eade50cf019fdec">type</a></td></tr>
+<tr class="memitem:a0743773f639e8ca1b77a90875eb801a4" id="r_a0743773f639e8ca1b77a90875eb801a4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0743773f639e8ca1b77a90875eb801a4">useSlider</a></td></tr>
+<tr class="memitem:a81584e1ea925ac8e91c6c30e0a2df650" id="r_a81584e1ea925ac8e91c6c30e0a2df650"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a81584e1ea925ac8e91c6c30e0a2df650">valueOfProperty</a> = nullptr</td></tr>
+<tr class="memitem:a64e0a33d247adbad88d50684c3baa3e6" id="r_a64e0a33d247adbad88d50684c3baa3e6"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a64e0a33d247adbad88d50684c3baa3e6">visibilityMask</a></td></tr>
+<tr class="memitem:a04be1771750d9e560c4902040cdc5097" id="r_a04be1771750d9e560c4902040cdc5097"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a04be1771750d9e560c4902040cdc5097">visibilityMinValue</a></td></tr>
+<tr class="memitem:a708abe25a880975aefa72bb3bdd404c9" id="r_a708abe25a880975aefa72bb3bdd404c9"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a708abe25a880975aefa72bb3bdd404c9">visibilityProperty</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Property metadata, one per component type and field. </p>
 <p>Meant to live in flash as static const. All string pointers point to string literals. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a661935d1c8fcc3dc3e915817f905de19" name="a661935d1c8fcc3dc3e915817f905de19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a661935d1c8fcc3dc3e915817f905de19">&#9670;&#160;</a></span>name</h2>
+<a id="a1960b98292797cc42aa9b587905e43cf" name="a1960b98292797cc42aa9b587905e43cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1960b98292797cc42aa9b587905e43cf">&#9670;&#160;</a></span>assetRegenType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::PropertyInfo::name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d24d3d5689a339fd4283a34b61d5114" name="a2d24d3d5689a339fd4283a34b61d5114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d24d3d5689a339fd4283a34b61d5114">&#9670;&#160;</a></span>displayName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::PropertyInfo::displayName</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1735ba00158185026eade50cf019fdec" name="a1735ba00158185026eade50cf019fdec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1735ba00158185026eade50cf019fdec">&#9670;&#160;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a> Deki::PropertyInfo::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa536b425841f24bf02b84d3d45f4fcf1" name="aa536b425841f24bf02b84d3d45f4fcf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa536b425841f24bf02b84d3d45f4fcf1">&#9670;&#160;</a></span>offset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Deki::PropertyInfo::offset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af95cdb65996c61e1fcc9670c8308a844" name="af95cdb65996c61e1fcc9670c8308a844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af95cdb65996c61e1fcc9670c8308a844">&#9670;&#160;</a></span>tooltip</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::PropertyInfo::tooltip</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99e94f1b777ffb0374a62962b18eb959" name="a99e94f1b777ffb0374a62962b18eb959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99e94f1b777ffb0374a62962b18eb959">&#9670;&#160;</a></span>minValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::PropertyInfo::minValue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14e032d9857e0ba5e32f8b1904ca03d4" name="a14e032d9857e0ba5e32f8b1904ca03d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e032d9857e0ba5e32f8b1904ca03d4">&#9670;&#160;</a></span>maxValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::PropertyInfo::maxValue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab79acb7eac687ef210a04f824b4fc4c7" name="ab79acb7eac687ef210a04f824b4fc4c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab79acb7eac687ef210a04f824b4fc4c7">&#9670;&#160;</a></span>hasRange</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::PropertyInfo::hasRange</td>
+          <td class="memname">const char* Deki::PropertyInfo::assetRegenType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -315,42 +270,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e99ad4dd143f6b74ff074545eacfcec" name="a2e99ad4dd143f6b74ff074545eacfcec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e99ad4dd143f6b74ff074545eacfcec">&#9670;&#160;</a></span>enumValues</h2>
+<a id="a17ff5af0e5552e03fcbe3abc64dabbf4" name="a17ff5af0e5552e03fcbe3abc64dabbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ff5af0e5552e03fcbe3abc64dabbf4">&#9670;&#160;</a></span>componentRefType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const* Deki::PropertyInfo::enumValues</td>
+          <td class="memname">const char* Deki::PropertyInfo::componentRefType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a87050577ca8d732e4f90e0fceed6b5ad" name="a87050577ca8d732e4f90e0fceed6b5ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87050577ca8d732e4f90e0fceed6b5ad">&#9670;&#160;</a></span>enumCount</h2>
+<a id="a2d24d3d5689a339fd4283a34b61d5114" name="a2d24d3d5689a339fd4283a34b61d5114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d24d3d5689a339fd4283a34b61d5114">&#9670;&#160;</a></span>displayName</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Deki::PropertyInfo::enumCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8750375f546e51a32886825e60500f4c" name="a8750375f546e51a32886825e60500f4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8750375f546e51a32886825e60500f4c">&#9670;&#160;</a></span>enumSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Deki::PropertyInfo::enumSize</td>
+          <td class="memname">const char* Deki::PropertyInfo::displayName</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -371,112 +312,56 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a708abe25a880975aefa72bb3bdd404c9" name="a708abe25a880975aefa72bb3bdd404c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a708abe25a880975aefa72bb3bdd404c9">&#9670;&#160;</a></span>visibilityProperty</h2>
+<a id="a87050577ca8d732e4f90e0fceed6b5ad" name="a87050577ca8d732e4f90e0fceed6b5ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87050577ca8d732e4f90e0fceed6b5ad">&#9670;&#160;</a></span>enumCount</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::PropertyInfo::visibilityProperty</td>
+          <td class="memname">int Deki::PropertyInfo::enumCount</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a04be1771750d9e560c4902040cdc5097" name="a04be1771750d9e560c4902040cdc5097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04be1771750d9e560c4902040cdc5097">&#9670;&#160;</a></span>visibilityMinValue</h2>
+<a id="a979518e11f5b9a0e9ed71c4ef9010da0" name="a979518e11f5b9a0e9ed71c4ef9010da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979518e11f5b9a0e9ed71c4ef9010da0">&#9670;&#160;</a></span>enumInts</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Deki::PropertyInfo::visibilityMinValue</td>
+          <td class="memname">const int32_t* Deki::PropertyInfo::enumInts = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a64e0a33d247adbad88d50684c3baa3e6" name="a64e0a33d247adbad88d50684c3baa3e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e0a33d247adbad88d50684c3baa3e6">&#9670;&#160;</a></span>visibilityMask</h2>
+<a id="a8750375f546e51a32886825e60500f4c" name="a8750375f546e51a32886825e60500f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8750375f546e51a32886825e60500f4c">&#9670;&#160;</a></span>enumSize</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t Deki::PropertyInfo::visibilityMask</td>
+          <td class="memname">uint8_t Deki::PropertyInfo::enumSize</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a17ff5af0e5552e03fcbe3abc64dabbf4" name="a17ff5af0e5552e03fcbe3abc64dabbf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17ff5af0e5552e03fcbe3abc64dabbf4">&#9670;&#160;</a></span>componentRefType</h2>
+<a id="a2e99ad4dd143f6b74ff074545eacfcec" name="a2e99ad4dd143f6b74ff074545eacfcec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e99ad4dd143f6b74ff074545eacfcec">&#9670;&#160;</a></span>enumValues</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::PropertyInfo::componentRefType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acc3ed5b5e3790a1819564071739cfe8f" name="acc3ed5b5e3790a1819564071739cfe8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc3ed5b5e3790a1819564071739cfe8f">&#9670;&#160;</a></span>isMultiline</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::PropertyInfo::isMultiline</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8ff05c6590efc1ac72fa68e8ca64d3df" name="a8ff05c6590efc1ac72fa68e8ca64d3df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ff05c6590efc1ac72fa68e8ca64d3df">&#9670;&#160;</a></span>triggersAssetRegen</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::PropertyInfo::triggersAssetRegen</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1960b98292797cc42aa9b587905e43cf" name="a1960b98292797cc42aa9b587905e43cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1960b98292797cc42aa9b587905e43cf">&#9670;&#160;</a></span>assetRegenType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::PropertyInfo::assetRegenType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0743773f639e8ca1b77a90875eb801a4" name="a0743773f639e8ca1b77a90875eb801a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0743773f639e8ca1b77a90875eb801a4">&#9670;&#160;</a></span>useSlider</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::PropertyInfo::useSlider</td>
+          <td class="memname">const char* const* Deki::PropertyInfo::enumValues</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -497,14 +382,84 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a920692f68318972028bb0a89d176b1f1" name="a920692f68318972028bb0a89d176b1f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a920692f68318972028bb0a89d176b1f1">&#9670;&#160;</a></span>togglesObjectOf</h2>
+<a id="ab79acb7eac687ef210a04f824b4fc4c7" name="ab79acb7eac687ef210a04f824b4fc4c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79acb7eac687ef210a04f824b4fc4c7">&#9670;&#160;</a></span>hasRange</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* Deki::PropertyInfo::togglesObjectOf</td>
+          <td class="memname">bool Deki::PropertyInfo::hasRange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc3ed5b5e3790a1819564071739cfe8f" name="acc3ed5b5e3790a1819564071739cfe8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3ed5b5e3790a1819564071739cfe8f">&#9670;&#160;</a></span>isMultiline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::PropertyInfo::isMultiline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14e032d9857e0ba5e32f8b1904ca03d4" name="a14e032d9857e0ba5e32f8b1904ca03d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e032d9857e0ba5e32f8b1904ca03d4">&#9670;&#160;</a></span>maxValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::PropertyInfo::maxValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99e94f1b777ffb0374a62962b18eb959" name="a99e94f1b777ffb0374a62962b18eb959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e94f1b777ffb0374a62962b18eb959">&#9670;&#160;</a></span>minValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::PropertyInfo::minValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a661935d1c8fcc3dc3e915817f905de19" name="a661935d1c8fcc3dc3e915817f905de19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a661935d1c8fcc3dc3e915817f905de19">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::PropertyInfo::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa536b425841f24bf02b84d3d45f4fcf1" name="aa536b425841f24bf02b84d3d45f4fcf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa536b425841f24bf02b84d3d45f4fcf1">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::PropertyInfo::offset</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -525,20 +480,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a81584e1ea925ac8e91c6c30e0a2df650" name="a81584e1ea925ac8e91c6c30e0a2df650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81584e1ea925ac8e91c6c30e0a2df650">&#9670;&#160;</a></span>valueOfProperty</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Deki::PropertyInfo::valueOfProperty = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa4309a7d864f50f4a421244de3435cc4" name="aa4309a7d864f50f4a421244de3435cc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4309a7d864f50f4a421244de3435cc4">&#9670;&#160;</a></span>renamedFrom</h2>
 
@@ -553,14 +494,126 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a979518e11f5b9a0e9ed71c4ef9010da0" name="a979518e11f5b9a0e9ed71c4ef9010da0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a979518e11f5b9a0e9ed71c4ef9010da0">&#9670;&#160;</a></span>enumInts</h2>
+<a id="a920692f68318972028bb0a89d176b1f1" name="a920692f68318972028bb0a89d176b1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a920692f68318972028bb0a89d176b1f1">&#9670;&#160;</a></span>togglesObjectOf</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int32_t* Deki::PropertyInfo::enumInts = nullptr</td>
+          <td class="memname">const char* Deki::PropertyInfo::togglesObjectOf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af95cdb65996c61e1fcc9670c8308a844" name="af95cdb65996c61e1fcc9670c8308a844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95cdb65996c61e1fcc9670c8308a844">&#9670;&#160;</a></span>tooltip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::PropertyInfo::tooltip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ff05c6590efc1ac72fa68e8ca64d3df" name="a8ff05c6590efc1ac72fa68e8ca64d3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff05c6590efc1ac72fa68e8ca64d3df">&#9670;&#160;</a></span>triggersAssetRegen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::PropertyInfo::triggersAssetRegen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1735ba00158185026eade50cf019fdec" name="a1735ba00158185026eade50cf019fdec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1735ba00158185026eade50cf019fdec">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4">PropertyType</a> Deki::PropertyInfo::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0743773f639e8ca1b77a90875eb801a4" name="a0743773f639e8ca1b77a90875eb801a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0743773f639e8ca1b77a90875eb801a4">&#9670;&#160;</a></span>useSlider</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::PropertyInfo::useSlider</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81584e1ea925ac8e91c6c30e0a2df650" name="a81584e1ea925ac8e91c6c30e0a2df650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81584e1ea925ac8e91c6c30e0a2df650">&#9670;&#160;</a></span>valueOfProperty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::PropertyInfo::valueOfProperty = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64e0a33d247adbad88d50684c3baa3e6" name="a64e0a33d247adbad88d50684c3baa3e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e0a33d247adbad88d50684c3baa3e6">&#9670;&#160;</a></span>visibilityMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::PropertyInfo::visibilityMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04be1771750d9e560c4902040cdc5097" name="a04be1771750d9e560c4902040cdc5097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04be1771750d9e560c4902040cdc5097">&#9670;&#160;</a></span>visibilityMinValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Deki::PropertyInfo::visibilityMinValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a708abe25a880975aefa72bb3bdd404c9" name="a708abe25a880975aefa72bb3bdd404c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a708abe25a880975aefa72bb3bdd404c9">&#9670;&#160;</a></span>visibilityProperty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Deki::PropertyInfo::visibilityProperty</td>
         </tr>
       </table>
 </div><div class="memdoc">

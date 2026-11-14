@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['받습니다_0',['채택: 프로젝트가 사본을 받습니다',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]]
+  ['모드_20에디터_20전용_0',['미리보기 모드 (에디터 전용)',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]]
 ];

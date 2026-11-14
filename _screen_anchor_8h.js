@@ -1,6 +1,10 @@
 var _screen_anchor_8h =
 [
     [ "Deki::ScreenAnchor", "class_deki_1_1_screen_anchor.html", "class_deki_1_1_screen_anchor" ],
+    [ "Deki::AnchorUpdate", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8", [
+      [ "Deki::AnchorUpdate::Always", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8a68eec46437c384d8dad18d5464ebc35c", null ],
+      [ "Deki::AnchorUpdate::Once", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8ae1a9dc9f23534e63de9df0d540ac1611", null ]
+    ] ],
     [ "Deki::ScreenPoint", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1", [
       [ "Deki::ScreenPoint::TopLeft", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1ab32beb056fbfe36afbabc6c88c81ab36", null ],
       [ "Deki::ScreenPoint::Top", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1aa4ffdcf0dc1f31b9acaf295d75b51d00", null ],
@@ -11,9 +15,5 @@ var _screen_anchor_8h =
       [ "Deki::ScreenPoint::BottomLeft", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a98e5a1c44509157ebcaf46c515c78875", null ],
       [ "Deki::ScreenPoint::Bottom", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a2ad9d63b69c4a10a5cc9cad923133bc4", null ],
       [ "Deki::ScreenPoint::BottomRight", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a9146bfc669fddc88db2c4d89297d0e9a", null ]
-    ] ],
-    [ "Deki::AnchorUpdate", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8", [
-      [ "Deki::AnchorUpdate::Always", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8a68eec46437c384d8dad18d5464ebc35c", null ],
-      [ "Deki::AnchorUpdate::Once", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8ae1a9dc9f23534e63de9df0d540ac1611", null ]
     ] ]
 ];

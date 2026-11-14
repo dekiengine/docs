@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['함수_20fnv_201a_2032비트_0',['해시 함수 (FNV-1a 32비트)',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]]
+  ['편집_20업데이트_20복원_0',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

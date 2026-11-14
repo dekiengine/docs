@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['デバイス上では_0',['デバイス上では',['../guide-screens.html#autotoc_md23',1,'']]],
-  ['データシートは_20si_20を使わないが、それで問題ない_1',['データシートは SI を使わないが、それで問題ない',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]]
+  ['スプライトとフォントが異なる理由_0',['スプライトとフォントが異なる理由',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
+  ['スプライトの_20assetref_20フィールド_1',['スプライトの AssetRef フィールド',['../guide-sprite-system.html#guide-sprite-system-assetref-fields-for-sprites',1,'']]],
+  ['スプライトシステム_2',['スプライトシステム',['../guide-sprite-system.html',1,'section-working-on-deki']]]
 ];

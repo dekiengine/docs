@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['语言_0',['语言',['../guide-localization.html',1,'']]]
+  ['看懂数字_0',['看懂数字',['../guide-performance.html#autotoc_md21',1,'']]]
 ];

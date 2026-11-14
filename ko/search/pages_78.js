@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['종류_0',['테이블의 키 종류',['../guide-asset-system.html#guide-asset-system-key-types-in-the-table',1,'']]]
+  ['장치에서_0',['장치에서',['../guide-screens.html#autotoc_md28',1,'']]]
 ];

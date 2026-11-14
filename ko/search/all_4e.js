@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['복구_0',['복구',['../guide-project-layout.html#guide-project-layout-recovery',1,'']]],
-  ['복원_1',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
+  ['번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#autotoc_md7',1,'']]],
+  ['번역하기_1',['테이블 번역하기',['../guide-localization.html#guide-localization-translating-a-table',1,'']]]
 ];

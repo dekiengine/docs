@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki::Vector2 Struct Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -161,42 +214,42 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_deki_1_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae43872e2e92f3b9f29e38bbedb9909ee" id="r_ae43872e2e92f3b9f29e38bbedb9909ee"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> ()</td></tr>
 <tr class="memitem:adab9d4657ed70fc0fa1daf312911b390" id="r_adab9d4657ed70fc0fa1daf312911b390"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#adab9d4657ed70fc0fa1daf312911b390">Vector2</a> (float x, float y)</td></tr>
-<tr class="memitem:aa6418e72612449f195b7616cf8496d80" id="r_aa6418e72612449f195b7616cf8496d80"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa6418e72612449f195b7616cf8496d80">operator+</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:adea445d3904e312d218895bf7064c3a5" id="r_adea445d3904e312d218895bf7064c3a5"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#adea445d3904e312d218895bf7064c3a5">operator-</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a3da232d0bf41978a2a30393f18cfbd2e" id="r_a3da232d0bf41978a2a30393f18cfbd2e"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3da232d0bf41978a2a30393f18cfbd2e">operator*</a> (float s) const</td></tr>
-<tr class="memitem:a782fd4015975400326d3a5eb1390964a" id="r_a782fd4015975400326d3a5eb1390964a"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a782fd4015975400326d3a5eb1390964a">operator/</a> (float s) const</td></tr>
-<tr class="memitem:a47e0b857a98e04584577d725087f7df6" id="r_a47e0b857a98e04584577d725087f7df6"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a47e0b857a98e04584577d725087f7df6">operator*</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a64175482c82df8108e92009a01678907" id="r_a64175482c82df8108e92009a01678907"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a64175482c82df8108e92009a01678907">operator/</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a8e974c385d8f8593e39eef69ee2416f4" id="r_a8e974c385d8f8593e39eef69ee2416f4"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8e974c385d8f8593e39eef69ee2416f4">operator+=</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o)</td></tr>
-<tr class="memitem:abbebb9f7793d055c9b5cac42463f3c98" id="r_abbebb9f7793d055c9b5cac42463f3c98"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abbebb9f7793d055c9b5cac42463f3c98">operator-=</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o)</td></tr>
-<tr class="memitem:a88fe6506a8b6976aea062d43d095893d" id="r_a88fe6506a8b6976aea062d43d095893d"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a88fe6506a8b6976aea062d43d095893d">operator*=</a> (float s)</td></tr>
-<tr class="memitem:a7dac92c54aa1b13fb02abecfafa98133" id="r_a7dac92c54aa1b13fb02abecfafa98133"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7dac92c54aa1b13fb02abecfafa98133">operator/=</a> (float s)</td></tr>
-<tr class="memitem:a857bbadd48fc8027468b21e63e770b30" id="r_a857bbadd48fc8027468b21e63e770b30"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a857bbadd48fc8027468b21e63e770b30">operator==</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a946dfdf354f99ba73d6e379c00c23970" id="r_a946dfdf354f99ba73d6e379c00c23970"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a946dfdf354f99ba73d6e379c00c23970">operator!=</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a841c44cf250d693dd57247b7a2207b84" id="r_a841c44cf250d693dd57247b7a2207b84"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a841c44cf250d693dd57247b7a2207b84">operator-</a> () const</td></tr>
-<tr class="memitem:a7f92cfb6dc30d67f05c5565a32da0c28" id="r_a7f92cfb6dc30d67f05c5565a32da0c28"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7f92cfb6dc30d67f05c5565a32da0c28">LengthSquared</a> () const</td></tr>
-<tr class="memitem:abe125203cfd47b72cfff5fbaa01ff7e8" id="r_abe125203cfd47b72cfff5fbaa01ff7e8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abe125203cfd47b72cfff5fbaa01ff7e8">Length</a> () const</td></tr>
-<tr class="memitem:a299ee3accab5dc6b6afbc79ac9ab03c0" id="r_a299ee3accab5dc6b6afbc79ac9ab03c0"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a299ee3accab5dc6b6afbc79ac9ab03c0">Normalized</a> () const</td></tr>
-<tr class="memitem:a161c632e222bd723fcda3791651a4f01" id="r_a161c632e222bd723fcda3791651a4f01"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a161c632e222bd723fcda3791651a4f01">Normalize</a> ()</td></tr>
-<tr class="memitem:a05ca37ba988b2537be85c7cbbce84bbf" id="r_a05ca37ba988b2537be85c7cbbce84bbf"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a05ca37ba988b2537be85c7cbbce84bbf">Dot</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a6cd25e0fde656cb0c935f9b47af22b09" id="r_a6cd25e0fde656cb0c935f9b47af22b09"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6cd25e0fde656cb0c935f9b47af22b09">Cross</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:afb9f71c023c6482241fee7e7abc82ca6" id="r_afb9f71c023c6482241fee7e7abc82ca6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afb9f71c023c6482241fee7e7abc82ca6">DistanceTo</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:ae313965de15a0b690babdf626e9ad659" id="r_ae313965de15a0b690babdf626e9ad659"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae313965de15a0b690babdf626e9ad659">DistanceSquaredTo</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
-<tr class="memitem:a8cb5cd379b7f00f9f2e457f0bcd6faee" id="r_a8cb5cd379b7f00f9f2e457f0bcd6faee"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8cb5cd379b7f00f9f2e457f0bcd6faee">Rotated</a> (float radians) const</td></tr>
-<tr class="memdesc:a8cb5cd379b7f00f9f2e457f0bcd6faee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This vector rotated by <span class="tt">radians</span>.  <br /></td></tr>
 <tr class="memitem:a73a5195578a1e441f3d36af611205be9" id="r_a73a5195578a1e441f3d36af611205be9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a73a5195578a1e441f3d36af611205be9">Angle</a> () const</td></tr>
 <tr class="memdesc:a73a5195578a1e441f3d36af611205be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angle of this vector relative to +X axis, in radians.  <br /></td></tr>
 <tr class="memitem:a88d78858b59f0d8ca18407e7707197d6" id="r_a88d78858b59f0d8ca18407e7707197d6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a88d78858b59f0d8ca18407e7707197d6">AngleTo</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a6cd25e0fde656cb0c935f9b47af22b09" id="r_a6cd25e0fde656cb0c935f9b47af22b09"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6cd25e0fde656cb0c935f9b47af22b09">Cross</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:ae313965de15a0b690babdf626e9ad659" id="r_ae313965de15a0b690babdf626e9ad659"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae313965de15a0b690babdf626e9ad659">DistanceSquaredTo</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:afb9f71c023c6482241fee7e7abc82ca6" id="r_afb9f71c023c6482241fee7e7abc82ca6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afb9f71c023c6482241fee7e7abc82ca6">DistanceTo</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a05ca37ba988b2537be85c7cbbce84bbf" id="r_a05ca37ba988b2537be85c7cbbce84bbf"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a05ca37ba988b2537be85c7cbbce84bbf">Dot</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:abe125203cfd47b72cfff5fbaa01ff7e8" id="r_abe125203cfd47b72cfff5fbaa01ff7e8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#abe125203cfd47b72cfff5fbaa01ff7e8">Length</a> () const</td></tr>
+<tr class="memitem:a7f92cfb6dc30d67f05c5565a32da0c28" id="r_a7f92cfb6dc30d67f05c5565a32da0c28"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7f92cfb6dc30d67f05c5565a32da0c28">LengthSquared</a> () const</td></tr>
+<tr class="memitem:a161c632e222bd723fcda3791651a4f01" id="r_a161c632e222bd723fcda3791651a4f01"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a161c632e222bd723fcda3791651a4f01">Normalize</a> ()</td></tr>
+<tr class="memitem:a299ee3accab5dc6b6afbc79ac9ab03c0" id="r_a299ee3accab5dc6b6afbc79ac9ab03c0"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a299ee3accab5dc6b6afbc79ac9ab03c0">Normalized</a> () const</td></tr>
+<tr class="memitem:a946dfdf354f99ba73d6e379c00c23970" id="r_a946dfdf354f99ba73d6e379c00c23970"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a946dfdf354f99ba73d6e379c00c23970">operator!=</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a47e0b857a98e04584577d725087f7df6" id="r_a47e0b857a98e04584577d725087f7df6"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a47e0b857a98e04584577d725087f7df6">operator*</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a3da232d0bf41978a2a30393f18cfbd2e" id="r_a3da232d0bf41978a2a30393f18cfbd2e"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3da232d0bf41978a2a30393f18cfbd2e">operator*</a> (float s) const</td></tr>
+<tr class="memitem:a88fe6506a8b6976aea062d43d095893d" id="r_a88fe6506a8b6976aea062d43d095893d"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a88fe6506a8b6976aea062d43d095893d">operator*=</a> (float s)</td></tr>
+<tr class="memitem:aa6418e72612449f195b7616cf8496d80" id="r_aa6418e72612449f195b7616cf8496d80"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa6418e72612449f195b7616cf8496d80">operator+</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a8e974c385d8f8593e39eef69ee2416f4" id="r_a8e974c385d8f8593e39eef69ee2416f4"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8e974c385d8f8593e39eef69ee2416f4">operator+=</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o)</td></tr>
+<tr class="memitem:a841c44cf250d693dd57247b7a2207b84" id="r_a841c44cf250d693dd57247b7a2207b84"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a841c44cf250d693dd57247b7a2207b84">operator-</a> () const</td></tr>
+<tr class="memitem:adea445d3904e312d218895bf7064c3a5" id="r_adea445d3904e312d218895bf7064c3a5"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#adea445d3904e312d218895bf7064c3a5">operator-</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:abbebb9f7793d055c9b5cac42463f3c98" id="r_abbebb9f7793d055c9b5cac42463f3c98"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abbebb9f7793d055c9b5cac42463f3c98">operator-=</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o)</td></tr>
+<tr class="memitem:a64175482c82df8108e92009a01678907" id="r_a64175482c82df8108e92009a01678907"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a64175482c82df8108e92009a01678907">operator/</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a782fd4015975400326d3a5eb1390964a" id="r_a782fd4015975400326d3a5eb1390964a"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a782fd4015975400326d3a5eb1390964a">operator/</a> (float s) const</td></tr>
+<tr class="memitem:a7dac92c54aa1b13fb02abecfafa98133" id="r_a7dac92c54aa1b13fb02abecfafa98133"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7dac92c54aa1b13fb02abecfafa98133">operator/=</a> (float s)</td></tr>
+<tr class="memitem:a857bbadd48fc8027468b21e63e770b30" id="r_a857bbadd48fc8027468b21e63e770b30"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a857bbadd48fc8027468b21e63e770b30">operator==</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;o) const</td></tr>
+<tr class="memitem:a8cb5cd379b7f00f9f2e457f0bcd6faee" id="r_a8cb5cd379b7f00f9f2e457f0bcd6faee"><td class="memItemLeft"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8cb5cd379b7f00f9f2e457f0bcd6faee">Rotated</a> (float radians) const</td></tr>
+<tr class="memdesc:a8cb5cd379b7f00f9f2e457f0bcd6faee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This vector rotated by <span class="tt">radians</span>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ead18ab9739e06ae0392abe9f1b570f" id="r_a7ead18ab9739e06ae0392abe9f1b570f"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7ead18ab9739e06ae0392abe9f1b570f">Zero</a> ()</td></tr>
-<tr class="memitem:a1bb3efd17006f2558e23ebacdfc603b5" id="r_a1bb3efd17006f2558e23ebacdfc603b5"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1bb3efd17006f2558e23ebacdfc603b5">One</a> ()</td></tr>
-<tr class="memitem:a92e7957142edb91cdc7c2d40b20ea229" id="r_a92e7957142edb91cdc7c2d40b20ea229"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a92e7957142edb91cdc7c2d40b20ea229">Up</a> ()</td></tr>
 <tr class="memitem:a8b628347a6be29fc705d27d25b562fff" id="r_a8b628347a6be29fc705d27d25b562fff"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8b628347a6be29fc705d27d25b562fff">Down</a> ()</td></tr>
 <tr class="memitem:aa99bcabb71742ebd5f9c1f8443b58f52" id="r_aa99bcabb71742ebd5f9c1f8443b58f52"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa99bcabb71742ebd5f9c1f8443b58f52">Left</a> ()</td></tr>
-<tr class="memitem:a1b17b9436c6e7cd89538ca4794192fcf" id="r_a1b17b9436c6e7cd89538ca4794192fcf"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1b17b9436c6e7cd89538ca4794192fcf">Right</a> ()</td></tr>
 <tr class="memitem:aa2e688b22173861282b6468af3bb0997" id="r_aa2e688b22173861282b6468af3bb0997"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa2e688b22173861282b6468af3bb0997">Lerp</a> (const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;a, const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;b, float t)</td></tr>
+<tr class="memitem:a1bb3efd17006f2558e23ebacdfc603b5" id="r_a1bb3efd17006f2558e23ebacdfc603b5"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1bb3efd17006f2558e23ebacdfc603b5">One</a> ()</td></tr>
+<tr class="memitem:a1b17b9436c6e7cd89538ca4794192fcf" id="r_a1b17b9436c6e7cd89538ca4794192fcf"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1b17b9436c6e7cd89538ca4794192fcf">Right</a> ()</td></tr>
+<tr class="memitem:a92e7957142edb91cdc7c2d40b20ea229" id="r_a92e7957142edb91cdc7c2d40b20ea229"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a92e7957142edb91cdc7c2d40b20ea229">Up</a> ()</td></tr>
+<tr class="memitem:a7ead18ab9739e06ae0392abe9f1b570f" id="r_a7ead18ab9739e06ae0392abe9f1b570f"><td class="memItemLeft">static <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7ead18ab9739e06ae0392abe9f1b570f">Zero</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -261,8 +314,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a7ead18ab9739e06ae0392abe9f1b570f" name="a7ead18ab9739e06ae0392abe9f1b570f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ead18ab9739e06ae0392abe9f1b570f">&#9670;&#160;</a></span>Zero()</h2>
+<a id="a73a5195578a1e441f3d36af611205be9" name="a73a5195578a1e441f3d36af611205be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a5195578a1e441f3d36af611205be9">&#9670;&#160;</a></span>Angle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,23 +324,50 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Zero </td>
+          <td class="memname">float Deki::Vector2::Angle </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Angle of this vector relative to +X axis, in radians. </p>
+
+</div>
+</div>
+<a id="a88d78858b59f0d8ca18407e7707197d6" name="a88d78858b59f0d8ca18407e7707197d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d78858b59f0d8ca18407e7707197d6">&#9670;&#160;</a></span>AngleTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Vector2::AngleTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1bb3efd17006f2558e23ebacdfc603b5" name="a1bb3efd17006f2558e23ebacdfc603b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bb3efd17006f2558e23ebacdfc603b5">&#9670;&#160;</a></span>One()</h2>
+<a id="a6cd25e0fde656cb0c935f9b47af22b09" name="a6cd25e0fde656cb0c935f9b47af22b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd25e0fde656cb0c935f9b47af22b09">&#9670;&#160;</a></span>Cross()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,23 +376,23 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::One </td>
+          <td class="memname">float Deki::Vector2::Cross </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a92e7957142edb91cdc7c2d40b20ea229" name="a92e7957142edb91cdc7c2d40b20ea229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e7957142edb91cdc7c2d40b20ea229">&#9670;&#160;</a></span>Up()</h2>
+<a id="ae313965de15a0b690babdf626e9ad659" name="ae313965de15a0b690babdf626e9ad659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae313965de15a0b690babdf626e9ad659">&#9670;&#160;</a></span>DistanceSquaredTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,15 +401,65 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Up </td>
+          <td class="memname">float Deki::Vector2::DistanceSquaredTo </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb9f71c023c6482241fee7e7abc82ca6" name="afb9f71c023c6482241fee7e7abc82ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9f71c023c6482241fee7e7abc82ca6">&#9670;&#160;</a></span>DistanceTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Vector2::DistanceTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05ca37ba988b2537be85c7cbbce84bbf" name="a05ca37ba988b2537be85c7cbbce84bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ca37ba988b2537be85c7cbbce84bbf">&#9670;&#160;</a></span>Dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Vector2::Dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -386,8 +516,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b17b9436c6e7cd89538ca4794192fcf" name="a1b17b9436c6e7cd89538ca4794192fcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b17b9436c6e7cd89538ca4794192fcf">&#9670;&#160;</a></span>Right()</h2>
+<a id="abe125203cfd47b72cfff5fbaa01ff7e8" name="abe125203cfd47b72cfff5fbaa01ff7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe125203cfd47b72cfff5fbaa01ff7e8">&#9670;&#160;</a></span>Length()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +526,141 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Right </td>
+          <td class="memname">float Deki::Vector2::Length </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f92cfb6dc30d67f05c5565a32da0c28" name="a7f92cfb6dc30d67f05c5565a32da0c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f92cfb6dc30d67f05c5565a32da0c28">&#9670;&#160;</a></span>LengthSquared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Vector2::LengthSquared </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2e688b22173861282b6468af3bb0997" name="aa2e688b22173861282b6468af3bb0997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e688b22173861282b6468af3bb0997">&#9670;&#160;</a></span>Lerp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Lerp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a161c632e222bd723fcda3791651a4f01" name="a161c632e222bd723fcda3791651a4f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161c632e222bd723fcda3791651a4f01">&#9670;&#160;</a></span>Normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Vector2::Normalize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a299ee3accab5dc6b6afbc79ac9ab03c0" name="a299ee3accab5dc6b6afbc79ac9ab03c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299ee3accab5dc6b6afbc79ac9ab03c0">&#9670;&#160;</a></span>Normalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Normalized </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bb3efd17006f2558e23ebacdfc603b5" name="a1bb3efd17006f2558e23ebacdfc603b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb3efd17006f2558e23ebacdfc603b5">&#9670;&#160;</a></span>One()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::One </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -405,6 +669,106 @@ Public Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a946dfdf354f99ba73d6e379c00c23970" name="a946dfdf354f99ba73d6e379c00c23970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a946dfdf354f99ba73d6e379c00c23970">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Vector2::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47e0b857a98e04584577d725087f7df6" name="a47e0b857a98e04584577d725087f7df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e0b857a98e04584577d725087f7df6">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3da232d0bf41978a2a30393f18cfbd2e" name="a3da232d0bf41978a2a30393f18cfbd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3da232d0bf41978a2a30393f18cfbd2e">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88fe6506a8b6976aea062d43d095893d" name="a88fe6506a8b6976aea062d43d095893d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88fe6506a8b6976aea062d43d095893d">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp; Deki::Vector2::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -422,131 +786,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adea445d3904e312d218895bf7064c3a5" name="adea445d3904e312d218895bf7064c3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adea445d3904e312d218895bf7064c3a5">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator- </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3da232d0bf41978a2a30393f18cfbd2e" name="a3da232d0bf41978a2a30393f18cfbd2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3da232d0bf41978a2a30393f18cfbd2e">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator* </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a782fd4015975400326d3a5eb1390964a" name="a782fd4015975400326d3a5eb1390964a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a782fd4015975400326d3a5eb1390964a">&#9670;&#160;</a></span>operator/() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator/ </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47e0b857a98e04584577d725087f7df6" name="a47e0b857a98e04584577d725087f7df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e0b857a98e04584577d725087f7df6">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64175482c82df8108e92009a01678907" name="a64175482c82df8108e92009a01678907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64175482c82df8108e92009a01678907">&#9670;&#160;</a></span>operator/() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator/ </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
           <td> const</td>
@@ -586,6 +825,56 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a841c44cf250d693dd57247b7a2207b84" name="a841c44cf250d693dd57247b7a2207b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841c44cf250d693dd57247b7a2207b84">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator- </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adea445d3904e312d218895bf7064c3a5" name="adea445d3904e312d218895bf7064c3a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea445d3904e312d218895bf7064c3a5">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abbebb9f7793d055c9b5cac42463f3c98" name="abbebb9f7793d055c9b5cac42463f3c98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbebb9f7793d055c9b5cac42463f3c98">&#9670;&#160;</a></span>operator-=()</h2>
 
@@ -611,8 +900,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a88fe6506a8b6976aea062d43d095893d" name="a88fe6506a8b6976aea062d43d095893d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88fe6506a8b6976aea062d43d095893d">&#9670;&#160;</a></span>operator*=()</h2>
+<a id="a64175482c82df8108e92009a01678907" name="a64175482c82df8108e92009a01678907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64175482c82df8108e92009a01678907">&#9670;&#160;</a></span>operator/() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,10 +910,35 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp; Deki::Vector2::operator*= </td>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a782fd4015975400326d3a5eb1390964a" name="a782fd4015975400326d3a5eb1390964a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782fd4015975400326d3a5eb1390964a">&#9670;&#160;</a></span>operator/() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator/ </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -686,8 +1000,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a946dfdf354f99ba73d6e379c00c23970" name="a946dfdf354f99ba73d6e379c00c23970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a946dfdf354f99ba73d6e379c00c23970">&#9670;&#160;</a></span>operator!=()</h2>
+<a id="a1b17b9436c6e7cd89538ca4794192fcf" name="a1b17b9436c6e7cd89538ca4794192fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b17b9436c6e7cd89538ca4794192fcf">&#9670;&#160;</a></span>Right()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,269 +1010,10 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Deki::Vector2::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a841c44cf250d693dd57247b7a2207b84" name="a841c44cf250d693dd57247b7a2207b84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a841c44cf250d693dd57247b7a2207b84">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::operator- </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f92cfb6dc30d67f05c5565a32da0c28" name="a7f92cfb6dc30d67f05c5565a32da0c28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f92cfb6dc30d67f05c5565a32da0c28">&#9670;&#160;</a></span>LengthSquared()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Vector2::LengthSquared </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe125203cfd47b72cfff5fbaa01ff7e8" name="abe125203cfd47b72cfff5fbaa01ff7e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe125203cfd47b72cfff5fbaa01ff7e8">&#9670;&#160;</a></span>Length()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Vector2::Length </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a299ee3accab5dc6b6afbc79ac9ab03c0" name="a299ee3accab5dc6b6afbc79ac9ab03c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299ee3accab5dc6b6afbc79ac9ab03c0">&#9670;&#160;</a></span>Normalized()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Normalized </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a161c632e222bd723fcda3791651a4f01" name="a161c632e222bd723fcda3791651a4f01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a161c632e222bd723fcda3791651a4f01">&#9670;&#160;</a></span>Normalize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Vector2::Normalize </td>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Right </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05ca37ba988b2537be85c7cbbce84bbf" name="a05ca37ba988b2537be85c7cbbce84bbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ca37ba988b2537be85c7cbbce84bbf">&#9670;&#160;</a></span>Dot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Vector2::Dot </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6cd25e0fde656cb0c935f9b47af22b09" name="a6cd25e0fde656cb0c935f9b47af22b09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cd25e0fde656cb0c935f9b47af22b09">&#9670;&#160;</a></span>Cross()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Vector2::Cross </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afb9f71c023c6482241fee7e7abc82ca6" name="afb9f71c023c6482241fee7e7abc82ca6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb9f71c023c6482241fee7e7abc82ca6">&#9670;&#160;</a></span>DistanceTo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Vector2::DistanceTo </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae313965de15a0b690babdf626e9ad659" name="ae313965de15a0b690babdf626e9ad659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae313965de15a0b690babdf626e9ad659">&#9670;&#160;</a></span>DistanceSquaredTo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Vector2::DistanceSquaredTo </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa2e688b22173861282b6468af3bb0997" name="aa2e688b22173861282b6468af3bb0997"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2e688b22173861282b6468af3bb0997">&#9670;&#160;</a></span>Lerp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Lerp </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -997,8 +1052,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a73a5195578a1e441f3d36af611205be9" name="a73a5195578a1e441f3d36af611205be9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73a5195578a1e441f3d36af611205be9">&#9670;&#160;</a></span>Angle()</h2>
+<a id="a92e7957142edb91cdc7c2d40b20ea229" name="a92e7957142edb91cdc7c2d40b20ea229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e7957142edb91cdc7c2d40b20ea229">&#9670;&#160;</a></span>Up()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1007,25 +1062,23 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Deki::Vector2::Angle </td>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Up </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Angle of this vector relative to +X axis, in radians. </p>
-
 </div>
 </div>
-<a id="a88d78858b59f0d8ca18407e7707197d6" name="a88d78858b59f0d8ca18407e7707197d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d78858b59f0d8ca18407e7707197d6">&#9670;&#160;</a></span>AngleTo()</h2>
+<a id="a7ead18ab9739e06ae0392abe9f1b570f" name="a7ead18ab9739e06ae0392abe9f1b570f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ead18ab9739e06ae0392abe9f1b570f">&#9670;&#160;</a></span>Zero()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1034,15 +1087,15 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Deki::Vector2::AngleTo </td>
+          <td class="memname"><a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> Deki::Vector2::Zero </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ae43872e2e92f3b9f29e38bbedb9909ee">Vector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

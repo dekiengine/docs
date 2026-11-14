@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['结构版本_0',['结构版本',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]],
-  ['结构_1',['结构',['../guide-project-layout.html#guide-project-layout-layout',1,'']]]
+  ['烘焙的唯一负责者：fontsynchandler_0',['烘焙的唯一负责者：FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
 ];

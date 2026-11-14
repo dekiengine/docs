@@ -11,7 +11,7 @@ var searchData=
   ['g_5ffontuibold_8',['g_FontUIBold',['../namespace_deki_editor.html#a526ef26d0ad8bbb468c512d3d32a4225',1,'DekiEditor']]],
   ['g_5ffontuimed_9',['g_FontUIMed',['../namespace_deki_editor.html#a67f0fc7edc443eb1cbd4d12b89314324',1,'DekiEditor']]],
   ['g_5ffontuismall_10',['g_FontUISmall',['../namespace_deki_editor.html#a41c8f980892fdbe39192a896ebb85d0b',1,'DekiEditor']]],
-  ['giturl_11',['gitUrl',['../struct_dependency_info.html#a30b8be556a5e31aefa9b3e4789585d7b',1,'DependencyInfo::gitUrl'],['../struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a2152a39eef935ac3953d2753d933cfca',1,'DekiEditor::EditorSettings::PackageDepInfo::gitUrl'],['../struct_core_dependency.html#aec2b077c5894fc2daa3460403b0c136b',1,'CoreDependency::gitUrl']]],
+  ['giturl_11',['gitUrl',['../struct_deki_editor_1_1_editor_settings_1_1_package_dep_info.html#a2152a39eef935ac3953d2753d933cfca',1,'DekiEditor::EditorSettings::PackageDepInfo']]],
   ['gl_12',['gl',['../struct_deki_editor_1_1_shader_stage_text.html#a780b989deffb719610ec583ef3279eea',1,'DekiEditor::ShaderStageText']]],
   ['graphx_13',['graphX',['../struct_deki_editor_1_1_node_canvas_events.html#af040c79e37fe981cd9dd36e35ae121fa',1,'DekiEditor::NodeCanvasEvents']]],
   ['graphy_14',['graphY',['../struct_deki_editor_1_1_node_canvas_events.html#a57d5910b3e04db12845f3a5f2b659fe0',1,'DekiEditor::NodeCanvasEvents']]],

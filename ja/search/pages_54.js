@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['移植性_0',['移植性',['../guide-project-layout.html#guide-project-layout-portability',1,'']]]
+  ['構成_0',['構成',['../guide-project-layout.html#guide-project-layout-layout',1,'']]],
+  ['構造のバージョン_1',['構造のバージョン',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]]
 ];

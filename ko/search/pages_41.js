@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['메모리가_20어디에_20쓰였는지_20알아내기_0',['메모리가 어디에 쓰였는지 알아내기',['../guide-memory.html#autotoc_md9',1,'']]],
-  ['메모리_1',['메모리',['../guide-memory.html',1,'']]]
+  ['마십시오_0',['시드 형식 (절대 변경하지 마십시오)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['의_20경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
+  ['업데이트_20복원_0',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

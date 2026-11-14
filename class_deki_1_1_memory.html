@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki::Memory Class Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -165,52 +218,54 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b9902ccf85077bdb732c87844a62037" id="r_a0b9902ccf85077bdb732c87844a62037"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0b9902ccf85077bdb732c87844a62037">Initialize</a> ()</td></tr>
-<tr class="memdesc:a0b9902ccf85077bdb732c87844a62037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false on failure.  <br /></td></tr>
-<tr class="memitem:af0be07545fcc97d98ec2c845cb391df6" id="r_af0be07545fcc97d98ec2c845cb391df6"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af0be07545fcc97d98ec2c845cb391df6">Shutdown</a> ()</td></tr>
-<tr class="memitem:a1b059aac05f640f1615b15a2ab475914" id="r_a1b059aac05f640f1615b15a2ab475914"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a1b059aac05f640f1615b15a2ab475914">SetBackend</a> (<a class="el" href="class_deki_1_1_i_memory_provider.html">IMemoryProvider</a> *backend)</td></tr>
-<tr class="memdesc:a1b059aac05f640f1615b15a2ab475914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the memory provider and takes ownership of it.  <br /></td></tr>
-<tr class="memitem:aea302ebf2abb3f88688c23a9183a9a4f" id="r_aea302ebf2abb3f88688c23a9183a9a4f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aea302ebf2abb3f88688c23a9183a9a4f">IsInitialized</a> ()</td></tr>
 <tr class="memitem:a6d9b509ef3314a6575f5962482b751f1" id="r_a6d9b509ef3314a6575f5962482b751f1"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a6d9b509ef3314a6575f5962482b751f1">Allocate</a> (size_t size, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
 <tr class="memdesc:a6d9b509ef3314a6575f5962482b751f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <span class="tt">size</span> bytes in <span class="tt">region</span>, or returns nullptr.  <br /></td></tr>
+<tr class="memitem:a270edb97db3ff4fdde472c3cc007488b" id="r_a270edb97db3ff4fdde472c3cc007488b"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a270edb97db3ff4fdde472c3cc007488b template"><td class="memItemLeft">static T *&#160;</td><td class="memItemRight"><a class="el" href="#a270edb97db3ff4fdde472c3cc007488b">AllocateArray</a> (size_t count, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
+<tr class="memdesc:a270edb97db3ff4fdde472c3cc007488b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <span class="tt">count</span> T, or returns nullptr.  <br /></td></tr>
 <tr class="memitem:a274732377abd441bb2e8ff9362645c22" id="r_a274732377abd441bb2e8ff9362645c22"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a274732377abd441bb2e8ff9362645c22">AllocateDma</a> (size_t size, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
 <tr class="memdesc:a274732377abd441bb2e8ff9362645c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory a DMA engine can read, in <span class="tt">region</span>.  <br /></td></tr>
 <tr class="memitem:a2cf615b85242289254ce34197ccae81f" id="r_a2cf615b85242289254ce34197ccae81f"><td class="memItemLeft">static void *&#160;</td><td class="memItemRight"><a class="el" href="#a2cf615b85242289254ce34197ccae81f">AllocateInternal</a> (size_t size, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
 <tr class="memdesc:a2cf615b85242289254ce34197ccae81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <span class="tt">size</span> bytes in internal RAM only, never PSRAM, or returns nullptr.  <br /></td></tr>
+<tr class="memitem:abb36646b85053c9d40c49e734bc6c591" id="r_abb36646b85053c9d40c49e734bc6c591"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abb36646b85053c9d40c49e734bc6c591">Free</a> (void *ptr, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
 <tr class="memitem:ad445d872ff93cff2894ed58306030f3b" id="r_ad445d872ff93cff2894ed58306030f3b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad445d872ff93cff2894ed58306030f3b">FreeInternal</a> (void *ptr)</td></tr>
 <tr class="memdesc:ad445d872ff93cff2894ed58306030f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory from AllocateInternal.  <br /></td></tr>
-<tr class="memitem:abb36646b85053c9d40c49e734bc6c591" id="r_abb36646b85053c9d40c49e734bc6c591"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abb36646b85053c9d40c49e734bc6c591">Free</a> (void *ptr, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
-<tr class="memitem:a270edb97db3ff4fdde472c3cc007488b" id="r_a270edb97db3ff4fdde472c3cc007488b"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:a270edb97db3ff4fdde472c3cc007488b template"><td class="memItemLeft">static T *&#160;</td><td class="memItemRight"><a class="el" href="#a270edb97db3ff4fdde472c3cc007488b">AllocateArray</a> (size_t count, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region, <a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a> ctx={})</td></tr>
-<tr class="memdesc:a270edb97db3ff4fdde472c3cc007488b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates <span class="tt">count</span> T, or returns nullptr.  <br /></td></tr>
-<tr class="memitem:abda26939bb2db1ab6774c53f0a102cb1" id="r_abda26939bb2db1ab6774c53f0a102cb1"><td class="memItemLeft">static <a class="el" href="struct_deki_1_1_memory_stats.html">MemoryStats</a>&#160;</td><td class="memItemRight"><a class="el" href="#abda26939bb2db1ab6774c53f0a102cb1">GetStats</a> ()</td></tr>
 <tr class="memitem:aa3e36602dab0418358afb80677761823" id="r_aa3e36602dab0418358afb80677761823"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#aa3e36602dab0418358afb80677761823">GetAvailableExternal</a> ()</td></tr>
 <tr class="memdesc:aa3e36602dab0418358afb80677761823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free bytes in the External region, 0 when the target has none.  <br /></td></tr>
 <tr class="memitem:aaf00ff0e99582d04cd4210289979f3f9" id="r_aaf00ff0e99582d04cd4210289979f3f9"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#aaf00ff0e99582d04cd4210289979f3f9">GetAvailableInternal</a> ()</td></tr>
 <tr class="memdesc:aaf00ff0e99582d04cd4210289979f3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free internal RAM in bytes, the figure a project is sized against.  <br /></td></tr>
-<tr class="memitem:a02f9bf3184bcd2ad7d819c50d5bfa65c" id="r_a02f9bf3184bcd2ad7d819c50d5bfa65c"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#a02f9bf3184bcd2ad7d819c50d5bfa65c">GetRawAllocated</a> ()</td></tr>
-<tr class="memdesc:a02f9bf3184bcd2ad7d819c50d5bfa65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Live bytes on the raw (operator new) path: std::vector, std::string and scalar <span class="tt">new</span>.  <br /></td></tr>
-<tr class="memitem:a6c3dc565d07425f0580f3d2909c8f35e" id="r_a6c3dc565d07425f0580f3d2909c8f35e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a6c3dc565d07425f0580f3d2909c8f35e">LogStats</a> (const char *label=nullptr)</td></tr>
-<tr class="memdesc:a6c3dc565d07425f0580f3d2909c8f35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs what is allocated and what is left, in one line, with an optional <span class="tt">label</span> (such as "after level load").  <br /></td></tr>
-<tr class="memitem:a440eeede79d061f37209a78da5bf4e63" id="r_a440eeede79d061f37209a78da5bf4e63"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a440eeede79d061f37209a78da5bf4e63">IsExternalAvailable</a> ()</td></tr>
-<tr class="memdesc:a440eeede79d061f37209a78da5bf4e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the target's provider serves the External region.  <br /></td></tr>
-<tr class="memitem:a3431dd5adc87d3b29e9ab2c25f21331c" id="r_a3431dd5adc87d3b29e9ab2c25f21331c"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a3431dd5adc87d3b29e9ab2c25f21331c">GetPeakInternal</a> ()</td></tr>
-<tr class="memdesc:a3431dd5adc87d3b29e9ab2c25f21331c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most ever held at once outside the External region, since Initialize or the last ResetPeaks.  <br /></td></tr>
 <tr class="memitem:aeb7ccecf576e4157b7e7413f4b5e9ff4" id="r_aeb7ccecf576e4157b7e7413f4b5e9ff4"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aeb7ccecf576e4157b7e7413f4b5e9ff4">GetPeakExternal</a> ()</td></tr>
 <tr class="memdesc:aeb7ccecf576e4157b7e7413f4b5e9ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most ever held at once in the External region.  <br /></td></tr>
-<tr class="memitem:ab1288a25317be817ee26e25056c5ee1f" id="r_ab1288a25317be817ee26e25056c5ee1f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab1288a25317be817ee26e25056c5ee1f">ResetPeaks</a> ()</td></tr>
-<tr class="memdesc:ab1288a25317be817ee26e25056c5ee1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the peaks again from what is held now, the global ones and every site's.  <br /></td></tr>
-<tr class="memitem:ab0fe1a3f00bc8bb2f275abc882ae13b1" id="r_ab0fe1a3f00bc8bb2f275abc882ae13b1"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab0fe1a3f00bc8bb2f275abc882ae13b1">GetSiteCount</a> ()</td></tr>
-<tr class="memdesc:ab0fe1a3f00bc8bb2f275abc882ae13b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many call sites have allocated, the overflow row included.  <br /></td></tr>
+<tr class="memitem:a3431dd5adc87d3b29e9ab2c25f21331c" id="r_a3431dd5adc87d3b29e9ab2c25f21331c"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a3431dd5adc87d3b29e9ab2c25f21331c">GetPeakInternal</a> ()</td></tr>
+<tr class="memdesc:a3431dd5adc87d3b29e9ab2c25f21331c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most ever held at once outside the External region, since Initialize or the last ResetPeaks.  <br /></td></tr>
+<tr class="memitem:a02f9bf3184bcd2ad7d819c50d5bfa65c" id="r_a02f9bf3184bcd2ad7d819c50d5bfa65c"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#a02f9bf3184bcd2ad7d819c50d5bfa65c">GetRawAllocated</a> ()</td></tr>
+<tr class="memdesc:a02f9bf3184bcd2ad7d819c50d5bfa65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Live bytes on the raw (operator new) path: std::vector, std::string and scalar <span class="tt">new</span>.  <br /></td></tr>
 <tr class="memitem:a0f1bc2147ad1ecc78ce72cd318236f46" id="r_a0f1bc2147ad1ecc78ce72cd318236f46"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0f1bc2147ad1ecc78ce72cd318236f46">GetSite</a> (uint32_t index, <a class="el" href="struct_deki_1_1_memory_site.html">MemorySite</a> &amp;out)</td></tr>
 <tr class="memdesc:a0f1bc2147ad1ecc78ce72cd318236f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies site <span class="tt">index</span> (0 to <a class="el" href="#ab0fe1a3f00bc8bb2f275abc882ae13b1" title="How many call sites have allocated, the overflow row included.">GetSiteCount()</a> - 1) to <span class="tt">out</span>.  <br /></td></tr>
+<tr class="memitem:ab0fe1a3f00bc8bb2f275abc882ae13b1" id="r_ab0fe1a3f00bc8bb2f275abc882ae13b1"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab0fe1a3f00bc8bb2f275abc882ae13b1">GetSiteCount</a> ()</td></tr>
+<tr class="memdesc:ab0fe1a3f00bc8bb2f275abc882ae13b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many call sites have allocated, the overflow row included.  <br /></td></tr>
+<tr class="memitem:abda26939bb2db1ab6774c53f0a102cb1" id="r_abda26939bb2db1ab6774c53f0a102cb1"><td class="memItemLeft">static <a class="el" href="struct_deki_1_1_memory_stats.html">MemoryStats</a>&#160;</td><td class="memItemRight"><a class="el" href="#abda26939bb2db1ab6774c53f0a102cb1">GetStats</a> ()</td></tr>
+<tr class="memitem:a0b9902ccf85077bdb732c87844a62037" id="r_a0b9902ccf85077bdb732c87844a62037"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a0b9902ccf85077bdb732c87844a62037">Initialize</a> ()</td></tr>
+<tr class="memdesc:a0b9902ccf85077bdb732c87844a62037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false on failure.  <br /></td></tr>
+<tr class="memitem:a440eeede79d061f37209a78da5bf4e63" id="r_a440eeede79d061f37209a78da5bf4e63"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a440eeede79d061f37209a78da5bf4e63">IsExternalAvailable</a> ()</td></tr>
+<tr class="memdesc:a440eeede79d061f37209a78da5bf4e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the target's provider serves the External region.  <br /></td></tr>
+<tr class="memitem:aea302ebf2abb3f88688c23a9183a9a4f" id="r_aea302ebf2abb3f88688c23a9183a9a4f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aea302ebf2abb3f88688c23a9183a9a4f">IsInitialized</a> ()</td></tr>
+<tr class="memitem:a3d516a46019fbd64e67dc8e2ba2f0a45" id="r_a3d516a46019fbd64e67dc8e2ba2f0a45"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3d516a46019fbd64e67dc8e2ba2f0a45">KeepSiteNames</a> ()</td></tr>
+<tr class="memdesc:a3d516a46019fbd64e67dc8e2ba2f0a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies every site's function and file names into memory of the table's own.  <br /></td></tr>
+<tr class="memitem:a6c3dc565d07425f0580f3d2909c8f35e" id="r_a6c3dc565d07425f0580f3d2909c8f35e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a6c3dc565d07425f0580f3d2909c8f35e">LogStats</a> (const char *label=nullptr)</td></tr>
+<tr class="memdesc:a6c3dc565d07425f0580f3d2909c8f35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs what is allocated and what is left, in one line, with an optional <span class="tt">label</span> (such as "after level load").  <br /></td></tr>
+<tr class="memitem:ab1288a25317be817ee26e25056c5ee1f" id="r_ab1288a25317be817ee26e25056c5ee1f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab1288a25317be817ee26e25056c5ee1f">ResetPeaks</a> ()</td></tr>
+<tr class="memdesc:ab1288a25317be817ee26e25056c5ee1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the peaks again from what is held now, the global ones and every site's.  <br /></td></tr>
+<tr class="memitem:a1b059aac05f640f1615b15a2ab475914" id="r_a1b059aac05f640f1615b15a2ab475914"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a1b059aac05f640f1615b15a2ab475914">SetBackend</a> (<a class="el" href="class_deki_1_1_i_memory_provider.html">IMemoryProvider</a> *backend)</td></tr>
+<tr class="memdesc:a1b059aac05f640f1615b15a2ab475914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the memory provider and takes ownership of it.  <br /></td></tr>
+<tr class="memitem:af0be07545fcc97d98ec2c845cb391df6" id="r_af0be07545fcc97d98ec2c845cb391df6"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af0be07545fcc97d98ec2c845cb391df6">Shutdown</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a585469b9a34a1dbecec8ee0439f45634" id="r_a585469b9a34a1dbecec8ee0439f45634"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a585469b9a34a1dbecec8ee0439f45634">Internal</a> { &quot;internal&quot; }</td></tr>
-<tr class="memdesc:a585469b9a34a1dbecec8ee0439f45634"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM: fast and scarce, a few hundred KB on an ESP32-S3.  <br /></td></tr>
 <tr class="memitem:a44e1e0894dcca1ef22f5f59cf04c75ee" id="r_a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44e1e0894dcca1ef22f5f59cf04c75ee">External</a> { &quot;external&quot; }</td></tr>
 <tr class="memdesc:a44e1e0894dcca1ef22f5f59cf04c75ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SPI.  <br /></td></tr>
+<tr class="memitem:a585469b9a34a1dbecec8ee0439f45634" id="r_a585469b9a34a1dbecec8ee0439f45634"><td class="memItemLeft">static const <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Region</a>&#160;</td><td class="memItemRight"><a class="el" href="#a585469b9a34a1dbecec8ee0439f45634">Internal</a> { &quot;internal&quot; }</td></tr>
+<tr class="memdesc:a585469b9a34a1dbecec8ee0439f45634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal RAM: fast and scarce, a few hundred KB on an ESP32-S3.  <br /></td></tr>
 <tr class="memitem:a0f3c92d0656e9aa6331dd9cf59b2473b" id="r_a0f3c92d0656e9aa6331dd9cf59b2473b"><td class="memItemLeft">static constexpr uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0f3c92d0656e9aa6331dd9cf59b2473b">kMaxSites</a> = 64</td></tr>
 <tr class="memdesc:a0f3c92d0656e9aa6331dd9cf59b2473b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rows in the site table: 63 sites and an overflow row.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -221,112 +276,8 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The engine's memory, in named regions. </p>
-<p><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> is the heap every target has; External is a second, larger, slower memory a target may offer (such as PSRAM on a microcontroller). What a region maps to on a target is up to that target's provider. </p>
+<p>Internal is the heap every target has; External is a second, larger, slower memory a target may offer (such as PSRAM on a microcontroller). What a region maps to on a target is up to that target's provider. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a0b9902ccf85077bdb732c87844a62037" name="a0b9902ccf85077bdb732c87844a62037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b9902ccf85077bdb732c87844a62037">&#9670;&#160;</a></span>Initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::Memory::Initialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns false on failure. </p>
-
-</div>
-</div>
-<a id="af0be07545fcc97d98ec2c845cb391df6" name="af0be07545fcc97d98ec2c845cb391df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0be07545fcc97d98ec2c845cb391df6">&#9670;&#160;</a></span>Shutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Memory::Shutdown </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b059aac05f640f1615b15a2ab475914" name="a1b059aac05f640f1615b15a2ab475914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b059aac05f640f1615b15a2ab475914">&#9670;&#160;</a></span>SetBackend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Memory::SetBackend </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_i_memory_provider.html">IMemoryProvider</a> *</td>          <td class="paramname"><span class="paramname"><em>backend</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Installs the memory provider and takes ownership of it. </p>
-
-</div>
-</div>
-<a id="aea302ebf2abb3f88688c23a9183a9a4f" name="aea302ebf2abb3f88688c23a9183a9a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea302ebf2abb3f88688c23a9183a9a4f">&#9670;&#160;</a></span>IsInitialized()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::Memory::IsInitialized </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6d9b509ef3314a6575f5962482b751f1" name="a6d9b509ef3314a6575f5962482b751f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d9b509ef3314a6575f5962482b751f1">&#9670;&#160;</a></span>Allocate()</h2>
 
@@ -361,6 +312,48 @@ Friends</h2></td></tr>
 
 <p>Allocates <span class="tt">size</span> bytes in <span class="tt">region</span>, or returns nullptr. </p>
 <p>There is no fallback to another region; a region the board's provider does not serve returns nullptr and is named in the log. Leave <span class="tt">ctx</span> out: the compiler fills in the call site. </p>
+
+</div>
+</div>
+<a id="a270edb97db3ff4fdde472c3cc007488b" name="a270edb97db3ff4fdde472c3cc007488b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270edb97db3ff4fdde472c3cc007488b">&#9670;&#160;</a></span>AllocateArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * Deki::Memory::AllocateArray </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocates <span class="tt">count</span> T, or returns nullptr. </p>
+<p>Use it instead of <span class="tt">new T[count]</span> for anything sized by a file, a scene or the screen.</p>
+<p><span class="tt">new[]</span> cannot fail gracefully on a device: ESP-IDF builds with exceptions off, so a failed allocation calls abort() and reboots the board, and <span class="tt">std::nothrow</span> does not help because libstdc++ implements it with the throwing form. A caller that checks for nullptr can carry on instead.</p>
+<p>The size multiplication is checked: a count from a corrupt file and a 32-bit size_t would otherwise wrap to a small size.</p>
+<p>For trivially copyable T only: nothing is constructed. </p>
 
 </div>
 </div>
@@ -433,33 +426,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ad445d872ff93cff2894ed58306030f3b" name="ad445d872ff93cff2894ed58306030f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad445d872ff93cff2894ed58306030f3b">&#9670;&#160;</a></span>FreeInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Memory::FreeInternal </td>
-          <td>(</td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Frees memory from AllocateInternal. </p>
-
-</div>
-</div>
 <a id="abb36646b85053c9d40c49e734bc6c591" name="abb36646b85053c9d40c49e734bc6c591"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb36646b85053c9d40c49e734bc6c591">&#9670;&#160;</a></span>Free()</h2>
 
@@ -489,50 +455,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a270edb97db3ff4fdde472c3cc007488b" name="a270edb97db3ff4fdde472c3cc007488b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a270edb97db3ff4fdde472c3cc007488b">&#9670;&#160;</a></span>AllocateArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T * Deki::Memory::AllocateArray </td>
-          <td>(</td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_deki_1_1_alloc_context.html">AllocContext</a></td>          <td class="paramname"><span class="paramname"><em>ctx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocates <span class="tt">count</span> T, or returns nullptr. </p>
-<p>Use it instead of <span class="tt">new T[count]</span> for anything sized by a file, a scene or the screen.</p>
-<p><span class="tt">new[]</span> cannot fail gracefully on a device: ESP-IDF builds with exceptions off, so a failed allocation calls abort() and reboots the board, and <span class="tt">std::nothrow</span> does not help because libstdc++ implements it with the throwing form. A caller that checks for nullptr can carry on instead.</p>
-<p>The size multiplication is checked: a count from a corrupt file and a 32-bit size_t would otherwise wrap to a small size.</p>
-<p>For trivially copyable T only: nothing is constructed. </p>
-
-</div>
-</div>
-<a id="abda26939bb2db1ab6774c53f0a102cb1" name="abda26939bb2db1ab6774c53f0a102cb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abda26939bb2db1ab6774c53f0a102cb1">&#9670;&#160;</a></span>GetStats()</h2>
+<a id="ad445d872ff93cff2894ed58306030f3b" name="ad445d872ff93cff2894ed58306030f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad445d872ff93cff2894ed58306030f3b">&#9670;&#160;</a></span>FreeInternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,9 +465,9 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_deki_1_1_memory_stats.html">MemoryStats</a> Deki::Memory::GetStats </td>
+          <td class="memname">void Deki::Memory::FreeInternal </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -553,6 +477,8 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Frees memory from AllocateInternal. </p>
 
 </div>
 </div>
@@ -611,8 +537,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a02f9bf3184bcd2ad7d819c50d5bfa65c" name="a02f9bf3184bcd2ad7d819c50d5bfa65c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f9bf3184bcd2ad7d819c50d5bfa65c">&#9670;&#160;</a></span>GetRawAllocated()</h2>
+<a id="aeb7ccecf576e4157b7e7413f4b5e9ff4" name="aeb7ccecf576e4157b7e7413f4b5e9ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7ccecf576e4157b7e7413f4b5e9ff4">&#9670;&#160;</a></span>GetPeakExternal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,7 +547,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Deki::Memory::GetRawAllocated </td>
+          <td class="memname">uint32_t Deki::Memory::GetPeakExternal </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -634,64 +560,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Live bytes on the raw (operator new) path: std::vector, std::string and scalar <span class="tt">new</span>. </p>
-<p>Requires DEKI_MEMORY_TRACK_RAW and returns 0 without it. Counting needs the block size on free, which only the heap knows, and asking costs about 35% per allocation (on Windows, _msize takes a lock), so only a build that asks counts. Turn it on while hunting where memory went.</p>
-<p>Approximate even then: allocations from static initialisers, before the backend exists, are freed through it later, so the total is clamped at zero. A diagnostic, not an invariant. </p>
-
-</div>
-</div>
-<a id="a6c3dc565d07425f0580f3d2909c8f35e" name="a6c3dc565d07425f0580f3d2909c8f35e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c3dc565d07425f0580f3d2909c8f35e">&#9670;&#160;</a></span>LogStats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Memory::LogStats </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>label</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Logs what is allocated and what is left, in one line, with an optional <span class="tt">label</span> (such as "after level load"). </p>
-<p>Debug builds add the live and peak allocation counts. </p>
-
-</div>
-</div>
-<a id="a440eeede79d061f37209a78da5bf4e63" name="a440eeede79d061f37209a78da5bf4e63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a440eeede79d061f37209a78da5bf4e63">&#9670;&#160;</a></span>IsExternalAvailable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::Memory::IsExternalAvailable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>True when the target's provider serves the External region. </p>
+<p>The most ever held at once in the External region. </p>
 
 </div>
 </div>
@@ -722,8 +591,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="aeb7ccecf576e4157b7e7413f4b5e9ff4" name="aeb7ccecf576e4157b7e7413f4b5e9ff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb7ccecf576e4157b7e7413f4b5e9ff4">&#9670;&#160;</a></span>GetPeakExternal()</h2>
+<a id="a02f9bf3184bcd2ad7d819c50d5bfa65c" name="a02f9bf3184bcd2ad7d819c50d5bfa65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f9bf3184bcd2ad7d819c50d5bfa65c">&#9670;&#160;</a></span>GetRawAllocated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -732,7 +601,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t Deki::Memory::GetPeakExternal </td>
+          <td class="memname">size_t Deki::Memory::GetRawAllocated </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -745,64 +614,9 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The most ever held at once in the External region. </p>
-
-</div>
-</div>
-<a id="ab1288a25317be817ee26e25056c5ee1f" name="ab1288a25317be817ee26e25056c5ee1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1288a25317be817ee26e25056c5ee1f">&#9670;&#160;</a></span>ResetPeaks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Memory::ResetPeaks </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Starts the peaks again from what is held now, the global ones and every site's. </p>
-<p>The editor calls it when play starts. </p>
-
-</div>
-</div>
-<a id="ab0fe1a3f00bc8bb2f275abc882ae13b1" name="ab0fe1a3f00bc8bb2f275abc882ae13b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0fe1a3f00bc8bb2f275abc882ae13b1">&#9670;&#160;</a></span>GetSiteCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t Deki::Memory::GetSiteCount </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>How many call sites have allocated, the overflow row included. </p>
-<p>0 in a build with DEKI_STRIP_ALLOC_CONTEXT, which captures no call sites.</p>
-<p>The first kMaxSites - 1 sites get a row each, in the order they first allocated; the rest share the last row, whose function is null. A site keeps its row after its memory is freed, with zero bytes. </p>
+<p>Live bytes on the raw (operator new) path: std::vector, std::string and scalar <span class="tt">new</span>. </p>
+<p>Requires DEKI_MEMORY_TRACK_RAW and returns 0 without it. Counting needs the block size on free, which only the heap knows, and asking costs about 35% per allocation (on Windows, _msize takes a lock), so only a build that asks counts. Turn it on while hunting where memory went.</p>
+<p>Approximate even then: allocations from static initialisers, before the backend exists, are freed through it later, so the total is clamped at zero. A diagnostic, not an invariant. </p>
 
 </div>
 </div>
@@ -838,6 +652,275 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="ab0fe1a3f00bc8bb2f275abc882ae13b1" name="ab0fe1a3f00bc8bb2f275abc882ae13b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0fe1a3f00bc8bb2f275abc882ae13b1">&#9670;&#160;</a></span>GetSiteCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Memory::GetSiteCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many call sites have allocated, the overflow row included. </p>
+<p>0 in a build with DEKI_STRIP_ALLOC_CONTEXT, which captures no call sites.</p>
+<p>The first kMaxSites - 1 sites get a row each, in the order they first allocated; the rest share the last row, whose function is null. A site keeps its row after its memory is freed, with zero bytes. </p>
+
+</div>
+</div>
+<a id="abda26939bb2db1ab6774c53f0a102cb1" name="abda26939bb2db1ab6774c53f0a102cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda26939bb2db1ab6774c53f0a102cb1">&#9670;&#160;</a></span>GetStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_memory_stats.html">MemoryStats</a> Deki::Memory::GetStats </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b9902ccf85077bdb732c87844a62037" name="a0b9902ccf85077bdb732c87844a62037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9902ccf85077bdb732c87844a62037">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Memory::Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false on failure. </p>
+
+</div>
+</div>
+<a id="a440eeede79d061f37209a78da5bf4e63" name="a440eeede79d061f37209a78da5bf4e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440eeede79d061f37209a78da5bf4e63">&#9670;&#160;</a></span>IsExternalAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Memory::IsExternalAvailable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True when the target's provider serves the External region. </p>
+
+</div>
+</div>
+<a id="aea302ebf2abb3f88688c23a9183a9a4f" name="aea302ebf2abb3f88688c23a9183a9a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea302ebf2abb3f88688c23a9183a9a4f">&#9670;&#160;</a></span>IsInitialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Memory::IsInitialized </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d516a46019fbd64e67dc8e2ba2f0a45" name="a3d516a46019fbd64e67dc8e2ba2f0a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d516a46019fbd64e67dc8e2ba2f0a45">&#9670;&#160;</a></span>KeepSiteNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::KeepSiteNames </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies every site's function and file names into memory of the table's own. </p>
+<p>A site's names are string literals in the code that allocated; call this before unloading a library that may have allocated through the engine (an editor reloading a package), or the next report reads freed code. Costs nothing until it is called; a board, which never unloads code, never needs it. </p>
+
+</div>
+</div>
+<a id="a6c3dc565d07425f0580f3d2909c8f35e" name="a6c3dc565d07425f0580f3d2909c8f35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3dc565d07425f0580f3d2909c8f35e">&#9670;&#160;</a></span>LogStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::LogStats </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>label</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logs what is allocated and what is left, in one line, with an optional <span class="tt">label</span> (such as "after level load"). </p>
+<p>Debug builds add the live and peak allocation counts. </p>
+
+</div>
+</div>
+<a id="ab1288a25317be817ee26e25056c5ee1f" name="ab1288a25317be817ee26e25056c5ee1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1288a25317be817ee26e25056c5ee1f">&#9670;&#160;</a></span>ResetPeaks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::ResetPeaks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts the peaks again from what is held now, the global ones and every site's. </p>
+<p>The editor calls it when play starts. </p>
+
+</div>
+</div>
+<a id="a1b059aac05f640f1615b15a2ab475914" name="a1b059aac05f640f1615b15a2ab475914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b059aac05f640f1615b15a2ab475914">&#9670;&#160;</a></span>SetBackend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::SetBackend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_i_memory_provider.html">IMemoryProvider</a> *</td>          <td class="paramname"><span class="paramname"><em>backend</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Installs the memory provider and takes ownership of it. </p>
+
+</div>
+</div>
+<a id="af0be07545fcc97d98ec2c845cb391df6" name="af0be07545fcc97d98ec2c845cb391df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0be07545fcc97d98ec2c845cb391df6">&#9670;&#160;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Memory::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
 <a id="a948ba6b3520f1517d00624724375515f" name="a948ba6b3520f1517d00624724375515f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a948ba6b3520f1517d00624724375515f">&#9670;&#160;</a></span>Detail::RawAllocate</h2>
@@ -849,7 +932,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void * <a class="el" href="namespace_deki_1_1_detail.html#a7102a0776bda99feb3d1a209d884a493">Detail::RawAllocate</a> </td>
+          <td class="memname">void * Detail::RawAllocate </td>
           <td>(</td>
           <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
           <td></td>
@@ -874,7 +957,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="namespace_deki_1_1_detail.html#ad5a8a53274925c5cd52e8267720597b5">Detail::RawFree</a> </td>
+          <td class="memname">void Detail::RawFree </td>
           <td>(</td>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
           <td></td>
@@ -890,30 +973,6 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a585469b9a34a1dbecec8ee0439f45634" name="a585469b9a34a1dbecec8ee0439f45634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a585469b9a34a1dbecec8ee0439f45634">&#9670;&#160;</a></span>Internal</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> Deki::Memory::Internal { &quot;internal&quot; }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="namespace_deki_1_1_internal.html">Internal</a> RAM: fast and scarce, a few hundred KB on an ESP32-S3. </p>
-
-</div>
-</div>
 <a id="a44e1e0894dcca1ef22f5f59cf04c75ee" name="a44e1e0894dcca1ef22f5f59cf04c75ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44e1e0894dcca1ef22f5f59cf04c75ee">&#9670;&#160;</a></span>External</h2>
 
@@ -936,6 +995,30 @@ template&lt;typename T&gt; </div>
 
 <p>External RAM (PSRAM) where the board has it: megabytes, but much slower because it is reached over SPI. </p>
 <p>Use it only for buffers whose latency does not matter, not for one read every frame. </p>
+
+</div>
+</div>
+<a id="a585469b9a34a1dbecec8ee0439f45634" name="a585469b9a34a1dbecec8ee0439f45634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585469b9a34a1dbecec8ee0439f45634">&#9670;&#160;</a></span>Internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> Deki::Memory::Internal { &quot;internal&quot; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal RAM: fast and scarce, a few hundred KB on an ESP32-S3. </p>
 
 </div>
 </div>

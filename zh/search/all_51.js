@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['烘焙的唯一负责者：fontsynchandler_0',['烘焙的唯一负责者：FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
+  ['来源：编辑、更新、恢复_0',['来源：编辑、更新、恢复',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

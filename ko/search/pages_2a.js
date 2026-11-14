@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['구조_0',['구조',['../guide-project-layout.html#guide-project-layout-layout',1,'구조'],['../guide-project-layout.html',1,'프로젝트 구조']]],
-  ['구조_20버전_1',['구조 버전',['../guide-project-layout.html#guide-project-layout-structure-version',1,'']]]
+  ['괜찮습니다_0',['데이터시트는 SI를 쓰지 않으며, 그래도 괜찮습니다',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]]
 ];

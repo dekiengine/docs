@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki::Color Class Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -162,64 +215,64 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac450fe9b2195d89c9460431a3dd9f655" id="r_ac450fe9b2195d89c9460431a3dd9f655"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> ()</td></tr>
 <tr class="memitem:ac4934629310832b23e25b7a7152043da" id="r_ac4934629310832b23e25b7a7152043da"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac4934629310832b23e25b7a7152043da">Color</a> (uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha=255)</td></tr>
-<tr class="memitem:a2905ed5ac36713912958c2e485d7e23f" id="r_a2905ed5ac36713912958c2e485d7e23f"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a2905ed5ac36713912958c2e485d7e23f">ToRGB565</a> () const</td></tr>
-<tr class="memitem:ab79da60839bb623fc3f66b50a0e38226" id="r_ab79da60839bb623fc3f66b50a0e38226"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab79da60839bb623fc3f66b50a0e38226">ToRGB888</a> () const</td></tr>
-<tr class="memitem:a3954ced3092c231619d20f306fdd98a5" id="r_a3954ced3092c231619d20f306fdd98a5"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a3954ced3092c231619d20f306fdd98a5">ToARGB8888</a> () const</td></tr>
-<tr class="memitem:a9aab7a9e96f192d5323433bb0c4dea45" id="r_a9aab7a9e96f192d5323433bb0c4dea45"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a9aab7a9e96f192d5323433bb0c4dea45">ToRGBA8888</a> () const</td></tr>
-<tr class="memitem:a18d2da6258ea6585023663b8ce6945cd" id="r_a18d2da6258ea6585023663b8ce6945cd"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a18d2da6258ea6585023663b8ce6945cd">ToABGR8888</a> () const</td></tr>
-<tr class="memitem:a18326b0a4041a39c948c1b530c684634" id="r_a18326b0a4041a39c948c1b530c684634"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a18326b0a4041a39c948c1b530c684634">ToFloats</a> (float &amp;r, float &amp;g, float &amp;b, float &amp;a) const</td></tr>
-<tr class="memdesc:a18326b0a4041a39c948c1b530c684634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channels in 0..1.  <br /></td></tr>
-<tr class="memitem:a0f3a869783e1e8cb33d6b359abb162d2" id="r_a0f3a869783e1e8cb33d6b359abb162d2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f3a869783e1e8cb33d6b359abb162d2">ToHSV</a> (float &amp;h, float &amp;s, float &amp;v) const</td></tr>
-<tr class="memitem:af00ad4c477fb1a54b1f5299b37b837f0" id="r_af00ad4c477fb1a54b1f5299b37b837f0"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af00ad4c477fb1a54b1f5299b37b837f0">Lerp</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;to, float t) const</td></tr>
-<tr class="memitem:aececf1046c56363c579c79e65e52ab21" id="r_aececf1046c56363c579c79e65e52ab21"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#aececf1046c56363c579c79e65e52ab21">Multiply</a> (float factor) const</td></tr>
-<tr class="memitem:a3ac2df18b2810803204db4e22deb6a1e" id="r_a3ac2df18b2810803204db4e22deb6a1e"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3ac2df18b2810803204db4e22deb6a1e">Tint</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;tintColor, float intensity) const</td></tr>
-<tr class="memitem:af403cd8f5455b673306fbe79a0e5bfee" id="r_af403cd8f5455b673306fbe79a0e5bfee"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af403cd8f5455b673306fbe79a0e5bfee">WithAlpha</a> (uint8_t newAlpha) const</td></tr>
-<tr class="memitem:a140f4411549e37d8d21a50518ac3025a" id="r_a140f4411549e37d8d21a50518ac3025a"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a140f4411549e37d8d21a50518ac3025a">GetLuminance</a> () const</td></tr>
-<tr class="memitem:ae731be056d9184c438dd6dd42cdfcdb9" id="r_ae731be056d9184c438dd6dd42cdfcdb9"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae731be056d9184c438dd6dd42cdfcdb9">ToGrayscale</a> () const</td></tr>
 <tr class="memitem:a7a4a4dd970e90985e29d2f94c2cc610b" id="r_a7a4a4dd970e90985e29d2f94c2cc610b"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7a4a4dd970e90985e29d2f94c2cc610b">AdjustBrightness</a> (float factor) const</td></tr>
 <tr class="memitem:a6f9a9e38320d0d7bddac21626b1d9eef" id="r_a6f9a9e38320d0d7bddac21626b1d9eef"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6f9a9e38320d0d7bddac21626b1d9eef">AdjustSaturation</a> (float factor) const</td></tr>
-<tr class="memitem:ab263e4a6e6848dd4c881afaddfa50586" id="r_ab263e4a6e6848dd4c881afaddfa50586"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab263e4a6e6848dd4c881afaddfa50586">operator==</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;other) const</td></tr>
+<tr class="memitem:a140f4411549e37d8d21a50518ac3025a" id="r_a140f4411549e37d8d21a50518ac3025a"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a140f4411549e37d8d21a50518ac3025a">GetLuminance</a> () const</td></tr>
+<tr class="memitem:af00ad4c477fb1a54b1f5299b37b837f0" id="r_af00ad4c477fb1a54b1f5299b37b837f0"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af00ad4c477fb1a54b1f5299b37b837f0">Lerp</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;to, float t) const</td></tr>
+<tr class="memitem:aececf1046c56363c579c79e65e52ab21" id="r_aececf1046c56363c579c79e65e52ab21"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#aececf1046c56363c579c79e65e52ab21">Multiply</a> (float factor) const</td></tr>
 <tr class="memitem:a297243b308066c30c43e81386bdc2914" id="r_a297243b308066c30c43e81386bdc2914"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a297243b308066c30c43e81386bdc2914">operator!=</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;other) const</td></tr>
+<tr class="memitem:ab263e4a6e6848dd4c881afaddfa50586" id="r_ab263e4a6e6848dd4c881afaddfa50586"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab263e4a6e6848dd4c881afaddfa50586">operator==</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;other) const</td></tr>
+<tr class="memitem:a3ac2df18b2810803204db4e22deb6a1e" id="r_a3ac2df18b2810803204db4e22deb6a1e"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3ac2df18b2810803204db4e22deb6a1e">Tint</a> (const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;tintColor, float intensity) const</td></tr>
+<tr class="memitem:a18d2da6258ea6585023663b8ce6945cd" id="r_a18d2da6258ea6585023663b8ce6945cd"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a18d2da6258ea6585023663b8ce6945cd">ToABGR8888</a> () const</td></tr>
+<tr class="memitem:a3954ced3092c231619d20f306fdd98a5" id="r_a3954ced3092c231619d20f306fdd98a5"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a3954ced3092c231619d20f306fdd98a5">ToARGB8888</a> () const</td></tr>
+<tr class="memitem:a18326b0a4041a39c948c1b530c684634" id="r_a18326b0a4041a39c948c1b530c684634"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a18326b0a4041a39c948c1b530c684634">ToFloats</a> (float &amp;r, float &amp;g, float &amp;b, float &amp;a) const</td></tr>
+<tr class="memdesc:a18326b0a4041a39c948c1b530c684634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channels in 0..1.  <br /></td></tr>
+<tr class="memitem:ae731be056d9184c438dd6dd42cdfcdb9" id="r_ae731be056d9184c438dd6dd42cdfcdb9"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae731be056d9184c438dd6dd42cdfcdb9">ToGrayscale</a> () const</td></tr>
+<tr class="memitem:a0f3a869783e1e8cb33d6b359abb162d2" id="r_a0f3a869783e1e8cb33d6b359abb162d2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f3a869783e1e8cb33d6b359abb162d2">ToHSV</a> (float &amp;h, float &amp;s, float &amp;v) const</td></tr>
+<tr class="memitem:a2905ed5ac36713912958c2e485d7e23f" id="r_a2905ed5ac36713912958c2e485d7e23f"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a2905ed5ac36713912958c2e485d7e23f">ToRGB565</a> () const</td></tr>
+<tr class="memitem:ab79da60839bb623fc3f66b50a0e38226" id="r_ab79da60839bb623fc3f66b50a0e38226"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ab79da60839bb623fc3f66b50a0e38226">ToRGB888</a> () const</td></tr>
+<tr class="memitem:a9aab7a9e96f192d5323433bb0c4dea45" id="r_a9aab7a9e96f192d5323433bb0c4dea45"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a9aab7a9e96f192d5323433bb0c4dea45">ToRGBA8888</a> () const</td></tr>
+<tr class="memitem:af403cd8f5455b673306fbe79a0e5bfee" id="r_af403cd8f5455b673306fbe79a0e5bfee"><td class="memItemLeft"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af403cd8f5455b673306fbe79a0e5bfee">WithAlpha</a> (uint8_t newAlpha) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abd5ea5a0d693344b64182514d83c291e" id="r_abd5ea5a0d693344b64182514d83c291e"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#abd5ea5a0d693344b64182514d83c291e">FromRGB565</a> (uint16_t rgb565)</td></tr>
-<tr class="memitem:a889dd57d1d618bb2822a7f80f9b4ebe3" id="r_a889dd57d1d618bb2822a7f80f9b4ebe3"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a889dd57d1d618bb2822a7f80f9b4ebe3">FromRGB888</a> (uint32_t rgb888)</td></tr>
 <tr class="memitem:ae5141ee77c3309d80a13a6d6bc24935d" id="r_ae5141ee77c3309d80a13a6d6bc24935d"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae5141ee77c3309d80a13a6d6bc24935d">FromARGB8888</a> (uint32_t argb8888)</td></tr>
-<tr class="memitem:a77311af8cd403db975e8e0bfd6a520dc" id="r_a77311af8cd403db975e8e0bfd6a520dc"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a77311af8cd403db975e8e0bfd6a520dc">FromRGBA8888</a> (uint32_t rgba8888)</td></tr>
 <tr class="memitem:a5b82650ca647e80691046797b8fd069a" id="r_a5b82650ca647e80691046797b8fd069a"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5b82650ca647e80691046797b8fd069a">FromFloats</a> (float r, float g, float b, float a=1.0f)</td></tr>
 <tr class="memdesc:a5b82650ca647e80691046797b8fd069a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channels in 0..1.  <br /></td></tr>
 <tr class="memitem:ab8da2401177159512230ef1fed3bb859" id="r_ab8da2401177159512230ef1fed3bb859"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab8da2401177159512230ef1fed3bb859">FromHSV</a> (float h, float s, float v, float a=1.0f)</td></tr>
+<tr class="memitem:abd5ea5a0d693344b64182514d83c291e" id="r_abd5ea5a0d693344b64182514d83c291e"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#abd5ea5a0d693344b64182514d83c291e">FromRGB565</a> (uint16_t rgb565)</td></tr>
+<tr class="memitem:a889dd57d1d618bb2822a7f80f9b4ebe3" id="r_a889dd57d1d618bb2822a7f80f9b4ebe3"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a889dd57d1d618bb2822a7f80f9b4ebe3">FromRGB888</a> (uint32_t rgb888)</td></tr>
+<tr class="memitem:a77311af8cd403db975e8e0bfd6a520dc" id="r_a77311af8cd403db975e8e0bfd6a520dc"><td class="memItemLeft">static <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a77311af8cd403db975e8e0bfd6a520dc">FromRGBA8888</a> (uint32_t rgba8888)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a033ece0cffde9180ae89929516416b11" id="r_a033ece0cffde9180ae89929516416b11"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a033ece0cffde9180ae89929516416b11">r</a></td></tr>
-<tr class="memitem:a8e479c93087c3b7b27d7c9b1da11a88c" id="r_a8e479c93087c3b7b27d7c9b1da11a88c"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a8e479c93087c3b7b27d7c9b1da11a88c">g</a></td></tr>
-<tr class="memitem:a88bef092eda301401e9cea1eb1f99323" id="r_a88bef092eda301401e9cea1eb1f99323"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a88bef092eda301401e9cea1eb1f99323">b</a></td></tr>
 <tr class="memitem:a6dfd059de4c67046526a7d71a87397b0" id="r_a6dfd059de4c67046526a7d71a87397b0"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a6dfd059de4c67046526a7d71a87397b0">a</a></td></tr>
+<tr class="memitem:a88bef092eda301401e9cea1eb1f99323" id="r_a88bef092eda301401e9cea1eb1f99323"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a88bef092eda301401e9cea1eb1f99323">b</a></td></tr>
+<tr class="memitem:a8e479c93087c3b7b27d7c9b1da11a88c" id="r_a8e479c93087c3b7b27d7c9b1da11a88c"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a8e479c93087c3b7b27d7c9b1da11a88c">g</a></td></tr>
+<tr class="memitem:a033ece0cffde9180ae89929516416b11" id="r_a033ece0cffde9180ae89929516416b11"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a033ece0cffde9180ae89929516416b11">r</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2d755b3875c6a30875ab10948fa1262d" id="r_a2d755b3875c6a30875ab10948fa1262d"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2d755b3875c6a30875ab10948fa1262d">Black</a> { 0, 0, 0 }</td></tr>
-<tr class="memitem:a7ed59bbfab82bb9bb45a5dfdd3c9ffb4" id="r_a7ed59bbfab82bb9bb45a5dfdd3c9ffb4"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4">White</a> { 255, 255, 255 }</td></tr>
-<tr class="memitem:a418b98d93df36e43c97955071121fe05" id="r_a418b98d93df36e43c97955071121fe05"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a418b98d93df36e43c97955071121fe05">Red</a> { 255, 0, 0 }</td></tr>
-<tr class="memitem:a7a7d2043caa09f667a76af4b57cb2233" id="r_a7a7d2043caa09f667a76af4b57cb2233"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7a7d2043caa09f667a76af4b57cb2233">Green</a> { 0, 255, 0 }</td></tr>
 <tr class="memitem:aa83dc3101d3046f1ec970955305ea0e3" id="r_aa83dc3101d3046f1ec970955305ea0e3"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa83dc3101d3046f1ec970955305ea0e3">Blue</a> { 0, 0, 255 }</td></tr>
-<tr class="memitem:a68962b586deb54cfefb8bbf57c9fb181" id="r_a68962b586deb54cfefb8bbf57c9fb181"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a68962b586deb54cfefb8bbf57c9fb181">Yellow</a> { 255, 255, 0 }</td></tr>
-<tr class="memitem:a1383f80fe0186f808fc0f04c97211409" id="r_a1383f80fe0186f808fc0f04c97211409"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1383f80fe0186f808fc0f04c97211409">Cyan</a> { 0, 255, 255 }</td></tr>
-<tr class="memitem:a02492fc564c4d228e250198e9910a9f5" id="r_a02492fc564c4d228e250198e9910a9f5"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a02492fc564c4d228e250198e9910a9f5">Magenta</a> { 255, 0, 255 }</td></tr>
-<tr class="memitem:a2d9109af7c676cc3860f60276d3cbcc6" id="r_a2d9109af7c676cc3860f60276d3cbcc6"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2d9109af7c676cc3860f60276d3cbcc6">Gray</a> { 128, 128, 128 }</td></tr>
-<tr class="memitem:ab0d3a66f5ece40690b2b513dd10205f5" id="r_ab0d3a66f5ece40690b2b513dd10205f5"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab0d3a66f5ece40690b2b513dd10205f5">DarkGray</a> { 64, 64, 64 }</td></tr>
-<tr class="memitem:ad4d58668be4597ba0558953206bd8cc5" id="r_ad4d58668be4597ba0558953206bd8cc5"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad4d58668be4597ba0558953206bd8cc5">LightGray</a> { 192, 192, 192 }</td></tr>
-<tr class="memitem:ae8db68120c0d66fc8d0098f9ef132e9b" id="r_ae8db68120c0d66fc8d0098f9ef132e9b"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae8db68120c0d66fc8d0098f9ef132e9b">Orange</a> { 255, 165, 0 }</td></tr>
-<tr class="memitem:a16424bd5fc029c78485bf74f9ec3d3da" id="r_a16424bd5fc029c78485bf74f9ec3d3da"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a16424bd5fc029c78485bf74f9ec3d3da">Purple</a> { 128, 0, 128 }</td></tr>
 <tr class="memitem:ab963e59ef398b9623bba914c296fc930" id="r_ab963e59ef398b9623bba914c296fc930"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab963e59ef398b9623bba914c296fc930">Brown</a> { 139, 69, 19 }</td></tr>
-<tr class="memitem:a8cbd9e9a82ac710123705172edd1e9bc" id="r_a8cbd9e9a82ac710123705172edd1e9bc"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8cbd9e9a82ac710123705172edd1e9bc">Pink</a> { 255, 192, 203 }</td></tr>
-<tr class="memitem:a9ee18d02a26ec5cd785bf7ab61b985d6" id="r_a9ee18d02a26ec5cd785bf7ab61b985d6"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9ee18d02a26ec5cd785bf7ab61b985d6">Transparent</a> { 0, 0, 0, 0 }</td></tr>
-<tr class="memitem:a7e7395fb5535a50d3ce2116615b8501c" id="r_a7e7395fb5535a50d3ce2116615b8501c"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7e7395fb5535a50d3ce2116615b8501c">SkyBlue</a> { 135, 206, 235 }</td></tr>
+<tr class="memitem:a1383f80fe0186f808fc0f04c97211409" id="r_a1383f80fe0186f808fc0f04c97211409"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1383f80fe0186f808fc0f04c97211409">Cyan</a> { 0, 255, 255 }</td></tr>
+<tr class="memitem:ab0d3a66f5ece40690b2b513dd10205f5" id="r_ab0d3a66f5ece40690b2b513dd10205f5"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab0d3a66f5ece40690b2b513dd10205f5">DarkGray</a> { 64, 64, 64 }</td></tr>
 <tr class="memitem:a60604ea961d6e654ad7e66a241d14e30" id="r_a60604ea961d6e654ad7e66a241d14e30"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a60604ea961d6e654ad7e66a241d14e30">GrassGreen</a> { 124, 252, 0 }</td></tr>
-<tr class="memitem:af782cbefc55fe5b1999ac8ee60c4d6e4" id="r_af782cbefc55fe5b1999ac8ee60c4d6e4"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af782cbefc55fe5b1999ac8ee60c4d6e4">SunsetOrange</a> { 255, 94, 77 }</td></tr>
+<tr class="memitem:a2d9109af7c676cc3860f60276d3cbcc6" id="r_a2d9109af7c676cc3860f60276d3cbcc6"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2d9109af7c676cc3860f60276d3cbcc6">Gray</a> { 128, 128, 128 }</td></tr>
+<tr class="memitem:a7a7d2043caa09f667a76af4b57cb2233" id="r_a7a7d2043caa09f667a76af4b57cb2233"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7a7d2043caa09f667a76af4b57cb2233">Green</a> { 0, 255, 0 }</td></tr>
+<tr class="memitem:ad4d58668be4597ba0558953206bd8cc5" id="r_ad4d58668be4597ba0558953206bd8cc5"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad4d58668be4597ba0558953206bd8cc5">LightGray</a> { 192, 192, 192 }</td></tr>
+<tr class="memitem:a02492fc564c4d228e250198e9910a9f5" id="r_a02492fc564c4d228e250198e9910a9f5"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a02492fc564c4d228e250198e9910a9f5">Magenta</a> { 255, 0, 255 }</td></tr>
 <tr class="memitem:a0edc6dba8f86b8f932911fdffe17a9b3" id="r_a0edc6dba8f86b8f932911fdffe17a9b3"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0edc6dba8f86b8f932911fdffe17a9b3">NightBlue</a> { 25, 25, 112 }</td></tr>
+<tr class="memitem:ae8db68120c0d66fc8d0098f9ef132e9b" id="r_ae8db68120c0d66fc8d0098f9ef132e9b"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae8db68120c0d66fc8d0098f9ef132e9b">Orange</a> { 255, 165, 0 }</td></tr>
+<tr class="memitem:a8cbd9e9a82ac710123705172edd1e9bc" id="r_a8cbd9e9a82ac710123705172edd1e9bc"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8cbd9e9a82ac710123705172edd1e9bc">Pink</a> { 255, 192, 203 }</td></tr>
+<tr class="memitem:a16424bd5fc029c78485bf74f9ec3d3da" id="r_a16424bd5fc029c78485bf74f9ec3d3da"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a16424bd5fc029c78485bf74f9ec3d3da">Purple</a> { 128, 0, 128 }</td></tr>
+<tr class="memitem:a418b98d93df36e43c97955071121fe05" id="r_a418b98d93df36e43c97955071121fe05"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a418b98d93df36e43c97955071121fe05">Red</a> { 255, 0, 0 }</td></tr>
+<tr class="memitem:a7e7395fb5535a50d3ce2116615b8501c" id="r_a7e7395fb5535a50d3ce2116615b8501c"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7e7395fb5535a50d3ce2116615b8501c">SkyBlue</a> { 135, 206, 235 }</td></tr>
+<tr class="memitem:af782cbefc55fe5b1999ac8ee60c4d6e4" id="r_af782cbefc55fe5b1999ac8ee60c4d6e4"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af782cbefc55fe5b1999ac8ee60c4d6e4">SunsetOrange</a> { 255, 94, 77 }</td></tr>
+<tr class="memitem:a9ee18d02a26ec5cd785bf7ab61b985d6" id="r_a9ee18d02a26ec5cd785bf7ab61b985d6"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9ee18d02a26ec5cd785bf7ab61b985d6">Transparent</a> { 0, 0, 0, 0 }</td></tr>
+<tr class="memitem:a7ed59bbfab82bb9bb45a5dfdd3c9ffb4" id="r_a7ed59bbfab82bb9bb45a5dfdd3c9ffb4"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4">White</a> { 255, 255, 255 }</td></tr>
+<tr class="memitem:a68962b586deb54cfefb8bbf57c9fb181" id="r_a68962b586deb54cfefb8bbf57c9fb181"><td class="memItemLeft">static const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a68962b586deb54cfefb8bbf57c9fb181">Yellow</a> { 255, 255, 0 }</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An RGBA colour, 8 bits per channel, with conversions to and from packed formats (RGB565, RGB888, ARGB8888, RGBA8888), floats and HSV. </p>
@@ -289,52 +342,36 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="abd5ea5a0d693344b64182514d83c291e" name="abd5ea5a0d693344b64182514d83c291e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd5ea5a0d693344b64182514d83c291e">&#9670;&#160;</a></span>FromRGB565()</h2>
+<a id="a7a4a4dd970e90985e29d2f94c2cc610b" name="a7a4a4dd970e90985e29d2f94c2cc610b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4a4dd970e90985e29d2f94c2cc610b">&#9670;&#160;</a></span>AdjustBrightness()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromRGB565 </td>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::AdjustBrightness </td>
           <td>(</td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>rgb565</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a889dd57d1d618bb2822a7f80f9b4ebe3" name="a889dd57d1d618bb2822a7f80f9b4ebe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a889dd57d1d618bb2822a7f80f9b4ebe3">&#9670;&#160;</a></span>FromRGB888()</h2>
+<a id="a6f9a9e38320d0d7bddac21626b1d9eef" name="a6f9a9e38320d0d7bddac21626b1d9eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9a9e38320d0d7bddac21626b1d9eef">&#9670;&#160;</a></span>AdjustSaturation()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromRGB888 </td>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::AdjustSaturation </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>rgb888</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -352,31 +389,6 @@ Static Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromARGB8888 </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>argb8888</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a77311af8cd403db975e8e0bfd6a520dc" name="a77311af8cd403db975e8e0bfd6a520dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77311af8cd403db975e8e0bfd6a520dc">&#9670;&#160;</a></span>FromRGBA8888()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromRGBA8888 </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>rgba8888</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -469,6 +481,341 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abd5ea5a0d693344b64182514d83c291e" name="abd5ea5a0d693344b64182514d83c291e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5ea5a0d693344b64182514d83c291e">&#9670;&#160;</a></span>FromRGB565()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromRGB565 </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>rgb565</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a889dd57d1d618bb2822a7f80f9b4ebe3" name="a889dd57d1d618bb2822a7f80f9b4ebe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889dd57d1d618bb2822a7f80f9b4ebe3">&#9670;&#160;</a></span>FromRGB888()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromRGB888 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>rgb888</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77311af8cd403db975e8e0bfd6a520dc" name="a77311af8cd403db975e8e0bfd6a520dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77311af8cd403db975e8e0bfd6a520dc">&#9670;&#160;</a></span>FromRGBA8888()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::FromRGBA8888 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>rgba8888</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a140f4411549e37d8d21a50518ac3025a" name="a140f4411549e37d8d21a50518ac3025a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140f4411549e37d8d21a50518ac3025a">&#9670;&#160;</a></span>GetLuminance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Deki::Color::GetLuminance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af00ad4c477fb1a54b1f5299b37b837f0" name="af00ad4c477fb1a54b1f5299b37b837f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00ad4c477fb1a54b1f5299b37b837f0">&#9670;&#160;</a></span>Lerp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Lerp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aececf1046c56363c579c79e65e52ab21" name="aececf1046c56363c579c79e65e52ab21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aececf1046c56363c579c79e65e52ab21">&#9670;&#160;</a></span>Multiply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Multiply </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a297243b308066c30c43e81386bdc2914" name="a297243b308066c30c43e81386bdc2914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297243b308066c30c43e81386bdc2914">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Color::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab263e4a6e6848dd4c881afaddfa50586" name="ab263e4a6e6848dd4c881afaddfa50586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab263e4a6e6848dd4c881afaddfa50586">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Color::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ac2df18b2810803204db4e22deb6a1e" name="a3ac2df18b2810803204db4e22deb6a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac2df18b2810803204db4e22deb6a1e">&#9670;&#160;</a></span>Tint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Tint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>tintColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18d2da6258ea6585023663b8ce6945cd" name="a18d2da6258ea6585023663b8ce6945cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d2da6258ea6585023663b8ce6945cd">&#9670;&#160;</a></span>ToABGR8888()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Color::ToABGR8888 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3954ced3092c231619d20f306fdd98a5" name="a3954ced3092c231619d20f306fdd98a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3954ced3092c231619d20f306fdd98a5">&#9670;&#160;</a></span>ToARGB8888()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Deki::Color::ToARGB8888 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18326b0a4041a39c948c1b530c684634" name="a18326b0a4041a39c948c1b530c684634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18326b0a4041a39c948c1b530c684634">&#9670;&#160;</a></span>ToFloats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Color::ToFloats </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Channels in 0..1. </p>
+
+</div>
+</div>
+<a id="ae731be056d9184c438dd6dd42cdfcdb9" name="ae731be056d9184c438dd6dd42cdfcdb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae731be056d9184c438dd6dd42cdfcdb9">&#9670;&#160;</a></span>ToGrayscale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::ToGrayscale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f3a869783e1e8cb33d6b359abb162d2" name="a0f3a869783e1e8cb33d6b359abb162d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f3a869783e1e8cb33d6b359abb162d2">&#9670;&#160;</a></span>ToHSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Color::ToHSV </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2905ed5ac36713912958c2e485d7e23f" name="a2905ed5ac36713912958c2e485d7e23f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2905ed5ac36713912958c2e485d7e23f">&#9670;&#160;</a></span>ToRGB565()</h2>
 
@@ -519,31 +866,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3954ced3092c231619d20f306fdd98a5" name="a3954ced3092c231619d20f306fdd98a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3954ced3092c231619d20f306fdd98a5">&#9670;&#160;</a></span>ToARGB8888()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t Deki::Color::ToARGB8888 </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9aab7a9e96f192d5323433bb0c4dea45" name="a9aab7a9e96f192d5323433bb0c4dea45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9aab7a9e96f192d5323433bb0c4dea45">&#9670;&#160;</a></span>ToRGBA8888()</h2>
 
@@ -565,149 +887,6 @@ Static Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18d2da6258ea6585023663b8ce6945cd" name="a18d2da6258ea6585023663b8ce6945cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d2da6258ea6585023663b8ce6945cd">&#9670;&#160;</a></span>ToABGR8888()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t Deki::Color::ToABGR8888 </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18326b0a4041a39c948c1b530c684634" name="a18326b0a4041a39c948c1b530c684634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18326b0a4041a39c948c1b530c684634">&#9670;&#160;</a></span>ToFloats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Color::ToFloats </td>
-          <td>(</td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;) const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Channels in 0..1. </p>
-
-</div>
-</div>
-<a id="a0f3a869783e1e8cb33d6b359abb162d2" name="a0f3a869783e1e8cb33d6b359abb162d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f3a869783e1e8cb33d6b359abb162d2">&#9670;&#160;</a></span>ToHSV()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Color::ToHSV </td>
-          <td>(</td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;) const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af00ad4c477fb1a54b1f5299b37b837f0" name="af00ad4c477fb1a54b1f5299b37b837f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af00ad4c477fb1a54b1f5299b37b837f0">&#9670;&#160;</a></span>Lerp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Lerp </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;) const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aececf1046c56363c579c79e65e52ab21" name="aececf1046c56363c579c79e65e52ab21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aececf1046c56363c579c79e65e52ab21">&#9670;&#160;</a></span>Multiply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Multiply </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3ac2df18b2810803204db4e22deb6a1e" name="a3ac2df18b2810803204db4e22deb6a1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ac2df18b2810803204db4e22deb6a1e">&#9670;&#160;</a></span>Tint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Tint </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>tintColor</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span>&#160;) const</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -737,155 +916,15 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a140f4411549e37d8d21a50518ac3025a" name="a140f4411549e37d8d21a50518ac3025a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a140f4411549e37d8d21a50518ac3025a">&#9670;&#160;</a></span>GetLuminance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Deki::Color::GetLuminance </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae731be056d9184c438dd6dd42cdfcdb9" name="ae731be056d9184c438dd6dd42cdfcdb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae731be056d9184c438dd6dd42cdfcdb9">&#9670;&#160;</a></span>ToGrayscale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::ToGrayscale </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7a4a4dd970e90985e29d2f94c2cc610b" name="a7a4a4dd970e90985e29d2f94c2cc610b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a4a4dd970e90985e29d2f94c2cc610b">&#9670;&#160;</a></span>AdjustBrightness()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::AdjustBrightness </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6f9a9e38320d0d7bddac21626b1d9eef" name="a6f9a9e38320d0d7bddac21626b1d9eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f9a9e38320d0d7bddac21626b1d9eef">&#9670;&#160;</a></span>AdjustSaturation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::AdjustSaturation </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab263e4a6e6848dd4c881afaddfa50586" name="ab263e4a6e6848dd4c881afaddfa50586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab263e4a6e6848dd4c881afaddfa50586">&#9670;&#160;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::Color::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a297243b308066c30c43e81386bdc2914" name="a297243b308066c30c43e81386bdc2914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a297243b308066c30c43e81386bdc2914">&#9670;&#160;</a></span>operator!=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::Color::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a033ece0cffde9180ae89929516416b11" name="a033ece0cffde9180ae89929516416b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a033ece0cffde9180ae89929516416b11">&#9670;&#160;</a></span>r</h2>
+<a id="a6dfd059de4c67046526a7d71a87397b0" name="a6dfd059de4c67046526a7d71a87397b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dfd059de4c67046526a7d71a87397b0">&#9670;&#160;</a></span>a</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t Deki::Color::r</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e479c93087c3b7b27d7c9b1da11a88c" name="a8e479c93087c3b7b27d7c9b1da11a88c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e479c93087c3b7b27d7c9b1da11a88c">&#9670;&#160;</a></span>g</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Deki::Color::g</td>
+          <td class="memname">uint8_t Deki::Color::a</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -906,20 +945,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6dfd059de4c67046526a7d71a87397b0" name="a6dfd059de4c67046526a7d71a87397b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dfd059de4c67046526a7d71a87397b0">&#9670;&#160;</a></span>a</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Deki::Color::a</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2d755b3875c6a30875ab10948fa1262d" name="a2d755b3875c6a30875ab10948fa1262d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d755b3875c6a30875ab10948fa1262d">&#9670;&#160;</a></span>Black</h2>
 
@@ -931,72 +956,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Black { 0, 0, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ed59bbfab82bb9bb45a5dfdd3c9ffb4" name="a7ed59bbfab82bb9bb45a5dfdd3c9ffb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4">&#9670;&#160;</a></span>White</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::White { 255, 255, 255 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a418b98d93df36e43c97955071121fe05" name="a418b98d93df36e43c97955071121fe05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a418b98d93df36e43c97955071121fe05">&#9670;&#160;</a></span>Red</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Red { 255, 0, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7a7d2043caa09f667a76af4b57cb2233" name="a7a7d2043caa09f667a76af4b57cb2233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a7d2043caa09f667a76af4b57cb2233">&#9670;&#160;</a></span>Green</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Green { 0, 255, 0 }</td>
         </tr>
       </table>
   </td>
@@ -1030,8 +989,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a68962b586deb54cfefb8bbf57c9fb181" name="a68962b586deb54cfefb8bbf57c9fb181"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68962b586deb54cfefb8bbf57c9fb181">&#9670;&#160;</a></span>Yellow</h2>
+<a id="ab963e59ef398b9623bba914c296fc930" name="ab963e59ef398b9623bba914c296fc930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab963e59ef398b9623bba914c296fc930">&#9670;&#160;</a></span>Brown</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,7 +999,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Yellow { 255, 255, 0 }</td>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Brown { 139, 69, 19 }</td>
         </tr>
       </table>
   </td>
@@ -1074,8 +1033,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a02492fc564c4d228e250198e9910a9f5" name="a02492fc564c4d228e250198e9910a9f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02492fc564c4d228e250198e9910a9f5">&#9670;&#160;</a></span>Magenta</h2>
+<a id="ab0d3a66f5ece40690b2b513dd10205f5" name="ab0d3a66f5ece40690b2b513dd10205f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d3a66f5ece40690b2b513dd10205f5">&#9670;&#160;</a></span>DarkGray</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1084,7 +1043,43 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Magenta { 255, 0, 255 }</td>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::DarkGray { 64, 64, 64 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e479c93087c3b7b27d7c9b1da11a88c" name="a8e479c93087c3b7b27d7c9b1da11a88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e479c93087c3b7b27d7c9b1da11a88c">&#9670;&#160;</a></span>g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Deki::Color::g</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60604ea961d6e654ad7e66a241d14e30" name="a60604ea961d6e654ad7e66a241d14e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60604ea961d6e654ad7e66a241d14e30">&#9670;&#160;</a></span>GrassGreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::GrassGreen { 124, 252, 0 }</td>
         </tr>
       </table>
   </td>
@@ -1118,8 +1113,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0d3a66f5ece40690b2b513dd10205f5" name="ab0d3a66f5ece40690b2b513dd10205f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0d3a66f5ece40690b2b513dd10205f5">&#9670;&#160;</a></span>DarkGray</h2>
+<a id="a7a7d2043caa09f667a76af4b57cb2233" name="a7a7d2043caa09f667a76af4b57cb2233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7d2043caa09f667a76af4b57cb2233">&#9670;&#160;</a></span>Green</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1128,7 +1123,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::DarkGray { 64, 64, 64 }</td>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Green { 0, 255, 0 }</td>
         </tr>
       </table>
   </td>
@@ -1162,6 +1157,50 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a02492fc564c4d228e250198e9910a9f5" name="a02492fc564c4d228e250198e9910a9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02492fc564c4d228e250198e9910a9f5">&#9670;&#160;</a></span>Magenta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Magenta { 255, 0, 255 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0edc6dba8f86b8f932911fdffe17a9b3" name="a0edc6dba8f86b8f932911fdffe17a9b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edc6dba8f86b8f932911fdffe17a9b3">&#9670;&#160;</a></span>NightBlue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::NightBlue { 25, 25, 112 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae8db68120c0d66fc8d0098f9ef132e9b" name="ae8db68120c0d66fc8d0098f9ef132e9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8db68120c0d66fc8d0098f9ef132e9b">&#9670;&#160;</a></span>Orange</h2>
 
@@ -1173,50 +1212,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Orange { 255, 165, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a16424bd5fc029c78485bf74f9ec3d3da" name="a16424bd5fc029c78485bf74f9ec3d3da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16424bd5fc029c78485bf74f9ec3d3da">&#9670;&#160;</a></span>Purple</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Purple { 128, 0, 128 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab963e59ef398b9623bba914c296fc930" name="ab963e59ef398b9623bba914c296fc930"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab963e59ef398b9623bba914c296fc930">&#9670;&#160;</a></span>Brown</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Brown { 139, 69, 19 }</td>
         </tr>
       </table>
   </td>
@@ -1250,8 +1245,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ee18d02a26ec5cd785bf7ab61b985d6" name="a9ee18d02a26ec5cd785bf7ab61b985d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ee18d02a26ec5cd785bf7ab61b985d6">&#9670;&#160;</a></span>Transparent</h2>
+<a id="a16424bd5fc029c78485bf74f9ec3d3da" name="a16424bd5fc029c78485bf74f9ec3d3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16424bd5fc029c78485bf74f9ec3d3da">&#9670;&#160;</a></span>Purple</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1260,7 +1255,43 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Transparent { 0, 0, 0, 0 }</td>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Purple { 128, 0, 128 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a033ece0cffde9180ae89929516416b11" name="a033ece0cffde9180ae89929516416b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033ece0cffde9180ae89929516416b11">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Deki::Color::r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a418b98d93df36e43c97955071121fe05" name="a418b98d93df36e43c97955071121fe05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418b98d93df36e43c97955071121fe05">&#9670;&#160;</a></span>Red</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Red { 255, 0, 0 }</td>
         </tr>
       </table>
   </td>
@@ -1294,28 +1325,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a60604ea961d6e654ad7e66a241d14e30" name="a60604ea961d6e654ad7e66a241d14e30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60604ea961d6e654ad7e66a241d14e30">&#9670;&#160;</a></span>GrassGreen</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::GrassGreen { 124, 252, 0 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af782cbefc55fe5b1999ac8ee60c4d6e4" name="af782cbefc55fe5b1999ac8ee60c4d6e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af782cbefc55fe5b1999ac8ee60c4d6e4">&#9670;&#160;</a></span>SunsetOrange</h2>
 
@@ -1338,8 +1347,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0edc6dba8f86b8f932911fdffe17a9b3" name="a0edc6dba8f86b8f932911fdffe17a9b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0edc6dba8f86b8f932911fdffe17a9b3">&#9670;&#160;</a></span>NightBlue</h2>
+<a id="a9ee18d02a26ec5cd785bf7ab61b985d6" name="a9ee18d02a26ec5cd785bf7ab61b985d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee18d02a26ec5cd785bf7ab61b985d6">&#9670;&#160;</a></span>Transparent</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1348,7 +1357,51 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::NightBlue { 25, 25, 112 }</td>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Transparent { 0, 0, 0, 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ed59bbfab82bb9bb45a5dfdd3c9ffb4" name="a7ed59bbfab82bb9bb45a5dfdd3c9ffb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed59bbfab82bb9bb45a5dfdd3c9ffb4">&#9670;&#160;</a></span>White</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::White { 255, 255, 255 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68962b586deb54cfefb8bbf57c9fb181" name="a68962b586deb54cfefb8bbf57c9fb181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68962b586deb54cfefb8bbf57c9fb181">&#9670;&#160;</a></span>Yellow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac450fe9b2195d89c9460431a3dd9f655">Color</a> Deki::Color::Yellow { 255, 255, 0 }</td>
         </tr>
       </table>
   </td>

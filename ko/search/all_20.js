@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['개수가_20바뀔_20때_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#autotoc_md13',1,'']]],
-  ['개요_1',['개요',['../guide-font-system.html#guide-font-system-overview',1,'개요'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'개요']]]
+  ['각_20화면에_20보이는_20것_0',['각 화면에 보이는 것',['../guide-screens.html#autotoc_md23',1,'']]]
 ];

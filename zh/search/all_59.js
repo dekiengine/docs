@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['种子格式（绝对不要更改）_0',['种子格式（绝对不要更改）',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]]
+  ['比较：字体与精灵_0',['比较：字体与精灵',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]]
 ];

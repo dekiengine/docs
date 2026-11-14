@@ -19,7 +19,5 @@ var searchData=
   ['assetregentype_16',['assetRegenType',['../struct_deki_1_1_property_info.html#a1960b98292797cc42aa9b587905e43cf',1,'Deki::PropertyInfo']]],
   ['assets_17',['assets',['../struct_deki_1_1_loaded_pack.html#a1d1659befcc0821b2eff9f9243c6ad7f',1,'Deki::LoadedPack']]],
   ['assetstorage_18',['assetStorage',['../struct_deki_editor_1_1_asset_export_target.html#afbfc5a2101105b7e17d2a8d4b5335f35',1,'DekiEditor::AssetExportTarget::assetStorage'],['../struct_deki_editor_1_1_platform_config.html#a3ee77a637cd3fcb15885b0988555682c',1,'DekiEditor::PlatformConfig::assetStorage']]],
-  ['assettype_19',['assetType',['../struct_deki_1_1_property_info.html#a71a0659a11e0d00f5b204c75be871c50',1,'Deki::PropertyInfo']]],
-  ['author_20',['author',['../struct_package_entry.html#aab46ea2f67bee7aaa061773816b2e9f7',1,'PackageEntry']]],
-  ['availableversions_21',['availableVersions',['../struct_package_entry.html#af3e0a6606e102d04ccc4840cf48e2557',1,'PackageEntry']]]
+  ['assettype_19',['assetType',['../struct_deki_1_1_property_info.html#a71a0659a11e0d00f5b204c75be871c50',1,'Deki::PropertyInfo']]]
 ];

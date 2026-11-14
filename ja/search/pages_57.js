@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['自動で選ばれるもの_0',['自動で選ばれるもの',['../guide-performance.html#guide-performance-what-chooses-itself',1,'']]]
+  ['比較_3a_20フォントとスプライト_0',['比較: フォントとスプライト',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]]
 ];

@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki::AssetManager Class Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -151,68 +204,140 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_1_1
 </div><!--header-->
 <div class="contents">
 
+<p>Loads, caches and frees assets, by path or GUID.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;deki/assets/AssetManager.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a506376977fcff9999773a404295f6310" id="r_a506376977fcff9999773a404295f6310"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a506376977fcff9999773a404295f6310">AdvanceEpoch</a> () noexcept</td></tr>
+<tr class="memdesc:a506376977fcff9999773a404295f6310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> drop its cached pointer and resolve again on its next <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get()</a>.  <br /></td></tr>
+<tr class="memitem:a57fc355e8a3e56ff5a2b357638e22e14" id="r_a57fc355e8a3e56ff5a2b357638e22e14"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57fc355e8a3e56ff5a2b357638e22e14">ClearCache</a> (const char *typeName)</td></tr>
+<tr class="memdesc:a57fc355e8a3e56ff5a2b357638e22e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every cached asset of type <span class="tt">typeName</span> (such as "BitmapFont"), so the next loads read from disk again.  <br /></td></tr>
+<tr class="memitem:af951595cfe2b666b38a5928be25eabfe" id="r_af951595cfe2b666b38a5928be25eabfe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af951595cfe2b666b38a5928be25eabfe">DropCache</a> ()</td></tr>
+<tr class="memdesc:af951595cfe2b666b38a5928be25eabfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets the cache without freeing the assets, which may still be in use; the next load reads a fresh copy from disk.  <br /></td></tr>
+<tr class="memitem:a9eb88729a35797a5f822d6d8a5b94664" id="r_a9eb88729a35797a5f822d6d8a5b94664"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9eb88729a35797a5f822d6d8a5b94664">GetCacheDirectory</a> () const</td></tr>
+<tr class="memitem:afa30ffe948e009eadc0fdf8603bc6671" id="r_afa30ffe948e009eadc0fdf8603bc6671"><td class="memItemLeft">uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#afa30ffe948e009eadc0fdf8603bc6671">GetEpoch</a> () const noexcept</td></tr>
+<tr class="memdesc:afa30ffe948e009eadc0fdf8603bc6671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes up whenever asset memory is freed or replaced.  <br /></td></tr>
+<tr class="memitem:a1f3c316c7b1f3bd1694f02e747d44580" id="r_a1f3c316c7b1f3bd1694f02e747d44580"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1f3c316c7b1f3bd1694f02e747d44580">InvalidateAsset</a> (const char *typeName, const std::string &amp;guid)</td></tr>
+<tr class="memdesc:a1f3c316c7b1f3bd1694f02e747d44580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the cached asset <span class="tt">guid</span> of type <span class="tt">typeName</span> (such as "Sprite"), so the next load reads it from disk again.  <br /></td></tr>
+<tr class="memitem:ae60f4f1a3d23c4c559d765106a7772d8" id="r_ae60f4f1a3d23c4c559d765106a7772d8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae60f4f1a3d23c4c559d765106a7772d8">IsReady</a> () const</td></tr>
+<tr class="memdesc:ae60f4f1a3d23c4c559d765106a7772d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">True once assets can be loaded: the cache directory is set (editor edit mode) or the binary lookup table is loaded (play mode, device).  <br /></td></tr>
+<tr class="memitem:ac787b33990fcf2859eff3fdcb3908dc7" id="r_ac787b33990fcf2859eff3fdcb3908dc7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac787b33990fcf2859eff3fdcb3908dc7">IsTypeCacheable</a> (const char *typeName) const</td></tr>
+<tr class="memdesc:ac787b33990fcf2859eff3fdcb3908dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">False only for types registered as non-cacheable.  <br /></td></tr>
 <tr class="memitem:a87b16cb241e74f744e0075d68fde83b5" id="r_a87b16cb241e74f744e0075d68fde83b5"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a87b16cb241e74f744e0075d68fde83b5 template"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#a87b16cb241e74f744e0075d68fde83b5">Load</a> (const char *path, bool cache=false)</td></tr>
 <tr class="memdesc:a87b16cb241e74f744e0075d68fde83b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the asset of type T at <span class="tt">path</span>, written without the "assets/" prefix and extension (such as "scenes/Demo").  <br /></td></tr>
-<tr class="memitem:adb7fc13362c90d10c6f7f0dd293f820a" id="r_adb7fc13362c90d10c6f7f0dd293f820a"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#adb7fc13362c90d10c6f7f0dd293f820a">LoadByGuidAndType</a> (const std::string &amp;guid, const char *assetType, bool cache=false)</td></tr>
-<tr class="memdesc:adb7fc13362c90d10c6f7f0dd293f820a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the asset <span class="tt">guid</span> of type <span class="tt">assetType</span> (as registered with RegisterLoader), or returns nullptr.  <br /></td></tr>
-<tr class="memitem:aafc831afc1ce169f4950e3e257d3fa32" id="r_aafc831afc1ce169f4950e3e257d3fa32"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#aafc831afc1ce169f4950e3e257d3fa32">LoadFromMemory</a> (const std::string &amp;guid, const char *assetType, const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:aafc831afc1ce169f4950e3e257d3fa32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an asset from its file's bytes (pack files).  <br /></td></tr>
-<tr class="memitem:a9f444ddb2a0ce4f9e3bff1eabaf5f334" id="r_a9f444ddb2a0ce4f9e3bff1eabaf5f334"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334">UnloadAll</a> ()</td></tr>
-<tr class="memdesc:a9f444ddb2a0ce4f9e3bff1eabaf5f334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every loaded asset.  <br /></td></tr>
-<tr class="memitem:a1f3c316c7b1f3bd1694f02e747d44580" id="r_a1f3c316c7b1f3bd1694f02e747d44580"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1f3c316c7b1f3bd1694f02e747d44580">InvalidateAsset</a> (const char *typeName, const std::string &amp;guid)</td></tr>
-<tr class="memdesc:a1f3c316c7b1f3bd1694f02e747d44580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the cached asset <span class="tt">guid</span> of type <span class="tt">typeName</span> (such as "Sprite"), so the next load reads it from disk again.  <br /></td></tr>
-<tr class="memitem:a57fc355e8a3e56ff5a2b357638e22e14" id="r_a57fc355e8a3e56ff5a2b357638e22e14"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57fc355e8a3e56ff5a2b357638e22e14">ClearCache</a> (const char *typeName)</td></tr>
-<tr class="memdesc:a57fc355e8a3e56ff5a2b357638e22e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every cached asset of type <span class="tt">typeName</span> (such as "BitmapFont"), so the next loads read from disk again.  <br /></td></tr>
-<tr class="memitem:af0c0acc5b98f41ef7bac3f085455ee39" id="r_af0c0acc5b98f41ef7bac3f085455ee39"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#af0c0acc5b98f41ef7bac3f085455ee39">UnloadUnused</a> (const std::vector&lt; std::string &gt; &amp;usedGuids)</td></tr>
-<tr class="memdesc:af0c0acc5b98f41ef7bac3f085455ee39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every cached asset whose GUID is not in <span class="tt">usedGuids</span>, and moves the epoch, so an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> that pointed at one loads it again when next asked.  <br /></td></tr>
-<tr class="memitem:af951595cfe2b666b38a5928be25eabfe" id="r_af951595cfe2b666b38a5928be25eabfe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af951595cfe2b666b38a5928be25eabfe">DropCache</a> ()</td></tr>
-<tr class="memdesc:af951595cfe2b666b38a5928be25eabfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets the cache without freeing the assets, which may still be in use; the next load reads a fresh copy from disk.  <br /></td></tr>
-<tr class="memitem:afa30ffe948e009eadc0fdf8603bc6671" id="r_afa30ffe948e009eadc0fdf8603bc6671"><td class="memItemLeft">uint64_t&#160;</td><td class="memItemRight"><a class="el" href="#afa30ffe948e009eadc0fdf8603bc6671">GetEpoch</a> () const noexcept</td></tr>
-<tr class="memdesc:afa30ffe948e009eadc0fdf8603bc6671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes up whenever asset memory is freed or replaced.  <br /></td></tr>
-<tr class="memitem:a506376977fcff9999773a404295f6310" id="r_a506376977fcff9999773a404295f6310"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a506376977fcff9999773a404295f6310">AdvanceEpoch</a> () noexcept</td></tr>
-<tr class="memdesc:a506376977fcff9999773a404295f6310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> drop its cached pointer and resolve again on its next <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get()</a>.  <br /></td></tr>
-<tr class="memitem:ac787b33990fcf2859eff3fdcb3908dc7" id="r_ac787b33990fcf2859eff3fdcb3908dc7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac787b33990fcf2859eff3fdcb3908dc7">IsTypeCacheable</a> (const char *typeName) const</td></tr>
-<tr class="memdesc:ac787b33990fcf2859eff3fdcb3908dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">False only for types registered as non-cacheable.  <br /></td></tr>
-<tr class="memitem:a20d83ca89c03af00d241ca615667b5d3" id="r_a20d83ca89c03af00d241ca615667b5d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20d83ca89c03af00d241ca615667b5d3">ReleaseAssetTracking</a> (const char *typeName, void *asset)</td></tr>
-<tr class="memdesc:a20d83ca89c03af00d241ca615667b5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops tracking a non-cacheable asset whose ownership another system (such as <a class="el" href="class_deki_1_1_scene_system.html" title="Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outli...">SceneSystem</a>) has taken, so <a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334" title="Frees every loaded asset.">UnloadAll()</a> does not free it twice.  <br /></td></tr>
-<tr class="memitem:aabba15429caf0257bb49ad4aab3fe721" id="r_aabba15429caf0257bb49ad4aab3fe721"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aabba15429caf0257bb49ad4aab3fe721">LoadGuidTable</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:aabba15429caf0257bb49ad4aab3fe721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the editor's GUID-to-path table from a JSON file.  <br /></td></tr>
 <tr class="memitem:ab0f444b109d522051a3c9a78f28b0058" id="r_ab0f444b109d522051a3c9a78f28b0058"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab0f444b109d522051a3c9a78f28b0058">LoadAssetLookupTable</a> (const uint8_t *data, size_t size)</td></tr>
 <tr class="memdesc:ab0f444b109d522051a3c9a78f28b0058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the runtime's binary lookup table in <span class="tt">data</span>, which must stay valid while lookups run.  <br /></td></tr>
 <tr class="memitem:aa66457eab7b1a93ba63c6fc1399999e9" id="r_aa66457eab7b1a93ba63c6fc1399999e9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa66457eab7b1a93ba63c6fc1399999e9">LoadAssetRoot</a> (const char *root)</td></tr>
 <tr class="memdesc:aa66457eab7b1a93ba63c6fc1399999e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses a build's exported assets under <span class="tt">root</span> (<a class="el" href="namespace_deki_1_1_storage.html#a80514312cb1ade1ed87b1ebbfb0412f5">Storage::AssetRoot</a>): reads root/asset_table.bin and root/pack_index.bin and loads every asset from root.  <br /></td></tr>
+<tr class="memitem:adb7fc13362c90d10c6f7f0dd293f820a" id="r_adb7fc13362c90d10c6f7f0dd293f820a"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#adb7fc13362c90d10c6f7f0dd293f820a">LoadByGuidAndType</a> (const std::string &amp;guid, const char *assetType, bool cache=false)</td></tr>
+<tr class="memdesc:adb7fc13362c90d10c6f7f0dd293f820a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the asset <span class="tt">guid</span> of type <span class="tt">assetType</span> (as registered with RegisterLoader), or returns nullptr.  <br /></td></tr>
+<tr class="memitem:aafc831afc1ce169f4950e3e257d3fa32" id="r_aafc831afc1ce169f4950e3e257d3fa32"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#aafc831afc1ce169f4950e3e257d3fa32">LoadFromMemory</a> (const std::string &amp;guid, const char *assetType, const uint8_t *data, size_t size)</td></tr>
+<tr class="memdesc:aafc831afc1ce169f4950e3e257d3fa32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an asset from its file's bytes (pack files).  <br /></td></tr>
+<tr class="memitem:aabba15429caf0257bb49ad4aab3fe721" id="r_aabba15429caf0257bb49ad4aab3fe721"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aabba15429caf0257bb49ad4aab3fe721">LoadGuidTable</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:aabba15429caf0257bb49ad4aab3fe721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the editor's GUID-to-path table from a JSON file.  <br /></td></tr>
+<tr class="memitem:af13d6625425e815401d064ac8837ab73" id="r_af13d6625425e815401d064ac8837ab73"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af13d6625425e815401d064ac8837ab73">LookupPath</a> (const std::string &amp;guid) const</td></tr>
+<tr class="memdesc:af13d6625425e815401d064ac8837ab73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full path (cache directory + entry) for a GUID, or "" when unknown.  <br /></td></tr>
 <tr class="memitem:a9a8cea7f83b27425e4012a8af3e2aac1" id="r_a9a8cea7f83b27425e4012a8af3e2aac1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a8cea7f83b27425e4012a8af3e2aac1">RegisterGuid</a> (const std::string &amp;guid, const std::string &amp;path)</td></tr>
 <tr class="memdesc:a9a8cea7f83b27425e4012a8af3e2aac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps <span class="tt">guid</span> to the filesystem path <span class="tt">path</span> (editor).  <br /></td></tr>
+<tr class="memitem:a20d83ca89c03af00d241ca615667b5d3" id="r_a20d83ca89c03af00d241ca615667b5d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20d83ca89c03af00d241ca615667b5d3">ReleaseAssetTracking</a> (const char *typeName, void *asset)</td></tr>
+<tr class="memdesc:a20d83ca89c03af00d241ca615667b5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops tracking a non-cacheable asset whose ownership another system (such as <a class="el" href="class_deki_1_1_scene_system.html" title="Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outli...">SceneSystem</a>) has taken, so <a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334" title="Frees every loaded asset.">UnloadAll()</a> does not free it twice.  <br /></td></tr>
 <tr class="memitem:ac311539e6488bd6e75a8bea98ba40761" id="r_ac311539e6488bd6e75a8bea98ba40761"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac311539e6488bd6e75a8bea98ba40761">RemoveGuid</a> (const std::string &amp;guid)</td></tr>
 <tr class="memdesc:ac311539e6488bd6e75a8bea98ba40761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets <span class="tt">guid</span> when its asset is deleted (editor).  <br /></td></tr>
 <tr class="memitem:aa35f9772e74c28a7c0396d904823f740" id="r_aa35f9772e74c28a7c0396d904823f740"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa35f9772e74c28a7c0396d904823f740">SetCacheDirectory</a> (const std::string &amp;dir)</td></tr>
 <tr class="memdesc:aa35f9772e74c28a7c0396d904823f740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory asset files are read from: the project's cache directory in the editor, the storage root (such as "S:/") on a device.  <br /></td></tr>
-<tr class="memitem:a9eb88729a35797a5f822d6d8a5b94664" id="r_a9eb88729a35797a5f822d6d8a5b94664"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9eb88729a35797a5f822d6d8a5b94664">GetCacheDirectory</a> () const</td></tr>
-<tr class="memitem:ae60f4f1a3d23c4c559d765106a7772d8" id="r_ae60f4f1a3d23c4c559d765106a7772d8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae60f4f1a3d23c4c559d765106a7772d8">IsReady</a> () const</td></tr>
-<tr class="memdesc:ae60f4f1a3d23c4c559d765106a7772d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">True once assets can be loaded: the cache directory is set (editor edit mode) or the binary lookup table is loaded (play mode, device).  <br /></td></tr>
-<tr class="memitem:af13d6625425e815401d064ac8837ab73" id="r_af13d6625425e815401d064ac8837ab73"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af13d6625425e815401d064ac8837ab73">LookupPath</a> (const std::string &amp;guid) const</td></tr>
-<tr class="memdesc:af13d6625425e815401d064ac8837ab73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full path (cache directory + entry) for a GUID, or "" when unknown.  <br /></td></tr>
+<tr class="memitem:a9f444ddb2a0ce4f9e3bff1eabaf5f334" id="r_a9f444ddb2a0ce4f9e3bff1eabaf5f334"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334">UnloadAll</a> ()</td></tr>
+<tr class="memdesc:a9f444ddb2a0ce4f9e3bff1eabaf5f334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every loaded asset.  <br /></td></tr>
+<tr class="memitem:af0c0acc5b98f41ef7bac3f085455ee39" id="r_af0c0acc5b98f41ef7bac3f085455ee39"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#af0c0acc5b98f41ef7bac3f085455ee39">UnloadUnused</a> (const std::vector&lt; std::string &gt; &amp;usedGuids)</td></tr>
+<tr class="memdesc:af0c0acc5b98f41ef7bac3f085455ee39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every cached asset whose GUID is not in <span class="tt">usedGuids</span>, and moves the epoch, so an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> that pointed at one loads it again when next asked.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a7f01a791c9ff3f7ff78cfc05c1a855" id="r_a0a7f01a791c9ff3f7ff78cfc05c1a855"><td class="memItemLeft">static AssetManager *&#160;</td><td class="memItemRight"><a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get</a> ()</td></tr>
-<tr class="memitem:ad8195fc4e07cd4bef2fbf3c26e91b79b" id="r_ad8195fc4e07cd4bef2fbf3c26e91b79b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad8195fc4e07cd4bef2fbf3c26e91b79b">Shutdown</a> ()</td></tr>
-<tr class="memdesc:ad8195fc4e07cd4bef2fbf3c26e91b79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees all assets and the singleton.  <br /></td></tr>
-<tr class="memitem:a53c834504fc4c6d1ee5c2e6c44815361" id="r_a53c834504fc4c6d1ee5c2e6c44815361"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a53c834504fc4c6d1ee5c2e6c44815361">RegisterLoader</a> (const char *typeName, <a class="el" href="_asset_manager_8h.html#ac9bec73a356d5711f1e6bbefc65925db">AssetLoadFn</a> loader, <a class="el" href="_asset_manager_8h.html#ac7244bc198fc37c57f68725f8efe1f5c">AssetUnloadFn</a> unloader=nullptr, <a class="el" href="_asset_manager_8h.html#ae474da8bc12f722e6f9f998a2d84434f">AssetMemLoadFn</a> memLoader=nullptr, bool cacheable=true)</td></tr>
-<tr class="memdesc:a53c834504fc4c6d1ee5c2e6c44815361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers how to load assets of type <span class="tt">typeName</span> (must match T::kAssetTypeName).  <br /></td></tr>
 <tr class="memitem:a8178734de68fcede2201a923a415617c" id="r_a8178734de68fcede2201a923a415617c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8178734de68fcede2201a923a415617c">HasLoader</a> (const char *typeName)</td></tr>
 <tr class="memdesc:a8178734de68fcede2201a923a415617c"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a loader is registered for <span class="tt">typeName</span>.  <br /></td></tr>
-<tr class="memitem:aca5e6840f0edaa41d7a66028cd10805e" id="r_aca5e6840f0edaa41d7a66028cd10805e"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aca5e6840f0edaa41d7a66028cd10805e">ReadWholeFile</a> (const std::string &amp;path, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:aca5e6840f0edaa41d7a66028cd10805e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a whole file through the filesystem provider.  <br /></td></tr>
 <tr class="memitem:a6d3b9c13102b84ca7394c3aadf69610b" id="r_a6d3b9c13102b84ca7394c3aadf69610b"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a6d3b9c13102b84ca7394c3aadf69610b">ReadWholeFile</a> (const std::string &amp;path, <a class="el" href="class_deki_1_1_buffer.html">Buffer</a>&lt; uint8_t &gt; &amp;out, <a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a> region)</td></tr>
 <tr class="memdesc:a6d3b9c13102b84ca7394c3aadf69610b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a whole file into a <a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Buffer</a> in <span class="tt">region</span>, through the engine's filesystem.  <br /></td></tr>
+<tr class="memitem:aca5e6840f0edaa41d7a66028cd10805e" id="r_aca5e6840f0edaa41d7a66028cd10805e"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aca5e6840f0edaa41d7a66028cd10805e">ReadWholeFile</a> (const std::string &amp;path, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:aca5e6840f0edaa41d7a66028cd10805e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a whole file through the filesystem provider.  <br /></td></tr>
+<tr class="memitem:a53c834504fc4c6d1ee5c2e6c44815361" id="r_a53c834504fc4c6d1ee5c2e6c44815361"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a53c834504fc4c6d1ee5c2e6c44815361">RegisterLoader</a> (const char *typeName, <a class="el" href="_asset_manager_8h.html#ac9bec73a356d5711f1e6bbefc65925db">AssetLoadFn</a> loader, <a class="el" href="_asset_manager_8h.html#ac7244bc198fc37c57f68725f8efe1f5c">AssetUnloadFn</a> unloader=nullptr, <a class="el" href="_asset_manager_8h.html#ae474da8bc12f722e6f9f998a2d84434f">AssetMemLoadFn</a> memLoader=nullptr, bool cacheable=true)</td></tr>
+<tr class="memdesc:a53c834504fc4c6d1ee5c2e6c44815361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers how to load assets of type <span class="tt">typeName</span> (must match T::kAssetTypeName).  <br /></td></tr>
+<tr class="memitem:ad8195fc4e07cd4bef2fbf3c26e91b79b" id="r_ad8195fc4e07cd4bef2fbf3c26e91b79b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad8195fc4e07cd4bef2fbf3c26e91b79b">Shutdown</a> ()</td></tr>
+<tr class="memdesc:ad8195fc4e07cd4bef2fbf3c26e91b79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees all assets and the singleton.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Loads, caches and frees assets, by path or GUID. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a506376977fcff9999773a404295f6310" name="a506376977fcff9999773a404295f6310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506376977fcff9999773a404295f6310">&#9670;&#160;</a></span>AdvanceEpoch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::AssetManager::AdvanceEpoch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> drop its cached pointer and resolve again on its next <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get()</a>. </p>
+<p>Call it when the set of loadable assets changes without memory being freed, such as an asset imported live or restored by undo, so refs that resolved to null can find it. </p>
+
+</div>
+</div>
+<a id="a57fc355e8a3e56ff5a2b357638e22e14" name="a57fc355e8a3e56ff5a2b357638e22e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fc355e8a3e56ff5a2b357638e22e14">&#9670;&#160;</a></span>ClearCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::AssetManager::ClearCache </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees every cached asset of type <span class="tt">typeName</span> (such as "BitmapFont"), so the next loads read from disk again. </p>
+
+</div>
+</div>
+<a id="af951595cfe2b666b38a5928be25eabfe" name="af951595cfe2b666b38a5928be25eabfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af951595cfe2b666b38a5928be25eabfe">&#9670;&#160;</a></span>DropCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::AssetManager::DropCache </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forgets the cache without freeing the assets, which may still be in use; the next load reads a fresh copy from disk. </p>
+<p>The editor calls it when play mode stops. Leaves the epoch alone, since existing <a class="el" href="struct_deki_1_1_asset_ref_base.html#aa707cccda9d537ca9ae5879f2b7ad210">AssetRef::ptr</a> values still point at live memory. </p>
+
+</div>
+</div>
 <a id="a0a7f01a791c9ff3f7ff78cfc05c1a855" name="a0a7f01a791c9ff3f7ff78cfc05c1a855"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">&#9670;&#160;</a></span>Get()</h2>
 
@@ -238,8 +363,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8195fc4e07cd4bef2fbf3c26e91b79b" name="ad8195fc4e07cd4bef2fbf3c26e91b79b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8195fc4e07cd4bef2fbf3c26e91b79b">&#9670;&#160;</a></span>Shutdown()</h2>
+<a id="a9eb88729a35797a5f822d6d8a5b94664" name="a9eb88729a35797a5f822d6d8a5b94664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb88729a35797a5f822d6d8a5b94664">&#9670;&#160;</a></span>GetCacheDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,9 +373,62 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Deki::AssetManager::Shutdown </td>
+          <td class="memname">const std::string &amp; Deki::AssetManager::GetCacheDirectory </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa30ffe948e009eadc0fdf8603bc6671" name="afa30ffe948e009eadc0fdf8603bc6671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa30ffe948e009eadc0fdf8603bc6671">&#9670;&#160;</a></span>GetEpoch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Deki::AssetManager::GetEpoch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Goes up whenever asset memory is freed or replaced. </p>
+<p><a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> compares its cachedEpoch with it on every <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get()</a> to notice stale pointers after hot reloads, re-imports and the like. </p>
+
+</div>
+</div>
+<a id="a8178734de68fcede2201a923a415617c" name="a8178734de68fcede2201a923a415617c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8178734de68fcede2201a923a415617c">&#9670;&#160;</a></span>HasLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::AssetManager::HasLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -261,7 +439,78 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Frees all assets and the singleton. </p>
+<p>True when a loader is registered for <span class="tt">typeName</span>. </p>
+<p>The editor treats any .asset whose "type" has a loader (and no texture compiler) as a generic data asset, like a ScriptableObject: its JSON compiles straight to a MessagePack cache with no per-type editor. </p>
+
+</div>
+</div>
+<a id="a1f3c316c7b1f3bd1694f02e747d44580" name="a1f3c316c7b1f3bd1694f02e747d44580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3c316c7b1f3bd1694f02e747d44580">&#9670;&#160;</a></span>InvalidateAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::AssetManager::InvalidateAsset </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees the cached asset <span class="tt">guid</span> of type <span class="tt">typeName</span> (such as "Sprite"), so the next load reads it from disk again. </p>
+
+</div>
+</div>
+<a id="ae60f4f1a3d23c4c559d765106a7772d8" name="ae60f4f1a3d23c4c559d765106a7772d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60f4f1a3d23c4c559d765106a7772d8">&#9670;&#160;</a></span>IsReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::AssetManager::IsReady </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True once assets can be loaded: the cache directory is set (editor edit mode) or the binary lookup table is loaded (play mode, device). </p>
+<p><a class="el" href="struct_deki_1_1_asset_ref.html#a46530d1eb7765dadfb57607374dc6e5c">AssetRef::Get()</a> skips loading until then, such as while ImportAllAssets compiles scenes before the filesystem is up. </p>
+
+</div>
+</div>
+<a id="ac787b33990fcf2859eff3fdcb3908dc7" name="ac787b33990fcf2859eff3fdcb3908dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac787b33990fcf2859eff3fdcb3908dc7">&#9670;&#160;</a></span>IsTypeCacheable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::AssetManager::IsTypeCacheable </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>False only for types registered as non-cacheable. </p>
 
 </div>
 </div>
@@ -293,78 +542,47 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a53c834504fc4c6d1ee5c2e6c44815361" name="a53c834504fc4c6d1ee5c2e6c44815361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53c834504fc4c6d1ee5c2e6c44815361">&#9670;&#160;</a></span>RegisterLoader()</h2>
+<a id="ab0f444b109d522051a3c9a78f28b0058" name="ab0f444b109d522051a3c9a78f28b0058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f444b109d522051a3c9a78f28b0058">&#9670;&#160;</a></span>LoadAssetLookupTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Deki::AssetManager::RegisterLoader </td>
+          <td class="memname">bool Deki::AssetManager::LoadAssetLookupTable </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_asset_manager_8h.html#ac9bec73a356d5711f1e6bbefc65925db">AssetLoadFn</a></td>          <td class="paramname"><span class="paramname"><em>loader</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_asset_manager_8h.html#ac7244bc198fc37c57f68725f8efe1f5c">AssetUnloadFn</a></td>          <td class="paramname"><span class="paramname"><em>unloader</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_asset_manager_8h.html#ae474da8bc12f722e6f9f998a2d84434f">AssetMemLoadFn</a></td>          <td class="paramname"><span class="paramname"><em>memLoader</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>cacheable</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Registers how to load assets of type <span class="tt">typeName</span> (must match T::kAssetTypeName). </p>
-<p><span class="tt">unloader</span> frees one (delete when null); <span class="tt">memLoader</span>, optional, loads from bytes in memory (pack files). A <span class="tt">cacheable</span> type is loaded once and shared; otherwise each load returns a fresh instance that the caller owns. </p>
+<p>Uses the runtime's binary lookup table in <span class="tt">data</span>, which must stay valid while lookups run. </p>
+<p>Returns false on failure. </p>
 
 </div>
 </div>
-<a id="a8178734de68fcede2201a923a415617c" name="a8178734de68fcede2201a923a415617c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8178734de68fcede2201a923a415617c">&#9670;&#160;</a></span>HasLoader()</h2>
+<a id="aa66457eab7b1a93ba63c6fc1399999e9" name="aa66457eab7b1a93ba63c6fc1399999e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66457eab7b1a93ba63c6fc1399999e9">&#9670;&#160;</a></span>LoadAssetRoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Deki::AssetManager::HasLoader </td>
+          <td class="memname">bool Deki::AssetManager::LoadAssetRoot </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>True when a loader is registered for <span class="tt">typeName</span>. </p>
-<p>The editor treats any .asset whose "type" has a loader (and no texture compiler) as a generic data asset, like a ScriptableObject: its JSON compiles straight to a MessagePack cache with no per-type editor. </p>
+<p>Uses a build's exported assets under <span class="tt">root</span> (<a class="el" href="namespace_deki_1_1_storage.html#a80514312cb1ade1ed87b1ebbfb0412f5">Storage::AssetRoot</a>): reads root/asset_table.bin and root/pack_index.bin and loads every asset from root. </p>
+<p>The engine calls it at startup for internal storage; the package that mounts external storage calls it once the card is up. Returns false, with the reason logged, when the table cannot be read. </p>
 
 </div>
 </div>
@@ -431,206 +649,6 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a9f444ddb2a0ce4f9e3bff1eabaf5f334" name="a9f444ddb2a0ce4f9e3bff1eabaf5f334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334">&#9670;&#160;</a></span>UnloadAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::AssetManager::UnloadAll </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees every loaded asset. </p>
-<p>Every pointer returned before is invalid afterwards. </p>
-
-</div>
-</div>
-<a id="a1f3c316c7b1f3bd1694f02e747d44580" name="a1f3c316c7b1f3bd1694f02e747d44580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3c316c7b1f3bd1694f02e747d44580">&#9670;&#160;</a></span>InvalidateAsset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::AssetManager::InvalidateAsset </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees the cached asset <span class="tt">guid</span> of type <span class="tt">typeName</span> (such as "Sprite"), so the next load reads it from disk again. </p>
-
-</div>
-</div>
-<a id="a57fc355e8a3e56ff5a2b357638e22e14" name="a57fc355e8a3e56ff5a2b357638e22e14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57fc355e8a3e56ff5a2b357638e22e14">&#9670;&#160;</a></span>ClearCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::AssetManager::ClearCache </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees every cached asset of type <span class="tt">typeName</span> (such as "BitmapFont"), so the next loads read from disk again. </p>
-
-</div>
-</div>
-<a id="af0c0acc5b98f41ef7bac3f085455ee39" name="af0c0acc5b98f41ef7bac3f085455ee39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c0acc5b98f41ef7bac3f085455ee39">&#9670;&#160;</a></span>UnloadUnused()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Deki::AssetManager::UnloadUnused </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>usedGuids</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees every cached asset whose GUID is not in <span class="tt">usedGuids</span>, and moves the epoch, so an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> that pointed at one loads it again when next asked. </p>
-<p>Returns how many were freed. <a class="el" href="class_deki_1_1_engine.html#a3a1b4d4617a17a2881f9320f71c7a53c" title="Frees the cached assets nothing uses any more: those no AssetRef field of a component on a live objec...">Engine::ReleaseUnusedAssets</a> works out the list from the live objects. </p>
-
-</div>
-</div>
-<a id="af951595cfe2b666b38a5928be25eabfe" name="af951595cfe2b666b38a5928be25eabfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af951595cfe2b666b38a5928be25eabfe">&#9670;&#160;</a></span>DropCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::AssetManager::DropCache </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Forgets the cache without freeing the assets, which may still be in use; the next load reads a fresh copy from disk. </p>
-<p>The editor calls it when play mode stops. Leaves the epoch alone, since existing <a class="el" href="struct_deki_1_1_asset_ref_base.html#aa707cccda9d537ca9ae5879f2b7ad210">AssetRef::ptr</a> values still point at live memory. </p>
-
-</div>
-</div>
-<a id="afa30ffe948e009eadc0fdf8603bc6671" name="afa30ffe948e009eadc0fdf8603bc6671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa30ffe948e009eadc0fdf8603bc6671">&#9670;&#160;</a></span>GetEpoch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t Deki::AssetManager::GetEpoch </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Goes up whenever asset memory is freed or replaced. </p>
-<p><a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> compares its cachedEpoch with it on every <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get()</a> to notice stale pointers after hot reloads, re-imports and the like. </p>
-
-</div>
-</div>
-<a id="a506376977fcff9999773a404295f6310" name="a506376977fcff9999773a404295f6310"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a506376977fcff9999773a404295f6310">&#9670;&#160;</a></span>AdvanceEpoch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::AssetManager::AdvanceEpoch </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> drop its cached pointer and resolve again on its next <a class="el" href="#a0a7f01a791c9ff3f7ff78cfc05c1a855">Get()</a>. </p>
-<p>Call it when the set of loadable assets changes without memory being freed, such as an asset imported live or restored by undo, so refs that resolved to null can find it. </p>
-
-</div>
-</div>
-<a id="ac787b33990fcf2859eff3fdcb3908dc7" name="ac787b33990fcf2859eff3fdcb3908dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac787b33990fcf2859eff3fdcb3908dc7">&#9670;&#160;</a></span>IsTypeCacheable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::AssetManager::IsTypeCacheable </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>False only for types registered as non-cacheable. </p>
-
-</div>
-</div>
-<a id="a20d83ca89c03af00d241ca615667b5d3" name="a20d83ca89c03af00d241ca615667b5d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20d83ca89c03af00d241ca615667b5d3">&#9670;&#160;</a></span>ReleaseAssetTracking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::AssetManager::ReleaseAssetTracking </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>asset</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stops tracking a non-cacheable asset whose ownership another system (such as <a class="el" href="class_deki_1_1_scene_system.html" title="Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outli...">SceneSystem</a>) has taken, so <a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334" title="Frees every loaded asset.">UnloadAll()</a> does not free it twice. </p>
-
-</div>
-</div>
 <a id="aabba15429caf0257bb49ad4aab3fe721" name="aabba15429caf0257bb49ad4aab3fe721"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabba15429caf0257bb49ad4aab3fe721">&#9670;&#160;</a></span>LoadGuidTable()</h2>
 
@@ -651,47 +669,92 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="ab0f444b109d522051a3c9a78f28b0058" name="ab0f444b109d522051a3c9a78f28b0058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0f444b109d522051a3c9a78f28b0058">&#9670;&#160;</a></span>LoadAssetLookupTable()</h2>
+<a id="af13d6625425e815401d064ac8837ab73" name="af13d6625425e815401d064ac8837ab73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13d6625425e815401d064ac8837ab73">&#9670;&#160;</a></span>LookupPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Deki::AssetManager::LoadAssetLookupTable </td>
+          <td class="memname">const std::string &amp; Deki::AssetManager::LookupPath </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Full path (cache directory + entry) for a GUID, or "" when unknown. </p>
+<p>The reference points into a reused buffer and is valid until the next LookupPath call; it avoids a string copy on every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> resolution. </p>
+
+</div>
+</div>
+<a id="a6d3b9c13102b84ca7394c3aadf69610b" name="a6d3b9c13102b84ca7394c3aadf69610b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3b9c13102b84ca7394c3aadf69610b">&#9670;&#160;</a></span>ReadWholeFile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::AssetManager::ReadWholeFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_buffer.html">Buffer</a>&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Uses the runtime's binary lookup table in <span class="tt">data</span>, which must stay valid while lookups run. </p>
-<p>Returns false on failure. </p>
+<p>Reads a whole file into a <a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Buffer</a> in <span class="tt">region</span>, through the engine's filesystem. </p>
+<p>Use it for anything big (a mesh, a texture): a std::vector lands on the internal heap and aborts the board when it does not fit, while this logs the size and returns false. </p>
 
 </div>
 </div>
-<a id="aa66457eab7b1a93ba63c6fc1399999e9" name="aa66457eab7b1a93ba63c6fc1399999e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa66457eab7b1a93ba63c6fc1399999e9">&#9670;&#160;</a></span>LoadAssetRoot()</h2>
+<a id="aca5e6840f0edaa41d7a66028cd10805e" name="aca5e6840f0edaa41d7a66028cd10805e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5e6840f0edaa41d7a66028cd10805e">&#9670;&#160;</a></span>ReadWholeFile() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Deki::AssetManager::LoadAssetRoot </td>
+          <td class="memname">bool Deki::AssetManager::ReadWholeFile </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Uses a build's exported assets under <span class="tt">root</span> (<a class="el" href="namespace_deki_1_1_storage.html#a80514312cb1ade1ed87b1ebbfb0412f5">Storage::AssetRoot</a>): reads root/asset_table.bin and root/pack_index.bin and loads every asset from root. </p>
-<p>The engine calls it at startup for internal storage; the package that mounts external storage calls it once the card is up. Returns false, with the reason logged, when the table cannot be read. </p>
+<p>Reads a whole file through the filesystem provider. </p>
+<p>False when the file cannot be opened or read in full (out is then empty). </p>
 
 </div>
 </div>
@@ -715,6 +778,76 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Maps <span class="tt">guid</span> to the filesystem path <span class="tt">path</span> (editor). </p>
+
+</div>
+</div>
+<a id="a53c834504fc4c6d1ee5c2e6c44815361" name="a53c834504fc4c6d1ee5c2e6c44815361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c834504fc4c6d1ee5c2e6c44815361">&#9670;&#160;</a></span>RegisterLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::AssetManager::RegisterLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_asset_manager_8h.html#ac9bec73a356d5711f1e6bbefc65925db">AssetLoadFn</a></td>          <td class="paramname"><span class="paramname"><em>loader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_asset_manager_8h.html#ac7244bc198fc37c57f68725f8efe1f5c">AssetUnloadFn</a></td>          <td class="paramname"><span class="paramname"><em>unloader</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_asset_manager_8h.html#ae474da8bc12f722e6f9f998a2d84434f">AssetMemLoadFn</a></td>          <td class="paramname"><span class="paramname"><em>memLoader</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>cacheable</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers how to load assets of type <span class="tt">typeName</span> (must match T::kAssetTypeName). </p>
+<p><span class="tt">unloader</span> frees one (delete when null); <span class="tt">memLoader</span>, optional, loads from bytes in memory (pack files). A <span class="tt">cacheable</span> type is loaded once and shared; otherwise each load returns a fresh instance that the caller owns. </p>
+
+</div>
+</div>
+<a id="a20d83ca89c03af00d241ca615667b5d3" name="a20d83ca89c03af00d241ca615667b5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d83ca89c03af00d241ca615667b5d3">&#9670;&#160;</a></span>ReleaseAssetTracking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::AssetManager::ReleaseAssetTracking </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>asset</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops tracking a non-cacheable asset whose ownership another system (such as <a class="el" href="class_deki_1_1_scene_system.html" title="Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outli...">SceneSystem</a>) has taken, so <a class="el" href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334" title="Frees every loaded asset.">UnloadAll()</a> does not free it twice. </p>
 
 </div>
 </div>
@@ -765,8 +898,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a9eb88729a35797a5f822d6d8a5b94664" name="a9eb88729a35797a5f822d6d8a5b94664"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eb88729a35797a5f822d6d8a5b94664">&#9670;&#160;</a></span>GetCacheDirectory()</h2>
+<a id="ad8195fc4e07cd4bef2fbf3c26e91b79b" name="ad8195fc4e07cd4bef2fbf3c26e91b79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8195fc4e07cd4bef2fbf3c26e91b79b">&#9670;&#160;</a></span>Shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,87 +908,10 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string &amp; Deki::AssetManager::GetCacheDirectory </td>
+          <td class="memname">void Deki::AssetManager::Shutdown </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae60f4f1a3d23c4c559d765106a7772d8" name="ae60f4f1a3d23c4c559d765106a7772d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae60f4f1a3d23c4c559d765106a7772d8">&#9670;&#160;</a></span>IsReady()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::AssetManager::IsReady </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>True once assets can be loaded: the cache directory is set (editor edit mode) or the binary lookup table is loaded (play mode, device). </p>
-<p><a class="el" href="struct_deki_1_1_asset_ref.html#a46530d1eb7765dadfb57607374dc6e5c">AssetRef::Get()</a> skips loading until then, such as while ImportAllAssets compiles scenes before the filesystem is up. </p>
-
-</div>
-</div>
-<a id="af13d6625425e815401d064ac8837ab73" name="af13d6625425e815401d064ac8837ab73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af13d6625425e815401d064ac8837ab73">&#9670;&#160;</a></span>LookupPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string &amp; Deki::AssetManager::LookupPath </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Full path (cache directory + entry) for a GUID, or "" when unknown. </p>
-<p>The reference points into a reused buffer and is valid until the next LookupPath call; it avoids a string copy on every <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> resolution. </p>
-
-</div>
-</div>
-<a id="aca5e6840f0edaa41d7a66028cd10805e" name="aca5e6840f0edaa41d7a66028cd10805e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca5e6840f0edaa41d7a66028cd10805e">&#9670;&#160;</a></span>ReadWholeFile() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::AssetManager::ReadWholeFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -865,45 +921,47 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reads a whole file through the filesystem provider. </p>
-<p>False when the file cannot be opened or read in full (out is then empty). </p>
+<p>Frees all assets and the singleton. </p>
 
 </div>
 </div>
-<a id="a6d3b9c13102b84ca7394c3aadf69610b" name="a6d3b9c13102b84ca7394c3aadf69610b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d3b9c13102b84ca7394c3aadf69610b">&#9670;&#160;</a></span>ReadWholeFile() <span class="overload">[2/2]</span></h2>
+<a id="a9f444ddb2a0ce4f9e3bff1eabaf5f334" name="a9f444ddb2a0ce4f9e3bff1eabaf5f334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f444ddb2a0ce4f9e3bff1eabaf5f334">&#9670;&#160;</a></span>UnloadAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Deki::AssetManager::ReadWholeFile </td>
+          <td class="memname">void Deki::AssetManager::UnloadAll </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_buffer.html">Buffer</a>&lt; uint8_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_deki_1_1_memory_1_1_region.html">Memory::Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Reads a whole file into a <a class="el" href="class_deki_1_1_buffer.html" title="Owning array of T, freed when it goes out of scope.">Buffer</a> in <span class="tt">region</span>, through the engine's filesystem. </p>
-<p>Use it for anything big (a mesh, a texture): a std::vector lands on the internal heap and aborts the board when it does not fit, while this logs the size and returns false. </p>
+<p>Frees every loaded asset. </p>
+<p>Every pointer returned before is invalid afterwards. </p>
+
+</div>
+</div>
+<a id="af0c0acc5b98f41ef7bac3f085455ee39" name="af0c0acc5b98f41ef7bac3f085455ee39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c0acc5b98f41ef7bac3f085455ee39">&#9670;&#160;</a></span>UnloadUnused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::AssetManager::UnloadUnused </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>usedGuids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees every cached asset whose GUID is not in <span class="tt">usedGuids</span>, and moves the epoch, so an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> that pointed at one loads it again when next asked. </p>
+<p>Returns how many were freed. <a class="el" href="class_deki_1_1_engine.html#a3a1b4d4617a17a2881f9320f71c7a53c" title="Frees the cached assets nothing uses any more: those no AssetRef field of a component on a live objec...">Engine::ReleaseUnusedAssets</a> works out the list from the live objects. </p>
 
 </div>
 </div>

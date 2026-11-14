@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['화면에_20고정하기_0',['화면에 고정하기',['../guide-screens.html#autotoc_md19',1,'']]],
-  ['화면에_20보이는_20것_1',['각 화면에 보이는 것',['../guide-screens.html#autotoc_md18',1,'']]],
-  ['화면_2',['화면',['../guide-screens.html',1,'']]]
+  ['플랫폼은_20어디에서_20오는가_0',['플랫폼은 어디에서 오는가',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]],
+  ['플랫폼이란_1',['플랫폼이란',['../guide-platforms.html#guide-platforms-what-a-platform-is',1,'']]],
+  ['플랫폼_2',['플랫폼',['../section-packages.html#autotoc_md31',1,'디바이스와 플랫폼'],['../guide-platforms.html',1,'플랫폼']]],
+  ['플랫폼_20계층_3a_20imemoryprovider_3',['플랫폼 계층: &lt;span class=&quot;tt&quot;&gt;IMemoryProvider&lt;/span&gt;',['../guide-memory.html#autotoc_md15',1,'']]]
 ];

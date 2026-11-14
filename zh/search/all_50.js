@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['游戏写入的文件_0',['游戏写入的文件',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]]
+  ['普通精灵（没有帧）_0',['普通精灵（没有帧）',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
 ];

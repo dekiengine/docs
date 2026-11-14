@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki::Engine Class Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -164,88 +217,90 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8cec9f89c015309b85a9698b139feb25" id="r_a8cec9f89c015309b85a9698b139feb25"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a8cec9f89c015309b85a9698b139feb25">CreateScene</a> ()</td></tr>
+<tr class="memdesc:a8cec9f89c015309b85a9698b139feb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty scene.  <br /></td></tr>
+<tr class="memitem:accb0a91ea26debde81aec24438e49103" id="r_accb0a91ea26debde81aec24438e49103"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *&#160;</td><td class="memItemRight"><a class="el" href="#accb0a91ea26debde81aec24438e49103">GetDisplay</a> () const</td></tr>
+<tr class="memdesc:accb0a91ea26debde81aec24438e49103"><td class="mdescLeft">&#160;</td><td class="mdescRight">The active display, set by a display package through <a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97" title="Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when ...">SetDisplay()</a>, or nullptr when none is loaded.  <br /></td></tr>
+<tr class="memitem:a2a52f35697745b4c24f4e0404883ffa6" id="r_a2a52f35697745b4c24f4e0404883ffa6"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2a52f35697745b4c24f4e0404883ffa6">GetDisplayName</a> () const</td></tr>
+<tr class="memdesc:a2a52f35697745b4c24f4e0404883ffa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name set by the registering package, such as "SDL3".  <br /></td></tr>
+<tr class="memitem:a314836fb4b16ba5c849505caa9587862" id="r_a314836fb4b16ba5c849505caa9587862"><td class="memItemLeft">const uint8_t *&#160;</td><td class="memItemRight"><a class="el" href="#a314836fb4b16ba5c849505caa9587862">GetFrameBuffer</a> () const</td></tr>
+<tr class="memitem:ab693e04a66f7286b1d1220bb8266d2fc" id="r_ab693e04a66f7286b1d1220bb8266d2fc"><td class="memItemLeft"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab693e04a66f7286b1d1220bb8266d2fc">GetFrameBufferFormat</a> () const</td></tr>
 <tr class="memitem:a018d7839bb8fa8506ddacbc15470cae0" id="r_a018d7839bb8fa8506ddacbc15470cae0"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_engine_host.html">EngineHost</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a018d7839bb8fa8506ddacbc15470cae0">GetHost</a> () const</td></tr>
-<tr class="memitem:a7c84d67fb6c58a08bc099ddc86d1d864" id="r_a7c84d67fb6c58a08bc099ddc86d1d864"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c84d67fb6c58a08bc099ddc86d1d864">Shutdown</a> ()</td></tr>
-<tr class="memdesc:a7c84d67fb6c58a08bc099ddc86d1d864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts the engine down and frees its resources.  <br /></td></tr>
-<tr class="memitem:a50aa325effbdfd8df81f6ef8260683f0" id="r_a50aa325effbdfd8df81f6ef8260683f0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50aa325effbdfd8df81f6ef8260683f0">Update</a> (float deltaMs)</td></tr>
-<tr class="memdesc:a50aa325effbdfd8df81f6ef8260683f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs one frame. <span class="tt">deltaMs</span> is milliseconds since the last call.  <br /></td></tr>
-<tr class="memitem:a871edbe49446a474bf01ce33ac46cb08" id="r_a871edbe49446a474bf01ce33ac46cb08"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a871edbe49446a474bf01ce33ac46cb08">ProcessLifecycle</a> ()</td></tr>
-<tr class="memdesc:a871edbe49446a474bf01ce33ac46cb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs Awake, Start and Update on the active scene, and handles a scene change made during them.  <br /></td></tr>
-<tr class="memitem:a04fb0c8ceba0ac711d1a57bc5b7a32b6" id="r_a04fb0c8ceba0ac711d1a57bc5b7a32b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a04fb0c8ceba0ac711d1a57bc5b7a32b6">Render</a> ()</td></tr>
-<tr class="memdesc:a04fb0c8ceba0ac711d1a57bc5b7a32b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the current scene into the render system's framebuffer.  <br /></td></tr>
-<tr class="memitem:a822a52de412dea6adacd8d4b4f205b29" id="r_a822a52de412dea6adacd8d4b4f205b29"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a822a52de412dea6adacd8d4b4f205b29">PresentFrame</a> ()</td></tr>
-<tr class="memdesc:a822a52de412dea6adacd8d4b4f205b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the render system's framebuffer to the display.  <br /></td></tr>
-<tr class="memitem:a5cf81001a1c805148c1ac6c41e0bcadf" id="r_a5cf81001a1c805148c1ac6c41e0bcadf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5cf81001a1c805148c1ac6c41e0bcadf">RequestFullRefresh</a> ()</td></tr>
-<tr class="memdesc:a5cf81001a1c805148c1ac6c41e0bcadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the next present cover the whole screen, including the display's own RequestFullRefresh.  <br /></td></tr>
-<tr class="memitem:abe04495f260fba16be76de7e19b2e233" id="r_abe04495f260fba16be76de7e19b2e233"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#abe04495f260fba16be76de7e19b2e233">RegisterUpdate</a> (const <a class="el" href="namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd">UpdateCallback</a> &amp;callback)</td></tr>
-<tr class="memdesc:abe04495f260fba16be76de7e19b2e233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <span class="tt">callback</span> every frame. Returns an id for UnregisterUpdate.  <br /></td></tr>
-<tr class="memitem:aca66b772420ed1d6c00305a837d71b28" id="r_aca66b772420ed1d6c00305a837d71b28"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca66b772420ed1d6c00305a837d71b28">UnregisterUpdate</a> (size_t id)</td></tr>
-<tr class="memdesc:aca66b772420ed1d6c00305a837d71b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the callback that RegisterUpdate returned <span class="tt">id</span> for.  <br /></td></tr>
-<tr class="memitem:ac51f7f84a5c4b04b3c6f3c2fb9b3ba18" id="r_ac51f7f84a5c4b04b3c6f3c2fb9b3ba18"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac51f7f84a5c4b04b3c6f3c2fb9b3ba18">RunUpdateCallbacks</a> (uint32_t deltaTime)</td></tr>
-<tr class="memdesc:ac51f7f84a5c4b04b3c6f3c2fb9b3ba18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the registered update callbacks once.  <br /></td></tr>
-<tr class="memitem:ab422813f44ae7e4bae9fa64a4ea27364" id="r_ab422813f44ae7e4bae9fa64a4ea27364"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab422813f44ae7e4bae9fa64a4ea27364">SetRootScene</a> (<a class="el" href="class_deki_1_1_scene.html">Scene</a> *scene, bool takeOwnership=true)</td></tr>
-<tr class="memdesc:ab422813f44ae7e4bae9fa64a4ea27364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes <span class="tt">scene</span> the root scene.  <br /></td></tr>
+<tr class="memitem:a1892f185237202e4378ff8b16f7d8143" id="r_a1892f185237202e4378ff8b16f7d8143"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1892f185237202e4378ff8b16f7d8143">GetInputSystem</a> () const</td></tr>
+<tr class="memdesc:a1892f185237202e4378ff8b16f7d8143"><td class="mdescLeft">&#160;</td><td class="mdescRight">The input system, or nullptr when no input package is loaded.  <br /></td></tr>
+<tr class="memitem:a8b085d607962f132ddd1245b34579208" id="r_a8b085d607962f132ddd1245b34579208"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html">FrameTimings</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8b085d607962f132ddd1245b34579208">GetLastFrameTimings</a> () const</td></tr>
+<tr class="memdesc:a8b085d607962f132ddd1245b34579208"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the parts of the last frame took: see <a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html" title="How long the parts of a frame took, in milliseconds of the engine&#39;s clock: update (input,...">FrameTimings</a>.  <br /></td></tr>
+<tr class="memitem:afb485efe31d0e4421a86b51f8f425b36" id="r_afb485efe31d0e4421a86b51f8f425b36"><td class="memItemLeft">LifecycleManager *&#160;</td><td class="memItemRight"><a class="el" href="#afb485efe31d0e4421a86b51f8f425b36">GetLifecycleManager</a> () const</td></tr>
+<tr class="memitem:a0c0282b5c9f63892c2f16575cb73fab0" id="r_a0c0282b5c9f63892c2f16575cb73fab0"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0c0282b5c9f63892c2f16575cb73fab0">GetRenderer</a> () const</td></tr>
+<tr class="memdesc:a0c0282b5c9f63892c2f16575cb73fab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The installed render system.  <br /></td></tr>
+<tr class="memitem:a1fef725b08eabb29fe8964c923ebcbee" id="r_a1fef725b08eabb29fe8964c923ebcbee"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1fef725b08eabb29fe8964c923ebcbee">GetRenderSystem</a> () const</td></tr>
+<tr class="memdesc:a1fef725b08eabb29fe8964c923ebcbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The render system, or nullptr when no rendering package is loaded.  <br /></td></tr>
+<tr class="memitem:ac1ee76a4d0401819bfdf362fa3a3d785" id="r_ac1ee76a4d0401819bfdf362fa3a3d785"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac1ee76a4d0401819bfdf362fa3a3d785">GetRootScene</a> () const</td></tr>
+<tr class="memdesc:ac1ee76a4d0401819bfdf362fa3a3d785"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root scene, or nullptr when none is set.  <br /></td></tr>
+<tr class="memitem:ac4a6702a2e457370a8a04c499588db0e" id="r_ac4a6702a2e457370a8a04c499588db0e"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac4a6702a2e457370a8a04c499588db0e">GetSceneSystem</a> () const</td></tr>
+<tr class="memitem:a581bf297386333c4cc558e18bdcd876b" id="r_a581bf297386333c4cc558e18bdcd876b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a581bf297386333c4cc558e18bdcd876b">GetScreenDiagonalInches</a> () const</td></tr>
+<tr class="memdesc:a581bf297386333c4cc558e18bdcd876b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's diagonal in inches, 0 when unknown.  <br /></td></tr>
+<tr class="memitem:af02796b9de90366c6f7a43bd5b24ef3b" id="r_af02796b9de90366c6f7a43bd5b24ef3b"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#af02796b9de90366c6f7a43bd5b24ef3b">GetScreenHeight</a> () const</td></tr>
+<tr class="memitem:a924c4f66f82b74d632317c53e4ad2f72" id="r_a924c4f66f82b74d632317c53e4ad2f72"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a924c4f66f82b74d632317c53e4ad2f72">GetScreenHeightMeters</a> () const</td></tr>
+<tr class="memitem:a5417442513b5482aa479d6cfcead40d9" id="r_a5417442513b5482aa479d6cfcead40d9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5417442513b5482aa479d6cfcead40d9">GetScreenPixelsPerInch</a> () const</td></tr>
+<tr class="memdesc:a5417442513b5482aa479d6cfcead40d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels per inch of the screen at its current size, 0 when its diagonal or size is unknown.  <br /></td></tr>
+<tr class="memitem:a653a48b6ad469d3f3532ed10844fad39" id="r_a653a48b6ad469d3f3532ed10844fad39"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#a653a48b6ad469d3f3532ed10844fad39">GetScreenWidth</a> () const</td></tr>
+<tr class="memitem:ab14ae69910c913041659ab39812921b8" id="r_ab14ae69910c913041659ab39812921b8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab14ae69910c913041659ab39812921b8">GetScreenWidthMeters</a> () const</td></tr>
+<tr class="memdesc:ab14ae69910c913041659ab39812921b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's size on the glass in meters, 0 when unknown.  <br /></td></tr>
+<tr class="memitem:ac86bc8707bbf59bc346b84147fcf570b" id="r_ac86bc8707bbf59bc346b84147fcf570b"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac86bc8707bbf59bc346b84147fcf570b">GetSettings</a> ()</td></tr>
+<tr class="memitem:a04c7170e729eefc88d88b8f7a30c70ec" id="r_a04c7170e729eefc88d88b8f7a30c70ec"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a04c7170e729eefc88d88b8f7a30c70ec">GetSettings</a> () const</td></tr>
+<tr class="memitem:ae05f48bde487c615d836e8632e1a1fd2" id="r_ae05f48bde487c615d836e8632e1a1fd2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae05f48bde487c615d836e8632e1a1fd2">IsDirty</a> () const</td></tr>
+<tr class="memdesc:ae05f48bde487c615d836e8632e1a1fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a redraw is needed.  <br /></td></tr>
+<tr class="memitem:a1464e6ac6f4e71e4eca3a5db08a077ba" id="r_a1464e6ac6f4e71e4eca3a5db08a077ba"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1464e6ac6f4e71e4eca3a5db08a077ba">IsDisplayInitialized</a> () const</td></tr>
+<tr class="memdesc:a1464e6ac6f4e71e4eca3a5db08a077ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a display is registered and its <a class="el" href="#ad61eca5b5be1fbbfce2619a6ceea48c8">IsInitialized()</a> is true.  <br /></td></tr>
+<tr class="memitem:ad61eca5b5be1fbbfce2619a6ceea48c8" id="r_ad61eca5b5be1fbbfce2619a6ceea48c8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad61eca5b5be1fbbfce2619a6ceea48c8">IsInitialized</a> () const</td></tr>
+<tr class="memitem:a7f563762340f0614675f0aa63431f404" id="r_a7f563762340f0614675f0aa63431f404"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7f563762340f0614675f0aa63431f404">IsRunning</a> () const</td></tr>
+<tr class="memitem:ae16ed24050e6b65679465fb10cdb4687" id="r_ae16ed24050e6b65679465fb10cdb4687"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae16ed24050e6b65679465fb10cdb4687">MarkDirty</a> ()</td></tr>
+<tr class="memdesc:ae16ed24050e6b65679465fb10cdb4687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asks for a redraw.  <br /></td></tr>
+<tr class="memitem:aa911854b72a1f40fe93cab51b8a713d3" id="r_aa911854b72a1f40fe93cab51b8a713d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa911854b72a1f40fe93cab51b8a713d3">OpenRequestedScene</a> ()</td></tr>
+<tr class="memdesc:aa911854b72a1f40fe93cab51b8a713d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out an OpenScene request, if there is one.  <br /></td></tr>
 <tr class="memitem:af5fca93ae3d9ec6de6f31cedd8137aac" id="r_af5fca93ae3d9ec6de6f31cedd8137aac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af5fca93ae3d9ec6de6f31cedd8137aac">OpenScene</a> (const <a class="el" href="struct_deki_1_1_asset_ref_base.html">AssetRefBase</a> &amp;scene)</td></tr>
 <tr class="memdesc:af5fca93ae3d9ec6de6f31cedd8137aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the scene <span class="tt">scene</span> refers to (an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef&lt;Scene&gt;</a>) once this frame's updates are done: the scene being left is freed first, then the new one is loaded and started before it is drawn.  <br /></td></tr>
 <tr class="memitem:a015e9b32eac330f93ee3919cd5769593" id="r_a015e9b32eac330f93ee3919cd5769593"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a015e9b32eac330f93ee3919cd5769593">OpenScene</a> (const std::string &amp;guid)</td></tr>
 <tr class="memdesc:a015e9b32eac330f93ee3919cd5769593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the scene asset <span class="tt">guid</span>, as OpenScene above.  <br /></td></tr>
+<tr class="memitem:a822a52de412dea6adacd8d4b4f205b29" id="r_a822a52de412dea6adacd8d4b4f205b29"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a822a52de412dea6adacd8d4b4f205b29">PresentFrame</a> ()</td></tr>
+<tr class="memdesc:a822a52de412dea6adacd8d4b4f205b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the render system's framebuffer to the display.  <br /></td></tr>
+<tr class="memitem:a871edbe49446a474bf01ce33ac46cb08" id="r_a871edbe49446a474bf01ce33ac46cb08"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a871edbe49446a474bf01ce33ac46cb08">ProcessLifecycle</a> ()</td></tr>
+<tr class="memdesc:a871edbe49446a474bf01ce33ac46cb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs Awake, Start and Update on the active scene, and handles a scene change made during them.  <br /></td></tr>
+<tr class="memitem:abe04495f260fba16be76de7e19b2e233" id="r_abe04495f260fba16be76de7e19b2e233"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#abe04495f260fba16be76de7e19b2e233">RegisterUpdate</a> (const <a class="el" href="namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd">UpdateCallback</a> &amp;callback)</td></tr>
+<tr class="memdesc:abe04495f260fba16be76de7e19b2e233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <span class="tt">callback</span> every frame. Returns an id for UnregisterUpdate.  <br /></td></tr>
 <tr class="memitem:a3a1b4d4617a17a2881f9320f71c7a53c" id="r_a3a1b4d4617a17a2881f9320f71c7a53c"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#a3a1b4d4617a17a2881f9320f71c7a53c">ReleaseUnusedAssets</a> ()</td></tr>
 <tr class="memdesc:a3a1b4d4617a17a2881f9320f71c7a53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the cached assets nothing uses any more: those no <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> field of a component on a live object (the root scene and the persistent objects) names.  <br /></td></tr>
-<tr class="memitem:aa911854b72a1f40fe93cab51b8a713d3" id="r_aa911854b72a1f40fe93cab51b8a713d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa911854b72a1f40fe93cab51b8a713d3">OpenRequestedScene</a> ()</td></tr>
-<tr class="memdesc:aa911854b72a1f40fe93cab51b8a713d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out an OpenScene request, if there is one.  <br /></td></tr>
-<tr class="memitem:ac1ee76a4d0401819bfdf362fa3a3d785" id="r_ac1ee76a4d0401819bfdf362fa3a3d785"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac1ee76a4d0401819bfdf362fa3a3d785">GetRootScene</a> () const</td></tr>
-<tr class="memdesc:ac1ee76a4d0401819bfdf362fa3a3d785"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root scene, or nullptr when none is set.  <br /></td></tr>
-<tr class="memitem:a8cec9f89c015309b85a9698b139feb25" id="r_a8cec9f89c015309b85a9698b139feb25"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a8cec9f89c015309b85a9698b139feb25">CreateScene</a> ()</td></tr>
-<tr class="memdesc:a8cec9f89c015309b85a9698b139feb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty scene.  <br /></td></tr>
-<tr class="memitem:a0c0282b5c9f63892c2f16575cb73fab0" id="r_a0c0282b5c9f63892c2f16575cb73fab0"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0c0282b5c9f63892c2f16575cb73fab0">GetRenderer</a> () const</td></tr>
-<tr class="memdesc:a0c0282b5c9f63892c2f16575cb73fab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The installed render system.  <br /></td></tr>
-<tr class="memitem:ac4a6702a2e457370a8a04c499588db0e" id="r_ac4a6702a2e457370a8a04c499588db0e"><td class="memItemLeft"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac4a6702a2e457370a8a04c499588db0e">GetSceneSystem</a> () const</td></tr>
-<tr class="memitem:afb485efe31d0e4421a86b51f8f425b36" id="r_afb485efe31d0e4421a86b51f8f425b36"><td class="memItemLeft">LifecycleManager *&#160;</td><td class="memItemRight"><a class="el" href="#afb485efe31d0e4421a86b51f8f425b36">GetLifecycleManager</a> () const</td></tr>
-<tr class="memitem:a1fef725b08eabb29fe8964c923ebcbee" id="r_a1fef725b08eabb29fe8964c923ebcbee"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1fef725b08eabb29fe8964c923ebcbee">GetRenderSystem</a> () const</td></tr>
-<tr class="memdesc:a1fef725b08eabb29fe8964c923ebcbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The render system, or nullptr when no rendering package is loaded.  <br /></td></tr>
-<tr class="memitem:ad9c3f6b9e26c6ce75111e835ac87e18f" id="r_ad9c3f6b9e26c6ce75111e835ac87e18f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad9c3f6b9e26c6ce75111e835ac87e18f">SetRenderSystem</a> (<a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *rs)</td></tr>
-<tr class="memdesc:ad9c3f6b9e26c6ce75111e835ac87e18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a rendering package when it registers. The package owns <span class="tt">rs</span>.  <br /></td></tr>
-<tr class="memitem:a1892f185237202e4378ff8b16f7d8143" id="r_a1892f185237202e4378ff8b16f7d8143"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1892f185237202e4378ff8b16f7d8143">GetInputSystem</a> () const</td></tr>
-<tr class="memdesc:a1892f185237202e4378ff8b16f7d8143"><td class="mdescLeft">&#160;</td><td class="mdescRight">The input system, or nullptr when no input package is loaded.  <br /></td></tr>
-<tr class="memitem:a7ccefcee40f2ed08910890b3abe7e7f1" id="r_a7ccefcee40f2ed08910890b3abe7e7f1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7ccefcee40f2ed08910890b3abe7e7f1">SetInputSystem</a> (<a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> *is)</td></tr>
-<tr class="memdesc:a7ccefcee40f2ed08910890b3abe7e7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by an input package when it registers. The package owns <span class="tt">is</span>.  <br /></td></tr>
-<tr class="memitem:accb0a91ea26debde81aec24438e49103" id="r_accb0a91ea26debde81aec24438e49103"><td class="memItemLeft"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *&#160;</td><td class="memItemRight"><a class="el" href="#accb0a91ea26debde81aec24438e49103">GetDisplay</a> () const</td></tr>
-<tr class="memdesc:accb0a91ea26debde81aec24438e49103"><td class="mdescLeft">&#160;</td><td class="mdescRight">The active display, set by a display package through <a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97" title="Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when ...">SetDisplay()</a>, or nullptr when none is loaded.  <br /></td></tr>
-<tr class="memitem:ad279c4f1cc4adbd134b1cf2481a9dc97" id="r_ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97">SetDisplay</a> (<a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *display, const std::string &amp;name=&quot;&quot;)</td></tr>
-<tr class="memdesc:ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when their package loads.  <br /></td></tr>
-<tr class="memitem:a2a52f35697745b4c24f4e0404883ffa6" id="r_a2a52f35697745b4c24f4e0404883ffa6"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2a52f35697745b4c24f4e0404883ffa6">GetDisplayName</a> () const</td></tr>
-<tr class="memdesc:a2a52f35697745b4c24f4e0404883ffa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name set by the registering package, such as "SDL3".  <br /></td></tr>
-<tr class="memitem:a1464e6ac6f4e71e4eca3a5db08a077ba" id="r_a1464e6ac6f4e71e4eca3a5db08a077ba"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1464e6ac6f4e71e4eca3a5db08a077ba">IsDisplayInitialized</a> () const</td></tr>
-<tr class="memdesc:a1464e6ac6f4e71e4eca3a5db08a077ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a display is registered and its <a class="el" href="#ad61eca5b5be1fbbfce2619a6ceea48c8">IsInitialized()</a> is true.  <br /></td></tr>
-<tr class="memitem:ad61eca5b5be1fbbfce2619a6ceea48c8" id="r_ad61eca5b5be1fbbfce2619a6ceea48c8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad61eca5b5be1fbbfce2619a6ceea48c8">IsInitialized</a> () const</td></tr>
-<tr class="memitem:a1888204565b289959b5a30752b22c53d" id="r_a1888204565b289959b5a30752b22c53d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1888204565b289959b5a30752b22c53d">SetGameUpdateCallback</a> (const <a class="el" href="namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a">GameUpdateCallback</a> &amp;callback)</td></tr>
-<tr class="memdesc:a1888204565b289959b5a30752b22c53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback that runs game logic each frame.  <br /></td></tr>
-<tr class="memitem:a5f80489bb62c150b407b519c32f130ef" id="r_a5f80489bb62c150b407b519c32f130ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5f80489bb62c150b407b519c32f130ef">SetTargetFPS</a> (uint32_t fps)</td></tr>
-<tr class="memdesc:a5f80489bb62c150b407b519c32f130ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame rate the main loop aims for. The default is 30.  <br /></td></tr>
+<tr class="memitem:a04fb0c8ceba0ac711d1a57bc5b7a32b6" id="r_a04fb0c8ceba0ac711d1a57bc5b7a32b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a04fb0c8ceba0ac711d1a57bc5b7a32b6">Render</a> ()</td></tr>
+<tr class="memdesc:a04fb0c8ceba0ac711d1a57bc5b7a32b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the current scene into the render system's framebuffer.  <br /></td></tr>
+<tr class="memitem:a5cf81001a1c805148c1ac6c41e0bcadf" id="r_a5cf81001a1c805148c1ac6c41e0bcadf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5cf81001a1c805148c1ac6c41e0bcadf">RequestFullRefresh</a> ()</td></tr>
+<tr class="memdesc:a5cf81001a1c805148c1ac6c41e0bcadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the next present cover the whole screen, including the display's own RequestFullRefresh.  <br /></td></tr>
 <tr class="memitem:a77cc93d4f64e7dff9c68fa9f7da20e67" id="r_a77cc93d4f64e7dff9c68fa9f7da20e67"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a77cc93d4f64e7dff9c68fa9f7da20e67">RunMainLoop</a> ()</td></tr>
 <tr class="memdesc:a77cc93d4f64e7dff9c68fa9f7da20e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the main loop (timing, platform updates, rendering, callbacks) until <a class="el" href="#a115758fbb0b037dc2e651746ea25bca8">StopMainLoop()</a>.  <br /></td></tr>
-<tr class="memitem:a115758fbb0b037dc2e651746ea25bca8" id="r_a115758fbb0b037dc2e651746ea25bca8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a115758fbb0b037dc2e651746ea25bca8">StopMainLoop</a> ()</td></tr>
-<tr class="memitem:a7f563762340f0614675f0aa63431f404" id="r_a7f563762340f0614675f0aa63431f404"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7f563762340f0614675f0aa63431f404">IsRunning</a> () const</td></tr>
-<tr class="memitem:ae16ed24050e6b65679465fb10cdb4687" id="r_ae16ed24050e6b65679465fb10cdb4687"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae16ed24050e6b65679465fb10cdb4687">MarkDirty</a> ()</td></tr>
-<tr class="memdesc:ae16ed24050e6b65679465fb10cdb4687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asks for a redraw.  <br /></td></tr>
-<tr class="memitem:ae05f48bde487c615d836e8632e1a1fd2" id="r_ae05f48bde487c615d836e8632e1a1fd2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae05f48bde487c615d836e8632e1a1fd2">IsDirty</a> () const</td></tr>
-<tr class="memdesc:ae05f48bde487c615d836e8632e1a1fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when a redraw is needed.  <br /></td></tr>
-<tr class="memitem:a8b085d607962f132ddd1245b34579208" id="r_a8b085d607962f132ddd1245b34579208"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html">FrameTimings</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8b085d607962f132ddd1245b34579208">GetLastFrameTimings</a> () const</td></tr>
-<tr class="memdesc:a8b085d607962f132ddd1245b34579208"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the parts of the last frame took: see <a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html" title="How long the parts of a frame took, in milliseconds of the engine&#39;s clock: update (input,...">FrameTimings</a>.  <br /></td></tr>
-<tr class="memitem:a314836fb4b16ba5c849505caa9587862" id="r_a314836fb4b16ba5c849505caa9587862"><td class="memItemLeft">const uint8_t *&#160;</td><td class="memItemRight"><a class="el" href="#a314836fb4b16ba5c849505caa9587862">GetFrameBuffer</a> () const</td></tr>
-<tr class="memitem:a653a48b6ad469d3f3532ed10844fad39" id="r_a653a48b6ad469d3f3532ed10844fad39"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#a653a48b6ad469d3f3532ed10844fad39">GetScreenWidth</a> () const</td></tr>
-<tr class="memitem:af02796b9de90366c6f7a43bd5b24ef3b" id="r_af02796b9de90366c6f7a43bd5b24ef3b"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#af02796b9de90366c6f7a43bd5b24ef3b">GetScreenHeight</a> () const</td></tr>
-<tr class="memitem:ab693e04a66f7286b1d1220bb8266d2fc" id="r_ab693e04a66f7286b1d1220bb8266d2fc"><td class="memItemLeft"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab693e04a66f7286b1d1220bb8266d2fc">GetFrameBufferFormat</a> () const</td></tr>
-<tr class="memitem:a581bf297386333c4cc558e18bdcd876b" id="r_a581bf297386333c4cc558e18bdcd876b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a581bf297386333c4cc558e18bdcd876b">GetScreenDiagonalInches</a> () const</td></tr>
-<tr class="memdesc:a581bf297386333c4cc558e18bdcd876b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's diagonal in inches, 0 when unknown.  <br /></td></tr>
+<tr class="memitem:ac51f7f84a5c4b04b3c6f3c2fb9b3ba18" id="r_ac51f7f84a5c4b04b3c6f3c2fb9b3ba18"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac51f7f84a5c4b04b3c6f3c2fb9b3ba18">RunUpdateCallbacks</a> (uint32_t deltaTime)</td></tr>
+<tr class="memdesc:ac51f7f84a5c4b04b3c6f3c2fb9b3ba18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the registered update callbacks once.  <br /></td></tr>
+<tr class="memitem:ad279c4f1cc4adbd134b1cf2481a9dc97" id="r_ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97">SetDisplay</a> (<a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *display, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memdesc:ad279c4f1cc4adbd134b1cf2481a9dc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when their package loads.  <br /></td></tr>
+<tr class="memitem:a1888204565b289959b5a30752b22c53d" id="r_a1888204565b289959b5a30752b22c53d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1888204565b289959b5a30752b22c53d">SetGameUpdateCallback</a> (const <a class="el" href="namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a">GameUpdateCallback</a> &amp;callback)</td></tr>
+<tr class="memdesc:a1888204565b289959b5a30752b22c53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback that runs game logic each frame.  <br /></td></tr>
+<tr class="memitem:a7ccefcee40f2ed08910890b3abe7e7f1" id="r_a7ccefcee40f2ed08910890b3abe7e7f1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7ccefcee40f2ed08910890b3abe7e7f1">SetInputSystem</a> (<a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> *is)</td></tr>
+<tr class="memdesc:a7ccefcee40f2ed08910890b3abe7e7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by an input package when it registers. The package owns <span class="tt">is</span>.  <br /></td></tr>
+<tr class="memitem:ad9c3f6b9e26c6ce75111e835ac87e18f" id="r_ad9c3f6b9e26c6ce75111e835ac87e18f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad9c3f6b9e26c6ce75111e835ac87e18f">SetRenderSystem</a> (<a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *rs)</td></tr>
+<tr class="memdesc:ad9c3f6b9e26c6ce75111e835ac87e18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a rendering package when it registers. The package owns <span class="tt">rs</span>.  <br /></td></tr>
+<tr class="memitem:ab422813f44ae7e4bae9fa64a4ea27364" id="r_ab422813f44ae7e4bae9fa64a4ea27364"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab422813f44ae7e4bae9fa64a4ea27364">SetRootScene</a> (<a class="el" href="class_deki_1_1_scene.html">Scene</a> *scene, bool takeOwnership=true)</td></tr>
+<tr class="memdesc:ab422813f44ae7e4bae9fa64a4ea27364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes <span class="tt">scene</span> the root scene.  <br /></td></tr>
 <tr class="memitem:a27379f8ce3b69a08bd6c2372fb0ca819" id="r_a27379f8ce3b69a08bd6c2372fb0ca819"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27379f8ce3b69a08bd6c2372fb0ca819">SetScreenDiagonalInches</a> (float inches)</td></tr>
-<tr class="memitem:a5417442513b5482aa479d6cfcead40d9" id="r_a5417442513b5482aa479d6cfcead40d9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5417442513b5482aa479d6cfcead40d9">GetScreenPixelsPerInch</a> () const</td></tr>
-<tr class="memdesc:a5417442513b5482aa479d6cfcead40d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels per inch of the screen at its current size, 0 when its diagonal or size is unknown.  <br /></td></tr>
-<tr class="memitem:ab14ae69910c913041659ab39812921b8" id="r_ab14ae69910c913041659ab39812921b8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab14ae69910c913041659ab39812921b8">GetScreenWidthMeters</a> () const</td></tr>
-<tr class="memdesc:ab14ae69910c913041659ab39812921b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The screen's size on the glass in meters, 0 when unknown.  <br /></td></tr>
-<tr class="memitem:a924c4f66f82b74d632317c53e4ad2f72" id="r_a924c4f66f82b74d632317c53e4ad2f72"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a924c4f66f82b74d632317c53e4ad2f72">GetScreenHeightMeters</a> () const</td></tr>
-<tr class="memitem:ac86bc8707bbf59bc346b84147fcf570b" id="r_ac86bc8707bbf59bc346b84147fcf570b"><td class="memItemLeft"><a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac86bc8707bbf59bc346b84147fcf570b">GetSettings</a> ()</td></tr>
-<tr class="memitem:a04c7170e729eefc88d88b8f7a30c70ec" id="r_a04c7170e729eefc88d88b8f7a30c70ec"><td class="memItemLeft">const <a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a04c7170e729eefc88d88b8f7a30c70ec">GetSettings</a> () const</td></tr>
+<tr class="memitem:a5f80489bb62c150b407b519c32f130ef" id="r_a5f80489bb62c150b407b519c32f130ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5f80489bb62c150b407b519c32f130ef">SetTargetFPS</a> (uint32_t fps)</td></tr>
+<tr class="memdesc:a5f80489bb62c150b407b519c32f130ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame rate the main loop aims for. The default is 30.  <br /></td></tr>
+<tr class="memitem:a7c84d67fb6c58a08bc099ddc86d1d864" id="r_a7c84d67fb6c58a08bc099ddc86d1d864"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c84d67fb6c58a08bc099ddc86d1d864">Shutdown</a> ()</td></tr>
+<tr class="memdesc:a7c84d67fb6c58a08bc099ddc86d1d864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts the engine down and frees its resources.  <br /></td></tr>
+<tr class="memitem:ad12ba05aed908f5b3771ddbcf3fd3257" id="r_ad12ba05aed908f5b3771ddbcf3fd3257"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad12ba05aed908f5b3771ddbcf3fd3257">StepMainLoop</a> ()</td></tr>
+<tr class="memdesc:ad12ba05aed908f5b3771ddbcf3fd3257"><td class="mdescLeft">&#160;</td><td class="mdescRight">One frame of RunMainLoop: false once the loop should end.  <br /></td></tr>
+<tr class="memitem:a115758fbb0b037dc2e651746ea25bca8" id="r_a115758fbb0b037dc2e651746ea25bca8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a115758fbb0b037dc2e651746ea25bca8">StopMainLoop</a> ()</td></tr>
+<tr class="memitem:aca66b772420ed1d6c00305a837d71b28" id="r_aca66b772420ed1d6c00305a837d71b28"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca66b772420ed1d6c00305a837d71b28">UnregisterUpdate</a> (size_t id)</td></tr>
+<tr class="memdesc:aca66b772420ed1d6c00305a837d71b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the callback that RegisterUpdate returned <span class="tt">id</span> for.  <br /></td></tr>
+<tr class="memitem:a50aa325effbdfd8df81f6ef8260683f0" id="r_a50aa325effbdfd8df81f6ef8260683f0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50aa325effbdfd8df81f6ef8260683f0">Update</a> (float deltaMs)</td></tr>
+<tr class="memdesc:a50aa325effbdfd8df81f6ef8260683f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs one frame. <span class="tt">deltaMs</span> is milliseconds since the last call.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -263,6 +318,165 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_deki_1_1_engine.html" title="Engine singleton: owns the scene system, lifecycle and frame loop.">Engine</a> singleton: owns the scene system, lifecycle and frame loop. </p>
 <p>Holds the active scene graph through <a class="el" href="class_deki_1_1_scene_system.html" title="Loads and owns the root scene, the scene that is running, and keeps the persistent objects that outli...">SceneSystem</a>, drives the component lifecycle (Awake, Start, Update) through LifecycleManager, and calls whichever render, input and display providers packages have installed. The providers are optional, so a headless or editor-hosted engine is the same class with null providers. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a8cec9f89c015309b85a9698b139feb25" name="a8cec9f89c015309b85a9698b139feb25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cec9f89c015309b85a9698b139feb25">&#9670;&#160;</a></span>CreateScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_scene.html">Scene</a> * Deki::Engine::CreateScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an empty scene. </p>
+
+</div>
+</div>
+<a id="accb0a91ea26debde81aec24438e49103" name="accb0a91ea26debde81aec24438e49103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb0a91ea26debde81aec24438e49103">&#9670;&#160;</a></span>GetDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> * Deki::Engine::GetDisplay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The active display, set by a display package through <a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97" title="Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when ...">SetDisplay()</a>, or nullptr when none is loaded. </p>
+
+</div>
+</div>
+<a id="a2a52f35697745b4c24f4e0404883ffa6" name="a2a52f35697745b4c24f4e0404883ffa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a52f35697745b4c24f4e0404883ffa6">&#9670;&#160;</a></span>GetDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Deki::Engine::GetDisplayName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Display name set by the registering package, such as "SDL3". </p>
+
+</div>
+</div>
+<a id="a314836fb4b16ba5c849505caa9587862" name="a314836fb4b16ba5c849505caa9587862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314836fb4b16ba5c849505caa9587862">&#9670;&#160;</a></span>GetFrameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * Deki::Engine::GetFrameBuffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab693e04a66f7286b1d1220bb8266d2fc" name="ab693e04a66f7286b1d1220bb8266d2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab693e04a66f7286b1d1220bb8266d2fc">&#9670;&#160;</a></span>GetFrameBufferFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> Deki::Engine::GetFrameBufferFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a018d7839bb8fa8506ddacbc15470cae0" name="a018d7839bb8fa8506ddacbc15470cae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018d7839bb8fa8506ddacbc15470cae0">&#9670;&#160;</a></span>GetHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_engine_host.html">EngineHost</a> &amp; Deki::Engine::GetHost </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1892f185237202e4378ff8b16f7d8143" name="a1892f185237202e4378ff8b16f7d8143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1892f185237202e4378ff8b16f7d8143">&#9670;&#160;</a></span>GetInputSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> * Deki::Engine::GetInputSystem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The input system, or nullptr when no input package is loaded. </p>
+
+</div>
+</div>
 <a id="a40915f4a293d3b18e9d4fc98b88f206b" name="a40915f4a293d3b18e9d4fc98b88f206b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40915f4a293d3b18e9d4fc98b88f206b">&#9670;&#160;</a></span>GetInstance()</h2>
 
@@ -282,6 +496,327 @@ Static Public Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b085d607962f132ddd1245b34579208" name="a8b085d607962f132ddd1245b34579208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b085d607962f132ddd1245b34579208">&#9670;&#160;</a></span>GetLastFrameTimings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html">FrameTimings</a> Deki::Engine::GetLastFrameTimings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How long the parts of the last frame took: see <a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html" title="How long the parts of a frame took, in milliseconds of the engine&#39;s clock: update (input,...">FrameTimings</a>. </p>
+
+</div>
+</div>
+<a id="afb485efe31d0e4421a86b51f8f425b36" name="afb485efe31d0e4421a86b51f8f425b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb485efe31d0e4421a86b51f8f425b36">&#9670;&#160;</a></span>GetLifecycleManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LifecycleManager * Deki::Engine::GetLifecycleManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c0282b5c9f63892c2f16575cb73fab0" name="a0c0282b5c9f63892c2f16575cb73fab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0282b5c9f63892c2f16575cb73fab0">&#9670;&#160;</a></span>GetRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> &amp; Deki::Engine::GetRenderer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The installed render system. </p>
+<p>Call it only when one is installed (see GetRenderSystem). </p>
+
+</div>
+</div>
+<a id="a1fef725b08eabb29fe8964c923ebcbee" name="a1fef725b08eabb29fe8964c923ebcbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fef725b08eabb29fe8964c923ebcbee">&#9670;&#160;</a></span>GetRenderSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> * Deki::Engine::GetRenderSystem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The render system, or nullptr when no rendering package is loaded. </p>
+
+</div>
+</div>
+<a id="ac1ee76a4d0401819bfdf362fa3a3d785" name="ac1ee76a4d0401819bfdf362fa3a3d785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ee76a4d0401819bfdf362fa3a3d785">&#9670;&#160;</a></span>GetRootScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_scene.html">Scene</a> * Deki::Engine::GetRootScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The root scene, or nullptr when none is set. </p>
+
+</div>
+</div>
+<a id="ac4a6702a2e457370a8a04c499588db0e" name="ac4a6702a2e457370a8a04c499588db0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a6702a2e457370a8a04c499588db0e">&#9670;&#160;</a></span>GetSceneSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a> &amp; Deki::Engine::GetSceneSystem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a581bf297386333c4cc558e18bdcd876b" name="a581bf297386333c4cc558e18bdcd876b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581bf297386333c4cc558e18bdcd876b">&#9670;&#160;</a></span>GetScreenDiagonalInches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenDiagonalInches </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The screen's diagonal in inches, 0 when unknown. </p>
+<p>A panel cannot report its size, so it comes from the board's platform file: a device build reads it from project_data.bin, and the editor sets it for the screen the Play view shows. </p>
+
+</div>
+</div>
+<a id="af02796b9de90366c6f7a43bd5b24ef3b" name="af02796b9de90366c6f7a43bd5b24ef3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02796b9de90366c6f7a43bd5b24ef3b">&#9670;&#160;</a></span>GetScreenHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Deki::Engine::GetScreenHeight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a924c4f66f82b74d632317c53e4ad2f72" name="a924c4f66f82b74d632317c53e4ad2f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924c4f66f82b74d632317c53e4ad2f72">&#9670;&#160;</a></span>GetScreenHeightMeters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenHeightMeters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5417442513b5482aa479d6cfcead40d9" name="a5417442513b5482aa479d6cfcead40d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5417442513b5482aa479d6cfcead40d9">&#9670;&#160;</a></span>GetScreenPixelsPerInch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenPixelsPerInch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pixels per inch of the screen at its current size, 0 when its diagonal or size is unknown. </p>
+<p>See ScreenPixelsPerInch. </p>
+
+</div>
+</div>
+<a id="a653a48b6ad469d3f3532ed10844fad39" name="a653a48b6ad469d3f3532ed10844fad39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653a48b6ad469d3f3532ed10844fad39">&#9670;&#160;</a></span>GetScreenWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Deki::Engine::GetScreenWidth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab14ae69910c913041659ab39812921b8" name="ab14ae69910c913041659ab39812921b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14ae69910c913041659ab39812921b8">&#9670;&#160;</a></span>GetScreenWidthMeters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Deki::Engine::GetScreenWidthMeters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The screen's size on the glass in meters, 0 when unknown. </p>
+<p>For laying out for a physically small screen: the 1.91" T-Display S3 AMOLED is
+0.044 x 0.020 m, the 2.8" T-Deck 0.057 x 0.043 m. </p>
+
+</div>
+</div>
+<a id="ac86bc8707bbf59bc346b84147fcf570b" name="ac86bc8707bbf59bc346b84147fcf570b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86bc8707bbf59bc346b84147fcf570b">&#9670;&#160;</a></span>GetSettings() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp; Deki::Engine::GetSettings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04c7170e729eefc88d88b8f7a30c70ec" name="a04c7170e729eefc88d88b8f7a30c70ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c7170e729eefc88d88b8f7a30c70ec">&#9670;&#160;</a></span>GetSettings() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp; Deki::Engine::GetSettings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -343,8 +878,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a018d7839bb8fa8506ddacbc15470cae0" name="a018d7839bb8fa8506ddacbc15470cae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a018d7839bb8fa8506ddacbc15470cae0">&#9670;&#160;</a></span>GetHost()</h2>
+<a id="ae05f48bde487c615d836e8632e1a1fd2" name="ae05f48bde487c615d836e8632e1a1fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05f48bde487c615d836e8632e1a1fd2">&#9670;&#160;</a></span>IsDirty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +888,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_deki_1_1_engine_host.html">EngineHost</a> &amp; Deki::Engine::GetHost </td>
+          <td class="memname">bool Deki::Engine::IsDirty </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -366,584 +901,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a7c84d67fb6c58a08bc099ddc86d1d864" name="a7c84d67fb6c58a08bc099ddc86d1d864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c84d67fb6c58a08bc099ddc86d1d864">&#9670;&#160;</a></span>Shutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::Shutdown </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shuts the engine down and frees its resources. </p>
-
-</div>
-</div>
-<a id="a50aa325effbdfd8df81f6ef8260683f0" name="a50aa325effbdfd8df81f6ef8260683f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50aa325effbdfd8df81f6ef8260683f0">&#9670;&#160;</a></span>Update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::Update </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaMs</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Runs one frame. <span class="tt">deltaMs</span> is milliseconds since the last call. </p>
-
-</div>
-</div>
-<a id="a871edbe49446a474bf01ce33ac46cb08" name="a871edbe49446a474bf01ce33ac46cb08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a871edbe49446a474bf01ce33ac46cb08">&#9670;&#160;</a></span>ProcessLifecycle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::ProcessLifecycle </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Runs Awake, Start and Update on the active scene, and handles a scene change made during them. </p>
-
-</div>
-</div>
-<a id="a04fb0c8ceba0ac711d1a57bc5b7a32b6" name="a04fb0c8ceba0ac711d1a57bc5b7a32b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04fb0c8ceba0ac711d1a57bc5b7a32b6">&#9670;&#160;</a></span>Render()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::Render </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Renders the current scene into the render system's framebuffer. </p>
-
-</div>
-</div>
-<a id="a822a52de412dea6adacd8d4b4f205b29" name="a822a52de412dea6adacd8d4b4f205b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a822a52de412dea6adacd8d4b4f205b29">&#9670;&#160;</a></span>PresentFrame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::PresentFrame </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends the render system's framebuffer to the display. </p>
-<p>When the display can present partial frames, only the changed rectangles are sent (<a class="el" href="class_deki_1_1_i_render_system.html#a5389605e99a36c3aec4484080760d007" title="The rectangles the last Render() changed, which Engine::PresentFrame passes to IDisplay::PresentRegio...">IRenderSystem::GetPresentRects</a> + <a class="el" href="class_deki_1_1_i_display.html#abc40d95a208de0c5913178981404a36f" title="Shows only rects of the framebuffer: framebuffer pixels, half-open, already clipped,...">IDisplay::PresentRegions</a>); otherwise the whole frame. Every present in the engine goes through here. </p>
-
-</div>
-</div>
-<a id="a5cf81001a1c805148c1ac6c41e0bcadf" name="a5cf81001a1c805148c1ac6c41e0bcadf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cf81001a1c805148c1ac6c41e0bcadf">&#9670;&#160;</a></span>RequestFullRefresh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::RequestFullRefresh </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Makes the next present cover the whole screen, including the display's own RequestFullRefresh. </p>
-
-</div>
-</div>
-<a id="abe04495f260fba16be76de7e19b2e233" name="abe04495f260fba16be76de7e19b2e233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe04495f260fba16be76de7e19b2e233">&#9670;&#160;</a></span>RegisterUpdate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Deki::Engine::RegisterUpdate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd">UpdateCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls <span class="tt">callback</span> every frame. Returns an id for UnregisterUpdate. </p>
-
-</div>
-</div>
-<a id="aca66b772420ed1d6c00305a837d71b28" name="aca66b772420ed1d6c00305a837d71b28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca66b772420ed1d6c00305a837d71b28">&#9670;&#160;</a></span>UnregisterUpdate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::UnregisterUpdate </td>
-          <td>(</td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes the callback that RegisterUpdate returned <span class="tt">id</span> for. </p>
-<p>A package DLL that registers a callback must unregister it before it unloads, or the engine calls into unmapped code on the next frame. </p>
-
-</div>
-</div>
-<a id="ac51f7f84a5c4b04b3c6f3c2fb9b3ba18" name="ac51f7f84a5c4b04b3c6f3c2fb9b3ba18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51f7f84a5c4b04b3c6f3c2fb9b3ba18">&#9670;&#160;</a></span>RunUpdateCallbacks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::RunUpdateCallbacks </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Runs the registered update callbacks once. </p>
-<p><span class="tt">deltaTime</span> is milliseconds since the previous call. <a class="el" href="#a50aa325effbdfd8df81f6ef8260683f0" title="Runs one frame. deltaMs is milliseconds since the last call.">Update()</a> does this itself; hosts that drive the lifecycle by hand (the editor's play mode) call it so package systems (tweens, ...) tick there as they do on a device. </p>
-
-</div>
-</div>
-<a id="ab422813f44ae7e4bae9fa64a4ea27364" name="ab422813f44ae7e4bae9fa64a4ea27364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab422813f44ae7e4bae9fa64a4ea27364">&#9670;&#160;</a></span>SetRootScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetRootScene </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>takeOwnership</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Makes <span class="tt">scene</span> the root scene. </p>
-<p>With <span class="tt">takeOwnership</span>, the engine deletes it when it is replaced or on shutdown. </p>
-
-</div>
-</div>
-<a id="af5fca93ae3d9ec6de6f31cedd8137aac" name="af5fca93ae3d9ec6de6f31cedd8137aac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5fca93ae3d9ec6de6f31cedd8137aac">&#9670;&#160;</a></span>OpenScene() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::OpenScene </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_deki_1_1_asset_ref_base.html">AssetRefBase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Opens the scene <span class="tt">scene</span> refers to (an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef&lt;Scene&gt;</a>) once this frame's updates are done: the scene being left is freed first, then the new one is loaded and started before it is drawn. </p>
-<p>The way for a game to change scenes: loading the next one itself and calling SetRootScene holds both in memory at once, more than a small board may have. A scene that does not exist is not opened, and the game stays where it is. </p>
-
-</div>
-</div>
-<a id="a015e9b32eac330f93ee3919cd5769593" name="a015e9b32eac330f93ee3919cd5769593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a015e9b32eac330f93ee3919cd5769593">&#9670;&#160;</a></span>OpenScene() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::OpenScene </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Opens the scene asset <span class="tt">guid</span>, as OpenScene above. </p>
-
-</div>
-</div>
-<a id="a3a1b4d4617a17a2881f9320f71c7a53c" name="a3a1b4d4617a17a2881f9320f71c7a53c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a1b4d4617a17a2881f9320f71c7a53c">&#9670;&#160;</a></span>ReleaseUnusedAssets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t Deki::Engine::ReleaseUnusedAssets </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees the cached assets nothing uses any more: those no <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> field of a component on a live object (the root scene and the persistent objects) names. </p>
-<p>An <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> held elsewhere loads its asset again when next asked, so keep assets in AssetRefs, not in raw pointers kept across frames. On a device OpenScene does this after every scene change; a game can call it after removing many objects. Returns how many assets were freed. </p>
-
-</div>
-</div>
-<a id="aa911854b72a1f40fe93cab51b8a713d3" name="aa911854b72a1f40fe93cab51b8a713d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa911854b72a1f40fe93cab51b8a713d3">&#9670;&#160;</a></span>OpenRequestedScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::OpenRequestedScene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Carries out an OpenScene request, if there is one. </p>
-<p><a class="el" href="#a50aa325effbdfd8df81f6ef8260683f0" title="Runs one frame. deltaMs is milliseconds since the last call.">Update()</a> does this itself; hosts that drive the lifecycle by hand (the editor's play mode) call it after their updates. </p>
-
-</div>
-</div>
-<a id="ac1ee76a4d0401819bfdf362fa3a3d785" name="ac1ee76a4d0401819bfdf362fa3a3d785"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1ee76a4d0401819bfdf362fa3a3d785">&#9670;&#160;</a></span>GetRootScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_scene.html">Scene</a> * Deki::Engine::GetRootScene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The root scene, or nullptr when none is set. </p>
-
-</div>
-</div>
-<a id="a8cec9f89c015309b85a9698b139feb25" name="a8cec9f89c015309b85a9698b139feb25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cec9f89c015309b85a9698b139feb25">&#9670;&#160;</a></span>CreateScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_scene.html">Scene</a> * Deki::Engine::CreateScene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates an empty scene. </p>
-
-</div>
-</div>
-<a id="a0c0282b5c9f63892c2f16575cb73fab0" name="a0c0282b5c9f63892c2f16575cb73fab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c0282b5c9f63892c2f16575cb73fab0">&#9670;&#160;</a></span>GetRenderer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> &amp; Deki::Engine::GetRenderer </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The installed render system. </p>
-<p>Call it only when one is installed (see GetRenderSystem). </p>
-
-</div>
-</div>
-<a id="ac4a6702a2e457370a8a04c499588db0e" name="ac4a6702a2e457370a8a04c499588db0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4a6702a2e457370a8a04c499588db0e">&#9670;&#160;</a></span>GetSceneSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_scene_system.html">SceneSystem</a> &amp; Deki::Engine::GetSceneSystem </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afb485efe31d0e4421a86b51f8f425b36" name="afb485efe31d0e4421a86b51f8f425b36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb485efe31d0e4421a86b51f8f425b36">&#9670;&#160;</a></span>GetLifecycleManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LifecycleManager * Deki::Engine::GetLifecycleManager </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1fef725b08eabb29fe8964c923ebcbee" name="a1fef725b08eabb29fe8964c923ebcbee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fef725b08eabb29fe8964c923ebcbee">&#9670;&#160;</a></span>GetRenderSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> * Deki::Engine::GetRenderSystem </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The render system, or nullptr when no rendering package is loaded. </p>
-
-</div>
-</div>
-<a id="ad9c3f6b9e26c6ce75111e835ac87e18f" name="ad9c3f6b9e26c6ce75111e835ac87e18f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9c3f6b9e26c6ce75111e835ac87e18f">&#9670;&#160;</a></span>SetRenderSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetRenderSystem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *</td>          <td class="paramname"><span class="paramname"><em>rs</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called by a rendering package when it registers. The package owns <span class="tt">rs</span>. </p>
-
-</div>
-</div>
-<a id="a1892f185237202e4378ff8b16f7d8143" name="a1892f185237202e4378ff8b16f7d8143"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1892f185237202e4378ff8b16f7d8143">&#9670;&#160;</a></span>GetInputSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> * Deki::Engine::GetInputSystem </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The input system, or nullptr when no input package is loaded. </p>
-
-</div>
-</div>
-<a id="a7ccefcee40f2ed08910890b3abe7e7f1" name="a7ccefcee40f2ed08910890b3abe7e7f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ccefcee40f2ed08910890b3abe7e7f1">&#9670;&#160;</a></span>SetInputSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetInputSystem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> *</td>          <td class="paramname"><span class="paramname"><em>is</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called by an input package when it registers. The package owns <span class="tt">is</span>. </p>
-
-</div>
-</div>
-<a id="accb0a91ea26debde81aec24438e49103" name="accb0a91ea26debde81aec24438e49103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accb0a91ea26debde81aec24438e49103">&#9670;&#160;</a></span>GetDisplay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> * Deki::Engine::GetDisplay </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The active display, set by a display package through <a class="el" href="#ad279c4f1cc4adbd134b1cf2481a9dc97" title="Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when ...">SetDisplay()</a>, or nullptr when none is loaded. </p>
-
-</div>
-</div>
-<a id="ad279c4f1cc4adbd134b1cf2481a9dc97" name="ad279c4f1cc4adbd134b1cf2481a9dc97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad279c4f1cc4adbd134b1cf2481a9dc97">&#9670;&#160;</a></span>SetDisplay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetDisplay </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *</td>          <td class="paramname"><span class="paramname"><em>display</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when their package loads. </p>
-<p>The package owns the display. The engine keeps the pointer and a name for diagnostics, and sizes the framebuffer to the display, so every target renders at its own native resolution. </p>
-
-</div>
-</div>
-<a id="a2a52f35697745b4c24f4e0404883ffa6" name="a2a52f35697745b4c24f4e0404883ffa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a52f35697745b4c24f4e0404883ffa6">&#9670;&#160;</a></span>GetDisplayName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string &amp; Deki::Engine::GetDisplayName </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Display name set by the registering package, such as "SDL3". </p>
+<p>True when a redraw is needed. </p>
 
 </div>
 </div>
@@ -999,6 +957,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7f563762340f0614675f0aa63431f404" name="a7f563762340f0614675f0aa63431f404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f563762340f0614675f0aa63431f404">&#9670;&#160;</a></span>IsRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Deki::Engine::IsRunning </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a181738d14fc6c50f385634eb26a420be" name="a181738d14fc6c50f385634eb26a420be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a181738d14fc6c50f385634eb26a420be">&#9670;&#160;</a></span>IsRuntimeMode()</h2>
 
@@ -1024,132 +1007,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>True on a device, and in the editor during play mode. </p>
 <p>In runtime mode components follow the device code path: no editor GUID sync, no font preview, no on-demand baking. </p>
-
-</div>
-</div>
-<a id="af28cb6b5d2eaa634f8d239fd4a0eb31e" name="af28cb6b5d2eaa634f8d239fd4a0eb31e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af28cb6b5d2eaa634f8d239fd4a0eb31e">&#9670;&#160;</a></span>SetRuntimeMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetRuntimeMode </td>
-          <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>runtime</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called by the editor's play mode when it starts and stops. </p>
-
-</div>
-</div>
-<a id="a1888204565b289959b5a30752b22c53d" name="a1888204565b289959b5a30752b22c53d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1888204565b289959b5a30752b22c53d">&#9670;&#160;</a></span>SetGameUpdateCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetGameUpdateCallback </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a">GameUpdateCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the callback that runs game logic each frame. </p>
-
-</div>
-</div>
-<a id="a5f80489bb62c150b407b519c32f130ef" name="a5f80489bb62c150b407b519c32f130ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f80489bb62c150b407b519c32f130ef">&#9670;&#160;</a></span>SetTargetFPS()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::SetTargetFPS </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>fps</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frame rate the main loop aims for. The default is 30. </p>
-
-</div>
-</div>
-<a id="a77cc93d4f64e7dff9c68fa9f7da20e67" name="a77cc93d4f64e7dff9c68fa9f7da20e67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77cc93d4f64e7dff9c68fa9f7da20e67">&#9670;&#160;</a></span>RunMainLoop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::RunMainLoop </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Runs the main loop (timing, platform updates, rendering, callbacks) until <a class="el" href="#a115758fbb0b037dc2e651746ea25bca8">StopMainLoop()</a>. </p>
-
-</div>
-</div>
-<a id="a115758fbb0b037dc2e651746ea25bca8" name="a115758fbb0b037dc2e651746ea25bca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a115758fbb0b037dc2e651746ea25bca8">&#9670;&#160;</a></span>StopMainLoop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Deki::Engine::StopMainLoop </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f563762340f0614675f0aa63431f404" name="a7f563762340f0614675f0aa63431f404"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f563762340f0614675f0aa63431f404">&#9670;&#160;</a></span>IsRunning()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Deki::Engine::IsRunning </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1180,8 +1037,265 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae05f48bde487c615d836e8632e1a1fd2" name="ae05f48bde487c615d836e8632e1a1fd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae05f48bde487c615d836e8632e1a1fd2">&#9670;&#160;</a></span>IsDirty()</h2>
+<a id="aa911854b72a1f40fe93cab51b8a713d3" name="aa911854b72a1f40fe93cab51b8a713d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa911854b72a1f40fe93cab51b8a713d3">&#9670;&#160;</a></span>OpenRequestedScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::OpenRequestedScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carries out an OpenScene request, if there is one. </p>
+<p><a class="el" href="#a50aa325effbdfd8df81f6ef8260683f0" title="Runs one frame. deltaMs is milliseconds since the last call.">Update()</a> does this itself; hosts that drive the lifecycle by hand (the editor's play mode) call it after their updates. </p>
+
+</div>
+</div>
+<a id="af5fca93ae3d9ec6de6f31cedd8137aac" name="af5fca93ae3d9ec6de6f31cedd8137aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fca93ae3d9ec6de6f31cedd8137aac">&#9670;&#160;</a></span>OpenScene() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::OpenScene </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_deki_1_1_asset_ref_base.html">AssetRefBase</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens the scene <span class="tt">scene</span> refers to (an <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef&lt;Scene&gt;</a>) once this frame's updates are done: the scene being left is freed first, then the new one is loaded and started before it is drawn. </p>
+<p>The way for a game to change scenes: loading the next one itself and calling SetRootScene holds both in memory at once, more than a small board may have. A scene that does not exist is not opened, and the game stays where it is. </p>
+
+</div>
+</div>
+<a id="a015e9b32eac330f93ee3919cd5769593" name="a015e9b32eac330f93ee3919cd5769593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015e9b32eac330f93ee3919cd5769593">&#9670;&#160;</a></span>OpenScene() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::OpenScene </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens the scene asset <span class="tt">guid</span>, as OpenScene above. </p>
+
+</div>
+</div>
+<a id="a822a52de412dea6adacd8d4b4f205b29" name="a822a52de412dea6adacd8d4b4f205b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a822a52de412dea6adacd8d4b4f205b29">&#9670;&#160;</a></span>PresentFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::PresentFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends the render system's framebuffer to the display. </p>
+<p>When the display can present partial frames, only the changed rectangles are sent (<a class="el" href="class_deki_1_1_i_render_system.html#a5389605e99a36c3aec4484080760d007" title="The rectangles the last Render() changed, which Engine::PresentFrame passes to IDisplay::PresentRegio...">IRenderSystem::GetPresentRects</a> + <a class="el" href="class_deki_1_1_i_display.html#abc40d95a208de0c5913178981404a36f" title="Shows only rects of the framebuffer: framebuffer pixels, half-open, already clipped,...">IDisplay::PresentRegions</a>); otherwise the whole frame. Every present in the engine goes through here. </p>
+
+</div>
+</div>
+<a id="a871edbe49446a474bf01ce33ac46cb08" name="a871edbe49446a474bf01ce33ac46cb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871edbe49446a474bf01ce33ac46cb08">&#9670;&#160;</a></span>ProcessLifecycle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::ProcessLifecycle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs Awake, Start and Update on the active scene, and handles a scene change made during them. </p>
+
+</div>
+</div>
+<a id="abe04495f260fba16be76de7e19b2e233" name="abe04495f260fba16be76de7e19b2e233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe04495f260fba16be76de7e19b2e233">&#9670;&#160;</a></span>RegisterUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::Engine::RegisterUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd">UpdateCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls <span class="tt">callback</span> every frame. Returns an id for UnregisterUpdate. </p>
+
+</div>
+</div>
+<a id="a3a1b4d4617a17a2881f9320f71c7a53c" name="a3a1b4d4617a17a2881f9320f71c7a53c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1b4d4617a17a2881f9320f71c7a53c">&#9670;&#160;</a></span>ReleaseUnusedAssets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Deki::Engine::ReleaseUnusedAssets </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees the cached assets nothing uses any more: those no <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> field of a component on a live object (the root scene and the persistent objects) names. </p>
+<p>An <a class="el" href="struct_deki_1_1_asset_ref.html" title="Typed asset reference: use it like a T*.">AssetRef</a> held elsewhere loads its asset again when next asked, so keep assets in AssetRefs, not in raw pointers kept across frames. On a device OpenScene does this after every scene change; a game can call it after removing many objects. Returns how many assets were freed. </p>
+
+</div>
+</div>
+<a id="a04fb0c8ceba0ac711d1a57bc5b7a32b6" name="a04fb0c8ceba0ac711d1a57bc5b7a32b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fb0c8ceba0ac711d1a57bc5b7a32b6">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::Render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renders the current scene into the render system's framebuffer. </p>
+
+</div>
+</div>
+<a id="a5cf81001a1c805148c1ac6c41e0bcadf" name="a5cf81001a1c805148c1ac6c41e0bcadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf81001a1c805148c1ac6c41e0bcadf">&#9670;&#160;</a></span>RequestFullRefresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::RequestFullRefresh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Makes the next present cover the whole screen, including the display's own RequestFullRefresh. </p>
+
+</div>
+</div>
+<a id="a77cc93d4f64e7dff9c68fa9f7da20e67" name="a77cc93d4f64e7dff9c68fa9f7da20e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77cc93d4f64e7dff9c68fa9f7da20e67">&#9670;&#160;</a></span>RunMainLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::RunMainLoop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs the main loop (timing, platform updates, rendering, callbacks) until <a class="el" href="#a115758fbb0b037dc2e651746ea25bca8">StopMainLoop()</a>. </p>
+
+</div>
+</div>
+<a id="ac51f7f84a5c4b04b3c6f3c2fb9b3ba18" name="ac51f7f84a5c4b04b3c6f3c2fb9b3ba18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51f7f84a5c4b04b3c6f3c2fb9b3ba18">&#9670;&#160;</a></span>RunUpdateCallbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::RunUpdateCallbacks </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs the registered update callbacks once. </p>
+<p><span class="tt">deltaTime</span> is milliseconds since the previous call. <a class="el" href="#a50aa325effbdfd8df81f6ef8260683f0" title="Runs one frame. deltaMs is milliseconds since the last call.">Update()</a> does this itself; hosts that drive the lifecycle by hand (the editor's play mode) call it so package systems (tweens, ...) tick there as they do on a device. </p>
+
+</div>
+</div>
+<a id="ad279c4f1cc4adbd134b1cf2481a9dc97" name="ad279c4f1cc4adbd134b1cf2481a9dc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad279c4f1cc4adbd134b1cf2481a9dc97">&#9670;&#160;</a></span>SetDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::SetDisplay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_i_display.html">IDisplay</a> *</td>          <td class="paramname"><span class="paramname"><em>display</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers the active display; SDL3Display, LovyanGFXDisplay, EditorDisplay and the like call it when their package loads. </p>
+<p>The package owns the display. The engine keeps the pointer and a name for diagnostics, and sizes the framebuffer to the display, so every target renders at its own native resolution. </p>
+
+</div>
+</div>
+<a id="a1888204565b289959b5a30752b22c53d" name="a1888204565b289959b5a30752b22c53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1888204565b289959b5a30752b22c53d">&#9670;&#160;</a></span>SetGameUpdateCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::SetGameUpdateCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a">GameUpdateCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the callback that runs game logic each frame. </p>
+
+</div>
+</div>
+<a id="a7ccefcee40f2ed08910890b3abe7e7f1" name="a7ccefcee40f2ed08910890b3abe7e7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccefcee40f2ed08910890b3abe7e7f1">&#9670;&#160;</a></span>SetInputSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1190,10 +1304,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Deki::Engine::IsDirty </td>
+          <td class="memname">void Deki::Engine::SetInputSystem </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_i_input_system.html">IInputSystem</a> *</td>          <td class="paramname"><span class="paramname"><em>is</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -1203,12 +1317,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>True when a redraw is needed. </p>
+<p>Called by an input package when it registers. The package owns <span class="tt">is</span>. </p>
 
 </div>
 </div>
-<a id="a8b085d607962f132ddd1245b34579208" name="a8b085d607962f132ddd1245b34579208"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b085d607962f132ddd1245b34579208">&#9670;&#160;</a></span>GetLastFrameTimings()</h2>
+<a id="ad9c3f6b9e26c6ce75111e835ac87e18f" name="ad9c3f6b9e26c6ce75111e835ac87e18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c3f6b9e26c6ce75111e835ac87e18f">&#9670;&#160;</a></span>SetRenderSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1217,10 +1331,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html">FrameTimings</a> Deki::Engine::GetLastFrameTimings </td>
+          <td class="memname">void Deki::Engine::SetRenderSystem </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_i_render_system.html">IRenderSystem</a> *</td>          <td class="paramname"><span class="paramname"><em>rs</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -1230,80 +1344,36 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>How long the parts of the last frame took: see <a class="el" href="struct_deki_1_1_engine_1_1_frame_timings.html" title="How long the parts of a frame took, in milliseconds of the engine&#39;s clock: update (input,...">FrameTimings</a>. </p>
+<p>Called by a rendering package when it registers. The package owns <span class="tt">rs</span>. </p>
 
 </div>
 </div>
-<a id="a314836fb4b16ba5c849505caa9587862" name="a314836fb4b16ba5c849505caa9587862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a314836fb4b16ba5c849505caa9587862">&#9670;&#160;</a></span>GetFrameBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t * Deki::Engine::GetFrameBuffer </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a653a48b6ad469d3f3532ed10844fad39" name="a653a48b6ad469d3f3532ed10844fad39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a653a48b6ad469d3f3532ed10844fad39">&#9670;&#160;</a></span>GetScreenWidth()</h2>
+<a id="ab422813f44ae7e4bae9fa64a4ea27364" name="ab422813f44ae7e4bae9fa64a4ea27364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab422813f44ae7e4bae9fa64a4ea27364">&#9670;&#160;</a></span>SetRootScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t Deki::Engine::GetScreenWidth </td>
+          <td class="memname">void Deki::Engine::SetRootScene </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="class_deki_1_1_scene.html">Scene</a> *</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af02796b9de90366c6f7a43bd5b24ef3b" name="af02796b9de90366c6f7a43bd5b24ef3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02796b9de90366c6f7a43bd5b24ef3b">&#9670;&#160;</a></span>GetScreenHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">int32_t Deki::Engine::GetScreenHeight </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>takeOwnership</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ab693e04a66f7286b1d1220bb8266d2fc" name="ab693e04a66f7286b1d1220bb8266d2fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab693e04a66f7286b1d1220bb8266d2fc">&#9670;&#160;</a></span>GetFrameBufferFormat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_deki.html#adf997e436efe620d60266910d8f63061">ColorFormat</a> Deki::Engine::GetFrameBufferFormat </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Makes <span class="tt">scene</span> the root scene. </p>
+<p>With <span class="tt">takeOwnership</span>, the engine deletes it when it is replaced or on shutdown. </p>
 
 </div>
 </div>
-<a id="a581bf297386333c4cc558e18bdcd876b" name="a581bf297386333c4cc558e18bdcd876b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a581bf297386333c4cc558e18bdcd876b">&#9670;&#160;</a></span>GetScreenDiagonalInches()</h2>
+<a id="af28cb6b5d2eaa634f8d239fd4a0eb31e" name="af28cb6b5d2eaa634f8d239fd4a0eb31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28cb6b5d2eaa634f8d239fd4a0eb31e">&#9670;&#160;</a></span>SetRuntimeMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1312,21 +1382,20 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Deki::Engine::GetScreenDiagonalInches </td>
+          <td class="memname">void Deki::Engine::SetRuntimeMode </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>runtime</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The screen's diagonal in inches, 0 when unknown. </p>
-<p>A panel cannot report its size, so it comes from the board's platform file: a device build reads it from project_data.bin, and the editor sets it for the screen the Play view shows. </p>
+<p>Called by the editor's play mode when it starts and stops. </p>
 
 </div>
 </div>
@@ -1347,111 +1416,117 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5417442513b5482aa479d6cfcead40d9" name="a5417442513b5482aa479d6cfcead40d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5417442513b5482aa479d6cfcead40d9">&#9670;&#160;</a></span>GetScreenPixelsPerInch()</h2>
+<a id="a5f80489bb62c150b407b519c32f130ef" name="a5f80489bb62c150b407b519c32f130ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f80489bb62c150b407b519c32f130ef">&#9670;&#160;</a></span>SetTargetFPS()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Deki::Engine::GetScreenPixelsPerInch </td>
+          <td class="memname">void Deki::Engine::SetTargetFPS </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>fps</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pixels per inch of the screen at its current size, 0 when its diagonal or size is unknown. </p>
-<p>See ScreenPixelsPerInch. </p>
+<p>Frame rate the main loop aims for. The default is 30. </p>
 
 </div>
 </div>
-<a id="ab14ae69910c913041659ab39812921b8" name="ab14ae69910c913041659ab39812921b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab14ae69910c913041659ab39812921b8">&#9670;&#160;</a></span>GetScreenWidthMeters()</h2>
+<a id="a7c84d67fb6c58a08bc099ddc86d1d864" name="a7c84d67fb6c58a08bc099ddc86d1d864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c84d67fb6c58a08bc099ddc86d1d864">&#9670;&#160;</a></span>Shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Deki::Engine::GetScreenWidthMeters </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The screen's size on the glass in meters, 0 when unknown. </p>
-<p>For laying out for a physically small screen: the 1.91" T-Display S3 AMOLED is
-0.044 x 0.020 m, the 2.8" T-Deck 0.057 x 0.043 m. </p>
-
-</div>
-</div>
-<a id="a924c4f66f82b74d632317c53e4ad2f72" name="a924c4f66f82b74d632317c53e4ad2f72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a924c4f66f82b74d632317c53e4ad2f72">&#9670;&#160;</a></span>GetScreenHeightMeters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Deki::Engine::GetScreenHeightMeters </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac86bc8707bbf59bc346b84147fcf570b" name="ac86bc8707bbf59bc346b84147fcf570b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac86bc8707bbf59bc346b84147fcf570b">&#9670;&#160;</a></span>GetSettings() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp; Deki::Engine::GetSettings </td>
+          <td class="memname">void Deki::Engine::Shutdown </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Shuts the engine down and frees its resources. </p>
 
 </div>
 </div>
-<a id="a04c7170e729eefc88d88b8f7a30c70ec" name="a04c7170e729eefc88d88b8f7a30c70ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04c7170e729eefc88d88b8f7a30c70ec">&#9670;&#160;</a></span>GetSettings() <span class="overload">[2/2]</span></h2>
+<a id="ad12ba05aed908f5b3771ddbcf3fd3257" name="ad12ba05aed908f5b3771ddbcf3fd3257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12ba05aed908f5b3771ddbcf3fd3257">&#9670;&#160;</a></span>StepMainLoop()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_deki_1_1_engine_settings.html">EngineSettings</a> &amp; Deki::Engine::GetSettings </td>
+          <td class="memname">bool Deki::Engine::StepMainLoop </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>One frame of RunMainLoop: false once the loop should end. </p>
+<p>A browser build calls it once per frame instead of looping. </p>
+
+</div>
+</div>
+<a id="a115758fbb0b037dc2e651746ea25bca8" name="a115758fbb0b037dc2e651746ea25bca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115758fbb0b037dc2e651746ea25bca8">&#9670;&#160;</a></span>StopMainLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::StopMainLoop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca66b772420ed1d6c00305a837d71b28" name="aca66b772420ed1d6c00305a837d71b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca66b772420ed1d6c00305a837d71b28">&#9670;&#160;</a></span>UnregisterUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::UnregisterUpdate </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the callback that RegisterUpdate returned <span class="tt">id</span> for. </p>
+<p>A package DLL that registers a callback must unregister it before it unloads, or the engine calls into unmapped code on the next frame. </p>
+
+</div>
+</div>
+<a id="a50aa325effbdfd8df81f6ef8260683f0" name="a50aa325effbdfd8df81f6ef8260683f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50aa325effbdfd8df81f6ef8260683f0">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deki::Engine::Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaMs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs one frame. <span class="tt">deltaMs</span> is milliseconds since the last call. </p>
 
 </div>
 </div>

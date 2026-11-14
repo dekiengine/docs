@@ -1,0 +1,354 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: 시작하기</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/ko/">
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">문서</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">매뉴얼</span></a>
+    <a class="deki-tab deki-tab-api" href="https://dekiengine.github.io/docs/annotated.html"><span class="deki-nav-label">API 참조</span></a>
+  </div>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/ko/"><span class="deki-nav-label">사이트</span></a>
+    <a href="https://dekiengine.com/ko/packages/"><span class="deki-nav-label">패키지</span></a>
+    <a href="https://dekiengine.com/ko/blog/"><span class="deki-nav-label">블로그</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/ko/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>다운로드</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/ko/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>후원</span></a>
+    <details class="deki-lang"><summary aria-label="언어: 한국어"><span class="deki-nav-label">한국어</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko" aria-current="true">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
+   </div>
+   <div id="projectbrief">임베디드 디스플레이와 데스크톱을 위한 모듈식 C++ 2D 엔진</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="검색" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-getting-started.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">시작하기 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md-ko_2guide-getting-started"></a></p>
+<p>에디터를 내려받는 것부터 내 코드를 디바이스에서 실행하는 것까지 안내합니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-install-the-editor"></a>
+에디터 설치</h1>
+<p><a href="https://github.com/dekiengine/deki-editor/releases/latest">최신 릴리스</a>에서 사용하는 컴퓨터에 맞는 압축 파일을 내려받아 원하는 곳에 풀고 <span class="tt">DekiEditor</span>를 실행합니다. 컴파일러가 압축 파일에 들어 있으므로 따로 설치할 것은 없습니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-create-a-project"></a>
+프로젝트 만들기</h1>
+<p><b>파일 → 새 프로젝트...</b> 를 선택하고 프로젝트 이름과 위치를 정합니다. 대상 플랫폼은 Desktop으로 둡니다. 디바이스는 나중에 추가할 수 있으며, 같은 프로젝트가 양쪽에서 실행됩니다.</p>
+<div class="image">
+<img src="gs-new-project.png" alt=""/>
+<div class="caption">
+새 프로젝트 대화 상자</div></div>
+    <p>프로젝트를 처음 열면 에디터가 패키지를 내려받아 빌드합니다. 몇 분 정도 걸립니다. 그다음부터는 몇 초면 열립니다.</p>
+<p>새 프로젝트에는 오브젝트 세 개가 있는 씬이 하나 있습니다. <b>Camera</b>, 그라데이션 <b>Sky</b>, 텍스트 <b>Hello</b> 입니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-look-around"></a>
+둘러보기</h1>
+<div class="image">
+<img src="gs-editor.png" alt=""/>
+<div class="caption">
+패널에 번호를 붙인 에디터</div></div>
+    <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">패널  </th><th class="markdownTableHeadNone">용도  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone"><b>하이어라키</b>  </td><td class="markdownTableBodyNone">씬에 있는 오브젝트  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone"><b>씬 뷰</b>  </td><td class="markdownTableBodyNone">오브젝트의 위치. 여기서 드래그할 수 있습니다  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone"><b>인스펙터</b>  </td><td class="markdownTableBodyNone">선택한 오브젝트의 컴포넌트와 그 값  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4  </td><td class="markdownTableBodyNone"><b>에셋 브라우저</b>  </td><td class="markdownTableBodyNone">내 파일. 코드는 <b>스크립트</b> 탭에 있습니다  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5  </td><td class="markdownTableBodyNone"><b>콘솔</b>  </td><td class="markdownTableBodyNone">엔진과 내 코드에서 나온 메시지  </td></tr>
+</table>
+<p>오브젝트는 씬 안의 한 위치입니다. 무엇을 하는지는 컴포넌트가 정하며, 인스펙터에 보이는 것은 모두 컴포넌트입니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-change-something"></a>
+바꿔 보기</h1>
+<div class="image">
+<img src="gs-inspector-text.png" alt=""/>
+<div class="caption">
+인스펙터의 텍스트 필드</div></div>
+    <ol type="1">
+<li>하이어라키에서 <b>Hello</b> 를 선택합니다.</li>
+<li>인스펙터에서 <b>텍스트</b> 를 다른 내용으로 바꿉니다.</li>
+<li>창 왼쪽 위의 <b>플레이</b> 를 누르거나 Ctrl+P를 누릅니다.</li>
+<li><b>정지</b> 를 누르고 Ctrl+S로 씬을 저장합니다.</li>
+</ol>
+<p>게임이 실행되는 동안 바꾼 내용은 멈추면 사라집니다. 실행 중에는 인스펙터에 안내가 표시됩니다.</p>
+<p>거리 단위는 미터입니다. 카메라는 화면 크기와 상관없이 위에서 아래까지 15미터를 보여 줍니다. <a href="guide-units.html">Units</a>와 <a href="guide-screens.html">Screens</a>를 참고하세요.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-write-a-component"></a>
+컴포넌트 작성하기</h1>
+<p>에셋 브라우저에서 <b>스크립트</b> 를 열고 마우스 오른쪽 버튼을 눌러 <b>C++ 스크립트 생성</b> 을 선택합니다. 이름은 <span class="tt">Bob</span>으로 합니다. 에디터가 <span class="tt">src/Bob.h</span>와 <span class="tt">src/Bob.cpp</span>를 만듭니다. 아무 텍스트 편집기로 열어 내용을 바꿉니다.</p>
+<div class="image">
+<img src="gs-create-script.png" alt=""/>
+<div class="caption">
+스크립트 탭의 C++ 스크립트 생성</div></div>
+    <p><span class="tt">src/Bob.h</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;deki/Engine.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line">DEKI_CATEGORY(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line">DEKI_DESCRIPTION(<span class="stringliteral">&quot;Moves the object up and down.&quot;</span>)</div>
+<div class="line">class Bob : public Deki::Component</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="comment">// DEKI_EXPORT shows a field in the Inspector and saves it in the scene.</span></div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    <span class="keywordtype">float</span> distance = 3.0f;</div>
+<div class="line"> </div>
+<div class="line">    DEKI_EXPORT</div>
+<div class="line">    <span class="keywordtype">float</span> secondsPerTrip = 2.0f;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> Start() <span class="keyword">override</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Update() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="keywordtype">float</span> m_StartY = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_Elapsed = 0.0f;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p><span class="tt">src/Bob.cpp</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Bob.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Bob::Start()</div>
+<div class="line">{</div>
+<div class="line">    m_StartY = GetOwner()-&gt;GetWorldY();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Bob::Update()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// The time since the last frame is in milliseconds.</span></div>
+<div class="line">    m_Elapsed += Deki::Time::GetDeltaTimeF() * 0.001f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> y = m_StartY + std::sin(m_Elapsed * 6.2831853f / secondsPerTrip) * distance;</div>
+<div class="line">    GetOwner()-&gt;SetWorldPosition(GetOwner()-&gt;GetWorldX(), y);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>두 파일을 저장하고 에디터로 돌아옵니다. 에디터가 변경을 감지해 코드를 다시 빌드합니다. 진행 상황과 컴파일 오류는 <b>활동</b> 패널에 표시됩니다.</p>
+<p><b>Hello</b> 를 선택하고 <b>컴포넌트 추가</b> 를 눌러 <b>Bob</b> 을 고릅니다. 필드 두 개가 인스펙터에 나타납니다. <b>플레이</b> 를 누르면 텍스트가 위아래로 움직입니다. 필드나 코드를 바꿔서 다시 해 보세요.</p>
+<div class="image">
+<img src="gs-add-component.png" alt=""/>
+<div class="caption">
+컴포넌트 추가 목록의 Bob</div></div>
+    <div class="image">
+<img src="gs-bob-inspector.png" alt=""/>
+<div class="caption">
+인스펙터에 표시된 Bob의 필드</div></div>
+    <div class="image">
+<img src="gs-bob-running.gif" alt=""/>
+<div class="caption">
+게임 실행 중 위아래로 움직이는 텍스트</div></div>
+    <p><span class="tt">Awake</span>, <span class="tt">Start</span>, <span class="tt">Update</span>는 컴포넌트가 받을 수 있는 호출입니다. 필요한 것만 선언합니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-put-it-on-a-device"></a>
+디바이스에서 실행하기</h1>
+<ol type="1">
+<li><b>보기 → 패키지 관리자</b> 를 열고 디바이스 패키지를 설치합니다. <b>디바이스</b> 에 지원 디바이스별 페이지가 있으며 패키지 이름이 나와 있습니다.</li>
+<li><b>빌드 → 빌드 패널</b> 을 열고 플랫폼 목록에서 디바이스를 선택합니다. 디바이스의 부트 씬과 설정이 프로젝트의 <span class="tt">platforms/</span> 폴더로 복사되며, 자유롭게 바꿀 수 있습니다.</li>
+<li>패널의 <b>툴체인</b> 항목에 디바이스용 컴파일러가 설치되어 있는지 표시됩니다. <b>설치되지 않음</b> 이라면 <b>빌드 → 플랫폼 관리자...</b> 를 열고 <b>툴체인</b> 에서 설치합니다. 용량이 크지만 한 번만 받으면 됩니다.</li>
+<li>디바이스를 연결하고 <b>배포 대상</b> 에서 고른 뒤 <b>빌드 후 플래시</b> 를 누릅니다. SD 카드에서 불러오는 휴대기는 <b>빌드 후 설치</b> 입니다.</li>
+</ol>
+<div class="image">
+<img src="gs-package-manager.png" alt=""/>
+<div class="caption">
+패키지 관리자의 디바이스 패키지</div></div>
+    <div class="image">
+<img src="gs-build-panel.png" alt=""/>
+<div class="caption">
+디바이스를 선택한 빌드 패널</div></div>
+    <p>디바이스의 첫 빌드는 몇 분 걸립니다. 만든 씬은 수정 없이 디바이스에서 실행됩니다. Deki가 아직 지원하지 않는 디바이스라면 <a href="guide-platforms.html">Platforms</a>를 참고하세요.</p>
+<p><b>브라우저에서 플레이할 수도 있습니다.</b> 플랫폼 목록에서 <b>Web</b>을 고르고 <b>Build &amp; Open in Browser</b>를 누르면, 게임이 웹 페이지로 빌드되어 브라우저에서 열립니다. 처음 한 번은 패널이 웹용 컴파일러 Emscripten(약 2GB)을 설치합니다. 같은 프로젝트라서 기기에서 돌아가는 것이 그대로 돌아가고, 페이지 파일은 어느 웹사이트에나 올릴 수 있습니다.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-where-to-go-next"></a>
+다음 단계</h1>
+<ul>
+<li><a href="guide-project-layout.html">Project layout</a>: 프로젝트 폴더의 구성</li>
+<li><a href="guide-sprite-system.html">Sprite System</a>과 <a href="guide-font-system.html">Font System</a>: 이미지와 텍스트</li>
+<li><a href="guide-ui-widgets.html">UI widgets</a>: 버튼, 슬라이더, 목록</li>
+<li><a href="guide-performance.html">Making it fast</a>와 <a href="guide-memory.html">Memory</a>: 디바이스의 속도나 메모리가 부족할 때</li>
+<li><a href="https://dekiengine.github.io/docs/">첫 페이지</a>의 패키지 목록: 사운드, 타일맵, 물리, 무선, 센서 </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="index.html">Deki</a></li><li class="navelem"><a href="section-start-here.html">여기서 시작</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['採用_3a_20プロジェクトはコピーを受け取る_0',['採用: プロジェクトはコピーを受け取る',['../guide-platforms.html#guide-platforms-adopting-the-project-gets-a-copy',1,'']]]
+  ['保存されるもの_0',['保存されるもの',['../guide-units.html#guide-units-what-is-stored',1,'']]]
 ];

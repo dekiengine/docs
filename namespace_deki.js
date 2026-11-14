@@ -1,30 +1,22 @@
 var namespace_deki =
 [
     [ "ComponentInterfaceAdapters", "namespace_deki_1_1_component_interface_adapters.html", [
-      [ "Register", "namespace_deki_1_1_component_interface_adapters.html#aa903de95127a189186deafaab3fc9d48", null ],
-      [ "Query", "namespace_deki_1_1_component_interface_adapters.html#ae5923b30d6906703d9835d61ec94ef8a", null ],
       [ "Find", "namespace_deki_1_1_component_interface_adapters.html#aff827d6f5054f5619657940288d08827", null ],
+      [ "Query", "namespace_deki_1_1_component_interface_adapters.html#ae5923b30d6906703d9835d61ec94ef8a", null ],
+      [ "Register", "namespace_deki_1_1_component_interface_adapters.html#aa903de95127a189186deafaab3fc9d48", null ],
       [ "Version", "namespace_deki_1_1_component_interface_adapters.html#ae3712da8c54149d949dbeb01cd8398bb", null ]
     ] ],
-    [ "Detail", "namespace_deki_1_1_detail.html", "namespace_deki_1_1_detail" ],
-    [ "Internal", "namespace_deki_1_1_internal.html", [
-      [ "AttachComponent", "namespace_deki_1_1_internal.html#af0536223a36e4c9b36f999ce13e19de2", null ],
-      [ "AddComponentByName", "namespace_deki_1_1_internal.html#a69e2254878a51bfbe85ba112fd279f4c", null ],
-      [ "DetachComponent", "namespace_deki_1_1_internal.html#ad8c5b6d79ad67a5a76fa6c851547a83f", null ],
-      [ "ReattachComponent", "namespace_deki_1_1_internal.html#acb29f953064064ba4e0c739bf40d4ff4", null ],
-      [ "ForgetComponentData", "namespace_deki_1_1_internal.html#a93831b98bb40ca68325e9706c760a9c2", null ]
-    ] ],
     [ "Math", "namespace_deki_1_1_math.html", [
-      [ "Clamp", "namespace_deki_1_1_math.html#a3a108faf1dd62ed7ddfdb980fff84611", null ],
-      [ "Min", "namespace_deki_1_1_math.html#a51165cdc75563c7fc6930010a00db3ec", null ],
-      [ "Max", "namespace_deki_1_1_math.html#a048add4b58587dcd44bae6f3e98e5b2e", null ],
       [ "Abs", "namespace_deki_1_1_math.html#a9f638a63027349a40dcef04e295c8444", null ],
+      [ "Clamp", "namespace_deki_1_1_math.html#a3a108faf1dd62ed7ddfdb980fff84611", null ],
       [ "Lerp", "namespace_deki_1_1_math.html#af23e654fa439af666ef7ae5f278a2e0b", null ],
-      [ "kPi", "namespace_deki_1_1_math.html#abd066c028b500c30da6608274a148b73", null ],
-      [ "kTwoPi", "namespace_deki_1_1_math.html#a68cf017f699f443f4e697b292d81be24", null ],
-      [ "kHalfPi", "namespace_deki_1_1_math.html#ad3a95f2c391927e563d762364bf9e6b9", null ],
+      [ "Max", "namespace_deki_1_1_math.html#a048add4b58587dcd44bae6f3e98e5b2e", null ],
+      [ "Min", "namespace_deki_1_1_math.html#a51165cdc75563c7fc6930010a00db3ec", null ],
       [ "kDegToRad", "namespace_deki_1_1_math.html#a75dcffbbf423789010d23aefe0d5b536", null ],
-      [ "kRadToDeg", "namespace_deki_1_1_math.html#afd43af21462594ff66ece182437f0c18", null ]
+      [ "kHalfPi", "namespace_deki_1_1_math.html#ad3a95f2c391927e563d762364bf9e6b9", null ],
+      [ "kPi", "namespace_deki_1_1_math.html#abd066c028b500c30da6608274a148b73", null ],
+      [ "kRadToDeg", "namespace_deki_1_1_math.html#afd43af21462594ff66ece182437f0c18", null ],
+      [ "kTwoPi", "namespace_deki_1_1_math.html#a68cf017f699f443f4e697b292d81be24", null ]
     ] ],
     [ "ProjectSettings", "namespace_deki_1_1_project_settings.html", "namespace_deki_1_1_project_settings" ],
     [ "SceneFormat", "namespace_deki_1_1_scene_format.html", "namespace_deki_1_1_scene_format" ],
@@ -34,9 +26,9 @@ var namespace_deki =
         [ "External", "namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3ba6758e9acc9dea41f82da60f7a403555c", null ],
         [ "Default", "namespace_deki_1_1_storage.html#a6549c0c533749e4eea2941369d0a0d3baea8ceced7b0f39b8552935c485f907f4", null ]
       ] ],
-      [ "GetPrefix", "namespace_deki_1_1_storage.html#a87d0e40bebfba67d189ed254694e6bed", null ],
       [ "AssetRoot", "namespace_deki_1_1_storage.html#a80514312cb1ade1ed87b1ebbfb0412f5", null ],
-      [ "BuildPath", "namespace_deki_1_1_storage.html#af4f661f23375e1474951dbf9d75d72be", null ]
+      [ "BuildPath", "namespace_deki_1_1_storage.html#af4f661f23375e1474951dbf9d75d72be", null ],
+      [ "GetPrefix", "namespace_deki_1_1_storage.html#a87d0e40bebfba67d189ed254694e6bed", null ]
     ] ],
     [ "AllocContext", "struct_deki_1_1_alloc_context.html", "struct_deki_1_1_alloc_context" ],
     [ "AssetLookupTable", "class_deki_1_1_asset_lookup_table.html", "class_deki_1_1_asset_lookup_table" ],
@@ -106,34 +98,21 @@ var namespace_deki =
     [ "Vector", "class_deki_1_1_vector.html", "class_deki_1_1_vector" ],
     [ "Vector2", "struct_deki_1_1_vector2.html", "struct_deki_1_1_vector2" ],
     [ "Vector3", "struct_deki_1_1_vector3.html", "struct_deki_1_1_vector3" ],
-    [ "InterfaceAdapter", "namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d", null ],
-    [ "UpdateCallback", "namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd", null ],
-    [ "GameUpdateCallback", "namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a", null ],
-    [ "LogCallback", "namespace_deki.html#a5deed6f848dd408e513e8e9af4d1e80b", null ],
     [ "ComponentsMigration", "namespace_deki.html#a4ae9dd026fbc696a38ea30128cb24426", null ],
     [ "ComponentType", "namespace_deki.html#af0f99afe0b878e72e45ae4c27acc282d", null ],
-    [ "TextureFilter", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fc", [
-      [ "Point", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca2a3cd5946cfd317eb99c3d32e35e2d4c", null ],
-      [ "Bilinear", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fcaaf17c98bbd83c27d6426d2ff3fa81d7f", null ],
-      [ "Trilinear", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d", null ]
+    [ "GameUpdateCallback", "namespace_deki.html#a103f7cb2b6266861a3487322e84d2e7a", null ],
+    [ "InterfaceAdapter", "namespace_deki.html#ac1a8930b53b509439baac5ea7b71948d", null ],
+    [ "LogCallback", "namespace_deki.html#a5deed6f848dd408e513e8e9af4d1e80b", null ],
+    [ "UpdateCallback", "namespace_deki.html#a587eed65587c28fcaa1cc6ca2d15a5dd", null ],
+    [ "AnchorUpdate", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8", [
+      [ "Always", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8a68eec46437c384d8dad18d5464ebc35c", null ],
+      [ "Once", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8ae1a9dc9f23534e63de9df0d540ac1611", null ]
     ] ],
     [ "ColorFormat", "namespace_deki.html#adf997e436efe620d60266910d8f63061", [
       [ "RGB565", "namespace_deki.html#adf997e436efe620d60266910d8f63061a3b73e4d15701467ed72f157ffaff680a", null ],
       [ "RGB888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a30ff380a3be74628024063a99fba10f0", null ],
       [ "ARGB8888", "namespace_deki.html#adf997e436efe620d60266910d8f63061a955fe32e696996cd45966e01eb582251", null ],
       [ "RGB565A8", "namespace_deki.html#adf997e436efe620d60266910d8f63061a689ff49e67fec7456408b89a7eb71def", null ]
-    ] ],
-    [ "ProjectionMode", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603", [
-      [ "Orthographic", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603a03424250432f2aa71de95579d2c0eaeb", null ],
-      [ "Perspective", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603aa80420eef88d11f77532f1b9cb467fa3", null ]
-    ] ],
-    [ "UnitMode", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3", [
-      [ "Pixels", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1", null ],
-      [ "Meters", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469", null ]
-    ] ],
-    [ "TemperatureUnit", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0d", [
-      [ "Celsius", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0da1ef292971cad34ecb884283503bf86c1", null ],
-      [ "Fahrenheit", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0dad119045e099e65e84e69e73b620a52e3", null ]
     ] ],
     [ "LogLevel", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7", [
       [ "Editor", "namespace_deki.html#a1a59810902377e4b9a664acb09b02eb7a344a7f427fb765610ef96eb7bce95257", null ],
@@ -161,6 +140,10 @@ var namespace_deki =
       [ "Frequency", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270a7cf395303ce3665a9834721d4b748e4b", null ],
       [ "Time", "namespace_deki.html#a39ae59dff82c19018ec967d5186a7270aa76d4ef5f3f6a672bbfab2865563e530", null ]
     ] ],
+    [ "ProjectionMode", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603", [
+      [ "Orthographic", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603a03424250432f2aa71de95579d2c0eaeb", null ],
+      [ "Perspective", "namespace_deki.html#aa4a9a8c9f8aa8578ec1cac2acc9ef603aa80420eef88d11f77532f1b9cb467fa3", null ]
+    ] ],
     [ "PropertyType", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4", [
       [ "Int8", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a7d839b2c12bfd40ac121b4cc9e81c539", null ],
       [ "Int16", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a39bc2ae44b184207f560ff8619823208", null ],
@@ -184,6 +167,26 @@ var namespace_deki =
       [ "NodeRef", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a94ee90aa44bec25a05943e647ce5652b", null ],
       [ "PropertyRef", "namespace_deki.html#a12d52725300eb20f76a0597fc3e32df4a062397802272042e46715100b3c63f99", null ]
     ] ],
+    [ "ScreenPoint", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1", [
+      [ "TopLeft", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1ab32beb056fbfe36afbabc6c88c81ab36", null ],
+      [ "Top", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1aa4ffdcf0dc1f31b9acaf295d75b51d00", null ],
+      [ "TopRight", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a1d85a557894c340c318493f33bfa8efb", null ],
+      [ "Left", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a945d5e233cf7d6240f6b783b36a374ff", null ],
+      [ "Center", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a4f1f6016fc9f3f2353c0cc7c67b292bd", null ],
+      [ "Right", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a92b09c7c48c520c3c55e497875da437c", null ],
+      [ "BottomLeft", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a98e5a1c44509157ebcaf46c515c78875", null ],
+      [ "Bottom", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a2ad9d63b69c4a10a5cc9cad923133bc4", null ],
+      [ "BottomRight", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a9146bfc669fddc88db2c4d89297d0e9a", null ]
+    ] ],
+    [ "TemperatureUnit", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0d", [
+      [ "Celsius", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0da1ef292971cad34ecb884283503bf86c1", null ],
+      [ "Fahrenheit", "namespace_deki.html#a7eacd99c8f3985872e3761875b403c0dad119045e099e65e84e69e73b620a52e3", null ]
+    ] ],
+    [ "TextureFilter", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fc", [
+      [ "Point", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca2a3cd5946cfd317eb99c3d32e35e2d4c", null ],
+      [ "Bilinear", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fcaaf17c98bbd83c27d6426d2ff3fa81d7f", null ],
+      [ "Trilinear", "namespace_deki.html#a50a75bf86f88c438697d0ef96de468fca969a7b6f1f3951ef293b3ff281dc293d", null ]
+    ] ],
     [ "TransformField", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64", [
       [ "None", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "X", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a02129bb861061d1a052c592e2dc6b383", null ],
@@ -199,83 +202,72 @@ var namespace_deki =
       [ "RotationY", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a7527ced5a5153f3b21e31c4b177c2ea7", null ],
       [ "ScaleZ", "namespace_deki.html#aaab68b255b70d4b9aa5b682d1a46bf64a663d4649fab1771d486c47ba85158fe4", null ]
     ] ],
-    [ "ScreenPoint", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1", [
-      [ "TopLeft", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1ab32beb056fbfe36afbabc6c88c81ab36", null ],
-      [ "Top", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1aa4ffdcf0dc1f31b9acaf295d75b51d00", null ],
-      [ "TopRight", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a1d85a557894c340c318493f33bfa8efb", null ],
-      [ "Left", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a945d5e233cf7d6240f6b783b36a374ff", null ],
-      [ "Center", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a4f1f6016fc9f3f2353c0cc7c67b292bd", null ],
-      [ "Right", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a92b09c7c48c520c3c55e497875da437c", null ],
-      [ "BottomLeft", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a98e5a1c44509157ebcaf46c515c78875", null ],
-      [ "Bottom", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a2ad9d63b69c4a10a5cc9cad923133bc4", null ],
-      [ "BottomRight", "namespace_deki.html#a3d3ef28348cf27711e02d627c2a285e1a9146bfc669fddc88db2c4d89297d0e9a", null ]
+    [ "UnitMode", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3", [
+      [ "Pixels", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3ac3d2f5d37334dc978fd8b17fc77408a1", null ],
+      [ "Meters", "namespace_deki.html#a916098f39eb516cdab1aab85d4c07ca3a80b4a3eed88aed8a1c7d8a4418b7f469", null ]
     ] ],
-    [ "AnchorUpdate", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8", [
-      [ "Always", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8a68eec46437c384d8dad18d5464ebc35c", null ],
-      [ "Once", "namespace_deki.html#a2dc16795cfd937d3c6561139c2ae9df8ae1a9dc9f23534e63de9df0d540ac1611", null ]
-    ] ],
-    [ "TextureFilterFromFlags", "namespace_deki.html#af17e9299e575fc846cdf14702e5bb178", null ],
-    [ "TextureFilterToFlags", "namespace_deki.html#a326691f765441af45d289a5b1ca53573", null ],
-    [ "TextureFilterName", "namespace_deki.html#a775ed9afca48408f3e4eede734747c30", null ],
-    [ "ParseTextureFilter", "namespace_deki.html#a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93", null ],
-    [ "ColorToHex", "namespace_deki.html#a4a409d33bd4fc6d79328a7c4009f4a43", null ],
+    [ "BindPropertyRef", "namespace_deki.html#a52c12dac3cca66d1f6a511fa5a05a4b1", null ],
     [ "ColorFromHex", "namespace_deki.html#a8aec643e6cd3fcf4a68620bedaec4946", null ],
+    [ "ColorToHex", "namespace_deki.html#a4a409d33bd4fc6d79328a7c4009f4a43", null ],
+    [ "CompareBoundProperty", "namespace_deki.html#af0f5e2fdb1bd009edf4a00679b7a4f91", null ],
+    [ "DekiVariableFieldRef", "namespace_deki.html#a70726b336ad4225d680c9ecad81b9a6c", null ],
+    [ "Deserialize", "namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514", null ],
+    [ "EnumIndexForValue", "namespace_deki.html#aa95bec25813f1604a2f55134af34f8d3", null ],
+    [ "EnumNameForValue", "namespace_deki.html#afbf29718303fbdf46b25cd50d80aa4ab", null ],
+    [ "EnumValueForName", "namespace_deki.html#a3dc1b030a7759538fa38b1c92881cd44", null ],
+    [ "FindInSubtree", "namespace_deki.html#a812910f374e004e5d124fa69293e6e2b", null ],
     [ "FrameBufferBytes", "namespace_deki.html#a342cf845b27a0d51e29a411e4f285311", null ],
     [ "GenerateDeterministicGuid", "namespace_deki.html#ab9b3908bce3bf5cd611d24c82b907d45", null ],
-    [ "Main", "namespace_deki.html#af64b4d9477b213c321f2be937b2f892f", null ],
-    [ "VisitSubtree", "namespace_deki.html#a22ea94289b214746512305d8bc075c4d", null ],
-    [ "VisitActiveSubtree", "namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff", null ],
-    [ "FindInSubtree", "namespace_deki.html#a812910f374e004e5d124fa69293e6e2b", null ],
-    [ "HashName", "namespace_deki.html#a25ae7b8519675964d4d185d32755d5b4", null ],
-    [ "MakeHandWrittenTypeInfo", "namespace_deki.html#af8b529d2c587228cd97fbbb5828c8ef9", null ],
-    [ "TypeInfoFor", "namespace_deki.html#a0ee1a75bd2d63c21ff742cba281378d0", null ],
-    [ "EnumNameForValue", "namespace_deki.html#afbf29718303fbdf46b25cd50d80aa4ab", null ],
-    [ "SameNameIgnoringStyle", "namespace_deki.html#a3dab441e50a318806ab2dfbd7c4836ff", null ],
-    [ "EnumValueForName", "namespace_deki.html#a3dc1b030a7759538fa38b1c92881cd44", null ],
-    [ "EnumIndexForValue", "namespace_deki.html#aa95bec25813f1604a2f55134af34f8d3", null ],
+    [ "GetNodePropertyRef", "namespace_deki.html#a2730682285fdf63f9933682d2cc8ecf9", null ],
+    [ "GetNodePropertyRef", "namespace_deki.html#ad6aaef028fc14afac69c3294f9da6c76", null ],
     [ "GetPropertyRef", "namespace_deki.html#ab2db578a37de2fc62dd9e4e740e861c1", null ],
     [ "GetPropertyRef", "namespace_deki.html#a3fa6aaff29f2822152add80eb3608a8d", null ],
     [ "GetPropertyValue", "namespace_deki.html#abbe9d8bcb5d306a8eb2bc2c54410d9ef", null ],
-    [ "SetPropertyValue", "namespace_deki.html#a8a96d4eb7699c21436cb97c84165a7ff", null ],
-    [ "GetNodePropertyRef", "namespace_deki.html#ad6aaef028fc14afac69c3294f9da6c76", null ],
-    [ "GetNodePropertyRef", "namespace_deki.html#a2730682285fdf63f9933682d2cc8ecf9", null ],
-    [ "DekiVariableFieldRef", "namespace_deki.html#a70726b336ad4225d680c9ecad81b9a6c", null ],
-    [ "TransformFields", "namespace_deki.html#a186e1c5bc7660b81c99c3dcdfa4ebcb2", null ],
-    [ "TransformFieldNames", "namespace_deki.html#aae775802987db1312e287587e7bf54cd", null ],
-    [ "BindPropertyRef", "namespace_deki.html#a52c12dac3cca66d1f6a511fa5a05a4b1", null ],
-    [ "ParsePropertyLiteral", "namespace_deki.html#a1061c4955314ade075cee1b2539ab6ea", null ],
-    [ "ParsePropertyLiteral", "namespace_deki.html#accd2015e657d1f51a8f90173ffaedd70", null ],
-    [ "ReadBoundProperty", "namespace_deki.html#ac71f6a0a04342195f29156e09527c445", null ],
-    [ "ReadBoundProperty2", "namespace_deki.html#a6b461fcf650d430f0fbeffd24b1e6205", null ],
-    [ "WriteBoundNumbers", "namespace_deki.html#a4f2bdda636d292108b0ff5194ac30881", null ],
-    [ "WriteBoundProperty", "namespace_deki.html#ad008be6af01fc7dbb33e9a1f8731800c", null ],
-    [ "CompareBoundProperty", "namespace_deki.html#af0f5e2fdb1bd009edf4a00679b7a4f91", null ],
-    [ "Serialize", "namespace_deki.html#a797e40e5960acce21da40512527a5aab", null ],
-    [ "Deserialize", "namespace_deki.html#aaf6aa6292ce6944fa8065a141d8d8514", null ],
-    [ "RegisterComponentsMigration", "namespace_deki.html#a140e0cd05905e8ddc4ab57b76969e37f", null ],
-    [ "UnregisterComponentsMigration", "namespace_deki.html#a50be485974bd553e8b135c37a2d81ceb", null ],
-    [ "RunComponentsMigrations", "namespace_deki.html#ac03b5d23317a6338d5f51363919102d2", null ],
-    [ "PixelPerfectMultiple", "namespace_deki.html#a72bf4246fe7072801c61bcadfa52bf38", null ],
-    [ "OrthoPixelsPerMeter", "namespace_deki.html#ad8c6a44e999b023bdd129cca800250d6", null ],
-    [ "ScreenPixelsPerInch", "namespace_deki.html#ab2107cb2c325f26d95d9dac0f357d92a", null ],
+    [ "HashName", "namespace_deki.html#a25ae7b8519675964d4d185d32755d5b4", null ],
     [ "HashString", "namespace_deki.html#a83e2a8e59b9ade12ac092ce334e4bb50", null ],
     [ "HashStringLen", "namespace_deki.html#a693b81cbcc3e331d8b8695e6d9959971", null ],
     [ "HashStringView", "namespace_deki.html#adfed7ba4e49294c4ae09279eeec541c7", null ],
-    [ "TypeNameOf", "namespace_deki.html#ab4ce6a1ab2db25d06057dc286358905c", null ],
-    [ "TypeShortNameOf", "namespace_deki.html#af2156a31e5357cd57b0dd0155297d444", null ],
-    [ "TypeId", "namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240", null ],
-    [ "TypeName", "namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e", null ],
-    [ "TypeShortName", "namespace_deki.html#a3b4689dd54bc12d6440e12f40ef2147e", null ],
+    [ "Main", "namespace_deki.html#af64b4d9477b213c321f2be937b2f892f", null ],
+    [ "MakeHandWrittenTypeInfo", "namespace_deki.html#af8b529d2c587228cd97fbbb5828c8ef9", null ],
     [ "operator*", "namespace_deki.html#a3246873f72896f3ffee887e1733bffbf", null ],
     [ "operator*", "namespace_deki.html#aa6f1be1b762c93604b37edc421c4d81b", null ],
-    [ "SetImGuiContext", "namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a", null ],
+    [ "OrthoPixelsPerMeter", "namespace_deki.html#ad8c6a44e999b023bdd129cca800250d6", null ],
+    [ "ParsePropertyLiteral", "namespace_deki.html#accd2015e657d1f51a8f90173ffaedd70", null ],
+    [ "ParsePropertyLiteral", "namespace_deki.html#a1061c4955314ade075cee1b2539ab6ea", null ],
+    [ "ParseTextureFilter", "namespace_deki.html#a4df2ffbe7b3ecd8f8e8e6c8f7ed7fe93", null ],
+    [ "PixelPerfectMultiple", "namespace_deki.html#a72bf4246fe7072801c61bcadfa52bf38", null ],
+    [ "ReadBoundProperty", "namespace_deki.html#ac71f6a0a04342195f29156e09527c445", null ],
+    [ "ReadBoundProperty2", "namespace_deki.html#a6b461fcf650d430f0fbeffd24b1e6205", null ],
+    [ "RegisterComponentsMigration", "namespace_deki.html#a140e0cd05905e8ddc4ab57b76969e37f", null ],
+    [ "RunComponentsMigrations", "namespace_deki.html#ac03b5d23317a6338d5f51363919102d2", null ],
+    [ "SameNameIgnoringStyle", "namespace_deki.html#a3dab441e50a318806ab2dfbd7c4836ff", null ],
+    [ "ScreenPixelsPerInch", "namespace_deki.html#ab2107cb2c325f26d95d9dac0f357d92a", null ],
+    [ "Serialize", "namespace_deki.html#a797e40e5960acce21da40512527a5aab", null ],
     [ "SetImGuiAllocators", "namespace_deki.html#a842fa2a17af886ab760e861d44444ba2", null ],
+    [ "SetImGuiContext", "namespace_deki.html#a12ce8cb6a612dad11412b474ae3ca82a", null ],
+    [ "SetPropertyValue", "namespace_deki.html#a8a96d4eb7699c21436cb97c84165a7ff", null ],
+    [ "TextureFilterFromFlags", "namespace_deki.html#af17e9299e575fc846cdf14702e5bb178", null ],
+    [ "TextureFilterName", "namespace_deki.html#a775ed9afca48408f3e4eede734747c30", null ],
+    [ "TextureFilterToFlags", "namespace_deki.html#a326691f765441af45d289a5b1ca53573", null ],
+    [ "TransformFieldNames", "namespace_deki.html#aae775802987db1312e287587e7bf54cd", null ],
+    [ "TransformFields", "namespace_deki.html#a186e1c5bc7660b81c99c3dcdfa4ebcb2", null ],
+    [ "TypeId", "namespace_deki.html#ab5bdec23918eba2d71e607be5fb33240", null ],
+    [ "TypeInfoFor", "namespace_deki.html#a0ee1a75bd2d63c21ff742cba281378d0", null ],
+    [ "TypeName", "namespace_deki.html#a2888277aacc64b2b8fb8aa20f1e6719e", null ],
+    [ "TypeNameOf", "namespace_deki.html#ab4ce6a1ab2db25d06057dc286358905c", null ],
+    [ "TypeShortName", "namespace_deki.html#a3b4689dd54bc12d6440e12f40ef2147e", null ],
+    [ "TypeShortNameOf", "namespace_deki.html#af2156a31e5357cd57b0dd0155297d444", null ],
+    [ "UnregisterComponentsMigration", "namespace_deki.html#a50be485974bd553e8b135c37a2d81ceb", null ],
+    [ "VisitActiveSubtree", "namespace_deki.html#afec29a46b7bda27dc3f20b41794551ff", null ],
+    [ "VisitSubtree", "namespace_deki.html#a22ea94289b214746512305d8bc075c4d", null ],
+    [ "WriteBoundNumbers", "namespace_deki.html#a4f2bdda636d292108b0ff5194ac30881", null ],
+    [ "WriteBoundProperty", "namespace_deki.html#ad008be6af01fc7dbb33e9a1f8731800c", null ],
     [ "kDpackMagic", "namespace_deki.html#a788cf5d4318f9011c690b30dcec7bb1f", null ],
     [ "kDpackVersion", "namespace_deki.html#a20b0d1f232d8ad518825c4cdc99f93d5", null ],
-    [ "kTextureFilterFlagShift", "namespace_deki.html#aeb586fbc686a92a8a66e18b75e20ab13", null ],
-    [ "kTextureFilterFlagMask", "namespace_deki.html#a9ce3803f33fac689d97c2a01f8b1de58", null ],
+    [ "kMetersPerInch", "namespace_deki.html#afc1e4c9cbfb35f1111bb8d71dd1b4ea9", null ],
     [ "kRGB565BigEndian", "namespace_deki.html#a09b9d7c17742ee078ceb521d4d3c07eb", null ],
+    [ "kTextureFilterFlagMask", "namespace_deki.html#a9ce3803f33fac689d97c2a01f8b1de58", null ],
+    [ "kTextureFilterFlagShift", "namespace_deki.html#aeb586fbc686a92a8a66e18b75e20ab13", null ],
     [ "kTransformRefComponent", "namespace_deki.html#aa88aafaeabf5ad00e9ff8a3721514f0c", null ],
-    [ "kVariableRefComponent", "namespace_deki.html#a5cf24745dd885deb3b83037a873e9938", null ],
-    [ "kMetersPerInch", "namespace_deki.html#afc1e4c9cbfb35f1111bb8d71dd1b4ea9", null ]
+    [ "kVariableRefComponent", "namespace_deki.html#a5cf24745dd885deb3b83037a873e9938", null ]
 ];

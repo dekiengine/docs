@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['数据手册不使用_20si，这没有问题_0',['数据手册不使用 SI，这没有问题',['../guide-units.html#guide-units-datasheets-do-not-use-si-and-that-is-fine',1,'']]],
-  ['数量在运行时变化时_1',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 数量在运行时变化时',['../guide-memory.html#autotoc_md13',1,'']]]
+  ['平台从哪里来_0',['平台从哪里来',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]],
+  ['平台层：imemoryprovider_1',['平台层：&lt;span class=&quot;tt&quot;&gt;IMemoryProvider&lt;/span&gt;',['../guide-memory.html#autotoc_md15',1,'']]],
+  ['平台是什么_2',['平台是什么',['../guide-platforms.html#guide-platforms-what-a-platform-is',1,'']]],
+  ['平台_3',['平台',['../guide-platforms.html',1,'section-devices']]]
 ];

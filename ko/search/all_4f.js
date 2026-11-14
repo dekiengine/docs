@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['부모_20source_20프레임인_20이유_0',['guid = 부모, source = 프레임인 이유',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
+  ['베이크_20권한_3a_20fontsynchandler_0',['베이크 권한: FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['查明内存去了哪里_0',['查明内存去了哪里',['../guide-memory.html#autotoc_md9',1,'']]]
+  ['快速入门_0',['快速入门',['../guide-getting-started.html',1,'section-start-here']]]
 ];

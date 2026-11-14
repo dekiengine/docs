@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['동기화되는_20방식_0',['font.guid가 동기화되는 방식',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
+  ['대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#autotoc_md7',1,'']]]
 ];

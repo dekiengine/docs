@@ -13,8 +13,8 @@ var _feature_resolver_8h =
       [ "DekiEditor::FeatureState::ForcedOff", "namespace_deki_editor.html#aaf7c4d4a830420db63a30d992d937642a67fbb19beaab450abf96596704779bd6", null ],
       [ "DekiEditor::FeatureState::Stripped", "namespace_deki_editor.html#aaf7c4d4a830420db63a30d992d937642a55ddb4b5fa42c16a5b9c92842a5b1954", null ]
     ] ],
+    [ "DekiEditor::ComputeStripPlan", "namespace_deki_editor.html#a7aa864bf75eb1d0f81caa1b1fd2c95f0", null ],
     [ "DekiEditor::FeatureStateName", "namespace_deki_editor.html#a929fe2e9220453996a8606b20f3c849b", null ],
-    [ "DekiEditor::ResolveStripPlan", "namespace_deki_editor.html#ae45f86583f4c5377f5caf73fefa2a541", null ],
     [ "DekiEditor::FindTargetContentConflicts", "namespace_deki_editor.html#a89d12cf966ece352692df50d66195a1b", null ],
-    [ "DekiEditor::ComputeStripPlan", "namespace_deki_editor.html#a7aa864bf75eb1d0f81caa1b1fd2c95f0", null ]
+    [ "DekiEditor::ResolveStripPlan", "namespace_deki_editor.html#ae45f86583f4c5377f5caf73fefa2a541", null ]
 ];

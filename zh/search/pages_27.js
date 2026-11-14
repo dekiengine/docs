@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['包自身的名称_0',['包自身的名称',['../guide-localization.html#guide-localization-a-packages-own-names',1,'']]],
-  ['包_1',['包',['../index.html#packages',1,'']]]
+  ['关键文件_0',['关键文件',['../guide-asset-system.html#guide-asset-system-key-files',1,'关键文件'],['../guide-font-system.html#guide-font-system-key-files',1,'关键文件'],['../guide-sprite-system.html#guide-sprite-system-key-files',1,'关键文件']]]
 ];

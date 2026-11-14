@@ -1,0 +1,361 @@
+<!-- HTML header for doxygen 1.18.0 - Deki.
+     Doxygen's own template plus the site's webfonts and the dekiengine.com
+     bar. The $-placeholders and the BEGIN/END comment markers are Doxygen's
+     template language, not commentary. See README.md in this directory. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deki: Getting started</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
+</head>
+<body>
+<div class="deki-bar">
+  <a class="deki-brand" href="https://dekiengine.com/">
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
+    <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
+  </a>
+  <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
+  <div class="deki-bar-links">
+    <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
+    <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
+    <a href="https://dekiengine.com/blog/"><span class="deki-nav-label">blog</span></a>
+    <span class="deki-bar-sep"></span>
+    <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
+    <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
+    <script>(function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      if (!/^(index|pages|engine-core|settings|guide-[a-z0-9-]+)\.html$/.test(page)) return;
+      document.querySelectorAll('[data-deki-root]').forEach(function (a) {
+        a.href = a.getAttribute('data-deki-root') + page + location.hash;
+      });
+    })();</script>
+  </div>
+</div>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
+   </div>
+   <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-getting-started.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Getting started </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_build_2docs_2md_2guide-getting-started"></a></p>
+<p>From downloading the editor to your own code running on a device.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-install-the-editor"></a>
+Install the editor</h1>
+<p>Download the archive for your computer from the <a href="https://github.com/dekiengine/deki-editor/releases/latest">latest release</a>, unpack it anywhere and run <span class="tt"><a class="el" href="namespace_deki_editor.html">DekiEditor</a></span>. The compiler is inside the archive, so there is nothing else to install.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-create-a-project"></a>
+Create a project</h1>
+<p>Choose <b>File → New Project...</b>, give the project a name and a location, and leave the target platform on Desktop. A device comes later, and the same project runs on both.</p>
+<div class="image">
+<img src="gs-new-project.png" alt=""/>
+<div class="caption">
+The New Project dialog</div></div>
+    <p>The first time a project opens, the editor downloads and builds its packages. This takes a few minutes. Later opens take seconds.</p>
+<p>The new project has one scene with three objects: a <b>Camera</b>, a gradient called <b>Sky</b> and a text called <b>Hello</b>.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-look-around"></a>
+Look around</h1>
+<div class="image">
+<img src="gs-editor.png" alt=""/>
+<div class="caption">
+The editor, with its panels numbered</div></div>
+    <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">Panel  </th><th class="markdownTableHeadNone">What it is for  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone"><b>Hierarchy</b>  </td><td class="markdownTableBodyNone">The objects in the scene  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone"><b>Scene View</b>  </td><td class="markdownTableBodyNone">Where they are; drag them here  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone"><b>Inspector</b>  </td><td class="markdownTableBodyNone">The components of the selected object and their values  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4  </td><td class="markdownTableBodyNone"><b>Asset Browser</b>  </td><td class="markdownTableBodyNone">Your files, with a <b>Scripts</b> tab for your code  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5  </td><td class="markdownTableBodyNone"><b>Console</b>  </td><td class="markdownTableBodyNone">Messages from the engine and your code  </td></tr>
+</table>
+<p>An object is a position in the scene. What it does comes from its components, and everything you see in the Inspector is a component.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-change-something"></a>
+Change something</h1>
+<div class="image">
+<img src="gs-inspector-text.png" alt=""/>
+<div class="caption">
+The Text field in the Inspector</div></div>
+    <ol type="1">
+<li>Select <b>Hello</b> in the Hierarchy.</li>
+<li>In the Inspector, change <b>Text</b> to something else.</li>
+<li>Press <b>Run</b> at the top left of the window, or Ctrl+P.</li>
+<li>Press <b>Stop</b>, then save the scene with Ctrl+S.</li>
+</ol>
+<p>Changes made while the game is playing are thrown away when it stops. The Inspector says so while it is playing.</p>
+<p>Distances are in meters. The camera shows 15 meters from top to bottom, whatever the size of the screen: see <a href="guide-units.html">Units</a> and <a href="guide-screens.html">Screens</a>.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-write-a-component"></a>
+Write a component</h1>
+<p>In the Asset Browser, open <b>Scripts</b>, right-click and choose <b>Create C++ Script</b>. Name it <span class="tt">Bob</span>. The editor creates <span class="tt">src/Bob.h</span> and <span class="tt">src/Bob.cpp</span>. Open them in any text editor and replace what is there.</p>
+<div class="image">
+<img src="gs-create-script.png" alt=""/>
+<div class="caption">
+Create C++ Script in the Scripts tab</div></div>
+    <p><span class="tt">src/Bob.h</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="_engine_8h.html">deki/Engine.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_define" href="_property_8h.html#a444f6843fb928d729e8a900abd7e187d">DEKI_CATEGORY</a>(<span class="stringliteral">&quot;Game&quot;</span>)</div>
+<div class="line"><a class="code hl_define" href="_property_8h.html#a43f35439cb2726989f3e76e2c6f10f09">DEKI_DESCRIPTION</a>(<span class="stringliteral">&quot;Moves the object up and down.&quot;</span>)</div>
+<div class="line">class Bob : public <a class="code hl_namespace" href="namespace_deki.html">Deki</a>::Component</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="comment">// DEKI_EXPORT shows a field in the Inspector and saves it in the scene.</span></div>
+<div class="line">    <a class="code hl_define" href="_property_8h.html#a0cf2760751553ecc4784df4298f0b8da">DEKI_EXPORT</a></div>
+<div class="line">    <span class="keywordtype">float</span> distance = 3.0f;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_define" href="_property_8h.html#a0cf2760751553ecc4784df4298f0b8da">DEKI_EXPORT</a></div>
+<div class="line">    <span class="keywordtype">float</span> secondsPerTrip = 2.0f;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> Start() <span class="keyword">override</span>;</div>
+<div class="line">    <span class="keywordtype">void</span> Update() <span class="keyword">override</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="keywordtype">float</span> m_StartY = 0.0f;</div>
+<div class="line">    <span class="keywordtype">float</span> m_Elapsed = 0.0f;</div>
+<div class="line">};</div>
+<div class="ttc" id="a_engine_8h_html"><div class="ttname"><a href="_engine_8h.html">Engine.h</a></div></div>
+<div class="ttc" id="a_property_8h_html_a0cf2760751553ecc4784df4298f0b8da"><div class="ttname"><a href="_property_8h.html#a0cf2760751553ecc4784df4298f0b8da">DEKI_EXPORT</a></div><div class="ttdeci">#define DEKI_EXPORT</div><div class="ttdef"><b>Definition</b> Property.h:104</div></div>
+<div class="ttc" id="a_property_8h_html_a43f35439cb2726989f3e76e2c6f10f09"><div class="ttname"><a href="_property_8h.html#a43f35439cb2726989f3e76e2c6f10f09">DEKI_DESCRIPTION</a></div><div class="ttdeci">#define DEKI_DESCRIPTION(text)</div><div class="ttdef"><b>Definition</b> Property.h:600</div></div>
+<div class="ttc" id="a_property_8h_html_a444f6843fb928d729e8a900abd7e187d"><div class="ttname"><a href="_property_8h.html#a444f6843fb928d729e8a900abd7e187d">DEKI_CATEGORY</a></div><div class="ttdeci">#define DEKI_CATEGORY(text)</div><div class="ttdef"><b>Definition</b> Property.h:599</div></div>
+<div class="ttc" id="anamespace_deki_html"><div class="ttname"><a href="namespace_deki.html">Deki</a></div><div class="ttdef"><b>Definition</b> AssetLookupTable.h:17</div></div>
+</div><!-- fragment --><p><span class="tt">src/Bob.cpp</span>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Bob.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Bob::Start()</div>
+<div class="line">{</div>
+<div class="line">    m_StartY = GetOwner()-&gt;GetWorldY();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> Bob::Update()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// The time since the last frame is in milliseconds.</span></div>
+<div class="line">    m_Elapsed += <a class="code hl_function" href="class_deki_1_1_time.html#a38abea23eef892af5f8132a6bd624ece">Deki::Time::GetDeltaTimeF</a>() * 0.001f;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> y = m_StartY + std::sin(m_Elapsed * 6.2831853f / secondsPerTrip) * distance;</div>
+<div class="line">    GetOwner()-&gt;SetWorldPosition(GetOwner()-&gt;GetWorldX(), y);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_deki_1_1_time_html_a38abea23eef892af5f8132a6bd624ece"><div class="ttname"><a href="class_deki_1_1_time.html#a38abea23eef892af5f8132a6bd624ece">Deki::Time::GetDeltaTimeF</a></div><div class="ttdeci">static float GetDeltaTimeF()</div><div class="ttdoc">Duration of the last frame in milliseconds, with sub-millisecond precision.</div></div>
+</div><!-- fragment --><p>Save both files and go back to the editor. It sees the change and rebuilds your code; the progress is in the <b>Activity</b> panel, and compile errors are listed there.</p>
+<p>Select <b>Hello</b>, press <b>Add Component</b> and pick <b>Bob</b>. Its two fields are in the Inspector. Press <b>Run</b> and the text moves up and down. Change a field or the code while it runs and try again.</p>
+<div class="image">
+<img src="gs-add-component.png" alt=""/>
+<div class="caption">
+Bob in the Add Component list</div></div>
+    <div class="image">
+<img src="gs-bob-inspector.png" alt=""/>
+<div class="caption">
+Bob's fields in the Inspector</div></div>
+    <div class="image">
+<img src="gs-bob-running.gif" alt=""/>
+<div class="caption">
+The text moving up and down while the game plays</div></div>
+    <p><span class="tt">Awake</span>, <span class="tt">Start</span> and <span class="tt">Update</span> are the calls a component can receive. It declares the ones it needs.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-put-it-on-a-device"></a>
+Put it on a device</h1>
+<ol type="1">
+<li>Open <b>View → Package Manager</b> and install your device's package. Every supported device has a page under <b>Devices</b> that names it.</li>
+<li>Open <b>Build → Build Panel</b> and choose the device in the list of platforms. Its boot scene and settings are copied into your project's <span class="tt">platforms/</span> folder, and they are yours to change.</li>
+<li>The panel's <b>Toolchain</b> section says whether the device's compiler is installed. If it says <b>Not installed</b>, open <b>Build → Platform Manager...</b>, go to <b>Toolchains</b> and install it. This is a large download, needed once.</li>
+<li>Connect the device, choose it under <b>Deploy To</b>, and press <b>Build &amp; Flash</b>, or <b>Build &amp; Install</b> on a handheld that loads from an SD card.</li>
+</ol>
+<div class="image">
+<img src="gs-package-manager.png" alt=""/>
+<div class="caption">
+A device's package in the Package Manager</div></div>
+    <div class="image">
+<img src="gs-build-panel.png" alt=""/>
+<div class="caption">
+The Build panel with a device chosen</div></div>
+    <p>The first build for a device takes several minutes. The scene you made runs on it unchanged. To add a device Deki does not have yet, see <a href="guide-your-own-device.html">Use your own device</a>.</p>
+<p><b>Or play it in a browser.</b> Choose <b>Web</b> in the list of platforms and press <b>Build &amp; Open in Browser</b>: the game is built into a web page and opens in your browser. The first time, the panel installs Emscripten, the compiler for the web (about 2 GB). It is the same project, so what runs on the device runs there too, and the page's files can go on any website.</p>
+<h1 class="doxsection"><a class="anchor" id="guide-getting-started-where-to-go-next"></a>
+Where to go next</h1>
+<ul>
+<li><a href="guide-project-layout.html">Project layout</a>: what is in the project folder</li>
+<li><a href="guide-first-game.html">Your first game</a> and <a href="guide-first-app.html">Your first app</a>: build something whole</li>
+<li><a href="guide-components.html">Components</a>: more about writing your own code</li>
+<li><a href="guide-sprites.html">Sprites</a>, <a href="guide-text.html">Text</a> and <a href="guide-input.html">Input</a>: images, words and controls</li>
+<li><a href="guide-ui-widgets.html">UI widgets</a>: buttons, sliders, lists</li>
+<li><a href="guide-performance.html">Speed</a>: the tools that show where time and memory go</li>
+<li>The list of packages on the <a href="https://dekiengine.github.io/docs/">front page</a> for sound, tilemaps, physics, radio and sensors </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="index.html">Deki</a></li><li class="navelem"><a href="section-start-here.html">Start here</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

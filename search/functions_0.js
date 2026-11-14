@@ -5,10 +5,10 @@ var searchData=
   ['add_2',['Add',['../class_deki_editor_1_1_dead_memory.html#ab590c4923cf6ec33369975e796668c40',1,'DekiEditor::DeadMemory']]],
   ['addchild_3',['AddChild',['../class_deki_1_1_object.html#a37b8e9434ceedb89449644a20eb497e1',1,'Deki::Object']]],
   ['addcomponent_4',['AddComponent',['../class_deki_1_1_object.html#af5fc9dcf728c8990c6ee91d535c56f45',1,'Deki::Object']]],
-  ['addcomponentbyname_5',['AddComponentByName',['../namespace_deki_1_1_internal.html#a69e2254878a51bfbe85ba112fd279f4c',1,'Deki::Internal::AddComponentByName()'],['../namespace_deki_editor.html#ad26c0046658ede6a823f430281b1e5b0',1,'DekiEditor::AddComponentByName()']]],
-  ['addfactory_6',['AddFactory',['../class_deki_editor_internal_1_1_editor_registry.html#ae6bd3072bed13c84d2fef7d516aa938d',1,'DekiEditorInternal::EditorRegistry']]],
-  ['addimagenearest_7',['AddImageNearest',['../namespace_deki_editor_1_1_editor_texture.html#a8de51ebac51842aeaecf69f104c4c13d',1,'DekiEditor::EditorTexture']]],
-  ['addobject_8',['AddObject',['../class_deki_1_1_scene.html#a51bd47324a2ab326cb723f57ceadae8e',1,'Deki::Scene']]],
+  ['addcomponentbyname_5',['AddComponentByName',['../namespace_deki_editor.html#ad26c0046658ede6a823f430281b1e5b0',1,'DekiEditor']]],
+  ['addimagenearest_6',['AddImageNearest',['../namespace_deki_editor_1_1_editor_texture.html#a8de51ebac51842aeaecf69f104c4c13d',1,'DekiEditor::EditorTexture']]],
+  ['addobject_7',['AddObject',['../class_deki_1_1_scene.html#a51bd47324a2ab326cb723f57ceadae8e',1,'Deki::Scene']]],
+  ['addplacer_8',['AddPlacer',['../class_deki_1_1_screen_anchor.html#adfee50c3852d3c4bb671e4484eb1ff49',1,'Deki::ScreenAnchor']]],
   ['addrequiredpackagedefines_9',['AddRequiredPackageDefines',['../namespace_deki_editor_1_1_c_make_gen.html#a06e47f39de696e1c27fde1eafaeb696a',1,'DekiEditor::CMakeGen']]],
   ['addsimulationsteps_10',['AddSimulationSteps',['../namespace_deki_editor.html#ace10af030fccd8526965e7bdcd8058bc',1,'DekiEditor']]],
   ['addtabledirectory_11',['AddTableDirectory',['../namespace_deki_editor_1_1_localization.html#af890468e060a37e7915fd3a88facc7d2',1,'DekiEditor::Localization']]],
@@ -38,9 +38,8 @@ var searchData=
   ['assetroot_35',['AssetRoot',['../namespace_deki_1_1_storage.html#a80514312cb1ade1ed87b1ebbfb0412f5',1,'Deki::Storage']]],
   ['atbuildpriority_36',['AtBuildPriority',['../namespace_deki_editor.html#afda264ca500f002148faba9e0e3f82fa',1,'DekiEditor']]],
   ['atomicwritefile_37',['AtomicWriteFile',['../namespace_deki_editor.html#ac55330ea1b1ccb3bc8048c0adb2a56de',1,'DekiEditor']]],
-  ['attachcomponent_38',['AttachComponent',['../namespace_deki_1_1_internal.html#af0536223a36e4c9b36f999ce13e19de2',1,'Deki::Internal']]],
-  ['autodetectframes_39',['AutoDetectFrames',['../class_deki_editor_1_1_texture_importer.html#a69479b92deb14df8b8eb36a910174140',1,'DekiEditor::TextureImporter']]],
-  ['automatictextureformat_40',['AutomaticTextureFormat',['../namespace_deki_editor.html#a7c6641c79133712f76c0a4f37570c0ff',1,'DekiEditor']]],
-  ['autosetupregistrar_41',['AutoSetupRegistrar',['../struct_deki_1_1_auto_setup_registrar.html#acddb985094c55f8e46ef77b566a4b11c',1,'Deki::AutoSetupRegistrar']]],
-  ['awake_42',['Awake',['../class_deki_1_1_component.html#a9c076500cdd7536867dc12598b59743f',1,'Deki::Component']]]
+  ['autodetectframes_38',['AutoDetectFrames',['../class_deki_editor_1_1_texture_importer.html#a69479b92deb14df8b8eb36a910174140',1,'DekiEditor::TextureImporter']]],
+  ['automatictextureformat_39',['AutomaticTextureFormat',['../namespace_deki_editor.html#a7c6641c79133712f76c0a4f37570c0ff',1,'DekiEditor']]],
+  ['autosetupregistrar_40',['AutoSetupRegistrar',['../struct_deki_1_1_auto_setup_registrar.html#acddb985094c55f8e46ef77b566a4b11c',1,'Deki::AutoSetupRegistrar']]],
+  ['awake_41',['Awake',['../class_deki_1_1_component.html#a9c076500cdd7536867dc12598b59743f',1,'Deki::Component']]]
 ];

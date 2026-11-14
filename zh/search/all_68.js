@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['需要其他包的功能_0',['需要其他包的功能',['../guide-platforms.html#guide-platforms-features-that-need-other-packages',1,'']]]
+  ['编写组件_0',['编写组件',['../guide-getting-started.html#guide-getting-started-write-a-component',1,'']]]
 ];

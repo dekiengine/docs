@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['가이드_0',['가이드',['../index.html#guides',1,'']]],
-  ['가지_20규약이_20있는_20이유_1',['시간에 두 가지 규약이 있는 이유',['../guide-units.html#guide-units-why-time-has-two-conventions',1,'']]],
-  ['가지_20버전_2',['테이블의 두 가지 버전',['../guide-asset-system.html#guide-asset-system-two-versions-of-the-table',1,'']]],
-  ['가_20runtime_20과_20나란히_20있는_20이유_3',['shadow/가 runtime/과 나란히 있는 이유',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
+  ['you_0',['you',['../guide-device-anbernic-rg40xx-h.html#guide-device-anbernic-rg40xx-h-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-lilygo-t-deck-plus.html#guide-device-lilygo-t-deck-plus-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-lilygo-t-deck.html#guide-device-lilygo-t-deck-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-lilygo-t-display-s3-amoled.html#guide-device-lilygo-t-display-s3-amoled-what-is-set-up-for-you',1,'What is set up for you'],['../guide-device-miyoo-mini.html#guide-device-miyoo-mini-what-is-set-up-for-you',1,'What is set up for you']]],
+  ['you_20need_1',['What you need',['../guide-your-own-device.html#guide-your-own-device-what-you-need',1,'']]],
+  ['you_20start_2',['Before you start',['../guide-hardware-checklist.html#guide-hardware-checklist-before-you-start',1,'']]],
+  ['you_20use_20ships_3',['Only what you use ships',['../guide-ui-widgets.html#guide-ui-widgets-only-what-you-use-ships',1,'']]],
+  ['your_20code_20runs_4',['When your code runs',['../guide-components.html#guide-components-when-your-code-runs',1,'']]],
+  ['your_20first_20app_5',['Your first app',['../guide-first-app.html',1,'section-start-here']]],
+  ['your_20first_20game_6',['Your first game',['../guide-first-game.html',1,'section-start-here']]],
+  ['your_20own_20device_7',['Use your own device',['../guide-your-own-device.html',1,'section-devices']]],
+  ['your_20own_20font_8',['Use your own font',['../guide-text.html#guide-text-use-your-own-font',1,'']]]
 ];

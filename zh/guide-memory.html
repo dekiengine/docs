@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: 内存</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -28,14 +31,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/zh/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">文档</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">手册</span></a>
+    <a class="deki-tab deki-tab-api" href="https://dekiengine.github.io/docs/annotated.html"><span class="deki-nav-label">API 参考</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/zh/"><span class="deki-nav-label">网站</span></a>
     <a href="https://dekiengine.com/zh/packages/"><span class="deki-nav-label">包</span></a>
@@ -43,7 +95,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/zh/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/zh/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>捐赠</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>下载</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/zh/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>捐赠</span></a>
     <details class="deki-lang"><summary aria-label="语言: 简体中文"><span class="deki-nav-label">简体中文</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -60,7 +113,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">面向嵌入式显示屏和桌面的模块化 C++ 2D 引擎</div>
   </td>
@@ -153,8 +206,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <p><b>在设备上运行的代码中，每一次分配都要经过引擎。</b> 无论是引擎的运行时代码还是包的运行时代码，都不得使用 <span class="tt">new[]</span>、<span class="tt">malloc</span> 或 <span class="tt">heap_caps_*</span>。<span class="tt">Deki::Memory</span> 是统筹者；<span class="tt">Deki::Buffer&lt;T&gt;</span> 则几乎总是你需要的东西。</p>
 <p>这不是代码风格上的偏好，并且由 <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_allocations.py"><span class="tt">tools/ci/check_allocations.py</span></a> 强制执行。这条规则必须成立的三个原因：</p>
 <ol type="1">
-<li><b><span class="tt">new[]</span> 无法优雅地失败。</b> ESP-IDF 在关闭异常的情况下构建（未设置 <span class="tt">CONFIG_COMPILER_CXX_EXCEPTIONS</span>），因此分配失败会进入 <span class="tt">__cxa_allocate_exception</span> 并调用 <span class="tt">abort()</span>，开发板随即重启。没有可以添加 catch 的位置。<span class="tt">std::nothrow</span> *没有*帮助：libstdc++ 实现 nothrow 形式的方式是在 <span class="tt">try</span>/<span class="tt">catch</span> 中调用抛出形式，而 <span class="tt">-fno-exceptions</span> 已经去掉了这个 <span class="tt">try</span>/<span class="tt">catch</span>，所以它同样会中止。这是根据一个回溯诊断出来的，回溯显示 <span class="tt">operator new[](unsigned int, std::nothrow_t const&amp;)</span> 直接调用了抛出形式。</li>
-<li><b>只有引擎知道内存应该放在哪里。</b> 这块开发板是否有外部 RAM、外部 RAM 慢多少、某个外设能否访问某个区域，这些都是平台的属性，而不是调用方的属性。自行选择区域的调用方，换到下一块开发板上就是错的。</li>
+<li><b><span class="tt">new[]</span> 无法优雅地失败。</b> ESP-IDF 在关闭异常的情况下构建（未设置 <span class="tt">CONFIG_COMPILER_CXX_EXCEPTIONS</span>），因此分配失败会进入 <span class="tt">__cxa_allocate_exception</span> 并调用 <span class="tt">abort()</span>，设备随即重启。没有可以添加 catch 的位置。<span class="tt">std::nothrow</span> *没有*帮助：libstdc++ 实现 nothrow 形式的方式是在 <span class="tt">try</span>/<span class="tt">catch</span> 中调用抛出形式，而 <span class="tt">-fno-exceptions</span> 已经去掉了这个 <span class="tt">try</span>/<span class="tt">catch</span>，所以它同样会中止。这是根据一个回溯诊断出来的，回溯显示 <span class="tt">operator new[](unsigned int, std::nothrow_t const&amp;)</span> 直接调用了抛出形式。</li>
+<li><b>只有引擎知道内存应该放在哪里。</b> 这块设备是否有外部 RAM、外部 RAM 慢多少、某个外设能否访问某个区域，这些都是平台的属性，而不是调用方的属性。自行选择区域的调用方，换到下一块设备上就是错的。</li>
 <li><b><span class="tt">Deki::Memory</span> 同时也负责统计和泄漏检查。</b> 统计数据、重复释放防护以及（调试构建中的）泄漏表都在它背后。绕过它的分配是不可见的。</li>
 </ol>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
@@ -193,9 +246,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">Deki::Memory::Internal</span>  </td><td class="markdownTableBodyNone">内部 RAM。速度快，也是稀缺的那一个  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><span class="tt">Deki::Memory::External</span>  </td><td class="markdownTableBodyNone">开发板有 PSRAM 时使用 PSRAM。以 MB 计，但明显更慢：它要通过 SPI 访问  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">Deki::Memory::External</span>  </td><td class="markdownTableBodyNone">设备有 PSRAM 时使用 PSRAM。以 MB 计，但明显更慢：它要通过 SPI 访问  </td></tr>
 </table>
-<p><span class="tt">Deki::Memory::AllocateDma(bytes, region)</span> 额外加上一个约束：DMA 引擎必须能够读取该内存块。这与放置位置是正交的：无论开发板将帧缓冲区放在内部还是 PSRAM 中，它都必须可被访问，因此它是一个单独的入口点，而不是第三个区域。</p>
+<p><span class="tt">Deki::Memory::AllocateDma(bytes, region)</span> 额外加上一个约束：DMA 引擎必须能够读取该内存块。这与放置位置是正交的：无论设备将帧缓冲区放在内部还是 PSRAM 中，它都必须可被访问，因此它是一个单独的入口点，而不是第三个区域。</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 区域就是一个名称，所以包可以添加自己的区域</h2>
 <p>引擎自带两个区域。这个集合是开放的：</p>
@@ -206,12 +259,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">battery.Allocate(count, DekiEsp32::Rtc);</div>
-</div><!-- fragment --><p>包将自己的区域放在<b>自己的命名空间</b>中，而不是放在 <span class="tt">Deki::Memory</span> 中。它本来也做不到（类是封闭的），而这正是关键所在。两个都想要 <span class="tt">Rtc</span> 常量的开发板包不会冲突，因为语言本身会把它们分开。常量放在哪里从来都不重要：区域的身份是其名称的哈希值，所以把它从一个命名空间移到另一个命名空间不会带来任何变化。</p>
+</div><!-- fragment --><p>包将自己的区域放在<b>自己的命名空间</b>中，而不是放在 <span class="tt">Deki::Memory</span> 中。它本来也做不到（类是封闭的），而这正是关键所在。两个都想要 <span class="tt">Rtc</span> 常量的设备包不会冲突，因为语言本身会把它们分开。常量放在哪里从来都不重要：区域的身份是其名称的哈希值，所以把它从一个命名空间移到另一个命名空间不会带来任何变化。</p>
 <p><span class="tt">Region()</span> 在编译期用引擎其余部分使用的同一个 FNV-1a 对名称进行哈希，因此区域是一个常量表达式，提供者可以对它使用 switch。</p>
-<p><b>两个包命名了同一个区域，就表示同一个区域</b>。正是这样，两个开发板包无需协调就能在 <span class="tt">"rtc"</span> 上达成一致，就像两个包都要求 <span class="tt">spi</span> 能力一样。无法应对的情况是两个包用同一个词表示*不同*的东西，所以对不是你发明的名称要加上限定：<span class="tt">particles.scratch</span>、<span class="tt">esp32.rtc</span>。由于分配头只存储 id，调试构建会报告哈希值相同的两个不同名称。</p>
+<p><b>两个包命名了同一个区域，就表示同一个区域</b>。正是这样，两个设备包无需协调就能在 <span class="tt">"rtc"</span> 上达成一致，就像两个包都要求 <span class="tt">spi</span> 能力一样。无法应对的情况是两个包用同一个词表示*不同*的东西，所以对不是你发明的名称要加上限定：<span class="tt">particles.scratch</span>、<span class="tt">esp32.rtc</span>。由于分配头只存储 id，调试构建会报告哈希值相同的两个不同名称。</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
-提供区域是开发板的职责</h2>
-<p>包可以*命名*一个区域；只有开发板的 <span class="tt">IMemoryProvider</span> 才能提供它。不认识 <span class="tt">esp32.rtc</span> 的提供者会返回 nullptr，失败信息中会写出该区域的名称：</p>
+提供区域是设备的职责</h2>
+<p>包可以*命名*一个区域；只有设备的 <span class="tt">IMemoryProvider</span> 才能提供它。不认识 <span class="tt">esp32.rtc</span> 的提供者会返回 nullptr，失败信息中会写出该区域的名称：</p>
 <div class="fragment"><div class="line">Failed to allocate 64 bytes in &#39;esp32.rtc&#39; for &#39;void Battery::Save()&#39;</div>
 <div class="line">at Battery.cpp:88 (0 bytes free there)</div>
 </div><!-- fragment --><p>它不会被替换为其他区域。对 <span class="tt">Rtc</span> 来说这一点尤其重要：它的意义在于在深度睡眠后保留数据，因此如果悄悄换成普通 RAM，数据就会恰好在本应保留的那一刻丢失。</p>
@@ -226,7 +279,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><span class="tt">memory:external</span>  </td><td class="markdownTableBodyNone">平台的 <span class="tt">psramSize</span> - 推导得出  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="tt">memory:esp32.rtc</span>  </td><td class="markdownTableBodyNone">开发板的 <span class="tt">provides</span>，因为只有它知道  </td></tr>
+<td class="markdownTableBodyNone"><span class="tt">memory:esp32.rtc</span>  </td><td class="markdownTableBodyNone">设备的 <span class="tt">provides</span>，因为只有它知道  </td></tr>
 </table>
 <p>因此，需要某个区域的包只需声明它，构建就会在任何东西运行之前，按名称拒绝缺少该区域的目标：</p>
 <div class="fragment"><div class="line">&quot;platformRequires&quot;: [&quot;memory:esp32.rtc&quot;]</div>
@@ -239,7 +292,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('guide-memory.h
 <li>悄悄把一个 <span class="tt">Buffer</span> 移到内部 RAM，会耗尽下一次 <span class="tt">Hot</span> 分配所需的堆，导致失败出现在毫不相干的地方。</li>
 </ul>
 <p>失败时会记录分配的内容、大小、区域，以及未尝试回退。每个调用方本来就必须处理 null。</p>
-<p>没有外部 RAM 的开发板会把所有内容解析到内部。这不是回退；那是唯一存在的区域。</p>
+<p>没有外部 RAM 的设备会把所有内容解析到内部。这不是回退；那是唯一存在的区域。</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 API 的其余部分</h1>
 <p><span class="tt">Deki::Memory</span>（<span class="tt">&lt;deki/providers/Memory.h&gt;</span>），用于 <span class="tt">Buffer&lt;T&gt;</span> 无法覆盖的情况：</p>
@@ -251,7 +304,7 @@ API 的其余部分</h1>
 <li>内存在返回前会被<b>清零</b>，因此缓冲区一开始绝不会充满杂乱数据，调用方也不必自己写清零循环。</li>
 <li><span class="tt">Free</span> 通过读取紧挨在用户指针之前的头部来判断内存块来自哪个区域，因此调用方无需选择。该头部还带有一个魔数，能把重复释放或外来指针变成一条记录下来的错误，而不是堆损坏。</li>
 <li><b>为分配命名是可选的。</b> 参见下文的 <span class="tt">AllocContext</span>。</li>
-<li>失败时会报告所尝试的区域中还有多少空闲内存，从而区分“这个资源对这块开发板来说太大”和“某处占着本应释放的内存”。</li>
+<li>失败时会报告所尝试的区域中还有多少空闲内存，从而区分“这个资源对这块设备来说太大”和“某处占着本应释放的内存”。</li>
 <li><span class="tt">Memory::Initialize</span> 在启动时记录一次空闲的内部和外部 RAM，这样项目就可以根据真实数字来确定规模，而不是等到第一条内存不足的日志。</li>
 <li><span class="tt">AllocateInternal</span> / <span class="tt">FreeInternal</span> 绕过放置决策，是为平台层准备的。不要在组件中使用它们。</li>
 </ul>
@@ -264,7 +317,11 @@ API 的其余部分</h1>
 <li><span class="tt">LogStats(label)</span> 一次调用就能回答“我用了多少内存？”。在调试构建中，它还会报告当前和峰值的分配数量。不调用就没有任何开销。</li>
 <li><span class="tt">GetStats()</span> 以结构体形式返回同样的数字；<span class="tt">GetAvailableInternal()</span> 和 <span class="tt">GetAvailablePSRAM()</span> 给出空闲的部分。<span class="tt">IsPSRAMAvailable()</span> 表示是否存在外部区域。这些都不意味着你可以自行放置内存：它们用于确定项目规模，以及查找是什么占着本应释放的内存。</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+<div class="image">
+<img src="memory-panel.png" alt=""/>
+<div class="caption">
+估算设备上场景的内存面板</div></div>
+    <h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
 切换场景</h2>
 <div class="fragment"><div class="line">Deki::Engine::GetInstance().OpenScene(nextScene);  <span class="comment">// AssetRef&lt;Scene&gt;</span></div>
 </div><!-- fragment --><p><span class="tt">OpenScene</span> 在帧结束时先释放要离开的场景，再加载下一个场景，因此两者永远不会同时占用内存。自己加载下一个场景再调用 <span class="tt">SetRootScene</span> 会同时持有两者：在 T-Deck Plus 上这样从演示的菜单进入草地场景，内部 RAM 只剩 16 字节。不存在的场景不会被打开，游戏会停留在当前场景。</p>
@@ -290,7 +347,7 @@ API 的其余部分</h1>
 </div><!-- fragment --><p>注意，去除和未去除的构建布局不同，因此引擎和调用它的包必须保持一致，这与 <span class="tt">MemoryStats</span> 已有的约束相同。</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 <span class="tt">Deki::Vector&lt;T&gt;</span> - 数量在运行时变化时</h1>
-<p><span class="tt">&lt;deki/providers/Vector.h&gt;</span>。<span class="tt">Buffer&lt;T&gt;</span> 适用于分配时就已知的数量。当数量会变化且没有固定上限时，在设备上 <span class="tt">std::vector</span> 就是错误的选择：<span class="tt">push_back</span> 会调用 <span class="tt">operator new</span>，而在关闭异常的情况下它无法报告内存耗尽，于是中止，开发板重启。</p>
+<p><span class="tt">&lt;deki/providers/Vector.h&gt;</span>。<span class="tt">Buffer&lt;T&gt;</span> 适用于分配时就已知的数量。当数量会变化且没有固定上限时，在设备上 <span class="tt">std::vector</span> 就是错误的选择：<span class="tt">push_back</span> 会调用 <span class="tt">operator new</span>，而在关闭异常的情况下它无法报告内存耗尽，于是中止，设备重启。</p>
 <p><span class="tt">Deki::Vector</span> 就是这种形态，只改了在这里唯一重要的一点：所有可能分配的操作都返回 <span class="tt">bool</span>：</p>
 <div class="fragment"><div class="line">Deki::Vector&lt;Enemy&gt; enemies(Deki::Memory::Internal);</div>
 <div class="line"> </div>
@@ -315,7 +372,7 @@ API 的其余部分</h1>
 <li><b>分配失败时会说明情况。</b> 它会记录想要分配的大小，然后中止，因为在关闭异常的情况下，会抛出的 <span class="tt">operator new</span> 别无选择。“Out of memory asking for 40960 bytes”是一条诊断；它所取代的重启则不是。</li>
 <li><b><span class="tt">std::nothrow</span> 可以正常工作。</b> <span class="tt">new (std::nothrow) T[n]</span> 会返回 <span class="tt">nullptr</span> 而不是中止，因此想自行处理内存耗尽的代码可以做到。没有这个替换时它会中止，因为 libstdc++ 实现 nothrow 形式的方式是在已被去除的 <span class="tt">try</span>/<span class="tt">catch</span> 中调用抛出形式。</li>
 </ul>
-<p>这些<b>确实</b>经过引擎：<span class="tt">operator new</span> 会调用 <span class="tt">IMemoryProvider::AllocateRaw</span>，因此开发板能看到设备上的每一次分配，并可以用自己的堆来承担全部分配。</p>
+<p>这些<b>确实</b>经过引擎：<span class="tt">operator new</span> 会调用 <span class="tt">IMemoryProvider::AllocateRaw</span>，因此设备能看到设备上的每一次分配，并可以用自己的堆来承担全部分配。</p>
 <p>但它*不是* <span class="tt">Memory::Allocate</span>。如果是的话，每个超出小字符串缓冲区的 <span class="tt">std::string</span> 前面都会多一个 16 字节的头部，vector 即将覆盖的内存会被 memset，小内存块也要付出 ESP32 提供者的 16 字节 SIMD 对齐开销，而 ESP-IDF 是通过多分配来实现对齐分配的，所以这比头部浪费得更多。<span class="tt">AllocateRaw</span> 没有这些：自然对齐、没有头部，就是堆返回的那个指针。</p>
 <p>实测，160 万次成对的 48 字节分配，引擎为 <span class="tt">-O2</span>：</p>
 <table class="markdownTable">
@@ -341,16 +398,16 @@ API 的其余部分</h1>
 </div><!-- fragment --><p>该接口报告外部 RAM（<span class="tt">HasExternalRAM</span>、总量、空闲量），并从各个区域分配：<span class="tt">AllocateExternal</span> / <span class="tt">FreeExternal</span>、<span class="tt">AllocateInternal</span> / <span class="tt">FreeInternal</span> 以及 <span class="tt">AllocateDMA</span>。</p>
 <p><b>每个与放置相关的虚函数都是纯虚函数，必须全部实现。</b> 提供者要说明每个区域在其平台上的含义，即使答案是“在这里和其他区域一样”。在 <span class="tt">AllocateDMA</span> 中写 <span class="tt">return malloc(size);</span> 的桌面提供者，就做出了一个可以阅读和检查的声明。</p>
 <p><span class="tt">AllocateDMA</span> 是最重要的那个。如果提供者可以从 <span class="tt">AllocateInternal</span> 继承它，那么在两者不同的任何芯片上，都会把显示外设无法访问的内存交给它：悄无声息的数据损坏，构建中也没有任何东西会指出这一点。</p>
-<p>出于同样的原因，<span class="tt">GetAvailableInternalRAM</span> 也是必须实现的：随意返回 0 的提供者会让启动日志报告开发板内存已耗尽。</p>
+<p>出于同样的原因，<span class="tt">GetAvailableInternalRAM</span> 也是必须实现的：随意返回 0 的提供者会让启动日志报告设备内存已耗尽。</p>
 <p>纯虚函数与已实现的虚函数占用相同的 vtable 槽位，因此这不需要升级 ABI 版本。它只是让提供者在做出决定之前无法编译。</p>
-<p><span class="tt">AllocateRaw</span> / <span class="tt">FreeRaw</span> / <span class="tt">GetRawBlockSize</span> 是第四对函数外加一个查询：全局 <span class="tt">operator new</span> 所经由的、按自然对齐分配的普通分配器，这样开发板的堆既能为引擎放置的一切服务，也能为 <span class="tt">std::vector</span> 和标量 <span class="tt">new</span> 服务。它们默认使用 <span class="tt">malloc</span>/<span class="tt">free</span>，在平台无法回答时 <span class="tt">GetRawBlockSize</span> 返回 0，这只会影响 <span class="tt">LogStats</span> 的准确性。这一对要么都重写，要么都不重写。</p>
+<p><span class="tt">AllocateRaw</span> / <span class="tt">FreeRaw</span> / <span class="tt">GetRawBlockSize</span> 是第四对函数外加一个查询：全局 <span class="tt">operator new</span> 所经由的、按自然对齐分配的普通分配器，这样设备的堆既能为引擎放置的一切服务，也能为 <span class="tt">std::vector</span> 和标量 <span class="tt">new</span> 服务。它们默认使用 <span class="tt">malloc</span>/<span class="tt">free</span>，在平台无法回答时 <span class="tt">GetRawBlockSize</span> 返回 0，这只会影响 <span class="tt">LogStats</span> 的准确性。这一对要么都重写，要么都不重写。</p>
 <p><span class="tt">AllocateDMA</span> 与 <span class="tt">AllocateInternal</span> 分开，是因为在 ESP32-S3 上大部分内部 RAM 可被 DMA 访问，但并非全部；显示外设读取不可访问的帧缓冲区时，得到的是悄无声息的数据损坏，而不是错误。ESP32 提供者会显式请求 <span class="tt">MALLOC_CAP_DMA</span>。重写 <span class="tt">AllocateInternal</span>/<span class="tt">FreeInternal</span> 中任意一个的人必须两个都重写：这一对必须匹配（ESP32 提供者使用 16 字节对齐的 <span class="tt">heap_caps_aligned_alloc</span>，这也让 blit 调度器能够启用 S3 的 SIMD 内核，以及 <span class="tt">heap_caps_free</span>）。</p>
 <p><b><span class="tt">IMemoryProvider</span> 是包 ABI 的一部分</b>，因此它的虚函数由 <a href="https://github.com/dekiengine/deki-editor/blob/master/tools/ci/check_abi.py"><span class="tt">tools/ci/check_abi.py</span></a> 锁定。添加、删除或重新排序其中任何一个都会移动 vtable 槽位，并且需要在同一个提交中提升 <span class="tt">kDekiReflectionAbiVersion</span>。</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 lint 检查</h1>
 <div class="fragment"><div class="line">python tools/ci/check_allocations.py            # packages beside the repo</div>
 <div class="line">python tools/ci/check_allocations.py --verbose  # also list files and waivers</div>
-</div><!-- fragment --><p>在运行时代码中发现 <span class="tt">new[]</span>、<span class="tt">delete[]</span>、<span class="tt">malloc</span>/<span class="tt">calloc</span>/<span class="tt">realloc</span> 和 <span class="tt">heap_caps_*</span> 时失败，<b>既包括引擎自身的代码，也包括每个包的代码</b>。引擎中的一次分配会影响每块开发板上的每个项目，而包中的分配只影响安装了它的项目，所以如果说有什么区别，引擎才是更重要的那一半；这个 lint 的第一个版本没有包括引擎，结果立刻证明了这一点：<span class="tt">ProjectSettings</span> 一直在用裸 <span class="tt">realloc</span> 保存其设备端的设置数据块。</p>
+</div><!-- fragment --><p>在运行时代码中发现 <span class="tt">new[]</span>、<span class="tt">delete[]</span>、<span class="tt">malloc</span>/<span class="tt">calloc</span>/<span class="tt">realloc</span> 和 <span class="tt">heap_caps_*</span> 时失败，<b>既包括引擎自身的代码，也包括每个包的代码</b>。引擎中的一次分配会影响每块设备上的每个项目，而包中的分配只影响安装了它的项目，所以如果说有什么区别，引擎才是更重要的那一半；这个 lint 的第一个版本没有包括引擎，结果立刻证明了这一点：<span class="tt">ProjectSettings</span> 一直在用裸 <span class="tt">realloc</span> 保存其设备端的设置数据块。</p>
 <p>跳过的部分：<span class="tt">editor/</span>、<span class="tt">tests/</span>、<span class="tt">generated/</span>、<span class="tt">third_party/</span>，以及引擎的 <span class="tt">platforms/editor</span> 和 <span class="tt">platforms/desktop</span> 层，这些都运行在主机上，在那里异常是开启的，堆也是桌面系统的堆。按路径豁免的部分（因为它们是技术栈的最底层，而不是被允许违反规则的代码）：<span class="tt">providers/Memory.cpp</span>、<span class="tt">providers/IMemoryProvider.h</span>、所有 <span class="tt">*MemoryProvider.*</span>，以及 <span class="tt">providers/OperatorNew.cpp</span>，后者必须定义 <span class="tt">operator new[]</span>，这样其他任何地方都不需要定义它。</p>
 <p>注释和字符串字面量在匹配前会被清空，因此解释这条规则的注释不会触发它。</p>
 <p>确实无法避免的情况可以使用豁免，但<b>必须写明理由</b>；没有理由的豁免不算数，这样 diff 中总能看出哪些例外是经过论证的：</p>
@@ -363,6 +420,7 @@ lint 检查</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a href="index.html">Deki</a></li><li class="navelem"><a href="section-working-on-deki.html">参与 Deki 开发</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>

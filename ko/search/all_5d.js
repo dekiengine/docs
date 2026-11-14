@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['아레나를_20쓰지_20않는_20이유_0',['아레나를 쓰지 않는 이유',['../guide-memory.html#autotoc_md2',1,'']]]
+  ['숫자_20읽기_0',['숫자 읽기',['../guide-performance.html#autotoc_md21',1,'']]]
 ];

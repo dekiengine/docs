@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['때_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#autotoc_md13',1,'']]]
+  ['둘러보기_0',['둘러보기',['../guide-getting-started.html#guide-getting-started-look-around',1,'']]]
 ];

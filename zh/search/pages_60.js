@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['规则：guid_20始终表示“要从磁盘加载的文件”_0',['规则：&lt;span class=&quot;tt&quot;&gt;guid&lt;/span&gt; 始终表示“要从磁盘加载的文件”',['../guide-asset-system.html#guide-asset-system-rule-guid-always--the-file-to-load-from-disk',1,'']]],
-  ['规则_1',['规则',['../guide-memory.html#autotoc_md0',1,'规则'],['../guide-units.html#guide-units-the-rule',1,'规则']]]
+  ['的位置：_0',['调用 EnsureFontSizeBaked 的位置：',['../guide-font-system.html#guide-font-system-who-calls-ensurefontsizebaked',1,'']]],
+  ['的位置_1',['生成确定性 GUID 的位置',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
+  ['的其余部分_2',['API 的其余部分',['../guide-memory.html#autotoc_md8',1,'']]]
 ];

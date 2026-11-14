@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['引擎核心_0',['引擎核心',['../engine-core.html',1,'']]],
-  ['引擎的分区_1',['引擎的分区',['../settings.html#engine-sections',1,'']]]
+  ['存储的内容_0',['存储的内容',['../guide-units.html#guide-units-what-is-stored',1,'']]]
 ];

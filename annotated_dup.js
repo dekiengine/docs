@@ -1,14 +1,9 @@
 var annotated_dup =
 [
     [ "Deki", "namespace_deki.html", [
-      [ "Detail", "namespace_deki_1_1_detail.html", [
-        [ "TypeNameProbe", "struct_deki_1_1_detail_1_1_type_name_probe.html", "struct_deki_1_1_detail_1_1_type_name_probe" ],
-        [ "TypeNameStorage", "struct_deki_1_1_detail_1_1_type_name_storage.html", null ],
-        [ "TypeShortNameStorage", "struct_deki_1_1_detail_1_1_type_short_name_storage.html", null ]
-      ] ],
       [ "ProjectSettings", "namespace_deki_1_1_project_settings.html", [
-        [ "FileHeader", "struct_deki_1_1_project_settings_1_1_file_header.html", "struct_deki_1_1_project_settings_1_1_file_header" ],
         [ "DisplaySettings", "struct_deki_1_1_project_settings_1_1_display_settings.html", "struct_deki_1_1_project_settings_1_1_display_settings" ],
+        [ "FileHeader", "struct_deki_1_1_project_settings_1_1_file_header.html", "struct_deki_1_1_project_settings_1_1_file_header" ],
         [ "RuntimeSettings", "struct_deki_1_1_project_settings_1_1_runtime_settings.html", "struct_deki_1_1_project_settings_1_1_runtime_settings" ]
       ] ],
       [ "SceneFormat", "namespace_deki_1_1_scene_format.html", [
@@ -89,8 +84,7 @@ var annotated_dup =
         [ "ExecutableCMakeOptions", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options.html", "struct_deki_editor_1_1_c_make_gen_1_1_executable_c_make_options" ],
         [ "ExecutableLibrary", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library.html", "struct_deki_editor_1_1_c_make_gen_1_1_executable_library" ],
         [ "FeatureEntry", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_feature_entry" ],
-        [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ],
-        [ "PackageEntry", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry.html", "struct_deki_editor_1_1_c_make_gen_1_1_package_entry" ]
+        [ "FrameworkDependency", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency.html", "struct_deki_editor_1_1_c_make_gen_1_1_framework_dependency" ]
       ] ],
       [ "EditorTexture", "namespace_deki_editor_1_1_editor_texture.html", [
         [ "Backend", "struct_deki_editor_1_1_editor_texture_1_1_backend.html", "struct_deki_editor_1_1_editor_texture_1_1_backend" ]
@@ -137,6 +131,8 @@ var annotated_dup =
       [ "DeadMemory", "class_deki_editor_1_1_dead_memory.html", "class_deki_editor_1_1_dead_memory" ],
       [ "DecodedImage", "struct_deki_editor_1_1_decoded_image.html", "struct_deki_editor_1_1_decoded_image" ],
       [ "DeployTarget", "struct_deki_editor_1_1_deploy_target.html", "struct_deki_editor_1_1_deploy_target" ],
+      [ "DeviceProfile", "struct_deki_editor_1_1_device_profile.html", "struct_deki_editor_1_1_device_profile" ],
+      [ "DeviceProfileRow", "struct_deki_editor_1_1_device_profile_row.html", "struct_deki_editor_1_1_device_profile_row" ],
       [ "DialogButtonSpec", "struct_deki_editor_1_1_dialog_button_spec.html", "struct_deki_editor_1_1_dialog_button_spec" ],
       [ "DownloadProgress", "struct_deki_editor_1_1_download_progress.html", "struct_deki_editor_1_1_download_progress" ],
       [ "EditorApplication", "class_deki_editor_1_1_editor_application.html", "class_deki_editor_1_1_editor_application" ],
@@ -193,17 +189,5 @@ var annotated_dup =
       [ "ToolchainComponentManager", "class_deki_editor_1_1_toolchain_component_manager.html", "class_deki_editor_1_1_toolchain_component_manager" ],
       [ "ToolchainVersionInfo", "struct_deki_editor_1_1_toolchain_version_info.html", "struct_deki_editor_1_1_toolchain_version_info" ],
       [ "VersionCheckDef", "struct_deki_editor_1_1_version_check_def.html", "struct_deki_editor_1_1_version_check_def" ]
-    ] ],
-    [ "DekiEditorInternal", "namespace_deki_editor_internal.html", [
-      [ "EditorFactoryInfo", "struct_deki_editor_internal_1_1_editor_factory_info.html", "struct_deki_editor_internal_1_1_editor_factory_info" ],
-      [ "EditorRegistry", "class_deki_editor_internal_1_1_editor_registry.html", "class_deki_editor_internal_1_1_editor_registry" ],
-      [ "EditorRegistrar", "struct_deki_editor_internal_1_1_editor_registrar.html", "struct_deki_editor_internal_1_1_editor_registrar" ]
-    ] ],
-    [ "CoreDependency", "struct_core_dependency.html", "struct_core_dependency" ],
-    [ "DekiBuilderAbi", "struct_deki_builder_abi.html", "struct_deki_builder_abi" ],
-    [ "DekiReflectionAbi", "struct_deki_reflection_abi.html", "struct_deki_reflection_abi" ],
-    [ "DependencyInfo", "struct_dependency_info.html", "struct_dependency_info" ],
-    [ "IPackageInstaller", "class_i_package_installer.html", "class_i_package_installer" ],
-    [ "IPackageSource", "class_i_package_source.html", "class_i_package_source" ],
-    [ "PackageEntry", "struct_package_entry.html", "struct_package_entry" ]
+    ] ]
 ];

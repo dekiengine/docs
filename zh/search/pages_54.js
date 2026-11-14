@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['用法示例_0',['用法示例',['../guide-screens.html#autotoc_md20',1,'']]]
+  ['核心_20设置_0',['核心 设置',['../engine-core.html#engine-core-settings',1,'核心 设置'],['../settings.html#settings-core-settings',1,'核心 设置']]]
 ];

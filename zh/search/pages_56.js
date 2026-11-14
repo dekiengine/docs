@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['相机_0',['相机',['../guide-screens.html#autotoc_md17',1,'']]]
+  ['概述_0',['概述',['../guide-font-system.html#guide-font-system-overview',1,'概述'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'概述']]]
 ];

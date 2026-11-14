@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['生成されるコードのパターン_0',['生成されるコードのパターン',['../guide-asset-system.html#guide-asset-system-generated-code-pattern',1,'']]],
-  ['生成される_20resolveobjectrefs_1',['生成される ResolveObjectRefs',['../guide-sprite-system.html#guide-sprite-system-generated-resolveobjectrefs',1,'']]]
+  ['提供元_3a_20編集、アップデート、復元_0',['提供元: 編集、アップデート、復元',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

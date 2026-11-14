@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['父资源，source_20帧_0',['为什么 guid = 父资源，source = 帧',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
+  ['查明内存去了哪里_0',['查明内存去了哪里',['../guide-memory.html#autotoc_md9',1,'']]]
 ];

@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: DekiEditor::EditorAssets Class Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -159,58 +212,58 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_deki_edi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af0d760c17309b14de65fba7b2202009a" id="r_af0d760c17309b14de65fba7b2202009a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> = uint8_t* (*)(const char* path, int32_t&amp; outWidth, int32_t&amp; outHeight, bool&amp; outHasAlpha)</td></tr>
-<tr class="memdesc:af0d760c17309b14de65fba7b2202009a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a .dtex image file as RGBA pixels. The caller must free() the buffer.  <br /></td></tr>
-<tr class="memitem:ad98beb2e4325b1cf653ba96c9aa4caa4" id="r_ad98beb2e4325b1cf653ba96c9aa4caa4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a></td></tr>
-<tr class="memdesc:ad98beb2e4325b1cf653ba96c9aa4caa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.  <br /></td></tr>
-<tr class="memitem:ad98cac2255ca49c4b0e15efd7ffa3161" id="r_ad98cac2255ca49c4b0e15efd7ffa3161"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> = void (*)(void* font)</td></tr>
-<tr class="memdesc:ad98cac2255ca49c4b0e15efd7ffa3161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a font returned by <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4" title="Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.">FontFromDfontFn</a>.  <br /></td></tr>
-<tr class="memitem:a75d2851f8c87f150bc5efdf74face9c3" id="r_a75d2851f8c87f150bc5efdf74face9c3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> = std::function&lt;Deki2D::BitmapFont*(const std::string&amp;, int)&gt;</td></tr>
-<tr class="memdesc:a75d2851f8c87f150bc5efdf74face9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes a TTF asset (GUID) at a pixel size.  <br /></td></tr>
 <tr class="memitem:afcdca5ae8f296d89450a0c594a2cc862" id="r_afcdca5ae8f296d89450a0c594a2cc862"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a> = std::function&lt;uint32_t(const std::string&amp;, int, uint32_t*, uint32_t*)&gt;</td></tr>
 <tr class="memdesc:afcdca5ae8f296d89450a0c594a2cc862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure.  <br /></td></tr>
+<tr class="memitem:a75d2851f8c87f150bc5efdf74face9c3" id="r_a75d2851f8c87f150bc5efdf74face9c3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> = std::function&lt;Deki2D::BitmapFont*(const std::string&amp;, int)&gt;</td></tr>
+<tr class="memdesc:a75d2851f8c87f150bc5efdf74face9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bakes a TTF asset (GUID) at a pixel size.  <br /></td></tr>
+<tr class="memitem:ad98cac2255ca49c4b0e15efd7ffa3161" id="r_ad98cac2255ca49c4b0e15efd7ffa3161"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> = void (*)(void* font)</td></tr>
+<tr class="memdesc:ad98cac2255ca49c4b0e15efd7ffa3161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a font returned by <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4" title="Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.">FontFromDfontFn</a>.  <br /></td></tr>
+<tr class="memitem:ad98beb2e4325b1cf653ba96c9aa4caa4" id="r_ad98beb2e4325b1cf653ba96c9aa4caa4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a></td></tr>
+<tr class="memdesc:ad98beb2e4325b1cf653ba96c9aa4caa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.  <br /></td></tr>
+<tr class="memitem:af0d760c17309b14de65fba7b2202009a" id="r_af0d760c17309b14de65fba7b2202009a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> = uint8_t* (*)(const char* path, int32_t&amp; outWidth, int32_t&amp; outHeight, bool&amp; outHasAlpha)</td></tr>
+<tr class="memdesc:af0d760c17309b14de65fba7b2202009a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a .dtex image file as RGBA pixels. The caller must free() the buffer.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2eb0cb3f4d9dce4e8578ec47ac105ed5" id="r_a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a2eb0cb3f4d9dce4e8578ec47ac105ed5">LoadTexture</a> (const std::string &amp;guid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
-<tr class="memdesc:a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure.  <br /></td></tr>
-<tr class="memitem:a0f101fb9277f315d05eef80766545d46" id="r_a0f101fb9277f315d05eef80766545d46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f101fb9277f315d05eef80766545d46">InvalidateTexture</a> (const std::string &amp;guid)</td></tr>
-<tr class="memdesc:a0f101fb9277f315d05eef80766545d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached texture so the next access reloads it.  <br /></td></tr>
+<tr class="memitem:a46d2783a124929cb1b88e06e41ee8e2f" id="r_a46d2783a124929cb1b88e06e41ee8e2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a46d2783a124929cb1b88e06e41ee8e2f">ClearFontBakingCallbacks</a> ()</td></tr>
+<tr class="memdesc:a46d2783a124929cb1b88e06e41ee8e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called BEFORE FreeLibrary on the package that set the callbacks: the std::function destructor runs the callable's manager function, which must still be mapped.  <br /></td></tr>
+<tr class="memitem:ae79e9dd0e6c1c4ba605e30840c25c047" id="r_ae79e9dd0e6c1c4ba605e30840c25c047"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae79e9dd0e6c1c4ba605e30840c25c047">ClearFontCache</a> ()</td></tr>
+<tr class="memdesc:ae79e9dd0e6c1c4ba605e30840c25c047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every cached font, freeing GPU memory.  <br /></td></tr>
 <tr class="memitem:aedfec9d573ad1cd41b5217a3fbf45013" id="r_aedfec9d573ad1cd41b5217a3fbf45013"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aedfec9d573ad1cd41b5217a3fbf45013">ClearTextureCache</a> ()</td></tr>
 <tr class="memdesc:aedfec9d573ad1cd41b5217a3fbf45013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every cached texture, freeing GPU memory.  <br /></td></tr>
+<tr class="memitem:abb7595eee8315f5f6aa65079681cacc2" id="r_abb7595eee8315f5f6aa65079681cacc2"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#abb7595eee8315f5f6aa65079681cacc2">GetBitmapFont</a> (const std::string &amp;bakedGuid)</td></tr>
+<tr class="memdesc:abb7595eee8315f5f6aa65079681cacc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached.  <br /></td></tr>
+<tr class="memitem:aecc7ef0d1af75aa914ae834071566f69" id="r_aecc7ef0d1af75aa914ae834071566f69"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#aecc7ef0d1af75aa914ae834071566f69">GetBitmapFontWithBaking</a> (const std::string &amp;sourceGuid, int fontSize)</td></tr>
+<tr class="memdesc:aecc7ef0d1af75aa914ae834071566f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found.  <br /></td></tr>
+<tr class="memitem:a8952340341b97c5a95edebcc1e0b2f09" id="r_a8952340341b97c5a95edebcc1e0b2f09"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09">GetFrameUVs</a> (const std::string &amp;frameGuid, float *outU0, float *outV0, float *outU1, float *outV1)</td></tr>
+<tr class="memdesc:a8952340341b97c5a95edebcc1e0b2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right.  <br /></td></tr>
+<tr class="memitem:a25229958d433bfbd3f3882e00817a720" id="r_a25229958d433bfbd3f3882e00817a720"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a25229958d433bfbd3f3882e00817a720">InvalidateFontAtlas</a> (const std::string &amp;bakedGuid)</td></tr>
+<tr class="memdesc:a25229958d433bfbd3f3882e00817a720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached font so the next access reloads it.  <br /></td></tr>
+<tr class="memitem:a0f101fb9277f315d05eef80766545d46" id="r_a0f101fb9277f315d05eef80766545d46"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0f101fb9277f315d05eef80766545d46">InvalidateTexture</a> (const std::string &amp;guid)</td></tr>
+<tr class="memdesc:a0f101fb9277f315d05eef80766545d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached texture so the next access reloads it.  <br /></td></tr>
 <tr class="memitem:a18c0b85fdfbed6d62e765b85e73c9122" id="r_a18c0b85fdfbed6d62e765b85e73c9122"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a18c0b85fdfbed6d62e765b85e73c9122">LoadFontAtlas</a> (const std::string &amp;bakedGuid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
 <tr class="memdesc:a18c0b85fdfbed6d62e765b85e73c9122"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas for a baked font (font.guid, resolved to a .dfont through AssetManager::LookupPath()), or 0 on failure.  <br /></td></tr>
 <tr class="memitem:aece108873afec7d71506197dee941e8b" id="r_aece108873afec7d71506197dee941e8b"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aece108873afec7d71506197dee941e8b">LoadFontAtlasFromPath</a> (const std::string &amp;dfontPath, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
 <tr class="memdesc:aece108873afec7d71506197dee941e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas for the .dfont at a full path, or 0 on failure.  <br /></td></tr>
-<tr class="memitem:abb7595eee8315f5f6aa65079681cacc2" id="r_abb7595eee8315f5f6aa65079681cacc2"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#abb7595eee8315f5f6aa65079681cacc2">GetBitmapFont</a> (const std::string &amp;bakedGuid)</td></tr>
-<tr class="memdesc:abb7595eee8315f5f6aa65079681cacc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached.  <br /></td></tr>
-<tr class="memitem:a25229958d433bfbd3f3882e00817a720" id="r_a25229958d433bfbd3f3882e00817a720"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a25229958d433bfbd3f3882e00817a720">InvalidateFontAtlas</a> (const std::string &amp;bakedGuid)</td></tr>
-<tr class="memdesc:a25229958d433bfbd3f3882e00817a720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops a cached font so the next access reloads it.  <br /></td></tr>
-<tr class="memitem:ae79e9dd0e6c1c4ba605e30840c25c047" id="r_ae79e9dd0e6c1c4ba605e30840c25c047"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae79e9dd0e6c1c4ba605e30840c25c047">ClearFontCache</a> ()</td></tr>
-<tr class="memdesc:ae79e9dd0e6c1c4ba605e30840c25c047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every cached font, freeing GPU memory.  <br /></td></tr>
-<tr class="memitem:af5533ead3b64f669917c8013d9234675" id="r_af5533ead3b64f669917c8013d9234675"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af5533ead3b64f669917c8013d9234675">SetFontBakingCallbacks</a> (<a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> bakeFont, <a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a> getAtlas)</td></tr>
-<tr class="memdesc:af5533ead3b64f669917c8013d9234675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the editor at startup.  <br /></td></tr>
-<tr class="memitem:a46d2783a124929cb1b88e06e41ee8e2f" id="r_a46d2783a124929cb1b88e06e41ee8e2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a46d2783a124929cb1b88e06e41ee8e2f">ClearFontBakingCallbacks</a> ()</td></tr>
-<tr class="memdesc:a46d2783a124929cb1b88e06e41ee8e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called BEFORE FreeLibrary on the package that set the callbacks: the std::function destructor runs the callable's manager function, which must still be mapped.  <br /></td></tr>
-<tr class="memitem:aecc7ef0d1af75aa914ae834071566f69" id="r_aecc7ef0d1af75aa914ae834071566f69"><td class="memItemLeft">Deki2D::BitmapFont *&#160;</td><td class="memItemRight"><a class="el" href="#aecc7ef0d1af75aa914ae834071566f69">GetBitmapFontWithBaking</a> (const std::string &amp;sourceGuid, int fontSize)</td></tr>
-<tr class="memdesc:aecc7ef0d1af75aa914ae834071566f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found.  <br /></td></tr>
 <tr class="memitem:a0a4639d12e383e89e5eae02294ef455e" id="r_a0a4639d12e383e89e5eae02294ef455e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0a4639d12e383e89e5eae02294ef455e">LoadFontAtlasWithBaking</a> (const std::string &amp;sourceGuid, int fontSize, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
 <tr class="memdesc:a0a4639d12e383e89e5eae02294ef455e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset at a pixel size, baking it if needed, or 0 on failure.  <br /></td></tr>
-<tr class="memitem:af54310be3f20c4530402878f65ebd4d1" id="r_af54310be3f20c4530402878f65ebd4d1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af54310be3f20c4530402878f65ebd4d1">LoadSpriteSettings</a> (const std::string &amp;guid, int *outFrameWidth=nullptr, int *outFrameHeight=nullptr)</td></tr>
-<tr class="memdesc:af54310be3f20c4530402878f65ebd4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a spritesheet's frame size from the asset's .data file.  <br /></td></tr>
 <tr class="memitem:a27ddf9be9cac90ea8a79f35fa3e085c0" id="r_a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a27ddf9be9cac90ea8a79f35fa3e085c0">LoadFrameTexture</a> (const std::string &amp;frameGuid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
 <tr class="memdesc:a27ddf9be9cac90ea8a79f35fa3e085c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> of a frame's parent spritesheet, or 0 on failure.  <br /></td></tr>
-<tr class="memitem:a8952340341b97c5a95edebcc1e0b2f09" id="r_a8952340341b97c5a95edebcc1e0b2f09"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8952340341b97c5a95edebcc1e0b2f09">GetFrameUVs</a> (const std::string &amp;frameGuid, float *outU0, float *outV0, float *outU1, float *outV1)</td></tr>
-<tr class="memdesc:a8952340341b97c5a95edebcc1e0b2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right.  <br /></td></tr>
+<tr class="memitem:af54310be3f20c4530402878f65ebd4d1" id="r_af54310be3f20c4530402878f65ebd4d1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af54310be3f20c4530402878f65ebd4d1">LoadSpriteSettings</a> (const std::string &amp;guid, int *outFrameWidth=nullptr, int *outFrameHeight=nullptr)</td></tr>
+<tr class="memdesc:af54310be3f20c4530402878f65ebd4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a spritesheet's frame size from the asset's .data file.  <br /></td></tr>
+<tr class="memitem:a2eb0cb3f4d9dce4e8578ec47ac105ed5" id="r_a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a2eb0cb3f4d9dce4e8578ec47ac105ed5">LoadTexture</a> (const std::string &amp;guid, uint32_t *outWidth=nullptr, uint32_t *outHeight=nullptr)</td></tr>
+<tr class="memdesc:a2eb0cb3f4d9dce4e8578ec47ac105ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure.  <br /></td></tr>
+<tr class="memitem:af5533ead3b64f669917c8013d9234675" id="r_af5533ead3b64f669917c8013d9234675"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af5533ead3b64f669917c8013d9234675">SetFontBakingCallbacks</a> (<a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a> bakeFont, <a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a> getAtlas)</td></tr>
+<tr class="memdesc:af5533ead3b64f669917c8013d9234675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the editor at startup.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a31e3303cae2f79648f4437cbf86ef211" id="r_a31e3303cae2f79648f4437cbf86ef211"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31e3303cae2f79648f4437cbf86ef211">RegisterImageLoader</a> (<a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> fn)</td></tr>
-<tr class="memitem:a31bdd80455cd5a7b231bab27ce504864" id="r_a31bdd80455cd5a7b231bab27ce504864"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31bdd80455cd5a7b231bab27ce504864">RegisterFontFactory</a> (<a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a> factory, <a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> destroyer)</td></tr>
-<tr class="memitem:ade9f5777d6f6ce6816d9ebc44e45cb27" id="r_ade9f5777d6f6ce6816d9ebc44e45cb27"><td class="memItemLeft">static <a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a>&#160;</td><td class="memItemRight"><a class="el" href="#ade9f5777d6f6ce6816d9ebc44e45cb27">GetImageLoader</a> ()</td></tr>
 <tr class="memitem:a2eb46ddba093eb16f5de23ef4ce2f245" id="r_a2eb46ddba093eb16f5de23ef4ce2f245"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a2eb46ddba093eb16f5de23ef4ce2f245">ClearPackageInjectedCallbacks</a> ()</td></tr>
 <tr class="memdesc:a2eb46ddba093eb16f5de23ef4ce2f245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears every function pointer packages registered.  <br /></td></tr>
 <tr class="memitem:a5739971995feeb2e20dd5dd97223c3c7" id="r_a5739971995feeb2e20dd5dd97223c3c7"><td class="memItemLeft">static EditorAssets *&#160;</td><td class="memItemRight"><a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">Get</a> ()</td></tr>
+<tr class="memitem:ade9f5777d6f6ce6816d9ebc44e45cb27" id="r_ade9f5777d6f6ce6816d9ebc44e45cb27"><td class="memItemLeft">static <a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a>&#160;</td><td class="memItemRight"><a class="el" href="#ade9f5777d6f6ce6816d9ebc44e45cb27">GetImageLoader</a> ()</td></tr>
+<tr class="memitem:a31bdd80455cd5a7b231bab27ce504864" id="r_a31bdd80455cd5a7b231bab27ce504864"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31bdd80455cd5a7b231bab27ce504864">RegisterFontFactory</a> (<a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a> factory, <a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a> destroyer)</td></tr>
+<tr class="memitem:a31e3303cae2f79648f4437cbf86ef211" id="r_a31e3303cae2f79648f4437cbf86ef211"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a31e3303cae2f79648f4437cbf86ef211">RegisterImageLoader</a> (<a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> fn)</td></tr>
 <tr class="memitem:a169a194e797c01cbc57ac6b75c0efb7e" id="r_a169a194e797c01cbc57ac6b75c0efb7e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a169a194e797c01cbc57ac6b75c0efb7e">Shutdown</a> ()</td></tr>
 <tr class="memdesc:a169a194e797c01cbc57ac6b75c0efb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees every GPU resource.  <br /></td></tr>
 </table>
@@ -218,19 +271,52 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Loads assets onto the GPU for the editor, cached by GUID: uint32_t texId = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">EditorAssets::Get()</a>-&gt;LoadTexture(guid, &amp;w, &amp;h); Deki2D::BitmapFont* font = <a class="el" href="#a5739971995feeb2e20dd5dd97223c3c7">EditorAssets::Get()</a>-&gt;GetBitmapFont(bakedGuid);. </p>
 <p>Paths come from AssetManager's GUID table, which the editor must fill when a project loads. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
-<a id="af0d760c17309b14de65fba7b2202009a" name="af0d760c17309b14de65fba7b2202009a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0d760c17309b14de65fba7b2202009a">&#9670;&#160;</a></span>ImageLoaderFn</h2>
+<a id="afcdca5ae8f296d89450a0c594a2cc862" name="afcdca5ae8f296d89450a0c594a2cc862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdca5ae8f296d89450a0c594a2cc862">&#9670;&#160;</a></span>FontAtlasCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#af0d760c17309b14de65fba7b2202009a">DekiEditor::EditorAssets::ImageLoaderFn</a> = uint8_t* (*)(const char* path, int32_t&amp; outWidth, int32_t&amp; outHeight, bool&amp; outHasAlpha)</td>
+          <td class="memname">using <a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">DekiEditor::EditorAssets::FontAtlasCallback</a> = std::function&lt;uint32_t(const std::string&amp;, int, uint32_t*, uint32_t*)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Loads a .dtex image file as RGBA pixels. The caller must free() the buffer. </p>
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure. </p>
+
+</div>
+</div>
+<a id="a75d2851f8c87f150bc5efdf74face9c3" name="a75d2851f8c87f150bc5efdf74face9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d2851f8c87f150bc5efdf74face9c3">&#9670;&#160;</a></span>FontBakeCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">DekiEditor::EditorAssets::FontBakeCallback</a> = std::function&lt;Deki2D::BitmapFont*(const std::string&amp;, int)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bakes a TTF asset (GUID) at a pixel size. </p>
+<p>Returns the font, owned by the caller's cache, or nullptr on failure. </p>
+
+</div>
+</div>
+<a id="ad98cac2255ca49c4b0e15efd7ffa3161" name="ad98cac2255ca49c4b0e15efd7ffa3161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98cac2255ca49c4b0e15efd7ffa3161">&#9670;&#160;</a></span>FontDestroyFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">DekiEditor::EditorAssets::FontDestroyFn</a> = void (*)(void* font)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys a font returned by <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4" title="Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.">FontFromDfontFn</a>. </p>
 
 </div>
 </div>
@@ -253,132 +339,58 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad98cac2255ca49c4b0e15efd7ffa3161" name="ad98cac2255ca49c4b0e15efd7ffa3161"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad98cac2255ca49c4b0e15efd7ffa3161">&#9670;&#160;</a></span>FontDestroyFn</h2>
+<a id="af0d760c17309b14de65fba7b2202009a" name="af0d760c17309b14de65fba7b2202009a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d760c17309b14de65fba7b2202009a">&#9670;&#160;</a></span>ImageLoaderFn</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">DekiEditor::EditorAssets::FontDestroyFn</a> = void (*)(void* font)</td>
+          <td class="memname">using <a class="el" href="#af0d760c17309b14de65fba7b2202009a">DekiEditor::EditorAssets::ImageLoaderFn</a> = uint8_t* (*)(const char* path, int32_t&amp; outWidth, int32_t&amp; outHeight, bool&amp; outHasAlpha)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys a font returned by <a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4" title="Loads a .dfont file, returning an opaque Deki2D::BitmapFont* and the atlas RGBA data to upload.">FontFromDfontFn</a>. </p>
-
-</div>
-</div>
-<a id="a75d2851f8c87f150bc5efdf74face9c3" name="a75d2851f8c87f150bc5efdf74face9c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75d2851f8c87f150bc5efdf74face9c3">&#9670;&#160;</a></span>FontBakeCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">DekiEditor::EditorAssets::FontBakeCallback</a> = std::function&lt;Deki2D::BitmapFont*(const std::string&amp;, int)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Bakes a TTF asset (GUID) at a pixel size. </p>
-<p>Returns the font, owned by the caller's cache, or nullptr on failure. </p>
-
-</div>
-</div>
-<a id="afcdca5ae8f296d89450a0c594a2cc862" name="afcdca5ae8f296d89450a0c594a2cc862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcdca5ae8f296d89450a0c594a2cc862">&#9670;&#160;</a></span>FontAtlasCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">DekiEditor::EditorAssets::FontAtlasCallback</a> = std::function&lt;uint32_t(const std::string&amp;, int, uint32_t*, uint32_t*)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> atlas of a TTF asset (GUID) at a pixel size, with its width and height, or 0 on failure. </p>
+<p>Loads a .dtex image file as RGBA pixels. The caller must free() the buffer. </p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a31e3303cae2f79648f4437cbf86ef211" name="a31e3303cae2f79648f4437cbf86ef211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31e3303cae2f79648f4437cbf86ef211">&#9670;&#160;</a></span>RegisterImageLoader()</h2>
+<a id="a46d2783a124929cb1b88e06e41ee8e2f" name="a46d2783a124929cb1b88e06e41ee8e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d2783a124929cb1b88e06e41ee8e2f">&#9670;&#160;</a></span>ClearFontBakingCallbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DekiEditor::EditorAssets::RegisterImageLoader </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a></td>          <td class="paramname"><span class="paramname"><em>fn</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a31bdd80455cd5a7b231bab27ce504864" name="a31bdd80455cd5a7b231bab27ce504864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31bdd80455cd5a7b231bab27ce504864">&#9670;&#160;</a></span>RegisterFontFactory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DekiEditor::EditorAssets::RegisterFontFactory </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a></td>          <td class="paramname"><span class="paramname"><em>factory</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a></td>          <td class="paramname"><span class="paramname"><em>destroyer</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade9f5777d6f6ce6816d9ebc44e45cb27" name="ade9f5777d6f6ce6816d9ebc44e45cb27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9f5777d6f6ce6816d9ebc44e45cb27">&#9670;&#160;</a></span>GetImageLoader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> DekiEditor::EditorAssets::GetImageLoader </td>
+          <td class="memname">void DekiEditor::EditorAssets::ClearFontBakingCallbacks </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Must be called BEFORE FreeLibrary on the package that set the callbacks: the std::function destructor runs the callable's manager function, which must still be mapped. </p>
+
+</div>
+</div>
+<a id="ae79e9dd0e6c1c4ba605e30840c25c047" name="ae79e9dd0e6c1c4ba605e30840c25c047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae79e9dd0e6c1c4ba605e30840c25c047">&#9670;&#160;</a></span>ClearFontCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorAssets::ClearFontCache </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops every cached font, freeing GPU memory. </p>
 
 </div>
 </div>
@@ -410,6 +422,25 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aedfec9d573ad1cd41b5217a3fbf45013" name="aedfec9d573ad1cd41b5217a3fbf45013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfec9d573ad1cd41b5217a3fbf45013">&#9670;&#160;</a></span>ClearTextureCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorAssets::ClearTextureCache </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops every cached texture, freeing GPU memory. </p>
+
+</div>
+</div>
 <a id="a5739971995feeb2e20dd5dd97223c3c7" name="a5739971995feeb2e20dd5dd97223c3c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5739971995feeb2e20dd5dd97223c3c7">&#9670;&#160;</a></span>Get()</h2>
 
@@ -435,8 +466,89 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a169a194e797c01cbc57ac6b75c0efb7e" name="a169a194e797c01cbc57ac6b75c0efb7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a169a194e797c01cbc57ac6b75c0efb7e">&#9670;&#160;</a></span>Shutdown()</h2>
+<a id="abb7595eee8315f5f6aa65079681cacc2" name="abb7595eee8315f5f6aa65079681cacc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7595eee8315f5f6aa65079681cacc2">&#9670;&#160;</a></span>GetBitmapFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deki2D::BitmapFont * DekiEditor::EditorAssets::GetBitmapFont </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>bakedGuid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached. </p>
+
+</div>
+</div>
+<a id="aecc7ef0d1af75aa914ae834071566f69" name="aecc7ef0d1af75aa914ae834071566f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc7ef0d1af75aa914ae834071566f69">&#9670;&#160;</a></span>GetBitmapFontWithBaking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deki2D::BitmapFont * DekiEditor::EditorAssets::GetBitmapFontWithBaking </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceGuid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>fontSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found. </p>
+
+</div>
+</div>
+<a id="a8952340341b97c5a95edebcc1e0b2f09" name="a8952340341b97c5a95edebcc1e0b2f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8952340341b97c5a95edebcc1e0b2f09">&#9670;&#160;</a></span>GetFrameUVs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DekiEditor::EditorAssets::GetFrameUVs </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>frameGuid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outU0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outV0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outU1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outV1</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right. </p>
+<p>Returns false when the frame is not found. </p>
+
+</div>
+</div>
+<a id="ade9f5777d6f6ce6816d9ebc44e45cb27" name="ade9f5777d6f6ce6816d9ebc44e45cb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9f5777d6f6ce6816d9ebc44e45cb27">&#9670;&#160;</a></span>GetImageLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +557,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DekiEditor::EditorAssets::Shutdown </td>
+          <td class="memname"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a> DekiEditor::EditorAssets::GetImageLoader </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -458,36 +570,24 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Frees every GPU resource. </p>
-
 </div>
 </div>
-<a id="a2eb0cb3f4d9dce4e8578ec47ac105ed5" name="a2eb0cb3f4d9dce4e8578ec47ac105ed5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eb0cb3f4d9dce4e8578ec47ac105ed5">&#9670;&#160;</a></span>LoadTexture()</h2>
+<a id="a25229958d433bfbd3f3882e00817a720" name="a25229958d433bfbd3f3882e00817a720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25229958d433bfbd3f3882e00817a720">&#9670;&#160;</a></span>InvalidateFontAtlas()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t DekiEditor::EditorAssets::LoadTexture </td>
+          <td class="memname">void DekiEditor::EditorAssets::InvalidateFontAtlas </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>bakedGuid</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>outWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>outHeight</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure. </p>
-<p>Width and height are written to the optional outputs. </p>
+<p>Drops a cached font so the next access reloads it. </p>
 
 </div>
 </div>
@@ -507,25 +607,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Drops a cached texture so the next access reloads it. </p>
-
-</div>
-</div>
-<a id="aedfec9d573ad1cd41b5217a3fbf45013" name="aedfec9d573ad1cd41b5217a3fbf45013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedfec9d573ad1cd41b5217a3fbf45013">&#9670;&#160;</a></span>ClearTextureCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DekiEditor::EditorAssets::ClearTextureCache </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Drops every cached texture, freeing GPU memory. </p>
 
 </div>
 </div>
@@ -585,128 +666,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abb7595eee8315f5f6aa65079681cacc2" name="abb7595eee8315f5f6aa65079681cacc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb7595eee8315f5f6aa65079681cacc2">&#9670;&#160;</a></span>GetBitmapFont()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Deki2D::BitmapFont * DekiEditor::EditorAssets::GetBitmapFont </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>bakedGuid</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The BitmapFont of a baked font, for glyph metrics, or nullptr if it is not cached. </p>
-
-</div>
-</div>
-<a id="a25229958d433bfbd3f3882e00817a720" name="a25229958d433bfbd3f3882e00817a720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25229958d433bfbd3f3882e00817a720">&#9670;&#160;</a></span>InvalidateFontAtlas()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DekiEditor::EditorAssets::InvalidateFontAtlas </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>bakedGuid</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Drops a cached font so the next access reloads it. </p>
-
-</div>
-</div>
-<a id="ae79e9dd0e6c1c4ba605e30840c25c047" name="ae79e9dd0e6c1c4ba605e30840c25c047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae79e9dd0e6c1c4ba605e30840c25c047">&#9670;&#160;</a></span>ClearFontCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DekiEditor::EditorAssets::ClearFontCache </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Drops every cached font, freeing GPU memory. </p>
-
-</div>
-</div>
-<a id="af5533ead3b64f669917c8013d9234675" name="af5533ead3b64f669917c8013d9234675"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5533ead3b64f669917c8013d9234675">&#9670;&#160;</a></span>SetFontBakingCallbacks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DekiEditor::EditorAssets::SetFontBakingCallbacks </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a></td>          <td class="paramname"><span class="paramname"><em>bakeFont</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a></td>          <td class="paramname"><span class="paramname"><em>getAtlas</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Called by the editor at startup. </p>
-
-</div>
-</div>
-<a id="a46d2783a124929cb1b88e06e41ee8e2f" name="a46d2783a124929cb1b88e06e41ee8e2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46d2783a124929cb1b88e06e41ee8e2f">&#9670;&#160;</a></span>ClearFontBakingCallbacks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DekiEditor::EditorAssets::ClearFontBakingCallbacks </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Must be called BEFORE FreeLibrary on the package that set the callbacks: the std::function destructor runs the callable's manager function, which must still be mapped. </p>
-
-</div>
-</div>
-<a id="aecc7ef0d1af75aa914ae834071566f69" name="aecc7ef0d1af75aa914ae834071566f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc7ef0d1af75aa914ae834071566f69">&#9670;&#160;</a></span>GetBitmapFontWithBaking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Deki2D::BitmapFont * DekiEditor::EditorAssets::GetBitmapFontWithBaking </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceGuid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>fontSize</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The BitmapFont of a TTF asset at a pixel size, baking it if needed, or nullptr if not found. </p>
-
-</div>
-</div>
 <a id="a0a4639d12e383e89e5eae02294ef455e" name="a0a4639d12e383e89e5eae02294ef455e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a4639d12e383e89e5eae02294ef455e">&#9670;&#160;</a></span>LoadFontAtlasWithBaking()</h2>
 
@@ -740,35 +699,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af54310be3f20c4530402878f65ebd4d1" name="af54310be3f20c4530402878f65ebd4d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af54310be3f20c4530402878f65ebd4d1">&#9670;&#160;</a></span>LoadSpriteSettings()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DekiEditor::EditorAssets::LoadSpriteSettings </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>outFrameWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>outFrameHeight</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads a spritesheet's frame size from the asset's .data file. </p>
-<p>Returns false for a texture without sprite settings. </p>
-
-</div>
-</div>
 <a id="a27ddf9be9cac90ea8a79f35fa3e085c0" name="a27ddf9be9cac90ea8a79f35fa3e085c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27ddf9be9cac90ea8a79f35fa3e085c0">&#9670;&#160;</a></span>LoadFrameTexture()</h2>
 
@@ -798,42 +728,165 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8952340341b97c5a95edebcc1e0b2f09" name="a8952340341b97c5a95edebcc1e0b2f09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8952340341b97c5a95edebcc1e0b2f09">&#9670;&#160;</a></span>GetFrameUVs()</h2>
+<a id="af54310be3f20c4530402878f65ebd4d1" name="af54310be3f20c4530402878f65ebd4d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54310be3f20c4530402878f65ebd4d1">&#9670;&#160;</a></span>LoadSpriteSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DekiEditor::EditorAssets::GetFrameUVs </td>
+          <td class="memname">bool DekiEditor::EditorAssets::LoadSpriteSettings </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>frameGuid</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outU0</em></span>, </td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>outFrameWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outV0</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outU1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>outV1</em></span>&#160;)</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>outFrameHeight</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The normalized UVs (0 to 1) of a frame ("parent:frame-N") within its parent texture: (U0, V0) top-left, (U1, V1) bottom-right. </p>
-<p>Returns false when the frame is not found. </p>
+<p>Reads a spritesheet's frame size from the asset's .data file. </p>
+<p>Returns false for a texture without sprite settings. </p>
+
+</div>
+</div>
+<a id="a2eb0cb3f4d9dce4e8578ec47ac105ed5" name="a2eb0cb3f4d9dce4e8578ec47ac105ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb0cb3f4d9dce4e8578ec47ac105ed5">&#9670;&#160;</a></span>LoadTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t DekiEditor::EditorAssets::LoadTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>guid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>outWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>outHeight</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="namespace_deki_editor_1_1_editor_texture.html" title="Pictures the editor UI draws: the Scene and Play views, asset previews, font atlases.">EditorTexture</a> for an asset GUID (resolved through AssetManager), uploading it on first use, or 0 on failure. </p>
+<p>Width and height are written to the optional outputs. </p>
+
+</div>
+</div>
+<a id="a31bdd80455cd5a7b231bab27ce504864" name="a31bdd80455cd5a7b231bab27ce504864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31bdd80455cd5a7b231bab27ce504864">&#9670;&#160;</a></span>RegisterFontFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorAssets::RegisterFontFactory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad98beb2e4325b1cf653ba96c9aa4caa4">FontFromDfontFn</a></td>          <td class="paramname"><span class="paramname"><em>factory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad98cac2255ca49c4b0e15efd7ffa3161">FontDestroyFn</a></td>          <td class="paramname"><span class="paramname"><em>destroyer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31e3303cae2f79648f4437cbf86ef211" name="a31e3303cae2f79648f4437cbf86ef211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e3303cae2f79648f4437cbf86ef211">&#9670;&#160;</a></span>RegisterImageLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorAssets::RegisterImageLoader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#af0d760c17309b14de65fba7b2202009a">ImageLoaderFn</a></td>          <td class="paramname"><span class="paramname"><em>fn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5533ead3b64f669917c8013d9234675" name="af5533ead3b64f669917c8013d9234675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5533ead3b64f669917c8013d9234675">&#9670;&#160;</a></span>SetFontBakingCallbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorAssets::SetFontBakingCallbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a75d2851f8c87f150bc5efdf74face9c3">FontBakeCallback</a></td>          <td class="paramname"><span class="paramname"><em>bakeFont</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afcdca5ae8f296d89450a0c594a2cc862">FontAtlasCallback</a></td>          <td class="paramname"><span class="paramname"><em>getAtlas</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called by the editor at startup. </p>
+
+</div>
+</div>
+<a id="a169a194e797c01cbc57ac6b75c0efb7e" name="a169a194e797c01cbc57ac6b75c0efb7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169a194e797c01cbc57ac6b75c0efb7e">&#9670;&#160;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DekiEditor::EditorAssets::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Frees every GPU resource. </p>
 
 </div>
 </div>

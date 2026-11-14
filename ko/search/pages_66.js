@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['영역은_20이름이므로_20패키지가_20직접_20추가할_20수_20있습니다_0',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#autotoc_md4',1,'']]],
-  ['영역을_20제공하는_20것은_20보드의_20일입니다_1',['영역을 제공하는 것은 보드의 일입니다',['../guide-memory.html#autotoc_md5',1,'']]],
-  ['영역_20매번_20직접_20고릅니다_2',['영역 - 매번 직접 고릅니다',['../guide-memory.html#autotoc_md3',1,'']]],
-  ['영역_20이름은_20케이퍼빌리티_20이름입니다_3',['영역 이름은 케이퍼빌리티 이름입니다',['../guide-memory.html#autotoc_md6',1,'']]]
+  ['어디에서_20오는가_0',['플랫폼은 어디에서 오는가',['../guide-platforms.html#guide-platforms-where-platforms-come-from',1,'']]],
+  ['어디에_20쓰였는지_20알아내기_1',['메모리가 어디에 쓰였는지 알아내기',['../guide-memory.html#autotoc_md9',1,'']]]
 ];

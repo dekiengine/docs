@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: Deki</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -28,14 +31,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/ja/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">ドキュメント</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">マニュアル</span></a>
+    <a class="deki-tab deki-tab-api" href="https://dekiengine.github.io/docs/annotated.html"><span class="deki-nav-label">API リファレンス</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/ja/"><span class="deki-nav-label">サイト</span></a>
     <a href="https://dekiengine.com/ja/packages/"><span class="deki-nav-label">パッケージ</span></a>
@@ -43,7 +95,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/ja/discord/" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/ja/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>寄付</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>ダウンロード</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/ja/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>寄付</span></a>
     <details class="deki-lang"><summary aria-label="言語: 日本語"><span class="deki-nav-label">日本語</span></summary><div class="deki-lang-menu"><a href="../index.html" data-deki-root="../" hreflang="en" lang="en">English</a><a href="../ja/index.html" data-deki-root="../ja/" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="../zh/index.html" data-deki-root="../zh/" hreflang="zh" lang="zh">简体中文</a><a href="../ko/index.html" data-deki-root="../ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -60,7 +113,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">組み込みディスプレイとデスクトップのためのモジュール式 C++ 2D エンジン</div>
   </td>
@@ -148,102 +201,73 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html',''
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
-<p>組み込みディスプレイとデスクトップのための、ビジュアルエディターを備えたモジュール式の C++ 2D エンジンです。</p>
-<p>ここにはエンジンのコアとその C++ API があります。パッケージのドキュメントはそれぞれのパッケージにあり、下にリンクがあります。すべてコードから生成しています (エンジン 0.30.3)。</p>
-<ul>
-<li><a href="engine-core.html">エンジンコア</a>: エンジン自身が提供するコンポーネントと設定</li>
-<li><a href="settings.html">プロジェクト設定</a>: すべての設定セクションと、それを定義するもの</li>
-<li><a href="https://dekiengine.github.io/docs/annotated.html">API リファレンス</a>: エンジンとエディター DLL の C++ クラス (英語)</li>
-<li><a href="https://github.com/dekiengine/deki-editor">エディターのリポジトリ</a>: セットアップ、コントリビュート、互換性ポリシー</li>
-</ul>
-<h1 class="doxsection"><a class="anchor" id="guides"></a>
-ガイド</h1>
-<ul>
-<li><a href="guide-asset-system.html">アセットシステム</a></li>
+<p> 
+<div class="deki-home">
+<div class="deki-hero">
+<div>
+<h1 class="deki-home-title">Deki ドキュメント</h1>
+<p class="deki-home-lede">組み込みディスプレイとデスクトップのための、ビジュアルエディターを備えたモジュール式の C++ 2D エンジンです。</p>
+<p class="deki-actions">
+<a class="deki-action-solid" href="guide-getting-started.html">はじめに</a>
+<a href="section-packages.html">パッケージ</a>
+<a href="https://dekiengine.github.io/docs/annotated.html">API リファレンス</a>
+</p>
+</div>
+<img src="editor.png" alt="デモプロジェクトを開いたエディター"/>
+</div>
+<div class="deki-cards">
+<section class="deki-card"><h2>まずはここから</h2><ul>
+<li><a href="guide-getting-started.html">はじめに</a></li>
+<li><a href="guide-first-game.html">Your first game</a></li>
+<li><a href="guide-first-app.html">Your first app</a></li>
+<li><a href="guide-project-layout.html">プロジェクトの構成</a></li>
 <li><a href="guide-coming-from-lvgl.html">Coming from LVGL</a></li>
+</ul></section>
+<section class="deki-card"><h2>ゲームを作る</h2><ul>
+<li><a href="guide-components.html">Components</a></li>
+<li><a href="guide-sprites.html">Sprites</a></li>
+<li><a href="guide-animation.html">Animation</a></li>
+<li><a href="guide-text.html">Text</a></li>
+<li><a href="guide-input.html">Input</a></li>
+<li><a href="guide-physics.html">Physics</a></li>
+<li><a href="guide-ui-widgets.html">UI widgets</a></li>
+<li><a href="guide-assets.html">Assets</a></li>
+<li><a href="guide-screens.html">画面</a></li>
+<li><a href="guide-units.html">単位</a></li>
+<li><a href="guide-localization.html">言語</a></li>
+</ul></section>
+<section class="deki-card"><h2>デバイス</h2><ul>
+<li><a href="guide-device-anbernic-rg40xx-h.html">Anbernic RG40XX H</a></li>
+<li><a href="guide-device-lilygo-t-deck.html">LilyGO T-Deck</a></li>
+<li><a href="guide-device-lilygo-t-deck-plus.html">LilyGO T-Deck Plus</a></li>
+<li><a href="guide-device-lilygo-t-display-s3-amoled.html">LilyGO T-Display S3 AMOLED</a></li>
+<li><a href="guide-device-miyoo-mini.html">Miyoo Mini</a></li>
+<li><a href="guide-your-own-device.html">Use your own device</a></li>
+<li><a href="guide-platforms.html">プラットフォーム</a></li>
+</ul></section>
+<section class="deki-card"><h2>速度</h2><ul>
+<li><a href="guide-performance.html#guide-performance-profiler">プロファイラー</a></li>
+<li><a href="guide-performance.html#guide-performance-on-a-device">デバイス上で</a></li>
+<li><a href="guide-performance.html#guide-performance-memory-panel">メモリパネル</a></li>
+</ul></section>
+<section class="deki-card"><h2>リファレンス</h2><ul>
+<li><a href="engine-core.html">エンジンコア</a></li>
+<li><a href="settings.html">プロジェクト設定</a></li>
+<li><a href="https://github.com/dekiengine/deki-editor">エディターのリポジトリ</a></li>
+<li><a href="guide-memory.html">メモリ</a></li>
+<li><a href="guide-asset-system.html">アセットシステム</a></li>
+<li><a href="guide-sprite-system.html">スプライトシステム</a></li>
 <li><a href="guide-font-system.html">フォントシステム</a></li>
 <li><a href="guide-hardware-checklist.html">Hardware checklist</a></li>
-<li><a href="guide-localization.html">言語</a></li>
-<li><a href="guide-memory.html">メモリ</a></li>
-<li><a href="guide-performance.html">高速化</a></li>
-<li><a href="guide-platforms.html">プラットフォーム</a></li>
-<li><a href="guide-project-layout.html">プロジェクトの構成</a></li>
 <li><a href="guide-releasing.html">Releasing</a></li>
-<li><a href="guide-screens.html">画面</a></li>
-<li><a href="guide-sprite-system.html">スプライトシステム</a></li>
-<li><a href="guide-ui-widgets.html">UI widgets</a></li>
-<li><a href="guide-units.html">単位</a></li>
-</ul>
-<h1 class="doxsection"><a class="anchor" id="packages"></a>
-パッケージ</h1>
-<p>それぞれが <a href="https://github.com/dekiengine">github.com/dekiengine</a> の独立したリポジトリです。<span class="tt">DekiEditor --packages-add &lt;id&gt; &lt;project&gt;</span> か、パッケージマネージャーからインストールします。</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">パッケージ  </th><th class="markdownTableHeadNone">コンポーネント  </th><th class="markdownTableHeadNone">概要  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-2d/ja/">deki-2d</a>  </td><td class="markdownTableBodyNone">28  </td><td class="markdownTableBodyNone">2D コンテンツ用のコンポーネント：スプライト、テキスト（BitmapFont と TTF ベイク）、アニメーション、グラデーション、ボタン、スクロール、クリッピング、ローラー。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-3d/ja/">deki-3d</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">レンダーパスとして動くソフトウェアラスタライズの 3D：メッシュ、透視投影カメラ、.obj インポート。2D と 1 つのフレームバッファを共有します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-audio/ja/">deki-audio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">オーディオ再生用の周辺機器。I²S で接続する MAX98357 D 級アンプ。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-ble/ja/">deki-ble</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Bluetooth Low Energy の抽象化。BLE のペリフェラルとセントラルのための、エンジン側のインターフェースです。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-desktop-integration/ja/">deki-desktop-integration</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">デスクトップ用のプラットフォーム HAL：デスクトップビルド向けのメモリとファイルシステムのプロバイダー。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-display/ja/">deki-display</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Deki 独自のディスプレイライブラリ。趣味のボードでよく使われる画面を動かし、タッチを読み、どのフレームも丸ごと送ります。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-esp32-integration/ja/">deki-esp32-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">ESP32 用のプラットフォーム HAL：ESP-IDF の SDMMC による SD カード、FATFS ファイルシステム、シリアルコマンド、メモリとファイルシステムのセットアップ。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-fsm/ja/">deki-fsm</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">ビジュアルなステートマシン。キャンバス上にステート、グループ、トランジションを置き、各ステートの中にアクションフローを持ちます。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gpio/ja/">deki-gpio</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">デジタルピン：ピンを駆動する、ピンを読む、ピンのパルスを数える。加えて、ボードの周辺機器に電源を入れるブートステップ。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-gps/ja/">deki-gps</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">GPS 周辺機器。どのトーカーの NMEA でも UART 経由で読み取り、受信機の通信速度を自分で見つけ、衛星数と高度を報告します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-http/ja/">deki-http</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">HTTP クライアント。デスクトップでは WinHTTP による同期 GET を提供します。組み込みボードは独自のネットワークスタックを使います。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2c/ja/">deki-i2c</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">I²C バスのサポート。バスはボード上で一度だけ設定し、周辺機器パッケージ（RTC、IMU、タッチ）がそれを共有します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-i2s/ja/">deki-i2s</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">MAX98357 D 級アンプなど、デジタルオーディオ周辺機器のための I²S バスのサポート。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-imu/ja/">deki-imu</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">ハードウェア歩数計を備えた 6 軸 IMU（加速度センサー + ジャイロスコープ）。I²C で接続する LSM6DS3。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-input/ja/">deki-input</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">入力のディスパッチと衝突判定。ポインター / タッチ / キーのイベントを、それを必要とするコンポーネントに送ります。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-json/ja/">deki-json</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">実行時に JSON を扱う必要があるパッケージ向けの JSON パーサーです。組み込みでは ESP-IDF の cJSON をラップし、デスクトップでは同等の実装を使います。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lora/ja/">deki-lora</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">LoRa 無線。パケットを送受信する Semtech SX1262 ドライバーで、デューティサイクル制限を組み込んでいます。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-lovyangfx-integration/ja/">deki-lovyangfx-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">LovyanGFX 1.2.19 による組み込み向けのディスプレイとタッチ。一般的な SPI／パラレル TFT と FT6336U 静電容量式タッチパネルを駆動します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-miyoo-boards/ja/">deki-miyoo-boards</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Miyoo Mini をビルドターゲットとして提供します。ビルドパネルで選ぶと、Build で Miyoo のメニュー用のアプリを作り、Install で携帯機の SD カードに入れます。アプリは純正ファームウェアでも Onion OS でも Apps に表示されます。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-nodegraph/ja/">deki-nodegraph</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">ノードグラフのキャンバス。エディターウィンドウ、元に戻す（Undo）、ドメイン、ノード登録を提供し、ノードが何を意味するかには関与しません。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-particles/ja/">deki-particles</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">モジュール式のパーティクルシステム。点／円／矩形の放出形状、重力、抵抗（ドラッグ）、初速度、そして寿命・サイズ・色・回転のモディファイアを備えます。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rendering/ja/">deki-rendering</a>  </td><td class="markdownTableBodyNone">4  </td><td class="markdownTableBodyNone">コアのレンダリングパイプライン。カメラ、レンダーシステム、標準 2D レンダラー、QuadBlit、レンダーパス、ソートを提供します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-rtc/ja/">deki-rtc</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">リアルタイムクロックの周辺機器（ペリフェラル）。シーンコンポーネントから現在時刻を読み書きでき、DS3231（I²C）用のバックエンドを備えます。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdcard/ja/">deki-sdcard</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SD カード対応。カードをマウントし、アセットマネージャーが実行時にそこからストリーミングできるようにします。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-sdl3-integration/ja/">deki-sdl3-integration</a>  </td><td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">SDL3（3.2.8）によるデスクトップ向けのディスプレイ、入力、ファイルシステム。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-spi/ja/">deki-spi</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">SPI バスとその上のデバイス。起動ステップでバスを一度だけ開始し、ディスプレイ、SD カード、無線がそれを共有します。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tactility-integration/ja/">deki-tactility-integration</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Deki のゲームを、デバイス全体を占有するファームウェアとしてではなく、ESP32 ボード向けのオペレーティングシステム Tactility の中のアプリとして実行します。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tiledmapeditor-integration/ja/">deki-tiledmapeditor-integration</a>  </td><td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Tiled Map Editor との連携。.tmj ファイルをプロジェクトに置くと、エディターがストリーミング可能なバイナリのタイルマップにベイクします。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-tween/ja/">deki-tween</a>  </td><td class="markdownTableBodyNone">1  </td><td class="markdownTableBodyNone">30 種類以上のイージング関数を備えたトゥイーン。インスペクターでは TweenComponent、コードでは TweenManager を使います。  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-uart/ja/">deki-uart</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">GPS 受信機などのシリアル周辺機器向けの UART 対応。  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://dekiengine.github.io/deki-wifi/ja/">deki-wifi</a>  </td><td class="markdownTableBodyNone">0  </td><td class="markdownTableBodyNone">Wi-Fi の抽象化。接続、切断、状態の報告を行います。具体的なバックエンドはプラットフォーム連携パッケージが提供します。  </td></tr>
-</table>
-</div></div><!-- PageDoc -->
+</ul></section>
+</div>
+</div>
+</p>
+<div style="display:none"></div><div style="display:none"><a class="el" href="section-start-here.html" title="まずはここから">まずはここから</a> <a class="el" href="section-making-a-game.html" title="ゲームを作る">ゲームを作る</a> <a class="el" href="section-devices.html" title="デバイス">デバイス</a> <a class="el" href="guide-performance.html" title="高速化">高速化</a> <a class="el" href="section-packages.html" title="パッケージ">パッケージ</a> <a class="el" href="section-reference.html" title="リファレンス">リファレンス</a> <a class="el" href="section-working-on-deki.html" title="Deki の開発">Deki の開発</a></div><div style="display:none"><div class="image">
+<img src="editor.png" alt=""/>
+</div>
+    </div><div style="display:none"></div> </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->

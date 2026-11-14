@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['如何保持同步_0',['font.guid 如何保持同步',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
+  ['双字段模式（guid_20与_20source）_0',['双字段模式（guid 与 source）',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['베이크_20권한_3a_20fontsynchandler_0',['베이크 권한: FontSyncHandler',['../guide-font-system.html#guide-font-system-baking-authority-fontsynchandler',1,'']]]
+  ['방식_0',['font.guid가 동기화되는 방식',['../guide-font-system.html#guide-font-system-how-fontguid-stays-in-sync',1,'']]]
 ];

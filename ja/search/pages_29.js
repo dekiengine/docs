@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ガイド_0',['ガイド',['../index.html#guides',1,'']]]
+  ['インポートのパイプライン_3a_20textureimporter_0',['インポートのパイプライン: TextureImporter',['../guide-sprite-system.html#guide-sprite-system-import-pipeline-textureimporter',1,'']]]
 ];

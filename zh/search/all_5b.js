@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['组件参考_0',['组件参考',['../engine-core.html#engine-component-reference',1,'']]],
-  ['组件_1',['组件',['../engine-core.html#engine-components',1,'']]]
+  ['游戏写入的文件_0',['游戏写入的文件',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]],
+  ['游戏逻辑_1',['游戏逻辑',['../section-packages.html#autotoc_md30',1,'']]]
 ];

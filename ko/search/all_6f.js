@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['자동으로_20정해지는_20것_0',['자동으로 정해지는 것',['../guide-performance.html#guide-performance-what-chooses-itself',1,'']]]
+  ['의_20경우_0',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
 ];

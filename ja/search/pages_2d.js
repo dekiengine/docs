@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['シードの形式_20絶対に変更しないでください_0',['シードの形式 (絶対に変更しないでください)',['../guide-asset-system.html#guide-asset-system-seed-formats-never-change-these',1,'']]],
-  ['シーンの切り替え_1',['シーンの切り替え',['../guide-memory.html#autotoc_md10',1,'']]]
+  ['ゲームが書き込むファイル_0',['ゲームが書き込むファイル',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]],
+  ['ゲームを作る_1',['ゲームを作る',['../section-making-a-game.html',1,'index']]],
+  ['ゲームロジック_2',['ゲームロジック',['../section-packages.html#autotoc_md30',1,'']]]
 ];

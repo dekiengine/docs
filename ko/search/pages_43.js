@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['모드_20에디터_20전용_0',['미리보기 모드 (에디터 전용)',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]]
+  ['매번_20직접_20고릅니다_0',['영역 - 매번 직접 고릅니다',['../guide-memory.html#autotoc_md3',1,'']]]
 ];

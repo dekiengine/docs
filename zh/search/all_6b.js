@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['颜色格式_0',['颜色格式',['../guide-screens.html#autotoc_md22',1,'']]]
+  ['自动选择的内容_0',['自动选择的内容',['../guide-performance.html#autotoc_md18',1,'']]]
 ];

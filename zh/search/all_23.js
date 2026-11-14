@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['值得了解的项目设置_0',['值得了解的项目设置',['../guide-performance.html#guide-performance-project-settings-worth-knowing',1,'']]]
+  ['传感器与存储_0',['传感器与存储',['../section-packages.html#autotoc_md33',1,'']]]
 ];

@@ -1,9 +1,5 @@
 var _package_contract_8h =
 [
-    [ "PackageEntry", "struct_package_entry.html", "struct_package_entry" ],
-    [ "CoreDependency", "struct_core_dependency.html", "struct_core_dependency" ],
-    [ "IPackageSource", "class_i_package_source.html", "class_i_package_source" ],
-    [ "IPackageInstaller", "class_i_package_installer.html", "class_i_package_installer" ],
     [ "PackageCallback", "_package_contract_8h.html#aef61923045df2d633759aaa3cfb2a9e9", null ],
     [ "VersionsCallback", "_package_contract_8h.html#abe7f82c0a871fd5503ebf34775b2c418", null ],
     [ "PackageType", "_package_contract_8h.html#acd362f5eaa67456ced2f137fb023545e", [

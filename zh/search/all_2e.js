@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['哈希函数（fnv_201a_2032_20位）_0',['哈希函数（FNV-1a 32 位）',['../guide-asset-system.html#guide-asset-system-hash-function-fnv-1a-32-bit',1,'']]]
+  ['区域名称就是能力名称_0',['区域名称就是能力名称',['../guide-memory.html#autotoc_md6',1,'']]],
+  ['区域就是一个名称，所以包可以添加自己的区域_1',['区域就是一个名称，所以包可以添加自己的区域',['../guide-memory.html#autotoc_md4',1,'']]],
+  ['区域_20每次都由你选择_2',['区域 - 每次都由你选择',['../guide-memory.html#autotoc_md3',1,'']]]
 ];

@@ -1,10 +1,10 @@
 var _texture_importer_8h =
 [
-    [ "DekiEditor::DecodedImage", "struct_deki_editor_1_1_decoded_image.html", "struct_deki_editor_1_1_decoded_image" ],
-    [ "DekiEditor::ChromaKeySettings", "struct_deki_editor_1_1_chroma_key_settings.html", "struct_deki_editor_1_1_chroma_key_settings" ],
     [ "DekiEditor::AtlasFrame", "struct_deki_editor_1_1_atlas_frame.html", "struct_deki_editor_1_1_atlas_frame" ],
-    [ "DekiEditor::SpriteSettings", "struct_deki_editor_1_1_sprite_settings.html", "struct_deki_editor_1_1_sprite_settings" ],
+    [ "DekiEditor::ChromaKeySettings", "struct_deki_editor_1_1_chroma_key_settings.html", "struct_deki_editor_1_1_chroma_key_settings" ],
+    [ "DekiEditor::DecodedImage", "struct_deki_editor_1_1_decoded_image.html", "struct_deki_editor_1_1_decoded_image" ],
     [ "DekiEditor::SpriteFrameData", "struct_deki_editor_1_1_sprite_frame_data.html", "struct_deki_editor_1_1_sprite_frame_data" ],
+    [ "DekiEditor::SpriteSettings", "struct_deki_editor_1_1_sprite_settings.html", "struct_deki_editor_1_1_sprite_settings" ],
     [ "DekiEditor::TextureImporter", "class_deki_editor_1_1_texture_importer.html", "class_deki_editor_1_1_texture_importer" ],
     [ "DekiEditor::MetadataChunkType", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8f", [
       [ "DekiEditor::MetadataChunkType::Sprite", "namespace_deki_editor.html#a9d02e7e04c7461a8205f12070c3bce8fa51f2b7b14433aa22c67d1f4fc18943cd", null ],

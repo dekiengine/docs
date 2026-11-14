@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['毎回あなたが選ぶ_0',['領域 - 毎回あなたが選ぶ',['../guide-memory.html#autotoc_md3',1,'']]]
+  ['実行時に個数が変わる場合_0',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 実行時に個数が変わる場合',['../guide-memory.html#autotoc_md13',1,'']]]
 ];

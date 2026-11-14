@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['确定性_20guid_20生成_0',['确定性 GUID 生成',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]]
+  ['每次都由你选择_0',['区域 - 每次都由你选择',['../guide-memory.html#autotoc_md3',1,'']]],
+  ['每种屏幕看到什么_1',['每种屏幕看到什么',['../guide-screens.html#autotoc_md23',1,'']]]
 ];

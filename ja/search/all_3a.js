@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ラベルは自動で書かれる_0',['&lt;span class=&quot;tt&quot;&gt;AllocContext&lt;/span&gt; - ラベルは自動で書かれる',['../guide-memory.html#autotoc_md11',1,'']]]
+  ['ピンとバス_0',['ピンとバス',['../section-packages.html#autotoc_md32',1,'']]]
 ];

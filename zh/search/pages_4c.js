@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['模拟开发板_0',['模拟开发板',['../guide-platforms.html#guide-platforms-simulating-a-board',1,'']]],
-  ['模板_1',['AssetRef&amp;lt;T&amp;gt; 模板',['../guide-asset-system.html#guide-asset-system-assetreft-template',1,'']]]
+  ['放到设备上_0',['放到设备上',['../guide-getting-started.html#guide-getting-started-put-it-on-a-device',1,'']]],
+  ['放置只解析一次。没有回退。_1',['放置只解析一次。没有回退。',['../guide-memory.html#autotoc_md7',1,'']]]
 ];

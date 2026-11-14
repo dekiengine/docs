@@ -1,17 +1,15 @@
 var searchData=
 [
-  ['radios_20and_20sensors_0',['7. Radios and sensors',['../guide-hardware-checklist.html#guide-hardware-checklist-7-radios-and-sensors',1,'']]],
-  ['reacting_20in_20code_1',['Reacting in code',['../guide-ui-widgets.html#guide-ui-widgets-reacting-in-code',1,'']]],
-  ['ready_2',['2. Get every branch ready',['../guide-releasing.html#guide-releasing-2-get-every-branch-ready',1,'']]],
-  ['record_20the_20numbers_3',['8. Record the numbers',['../guide-hardware-checklist.html#guide-hardware-checklist-8-record-the-numbers',1,'']]],
-  ['redrawing_20only_20what_20changed_4',['4. Redrawing only what changed',['../guide-hardware-checklist.html#guide-hardware-checklist-4-redrawing-only-what-changed',1,'']]],
-  ['registry_5',['4.5 The registry',['../guide-releasing.html#guide-releasing-45-the-registry',1,'']]],
-  ['release_20in_20this_20order_6',['4. Release, in this order',['../guide-releasing.html#guide-releasing-4-release-in-this-order',1,'']]],
-  ['releases_7',['Past releases',['../guide-hardware-checklist.html#guide-hardware-checklist-past-releases',1,'']]],
-  ['releasing_8',['Releasing',['../guide-releasing.html',1,'']]],
-  ['renderercomponent_9',['RendererComponent',['../engine-core.html#engine-renderercomponent',1,'']]],
-  ['repo_20s_20branch_20onto_20master_10',['4.1 Each repo&apos;s branch onto master',['../guide-releasing.html#guide-releasing-41-each-repos-branch-onto-master',1,'']]],
-  ['resolveobjectrefs_11',['生成的 ResolveObjectRefs',['../guide-sprite-system.html#guide-sprite-system-generated-resolveobjectrefs',1,'']]],
-  ['right_20after_12',['5. Right after',['../guide-releasing.html#guide-releasing-5-right-after',1,'']]],
-  ['runtime_20并列_13',['为什么 shadow/ 与 runtime/ 并列',['../guide-project-layout.html#guide-project-layout-why-shadow-is-a-sibling-of-runtime',1,'']]]
+  ['packages_0',['4.4 The packages',['../guide-releasing.html#guide-releasing-44-the-packages',1,'']]],
+  ['past_20releases_1',['Past releases',['../guide-hardware-checklist.html#guide-hardware-checklist-past-releases',1,'']]],
+  ['per_20device_2',['Different settings per device',['../guide-assets.html#guide-assets-different-settings-per-device',1,'']]],
+  ['physics_3',['Physics',['../guide-physics.html',1,'section-making-a-game']]],
+  ['pins_4',['Pins',['../guide-device-lilygo-t-deck-plus.html#guide-device-lilygo-t-deck-plus-pins',1,'Pins'],['../guide-device-lilygo-t-deck.html#guide-device-lilygo-t-deck-pins',1,'Pins'],['../guide-device-lilygo-t-display-s3-amoled.html#guide-device-lilygo-t-display-s3-amoled-pins',1,'Pins']]],
+  ['platformsetupcomponent_5',['PlatformSetupComponent',['../engine-core.html#engine-platformsetupcomponent',1,'']]],
+  ['plays_6',['Choosing what plays',['../guide-animation.html#guide-animation-choosing-what-plays',1,'']]],
+  ['plus_7',['LilyGO T-Deck Plus',['../guide-device-lilygo-t-deck-plus.html',1,'section-devices']]],
+  ['practice_8',['What changes in practice',['../guide-coming-from-lvgl.html#guide-coming-from-lvgl-what-changes-in-practice',1,'']]],
+  ['printing_20to_20the_20console_9',['Printing to the Console',['../guide-components.html#guide-components-printing-to-the-console',1,'']]],
+  ['promise_20to_20current_20users_10',['The promise to current users',['../guide-releasing.html#guide-releasing-the-promise-to-current-users',1,'']]],
+  ['putting_20a_20game_20on_20it_11',['Putting a game on it',['../guide-device-anbernic-rg40xx-h.html#guide-device-anbernic-rg40xx-h-putting-a-game-on-it',1,'Putting a game on it'],['../guide-device-miyoo-mini.html#guide-device-miyoo-mini-putting-a-game-on-it',1,'Putting a game on it']]]
 ];

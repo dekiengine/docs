@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['테이블의_20두_20가지_20버전_0',['테이블의 두 가지 버전',['../guide-asset-system.html#guide-asset-system-two-versions-of-the-table',1,'']]],
-  ['테이블의_20키_20종류_1',['테이블의 키 종류',['../guide-asset-system.html#guide-asset-system-key-types-in-the-table',1,'']]],
-  ['테이블_20번역하기_2',['테이블 번역하기',['../guide-localization.html#guide-localization-translating-a-table',1,'']]],
-  ['테이블_20asset_5ftable_20bin_3',['에셋 조회 테이블 (asset_table.bin)',['../guide-asset-system.html#guide-asset-system-asset-lookup-table-asset_tablebin',1,'']]]
+  ['추가하기_0',['프로퍼티에 단위 추가하기',['../guide-units.html#guide-units-adding-a-unit-to-a-property',1,'']]],
+  ['추가할_20수_20있습니다_1',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#autotoc_md4',1,'']]]
 ];

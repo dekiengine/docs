@@ -9,9 +9,10 @@ var class_deki_editor_1_1_asset_file_watcher =
     [ "AssetFileWatcher", "class_deki_editor_1_1_asset_file_watcher.html#a2c2833b92c52790fad546f77acc86f51", null ],
     [ "~AssetFileWatcher", "class_deki_editor_1_1_asset_file_watcher.html#a1a0ee98333e2e440b860748b43df4c85", null ],
     [ "AssetFileWatcher", "class_deki_editor_1_1_asset_file_watcher.html#a5d7e9dbfcda9b5299e7413eb1da79f57", null ],
+    [ "DrainReadyEvents", "class_deki_editor_1_1_asset_file_watcher.html#a0a2ec9af938affd09087943ea7cbf268", null ],
     [ "operator=", "class_deki_editor_1_1_asset_file_watcher.html#a2beff6062185393516c2e2770051f2f2", null ],
     [ "Start", "class_deki_editor_1_1_asset_file_watcher.html#a3d06861026cd9ae7be3d532b5460c64b", null ],
     [ "Stop", "class_deki_editor_1_1_asset_file_watcher.html#ad4a7a089eee6560ec33cfdf21fcc30de", null ],
-    [ "DrainReadyEvents", "class_deki_editor_1_1_asset_file_watcher.html#a0a2ec9af938affd09087943ea7cbf268", null ],
+    [ "TakeMissedEvents", "class_deki_editor_1_1_asset_file_watcher.html#aee43bbfd3a0d4aa98bb90147fdf1bdb9", null ],
     [ "kDebounceMs", "class_deki_editor_1_1_asset_file_watcher.html#a595fb8388cdc396b49ba78fd32890610", null ]
 ];

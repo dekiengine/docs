@@ -5,8 +5,8 @@ var class_deki_editor_1_1_node_canvas =
     [ "GetPanX", "class_deki_editor_1_1_node_canvas.html#ab52ce8ef47fa54f4522fbb0112d89b69", null ],
     [ "GetPanY", "class_deki_editor_1_1_node_canvas.html#a4e54734fbbf2e29ea43dc688513de060", null ],
     [ "GetZoom", "class_deki_editor_1_1_node_canvas.html#a56f42cd7f34d95d19ad9ae053d786116", null ],
-    [ "SetView", "class_deki_editor_1_1_node_canvas.html#a4654dfa8d9e400257318e3f7628d11c1", null ],
-    [ "SetPalette", "class_deki_editor_1_1_node_canvas.html#aa9c4747d72091b044aa9eea1e2c9b1a4", null ],
+    [ "NodeHeight", "class_deki_editor_1_1_node_canvas.html#aa4f601db8ae2131aff7ec7fbc26237dd", null ],
     [ "NodeWidth", "class_deki_editor_1_1_node_canvas.html#adf48afff5f13661859c0c0a427785842", null ],
-    [ "NodeHeight", "class_deki_editor_1_1_node_canvas.html#aa4f601db8ae2131aff7ec7fbc26237dd", null ]
+    [ "SetPalette", "class_deki_editor_1_1_node_canvas.html#aa9c4747d72091b044aa9eea1e2c9b1a4", null ],
+    [ "SetView", "class_deki_editor_1_1_node_canvas.html#a4654dfa8d9e400257318e3f7628d11c1", null ]
 ];

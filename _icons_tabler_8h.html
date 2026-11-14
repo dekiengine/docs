@@ -10,6 +10,9 @@
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deki: deki-editor/include/deki-editor/IconsTabler.h File Reference</title>
+<link rel="icon" href="https://dekiengine.com/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="https://dekiengine.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://dekiengine.com/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
@@ -27,14 +30,63 @@
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="deki.css" rel="stylesheet" type="text/css"/>
+<!--DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* The docs have two halves, each with its own tab and sidebar. Set before the
+   page draws, so the sidebar does not flash the other half. deki.css does the
+   rest from this attribute. */
+(function () {
+  var page = location.pathname.split('/').pop();
+  var api = /^(annotated|classes|hierarchy|inherits|functions|namespace|class_|struct_|union_|dir_)|_8h|-members/;
+  document.documentElement.setAttribute('data-deki-tab', api.test(page) ? 'api' : 'manual');
+})();
+</script>
+<!--/DEKI_TAB_SCRIPT-->
+<script type="text/javascript">
+/* Pressing a group in the sidebar opens the page and its list too. The tree is
+   built after load, hence the retries. */
+window.addEventListener('load', function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var closed = document.querySelector('#nav-tree-contents .selected .arrowhead.closed');
+    if (closed) {
+      closed.closest('a').click();
+    }
+    if (closed || ++tries > 30) {
+      clearInterval(timer);
+    }
+  }, 100);
+});
+</script>
 </head>
 <body>
 <div class="deki-bar">
   <a class="deki-brand" href="https://dekiengine.com/">
-    <span class="deki-mark"><span class="deki-dot"></span></span>
+    <!-- The site's cat, hugo-dekiengine/layouts/partials/deki-cat.html, kept still by deki.css.
+         Its clip path is gone: only the entrance animation needs it. -->
+    <svg class="brand-mark deki-cat" aria-hidden="true" focusable="false" viewBox="0 0 16 9" width="32" height="18" shape-rendering="crispEdges"><style>.deki-cat .cat-paws{opacity:1}
+@keyframes deki-cat-paws-in{0%{opacity:0}30.77%{opacity:1}100%{opacity:1}}
+.deki-cat .cat-paws{animation:deki-cat-paws-in 1.3s step-end 0s both}
+.deki-cat .cat-peek{transform:none}
+@keyframes deki-cat-peek-in{0%{transform:translateY(8px)}46.15%{transform:translateY(7px)}53.85%{transform:translateY(6px)}61.54%{transform:translateY(5px)}69.23%{transform:translateY(4px)}76.92%{transform:translateY(3px)}84.62%{transform:translateY(2px)}92.31%{transform:translateY(1px)}100%{transform:none}}
+.deki-cat .cat-peek{animation:deki-cat-peek-in 1.3s step-end 0s both}
+.deki-cat .cat-shut{opacity:0}
+@keyframes deki-cat-shut-idle{0%{opacity:0}8.53%{opacity:1}8.81%{opacity:0}41.96%{opacity:1}42.24%{opacity:0}42.58%{opacity:1}42.87%{opacity:0}77.26%{opacity:1}79.82%{opacity:0}100%{opacity:0}}
+.deki-cat .cat-shut{animation:deki-cat-shut-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-face{transform:none}
+@keyframes deki-cat-face-idle{0%{transform:none}18.76%{transform:translate(-1px,0px)}22.74%{transform:none}51.39%{transform:translate(1px,0px)}55.37%{transform:none}65.32%{transform:translate(0px,-1px)}68.73%{transform:none}88.35%{transform:translate(-1px,0px)}90.62%{transform:translate(1px,0px)}92.89%{transform:none}100%{transform:none}}
+.deki-cat .cat-face{animation:deki-cat-face-idle 35.18s step-end 1.3s infinite}
+.deki-cat .cat-ear{transform:none}
+@keyframes deki-cat-ear-idle{0%{transform:none}31.27%{transform:translateY(1px)}31.5%{transform:none}31.78%{transform:translateY(1px)}32.01%{transform:none}100%{transform:none}}
+.deki-cat .cat-ear{animation:deki-cat-ear-idle 35.18s step-end 1.3s infinite}
+@media (prefers-reduced-motion:reduce){.deki-cat *{animation:none!important}}</style><g><g><g class="cat-peek"><g class="cat-ear"><rect x="12" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="11" y="1" width="2" height="1" fill="#3bc3ff"/></g><rect x="3" y="0" width="1" height="1" fill="#3bc3ff"/><rect x="3" y="1" width="2" height="1" fill="#3bc3ff"/><rect x="3" y="2" width="10" height="1" fill="#3bc3ff"/><rect x="2" y="3" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="4" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="5" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="6" width="12" height="1" fill="#3bc3ff"/><rect x="2" y="7" width="12" height="1" fill="#3bc3ff"/><g class="cat-face"><rect x="4" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="5" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="10" y="4" width="1" height="1" fill="#0a0b0d"/><rect x="11" y="4" width="1" height="1" fill="#e8e6e1"/><rect x="4" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="10" y="5" width="2" height="1" fill="#0a0b0d"/><rect x="7" y="6" width="2" height="1" fill="#ff8fb8"/><g class="cat-shut"><rect x="4" y="4" width="2" height="1" fill="#3bc3ff"/><rect x="10" y="4" width="2" height="1" fill="#3bc3ff"/></g></g></g></g><g class="cat-paws"><rect x="3" y="7" width="2" height="1" fill="#9de1ff"/><rect x="11" y="7" width="2" height="1" fill="#9de1ff"/></g><rect x="0" y="8" width="16" height="1" fill="#0c82bf"/></g></svg>
     <span class="deki-brand-name">DEKI<span class="deki-slash">/</span>ENGINE</span>
   </a>
   <span class="deki-bar-tag">docs</span>
+  <div class="deki-tabs">
+    <a class="deki-tab deki-tab-manual" href="index.html"><span class="deki-nav-label">manual</span></a>
+    <a class="deki-tab deki-tab-api" href="annotated.html"><span class="deki-nav-label">api reference</span></a>
+  </div>
   <div class="deki-bar-links">
     <a href="https://dekiengine.com/"><span class="deki-nav-label">site</span></a>
     <a href="https://dekiengine.com/packages/"><span class="deki-nav-label">packages</span></a>
@@ -42,7 +94,8 @@
     <span class="deki-bar-sep"></span>
     <a class="deki-chip" href="https://github.com/orgs/dekiengine/repositories" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a>
     <a class="deki-chip deki-chip-accent" href="https://dekiengine.com/discord" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg><span>discord</span></a>
-    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
+    <a class="deki-chip deki-chip-solid" href="https://dekiengine.com/editor/#download"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m-5-5 5 5 5-5M5 20h14"/></svg><span>download</span></a>
+    <a class="deki-chip" href="https://dekiengine.com/donate/"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5 3.9 12.4a4.8 4.8 0 0 1 0-6.8 4.8 4.8 0 0 1 6.8 0l1.3 1.3 1.3-1.3a4.8 4.8 0 0 1 6.8 0 4.8 4.8 0 0 1 0 6.8Z"/></svg><span>donate</span></a>
     <details class="deki-lang"><summary aria-label="Language: English"><span class="deki-nav-label">English</span></summary><div class="deki-lang-menu"><a href="index.html" data-deki-root="" hreflang="en" lang="en" aria-current="true">English</a><a href="ja/index.html" data-deki-root="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" data-deki-root="zh/" hreflang="zh" lang="zh">简体中文</a><a href="ko/index.html" data-deki-root="ko/" hreflang="ko" lang="ko">한국어</a></div></details>
     <script>(function () {
       var page = location.pathname.split('/').pop() || 'index.html';
@@ -59,7 +112,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Deki<span id="projectnumber">&#160;0.30.3</span>
+   <div id="projectname">Deki<span id="projectnumber">&#160;0.40.0</span>
    </div>
    <div id="projectbrief">Modular C++ 2D engine for embedded displays and desktop</div>
   </td>
@@ -152,8 +205,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_icons_tabler_
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a21ceee7deb863c3cf7b80b32ede32316" id="r_a21ceee7deb863c3cf7b80b32ede32316"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a21ceee7deb863c3cf7b80b32ede32316">FONT_ICON_FILE_NAME_TI</a>&#160;&#160;&#160;&quot;tabler-icons.ttf&quot;</td></tr>
-<tr class="memitem:ab592d791f0ef5f3bba23b8e73c71a61b" id="r_ab592d791f0ef5f3bba23b8e73c71a61b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab592d791f0ef5f3bba23b8e73c71a61b">ICON_MIN_TI</a>&#160;&#160;&#160;0xea02</td></tr>
 <tr class="memitem:adc3e8fb849043d4df60eebee6f740fda" id="r_adc3e8fb849043d4df60eebee6f740fda"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adc3e8fb849043d4df60eebee6f740fda">ICON_MAX_TI</a>&#160;&#160;&#160;0x10095</td></tr>
+<tr class="memitem:ab592d791f0ef5f3bba23b8e73c71a61b" id="r_ab592d791f0ef5f3bba23b8e73c71a61b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab592d791f0ef5f3bba23b8e73c71a61b">ICON_MIN_TI</a>&#160;&#160;&#160;0xea02</td></tr>
+<tr class="memitem:a8116578212feb125ab41393d73a13d5c" id="r_a8116578212feb125ab41393d73a13d5c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8116578212feb125ab41393d73a13d5c">ICON_TI__123</a>&#160;&#160;&#160;&quot;\xef\x95\x94&quot;</td></tr>
+<tr class="memitem:a18dd12eb65e58851945bf39407e1daac" id="r_a18dd12eb65e58851945bf39407e1daac"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a18dd12eb65e58851945bf39407e1daac">ICON_TI__12_HOURS</a>&#160;&#160;&#160;&quot;\xef\xb1\x93&quot;</td></tr>
+<tr class="memitem:af965e142710c52768628597b4237a946" id="r_af965e142710c52768628597b4237a946"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af965e142710c52768628597b4237a946">ICON_TI__24_HOURS</a>&#160;&#160;&#160;&quot;\xef\x97\xa7&quot;</td></tr>
+<tr class="memitem:a3f1ec902940ff8e9eb2f2056fe969646" id="r_a3f1ec902940ff8e9eb2f2056fe969646"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3f1ec902940ff8e9eb2f2056fe969646">ICON_TI__2FA</a>&#160;&#160;&#160;&quot;\xee\xb2\xa0&quot;</td></tr>
+<tr class="memitem:aafa7a5cdecfc21140fb6cb34d56aba2c" id="r_aafa7a5cdecfc21140fb6cb34d56aba2c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aafa7a5cdecfc21140fb6cb34d56aba2c">ICON_TI__360</a>&#160;&#160;&#160;&quot;\xef\x98\xaf&quot;</td></tr>
+<tr class="memitem:a4d0e0505f6b2d0713d6a740421efc021" id="r_a4d0e0505f6b2d0713d6a740421efc021"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4d0e0505f6b2d0713d6a740421efc021">ICON_TI__360_VIEW</a>&#160;&#160;&#160;&quot;\xef\x95\xa6&quot;</td></tr>
+<tr class="memitem:a59ef83600c074481cb8bee9327a986c2" id="r_a59ef83600c074481cb8bee9327a986c2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a59ef83600c074481cb8bee9327a986c2">ICON_TI__3D_CUBE_SPHERE</a>&#160;&#160;&#160;&quot;\xee\xb3\x97&quot;</td></tr>
+<tr class="memitem:ad4f81031e15bfb916b7632049d8f7c8b" id="r_ad4f81031e15bfb916b7632049d8f7c8b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad4f81031e15bfb916b7632049d8f7c8b">ICON_TI__3D_CUBE_SPHERE_OFF</a>&#160;&#160;&#160;&quot;\xef\x8e\xb5&quot;</td></tr>
+<tr class="memitem:a572789180edd7dedeaf043856097bee7" id="r_a572789180edd7dedeaf043856097bee7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a572789180edd7dedeaf043856097bee7">ICON_TI__3D_ROTATE</a>&#160;&#160;&#160;&quot;\xef\x80\xa0&quot;</td></tr>
 <tr class="memitem:a6609652ecbbcd71d6c3a423c1943aa7b" id="r_a6609652ecbbcd71d6c3a423c1943aa7b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6609652ecbbcd71d6c3a423c1943aa7b">ICON_TI_A_B</a>&#160;&#160;&#160;&quot;\xee\xb0\xb6&quot;</td></tr>
 <tr class="memitem:a5be5b09376f1c2f688779f3c8747652b" id="r_a5be5b09376f1c2f688779f3c8747652b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5be5b09376f1c2f688779f3c8747652b">ICON_TI_A_B_2</a>&#160;&#160;&#160;&quot;\xef\x89\x9f&quot;</td></tr>
 <tr class="memitem:a0a63ca06fb8f668b62f9760c07eeaf28" id="r_a0a63ca06fb8f668b62f9760c07eeaf28"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0a63ca06fb8f668b62f9760c07eeaf28">ICON_TI_A_B_OFF</a>&#160;&#160;&#160;&quot;\xef\x82\xa6&quot;</td></tr>
@@ -899,6 +961,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a6e18bad26e97545df2d440757b9750bf" id="r_a6e18bad26e97545df2d440757b9750bf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6e18bad26e97545df2d440757b9750bf">ICON_TI_BOX_MULTIPLE_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\x9f&quot;</td></tr>
 <tr class="memitem:a9085bf119aaf0d33769bdfe7d420fba0" id="r_a9085bf119aaf0d33769bdfe7d420fba0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9085bf119aaf0d33769bdfe7d420fba0">ICON_TI_BOX_OFF</a>&#160;&#160;&#160;&quot;\xef\x84\x82&quot;</td></tr>
 <tr class="memitem:af0b33e332811e7201425d40417f13212" id="r_af0b33e332811e7201425d40417f13212"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af0b33e332811e7201425d40417f13212">ICON_TI_BOX_PADDING</a>&#160;&#160;&#160;&quot;\xee\xb8\x98&quot;</td></tr>
+<tr class="memitem:a45e990a8eea2c165320e2ca6503975b2" id="r_a45e990a8eea2c165320e2ca6503975b2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a45e990a8eea2c165320e2ca6503975b2">ICON_TI_BOX_SEAM</a>&#160;&#160;&#160;&quot;\xee\xab\xbf&quot;</td></tr>
 <tr class="memitem:ab96d4d4ae2b02fb04d4990775101cf7c" id="r_ab96d4d4ae2b02fb04d4990775101cf7c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab96d4d4ae2b02fb04d4990775101cf7c">ICON_TI_BRACES</a>&#160;&#160;&#160;&quot;\xee\xaf\x8c&quot;</td></tr>
 <tr class="memitem:abe63a742efd02db6fb121171f2f6ef6f" id="r_abe63a742efd02db6fb121171f2f6ef6f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abe63a742efd02db6fb121171f2f6ef6f">ICON_TI_BRACES_OFF</a>&#160;&#160;&#160;&quot;\xef\x82\xbf&quot;</td></tr>
 <tr class="memitem:ab1d87d8f838c1e546dc45cac6d93cffe" id="r_ab1d87d8f838c1e546dc45cac6d93cffe"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab1d87d8f838c1e546dc45cac6d93cffe">ICON_TI_BRACKETS</a>&#160;&#160;&#160;&quot;\xee\xaf\x8d&quot;</td></tr>
@@ -1658,6 +1721,16 @@ Macros</h2></td></tr>
 <tr class="memitem:afb09b126ef92a0c4da48160f7e50d618" id="r_afb09b126ef92a0c4da48160f7e50d618"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afb09b126ef92a0c4da48160f7e50d618">ICON_TI_CHRISTMAS_TREE_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\x9a&quot;</td></tr>
 <tr class="memitem:a1c7714e2eaa7480d403e8023f7f59835" id="r_a1c7714e2eaa7480d403e8023f7f59835"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1c7714e2eaa7480d403e8023f7f59835">ICON_TI_CHRISTMAS_TREE_OFF</a>&#160;&#160;&#160;&quot;\xef\x8f\x95&quot;</td></tr>
 <tr class="memitem:a55b72f65fb1a7dc17592f1d33f547928" id="r_a55b72f65fb1a7dc17592f1d33f547928"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a55b72f65fb1a7dc17592f1d33f547928">ICON_TI_CIRCLE</a>&#160;&#160;&#160;&quot;\xee\xa9\xab&quot;</td></tr>
+<tr class="memitem:aa65c390a2ce454295983f7889b61908a" id="r_aa65c390a2ce454295983f7889b61908a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa65c390a2ce454295983f7889b61908a">ICON_TI_CIRCLE_0</a>&#160;&#160;&#160;&quot;\xee\xb8\xb4&quot;</td></tr>
+<tr class="memitem:a6af4c6275051df42a323f105ceea9851" id="r_a6af4c6275051df42a323f105ceea9851"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6af4c6275051df42a323f105ceea9851">ICON_TI_CIRCLE_1</a>&#160;&#160;&#160;&quot;\xee\xb8\xb5&quot;</td></tr>
+<tr class="memitem:aa60abab3e4351d38edac2987203d33ef" id="r_aa60abab3e4351d38edac2987203d33ef"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa60abab3e4351d38edac2987203d33ef">ICON_TI_CIRCLE_2</a>&#160;&#160;&#160;&quot;\xee\xb8\xb6&quot;</td></tr>
+<tr class="memitem:a7d9e4edbad51b943679e2f750888eadb" id="r_a7d9e4edbad51b943679e2f750888eadb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7d9e4edbad51b943679e2f750888eadb">ICON_TI_CIRCLE_3</a>&#160;&#160;&#160;&quot;\xee\xb8\xb7&quot;</td></tr>
+<tr class="memitem:a9964e769651a6fa8357c16825f1acd46" id="r_a9964e769651a6fa8357c16825f1acd46"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9964e769651a6fa8357c16825f1acd46">ICON_TI_CIRCLE_4</a>&#160;&#160;&#160;&quot;\xee\xb8\xb8&quot;</td></tr>
+<tr class="memitem:aef5046ef42b2657ff8d060e58399a8ca" id="r_aef5046ef42b2657ff8d060e58399a8ca"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aef5046ef42b2657ff8d060e58399a8ca">ICON_TI_CIRCLE_5</a>&#160;&#160;&#160;&quot;\xee\xb8\xb9&quot;</td></tr>
+<tr class="memitem:aa76d06a658b162ee32cf6ee6d0157fb2" id="r_aa76d06a658b162ee32cf6ee6d0157fb2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa76d06a658b162ee32cf6ee6d0157fb2">ICON_TI_CIRCLE_6</a>&#160;&#160;&#160;&quot;\xee\xb8\xba&quot;</td></tr>
+<tr class="memitem:ad1e9f42679cd5c4197763ddf31485dff" id="r_ad1e9f42679cd5c4197763ddf31485dff"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad1e9f42679cd5c4197763ddf31485dff">ICON_TI_CIRCLE_7</a>&#160;&#160;&#160;&quot;\xee\xb8\xbb&quot;</td></tr>
+<tr class="memitem:a80e6812e09f45b84d701861d2e1c9f64" id="r_a80e6812e09f45b84d701861d2e1c9f64"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a80e6812e09f45b84d701861d2e1c9f64">ICON_TI_CIRCLE_8</a>&#160;&#160;&#160;&quot;\xee\xb8\xbc&quot;</td></tr>
+<tr class="memitem:a56269f03eb354767ff621ad8d813ca50" id="r_a56269f03eb354767ff621ad8d813ca50"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a56269f03eb354767ff621ad8d813ca50">ICON_TI_CIRCLE_9</a>&#160;&#160;&#160;&quot;\xee\xb8\xbd&quot;</td></tr>
 <tr class="memitem:ab537704335bca3708d8a3c478e226d3d" id="r_ab537704335bca3708d8a3c478e226d3d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab537704335bca3708d8a3c478e226d3d">ICON_TI_CIRCLE_ARROW_DOWN</a>&#160;&#160;&#160;&quot;\xef\x9b\xb9&quot;</td></tr>
 <tr class="memitem:a29e4fe5531b5ac4ea9489f32be5fecb6" id="r_a29e4fe5531b5ac4ea9489f32be5fecb6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a29e4fe5531b5ac4ea9489f32be5fecb6">ICON_TI_CIRCLE_ARROW_DOWN_FILLED</a>&#160;&#160;&#160;&quot;\xef\x9b\xb4&quot;</td></tr>
 <tr class="memitem:affc7e39fc345733a6d65b8022ceac661" id="r_affc7e39fc345733a6d65b8022ceac661"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#affc7e39fc345733a6d65b8022ceac661">ICON_TI_CIRCLE_ARROW_DOWN_LEFT</a>&#160;&#160;&#160;&quot;\xef\x9b\xb6&quot;</td></tr>
@@ -1908,13 +1981,13 @@ Macros</h2></td></tr>
 <tr class="memitem:a64b5bf4b8c7823d63fc398170bacdc61" id="r_a64b5bf4b8c7823d63fc398170bacdc61"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a64b5bf4b8c7823d63fc398170bacdc61">ICON_TI_CLOCK_FILLED</a>&#160;&#160;&#160;&quot;\xef\x9c\xba&quot;</td></tr>
 <tr class="memitem:a6beba14b4de6158bb36e7754427ab009" id="r_a6beba14b4de6158bb36e7754427ab009"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6beba14b4de6158bb36e7754427ab009">ICON_TI_CLOCK_HEART</a>&#160;&#160;&#160;&quot;\xef\x9f\x84&quot;</td></tr>
 <tr class="memitem:a5d09f69d2bc86f37588491e5e3ec0f13" id="r_a5d09f69d2bc86f37588491e5e3ec0f13"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5d09f69d2bc86f37588491e5e3ec0f13">ICON_TI_CLOCK_HOUR_1</a>&#160;&#160;&#160;&quot;\xef\x8c\x93&quot;</td></tr>
-<tr class="memitem:addaefffc18d051deb59f700a081c422c" id="r_addaefffc18d051deb59f700a081c422c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#addaefffc18d051deb59f700a081c422c">ICON_TI_CLOCK_HOUR_1_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\xa5&quot;</td></tr>
 <tr class="memitem:a7a067dad0bbc1e08ece2b113126754ea" id="r_a7a067dad0bbc1e08ece2b113126754ea"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7a067dad0bbc1e08ece2b113126754ea">ICON_TI_CLOCK_HOUR_10</a>&#160;&#160;&#160;&quot;\xef\x8c\x94&quot;</td></tr>
 <tr class="memitem:a11b3da3aec3b11a00b77802550e30812" id="r_a11b3da3aec3b11a00b77802550e30812"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a11b3da3aec3b11a00b77802550e30812">ICON_TI_CLOCK_HOUR_10_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\xa4&quot;</td></tr>
 <tr class="memitem:ae0c4d30a418c3187fe8032197bf74378" id="r_ae0c4d30a418c3187fe8032197bf74378"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae0c4d30a418c3187fe8032197bf74378">ICON_TI_CLOCK_HOUR_11</a>&#160;&#160;&#160;&quot;\xef\x8c\x95&quot;</td></tr>
 <tr class="memitem:acf560d1d401062012647655d060f8c78" id="r_acf560d1d401062012647655d060f8c78"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#acf560d1d401062012647655d060f8c78">ICON_TI_CLOCK_HOUR_11_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\xa3&quot;</td></tr>
 <tr class="memitem:a3d9f9cc1fb4b7d8c42ca14c498f426bc" id="r_a3d9f9cc1fb4b7d8c42ca14c498f426bc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3d9f9cc1fb4b7d8c42ca14c498f426bc">ICON_TI_CLOCK_HOUR_12</a>&#160;&#160;&#160;&quot;\xef\x8c\x96&quot;</td></tr>
 <tr class="memitem:a033fe88b75f47aad1f04bff2c6ec8b11" id="r_a033fe88b75f47aad1f04bff2c6ec8b11"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a033fe88b75f47aad1f04bff2c6ec8b11">ICON_TI_CLOCK_HOUR_12_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\xa2&quot;</td></tr>
+<tr class="memitem:addaefffc18d051deb59f700a081c422c" id="r_addaefffc18d051deb59f700a081c422c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#addaefffc18d051deb59f700a081c422c">ICON_TI_CLOCK_HOUR_1_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\xa5&quot;</td></tr>
 <tr class="memitem:a52e29e4cded46b7d1702e95287189170" id="r_a52e29e4cded46b7d1702e95287189170"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a52e29e4cded46b7d1702e95287189170">ICON_TI_CLOCK_HOUR_2</a>&#160;&#160;&#160;&quot;\xef\x8c\x97&quot;</td></tr>
 <tr class="memitem:a157404e01360f7eded5a41e50826e8fa" id="r_a157404e01360f7eded5a41e50826e8fa"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a157404e01360f7eded5a41e50826e8fa">ICON_TI_CLOCK_HOUR_2_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\xa1&quot;</td></tr>
 <tr class="memitem:a0dca34afc9c05845524e7033820ca9c9" id="r_a0dca34afc9c05845524e7033820ca9c9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0dca34afc9c05845524e7033820ca9c9">ICON_TI_CLOCK_HOUR_3</a>&#160;&#160;&#160;&quot;\xef\x8c\x98&quot;</td></tr>
@@ -1989,6 +2062,7 @@ Macros</h2></td></tr>
 <tr class="memitem:aff32f133ac41f05892cd1f91345ee758" id="r_aff32f133ac41f05892cd1f91345ee758"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aff32f133ac41f05892cd1f91345ee758">ICON_TI_CLUBS_FILLED</a>&#160;&#160;&#160;&quot;\xef\x99\xb4&quot;</td></tr>
 <tr class="memitem:a77978c32bed823b6c796707869dde611" id="r_a77978c32bed823b6c796707869dde611"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a77978c32bed823b6c796707869dde611">ICON_TI_CODE</a>&#160;&#160;&#160;&quot;\xee\xa9\xb7&quot;</td></tr>
 <tr class="memitem:ab1daa0182ea8905a0832ae1becce5d76" id="r_ab1daa0182ea8905a0832ae1becce5d76"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab1daa0182ea8905a0832ae1becce5d76">ICON_TI_CODE_ASTERISK</a>&#160;&#160;&#160;&quot;\xef\x8c\x92&quot;</td></tr>
+<tr class="memitem:afc441a857c88ae83753cb7ff0eb3f953" id="r_afc441a857c88ae83753cb7ff0eb3f953"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afc441a857c88ae83753cb7ff0eb3f953">ICON_TI_CODE_ASTERIX</a>&#160;&#160;&#160;&quot;\xef\x8c\x92&quot;</td></tr>
 <tr class="memitem:aa87e448d907d8693a9407ef91f2c4693" id="r_aa87e448d907d8693a9407ef91f2c4693"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa87e448d907d8693a9407ef91f2c4693">ICON_TI_CODE_CIRCLE</a>&#160;&#160;&#160;&quot;\xef\x93\xbf&quot;</td></tr>
 <tr class="memitem:aa1a5517d4d8f6aa470e79118417e2e1e" id="r_aa1a5517d4d8f6aa470e79118417e2e1e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa1a5517d4d8f6aa470e79118417e2e1e">ICON_TI_CODE_CIRCLE_2</a>&#160;&#160;&#160;&quot;\xef\x93\xbe&quot;</td></tr>
 <tr class="memitem:ac7b7ef42ca1cf29422b92b06fa8afeab" id="r_ac7b7ef42ca1cf29422b92b06fa8afeab"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac7b7ef42ca1cf29422b92b06fa8afeab">ICON_TI_CODE_CIRCLE_2_FILLED</a>&#160;&#160;&#160;&quot;\xef\xbb\x94&quot;</td></tr>
@@ -2117,10 +2191,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a25eed919609d3753606aafa3679365c6" id="r_a25eed919609d3753606aafa3679365c6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a25eed919609d3753606aafa3679365c6">ICON_TI_CREDIT_CARD_REFUND</a>&#160;&#160;&#160;&quot;\xef\xb4\xb3&quot;</td></tr>
 <tr class="memitem:a92f86c1c0090d92040ab0b063c0708fe" id="r_a92f86c1c0090d92040ab0b063c0708fe"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a92f86c1c0090d92040ab0b063c0708fe">ICON_TI_CRICKET</a>&#160;&#160;&#160;&quot;\xef\x82\x9a&quot;</td></tr>
 <tr class="memitem:a866534541c664fabd25ff3eb39e00708" id="r_a866534541c664fabd25ff3eb39e00708"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a866534541c664fabd25ff3eb39e00708">ICON_TI_CROP</a>&#160;&#160;&#160;&quot;\xee\xaa\x85&quot;</td></tr>
-<tr class="memitem:a09aafcd33f44fc4ce0af26f58505cf62" id="r_a09aafcd33f44fc4ce0af26f58505cf62"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a09aafcd33f44fc4ce0af26f58505cf62">ICON_TI_CROP_1_1</a>&#160;&#160;&#160;&quot;\xef\xb5\x90&quot;</td></tr>
-<tr class="memitem:aeb1f313f71c8fec5b5dfff265a09bbdb" id="r_aeb1f313f71c8fec5b5dfff265a09bbdb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeb1f313f71c8fec5b5dfff265a09bbdb">ICON_TI_CROP_1_1_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\x8f&quot;</td></tr>
 <tr class="memitem:af925256dc4f0ccb7d7ac66803cb5b82c" id="r_af925256dc4f0ccb7d7ac66803cb5b82c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af925256dc4f0ccb7d7ac66803cb5b82c">ICON_TI_CROP_16_9</a>&#160;&#160;&#160;&quot;\xef\xb5\x91&quot;</td></tr>
 <tr class="memitem:a2d0a9fcc9ce2f3c456a8814cc19288df" id="r_a2d0a9fcc9ce2f3c456a8814cc19288df"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2d0a9fcc9ce2f3c456a8814cc19288df">ICON_TI_CROP_16_9_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\x8e&quot;</td></tr>
+<tr class="memitem:a09aafcd33f44fc4ce0af26f58505cf62" id="r_a09aafcd33f44fc4ce0af26f58505cf62"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a09aafcd33f44fc4ce0af26f58505cf62">ICON_TI_CROP_1_1</a>&#160;&#160;&#160;&quot;\xef\xb5\x90&quot;</td></tr>
+<tr class="memitem:aeb1f313f71c8fec5b5dfff265a09bbdb" id="r_aeb1f313f71c8fec5b5dfff265a09bbdb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeb1f313f71c8fec5b5dfff265a09bbdb">ICON_TI_CROP_1_1_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\x8f&quot;</td></tr>
 <tr class="memitem:a5f4a2af762c364a13a97add1fcf26f5e" id="r_a5f4a2af762c364a13a97add1fcf26f5e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5f4a2af762c364a13a97add1fcf26f5e">ICON_TI_CROP_3_2</a>&#160;&#160;&#160;&quot;\xef\xb5\x92&quot;</td></tr>
 <tr class="memitem:a6fd91e045f7cba5168d2d3b6a35952cb" id="r_a6fd91e045f7cba5168d2d3b6a35952cb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6fd91e045f7cba5168d2d3b6a35952cb">ICON_TI_CROP_3_2_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\x8d&quot;</td></tr>
 <tr class="memitem:a6652a983a11ae4b6c707fb40146cf048" id="r_a6652a983a11ae4b6c707fb40146cf048"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6652a983a11ae4b6c707fb40146cf048">ICON_TI_CROP_5_4</a>&#160;&#160;&#160;&quot;\xef\xb5\x93&quot;</td></tr>
@@ -2531,6 +2605,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a7aaf17a423acbcbb5f53fc0f85defd5e" id="r_a7aaf17a423acbcbb5f53fc0f85defd5e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7aaf17a423acbcbb5f53fc0f85defd5e">ICON_TI_DISC_GOLF</a>&#160;&#160;&#160;&quot;\xef\x8e\x85&quot;</td></tr>
 <tr class="memitem:a10910f695693f0bec87f9cbe28907129" id="r_a10910f695693f0bec87f9cbe28907129"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a10910f695693f0bec87f9cbe28907129">ICON_TI_DISC_OFF</a>&#160;&#160;&#160;&quot;\xef\x84\x98&quot;</td></tr>
 <tr class="memitem:a50daae0c35d4d79f96eb2ca8f71b157e" id="r_a50daae0c35d4d79f96eb2ca8f71b157e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a50daae0c35d4d79f96eb2ca8f71b157e">ICON_TI_DISCOUNT</a>&#160;&#160;&#160;&quot;\xee\xae\xbd&quot;</td></tr>
+<tr class="memitem:a8a9b4073dc8e4db53938eb53842fa46d" id="r_a8a9b4073dc8e4db53938eb53842fa46d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8a9b4073dc8e4db53938eb53842fa46d">ICON_TI_DISCOUNT_2</a>&#160;&#160;&#160;&quot;\xee\xb9\xbc&quot;</td></tr>
+<tr class="memitem:a05000ce5865aa52da654f8300856b1f4" id="r_a05000ce5865aa52da654f8300856b1f4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a05000ce5865aa52da654f8300856b1f4">ICON_TI_DISCOUNT_2_OFF</a>&#160;&#160;&#160;&quot;\xef\x8f\xa6&quot;</td></tr>
+<tr class="memitem:a7d5db216b4b0cfa84968fa8c849491c8" id="r_a7d5db216b4b0cfa84968fa8c849491c8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7d5db216b4b0cfa84968fa8c849491c8">ICON_TI_DISCOUNT_CHECK</a>&#160;&#160;&#160;&quot;\xef\x87\xb8&quot;</td></tr>
+<tr class="memitem:a5d1a31e616055944a27364045f59abe3" id="r_a5d1a31e616055944a27364045f59abe3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5d1a31e616055944a27364045f59abe3">ICON_TI_DISCOUNT_CHECK_FILLED</a>&#160;&#160;&#160;&quot;\xef\x9d\x86&quot;</td></tr>
 <tr class="memitem:a3d8914d3b55ce46cff6016f84a486727" id="r_a3d8914d3b55ce46cff6016f84a486727"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3d8914d3b55ce46cff6016f84a486727">ICON_TI_DISCOUNT_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\xbd&quot;</td></tr>
 <tr class="memitem:ab0c7edbd1356ddc350b7f35dcbe2f223" id="r_ab0c7edbd1356ddc350b7f35dcbe2f223"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab0c7edbd1356ddc350b7f35dcbe2f223">ICON_TI_DISCOUNT_OFF</a>&#160;&#160;&#160;&quot;\xef\x8f\xa7&quot;</td></tr>
 <tr class="memitem:a587b92c4c79e131373ed894532f76109" id="r_a587b92c4c79e131373ed894532f76109"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a587b92c4c79e131373ed894532f76109">ICON_TI_DIVIDE</a>&#160;&#160;&#160;&quot;\xee\xb5\x9c&quot;</td></tr>
@@ -3046,6 +3124,7 @@ Macros</h2></td></tr>
 <tr class="memitem:afb5b9bbd5af81810c85158144ba5fa97" id="r_afb5b9bbd5af81810c85158144ba5fa97"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afb5b9bbd5af81810c85158144ba5fa97">ICON_TI_HAND_MOVE</a>&#160;&#160;&#160;&quot;\xee\xbd\x90&quot;</td></tr>
 <tr class="memitem:a8356df28cafe77fdf619362a3cfbb711" id="r_a8356df28cafe77fdf619362a3cfbb711"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8356df28cafe77fdf619362a3cfbb711">ICON_TI_HAND_OFF</a>&#160;&#160;&#160;&quot;\xee\xb4\x95&quot;</td></tr>
 <tr class="memitem:a8cbd983520f6b7a995d3dc110cb203cd" id="r_a8cbd983520f6b7a995d3dc110cb203cd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8cbd983520f6b7a995d3dc110cb203cd">ICON_TI_HAND_RING_FINGER</a>&#160;&#160;&#160;&quot;\xee\xba\x96&quot;</td></tr>
+<tr class="memitem:a5893a41850acf1ba0da53419b5f49f97" id="r_a5893a41850acf1ba0da53419b5f49f97"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5893a41850acf1ba0da53419b5f49f97">ICON_TI_HAND_ROCK</a>&#160;&#160;&#160;&quot;\xee\xba\x97&quot;</td></tr>
 <tr class="memitem:aa835848eae298880a6a83d12aacfd760" id="r_aa835848eae298880a6a83d12aacfd760"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa835848eae298880a6a83d12aacfd760">ICON_TI_HAND_SANITIZER</a>&#160;&#160;&#160;&quot;\xef\x97\xb4&quot;</td></tr>
 <tr class="memitem:a96e028ccfd061e2ef86e5a6d36e2ee74" id="r_a96e028ccfd061e2ef86e5a6d36e2ee74"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a96e028ccfd061e2ef86e5a6d36e2ee74">ICON_TI_HAND_STOP</a>&#160;&#160;&#160;&quot;\xee\xb0\xae&quot;</td></tr>
 <tr class="memitem:a5c37c4ce17e8fa87b4485aca921c5b10" id="r_a5c37c4ce17e8fa87b4485aca921c5b10"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5c37c4ce17e8fa87b4485aca921c5b10">ICON_TI_HAND_THREE_FINGERS</a>&#160;&#160;&#160;&quot;\xee\xba\x98&quot;</td></tr>
@@ -3119,7 +3198,17 @@ Macros</h2></td></tr>
 <tr class="memitem:ac38f16e33321079853a33ff227abc87e" id="r_ac38f16e33321079853a33ff227abc87e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac38f16e33321079853a33ff227abc87e">ICON_TI_HEMISPHERE_OFF</a>&#160;&#160;&#160;&quot;\xef\xaa\xa0&quot;</td></tr>
 <tr class="memitem:a4b68e333d0663fde5612deee5f00a856" id="r_a4b68e333d0663fde5612deee5f00a856"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4b68e333d0663fde5612deee5f00a856">ICON_TI_HEMISPHERE_PLUS</a>&#160;&#160;&#160;&quot;\xef\xaa\xa1&quot;</td></tr>
 <tr class="memitem:ae439142a703441ff13bca9ea0e49b2f2" id="r_ae439142a703441ff13bca9ea0e49b2f2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae439142a703441ff13bca9ea0e49b2f2">ICON_TI_HEXAGON</a>&#160;&#160;&#160;&quot;\xee\xb0\x82&quot;</td></tr>
+<tr class="memitem:aaa4d9a2f2b75f3a1fe82f5b15bc0419e" id="r_aaa4d9a2f2b75f3a1fe82f5b15bc0419e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaa4d9a2f2b75f3a1fe82f5b15bc0419e">ICON_TI_HEXAGON_0</a>&#160;&#160;&#160;&quot;\xef\x91\x99&quot;</td></tr>
+<tr class="memitem:a554ca228765141076528e8849abc98a1" id="r_a554ca228765141076528e8849abc98a1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a554ca228765141076528e8849abc98a1">ICON_TI_HEXAGON_1</a>&#160;&#160;&#160;&quot;\xef\x91\x9a&quot;</td></tr>
+<tr class="memitem:af7bf11c15b770bf948ef999d00acfe6c" id="r_af7bf11c15b770bf948ef999d00acfe6c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af7bf11c15b770bf948ef999d00acfe6c">ICON_TI_HEXAGON_2</a>&#160;&#160;&#160;&quot;\xef\x91\x9b&quot;</td></tr>
+<tr class="memitem:abc6fcbda61bb60013d62d9123d092593" id="r_abc6fcbda61bb60013d62d9123d092593"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc6fcbda61bb60013d62d9123d092593">ICON_TI_HEXAGON_3</a>&#160;&#160;&#160;&quot;\xef\x91\x9c&quot;</td></tr>
 <tr class="memitem:a42ed45448af0e29fe70c8ca0affe48fc" id="r_a42ed45448af0e29fe70c8ca0affe48fc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a42ed45448af0e29fe70c8ca0affe48fc">ICON_TI_HEXAGON_3D</a>&#160;&#160;&#160;&quot;\xef\x93\x87&quot;</td></tr>
+<tr class="memitem:ac9ef6acefcf295313f9073ad71452af2" id="r_ac9ef6acefcf295313f9073ad71452af2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac9ef6acefcf295313f9073ad71452af2">ICON_TI_HEXAGON_4</a>&#160;&#160;&#160;&quot;\xef\x91\x9d&quot;</td></tr>
+<tr class="memitem:aeb3f2c99c69d0c9c3641d95a6254ccbd" id="r_aeb3f2c99c69d0c9c3641d95a6254ccbd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeb3f2c99c69d0c9c3641d95a6254ccbd">ICON_TI_HEXAGON_5</a>&#160;&#160;&#160;&quot;\xef\x91\x9e&quot;</td></tr>
+<tr class="memitem:a537a011ca8abe1f9e985085eca883a61" id="r_a537a011ca8abe1f9e985085eca883a61"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a537a011ca8abe1f9e985085eca883a61">ICON_TI_HEXAGON_6</a>&#160;&#160;&#160;&quot;\xef\x91\x9f&quot;</td></tr>
+<tr class="memitem:a7ade54ed749b3039da6a664ee1e96cad" id="r_a7ade54ed749b3039da6a664ee1e96cad"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7ade54ed749b3039da6a664ee1e96cad">ICON_TI_HEXAGON_7</a>&#160;&#160;&#160;&quot;\xef\x91\xa0&quot;</td></tr>
+<tr class="memitem:ad38fae5f3a7d4673b4d70f18f6ec246d" id="r_ad38fae5f3a7d4673b4d70f18f6ec246d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad38fae5f3a7d4673b4d70f18f6ec246d">ICON_TI_HEXAGON_8</a>&#160;&#160;&#160;&quot;\xef\x91\xa1&quot;</td></tr>
+<tr class="memitem:a6cc7b42e88214c7abc42da5947322868" id="r_a6cc7b42e88214c7abc42da5947322868"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6cc7b42e88214c7abc42da5947322868">ICON_TI_HEXAGON_9</a>&#160;&#160;&#160;&quot;\xef\x91\xa2&quot;</td></tr>
 <tr class="memitem:adfba22831ef7ea5f2775db5c7320d914" id="r_adfba22831ef7ea5f2775db5c7320d914"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adfba22831ef7ea5f2775db5c7320d914">ICON_TI_HEXAGON_FILLED</a>&#160;&#160;&#160;&quot;\xef\x99\xbd&quot;</td></tr>
 <tr class="memitem:a2a5dc3fc2b0ce35b84400a2193813adf" id="r_a2a5dc3fc2b0ce35b84400a2193813adf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2a5dc3fc2b0ce35b84400a2193813adf">ICON_TI_HEXAGON_LETTER_A</a>&#160;&#160;&#160;&quot;\xef\x91\xa3&quot;</td></tr>
 <tr class="memitem:a15bb3b2c1234a82ded46c0f10a1a7234" id="r_a15bb3b2c1234a82ded46c0f10a1a7234"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a15bb3b2c1234a82ded46c0f10a1a7234">ICON_TI_HEXAGON_LETTER_A_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb9\x87&quot;</td></tr>
@@ -3361,6 +3450,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a65eefb9fd79b3ce27ccfd40a73b2e26a" id="r_a65eefb9fd79b3ce27ccfd40a73b2e26a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a65eefb9fd79b3ce27ccfd40a73b2e26a">ICON_TI_JUMP_ROPE</a>&#160;&#160;&#160;&quot;\xee\xb6\x8f&quot;</td></tr>
 <tr class="memitem:a270491410c44f0328d24ee3fb58871e3" id="r_a270491410c44f0328d24ee3fb58871e3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a270491410c44f0328d24ee3fb58871e3">ICON_TI_KARATE</a>&#160;&#160;&#160;&quot;\xee\xb4\xb2&quot;</td></tr>
 <tr class="memitem:aba81ed27ae76f3f25b4d0acaca8979bd" id="r_aba81ed27ae76f3f25b4d0acaca8979bd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aba81ed27ae76f3f25b4d0acaca8979bd">ICON_TI_KAYAK</a>&#160;&#160;&#160;&quot;\xef\x87\x96&quot;</td></tr>
+<tr class="memitem:a67020b05d24199f5986bb24dadbd54b7" id="r_a67020b05d24199f5986bb24dadbd54b7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a67020b05d24199f5986bb24dadbd54b7">ICON_TI_KERING</a>&#160;&#160;&#160;&quot;\xee\xbe\xb8&quot;</td></tr>
 <tr class="memitem:a1f54087ce891fdb0b8c0cf5998a02ce3" id="r_a1f54087ce891fdb0b8c0cf5998a02ce3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1f54087ce891fdb0b8c0cf5998a02ce3">ICON_TI_KERNING</a>&#160;&#160;&#160;&quot;\xee\xbe\xb8&quot;</td></tr>
 <tr class="memitem:a6349fd357e90aeac8c1fe63bf0203c74" id="r_a6349fd357e90aeac8c1fe63bf0203c74"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6349fd357e90aeac8c1fe63bf0203c74">ICON_TI_KEY</a>&#160;&#160;&#160;&quot;\xee\xab\x87&quot;</td></tr>
 <tr class="memitem:a893300fd2852c9550b1cd96d44cd3c1d" id="r_a893300fd2852c9550b1cd96d44cd3c1d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a893300fd2852c9550b1cd96d44cd3c1d">ICON_TI_KEY_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb8\xa8&quot;</td></tr>
@@ -3846,6 +3936,8 @@ Macros</h2></td></tr>
 <tr class="memitem:afd6707a31c6facb927917023ef12904d" id="r_afd6707a31c6facb927917023ef12904d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afd6707a31c6facb927917023ef12904d">ICON_TI_MESSAGE_CHATBOT_FILLED</a>&#160;&#160;&#160;&quot;\xef\xbb\x90&quot;</td></tr>
 <tr class="memitem:a039abf05c5842e3787e6a7ce8a4543ca" id="r_a039abf05c5842e3787e6a7ce8a4543ca"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a039abf05c5842e3787e6a7ce8a4543ca">ICON_TI_MESSAGE_CHECK</a>&#160;&#160;&#160;&quot;\xef\xa5\xaf&quot;</td></tr>
 <tr class="memitem:a03082da7cf663ec597abc60097968441" id="r_a03082da7cf663ec597abc60097968441"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a03082da7cf663ec597abc60097968441">ICON_TI_MESSAGE_CIRCLE</a>&#160;&#160;&#160;&quot;\xee\xab\xad&quot;</td></tr>
+<tr class="memitem:abf058046aeef62c88a9edb6e6bb944c1" id="r_abf058046aeef62c88a9edb6e6bb944c1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abf058046aeef62c88a9edb6e6bb944c1">ICON_TI_MESSAGE_CIRCLE_2</a>&#160;&#160;&#160;&quot;\xee\xab\xad&quot;</td></tr>
+<tr class="memitem:a61b7a435201c6fd68d86c00082b5fc8d" id="r_a61b7a435201c6fd68d86c00082b5fc8d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a61b7a435201c6fd68d86c00082b5fc8d">ICON_TI_MESSAGE_CIRCLE_2_FILLED</a>&#160;&#160;&#160;&quot;\xef\xbb\x8f&quot;</td></tr>
 <tr class="memitem:a1927c25e30dc8d5ac48bfa0792d69ccf" id="r_a1927c25e30dc8d5ac48bfa0792d69ccf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1927c25e30dc8d5ac48bfa0792d69ccf">ICON_TI_MESSAGE_CIRCLE_BOLT</a>&#160;&#160;&#160;&quot;\xef\xa5\xb0&quot;</td></tr>
 <tr class="memitem:a7a1338f9b716be6c76404c8d047550b9" id="r_a7a1338f9b716be6c76404c8d047550b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7a1338f9b716be6c76404c8d047550b9">ICON_TI_MESSAGE_CIRCLE_CANCEL</a>&#160;&#160;&#160;&quot;\xef\xa5\xb1&quot;</td></tr>
 <tr class="memitem:af6084075f1e440354644841486d51875" id="r_af6084075f1e440354644841486d51875"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af6084075f1e440354644841486d51875">ICON_TI_MESSAGE_CIRCLE_CHECK</a>&#160;&#160;&#160;&quot;\xef\xa5\xb2&quot;</td></tr>
@@ -3983,6 +4075,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a147a27a18d201049497a24856941c724" id="r_a147a27a18d201049497a24856941c724"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a147a27a18d201049497a24856941c724">ICON_TI_MOOD_SMILE_DIZZY</a>&#160;&#160;&#160;&quot;\xef\x8b\xa8&quot;</td></tr>
 <tr class="memitem:abda1d161a347bae1b64d842134813560" id="r_abda1d161a347bae1b64d842134813560"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abda1d161a347bae1b64d842134813560">ICON_TI_MOOD_SMILE_FILLED</a>&#160;&#160;&#160;&quot;\xef\x9f\xb8&quot;</td></tr>
 <tr class="memitem:ab1fe5bc3b6e482386045b14d1fdf0df4" id="r_ab1fe5bc3b6e482386045b14d1fdf0df4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab1fe5bc3b6e482386045b14d1fdf0df4">ICON_TI_MOOD_SPARK</a>&#160;&#160;&#160;&quot;\xef\xbe\xb2&quot;</td></tr>
+<tr class="memitem:a49450db7fc2af7dab77e06b4001f6aad" id="r_a49450db7fc2af7dab77e06b4001f6aad"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a49450db7fc2af7dab77e06b4001f6aad">ICON_TI_MOOD_SUPRISED</a>&#160;&#160;&#160;&quot;\xee\xb0\x84&quot;</td></tr>
 <tr class="memitem:a8c182452125b566bf30a66be36297167" id="r_a8c182452125b566bf30a66be36297167"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8c182452125b566bf30a66be36297167">ICON_TI_MOOD_SURPRISED</a>&#160;&#160;&#160;&quot;\xee\xb0\x84&quot;</td></tr>
 <tr class="memitem:ac082a45f77f6459c7ca3c98b5a0701f9" id="r_ac082a45f77f6459c7ca3c98b5a0701f9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac082a45f77f6459c7ca3c98b5a0701f9">ICON_TI_MOOD_TONGUE</a>&#160;&#160;&#160;&quot;\xee\xae\x95&quot;</td></tr>
 <tr class="memitem:af24f2fc3480858af58678812fec74ef2" id="r_af24f2fc3480858af58678812fec74ef2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af24f2fc3480858af58678812fec74ef2">ICON_TI_MOOD_TONGUE_WINK</a>&#160;&#160;&#160;&quot;\xef\x8b\xaa&quot;</td></tr>
@@ -4097,14 +4190,13 @@ Macros</h2></td></tr>
 <tr class="memitem:aeaacd94bd1d9cc56c1df2316bacda998" id="r_aeaacd94bd1d9cc56c1df2316bacda998"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeaacd94bd1d9cc56c1df2316bacda998">ICON_TI_NUMBER_0</a>&#160;&#160;&#160;&quot;\xee\xb7\xb0&quot;</td></tr>
 <tr class="memitem:a3312102a509addc5092dfc03488d283e" id="r_a3312102a509addc5092dfc03488d283e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3312102a509addc5092dfc03488d283e">ICON_TI_NUMBER_0_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa1&quot;</td></tr>
 <tr class="memitem:a1210359ed8d4b945060f49792fc0d063" id="r_a1210359ed8d4b945060f49792fc0d063"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1210359ed8d4b945060f49792fc0d063">ICON_TI_NUMBER_1</a>&#160;&#160;&#160;&quot;\xee\xb7\xb1&quot;</td></tr>
-<tr class="memitem:ad8ec43fb4c11927a7ab932e176e2624b" id="r_ad8ec43fb4c11927a7ab932e176e2624b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad8ec43fb4c11927a7ab932e176e2624b">ICON_TI_NUMBER_1_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa2&quot;</td></tr>
 <tr class="memitem:a93933db76d086b14b15d7c6fbb31c2e3" id="r_a93933db76d086b14b15d7c6fbb31c2e3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a93933db76d086b14b15d7c6fbb31c2e3">ICON_TI_NUMBER_10</a>&#160;&#160;&#160;&quot;\xf0\x90\x81\x9e&quot;</td></tr>
-<tr class="memitem:acf163a2fefbabe0cc604ca19c396f527" id="r_acf163a2fefbabe0cc604ca19c396f527"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#acf163a2fefbabe0cc604ca19c396f527">ICON_TI_NUMBER_10_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa3&quot;</td></tr>
 <tr class="memitem:a4a85ce7136ecf9c1c9d8bdc441b1d136" id="r_a4a85ce7136ecf9c1c9d8bdc441b1d136"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4a85ce7136ecf9c1c9d8bdc441b1d136">ICON_TI_NUMBER_100_SMALL</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\x85&quot;</td></tr>
+<tr class="memitem:acf163a2fefbabe0cc604ca19c396f527" id="r_acf163a2fefbabe0cc604ca19c396f527"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#acf163a2fefbabe0cc604ca19c396f527">ICON_TI_NUMBER_10_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa3&quot;</td></tr>
 <tr class="memitem:a76e51646ac27f0a5c8a10159e5f5cdf9" id="r_a76e51646ac27f0a5c8a10159e5f5cdf9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a76e51646ac27f0a5c8a10159e5f5cdf9">ICON_TI_NUMBER_11</a>&#160;&#160;&#160;&quot;\xf0\x90\x81\x9d&quot;</td></tr>
 <tr class="memitem:a523d6e2410da1dbb80a5bcfac9e21c78" id="r_a523d6e2410da1dbb80a5bcfac9e21c78"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a523d6e2410da1dbb80a5bcfac9e21c78">ICON_TI_NUMBER_11_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa4&quot;</td></tr>
-<tr class="memitem:ac754bd2dd3981d583d7d8ad60c4d42b6" id="r_ac754bd2dd3981d583d7d8ad60c4d42b6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac754bd2dd3981d583d7d8ad60c4d42b6">ICON_TI_NUMBER_12_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa5&quot;</td></tr>
 <tr class="memitem:a5a2092a56eb948710744a1792f72bef3" id="r_a5a2092a56eb948710744a1792f72bef3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5a2092a56eb948710744a1792f72bef3">ICON_TI_NUMBER_123</a>&#160;&#160;&#160;&quot;\xef\x95\x94&quot;</td></tr>
+<tr class="memitem:ac754bd2dd3981d583d7d8ad60c4d42b6" id="r_ac754bd2dd3981d583d7d8ad60c4d42b6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac754bd2dd3981d583d7d8ad60c4d42b6">ICON_TI_NUMBER_12_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa5&quot;</td></tr>
 <tr class="memitem:a563a32d09e765dad4ece2d1700d4ada0" id="r_a563a32d09e765dad4ece2d1700d4ada0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a563a32d09e765dad4ece2d1700d4ada0">ICON_TI_NUMBER_13_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa6&quot;</td></tr>
 <tr class="memitem:a481c7aea2a9f1f068ee35f075a8bd232" id="r_a481c7aea2a9f1f068ee35f075a8bd232"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a481c7aea2a9f1f068ee35f075a8bd232">ICON_TI_NUMBER_14_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa7&quot;</td></tr>
 <tr class="memitem:aff3ebab37e0f32f08cd8b4f3c7051bf0" id="r_aff3ebab37e0f32f08cd8b4f3c7051bf0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aff3ebab37e0f32f08cd8b4f3c7051bf0">ICON_TI_NUMBER_15_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa8&quot;</td></tr>
@@ -4112,8 +4204,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a0728b204fc7eb27bfd4dcf2ba0c74400" id="r_a0728b204fc7eb27bfd4dcf2ba0c74400"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0728b204fc7eb27bfd4dcf2ba0c74400">ICON_TI_NUMBER_17_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xaa&quot;</td></tr>
 <tr class="memitem:aead5f94a21c42e7dff0dc10468000efb" id="r_aead5f94a21c42e7dff0dc10468000efb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aead5f94a21c42e7dff0dc10468000efb">ICON_TI_NUMBER_18_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xab&quot;</td></tr>
 <tr class="memitem:a136778c48ed22f3a87612a6a786924da" id="r_a136778c48ed22f3a87612a6a786924da"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a136778c48ed22f3a87612a6a786924da">ICON_TI_NUMBER_19_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xac&quot;</td></tr>
+<tr class="memitem:ad8ec43fb4c11927a7ab932e176e2624b" id="r_ad8ec43fb4c11927a7ab932e176e2624b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad8ec43fb4c11927a7ab932e176e2624b">ICON_TI_NUMBER_1_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xa2&quot;</td></tr>
 <tr class="memitem:a9faa648d3f88cc542521e01eedc5886e" id="r_a9faa648d3f88cc542521e01eedc5886e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9faa648d3f88cc542521e01eedc5886e">ICON_TI_NUMBER_2</a>&#160;&#160;&#160;&quot;\xee\xb7\xb2&quot;</td></tr>
-<tr class="memitem:ad482cfca979321143f3b7ee41b9670ea" id="r_ad482cfca979321143f3b7ee41b9670ea"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad482cfca979321143f3b7ee41b9670ea">ICON_TI_NUMBER_2_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xad&quot;</td></tr>
 <tr class="memitem:a4d840981fe69a2d0afe94669e4eba55d" id="r_a4d840981fe69a2d0afe94669e4eba55d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4d840981fe69a2d0afe94669e4eba55d">ICON_TI_NUMBER_20_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xae&quot;</td></tr>
 <tr class="memitem:a36689bacd3fca7a45e9609ad52ee6a52" id="r_a36689bacd3fca7a45e9609ad52ee6a52"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a36689bacd3fca7a45e9609ad52ee6a52">ICON_TI_NUMBER_21_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xaf&quot;</td></tr>
 <tr class="memitem:a4c806267f744fe3cdecee0368516d701" id="r_a4c806267f744fe3cdecee0368516d701"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4c806267f744fe3cdecee0368516d701">ICON_TI_NUMBER_22_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb0&quot;</td></tr>
@@ -4124,8 +4216,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ab23ec965c4da393df40d3fc535f16235" id="r_ab23ec965c4da393df40d3fc535f16235"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab23ec965c4da393df40d3fc535f16235">ICON_TI_NUMBER_27_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb5&quot;</td></tr>
 <tr class="memitem:a87b53fae3f527a511475fa4251662e63" id="r_a87b53fae3f527a511475fa4251662e63"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a87b53fae3f527a511475fa4251662e63">ICON_TI_NUMBER_28_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb6&quot;</td></tr>
 <tr class="memitem:a870319b0c286313246b0ae2c5588647a" id="r_a870319b0c286313246b0ae2c5588647a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a870319b0c286313246b0ae2c5588647a">ICON_TI_NUMBER_29_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb7&quot;</td></tr>
+<tr class="memitem:ad482cfca979321143f3b7ee41b9670ea" id="r_ad482cfca979321143f3b7ee41b9670ea"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad482cfca979321143f3b7ee41b9670ea">ICON_TI_NUMBER_2_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xad&quot;</td></tr>
 <tr class="memitem:acc89c992e9c7e929382cc41c9daefbbb" id="r_acc89c992e9c7e929382cc41c9daefbbb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#acc89c992e9c7e929382cc41c9daefbbb">ICON_TI_NUMBER_3</a>&#160;&#160;&#160;&quot;\xee\xb7\xb3&quot;</td></tr>
-<tr class="memitem:aa98346c118a444dd93a7013fa1b99fc8" id="r_aa98346c118a444dd93a7013fa1b99fc8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa98346c118a444dd93a7013fa1b99fc8">ICON_TI_NUMBER_3_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb8&quot;</td></tr>
 <tr class="memitem:a8bf92abdb68d59f1a1e3299e45e1a4ac" id="r_a8bf92abdb68d59f1a1e3299e45e1a4ac"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8bf92abdb68d59f1a1e3299e45e1a4ac">ICON_TI_NUMBER_30_SMALL</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\x84&quot;</td></tr>
 <tr class="memitem:a97ebe842aaf34de6abeda7c620b28f99" id="r_a97ebe842aaf34de6abeda7c620b28f99"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a97ebe842aaf34de6abeda7c620b28f99">ICON_TI_NUMBER_31_SMALL</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\x83&quot;</td></tr>
 <tr class="memitem:a94a299e11dd6ed4293b830800c6a51b7" id="r_a94a299e11dd6ed4293b830800c6a51b7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a94a299e11dd6ed4293b830800c6a51b7">ICON_TI_NUMBER_32_SMALL</a>&#160;&#160;&#160;&quot;\xf0\x90\x80\x82&quot;</td></tr>
@@ -4136,8 +4228,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a82fd211367449c11eb67cb5c265c5117" id="r_a82fd211367449c11eb67cb5c265c5117"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a82fd211367449c11eb67cb5c265c5117">ICON_TI_NUMBER_37_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xbd&quot;</td></tr>
 <tr class="memitem:a758cf5281d0ea86adadbc1a6919ac907" id="r_a758cf5281d0ea86adadbc1a6919ac907"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a758cf5281d0ea86adadbc1a6919ac907">ICON_TI_NUMBER_38_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xbc&quot;</td></tr>
 <tr class="memitem:ab6217547a3d7dafb994f2ba15bed071e" id="r_ab6217547a3d7dafb994f2ba15bed071e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab6217547a3d7dafb994f2ba15bed071e">ICON_TI_NUMBER_39_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xbb&quot;</td></tr>
+<tr class="memitem:aa98346c118a444dd93a7013fa1b99fc8" id="r_aa98346c118a444dd93a7013fa1b99fc8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa98346c118a444dd93a7013fa1b99fc8">ICON_TI_NUMBER_3_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb8&quot;</td></tr>
 <tr class="memitem:a1ef0dbb2d16fbea22f4164cd6682c4c0" id="r_a1ef0dbb2d16fbea22f4164cd6682c4c0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1ef0dbb2d16fbea22f4164cd6682c4c0">ICON_TI_NUMBER_4</a>&#160;&#160;&#160;&quot;\xee\xb7\xb4&quot;</td></tr>
-<tr class="memitem:aa66acd5bfdcee1b55e6cea6f20992fb1" id="r_aa66acd5bfdcee1b55e6cea6f20992fb1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa66acd5bfdcee1b55e6cea6f20992fb1">ICON_TI_NUMBER_4_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb9&quot;</td></tr>
 <tr class="memitem:a966ec9ace988e5d1fd6d83221e82eded" id="r_a966ec9ace988e5d1fd6d83221e82eded"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a966ec9ace988e5d1fd6d83221e82eded">ICON_TI_NUMBER_40_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xba&quot;</td></tr>
 <tr class="memitem:a20f1c1f02ba35e5dc667bccce13f5efe" id="r_a20f1c1f02ba35e5dc667bccce13f5efe"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a20f1c1f02ba35e5dc667bccce13f5efe">ICON_TI_NUMBER_41_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xb9&quot;</td></tr>
 <tr class="memitem:ab7394a00f302f8ff673788a5b02d5620" id="r_ab7394a00f302f8ff673788a5b02d5620"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab7394a00f302f8ff673788a5b02d5620">ICON_TI_NUMBER_42_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xb8&quot;</td></tr>
@@ -4148,8 +4240,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a42d922d52b171e04cb0a30f3146fad56" id="r_a42d922d52b171e04cb0a30f3146fad56"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a42d922d52b171e04cb0a30f3146fad56">ICON_TI_NUMBER_47_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xb3&quot;</td></tr>
 <tr class="memitem:afaa047db3be58ad7d9ad5c65e58663a0" id="r_afaa047db3be58ad7d9ad5c65e58663a0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afaa047db3be58ad7d9ad5c65e58663a0">ICON_TI_NUMBER_48_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xb2&quot;</td></tr>
 <tr class="memitem:abab71fa5981da1f9ef6f046b294e82c6" id="r_abab71fa5981da1f9ef6f046b294e82c6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abab71fa5981da1f9ef6f046b294e82c6">ICON_TI_NUMBER_49_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xb1&quot;</td></tr>
+<tr class="memitem:aa66acd5bfdcee1b55e6cea6f20992fb1" id="r_aa66acd5bfdcee1b55e6cea6f20992fb1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa66acd5bfdcee1b55e6cea6f20992fb1">ICON_TI_NUMBER_4_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xb9&quot;</td></tr>
 <tr class="memitem:a00eda193a72be9f9137399f0809fb9b1" id="r_a00eda193a72be9f9137399f0809fb9b1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a00eda193a72be9f9137399f0809fb9b1">ICON_TI_NUMBER_5</a>&#160;&#160;&#160;&quot;\xee\xb7\xb5&quot;</td></tr>
-<tr class="memitem:ab98a79e3c4ae6586011e829a312bf2b9" id="r_ab98a79e3c4ae6586011e829a312bf2b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab98a79e3c4ae6586011e829a312bf2b9">ICON_TI_NUMBER_5_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xba&quot;</td></tr>
 <tr class="memitem:a238aa6ed061c4785d7f013ad691170b9" id="r_a238aa6ed061c4785d7f013ad691170b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a238aa6ed061c4785d7f013ad691170b9">ICON_TI_NUMBER_50_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xb0&quot;</td></tr>
 <tr class="memitem:a14934e9b162e94c6cac721cf9dc6f251" id="r_a14934e9b162e94c6cac721cf9dc6f251"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a14934e9b162e94c6cac721cf9dc6f251">ICON_TI_NUMBER_51_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xaf&quot;</td></tr>
 <tr class="memitem:ab510f7d06b25edd8f18c32ba62c625ae" id="r_ab510f7d06b25edd8f18c32ba62c625ae"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab510f7d06b25edd8f18c32ba62c625ae">ICON_TI_NUMBER_52_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xae&quot;</td></tr>
@@ -4160,8 +4252,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a1d30d9497dd426f5c6e4ae0d0fdde1d1" id="r_a1d30d9497dd426f5c6e4ae0d0fdde1d1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1d30d9497dd426f5c6e4ae0d0fdde1d1">ICON_TI_NUMBER_57_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xa9&quot;</td></tr>
 <tr class="memitem:a52b8ac6c4dbbc174b049fe13084c9241" id="r_a52b8ac6c4dbbc174b049fe13084c9241"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a52b8ac6c4dbbc174b049fe13084c9241">ICON_TI_NUMBER_58_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xa8&quot;</td></tr>
 <tr class="memitem:a479ec4ea91a889bf1473ca465af2edcc" id="r_a479ec4ea91a889bf1473ca465af2edcc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a479ec4ea91a889bf1473ca465af2edcc">ICON_TI_NUMBER_59_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xa7&quot;</td></tr>
+<tr class="memitem:ab98a79e3c4ae6586011e829a312bf2b9" id="r_ab98a79e3c4ae6586011e829a312bf2b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab98a79e3c4ae6586011e829a312bf2b9">ICON_TI_NUMBER_5_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xba&quot;</td></tr>
 <tr class="memitem:ae761442de327ae8a272fbfcb9d68926c" id="r_ae761442de327ae8a272fbfcb9d68926c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae761442de327ae8a272fbfcb9d68926c">ICON_TI_NUMBER_6</a>&#160;&#160;&#160;&quot;\xee\xb7\xb6&quot;</td></tr>
-<tr class="memitem:af08f1bfc6763558e66e8c8a0e5d56739" id="r_af08f1bfc6763558e66e8c8a0e5d56739"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af08f1bfc6763558e66e8c8a0e5d56739">ICON_TI_NUMBER_6_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbb&quot;</td></tr>
 <tr class="memitem:a2e8dfce139eef2b3cbdd382da90722a2" id="r_a2e8dfce139eef2b3cbdd382da90722a2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2e8dfce139eef2b3cbdd382da90722a2">ICON_TI_NUMBER_60_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xa6&quot;</td></tr>
 <tr class="memitem:a71cb917a925ad0bf1622b367b03d66bf" id="r_a71cb917a925ad0bf1622b367b03d66bf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a71cb917a925ad0bf1622b367b03d66bf">ICON_TI_NUMBER_61_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xa5&quot;</td></tr>
 <tr class="memitem:a548850513e68e596ddbb957c84aed6c7" id="r_a548850513e68e596ddbb957c84aed6c7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a548850513e68e596ddbb957c84aed6c7">ICON_TI_NUMBER_62_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\xa4&quot;</td></tr>
@@ -4172,8 +4264,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a7c0f598db120e1b6db429df68d3c72d6" id="r_a7c0f598db120e1b6db429df68d3c72d6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7c0f598db120e1b6db429df68d3c72d6">ICON_TI_NUMBER_67_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x9f&quot;</td></tr>
 <tr class="memitem:ad531e7abd20e66848e1b021c4d7171b6" id="r_ad531e7abd20e66848e1b021c4d7171b6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad531e7abd20e66848e1b021c4d7171b6">ICON_TI_NUMBER_68_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x9e&quot;</td></tr>
 <tr class="memitem:a390961903ee4566cf2479e57166b32bb" id="r_a390961903ee4566cf2479e57166b32bb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a390961903ee4566cf2479e57166b32bb">ICON_TI_NUMBER_69_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x9d&quot;</td></tr>
+<tr class="memitem:af08f1bfc6763558e66e8c8a0e5d56739" id="r_af08f1bfc6763558e66e8c8a0e5d56739"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af08f1bfc6763558e66e8c8a0e5d56739">ICON_TI_NUMBER_6_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbb&quot;</td></tr>
 <tr class="memitem:ab6821dcb6b2064b9ecd1bbcbdf601f82" id="r_ab6821dcb6b2064b9ecd1bbcbdf601f82"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab6821dcb6b2064b9ecd1bbcbdf601f82">ICON_TI_NUMBER_7</a>&#160;&#160;&#160;&quot;\xee\xb7\xb7&quot;</td></tr>
-<tr class="memitem:a05d404743d04a365f548b2fbc484776d" id="r_a05d404743d04a365f548b2fbc484776d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a05d404743d04a365f548b2fbc484776d">ICON_TI_NUMBER_7_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbc&quot;</td></tr>
 <tr class="memitem:a9d7d9a57d05fac229c844c7cbfa67e6a" id="r_a9d7d9a57d05fac229c844c7cbfa67e6a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9d7d9a57d05fac229c844c7cbfa67e6a">ICON_TI_NUMBER_70_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x9c&quot;</td></tr>
 <tr class="memitem:abf1700612f46eb104b125f7a9d8fb991" id="r_abf1700612f46eb104b125f7a9d8fb991"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abf1700612f46eb104b125f7a9d8fb991">ICON_TI_NUMBER_71_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x9b&quot;</td></tr>
 <tr class="memitem:afe4118a41211aeff0a05ea73cd6e55a6" id="r_afe4118a41211aeff0a05ea73cd6e55a6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afe4118a41211aeff0a05ea73cd6e55a6">ICON_TI_NUMBER_72_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x9a&quot;</td></tr>
@@ -4184,8 +4276,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ade17eb13310f0f166834af1883c6c482" id="r_ade17eb13310f0f166834af1883c6c482"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ade17eb13310f0f166834af1883c6c482">ICON_TI_NUMBER_77_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x95&quot;</td></tr>
 <tr class="memitem:af3e865a8bda7761c021f8a0ea33de587" id="r_af3e865a8bda7761c021f8a0ea33de587"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af3e865a8bda7761c021f8a0ea33de587">ICON_TI_NUMBER_78_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x94&quot;</td></tr>
 <tr class="memitem:a81b16a48fbe5d5de5feb0c69d3de2deb" id="r_a81b16a48fbe5d5de5feb0c69d3de2deb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a81b16a48fbe5d5de5feb0c69d3de2deb">ICON_TI_NUMBER_79_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x93&quot;</td></tr>
+<tr class="memitem:a05d404743d04a365f548b2fbc484776d" id="r_a05d404743d04a365f548b2fbc484776d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a05d404743d04a365f548b2fbc484776d">ICON_TI_NUMBER_7_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbc&quot;</td></tr>
 <tr class="memitem:adf63b4eb6ed1721962590b35092cbc5c" id="r_adf63b4eb6ed1721962590b35092cbc5c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adf63b4eb6ed1721962590b35092cbc5c">ICON_TI_NUMBER_8</a>&#160;&#160;&#160;&quot;\xee\xb7\xb8&quot;</td></tr>
-<tr class="memitem:a9f599e7cd8b7090237908e58ccfc52e4" id="r_a9f599e7cd8b7090237908e58ccfc52e4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9f599e7cd8b7090237908e58ccfc52e4">ICON_TI_NUMBER_8_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbd&quot;</td></tr>
 <tr class="memitem:a2546708babd4964f11934a9c492dc6a9" id="r_a2546708babd4964f11934a9c492dc6a9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2546708babd4964f11934a9c492dc6a9">ICON_TI_NUMBER_80_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x92&quot;</td></tr>
 <tr class="memitem:a734d1a2ffd9ea61bf59b67879ab377b7" id="r_a734d1a2ffd9ea61bf59b67879ab377b7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a734d1a2ffd9ea61bf59b67879ab377b7">ICON_TI_NUMBER_81_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x91&quot;</td></tr>
 <tr class="memitem:a03dec09577b5afb74c786bf86d3c4f51" id="r_a03dec09577b5afb74c786bf86d3c4f51"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a03dec09577b5afb74c786bf86d3c4f51">ICON_TI_NUMBER_82_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x90&quot;</td></tr>
@@ -4196,8 +4288,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a1660967fc39ee266f42f7936e68da70d" id="r_a1660967fc39ee266f42f7936e68da70d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1660967fc39ee266f42f7936e68da70d">ICON_TI_NUMBER_87_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x8b&quot;</td></tr>
 <tr class="memitem:a1b5dcc665926eedab6b3233ec0dc480d" id="r_a1b5dcc665926eedab6b3233ec0dc480d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1b5dcc665926eedab6b3233ec0dc480d">ICON_TI_NUMBER_88_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x8a&quot;</td></tr>
 <tr class="memitem:ab1ef2243d9d84e0d6a22766b9315d3c9" id="r_ab1ef2243d9d84e0d6a22766b9315d3c9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab1ef2243d9d84e0d6a22766b9315d3c9">ICON_TI_NUMBER_89_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x89&quot;</td></tr>
+<tr class="memitem:a9f599e7cd8b7090237908e58ccfc52e4" id="r_a9f599e7cd8b7090237908e58ccfc52e4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9f599e7cd8b7090237908e58ccfc52e4">ICON_TI_NUMBER_8_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbd&quot;</td></tr>
 <tr class="memitem:aede78dcbc03c49497aeaa58dad6a2d06" id="r_aede78dcbc03c49497aeaa58dad6a2d06"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aede78dcbc03c49497aeaa58dad6a2d06">ICON_TI_NUMBER_9</a>&#160;&#160;&#160;&quot;\xee\xb7\xb9&quot;</td></tr>
-<tr class="memitem:aef84b152a7b0c28672e44db469fc1610" id="r_aef84b152a7b0c28672e44db469fc1610"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aef84b152a7b0c28672e44db469fc1610">ICON_TI_NUMBER_9_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbe&quot;</td></tr>
 <tr class="memitem:a326016739b109d83b8b832f2cff1e06e" id="r_a326016739b109d83b8b832f2cff1e06e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a326016739b109d83b8b832f2cff1e06e">ICON_TI_NUMBER_90_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x88&quot;</td></tr>
 <tr class="memitem:a24ae3e29b7486f6308b3a97d90b71b11" id="r_a24ae3e29b7486f6308b3a97d90b71b11"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a24ae3e29b7486f6308b3a97d90b71b11">ICON_TI_NUMBER_91_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x87&quot;</td></tr>
 <tr class="memitem:a89af800c5da5bf5b7d10bed675f0340b" id="r_a89af800c5da5bf5b7d10bed675f0340b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a89af800c5da5bf5b7d10bed675f0340b">ICON_TI_NUMBER_92_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x86&quot;</td></tr>
@@ -4208,6 +4300,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ab81d96ab34bc8255b57a888b04e7a583" id="r_ab81d96ab34bc8255b57a888b04e7a583"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab81d96ab34bc8255b57a888b04e7a583">ICON_TI_NUMBER_97_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x81&quot;</td></tr>
 <tr class="memitem:ae7b547085706a035b7be2028018bf917" id="r_ae7b547085706a035b7be2028018bf917"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae7b547085706a035b7be2028018bf917">ICON_TI_NUMBER_98_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbf\x80&quot;</td></tr>
 <tr class="memitem:a746472cfab12306ae9594efd58ad83ab" id="r_a746472cfab12306ae9594efd58ad83ab"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a746472cfab12306ae9594efd58ad83ab">ICON_TI_NUMBER_99_SMALL</a>&#160;&#160;&#160;&quot;\xef\xbe\xbf&quot;</td></tr>
+<tr class="memitem:aef84b152a7b0c28672e44db469fc1610" id="r_aef84b152a7b0c28672e44db469fc1610"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aef84b152a7b0c28672e44db469fc1610">ICON_TI_NUMBER_9_SMALL</a>&#160;&#160;&#160;&quot;\xef\xb3\xbe&quot;</td></tr>
 <tr class="memitem:a4647d064e8010b12aab3a668113afba2" id="r_a4647d064e8010b12aab3a668113afba2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4647d064e8010b12aab3a668113afba2">ICON_TI_NUMBERS</a>&#160;&#160;&#160;&quot;\xef\x80\x95&quot;</td></tr>
 <tr class="memitem:a1080897b0077fe9e94e44c5cfcca709c" id="r_a1080897b0077fe9e94e44c5cfcca709c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1080897b0077fe9e94e44c5cfcca709c">ICON_TI_NURSE</a>&#160;&#160;&#160;&quot;\xee\xbd\xa5&quot;</td></tr>
 <tr class="memitem:a7e1b5d11051a79c9c5c19c0531064088" id="r_a7e1b5d11051a79c9c5c19c0531064088"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7e1b5d11051a79c9c5c19c0531064088">ICON_TI_NUT</a>&#160;&#160;&#160;&quot;\xef\xb1\xa1&quot;</td></tr>
@@ -4438,9 +4531,9 @@ Macros</h2></td></tr>
 <tr class="memitem:af28061f630f8b478a9621e604fbf31ee" id="r_af28061f630f8b478a9621e604fbf31ee"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af28061f630f8b478a9621e604fbf31ee">ICON_TI_PLAY_BASKETBALL</a>&#160;&#160;&#160;&quot;\xef\xa9\xa6&quot;</td></tr>
 <tr class="memitem:a0f331adeb7c7d2d1c1fc2a9c43980998" id="r_a0f331adeb7c7d2d1c1fc2a9c43980998"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0f331adeb7c7d2d1c1fc2a9c43980998">ICON_TI_PLAY_CARD</a>&#160;&#160;&#160;&quot;\xee\xba\xbf&quot;</td></tr>
 <tr class="memitem:a472635ed7048c8641e6a6961935f61e2" id="r_a472635ed7048c8641e6a6961935f61e2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a472635ed7048c8641e6a6961935f61e2">ICON_TI_PLAY_CARD_1</a>&#160;&#160;&#160;&quot;\xf0\x90\x81\x9c&quot;</td></tr>
-<tr class="memitem:a82a961dc3ada958b9df5c04b6101a562" id="r_a82a961dc3ada958b9df5c04b6101a562"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a82a961dc3ada958b9df5c04b6101a562">ICON_TI_PLAY_CARD_1_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x82\x83&quot;</td></tr>
 <tr class="memitem:ae78c08d68aaf3317443c384706bd1f11" id="r_ae78c08d68aaf3317443c384706bd1f11"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae78c08d68aaf3317443c384706bd1f11">ICON_TI_PLAY_CARD_10</a>&#160;&#160;&#160;&quot;\xf0\x90\x81\x9b&quot;</td></tr>
 <tr class="memitem:ab3b62faa3b2a0af228832ad9f6f03508" id="r_ab3b62faa3b2a0af228832ad9f6f03508"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab3b62faa3b2a0af228832ad9f6f03508">ICON_TI_PLAY_CARD_10_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x82\x82&quot;</td></tr>
+<tr class="memitem:a82a961dc3ada958b9df5c04b6101a562" id="r_a82a961dc3ada958b9df5c04b6101a562"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a82a961dc3ada958b9df5c04b6101a562">ICON_TI_PLAY_CARD_1_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x82\x83&quot;</td></tr>
 <tr class="memitem:abedd12bd8f0177cb8d3c21100728f79b" id="r_abedd12bd8f0177cb8d3c21100728f79b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abedd12bd8f0177cb8d3c21100728f79b">ICON_TI_PLAY_CARD_2</a>&#160;&#160;&#160;&quot;\xf0\x90\x81\x9a&quot;</td></tr>
 <tr class="memitem:a1caa3b23b64960b32d17a5584e8702de" id="r_a1caa3b23b64960b32d17a5584e8702de"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1caa3b23b64960b32d17a5584e8702de">ICON_TI_PLAY_CARD_2_FILLED</a>&#160;&#160;&#160;&quot;\xf0\x90\x82\x81&quot;</td></tr>
 <tr class="memitem:a8dcc12df0f84237a8c1f5b361fadb5b7" id="r_a8dcc12df0f84237a8c1f5b361fadb5b7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8dcc12df0f84237a8c1f5b361fadb5b7">ICON_TI_PLAY_CARD_3</a>&#160;&#160;&#160;&quot;\xf0\x90\x81\x99&quot;</td></tr>
@@ -4856,6 +4949,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ae69b2e485211ee1c816e3abdffa428c2" id="r_ae69b2e485211ee1c816e3abdffa428c2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae69b2e485211ee1c816e3abdffa428c2">ICON_TI_SHARE_3</a>&#160;&#160;&#160;&quot;\xef\x9e\xbd&quot;</td></tr>
 <tr class="memitem:a26b404b496789ab52e8570956cad285c" id="r_a26b404b496789ab52e8570956cad285c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a26b404b496789ab52e8570956cad285c">ICON_TI_SHARE_OFF</a>&#160;&#160;&#160;&quot;\xef\x86\xa1&quot;</td></tr>
 <tr class="memitem:a63f750ff67f473cf533c062d9cdf1f4f" id="r_a63f750ff67f473cf533c062d9cdf1f4f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a63f750ff67f473cf533c062d9cdf1f4f">ICON_TI_SHAREPLAY</a>&#160;&#160;&#160;&quot;\xef\xba\xa5&quot;</td></tr>
+<tr class="memitem:aec94ad8ade91f7bf1e65cc5234d5b985" id="r_aec94ad8ade91f7bf1e65cc5234d5b985"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aec94ad8ade91f7bf1e65cc5234d5b985">ICON_TI_SHI_JUMPING</a>&#160;&#160;&#160;&quot;\xef\xa9\xac&quot;</td></tr>
 <tr class="memitem:a626478818fdc433cb0f24ebab7ee8f54" id="r_a626478818fdc433cb0f24ebab7ee8f54"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a626478818fdc433cb0f24ebab7ee8f54">ICON_TI_SHIELD</a>&#160;&#160;&#160;&quot;\xee\xac\xa4&quot;</td></tr>
 <tr class="memitem:a88c02771290a4c52b6247ffbafacc675" id="r_a88c02771290a4c52b6247ffbafacc675"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a88c02771290a4c52b6247ffbafacc675">ICON_TI_SHIELD_BOLT</a>&#160;&#160;&#160;&quot;\xef\xa7\x80&quot;</td></tr>
 <tr class="memitem:a467b07cae94a57e7498ffcb58c3dcd70" id="r_a467b07cae94a57e7498ffcb58c3dcd70"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a467b07cae94a57e7498ffcb58c3dcd70">ICON_TI_SHIELD_CANCEL</a>&#160;&#160;&#160;&quot;\xef\xa7\x81&quot;</td></tr>
@@ -4991,6 +5085,7 @@ Macros</h2></td></tr>
 <tr class="memitem:af5c61c15d26147a8656916e5569cb56e" id="r_af5c61c15d26147a8656916e5569cb56e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af5c61c15d26147a8656916e5569cb56e">ICON_TI_SORT_ASCENDING_SHAPES</a>&#160;&#160;&#160;&quot;\xef\xb6\x94&quot;</td></tr>
 <tr class="memitem:aed93401adbf335ea63de918dfd208259" id="r_aed93401adbf335ea63de918dfd208259"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aed93401adbf335ea63de918dfd208259">ICON_TI_SORT_ASCENDING_SHAPES_FILLED</a>&#160;&#160;&#160;&quot;\xef\xbd\x9a&quot;</td></tr>
 <tr class="memitem:a5067fa8bb914a534c423b353b4ecbbfc" id="r_a5067fa8bb914a534c423b353b4ecbbfc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5067fa8bb914a534c423b353b4ecbbfc">ICON_TI_SORT_ASCENDING_SMALL_BIG</a>&#160;&#160;&#160;&quot;\xef\xb6\x95&quot;</td></tr>
+<tr class="memitem:ad2f7d82e1c592305e43ab5cb56bb644e" id="r_ad2f7d82e1c592305e43ab5cb56bb644e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad2f7d82e1c592305e43ab5cb56bb644e">ICON_TI_SORT_DEACENDING_SMALL_BIG</a>&#160;&#160;&#160;&quot;\xef\xb6\x96&quot;</td></tr>
 <tr class="memitem:a66e9240bc4690386cd90dd371e871ac8" id="r_a66e9240bc4690386cd90dd371e871ac8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a66e9240bc4690386cd90dd371e871ac8">ICON_TI_SORT_DESCENDING</a>&#160;&#160;&#160;&quot;\xee\xac\xa7&quot;</td></tr>
 <tr class="memitem:af6833c76fdffcc5cb4b6fda16452fc88" id="r_af6833c76fdffcc5cb4b6fda16452fc88"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af6833c76fdffcc5cb4b6fda16452fc88">ICON_TI_SORT_DESCENDING_2</a>&#160;&#160;&#160;&quot;\xee\xbb\xa3&quot;</td></tr>
 <tr class="memitem:a3fd1125c676ca8f1687f6f5a87516737" id="r_a3fd1125c676ca8f1687f6f5a87516737"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3fd1125c676ca8f1687f6f5a87516737">ICON_TI_SORT_DESCENDING_2_FILLED</a>&#160;&#160;&#160;&quot;\xef\xbd\x99&quot;</td></tr>
@@ -5027,6 +5122,16 @@ Macros</h2></td></tr>
 <tr class="memitem:abc42b881592953ba3686704423f9f99e" id="r_abc42b881592953ba3686704423f9f99e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc42b881592953ba3686704423f9f99e">ICON_TI_SPY_OFF</a>&#160;&#160;&#160;&quot;\xef\x90\xaf&quot;</td></tr>
 <tr class="memitem:a78cd01429b81f7abfbe012c4b3f9a014" id="r_a78cd01429b81f7abfbe012c4b3f9a014"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a78cd01429b81f7abfbe012c4b3f9a014">ICON_TI_SQL</a>&#160;&#160;&#160;&quot;\xef\x9f\x80&quot;</td></tr>
 <tr class="memitem:ad0f9a270a3676b6c75e5a7ddc2dd43de" id="r_ad0f9a270a3676b6c75e5a7ddc2dd43de"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad0f9a270a3676b6c75e5a7ddc2dd43de">ICON_TI_SQUARE</a>&#160;&#160;&#160;&quot;\xee\xac\xac&quot;</td></tr>
+<tr class="memitem:ad8597cb5613903a4f1ab0f55f6a0214b" id="r_ad8597cb5613903a4f1ab0f55f6a0214b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad8597cb5613903a4f1ab0f55f6a0214b">ICON_TI_SQUARE_0</a>&#160;&#160;&#160;&quot;\xee\xbb\xa5&quot;</td></tr>
+<tr class="memitem:a99791e36a1cafe982306414200ff6ace" id="r_a99791e36a1cafe982306414200ff6ace"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a99791e36a1cafe982306414200ff6ace">ICON_TI_SQUARE_1</a>&#160;&#160;&#160;&quot;\xee\xbb\xa6&quot;</td></tr>
+<tr class="memitem:a346d41ecdba8b724ee0355968ca0d803" id="r_a346d41ecdba8b724ee0355968ca0d803"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a346d41ecdba8b724ee0355968ca0d803">ICON_TI_SQUARE_2</a>&#160;&#160;&#160;&quot;\xee\xbb\xa7&quot;</td></tr>
+<tr class="memitem:abc94dbd67398ee64ef03ba7903626037" id="r_abc94dbd67398ee64ef03ba7903626037"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc94dbd67398ee64ef03ba7903626037">ICON_TI_SQUARE_3</a>&#160;&#160;&#160;&quot;\xee\xbb\xa8&quot;</td></tr>
+<tr class="memitem:a140ac139178d777c032dec39cc72b861" id="r_a140ac139178d777c032dec39cc72b861"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a140ac139178d777c032dec39cc72b861">ICON_TI_SQUARE_4</a>&#160;&#160;&#160;&quot;\xee\xbb\xa9&quot;</td></tr>
+<tr class="memitem:aeed30d77138b16c19fab8b611fd110c0" id="r_aeed30d77138b16c19fab8b611fd110c0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeed30d77138b16c19fab8b611fd110c0">ICON_TI_SQUARE_5</a>&#160;&#160;&#160;&quot;\xee\xbb\xaa&quot;</td></tr>
+<tr class="memitem:a6a5634beff9b7f87e44bb4b801926d79" id="r_a6a5634beff9b7f87e44bb4b801926d79"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6a5634beff9b7f87e44bb4b801926d79">ICON_TI_SQUARE_6</a>&#160;&#160;&#160;&quot;\xee\xbb\xab&quot;</td></tr>
+<tr class="memitem:abe45271d5d6effd0dcd00392d30f4dfe" id="r_abe45271d5d6effd0dcd00392d30f4dfe"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abe45271d5d6effd0dcd00392d30f4dfe">ICON_TI_SQUARE_7</a>&#160;&#160;&#160;&quot;\xee\xbb\xac&quot;</td></tr>
+<tr class="memitem:a078a1355f991fad3b0797cca3eaead4d" id="r_a078a1355f991fad3b0797cca3eaead4d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a078a1355f991fad3b0797cca3eaead4d">ICON_TI_SQUARE_8</a>&#160;&#160;&#160;&quot;\xee\xbb\xad&quot;</td></tr>
+<tr class="memitem:a769087b1fb7c9dac8302ad652a055b14" id="r_a769087b1fb7c9dac8302ad652a055b14"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a769087b1fb7c9dac8302ad652a055b14">ICON_TI_SQUARE_9</a>&#160;&#160;&#160;&quot;\xee\xbb\xae&quot;</td></tr>
 <tr class="memitem:aef4ca354f01e142ae75f2de3a8e9c060" id="r_aef4ca354f01e142ae75f2de3a8e9c060"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aef4ca354f01e142ae75f2de3a8e9c060">ICON_TI_SQUARE_ARROW_DOWN</a>&#160;&#160;&#160;&quot;\xef\x92\xb7&quot;</td></tr>
 <tr class="memitem:a196b0cf7a0ff90c0a58401b19c5ff806" id="r_a196b0cf7a0ff90c0a58401b19c5ff806"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a196b0cf7a0ff90c0a58401b19c5ff806">ICON_TI_SQUARE_ARROW_DOWN_FILLED</a>&#160;&#160;&#160;&quot;\xef\xac\xb1&quot;</td></tr>
 <tr class="memitem:a574804dc7fabb5b721840915cef2c75a" id="r_a574804dc7fabb5b721840915cef2c75a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a574804dc7fabb5b721840915cef2c75a">ICON_TI_SQUARE_ARROW_LEFT</a>&#160;&#160;&#160;&quot;\xef\x92\xb8&quot;</td></tr>
@@ -5855,58 +5960,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a642ff328abce0ece702ed65d907e2d9b" id="r_a642ff328abce0ece702ed65d907e2d9b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a642ff328abce0ece702ed65d907e2d9b">ICON_TI_ZOOM_SCAN_FILLED</a>&#160;&#160;&#160;&quot;\xef\xb6\xbf&quot;</td></tr>
 <tr class="memitem:a72e709e1291c25efe320c1f80e4423a1" id="r_a72e709e1291c25efe320c1f80e4423a1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a72e709e1291c25efe320c1f80e4423a1">ICON_TI_ZZZ</a>&#160;&#160;&#160;&quot;\xef\x88\xa8&quot;</td></tr>
 <tr class="memitem:a474c1d19f53362b68faabf1074ab227a" id="r_a474c1d19f53362b68faabf1074ab227a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a474c1d19f53362b68faabf1074ab227a">ICON_TI_ZZZ_OFF</a>&#160;&#160;&#160;&quot;\xef\x91\x80&quot;</td></tr>
-<tr class="memitem:a8116578212feb125ab41393d73a13d5c" id="r_a8116578212feb125ab41393d73a13d5c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8116578212feb125ab41393d73a13d5c">ICON_TI__123</a>&#160;&#160;&#160;&quot;\xef\x95\x94&quot;</td></tr>
-<tr class="memitem:aafa7a5cdecfc21140fb6cb34d56aba2c" id="r_aafa7a5cdecfc21140fb6cb34d56aba2c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aafa7a5cdecfc21140fb6cb34d56aba2c">ICON_TI__360</a>&#160;&#160;&#160;&quot;\xef\x98\xaf&quot;</td></tr>
-<tr class="memitem:afc441a857c88ae83753cb7ff0eb3f953" id="r_afc441a857c88ae83753cb7ff0eb3f953"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afc441a857c88ae83753cb7ff0eb3f953">ICON_TI_CODE_ASTERIX</a>&#160;&#160;&#160;&quot;\xef\x8c\x92&quot;</td></tr>
-<tr class="memitem:a8a9b4073dc8e4db53938eb53842fa46d" id="r_a8a9b4073dc8e4db53938eb53842fa46d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8a9b4073dc8e4db53938eb53842fa46d">ICON_TI_DISCOUNT_2</a>&#160;&#160;&#160;&quot;\xee\xb9\xbc&quot;</td></tr>
-<tr class="memitem:a05000ce5865aa52da654f8300856b1f4" id="r_a05000ce5865aa52da654f8300856b1f4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a05000ce5865aa52da654f8300856b1f4">ICON_TI_DISCOUNT_2_OFF</a>&#160;&#160;&#160;&quot;\xef\x8f\xa6&quot;</td></tr>
-<tr class="memitem:a7d5db216b4b0cfa84968fa8c849491c8" id="r_a7d5db216b4b0cfa84968fa8c849491c8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7d5db216b4b0cfa84968fa8c849491c8">ICON_TI_DISCOUNT_CHECK</a>&#160;&#160;&#160;&quot;\xef\x87\xb8&quot;</td></tr>
-<tr class="memitem:a5893a41850acf1ba0da53419b5f49f97" id="r_a5893a41850acf1ba0da53419b5f49f97"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5893a41850acf1ba0da53419b5f49f97">ICON_TI_HAND_ROCK</a>&#160;&#160;&#160;&quot;\xee\xba\x97&quot;</td></tr>
-<tr class="memitem:ad2f7d82e1c592305e43ab5cb56bb644e" id="r_ad2f7d82e1c592305e43ab5cb56bb644e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad2f7d82e1c592305e43ab5cb56bb644e">ICON_TI_SORT_DEACENDING_SMALL_BIG</a>&#160;&#160;&#160;&quot;\xef\xb6\x96&quot;</td></tr>
-<tr class="memitem:aec94ad8ade91f7bf1e65cc5234d5b985" id="r_aec94ad8ade91f7bf1e65cc5234d5b985"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aec94ad8ade91f7bf1e65cc5234d5b985">ICON_TI_SHI_JUMPING</a>&#160;&#160;&#160;&quot;\xef\xa9\xac&quot;</td></tr>
-<tr class="memitem:a45e990a8eea2c165320e2ca6503975b2" id="r_a45e990a8eea2c165320e2ca6503975b2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a45e990a8eea2c165320e2ca6503975b2">ICON_TI_BOX_SEAM</a>&#160;&#160;&#160;&quot;\xee\xab\xbf&quot;</td></tr>
-<tr class="memitem:a67020b05d24199f5986bb24dadbd54b7" id="r_a67020b05d24199f5986bb24dadbd54b7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a67020b05d24199f5986bb24dadbd54b7">ICON_TI_KERING</a>&#160;&#160;&#160;&quot;\xee\xbe\xb8&quot;</td></tr>
-<tr class="memitem:a3f1ec902940ff8e9eb2f2056fe969646" id="r_a3f1ec902940ff8e9eb2f2056fe969646"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3f1ec902940ff8e9eb2f2056fe969646">ICON_TI__2FA</a>&#160;&#160;&#160;&quot;\xee\xb2\xa0&quot;</td></tr>
-<tr class="memitem:a59ef83600c074481cb8bee9327a986c2" id="r_a59ef83600c074481cb8bee9327a986c2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a59ef83600c074481cb8bee9327a986c2">ICON_TI__3D_CUBE_SPHERE</a>&#160;&#160;&#160;&quot;\xee\xb3\x97&quot;</td></tr>
-<tr class="memitem:ad4f81031e15bfb916b7632049d8f7c8b" id="r_ad4f81031e15bfb916b7632049d8f7c8b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad4f81031e15bfb916b7632049d8f7c8b">ICON_TI__3D_CUBE_SPHERE_OFF</a>&#160;&#160;&#160;&quot;\xef\x8e\xb5&quot;</td></tr>
-<tr class="memitem:a572789180edd7dedeaf043856097bee7" id="r_a572789180edd7dedeaf043856097bee7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a572789180edd7dedeaf043856097bee7">ICON_TI__3D_ROTATE</a>&#160;&#160;&#160;&quot;\xef\x80\xa0&quot;</td></tr>
-<tr class="memitem:a18dd12eb65e58851945bf39407e1daac" id="r_a18dd12eb65e58851945bf39407e1daac"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a18dd12eb65e58851945bf39407e1daac">ICON_TI__12_HOURS</a>&#160;&#160;&#160;&quot;\xef\xb1\x93&quot;</td></tr>
-<tr class="memitem:af965e142710c52768628597b4237a946" id="r_af965e142710c52768628597b4237a946"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af965e142710c52768628597b4237a946">ICON_TI__24_HOURS</a>&#160;&#160;&#160;&quot;\xef\x97\xa7&quot;</td></tr>
-<tr class="memitem:a4d0e0505f6b2d0713d6a740421efc021" id="r_a4d0e0505f6b2d0713d6a740421efc021"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4d0e0505f6b2d0713d6a740421efc021">ICON_TI__360_VIEW</a>&#160;&#160;&#160;&quot;\xef\x95\xa6&quot;</td></tr>
-<tr class="memitem:aa65c390a2ce454295983f7889b61908a" id="r_aa65c390a2ce454295983f7889b61908a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa65c390a2ce454295983f7889b61908a">ICON_TI_CIRCLE_0</a>&#160;&#160;&#160;&quot;\xee\xb8\xb4&quot;</td></tr>
-<tr class="memitem:a6af4c6275051df42a323f105ceea9851" id="r_a6af4c6275051df42a323f105ceea9851"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6af4c6275051df42a323f105ceea9851">ICON_TI_CIRCLE_1</a>&#160;&#160;&#160;&quot;\xee\xb8\xb5&quot;</td></tr>
-<tr class="memitem:aa60abab3e4351d38edac2987203d33ef" id="r_aa60abab3e4351d38edac2987203d33ef"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa60abab3e4351d38edac2987203d33ef">ICON_TI_CIRCLE_2</a>&#160;&#160;&#160;&quot;\xee\xb8\xb6&quot;</td></tr>
-<tr class="memitem:a7d9e4edbad51b943679e2f750888eadb" id="r_a7d9e4edbad51b943679e2f750888eadb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7d9e4edbad51b943679e2f750888eadb">ICON_TI_CIRCLE_3</a>&#160;&#160;&#160;&quot;\xee\xb8\xb7&quot;</td></tr>
-<tr class="memitem:a9964e769651a6fa8357c16825f1acd46" id="r_a9964e769651a6fa8357c16825f1acd46"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9964e769651a6fa8357c16825f1acd46">ICON_TI_CIRCLE_4</a>&#160;&#160;&#160;&quot;\xee\xb8\xb8&quot;</td></tr>
-<tr class="memitem:aef5046ef42b2657ff8d060e58399a8ca" id="r_aef5046ef42b2657ff8d060e58399a8ca"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aef5046ef42b2657ff8d060e58399a8ca">ICON_TI_CIRCLE_5</a>&#160;&#160;&#160;&quot;\xee\xb8\xb9&quot;</td></tr>
-<tr class="memitem:aa76d06a658b162ee32cf6ee6d0157fb2" id="r_aa76d06a658b162ee32cf6ee6d0157fb2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa76d06a658b162ee32cf6ee6d0157fb2">ICON_TI_CIRCLE_6</a>&#160;&#160;&#160;&quot;\xee\xb8\xba&quot;</td></tr>
-<tr class="memitem:ad1e9f42679cd5c4197763ddf31485dff" id="r_ad1e9f42679cd5c4197763ddf31485dff"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad1e9f42679cd5c4197763ddf31485dff">ICON_TI_CIRCLE_7</a>&#160;&#160;&#160;&quot;\xee\xb8\xbb&quot;</td></tr>
-<tr class="memitem:a80e6812e09f45b84d701861d2e1c9f64" id="r_a80e6812e09f45b84d701861d2e1c9f64"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a80e6812e09f45b84d701861d2e1c9f64">ICON_TI_CIRCLE_8</a>&#160;&#160;&#160;&quot;\xee\xb8\xbc&quot;</td></tr>
-<tr class="memitem:a56269f03eb354767ff621ad8d813ca50" id="r_a56269f03eb354767ff621ad8d813ca50"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a56269f03eb354767ff621ad8d813ca50">ICON_TI_CIRCLE_9</a>&#160;&#160;&#160;&quot;\xee\xb8\xbd&quot;</td></tr>
-<tr class="memitem:aaa4d9a2f2b75f3a1fe82f5b15bc0419e" id="r_aaa4d9a2f2b75f3a1fe82f5b15bc0419e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaa4d9a2f2b75f3a1fe82f5b15bc0419e">ICON_TI_HEXAGON_0</a>&#160;&#160;&#160;&quot;\xef\x91\x99&quot;</td></tr>
-<tr class="memitem:a554ca228765141076528e8849abc98a1" id="r_a554ca228765141076528e8849abc98a1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a554ca228765141076528e8849abc98a1">ICON_TI_HEXAGON_1</a>&#160;&#160;&#160;&quot;\xef\x91\x9a&quot;</td></tr>
-<tr class="memitem:af7bf11c15b770bf948ef999d00acfe6c" id="r_af7bf11c15b770bf948ef999d00acfe6c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af7bf11c15b770bf948ef999d00acfe6c">ICON_TI_HEXAGON_2</a>&#160;&#160;&#160;&quot;\xef\x91\x9b&quot;</td></tr>
-<tr class="memitem:abc6fcbda61bb60013d62d9123d092593" id="r_abc6fcbda61bb60013d62d9123d092593"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc6fcbda61bb60013d62d9123d092593">ICON_TI_HEXAGON_3</a>&#160;&#160;&#160;&quot;\xef\x91\x9c&quot;</td></tr>
-<tr class="memitem:ac9ef6acefcf295313f9073ad71452af2" id="r_ac9ef6acefcf295313f9073ad71452af2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac9ef6acefcf295313f9073ad71452af2">ICON_TI_HEXAGON_4</a>&#160;&#160;&#160;&quot;\xef\x91\x9d&quot;</td></tr>
-<tr class="memitem:aeb3f2c99c69d0c9c3641d95a6254ccbd" id="r_aeb3f2c99c69d0c9c3641d95a6254ccbd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeb3f2c99c69d0c9c3641d95a6254ccbd">ICON_TI_HEXAGON_5</a>&#160;&#160;&#160;&quot;\xef\x91\x9e&quot;</td></tr>
-<tr class="memitem:a537a011ca8abe1f9e985085eca883a61" id="r_a537a011ca8abe1f9e985085eca883a61"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a537a011ca8abe1f9e985085eca883a61">ICON_TI_HEXAGON_6</a>&#160;&#160;&#160;&quot;\xef\x91\x9f&quot;</td></tr>
-<tr class="memitem:a7ade54ed749b3039da6a664ee1e96cad" id="r_a7ade54ed749b3039da6a664ee1e96cad"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7ade54ed749b3039da6a664ee1e96cad">ICON_TI_HEXAGON_7</a>&#160;&#160;&#160;&quot;\xef\x91\xa0&quot;</td></tr>
-<tr class="memitem:ad38fae5f3a7d4673b4d70f18f6ec246d" id="r_ad38fae5f3a7d4673b4d70f18f6ec246d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad38fae5f3a7d4673b4d70f18f6ec246d">ICON_TI_HEXAGON_8</a>&#160;&#160;&#160;&quot;\xef\x91\xa1&quot;</td></tr>
-<tr class="memitem:a6cc7b42e88214c7abc42da5947322868" id="r_a6cc7b42e88214c7abc42da5947322868"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6cc7b42e88214c7abc42da5947322868">ICON_TI_HEXAGON_9</a>&#160;&#160;&#160;&quot;\xef\x91\xa2&quot;</td></tr>
-<tr class="memitem:ad8597cb5613903a4f1ab0f55f6a0214b" id="r_ad8597cb5613903a4f1ab0f55f6a0214b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad8597cb5613903a4f1ab0f55f6a0214b">ICON_TI_SQUARE_0</a>&#160;&#160;&#160;&quot;\xee\xbb\xa5&quot;</td></tr>
-<tr class="memitem:a99791e36a1cafe982306414200ff6ace" id="r_a99791e36a1cafe982306414200ff6ace"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a99791e36a1cafe982306414200ff6ace">ICON_TI_SQUARE_1</a>&#160;&#160;&#160;&quot;\xee\xbb\xa6&quot;</td></tr>
-<tr class="memitem:a346d41ecdba8b724ee0355968ca0d803" id="r_a346d41ecdba8b724ee0355968ca0d803"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a346d41ecdba8b724ee0355968ca0d803">ICON_TI_SQUARE_2</a>&#160;&#160;&#160;&quot;\xee\xbb\xa7&quot;</td></tr>
-<tr class="memitem:abc94dbd67398ee64ef03ba7903626037" id="r_abc94dbd67398ee64ef03ba7903626037"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc94dbd67398ee64ef03ba7903626037">ICON_TI_SQUARE_3</a>&#160;&#160;&#160;&quot;\xee\xbb\xa8&quot;</td></tr>
-<tr class="memitem:a140ac139178d777c032dec39cc72b861" id="r_a140ac139178d777c032dec39cc72b861"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a140ac139178d777c032dec39cc72b861">ICON_TI_SQUARE_4</a>&#160;&#160;&#160;&quot;\xee\xbb\xa9&quot;</td></tr>
-<tr class="memitem:aeed30d77138b16c19fab8b611fd110c0" id="r_aeed30d77138b16c19fab8b611fd110c0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeed30d77138b16c19fab8b611fd110c0">ICON_TI_SQUARE_5</a>&#160;&#160;&#160;&quot;\xee\xbb\xaa&quot;</td></tr>
-<tr class="memitem:a6a5634beff9b7f87e44bb4b801926d79" id="r_a6a5634beff9b7f87e44bb4b801926d79"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6a5634beff9b7f87e44bb4b801926d79">ICON_TI_SQUARE_6</a>&#160;&#160;&#160;&quot;\xee\xbb\xab&quot;</td></tr>
-<tr class="memitem:abe45271d5d6effd0dcd00392d30f4dfe" id="r_abe45271d5d6effd0dcd00392d30f4dfe"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abe45271d5d6effd0dcd00392d30f4dfe">ICON_TI_SQUARE_7</a>&#160;&#160;&#160;&quot;\xee\xbb\xac&quot;</td></tr>
-<tr class="memitem:a078a1355f991fad3b0797cca3eaead4d" id="r_a078a1355f991fad3b0797cca3eaead4d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a078a1355f991fad3b0797cca3eaead4d">ICON_TI_SQUARE_8</a>&#160;&#160;&#160;&quot;\xee\xbb\xad&quot;</td></tr>
-<tr class="memitem:a769087b1fb7c9dac8302ad652a055b14" id="r_a769087b1fb7c9dac8302ad652a055b14"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a769087b1fb7c9dac8302ad652a055b14">ICON_TI_SQUARE_9</a>&#160;&#160;&#160;&quot;\xee\xbb\xae&quot;</td></tr>
-<tr class="memitem:abf058046aeef62c88a9edb6e6bb944c1" id="r_abf058046aeef62c88a9edb6e6bb944c1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abf058046aeef62c88a9edb6e6bb944c1">ICON_TI_MESSAGE_CIRCLE_2</a>&#160;&#160;&#160;&quot;\xee\xab\xad&quot;</td></tr>
-<tr class="memitem:a49450db7fc2af7dab77e06b4001f6aad" id="r_a49450db7fc2af7dab77e06b4001f6aad"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a49450db7fc2af7dab77e06b4001f6aad">ICON_TI_MOOD_SUPRISED</a>&#160;&#160;&#160;&quot;\xee\xb0\x84&quot;</td></tr>
-<tr class="memitem:a5d1a31e616055944a27364045f59abe3" id="r_a5d1a31e616055944a27364045f59abe3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5d1a31e616055944a27364045f59abe3">ICON_TI_DISCOUNT_CHECK_FILLED</a>&#160;&#160;&#160;&quot;\xef\x9d\x86&quot;</td></tr>
-<tr class="memitem:a61b7a435201c6fd68d86c00082b5fc8d" id="r_a61b7a435201c6fd68d86c00082b5fc8d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a61b7a435201c6fd68d86c00082b5fc8d">ICON_TI_MESSAGE_CIRCLE_2_FILLED</a>&#160;&#160;&#160;&quot;\xef\xbb\x8f&quot;</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a21ceee7deb863c3cf7b80b32ede32316" name="a21ceee7deb863c3cf7b80b32ede32316"></a>
@@ -5917,6 +5970,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define FONT_ICON_FILE_NAME_TI&#160;&#160;&#160;&quot;tabler-icons.ttf&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc3e8fb849043d4df60eebee6f740fda" name="adc3e8fb849043d4df60eebee6f740fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3e8fb849043d4df60eebee6f740fda">&#9670;&#160;</a></span>ICON_MAX_TI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_MAX_TI&#160;&#160;&#160;0x10095</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5937,14 +6004,126 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="adc3e8fb849043d4df60eebee6f740fda" name="adc3e8fb849043d4df60eebee6f740fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc3e8fb849043d4df60eebee6f740fda">&#9670;&#160;</a></span>ICON_MAX_TI</h2>
+<a id="a8116578212feb125ab41393d73a13d5c" name="a8116578212feb125ab41393d73a13d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8116578212feb125ab41393d73a13d5c">&#9670;&#160;</a></span>ICON_TI__123</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ICON_MAX_TI&#160;&#160;&#160;0x10095</td>
+          <td class="memname">#define ICON_TI__123&#160;&#160;&#160;&quot;\xef\x95\x94&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18dd12eb65e58851945bf39407e1daac" name="a18dd12eb65e58851945bf39407e1daac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18dd12eb65e58851945bf39407e1daac">&#9670;&#160;</a></span>ICON_TI__12_HOURS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__12_HOURS&#160;&#160;&#160;&quot;\xef\xb1\x93&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af965e142710c52768628597b4237a946" name="af965e142710c52768628597b4237a946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af965e142710c52768628597b4237a946">&#9670;&#160;</a></span>ICON_TI__24_HOURS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__24_HOURS&#160;&#160;&#160;&quot;\xef\x97\xa7&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f1ec902940ff8e9eb2f2056fe969646" name="a3f1ec902940ff8e9eb2f2056fe969646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1ec902940ff8e9eb2f2056fe969646">&#9670;&#160;</a></span>ICON_TI__2FA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__2FA&#160;&#160;&#160;&quot;\xee\xb2\xa0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafa7a5cdecfc21140fb6cb34d56aba2c" name="aafa7a5cdecfc21140fb6cb34d56aba2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa7a5cdecfc21140fb6cb34d56aba2c">&#9670;&#160;</a></span>ICON_TI__360</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__360&#160;&#160;&#160;&quot;\xef\x98\xaf&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d0e0505f6b2d0713d6a740421efc021" name="a4d0e0505f6b2d0713d6a740421efc021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d0e0505f6b2d0713d6a740421efc021">&#9670;&#160;</a></span>ICON_TI__360_VIEW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__360_VIEW&#160;&#160;&#160;&quot;\xef\x95\xa6&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59ef83600c074481cb8bee9327a986c2" name="a59ef83600c074481cb8bee9327a986c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ef83600c074481cb8bee9327a986c2">&#9670;&#160;</a></span>ICON_TI__3D_CUBE_SPHERE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__3D_CUBE_SPHERE&#160;&#160;&#160;&quot;\xee\xb3\x97&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4f81031e15bfb916b7632049d8f7c8b" name="ad4f81031e15bfb916b7632049d8f7c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f81031e15bfb916b7632049d8f7c8b">&#9670;&#160;</a></span>ICON_TI__3D_CUBE_SPHERE_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__3D_CUBE_SPHERE_OFF&#160;&#160;&#160;&quot;\xef\x8e\xb5&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a572789180edd7dedeaf043856097bee7" name="a572789180edd7dedeaf043856097bee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572789180edd7dedeaf043856097bee7">&#9670;&#160;</a></span>ICON_TI__3D_ROTATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI__3D_ROTATE&#160;&#160;&#160;&quot;\xef\x80\xa0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -16375,6 +16554,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_BOX_PADDING&#160;&#160;&#160;&quot;\xee\xb8\x98&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45e990a8eea2c165320e2ca6503975b2" name="a45e990a8eea2c165320e2ca6503975b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e990a8eea2c165320e2ca6503975b2">&#9670;&#160;</a></span>ICON_TI_BOX_SEAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_BOX_SEAM&#160;&#160;&#160;&quot;\xee\xab\xbf&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -27007,6 +27200,146 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="aa65c390a2ce454295983f7889b61908a" name="aa65c390a2ce454295983f7889b61908a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65c390a2ce454295983f7889b61908a">&#9670;&#160;</a></span>ICON_TI_CIRCLE_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_0&#160;&#160;&#160;&quot;\xee\xb8\xb4&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6af4c6275051df42a323f105ceea9851" name="a6af4c6275051df42a323f105ceea9851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af4c6275051df42a323f105ceea9851">&#9670;&#160;</a></span>ICON_TI_CIRCLE_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_1&#160;&#160;&#160;&quot;\xee\xb8\xb5&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa60abab3e4351d38edac2987203d33ef" name="aa60abab3e4351d38edac2987203d33ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60abab3e4351d38edac2987203d33ef">&#9670;&#160;</a></span>ICON_TI_CIRCLE_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_2&#160;&#160;&#160;&quot;\xee\xb8\xb6&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d9e4edbad51b943679e2f750888eadb" name="a7d9e4edbad51b943679e2f750888eadb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9e4edbad51b943679e2f750888eadb">&#9670;&#160;</a></span>ICON_TI_CIRCLE_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_3&#160;&#160;&#160;&quot;\xee\xb8\xb7&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9964e769651a6fa8357c16825f1acd46" name="a9964e769651a6fa8357c16825f1acd46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9964e769651a6fa8357c16825f1acd46">&#9670;&#160;</a></span>ICON_TI_CIRCLE_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_4&#160;&#160;&#160;&quot;\xee\xb8\xb8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef5046ef42b2657ff8d060e58399a8ca" name="aef5046ef42b2657ff8d060e58399a8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5046ef42b2657ff8d060e58399a8ca">&#9670;&#160;</a></span>ICON_TI_CIRCLE_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_5&#160;&#160;&#160;&quot;\xee\xb8\xb9&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa76d06a658b162ee32cf6ee6d0157fb2" name="aa76d06a658b162ee32cf6ee6d0157fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76d06a658b162ee32cf6ee6d0157fb2">&#9670;&#160;</a></span>ICON_TI_CIRCLE_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_6&#160;&#160;&#160;&quot;\xee\xb8\xba&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1e9f42679cd5c4197763ddf31485dff" name="ad1e9f42679cd5c4197763ddf31485dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e9f42679cd5c4197763ddf31485dff">&#9670;&#160;</a></span>ICON_TI_CIRCLE_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_7&#160;&#160;&#160;&quot;\xee\xb8\xbb&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80e6812e09f45b84d701861d2e1c9f64" name="a80e6812e09f45b84d701861d2e1c9f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e6812e09f45b84d701861d2e1c9f64">&#9670;&#160;</a></span>ICON_TI_CIRCLE_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_8&#160;&#160;&#160;&quot;\xee\xb8\xbc&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56269f03eb354767ff621ad8d813ca50" name="a56269f03eb354767ff621ad8d813ca50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56269f03eb354767ff621ad8d813ca50">&#9670;&#160;</a></span>ICON_TI_CIRCLE_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CIRCLE_9&#160;&#160;&#160;&quot;\xee\xb8\xbd&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab537704335bca3708d8a3c478e226d3d" name="ab537704335bca3708d8a3c478e226d3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab537704335bca3708d8a3c478e226d3d">&#9670;&#160;</a></span>ICON_TI_CIRCLE_ARROW_DOWN</h2>
 
@@ -30507,20 +30840,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="addaefffc18d051deb59f700a081c422c" name="addaefffc18d051deb59f700a081c422c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addaefffc18d051deb59f700a081c422c">&#9670;&#160;</a></span>ICON_TI_CLOCK_HOUR_1_FILLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CLOCK_HOUR_1_FILLED&#160;&#160;&#160;&quot;\xef\xb9\xa5&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7a067dad0bbc1e08ece2b113126754ea" name="a7a067dad0bbc1e08ece2b113126754ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a067dad0bbc1e08ece2b113126754ea">&#9670;&#160;</a></span>ICON_TI_CLOCK_HOUR_10</h2>
 
@@ -30599,6 +30918,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_CLOCK_HOUR_12_FILLED&#160;&#160;&#160;&quot;\xef\xb9\xa2&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addaefffc18d051deb59f700a081c422c" name="addaefffc18d051deb59f700a081c422c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addaefffc18d051deb59f700a081c422c">&#9670;&#160;</a></span>ICON_TI_CLOCK_HOUR_1_FILLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CLOCK_HOUR_1_FILLED&#160;&#160;&#160;&quot;\xef\xb9\xa5&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -31635,6 +31968,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_CODE_ASTERISK&#160;&#160;&#160;&quot;\xef\x8c\x92&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc441a857c88ae83753cb7ff0eb3f953" name="afc441a857c88ae83753cb7ff0eb3f953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc441a857c88ae83753cb7ff0eb3f953">&#9670;&#160;</a></span>ICON_TI_CODE_ASTERIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CODE_ASTERIX&#160;&#160;&#160;&quot;\xef\x8c\x92&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -33433,34 +33780,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a09aafcd33f44fc4ce0af26f58505cf62" name="a09aafcd33f44fc4ce0af26f58505cf62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09aafcd33f44fc4ce0af26f58505cf62">&#9670;&#160;</a></span>ICON_TI_CROP_1_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CROP_1_1&#160;&#160;&#160;&quot;\xef\xb5\x90&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb1f313f71c8fec5b5dfff265a09bbdb" name="aeb1f313f71c8fec5b5dfff265a09bbdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1f313f71c8fec5b5dfff265a09bbdb">&#9670;&#160;</a></span>ICON_TI_CROP_1_1_FILLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CROP_1_1_FILLED&#160;&#160;&#160;&quot;\xef\xb9\x8f&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af925256dc4f0ccb7d7ac66803cb5b82c" name="af925256dc4f0ccb7d7ac66803cb5b82c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af925256dc4f0ccb7d7ac66803cb5b82c">&#9670;&#160;</a></span>ICON_TI_CROP_16_9</h2>
 
@@ -33483,6 +33802,34 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_CROP_16_9_FILLED&#160;&#160;&#160;&quot;\xef\xb9\x8e&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09aafcd33f44fc4ce0af26f58505cf62" name="a09aafcd33f44fc4ce0af26f58505cf62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09aafcd33f44fc4ce0af26f58505cf62">&#9670;&#160;</a></span>ICON_TI_CROP_1_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CROP_1_1&#160;&#160;&#160;&quot;\xef\xb5\x90&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb1f313f71c8fec5b5dfff265a09bbdb" name="aeb1f313f71c8fec5b5dfff265a09bbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1f313f71c8fec5b5dfff265a09bbdb">&#9670;&#160;</a></span>ICON_TI_CROP_1_1_FILLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_CROP_1_1_FILLED&#160;&#160;&#160;&quot;\xef\xb9\x8f&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -39223,6 +39570,62 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_DISCOUNT&#160;&#160;&#160;&quot;\xee\xae\xbd&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a9b4073dc8e4db53938eb53842fa46d" name="a8a9b4073dc8e4db53938eb53842fa46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9b4073dc8e4db53938eb53842fa46d">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_DISCOUNT_2&#160;&#160;&#160;&quot;\xee\xb9\xbc&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05000ce5865aa52da654f8300856b1f4" name="a05000ce5865aa52da654f8300856b1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05000ce5865aa52da654f8300856b1f4">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_2_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_DISCOUNT_2_OFF&#160;&#160;&#160;&quot;\xef\x8f\xa6&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d5db216b4b0cfa84968fa8c849491c8" name="a7d5db216b4b0cfa84968fa8c849491c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5db216b4b0cfa84968fa8c849491c8">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_CHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_DISCOUNT_CHECK&#160;&#160;&#160;&quot;\xef\x87\xb8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d1a31e616055944a27364045f59abe3" name="a5d1a31e616055944a27364045f59abe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1a31e616055944a27364045f59abe3">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_CHECK_FILLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_DISCOUNT_CHECK_FILLED&#160;&#160;&#160;&quot;\xef\x9d\x86&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -46439,6 +46842,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a5893a41850acf1ba0da53419b5f49f97" name="a5893a41850acf1ba0da53419b5f49f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5893a41850acf1ba0da53419b5f49f97">&#9670;&#160;</a></span>ICON_TI_HAND_ROCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HAND_ROCK&#160;&#160;&#160;&quot;\xee\xba\x97&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa835848eae298880a6a83d12aacfd760" name="aa835848eae298880a6a83d12aacfd760"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa835848eae298880a6a83d12aacfd760">&#9670;&#160;</a></span>ICON_TI_HAND_SANITIZER</h2>
 
@@ -47461,6 +47878,62 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="aaa4d9a2f2b75f3a1fe82f5b15bc0419e" name="aaa4d9a2f2b75f3a1fe82f5b15bc0419e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4d9a2f2b75f3a1fe82f5b15bc0419e">&#9670;&#160;</a></span>ICON_TI_HEXAGON_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_0&#160;&#160;&#160;&quot;\xef\x91\x99&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a554ca228765141076528e8849abc98a1" name="a554ca228765141076528e8849abc98a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554ca228765141076528e8849abc98a1">&#9670;&#160;</a></span>ICON_TI_HEXAGON_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_1&#160;&#160;&#160;&quot;\xef\x91\x9a&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7bf11c15b770bf948ef999d00acfe6c" name="af7bf11c15b770bf948ef999d00acfe6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bf11c15b770bf948ef999d00acfe6c">&#9670;&#160;</a></span>ICON_TI_HEXAGON_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_2&#160;&#160;&#160;&quot;\xef\x91\x9b&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc6fcbda61bb60013d62d9123d092593" name="abc6fcbda61bb60013d62d9123d092593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6fcbda61bb60013d62d9123d092593">&#9670;&#160;</a></span>ICON_TI_HEXAGON_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_3&#160;&#160;&#160;&quot;\xef\x91\x9c&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a42ed45448af0e29fe70c8ca0affe48fc" name="a42ed45448af0e29fe70c8ca0affe48fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42ed45448af0e29fe70c8ca0affe48fc">&#9670;&#160;</a></span>ICON_TI_HEXAGON_3D</h2>
 
@@ -47469,6 +47942,90 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_HEXAGON_3D&#160;&#160;&#160;&quot;\xef\x93\x87&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9ef6acefcf295313f9073ad71452af2" name="ac9ef6acefcf295313f9073ad71452af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ef6acefcf295313f9073ad71452af2">&#9670;&#160;</a></span>ICON_TI_HEXAGON_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_4&#160;&#160;&#160;&quot;\xef\x91\x9d&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb3f2c99c69d0c9c3641d95a6254ccbd" name="aeb3f2c99c69d0c9c3641d95a6254ccbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3f2c99c69d0c9c3641d95a6254ccbd">&#9670;&#160;</a></span>ICON_TI_HEXAGON_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_5&#160;&#160;&#160;&quot;\xef\x91\x9e&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a537a011ca8abe1f9e985085eca883a61" name="a537a011ca8abe1f9e985085eca883a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537a011ca8abe1f9e985085eca883a61">&#9670;&#160;</a></span>ICON_TI_HEXAGON_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_6&#160;&#160;&#160;&quot;\xef\x91\x9f&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ade54ed749b3039da6a664ee1e96cad" name="a7ade54ed749b3039da6a664ee1e96cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ade54ed749b3039da6a664ee1e96cad">&#9670;&#160;</a></span>ICON_TI_HEXAGON_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_7&#160;&#160;&#160;&quot;\xef\x91\xa0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad38fae5f3a7d4673b4d70f18f6ec246d" name="ad38fae5f3a7d4673b4d70f18f6ec246d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38fae5f3a7d4673b4d70f18f6ec246d">&#9670;&#160;</a></span>ICON_TI_HEXAGON_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_8&#160;&#160;&#160;&quot;\xef\x91\xa1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cc7b42e88214c7abc42da5947322868" name="a6cc7b42e88214c7abc42da5947322868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc7b42e88214c7abc42da5947322868">&#9670;&#160;</a></span>ICON_TI_HEXAGON_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_HEXAGON_9&#160;&#160;&#160;&quot;\xef\x91\xa2&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -50843,6 +51400,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_KAYAK&#160;&#160;&#160;&quot;\xef\x87\x96&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67020b05d24199f5986bb24dadbd54b7" name="a67020b05d24199f5986bb24dadbd54b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67020b05d24199f5986bb24dadbd54b7">&#9670;&#160;</a></span>ICON_TI_KERING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_KERING&#160;&#160;&#160;&quot;\xee\xbe\xb8&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -57639,6 +58210,34 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="abf058046aeef62c88a9edb6e6bb944c1" name="abf058046aeef62c88a9edb6e6bb944c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf058046aeef62c88a9edb6e6bb944c1">&#9670;&#160;</a></span>ICON_TI_MESSAGE_CIRCLE_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_MESSAGE_CIRCLE_2&#160;&#160;&#160;&quot;\xee\xab\xad&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61b7a435201c6fd68d86c00082b5fc8d" name="a61b7a435201c6fd68d86c00082b5fc8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b7a435201c6fd68d86c00082b5fc8d">&#9670;&#160;</a></span>ICON_TI_MESSAGE_CIRCLE_2_FILLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_MESSAGE_CIRCLE_2_FILLED&#160;&#160;&#160;&quot;\xef\xbb\x8f&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1927c25e30dc8d5ac48bfa0792d69ccf" name="a1927c25e30dc8d5ac48bfa0792d69ccf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1927c25e30dc8d5ac48bfa0792d69ccf">&#9670;&#160;</a></span>ICON_TI_MESSAGE_CIRCLE_BOLT</h2>
 
@@ -59557,6 +60156,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a49450db7fc2af7dab77e06b4001f6aad" name="a49450db7fc2af7dab77e06b4001f6aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49450db7fc2af7dab77e06b4001f6aad">&#9670;&#160;</a></span>ICON_TI_MOOD_SUPRISED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_MOOD_SUPRISED&#160;&#160;&#160;&quot;\xee\xb0\x84&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8c182452125b566bf30a66be36297167" name="a8c182452125b566bf30a66be36297167"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c182452125b566bf30a66be36297167">&#9670;&#160;</a></span>ICON_TI_MOOD_SURPRISED</h2>
 
@@ -61153,20 +61766,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8ec43fb4c11927a7ab932e176e2624b" name="ad8ec43fb4c11927a7ab932e176e2624b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8ec43fb4c11927a7ab932e176e2624b">&#9670;&#160;</a></span>ICON_TI_NUMBER_1_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_1_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xa2&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a93933db76d086b14b15d7c6fbb31c2e3" name="a93933db76d086b14b15d7c6fbb31c2e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93933db76d086b14b15d7c6fbb31c2e3">&#9670;&#160;</a></span>ICON_TI_NUMBER_10</h2>
 
@@ -61181,20 +61780,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="acf163a2fefbabe0cc604ca19c396f527" name="acf163a2fefbabe0cc604ca19c396f527"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf163a2fefbabe0cc604ca19c396f527">&#9670;&#160;</a></span>ICON_TI_NUMBER_10_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_10_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xa3&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4a85ce7136ecf9c1c9d8bdc441b1d136" name="a4a85ce7136ecf9c1c9d8bdc441b1d136"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a85ce7136ecf9c1c9d8bdc441b1d136">&#9670;&#160;</a></span>ICON_TI_NUMBER_100_SMALL</h2>
 
@@ -61203,6 +61788,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_100_SMALL&#160;&#160;&#160;&quot;\xf0\x90\x80\x85&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf163a2fefbabe0cc604ca19c396f527" name="acf163a2fefbabe0cc604ca19c396f527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf163a2fefbabe0cc604ca19c396f527">&#9670;&#160;</a></span>ICON_TI_NUMBER_10_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_10_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xa3&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -61237,20 +61836,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="ac754bd2dd3981d583d7d8ad60c4d42b6" name="ac754bd2dd3981d583d7d8ad60c4d42b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac754bd2dd3981d583d7d8ad60c4d42b6">&#9670;&#160;</a></span>ICON_TI_NUMBER_12_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_12_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xa5&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5a2092a56eb948710744a1792f72bef3" name="a5a2092a56eb948710744a1792f72bef3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a2092a56eb948710744a1792f72bef3">&#9670;&#160;</a></span>ICON_TI_NUMBER_123</h2>
 
@@ -61259,6 +61844,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_123&#160;&#160;&#160;&quot;\xef\x95\x94&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac754bd2dd3981d583d7d8ad60c4d42b6" name="ac754bd2dd3981d583d7d8ad60c4d42b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac754bd2dd3981d583d7d8ad60c4d42b6">&#9670;&#160;</a></span>ICON_TI_NUMBER_12_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_12_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xa5&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -61363,6 +61962,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8ec43fb4c11927a7ab932e176e2624b" name="ad8ec43fb4c11927a7ab932e176e2624b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ec43fb4c11927a7ab932e176e2624b">&#9670;&#160;</a></span>ICON_TI_NUMBER_1_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_1_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xa2&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9faa648d3f88cc542521e01eedc5886e" name="a9faa648d3f88cc542521e01eedc5886e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9faa648d3f88cc542521e01eedc5886e">&#9670;&#160;</a></span>ICON_TI_NUMBER_2</h2>
 
@@ -61371,20 +61984,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_2&#160;&#160;&#160;&quot;\xee\xb7\xb2&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad482cfca979321143f3b7ee41b9670ea" name="ad482cfca979321143f3b7ee41b9670ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad482cfca979321143f3b7ee41b9670ea">&#9670;&#160;</a></span>ICON_TI_NUMBER_2_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_2_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xad&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -61531,6 +62130,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ad482cfca979321143f3b7ee41b9670ea" name="ad482cfca979321143f3b7ee41b9670ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad482cfca979321143f3b7ee41b9670ea">&#9670;&#160;</a></span>ICON_TI_NUMBER_2_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_2_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xad&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acc89c992e9c7e929382cc41c9daefbbb" name="acc89c992e9c7e929382cc41c9daefbbb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc89c992e9c7e929382cc41c9daefbbb">&#9670;&#160;</a></span>ICON_TI_NUMBER_3</h2>
 
@@ -61539,20 +62152,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_3&#160;&#160;&#160;&quot;\xee\xb7\xb3&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa98346c118a444dd93a7013fa1b99fc8" name="aa98346c118a444dd93a7013fa1b99fc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa98346c118a444dd93a7013fa1b99fc8">&#9670;&#160;</a></span>ICON_TI_NUMBER_3_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_3_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xb8&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -61699,6 +62298,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="aa98346c118a444dd93a7013fa1b99fc8" name="aa98346c118a444dd93a7013fa1b99fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98346c118a444dd93a7013fa1b99fc8">&#9670;&#160;</a></span>ICON_TI_NUMBER_3_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_3_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xb8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1ef0dbb2d16fbea22f4164cd6682c4c0" name="a1ef0dbb2d16fbea22f4164cd6682c4c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ef0dbb2d16fbea22f4164cd6682c4c0">&#9670;&#160;</a></span>ICON_TI_NUMBER_4</h2>
 
@@ -61707,20 +62320,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_4&#160;&#160;&#160;&quot;\xee\xb7\xb4&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa66acd5bfdcee1b55e6cea6f20992fb1" name="aa66acd5bfdcee1b55e6cea6f20992fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa66acd5bfdcee1b55e6cea6f20992fb1">&#9670;&#160;</a></span>ICON_TI_NUMBER_4_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_4_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xb9&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -61867,6 +62466,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="aa66acd5bfdcee1b55e6cea6f20992fb1" name="aa66acd5bfdcee1b55e6cea6f20992fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66acd5bfdcee1b55e6cea6f20992fb1">&#9670;&#160;</a></span>ICON_TI_NUMBER_4_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_4_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xb9&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a00eda193a72be9f9137399f0809fb9b1" name="a00eda193a72be9f9137399f0809fb9b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00eda193a72be9f9137399f0809fb9b1">&#9670;&#160;</a></span>ICON_TI_NUMBER_5</h2>
 
@@ -61875,20 +62488,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_5&#160;&#160;&#160;&quot;\xee\xb7\xb5&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab98a79e3c4ae6586011e829a312bf2b9" name="ab98a79e3c4ae6586011e829a312bf2b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab98a79e3c4ae6586011e829a312bf2b9">&#9670;&#160;</a></span>ICON_TI_NUMBER_5_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_5_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xba&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -62035,6 +62634,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ab98a79e3c4ae6586011e829a312bf2b9" name="ab98a79e3c4ae6586011e829a312bf2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98a79e3c4ae6586011e829a312bf2b9">&#9670;&#160;</a></span>ICON_TI_NUMBER_5_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_5_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xba&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae761442de327ae8a272fbfcb9d68926c" name="ae761442de327ae8a272fbfcb9d68926c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae761442de327ae8a272fbfcb9d68926c">&#9670;&#160;</a></span>ICON_TI_NUMBER_6</h2>
 
@@ -62043,20 +62656,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_6&#160;&#160;&#160;&quot;\xee\xb7\xb6&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af08f1bfc6763558e66e8c8a0e5d56739" name="af08f1bfc6763558e66e8c8a0e5d56739"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af08f1bfc6763558e66e8c8a0e5d56739">&#9670;&#160;</a></span>ICON_TI_NUMBER_6_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_6_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbb&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -62203,6 +62802,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="af08f1bfc6763558e66e8c8a0e5d56739" name="af08f1bfc6763558e66e8c8a0e5d56739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08f1bfc6763558e66e8c8a0e5d56739">&#9670;&#160;</a></span>ICON_TI_NUMBER_6_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_6_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbb&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab6821dcb6b2064b9ecd1bbcbdf601f82" name="ab6821dcb6b2064b9ecd1bbcbdf601f82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6821dcb6b2064b9ecd1bbcbdf601f82">&#9670;&#160;</a></span>ICON_TI_NUMBER_7</h2>
 
@@ -62211,20 +62824,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_7&#160;&#160;&#160;&quot;\xee\xb7\xb7&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05d404743d04a365f548b2fbc484776d" name="a05d404743d04a365f548b2fbc484776d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05d404743d04a365f548b2fbc484776d">&#9670;&#160;</a></span>ICON_TI_NUMBER_7_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_7_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbc&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -62371,6 +62970,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a05d404743d04a365f548b2fbc484776d" name="a05d404743d04a365f548b2fbc484776d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d404743d04a365f548b2fbc484776d">&#9670;&#160;</a></span>ICON_TI_NUMBER_7_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_7_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbc&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf63b4eb6ed1721962590b35092cbc5c" name="adf63b4eb6ed1721962590b35092cbc5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf63b4eb6ed1721962590b35092cbc5c">&#9670;&#160;</a></span>ICON_TI_NUMBER_8</h2>
 
@@ -62379,20 +62992,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_8&#160;&#160;&#160;&quot;\xee\xb7\xb8&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9f599e7cd8b7090237908e58ccfc52e4" name="a9f599e7cd8b7090237908e58ccfc52e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f599e7cd8b7090237908e58ccfc52e4">&#9670;&#160;</a></span>ICON_TI_NUMBER_8_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_8_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbd&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -62539,6 +63138,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a9f599e7cd8b7090237908e58ccfc52e4" name="a9f599e7cd8b7090237908e58ccfc52e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f599e7cd8b7090237908e58ccfc52e4">&#9670;&#160;</a></span>ICON_TI_NUMBER_8_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_8_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbd&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aede78dcbc03c49497aeaa58dad6a2d06" name="aede78dcbc03c49497aeaa58dad6a2d06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aede78dcbc03c49497aeaa58dad6a2d06">&#9670;&#160;</a></span>ICON_TI_NUMBER_9</h2>
 
@@ -62547,20 +63160,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_9&#160;&#160;&#160;&quot;\xee\xb7\xb9&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef84b152a7b0c28672e44db469fc1610" name="aef84b152a7b0c28672e44db469fc1610"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef84b152a7b0c28672e44db469fc1610">&#9670;&#160;</a></span>ICON_TI_NUMBER_9_SMALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_NUMBER_9_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbe&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -62701,6 +63300,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_NUMBER_99_SMALL&#160;&#160;&#160;&quot;\xef\xbe\xbf&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef84b152a7b0c28672e44db469fc1610" name="aef84b152a7b0c28672e44db469fc1610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef84b152a7b0c28672e44db469fc1610">&#9670;&#160;</a></span>ICON_TI_NUMBER_9_SMALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_NUMBER_9_SMALL&#160;&#160;&#160;&quot;\xef\xb3\xbe&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -65927,20 +66540,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a82a961dc3ada958b9df5c04b6101a562" name="a82a961dc3ada958b9df5c04b6101a562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82a961dc3ada958b9df5c04b6101a562">&#9670;&#160;</a></span>ICON_TI_PLAY_CARD_1_FILLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_PLAY_CARD_1_FILLED&#160;&#160;&#160;&quot;\xf0\x90\x82\x83&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae78c08d68aaf3317443c384706bd1f11" name="ae78c08d68aaf3317443c384706bd1f11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae78c08d68aaf3317443c384706bd1f11">&#9670;&#160;</a></span>ICON_TI_PLAY_CARD_10</h2>
 
@@ -65963,6 +66562,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_PLAY_CARD_10_FILLED&#160;&#160;&#160;&quot;\xf0\x90\x82\x82&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82a961dc3ada958b9df5c04b6101a562" name="a82a961dc3ada958b9df5c04b6101a562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a961dc3ada958b9df5c04b6101a562">&#9670;&#160;</a></span>ICON_TI_PLAY_CARD_1_FILLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_PLAY_CARD_1_FILLED&#160;&#160;&#160;&quot;\xf0\x90\x82\x83&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -71779,6 +72392,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="aec94ad8ade91f7bf1e65cc5234d5b985" name="aec94ad8ade91f7bf1e65cc5234d5b985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec94ad8ade91f7bf1e65cc5234d5b985">&#9670;&#160;</a></span>ICON_TI_SHI_JUMPING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SHI_JUMPING&#160;&#160;&#160;&quot;\xef\xa9\xac&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a626478818fdc433cb0f24ebab7ee8f54" name="a626478818fdc433cb0f24ebab7ee8f54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a626478818fdc433cb0f24ebab7ee8f54">&#9670;&#160;</a></span>ICON_TI_SHIELD</h2>
 
@@ -73669,6 +74296,20 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2f7d82e1c592305e43ab5cb56bb644e" name="ad2f7d82e1c592305e43ab5cb56bb644e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f7d82e1c592305e43ab5cb56bb644e">&#9670;&#160;</a></span>ICON_TI_SORT_DEACENDING_SMALL_BIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SORT_DEACENDING_SMALL_BIG&#160;&#160;&#160;&quot;\xef\xb6\x96&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a66e9240bc4690386cd90dd371e871ac8" name="a66e9240bc4690386cd90dd371e871ac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66e9240bc4690386cd90dd371e871ac8">&#9670;&#160;</a></span>ICON_TI_SORT_DESCENDING</h2>
 
@@ -74167,6 +74808,146 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_SQUARE&#160;&#160;&#160;&quot;\xee\xac\xac&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8597cb5613903a4f1ab0f55f6a0214b" name="ad8597cb5613903a4f1ab0f55f6a0214b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8597cb5613903a4f1ab0f55f6a0214b">&#9670;&#160;</a></span>ICON_TI_SQUARE_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_0&#160;&#160;&#160;&quot;\xee\xbb\xa5&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99791e36a1cafe982306414200ff6ace" name="a99791e36a1cafe982306414200ff6ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99791e36a1cafe982306414200ff6ace">&#9670;&#160;</a></span>ICON_TI_SQUARE_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_1&#160;&#160;&#160;&quot;\xee\xbb\xa6&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a346d41ecdba8b724ee0355968ca0d803" name="a346d41ecdba8b724ee0355968ca0d803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346d41ecdba8b724ee0355968ca0d803">&#9670;&#160;</a></span>ICON_TI_SQUARE_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_2&#160;&#160;&#160;&quot;\xee\xbb\xa7&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc94dbd67398ee64ef03ba7903626037" name="abc94dbd67398ee64ef03ba7903626037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc94dbd67398ee64ef03ba7903626037">&#9670;&#160;</a></span>ICON_TI_SQUARE_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_3&#160;&#160;&#160;&quot;\xee\xbb\xa8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a140ac139178d777c032dec39cc72b861" name="a140ac139178d777c032dec39cc72b861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140ac139178d777c032dec39cc72b861">&#9670;&#160;</a></span>ICON_TI_SQUARE_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_4&#160;&#160;&#160;&quot;\xee\xbb\xa9&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeed30d77138b16c19fab8b611fd110c0" name="aeed30d77138b16c19fab8b611fd110c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed30d77138b16c19fab8b611fd110c0">&#9670;&#160;</a></span>ICON_TI_SQUARE_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_5&#160;&#160;&#160;&quot;\xee\xbb\xaa&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a5634beff9b7f87e44bb4b801926d79" name="a6a5634beff9b7f87e44bb4b801926d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5634beff9b7f87e44bb4b801926d79">&#9670;&#160;</a></span>ICON_TI_SQUARE_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_6&#160;&#160;&#160;&quot;\xee\xbb\xab&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe45271d5d6effd0dcd00392d30f4dfe" name="abe45271d5d6effd0dcd00392d30f4dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe45271d5d6effd0dcd00392d30f4dfe">&#9670;&#160;</a></span>ICON_TI_SQUARE_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_7&#160;&#160;&#160;&quot;\xee\xbb\xac&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a078a1355f991fad3b0797cca3eaead4d" name="a078a1355f991fad3b0797cca3eaead4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078a1355f991fad3b0797cca3eaead4d">&#9670;&#160;</a></span>ICON_TI_SQUARE_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_8&#160;&#160;&#160;&quot;\xee\xbb\xad&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a769087b1fb7c9dac8302ad652a055b14" name="a769087b1fb7c9dac8302ad652a055b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769087b1fb7c9dac8302ad652a055b14">&#9670;&#160;</a></span>ICON_TI_SQUARE_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ICON_TI_SQUARE_9&#160;&#160;&#160;&quot;\xee\xbb\xae&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -85759,734 +86540,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define ICON_TI_ZZZ_OFF&#160;&#160;&#160;&quot;\xef\x91\x80&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8116578212feb125ab41393d73a13d5c" name="a8116578212feb125ab41393d73a13d5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8116578212feb125ab41393d73a13d5c">&#9670;&#160;</a></span>ICON_TI__123</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__123&#160;&#160;&#160;&quot;\xef\x95\x94&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafa7a5cdecfc21140fb6cb34d56aba2c" name="aafa7a5cdecfc21140fb6cb34d56aba2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafa7a5cdecfc21140fb6cb34d56aba2c">&#9670;&#160;</a></span>ICON_TI__360</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__360&#160;&#160;&#160;&quot;\xef\x98\xaf&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc441a857c88ae83753cb7ff0eb3f953" name="afc441a857c88ae83753cb7ff0eb3f953"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc441a857c88ae83753cb7ff0eb3f953">&#9670;&#160;</a></span>ICON_TI_CODE_ASTERIX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CODE_ASTERIX&#160;&#160;&#160;&quot;\xef\x8c\x92&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8a9b4073dc8e4db53938eb53842fa46d" name="a8a9b4073dc8e4db53938eb53842fa46d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a9b4073dc8e4db53938eb53842fa46d">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_DISCOUNT_2&#160;&#160;&#160;&quot;\xee\xb9\xbc&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05000ce5865aa52da654f8300856b1f4" name="a05000ce5865aa52da654f8300856b1f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05000ce5865aa52da654f8300856b1f4">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_2_OFF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_DISCOUNT_2_OFF&#160;&#160;&#160;&quot;\xef\x8f\xa6&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d5db216b4b0cfa84968fa8c849491c8" name="a7d5db216b4b0cfa84968fa8c849491c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d5db216b4b0cfa84968fa8c849491c8">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_CHECK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_DISCOUNT_CHECK&#160;&#160;&#160;&quot;\xef\x87\xb8&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5893a41850acf1ba0da53419b5f49f97" name="a5893a41850acf1ba0da53419b5f49f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5893a41850acf1ba0da53419b5f49f97">&#9670;&#160;</a></span>ICON_TI_HAND_ROCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HAND_ROCK&#160;&#160;&#160;&quot;\xee\xba\x97&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2f7d82e1c592305e43ab5cb56bb644e" name="ad2f7d82e1c592305e43ab5cb56bb644e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f7d82e1c592305e43ab5cb56bb644e">&#9670;&#160;</a></span>ICON_TI_SORT_DEACENDING_SMALL_BIG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SORT_DEACENDING_SMALL_BIG&#160;&#160;&#160;&quot;\xef\xb6\x96&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aec94ad8ade91f7bf1e65cc5234d5b985" name="aec94ad8ade91f7bf1e65cc5234d5b985"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec94ad8ade91f7bf1e65cc5234d5b985">&#9670;&#160;</a></span>ICON_TI_SHI_JUMPING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SHI_JUMPING&#160;&#160;&#160;&quot;\xef\xa9\xac&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a45e990a8eea2c165320e2ca6503975b2" name="a45e990a8eea2c165320e2ca6503975b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e990a8eea2c165320e2ca6503975b2">&#9670;&#160;</a></span>ICON_TI_BOX_SEAM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_BOX_SEAM&#160;&#160;&#160;&quot;\xee\xab\xbf&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a67020b05d24199f5986bb24dadbd54b7" name="a67020b05d24199f5986bb24dadbd54b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67020b05d24199f5986bb24dadbd54b7">&#9670;&#160;</a></span>ICON_TI_KERING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_KERING&#160;&#160;&#160;&quot;\xee\xbe\xb8&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3f1ec902940ff8e9eb2f2056fe969646" name="a3f1ec902940ff8e9eb2f2056fe969646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f1ec902940ff8e9eb2f2056fe969646">&#9670;&#160;</a></span>ICON_TI__2FA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__2FA&#160;&#160;&#160;&quot;\xee\xb2\xa0&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a59ef83600c074481cb8bee9327a986c2" name="a59ef83600c074481cb8bee9327a986c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59ef83600c074481cb8bee9327a986c2">&#9670;&#160;</a></span>ICON_TI__3D_CUBE_SPHERE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__3D_CUBE_SPHERE&#160;&#160;&#160;&quot;\xee\xb3\x97&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad4f81031e15bfb916b7632049d8f7c8b" name="ad4f81031e15bfb916b7632049d8f7c8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4f81031e15bfb916b7632049d8f7c8b">&#9670;&#160;</a></span>ICON_TI__3D_CUBE_SPHERE_OFF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__3D_CUBE_SPHERE_OFF&#160;&#160;&#160;&quot;\xef\x8e\xb5&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a572789180edd7dedeaf043856097bee7" name="a572789180edd7dedeaf043856097bee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a572789180edd7dedeaf043856097bee7">&#9670;&#160;</a></span>ICON_TI__3D_ROTATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__3D_ROTATE&#160;&#160;&#160;&quot;\xef\x80\xa0&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18dd12eb65e58851945bf39407e1daac" name="a18dd12eb65e58851945bf39407e1daac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18dd12eb65e58851945bf39407e1daac">&#9670;&#160;</a></span>ICON_TI__12_HOURS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__12_HOURS&#160;&#160;&#160;&quot;\xef\xb1\x93&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af965e142710c52768628597b4237a946" name="af965e142710c52768628597b4237a946"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af965e142710c52768628597b4237a946">&#9670;&#160;</a></span>ICON_TI__24_HOURS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__24_HOURS&#160;&#160;&#160;&quot;\xef\x97\xa7&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d0e0505f6b2d0713d6a740421efc021" name="a4d0e0505f6b2d0713d6a740421efc021"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0e0505f6b2d0713d6a740421efc021">&#9670;&#160;</a></span>ICON_TI__360_VIEW</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI__360_VIEW&#160;&#160;&#160;&quot;\xef\x95\xa6&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa65c390a2ce454295983f7889b61908a" name="aa65c390a2ce454295983f7889b61908a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa65c390a2ce454295983f7889b61908a">&#9670;&#160;</a></span>ICON_TI_CIRCLE_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_0&#160;&#160;&#160;&quot;\xee\xb8\xb4&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6af4c6275051df42a323f105ceea9851" name="a6af4c6275051df42a323f105ceea9851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6af4c6275051df42a323f105ceea9851">&#9670;&#160;</a></span>ICON_TI_CIRCLE_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_1&#160;&#160;&#160;&quot;\xee\xb8\xb5&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa60abab3e4351d38edac2987203d33ef" name="aa60abab3e4351d38edac2987203d33ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa60abab3e4351d38edac2987203d33ef">&#9670;&#160;</a></span>ICON_TI_CIRCLE_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_2&#160;&#160;&#160;&quot;\xee\xb8\xb6&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d9e4edbad51b943679e2f750888eadb" name="a7d9e4edbad51b943679e2f750888eadb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d9e4edbad51b943679e2f750888eadb">&#9670;&#160;</a></span>ICON_TI_CIRCLE_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_3&#160;&#160;&#160;&quot;\xee\xb8\xb7&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9964e769651a6fa8357c16825f1acd46" name="a9964e769651a6fa8357c16825f1acd46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9964e769651a6fa8357c16825f1acd46">&#9670;&#160;</a></span>ICON_TI_CIRCLE_4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_4&#160;&#160;&#160;&quot;\xee\xb8\xb8&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef5046ef42b2657ff8d060e58399a8ca" name="aef5046ef42b2657ff8d060e58399a8ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef5046ef42b2657ff8d060e58399a8ca">&#9670;&#160;</a></span>ICON_TI_CIRCLE_5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_5&#160;&#160;&#160;&quot;\xee\xb8\xb9&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa76d06a658b162ee32cf6ee6d0157fb2" name="aa76d06a658b162ee32cf6ee6d0157fb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa76d06a658b162ee32cf6ee6d0157fb2">&#9670;&#160;</a></span>ICON_TI_CIRCLE_6</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_6&#160;&#160;&#160;&quot;\xee\xb8\xba&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad1e9f42679cd5c4197763ddf31485dff" name="ad1e9f42679cd5c4197763ddf31485dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e9f42679cd5c4197763ddf31485dff">&#9670;&#160;</a></span>ICON_TI_CIRCLE_7</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_7&#160;&#160;&#160;&quot;\xee\xb8\xbb&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80e6812e09f45b84d701861d2e1c9f64" name="a80e6812e09f45b84d701861d2e1c9f64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80e6812e09f45b84d701861d2e1c9f64">&#9670;&#160;</a></span>ICON_TI_CIRCLE_8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_8&#160;&#160;&#160;&quot;\xee\xb8\xbc&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a56269f03eb354767ff621ad8d813ca50" name="a56269f03eb354767ff621ad8d813ca50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56269f03eb354767ff621ad8d813ca50">&#9670;&#160;</a></span>ICON_TI_CIRCLE_9</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_CIRCLE_9&#160;&#160;&#160;&quot;\xee\xb8\xbd&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa4d9a2f2b75f3a1fe82f5b15bc0419e" name="aaa4d9a2f2b75f3a1fe82f5b15bc0419e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa4d9a2f2b75f3a1fe82f5b15bc0419e">&#9670;&#160;</a></span>ICON_TI_HEXAGON_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_0&#160;&#160;&#160;&quot;\xef\x91\x99&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a554ca228765141076528e8849abc98a1" name="a554ca228765141076528e8849abc98a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a554ca228765141076528e8849abc98a1">&#9670;&#160;</a></span>ICON_TI_HEXAGON_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_1&#160;&#160;&#160;&quot;\xef\x91\x9a&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7bf11c15b770bf948ef999d00acfe6c" name="af7bf11c15b770bf948ef999d00acfe6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7bf11c15b770bf948ef999d00acfe6c">&#9670;&#160;</a></span>ICON_TI_HEXAGON_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_2&#160;&#160;&#160;&quot;\xef\x91\x9b&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abc6fcbda61bb60013d62d9123d092593" name="abc6fcbda61bb60013d62d9123d092593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc6fcbda61bb60013d62d9123d092593">&#9670;&#160;</a></span>ICON_TI_HEXAGON_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_3&#160;&#160;&#160;&quot;\xef\x91\x9c&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9ef6acefcf295313f9073ad71452af2" name="ac9ef6acefcf295313f9073ad71452af2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9ef6acefcf295313f9073ad71452af2">&#9670;&#160;</a></span>ICON_TI_HEXAGON_4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_4&#160;&#160;&#160;&quot;\xef\x91\x9d&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb3f2c99c69d0c9c3641d95a6254ccbd" name="aeb3f2c99c69d0c9c3641d95a6254ccbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb3f2c99c69d0c9c3641d95a6254ccbd">&#9670;&#160;</a></span>ICON_TI_HEXAGON_5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_5&#160;&#160;&#160;&quot;\xef\x91\x9e&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a537a011ca8abe1f9e985085eca883a61" name="a537a011ca8abe1f9e985085eca883a61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a537a011ca8abe1f9e985085eca883a61">&#9670;&#160;</a></span>ICON_TI_HEXAGON_6</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_6&#160;&#160;&#160;&quot;\xef\x91\x9f&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ade54ed749b3039da6a664ee1e96cad" name="a7ade54ed749b3039da6a664ee1e96cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ade54ed749b3039da6a664ee1e96cad">&#9670;&#160;</a></span>ICON_TI_HEXAGON_7</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_7&#160;&#160;&#160;&quot;\xef\x91\xa0&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad38fae5f3a7d4673b4d70f18f6ec246d" name="ad38fae5f3a7d4673b4d70f18f6ec246d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38fae5f3a7d4673b4d70f18f6ec246d">&#9670;&#160;</a></span>ICON_TI_HEXAGON_8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_8&#160;&#160;&#160;&quot;\xef\x91\xa1&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6cc7b42e88214c7abc42da5947322868" name="a6cc7b42e88214c7abc42da5947322868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cc7b42e88214c7abc42da5947322868">&#9670;&#160;</a></span>ICON_TI_HEXAGON_9</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_HEXAGON_9&#160;&#160;&#160;&quot;\xef\x91\xa2&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad8597cb5613903a4f1ab0f55f6a0214b" name="ad8597cb5613903a4f1ab0f55f6a0214b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8597cb5613903a4f1ab0f55f6a0214b">&#9670;&#160;</a></span>ICON_TI_SQUARE_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_0&#160;&#160;&#160;&quot;\xee\xbb\xa5&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99791e36a1cafe982306414200ff6ace" name="a99791e36a1cafe982306414200ff6ace"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99791e36a1cafe982306414200ff6ace">&#9670;&#160;</a></span>ICON_TI_SQUARE_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_1&#160;&#160;&#160;&quot;\xee\xbb\xa6&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a346d41ecdba8b724ee0355968ca0d803" name="a346d41ecdba8b724ee0355968ca0d803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a346d41ecdba8b724ee0355968ca0d803">&#9670;&#160;</a></span>ICON_TI_SQUARE_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_2&#160;&#160;&#160;&quot;\xee\xbb\xa7&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abc94dbd67398ee64ef03ba7903626037" name="abc94dbd67398ee64ef03ba7903626037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc94dbd67398ee64ef03ba7903626037">&#9670;&#160;</a></span>ICON_TI_SQUARE_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_3&#160;&#160;&#160;&quot;\xee\xbb\xa8&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a140ac139178d777c032dec39cc72b861" name="a140ac139178d777c032dec39cc72b861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a140ac139178d777c032dec39cc72b861">&#9670;&#160;</a></span>ICON_TI_SQUARE_4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_4&#160;&#160;&#160;&quot;\xee\xbb\xa9&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeed30d77138b16c19fab8b611fd110c0" name="aeed30d77138b16c19fab8b611fd110c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeed30d77138b16c19fab8b611fd110c0">&#9670;&#160;</a></span>ICON_TI_SQUARE_5</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_5&#160;&#160;&#160;&quot;\xee\xbb\xaa&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a5634beff9b7f87e44bb4b801926d79" name="a6a5634beff9b7f87e44bb4b801926d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a5634beff9b7f87e44bb4b801926d79">&#9670;&#160;</a></span>ICON_TI_SQUARE_6</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_6&#160;&#160;&#160;&quot;\xee\xbb\xab&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe45271d5d6effd0dcd00392d30f4dfe" name="abe45271d5d6effd0dcd00392d30f4dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe45271d5d6effd0dcd00392d30f4dfe">&#9670;&#160;</a></span>ICON_TI_SQUARE_7</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_7&#160;&#160;&#160;&quot;\xee\xbb\xac&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a078a1355f991fad3b0797cca3eaead4d" name="a078a1355f991fad3b0797cca3eaead4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a078a1355f991fad3b0797cca3eaead4d">&#9670;&#160;</a></span>ICON_TI_SQUARE_8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_8&#160;&#160;&#160;&quot;\xee\xbb\xad&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a769087b1fb7c9dac8302ad652a055b14" name="a769087b1fb7c9dac8302ad652a055b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a769087b1fb7c9dac8302ad652a055b14">&#9670;&#160;</a></span>ICON_TI_SQUARE_9</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_SQUARE_9&#160;&#160;&#160;&quot;\xee\xbb\xae&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abf058046aeef62c88a9edb6e6bb944c1" name="abf058046aeef62c88a9edb6e6bb944c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf058046aeef62c88a9edb6e6bb944c1">&#9670;&#160;</a></span>ICON_TI_MESSAGE_CIRCLE_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_MESSAGE_CIRCLE_2&#160;&#160;&#160;&quot;\xee\xab\xad&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a49450db7fc2af7dab77e06b4001f6aad" name="a49450db7fc2af7dab77e06b4001f6aad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49450db7fc2af7dab77e06b4001f6aad">&#9670;&#160;</a></span>ICON_TI_MOOD_SUPRISED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_MOOD_SUPRISED&#160;&#160;&#160;&quot;\xee\xb0\x84&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d1a31e616055944a27364045f59abe3" name="a5d1a31e616055944a27364045f59abe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d1a31e616055944a27364045f59abe3">&#9670;&#160;</a></span>ICON_TI_DISCOUNT_CHECK_FILLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_DISCOUNT_CHECK_FILLED&#160;&#160;&#160;&quot;\xef\x9d\x86&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61b7a435201c6fd68d86c00082b5fc8d" name="a61b7a435201c6fd68d86c00082b5fc8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61b7a435201c6fd68d86c00082b5fc8d">&#9670;&#160;</a></span>ICON_TI_MESSAGE_CIRCLE_2_FILLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ICON_TI_MESSAGE_CIRCLE_2_FILLED&#160;&#160;&#160;&quot;\xef\xbb\x8f&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

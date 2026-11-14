@@ -11,12 +11,10 @@ var searchData=
   ['importresult_8',['ImportResult',['../struct_deki_editor_1_1_import_result.html',1,'DekiEditor']]],
   ['intcallbacks_9',['IntCallbacks',['../struct_deki_editor_1_1_editor_u_i_1_1_int_callbacks.html',1,'DekiEditor::EditorUI']]],
   ['ipackage_10',['IPackage',['../class_deki_1_1_i_package.html',1,'Deki']]],
-  ['ipackageinstaller_11',['IPackageInstaller',['../class_i_package_installer.html',1,'']]],
-  ['ipackagesource_12',['IPackageSource',['../class_i_package_source.html',1,'']]],
-  ['iplatformeditorui_13',['IPlatformEditorUI',['../class_deki_editor_1_1_i_platform_editor_u_i.html',1,'DekiEditor']]],
-  ['ipower_14',['IPower',['../class_deki_1_1_i_power.html',1,'Deki']]],
-  ['irendersystem_15',['IRenderSystem',['../class_deki_1_1_i_render_system.html',1,'Deki']]],
-  ['isortableprovider_16',['ISortableProvider',['../class_deki_1_1_i_sortable_provider.html',1,'Deki']]],
-  ['itargetbuilder_17',['ITargetBuilder',['../class_deki_editor_1_1_i_target_builder.html',1,'DekiEditor']]],
-  ['itimeprovider_18',['ITimeProvider',['../class_deki_1_1_i_time_provider.html',1,'Deki']]]
+  ['iplatformeditorui_11',['IPlatformEditorUI',['../class_deki_editor_1_1_i_platform_editor_u_i.html',1,'DekiEditor']]],
+  ['ipower_12',['IPower',['../class_deki_1_1_i_power.html',1,'Deki']]],
+  ['irendersystem_13',['IRenderSystem',['../class_deki_1_1_i_render_system.html',1,'Deki']]],
+  ['isortableprovider_14',['ISortableProvider',['../class_deki_1_1_i_sortable_provider.html',1,'Deki']]],
+  ['itargetbuilder_15',['ITargetBuilder',['../class_deki_editor_1_1_i_target_builder.html',1,'DekiEditor']]],
+  ['itimeprovider_16',['ITimeProvider',['../class_deki_1_1_i_time_provider.html',1,'Deki']]]
 ];

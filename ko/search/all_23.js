@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#autotoc_md7',1,'']]],
-  ['결정적_20guid를_20생성하는_20곳_1',['결정적 GUID를 생성하는 곳',['../guide-asset-system.html#guide-asset-system-where-deterministic-guids-are-generated',1,'']]],
-  ['결정적_20guid_20생성_2',['결정적 GUID 생성',['../guide-asset-system.html#guide-asset-system-deterministic-guid-generation',1,'']]],
-  ['결정_20흐름_3',['프레임 결정 흐름',['../guide-sprite-system.html#guide-sprite-system-frame-resolution-flow',1,'']]]
+  ['게임이_20쓰는_20파일_0',['게임이 쓰는 파일',['../guide-platforms.html#guide-platforms-files-the-game-writes',1,'']]],
+  ['게임_20로직_1',['게임 로직',['../section-packages.html#autotoc_md30',1,'']]],
+  ['게임_20만들기_2',['게임 만들기',['../section-making-a-game.html',1,'index']]]
 ];

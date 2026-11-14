@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['것은_20보드의_20일입니다_0',['영역을 제공하는 것은 보드의 일입니다',['../guide-memory.html#autotoc_md5',1,'']]],
-  ['것_1',['것',['../guide-screens.html#autotoc_md18',1,'각 화면에 보이는 것'],['../guide-performance.html#guide-performance-what-a-board-sets',1,'보드에서 설정하는 것'],['../guide-performance.html#guide-performance-what-chooses-itself',1,'자동으로 정해지는 것'],['../guide-units.html#guide-units-what-is-stored',1,'저장되는 것']]]
+  ['개발_0',['Deki 개발',['../section-working-on-deki.html',1,'index']]],
+  ['개수가_20바뀔_20때_1',['&lt;span class=&quot;tt&quot;&gt;Deki::Vector&amp;lt;T&amp;gt;&lt;/span&gt; - 런타임에 개수가 바뀔 때',['../guide-memory.html#autotoc_md13',1,'']]],
+  ['개요_2',['개요',['../guide-font-system.html#guide-font-system-overview',1,'개요'],['../guide-sprite-system.html#guide-sprite-system-overview',1,'개요']]]
 ];

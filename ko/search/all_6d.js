@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['임포트_0',['2단계 임포트',['../guide-sprite-system.html#guide-sprite-system-two-pass-import',1,'']]],
-  ['임포트_20파이프라인_3a_20textureimporter_1',['임포트 파이프라인: TextureImporter',['../guide-sprite-system.html#guide-sprite-system-import-pipeline-textureimporter',1,'']]]
+  ['영역은_20이름이므로_20패키지가_20직접_20추가할_20수_20있습니다_0',['영역은 이름이므로 패키지가 직접 추가할 수 있습니다',['../guide-memory.html#autotoc_md4',1,'']]],
+  ['영역을_20제공하는_20것은_20디바이스의_20일입니다_1',['영역을 제공하는 것은 디바이스의 일입니다',['../guide-memory.html#autotoc_md5',1,'']]],
+  ['영역_20매번_20직접_20고릅니다_2',['영역 - 매번 직접 고릅니다',['../guide-memory.html#autotoc_md3',1,'']]],
+  ['영역_20이름은_20케이퍼빌리티_20이름입니다_3',['영역 이름은 케이퍼빌리티 이름입니다',['../guide-memory.html#autotoc_md6',1,'']]]
 ];

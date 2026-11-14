@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['显示换算_0',['显示换算',['../guide-units.html#guide-units-display-conversion',1,'']]]
+  ['延迟加载_0',['延迟加载',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]]
 ];

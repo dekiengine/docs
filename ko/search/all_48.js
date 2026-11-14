@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['배치는_20한_20번에_20결정됩니다_20대체는_20없습니다_0',['배치는 한 번에 결정됩니다. 대체는 없습니다.',['../guide-memory.html#autotoc_md7',1,'']]]
+  ['미리보기_0',['미리보기',['../guide-screens.html#autotoc_md26',1,'']]],
+  ['미리보기_20모드_20에디터_20전용_1',['미리보기 모드 (에디터 전용)',['../guide-font-system.html#guide-font-system-preview-mode-editor-only',1,'']]]
 ];

@@ -17,6 +17,7 @@ var dir_7572e2af4f8efb0b324517b38d84511f =
     [ "CommandHistory.h", "_command_history_8h.html", "_command_history_8h" ],
     [ "ComponentUsageScan.h", "_component_usage_scan_8h.html", "_component_usage_scan_8h" ],
     [ "CustomEditor.h", "_custom_editor_8h.html", "_custom_editor_8h" ],
+    [ "DeviceProfile.h", "_device_profile_8h.html", "_device_profile_8h" ],
     [ "EditorApplication.h", "_editor_application_8h.html", "_editor_application_8h" ],
     [ "EditorAssets.h", "_editor_assets_8h.html", "_editor_assets_8h" ],
     [ "EditorComponents.h", "_editor_components_8h.html", "_editor_components_8h" ],

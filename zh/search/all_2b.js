@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['双字段模式（guid_20与_20source）_0',['双字段模式（guid 与 source）',['../guide-asset-system.html#guide-asset-system-dual-field-pattern-guid-vs-source',1,'']]]
+  ['创建项目_0',['创建项目',['../guide-getting-started.html#guide-getting-started-create-a-project',1,'']]]
 ];

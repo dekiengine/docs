@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['컴포넌트_0',['컴포넌트',['../engine-core.html#engine-components',1,'']]],
-  ['컴포넌트_20레퍼런스_1',['컴포넌트 레퍼런스',['../engine-core.html#engine-component-reference',1,'']]]
+  ['지연_20로딩_0',['지연 로딩',['../guide-asset-system.html#guide-asset-system-lazy-loading',1,'']]],
+  ['지정_1',['에디터에서의 지정',['../guide-sprite-system.html#guide-sprite-system-assignment-in-editor',1,'']]]
 ];

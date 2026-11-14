@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['텍스트_20표시하기_0',['코드에서 텍스트 표시하기',['../guide-localization.html#guide-localization-showing-text-in-code',1,'']]]
+  ['출처_3a_20편집_20업데이트_20복원_0',['출처: 편집, 업데이트, 복원',['../guide-platforms.html#guide-platforms-origin-edit-update-restore',1,'']]]
 ];

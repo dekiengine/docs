@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['스프라이트와_20폰트가_20다른_20이유_0',['스프라이트와 폰트가 다른 이유',['../guide-asset-system.html#guide-asset-system-why-sprites-and-fonts-differ',1,'']]],
-  ['스프라이트의_20assetref_20필드_1',['스프라이트의 AssetRef 필드',['../guide-sprite-system.html#guide-sprite-system-assetref-fields-for-sprites',1,'']]],
-  ['스프라이트_2',['비교: 폰트와 스프라이트',['../guide-sprite-system.html#guide-sprite-system-comparison-fonts-vs-sprites',1,'']]],
-  ['스프라이트_20시스템_3',['스프라이트 시스템',['../guide-sprite-system.html',1,'']]],
-  ['스프라이트_20프레임_20없음_20의_20경우_4',['일반 스프라이트(프레임 없음)의 경우',['../guide-sprite-system.html#guide-sprite-system-for-plain-sprites-no-frames',1,'']]]
+  ['설정하는_20것_0',['디바이스에서 설정하는 것',['../guide-performance.html#autotoc_md19',1,'']]],
+  ['설정_1',['설정',['../engine-core.html#engine-units-settings',1,'단위 설정'],['../settings.html#settings-units-settings',1,'단위 설정'],['../guide-performance.html#autotoc_md20',1,'알아 두면 좋은 프로젝트 설정'],['../engine-core.html#engine-core-settings',1,'코어 설정'],['../settings.html#settings-core-settings',1,'코어 설정'],['../settings.html',1,'프로젝트 설정'],['../engine-core.html#engine-project-settings',1,'프로젝트 설정']]],
+  ['설치_2',['에디터 설치',['../guide-getting-started.html#guide-getting-started-install-the-editor',1,'']]]
 ];

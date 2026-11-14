@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['親、source_20フレームである理由_0',['guid = 親、source = フレームである理由',['../guide-sprite-system.html#guide-sprite-system-why-guid--parent-source--frame',1,'']]]
+  ['生成されるコードのパターン_0',['生成されるコードのパターン',['../guide-asset-system.html#guide-asset-system-generated-code-pattern',1,'']]],
+  ['生成される_20resolveobjectrefs_1',['生成される ResolveObjectRefs',['../guide-sprite-system.html#guide-sprite-system-generated-resolveobjectrefs',1,'']]]
 ];
